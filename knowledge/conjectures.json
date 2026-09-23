@@ -1,0 +1,11 @@
+[
+  {
+    "id": "example_goldbach",
+    "name": "Goldbach conjecture",
+    "domain": "additive_number_theory",
+    "status": "open",
+    "sources": ["number theory conjecture index"],
+    "related": [],
+    "transformations": ["relax_prime_condition"]
+  }
+]

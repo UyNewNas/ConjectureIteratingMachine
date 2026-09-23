@@ -1,15 +1,150 @@
-# 数学未解问题本地存档
+# Conjecture Iterating Machine
 
-本目录是英文维基百科 [Unsolved problems in mathematics](https://en.wikipedia.org/wiki/Category:Unsolved_problems_in_mathematics) 分类及其子分类的快照。在本目录运行 `python3 fetch.py` 可重新抓取；中断后用 `python3 fetch.py --resume` 跳过已有正文文件。
+> An autonomous conjecture discovery and research loop for mathematics.
+>
+> 从已有数学猜想、定理与论文空间出发，自动提出候选猜想，进行反例攻击、证明尝试、难度评估，并持续积累研究记录。
 
-- `pages/<pageid>.wiki`：各页面的原始 Wiki 文本，包含公式和参考文献标记。
-- `index.csv`：标题、原文链接、版本号、修改时间、来源分类和本地文件位置。
-- `number_theory_index.csv`：在“数论未解问题”分类中直接列出的页面，另补入总分类下的广义和大黎曼猜想；适合从数论方向开始查阅。
-- `liouville-prime-conjectures.md`：素数相关命题及“奇数且刘维尔值为 −1”的替换版本，区分真正的逻辑弱化与仅形式替换。
-- `research/liouville_square_windows/`：新提出的双平方窗口研究猜想、有限计算脚本、失败候选与已证明的较弱界。
-- `research/coprime_three_almost_primes/`：新提出的连续平方间互素奇三殆素数难猜想、有限计算与证明缺口。
-- `manifest.json`：抓取时间、分类范围和条目数。
+## Vision
 
-这里只将“被该来源归入数学未解问题分类”作为收录标准。总存档中可能有问题清单、背景文章、已解决的相关问题，或分类尚未更新的条目；**不能把本存档当成全部已知未解决猜想的完整或逐条核实清单**。例如 ABC 猜想子分类含人物和已证明定理，故数论专用索引不沿该子分类扩张。`Category:Conjectures` 包含已证明或已否定的猜想，因此没有沿该分支递归抓取。
+本仓库不再只是数学未解问题存档，而是一个 **Conjecture Research Agent**：
 
-页面版权归原作者所有，按维基百科页面的 [CC BY-SA 4.0 条款](https://en.wikipedia.org/wiki/Wikipedia:Copyrights) 使用。索引中的原文链接和版本号用于溯源与署名。
+```
+Knowledge Base
+      |
+      v
+Candidate Generator
+      |
+      v
+Counterexample Search
+      |
+      v
+Proof Attempt
+      |
+      v
+Reviewer / Scoring
+      |
+      v
+Conjecture Registry
+```
+
+目标不是大量生成猜想，而是建立一个可审计的数学探索循环。
+
+## Hourly Research Loop
+
+GitHub Actions 每小时运行一次单轮研究：
+
+### 1. Candidate Generation
+
+参考：
+
+- 数论未解问题集合
+- 已知定理
+- 最新论文
+- 历史失败记录
+
+尝试提出一个自然的新猜想：
+
+- 明确定义
+- 来源问题
+- 数学动机
+- 可验证形式
+
+### 2. Attack Phase
+
+优先攻击候选：
+
+- 小范围暴力搜索
+- 边界测试
+- 极端情况分析
+- 已知结果覆盖检查
+
+若失败：
+
+- 保存反例
+- 记录失败原因
+- 防止未来重复生成
+
+最多尝试 10 个候选。
+
+### 3. Proof Phase
+
+通过计算筛选后，尝试：
+
+1. 初等构造
+2. 已知定理组合
+3. 中间 Lemma 建立
+4. 新方法需求分析
+
+若证明成功，则进入已验证结果库。
+
+若暂时无法证明，则进入研究候选库，而不是简单标记为“难”。
+
+### 4. Research Evaluation
+
+每个候选记录：
+
+| 维度 | 评分 |
+|-|-|
+| Difficulty | 0-10 |
+| Novelty | 0-10 |
+| Mathematical Depth | 0-10 |
+| Required Tools | 分类记录 |
+| Known Relation | 已知关系 |
+
+## Repository Structure
+
+```
+conjectures/
+  candidates/       # 通过初筛的新猜想
+  proven/           # 已证明
+  rejected/         # 已反驳
+  equivalent/       # 等价或改写
+
+memory/
+  failures.json     # 历史失败模式
+  discoveries.json  # 成功模式
+
+research/
+  experiments/     # 计算实验
+  reports/         # 自动报告
+
+agents/
+  generator        # 猜想生成
+  attacker         # 反例搜索
+  prover            # 证明尝试
+  reviewer          # 评价
+
+loops/
+  hourly_loop.py    # 单轮入口
+```
+
+## Status Policy
+
+计算通过 ≠ 猜想正确。
+
+无法证明 ≠ 难猜想。
+
+只有经过：
+
+- 已有结果审查
+- 反例搜索
+- 方法分析
+
+之后，才进入高难度研究候选。
+
+## Automation
+
+`.github/workflows/conjecture-loop.yml` 会每小时触发一次研究循环。
+
+每轮运行结果必须保存为可追踪记录。
+
+## Current Research Sources
+
+- Unsolved problems in mathematics archive
+- Number theory conjecture database
+- Analytic number theory literature
+- Formal verification projects
+
+## Philosophy
+
+> Generate less. Verify more. Preserve failures. Accumulate mathematics.
