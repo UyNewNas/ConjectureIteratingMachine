@@ -1,0 +1,117 @@
+{{unsolved|mathematics|What is the arrangements of squares with parallel edges which has the smallest area-maximizing subset of squares in which the squares in the subset do not overlap?}}
+The '''covering problem of Rado''' is an unsolved problem in [[geometry]] concerning covering planar sets by squares. It was formulated in 1928 by [[Tibor Radó]] and has been generalized to more general shapes and higher dimensions by [[Richard Rado]].
+
+== Formulation==
+
+In a letter to [[Wacław Sierpiński]], motivated by some results of [[Giuseppe Vitali]], Tibor Radó observed that for every [[cover (topology)|covering]] of a unit interval, one can select a subset consisting of pairwise disjoint intervals with total length at least 1/2 and that this number cannot be improved. 
+
+[[File:Rado lines.svg|thumb|center|400px|Coverings of the unit interval (spread vertically for visual clarity). One can always select a number of segments that are covering this interval such that none of the selected segments overlap each other, and the total length of the segments is greater or equal to 1/2, demonstrated above by the selected (red) segments.]]
+
+He then asked for an analogous statement in the plane.
+
+: ''If the area of the union of a finite set of squares in the plane with parallel sides is one, what is the guaranteed maximum total area of a pairwise disjoint subset?''
+
+[[File:Covering problem of Rado, enhanced.gif|frame|center|To have the squares be as far apart as possible while still having them overlap, the <math>\epsilon</math> symbol is used to denote an infinitesimally small scaling value, which expands the square by that amount from the center, and as that value reaches zero, the lower bound is approached.
+<br /><br />
+The total area covered by all squares in each approaches 1 as <math>\epsilon</math> shrinks, and the amount covered by an optimal selection of squares for these sets approaches 1/4 (where the selected squares are red). Note that there are arrangements which have an optimal selection with total area slightly less than 1/4.]]
+ 
+Radó proved that this number is at least 1/9 and conjectured that it is at least 1/4 a constant which cannot be further improved. This assertion was proved for the case of equal squares independently by A. Sokolin, R. Rado, and [[Victor Zalgaller|V. A. Zalgaller]]. However, in 1973, [[Miklós Ajtai]] ''disproved'' Radó's conjecture, by constructing a system of squares of two different sizes for which any subsystem consisting of disjoint squares covers the area at most {{math|1/4&nbsp;&minus;&nbsp;1/1728 ≈ 0.2494}} of the total area covered by the system.
+
+== Upper and lower bounds ==
+
+Problems analogous to Tibor Radó's conjecture but involving other shapes were considered by Richard Rado starting in late 1940s. A typical setting is a finite family of [[convex set|convex figures]] in the [[Euclidean space]] '''R'''<sup>''d''</sup> that are [[Homothetic transformation|homothetic]] to a given ''X'', for example, a square as in the original question, a [[disk (mathematics)|disk]], or a ''d''-dimensional [[cube]]. Let
+
+: <math> F(X)=\inf_{S}\sup_{I}\frac{|I|}{|S|}, </math>
+
+where ''S'' ranges over finite families just described, and for a given family ''S'', ''I'' ranges over all subfamilies that are ''independent'', i.e. consist of disjoint sets, and bars denote the total volume (or area, in the plane case). Although the exact value of ''F''(''X'') is not known for any two-dimensional convex ''X'', much work was devoted to establishing upper and lower bounds in various classes of shapes. By considering only families consisting of sets that are parallel and congruent to ''X'', one similarly defines ''f''(''X''), which turned out to be much easier to study. Thus, R. Rado proved that if ''X'' is a triangle, ''f''(''X'') is exactly 1/6 and if ''X'' is a centrally symmetric [[hexagon]], ''f''(''X'') is equal to 1/4.
+
+In 2008, Sergey Bereg, Adrian Dumitrescu, and Minghui Jiang established new bounds for various ''F''(''X'') and ''f''(''X'') that improve upon earlier results of R. Rado and V. A. Zalgaller. In particular, they proved that
+
+: <math> 0.1179 \approx \frac{1}{8.4797} \leq F(\textrm{square}) \leq \frac{1}{4}-\frac{1}{384} \approx 0.2474,</math>
+
+and that <math>f(X)\geq\frac{1}{6}</math> for any convex planar ''X''.
+
+== References ==
+
+*{{citation
+ | last = Ajtai | first = Miklós | author-link = Miklós Ajtai
+ | journal = Bulletin de l'Académie Polonaise des Sciences, Série des Sciences Mathématiques, Astronomiques et Physiques
+ | mr = 319053
+ | pages = 61–63
+ | title = The solution of a problem of T. Radó
+ | volume = 21
+ | year = 1973}}
+*{{citation
+ | last1 = Bereg | first1 = Sergey
+ | last2 = Dumitrescu | first2 = Adrian
+ | last3 = Jiang | first3 = Minghui
+ | doi = 10.1007/s00453-009-9298-z
+ | issue = 3
+ | journal = Algorithmica
+ | mr = 2609053
+ | pages = 538–561
+ | title = On covering problems of Rado
+ | volume = 57
+ | year = 2010}}; preliminary announcement in [[SWAT and WADS conferences|SWAT 2008]], {{doi|10.1007/978-3-540-69903-3_27}}
+*{{citation
+ | last1 = Croft | first1 = Hallard T. | authorlink1=Hallard Croft
+ | last2 = Falconer | first2 = Kenneth J. | author2-link = Kenneth Falconer (mathematician)
+ | last3 = Guy | first3 = Richard K. | author3-link = Richard K. Guy
+ | doi = 10.1007/978-1-4612-0963-8
+ | isbn = 0-387-97506-3
+ | mr = 1107516
+ | publisher = Springer-Verlag | location = New York
+ | series = Problem Books in Mathematics
+ | title = Unsolved Problems in Geometry
+ | year = 1991}}
+*{{citation
+ | last = Radó | first = Tibor | author-link = Tibor Radó
+ | jfm = 54.0098.02
+ | journal = [[Fundamenta Mathematicae]]
+ | pages = 228–229
+ | title = Sur un problème relatif à un théorème de Vitali
+ | url = https://www.infona.pl/resource/bwmeta1.element.bwnjournal-article-fmv11i1p25bwm
+ | volume = 11
+ | year = 1928| doi = 10.4064/fm-11-1-228-229 }}
+*{{citation
+ | last = Rado | first = Richard | author-link = Richard Rado
+ | doi = 10.1112/plms/s2-51.3.232
+ | journal = Proceedings of the London Mathematical Society
+ | mr = 30782
+ | pages = 232–264
+ | series = Second Series
+ | title = Some covering theorems (I)
+ | volume = 51
+ | year = 1949}}{{pb}} {{citation
+ | last = Rado | first = R. | author-mask = 2
+ | doi = 10.1112/plms/s2-53.4.243
+ | journal = Proceedings of the London Mathematical Society
+ | mr = 42149
+ | pages = 243–267
+ | series = Second Series
+ | title = Some covering theorems (II)
+ | volume = 53
+ | year = 1951}}
+*{{citation
+ | last = Sokolin | first = A.
+ | journal = [[Proceedings of the USSR Academy of Sciences]]
+ | pages = 871–872
+ | title = Concerning a problem of Radó
+ | volume = 26
+ | year = 1940
+ | zbl = 0023.11203}}
+*{{citation
+ | last = Zalgaller | first = V. A. | author-link = Victor Zalgaller
+ | contribution = Замечания о задаче Радо
+ | contribution-url = http://mi.mathnet.ru/mp648
+ | language = ru
+ | pages = 141–148
+ | title = Математика, ее преподавание, приложения и история
+ | series = Matematicheskoe Prosveshchenie, Ser. 2
+ | volume = 5
+ | year = 1960
+ | zbl = 0145.19203}}
+
+[[Category:Covering lemmas]]
+[[Category:Discrete geometry]]
+[[Category:Unsolved problems in geometry]]

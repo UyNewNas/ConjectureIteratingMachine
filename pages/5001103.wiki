@@ -1,0 +1,42 @@
+{{short description|There are at most a finite number of consecutive powers}}
+In [[number theory]], '''Tijdeman's theorem''' states that there are at most a finite number of consecutive powers. Stated another way, the set of solutions in integers ''x'', ''y'', ''n'', ''m'' of the [[exponential diophantine equation]]
+
+:<math>y^m = x^n + 1,</math>
+
+for exponents ''n'' and ''m'' greater than one, is finite.<ref name="rnt20c">{{ citation | pages=352 | title=Rational Number Theory in the 20th Century: From PNT to FLT | series=Springer Monographs in Mathematics | first=Wladyslaw | last=Narkiewicz | publisher=[[Springer-Verlag]] | year=2011 | isbn=978-0-857-29531-6 }}</ref><ref>{{citation | last=Schmidt | first=Wolfgang M. | authorlink=Wolfgang M. Schmidt | title=Diophantine approximations and Diophantine equations | series=Lecture Notes in Mathematics | volume=1467 | publisher=[[Springer-Verlag]] | year=1996 | edition=2nd | isbn=978-3-540-54058-8 | zbl=0754.11020 | page=207 }}</ref>
+
+==History==
+The theorem was proven by Dutch number theorist [[Robert Tijdeman]] in 1976,<ref>{{citation |first=Robert |last=Tijdeman |title=On the equation of Catalan |journal=[[Acta Arithmetica]] |volume=29 |issue=2 |year=1976 |pages=197–209 |doi= 10.4064/aa-29-2-197-209| zbl=0286.10013 |doi-access=free }}</ref> making use of [[Baker's method]] in [[transcendental number theory]] to give an [[Effective results in number theory|effective]] upper bound for ''x'',''y'',''m'',''n''.   [[Michel Langevin (mathematician)|Michel Langevin]] computed a value of exp exp exp exp 730 for the bound.<ref name="rnt20c"/><ref>{{citation | title=13 Lectures on Fermat's Last Theorem | first=Paulo | last=Ribenboim | authorlink=Paulo Ribenboim | publisher=[[Springer-Verlag]] | year=1979 | isbn=978-0-387-90432-0 | zbl=0456.10006 | page=236 }}</ref><ref>{{citation
+ | last = Langevin | first = Michel | author-link = Michel Langevin (mathematician)
+ | issue = G12
+ | journal = Séminaire Delange-Pisot-Poitou, 17e Année (1975/76), Théorie des Nombres
+ | mr = 0498426
+ | title = Quelques applications de nouveaux résultats de Van der Poorten
+ | volume = 2
+ | year = 1977}}</ref>
+
+Tijdeman's theorem provided a strong impetus towards the eventual proof of [[Catalan's conjecture]] by [[Preda Mihăilescu]].<ref>{{citation | first=Tauno |last =Metsänkylä | url=http://www.ams.org/bull/2004-41-01/S0273-0979-03-00993-5/S0273-0979-03-00993-5.pdf | title=Catalan's conjecture: another old Diophantine problem solved | journal=[[Bulletin of the American Mathematical Society]] | volume=41 | year=2004 | issue=1 | pages=43–57 | doi=10.1090/S0273-0979-03-00993-5 | doi-access=free }}</ref> [[Mihăilescu's theorem]] states that there is only one member of the set of consecutive power pairs, namely 9=8+1.<ref>{{citation
+ | last = Mihăilescu | first = Preda | author-link = Preda Mihăilescu
+ | doi = 10.1515/crll.2004.048
+ | issue = 572
+ | journal = [[Crelle's Journal|Journal für die reine und angewandte Mathematik]]
+ | mr = 2076124
+ | pages = 167–195
+ | title = Primary Cyclotomic Units and a Proof of Catalan's Conjecture
+ | volume = 2004
+ | year = 2004}}</ref>
+
+==Generalized Tijdeman problem==
+That the powers are consecutive is essential to Tijdeman's proof; if we replace the difference of ''1''  by any other difference ''k'' and ask for the number of solutions
+of 
+
+:<math>y^m = x^n + k</math>
+
+with ''n'' and ''m'' greater than one we have an unsolved problem,<ref name=ST202>{{cite book | last1=Shorey | first1=Tarlok N. | last2=Tijdeman | first2=Robert  | author2-link=Robert Tijdeman | title=Exponential Diophantine equations | series=Cambridge Tracts in Mathematics | volume=87 | publisher=[[Cambridge University Press]] | year=1986 | isbn=978-0-521-26826-4 | zbl=0606.10011 | page=202 |mr=0891406}}</ref>  called the generalized Tijdeman problem. It  is conjectured that this set also will be finite. This would follow from a yet stronger conjecture of [[Subbayya Sivasankaranarayana Pillai]] (1931), see [[Catalan's conjecture]], stating that the equation <math>A y^m = B x^n + k</math> only has a finite number of solutions.  The truth of Pillai's conjecture, in turn, would follow from the truth of the [[abc conjecture]].<ref>{{harvtxt|Narkiewicz|2011}}, pp. 253–254</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Theorems in number theory]]
+[[Category:Diophantine equations]]
+[[Category:Abc conjecture]]

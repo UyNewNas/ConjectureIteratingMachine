@@ -1,0 +1,10 @@
+In [[mathematics]], specifically [[complex analysis]], the '''Brennan conjecture''' is a [[conjecture]] estimating (under specified conditions) the integral powers of the moduli of the [[derivative]]s of [[conformal map]]s into the [[open unit disk]]. The conjecture was formulated by James E. Brennan in 1978.<ref name=Brennan>{{cite journal|author=Brennan, James E.|title=The integrability of the derivative in conformal mapping|journal=Journal of the London Mathematical Society|volume=2|issue=2|year=1978|pages=261–272|doi=10.1112/jlms/s2-18.2.261}}</ref><ref>{{MathGenealogy|id=4387|title=James E. Brennan}}</ref><ref>{{cite web|title=A brief review on Brennan's conjecture, Malaga, July 10–14, 2011|author=Stylogiannis, Georgios (Aristotle University of Thessaloniki, Greece)|url=https://www.uma.es/charm2011/talks/02-1930-GStylogiannis.pdf}}</ref>
+
+Let {{mvar|W}} be a [[simply connected]] [[open subset]] of <math>\mathbb{C}</math> with at least two boundary points in the [[Riemann sphere#Extended complex numbers|extended complex plane]]. Let <math>\varphi</math> be a conformal map of {{mvar|W}} onto the open unit disk. The '''Brennan conjecture''' states that
+<math>\int_W |\varphi\ '|^p\, \mathrm{d}x\, \mathrm{d}y < \infty</math> whenever <math>4/3 < p < 4</math>. Brennan [[mathematical proof|proved]] the result when <math>4/3 < p < p_0</math> for some constant <math>p_0 > 3</math>.<ref name=Brennan/> Bertilsson proved in 1999 that the result holds when <math>4/3 < p < 3.422</math>, but the full result remains open.<ref>{{cite arXiv|author=Hu. J.|author2=Chen, S.|title=A better lower bound estimation of Brennan's conjecture|year=2015|eprint=1509.00270|class=math.CV}}</ref><ref>{{cite book|author=Bertilsson, Daniel|title=On Brennan's conjecture in conformal mapping|publisher=Kungliga Tekniska Högskolan|year=1999|postscript=; 110 pages|url=http://www.diva-portal.org/smash/get/diva2:8593/FULLTEXT01.pdf}}</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

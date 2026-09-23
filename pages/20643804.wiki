@@ -1,0 +1,134 @@
+{{Short description|Conjecture that states that certain assembly maps are isomorphisms}}
+In mathematics, the '''Farrell–Jones conjecture''',<ref>[[F. Thomas Farrell|Farrell, F. Thomas]], [[Lowell E. Jones|Jones, Lowell E.]], Isomorphism conjectures in algebraic K-theory, ''[[Journal of the American Mathematical Society]]'', v. 6, pp. 249&ndash;297, 1993</ref> named after [[F. Thomas Farrell]] and [[Lowell E. Jones]], states that certain [[assembly map]]s are [[isomorphism]]s. These maps are given as certain [[homomorphism]]s.
+
+The motivation is the interest in the target of the assembly maps; this may be, for instance, the [[algebraic K-theory]] of a [[group ring]]
+
+:<math>K_n(RG)</math>
+
+or the [[L-theory]] of a group ring
+
+:<math>L_n(RG),</math>
+
+where ''G'' is some [[group (mathematics)|group]].
+
+The sources of the assembly maps are [[equivariant homology theory]] evaluated on the [[classifying space]] of ''G'' with respect to the family of [[virtually cyclic group|virtually cyclic subgroup]]s of ''G''. So assuming the Farrell–Jones conjecture is true, it is possible to restrict computations to virtually cyclic subgroups to get information on complicated objects such as <math>K_n(RG)</math> or <math>L_n(RG)</math>.
+
+The [[Baum–Connes conjecture]] formulates a similar statement, for the [[topological K-theory]] of reduced group <math>C^*</math>-algebras <math>K^ {top}_n(C^r_*(G))</math>.
+
+==Formulation==
+
+One can find for any ring <math> R</math> [[Equivariant cohomology|equivariant homology theories]] <math>KR^?_*,LR^?_*</math> satisfying
+
+: <math>KR_n^G(\{\cdot\})\cong K_n(R[G])</math> respectively <math>LR_n^G(\{\cdot\})\cong L_n(R[G]).</math>
+
+Here <math>R[G]</math> denotes the [[group ring]].
+
+The K-theoretic Farrell–Jones conjecture for a group ''G'' states that the map <math>p:E_{VCYC}(G)\rightarrow \{\cdot\}</math> induces an isomorphism on homology
+
+:<math>KR_*^G(p):KR_*^G(E_{VCYC}(G))\rightarrow KR_*^G(\{\cdot\})\cong K_*(R[G]).</math>
+
+Here <math>E_{VCYC}(G)</math> denotes the [[classifying spaces for families|classifying space]] of the group ''G'' with respect to the family of virtually cyclic subgroups, i.e. a ''G''-CW-complex whose [[isotropy group]]s are virtually cyclic and for any virtually cyclic subgroup of ''G'' the [[fixed point set]] is [[contractible]].
+
+The L-theoretic Farrell–Jones conjecture is analogous.
+
+== Computational aspects ==
+The computation of the algebraic K-groups and the L-groups of a group ring <math>R[G]</math> is motivated by obstructions living in those groups (see for example [[Wall's finiteness obstruction]], [[surgery obstruction]], [[Whitehead torsion]]). So suppose a group <math>G</math> satisfies the Farrell–Jones conjecture for algebraic K-theory. Suppose furthermore we have already found a model <math>X</math> for the classifying space for virtually cyclic subgroups:
+
+: <math> \emptyset=X^{-1}\subset X^0\subset X^1\subset \ldots \subset X </math>
+
+Choose <math>G</math>-pushouts and apply the [[Mayer–Vietoris sequence|Mayer-Vietoris sequence]] to them:
+
+: <math> KR_n^G(\coprod_{j\in I_i} G/H_j\times S^{i-1})\rightarrow KR_n^G(\coprod_{j\in I_i} G/H_j\times D^i)\oplus KR_n^G(X^{i-1})\rightarrow KR_n^G(X^i) </math><math>\rightarrow KR_{n-1}^G(\coprod_{j\in I_i} G/H_j\times S^{i-1})\rightarrow KR_{n-1}^G(\coprod_{j\in I_i} G/H_j\times D^i)\oplus KR_{n-1}^G(X^{i-1}) </math>
+
+This sequence simplifies to:
+
+: <math> \bigoplus_{j\in I_i}K_n(R[H_j])\oplus \bigoplus_{j\in I_i} K_{n-1}(RH_j)\rightarrow \bigoplus_{j\in I_i} K_n(RH_j)\oplus KR_n^G(X^{i-1})\rightarrow KR_n^G(X^i) </math><math>\rightarrow \bigoplus_{j\in I_i}K_{n-1}(RH_j)\oplus\bigoplus_{j\in I_i}K_{n-2}(RH_j)\rightarrow \bigoplus_{j\in I_i} K_{n-1}(RH_j)\oplus KR^G_{n-1}(X^{i-1}) </math>
+
+This means that if any group satisfies a certain isomorphism conjecture one can compute its algebraic K-theory (L-theory) only by knowing the algebraic K-Theory (L-Theory) of virtually cyclic groups and by knowing a suitable model for <math> E_{VCYC}(G)</math>.
+
+===Why the family of virtually cyclic subgroups? ===
+One might also try to take for example the family of finite subgroups into account. This family is much easier to handle. Consider the infinite cyclic group <math> \Z </math>. A model for <math>E_{FIN}(\Z)</math> is given by the real line <math>\R</math>, on which <math>\Z</math> acts freely by translations. Using the properties of equivariant K-theory we get
+
+: <math>K_n^\Z(\R)=K_n(S^1)=K_n(pt)\oplus K_{n-1}(pt)=K_n(R)\oplus K_{n-1}(R).</math>
+
+The [[Bass-Heller-Swan decomposition]] gives
+
+: <math>K_n^\Z(pt)=K_n(R[\Z])\cong K_n(R)\oplus K_{n-1}(R)\oplus NK_n(R)\oplus NK_n(R).</math>
+
+Indeed one checks that the assembly map is given by the canonical inclusion.
+
+: <math>K_n(R)\oplus K_{n-1}(R)\hookrightarrow K_n(R)\oplus K_{n-1}(R)\oplus NK_n(R)\oplus NK_n(R)</math>
+
+So it is an isomorphism if and only if <math>NK_n(R) =0</math>, which is the case if <math>R</math> is a [[regular ring]]. So in this case one can really use the family of finite subgroups. On the other hand this shows that the isomorphism conjecture for algebraic K-Theory and the family of finite subgroups is not true. One has to extend the conjecture to a larger family of subgroups which contains all the counterexamples. Currently no counterexamples for the Farrell–Jones conjecture are known. If there is a counterexample, one has to enlarge the family of subgroups to a larger family which contains that counterexample.
+
+== Inheritances of isomorphism conjectures ==
+The class of groups which satisfies the fibered Farrell–Jones conjecture contain the following groups
+
+* virtually cyclic groups (definition)
+* [[hyperbolic group]]s (see <ref>{{cite arXiv | last1=Bartels | first1=Arthur | authorlink=Arthur Bartels | last2=Lück | first2 = Wolfgang | authorlink2=Wolfgang Lück| last3=Reich | first3=Holger| eprint=math/0609685 | title=The K-theoretic Farrell-Jones Conjecture for hyperbolic groups |mode=cs2| year=2006 }}</ref>)
+* [[CAT(0) group]]s (see <ref>{{Citation | last1=Bartels | first1=Arthur | last2=Lück | first2 = Wolfgang |authorlink2=Wolfgang Lück| last3=Reich | first3=Holger| arxiv=0901.0442 | title=The Borel Conjecture for hyperbolic and CAT(0)-groups | year= 2009 |mode=cs2}}</ref>)
+* [[solvable group]]s (see <ref>{{Citation | last1=Wegner | first1=Christian | arxiv=1308.2432 | title=The Farrell–Jones conjecture for virtually solvable groups | journal=Journal of Topology | year= 2013| volume=8 | issue=4 | pages=975–1016 | doi=10.1112/jtopol/jtv026 | bibcode=2013arXiv1308.2432W | s2cid=119153966 }}</ref>)
+* [[mapping class group]]s (see <ref>{{cite arXiv | last1=Bartels | first1=Arthur | last2=Bestvina | first2 = Mladen| authorlink2=Mladen Bestvina| eprint=1606.02844 | title=The Farrell-Jones Conjecture for mapping class groups | year= 2016 |mode=cs2| class=math.GT }}</ref>)
+
+Furthermore the class has the following inheritance properties:
+
+* Closed under finite products of groups.
+* Closed under taking subgroups.
+
+== Meta-conjecture and fibered isomorphism conjectures ==
+
+Fix an equivariant homology theory <math>H^?_*</math>. One could say, that a group '' G'' satisfies the isomorphism conjecture for a family of subgroups<math> F</math>, if and only if the map induced by the projection <math> E_F(G)\rightarrow \{\cdot\} </math> induces an isomorphism on homology:
+
+: <math> H_*^G(E_F(G))\rightarrow H_*^G(\{\cdot\}) </math>
+
+The group ''G'' satisfies the fibered isomorphism conjecture for the family of subgroups ''F'' if and only if for any [[group homomorphism]] <math> \alpha :H\rightarrow G</math> the group ''H'' satisfies the isomorphism conjecture for the family
+
+: <math>\alpha^*F:=\{H'\le H|\alpha(H)\in F\}</math>.
+
+One gets immediately that in this situation <math>H</math> also satisfies the fibered isomorphism conjecture for the family <math>\alpha^*F</math>.
+
+===Transitivity principle===
+
+The transitivity principle is a tool to change the family of subgroups to consider. Given two families <math>F\subset F'</math> of subgroups of <math> G</math>. Suppose every group <math> H\in F'</math> satisfies the (fibered) isomorphism conjecture with respect to the family <math> F|_H:=\{H'\in F|H'\subset H\}</math>.
+Then the group <math>G</math> satisfies the fibered isomorphism conjecture with respect to the family <math>F</math> if and only if it satisfies the (fibered) isomorphism conjecture with respect to the family <math>F'</math>.
+
+===Isomorphism conjectures and group homomorphisms===
+
+Given any group homomorphism <math>\alpha\colon H\rightarrow G</math> and suppose that ''G"' satisfies the fibered isomorphism conjecture for a family ''F'' of subgroups. Then also ''H"' satisfies the fibered isomorphism conjecture for the family <math> \alpha^*F</math>. For example if <math> \alpha</math> has finite kernel the family <math> \alpha^*VCYC </math> agrees with the family of virtually cyclic subgroups of ''H''.
+
+For suitable <math>\alpha</math> one can use the transitivity principle to reduce the family again.
+
+== Connections to other conjectures==
+
+===Novikov conjecture ===
+
+There are also connections from the Farrell–Jones conjecture to the [[Novikov conjecture]]. It is known that if one of the following maps
+
+: <math>H^G_*(E_{VCYC}(G),L^{\langle-\infty\rangle}_R)\rightarrow H^G_*(\{\cdot\},L^{\langle-\infty\rangle}_R)= L^{\langle-\infty\rangle}_*(RG)</math>
+
+: <math> H^G_*(E_{FIN}(G),K^{top}) \rightarrow H^G_*(\{\cdot\},K^{top}) = K_n(C^*_r(G))</math>
+
+is rationally injective, then the Novikov-conjecture holds for <math>G</math>. See for example,.<ref>{{cite book|last=Ranicki|first= Andrew A.|authorlink=Andrew Ranicki|contribution=On the Novikov conjecture|title= Novikov conjectures, index theorems and rigidity, Vol. 1'', (Oberwolfach 2003)''|pages=272–337|publisher= [[Cambridge University Press]]|location= Cambridge, UK}}</ref><ref>{{cite book|last1=Lück|first1= Wolfgang|authorlink1=Wolfgang Lück| last2=Reich|first2= Holger| contribution=The Baum-Connes and the Farrell-Jones conjectures in K- and L-theory|title= Handbook of K-theory. Vol. 1,2|pages = 703–842|publisher= Springer|location= Berlin|year= 2005}}</ref>
+
+===Bost conjecture ===
+
+The Bost conjecture (named for [[Jean-Benoît Bost]]) states that the assembly map
+
+:<math> H^G_*(E_{FIN}(G),K^{top}_{l^1})\rightarrow H^G_*(\{\cdot\},K^{top}_{l^1})=K_*(l^1(G)) </math>
+
+is an isomorphism. The ring homomorphism <math> l^1(G)\rightarrow C_r(G)</math> induces maps in K-theory <math>K_*(l^1(G))\rightarrow K_*(C_r(G))</math>. Composing the upper assembly map with this homomorphism one gets exactly the assembly map occurring in the [[Baum–Connes conjecture]].
+
+:<math> H^G_*(E_{FIN}(G),K^{top}_{l^1})=H^G_*(E_{FIN}(G),K^{top})\rightarrow H^G_*(\{\cdot\},K^{top})=K_*(C_r(G))</math>
+
+===Kaplansky conjecture ===
+
+The [[Kaplansky's conjecture|Kaplansky conjecture]] predicts that for an [[integral domain]] <math>R</math> and a torsion-free group <math>G</math> the only idempotents in <math>R[G]</math> are <math>0,1</math>. Each such idempotent <math>p</math> gives a projective <math>R[G]</math> module by taking the image of the right multiplication with <math>p</math>. Hence there seems to be a connection between the Kaplansky conjecture and the vanishing of <math>K_0(R[G])</math>.  There are theorems relating the Kaplansky conjecture to the Farrell–Jones conjecture (compare <ref>{{Citation | doi=10.1112/jtopol/jtm008 | last1=Bartels | first1=Arthur | last2=Lück | first2=Wolfgang | authorlink2=Wolfgang Lück | last3= Reich | first3=Holger | title=On the Farrell-Jones Conjecture and its applications | arxiv=math/0703548| journal=Journal of Topology | volume=1 | year=2008 | issue=1 | pages = 57–86| s2cid=17731576 }}</ref>).
+
+==References==
+<references/>
+
+{{DEFAULTSORT:Farrell-Jones Conjecture}}
+[[Category:Surgery theory]]
+[[Category:K-theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

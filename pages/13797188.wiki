@@ -1,0 +1,46 @@
+The '''Vaught conjecture''' is a [[conjecture]] in the [[mathematics|mathematical]] field of [[model theory]] originally proposed by [[Robert Lawson Vaught]] in 1961.  It states that the  number of [[countable]] [[model (logic)|model]]s of a [[first-order logic|first-order]] [[complete theory]] in a countable language is finite or ℵ<sub>0</sub> or 2{{sup|ℵ<sub>0</sub>}}.  [[Michael D. Morley|Morley]] showed that the number of countable models is finite or ℵ<sub>0</sub> or ℵ<sub>1</sub> or 2{{sup|ℵ<sub>0</sub>}}, which solves the conjecture except for the case of ℵ<sub>1</sub> models when the [[continuum hypothesis]] fails. For this remaining case,  {{harvs|txt|first=Robin |last=Knight|year1=2002|year2=2007}} has announced a counterexample to the Vaught conjecture and the [[Vaught conjecture#Topological Vaught conjecture|topological Vaught conjecture]]. As of 2021, the counterexample has not been verified.
+
+==Statement of the conjecture==
+Let <math>T</math> be a first-order, countable, complete theory with infinite models.  Let <math>I(T, \alpha)</math> denote the number of models of ''T'' of cardinality <math>\alpha</math> up to isomorphism—the [[spectrum of a theory|spectrum]] of the theory <math>T</math>.  Morley [[mathematical proof|proved]] that if ''I''(''T'',&nbsp;ℵ<sub>0</sub>) is infinite then it must be ℵ<sub>0</sub> or ℵ<sub>1</sub> or the [[cardinality of the continuum]]. The Vaught conjecture is the statement that it is not possible for <math>\aleph_{0} < I(T,\aleph_{0}) < 2^{\aleph_{0}}</math>. The conjecture is a trivial consequence of the [[continuum hypothesis]]; so this axiom is often excluded in work on the conjecture. Alternatively, there is a sharper form of the conjecture that states that any countable complete ''T'' with uncountably many countable models will have a perfect set of uncountable models (as pointed out by [[John R. Steel|John Steel]], in "On Vaught's conjecture". [[Cabal (set theory)|Cabal Seminar]] 76–77 (Proc. Caltech-UCLA Logic Sem., 1976–77), pp.&nbsp;193–208, Lecture Notes in Math., 689, Springer, Berlin, 1978, this form of the Vaught conjecture is equiprovable with the original).
+
+===Original formulation===
+The original formulation by Vaught was not stated as a conjecture, but as a problem: ''Can it  be proved, without the use of the continuum hypothesis, that there exists a complete theory having exactly'' ℵ<sub>1</sub> ''non-isomorphic denumerable  models?'' By the result by Morley mentioned at the beginning, a positive solution to the conjecture essentially corresponds to a negative answer to Vaught's problem as originally stated.
+
+==Vaught's theorem==
+
+Vaught proved that the number of countable models of a complete theory cannot be 2. It can be any finite number other than 2, for example:
+*Any complete theory with a finite model has no countably infinite models.
+*The theories with just one countable model are the [[Omega-categorical theory|ω-categorical theories]]. There are many examples of these, such as the theory of an infinite set, or the theory of a [[dense order|dense]] unbounded [[total order]].
+*[[Andrzej Ehrenfeucht|Ehrenfeucht]] gave the following example of a theory with 3 countable models: the language has a relation ≥ and a countable number of constants ''c''<sub>0</sub>, ''c''<sub>1</sub>, ... with axioms stating that ≥ is a dense unbounded total order, and ''c''<sub>0</sub> < ''c''<sub>1</sub> < ''c''<sub>2</sub> < ... The three models differ according to whether this [[sequence]] is unbounded, or [[convergent sequence|converges]], or is bounded but does not converge.
+*Ehrenfeucht's example can be modified to give a theory with any finite number ''n''&nbsp;≥&nbsp;3 of models by adding ''n''&nbsp;&minus;&nbsp;2 unary relations ''P''<sub>''i''</sub> to the language, with axioms stating that for every ''x'' exactly one of the ''P''<sub>''i''</sub> is true, the values of ''y'' for which ''P''<sub>''i''</sub>(''y'') is true are dense, and ''P''<sub>1</sub> is true for all ''c''<sub>''i''</sub>. Then the models for which the sequence of elements ''c''<sub>''i''</sub> converge to a limit ''c'' split into ''n''&nbsp;&minus;&nbsp;2 cases depending on for which ''i'' the relation ''P''<sub>''i''</sub>(''c'') is true.
+
+The idea of the proof of Vaught's theorem is as follows. If there are at most countably many  countable models, then there is a smallest one: the [[atomic model (mathematical logic)|atomic model]], and a largest one, the [[saturated model]], which are different if there is more than one model. If they are different, the saturated model must realize  some [[type (model theory)|''n''-type]] omitted by the atomic model. Then one can show that an atomic model of the theory of structures realizing this ''n''-type (in a language expanded by finitely many constants) is a third model, not isomorphic to either the atomic or the saturated model. In the example above with 3 models, the atomic model is the one where the sequence is unbounded, the saturated model is the one where the sequence converges, and an example of a type not realized by the atomic model is an element greater than all elements of the sequence.
+
+==Topological Vaught conjecture==
+
+The topological Vaught conjecture is the statement that whenever a [[Polish_space#Polish_groups|Polish group]] [[group action|acts]] continuously on a [[Polish space]], there are either countably many [[Group_action#Orbits_and_stabilizers|orbits]] or continuum many orbits. The topological Vaught conjecture is more general than the original Vaught conjecture: Given a countable language we can form the space of all structures on the [[natural number]]s for that language. If we equip this with the [[topological space|topology]] generated by first-order formulas, then it is known from [[Andrzej Grzegorczyk|A. Gregorczyk]], [[A. Mostowski]], [[Czesław Ryll-Nardzewski|C. Ryll-Nardzewski]], "Definability of sets of models of axiomatic theories" (''Bulletin of the Polish Academy of Sciences (series Mathematics, Astronomy, Physics)'', vol. 9 (1961), pp.&nbsp;163–7) that the resulting space is Polish. There is a continuous action of the infinite [[symmetric group]] (the collection of all permutations of the natural numbers with the topology of point-wise convergence) that gives rise to the [[equivalence relation]] of isomorphism. Given a complete first-order theory ''T'', the set of structures satisfying ''T'' is a minimal, [[closed set|closed]] invariant set, and hence Polish in its own right.
+
+==See also==
+* [[Spectrum of a theory]]
+* [[Morley's categoricity theorem]]
+
+==References==
+*{{citation|last=Knight|first=R. W.|title=The Vaught Conjecture: A Counterexample|publisher= manuscript|year= 2002 |url=http://www.maths.ox.ac.uk/~knight/stuff/example.ps}}
+*{{Citation | last1=Knight | first1=R. W. | title=Categories of topological spaces and scattered theories | doi=10.1305/ndjfl/1172787545 | doi-access=free | mr=2289897 | year=2007 | journal=[[Notre Dame Journal of Formal Logic]] | issn=0029-4527 | volume=48 | issue=1 | pages=53–77| url=http://projecteuclid.org/euclid.ndjfl/1172787545 | url-access=subscription }}
+* R. Vaught,   "Denumerable models of complete theories", Infinitistic Methods (Proc. Symp. Foundations Math., Warsaw, 1959) Warsaw/Pergamon Press (1961)  pp.&nbsp;303–321
+* {{citation
+| last1=Harrington | first1=Leo | authorlink1=Leo Harrington
+| last2=Makkai | first2=Michael | authorlink2=Michael Makkai
+| last3=Shelah | first3=Saharon | authorlink3=Saharon Shelah
+| title=A proof of Vaught's conjecture for ω-stable theories
+| journal=[[Israel Journal of Mathematics]]
+| volume=49
+| date=1984
+| issue=1–3 | pages=259&ndash;280
+| doi=10.1007/BF02760651 | doi-access=}}
+* {{citation | last=Marker | first=David | title=Model theory: An introduction | series=Graduate Texts in Mathematics | volume=217 | location=New York, NY | publisher=[[Springer-Verlag]] | year=2002 | isbn=0-387-98760-6 | zbl=1003.03034 }}
+
+{{DEFAULTSORT:Vaught Conjecture}}
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Model theory]]

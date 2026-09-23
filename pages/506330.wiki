@@ -1,0 +1,231 @@
+{{Short description|Problem in computational complexity theory}}
+{{CS1 config|mode=cs2}}
+
+{{unsolved|computer science|Is there an algorithm to solve the 3SUM problem in time  <math>O(n^{2-\epsilon})</math>, for some <math>\epsilon>0</math>?}}
+In [[computational complexity theory]], the '''3SUM''' problem asks if a given set of <math>n</math> real numbers contains three elements that sum to zero.  A generalized version, <math>k</math>-SUM, asks the same question on <math>k</math> elements, rather than simply 3. 3SUM can be easily solved in <math>O(n^2)</math> time, and matching <math>\Omega(n^{\lceil k/2 \rceil})</math> lower bounds are known in some specialized [[models of computation]] {{harv|Erickson|1999}}.
+
+It was conjectured that any [[deterministic algorithm]] for the 3SUM requires <math> \Omega(n^2) </math> time.
+In 2014, the original 3SUM conjecture was refuted by Allan Grønlund and Seth Pettie who gave a deterministic algorithm that solves 3SUM in <math>O(n^2 / ({\log n} / {\log \log n})^{2/3})</math> time.{{sfn|Grønlund|Pettie|2018}}
+Additionally, Grønlund and Pettie showed that the 4-[[Decision tree model#Linear decision tree|linear decision tree]] complexity of 3SUM is <math> O(n^{3/2}\sqrt{\log n}) </math>.
+These bounds were subsequently improved.{{sfn|Freund|2017}}{{sfn|Gold|Sharir|2017}}{{sfn|Chan|2020}}
+The current best known algorithm for 3SUM runs in <math>O(n^2 (\log \log n)^{O(1)} / {\log^2 n}) </math> time.{{sfn|Chan|2020}}
+Kane, Lovett, and Moran showed that the 6-linear decision tree complexity of 3SUM is <math>O(n{\log^2 n})</math>.{{sfn|Kane|Lovett|Moran|2018}} The latter bound is tight (up to a logarithmic factor).  
+It is still conjectured that 3SUM is unsolvable in <math>O(n^{2-\Omega(1)})</math> expected time.<ref name=kpp14/>
+
+When the elements are integers in the range <math>[-N, \dots, N]</math>, 3SUM can be solved in <math>O(n + N\log N)</math> time by representing the input set <math>S</math> as a [[Bit array|bit vector]], computing the set <math>S+S</math> of all pairwise sums as a [[discrete convolution]] using the [[fast Fourier transform]], and finally comparing this set to <math>S</math>.<ref>{{Introduction to Algorithms|edition=3}} Ex. 30.1–7, p.&nbsp;906.</ref>
+
+== Quadratic algorithm ==
+Suppose the input array is <math>S[0..n-1]</math>.  In integer ([[word RAM]]) models of computing, 3SUM can be solved in <math>O(n^2)</math> time on average by inserting each number <math>S[i]</math> into a [[hash table]], and then, for each index <math>i</math> and <math>j</math>, checking whether the hash table contains the integer <math>-(S[i]+S[j])</math>.
+
+It is also possible to solve the problem in the same time in a [[Comparison (computer programming)|comparison]]-based model of computing or [[real RAM]], for which hashing is not allowed. The algorithm below first sorts the input array and then tests all possible pairs in a careful order that avoids the slowdown of a [[binary search]] per pair, achieving worst-case <math>O(n^2)</math> time, as follows.<ref>[http://www.ti.inf.ethz.ch/ew/courses/CG09/materials/v12.pdf Visibility Graphs and 3-Sum] by Michael Hoffmann</ref>
+ sort(S);
+ '''for''' i = 0 '''to''' n - 2 '''do'''
+     a = S[i];
+     start = i + 1;
+     end = n - 1;
+     '''while''' (start < end) '''do'''
+         b = S[start]
+         c = S[end];
+         '''if''' (a + b + c == 0) '''then'''
+             '''output''' a, b, c;
+             // Continue search for all triplet combinations summing to zero.
+             // We need to update both end and start together since the array values are distinct.
+             start = start + 1;
+             end = end - 1;
+         '''else''' '''if''' (a + b + c > 0) '''then'''
+             end = end - 1;
+         '''else'''
+             start = start + 1;
+     '''end'''
+ '''end'''
+
+The following example shows this algorithm's execution on a small [[sorted array]]. Current values of '''a''' are shown in red, values of '''b''' and '''c''' are shown in magenta.
+  <span style="color:red">-25</span> <span style="color:magenta">-10</span> -7 -3 2 4 8 <span style="color:magenta">10</span>  (a+b+c==-25)
+  <span style="color:red">-25</span> -10 <span style="color:magenta">-7</span> -3 2 4 8 <span style="color:magenta">10</span>  (a+b+c==-22)
+  . . .
+  <span style="color:red">-25</span> -10 -7 -3 2 4 <span style="color:magenta">8</span> <span style="color:magenta">10</span>  (a+b+c==-7)
+  -25 <span style="color:red">-10</span> <span style="color:magenta">-7</span> -3 2 4 8 <span style="color:magenta">10</span>  (a+b+c==-7)
+  -25 <span style="color:red">-10</span> -7 <span style="color:magenta">-3</span> 2 4 8 <span style="color:magenta">10</span>  (a+b+c==-3)
+  -25 <span style="color:red">-10</span> -7 -3 <span style="color:magenta">2</span> 4 8 <span style="color:magenta">10</span>  (a+b+c==2)
+  -25 <span style="color:red">-10</span> -7 -3 <span style="color:magenta">2</span> 4 <span style="color:magenta">8</span> 10  (a+b+c==0)
+
+The correctness of the algorithm can be seen as follows. Suppose we have a solution a + b + c = 0. Since the pointers only move in one direction, we can run the algorithm until the leftmost pointer points to a. Run the algorithm until either one of the remaining pointers points to b or c, whichever occurs first. Then the algorithm will run until the last pointer points to the remaining term, giving the affirmative solution.
+
+== Variants ==
+
+=== Non-zero sum ===
+Instead of looking for numbers whose sum is 0, it is possible to look for numbers whose sum is any constant ''C''. The simplest way would be to modify the original algorithm to search the hash table for the integer {{tmath|1=(C -(S[i]+S[j]))}}.
+
+Another method:
+* Subtract ''C''/3 from all elements of the input array.
+* In the modified array, find 3 elements whose sum is 0.
+
+For example, if A=[1,2,3,4] and if you are asked to find 3SUM for ''C''=4, then subtract 4/3 from all the elements of A, and solve it in the usual 3sum way, i.e., {{tmath|1=(a-C/3) + (b-C/3) + (c-C/3) = 0}}.
+
+=== Three different arrays ===
+Instead of searching for the 3 numbers in a single array, we can search for them in 3 different arrays. I.e., given three arrays X, Y and Z, find three numbers {{math|''a''∈''X'', ''b''∈''Y'', ''c''∈''Z''}}, such that {{tmath|a+b+c{{=}}0}}. Call the 1-array variant 3SUM&times;1 and the 3-array variant 3SUM&times;3.
+
+Given a solver for 3SUM&times;1, the 3SUM&times;3 problem can be solved in the following way (assuming all elements are integers): 
+* For every element in ''X'', ''Y'' and ''Z'', set: {{tmath|X[i] \gets X[i]*10+1}}, {{tmath|Y[i] \gets Y[i]*10+2}}, {{tmath|Z[i] \gets Z[i]*10-3}}.
+* Let ''S'' be a concatenation of the arrays ''X'', ''Y'' and ''Z''.
+* Use the 3SUM&times;1 oracle to find three elements {{tmath|a' \in S,\ b' \in S,\ c' \in S}} such that {{tmath|a'+b'+c'{{=}}0}}.
+* Return {{tmath|a \gets (a'-1)/10,\ b \gets (b'-2)/10,\ c \gets (c'+3)/10}}. 
+By the way we transformed the arrays, it is guaranteed that {{math|''a''∈''X'', ''b''∈''Y'', ''c''∈''Z''}}.<ref>For a reduction in the other direction, see [https://cs.stackexchange.com/q/37888 Variants of the 3-sum problem].</ref>
+
+=== Convolution sum ===
+Instead of looking for arbitrary elements of the array such that:
+:<math>S[k]=S[i]+S[j]</math>
+the ''convolution 3sum'' problem (Conv3SUM) looks for elements in specific locations:<ref name=patrascu10>{{citation | doi = 10.1145/1806689.1806772| contribution = Towards polynomial lower bounds for dynamic problems| title = Proceedings of the 42nd ACM symposium on Theory of computing - STOC '10| pages = 603–610| year = 2010| last1 = Patrascu | first1 = M. | isbn = 9781450300506}}</ref>
+:<math>S[i+j]=S[i]+S[j]</math>
+
+==== Reduction from Conv3SUM to 3SUM ====
+Given a solver for 3SUM, the Conv3SUM problem can be solved in the following way.<ref name=patrascu10/>
+* Define a new array ''T'', such that for every index ''i'': <math>T[i]=2n S[i]+i</math> (where ''n'' is the number of elements in the array, and the indices run from 0 to ''n''-1).
+* Solve 3SUM on the array ''T''.
+
+Correctness proof:
+* If in the original array there is a triple with <math>S[i+j]=S[i]+S[j]</math>, then <math>T[i+j]=2n S[i+j]+i+j = (2n S[i] + i) + (2n S[j] + j)=T[i]+T[j]</math>, so this solution will be found by 3SUM on ''T''.
+* Conversely, if in the new array there is a triple with <math>T[k]=T[i]+T[j]</math>, then <math>2n S[k] + k = 2n(S[i]+S[j]) + (i+j)</math>. Because <math>i+j<2n</math>, necessarily <math>S[k] = S[i]+S[j]</math> and <math>k=i+j</math>, so this is a valid solution for Conv3SUM on ''S''.
+
+==== Reduction from 3SUM to Conv3SUM ====
+Given a solver for Conv3SUM, the 3SUM problem can be solved in the following way.<ref name=kpp14>{{Cite arXiv|eprint=1407.6756|last1=Kopelowitz|first1=Tsvi|title=3SUM Hardness in (Dynamic) Data Structures|last2=Pettie|first2=Seth|last3=Porat|first3=Ely|class=cs.DS|year=2014|mode=cs2}}</ref><ref name=patrascu10/>
+
+The reduction uses a [[hash function]]. As a first approximation, assume that we have a linear hash function, i.e. a function ''h'' such that:
+:<math>h(x+y)=h(x)+h(y)</math>
+Suppose that all elements are integers in the range: 0...''N''−1, and that the function ''h'' maps each element to an element in the smaller range of indices: 0...''n''−1. Create a new array ''T'' and send each element of ''S'' to its hash value in ''T'', i.e., for every ''x'' in ''S''({{tmath|\forall x \in S}}):
+:<math>T[h(x)] = x</math>
+Initially, suppose that the mappings are unique (i.e. each cell in ''T'' accepts only a single element from ''S''). Solve Conv3SUM on ''T''. Now:
+* If there is a solution for 3SUM: <math>z=x+y</math>, then: <math>T[h(z)]=T[h(x)]+T[h(y)]</math> and <math>h(z)=h(x)+h(y)</math>, so this solution will be found by the Conv3SUM solver on ''T''.
+* Conversely, if a Conv3SUM is found on ''T'', then obviously it corresponds to a 3SUM solution on ''S'' since ''T'' is just a permutation of ''S''.
+
+This idealized solution doesn't work, because any hash function might map several distinct elements of ''S'' to the same cell of ''T''. The trick is to create an array {{tmath|T^*}} by selecting a single random element from each cell of ''T'', and run Conv3SUM on {{tmath|T^*}}. If a solution is found, then it is a correct solution for 3SUM on ''S''. If no solution is found, then create a different random {{tmath|T^*}} and try again. Suppose there are at most ''R'' elements in each cell of ''T''. Then the probability of finding a solution (if a solution exists) is the probability that the random selection will select the correct element from each cell, which is <math>(1/R)^3</math>. By running Conv3SUM <math>R^3</math> times, the solution will be found with a high probability.
+
+Unfortunately, we do not have linear perfect hashing, so we have to use an [[almost linear hash function]], i.e. a function ''h'' such that:
+:<math>h(x+y)=h(x)+h(y)</math> or
+:<math>h(x+y)=h(x)+h(y)+1</math>
+This requires to duplicate the elements of ''S'' when copying them into ''T'', i.e., put every element <math>x\in S</math> both in <math>T[h(x)]</math> (as before) and in <math>T[h(x)]-1</math>. So each cell will have 2''R'' elements, and we will have to run Conv3SUM <math>(2R)^3</math> times.
+
+== 3SUM-hardness ==
+A problem is called '''3SUM-hard''' if solving it in [[subquadratic time]] implies a subquadratic-time [[algorithm]] for 3SUM.  The concept of 3SUM-hardness was introduced by {{harvtxt|Gajentaan|Overmars|1995}}. They proved that a large class of problems in [[computational geometry]] are 3SUM-hard, including the following ones. (The authors acknowledge that many of these problems are contributed by other researchers.)
+
+* Given a set of lines in the plane, are there three that meet in a point?
+* Given a set of non-intersecting axis-parallel line segments, is there a line that separates them into two non-empty subsets?
+* Given a set of infinite strips in the plane, do they fully cover a given rectangle?
+* Given a set of triangles in the plane, compute their measure.
+* Given a set of triangles in the plane, does their union have a hole?
+* A number of visibility and [[motion planning]] problems, e.g.,
+** Given a set of horizontal triangles in space, can a particular triangle be seen from a particular point?
+** Given a set of non-intersecting axis-parallel line segment obstacles in the plane, can a given rod be moved by translations and rotations between a start and finish positions without colliding with the obstacles?
+
+By now there are a multitude of other problems that fall into this category. An example is the decision version of [[X + Y sorting]]: given sets of numbers {{mvar|X}} and {{mvar|Y}} of {{mvar|n}} elements each, are there {{mvar|''n''²}} distinct {{math|''x'' + ''y''}} for {{math|''x'' ∈ ''X'', ''y'' ∈ ''Y''}}?<ref>{{citation |first1=Erik |last1=Demaine |author-link1=Erik Demaine |first2=Jeff |last2=Erickson |first3=Joseph |last3=O'Rourke |title=Problem 41: Sorting X + Y (Pairwise Sums) |date=20 August 2006 |access-date=23 September 2014 |website=The Open Problems Project |url=http://cs.smith.edu/~orourke/TOPP/P41.html}}</ref>
+
+== See also ==
+* [[Subset sum problem]]
+
+== Notes ==
+{{Reflist}}
+
+== References ==
+*{{citation |last1=Kane |first1=Daniel M. |last2=Lovett |first2=Shachar |last3=Moran |first3=Shay |title=Proceedings of the 50th Annual ACM SIGACT Symposium on Theory of Computing |chapter=Near-optimal linear decision trees for k-SUM and related problems |date=2018 |pages=554–563 |doi=10.1145/3188745.3188770 |arxiv=1705.01720 |isbn=9781450355599 |s2cid=30368541 }}
+*{{citation
+ | last = Chan | first = Timothy M. | author-link = Timothy M. Chan
+ | article-number = 7
+ | doi = 10.1145/3363541
+ | issue = 1
+ | journal = [[ACM Transactions on Algorithms]]
+ | mr = 4060405
+ | page = 1–23
+ | title = More logarithmic-factor speedups for 3SUM, (median,+)-convolution, and some geometric 3SUM-hard problems
+ | volume = 16
+ | year = 2020}}
+*{{citation
+ | last1 = Grønlund | first1 = Allan
+ | last2 = Pettie | first2 = Seth
+ | article-number = 22
+ | arxiv = 1404.0799
+ | doi = 10.1145/3185378
+ | issue = 4
+ | journal = [[Journal of the ACM]]
+ | mr = 3795516
+ | pages = 1–25
+ | title = Threesomes, degenerates, and love triangles
+ | volume = 65
+ | year = 2018}}
+*{{citation |last1=Freund|first1=Ari|title=Improved Subquadratic 3SUM|journal=Algorithmica|date=2017|volume=44|issue=2|pages=440–458|doi=10.1007/s00453-015-0079-6|s2cid=253979651 }}.
+*{{citation
+ | last1 = Gold | first1 = Omer
+ | last2 = Sharir | first2 = Micha | author2-link = Micha Sharir
+ | editor1-last = Pruhs | editor1-first = Kirk
+ | editor2-last = Sohler | editor2-first = Christian
+ | contribution = Improved Bounds for 3SUM, {{mvar|k}}-SUM, and linear degeneracy
+ | doi = 10.4230/LIPICS.ESA.2017.42 | doi-access = free
+ | isbn = 978-3-95977-049-1
+ | pages = 42:1–42:13
+ | publisher = Schloss Dagstuhl – Leibniz-Zentrum für Informatik
+ | s2cid = 691387
+ | series = LIPIcs
+ | title = 25th Annual European Symposium on Algorithms, ESA 2017, September 4–6, 2017, Vienna, Austria
+ | volume = 87
+ | year = 2017}}
+*{{citation
+ | last1 = Baran | first1 = Ilya
+ | last2 = Demaine | first2 = Erik D. | author2-link = Erik Demaine
+ | last3 = Pătraşcu | first3 = Mihai | author3-link = Mihai Pătrașcu (computer scientist)
+ | doi = 10.1007/s00453-007-9036-3
+ | issue = 4
+ | journal = Algorithmica
+ | pages = 584–596
+ | title = Subquadratic algorithms for 3SUM
+ | url = http://erikdemaine.org/papers/3SUM_Algorithmica/
+ | volume = 50
+ | year = 2008| s2cid = 9855995
+ }}.
+*{{citation
+ | last1 = Demaine
+ | first1 = Erik D.
+ | author1-link = Erik Demaine
+ | last2 = Mitchell
+ | first2 = Joseph S. B.
+ | author2-link = Joseph S. B. Mitchell
+ | last3 = O'Rourke
+ | first3 = Joseph
+ | author3-link = Joseph O'Rourke (professor)
+ | date = July 2005
+ | url = http://maven.smith.edu/~orourke/TOPP/Welcome.html
+ | title = The Open Problems Project
+ | contribution = Problem 11: 3SUM Hard Problems
+ | contribution-url = http://cs.smith.edu/~orourke/TOPP/P11.html
+ | access-date = 2008-09-02
+ | archive-url = https://archive.today/20121215035647/http://maven.smith.edu/~orourke/TOPP/Welcome.html
+ | archive-date = 2012-12-15
+ | url-status = dead
+ }}.
+*{{citation
+ | last1 = Erickson | first1 = Jeff
+ | year = 1999
+ | journal = Chicago Journal of Theoretical Computer Science
+ | volume = 1999
+ | publisher = MIT Press
+ | title = Lower bounds for linear satisfiability problems
+ | url = http://cjtcs.cs.uchicago.edu/articles/1999/8/contents.html}}.
+*{{citation
+ | last1 = Gajentaan | first1 = Anka
+ | last2 = Overmars | first2 = Mark H. | author2-link = Mark Overmars
+ | doi = 10.1016/0925-7721(95)00022-2
+ | issue = 3
+ | journal = [[Computational Geometry (journal)|Computational Geometry: Theory and Applications]]
+ | pages = 165–185
+ | title = On a class of O(''n''<sup>2</sup>) problems in computational geometry
+ | volume = 5
+ | year = 1995| hdl = 1874/17058
+ | hdl-access = free
+ }}.
+*{{citation
+ | last = King | first = James
+ | title = A survey of 3SUM-hard problems
+ | url = http://www.cs.mcgill.ca/~jking/papers/3sumhard.pdf
+ | year = 2004}}.
+
+[[Category:Computational geometry]]
+[[Category:Polynomial-time problems]]
+[[Category:Unsolved problems in computer science]]

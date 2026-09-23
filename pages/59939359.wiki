@@ -1,0 +1,129 @@
+{{Short description|On existence of a strongly regular graph}}
+{{unsolved|mathematics|Does there exist a [[strongly regular graph]] with parameters (99,14,1,2)?}}
+[[File:33-duoprism graph.svg|thumb|A 9-vertex graph in which every edge belongs to a unique triangle and every non-edge is the diagonal of a unique quadrilateral. The 99-graph problem asks for a 99-vertex graph with the same property.]]
+In [[graph theory]], '''Conway's 99-graph problem''' is an unsolved problem asking whether there exists an [[undirected graph]] with 99 [[Vertex (graph theory)|vertices]], in which each two adjacent vertices have exactly one common neighbor, and in which each two non-adjacent vertices have exactly two common neighbors. Equivalently, every edge should be part of a unique triangle and every non-adjacent pair should be one of the two diagonals of a unique 4-cycle. [[John Horton Conway]] offered a $1000 prize for its solution.{{r|con}}
+
+==Properties==
+If such a graph exists, it would necessarily be a [[locally linear graph]] and a [[strongly regular graph]] with parameters (99,14,1,2). The first, third, and fourth parameters encode the statement of the problem: the graph should have 99 vertices, every pair of adjacent vertices should have 1 common neighbor, and every pair of non-adjacent vertices should have 2 common neighbors. The second parameter means that the graph is a [[regular graph]] with 14 edges per vertex.{{r|zd}}
+
+If this graph exists, it cannot have symmetries that take every vertex to every other vertex.{{r|wil}} Additional restrictions on its possible groups of symmetries are known.{{r|mm|bl}}
+
+==History==
+The possibility of a graph with these parameters was already suggested in 1969 by [[Norman L. Biggs]],{{r|big}}
+and its existence noted as an open problem by others before Conway.{{r|wil|guy|bn|cam}}
+Conway himself had worked on the problem as early as 1975,{{r|guy}} but offered the prize in 2014 as part of a set of problems posed in the DIMACS Conference on Challenges of Identifying Integer Sequences.
+Other problems in the set include the [[thrackle|thrackle conjecture]], the minimum spacing of [[Danzer set]]s, and the question of who wins after the move 16 in the game [[sylver coinage]].{{r|con}}
+
+==Related graphs==
+More generally, there are only five possible combinations of parameters for which a strongly regular graph could exist with each edge in a unique triangle and each non-edge forming the diagonal of a unique quadrilateral. It is only known that graphs exist with two of these five combinations. These two graphs are the nine-vertex [[Paley graph]] (the graph of the [[3-3 duoprism]]) with parameters (9,4,1,2) and the [[Berlekamp–van Lint–Seidel graph]] with parameters (243,22,1,2). The parameters for which graphs are unknown are: (99,14,1,2), (6273,112,1,2) and (494019,994,1,2). The 99-graph problem describes the smallest of these combinations of parameters for which the existence of a graph is unknown.{{r|mm}}
+
+==References==
+<references>
+
+<ref name=big>{{citation
+ | last = Biggs | first = Norman | authorlink = Norman L. Biggs
+ | mr = 0327563
+ | page = 111
+ | publisher = Cambridge University Press | location = London and New York
+ | series = London Mathematical Society Lecture Note Series
+ | title = Finite Groups of Automorphisms: Course Given at the University of Southampton, October–December 1969
+ | url = https://books.google.com/books?id=flA4AAAAIAAJ&pg=PA111
+ | volume = 6
+ | year = 1971| isbn = 9780521082150 }}</ref>
+
+<ref name=bl>{{citation
+ | last1 = Behbahani | first1 = Majid
+ | last2 = Lam | first2 = Clement
+ | doi = 10.1016/j.disc.2010.10.005
+ | issue = 2–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 2739917
+ | pages = 132–144
+ | title = Strongly regular graphs with non-trivial automorphisms
+ | volume = 311
+ | year = 2011| doi-access = free
+ }}</ref>
+
+<ref name=bn>{{citation
+ | last1 = Brouwer | first1 = A. E. | author1-link = Andries Brouwer
+ | last2 = Neumaier | first2 = A.
+ | doi = 10.1007/BF02122552
+ | issue = 1
+ | journal = Combinatorica
+ | mr = 951993
+ | pages = 57–61
+ | title = A remark on partial linear spaces of girth 5 with an application to strongly regular graphs
+ | volume = 8
+ | year = 1988| doi-broken-date = 30 January 2026 | s2cid = 206812356 | url = https://ir.cwi.nl/pub/1721 | url-access = subscription
+ }}</ref>
+
+<ref name=cam>{{citation
+ | last = Cameron | first = Peter J. | authorlink = Peter Cameron (mathematician)
+ | isbn = 0-521-45133-7
+ | mr = 1311922
+ | page = 331
+ | publisher = Cambridge University Press | location = Cambridge
+ | title = Combinatorics: topics, techniques, algorithms
+ | url = https://books.google.com/books?id=_aJIKWcifDwC&pg=PA331
+ | year = 1994}}</ref>
+
+<ref name=con>{{citation
+ | last = Conway | first = John H. | author-link = John Horton Conway
+ | accessdate = 2019-02-12
+ | publisher = [[On-Line Encyclopedia of Integer Sequences]]
+ | title = Five $1,000 Problems (Update 2017)
+ | url = https://oeis.org/A248380/a248380.pdf}}. See also {{OEIS el|A248380}}.</ref>
+
+<ref name=guy>{{citation
+ | last = Guy | first = Richard K. | authorlink = Richard K. Guy
+ | editor-last = Kelly | editor-first = L. M. | editor-link = Leroy Milton Kelly
+ | contribution = Problems
+ | doi = 10.1007/BFb0081147
+ | location = Berlin and New York
+ | mr = 0388240
+ | pages = 233–244
+ | publisher = Springer-Verlag
+ | series = Lecture Notes in Mathematics
+ | title = The Geometry of Metric and Linear Spaces
+ | volume = 490
+ | isbn = 978-3-540-07417-5 | year = 1975 | doi-broken-date = 30 January 2026 }}. See problem 7 (J. J. Seidel), pp. 237–238.</ref>
+
+<ref name=mm>{{citation
+ | last1 = Makhnev | first1 = A. A.
+ | last2 = Minakova | first2 = I. M.
+ | date = January 2004
+ | doi = 10.1515/156939204872374
+ | issue = 2
+ | journal = Discrete Mathematics and Applications
+ | mr = 2069991
+ | title = On automorphisms of strongly regular graphs with parameters <math>\lambda=1</math>, <math>\mu=2</math>
+ | volume = 14| s2cid = 118034273
+ }}</ref>
+
+<ref name=wil>{{citation
+ | last = Wilbrink | first = H. A.
+ | editor1-last = de Doelder | editor1-first = P. J.
+ | editor2-last = de Graaf | editor2-first = J.
+ | editor3-last = van Lint | editor3-first = J. H.
+ | contribution = On the (99,14,1,2) strongly regular graph
+ | date = August 1984
+ | pages = 342–355
+ | publisher = Eindhoven University of Technology
+ | series = EUT Report
+ | title = Papers dedicated to J. J. Seidel
+ | url = https://research.tue.nl/files/2449333/256699.pdf
+ | volume = 84-WSK-03}}</ref>
+
+<ref name=zd>{{citation
+ | last1 = Zehavi | first1 = Sa'ar
+ | last2 = David de Olivera | first2 = Ivo Fagundes
+ | arxiv = 1707.08047
+ | title = Not Conway's 99-graph problem
+ | year = 2017}}</ref>
+
+</references>
+
+
+[[Category:Strongly regular graphs]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:John Horton Conway]]

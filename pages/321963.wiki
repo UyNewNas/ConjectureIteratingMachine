@@ -1,0 +1,371 @@
+{{Short description|Odd number with specific properties}}
+In [[mathematics]], a '''Riesel number''' is an [[Parity (mathematics)|odd]] [[natural number]] ''k'' for which <math>k\times2^n-1</math> is [[Composite number|composite]] for all natural numbers ''n'' {{OEIS|A101036}}. In other words, when ''k'' is a Riesel number, all members of the following [[Set (mathematics)|set]] are composite:
+
+:<math>\left\{\,k \times 2^n - 1 : n \in\mathbb{N}\,\right\}.</math>
+
+If the form is instead <math>k\times2^n+1</math>, then ''k'' is a [[Sierpiński number]].
+
+== Riesel problem ==
+{{Unsolved|mathematics|Is 509,203 the smallest Riesel number?}}
+In 1956, [[Hans Riesel]] showed that there are an [[Infinite set|infinite]] number of integers ''k'' such that <math>k\times2^n-1</math> is not [[prime number|prime]] for any integer&nbsp;''n''. He showed that the number 509203 has this property, as does 509203 plus any positive [[integer]] multiple of 11184810.<ref>{{cite journal | first=Hans | last=Riesel | title=Några stora primtal | journal=Elementa | year=1956 |volume=39 | pages=258–260 | author-link=Hans Riesel}}</ref> The '''Riesel problem''' consists in determining the smallest Riesel number. Because no [[covering set]] has been found for any ''k'' less than 509203, it is [[conjecture]]d to be the smallest Riesel number.
+
+To check if there are ''k'' < 509203, the [[Riesel Sieve|Riesel Sieve project]] (analogous to [[Seventeen or Bust]] for [[Sierpiński number]]s) started with 101 candidates ''k''. As of December 2022, 57 of these ''k'' had been eliminated by Riesel Sieve, [[PrimeGrid]], or outside persons.<ref>{{cite web|url=http://www.primegrid.com/stats_trp_llr.php|title=The Riesel Problem statistics|publisher=PrimeGrid}}</ref> The remaining 41 values of ''k'' that have yielded only composite numbers for all values of ''n'' so far tested are
+
+:23669, 31859, 38473, 46663, 67117, 74699, 81041, 121889, 129007, 143047, 161669, 206231, 215443, 226153, 234343, 245561, 250027, 315929, 319511, 324011, 325123, 327671, 336839, 342847, 344759, 362609, 363343, 364903, 365159, 368411, 371893, 384539, 386801, 397027, 409753, 444637, 470173, 474491, 477583, 485557, 494743.
+
+The most recent elimination was in August 2024, when 107347 × 2<sup>23427517</sup> −&thinsp;1 was found to be prime by Ryan Propper. This number is 7,052,391 digits long.
+
+As of January 2023, PrimeGrid has searched the remaining candidates up to ''n'' = 14,900,000.<ref>{{Cite web|title=The Riesel Problem statistics|url=https://www.primegrid.com/stats_trp_llr.php|url-status=live|archive-url=https://web.archive.org/web/20240115171321/https://www.primegrid.com/stats_trp_llr.php|archive-date=15 January 2024|access-date=15 January 2024|website=PrimeGrid}}</ref>
+
+== Known Riesel numbers ==
+The sequence of currently ''known'' Riesel numbers begins with:
+:509203, 762701, 777149, 790841, 992077, 1106681, 1247173, 1254341, 1330207, 1330319, 1715053, 1730653, 1730681, 1744117, 1830187, 1976473, 2136283, 2251349, 2313487, 2344211, 2554843, 2924861, ... {{OEIS|id=A101036}}
+
+== Covering set ==
+A number can be shown to be a Riesel number by exhibiting a ''[[covering set]]'': a set of prime numbers that will divide any member of the sequence, so called because it is said to "cover" that sequence. The only proven Riesel numbers below one million have covering sets as follows:
+* <math>509203\times2^n-1</math> has covering set {3, 5, 7, 13, 17, 241}
+* <math>762701\times2^n-1</math> has covering set {3, 5, 7, 13, 17, 241}
+* <math>777149\times2^n-1</math> has covering set {3, 5, 7, 13, 19, 37, 73}
+* <math>790841\times2^n-1</math> has covering set {3, 5, 7, 13, 19, 37, 73}
+* <math>992077\times2^n-1</math> has covering set {3, 5, 7, 13, 17, 241}.
+
+== The smallest ''n'' for which ''k'' · 2''<sup>n</sup>'' − 1 is prime ==
+
+Here is a sequence <math>a(k)</math> for ''k'' = 1, 2, .... It is defined as follows: <math>a(k)</math> is the smallest ''n'' ≥ 0 such that <math>k \cdot 2^n - 1</math> is prime, or −1 if no such prime exists.
+:2, 1, 0, 0, 2, 0, 1, 0, 1, 1, 2, 0, 3, 0, 1, 1, 2, 0, 1, 0, 1, 1, 4, 0, 3, 2, 1, 3, 4, 0, 1, 0, 2, 1, 2, 1, 1, 0, 3, 1, 2, 0, 7, 0, 1, 3, 4, 0, 1, 2, 1, 1, 2, 0, 1, 2, 1, 3, 12, 0, 3, 0, 2, 1, 4, 1, 5, 0, 1, 1, 2, 0, 7, 0, 1, ... {{OEIS|id=A040081}}. The first unknown ''n'' is for that ''k'' = 23669.
+
+Related sequences are {{oeis|id=A050412}} (not allowing ''n'' = 0), for odd ''k''s, see {{oeis|A046069}} or {{oeis|A108129}} (not allowing ''n'' = 0).
+
+==Simultaneously Riesel and Sierpiński==
+A number both Riesel and [[Sierpiński number|Sierpiński]] is a [[Éric Brier|Brier]] number. The five smallest known examples (and note that some might be smaller, i.e. that the sequence might not be comprehensive) are: 3316923598096294713661, 10439679896374780276373, 11615103277955704975673, 12607110588854501953787, 17855036657007596110949, ... <ref>{{Cite web|url=https://oeis.org/A076335|title=A076335 - OEIS|website=oeis.org}}</ref>({{OEIS link|A076335}}).<ref>{{Cite web|url=https://www.primepuzzles.net/problems/prob_029.htm|title=Problem 29.- Brier Numbers|website=www.primepuzzles.net}}</ref>
+
+==The dual Riesel problem==
+The '''dual Riesel numbers''' are defined as the odd natural numbers ''k'' such that |2<sup>''n''</sup> − ''k''| is composite for all natural numbers ''n''. There is a conjecture that the set of this numbers is the same as the set of Riesel numbers. For example, |2<sup>''n''</sup> − 509203| is composite for all natural numbers ''n'', and 509203 is conjectured to be the smallest dual Riesel number.
+
+The smallest ''n'' which 2<sup>''n''</sup> − ''k'' is prime are (for odd ''k''s, and this sequence requires that 2<sup>''n''</sup> > ''k'')
+:2, 3, 3, 39, 4, 4, 4, 5, 6, 5, 5, 6, 5, 5, 5, 7, 6, 6, 11, 7, 6, 29, 6, 6, 7, 6, 6, 7, 6, 6, 6, 8, 8, 7, 7, 10, 9, 7, 8, 9, 7, 8, 7, 7, 8, 7, 8, 10, 7, 7, 26, 9, 7, 8, 7, 7, 10, 7, 7, 8, 7, 7, 7, 47, 8, 14, 9, 11, 10, 9, 10, 8, 9, 8, 8, ... {{OEIS|id=A096502}}
+
+The odd ''k''s which ''k'' − 2<sup>''n''</sup> are all composite for all 2<sup>''n''</sup> < ''k'' (the '''de Polignac numbers''') are
+:1, 127, 149, 251, 331, 337, 373, 509, 599, 701, 757, 809, 877, 905, 907, 959, 977, 997, 1019, 1087, 1199, 1207, 1211, 1243, 1259, 1271, 1477, ... {{OEIS|id=A006285}}
+
+The unknown values{{clarify|date=August 2020}} of ''k''s are (for which 2<sup>''n''</sup> > ''k'')
+:1871, 2293, 25229, 31511, 36971, 47107, 48959, 50171, 56351, 63431, 69427, 75989, 81253, 83381, 84491, ...
+
+==Riesel number base ''b''==
+One can generalize the Riesel problem to an integer base ''b'' ≥ 2. A '''Riesel number base ''b''''' is a positive integer ''k'' such that [[greatest common divisor|gcd]](''k'' − 1, ''b'' − 1) = 1. (if gcd(''k'' − 1, ''b'' − 1) > 1, then gcd(''k'' − 1, ''b'' − 1) is a trivial factor of ''k''×''b''<sup>''n''</sup> − 1 (Definition of trivial factors for the conjectures: Each and every ''n''-value has the same factor))<ref>{{Cite web|url=http://www.noprimeleftbehind.net/crus/Riesel-conjectures.htm|title=Riesel conjectures and proofs|website=www.noprimeleftbehind.net}}</ref><ref>{{Cite web|url=http://www.noprimeleftbehind.net/crus/Riesel-conjectures-powers2.htm|title=Riesel conjectures & proofs powers of 2|website=www.noprimeleftbehind.net}}</ref> For every integer ''b'' ≥ 2, there are infinitely many Riesel numbers base ''b''.
+
+Example 1: All numbers congruent to 84687 mod 10124569 and not congruent to 1 mod 5 are Riesel numbers base 6, because of the covering set {7, 13, 31, 37, 97}. Besides, these ''k'' are not trivial since gcd(''k'' + 1, 6 − 1) = 1 for these ''k''. (The Riesel base 6 conjecture is not proven, it has 3 remaining ''k'', namely 1597, 9582 and 57492)
+
+Example 2: 6 is a Riesel number to all bases ''b'' congruent to 34 mod 35, because if ''b'' is congruent to 34 mod 35, then 6×''b''<sup>''n''</sup> − 1 is divisible by 5 for all even ''n'' and divisible by 7 for all odd ''n''. Besides, 6 is not a trivial ''k'' in these bases ''b'' since gcd(6 − 1, ''b'' − 1) = 1 for these bases ''b''.
+
+Example 3: All squares ''k'' congruent to 12 mod 13 and not congruent to 1 mod 11 are Riesel numbers base 12, since for all such ''k'', ''k''×12<sup>''n''</sup> − 1 has algebraic factors for all even ''n'' and divisible by 13 for all odd ''n''. Besides, these ''k'' are not trivial since gcd(''k'' + 1, 12 − 1) = 1 for these ''k''. (The Riesel base 12 conjecture is proven)
+
+Example 4: If ''k'' is between a multiple of 5 and a multiple of 11, then ''k''×109<sup>''n''</sup> − 1 is divisible by either 5 or 11 for all positive integers ''n''. The first few such ''k'' are 21, 34, 76, 89, 131, 144, ... However, all these ''k'' < 144 are also trivial ''k'' (i. e. gcd(''k'' − 1, 109 − 1) is not 1). Thus, the smallest Riesel number base 109 is 144. (The Riesel base 109 conjecture is not proven, it has one remaining ''k'', namely 84)
+
+Example 5: If ''k'' is square, then ''k''×49<sup>''n''</sup> − 1 has algebraic factors for all positive integers ''n''. The first few positive squares are 1, 4, 9, 16, 25, 36, ... However, all these ''k'' < 36 are also trivial ''k'' (i. e. gcd(''k'' − 1, 49 − 1) is not 1). Thus, the smallest Riesel number base 49 is 36. (The Riesel base 49 conjecture is proven)
+
+We want to find and proof the smallest Riesel number base ''b'' for every integer ''b'' ≥ 2. It is a conjecture that if ''k'' is a Riesel number base ''b'', then at least one of the three conditions holds:
+# All numbers of the form ''k''×''b''<sup>''n''</sup> − 1 have a factor in some covering set. (For example, ''b'' = 22, ''k'' = 4461, then all numbers of the form ''k''×''b''<sup>''n''</sup> − 1 have a factor in the covering set: {5, 23, 97})
+# ''k''×''b''<sup>''n''</sup> − 1 has algebraic factors. (For example, ''b'' = 9, ''k'' = 4, then ''k''×''b''<sup>''n''</sup> − 1 can be factored to (2×3<sup>''n''</sup> − 1) × (2×3<sup>''n''</sup> + 1))
+# For some ''n'', numbers of the form ''k''×''b''<sup>''n''</sup> − 1 have a factor in some covering set; and for all other ''n'', ''k''×''b''<sup>''n''</sup> − 1 has algebraic factors. (For example, ''b'' = 19, ''k'' = 144, then if ''n'' is odd, then ''k''×''b''<sup>''n''</sup> − 1 is divisible by 5, if ''n'' is even, then ''k''×''b''<sup>''n''</sup> − 1 can be factored to (12×19<sup>''n''/2</sup> − 1) × (12×19<sup>''n''/2</sup> + 1))
+
+In the following list, we only consider those positive integers ''k'' such that gcd(''k'' − 1, ''b'' − 1) = 1, and all integer ''n'' must be ≥ 1.
+
+Note: ''k''-values that are a multiple of ''b'' and where ''k''−1 is not prime are included in the conjectures (and included in the remaining ''k'' with {{color|red|red}} color if no primes are known for these ''k''-values) but excluded from testing (Thus, never be the ''k'' of "largest 5 primes found"), since such ''k''-values will have the same prime as ''k'' / ''b''.
+
+{|class="wikitable"
+|''b''
+|conjectured smallest Riesel ''k''
+|covering set / algebraic factors
+|remaining ''k'' with no known primes (red indicates the ''k''-values that are a multiple of ''b'' and ''k''−1 is not prime)
+|number of remaining ''k'' with no known primes<br>(excluding the red ''k''s)
+|testing limit of ''n''<br>(excluding the red ''k''s)
+|largest 5 primes found<br>(excluding red ''k''s)
+|-
+|2
+|509203
+|{3, 5, 7, 13, 17, 241}
+|23669, 31859, 38473, 46663, {{color|red|47338}}, {{color|red|63718}}, 67117, 74699, {{color|red|76946}}, 81041, {{color|red|93326}}, {{color|red|94676}}, 107347, 121889, {{color|red|127436}}, 129007, {{color|red|134234}}, 143047, {{color|red|149398}}, {{color|red|153892}}, 161669, {{color|red|162082}}, {{color|red|186652}}, {{color|red|189352}}, 206231, {{color|red|214694}}, 215443, 226153, 234343, {{color|red|243778}}, 245561, 250027, {{color|red|254872}}, {{color|red|258014}}, {{color|red|268468}}, {{color|red|286094}}, {{color|red|298796}}, {{color|red|307784}}, 315929, 319511, {{color|red|323338}}, 324011, {{color|red|324164}}, 325123, 327671, 336839, 342847, 344759, 362609, 363343, 364903, 365159, 368411, 371893, {{color|red|373304}}, 384539, 386801, {{color|red|388556}}, 397027, 409753, {{color|red|412462}}, {{color|red|429388}}, {{color|red|430886}}, 444637, {{color|red|452306}}, {{color|red|468686}}, 470173, 474491, 477583, 485557, {{color|red|487556}}, {{color|red|491122}}, 494743, {{color|red|500054}}
+|42
+|[[PrimeGrid]] is currently searching every remaining ''k'' at ''n'' > 14.5M
+|97139×2<sup>18397548</sup>−1<br>93839×2<sup>15337656</sup>−1<br>192971×2<sup>14773498</sup>−1<br>206039×2<sup>13104952</sup>−1<br>2293×2<sup>12918431</sup>−1
+|-
+|3
+|63064644938
+|{5, 7, 13, 17, 19, 37, 41, 193, 757}
+|3677878, 6878756, 10463066, 10789522, {{color|red|11033634}}, 16874152, 18137648, {{color|red|20636268}}, 21368582, 29140796, 31064666, {{color|red|31389198}}, {{color|red|32368566}}, {{color|red|33100902}}, 38394682, 40175404, 40396658, {{color|red|50622456}}, 51672206, 52072432, {{color|red|54412944}}, 56244334, 59254534, {{color|red|61908864}}, 62126002, 62402206, {{color|red|64105746}}, 65337866, 71248336, {{color|red|87422388}}, {{color|red|93193998}}, {{color|red|94167594}}, 94210372, {{color|red|97105698}}, 97621124, {{color|red|99302706}}, 103101766, 103528408, 107735486, 111036578, 115125596, {{color|red|115184046}}, ...
+|100714
+|''k'' = 3677878 at ''n'' = 5M, 4M < ''k'' ≤ 2.147G at ''n'' = 1.07M, 2.147G < ''k'' ≤ 6G at ''n'' = 500K, 6G < ''k'' ≤ 10G at ''n'' = 250K, 10G < ''k'' ≤ 63G at ''n'' = 100K, , ''k'' > 63G at ''n'' = 655K
+|
+676373272×3<sup>1072675</sup>−1<br>1068687512×3<sup>1067484</sup>−1<br>1483575692×3<sup>1067339</sup>−1<br>780548926×3<sup>1064065</sup>−1<br>1776322388×3<sup>1053069</sup>−1
+|-
+|4
+|9
+|9×4<sup>''n''</sup> − 1 = (3×2<sup>''n''</sup> − 1) × (3×2<sup>''n''</sup> + 1)
+|none (proven)
+|0
+|−
+|8×4<sup>1</sup>−1<br>6×4<sup>1</sup>−1<br>5×4<sup>1</sup>−1<br>3×4<sup>1</sup>−1<br>2×4<sup>1</sup>−1
+|-
+|5
+|346802
+|{3, 7, 13, 31, 601}
+|4906, 23906, {{color|red|24530}}, 26222, 35248, 68132, 71146, 76354, 81134, 92936, 102952, 109238, 109862, {{color|red|119530}}, {{color|red|122650}}, 127174, {{color|red|131110}}, 131848, 134266, 143632, 145462, 145484, 146756, 147844, 151042, 152428, 154844, 159388, 164852, 170386, 170908, {{color|red|176240}}, {{color|red|179080}}, 182398, 187916, 189766, 190334, 195872, 201778, 204394, 206894, 231674, 239062, 239342, 246238, 248546, 259072, {{color|red|264610}}, 265702, 267298, 271162, 285598, 285728, 298442, 304004, 313126, 318278, 325922, 335414, 338866, {{color|red|340660}}
+|54
+|[[PrimeGrid]] is currently searching every remaining ''k'' at ''n'' > 4.8M
+|3622×5<sup>7558139</sup>-1<!-- no official announcement --><br>
+136804×5<sup>4777253</sup>-1<!-- no official announcement --><br>
+52922×5<sup>4399812</sup>-1<!-- no official announcement --><br>
+177742×5<sup>4386703</sup>-1<!-- no official announcement --><br>
+213988×5<sup>4138363</sup>-1<!-- no official announcement --><br>
+|-
+|6
+|84687
+|{7, 13, 31, 37, 97}
+|1597, {{color|red|9582}}, {{color|red|57492}}
+|1
+|5M
+|36772×6<sup>1723287</sup>−1<br>43994×6<sup>569498</sup>−1<br>77743×6<sup>560745</sup>−1<br>51017×6<sup>528803</sup>−1<br>57023×6<sup>483561</sup>−1
+|-
+|7
+|408034255082
+|{5, 13, 19, 43, 73, 181, 193, 1201}
+|315768, 1356018, {{color|red|2210376}}, 2494112, 2631672, 3423408, 4322834, 4326672, 4363418, 4382984, 4870566, 4990788, 5529368, 6279074, 6463028, 6544614, 7446728, 7553594, 8057622, 8354966, 8389476, 8640204, 8733908,  {{color|red|9492126}}, 9829784, 10096364, 10098716, 10243424, 10289166, 10394778, 10494794, 10965842, 11250728, 11335962, 11372214, 11522846, 11684954, 11943810, 11952888, 11983634, 12017634, 12065672, 12186164, 12269808, 12291728, 12801926, 13190732, 13264728, 13321148, 13635266, 13976426, ...
+|16399 ''k''s ≤ 1G
+|''k'' ≤ 2M at ''n'' = 1M, 2M < ''k'' ≤ 10M at ''n'' = 500K, 10M < ''k'' ≤ 110M at ''n'' = 150K, 110M < ''k'' ≤ 300M at ''n'' = 100K, 300M < ''k'' ≤ 1G at ''n'' = 25K
+|1620198×7<sup>684923</sup>−1<br>7030248×7<sup>483691</sup>−1<br>7320606×7<sup>464761</sup>−1<br>5646066×7<sup>460533</sup>−1<br>9012942×7<sup>425310</sup>−1
+|-
+|8
+|14
+|{3, 5, 13}
+|none (proven)
+|0
+|−
+|11×8<sup>18</sup>−1<br>5×8<sup>4</sup>−1<br>12×8<sup>3</sup>−1<br>7×8<sup>3</sup>−1<br>2×8<sup>2</sup>−1
+|-
+|9
+|4
+|4×9<sup>''n''</sup> − 1 = (2×3<sup>''n''</sup> − 1) × (2×3<sup>''n''</sup> + 1)
+|none (proven)
+|0
+|−
+|2×9<sup>1</sup>−1
+|-
+|10
+|10176
+|{7, 11, 13, 37}
+|4421
+|1
+|1.72M
+|7019×10<sup>881309</sup>−1<br>8579×10<sup>373260</sup>−1<br>6665×10<sup>60248</sup>−1<br>1935×10<sup>51836</sup>−1<br>1803×10<sup>45882</sup>−1
+|-
+|11
+|862
+|{3, 7, 19, 37}
+|none (proven)
+|0
+|−
+|62×11<sup>26202</sup>−1<br>308×11<sup>444</sup>−1<br>172×11<sup>187</sup>−1<br>284×11<sup>186</sup>−1<br>518×11<sup>78</sup>−1
+|-
+|12
+|25
+|{13} for odd ''n'', 25×12<sup>''n''</sup> − 1 = (5×12<sup>''n''/2</sup> − 1) × (5×12<sup>''n''/2</sup> + 1) for even ''n''
+|none (proven)
+|0
+|−
+|24×12<sup>4</sup>−1<br>18×12<sup>2</sup>−1<br>17×12<sup>2</sup>−1<br>13×12<sup>2</sup>−1<br>10×12<sup>2</sup>−1
+|-
+|13
+|302
+|{5, 7, 17}
+|none (proven)
+|0
+|−
+|288×13<sup>109217</sup>−1<br>146×13<sup>30</sup>−1<br>92×13<sup>23</sup>−1<br>102×13<sup>20</sup>−1<br>300×13<sup>10</sup>−1
+|-
+|14
+|4
+|{3, 5}
+|none (proven)
+|0
+|−
+|2×14<sup>4</sup>−1<br>3×14<sup>1</sup>−1
+|-
+|15
+|36370321851498
+|{13, 17, 113, 211, 241, 1489, 3877}
+|381714, 4502952, 5237186, {{color|red|5725710}}, 7256276, 8524154, 11118550, 11176190, 12232180, 15691976, 16338798, 16695396, 18267324, 18709072, 19615792, ...
+|14 ''k''s ≤ 20M
+|''k'' ≤ 10M at ''n'' = 1M, 10M < ''k'' ≤ 20M at ''n'' = 250K
+|4242104×15<sup>728840</sup>−1<br>9756404×15<sup>527590</sup>−1<br>9105446×15<sup>496499</sup>−1<br>5854146×15<sup>428616</sup>−1<br>9535278×15<sup>375675</sup>−1
+|-
+|16
+|9
+|9×16<sup>''n''</sup> − 1 = (3×4<sup>''n''</sup> − 1) × (3×4<sup>''n''</sup> + 1)
+|none (proven)
+|0
+|−
+|8×16<sup>1</sup>−1<br>5×16<sup>1</sup>−1<br>3×16<sup>1</sup>−1<br>2×16<sup>1</sup>−1
+|-
+|17
+|86
+|{3, 5, 29}
+|none (proven)
+|0
+|−
+|44×17<sup>6488</sup>−1<br>36×17<sup>243</sup>−1<br>10×17<sup>117</sup>−1<br>26×17<sup>110</sup>−1<br>58×17<sup>35</sup>−1
+|-
+|18
+|246
+|{5, 13, 19}
+|none (proven)
+|0
+|−
+|151×18<sup>418</sup>−1<br>78×18<sup>172</sup>−1<br>50×18<sup>110</sup>−1<br>79×18<sup>63</sup>−1<br>237×18<sup>44</sup>−1
+|-
+|19
+|144
+|{5} for odd ''n'', 144×19<sup>''n''</sup> − 1 = (12×19<sup>''n''/2</sup> − 1) × (12×19<sup>''n''/2</sup> + 1) for even ''n''
+|none (proven)
+|0
+|−
+|134×19<sup>202</sup>−1<br>104×19<sup>18</sup>−1<br>38×19<sup>11</sup>−1<br>128×19<sup>10</sup>−1<br>108×19<sup>6</sup>−1
+|-
+|20
+|8
+|{3, 7}
+|none (proven)
+|0
+|−
+|2×20<sup>10</sup>−1<br>6×20<sup>2</sup>−1<br>5×20<sup>2</sup>−1<br>7×20<sup>1</sup>−1<br>3×20<sup>1</sup>−1
+|-
+|21
+|560
+|{11, 13, 17}
+|none (proven)
+|0
+|−
+|64×21<sup>2867</sup>−1<br>494×21<sup>978</sup>−1<br>154×21<sup>103</sup>−1<br>84×21<sup>88</sup>−1<br>142×21<sup>48</sup>−1
+|-
+|22
+|4461
+|{5, 23, 97}
+|3656
+|1
+|2M
+|3104×22<sup>161188</sup>−1<br>4001×22<sup>36614</sup>−1<br>2853×22<sup>27975</sup>−1<br>1013×22<sup>26067</sup>−1<br>4118×22<sup>12347</sup>−1
+|-
+|23
+|476
+|{3, 5, 53}
+|404
+|1
+|1.35M
+|194×23<sup>211140</sup>−1<br>134×23<sup>27932</sup>−1<br>394×23<sup>20169</sup>−1<br>314×23<sup>17268</sup>−1<br>464×23<sup>7548</sup>−1
+|-
+|24
+|4
+|{5} for odd ''n'', 4×24<sup>''n''</sup> − 1 = (2×24<sup>''n''/2</sup> − 1) × (2×24<sup>''n''/2</sup> + 1) for even ''n''
+|none (proven)
+|0
+|−
+|3×24<sup>1</sup>−1<br>2×24<sup>1</sup>−1
+|-
+|25
+|36
+|36×25<sup>''n''</sup> − 1 = (6×5<sup>''n''</sup> − 1) × (6×5<sup>''n''</sup> + 1)
+|none (proven)
+|0
+|−
+|32×25<sup>4</sup>−1<br>30×25<sup>2</sup>−1<br>26×25<sup>2</sup>−1<br>12×25<sup>2</sup>−1<br>2×25<sup>2</sup>−1
+|-
+|26
+|149
+|{3, 7, 31, 37}
+|none (proven)
+|0
+|−
+|115×26<sup>520277</sup>−1<br>32×26<sup>9812</sup>−1<br>73×26<sup>537</sup>−1<br>80×26<sup>382</sup>−1<br>128×26<sup>300</sup>−1
+|-
+|27
+|8
+|8×27<sup>''n''</sup> − 1 = (2×3<sup>''n''</sup> − 1) × (4×9<sup>''n''</sup> + 2×3<sup>''n''</sup> + 1)
+|none (proven)
+|0
+|−
+|6×27<sup>2</sup>−1<br>4×27<sup>1</sup>−1<br>2×27<sup>1</sup>−1
+|-
+|28
+|144
+|{29} for odd ''n'', 144×28<sup>''n''</sup> − 1 = (12×28<sup>''n''/2</sup> − 1) × (12×28<sup>''n''/2</sup> + 1) for even ''n''
+|none (proven)
+|0
+|−
+|107×28<sup>74</sup>−1<br>122×28<sup>71</sup>−1<br>101×28<sup>53</sup>−1<br>14×28<sup>47</sup>−1<br>90×28<sup>36</sup>−1
+|-
+|29
+|4
+|{3, 5}
+|none (proven)
+|0
+|−
+|2×29<sup>136</sup>−1
+|-
+|30
+|1369
+|{7, 13, 19} for odd ''n'', 1369×30<sup>''n''</sup> − 1 = (37×30<sup>''n''/2</sup> − 1) × (37×30<sup>''n''/2</sup> + 1) for even ''n''
+|659, 1024
+|2
+|500K
+|239×30<sup>337990</sup>−1<br>249×30<sup>199355</sup>−1<br>225×30<sup>158755</sup>−1<br>774×30<sup>148344</sup>−1<br>25×30<sup>34205</sup>−1
+|-
+|31
+|134718
+|{7, 13, 19, 37, 331}
+|55758
+|1
+|3M
+|6962×31<sup>2863120</sup>−1<br>126072×31<sup>374323</sup>−1<br>43902×31<sup>251859</sup>−1<br>55940×31<sup>197599</sup>−1<br>101022×31<sup>133208</sup>−1
+|-
+|32
+|10
+|{3, 11}
+|none (proven)
+|0
+|−
+|3×32<sup>11</sup>−1<br>2×32<sup>6</sup>−1<br>9×32<sup>3</sup>−1<br>8×32<sup>2</sup>−1<br>5×32<sup>2</sup>−1
+|}
+
+Conjectured smallest Riesel number base ''n'' are (start with ''n'' = 2)
+:509203, 63064644938, 9, 346802, 84687, 408034255082, 14, 4, 10176, 862, 25, 302, 4, 36370321851498, 9, 86, 246, 144, 8, 560, 4461, 476, 4, 36, 149, 8, 144, 4, 1369, 134718, 10, 16, 6, 287860, 4, 7772, 13, 4, 81, 8, 15137, 672, 4, 22564, 8177, 14, 3226, 36, 16, 64, 900, 5392, 4, 6852, 20, 144, 105788, 4, 121, 13484, 8, 187258666, 9, ... {{OEIS|id=A273987}}
+
+==See also==
+{{Portal|Mathematics}}
+* [[Sierpiński number]]
+* [[Woodall number]]
+* [[Experimental mathematics]]
+* [[BOINC]]
+* [[PrimeGrid]]
+
+==References==
+{{reflist}}
+
+==Sources==
+* {{cite book |title=Unsolved Problems in Number Theory |last=Guy |first=Richard K. |author-link=Richard K. Guy |year=2004 |publisher=[[Springer-Verlag]] |location=Berlin |isbn=0-387-20860-7 |page=120 }}
+* {{cite book | title=The New Book of Prime Number Records | url=https://archive.org/details/newbookprimenumb00ribe_623 | url-access=limited | first=Paulo | last=Ribenboim | publisher=[[Springer-Verlag]] | location=New York | isbn=0-387-94457-5 | year=1996 | pages=[https://archive.org/details/newbookprimenumb00ribe_623/page/n381 357]–358 | author-link=Paulo Ribenboim }}
+
+==External links==
+* [https://primecrunch.com primecrunch, A distributed compute project searching for large Riesel Primes]
+* [http://www.primegrid.com PrimeGrid]
+* [http://www.prothsearch.com/rieselprob.html The Riesel Problem: Definition and Status]
+* [http://primes.utm.edu/glossary/xpage/RieselNumber.html The Prime Glossary: Riesel number]
+* [http://www.prothsearch.com/riesel2.html List of primes of the form: k*2^n-1, k<300]
+* [https://web.archive.org/web/20210715115849/http://www.15k.org/riesellist.html List of primes of the form: k*2^n-1, k<300, Project Riesel Prime Search]
+* [https://www.rieselprime.de/ Riesel and Proth Prime Database]
+
+{{Classes of natural numbers}}
+
+{{DEFAULTSORT:Riesel Number}}
+[[Category:Analytic number theory]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Prime numbers]]

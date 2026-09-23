@@ -1,0 +1,175 @@
+{{Short description|Unproved conjecture in mathematics}}
+{{Use dmy dates|date=April 2022}}
+{{Millennium Problems}}
+In [[mathematics]], the '''Birch and Swinnerton-Dyer conjecture''' (often called the ''' Birch–Swinnerton-Dyer conjecture''') describes the set of rational solutions to equations defining an [[elliptic curve]]. It is an open problem in the field of [[number theory]] and is widely recognized as one of the most challenging mathematical problems. It is named after mathematicians [[Bryan John Birch]] and Sir [[Peter Swinnerton-Dyer]], who formulated the conjecture in the 1960s with the help of machine computation.{{sfnp|Birch|Swinnerton-Dyer|1965}} Only special cases of the conjecture have been proven.
+
+The conjecture proposes a link between arithmetic data associated with an elliptic curve <math>E</math> over a [[number field]] <math>K</math> and the behaviour of its associated [[Hasse–Weil L-function|Hasse–Weil ''L''-function]] <math>L(E,s)</math> at <math>s=1</math>. The points <math>E(K)</math> over a number field, for example over the rationals <math>\Q</math>, are subtle and difficult to determine, but the ''L''-function depends only on the points modulo all primes <math>p</math> and is much simpler: thus the conjecture is a [[Hasse principle|local-to-global]] statement. More specifically, it is conjectured that the [[Rank of an abelian group|rank]] of the [[abelian group]] <math>E(K)</math> of points of <math>E</math> is the order of the zero of <math>L(E,s)</math> at <math>s=1</math>, and further that the leading non-zero coefficient in the [[Taylor expansion]] of <math>L(E,s)</math> at <math>s=1</math> can be expressed in terms of more refined arithmetic data attached to <math>E</math> over <math>K</math>.{{sfnp|Wiles|2006}}
+
+The conjecture was chosen as one of the seven [[Millennium Prize Problems]] listed by the [[Clay Mathematics Institute]], which has offered a $1,000,000 prize for the first correct proof.<ref>[http://www.claymath.org/millennium-problems/birch-and-swinnerton-dyer-conjecture Birch and Swinnerton-Dyer Conjecture] at Clay Mathematics Institute</ref>
+
+== Background ==
+In 1922, [[Louis J. Mordell]] proved [[Mordell's theorem]], stating that the group of [[rational point]]s on an elliptic curve has a finite [[Generating set of a group|basis]].<ref name="Mordell">{{cite journal
+ | last1 = Mordell | first1 = L. J. | author-link1 = Louis Mordell
+ | title = On the rational solutions of the indeterminate equations of the third and fourth degrees
+ | journal = [[Mathematical Proceedings of the Cambridge Philosophical Society]]
+ | volume = 21 | year = 1922 | pages = 179–192
+ | url=https://archive.org/details/proceedingscambr21camb/page/178/mode/2up
+}}</ref> This means that for any elliptic curve, there is a finite subset of the rational points on the curve, from which all further rational points may be generated.<ref name="Mordell"/>
+
+If the number of rational points on a curve is [[Infinite set|infinite]] then some point in a finite basis must have infinite [[order (group theory)|order]]. The number of ''independent'' basis points with infinite order is called the [[rank of an abelian group|rank]] of the curve, and is an important [[Invariant (mathematics)|invariant]] property of an elliptic curve. Thus, rank zero means the curve has only a finite number of rational points, and positive rank means it has an infinite number of rational points.
+
+Although Mordell's theorem shows that the rank of an elliptic curve is always finite, it does not give an effective method for calculating the rank of a given curve. The rank can sometimes be calculated using numerical methods, but it is currently unknown if these methods are effective for all curves.
+
+An <math>L</math>-function <math>L(E,s)</math> can be defined for an elliptic curve <math>E</math> by constructing an [[Euler product]] from the number of points on the curve modulo each [[prime number|prime]] <math>p</math>. This <math>L</math>-function is analogous to the [[Riemann zeta function]] and the [[Dirichlet L-series]] that is defined for a binary [[quadratic form]]. It is a special case of a [[Hasse–Weil L-function]].
+
+The natural definition of <math>L(E,s)</math> only converges for values of <math>s</math> in the complex plane with <math>\operatorname{Re}(s)> 3/2</math>. [[Helmut Hasse]] conjectured that <math>L(E,s)</math> could be extended by [[analytic continuation]] to the whole complex plane.{{Citation needed|date=November 2025}} This conjecture was first proved by [[Max Deuring]] for elliptic curves with [[complex multiplication]].{{sfnp|Deuring|1941}} It was subsequently shown to be true for all elliptic curves over <math>\Q</math>, as a consequence of the [[modularity theorem]] in 2001.{{Citation needed|date=November 2025}}
+
+Finding rational points on a general elliptic curve is a difficult problem. Finding the points on an elliptic curve modulo a given prime <math>p</math> is conceptually straightforward, as there are only a finite number of possibilities to check, though this may be computationally intensive.
+
+== History ==
+
+In the early 1960s, Swinnerton-Dyer used the [[EDSAC 2|EDSAC-2]] computer at the [[University of Cambridge Computer Laboratory]] to calculate the number <math>N_p</math> of points modulo <math>p</math> for a large number of primes <math>p</math> on elliptic curves whose rank was known. From these numerical results, he and his colleague [[Bryan John Birch]] conjectured{{sfnp|Birch|Swinnerton-Dyer|1965}} that for a curve <math>E</math> with rank <math>r</math>, the growth of <math>N_p</math> obeys the asymptotic law
+
+:<math>\prod_{p\leq x} \frac{N_p}{p} \approx C\log (x)^r \mbox{ as } x \rightarrow \infty</math>,
+
+where <math>C</math> is a constant.
+
+Initially, this was based on somewhat tenuous trends in graphical plots, which aroused a measure of skepticism in Birch's advisor [[J. W. S. Cassels]].{{sfnp|Stewart|2013|loc="Cassels was highly skeptical at first"|p=253}} Over time, however, the accumulated numerical evidence became convincing.
+
+This in turn led Birch and Swinnerton-Dyer to make a general conjecture about the behavior of a curve's ''L''-function <math>L(E,s)</math> at <math>s=1</math>; namely, that it would have a zero of order <math>r</math> at this point. This was a far-sighted conjecture for the time, given that the analytic continuation of <math>L(E,s)</math> was only established for curves with complex multiplication, which were also the main source of numerical examples. (Note that the [[Reciprocal (mathematics)|reciprocal]] of the ''L''-function is from some points of view a more natural object of study; using this convention, one should consider poles rather than zeroes.)
+
+The conjecture was subsequently extended to include the prediction of the leading [[Taylor coefficient]] of the ''L''-function at <math>s=1</math>:<ref>{{cite journal |url=https://people.maths.bris.ac.uk/~matyd/BSD2011/bsd2011-Cremona.pdf |title=Numerical evidence for the Birch and Swinnerton-Dyer Conjecture |first=John |last=Cremona |year=2011 |journal=Talk at the BSD 50th Anniversary Conference, May 2011 }}, page 50</ref>
+
+:<math>\frac{L^{(r)}(E,1)}{r!} = \frac{\#\mathrm{Sha}(E)\,\Omega_E R_E \prod_{p|N}c_p}{(\#E_{\mathrm{tor}})^2}</math>,
+
+where <math>\#E_{\mathrm{tor}}</math> is the order of the [[torsion group]], <math>\#\mathrm{Sha}(E)=\#</math>{{math|Ш}}<math>(E)</math> is the order of the [[Tate–Shafarevich group]], <math>\Omega_E</math> is the real period of <math>E</math> multiplied by the number of connected components of <math>E</math>, <math>R_E</math> is the [[Néron–Tate height|regulator]] of <math>E</math> (defined via the [[canonical height]]s of a basis of rational points), and <math>c_p</math> is the [[Tamagawa number]] of <math>E</math> at a prime <math>p</math> dividing the conductor <math>N</math> of <math>E</math> (computed by [[Tate's algorithm]]).
+
+When the conjecture was originally made, little was known, not even whether the left (analytic) side or the right (algebraic) side of this equation were even well-defined. [[John Tate (mathematician)|John Tate]] expressed this in 1974 in a famous quote:{{sfnp|Tate|1974|p=198}}
+:This remarkable conjecture relates the behavior of a function <math>L</math> at a point where it is not at present known to be defined to the order of a group {{math|Ш}} which is not known to be finite!
+By the [[modularity theorem]] proved in 2001 for elliptic curves over <math>\mathbb{Q}</math>,{{Citation needed|date=November 2025}} the left side is now known to be well-defined and the finiteness of {{math|Ш}}<math>(E)</math> is known when additionally the analytic rank is at most 1; i.e., if <math>L(E,s)</math> vanishes at most to order 1 at <math>s=1</math>. For an elliptic curve over a general number field, the finiteness of both sides remains open.
+
+In 2000, the [[Clay Mathematics Institute]] listed the Birch and Swinnerton-Dyer conjecture as one of its seven [[Millennium Prize Problems]]. The formulation of the conjecture as a prize problem was provided by Andrew Wiles, who explained its importance as follows:<ref>Andrew Wiles: [https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf The Birch_and_Swinnerton-Dyer_conjecture] (Clay Mathematics Institute)</ref>
+
+{{Quote box
+| quote = [...] although there has been some success in the last fifty years in limiting the number of rational points on varieties, there are still almost no methods for finding such points. It is to be hoped that a proof of the Birch and SwinnertonDyer conjecture will give some insight concerning this general problem.
+}}
+{{clear}}
+
+== Current status ==
+
+[[File:BSD data plot for elliptic curve 800h1.svg|350px|right|thumb|A plot, in blue, of <math>\textstyle\prod_{p\leq X} N_p/p</math> for the curve <math>y^2=x^3-5x</math> as <math>X</math> varies over the first 100000 primes. The <math>X</math>-axis is in log(log) scale (<math>X</math> is drawn at distance proportional to <math>\log(\log(X))</math> from 0) and the <math>Y</math>-axis is in a logarithmic scale, so the conjecture predicts that the data should tend to a line of slope equal to the rank of the curve, which is 1 in this case; that is,
+
+:<math>\frac{\log\left(\prod_{p\leq X} \frac{N_p}{p}\right)}{\log C+r\log(\log X))}\rightarrow 1</math> as <math>X\rightarrow\infty</math>,
+
+with <math>C</math>, <math>r</math> as in the text. For comparison, a line of slope 1 in (log(log),log)-scale with equation <math>\log y=a+\log(\log x)</math> is drawn in red in the plot.]]
+
+The Birch and Swinnerton-Dyer conjecture has been proved in special cases:
+
+# [[John H. Coates|Coates]] and [[Andrew Wiles|Wiles]]{{sfnp|Coates|Wiles|1977}} proved that if <math>E</math> is a curve over a number field <math>F</math> with complex multiplication by an [[imaginary quadratic field]] <math>K</math> of [[class number (number theory)|class number]] <math>1</math>, <math>F=K</math> or <math>\Q</math>, and <math>L(E,s)</math> is not zero, then <math>E(F)</math> is a finite group. This was extended to the case where <math>F</math> is any finite [[abelian extension]] of <math>K</math> by Arthaud.{{sfnp|Arthaud|1978}}.
+# [[Benedict Gross|Gross]] and [[Don Zagier|Zagier]]{{sfnp|Gross|Zagier|1986}} showed that if a [[modular elliptic curve]] has a first-order zero at <math>s=1</math>, then it has a rational point of infinite order; see [[Gross–Zagier theorem]].
+# [[Victor Kolyvagin|Kolyvagin]]{{sfnp|Kolyvagin|1989}} showed that a modular elliptic curve <math>E</math> for which <math>L(E,1)</math> is not zero has rank 0, and a modular elliptic curve <math>E</math> for which <math>L(E,1)</math> has a first-order zero at <math>s=1</math> has rank 1.
+# [[Karl_Rubin|Rubin]]{{sfnp|Rubin|1991}} showed that for elliptic curves defined over an imaginary quadratic field <math>K</math> with complex multiplication by <math>K</math>, if the ''L''-series of the elliptic curve was not zero at <math>s=1</math>, then the <math>p</math>-part of the Tate–Shafarevich group had the order predicted by the Birch and Swinnerton-Dyer conjecture, for all primes <math>p>7</math>.
+# {{harvtxt|Breuil|Conrad|Diamond|Taylor|2001}}, extending the work of Wiles,{{sfnp|Wiles|1995}} proved that [[Modularity theorem|all elliptic curves defined over the rational numbers are modular]], which extends results #2 and #3 to all elliptic curves over the rationals, and shows that the ''L''-functions of all elliptic curves over <math>\Q</math> are defined at <math>s=1</math>.
+# [[Manjul Bhargava|Bhargava]] and [[Arul Shankar|Shankar]]{{sfnp|Bhargava|Shankar|2015}} proved that the average rank of the Mordell–Weil group of an elliptic curve over <math>\Q</math> is bounded above by <math>7/6</math>. Combining this with the <math>p</math>-parity theorem of [[Jan Nekovář|Nekovář]]{{sfnp|Nekovář|2009}} and the work of Dokchitser and Dokchitser{{sfnp|Dokchitser|Dokchitser|2010}}, and with the proof of the [[main conjecture of Iwasawa theory]] for <math>\operatorname{GL}(2)</math> by [[Christopher Skinner|Skinner]] and [[Éric Urban|Urban]]{{sfnp|Skinner|Urban|2014}}, they conclude that a positive proportion of elliptic curves over <math>\Q</math> have analytic rank zero, and hence, by result #3, satisfy the Birch and Swinnerton-Dyer conjecture.
+
+There are currently no proofs involving curves with a rank greater than 1.
+
+There is extensive numerical evidence for the truth of the conjecture.<ref>{{cite journal |url=https://people.maths.bris.ac.uk/~matyd/BSD2011/bsd2011-Cremona.pdf |title=Numerical evidence for the Birch and Swinnerton-Dyer Conjecture |first=John |last=Cremona |year=2011 |journal=Talk at the BSD 50th Anniversary Conference, May 2011 }}</ref>
+
+== Consequences ==
+Much like the [[Riemann hypothesis]], this conjecture has multiple consequences, including:
+* Let {{mvar|n}} be an odd [[square-free]] integer. Assuming the Birch and Swinnerton-Dyer conjecture, {{mvar|n}} is the area of a right triangle with rational side lengths (a [[congruent number]]) if and only if the number of triplets of integers ({{mvar|x}}, {{mvar|y}}, {{mvar|z}}) satisfying {{math|2''x''<sup>2</sup> + ''y''<sup>2</sup> + 8''z''<sup>2</sup> {{=}} ''n''}} is twice the number of triplets satisfying {{math|2''x''<sup>2</sup> + ''y''<sup>2</sup> + 32''z''<sup>2</sup> {{=}} ''n''}}. This statement, due to [[Tunnell's theorem]] {{harv|Tunnell|1983}}, is related to the fact that ''n'' is a congruent number if and only if the elliptic curve {{math|''y''<sup>2</sup> {{=}} ''x''<sup>3</sup> − ''n''<sup>2</sup>''x''}} has a rational point of infinite order (thus, under the Birch and Swinnerton-Dyer conjecture, its {{mvar|L}}-function has a zero at {{math|1}}). The interest in this statement is that the condition is easily verified.<ref>{{Cite book
+ | last = Koblitz |first=Neal | author-link = Neal Koblitz
+ | year = 1993 | edition=2nd
+ | title = Introduction to Elliptic Curves and Modular Forms
+ | series = Graduate Texts in Mathematics
+ | volume=97
+ | publisher = Springer-Verlag
+ | isbn=0-387-97966-2
+ }}</ref>
+*In a different direction, certain analytic methods allow for an estimation of the order of zero in the center of the [[critical strip]] of families of ''L''-functions. Admitting the BSD conjecture, these estimations correspond to information about the rank of families of elliptic curves in question. For example: suppose the [[generalized Riemann hypothesis]] and the BSD conjecture, the average rank of curves given by {{math|''y''<sup>2</sup> {{=}} ''x''<sup>3</sup> + ''ax''+ ''b''}} is smaller than {{math|2}}.<ref>{{cite journal |first=D. R. |last=Heath-Brown | author-link = Roger Heath-Brown |title=The Average Analytic Rank of Elliptic Curves |journal=Duke Mathematical Journal |volume=122 |issue=3 |pages=591–623 |year=2004 |doi=10.1215/S0012-7094-04-12235-3 | mr=2057019|arxiv=math/0305114 |s2cid=15216987 }}</ref>
+*Because of the existence of the functional equation of the ''L''-function of an elliptic curve, BSD allows us to calculate the parity of the rank of an elliptic curve. This is a conjecture in its own right called the parity conjecture, and it relates the parity of the rank of an elliptic curve to its global root number. This leads to many explicit arithmetic phenomena which are yet to be proved unconditionally. For instance:
+**Every positive integer {{math|''n'' ≡ 5, 6 or 7 (mod 8)}} is a [[congruent number]]. 
+**The elliptic curve given by {{math|''y''<sup>2</sup> {{=}} ''x''<sup>3</sup> + ''ax'' + ''b''}} where {{math|''a'' ≡ ''b'' (mod 2)}} has infinitely many solutions over <math>\mathbb{Q}(\zeta_8)</math>.
+**Every positive rational number {{mvar|d}} can be written in the form {{math|''d'' {{=}} ''s''<sup>2</sup>(''t''<sup>3</sup> – 91''t'' – 182)}} for {{mvar|s}} and {{mvar|t}} in <math>\mathbb{Q}</math>. 
+**For every rational number {{mvar|t}}, the elliptic curve given by {{math|''y''<sup>2</sup> {{=}} ''x''(''x''<sup>2</sup> – 49(1 + ''t''<sup>4</sup>)<sup>2</sup>)}} has rank at least {{math|1}}.
+**There are many more examples for elliptic curves over number fields.
+
+== Generalizations ==
+
+There is a version of this conjecture for general [[abelian varieties]] over number fields. A version for abelian varieties over <math>\mathbb{Q}</math> is the following:{{sfnp|Hindry|Silverman|2000|p=462}}
+:<math>\lim_{s\to1} \frac{L(A/\mathbb Q,s)}{(s-1)^r}
+= \frac{\#\mathrm{Sha}(A)\Omega_A R_A \prod_{p|N}c_p}
+{\#A(\mathbb Q)_{\text{tors}}\cdot\#\hat A(\mathbb Q)_{\text{tors}}}.
+</math>
+All of the terms have the same meaning as for elliptic curves, except that the square of the order of the torsion needs to be replaced by the product <math>\#A(\mathbb Q)_{\text{tors}}\cdot\#\hat A(\mathbb Q)_{\text{tors}}</math> involving the [[dual abelian variety]] <math>\hat A</math>. Elliptic curves as 1-dimensional abelian varieties are their own duals, i.e. <math>\hat E = E</math>, which simplifies the statement of the BSD conjecture. The regulator <math>R_A</math> needs to be understood for the pairing between a basis for the free parts of <math>A(\mathbb Q)</math> and <math>\hat A(\mathbb Q)</math> relative to the Poincaré bundle on the product <math>A\times\hat A</math>.
+
+The rank-one Birch-Swinnerton-Dyer conjecture for modular elliptic curves and modular abelian varieties of [[General linear group|GL(2)]]-type over [[totally real number field]]s was proved by [[Shou-Wu Zhang]] in 2001.<ref>{{cite journal|last=Zhang |first=Wei |title=The Birch–Swinnerton-Dyer conjecture and Heegner points: a survey |journal=Current Developments in Mathematics |volume=2013 |pages=169–203|doi=10.4310/CDM.2013.v2013.n1.a3 |year=2013 |doi-access=free }}.</ref><ref>{{cite magazine|last=Leong |first=Y. K. |date=July–December 2018 |url=https://ims.nus.edu.sg/wp-content/uploads/2020/05/imprints-32-2018.pdf |title=Shou-Wu Zhang: Number Theory and Arithmetic Algebraic Geometry |issue=32 |magazine=Imprints |pages=32–36 |publisher=The Institute for Mathematical Sciences, National University of Singapore |access-date=5 May 2019}}</ref>
+
+Another generalization is given by the [[Bloch–Kato conjecture (L-functions)|Bloch-Kato conjecture]].<ref>{{cite journal| last1=Kings | first1=Guido | title=The Bloch–Kato conjecture on special values of ''L''-functions. A survey of known results | url=http://jtnb.cedram.org/item?id=JTNB_2003__15_1_179_0 |mr=2019010 | year=2003 | journal=Journal de théorie des nombres de Bordeaux | issn=1246-7405 | volume=15 | issue=1 | pages=179–198 | doi= 10.5802/jtnb.396| doi-access=free }}</ref>
+
+== Notes ==
+{{Reflist}}
+
+== References ==
+{{refbegin}}
+
+* {{cite journal |last=Arthaud |first=Nicole |title=On Birch and Swinnerton-Dyer's conjecture for elliptic curves with complex multiplication |journal=[[Compositio Mathematica]] |volume=37 |issue=2 |year=1978 |pages=209–232 |mr=504632 |zbl=0396.12011}}
+
+* {{cite journal |last1=Bhargava |first1=Manjul |author-link=Manjul Bhargava |last2=Shankar |first2=Arul |author-link2=Arul Shankar |title=Ternary cubic forms having bounded invariants, and the existence of a positive proportion of elliptic curves having rank 0 |year=2015 |journal=[[Annals of Mathematics]] |volume=181 |issue=2 |pages=587–621 |doi=10.4007/annals.2015.181.2.4 |zbl=06399444 |mr=3275847|arxiv=1007.0052 }}
+
+* {{cite journal |last1=Birch |first1=Bryan |author-link=Bryan John Birch |last2=Swinnerton-Dyer |first2=Peter |author-link2=Peter Swinnerton-Dyer |year=1965 |title=Notes on Elliptic Curves (II) |journal=[[Journal für die reine und angewandte Mathematik]] |volume=165 |issue=218 |pages=79–108 |doi=10.1515/crll.1965.218.79 |zbl=0147.02506}}
+
+* {{cite journal |last1=Breuil |first1=Christophe |author-link=Christophe Breuil |last2=Conrad |first2=Brian |author-link2=Brian Conrad |last3=Diamond |first3=Fred |author-link3=Fred Diamond |last4=Taylor |first4=Richard |author-link4=Richard Taylor (mathematician) |year=2001 |title=On the modularity of elliptic curves over Q: Wild 3-adic exercises |journal=[[Journal of the American Mathematical Society]] |volume=14 |issue=4 |pages=843–939 |doi=10.1090/S0894-0347-01-00370-8}}
+
+* {{cite book |first1=John H. |last1=Coates |author-link1=John Coates (mathematician) |first2=Ralph |last2=Greenberg |first3=Kenneth A. |last3=Ribet |author-link3=Kenneth Alan Ribet |first4=Karl |last4=Rubin |author-link4=Karl Rubin |volume=1716 |title=Arithmetic Theory of Elliptic Curves |series=[[Lecture Notes in Mathematics]] |publisher=[[Springer-Verlag|Springer]] |year=1999 |isbn=978-3-540-66546-5 |location=[[Berlin]], [[Heidelberg]]}}
+
+* {{cite journal |last1=Coates |first1=J. |author-link=John Coates (mathematician) |last2=Wiles |first2=A. |author-link2=Andrew Wiles |title=On the conjecture of Birch and Swinnerton-Dyer |journal=[[Inventiones Mathematicae]] |volume=39 |year=1977 |issue=3 |pages=223–251 |doi=10.1007/BF01402975 |bibcode=1977InMat..39..223C |zbl=0359.14009}}
+
+* {{cite journal |last=Deuring |first=Max |author-link=Max Deuring |year=1941 |title=Die Typen der Multiplikatorenringe elliptischer Funktionenkörper |journal=Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg |volume=14 |issue=1 |pages=197–272 |doi=10.1007/BF02940746 |zbl=0025.02003 |language=de}}
+
+* {{cite journal |last1=Dokchitser |first1=Tim |last2=Dokchitser |first2=Vladimir |doi=10.4007/annals.2010.172.567 |mr=2680426 |title=On the Birch–Swinnerton-Dyer quotients modulo squares |journal=[[Annals of Mathematics]] |volume=172 |year=2010 |issue=1 |pages=567–596 |zbl=1223.11079|arxiv=math/0610290 }}
+
+* {{cite journal |last1=Gross |first1=Benedict H. |author-link=Benedict Gross |last2=Zagier |first2=Don B. |author-link2=Don Zagier |doi=10.1007/BF01388809 |mr=0833192 |title=Heegner points and derivatives of ''L''-series |journal=[[Inventiones Mathematicae]] |volume=84 |year=1986 |issue=2 |pages=225–320 |bibcode=1986InMat..84..225G }}
+
+* {{cite book |last1=Hindry |first1=Marc |last2=Silverman |first2=Joseph H. |author-link2=Joseph H. Silverman |date=2000 |title=Diophantine Geometry: An Introduction |location=[[New York City|New York]] |publisher=[[Springer-Verlag|Springer]] |series=[[Graduate Texts in Mathematics]] |volume=201 |isbn=978-0-387-98975-4}}
+
+* {{cite journal |last=Kolyvagin |first=Victor |author-link=Victor Kolyvagin |year=1989 |title=Finiteness of ''E''(''Q'') and ''X''(''E'',&nbsp;''Q'') for a class of Weil curves |journal=Math. USSR Izv. |volume=32 |issue=3 |pages=523–541 |doi=10.1070/im1989v032n03abeh000779|bibcode=1989IzMat..32..523K }}
+
+* {{cite journal |last=Nekovář |first=Jan |author-link=Jan Nekovář |title=On the parity of ranks of Selmer groups IV |journal=[[Compositio Mathematica]] |volume=145 |issue=6 |year=2009 |pages=1351–1359 |doi=10.1112/S0010437X09003959}}
+
+* {{cite journal |last=Rubin |first=Karl |author-link=Karl Rubin |year=1991 |title=The 'main conjectures' of Iwasawa theory for imaginary quadratic fields |journal=[[Inventiones Mathematicae]] |volume=103 |issue=1 |pages=25–68 |doi=10.1007/BF01239508 |zbl=0737.11030}}
+
+* {{cite journal |last1=Skinner |first1=Christopher |author-link=Christopher Skinner |last2=Urban |first2=Éric |author-link2=Éric Urban |title=The Iwasawa main conjectures for GL<sub>2</sub> |journal=[[Inventiones Mathematicae]] |volume=195 |issue=1 |pages=1–277 |year=2014 |doi=10.1007/s00222-013-0448-1 |bibcode=2014InMat.195....1S }}
+
+* {{cite book |title=Visions of Infinity: The Great Mathematical Problems |first=Ian |last=Stewart |author-link=Ian Stewart (mathematician) |publisher=[[Basic Books]] |year=2013 |isbn=978-0-46502240-3 |location=[[New York City|New York]]}}
+
+* {{cite journal |last=Tate |first=John T. |authorlink=John Tate (mathematician) |title=The arithmetic of elliptic curves |year=1974 |journal=[[Inventiones Mathematicae]] |volume=23 |issue=3–4 |pages=179–206 |doi=10.1007/BF01389745 |bibcode=1974InMat..23..179T }}
+
+* {{cite journal |last=Tunnell |first=Jerrold B. |author-link=Jerrold B. Tunnell |title=A classical Diophantine problem and modular forms of weight 3/2 |journal=[[Inventiones Mathematicae]] |volume=72 |issue=2 |pages=323–334 |year=1983 |zbl=0515.10013 |doi=10.1007/BF01389327 |bibcode=1983InMat..72..323T |hdl=10338.dmlcz/137483}}
+
+* {{cite journal |last1=Wiles |first1=Andrew |author1-link=Andrew Wiles |title=Modular elliptic curves and Fermat's last theorem |mr=1333035 |year=1995 |journal=[[Annals of Mathematics]] |volume=141 |issue=3 |pages=443–551 |doi=10.2307/2118559 |jstor=2118559 }}
+
+* {{cite encyclopedia |last=Wiles |first=Andrew |author-link=Andrew Wiles |chapter=The Birch and Swinnerton-Dyer conjecture |editor1-last=Carlson |editor1-first=James |editor2-last=Jaffe |editor2-first=Arthur |editor2-link=Arthur Jaffe |editor3-last=Wiles |editor3-first=Andrew |editor3-link=Andrew Wiles |title=The Millennium Prize Problems |publisher=[[American Mathematical Society]] |year=2006 |isbn=978-0-8218-3679-8 |chapter-url=http://www.claymath.org/sites/default/files/birchswin.pdf |pages=31–44 |mr=2238272}}
+
+{{Refend}}
+
+== External links ==
+{{Sister project links| wikt=no | commons=no | b=no | n=no | q=Birch and Swinnerton-Dyer conjecture | s=no | v=no | voy=no | species=no | d=no}}
+
+*{{MathWorld|urlname = Swinnerton-DyerConjecture |title = Swinnerton-Dyer Conjecture}}
+*{{planetmath reference|urlname=BirchAndSwinnertonDyerConjecture|title =  Birch and Swinnerton-Dyer Conjecture}}
+* [https://issuu.com/thedeltaepsilon/docs/de1 The Birch and Swinnerton-Dyer Conjecture]: An Interview with Professor [[Henri Darmon]] by Agnes F. Beaudry
+* [https://www.youtube.com/watch?v=2gbQWIzb6Dg&t=3s ''What is the Birch and Swinnerton-Dyer Conjecture?''] lecture by [[Manjul Bhargava]] (September 2016) given during the Clay Research Conference held at the University of Oxford
+
+{{L-functions-footer}}
+{{Authority control}}
+
+{{DEFAULTSORT:Birch And Swinnerton-Dyer Conjecture}}
+[[Category:Conjectures]]
+[[Category:Diophantine geometry]]
+[[Category:Millennium Prize Problems]]
+[[Category:Number theory]]
+[[Category:University of Cambridge Computer Laboratory]]
+[[Category:Zeta and L-functions]]
+[[Category:Unsolved problems in number theory]]

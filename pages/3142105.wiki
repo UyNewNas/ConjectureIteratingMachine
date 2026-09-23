@@ -1,0 +1,48 @@
+{{Short description|Unsolved conjecture in geometry}}
+In [[arithmetic geometry]], the '''Bombieri–Lang conjecture''' is an unsolved problem [[conjecture]]d by [[Enrico Bombieri]] and [[Serge Lang]] about the [[Zariski topology|Zariski density]] of the set of [[rational point]]s of an [[algebraic variety]] of [[Kodaira dimension#General type|general type]].
+
+==Statement==
+The weak Bombieri–Lang conjecture for surfaces states that if <math>X</math> is a smooth [[surface of general type]] defined over a [[number field]] <math>k</math>, then the {{nowrap|<math>k</math>-rational}} points of <math>X</math> do not form a [[dense set]] in the [[Zariski topology]] on <math>X</math>.<ref name="Das-Turchet"/>
+
+The general form of the Bombieri–Lang conjecture states that if <math>X</math> is a positive-dimensional algebraic variety of general type defined over a number field <math>k</math>, then the {{nowrap|<math>k</math>-rational}} points of <math>X</math> do not form a dense set in the Zariski topology.<ref name="Poonen"/><ref name="CUV"/><ref name="Hindry-Silverman"/>
+
+The refined form of the Bombieri–Lang conjecture states that if <math>X</math> is an algebraic variety of general type defined over a number field <math>k</math>, then there is a dense [[open subset]] <math>U</math> of <math>X</math> such that for all number field extensions <math>k'</math> over <math>k</math>, the set of {{nowrap|<math>k'</math>-rational}} points in <math>U</math> is finite.<ref name="Hindry-Silverman"/>
+
+==History==
+The Bombieri–Lang conjecture was independently posed by Enrico Bombieri and Serge Lang. In a 1980 lecture at the [[University of Chicago]], Enrico Bombieri posed a problem about the degeneracy of rational points for surfaces of general type.<ref name="Das-Turchet">{{citation |first1=Pranabesh |last1=Das |first2=Amos |last2=Turchet |chapter= Invitation to integral and rational points on curves and surfaces |title= Rational Points, Rational Curves, and Entire Holomorphic Curves on Projective Varieties |editor1-first=Carlo |editor1-last=Gasbarri |editor2-first=Steven |editor2-last=Lu |editor3-first=Mike |editor3-last=Roth |editor4-first=Yuri |editor4-last=Tschinkel |editor4-link=Yuri Tschinkel |series=Contemporary Mathematics |volume=654 |publisher=American Mathematical Society |year=2015 |pages=53–73 |doi=10.1090/conm/654/13215 |arxiv=1407.7750|isbn=978-1-4704-1458-0 }}</ref> Independently in a series of papers starting in 1971, Serge Lang conjectured a more general relation between the distribution of rational points and [[algebraic hyperbolicity]],<ref name="Das-Turchet"/><ref>{{Citation |last=Lang |first=Serge |author-link=Serge Lang |title=Transcendental numbers and diophantine approximations |year=1971 |url=https://www.ams.org/journal-getitem?pii=S0002-9904-1971-12761-1 |journal=Bulletin of the American Mathematical Society |volume=77 |issue=5 |pages=635–678 |language=en |doi=10.1090/S0002-9904-1971-12761-1 |doi-access=free |url-access=subscription }}</ref><ref>{{Citation |last=Lang |first=Serge |author-link=Serge Lang |title=Higher dimensional diophantine problems |year=1974 |url=https://www.ams.org/journal-getitem?pii=S0002-9904-1974-13516-0 |journal=Bulletin of the American Mathematical Society |volume=80 |issue=5 |pages=779–788 |language=en |doi=10.1090/S0002-9904-1974-13516-0 |doi-access=free }}</ref><ref>{{citation |last=Lang |first=Serge |author-link=Serge Lang |title=Fundamentals of Diophantine geometry |publisher=[[Springer-Verlag]] |location=New York |year=1983 |page=224 |isbn=0-387-90837-4}}</ref> formulated in the "refined form" of the Bombieri–Lang conjecture.<ref name="Hindry-Silverman">{{citation
+ | last1 = Hindry | first1 = Marc
+ | last2 = Silverman | first2 = Joseph H. |author-link2=Joseph H. Silverman
+ | contribution = F.5.2. The Bombieri–Lang Conjecture
+ | contribution-url = https://books.google.com/books?id=zfRWBQAAQBAJ&pg=PA479
+ | doi = 10.1007/978-1-4612-1210-2
+ | isbn = 0-387-98975-7
+ | mr = 1745599
+ | pages = 479–482
+ | publisher = Springer-Verlag, New York
+ | series = Graduate Texts in Mathematics
+ | title = Diophantine Geometry: An Introduction
+ | volume = 201
+ | year = 2000}}</ref>
+
+==Generalizations and implications==
+The Bombieri–Lang conjecture is an analogue for surfaces of [[Faltings' theorem]], which states that algebraic curves of [[genus (mathematics)|genus]] greater than one only have finitely many rational points.<ref name="Tao">{{citation
+ | last = Tao | first = Terence | author-link = Terence Tao
+ | date = December 20, 2014
+ | title = The Erdos-Ulam problem, varieties of general type, and the Bombieri-Lang conjecture
+ | url = https://terrytao.wordpress.com/2014/12/20/the-erdos-ulam-problem-varieties-of-general-type-and-the-bombieri-lang-conjecture/
+ | work = What's new}}</ref>
+
+If true, the Bombieri–Lang conjecture would resolve the [[Erdős–Ulam problem]], as it would imply that there do not exist dense subsets of the Euclidean plane all of whose pairwise distances are rational.<ref name="Tao"/><ref>{{citation |last1=Shaffaf |first1=Jafar |title=A solution of the Erdős–Ulam problem on rational distance sets assuming the Bombieri–Lang conjecture |journal=[[Discrete & Computational Geometry]] |date=May 2018 |volume=60 |issue=8 |pages=283–293 |doi=10.1007/s00454-018-0003-3|arxiv=1501.00159 }}</ref>
+
+In 1997, [[Lucia Caporaso]], [[Barry Mazur]], [[Joe Harris (mathematician)|Joe Harris]], and Patricia Pacelli showed that the Bombieri–Lang conjecture implies a [[uniform boundedness conjecture for rational points]]: there is a constant <math>B_{g,d}</math> depending only on <math>g</math> and <math>d</math> such that the number of rational points of any genus <math>g</math> curve <math>X</math> over any [[Degree of a field extension|degree]] <math>d</math> number field is at most <math>B_{g,d}</math>.<ref name="Poonen">{{citation |first=Bjorn |last=Poonen |author-link=Bjorn Poonen |title= Uniform boundedness of rational points and preperiodic points |arxiv= 1206.7104 |year=2012}}</ref><ref name="CUV">{{citation |title=Unboundedness of the number of rational points on curves over function fields |last1=Conceição |first1=Ricardo |last2=Ulmer |first2=Douglas |authorlink2=Douglas Ulmer |last3=Voloch |first3=José Felipe |authorlink3= José Felipe Voloch |journal=New York Journal of Mathematics |volume=18 |year=2012 |pages=291–293}}</ref>
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Bombieri-Lang conjecture}}
+[[Category:Diophantine geometry]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Conjectures]]
+
+
+{{algebraic-geometry-stub}}

@@ -1,0 +1,13 @@
+{{Short description|Unproven mathematical hypothesis}}
+In mathematics, the '''Zeeman conjecture''' or '''Zeeman's collapsibility conjecture''' asks whether given a finite [[contractible]] 2-dimensional [[CW complex]] <math>K</math>, the space <math>K\times [0,1]</math> is [[Collapse (topology)|collapsible]]. It can nowadays be restated as the claim that for any 2-complex <math>G</math> which is homotopy equivalent to a point, some [[barycentric subdivision]] of <math>G \times [0, 1]</math> is collapsible.<ref>{{citation|title=Subdivisions, shellability, and the Zeeman conjecture|author=Adiprasito|author2=Benedetti|year=2012|arxiv=1202.6606v2 }} Corollary 3.5</ref>
+
+The conjecture, due to [[Christopher Zeeman]], implies the [[Poincaré conjecture]] and the [[Andrews–Curtis conjecture]].
+
+==References==
+{{Reflist}}
+*{{citation|title=Algorithmic Topology and Classification of 3-Manifolds|volume=9|series=Algorithms and Computation in Mathematics|first=Sergei|last=Matveev|publisher=Springer|year=2007|isbn=9783540458999|pages=46–58|url=https://books.google.com/books?id=vFLgAyeVSqAC&pg=PA46|contribution=1.3.4 Zeeman's Collapsing Conjecture}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Geometric topology]]
+{{topology-stub}}

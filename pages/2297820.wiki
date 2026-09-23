@@ -1,0 +1,98 @@
+{{Short description|Collection of residue classes}}
+{{distinguish|Cover system}}
+{{distinguish|Complete residue system modulo m}}
+
+In [[mathematics]], a '''covering system''' (also called a '''complete residue system''') is a collection
+
+:<math>\{a_1\pmod{n_1},\ \ldots,\ a_k\pmod{n_k}\}</math>
+
+of finitely many [[residue class]]es 
+:<math> a_i\pmod{n_i} = \{ a_i + n_ix:\ x \in \Z \}, </math>
+whose union contains every integer.
+
+== Examples and definitions ==
+
+The notion of covering system was introduced by [[Paul Erdős]] in the early 1930s.
+
+The following are examples of covering systems:
+# <math>\{0\pmod{3},\ 1\pmod{3},\ 2\pmod{3}\},</math>
+# <math>\{1\pmod{2},\ 2\pmod{4},\ 4\pmod{8},\ 0\pmod{8}\},</math>
+# <math>\{0\pmod{2},\ 0\pmod{3},\ 1\pmod{4},
+\ 5\pmod{6},\ 7\pmod{12}
+\}.</math>
+
+A covering system is called ''disjoint'' (or ''exact'') if no two members overlap.
+
+A covering system is called ''distinct'' (or ''incongruent'') if all the moduli <math>n_i</math> are different (and bigger than 1). Hough and Nielsen (2019)<ref>{{cite journal| author=R. D. Hough, P. P. Nielsen |title=Covering systems with restricted divisibility |journal=Duke Math. J. |volume=168 |issue=17 |year=2019 |pages=3261–3295 |doi=10.1215/00127094-2019-0058 |arxiv=1703.02133}}</ref> proved that any distinct covering system has a modulus that is divisible by either 2 or 3.
+
+A covering system is called ''irredundant'' (or ''minimal'') if all the residue classes are required to cover the integers.
+
+The first two examples are disjoint.
+
+The third example is distinct.
+
+A system (i.e., an unordered multi-set)
+
+:<math>\{a_1\pmod{n_1},\ \ldots,\ a_k\pmod{n_k}\}</math>
+
+of finitely many residue classes is called an <math>m</math>-cover if it covers every integer at least
+<math>m</math> times, and an ''exact'' <math>m</math>-cover if it covers each integer exactly <math>m</math> times. It is known that for each
+<math>m=2,3,\ldots</math> there are exact <math>m</math>-covers which cannot be written as a union of two covers. For example,
+
+:<math>\{1\pmod{2};\ 0\pmod{3};\ 2\pmod{6};\ 0,4,6,8\pmod{10};</math>
+:<math>1,2,4,7,10,13\pmod{15};\ 5,11,12,22,23,29\pmod{30}\}</math>
+
+is an exact 2-cover which is not a union of two covers.
+
+The first example above is an exact 1-cover (also called an ''exact cover'').  Another [[exact cover]] in common use is that of odd and [[even number]]s, or
+
+:<math>\{0\pmod{2},\ 1\pmod{2}\}.</math>
+
+This is just one case of the following fact:  For every positive integer modulus <math>m</math>, there is an exact cover:
+
+:<math>\{0\pmod{m},\ 1\pmod{m},\ \ldots,\ {m-1}\pmod{m}\}.</math>
+
+== Mirsky–Newman theorem ==
+The Mirsky–Newman theorem, a special case of the [[Herzog–Schönheim conjecture]], states that there is no disjoint distinct covering system. This result was conjectured in 1950 by [[Paul Erdős]] and proved soon thereafter by [[Leon Mirsky]] and [[Donald J. Newman]]. However, Mirsky and Newman never published their proof. The same proof was also found independently by [[Harold Davenport]] and [[Richard Rado]].<ref name="soifer">{{cite book
+ | last = Soifer | first = Alexander | authorlink = Alexander Soifer
+ | isbn = 978-0-387-74640-1
+ | location = New York
+ | publisher = Springer
+ | title = The Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of its Creators
+ | title-link = The Mathematical Coloring Book
+ | year = 2009
+ | others = With forewords by Branko Grünbaum, Peter D. Johnson, Jr. and Cecil Rousseau
+ | pages = 1–9
+ | mr = 2458293
+ | doi = 10.1007/978-0-387-74642-5}}</ref> In 1970, the Problem 8 in the Soviet mathematical olympiad for 10th grade was essentially a polygon coloring problem equivalent to the Mirsky–Newman theorem.<ref>{{Cite book |title=Soviet Union mathematical olpympiad, grades 8, 9, and 10 |date=2016 |publisher=Mathematical Association of America |isbn=978-1-61444-408-4 |editor-last=Mathematical Association of America |series=Problem Books |location=Washington, D.C |translator-last=Liu |translator-first=A. C. F. |editor-last2=American Mathematical Society}}</ref> 
+
+=== Newman-Znám theorem ===
+[[Štefan Znám]] in 1968<ref>{{Citation |title=Combinatorial theory and its applications. 2 |date=1970 |issue=4 |pages=221-225 |series=Colloquia mathematica Societatis János Bolyai |place=Amsterdam |publisher=North-Holland Publ |isbn=978-0-7204-2037-1}}</ref> and subsequently [[Morris Newman]] in 1971<ref>{{Cite journal |last=Newman |first=Morris |date=December 1971 |title=Roots of unity and covering sets |url=http://link.springer.com/10.1007/BF01350330 |journal=Mathematische Annalen |language=en |volume=191 |issue=4 |pages=279–282 |doi=10.1007/BF01350330 |issn=0025-5831|url-access=subscription }}</ref> proved a general form of Mirsky–Newman theorem, namely given a disjoint covering system, suppose the maximum of the moduli <math>n</math> occurs <math>l</math> times, then <math>l \geqq p</math>, the smallest prime dividing <math>n</math>. Another non-analytic proof of this general result was given in 1986.<ref>{{Cite journal |last=Berger |first=M. A. |last2=Felzenbaum |first2=A. |last3=Fraenkel |first3=A. S. |date=September 1986 |title=A non-analytic proof of the newman—znám result for disjoint covering systems |url=http://link.springer.com/10.1007/BF02579384 |journal=Combinatorica |language=en |volume=6 |issue=3 |pages=235–243 |doi=10.1007/BF02579384 |issn=0209-9683|url-access=subscription }}</ref>
+
+==Primefree sequences==
+Covering systems can be used to find [[primefree sequence]]s, sequences of integers satisfying the same [[recurrence relation]] as the [[Fibonacci number]]s, such that consecutive numbers in the sequence are [[relatively prime]] but all numbers in the sequence are [[composite number]]s. For instance, a sequence of this type found by [[Herbert Wilf]] has initial terms 
+:''a''<sub>1</sub> = 20615674205555510, ''a''<sub>2</sub> = 3794765361567513 {{OEIS|id=A083216}}.
+In this sequence, the positions at which the numbers in the sequence are divisible by a prime ''p'' form an arithmetic progression; for instance, the even numbers in the sequence are the numbers ''a<sub>i</sub>'' where ''i'' is congruent to 1 mod 3. The progressions divisible by different primes form a covering system, showing that every number in the sequence is divisible by at least one prime.
+
+== Boundedness of the smallest modulus ==
+[[Paul Erdős]] asked whether for any arbitrarily large ''N'' there exists an incongruent covering system the minimum of whose moduli is at least ''N''. It is easy to construct examples where the minimum of the moduli in such a system is 2, or 3 (Erdős gave an example where the moduli are in the set of the divisors of 120; a suitable cover is 0(3), 0(4), 0(5), 1(6), 1(8), 2(10), 11(12), 1(15), 14(20), 5(24), 8(30), 6(40), 58(60), 26(120) ) D. Swift gave an example where the minimum of the moduli is 4 (and the moduli are in the set of the divisors of 2880).  S. L. G. Choi proved<ref>{{cite journal |first=S. L. G. | last=Choi |title=Covering the set of integers by congruence classes of distinct moduli |year=1971 |journal=[[Math. Comp.]]  |volume=25 |number=116 |pages=885–895 |doi=10.2307/2004353 | mr=0297692|doi-access=free | jstor=2004353 }}</ref> that it is possible to give an example for ''N'' = 20, and Pace P Nielsen demonstrates<ref>{{cite journal |last=Nielsen |first=Pace P. | title=A covering system whose smallest modulus is 40 | journal=[[Journal of Number Theory]] | volume=129 | year=2009 | pages=640–666 | doi=10.1016/j.jnt.2008.09.016 | issue=3 | mr=2488595| doi-access=free }}</ref> the existence of an example with ''N'' = 40, consisting of more than <math>10^{50}</math> congruences. Tyler Owens<ref>{{Cite journal |last=Owens |first=Tyler |date=2014-12-01 |title=A Covering System with Minimum Modulus 42 |url=https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=5328&context=etd |journal=BYU ScholarsArchive}}</ref> demonstrates the existence of an example with ''N = 42''.
+
+Erdős's question was resolved in the negative by Bob Hough.<ref>{{cite journal | last=Hough | first=Bob | title=Solution of the minimum modulus problem for covering systems | year=2015 | volume=181 | issue=1 | journal=[[Ann. of Math.]] | pages=361–382 | mr=3272928 | doi=10.4007/annals.2015.181.1.6| arxiv=1307.0874 }}</ref> Hough used the [[Lovász local lemma]] to show that there is some maximum ''N''<10<sup>16</sup> which can be the minimum modulus on a covering system.
+
+== Systems of odd moduli ==
+{{unsolved|mathematics|Does there exist a covering system with odd distinct moduli?}}
+There is a famous unsolved conjecture from Erdős and [[John Selfridge|Selfridge]]: an incongruent covering system (with the minimum modulus greater than 1) whose moduli are odd, does not exist.  It is known that if such a system exists with square-free moduli, the overall modulus must have at least 22 prime factors.<ref>{{cite journal |first1=Song | last1=Guo |first2=Zhi-Wei | last2=Sun |title=On odd covering systems with distinct moduli | year=2005 |volume=35 |pages=182&ndash;187|journal=Adv. Appl. Math.|arxiv=math/0412217 | mr=2152886 | issue=2 | doi=10.1016/j.aam.2005.01.004}}</ref>
+
+==See also==
+* [[Chinese remainder theorem]]
+* [[Covering set]]
+* [[Residue number system]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [[Zhi-Wei Sun]]: [http://math.nju.edu.cn/~zwsun/Cover.pdf Problems and Results on Covering Systems] (a survey) ([[PDF]])
+* Zhi-Wei Sun: [http://math.nju.edu.cn/~zwsun/Cref.pdf Classified Publications on Covering Systems](PDF) {{Webarchive|url=https://web.archive.org/web/20070929111005/http://math.nju.edu.cn/~zwsun/Cref.pdf |date=2007-09-29 }}
+
+[[Category:Unsolved problems in number theory]]

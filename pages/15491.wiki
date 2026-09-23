@@ -1,0 +1,208 @@
+{{Short description|Decomposition of a number into a product}}
+{{Redirect|Prime decomposition|the prime decomposition theorem for 3-manifolds|Prime decomposition of 3-manifolds}}
+{{unsolved|computer science|Can integer factorization be solved in polynomial time on a classical computer?}}
+
+In [[mathematics]], '''integer factorization''' is the decomposition of a [[positive integer]] into a [[Product (mathematics)|product]] of integers. Every positive integer greater than 1 is either the product of two or more integer [[divisor|factors]] greater than 1, in which case it is a [[composite number]], or it is not, in which case it is a [[prime number]]. For example, {{math|15}} is a composite number because {{math|1=15 = 3&thinsp;·&thinsp;5}}, but {{math|7}} is a prime number because it cannot be decomposed in this way. If one of the factors is composite, it can in turn be written as a product of smaller factors, for example {{math|1=60 = 3&thinsp;·&thinsp;20 = 3&thinsp;·&thinsp;(5&thinsp;·&thinsp;4)}}. Continuing this process until every factor is prime is called '''prime factorization'''; the result is always unique up to the order of the factors by the [[prime factorization theorem]].
+
+To factorize a small integer {{mvar|n}} using mental or pen-and-paper arithmetic, the simplest method is [[trial division]]: checking if the number is divisible by prime numbers {{math|2}}, {{math|3}}, {{math|5}}, and so on, up to the [[square root]] of {{mvar|n}}. For larger numbers, especially when using a computer, various more sophisticated factorization algorithms are more efficient. A prime factorization algorithm typically involves [[primality test|testing whether each factor is prime]] each time a factor is found.
+
+When the numbers are sufficiently large, no efficient non-[[quantum computer|quantum]] integer factorization [[algorithm]] is known. However, it has not been proven that such an algorithm does not exist. The presumed [[Computational hardness assumption|difficulty]] of this problem is important for the algorithms used in [[cryptography]] such as [[RSA (cryptosystem)|RSA public-key encryption]] and the [[Digital Signature Algorithm|RSA digital signature]].<ref>{{Citation |last=Lenstra |first=Arjen K. |title=Integer Factoring |date=2011 |encyclopedia=Encyclopedia of Cryptography and Security |pages=611–618 |editor-last=van Tilborg |editor-first=Henk C. A. |place=Boston |publisher=Springer |doi=10.1007/978-1-4419-5906-5_455 |isbn=978-1-4419-5905-8 |editor2-last=Jajodia |editor2-first=Sushil }}</ref> Many areas of mathematics and [[computer science]] have been brought to bear on this problem, including [[elliptic curve]]s, [[algebraic number theory]], and quantum computing.
+
+Not all numbers of a given length are equally hard to factor. The hardest instances of these problems (for currently known techniques) are [[semiprime]]s, the product of two prime numbers. When they are both large, for instance more than two thousand [[bit]]s long, randomly chosen, and about the same size (but not too close, for example, to avoid efficient factorization by [[Fermat's factorization method]]), even the fastest prime factorization algorithms on the fastest classical computers can take enough time to make the search impractical; that is, as the number of digits of the integer being factored increases, the number of operations required to perform the factorization on any classical computer increases drastically.
+
+Many cryptographic protocols are based on the presumed difficulty of factoring large composite integers or a related problem {{Ndash}} for example, the [[RSA problem]]. An algorithm that efficiently factors an arbitrary integer would render [[RSA (algorithm)|RSA]]-based [[public-key]] cryptography insecure.
+
+== Prime decomposition ==
+[[Image:PrimeDecompositionExample.svg|right|thumb|Prime decomposition of {{math|''n'' {{=}} 864}} as {{math|2<sup>5</sup> × 3<sup>3</sup>}}]]
+By the [[fundamental theorem of arithmetic]], every positive integer has a unique [[prime factor]]ization. (By convention, 1 is the [[empty product]].) [[Primality test|Testing]] whether the integer is prime can be done in [[polynomial time]], for example, by the [[AKS primality test]]. If composite, however, the polynomial time tests give no insight into how to obtain the factors.
+
+Given a general algorithm for integer factorization, any integer can be factored into its constituent [[prime factor]]s by repeated application of this algorithm. The situation is more complicated with special-purpose factorization algorithms, whose benefits may not be realized as well or even at all with the factors produced during decomposition. For example, if {{math|1=''n'' = 171 × ''p'' × ''q''}} where {{math|''p'' < ''q''}} are very large primes, [[trial division]] will quickly produce the factors 3 and 19 but will take {{math|''p''}} divisions to find the next factor. As a contrasting example, if {{math|''n''}} is the product of the primes {{math|13729}}, {{math|1372933}}, and {{math|18848997161}}, where {{math|1=13729 × 1372933 = 18848997157}}, Fermat's factorization method will begin with {{math|⌈{{sqrt|''n''}}⌉ {{=}} 18848997159}} which immediately yields {{math|''b'' {{=}} {{sqrt|''a''<sup>2</sup> − ''n''}} {{=}} {{sqrt|4}} {{=}} 2}} and hence the factors {{math|1=''a'' − ''b'' = 18848997157}} and {{math|1=''a'' + ''b'' = 18848997161}}. While these are easily recognized as composite and prime respectively, Fermat's method will take much longer to factor the composite number because the starting value of {{math|⌈{{sqrt|18848997157}}⌉ {{=}} 137292}} for {{math|''a''}} is a factor of 10 from {{math|1372933}}.
+
+== Current state of the art ==
+{{See also|Integer factorization records}}
+
+Among the {{math|''b''}}-bit numbers, the most difficult to factor in practice using existing algorithms are those [[semiprimes]] whose factors are of similar size. For this reason, these are the integers used in cryptographic applications.
+
+In 2019, a 240-digit (795-bit) number ([[RSA-240]]) was factored by a team of researchers including [[Paul Zimmermann (mathematician)|Paul Zimmermann]], utilizing approximately 900 core-years of computing power.<ref>{{cite web| url = https://lists.gforge.inria.fr/pipermail/cado-nfs-discuss/2019-December/001139.html| url-status = dead| archive-url = https://web.archive.org/web/20191202190004/https://lists.gforge.inria.fr/pipermail/cado-nfs-discuss/2019-December/001139.html| archive-date = 2019-12-02| title = [Cado-nfs-discuss] 795-bit factoring and discrete logarithms}}</ref> These researchers estimated that a 1024-bit RSA modulus would take about 500 times as long.<ref name=rsa768>{{cite conference
+ | last1 = Kleinjung | first1 = Thorsten
+ | last2 = Aoki | first2 = Kazumaro
+ | last3 = Franke | first3 = Jens
+ | last4 = Lenstra | first4 = Arjen K.
+ | last5 = Thomé | first5 = Emmanuel
+ | last6 = Bos | first6 = Joppe W.
+ | last7 = Gaudry | first7 = Pierrick
+ | last8 = Kruppa | first8 = Alexander
+ | last9 = Montgomery | first9 = Peter L.
+ | last10 = Osvik | first10 = Dag Arne
+ | last11 = te Riele | first11 = Herman J. J.
+ | last12 = Timofeev | first12 = Andrey
+ | last13 = Zimmermann | first13 = Paul
+ | editor-last = Rabin | editor-first = Tal
+ | contribution = Factorization of a 768-Bit RSA Modulus
+ | contribution-url = https://eprint.iacr.org/2010/006.pdf
+ | doi = 10.1007/978-3-642-14623-7_18
+ | pages = 333–350
+ | publisher = Springer
+ | series = Lecture Notes in Computer Science
+ | title = Advances in Cryptology - CRYPTO 2010, 30th Annual Cryptology Conference, Santa Barbara, CA, USA, August 15-19, 2010. Proceedings
+ | volume = 6223
+ | year = 2010| isbn = 978-3-642-14622-0
+ }}</ref>
+
+The largest such semiprime yet factored was [[RSA numbers#RSA-260|RSA-260]], an 862-bit number with 260 decimal digits, in September 2026.<ref>{{cite web |last=Lu |first=Eric |date=September 9, 2026 |title=Factoring RSA-260 |url=https://cognition.com/blog/factoring-rsa-260 |website=Cognition |access-date=September 9, 2026}}</ref> The total computation time was roughly 4,900 GPU-days using a GPU-accelerated implementation of the [[general number field sieve]]. Like all recent factorization records, this factorization was completed with a highly optimized implementation of the [[general number field sieve]] run on hundreds of machines.
+
+=== Time complexity ===
+
+No [[algorithm]] has been published that can factor all integers in [[polynomial time]], that is, that can factor a {{math|''b''}}-bit number {{math|''n''}} in time {{math|[[Big O notation|O]](''b''<sup>''k''</sup>)}} for some constant {{math|''k''}}. Neither the existence nor non-existence of such algorithms has been proved, but it is generally suspected that they do not exist.<ref>{{citation |last=Krantz |first=Steven G. |author-link=Steven G. Krantz |doi=10.1007/978-0-387-48744-1 |isbn=978-0-387-48908-7 |location=New York |mr=2789493 |page=203 |publisher=Springer |title=The Proof is in the Pudding: The Changing Nature of Mathematical Proof |url=https://books.google.com/books?id=mMZBtxVZiQoC&pg=PA203 |year=2011}}</ref><ref>{{citation |last1=Arora |first1=Sanjeev |author1-link=Sanjeev Arora (computer scientist) |last2=Barak |first2=Boaz |doi=10.1017/CBO9780511804090 |isbn=978-0-521-42426-4 |location=Cambridge |mr=2500087 |page=230 |publisher=Cambridge University Press |title=Computational complexity |url=https://books.google.com/books?id=nGvI7cOuOOQC&pg=PA230 |year=2009|s2cid=215746906 }}</ref>
+
+There are published algorithms that are faster than {{math|O((1 + ''ε'')<sup>''b''</sup>)}} for all positive {{math|''ε''}}, that is, [[Time complexity#Sub-exponential time|sub-exponential]].  {{As of|2022}}, the algorithm with best theoretical asymptotic running time is the [[general number field sieve]] (GNFS), first published in 1993,<ref>{{cite book |last1=Buhler |first1=J. P. |last2=Lenstra |first2=H. W. Jr. |last3=Pomerance |first3=Carl |chapter=Factoring integers with the number field sieve |title=The development of the number field sieve |date=1993 |publisher=Springer |isbn=978-3-540-57013-4 |pages=50–94 |doi=10.1007/BFb0091539 |hdl=1887/2149 |series=Lecture Notes in Mathematics |volume=1554 |url=https://doi.org/10.1007/BFb0091539 |access-date=12 March 2021 |language=English}}</ref> running on a {{math|''b''}}-bit number {{math|''n''}} in time:
+: <math>\exp\left( \left(\left(\tfrac83\right)^\frac23 + o(1)\right)\left(\log n\right)^\frac13\left(\log \log n\right)^\frac23\right).</math>
+
+For current computers, GNFS is the best published algorithm for large {{math|''n''}} (more than about 400 bits). For a [[Quantum computing|quantum computer]], however, [[Peter Shor]] discovered an algorithm in 1994 that solves it in polynomial time. [[Shor's algorithm]] takes only {{math|O(''b''<sup>3</sup>)}} time and {{math|O(''b'')}} space on {{math|''b''}}-bit number inputs. In 2001, Shor's algorithm was implemented for the first time, by using [[Nuclear magnetic resonance|NMR]] techniques on molecules that provide seven qubits.<ref>
+{{cite journal
+ | doi = 10.1038/414883a
+ | title = Experimental realization of Shor's quantum factoring algorithm using nuclear magnetic resonance
+ | journal = [[Nature (journal)|Nature]]
+ | volume = 414
+ | pages = 883–887
+ | year = 2001
+ | last = Vandersypen | first=Lieven M. K. | issue = 6866
+ | display-authors=etal| arxiv = quant-ph/0112176
+ | pmid = 11780055
+ | bibcode = 2001Natur.414..883V
+ | s2cid = 4400832
+}}</ref>
+
+In order to talk about [[complexity class|complexity classes]] such as P, NP, and co-NP, the problem has to be stated as a [[decision problem]].
+
+{{Math theorem |For every natural numbers <math>n</math> and <math>k</math>, does {{math|''n''}} have a factor smaller than {{math|''k''}} besides 1? |name=Decision problem |note=Integer factorization }}
+
+It is known to be in both [[NP (complexity)|NP]] and [[co-NP]], meaning that both "yes" and "no" answers can be verified in polynomial time. An answer of "yes" can be certified by exhibiting a factorization {{math|1=''n'' = ''d''({{sfrac|''n''|''d''}})}} with {{math|''d'' ≤ ''k''}}. An answer of "no" can be certified by exhibiting the factorization of {{math|''n''}} into distinct primes, all larger than {{math|''k''}}; one can verify their primality using the [[AKS primality test]], and then multiply them to obtain {{math|''n''}}. The [[fundamental theorem of arithmetic]] guarantees that there is only one possible string of increasing primes that will be accepted, which shows that the problem is in both [[UP (complexity)|UP]] and co-UP.<ref>
+{{cite web
+ | author = Lance Fortnow
+ | title = Computational Complexity Blog: Complexity Class of the Week: Factoring
+ | date = 2002-09-13
+ | url = http://weblog.fortnow.com/2002/09/complexity-class-of-week-factoring.html
+}}</ref> It is known to be in [[BQP]] because of Shor's algorithm.
+
+The problem is suspected to be outside all three of the complexity classes P, NP-complete,<ref>{{citation |last1=Goldreich |first1=Oded |author1-link=Oded Goldreich |last2=Wigderson |first2=Avi |author2-link=Avi Wigderson |editor1-last=Gowers |editor1-first=Timothy |editor1-link=Timothy Gowers |editor2-last=Barrow-Green |editor2-first=June |editor2-link=June Barrow-Green|editor3-last=Leader |editor3-first=Imre |editor3-link=Imre Leader |contribution=IV.20 Computational Complexity |isbn=978-0-691-11880-2 |location=Princeton, New Jersey |mr=2467561 |pages=575–604 |publisher=Princeton University Press |title=The Princeton Companion to Mathematics |year=2008}}. See in particular [https://books.google.com/books?id=ZOfUsvemJDMC&pg=PA583 p.&nbsp;583].</ref> and [[co-NP-complete]].
+It is therefore a candidate for the [[NP-intermediate]] complexity class.
+
+In contrast, the decision problem "Is {{math|''n''}} a composite number?" (or equivalently: "Is {{math|''n''}} a prime number?") appears to be much easier than the problem of specifying factors of {{math|''n''}}. The composite/prime problem can be solved in polynomial time (in the number {{math|''b''}} of digits of {{math|''n''}}) with the [[AKS primality test]]. In addition, there are several [[randomized algorithm|probabilistic algorithm]]s that can test primality very quickly in practice if one is willing to accept a vanishingly small possibility of error. The ease of [[primality test]]ing is a crucial part of the [[RSA (algorithm)|RSA]] algorithm, as it is necessary to find large prime numbers to start with.
+
+== Factoring algorithms <!-- This section is linked from [[Factorization]] --> ==
+
+=== Special-purpose ===
+A special-purpose factoring algorithm's running time depends on the properties of the number to be factored or on one of its unknown factors: size, special form, etc. The parameters which determine the running time vary among algorithms.
+
+An important subclass of special-purpose factoring algorithms is the ''Category 1'' or ''First Category'' algorithms, whose running time depends on the size of smallest prime factor. Given an integer of unknown form, these methods are usually applied before general-purpose methods to remove small factors.<ref name="Bressoud and Wagon">
+{{cite book
+ | author = [[David Bressoud]] and [[Stan Wagon]]
+ | year = 2000
+ | title = A Course in Computational Number Theory
+ | publisher = Key College Publishing/Springer
+ | isbn = 978-1-930190-10-8
+ | pages = [https://archive.org/details/courseincomputat0000bres/page/168 168–69]
+ | url-access = registration
+ | url = https://archive.org/details/courseincomputat0000bres/page/168
+}}</ref> For example, naive [[trial division]] is a Category 1 algorithm.
+
+* [[Trial division]] (TD)
+* [[Wheel factorization]]
+* [[Pollard's rho algorithm]], which has two common flavors to [[Cycle detection|identify group cycles]]: one by Floyd and one by Brent.
+* [[Algebraic-group factorization algorithms]], among which are [[Pollard's p − 1 algorithm|Pollard's ''p'' − 1 algorithm]], [[Williams's p + 1 algorithm|Williams's ''p'' + 1 algorithm]], and [[Lenstra elliptic curve factorization]] (ECM)
+* [[Fermat's factorization method]]
+* [[Euler's factorization method]]
+* [[Special number field sieve]] (SNFS)
+* [[Algebraic factorization]] (which includes [[difference of two squares]], [[sum of two cubes]], [[Aurifeuillean factorization]], etc.)
+
+=== General-purpose ===
+A general-purpose factoring algorithm, also known as a ''Category 2'', ''Second Category'', or [[Maurice Kraitchik|''Kraitchik'']] ''family'' algorithm,<ref name="Bressoud and Wagon"/> has a running time which depends solely on the size of the integer to be factored. This is the type of algorithm used to factor [[RSA number]]s. Most general-purpose factoring algorithms are based on the [[congruence of squares]] method.
+
+* [[Dixon's factorization method]]
+* [[Continued fraction factorization]] (CFRAC)
+* [[Quadratic sieve]] (QS)
+* [[Rational sieve]]
+* [[General number field sieve]] (GNFS)
+* [[Shanks's square forms factorization]] (SQUFOF)
+
+=== Other notable algorithms ===
+* [[Shor's algorithm]], for quantum computers
+
+== Heuristic running time ==
+In number theory, there are many integer factoring algorithms that heuristically have expected [[Time complexity|running time]]
+: <math>L_n\left[\tfrac12,1+o(1)\right]=e^{(1+o(1))\sqrt{(\log n)(\log \log n)}}</math>
+in [[Big O notation|little-o]] and [[L-notation]].
+Some examples of those algorithms are the [[elliptic curve method]] and the [[quadratic sieve]].
+Another such algorithm is the '''class group relations method''' proposed by Schnorr,<ref name=1982-schnorr>{{cite journal | last=Schnorr|first=Claus P.|year=1982|title=Refined analysis and improvements on some factoring algorithms|journal=Journal of Algorithms|volume=3|pages=101–127 | doi=10.1016/0196-6774(82)90012-8 | issue=2 | mr=0657269|url=http://www.dtic.mil/get-tr-doc/pdf?AD=ADA096348|archive-url=https://web.archive.org/web/20170924140543/http://www.dtic.mil/get-tr-doc/pdf?AD=ADA096348|url-status=dead|archive-date=September 24, 2017}}</ref> Seysen,<ref name=1987-seysen>{{cite journal| last=Seysen|first=Martin|year=1987|title=A probabilistic factorization algorithm with quadratic forms of negative discriminant|journal=Mathematics of Computation|volume=48|pages=757–780| doi=10.1090/S0025-5718-1987-0878705-X| issue=178 | mr=0878705|doi-access=free}}</ref> and Lenstra,<ref name=1988-lenstra >{{cite journal|last=Lenstra|first=Arjen K|year=1988|title=Fast and rigorous factorization under the generalized Riemann hypothesis|journal=Indagationes Mathematicae|volume=50|issue=4|pages=443–454|doi=10.1016/S1385-7258(88)80022-2|url=https://infoscience.epfl.ch/record/164491/files/nscan9.PDF }}</ref> which they proved while assuming the unproved [[generalized Riemann hypothesis]].
+
+== Rigorous running time ==
+The Schnorr–Seysen–Lenstra probabilistic algorithm has been rigorously proven by Lenstra and Pomerance<ref name=lenstra-pomerance/> to have expected running time {{math|''L<sub>n</sub>''[{{sfrac|1|2}}, 1+''o''(1)]}} by replacing the GRH assumption with the use of multipliers.
+The algorithm uses the [[Ideal class group|class group]] of positive binary [[quadratic form]]s of [[Discriminant of a quadratic form|discriminant]] {{math|Δ}} denoted by {{math|''G''<sub>Δ</sub>}}.
+{{math|''G''<sub>Δ</sub>}} is the set of triples of integers {{math|(''a'', ''b'', ''c'')}} in which those integers are relative prime.
+
+=== Schnorr–Seysen–Lenstra algorithm ===
+Given an integer {{mvar|n}} that will be factored, where {{mvar|n}} is an odd positive integer greater than a certain constant. In this factoring algorithm the discriminant {{math|Δ}} is chosen as a multiple of {{mvar|n}}, {{math|1=Δ = −''dn''}}, where {{mvar|d}} is some positive multiplier. The algorithm expects that for one {{mvar|d}} there exist enough [[smooth number|smooth]] forms in {{math|''G''<sub>Δ</sub>}}. Lenstra and Pomerance show that the choice of {{mvar|d}} can be restricted to a small set to guarantee the smoothness result.
+
+Denote by {{math|''P''<sub>Δ</sub>}} the set of all primes {{mvar|q}} with [[Kronecker symbol]] {{math|{{pars|s=150%|{{sfrac|Δ|''q''}}}} {{=}} 1}}. By constructing a set of [[Generating set of a group|generators]] of {{math|''G''<sub>Δ</sub>}} and prime forms {{math|''f''<sub>''q''</sub>}} of {{math|''G''<sub>Δ</sub>}} with {{mvar|q}} in {{math|''P''<sub>Δ</sub>}} a sequence of relations between the set of generators and {{math|''f''<sub>''q''</sub>}} are produced.
+The size of {{mvar|q}} can be bounded by {{math|''c''<sub>0</sub>(log{{abs|Δ}})<sup>2</sup>}} for some constant {{math|''c''<sub>0</sub>}}.
+
+The relation that will be used is a relation between the product of powers that is equal to the [[group (mathematics)|neutral element]] of {{math|''G''<sub>Δ</sub>}}. These relations will be used to construct a so-called ambiguous form of {{math|''G''<sub>Δ</sub>}}, which is an element of {{math|''G''<sub>Δ</sub>}} of order dividing 2. By calculating the corresponding factorization of {{math|Δ}} and by taking a [[Greatest common divisor|gcd]], this ambiguous form provides the complete prime factorization of {{mvar|n}}. This algorithm has these main steps:
+
+Let {{mvar|n}} be the number to be factored.
+{{ordered list
+| Let {{math|Δ}} be a negative integer with {{math|1=Δ = −''dn''}}, where {{mvar|d}} is a multiplier and {{math|Δ}} is the negative discriminant of some quadratic form.
+| Take the {{mvar|t}} first primes {{math|''p''<sub>1</sub> {{=}} 2, ''p''<sub>2</sub> {{=}} 3, ''p''<sub>3</sub> {{=}} 5, ..., ''p''<sub>''t''</sub>}}, for some {{math|''t'' ∈ '''N'''}}.
+| Let {{math|''f''<sub>''q''</sub>}} be a random prime form of {{math|''G''<sub>Δ</sub>}} with {{math|{{pars|s=150%|{{sfrac|Δ|''q''}}}} {{=}} 1}}.
+| Find a generating set {{mvar|X}} of {{math|''G''<sub>Δ</sub>}}.
+| Collect a sequence of relations between set {{mvar|X}} and {{math|{{mset|''f''<sub>''q''</sub> : ''q'' ∈ ''P''<sub>Δ</sub>}}}} satisfying:
+: <math>\left(\prod_{x \in X_{}} x^{r(x)}\right).\left(\prod_{q \in P_\Delta} f^{t(q)}_{q}\right) = 1.</math>
+| Construct an ambiguous form {{math|(''a'', ''b'', ''c'')}} that is an element {{math|''f'' ∈ ''G''<sub>Δ</sub>}} of order dividing 2 to obtain a coprime factorization of the largest odd divisor of {{math|Δ}} in which {{math|1=Δ = −4''ac''}} or {{math|1=Δ = ''a''(''a'' − 4''c'')}} or {{math|1=Δ = (''b'' − 2''a'')(''b'' + 2''a'')}}.
+| If the ambiguous form provides a factorization of {{mvar|n}} then stop, otherwise find another ambiguous form until the factorization of {{mvar|n}} is found. In order to prevent useless ambiguous forms from generating, build up the [[Sylow theorems|2-Sylow]] group {{math|Sll<sub>2</sub>(Δ)}} of {{math|''G''(Δ)}}.
+}}
+To obtain an algorithm for factoring any positive integer, it is necessary to add a few steps to this algorithm such as trial division, and the [[Adleman–Pomerance–Rumely primality test|Jacobi sum test]].
+
+=== Expected running time ===
+The algorithm as stated is a [[probabilistic algorithm]] as it makes random choices. Its expected running time is at most {{math|''L<sub>n</sub>''[{{sfrac|1|2}}, 1+''o''(1)]}}.<ref name=lenstra-pomerance>{{cite journal | first1=H. W. |last1=Lenstra|first2=Carl|last2= Pomerance |date=July 1992 |title=A Rigorous Time Bound for Factoring Integers |journal=Journal of the American Mathematical Society |volume=5 |pages=483–516|url=https://www.ams.org/journals/jams/1992-05-03/S0894-0347-1992-1137100-0/S0894-0347-1992-1137100-0.pdf | doi=10.1090/S0894-0347-1992-1137100-0 | issue=3 | mr=1137100|doi-access=free }}</ref>
+
+== See also ==
+* [[Algebraic factorization]]
+* [[Aurifeuillean factorization]]
+* {{anl|Bach's algorithm}}
+* [[Canonical representation of a positive integer]]
+* [[Factorization]]
+* {{anl|Multiplicative partition}}
+* [[p-adic valuation|{{mvar|p}}-adic valuation]]
+* {{anl|Integer partition}}
+* [[William_Stanley_Jevons#Jevons's_number|Jevon's number]]
+
+== Notes ==
+{{Reflist}}<!--added under references heading by script-assisted edit-->
+
+== References ==
+* {{cite book
+|author = [[Richard Crandall]] and [[Carl Pomerance]]
+| year = 2001
+| title = Prime Numbers: A Computational Perspective
+| publisher = Springer
+| isbn = 0-387-94777-9}} Chapter 5: Exponential Factoring Algorithms, pp.&nbsp;191–226. Chapter 6: Subexponential Factoring Algorithms, pp.&nbsp;227–284. Section 7.4: Elliptic curve method, pp.&nbsp;301–313.
+* [[Donald Knuth]]. ''[[The Art of Computer Programming]]'', Volume 2: ''Seminumerical Algorithms'', Third Edition. Addison-Wesley, 1997. {{ISBN|0-201-89684-2}}. Section 4.5.4: Factoring into Primes, pp.&nbsp;379–417.
+* {{cite book | author =Samuel S. Wagstaff Jr. | title=The Joy of Factoring | publisher=American Mathematical Society | location=Providence, RI | year=2013 | isbn=978-1-4704-1048-3 |url=https://www.ams.org/bookpages/stml-68 |author-link=Samuel S. Wagstaff Jr. }}.
+* {{Cite book |title=[[Hacker's Delight]] |first=Henry S. Jr. |last=Warren |date=2013 |edition=2 |publisher=[[Addison Wesley]] - [[Pearson Education, Inc.]] |isbn=978-0-321-84268-8}}
+
+== External links ==
+* [https://sourceforge.net/projects/msieve/ msieve] – SIQS and NFS – has helped complete some of the largest public factorizations known
+* Richard P. Brent, "Recent Progress and Prospects for Integer Factorisation Algorithms", ''Computing and Combinatorics"'', 2000, pp.&nbsp;3–22. [http://citeseer.ist.psu.edu/327036.html download]
+* [[Manindra Agrawal]], Neeraj Kayal, Nitin Saxena, "PRIMES is in P." Annals of Mathematics 160(2): 781–793 (2004). [http://www.cse.iitk.ac.in/users/manindra/algebra/primality_v6.pdf August 2005 version PDF]
+* Eric W. Weisstein, [http://mathworld.wolfram.com/news/2005-11-08/rsa-640/ “RSA-640 Factored” ''MathWorld Headline News'', November 8, 2005]
+* [https://www.alpertron.com.ar/ECM.HTM Dario Alpern's Integer factorization calculator] – A web app for factoring large integers
+
+{{Computational hardness assumptions}}
+{{Number theoretic algorithms|state=collapsed}}
+{{Divisor classes}}
+{{Authority control}}
+
+[[Category:Integer factorization algorithms| ]]
+[[Category:Computational hardness assumptions]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Factorization]]

@@ -1,0 +1,66 @@
+{{Short description|Prime number conjecture}}
+In [[mathematics]], specifically in [[number theory]], '''Grimm's conjecture''' states that, for every set of consecutive [[composite number]]s, there is an equally sized set of [[prime number]]s, and a [[bijection]] that maps each composite in the former set to a prime in the latter set that it is divisible by. It was first proposed by Carl Albert Grimm in 1969.{{sfnp|Grimm|1969}}
+
+Though still unproven, the conjecture has been verified for all <math>n<1.9\times 10^{10}</math>.{{sfnp|Laishram|Shorey|2006}}
+
+== Formal statement ==
+
+If <math>n+1,n+2,\dots,n+k</math> are all [[composite numbers]], then there is a sequence of distinct [[prime number]]s <math>\left(p_i\right)_{i=1}^k</math> such that <math>p_i</math> [[divisor|divides]] <math>n+i</math> for <math>1 \leq i \leq k</math>.
+
+=== Weaker version ===
+
+A weaker, though still unproven, version of this conjecture states that if there is no prime in the interval <math>[n+1, n+k]</math>, then
+:<math>\prod_{1\,\leq \,x\,\leq \,k}(n+x)</math>
+has at least <math>k</math> distinct [[prime divisor]]s.{{sfnp|Erdős|Selfridge|1971}}
+
+== Consequences ==
+
+If Grimm's conjecture is true, then
+:<math>p_{i+1} - p_i \ll \Big(\frac{p_i}{\log p_i}\Big)^{1/2}</math>
+for all consecutive primes <math>p_i</math> and <math>p_{i+1}</math>.{{sfnp|Erdős|Selfridge|1971}} This goes well beyond what the [[Riemann hypothesis]] would imply about [[prime gaps|gaps between prime numbers]]: the Riemann hypothesis only implies an upper bound of <math>O(\sqrt{p_i}(\log p_i))</math>.{{sfnp|Laishram|Murty|2012}}
+
+== See also ==
+*[[Prime gap]]
+
+== Notes ==
+{{reflist}}
+
+== References ==
+{{refbegin}}
+
+* {{cite journal |last1=Erdős |first1=P. |author1-link=Paul Erdős |last2=Selfridge |first2=J. L. |author2-link=John Selfridge |title=Some problems on the prime factors of consecutive integers II |journal=Proceedings of the Washington State University Conference on Number Theory |date=1971 |pages=13–21}}
+
+* {{cite journal |last1=Grimm |first1=C. A. |title=A conjecture on consecutive composite numbers |journal=[[American Mathematical Monthly]] |date=1969 |volume=76 |issue=10 |pages=1126–1128 |doi=10.2307/2317188 |jstor=2317188}}
+
+* {{cite journal |last=Laishram |first=Shanta |last2=Murty |first2=M. Ram |authorlink2=M. Ram Murty |date=2012 |title=Grimm's conjecture and smooth numbers |journal=[[Michigan Mathematical Journal]] |volume=61 |issue=1 |pages=151–160 |doi=10.1307/mmj/1331222852|arxiv=1306.0765 }}
+
+* {{cite journal |last1=Laishram |first1=Shanta|last2=Shorey |first2=T. N.|title=Grimm's conjecture on consecutive integers |journal=[[International Journal of Number Theory]] |date=2006 |volume=2|issue=2 |pages=207–211 |doi=10.1142/S1793042106000498}}
+
+{{refend}}
+
+== Further reading ==
+{{refbegin}}
+
+* {{cite book |last=Guy |first=Richard K. |authorlink=Richard K. Guy |chapter=Grimm's conjecture |title=Unsolved Problems in Number Theory |year=2004 |publisher=[[Springer-Verlag|Springer]] |pages=133–144 |edition=third |isbn=978-0-387-20860-2 |location=[[New York City|New York]] |series=Problem Books in Mathematics |volume=1}}
+
+* {{cite journal |last1=Ramachandra |first1=K. T. |author1-link=Kanakanahalli Ramachandra |last2=Shorey |first2=T. N. |last3=Tijdeman |first3=R. |author3-link=Robert Tijdeman |title=On Grimm's problem relating to factorisation of a block of consecutive integers |journal=[[Journal für die reine und angewandte Mathematik]] |date=1975 |volume=273 |pages=109–124 |doi=10.1515/crll.1975.273.109}}
+
+* {{cite journal |last1=Ramachandra |first1=K. T. |author1-link=Kanakanahalli Ramachandra |last2=Shorey |first2=T. N. |last3=Tijdeman |first3=R. |author3-link=Robert Tijdeman |title=On Grimm's problem relating to factorisation of a block of consecutive integers. II |journal=[[Journal für die reine und angewandte Mathematik]] |date=1976 |volume=288 |pages=192–201 |doi=10.1515/crll.1976.288.192}}
+
+* {{cite journal |last=Sukthankar |first=Neela S. |title=On Grimm's conjecture in algebraic number fields |journal=[[Indagationes Mathematicae|Indagationes Mathematicae (Proceedings)]] |date=1973 |volume=76 |issue=5 |pages=475–484 |doi=10.1016/1385-7258(73)90073-5}}
+
+* {{cite journal |last=Sukthankar |first=Neela S. |title=On Grimm's conjecture in algebraic number fields. II |journal=[[Indagationes Mathematicae|Indagationes Mathematicae (Proceedings)]] |date=1975 |volume=78 |issue=1 |pages=13–25 |doi=10.1016/1385-7258(75)90009-8}}
+
+* {{cite journal |last=Sukthankar |first=Neela S. |title=On Grimm's conjecture in algebraic number fields-III |journal=[[Indagationes Mathematicae|Indagationes Mathematicae (Proceedings)]] |date=1977 |volume=80 |issue=4 |pages=342–348 |doi=10.1016/1385-7258(77)90030-0}}
+
+* {{mathworld|urlname=GrimmsConjecture|title=Grimm's Conjecture}}
+
+{{refend}}
+
+==External links==
+* [https://www.primepuzzles.net/puzzles/puzz_430.htm Prime Puzzles #430]
+
+{{Prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

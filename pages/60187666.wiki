@@ -1,0 +1,743 @@
+{{Short description|Problem in number theory}}
+{{unsolved|mathematics|Is there a number that is not 4 or 5 modulo 9 and that cannot be expressed as a sum of three cubes?}}
+[[File:Sum_of_3_cubes.svg|thumb|250px|[[Semi-log plot]] of solutions of <math>x^3+y^3+z^3=n</math> for integer <math>x</math>, <math>y</math>, and <math>z</math>, and <math>0\le n\le 100</math>. Green bands denote values of <math>n</math> proven not to have a solution.]]
+In the mathematics of [[sums of powers]], it is an [[open problem]] to characterize the numbers that can be expressed as a sum of three [[Cube (algebra)|cubes]] of integers, allowing both positive and negative cubes in the sum. A necessary condition for an integer <math>n</math> to equal such a sum is that <math>n</math> cannot equal 4 or 5 [[Modular arithmetic|modulo]] 9, because the cubes modulo 9 are 0, 1, and &minus;1, and no three of these numbers can sum to 4 or 5 modulo 9.{{r|d}} It is unknown whether this necessary condition is sufficient.
+
+Variations of the problem include sums of non-negative cubes and sums of rational cubes. All integers have a representation as a sum of rational cubes, but it is unknown whether the sums of non-negative cubes form a set with non-zero [[natural density]].
+
+==Small cases== 
+A nontrivial representation of 0 as a sum of three cubes would give a [[counterexample]] to [[Fermat's Last Theorem]] for the exponent three, as one of the three cubes would have the opposite sign as the other two and its negation would equal the sum of the other two. Therefore, by [[Leonhard Euler]]'s proof of that case of Fermat's last theorem,{{r|euler}} there are only the trivial solutions
+:<math>a^3 + (-a)^3 + 0^3 = 0.</math>
+For representations of 1 and 2, there are infinite families of solutions
+:<math>(9b^4)^3+(3b-9b^4)^3+(1-9b^3)^3=1</math>  (discovered{{r|m36}} by K. Mahler in 1936)
+and
+:<math>(1+6c^3)^3+(1-6c^3)^3+(-6c^2)^3=2</math> (discovered{{r|w08}} by A.S. Verebrusov in 1908, quoted by L.J. Mordell{{r|m42}}).
+These can be scaled to obtain representations for any cube or any number that is twice a cube.{{r|m42}}  There are also other known representations of 2 that are not given by these infinite families:{{r|hlr}}
+:<math>1\ 214\ 928^3 + 3\ 480\ 205^3 + (-3\ 528\ 875)^3 = 2, </math>
+:<math>37\ 404\ 275\ 617^3 + (-25\ 282\ 289\ 375)^3 + (-33\ 071\ 554\ 596)^3 = 2,</math>
+:<math>3\ 737\ 830\ 626\ 090^3 + 1\ 490\ 220\ 318\ 001^3 + (-3\ 815\ 176\ 160\ 999)^3 = 2.</math>
+However, 1 and 2 are the only numbers with representations that can be parameterized by [[Quartic function|quartic polynomials]] as above.{{r|m42}}
+Even in the case of representations of 3, [[Louis J. Mordell]] wrote in 1953 "I do not know anything" more than its small solutions
+:<math>1^3+1^3+1^3=4^3+4^3+(-5)^3=3 </math>
+and the fact that each of the three cubed numbers must be equal modulo 9.{{r|m53|cassels}}
+
+==Computational results==
+Since 1955, and starting with the instigation of Mordell, many authors have implemented computational searches for these representations.{{r|mw|gls|hlr|cv|b}}{{r|kts|e|bpty|ej|h}}
+{{harvtxt|Elsenhans|Jahnel|2009}} used a method of {{harvs|first=Noam|last=Elkies|authorlink=Noam Elkies|year=2000|txt}} involving [[lattice reduction]] to search for all solutions to the [[Diophantine equation]]
+:<math>x^3+y^3+z^3=n</math>
+for positive <math>n</math> at most 1000 and for <math>\max(|x|,|y|,|z|)<10^{14}</math>,{{r|ej}} leaving only 33, 42, 74, 114, 165, 390, 579, 627, 633, 732, 795, 906, 921, and 975 as open problems in 2009 for <math>n\le 1000</math>, and 192, 375, and 600 remain with no primitive solutions (i.e. <math>\gcd(x,y,z)=1</math>). After [[Timothy Browning]] covered the problem on [[Numberphile]] in 2016, {{harvtxt|Huisman|2016}} extended these searches to <math>\max(|x|,|y|,|z|)<10^{15}</math> solving the case of 74, with solution
+:<math>74=(-284\ 650\ 292\ 555\ 885)^3+66\ 229\ 832\ 190\ 556^3+283\ 450\ 105\ 697\ 727^3.</math>
+Through these searches, it was discovered that all <math>n < 100</math> that are unequal to 4 or 5 modulo 9 have a solution, with at most two exceptions, 33 and 42.{{r|h}}
+
+However, in 2019, [[Andrew Booker (mathematician)|Andrew Booker]] settled the case <math>n=33</math> by discovering that
+:<math>33=8\ 866\ 128\ 975\ 287\ 528^3+(-8\ 778\ 405\ 442\ 862\ 239)^3+(-2\ 736\ 111\ 468\ 807\ 040)^3.</math>
+In order to achieve this, Booker exploited an alternative search strategy with running time proportional to <math>\min(|x|,|y|,|z|)</math> rather than to their maximum,{{r|arb}} an approach originally suggested by Heath-Brown et al.{{r|hb2}} He also found that
+:<math>795=(-14\ 219\ 049\ 725\ 358\ 227)^3 + 14\ 197\ 965\ 759\ 741\ 571^3 + 2\ 337\ 348\ 783\ 323\ 923^3,</math>
+and established that there are no solutions for <math>n=42</math> or any of the other unresolved <math>n \le 1000</math> with <math>|z|\le 10^{16}</math>.
+
+Shortly thereafter, in September 2019, Booker and [[Andrew Sutherland (mathematician)|Andrew Sutherland]] finally settled the <math>n=42</math> case, using 1.3 million hours of computing on the [[Charity Engine]] global grid to discover that
+:<math>42=(-80\ 538\ 738\ 812\ 075\ 974)^3 + 80\ 435\ 758\ 145\ 817\ 515^3 + 12\ 602\ 123\ 297\ 335\ 631^3,</math>
+as well as solutions for several other previously unknown cases including <math>n=165</math> and <math>579</math> for <math>n \le 1000</math>.{{r|bs}}
+
+Booker and Sutherland also found a third representation of 3 using a further 4 million computer-hours on Charity Engine:
+:<math>3 = 569\ 936\ 821\ 221\ 962\ 380\ 720^3 + (-569\ 936\ 821\ 113\ 563\ 493\ 509)^3 + (-472\ 715\ 493\ 453\ 327\ 032)^3.</math>{{r|bs}}{{r|newsci3}} 
+This discovery settled a 65-year-old question of [[Louis J. Mordell]] that has stimulated much of the research on this problem.{{r|m53}}
+
+While presenting the third representation of 3 during his appearance in a video on the YouTube channel [[Numberphile]], Booker also presented a representation for 906:
+:<math>906 = (-74\ 924\ 259\ 395\ 610\ 397)^3 + 72\ 054\ 089\ 679\ 353\ 378^3 + 35\ 961\ 979\ 615\ 356\ 503^3.</math>{{r|cracked3}}
+
+The only remaining unsolved cases up to 1,000 are the seven numbers 114, 390, 627, 633, 732, 921, and 975, and there are no known primitive solutions (i.e. <math>\gcd(x,y,z)=1</math>) for 192, 375, and 600.{{r|bs}}{{r|lue}}
+{{sums of three cubes table}}
+
+==Popular interest==
+The sums of three cubes problem has been popularized in recent years by [[Brady Haran]], creator of the [[YouTube]] channel [[Numberphile]], beginning with the 2015 video "The Uncracked Problem with 33" featuring an interview with [[Timothy Browning]].{{r|uncracked33}}  This was followed six months later by the video "74 is Cracked" with Browning, discussing Huisman's 2016 discovery of a solution for 74.{{r|cracked74}}    In 2019, Numberphile published three related videos, "42 is the new 33", "The mystery of 42 is solved", and "3 as the sum of 3 cubes", to commemorate the discovery of solutions for 33, 42, and the new solution for 3.{{r|cracked33}}{{r|cracked42}}{{r|cracked3}}
+
+Booker's solution for 33 was featured in articles appearing in ''[[Quanta Magazine]]''{{r|quanta33}} and ''[[New Scientist]]''{{r|newsci33}}, as well as an article in ''[[Newsweek]]'' in which Booker's collaboration with Sutherland was announced: "...the mathematician is now working with Andrew Sutherland of MIT in an attempt to find the solution for the final unsolved number below a hundred: 42".{{r|newsweek}}  The number 42 has additional popular interest due to its appearance in the 1979 [[Douglas Adams]] science fiction novel ''[[The Hitchhiker's Guide to the Galaxy]]'' as the answer to [[Phrases from The Hitchhiker's Guide to the Galaxy#The Answer to the Ultimate Question of Life, the Universe, and Everything is 42|The Ultimate Question of Life, the Universe, and Everything]].
+
+Booker and Sutherland's announcements{{r|bristol42}}{{r|mit42}} of a solution for 42 received international press coverage, including articles in ''New Scientist'',{{r|newsci42}} ''[[Scientific American]]'',{{r|sciam42}} ''[[Popular Mechanics]]'',{{r|pop42}} ''[[The Register]]'',{{r|register42}} ''[[Die Zeit]]'',{{r|diezeit42}} ''[[Der Tagesspiegel]]'',{{r|dertag42}} ''[[Helsingin Sanomat]]'',{{r|hel42}} ''[[Der Spiegel]]'',{{r|derspiegel42}} ''[[New Zealand Herald]]'',{{r|nz42}} ''[[Indian Express]]'',{{r|ind42}} ''[[Der Standard]]'',{{r|derstand42}} ''[[Las Provincias]]'',{{r|lasprov42}} [[Nettavisen]],{{r|netta42}} [[Digi24]],{{r|digi24}} and [[BBC World Service]].{{r|bbc42}} ''Popular Mechanics'' named the solution for 42 as one of the "10 Biggest Math Breakthroughs of 2019".{{r|pop2019}}
+
+The resolution of Mordell's question by Booker and Sutherland a few weeks later sparked another round of news coverage.{{r|newsci3|gizmodo3|tiede3|hel3|diario3|quanta3|mint3}}
+
+In Booker's invited talk at the fourteenth [[Algorithmic Number Theory Symposium]] he discusses some of the popular interest in this problem and the public reaction to the announcement of solutions for 33 and 42.{{r|ants}}
+
+==Solvability and decidability==
+In 1992, [[Roger Heath-Brown]] conjectured that every <math>n</math> unequal to 4 or 5 modulo 9 has infinitely many representations as sums of three cubes.{{r|hb}}
+The case <math>n=33</math> of this problem was used by [[Bjorn Poonen]] as the opening example in a survey on [[undecidable problem]]s in [[number theory]], of which [[Hilbert's tenth problem]] is the most famous example.{{r|p}} Although this particular case has since been resolved, it is unknown whether representing numbers as sums of cubes is decidable. That is, it is not known whether an algorithm can, for every input, test in finite time whether a given number has such a representation.
+If Heath-Brown's conjecture is true, the problem is decidable. In this case, an algorithm could correctly solve the problem by computing <math>n</math> modulo 9, returning false when this is 4 or 5, and otherwise returning true. Heath-Brown's research also includes more precise conjectures on how far an algorithm would have to search to find an explicit representation rather than merely determining whether one exists.{{r|hb}}
+
+==Variations==
+A variant of this problem related to [[Waring's problem]] asks for representations as sums of three cubes of non-negative integers. In the 19th century, [[Carl Gustav Jacob Jacobi]] and collaborators compiled tables of solutions to this problem.{{r|dickson}} It is conjectured that the representable numbers have positive [[natural density]].{{r|bb|dhl}} This remains unknown, but [[Trevor Wooley]] has shown that <math>\Omega(n^{0.917})</math> of the numbers from <math>1</math> to <math>n</math> have such representations.{{r|w1|w2|w3}} The density is at most <math>\Gamma(4/3)^3/6\approx 0.119</math>.{{r|d}}
+
+Every integer can be represented as a sum of three cubes of [[rational number]]s (rather than as a sum of cubes of integers).{{r|rich|dl}}
+
+== See also ==
+* [[Sum of four cubes problem]], whether every integer is a sum of four cubes
+* {{section link|Euler's sum of powers conjecture|k {{=}} 3}}, relating to cubes that can be written as a sum of three positive cubes
+* [[Plato's number]], an ancient text possibly discussing the equation 3{{sup|3}} + 4{{sup|3}} + 5{{sup|3}} = 6{{sup|3}}
+* [[Taxicab number]], the smallest integer that can be expressed as a sum of two positive integer cubes in n distinct ways
+
+==References==
+<references>
+
+<ref name=ants>{{citation
+ | last = Booker
+ | first = Andrew R.
+ | title = 33 and all that
+ | url = https://www.youtube.com/watch?v=so6VBxWwWVI
+ | publisher = Algorithmic Number Theory Symposium
+ | date = July 4, 2020
+}}</ref>
+
+<ref name=arb>{{citation
+ | last = Booker
+ | first = Andrew R.
+ | title = Cracking the problem with 33
+ | journal = Research in Number Theory
+ | volume = 5
+ | number = 26
+ | year = 2019
+ | article-number = 26
+ | doi = 10.1007/s40993-019-0162-1
+ | mr = 3983550| doi-access = free
+ | hdl = 1983/b29fce73-2c20-4c07-9daf-afc04bf269b1
+ | hdl-access = free
+ | arxiv = 1903.04284
+ }}
+</ref>
+
+<ref name=bs>{{citation
+ | last1 = Booker
+ | first1 = Andrew R.
+ | last2 = Sutherland
+ | first2 = Andrew V.
+ | title = On a question of Mordell
+ | journal = Proceedings of the National Academy of Sciences
+ | year = 2021
+ | volume = 118
+ | issue = 11
+ | article-number = e2022377118
+ | doi = 10.1073/pnas.2022377118
+ | pmid = 33692126
+ | arxiv = 2007.01209
+ | doi-access = free
+ | pmc = 7980389
+ | bibcode = 2021PNAS..11822377B
+ }}
+</ref>
+
+<ref name=b>{{citation
+ | last = Bremner | first = Andrew
+ | contribution = On sums of three cubes
+ | mr = 1353923
+ | pages = 87–91
+ | publisher = American Mathematical Society
+ | location = Providence, Rhode Island
+ | series = CMS Conference Proceedings
+ | title = Number theory (Halifax, NS, 1994)
+ | volume = 15
+ | year = 1995}}</ref>
+
+<ref name=bb>{{citation
+ | last1 = Balog | first1 = Antal
+ | last2 = Brüdern | first2 = Jörg
+ | doi = 10.1515/crll.1995.466.45
+ | journal = [[Journal für die Reine und Angewandte Mathematik]]
+ | mr = 1353314
+ | pages = 45–85
+ | title = Sums of three cubes in three linked three-progressions
+ | volume = 1995
+ | issue = 466
+ | year = 1995| s2cid = 118818354
+ }}</ref>
+
+<ref name=bpty>{{citation
+ | last1 = Beck | first1 = Michael
+ | last2 = Pine | first2 = Eric
+ | last3 = Tarrant | first3 = Wayne
+ | last4 = Yarbrough Jensen | first4 = Kim
+ | doi = 10.1090/S0025-5718-07-01947-3
+ | issue = 259
+ | journal = [[Mathematics of Computation]]
+ | mr = 2299795
+ | pages = 1683–1690
+ | title = New integer representations as the sum of three cubes
+ | volume = 76
+ | year = 2007| doi-access = free
+ | bibcode = 2007MaCom..76.1683B
+ }}</ref>
+
+<ref name=cassels>The equality mod 9 of numbers whose cubes sum to 3 was credited to [[J. W. S. Cassels]] by {{harvtxt|Mordell|1953}}, but its proof was not published until {{citation
+ | last = Cassels | first = J. W. S. | authorlink = J. W. S. Cassels
+ | doi = 10.2307/2007811
+ | issue = 169
+ | journal = [[Mathematics of Computation]]
+ | mr = 771049
+ | pages = 265–266
+ | title = A note on the Diophantine equation <math>x^3+y^3+z^3=3</math>
+ | volume = 44
+ | year = 1985| jstor = 2007811 | s2cid = 121727002 }}.</ref>
+
+<ref name=cv>{{citation
+ | last1 = Conn | first1 = W.
+ | last2 = Vaserstein | first2 = L. N. | author2-link = Leonid Vaseršteĭn
+ | contribution = On sums of three integral cubes
+ | doi = 10.1090/conm/166/01628
+ | mr = 1284068
+ | pages = 285–294
+ | publisher = American Mathematical Society
+ | location = Providence, Rhode Island
+ | series = Contemporary Mathematics
+ | title = The Rademacher legacy to mathematics (University Park, PA, 1992)
+ | volume = 166
+ | year = 1994
+ | isbn = 978-0-8218-5173-9
+ }}</ref>
+
+<ref name=d>{{citation
+ | last = Davenport | first = H. | author-link = Harold Davenport
+ | doi = 10.1007/BF02547752
+ | journal = [[Acta Mathematica]]
+ | mr = 0000026
+ | pages = 123–143
+ | title = On Waring's problem for cubes
+ | volume = 71
+ | year = 1939| doi-access = free
+ }}</ref>
+
+<ref name=dhl>{{citation
+ | last1 = Deshouillers | first1 = Jean-Marc | author1-link = Jean-Marc Deshouillers
+ | last2 = Hennecart | first2 = François
+ | last3 = Landreau | first3 = Bernard
+ | editor1-first = Florian | editor1-last = Hess
+ | editor2-first = Sebastian |editor2-last = Pauli
+ | editor3-first = Michael | editor3-last = Pohst
+ | contribution = On the density of sums of three cubes
+ | doi = 10.1007/11792086_11
+ | mr = 2282921
+ | pages = 141–155
+ | publisher = Springer | location = Berlin
+ | series = Lecture Notes in Computer Science
+ | title = Algorithmic Number Theory: 7th International Symposium, ANTS-VII, Berlin, Germany, July 23-28, 2006, Proceedings
+ | volume = 4076
+ | isbn = 978-3-540-36075-9 | year = 2006}}</ref>
+
+<ref name=dl>{{citation
+ | last1 = Davenport | first1 = H. | author1-link = Harold Davenport
+ | last2 = Landau | first2 = E. | author2-link = Edmund Landau
+ | contribution = On the representation of positive integers as sums of three cubes of positive rational numbers
+ | mr = 0262198
+ | pages = 49–53
+ | publisher = Plenum | location = New York
+ | title = Number Theory and Analysis (Papers in Honor of Edmund Landau)
+ | year = 1969}}</ref>
+
+<ref name=dickson>{{citation
+ | last = Dickson | first = Leonard Eugene | author-link = Leonard Eugene Dickson
+ | page = 717
+ | publisher = Carnegie Institution of Washington
+ | title = History of the Theory of Numbers, Vol. II: Diophantine Analysis
+ | url = https://archive.org/details/historyoftheoryo02dickuoft/page/716
+ | year = 1920}}</ref>
+
+<ref name=e>{{citation
+ | last = Elkies | first = Noam D. | authorlink = Noam Elkies
+ | contribution = Rational points near curves and small nonzero <math>|x^3-y^2|</math> via lattice reduction
+ | doi = 10.1007/10722028_2
+ | mr = 1850598
+ | pages = 33–63
+ | publisher = Springer, Berlin
+ | series = Lecture Notes in Computer Science
+ | title = Algorithmic number theory (Leiden, 2000)
+ | volume = 1838
+ | year = 2000| arxiv = math/0005139
+ | isbn = 978-3-540-67695-9 | s2cid = 40620586 }}</ref>
+
+<ref name=ej>{{citation
+ | last1 = Elsenhans | first1 = Andreas-Stephan
+ | last2 = Jahnel | first2 = Jörg
+ | doi = 10.1090/S0025-5718-08-02168-6
+ | issue = 266
+ | journal = [[Mathematics of Computation]]
+ | mr = 2476583
+ | pages = 1227–1230
+ | title = New sums of three cubes
+ | volume = 78
+ | year = 2009| doi-access = free
+ | bibcode = 2009MaCom..78.1227E
+ }}</ref>
+
+<ref name=euler>{{citation
+ | last = Machis | first = Yu. Yu.
+ | doi = 10.1134/S0001434607090088
+ | issue = 3
+ | journal = [[Mathematical Notes]]
+ | mr = 2364600
+ | pages = 352–356
+ | title = On Euler's hypothetical proof
+ | volume = 82
+ | year = 2007| s2cid = 121798358
+ }}</ref>
+
+<ref name=gls>{{citation
+ | last1 = Gardiner | first1 = V. L.
+ | last2 = Lazarus | first2 = R. B.
+ | last3 = Stein | first3 = P. R.
+ | doi = 10.2307/2003763
+ | journal = [[Mathematics of Computation]]
+ | mr = 0175843
+ | pages = 408–413
+ | title = Solutions of the diophantine equation <math>x^{3}+y^{3}=z^{3}-d</math>
+ | volume = 18
+ | issue = 87
+ | year = 1964| jstor = 2003763
+ }}</ref>
+
+<ref name=hlr>{{citation
+ | last1 = Heath-Brown | first1 = D. R. | author1-link = Roger Heath-Brown
+ | last2 = Lioen | first2 = W. M.
+ | last3 = te Riele | first3 = H. J. J. | author3-link = Herman te Riele
+ | bibcode = 1993MaCom..61..235H
+ | doi = 10.2307/2152950
+ | issue = 203
+ | journal = [[Mathematics of Computation]]
+ | mr = 1202610
+ | pages = 235–244
+ | title = On solving the Diophantine equation <math>x^3+y^3+z^3=k</math> on a vector computer
+ | volume = 61
+ | year = 1993| jstor = 2152950 | url = https://ir.cwi.nl/pub/5502 }}</ref>
+
+<ref name=h>{{citation
+ | last = Huisman | first = Sander G.
+ | arxiv = 1604.07746
+ | title = Newer sums of three cubes
+ | year = 2016}}</ref>
+
+<ref name=hb>{{citation
+ | last = Heath-Brown | first = D. R. | authorlink = Roger Heath-Brown
+ | doi = 10.1090/s0025-5718-1992-1146835-5
+ | issue = 200
+ | journal = [[Mathematics of Computation]]
+ | mr = 1146835
+ | pages = 613–623
+ | title = The density of zeros of forms for which weak approximation fails
+ | volume = 59
+ | year = 1992| jstor = 2153078 | doi-access = free
+ | bibcode = 1992MaCom..59..613H }}</ref>
+
+<ref name=hb2>{{citation
+ | last1 = Heath-Brown | first1 = D. R. | authorlink1 = Roger Heath-Brown
+ | last2 = Lioen | first2 = W.M.
+ | last3 = te Riele | first3 = H.J.J
+ | title = On solving the Diophantine equation <math>x^3+y^3+z^3=k</math> on a vector computer
+ | journal = [[Mathematics of Computation]]
+ | volume = 61
+ | number = 203
+ | pages = 235–244
+ | year = 1993
+ | url = https://www.ams.org/journals/mcom/1993-61-203/S0025-5718-1993-1202610-5/
+ | doi = 10.2307/2152950
+ | mr = 1202610| jstor = 2152950 | bibcode = 1993MaCom..61..235H | url-access = subscription
+ }}
+</ref>
+
+<ref name=kts>{{citation
+ | last1 = Koyama | first1 = Kenji
+ | last2 = Tsuruoka | first2 = Yukio
+ | last3 = Sekigawa | first3 = Hiroshi
+ | doi = 10.1090/S0025-5718-97-00830-2
+ | issue = 218
+ | journal = [[Mathematics of Computation]]
+ | mr = 1401942
+ | pages = 841–851
+ | title = On searching for solutions of the Diophantine equation <math>x^3+y^3+z^3=n</math>
+ | volume = 66
+ | year = 1997| doi-access = free
+ }}</ref>
+
+<ref name=lue>{{citation|title=42 is the answer to the question 'what is (-80538738812075974)<sup>3</sup> + 80435758145817515<sup>3</sup> + 12602123297335631<sup>3</sup>?'|work=The Aperiodical|first=Robin|last=Houston|date=September 6, 2019|url=https://aperiodical.com/2019/09/42-is-the-answer-to-the-question-what-is-80538738812075974³-80435758145817515³-12602123297335631³/}}</ref>
+
+<ref name=m36>{{citation
+ | last = Mahler | first = Kurt | authorlink = Kurt Mahler
+ | doi = 10.1112/jlms/s1-11.2.136
+ | issue = 2
+ | journal = [[Journal of the London Mathematical Society]]
+ | mr = 1574761
+ | pages = 136–138
+ | title = Note on Hypothesis K of Hardy and Littlewood
+ | volume = 11
+ | year = 1936}}</ref>
+
+<ref name=m42>{{citation
+ | last = Mordell | first = L.J. | authorlink = Louis J. Mordell
+ | doi = 10.1112/jlms/s1-17.3.139
+ | journal = [[Journal of the London Mathematical Society]]
+ | mr = 0007761
+ | pages = 139–144
+ | series = Second Series
+ | title = On sums of three cubes
+ | volume = 17
+ | issue = 3 | year = 1942}}</ref>
+
+<ref name=m53>{{citation
+ | last = Mordell | first = L.J. | authorlink = Louis J. Mordell
+ | doi = 10.1112/jlms/s1-28.4.500
+ | journal = [[Journal of the London Mathematical Society]]
+ | mr = 0056619
+ | pages = 500–510
+ | series = Second Series
+ | title = On the integer solutions of the equation <math>x^2+y^2+z^2+2xyz=n</math>
+ | volume = 28
+ | year = 1953}}</ref>
+
+<ref name=mw>{{citation
+ | last1 = Miller | first1 = J. C. P. | author1-link = J. C. P. Miller
+ | last2 = Woollett | first2 = M. F. C.
+ | doi = 10.1112/jlms/s1-30.1.101
+ | journal = [[Journal of the London Mathematical Society]]
+ | mr = 0067916
+ | pages = 101–110
+ | series = Second Series
+ | title = Solutions of the Diophantine equation <math>x^3+y^3+z^3=k</math>
+ | volume = 30
+ | year = 1955}}</ref>
+
+<ref name=p>{{citation
+ | last = Poonen | first = Bjorn | author-link = Bjorn Poonen
+ | issue = 3
+ | journal = [[Notices of the American Mathematical Society]]
+ | mr = 2382821
+ | pages = 344–350
+ | title = Undecidability in number theory
+ | url = https://www.ams.org/notices/200803/tx080300344p.pdf
+ | volume = 55
+ | year = 2008}}</ref>
+
+<ref name=rich>{{citation
+ | last = Richmond | first = H. W. | authorlink = Herbert William Richmond
+ | doi = 10.1112/plms/s2-21.1.401
+ | journal = [[Proceedings of the London Mathematical Society]]
+ | mr = 1575369
+ | pages = 401–409
+ | series = Second Series
+ | title = On analogues of Waring's problem for rational numbers
+ | volume = 21
+ | year = 1923}}</ref>
+
+<ref name=w08>{{citation
+ | last = Verebrusov | first = A. S.
+ | issue = 4
+ | journal = [[Matematicheskii Sbornik]]
+ | language = Russian
+ | pages = 622–624
+ | title = Объ уравненiи {{math|1=''x''<sup>3</sup> + ''y''<sup>3</sup> + ''z''<sup>3</sup> = 2''u''<sup>3</sup>}}
+ | trans-title = On the equation <math>x^3+y^3+z^3=2u^3</math>
+ | url = http://mi.mathnet.ru/msb6615
+ | volume = 26
+ | year = 1908
+ | jfm = 39.0259.02}}</ref>
+
+<ref name=w1>{{citation
+ | last = Wooley | first = Trevor D. | authorlink = Trevor Wooley
+ | doi = 10.1007/BF01231451
+ | issue = 3
+ | journal = [[Inventiones Mathematicae]]
+ | mr = 1359599
+ | pages = 421–451
+ | title = Breaking classical convexity in Waring's problem: sums of cubes and quasi-diagonal behaviour
+ | volume = 122
+ | year = 1995| bibcode = 1995InMat.122..421W | hdl = 2027.42/46588 | url = https://deepblue.lib.umich.edu/bitstream/2027.42/46588/1/222_2005_Article_BF01231451.pdf
+ | hdl-access = free
+ }}</ref>
+
+<ref name=w2>{{citation
+ | last = Wooley | first = Trevor D. | authorlink = Trevor Wooley
+ | doi = 10.1112/S0025579300015710
+ | issue = 1–2
+ | journal = [[Mathematika]]
+ | mr = 1924487
+ | pages = 53–61 (2002)
+ | title = Sums of three cubes
+ | volume = 47
+ | year = 2000| hdl = 2027.42/152941 | hdl-access = free
+ }}</ref>
+
+<ref name=w3>{{citation
+ | last = Wooley | first = Trevor D. | authorlink = Trevor Wooley
+ | doi = 10.4064/aa170-1-6
+ | issue = 1
+ | journal = [[Acta Arithmetica]]
+ | mr = 3373831
+ | pages = 73–100
+ | title = Sums of three cubes, II
+ | volume = 170
+ | year = 2015| s2cid = 119155786 | arxiv = 1502.01944
+ }}</ref>
+
+<ref name=uncracked33>{{citation
+ | last = Haran | first = Brady | authorlink = Brady Haran
+ | title = The uncracked problem with 33
+ | url = https://www.youtube.com/watch?v=wymmCdLdPvM
+ | publisher = Numberphile
+ | date = November 6, 2015
+}}</ref>
+
+<ref name=cracked74>{{citation
+ | last = Haran | first = Brady | authorlink = Brady Haran
+ | title = 74 is cracked
+ | url = https://www.youtube.com/watch?v=_-M_3oV75Lw
+ | publisher = Numberphile
+ | date = May 31, 2016
+}}</ref>
+
+<ref name=cracked33>{{citation
+ | last = Haran | first = Brady | authorlink = Brady Haran
+ | title = 42 is the new 33
+ | url = https://www.youtube.com/watch?v=ASoz_NuIvP0
+ | publisher = Numberphile
+ | date = March 12, 2019
+}}</ref>
+
+<ref name=cracked42>{{citation
+ | last = Haran | first = Brady | authorlink = Brady Haran
+ | title = The mystery of 42 is solved
+ | url = https://www.youtube.com/watch?v=zyG8Vlw5aAw
+ | publisher = Numberphile
+ | date = September 6, 2019
+}}</ref>
+
+<ref name=cracked3>{{citation
+ | last = Haran | first = Brady | authorlink = Brady Haran
+ | title = 3 as the sum of 3 cubes
+ | url = https://www.youtube.com/watch?v=GXhzZAem7k0
+ | publisher = Numberphile
+ | date = September 24, 2019
+}}</ref>
+
+<ref name=quanta33>{{citation
+ | title = Sum-of-Three-Cubes Problem Solved for 'Stubborn' Number 33
+ | first = John | last = Pavlus
+ | magazine = Quanta Magazine
+ | date = March 10, 2019
+ | url = https://www.quantamagazine.org/sum-of-three-cubes-problem-solved-for-stubborn-number-33-20190326/
+}}</ref>
+
+<ref name=newsci33>{{citation
+ | title = Mathematician cracks centuries-old problem about the number 33
+ | first = Donna | last = Lu
+ | magazine = New Scientist
+ | date = March 14, 2019
+ | url = https://www.newscientist.com/article/2196549-mathematician-cracks-centuries-old-problem-about-the-number-33/
+}}</ref>
+
+<ref name=newsweek>{{citation
+ | title = The uncracked problem with 33: Mathematician solves 64-year-old 'Diophantine puzzle'
+ | first = Aristos | last = Georgiou
+ | magazine = Newsweek
+ | date = April 3, 2019
+ | url = https://www.newsweek.com/uncracked-problem-mathematician-diophantine-puzzle-1384422
+}}</ref>
+
+<ref name=bristol42>{{citation
+ | title = Sum of three cubes for 42 finally solved – using real life planetary computer
+ | publisher = University of Bristol
+ | date = September 6, 2019
+ | url = https://www.bristol.ac.uk/news/2019/september/sum-of-three-cubes-.html
+}}</ref>
+
+<ref name=mit42>{{citation
+ | title = The answer to life, the universe, and everything: Mathematics researcher Drew Sutherland helps solve decades-old sum-of-three-cubes puzzle, with help from "The Hitchhiker's Guide to the Galaxy."
+ | first = Sandi | last = Miller
+ | date = September 10, 2019
+ | magazine = MIT News
+ | publisher = Massachusetts Institute of Technology
+ | url = https://news.mit.edu/2019/answer-life-universe-and-everything-sum-three-cubes-mathematics-0910
+}}</ref>
+
+<ref name=newsci42>{{citation
+ | title = Mathematicians crack elusive puzzle involving the number 42
+ | first = Donna | last = Lu
+ | magazine = New Scientist
+ | date = September 6, 2019
+ | url = https://www.newscientist.com/article/2215680-mathematicians-crack-elusive-puzzle-involving-the-number-42/
+}}</ref>
+
+<ref name=sciam42>{{citation
+ | title = For Math Fans: A Hitchhiker's Guide to the Number 42
+ | first = Jean-Paul | last = Delahaye
+ | magazine = Scientific American
+ | date = September 20, 2020
+ | url = https://www.scientificamerican.com/article/for-math-fans-a-hitchhikers-guide-to-the-number-42/
+}}</ref>
+
+<ref name=pop42>{{citation
+ | title = After 65 Years, Supercomputers Finally Solve This Unsolvable Math Problem
+ | first = David | last = Grossman
+ | magazine = Popular Mechanics
+ | date = September 6, 2019
+ | url = https://www.popularmechanics.com/science/math/a28943849/unsolvable-math-problem/
+}}</ref>
+
+<ref name=register42>{{citation
+ | title = Finally! A solution to 42 – the Answer to the Ultimate Question of Life, The Universe, and Everything
+ | first = Katyanna | last = Quach
+ | newspaper = The Register
+ | date = September 7, 2019
+ | url = https://www.theregister.co.uk/2019/09/07/three_cubes_problem/
+}}</ref>
+
+<ref name=diezeit42>{{citation
+ | title = Matheproblem um die Zahl 42 geknackt
+ | newspaper = Die Zeit
+ | date = September 16, 2019
+ | url = https://www.zeit.de/news/2019-09/16/matheproblem-um-die-zahl-42-geknackt
+}}</ref>
+
+<ref name=dertag42>{{citation
+ | title = Das Matheproblem um die Zahl 42 ist geknackt
+ | newspaper = Der Tagesspiegel
+ | date = September 16, 2019
+ | url = https://www.tagesspiegel.de/wissen/die-antwort-auf-alles-das-matheproblem-um-die-zahl-42-ist-geknackt/25021142.html
+}}</ref>
+
+<ref name=derspiegel42>{{citation
+ | title = Matheproblem um die 42 geknackt
+ | newspaper = Der Spiegel
+ | date = September 16, 2019
+ | url = https://www.spiegel.de/wissenschaft/mensch/zahlentheorie-matheproblem-um-die-zahl-42-geknackt-a-1286989.html
+}}</ref>
+
+<ref name=hel42>{{citation
+ | title = Matemaatikkojen vaikea laskelma tuotti vihdoin kaivatun luvun 42
+ | first = Antti | last = Kivimäki
+ | newspaper = Helsingin Sanomat
+ | date = September 18, 2019
+ | url = https://www.hs.fi/tiede/art-2000006242092.html
+}}</ref>
+
+<ref name=nz42>{{citation
+ | title = Why the number 42 is the answer to life, the universe and everything
+ | newspaper = New Zealand Herald
+ | date = September 9, 2019
+ | url = https://www.hs.fi/tiede/art-2000006247445.html
+}}</ref>
+
+<ref name=ind42>{{citation
+ | title = Explained: How a 65-year-old maths problem was solved
+ | first = Kabir | last = Firaque 
+ | newspaper = Indian Express
+ | date = September 20, 2019
+ | url = https://indianexpress.com/article/explained/how-a-65-year-old-maths-problem-was-solved-6011373/
+}}</ref>
+
+<ref name=bbc42>{{citation
+ | title = Enigma de la suma de 3 cubos: matemáticos encuentran la solución final después de 65 años
+ | first = Fernanda | last = Paul
+ | newspaper = BBC News Mundo
+ | date = September 12, 2019
+ | url = https://www.bbc.com/mundo/noticias-49675503
+}}</ref>
+
+<ref name = lasprov42>{{citation
+ | title = Matemáticos resuelven el enigma del número 42 planteado hace 65 años
+ | newspaper = Las Provincias
+ | date = September 18, 2019
+ | url = https://www.lasprovincias.es/sociedad/ciencia/matematicos-resuelven-enigma-20190916222124-nt.html
+}}</ref>
+
+<ref name = digi24>{{citation
+ | title = A fost rezolvată problema care le-a dat bătăi de cap matematicienilor timp de 6 decenii. A fost nevoie de 1 milion de ore de procesare
+ | newspaper = Digi24
+ | date = September 16, 2019
+ | url = https://www.digi24.ro/stiri/sci-tech/descoperiri/a-fost-rezolvata-problema-care-le-a-dat-batai-de-cap-matematicienilor-timp-de-6-decenii-a-fost-nevoie-de-1-milion-de-ore-de-procesare-1187754
+}}</ref>
+
+<ref name = netta42>{{citation
+ | title = Supermaskin har løst over 60 år gammel tallgåte
+ | first =  Lars | last= Wærstad
+ | newspaper = Nettavisen
+ | date = October 10, 2019
+ | url = https://www.nettavisen.no/livsstil/supermaskin-har-lost-over-60-ar-gammel-tallgate/3423843017.html
+}}</ref>
+
+<ref name = derstand42>{{citation
+ | title = Endlich: Das Rätsel um die Zahl 42 ist gelöst
+ | first = Klaus | last = Taschwer
+ | newspaper = Der Standard
+ | date = September 15, 2019
+ | url = https://www.derstandard.de/story/2000108538325/endlich-das-raetsel-um-die-zahl-42-ist-geloest
+}}</ref>
+
+<ref name = pop2019>{{citation
+ | title = The 10 Biggest Math Breakthroughs of 2019
+ | first =  Dave | last = Linkletter
+ | magazine = Popular Mechanics
+ | date = December 27, 2019
+ | url = https://www.popularmechanics.com/science/math/g30346822/biggest-math-breakthroughs-2019/
+}}</ref>
+
+<ref name=quanta3>{{citation
+ | title = Why the Sum of Three Cubes Is a Hard Math Problem
+ | first = Patrick | last = Honner
+ | magazine = Quanta Magazine
+ | date = November 5, 2019
+ | url = https://www.quantamagazine.org/why-the-sum-of-three-cubes-is-a-hard-math-problem-20191105/
+}}</ref>
+
+<ref name=newsci3>{{citation
+ | title = Mathematicians find a completely new way to write the number 3
+ | first = Donna | last = Lu
+ | magazine = New Scientist
+ | date = September 18, 2019
+ | url = https://www.newscientist.com/article/2216941-mathematicians-find-a-completely-new-way-to-write-the-number-3/
+}}</ref>
+
+<ref name=gizmodo3>{{citation
+ | title = Mathematicians No Longer Stumped by the Number 3
+ | first = Ryan F. | last = Mandelbaum
+ | magazine = Gizmodo
+ | date = September 18, 2019
+ | url = https://gizmodo.com/mathematicians-no-longer-stumped-by-the-number-3-1838221738
+}}</ref>
+
+<ref name=tiede3>{{citation
+ | title = 42:n ongelman ratkaisijat löysivät ratkaisun myös 3:lle
+ | magazine = [[Tiede (magazine)|Tiede]]
+ | date = September 23, 2019
+ | url = https://www.tiede.fi/artikkeli/uutiset/42n-ongelman-ratkaisijat-loysivat-ratkaisun-myos-3lle
+}}</ref>
+
+<ref name=hel3>{{citation
+ | title = Numeron 42 ratkaisseet matemaatikot yllättivät: Löysivät myös luvulle 3 kauan odotetun ratkaisun
+ | first = Antti | last = Kivimäki
+ | newspaper = Helsingin Sanomat
+ | date = September 22, 2019
+ | url = https://www.hs.fi/tiede/art-2000006247445.html
+}}</ref>
+
+<ref name=diario3>{{citation
+ | title = Matemáticos encuentran una nueva forma de llegar al número 3
+ | first = Alfonso | last = Jesus Poblacion
+ | newspaper = [[El Diario Vasco]]
+ | date = October 3, 2019
+ | url = https://www.diariovasco.com/sociedad/ciencia/matematicos-encuentran-nueva-20191003130121-nt.html
+}}</ref>
+
+<ref name=mint3>{{citation
+ | title = Waste not, there's a third way to make cubes
+ | first = Dilip | last = D'Souza
+ | newspaper = [[Mint (newspaper)|LiveMint]]
+ | date = November 28, 2019
+ | url = https://www.livemint.com/science/news/waste-not-there-s-a-third-way-to-make-cubes-11574958211678.html
+}}</ref>
+
+</references>
+
+==External links==
+*[http://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0100.htm Solutions of {{math|1=''n'' = ''x''<sup>3</sup> + ''y''<sup>3</sup> + ''z''<sup>3</sup>}} for  {{math|1=0 ≤ ''n'' ≤ 99}}], Hisanori Mishima
+*[http://cr.yp.to/threecubes.html threecubes], [[Daniel J. Bernstein]]
+*[https://www.mathpages.com/home/kmath071.htm Sums of three cubes], Mathpages
+
+[[Category:Additive number theory]]
+[[Category:Diophantine equations]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Louis J. Mordell]]

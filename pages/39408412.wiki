@@ -1,0 +1,84 @@
+{{Short description|Maths conjecture}}
+{{DISPLAYTITLE:Kalai's 3<span style="position: absolute; top: -9999px;">^</span><sup>''d''</sup> conjecture}}
+{{unsolved|mathematics|Does every <math>d</math>-dimensional centrally symmetric polytope have at least <math>3^d</math> nonempty faces?}}
+In [[geometry]], more specifically in [[convex polytope|polytope theory]], '''Kalai's 3<sup>''d''</sup> conjecture''' is a [[conjecture]] on the [[polyhedral combinatorics]] of [[point symmetry|centrally symmetric]] [[polytope]]s, made by [[Gil Kalai]] in 1989.<ref name="kalai">{{citation
+ | last = Kalai | first = Gil | authorlink = Gil Kalai
+ | doi = 10.1007/BF01788696
+ | issue = 1
+ | journal = [[Graphs and Combinatorics]]
+ | mr = 1554357
+ | pages = 389–391
+ | title = The number of faces of centrally-symmetric polytopes
+ | volume = 5
+ | year = 1989| s2cid = 8917264 }}.</ref> It states that every ''d''-dimensional centrally symmetric polytope has at least 3<sup>''d''</sup> nonempty [[Face lattice|faces]] (including the polytope itself as a face but not including the [[empty set]]).
+
+==Examples==
+[[File:Dual Cube-Octahedron.svg|thumb|The cube and the regular octahedron, two examples for which the bound of the conjecture is tight.]]
+In two dimensions, the simplest centrally symmetric [[convex polygon|convex]] [[polygon]]s are the [[parallelogram]]s, which have four vertices, four edges, and one polygon: {{nowrap|4 + 4 + 1 {{=}} 9 {{=}} 3<sup>2</sup>}}. A [[cube]] is centrally symmetric, and has 8 vertices, 12 edges, 6 square sides, and 1 solid: {{nowrap|8 + 12 + 6 + 1 {{=}} 27 {{=}} 3<sup>3</sup>}}. Another three-dimensional [[convex polyhedron]], the [[regular octahedron]], is also centrally symmetric, and has 6 vertices, 12 edges, 8 triangular sides, and 1 solid: {{nowrap|6 + 12 + 8 + 1 {{=}} 27 {{=}} 3<sup>3</sup>}}.
+
+In higher dimensions, the [[hypercube]] [0,&thinsp;1]<sup>''d''</sup> has exactly 3<sup>''d''</sup> faces, each of which can be determined by specifying, for each of the ''d'' coordinate axes, whether the face projects onto that axis onto the point 0, the point 1, or the [[interval (mathematics)|interval]] [0,&thinsp;1]. More generally, every [[Hanner polytope]] has exactly 3<sup>''d''</sup> faces. If Kalai's conjecture is true, these polytopes would be among the centrally symmetric polytopes with the fewest possible faces.<ref name="kalai"/>
+
+==Status==
+The conjecture is known to be true for <math>d\le 4</math>.<ref name="swz09"/> It is also known to be true for [[simplicial polytope]]s: it follows in this case from a conjecture of {{harvs|txt|last1 = Bárány | first1 = Imre | author1-link = Imre Bárány | last2 = Lovász | first2 = László | author2-link = László Lovász|year=1982}} that every centrally symmetric simplicial polytope has at least as many faces of each dimension as the cross polytope, proven by {{harvs|txt|first=Richard|last=Stanley|authorlink=Richard P. Stanley|year=1987}}.<ref>{{citation
+ | last1 = Bárány | first1 = Imre | author1-link = Imre Bárány
+ | last2 = Lovász | first2 = László | author2-link = László Lovász
+ | doi = 10.1007/BF01903592
+ | issue = 3–4
+ | journal = [[Acta Mathematica Hungarica|Acta Mathematica Academiae Scientiarum Hungaricae]]
+ | mr = 686332
+ | pages = 323–329
+ | title = Borsuk's theorem and the number of facets of centrally symmetric polytopes
+ | volume = 40
+ | year = 1982| s2cid = 122301493 }}.</ref><ref>{{citation
+ | last = Stanley | first = Richard P. | authorlink = Richard P. Stanley
+ | doi = 10.1007/BF01788529
+ | issue = 1
+ | journal = [[Graphs and Combinatorics]]
+ | mr = 932113
+ | pages = 55–66
+ | title = On the number of faces of centrally-symmetric simplicial polytopes
+ | volume = 3
+ | year = 1987| s2cid = 6524086 }}.</ref> Indeed, these two previous papers were cited by Kalai as part of the basis for making his conjecture.<ref name="kalai"/> Another special class of polytopes that the conjecture has been proven for are the [[Hansen polytope]]s of [[split graph]]s, which had been used by {{harvs|txt| last1 = Freij | first1 = Ragnar | last2 = Henze | first2 = Matthias | last3 = Schmitt | first3 = Moritz | last4 = Ziegler | first4 = Günter  | author4-link = Günter M. Ziegler|year=2013}} to disprove the stronger conjectures of Kalai.<ref>{{citation
+ | last1 = Freij | first1 = Ragnar
+ | last2 = Henze | first2 = Matthias
+ | last3 = Schmitt | first3 = Moritz W.
+ | last4 = Ziegler | first4 = Günter M. | author4-link = Günter M. Ziegler
+ | issue = 2
+ | journal = [[Electronic Journal of Combinatorics]]
+ | mr = 3066371
+ | pages = #P32
+ | arxiv = 1201.5790
+ | title = Face numbers of centrally symmetric polytopes produced from split graphs
+ | url = http://www.combinatorics.org/ojs/index.php/eljc/article/view/v20i2p32
+ | volume = 20
+ | year = 2013| doi = 10.37236/3315
+ }}.</ref>
+
+The 3<sup>''d''</sup> conjecture remains open for arbitrary polytopes in higher dimensions.
+
+== Related conjectures ==
+In the same work as the one in which the 3<sup>''d''</sup> conjecture appears, Kalai conjectured more strongly that the [[Polyhedral combinatorics|''f''-vector]] of every [[convex polytope|convex]] centrally symmetric polytope ''P'' dominates the ''f''-vector of at least one Hanner polytope ''H'' of the same dimension. This means that, for every number ''i'' from 0 to the dimension of ''P'', the number of ''i''-dimensional faces of ''P'' is greater than or equal to the number of ''i''-dimensional faces of ''H''. If it were true, this would imply the truth of the 3<sup>''d''</sup> conjecture; however, the stronger conjecture was later disproven.<ref name="swz09">{{citation
+ | last1 = Sanyal | first1 = Raman
+ | last2 = Werner | first2 = Axel
+ | last3 = Ziegler | first3 = Günter M. | author3-link = Günter M. Ziegler
+ | doi = 10.1007/s00454-008-9104-8
+ | issue = 2
+ | journal = [[Discrete & Computational Geometry]]
+ | mr = 2471868
+ | pages = 183–198
+ | title = On Kalai's conjectures concerning centrally symmetric polytopes
+ | volume = 41
+ | year = 2009| arxiv = 0708.3661| s2cid = 8483579
+ }}/</ref>
+
+A related conjecture also attributed to Kalai is known as the ''full flag conjecture'' and asserts that the cube (as well as each of the Hanner polytopes) has the maximal number of (full) [[flag (geometry)|flags]], that is, ''d''!2<sup>''d''</sup>, among all centrally symmetric polytopes.<ref>Senechal, M. (Ed.). (2013). Shaping space: exploring polyhedra in nature, art, and the geometrical imagination. Springer Science & Business Media. Chapter 22.10</ref>
+
+Finally, both the 3<sup>''d''</sup> conjecture and the full flag conjecture are sometimes said to be combinatorial analogues of the [[Mahler conjecture]]. All three conjectures claim the Hanner polytopes to minimize certain combinatorial or geometric quantities, have been resolved in similar special cases, but are widely open in general. In particular, the full flag conjecture has been resolved in some special cases using geometric techniques.<ref>Faifman, D., Vernicos, C., & Walsh, C. (2023). Volume growth of Funk geometry and the flags of polytopes. arXiv preprint arXiv:2306.09268.</ref>
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Kalai's 3d conjecture}}
+[[Category:Polyhedral combinatorics]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]

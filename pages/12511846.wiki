@@ -1,0 +1,115 @@
+{{Short description|Analytic number theory conjecture}}
+{{more citations needed|date=January 2019}}
+{{Infobox mathematical statement
+| name = Bunyakovsky conjecture
+| image = 
+| caption = 
+| field = [[Analytic number theory]]
+| conjectured by = [[Viktor Bunyakovsky]]
+| conjecture date = 1857
+| first proof by = 
+| first proof date = 
+| open problem = 
+| known cases = [[Dirichlet's theorem on arithmetic progressions|Polynomials of degree 1]]
+| implied by = 
+| generalizations = [[Bateman–Horn conjecture]]<br>[[Dickson's conjecture#Generalized Dickson's conjecture|Generalized Dickson conjecture]]<br>[[Schinzel's hypothesis H]]
+| consequences = [[Twin prime conjecture]]
+}}
+The '''Bunyakovsky conjecture''' (or '''Bouniakowsky conjecture''') gives a criterion for a [[polynomial]] <math>f(x)</math> in one variable with [[integer]] [[coefficients]] to give [[infinite set|infinitely]] many prime values in the sequence<math>f(1), f(2), f(3),\ldots.</math>  It was stated in 1857 by the [[Russian Empire|Russian]] [[mathematician]] [[Viktor Bunyakovsky]].  The following three conditions are necessary for  <math>f(x)</math> to have the desired prime-producing property:
+# The [[leading coefficient]] is [[positive integer|positive]],
+# The polynomial is [[irreducible polynomial|irreducible]] over the rationals (and integers), and
+# The values <math>f(1), f(2), f(3),\ldots</math> have no [[common factor]] larger than 1. (In particular, the coefficients of <math>f(x)</math> should be relatively prime.)
+ 
+Bunyakovsky's conjecture is that these conditions are sufficient: if <math>f(x)</math> satisfies (1)–(3), then <math>f(n)</math> is prime for infinitely many positive integers <math>n</math>.
+
+A seemingly weaker yet equivalent statement to Bunyakovsky's conjecture is that for every integer polynomial <math>f(x)</math> that satisfies (1)–(3), <math>f(n)</math> is prime for ''at least one'' positive integer <math>n</math>: but then, since the translated polynomial <math>f(x+n)</math> still satisfies (1)–(3), in view of the weaker statement <math>f(m)</math> is prime for at least one positive integer <math>m>n</math>, so that <math>f(n)</math> is indeed prime for infinitely many positive integers <math>n</math>. Bunyakovsky's conjecture is a special case of [[Schinzel's hypothesis H]], one of the most famous open problems in number theory.
+
+==Discussion of three conditions==
+The first condition is necessary because if the leading coefficient is negative then <math>f(x) < 0</math> for all large <math>x</math>, and thus <math>f(n)</math> is not a (positive) prime number for large positive integers <math>n</math>. (This merely satisfies the sign convention that primes are positive.)
+
+The second condition is necessary because if <math>f(x) = g(x)h(x)</math> where the polynomials <math>g(x)</math> and <math>h(x)</math> have integer coefficients, then we have <math>f(n) = g(n)h(n)</math> for all integers <math>n</math>; but <math>g(x)</math> and <math>h(x)</math> take the values 0 and <math>\pm 1</math> only finitely many times, so <math>f(n)</math> is composite for all large <math>n</math>.
+
+The second condition also fails for the polynomials reducible over the rationals.
+
+For example, the [[integer-valued polynomial]] <math>P(x)=(1/12)\cdot x^4+(11/12)\cdot x^2+2</math> doesn't satisfy the condition (2) since <math>P(x)=(1/12)\cdot (x^4+11x^2+24)=(1/12)\cdot(x^2+3)\cdot(x^2+8)</math>, so at least one of the latter two factors must be a divisor of <math>12</math> in order to have <math>P(x)</math> prime, which holds only if <math>|x| \le 3</math>. The corresponding values are <math>2, 3, 7, 17</math>, so these are the only such primes for integral <math>x</math> since all of these numbers are prime. This isn't a counterexample to Bunyakovsky conjecture since the condition (2) fails.
+
+The third condition, that the numbers <math>f(n)</math> have gcd 1, is obviously necessary, but is somewhat subtle, and is best understood by a counterexample. Consider <math>f(x) = x^2 + x + 2</math>, which has positive leading coefficient and is irreducible, and the coefficients are relatively prime; however <math>f(n)</math> is ''even'' for all integers <math>n</math>, and so is prime only finitely many times (namely  at <math>n =0,-1</math>, when <math>f(n)=2</math>). 
+
+In practice, the easiest way to verify the third condition is to find one pair of positive integers <math>m</math> and <math>n</math> such that <math>f(m)</math> and <math>f(n)</math> are [[Coprime integers|relatively prime]]. In general, for any [[integer-valued polynomial]] <math>f(x) = c_0 + c_1x + \cdots + c_dx^d</math> we can use <math>\gcd \{f(n)\}_{n\geq 1} = \gcd(f(m),f(m+1),\dots,f(m+d))</math> for any integer <math>m</math>, so the gcd is given by values of <math>f(x)</math> at any consecutive <math>d+1</math> integers.<ref>{{cite journal | last = Hensel | first = Kurt | title = Ueber den grössten gemeinsamen Theiler aller Zahlen, welche durch eine ganze Function von n Veränderlichen darstellbar sind | journal = [[Journal für die reine und angewandte Mathematik]] | year = 1896 | volume = 1896 | issue = 116 | pages = 350–356 | url =https://www.degruyter.com/document/doi/10.1515/crll.1896.116.350/html | doi = 10.1515/crll.1896.116.350 | s2cid = 118266353 | url-access = subscription }}</ref> In the example above, we have <math>f(-1)=2, f(0)=2, f(1)=4</math> and so the gcd is <math>2</math>, which implies that <math>x^2 + x + 2</math> has even values on the integers.
+
+Alternatively, when an integer polynomial <math>f(x)</math> is written in the basis of [[binomial coefficient]] polynomials:
+<math display="block">
+f(x) = a_0 + a_1\binom{x}{1} + \cdots + a_d\binom{x}{d},
+</math>
+each coefficient <math>a_i</math> is an integer and <math>\gcd\{f(n)\}_{n \geq 1} = \gcd(a_0,a_1,\dots,a_d).</math>  In the example above, this is:
+<math display="block">
+x^2 + x + 2 = 2\binom{x}{2} + 2\binom{x}{1}  + 2,
+</math>
+and the coefficients in the right side of the equation have gcd 2. 
+
+Using this gcd formula, it can be proved <math>\gcd\{f(n)\}_{n \geq 1} =1</math> if and only if there are positive integers <math>m</math> and <math>n</math> such that <math>f(m)</math> and <math>f(n)</math> are relatively prime.{{cn|date=May 2023}}
+
+==Examples==
+
+===A simple quadratic polynomial===
+Some prime values of the polynomial <math>f(x) = x^2 + 1</math> are listed in the following table. (Values of <math>x</math> form [[OEIS]] sequence {{OEIS link|id=A005574}}; those of <math>x^2 + 1</math> form {{OEIS link|id=A002496}}.)
+
+{| class="wikitable"
+|- 
+! <math>x</math>
+|  1 || 2 || 4 || 6 || 10 || 14 || 16 || 20 || 24 || 26 || 36 || 40 || 54 || 56 || 66 || 74 || 84 || 90 || 94 || 110 || 116 || 120
+|- 
+! <math>x^2 + 1</math>
+| 2 || 5 || 17 || 37 || 101 || 197 || 257 || 401 || 577 || 677 || 1297 || 1601 || 2917 || 3137 || 4357 || 5477 || 7057 || 8101 || 8837 || 12101 || 13457 || 14401
+|}
+ 
+That <math>n^2+1</math> should be prime infinitely often is a problem first raised by Euler, and it is also the fifth [[Hardy–Littlewood conjecture]] and the fourth of [[Landau's problems]]. Despite the extensive numerical evidence <ref>{{Citation |last=Wolf |first=Marek 
+ |title=Some Conjectures On Primes Of The Form m2 + 1
+ |journal=Journal of Combinatorics and Number Theory
+ |volume=5 |year=2013 |pages=103–132 | url=http://pracownicy.uksw.edu.pl/mwolf/Wolf_1942-5600_5_2_3.pdf  }}</ref>   
+it is not known that this sequence extends indefinitely.
+
+===Cyclotomic polynomials===
+The [[cyclotomic polynomial]]s <math>\Phi_k(x)</math> for <math>k=1,2,3,\ldots</math> satisfy the three conditions of Bunyakovsky's conjecture, so for all ''k'', there should be infinitely many natural numbers ''n'' such that <math>\Phi_k(n)</math> is prime. It can be shown{{cn|date=December 2019}} that if for all ''k'', there exists an integer ''n'' > 1 with <math>\Phi_k(n)</math> prime, then for all ''k'', there are infinitely many natural numbers ''n'' with <math>\Phi_k(n)</math> prime. 
+
+The following sequence gives the smallest natural number ''n'' > 1 such that <math>\Phi_k(n)</math> is prime, for <math>k=1,2,3,\ldots</math>:
+
+:3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 5, 2, 2, 2, 2, 2, 2, 6, 2, 4, 3, 2, 10, 2, 22, 2, 2, 4, 6, 2, 2, 2, 2, 2, 14, 3, 61, 2, 10, 2, 14, 2, 15, 25, 11, 2, 5, 5, 2, 6, 30, 11, 24, 7, 7, 2, 5, 7, 19, 3, 2, 2, 3, 30, 2, 9, 46, 85, 2, 3, 3, 3, 11, 16, 59, 7, 2, 2, 22, 2, 21, 61, 41, 7, 2, 2, 8, 5, 2, 2, ... {{OEIS|id=A085398}}.
+
+This sequence is known to contain some large terms: the 545th term is 2706, the 601st is 2061, and the 943rd is 2042. This case of Bunyakovsky's conjecture is widely believed, but again it is not known that the sequence extends indefinitely.
+
+Usually, there is an integer <math>n</math> between 2 and <math>\phi(k)</math> (where <math>\phi</math> is [[Euler's totient function]], so <math>\phi(k)</math> is the [[degree of a polynomial|degree]] of <math>\Phi_k(n)</math>) such that <math>\Phi_k(n)</math> is prime,{{cn|date=May 2023}} but there are exceptions; the first few are:
+
+: 1, 2, 25, 37, 44, 68, 75, 82, 99, 115, 119, 125, 128, 159, 162, 179, 183, 188, 203, 213, 216, 229, 233, 243, 277, 289, 292, ....
+
+==Partial results: only Dirichlet's theorem==
+To date, the only case of Bunyakovsky's conjecture that has been [[Mathematical proof|proved]] is that of polynomials of degree 1. This is [[Dirichlet's theorem on arithmetic progressions|Dirichlet's theorem]], which states that when <math>a</math> and <math>m</math> are relatively prime integers there are infinitely many prime numbers <math>p \equiv a \pmod m</math>. This is Bunyakovsky's conjecture for <math>f(x) = a + mx</math> (or <math>a - mx</math> if <math>m < 0</math>).
+The third condition in Bunyakovsky's conjecture for a linear polynomial <math>mx + a</math> is equivalent to <math>a</math> and <math>m</math> being relatively prime. 
+
+No single case of Bunyakovsky's conjecture for degree greater than 1 is proved, although numerical evidence in higher degree is consistent with the conjecture.
+
+==Generalized Bunyakovsky conjecture==
+
+{{main|Schinzel's hypothesis H}}
+
+Given <math>k \geq 1</math> polynomials with positive degrees and integer coefficients, each satisfying the three conditions, assume that for any prime <math>p</math> there is an <math>n</math> such that none of the values of the <math>k</math> polynomials at <math>n</math> are divisible by <math>p</math>. Given these assumptions, it is conjectured that there are infinitely many positive integers <math>n</math> such that all values of these <math>k</math> polynomials at <math>x = n</math> are prime. This conjecture is equivalent to the [[Dickson's conjecture#Generalized Dickson's conjecture|generalized Dickson conjecture]] and [[Schinzel's hypothesis H]].
+
+==See also==
+*[[Integer-valued polynomial]]
+*[[Cohn's irreducibility criterion]]
+*[[Schinzel's hypothesis H]]
+*[[Bateman–Horn conjecture]]
+*[[Ulam spiral#Hardy and Littlewood's Conjecture F|Hardy and Littlewood's conjecture F]]
+
+==References==
+{{Reflist}}
+
+===Bibliography===
+*{{MathWorld|urlname=BouniakowskyConjecture|title=Bouniakowsky conjecture|author=[[Ed Pegg, Jr.]]}}
+*{{cite arXiv|last = Rupert|first = Wolfgang M.|title = Reducibility of polynomials ''f''(''x'', ''y'') modulo ''p''|date = 1998-08-05|eprint = math/9808021}}
+*{{cite journal|last = Bouniakowsky|first = V.|title = Sur les diviseurs numériques invariables des fonctions rationnelles entières|journal = Mém. Acad. Sc. St. Pétersbourg|volume = 6|pages = 305–329|year = 1857}}
+
+{{Prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

@@ -1,0 +1,59 @@
+{{Short description|Mathematical problem in ring theory}}
+In [[abstract algebra]], '''Jacobson's conjecture''' is an [[open problem]] in [[ring theory]] concerning the [[intersection (set theory)|intersection]] of powers of the [[Jacobson radical]] of a [[Noetherian ring|Noetherian]] [[ring (mathematics)|ring]].
+
+It has only been [[mathematical proof|proven]] for special types of Noetherian rings, so far. Examples exist to show that the [[conjecture]] can fail when the ring is not Noetherian on a side, so it is absolutely necessary for the ring to be two-sided Noetherian.
+
+The conjecture is named for the algebraist [[Nathan Jacobson]] who posed the first version of the conjecture.
+
+==Statement==
+For a ring ''R'' with Jacobson radical ''J'', the nonnegative powers <math>J^n</math> are defined by using the [[product of ideals]].
+
+:''Jacobson's conjecture:'' In a right-and-left [[Noetherian ring]], <math>\bigcap_{n\in \mathbb{N}}J^n=\{0\}.</math>
+
+In other words: "The only element of a Noetherian ring in all powers of ''J'' is 0."
+
+The original conjecture posed by Jacobson in 1956<ref>{{citation
+ | last = Jacobson | first = Nathan | author-link=Nathan Jacobson 
+ | location = 190 Hope Street, Providence, R. I.
+ | mr = 0081264
+ | page = 200
+ | publisher = [[American Mathematical Society]]
+ | series = American Mathematical Society, Colloquium Publications, vol. 37
+ | title = Structure of rings
+ | year = 1956}}. As cited by {{citation
+ | last1 = Brown | first1 = K. A.
+ | last2 = Lenagan | first2 = T. H.
+ | doi = 10.1017/S0017089500004729
+ | issue = 1
+ | journal = [[Glasgow Mathematical Journal]]
+ | mr = 641612
+ | pages = 7–8
+ | title = A note on Jacobson's conjecture for right Noetherian rings
+ | volume = 23
+ | year = 1982| doi-access = free
+ }}.</ref> asked about [[noncommutative ring|noncommutative]] one-sided Noetherian rings, however [[Israel Nathan Herstein]] produced a [[counterexample]] in 1965,{{sfn|Herstein|1965}} and soon afterwards, Arun Vinayak Jategaonkar produced a different example which was a left [[principal ideal domain]].{{sfn|Jategaonkar|1968}} From that point on, the conjecture was reformulated to require two-sided Noetherian rings.
+
+==Partial results==
+Jacobson's conjecture has been verified for particular types of Noetherian rings:
+* [[Commutative ring|Commutative]] Noetherian rings all satisfy Jacobson's conjecture. This is a consequence of the [[Krull intersection theorem]].
+* [[Fully bounded Noetherian ring]]s{{sfn|Cauchon|1974}}{{sfn|Jategaonkar|1974}}
+* Noetherian rings with [[Krull dimension]] 1{{sfn|Lenagan|1977}}
+* Noetherian rings satisfying the [[second layer condition]]{{sfn|Jategaonkar|1982}}
+
+==References==
+{{Reflist}}
+'''Sources'''
+{{refbegin}}
+*{{citation |last=Cauchon|first=Gérard |title=Sur l'intersection des puissances du radical d'un T-anneau noethérien |language=French |journal=Comptes Rendus de l'Académie des Sciences, Série A |volume=279 |year=1974 |pages=91–93 |mr=0347894}}
+*{{citation  |last1=Goodearl|first1=K. R.   |last2=Warfield|first2=R. B. Jr.   |title=An introduction to noncommutative Noetherian rings   |series=London Mathematical Society Student Texts  |volume=61   |edition=2   |publisher=Cambridge University Press   |place=Cambridge  |year=2004  |pages=xxiv+344<!--|isbn=0-521-83687-5-->|isbn=0-521-54537-4   |mr=2080008 }}
+*{{citation |last=Herstein |first=I. N. |author-link=Israel Nathan Herstein |title=A counterexample in Noetherian rings |journal=[[Proceedings of the National Academy of Sciences of the United States of America]] |volume=54 |year=1965 |issue=4 |pages=1036–1037 |issn=0027-8424 |mr=0188253 |doi=10.1073/pnas.54.4.1036 |pmid=16578617 |pmc=219788|bibcode=1965PNAS...54.1036H |doi-access=free }}
+*{{citation |last=Jategaonkar |first=Arun Vinayak |title=Left principal ideal domains |journal=J. Algebra |volume=8 |year=1968 |issue=2 |pages=148–155 |issn=0021-8693 |mr=0218387 |doi=10.1016/0021-8693(68)90040-9|doi-access=free }}
+*{{citation|last=Jategaonkar |first=Arun Vinayak |title=Jacobson's conjecture and modules over fully bounded Noetherian rings |journal=J. Algebra |volume=30 |year=1974 |issue=1–3 |pages=103–121 |issn=0021-8693 |mr=0352170 |doi=10.1016/0021-8693(74)90195-1|doi-access=free }}
+*{{citation |last=Jategaonkar|first=Arun Vinayak |title=Solvable Lie algebras, polycyclic-by-finite groups and bimodule Krull dimension |journal=Comm. Algebra|volume=10 |year=1982  |number=1  |pages=19–69  |issn=0092-7872  |mr=674687  |doi=10.1080/00927878208822700}}
+*{{citation   |last=Lenagan|first=T. H. |title=Noetherian rings with Krull dimension one  |journal=J. London Math. Soc. |series=Series 2  |volume=15  |year=1977  |number=1  |pages=41–47  |doi=10.1112/jlms/s2-15.1.41 |issn=0024-6107 |mr=0442008}}
+*{{citation |last=Rowen  |first=Louis H. |title=Ring theory. Vol. I  |series=Pure and Applied Mathematics  |volume=127  |publisher=Academic Press Inc.  |place=Boston, MA |year=1988  |pages=xxiv+538  |isbn=0-12-599841-4  |mr=940245}}
+{{refend}}
+
+[[Category:Conjectures]]
+[[Category:Ring theory]]
+[[Category:Unsolved problems in mathematics]]

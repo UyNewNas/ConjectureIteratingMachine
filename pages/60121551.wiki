@@ -1,0 +1,107 @@
+{{Short description|Ugandan Social Media influencer / blogger born 1995 in mbarara town}}{{inline|date=March 2019}}
+
+'''Chern's conjecture for hypersurfaces in spheres''', unsolved as of 2018, is a [[conjecture]] proposed by [[Shiing-Shen Chern|Chern]] in the field of [[differential geometry]]. It originates from the Chern's unanswered question:
+
+<blockquote>Consider [[compact manifold|closed]] [[minimal manifold|minimal]] [[submanifold]]s <math>M^n</math> immersed in the unit [[hypersphere|sphere]] <math>S^{n+m}</math> with [[second fundamental form]] of constant length whose square is denoted by <math>\sigma</math>. Is the set of values for <math>\sigma</math> discrete? What is the infimum of these values of <math>\sigma > \frac{n}{2-\frac{1}{m}}</math>?</blockquote>
+
+The first question, i.e., whether the set of values for ''σ'' is discrete, can be reformulated as follows:
+
+<blockquote>Let <math>M^n</math> be a closed minimal submanifold in <math>\mathbb{S}^{n+m}</math> with the second fundamental form of constant length, denote by <math>\mathcal{A}_n</math> the set of all the possible values for the squared length of the second fundamental form of <math>M^n</math>, is <math>\mathcal{A}_n</math> a discrete?</blockquote>
+
+Its affirmative hand, more general than the Chern's conjecture for hypersurfaces, sometimes also referred to as the '''Chern's conjecture''' and is still, as of 2018, unanswered even with ''M'' as a hypersurface (Chern proposed this special case to the [[Shing-Tung Yau]]'s open problems' list in differential geometry in 1982):
+
+<blockquote>Consider the set of all compact minimal [[hypersurface]]s in <math>S^N</math> with constant scalar curvature. Think of the scalar curvature as a function on this set. Is the [[image (mathematics)|image]] of this function a [[discrete set]] of positive numbers?</blockquote>
+
+Formulated alternatively:
+
+<blockquote>Consider closed minimal hypersurfaces <math>M \subset \mathbb{S}^{n+1}</math> with constant scalar curvature <math>k</math>. Then for each <math>n</math> the set of all possible values for <math>k</math> (or equivalently <math>S</math>) is discrete</blockquote>
+
+This became known as the '''Chern's conjecture for minimal hypersurfaces in spheres''' (or '''Chern's conjecture for minimal hypersurfaces in a sphere''')
+
+This hypersurface case was later, thanks to progress in isoparametric hypersurfaces' studies, given a new formulation, now known as '''Chern's conjecture for isoparametric hypersurfaces in spheres''' (or '''Chern's conjecture for isoparametric hypersurfaces in a sphere'''):
+
+<blockquote>Let <math>M^n</math> be a closed, minimally immersed hypersurface of the unit sphere <math>S^{n+1}</math> with constant scalar curvature. Then <math>M</math> is isoparametric</blockquote>
+
+Here, <math>S^{n+1}</math> refers to the (''n''+1)-dimensional sphere, and ''n'' ≥ 2.
+
+In 2008, Zhiqin Lu proposed a conjecture similar to that of Chern, but with <math>\sigma + \lambda_2</math> taken instead of <math>\sigma</math>:
+
+<blockquote>Let <math>M^n</math> be a closed, minimally immersed submanifold in the unit sphere <math>\mathbb{S}^{n+m} </math> with constant <math>\sigma + \lambda_2</math>. If <math>\sigma + \lambda_2 > n</math>, then there is a constant <math>\epsilon(n, m) > 0</math> such that <math>\sigma + \lambda_2 > n + \epsilon(n, m)</math></blockquote>
+
+Here, <math>M^n</math> denotes an ''n''-dimensional minimal submanifold; <math>\lambda_2</math> denotes the second largest [[eigenvalue]] of the semi-positive [[symmetric matrix]] <math>S := (\left \langle A^\alpha, B^\beta \right \rangle)</math> where <math>A^\alpha</math>s (<math>\alpha = 1, \cdots, m</math>) are the [[shape operator]]s of <math>M</math> with respect to a given (local) normal [[orthonormal frame]]. <math>\sigma</math> is rewritable as <math>{\left \Vert \sigma \right \Vert}^2</math>.
+
+Another related conjecture was proposed by [[Robert Bryant (mathematician)|Robert Bryant]]:
+
+<blockquote>A piece of a minimal hypersphere of <math>\mathbb{S}^4</math> with constant scalar curvature is isoparametric of type <math>g \le 3</math></blockquote>
+
+Formulated alternatively:
+
+<blockquote>Let <math>M \subset \mathbb{S}^4</math> be a minimal hypersurface with constant scalar curvature. Then <math>M</math> is isoparametric</blockquote>
+
+==Chern's conjectures hierarchically==
+
+Put hierarchically and formulated in a single style, Chern's conjectures (without conjectures of Lu and Bryant) can look like this:
+
+* The first version (minimal hypersurfaces conjecture):
+
+<blockquote>Let <math>M</math> be a compact minimal hypersurface in the unit sphere <math>\mathbb{S}^{n+1}</math>. If <math>M</math> has constant scalar curvature, then the possible values of the scalar curvature of <math>M</math> form a discrete set</blockquote>
+
+* The refined/stronger version (isoparametric hypersurfaces conjecture) of the conjecture is the same, but with the "if" part being replaced with this:
+
+<blockquote>If <math>M</math> has constant scalar curvature, then <math>M</math> is isoparametric</blockquote>
+
+* The strongest version replaces the "if" part with:
+
+<blockquote>Denote by <math>S</math> the squared length of the second fundamental form of <math>M</math>. Set <math>a_k = (k - \operatorname{sgn}(5-k))n</math>, for <math>k \in \{ m \in \mathbb{Z}^+ ; 1 \le m \le 5 \}</math>. Then we have:
+* For any fixed <math>k \in \{ m \in \mathbb{Z}^+ ; 1 \le m \le 4 \}</math>, if <math>a_k \le S \le a_{k+1}</math>, then <math>M</math> is isoparametric, and <math>S \equiv a_k</math> or <math>S \equiv a_{k+1}</math>
+* If <math>S \ge a_5</math>, then <math>M</math> is isoparametric, and <math>S \equiv a_5</math></blockquote>
+
+Or alternatively:
+
+<blockquote>Denote by <math>A</math> the squared length of the second fundamental form of <math>M</math>. Set <math>a_k = (k - \operatorname{sgn}(5-k))n</math>, for <math>k \in \{ m \in \mathbb{Z}^+ ; 1 \le m \le 5 \}</math>. Then we have:
+* For any fixed <math>k \in \{ m \in \mathbb{Z}^+ ; 1 \le m \le 4 \}</math>, if <math>a_k \le {\left \vert A \right \vert}^2 \le a_{k+1}</math>, then <math>M</math> is isoparametric, and <math>{\left \vert A \right \vert}^2 \equiv a_k</math> or <math>{\left \vert A \right \vert}^2 \equiv a_{k+1}</math>
+* If <math>{\left \vert A \right \vert}^2 \ge a_5</math>, then <math>M</math> is isoparametric, and <math>{\left \vert A \right \vert}^2 \equiv a_5</math></blockquote>
+
+One should pay attention to the so-called first and second pinching problems as special parts for Chern.
+
+==Other related and still open problems==
+Besides the conjectures of Lu and Bryant, there are also others:
+
+In 1983, Chia-Kuei Peng and [[Chuu-Lian Terng]] proposed the problem related to Chern:
+
+<blockquote>Let <math>M</math> be a <math>n</math>-dimensional closed minimal hypersurface in <math>S^{n+1}, n \ge 6</math>. Does there exist a positive constant <math>\delta(n)</math> depending only on <math>n</math> such that if <math>n \le n + \delta(n)</math>, then <math>S \equiv n</math>, i.e., <math>M</math> is one of the [[Clifford torus]] <math>S^k\left(\sqrt{\frac{k}{n}}\right) \times S^{n-k}\left(\sqrt{\frac{n-k}{n}}\right), k = 1, 2, \ldots, n-1</math>?</blockquote>
+
+In 2017, Li Lei, Hongwei Xu and Zhiyuan Xu proposed two Chern-related problems.
+
+The first one was inspired by [[Yau's conjecture on the first eigenvalue]]:
+
+<blockquote>Let <math>M</math> be an <math>n</math>-dimensional compact minimal hypersurface in <math>\mathbb{S}^{n+1}</math>. Denote by <math>\lambda_1(M)</math> the first eigenvalue of the [[Laplace operator]] acting on functions over <math>M</math>:
+
+* Is it possible to prove that if <math>M</math> has constant scalar curvature, then <math>\lambda_1(M) = n</math>?
+
+* Set <math>a_k = (k - \operatorname{sgn}(5-k))n</math>. Is it possible to prove that if <math>a_k \le S \le a_{k+1}</math> for some <math>k \in \{ m \in \mathbb{Z}^+ ; 2 \le m \le 4 \}</math>, or <math>S \ge a_5</math>, then <math>\lambda_1(M) = n</math>?</blockquote>
+
+The second is their own '''generalized Chern's conjecture for hypersurfaces with constant mean curvature''':
+
+<blockquote>Let <math>M</math> be a closed hypersurface with constant mean curvature <math>H</math> in the unit sphere <math>\mathbb{S}^{n+1}</math>:
+
+* Assume that <math>a \le S \le b</math>, where <math>a < b</math> and <math>\left [ a, b \right ] \cap I = \left \lbrace a, b \right \rbrace</math>. Is it possible to prove that <math>S \equiv a</math> or <math>S \equiv b</math>, and <math>M</math> is an isoparametric hypersurface in <math>\mathbb{S}^{n+1}</math>?
+
+* Suppose that <math>S \le c</math>, where <math>c = \sup_{t \in I}{t}</math>. Can one show that <math>S \equiv c</math>, and <math>M</math> is an isoparametric hypersurface in <math>\mathbb{S}^{n+1}</math>?</blockquote>
+
+==References==
+{{reflist}}
+* S.S. Chern, Minimal Submanifolds in a Riemannian Manifold, ([[mimeograph]]ed in 1968), Department of Mathematics Technical Report 19 (New Series), [[University of Kansas]], 1968
+* S.S. Chern, Brief survey of minimal submanifolds, Differentialgeometrie im Großen, volume 4 (1971), [[Mathematisches Forschungsinstitut Oberwolfach]], pp. 43–60
+* S.S. Chern, [[Manfredo do Carmo|M. do Carmo]] and [[Shoshichi Kobayashi|S. Kobayashi]], Minimal submanifolds of a sphere with second fundamental form of constant length, Functional Analysis and Related Fields: Proceedings of a Conference in honor of Professor [[Marshall Stone]], held at the [[University of Chicago]], May 1968 (1970), [[Springer-Verlag]], pp. 59-75
+* S.T. Yau, Seminar on Differential Geometry (Annals of Mathematics Studies, Volume 102), [[Princeton University Press]] (1982), pp. 669–706, problem 105
+* L. Verstraelen, Sectional curvature of minimal submanifolds, Proceedings of the Workshop on Differential Geometry (1986), [[University of Southampton]], pp. 48–62
+* M. Scherfner and S. Weiß, Towards a proof of the Chern conjecture for isoparametric hypersurfaces in spheres, Süddeutsches Kolloquium über Differentialgeometrie, volume 33 (2008), Institut für Diskrete Mathematik und Geometrie, [[Technische Universität Wien]], pp. 1–13
+* Z. Lu, Normal scalar curvature conjecture and its applications, Journal of Functional Analysis, volume 261 (2011), pp. 1284–1308
+* {{cite journal |first=Zhiqin |last=Lu |date=2011 |title=Normal Scalar Curvature Conjecture and its applications |journal=Journal of Functional Analysis |volume=261 |issue=5 |pages=1284–1308 |doi=10.1016/j.jfa.2011.05.002 |arxiv=0803.0502v3 |s2cid=17541544 }}
+* C.K. Peng, C.L. Terng, Minimal hypersurfaces of sphere with constant scalar curvature, Annals of Mathematics Studies, volume 103 (1983), pp. 177–198
+* {{cite arXiv |first1=Li |last1=Lei |first2=Hongwei |last2=Xu |first3=Zhiyuan |last3=Xu |date=2017 |title=On Chern's conjecture for minimal hypersurfaces in spheres |eprint=1712.01175 |class=math.DG}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Differential geometry]]

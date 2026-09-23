@@ -1,0 +1,99 @@
+{{Short description|Mathematical conjecture}}
+The '''Arnold conjecture''', named after mathematician [[Vladimir Arnold]], is a mathematical conjecture in the field of [[symplectic geometry]], a branch of [[differential geometry]].<ref name="Asselle Izydorek Starostka p. ">{{cite arXiv | last1=Asselle | first1=L. | last2=Izydorek | first2=M. | last3=Starostka | first3=M. | title=The Arnold conjecture in <math>\mathbb C\mathbb P^n</math> and the Conley index | year=2022 | eprint=2202.00422 | page=| class=math.DS }}</ref>
+
+==Strong Arnold conjecture==
+
+Let <math>(M, \omega)</math> be a closed (compact without boundary) [[symplectic manifold]]. For any smooth function <math>H: M \to {\mathbb R}</math>, the symplectic form <math>\omega</math> induces a [[Hamiltonian vector field]] <math>X_H</math> on <math>M</math> defined by the formula
+
+:<math>\omega( X_H, \cdot) = dH.</math>
+
+The function <math>H</math> is called a [[Hamiltonian function]].
+
+Suppose there is a smooth 1-parameter family of Hamiltonian functions <math>H_t \in C^\infty(M)</math>, <math>t \in [0,1]</math>. This family induces a 1-parameter family of Hamiltonian vector fields <math>X_{H_t}</math> on <math>M</math>. The family of vector fields integrates to a 1-parameter family of [[diffeomorphisms]] <math>\varphi_t: M \to M</math>. Each individual <math>\varphi_t</math> is a called a '''Hamiltonian diffeomorphism''' of <math>M</math>.
+
+The '''strong Arnold conjecture''' states that the number of fixed points of a Hamiltonian diffeomorphism of <math>M</math> is greater than or equal to the number of critical points of a smooth function on <math>M</math>.<ref name=":0">{{cite arXiv|last1=Rizell |first1=Georgios Dimitroglou |title=The number of Hamiltonian fixed points on symplectically aspherical manifolds |date=2017-01-05 |eprint=1609.04776 |last2=Golovko |first2=Roman|class=math.SG }}</ref><ref name=":1">{{cite book
+ | last = Arnold | first = Vladimir I. | editor-first1 = Vladimir I. | editor-last1 = Arnold | author-link = Vladimir Arnold
+ | contribution = 1972-33
+ | doi = 10.1007/b138219
+ | isbn = 3-540-20614-0
+ | mr = 2078115
+ | page = 15
+ | publisher = Springer-Verlag | location = Berlin
+ | title = Arnold's Problems
+ | title-link = Arnold's Problems | year = 2004}} See also comments, pp. 284–288.</ref>
+
+==Weak Arnold conjecture==
+
+Let <math>(M, \omega)</math> be a closed symplectic manifold. A Hamiltonian diffeomorphism <math>\varphi:M \to M</math> is called '''nondegenerate''' if its graph intersects the diagonal of <math>M\times M</math> transversely. For nondegenerate Hamiltonian diffeomorphisms, one variant of the Arnold conjecture says that the number of fixed points is at least equal to the minimal number of critical points of a [[Morse function]] on <math>M</math>, called the '''Morse number''' of <math>M</math>.
+
+In view of the [[Morse inequality]], the Morse number is greater than or equal to the sum of [[Betti number]]s over a [[Field (mathematics)|field]] <math>{\mathbb F}</math>, namely <math display=inline>\sum_{i=0}^{2n} \dim H_i (M; {\mathbb F})</math>. The '''weak Arnold conjecture''' says that
+
+:<math>\# \{ \text{fixed points of } \varphi \} \geq \sum_{i=0}^{2n} \dim H_i (M; {\mathbb F})</math>
+
+for <math>\varphi : M \to M</math> a nondegenerate Hamiltonian diffeomorphism.<ref name=":0" /><ref name=":1" />
+
+==Arnold–Givental conjecture==
+
+The '''Arnold–Givental conjecture''', named after Vladimir Arnold and [[Alexander Givental]], gives a lower bound on the number of intersection points of two [[Lagrangian submanifold|Lagrangian submanifolds]] {{mvar|L}} and <math>L'</math> in terms of the Betti numbers of <math>L</math>, given that <math>L'</math> intersects {{mvar|L}} transversally and <math>L'</math> is Hamiltonian isotopic to {{mvar|L}}.
+
+Let <math>(M, \omega)</math> be a compact <math>2n</math>-dimensional symplectic manifold, let <math>L \subset M</math> be a compact Lagrangian submanifold of <math>M</math>, and let <math>\tau : M \to M</math> be an anti-symplectic involution, that is, a diffeomorphism <math>\tau : M \to M</math> such that <math>\tau^* \omega = -\omega</math> and <math>\tau^2 = \text{id}_M</math>, whose fixed point set is <math>L</math>.
+
+Let <math>H_t\in C^\infty(M)</math>, <math>t \in [0,1]</math> be a smooth family of [[Hamiltonian function]]s on <math>M</math>. This family generates a 1-parameter family of diffeomorphisms <math>\varphi_t: M \to M</math> by flowing along the [[Hamiltonian vector field]] associated to <math>H_t</math>. The Arnold–Givental conjecture states that if <math>\varphi_1(L)</math> intersects transversely with <math>L</math>, then
+
+:<math>\# (\varphi_1(L) \cap L) \geq \sum_{i=0}^n \dim H_i(L; \mathbb Z / 2 \mathbb Z)</math>.<ref name="Frauenfelder">{{harv|Frauenfelder|2004}}</ref>
+
+===Status===
+
+The Arnold–Givental conjecture has been proved for several special cases.
+
+* [[Alexander Givental]] proved it for <math>(M, L) = (\mathbb{CP}^n, \mathbb{RP}^n)</math>.<ref>{{harv|Givental|1989b}}</ref>
+* [[Yong-Geun Oh]] proved it for real forms of compact Hermitian spaces with suitable assumptions on the [[Maslov index|Maslov indices]].<ref>{{harv|Oh|1995}}</ref>
+* Lazzarini proved it for negative monotone case under suitable assumptions on the minimal Maslov number.
+* [[Kenji Fukaya]], Yong-Geun Oh, Hiroshi Ohta, and [[Kaoru Ono]] proved it for <math>(M, \omega)</math> semi-positive.<ref>{{harv|Fukaya|Oh|Ohta|Ono|2009}}</ref>
+* [[Urs Frauenfelder]] proved it in the case when <math>(M, \omega)</math> is a certain symplectic reduction, using [[Gauge theory (mathematics)|gauged]] [[Floer homology|Floer theory]].<ref name="Frauenfelder" />
+
+== See also ==
+
+* [[Symplectomorphism#Arnold conjecture]]
+* [[Floer homology]]
+* [[Spectral invariants]]
+* [[Conley–Zehnder theorem]]
+
+==References==
+
+===Citations===
+
+{{Reflist}}
+
+===Bibliography===
+
+*{{citation
+ | last = Frauenfelder | first = Urs
+ | doi = 10.1155/S1073792804133941
+ | issue = 42
+ | journal = International Mathematics Research Notices
+ | mr = 2076142
+ | pages = 2179–2269
+ | title = The Arnold–Givental conjecture and moment Floer homology
+ | year = 2004| volume = 2004
+ | arxiv = math/0309373
+ | doi-access = <!-- not free-->
+ }}.
+*{{citation |last1=Fukaya |first1=Kenji |last2=Oh |first2=Yong-Geun |last3=Ohta |first3=Hiroshi |last4=Ono |first4=Kaoru |title=Lagrangian intersection Floer theory - anomaly and obstruction |publisher=International Press|isbn=978-0-8218-5253-8|date=2009}}
+*{{citation |url=https://www.mathnet.ru/eng/faa/v23/i4/p37 |last1=Givental |first1=A. B. |title=Periodic maps in symplectic topology|journal= Funktsional. Anal. I Prilozhen |volume=23 |issue=4 |pages=37–52 |date=1989a}}
+**{{citation |doi=10.1007/BF01078943 |title=Periodic maps in symplectic topology (translation from Funkts. Anal. Prilozh. 23, No. 4, 37-52 (1989)) |date=1989b |last1=Givental |first1=A. B. |journal=Functional Analysis and Its Applications |volume=23 |issue=4 |pages=287–300 |s2cid=123546007|zbl=0724.58031 }}
+*{{citation
+ | last = Oh | first = Yong-Geun
+ | issue = 3
+ | journal = Comptes Rendus de l'Académie des Sciences
+ | mr = 1179726
+ | pages = 309–314
+ | title = Floer cohomology and Arnol'd-Givental's conjecture of [on] Lagrangian intersections
+ | volume = 315
+ | year = 1992|url=https://gallica.bnf.fr/ark:/12148/bpt6k5470708m/f315.item?lang=FR#}}.
+*{{citation|doi=10.1007/978-3-0348-9217-9_23 |chapter=Floer cohomology of Lagrangian intersections and pseudo-holomorphic disks, III: Arnold-Givental Conjecture |title=The Floer Memorial Volume |date=1995 |last1=Oh |first1=Yong-Geun |pages=555–573 |isbn=978-3-0348-9948-2 }}
+
+[[Category:Conjectures]]
+[[Category:Symplectic geometry]]
+[[Category:Hamiltonian mechanics]]
+[[Category:Unsolved problems in mathematics]]

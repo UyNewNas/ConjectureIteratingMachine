@@ -1,0 +1,18 @@
+In [[algebraic geometry]], the '''Fröberg conjecture''' is a [[conjecture]] about the possible [[Hilbert series and Hilbert polynomial|Hilbert function]]s of a set of forms. It is named after {{ill|Ralf Fröberg|sv}}, who introduced it in {{harvs|txt|last=Fröberg |year=1985|loc=page 120}}. The '''Fröberg–Iarrobino conjecture''' is a generalization introduced by {{harvs|txt|last=Iarrobino|first=Anthony|year=1997}}.
+
+== Statement of Conjecture ==
+Given generic homogeneous polynomials <math> g_1,g_2,\ldots,g_k\in \mathbb{C}[x_1,x_2,\ldots,x_n]</math> of degrees <math> a_1,a_2,\ldots, a_k</math>, respectively. Then the Hilbert series of <math>\mathbb{C}[x_1,x_2,\ldots,x_n]/\langle g_1,g_2,\ldots, g_k\rangle </math> is 
+:<math>  {(1+t+t^2+\cdots)^n}{(1-t^{a_1})(1-t^{a_2})\cdots (1-t^{a_k})}, </math> 
+truncated at its first negative term.
+
+==References==
+*{{Citation | last1=Fröberg | first1=Ralf | title=An inequality for Hilbert series of graded algebras | mr=813632 | year=1985 | journal=Mathematica Scandinavica | issn=0025-5521 | volume=56 | issue=2 | pages=117–144 | doi=10.7146/math.scand.a-12092 | doi-access=free }}
+*{{Citation | last1=Iarrobino | first1=Anthony | title=Inverse system of a symbolic power. III. Thin algebras and fat points | doi=10.1023/A:1000155612073 | mr=1473851  | year=1997 | journal=[[Compositio Mathematica]] | issn=0010-437X | volume=108 | issue=3 | pages=319–356| doi-access=free }}
+
+{{DEFAULTSORT:Froberg conjecture}}
+[[Category:Algebraic geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+
+
+{{Algebraic-geometry-stub}}

@@ -1,0 +1,96 @@
+In [[number theory]] and [[set theory]], the '''minimum overlap problem''' is a problem proposed by [[Hungary|Hungarian]] [[mathematician]] [[Paul Erdős]] in 1955.<ref name="rguy">{{cite book |last1=Guy |first1= Richard K. |author1-link=Richard K. Guy |title=Unsolved Problems in Number Theory |url= |year=2004 |editor1-last= Bencsáth |editor1-first=Katalin A. |editor2-last=Halmos |editor2-first= Paul R. |publisher=Springer Science+Business Media Inc.|location=New York |isbn=0-387-20860-7 |chapter=C17 |pages=199–200}}</ref><ref name="finch">{{cite web |url=http://www.people.fas.harvard.edu/~sfinch/csolve/ovr.pdf |title=Erdös' minimum overlap problem |accessdate=15 December 2013|author1-link=Steven R. Finch |last=Finch |first=Steven |date=2 July 2004 |url-status=dead |archiveurl=https://web.archive.org/web/20150405060955/http://www.people.fas.harvard.edu/~sfinch/csolve/ovr.pdf |archivedate=5 April 2015 }}</ref>
+
+== Formal statement of the problem ==
+
+Let {{math|''A'' {{=}} {''a''<sub>''i''</sub>}<!-- -->}} and {{math|''B'' {{=}} {''b''<sub>''j''</sub>}<!-- -->}} be two [[Complement (set theory)|complementary subsets]], a splitting of the set of [[natural number]]s {{math|{1, 2, …, 2''n''}<!-- -->}}, such that both have the same [[cardinal number|cardinality]], namely {{math|''n''}}. Denote by {{math|''M''<sub>''k''</sub>}} the number of solutions of the equation {{math|''a''<sub>''i''</sub>&nbsp;−&nbsp;''b''<sub>''j''</sub>&nbsp;{{=}}&nbsp;''k''}}, where {{math|''k''}} is an [[integer number|integer]] varying between {{math|−2''n'' and 2''n''}}<!-- Should it be: between {{math|−&nbsp;(2''n''−1) and 2''n''−1}}? -->. {{math|''M''&thinsp;(''n'')}} is defined as:
+
+:<math>M(n) := \min_{A,B} \max_k M_k. \,\!</math>
+
+The problem is to estimate {{math|''M''&thinsp;(''n'')}} when {{math|''n''}} is sufficiently large.<ref name="finch" />
+
+== History ==
+
+This problem can be found amongst the problems proposed by [[Paul Erdős]] in [[combinatorial number theory]], known by English speakers as the ''Minimum overlap problem''. It was first formulated in the 1955 article ''Some remarks on number theory''<ref name="minimum overlap">P. Erdős: Some remarks on number theory (in Hebrew), Riveon Lematematika 9 (1955), 45-48 MR17,460d.</ref> (in Hebrew) in Riveon Lematematica, and has become one of the classical problems described by [[Richard K. Guy]] in his book ''Unsolved problems in number theory''.<ref name="rguy" />
+
+== Partial results ==
+
+Since it was first formulated, there has been continuous progress made in the calculation of [[Inferior limit|lower bounds]] and [[Superior limit|upper bounds]] of {{math|''M''&thinsp;(''n'')}}, with the following results:<ref name="rguy" /><ref name="finch" />
+
+=== Lower ===
+
+{| class="wikitable"
+! Limit inferior
+! Author(s)
+! Year
+|-
+|<math>M(n) > n/4</math>||P. Erdős||1955
+|-
+|<math>M(n) > (1 - 2^{-1/2} )\, n </math>||P. Erdős, Scherk||1955
+|-
+|<math>M(n) > (4 - 6^{1/2})\, n/5</math>||S. Swierczkowski||1958
+|-
+|<math>M(n) > (4 - 15^{1/2})^{1/2}\, (n - 1)</math>||L. Moser||1966
+|-
+|<math>M(n) > (4 - 15^{1/2})^{1/2}\, n</math>||J. K. Haugland||1996
+|-
+|<math>M(n) > 0.379005 { \, } n</math>||E. P. White||2022
+|}
+
+=== Upper ===
+
+{| class="wikitable"
+! Limit superior
+! Author(s)
+! Year
+|-
+|<math>M(n) < (1+o(1)) n/2</math>||P. Erdős||1955
+|-
+|<math>M(n) < (1+o(1)) 2n/5</math>||T. S. Motzkin, K. E. Ralston and J. L. Selfridge||1956
+|-
+|<math>M(n) < (1+o(1)) 0.382002... n</math>||J. K. Haugland||1996
+|-
+|<math>M(n) < (1+o(1)) 0.380926... n</math>||J. K. Haugland||2016
+|-
+|<math>M(n) < (1+o(1)) 0.380924... n</math>||AlphaEvolve (Novikov et al.)||2025
+|-
+|<math>M(n) < (1+o(1)) 0.380876... n</math>||TTT-Discover (Yuksekgonul et al.)||2026
+|-
+|<math>M(n) < (1+o(1)) 0.380868... n</math>||SimpleTES (Ye et al.)||2026
+|}
+
+J. K. Haugland showed that the [[Limit (mathematics)|limit]] of {{math|''M''&thinsp;(''n'')&thinsp;/&thinsp;''n''}} exists and that it is less than 0.385694. For his research, he was awarded a prize in a young scientists competition in 1993.<ref>{{cite web |url=http://www.neutreeko.net/mop/index.htm |title= The minimum overlap problem |accessdate=20 September 2016 |last=Haugland |first= Jan Kristian}}</ref> In 1996, he improved the upper bound to 0.38201 using a result of [[Peter Swinnerton-Dyer]].<ref>{{cite journal
+| last=Haugland
+| first=Jan Kristian
+| year=1996
+| title=Advances in the Minimum Overlap Problem
+| journal=Journal of Number Theory
+| volume=58
+| issue=1
+| location= Ohio (USA)
+| pages= 71–78
+| issn= 0022-314X
+| doi=10.1006/jnth.1996.0064
+| doi-access=free
+}}</ref><ref name="finch" /> This has now been further improved to 0.38093.<ref>{{cite arXiv|title=The minimum overlap problem revisited|last=Haugland|first=Jan Kristian|year=2016|class=math.GM|eprint=1609.08000}}</ref> In 2022, the lower bound was shown to be at least 0.379005 by E. P. White.<ref>{{cite arXiv|title=Erdős' minimum overlap problem|last=White|first=Ethan Patrick|year=2022|class=math.CO|eprint=2201.05704}}</ref> In 2025, the AI system AlphaEvolve improved the upper bound to 0.380924,<ref>{{cite arXiv|last=Novikov|first=Alexander|collaboration=et al.|year=2025|title=AlphaEvolve: A coding agent for scientific and algorithmic discovery|class=cs.AI |eprint=2506.13131}}</ref> and in 2026 TTT-Discover, another AI system, further improved it to 0.380876.<ref>{{cite arXiv|last=Yuksekgonul|first=Mert|collaboration=et al.|year=2026|title=Learning to Discover at Test Time|class=cs.LG |eprint=2601.16175}}</ref> Later on, an open-sourced AI system, SimpleTES, has improved it to 0.380868.<ref>{{cite arXiv|last=Ye|first=Haotian|collaboration=et al.|year=2026|title=Evaluation-driven Scaling for Scientific Discovery|class=cs.LG|eprint=2604.19341}}</ref>
+
+=== <span class="anchor" id="The first known values of ''M''(''n'')"></span> The first known values of {{math|''M''(''n'')}} ===
+
+The values of {{math|''M''&thinsp;(''n'')}} for the first 15 positive integers are the following:<ref name="rguy" />
+
+{| class="wikitable"<!-- style="border: 1px solid #000000;" -->
+|- style="text-align: right;"
+| style="background: <!--LightGrey-->; text-align: center;" | <math>n\,\!</math>
+| 1|| 2|| 3|| 4|| 5|| 6|| 7|| 8|| 9||10||11||12||13||14||15||...
+|- style="text-align: right;"
+| style="background: <!--LightGrey-->; text-align: center;" | <math>M(n)\,\!</math>
+| 1||1||2||2||3||3||3||4||4||5||5||5||6||6||6||...
+|}
+
+It is just the [[Hasty generalization|Law of Small Numbers]] that it is <math>\textstyle \lfloor 5(n+3)/13 \rfloor</math><ref name="rguy" />
+
+== References ==
+
+{{reflist}}
+
+[[Category:Additive number theory]]
+[[Category:Unsolved problems in number theory]]

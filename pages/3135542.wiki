@@ -1,0 +1,45 @@
+{{DISPLAYTITLE:Grothendieck–Katz ''p''-curvature conjecture}}
+
+In [[mathematics]], the '''Grothendieck–Katz ''p''-curvature conjecture''' is a [[local-global principle]] for [[Linear differential equation|linear ordinary differential equation]]s, related to [[differential Galois theory]] and in a loose sense analogous to the result in the [[Chebotarev density theorem]] considered as the [[polynomial]] case. It is a [[conjecture]] of [[Alexander Grothendieck]] from the late 1960s, and apparently not published by him in any form.
+
+The general case remains unsolved, despite recent progress; it has been linked to geometric investigations involving algebraic [[foliation]]s.
+
+==Formulation==
+In a simplest possible statement the conjecture can be stated in its essentials for a vector system written as
+
+:<math>dv/dz = A(z)v</math>
+
+for a vector ''v'' of size ''n'', and an ''n''-by-''n'' matrix ''A'' of [[algebraic function]]s with [[algebraic number]] coefficients. The question is to give a criterion for when there is a ''full set'' of algebraic function solutions, meaning a fundamental matrix (i.e. ''n'' vector solutions put into a [[block matrix]]). For example, a classical question was for the [[hypergeometric equation]]: when does it have a pair of algebraic solutions, in terms of its parameters? The answer is known classically as [[Schwarz's list]]. In [[monodromy]] terms, the question is of identifying the cases of finite monodromy group.
+
+By reformulation and passing to a larger system, the essential case is for rational functions in ''A'' and rational number coefficients. Then a necessary condition is that for [[almost all]] prime numbers ''p'', the system defined by reduction modulo ''p'' should also have a full set of algebraic solutions, over the finite field with ''p'' elements.
+
+Grothendieck's conjecture is that these necessary conditions, for almost all ''p'', should be sufficient. The connection with [[p-curvature|''p''-curvature]] is that the mod ''p'' condition stated is the same as saying the ''p''-curvature, formed by a recurrence operation on ''A'',<ref>[http://archive.numdam.org/ARCHIVE/SB/SB_1991-1992__34_/SB_1991-1992__34__183_0/SB_1991-1992__34__183_0.pdf Daniel Bertrand, Bourbaki Seminar 750, 1991-2], section 5.</ref> is zero; so another way to say it is that ''p''-curvature of 0 for almost all ''p'' implies enough algebraic solutions of the original equation.
+
+==Katz's formulation for the Galois group==
+[[Nicholas Katz]] has applied [[Tannakian category]] techniques to show that this conjecture is essentially the same as saying that the [[differential Galois group]] ''G'' (or strictly speaking the [[Lie algebra]] '''g''' of the [[algebraic group]] ''G'', which in this case is the [[Zariski closure]] of the monodromy group) can be determined by mod ''p'' information, for a certain wide class of differential equations.<ref>{{cite journal |first=Nicholas M. |last=Katz |title=A conjecture in the arithmetic theory of differential equations |journal=Bull. Soc. Math. France |volume=110 |year=1982 |issue=2 |pages=203–239 |url=http://archive.numdam.org/ARCHIVE/BSMF/BSMF_1982__110_/BSMF_1982__110__203_0/BSMF_1982__110__203_0.pdf |doi=10.24033/bsmf.1960 |doi-access=free }}</ref>
+
+==Progress==
+A wide class of cases has been [[mathematical proof|proved]] by [[Benson Farb]] and [[Mark Kisin]];<ref>{{cite journal |last1=Farb |first1=Benson |last2=Kisin |first2=Mark |year=2009 |title=Rigidity, Locally Symmetric Varieties, and the Grothendieck–Katz Conjecture |journal=Int Math Res Notices |volume=2009 |issue=22 |pages=4159–4167 |doi=10.1093/imrn/rnp082 |url=http://www.math.uchicago.edu/~farb/papers/pcurv5.pdf |citeseerx=10.1.1.158.3198 }}</ref> these equations are on a [[locally symmetric variety]] ''X'' subject to some group-theoretic conditions. This work is based on the previous results of Katz for [[Picard–Fuchs equation]]s (in the contemporary sense of the [[Gauss–Manin connection]]), as amplified in the Tannakian direction by André. It also applies a version of [[superrigidity]] particular to [[arithmetic group]]s. Other progress has been by arithmetic methods.<ref>{{cite arXiv |last=Chambert-Loir |first=Antoine |year=2002 |title=Théorèmes d'algébrisation en géométrie diophantienne |eprint=math/0103192}}</ref>
+
+==History==
+Nicholas Katz related some cases to [[deformation theory]] in 1972, in a paper where the conjecture was published.<ref>{{cite journal |first=Nicholas M. |last=Katz |title=Algebraic solutions of differential equations (p-curvature and the Hodge filtration) |journal=[[Inventiones Mathematicae|Invent. Math.]] |volume=18 |year=1972 |issue=1–2 |pages=1–118 |doi=10.1007/BF01389714 |bibcode=1972InMat..18....1K |s2cid=119830251 }}</ref> Since then, reformulations have been published. A [[q-analogue]] for [[difference equation]]s has been proposed.<ref>{{cite journal |last=Di Vizio |first=Lucia |year=2002 |title=Arithmetic theory of q -difference equations |journal=Invent. Math. |volume=150 |issue=3 |pages=517–578 |doi=10.1007/s00222-002-0241-z |arxiv=math/0104178 |bibcode=2002InMat.150..517D |s2cid=119583087 }}</ref>
+
+In responding to Kisin's talk on this work at the 2009 Colloque Grothendieck,<ref>[http://www.dailymotion.com/video/x8juqx_colloque-grothendieck-mark-kisin_tech Video record.]</ref> Katz gave a brief account from personal knowledge of the genesis of the conjecture. Grothendieck put it forth in public discussion in Spring 1969, but wrote nothing on the topic. He was led to the idea by foundational intuitions in the area of [[crystalline cohomology]], at that time being developed by his student [[Pierre Berthelot]]. In some way wishing to equate the notion of "nilpotence" in the theory of connections, with the [[divided power structure]] technique that became standard in crystalline theory, Grothendieck produced the conjecture as a by-product.
+
+==Notes==
+{{Reflist}}
+
+==References==
+*Nicholas M. Katz, ''Rigid Local Systems'', Chapter 9.
+
+==Further reading==
+*Jean-Benoît Bost, ''Algebraic leaves of algebraic foliations over number fields'', Publications Mathématiques de L'IHÉS, Volume 93, Number 1, September 2001
+*Yves André, ''Sur la conjecture des p-courbures de Grothendieck–Katz et un problème de Dwork'', in ''Geometric Aspects of Dwork Theory'' (2004), editors Alan Adolphson, Francesco Baldassarri, Pierre Berthelot, Nicholas Katz, François Loeser
+*Anand Pillay (2006), ''Differential algebra and generalizations of Grothendieck's conjecture on the arithmetic of linear differential equations''
+
+{{DEFAULTSORT:Grothendieck-Katz p-curvature conjecture}}
+[[Category:Algebraic geometry]]
+[[Category:Galois theory]]
+[[Category:Ordinary differential equations]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

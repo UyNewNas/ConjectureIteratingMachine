@@ -1,0 +1,96 @@
+'''Chern's conjecture for affinely flat manifolds''' was proposed by [[Shiing-Shen Chern]] in 1955 in the field of [[affine geometry]]. As of 2025, it remains an unsolved mathematical problem. 
+
+Chern's conjecture states that the [[Euler characteristic]] of a [[compact manifold|compact]] [[affine manifold]] is zero.
+
+== Details ==
+If any compact manifold is odd-dimensional, its Euler characteristic vanishes by Poincaré duality. If it is even-dimensional, then if the connection ∇ is the [[Levi-Civita connection]] of a [[Riemannian metric]], the [[Chern–Gauss–Bonnet formula]]:
+
+: <math>\chi(M) = \left ( \frac{1}{2\pi} \right )^n \int_M \operatorname{Pf}(K)</math>
+
+also implies that the Euler characteristic is zero. However, not all flat torsion-free connections on <math>T M</math> admit a compatible metric, and therefore, [[Chern–Weil theory]] cannot be used in general to write down the Euler class in terms of the curvature.
+
+== History ==
+The conjecture is known to hold in several special cases:
+
+* when a compact affine manifold is [[surface (topology)|2-dimensional]] (as shown by [[Jean-Paul Benzécri]] in 1955, and later by [[John Milnor]] in 1957<ref>J. Milnor, On the existence of a connection with curvature zero, [[Commentarii Mathematici Helvetici]], volume 32 (1957), pp. 215–223</ref>)
+* when a compact affine manifold is complete (i.e., affinely [[diffeomorphic]] to a [[quotient space (topology)|quotient space]] of the [[affine space]] under a proper action of a [[discrete group]] of [[affine transformations]], then the conjecture is true; the result is shown by [[Bertram Kostant]] and [[Dennis Sullivan]] in 1975; the result would also immediately follow from the [[Auslander conjecture]]; Kostant and Sullivan showed that a closed manifold with nonzero Euler characteristic can't admit a complete affine structure)
+* when a compact affine manifold is a higher-rank irreducible locally symmetric manifold (as shown by [[William Goldman (mathematician)|William Goldman]] and Morris Hirsch in 1984; they showed that a higher-rank irreducible locally symmetric manifold can never admit an affine structure)
+* when a compact affine manifold is locally a product of hyperbolic planes (as shown by Michelle Bucher and [[Tsachik Gelander]] in 2011)
+* when a compact affine manifold admits a parallel volume form (i.e., with linear holonomy in SL<math>(n, \mathbb{R})</math>; it was shown by Bruno Klingler in 2015; this weaker proven case was known as '''Chern's conjecture for special affine manifolds'''; a [[Markus conjecture|conjecture of Markus]] predicts this is equivalent to being complete)
+* when a compact affine manifold is a complex [[hyperbolic surface]] (as shown by Hester Pieters in 2016)
+
+Additionally obtained related results:
+
+* In 1958, Milnor proved inequalities which completely characterise those oriented rank two bundles over a surface that admit a flat connection
+* In 1977, Smillie proved that the condition that the connection is torsion-free matters. For each even dimension greater than 2, Smillie constructed closed manifolds with non-zero Euler characteristic that admit a flat connection on their tangent bundle<ref name=":0">J. Smillie, Flat manifolds with non-zero Euler characteristic, Commentarii Mathematici Helvetici, volume 52 (1977), pp. 453–456</ref>
+
+For flat [[pseudo-Riemannian manifold]]s or [[complex manifold|complex]] affine manifolds, this follows from the [[Chern–Gauss–Bonnet theorem]].
+
+Also, as proven by [[Morris Hirsch|M.W. Hirsch]] and [[William Thurston]] in 1975 for incomplete affine manifolds, the conjecture holds if the holonomy group is a finite extension, a free product of amenable groups (however, their result applies to any flat bundles over manifolds).<ref>M. Hirsch and W. Thurston, Foliated bundles, invariant measures and flat manifolds, [[Annals of Mathematics]], volume 101 (1975), pp. 369–390</ref>
+
+In 1977, John Smillie produced a manifold with the [[tangent bundle]] with nonzero-torsion flat connection and nonzero Euler characteristic, thus he disproved the strong version of the conjecture asking whether the Euler characteristic of a closed flat manifold vanishes.<ref name=":0" />
+
+Later, Huyk Kim and Hyunkoo Lee proved for affine manifolds, and more generally projective manifolds developing into an affine space with amenable [[holonomy]] by a different technique using nonstandard polyhedral [[Gauss–Bonnet theorem]] developed by Ethan Bloch and Kim and Lee.<ref>H. Kim and H. Lee, The Euler characteristic of projectively flat manifolds with amenable fundamental groups, [[Proceedings of the American Mathematical Society]], volume 118 (1993), pp. 311–315</ref><ref>H. Kim and H. Lee, The Euler characteristic of a certain class of projectively flat manifolds, Topology and its Applications, volume 40 (1991), pp. 195–201</ref>
+
+In 2002, Suhyoung Choi slightly generalized the result of Hirsch and Thurston that if the holonomy of a closed affine manifold is isomorphic to amenable groups amalgamated or HNN-extended along finite groups, then the Euler characteristic of the manifold is 0. He showed that if an even-dimensional manifold is obtained from a connected sum operation from ''K''(''π'', 1)s with amenable fundamental groups, then the manifold does not admit an affine structure (generalizing a result of Smillie).<ref>S. Choi, The Chern Conjecture for Affinely Flat Manifolds Using Combinatorial Methods, [[Geometriae Dedicata]], volume 97 (2003), pp. 81–92</ref>
+
+In 2008, after Smillie's simple examples of closed manifolds with flat tangent bundles (these would have affine connections with zero curvature, but possibly nonzero torsion), Bucher and Gelander obtained further results in this direction.
+
+In 2016, Huitao Feng ({{lang-zh|冯惠涛}}) and [[:zh:张伟平 (数学家)|Weiping Zhang]], both of [[Nankai University]], claimed to prove the conjecture in general case, but a serious flaw had been found, so the claim was thereafter retracted. After the correction, their current result is a formula that counts the Euler number of a flat vector bundle in terms of vertices of transversal open coverings.<ref>{{cite arXiv|eprint=1603.07248v3|class=math.DG|first1=Huitao|last1=Feng|first2=Weiping|last2=Zhang|title=Flat vector bundles and open coverings|date=2017}}</ref>
+
+Notoriously, the intrinsic Chern–Gauss–Bonnet theorem proved by Chern that the Euler characteristic of a closed affine manifold is 0 applies only to orthogonal connections, not linear ones, hence why the conjecture remains open in this generality (affine manifolds are considerably more complicated than [[Riemannian manifold]]s, where metric completeness is equivalent to geodesic completeness).
+
+There also exists a related conjecture by [[Mikhail Leonidovich Gromov]] on the vanishing of [[bounded cohomology]] of affine manifolds.<ref>M. Gromov, Asymptotic invariants of infinite groups. Geometric group theory. Volume 2 (1993), 8.A<math>_4</math></ref>
+
+== Related conjectures ==
+The conjecture of Chern can be considered a particular case of the following conjecture:
+
+<blockquote>A closed [[aspherical manifold]] with nonzero Euler characteristic doesn't admit a flat structure</blockquote>
+
+This conjecture was originally stated for general closed manifolds, not just for aspherical ones (but due to Smillie, there's a counterexample), and it itself can, in turn, also be considered a special case of even more general conjecture:
+
+<blockquote>A closed aspherical manifold with nonzero [[simplicial volume]] doesn't admit a flat structure</blockquote>
+
+While generalizing the Chern's conjecture on affine manifolds in these ways, it's known as the '''generalized Chern conjecture''' for manifolds that are locally a product of surfaces.
+
+== References ==
+{{reflist}}
+
+==Further reading==
+* J.P. Benzécri, Variétés localment plates, [[Princeton University]] Ph.D. thesis (1955)
+* J.P. Benzécri, Sur les variétés localement affines et projectives, [[Bulletin de la Société Mathématique de France]], volume 88 (1960), pp. 229–332
+* W. Goldman and M. Hirsch, The radiance obstruction and parallel forms on affine manifolds, [[Transactions of the American Mathematical Society]], volume 286, number 2 (1984), pp. 629–649
+* M. Bucher and T. Gelander, Milnor-Wood inequalities for manifolds which arelocally a product of surfaces, [[Advances in Mathematics]], volume 228 (2011), pp. 1503–1542
+* H. Pieters, Hyperbolic spaces and bounded cohomology, [[University of Geneva]] Ph.D. thesis (2016)
+* B. Kostant and D. Sullivan, The Euler characteristic of an affine space form is zero, [[Bulletin of the American Mathematical Society]], volume 81, number 5 (1975), pp. 937–938
+* J. Milnor, On the existence of a connection with curvature zero, [[Commentarii Mathematici Helvetici]], volume 32 (1957), pp. 215–223
+* B. Klingler, Chern's Conjecture for special affine manifolds, pre-print 2015
+* B. Klingler, Chern’s conjecture for special affine manifolds, [[Annals of Mathematics]], volume 186 (2017), pp. 1–27
+* M. Hirsch and W. Thurston, Foliated bundles, invariant measures and flat manifolds, [[Annals of Mathematics]], volume 101 (1975), pp. 369–390
+* J. Smillie, Flat manifolds with non-zero Euler characteristic, Commentarii Mathematici Helvetici, volume 52 (1977), pp. 453–456
+* H. Kim and H. Lee, The Euler characteristic of a certain class of projectively flat manifolds, Topology and its Applications, volume 40 (1991), pp. 195–201
+* H. Kim and H. Lee, The Euler characteristic of projectively flat manifolds with amenable fundamental groups, [[Proceedings of the American Mathematical Society]], volume 118 (1993), pp. 311–315
+* E. Bloch, The angle defect for arbitrary polyhedra, Beiträge zur Algebra und Geometrie, volume 39 (1998), pp.379–393
+* H. Kim, A polyhedral Gauss-Bonnet formula and projectively flat manifolds, GARC preprint, [[Seoul National University]]
+* S. Choi, The Chern Conjecture for Affinely Flat Manifolds Using Combinatorial Methods, [[Geometriae Dedicata]], volume 97 (2003), pp. 81–92
+* M. Bucher and T. Gelander, Milnor-Wood inequalities for manifolds locally isometric to a product of hyperbolic planes, [[Comptes rendus de l'Académie des Sciences|Comptes Rendus Mathematique]], volume 346, numbers 11–12 (2008), pp. 661–666
+* {{cite conference
+|last1       = Feng
+|first1      = Huitao
+|last2       = Zhang
+|first2      = Weiping
+|date        = 2021
+|title       = Flat vector bundles and open covers
+|book-title  = Differential equations on manifolds and mathematical physics. Dedicated to the memory of Boris Sternin. Selected papers based on the presentations
+|conference  = Conference on partial differential equations and applications
+|location    = Moscow, Russia
+|publisher   = Cham: Birkhäuser
+|access-date = 
+}}
+
+* M. Gromov, Asymptotic invariants of infinite groups. Geometric group theory. Volume 2 (1993), 8.A<math>_4</math>
+
+[[Category:Affine geometry]]
+[[Category:Differential geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]

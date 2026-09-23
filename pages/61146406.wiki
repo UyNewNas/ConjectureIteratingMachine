@@ -1,0 +1,89 @@
+{{Short description|Unsolved problem in theoretical computer science}}
+In [[theoretical computer science]], the '''log-rank conjecture''' states that the deterministic [[communication complexity]] of a two-party [[Boolean function]] is polynomially related to the logarithm of the [[Rank (linear algebra)|rank]] of its input matrix.<ref>{{citation
+ | author1-link = László Lovász
+ | last1 = Lovász | first1 = László
+ | last2 = Saks | first2 = Michael
+ | title = Möbius Functions and Communication Complexity
+ | series = Annual Symposium on Foundations of Computer Science
+ | place = White Plains, New York, USA
+ | pages = 81–90
+ | year = 1988
+}}</ref><ref>{{citation
+ | last1 = Lovett | first1 = Shachar
+ | title = Recent advances on the log-rank conjecture in communication complexity
+ | journal = Bulletin of the EATCS
+ | volume = 112
+ | date = February 2014
+| arxiv = 1403.8106
+ }}</ref>
+
+Let <math>D(f)</math> denote the [[Communication_complexity#Formal_definition|deterministic communication complexity]] of a function, and let <math>\operatorname{rank}(f)</math> denote the [[Rank_(linear_algebra)|rank]] of its input matrix <math>M_f</math> (over the reals). Since every protocol using up to <math>c</math> bits partitions <math>M_f</math> into at most <math>2^c</math> monochromatic rectangles, and each of these has rank at most 1,
+:<math>D(f) \geq \log_2 \operatorname{rank}(f). </math>
+The log-rank conjecture states that <math>D(f)</math> is also ''upper-bounded'' by a polynomial in the log-rank: for some constant <math>C</math>,
+:<math>D(f) = O((\log \operatorname{rank}(f))^C). </math>
+
+Lovett
+<ref>{{citation
+ | last1 = Lovett | first1 = Shachar
+ | title = Communication is Bounded by Root of Rank
+ | journal = Journal of the ACM
+ | volume = 63
+ | issue = 1
+ | date = March 2016
+ | pages = 1:1–1:9
+| doi = 10.1145/2724704
+ | arxiv = 1306.1877
+ | s2cid = 47394799
+ }}</ref>
+proved the upper bound
+:<math>D(f) = O\left(\sqrt{\operatorname{rank}(f)} \log \operatorname{rank}(f)\right). </math>
+This was improved by Sudakov and Tomon,<ref>{{cite arXiv
+	| last1 = Sudakov
+	| first1 = Benny
+	| author-link1 = Benny Sudakov
+	| last2 = Tomon
+	| first2 = Istvan
+	| date = 30 Nov 2023
+	| title = Matrix discrepancy and the log-rank conjecture
+	| eprint = 2311.18524
+	| class = math
+}}</ref> who removed the logarithmic factor, showing that
+:<math>D(f) = O\left(\sqrt{\operatorname{rank}(f)}\right). </math>
+This is the best currently known upper bound.
+
+The best known lower bound, due to Göös, Pitassi and Watson,<ref>{{citation
+ | author2-link = Toniann Pitassi
+ | last1 = Göös | first1 = Mika
+ | last2 = Pitassi | first2 = Toniann
+ | last3 = Watson | first3 = Thomas
+ | title = Deterministic Communication vs. Partition Number
+ | journal = SIAM Journal on Computing
+ | volume = 47
+ | issue = 6
+ | pages = 2435–2450
+ | year = 2018
+| doi = 10.1137/16M1059369 | url = http://infoscience.epfl.ch/record/299579 }}</ref> states that <math>C \geq 2</math>. In other words, there exists a sequence of functions <math>f_n</math>, whose log-rank goes to infinity, such that
+:<math> D(f_n) = \tilde\Omega((\log \operatorname{rank}(f_n))^2). </math>
+
+In 2019, an approximate version of the conjecture for randomised communication has been disproved.<ref>{{citation
+ | title = The Log-Approximate-Rank Conjecture is False
+ | last1 = Chattopadhyay | first1 = Arkadev
+ | last2 = Mande | first2 = Nikhil
+ | last3 = Sherif | first3 = Suhail
+ | series = Annual ACM Symposium on the Theory of Computing
+ | place = Phoenix, Arizona, USA
+ | year = 2019
+}}</ref>
+
+== See also ==
+
+* [[List of unsolved problems in computer science]]
+
+==References==
+{{reflist}}
+
+[[Category:Communication]]
+[[Category:Computational complexity theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Information theory]]

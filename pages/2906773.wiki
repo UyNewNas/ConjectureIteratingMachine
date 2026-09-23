@@ -1,0 +1,20 @@
+{{Short description|Mathematical problem}}
+In [[mathematics]], the '''Kurosh problem''' is one general problem, and several more special questions, in [[ring theory]]. The general problem is known to have a negative solution, since one of the special cases has been shown to have [[counterexample]]s. These matters were brought up by [[Aleksandr Gennadievich Kurosh]] as analogues of the [[Burnside problem]] in [[group theory]].
+
+Kurosh asked whether there can be a finitely-generated infinite-dimensional [[algebraic algebra]] (the problem being to show this cannot happen). A special case is whether or not every [[nil algebra]] is [[locally nilpotent]].
+For [[PI-algebra]]s the Kurosh problem has a positive solution.
+
+[[Evgeny Golod|Golod]] showed a counterexample to that case, as an application of the [[Golod–Shafarevich theorem]].
+
+The Kurosh problem on [[group ring|group algebra]]s concerns the [[augmentation ideal]] ''I''. If ''I'' is a [[nil ideal]], is the group algebra locally nilpotent?
+
+There is an important problem which is often referred as the Kurosh's problem on [[division ring]]s. The problem asks whether there exists an algebraic (over the [[center (ring theory)|center]]) division ring which is not locally finite. This problem has not been solved until now. 
+
+==References==
+*Vesselin S. Drensky, [[Edward W. Formanek|Edward Formanek]] (2004), ''Polynomial Identity Rings'', p. 89.
+*[http://society.kisti.re.kr/sv/SV_svpsbs03V.do?method=download&cn1=JAKO200703534291413''Some open problems in the theory of infinite dimensional algebras''] (2007). [[Efim Zelmanov|E. Zelmanov]].
+
+[[Category:Ring theory]]
+[[Category:Unsolved problems in mathematics]]
+
+{{Abstract-algebra-stub}}

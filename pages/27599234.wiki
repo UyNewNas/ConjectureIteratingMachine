@@ -1,0 +1,194 @@
+{{Short description|Seven mathematical problems with a US$1 million prize for each solution}}
+{{About|the math prizes|the technology prize|Millennium Technology Prize}}{{Millennium Problems}}
+
+The '''Millennium Prize Problems''' are seven well-known complex mathematical problems selected by the [[Clay Mathematics Institute]] in 2000. Each of the problems has a prize of one million [[United States dollar|US dollars]] for the first correct solution, pledged by the Clay Mathematics Institute.
+
+The Clay Mathematics Institute officially designated the title '''Millennium Prize Problem''' for the seven unsolved mathematical problems, the [[Birch and Swinnerton-Dyer conjecture]], [[Hodge conjecture]], [[Navier–Stokes existence and smoothness]], [[P versus NP problem]], [[Riemann hypothesis]], [[Yang–Mills existence and mass gap]], and the [[Poincaré conjecture]] at the Millennium Meeting held on May 24, 2000. Thus, on the official website of the Clay Mathematics Institute, these seven problems are officially called the '''Millennium Prize Problems'''.
+
+{{asof|2026}}, the only Millennium Prize problem to have been officially declared solved is the Poincaré conjecture. The Clay Institute awarded the monetary prize to Russian mathematician [[Grigori Perelman]] in 2010. However, he declined the award because it was not also offered to [[Richard S. Hamilton]], upon whose work Perelman built.<ref name="Interfax Perelman refusal" />
+
+In September 2026, the American [[artificial intelligence]] company [[OpenAI]] presented a proposed counterexample to the Navier–Stokes existence and smoothness problem, saying that they do not intend to claim the Millennium Prize for the result.<ref name=":0">{{Cite web |title=On the Navier–Stokes Millennium Prize Problem |url=https://openai.com/index/navier-stokes-solution/ |access-date=2026-09-08 |website=OpenAI |language=en-US}}</ref> The Clay Institute only considers proposed solutions to Millennium Prize problems after at least two years since publication.<ref name=":2">{{Cite web |title=Rules for the Millennium Prize Problems |url=https://www.claymath.org/millennium-problems/rules/ |access-date=2026-09-17 |website=Clay Mathematics Institute |language=en-US}}</ref> The claimed result has yet to be verified by the independent mathematical community and is the subject of a [[Navier–Stokes priority controversy|priority dispute]].<ref name=":1">{{cite web |last=Hayes |first=Kali |date=2026-09-08 |title=OpenAI says it cracked 90-year-old maths problem in 88 hours |url=https://www.bbc.com/news/articles/cy7zygy3rl2o |website=bbc.com |location= |publisher= |access-date=2026-09-08}}</ref>
+
+==Overview== 
+The Clay Institute was inspired by a set of [[Hilbert's problems|twenty-three problems]] organized by the mathematician [[David Hilbert]] in 1900 which were highly influential in driving the progress of mathematics in the twentieth century.<ref name="Jaffe_2000">{{cite journal|first=Arthur M.|last=Jaffe|url=https://www.ams.org/notices/200606/fea-jaffe.pdf|title=The Millennium Grand Challenge in Mathematics|journal=Notices of the American Mathematical Society|date=June–July 2006|volume=53|issue=6|pages=652–660}}</ref> The seven selected problems span a number of mathematical fields, namely [[algebraic geometry]], [[arithmetic geometry]], [[geometric topology]], [[mathematical physics]], [[number theory]], [[partial differential equation]]s, and [[theoretical computer science]]. Unlike Hilbert's problems, the problems selected by the Clay Institute were already renowned among professional mathematicians, with many actively working towards their resolution.<ref>{{harvtxt|Carlson|Jaffe|Wiles|2006}}</ref>
+
+The seven problems were officially announced by [[John Tate (mathematician)|John Tate]] and [[Michael Atiyah]] during a ceremony held on May 24, 2000 (at the amphithéâtre [[Marguerite de Navarre]]) in the [[Collège de France]] in [[Paris]].<ref>{{cite web | url=https://www.claymath.org/millennium-problems/ | title=The Millennium Prize Problems }}</ref>
+
+[[Grigori Perelman]], who had begun work on the [[Poincaré conjecture]] in the 1990s, released his proof in 2002 and 2003. His refusal of the Clay Institute's monetary prize in 2010 was widely covered in the media. In 2026, OpenAI claimed to resolve the Navier–Stokes existence and smoothness problem using an internal AI model, but its result has not been independently verified as of 2026.<ref name=":0" /><ref name=":1" /> The other five Millennium Prize Problems remain unsolved, despite a large number of unsatisfactory proofs by both amateur and professional mathematicians.
+
+[[Andrew Wiles]], as part of the Clay Institute's scientific advisory board, hoped that the choice of [[US$]]1 million prize money would popularize, among general audiences, both the selected problems as well as the "excitement of mathematical endeavor".<ref>{{cite journal|last1=Jackson|first1=Allyn|title=Million-dollar mathematics prizes announced|journal=Notices of the American Mathematical Society|volume=47|issue=8|date=September 2000|pages=877–879}}</ref> Another board member, [[Fields Medal|Fields medalist]] [[Alain Connes]], hoped that the publicity around the unsolved problems would help to combat the "wrong idea" among the public that mathematics would be "overtaken by computers".<ref>{{cite journal|first1=David|last1=Dickson|journal=Nature|title=Mathematicians chase the seven million-dollar proofs|volume=405|issue=383|year=2000|page=383|doi=10.1038/35013216 |pmid=10839504 |s2cid=31169641 |doi-access=free}}</ref>
+
+Some mathematicians have been more critical. [[Anatoly Vershik]] characterized their monetary prize as "show business" representing the "worst manifestations of present-day mass culture", and thought that there are more meaningful ways to invest in public appreciation of mathematics.<ref>{{cite journal|last1=Vershik|first1=Anatoly|author-link=Anatoly Vershik|title=What is good for mathematics? Thoughts on the Clay Millennium prizes|journal=Notices of the American Mathematical Society|volume=54|issue=1|date=January 2007|pages=45–47}}</ref> He viewed the superficial media treatments of Perelman and his work, with disproportionate attention being placed on the prize value itself, as unsurprising. By contrast, Vershik praised the Clay Institute's direct funding of research conferences and young researchers. Vershik's comments were later echoed by Fields medalist [[Shing-Tung Yau]], who was additionally critical of the idea of a foundation taking actions to "appropriate" fundamental mathematical questions and "attach its name to them".<ref>{{cite book|author-link1=Shing-Tung Yau|last1=Yau|first1=Shing-Tung|last2=Nadis|first2=Steve|title=The shape of a life. One mathematician's search for the universe's hidden geometry|publisher=Yale University Press|location=New Haven, CT|year=2019|bibcode=2019shli.book.....Y }}</ref>
+
+==Solved problems==
+
+===Poincaré conjecture===
+{{Main article|Poincaré conjecture}}
+[[File:P1S2all.jpg|thumb|upright=1.5|A [[compact space|compact]] 2-dimensional surface without [[boundary (topology)|boundary]] is topologically [[Homeomorphism|homeomorphic]] to a 2-sphere if every loop can be continuously tightened to a point. The Poincaré conjecture asserts that the same is true for 3-dimensional spaces.]]
+In the field of [[geometric topology]], a two-dimensional [[sphere]] is characterized by the fact that it is the only [[closed manifold|closed]] and [[simply connected space|simply connected]] two-dimensional surface. In 1904, [[Henri Poincaré]] posed the question of whether an analogous statement holds true for three-dimensional shapes. This came to be known as the Poincaré conjecture, the precise formulation of which states:<ref>{{cite book
+ | last1 = Przytycki | first1 = Józef H.
+ | last2 = Bakshi | first2 = Rhea Palak
+ | year = 2024
+ | url = https://books.google.com/books?id=22X8EAAAQBAJ&pg=PA375
+ | page = 375
+ | title = Lectures in Knot Theory: An Exploration of Contemporary Topics
+ | publisher = Springer
+| isbn = 978-3-031-40044-5
+ }}</ref>{{quote|sign=|source=|Any [[3-manifold|three-dimensional topological manifold]] which is closed and simply-connected must be [[homeomorphic]] to the [[3-sphere]].}}
+Although the conjecture is usually stated in this form, it is equivalent (as was discovered in the 1950s) to pose it in the context of [[smooth manifolds]] and [[diffeomorphism]]s.
+
+A proof of this conjecture, together with the more powerful [[geometrization conjecture]], was given by [[Grigori Perelman]] in 2002 and 2003. Perelman's solution completed [[Richard S. Hamilton|Richard Hamilton]]'s program for the solution of the geometrization conjecture, which he had developed over the course of the preceding twenty years. Hamilton and Perelman's work revolved around Hamilton's [[Ricci flow]], which is a complicated system of [[partial differential equation]]s defined in the field of [[Riemannian geometry]].
+
+For his contributions to the theory of Ricci flow, Perelman was awarded the [[Fields Medal]] in 2006. However, he declined to accept the prize.<ref>{{cite news |url=https://news.bbc.co.uk/2/hi/science/nature/5274040.stm |title=Maths genius declines top prize |date=22 August 2006 |publisher=[[BBC News]] |access-date=16 June 2011}}</ref> For his proof of the Poincaré conjecture, Perelman was awarded the Millennium Prize on March 18, 2010.<ref>{{cite press release|publisher=[[Clay Mathematics Institute]] |date=March 18, 2010 |title=Prize for Resolution of the Poincaré Conjecture Awarded to Dr. Grigoriy Perelman |url=http://www.claymath.org/poincare/millenniumPrizeFull.pdf |access-date=March 18, 2010 |quote=The Clay Mathematics Institute (CMI) announces today that Dr. Grigoriy Perelman of St. Petersburg, Russia, is the recipient of the Millennium Prize for resolution of the Poincaré conjecture. |url-status=dead |archive-url=https://web.archive.org/web/20100331134628/http://www.claymath.org/poincare/millenniumPrizeFull.pdf |archive-date=March 31, 2010 }}</ref> However, he declined the award and the associated prize money, stating that Hamilton's contribution was no less than his own.<ref name="Interfax Perelman refusal">{{cite news|newspaper=[[Interfax]]|date=July 1, 2010|title=Последнее "нет" доктора Перельмана|url=https://www.interfax.ru/russia/143603|access-date=25 January 2024}}</ref>
+
+==Active problems==
+===Navier–Stokes existence and smoothness===
+{{Main article|Navier–Stokes existence and smoothness}}
+
+:'''<math>
+ \overbrace{
+ \underbrace{\frac{\partial \mathbf{u}}{\partial t}}_{
+ \begin{smallmatrix}
+ \text{Variation}
+ \end{smallmatrix}} +
+ \underbrace{(\mathbf{u} \cdot \nabla) \mathbf{u}}_{
+ \begin{smallmatrix}
+ \text{Convection}
+ \end{smallmatrix}}}^{\text{Inertia (per volume)}}
+ \overbrace{{}-\underbrace{\nu \, \nabla^2 \mathbf{u}}_{\text{Diffusion}}=
+ \underbrace{-\nabla w}_{
+ \begin{smallmatrix}
+ \text{Internal} \\
+ \text{source}
+ \end{smallmatrix}}}^{\text{Divergence of stress}} +
+ \underbrace{\mathbf{g}}_{
+ \begin{smallmatrix}
+ \text{External} \\
+ \text{source}
+ \end{smallmatrix}}
+ .
+</math>'''
+The [[Navier–Stokes equations]] describe the motion of [[fluid]]s, and are one of the pillars of [[fluid mechanics]]. However, theoretical understanding of their solutions is incomplete, despite its importance in science and engineering. For the three-dimensional system of equations, and given some [[initial condition|initial conditions]] and possibly an external force, it was conjectured that [[Smooth function|smooth solutions]] always exist. This is called the ''[[Navier–Stokes existence and smoothness]]'' problem. The problem, restricted to the case of an [[incompressible flow]], is to prove either that smooth, globally defined solutions exist that meet certain conditions, or that they do not always exist and the equations break down.
+
+The official statement of the Millennium Prize's version of the Navier-Stokes existence and smoothness problem was given by [[Charles Fefferman]],<ref>{{cite encyclopedia|last1=Fefferman|first1=Charles L.|author-link1=Charles Fefferman|title=Existence and smoothness of the Navier–Stokes equation|url=https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf|pages=57–67|editor1-last = Carlson|editor1-first = James|editor2-last = Jaffe|editor2-first = Arthur|editor2-link = Arthur Jaffe|editor3-last = Wiles|editor3-first = Andrew|editor3-link = Andrew Wiles|encyclopedia= The millennium prize problems|year = 2006  |location = Providence, RI|publisher = American Mathematical Society and Clay Mathematics Institute|isbn = 978-0-8218-3679-8}}</ref> and asks to prove one of four statements (A), (B), (C), and (D). Statements (A) and (B) pertain to proving that smooth, globally defined solutions exist in the absence of an external force, while statements (C) and (D) pertain to constructing a solution with a singularity in finite time with a smooth force. Statements (A) and (C) are on three-diemsnional [[Euclidean space]] <math>\mathbb{R}^3</math>, while statements (B) and (D) are on the three-dimensional torus <math>\mathbb{T}^3</math>. 
+
+==== Claimed blowup of the Navier-Stokes equation ====
+{{Main article|Navier–Stokes priority controversy}}
+
+On September 8, 2026, [[OpenAI]] posted a claimed solution to the Navier-Stokes equation validating statement (C) of the Millennium Prize problem, along with a formalized proof. As of September 2026, this solution to the Navier-Stokes equation awaits [[scientific validation]],<ref name=":1" /> but the Clay Mathematical Institute wrote that "CMI shares in the excitement of the global mathematical community as we contemplate the announcement that the Navier-Stokes problem has apparently been settled."<ref>{{Cite web |title=Navier-Stokes Announcement |url=https://www.claymath.org/news/navier-stokes-announcement/ |access-date=2026-09-13 |website=Clay Mathematics Institute |language=en-US}}</ref>
+
+A [[Scientific_priority#Priority_disputes|priority dispute]] started immediately. [[New York University]] mathematics professor [[Tristan Buckmaster]] said that OpenAI took advantage of non-public results derived by himself and [[Anthropic]] mathematician [[Levent Alpöge]]. He went on to say that OpenAI may have used his [[OpenAI Codex (AI agent)|Codex]] chat history. OpenAI denied seeing the work of Buckmaster or Alpöge before it was public, but said in a statement: "While unlikely, we cannot rule out that de-identified data derived from their usage of our products helped improve our models."<ref name="y629">{{cite web | last=Brandom | first=Russell | title=OpenAI fought dirty on career-making math problem, says NYU mathematician | website=TechCrunch | date=8 September 2026 | url=https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/ | access-date=8 September 2026}}</ref><ref name="g406">{{cite web | title=On the Navier–Stokes Millennium Prize Problem | website=OpenAI | date=2026-09-08 | url=https://openai.com/index/navier-stokes-solution/ | access-date=2026-09-09}}</ref><ref name="openai_announcement_initial">{{cite web | title=On the Navier–Stokes Millennium Prize Problem | website=OpenAI | date=2026-09-08 | url=https://web.archive.org/web/20260908171518/https://openai.com/index/navier-stokes-solution/ | access-date=2026-09-08}} (initial announcement)</ref> A later update claims that "Following an investigation, we have confirmed that Buckmaster’s Codex prompts over the two months preceding this announcement and paper on September 8, 2026, could not have influenced the system in any way, including through training."<ref>{{cite web | title=On the Navier–Stokes Millennium Prize Problem | website=OpenAI | date=2026-09-08 | url=https://openai.com/index/navier-stokes-solution/ | access-date=2026-09-12}} (updated announcement)</ref>
+
+[[Martin Bridson]], the president of the Clay Mathematics Institute, stressed that the institute requires a solution to a Millennium problem to be in the form of [[Peer review|peer-reviewed]] publications, which would then be further scrutinised before the prize is awarded.<ref name="DCnature">{{cite news |last=Castelvecchi |first=Davide |date=8 September 2026 |title=OpenAI claims huge maths breakthrough on a famed 'Millennium Problem' |journal=[[Nature (journal)|Nature]] |doi=10.1038/d41586-026-02842-5}}</ref> Additionally, the Clay Institute only considers proposed solutions to Millennium Prize problems after at least two years since publication.<ref name=":2" />
+
+==Unsolved problems==
+
+===Birch and Swinnerton-Dyer conjecture===
+{{Main article|Birch and Swinnerton-Dyer conjecture}}
+This conjecture, named after [[Bryan John Birch]] and [[Peter Swinnerton-Dyer]], deals with certain types of equations: those defining [[elliptic curve]]s over the [[rational number]]s. The conjecture is that there is a simple way to tell whether such equations have a finite or infinite number of rational solutions. More specifically, the Millennium Prize version of the conjecture is that, if the elliptic curve <math>E</math> has [[Rank of an elliptic curve|rank]] <math>r</math>, then the [[Hasse–Weil zeta function|''L''-function]] <math>L(E,s)</math> associated with it [[Order of vanishing|vanishes to order]] <math>r</math> at <math>s=1</math>.
+
+The official statement of the [[Birch and Swinnerton-Dyer conjecture]] was given by [[Andrew Wiles]].<ref>{{cite web
+ | title = Birch and Swinnerton-Dyer Conjecture
+ | url = https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/
+ | access-date = 2024-11-20
+ | website = Clay Mathematics Institute
+ | language = en-US
+}}</ref> 
+
+===Hodge conjecture===
+{{Main article|Hodge conjecture}}
+The Hodge conjecture is that for [[projective space|projective]] [[algebraic variety|algebraic varieties]], [[Hodge cycle]]s are rational [[linear combination]]s of [[algebraic cycle]]s.
+
+:<math>\operatorname{Hdg}^k(X) = H^{2k}(X, \Q) \cap H^{k,k}(X).</math>
+
+We call this the group of ''Hodge classes'' of degree <math>2k</math> on <math>X</math>.
+
+The modern statement of the Hodge conjecture is:
+
+::Let <math>X</math> be a non-singular complex projective variety. Then every Hodge class on <math>X</math> is a linear combination with rational coefficients of the [[cohomology|cohomology classes]] of complex subvarieties of <math>X</math>.
+
+The official statement of the problem was given by [[Pierre Deligne]].<ref>{{cite book |last=Deligne |first=Pierre |author-link1=Pierre Deligne |chapter=The Hodge conjecture |pages=45–53 |editor1-last = Carlson |editor1-first = James |editor2-last = Jaffe |editor2-first = Arthur |editor2-link = Arthur Jaffe |editor3-last = Wiles |editor3-first = Andrew |editor3-link = Andrew Wiles |title = The Millennium Prize Problems |year = 2006 |location = [[Providence, Rhode Island|Providence, RI]] | publisher = [[American Mathematical Society]] and [[Clay Mathematics Institute]] |isbn = 978-0-8218-3679-8}}</ref>
+
+===P versus NP===
+{{Main article|P versus NP problem}}
+[[File:P np np-complete np-hard.svg|thumb|300px|right|[[Euler diagram]] for '''[[P (complexity)|P]]''', '''[[NP (complexity)|NP]]''', '''NP'''-complete, and '''NP'''-hard set of problems (excluding the empty language and its complement, which belong to '''P''' but are not '''NP'''-complete)]]
+The question is whether or not, for all problems for which an algorithm can ''verify'' a given solution quickly (that is, in [[Polynomial time#Polynomial time|polynomial time]]), an algorithm can also ''find'' that solution quickly. Since the former describes the class of problems termed NP, while the latter describes P, the question is equivalent to asking whether all problems in NP are also in P. This is generally considered one of the most important open questions in [[mathematics]] and [[computation|theoretical computer science]] as it has far-reaching consequences to other problems in [[mathematics]], to [[biology]],<ref>{{Cite journal |last=Rajput |first=Uday Singh |date=2016 |title=P Versus NP: More than just a prize problem |url=http://bharataganitaparisad.com/wp-content/uploads/2016/12/ch8.pdf |url-status=live |journal=Ganita |publication-place=Lucknow, India |volume=66 |pages=90 |issn=0046-5402 |archive-url=https://web.archive.org/web/20220617115240/http://bharataganitaparisad.com/wp-content/uploads/2016/12/ch8.pdf |archive-date=17 June 2022 |access-date=17 June 2022}}</ref> [[philosophy]]<ref>{{cite web |url=http://eccc.hpi-web.de/report/2011/108/ |title=Why Philosophers Should Care About Computational Complexity |date=14 August 2011 |author=Scott Aaronson |author-link=Scott Aaronson |publisher=Technical report}}</ref> and to [[cryptography]] (see [[P versus NP problem#Consequences of solution|P versus NP problem proof consequences]]). A common example of an NP problem not known to be in P is the [[Boolean satisfiability problem]].
+
+Most mathematicians and computer scientists expect that P&nbsp;≠&nbsp;NP; however, it remains unproven.<ref>{{cite journal|author=William Gasarch|author-link=William Gasarch|title=The P=?NP poll.|journal=SIGACT News|volume=33|issue=2|pages=34–47|date=June 2002| url=http://www.cs.umd.edu/~gasarch/papers/poll.pdf|doi=10.1145/1052796.1052804|s2cid=18759797}}</ref>
+
+The official statement of the problem was given by [[Stephen Cook]].<ref>{{cite book | last = Cook | first = Stephen | author-link1 = Stephen Cook | chapter = The P versus NP problem | pages = 87–104 | editor1-last = Carlson | editor1-first = James | editor2-last = Jaffe | editor2-first = Arthur | editor2-link = Arthur Jaffe | editor3-last = Wiles |editor3-first = Andrew |editor3-link = Andrew Wiles |title = The Millennium Prize Problems |year = 2006 |location = [[Providence, Rhode Island|Providence, RI]] | publisher = [[American Mathematical Society]] and [[Clay Mathematics Institute]] |isbn = 978-0-8218-3679-8 | chapter-url = https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf}}</ref>
+
+===Riemann hypothesis===
+{{Main article|Riemann hypothesis}}
+[[File:RiemannCriticalLine.svg|thumb|upright=1.2|The real part (red) and imaginary part (blue) of the [[Riemann zeta function]] <math>\zeta(s)</math> along the critical line <math> \zeta(s) = 1/2</math>. The first nontrivial [[Zero of a function|zeros]] can be seen at <math>\operatorname{Im}(s) = \pm 14.135</math>, <math>\pm21.022</math>, and <math>\pm 25.011</math>.]]
+
+The [[Riemann zeta function]] <math> \zeta(s) </math> is a [[Function (mathematics)|function]] whose [[Argument of a function|arguments]] may be any [[complex number]] other than 1, and whose values are also complex. This function can be expressed as the following infinite sum:<ref>{{cite journal
+ | last1 = Steuding | first1 = Jörn
+ | last2 = Suriajaya | first2 = Ade Irma
+ | year = 2020
+ | title = Value-distribution of the Riemann zeta-function along its Julia lines
+ | journal = Computational Methods and Function Theory
+ | volume = 20 | issue = 3 | pages = 389–401
+ | doi = 10.1007/s40315-020-00316-x
+ | quote = Theorem 2 implies that <math> \zeta </math> has an essential singularity at infinity
+}}</ref>
+:<math> \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \cdots.</math>
+Its [[analytical continuation]] has [[Zero of a function|zeros]] at the negative even integers; that is, <math> \zeta(s) = 0 </math> when <math> s </math> is one of <math> -2 </math>, <math> -4 </math>, <math> -6 </math>, and so on. These are called its [[Triviality (mathematics)|trivial]] zeros. However, the negative even integers are not the only values for which the zeta function is zero. The other ones are called non-trivial zeros. The Riemann hypothesis is concerned with the locations of these non-trivial zeros, and states that
+::The real part of every non-trivial zero of the Riemann zeta function is <math>\,\frac{1}{2}</math>.
+
+The Riemann hypothesis is that all non-trivial zeros of the [[Riemann zeta function]] have a real part of <math>1/2</math>. A proof or disproof of this would have far-reaching implications in [[number theory]], especially for the distribution of [[prime number]]s. This was [[Hilbert's eighth problem]], and is still considered an important [[open problem]] a century later.
+
+The problem has been well known ever since it was originally posed by [[Bernhard Riemann]] in 1859. The Clay Institute's exposition of the problem was given by [[Enrico Bombieri]].<ref>{{cite book | last = Bombieri | first = Enrico | author-link1 = Enrico Bombieri | chapter = The Riemann hypothesis | pages = 107–124 | editor1-last = Carlson | editor1-first = James | editor2-last = Jaffe |editor2-first = Arthur |editor2-link = Arthur Jaffe |editor3-last = Wiles |editor3-first = Andrew |editor3-link = Andrew Wiles | title = The Millennium Prize Problems | year = 2006  | location = [[Providence, Rhode Island|Providence, RI]] | publisher = [[American Mathematical Society]] and [[Clay Mathematics Institute]] | isbn = 978-0-8218-3679-8 | chapter-url = https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf}}</ref>
+
+===Yang–Mills existence and mass gap===
+{{Main article|Yang–Mills existence and mass gap}}
+In [[quantum field theory]], the [[mass gap]] is the difference in energy between the vacuum and the next lowest [[energy state]]. The energy of the vacuum is zero by definition, and assuming that all energy states can be thought of as particles in plane-waves, the mass gap is the mass of the lightest particle.
+
+For a given real field <math>\phi(x)</math>, we can say that the theory has a mass gap if the [[Correlation function (quantum field theory)|two-point function]] has the property
+
+:<math>\langle\phi(0,t)\phi(0,0)\rangle\sim \sum_nA_n\exp\left(-\Delta_nt\right)</math>
+
+with <math>\Delta_0>0</math> being the lowest energy value in the [[Spectrum (functional analysis)|spectrum]] of the [[Hamiltonian (quantum mechanics)|Hamiltonian]] and thus the mass gap. This quantity, easy to generalize to other fields, is what is generally measured in lattice computations.
+
+Quantum [[Yang–Mills theory]] is the current grounding for the majority of theoretical applications of thought to the reality and potential realities of [[elementary particle physics]].<ref>{{cite web
+| url = https://www.claymath.org/millennium-problems/yang%E2%80%93mills-and-mass-gap
+| title = Yang–Mills and Mass Gap
+| work = [[Clay Mathematics Institute]]
+| archive-url = https://archive.today/20151122222730/http://www.claymath.org/millennium-problems/yang%E2%80%93mills-and-mass-gap
+| archive-date = 22 November 2015
+| access-date = 29 June 2021
+| url-status = live
+}}</ref> The theory is a generalization of the [[James Clerk Maxwell|Maxwell]] theory of [[electromagnetism]] where the ''chromo''-electromagnetic field itself carries charge. As a classical field theory it has solutions which travel at the speed of light so that its quantum version should describe massless particles ([[gluon]]s). However, the postulated phenomenon of [[color confinement]] permits only bound states of gluons, forming massive particles. This is the [[mass gap]]. Another aspect of confinement is [[asymptotic freedom]] which makes it conceivable that [[quantum Yang-Mills theory|quantum Yang–Mills theory]] exists without restriction to low energy scales. The problem is to establish rigorously the existence of the quantum Yang–Mills theory and a mass gap.
+
+::Prove that for any compact simple gauge group <math>G</math>, a non-trivial quantum Yang–Mills theory exists on <math>\R^4</math> and has a mass gap <math>\Delta > 0</math>. Existence includes establishing axiomatic properties at least as strong as those cited in Streater & Wightman (1964),<ref>{{cite book |last1=Streater |first1=R. |last2=Wightman |first2=A. |title=PCT, Spin and Statistics and all That|url=https://archive.org/details/pctspinstatistic0000stre |url-access=registration |publisher=W. A. Benjamin|year= 1964}}</ref> Osterwalder & Schrader (1973),<ref>{{cite journal |last1=Osterwalder |first1=K. |last2=Schrader |first2=R. |title=Axioms for Euclidean Green's functions |journal=[[Communications in Mathematical Physics]] |volume=31 |issue=2 |pages=83–112 |year=1973|doi=10.1007/BF01645738 |bibcode = 1973CMaPh..31...83O |s2cid=189829853 |url=http://projecteuclid.org/euclid.cmp/1103858969 }}</ref> and Osterwalder & Schrader (1975).<ref>{{cite journal |last1=Osterwalder |first1=K. |last2=Schrader |first2=R. |title=Axioms for Euclidean Green's functions II |journal=[[Communications in Mathematical Physics]] |volume=42 |issue=3 |pages=281–305 |year=1975 |doi=10.1007/BF01608978 }}</ref>
+
+The official statement of the problem was given by [[Arthur Jaffe]] and [[Edward Witten]].<ref>{{cite book | last=Jaffe |first=Arthur |last2=Witten |first2=Edward |author-link1=Arthur Jaffe |author-link2=Edward Witten |chapter=Quantum Yang–Mills theory |pages=129–152 |editor1-last = Carlson |editor1-first = James |editor2-last = Jaffe |editor2-first = Arthur |editor2-link = Arthur Jaffe |editor3-last = Wiles |editor3-first = Andrew |editor3-link = Andrew Wiles |title = The Millennium Prize Problems |year = 2006  |location = [[Providence, Rhode Island|Providence, RI]] |publisher = [[American Mathematical Society]] and [[Clay Mathematics Institute]] | isbn = 978-0-8218-3679-8 | chapter-url = http://www.claymath.org/sites/default/files/yangmills.pdf }}</ref>
+
+==See also==
+{{Portal|Mathematics}}
+* [[Abc conjecture|''abc'' conjecture]]
+* [[Hilbert's problems]]
+* [[List of mathematics awards]]
+* [[List of unsolved problems in mathematics]]
+* [[Paul Wolfskehl]] (offered a cash prize for the solution to [[Fermat's Last Theorem]])
+* [[Smale's problems]]
+
+==References==
+{{Reflist}}
+* {{PlanetMath attribution|id=8716|title=Milllennium Problems}}
+
+==Further reading==
+* {{Cite book |editor1-last=Carlson |editor1-first=James |editor2-last=Jaffe |editor2-first=Arthur |editor2-link=Arthur Jaffe |editor3-last=Wiles |editor3-first=Andrew |editor3-link=Andrew Wiles |title=The Millennium Prize Problems |year=2006 |location=Providence, Rhode Island |publisher=[[American Mathematical Society]] and [[Clay Mathematics Institute]] |isbn=978-0-8218-3679-8 |url=http://www.claymath.org/library/}}
+* {{Cite book|last = Devlin|first = Keith J.|author-link = Keith Devlin|title = The Millennium Problems: The Seven Greatest Unsolved Mathematical Puzzles of Our Time|publisher = Basic Books|orig-year = 2002|location = New York|isbn = 0-465-01729-0|year = 2003|url-access = registration|url = https://archive.org/details/millenniumproble00keit}}
+
+==External links==
+{{Sister project links| wikt=no | commons=no | b=no | n=no | q=Millennium Prize Problems | s=no | v=no | voy=no | species=no | d=no}}
+
+* [http://www.claymath.org/millennium-problems The Millennium Prize Problems]
+
+{{Active inducement prize contests}}
+
+[[Category:Challenge awards]]
+[[Category:Millennium Prize Problems| ]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Challenge awards in mathematics]]

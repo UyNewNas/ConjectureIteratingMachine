@@ -1,0 +1,102 @@
+{{Use American English|date = January 2019}}
+{{Short description|Major unsolved problem in transcendental number theory}}
+{{E (mathematical constant)}}
+In [[mathematics]], specifically [[transcendental number theory]], '''Schanuel's conjecture''' is a [[conjecture]] about the [[transcendence degree]] of certain [[field extension]]s of the [[rational numbers]] <math>\mathbb{Q}</math>, which would establish the [[Transcendental number|transcendence]] of a large class of [[Number|numbers]], for which this is currently [[List of unsolved problems in mathematics|unknown]]. It is due to [[Stephen Schanuel]] and was published by [[Serge Lang]] in 1966.<ref name=":0">{{Cite book |last=Lang |first=Serge |author-link=Serge Lang |title=Introduction to Transcendental Numbers |publisher=Addison–Wesley |year=1966 |pages=30–31}}</ref>
+
+==Statement==
+
+Schanuel's conjecture can be given as follows:<ref name=":0" /><ref name=":1">{{Cite web |last=Waldschmidt |first=Michel |date=2021 |title=Schanuel's Conjecture: algebraic independence of transcendental numbers |url=https://webusers.imj-prg.fr/~michel.waldschmidt/articles/pdf/SchanuelEn.pdf}}</ref>
+
+{{Math theorem
+| math_statement = Given any set of <math>n</math> [[complex numbers]] <math>\{z_1,...,z_n\}</math> that are [[linearly independent]] over <math>\mathbb Q</math>, the [[field extension]] <math>\mathbb Q (z_1,...,z_n,e^{z_1},...,e^{z_n})</math> has [[transcendence degree]] at least <math>n</math> over <math>\mathbb Q</math>.
+| name = Schanuel's conjecture
+}}
+==Consequences==
+
+Schanuel's conjecture, if proven, would generalize most known results in [[transcendental number theory]] and establish a large class of numbers transcendental. Special cases of Schanuel's conjecture include:
+
+===Lindemann–Weierstrass theorem===
+{{Main|Lindemann–Weierstrass theorem}}
+Considering Schanuel's conjecture for only <math>n=1</math> gives that for a nonzero complex number <math>z</math>, at least one of the numbers <math>z</math> and <math>e^z</math> must be transcendental. This was proved by [[Ferdinand von Lindemann]] in 1882.<ref>{{Cite journal |last=von Lindemann |first=Ferdinand |date=1882 |title=Ueber die Zahl π |url=http://gdz.sub.uni-goettingen.de/dms/resolveppn/?PPN=GDZPPN002246910 |journal=Mathematische Annalen |volume=20 |pages=213–225 |issn=0025-5831}}</ref> 
+
+If the numbers <math>z_1,...,z_n</math> are taken to be all [[algebraic number|algebraic]] and [[linearly independent]] over <math>\mathbb Q</math> then the <math>e^{z_1},...,e^{z_n}</math> result to be transcendental and [[Algebraic independence|algebraically independent]] over <math>\mathbb Q</math>. The first proof for this more general result was given by [[Karl Weierstrass|Carl Weierstrass]] in 1885.<ref name="Weierstrass1885">{{Harvnb|Weierstrass|1885|pp=1067–1086}},</ref> 
+
+This so-called [[Lindemann–Weierstrass theorem]] implies the transcendence of the numbers [[E (mathematical constant)|{{math|{{var|e}}}}]] and [[Pi|{{pi}}]]. It also follows that for algebraic numbers <math>\alpha</math> not equal to [[0]] or [[1]], both <math>e^\alpha</math> and <math>\ln(\alpha)</math> are transcendental. It further gives the transcendence of the [[trigonometric functions]] at nonzero algebraic values.
+
+===Baker's theorem===
+{{Main|Baker's theorem}}
+Another special case was proved by [[Alan Baker (mathematician)|Alan Baker]] in 1966: If complex numbers <math>\lambda_1,...,\lambda_n</math> are chosen to be linearly independent over the rational numbers <math>\mathbb Q</math> such that <math>e^{\lambda_1},...,e^{\lambda_n}</math> are algebraic, then <math>\lambda_1,...,\lambda_n</math> are also linearly independent over the algebraic numbers <math>\mathbb \overline{Q}</math>.
+
+Schanuel's conjecture would strengthen this result, implying that <math>\lambda_1,...,\lambda_n</math> would also be algebraically independent over <math>\mathbb Q</math> (and equivalently over <math>\mathbb \overline{Q}</math>).<ref name=":1" />
+
+===Gelfond–Schneider theorem===
+{{Main|Gelfond–Schneider theorem}}
+In 1934 it was proved by [[Alexander Gelfond|Aleksander Gelfond]] and [[Theodor Schneider]] that if <math>\alpha</math> and <math>\beta</math> are two algebraic complex numbers with <math>\alpha\notin\{0,1\}</math> and <math>\beta\notin \mathbb Q</math>, then <math>\alpha^\beta</math> is transcendental.
+
+This establishes the transcendence of numbers like [[Gelfond–Schneider constant|Hilbert's constant]] <math>2^\sqrt{2}</math> and [[Gelfond's constant]] <math>e^\pi</math>.<ref>{{Cite web |last=Weisstein |first=Eric W. |title=Gelfond's Theorem |url=https://mathworld.wolfram.com/GelfondsTheorem.html |access-date=2024-10-26 |website=mathworld.wolfram.com |language=en}}</ref>
+
+The [[Gelfond–Schneider theorem]] follows from Schanuel's conjecture by setting <math>n=3</math> and <math>z_1=\beta, z_2=\ln\alpha, z_3=\beta \ln\alpha</math>. It also would follow from Baker's theorem above via <math>\lambda_1=\ln\alpha, \lambda_2=\beta\ln\alpha</math>.
+
+===Four exponentials conjecture===
+{{Main|Four exponentials conjecture}}
+The currently unproven [[four exponentials conjecture]] would also follow from Schanuel's conjecture: If <math>z_1,z_2</math> and <math>w_1,w_2</math> are two pairs of complex numbers, with each pair being linearly independent over the rational numbers, then at least one of the following four numbers is [[Transcendental number|transcendental]]:
+
+<math display="block">e^{z_1w_1}, e^{z_1w_2}, e^{z_2w_1}, e^{z_2w_2}.</math>
+
+The four exponential conjecture would imply that for any irrational number <math>t</math>, at least one of the numbers <math>2^t</math> and <math>3^t</math> is transcendental. It also implies that if <math>t</math> is a positive real number such that both <math>2^t</math> and <math>3^t</math> are integers, then <math>t</math> itself must be an integer.<ref name=":1" /> The related [[six exponentials theorem]] has been proven.
+
+===Other consequences===
+
+Schanuel's conjecture, if proved, would also establish many nontrivial combinations of {{Math|{{var|e}}}}'', {{pi}}'', algebraic numbers and [[Elementary function|elementary functions]] to be transcendental:<ref name=":1" /><ref>{{Cite book |last1=Murty |first1=M. Ram |url=https://link.springer.com/book/10.1007/978-1-4939-0832-5 |title=Transcendental Numbers |last2=Rath |first2=Purusottam |date=2014 |publisher=Springer |isbn=978-1-4939-0832-5 |language=en |doi=10.1007/978-1-4939-0832-5}}</ref><ref>{{cite arXiv |last1=Cheng |first1=Chuangxun |title=Some consequences of Schanuel's Conjecture |date=2008-05-07 |last2=Dietel |first2=Brian |last3=Herblot |first3=Mathilde |last4=Huang |first4=Jingjing |last5=Krieger |first5=Holly |last6=Marques |first6=Diego |last7=Mason |first7=Jonathan |last8=Mereb |first8=Martin |last9=Wilson |first9=S. Robert|class=math.NT |eprint=0804.3550 }}</ref>
+
+<math display="block">e+\pi, e\pi, e^{\pi^2}, e^e, \pi^e, \pi^\sqrt{2}, \pi^\pi, \pi^{\pi^\pi}, \, \log\pi, \,  \log\log2, \, \sin e, ...</math>
+
+In particular it would follow that {{Math|{{var|e}}}} and {{pi}} are algebraically independent simply by setting <math>z_1=1</math> and <math>z_2=i\pi</math>.
+
+[[Euler's identity]] states that <math>e^{i\pi}+1=0</math>. If Schanuel's conjecture is true then this is, in some precise sense involving [[exponential ring]]s, the ''only'' non-trivial relation between ''{{Math|{{var|e}}}}'', {{pi}}, and ''{{Math|{{var|i}}}}'' over the complex numbers.<ref>{{Cite journal |first=Giuseppina |last=Terzo |title=Some consequences of Schanuel's conjecture in exponential rings |journal=Communications in Algebra |volume=36 |issue=3 |pages=1171–1189 |doi=10.1080/00927870701410694 |year=2008 |s2cid=122764821 }}</ref> 
+
+MacIntyre showed in 1990 that Schanuel's conjecture implies there are no hidden iterated exponential identities for exponential constants, and the exponential subring of the real numbers generated by 1 is the free exponential ring on no generators.<ref>{{Cite journal |first=Angus |last=MacIntyre |title=Schanuel's Conjecture and free exponential rings |volume=51 |issue=3 |pages=241-246 |ISSN=0168-0072 |journal=Annals of Pure and Applied Logic |doi=10.1016/0168-0072(91)90017-G }}</ref>
+
+==Related conjectures and results==
+
+The '''converse Schanuel conjecture'''<ref>Scott W. Williams, [http://www.math.buffalo.edu/~sww/0papers/million.buck.problems.mi.pdf Million Bucks Problems]</ref> is the following statement: 
+{{block indent|1=Suppose ''F'' is a [[countable]] [[field (mathematics)|field]] with [[characteristic (algebra)|characteristic]] 0, and ''e'' : ''F'' → ''F'' is a [[group homomorphism|homomorphism]] from the additive group (''F'',+) to the multiplicative group (''F'',·) whose [[kernel (algebra)|kernel]] is [[cyclic group|cyclic]]. Suppose further that for any ''n'' elements ''x''<sub>1</sub>,...,''x''<sub>''n''</sub> of ''F'' which are linearly independent over <math>\mathbb{Q}</math>, the extension field <math>\mathbb{Q}</math>(''x''<sub>1</sub>,...,''x''<sub>''n''</sub>,''e''(''x''<sub>1</sub>),...,''e''(''x''<sub>''n''</sub>)) has transcendence degree at least ''n'' over <math>\mathbb{Q}</math>. Then there exists a field homomorphism ''h'' : ''F'' → <math>\mathbb{C}</math> such that ''h''(''e''(''x''))&nbsp;=&nbsp;exp(''h''(''x'')) for all ''x'' in ''F''.}}
+
+A version of Schanuel's conjecture for [[formal power series]], also by Schanuel, was proven by [[James Ax]] in 1971.<ref>{{Cite journal |first=James |last=Ax |title=On Schanuel's conjectures |journal=[[Annals of Mathematics]] |issue=2 |volume=93 |year=1971 |pages=252–268 |jstor=1970774|doi=10.2307/1970774 }}</ref> It states:
+{{block indent|1=Given any ''n'' formal [[power series]] ''f''<sub>1</sub>,...,''f''<sub>''n''</sub> in ''t''<math>\mathbb{C}</math><nowiki>[[</nowiki>''t''<nowiki>]]</nowiki> which are linearly independent over <math>\mathbb{Q}</math>, then the field extension <math>\mathbb{C}</math>(''t'',''f''<sub>1</sub>,...,''f''<sub>''n''</sub>,exp(''f''<sub>1</sub>),...,exp(''f''<sub>''n''</sub>)) has transcendence degree at least ''n'' over <math>\mathbb{C}</math>(''t'').}}
+
+Although ostensibly a problem in number theory, Schanuel's conjecture has implications in [[model theory]] as well. [[Angus Macintyre]] and [[Alex Wilkie]], for example, proved that the theory of the real field with exponentiation, <math>\mathbb{R}</math><sub>exp</sub>, is [[Decidability (logic)|decidable]] provided Schanuel's conjecture is true.<ref name="MW96">{{Cite book |last1=Macintyre |first1=A. |title=Kreiseliana: About and Around Georg Kreisel |last2=Wilkie |first2=A. J. |publisher=Peters |year=1996 |isbn=978-1-56881-061-4 |editor-last=Odifreddi |editor-first=Piergiorgio |location=Wellesley |pages=441–467 |chapter=On the decidability of the real exponential field |name-list-style=amp}}</ref>  In fact, to prove this result, they only needed the real version of the conjecture, which is as follows:<ref name="KZ06">{{Cite journal |last1=Kirby |first1=Jonathan |last2=Zilber |first2=Boris |name-list-style=amp |year=2006 |title=The uniform Schanuel conjecture over the real numbers |journal=Bull. London Math. Soc. |volume=38 |issue=4 |pages=568–570 |doi=10.1112/S0024609306018510 |s2cid=122077474}}</ref>
+{{block indent|1=Suppose ''x''<sub>1</sub>,...,''x''<sub>''n''</sub> are [[real number]]s and the transcendence degree of the field <math>\mathbb{Q}</math>(''x''<sub>1</sub>,...,''x''<sub>''n''</sub>, [[exponential function|exp]](''x''<sub>1</sub>),...,exp(''x''<sub>''n''</sub>)) is strictly less than ''n'', then there are integers ''m''<sub>1</sub>,...,''m''<sub>''n''</sub>, not all zero, such that ''m''<sub>1</sub>''x''<sub>1</sub>&nbsp;+...+&nbsp;''m''<sub>''n''</sub>''x''<sub>''n''</sub>&nbsp;=&nbsp;0.}}
+This would be a positive solution to [[Tarski's exponential function problem]].
+
+A related conjecture called the uniform real Schanuel's conjecture essentially says the same but puts a bound on the integers ''m''<sub>''i''</sub>.  The uniform real version of the conjecture is equivalent to the standard real version.<ref name="KZ06" />  Macintyre and Wilkie showed that a consequence of Schanuel's conjecture, which they dubbed the Weak Schanuel's conjecture, was equivalent to the decidability of <math>\mathbb{R}</math><sub>exp</sub>.  This conjecture states that there is a computable upper bound on the norm of non-singular solutions to systems of [[exponential polynomial]]s; this is, non-obviously, a consequence of Schanuel's conjecture for the reals.<ref name="MW96" />
+
+It is also known that Schanuel's conjecture would be a consequence of conjectural results in the theory of [[motive (algebraic geometry)|motives]]. In this setting [[Grothendieck's period conjecture]] for an [[abelian variety]] ''A'' states that the transcendence degree of its [[period matrix]] is the same as the dimension of the associated [[Mumford–Tate group]], and what is known by work of [[Pierre Deligne]] is that the dimension is an upper bound for the transcendence degree. Bertolin has shown how a generalised period conjecture includes Schanuel's conjecture.<ref>{{Cite journal |first=Cristiana |last=Bertolin |title=Périodes de 1-motifs et transcendance |journal=Journal of Number Theory |volume=97 |issue=2 |year=2002 |pages=204–221 |doi=10.1016/S0022-314X(02)00002-1 |doi-access=free |hdl=2318/103562 |hdl-access=free }}</ref>
+
+==Zilber's pseudo-exponentiation==
+
+While a proof of Schanuel's conjecture seems a long way off, as reviewed by Michel Waldschmidt in the year 2000,<ref>{{Cite book|last=Waldschmidt|first=Michel|title=Diophantine approximation on linear algebraic groups|publisher=[[Springer Science+Business Media|Springer]]|year=2000|isbn=978-3-662-11569-5|location=Berlin}}</ref> connections with model theory have prompted a surge of research on the conjecture.
+
+In 2004, [[Boris Zilber]] systematically constructed [[exponential field]]s ''K''<sub>exp</sub> that are algebraically closed and of characteristic zero, and such that one of these fields exists for each [[uncountable]] [[cardinality]].<ref>{{Cite journal |first=Boris |last=Zilber |title=Pseudo-exponentiation on algebraically closed fields of characteristic zero |journal=[[Annals of Pure and Applied Logic]] |volume=132 |year=2004 |issue=1 |pages=67–95 |doi=10.1016/j.apal.2004.07.001 |doi-access=free }}</ref>  He axiomatised these fields and, using [[Hrushovski construction|Hrushovski's construction]] and techniques inspired by work of [[Saharon Shelah | Shelah]] on [[categoricity]] in [[infinitary logic]]s, proved that this theory of "pseudo-exponentiation" has a unique model in each uncountable cardinal.  Schanuel's conjecture is part of this axiomatisation, and so the natural conjecture that the unique model of cardinality continuum is actually isomorphic to the complex exponential field implies Schanuel's conjecture. In fact, Zilber showed that this conjecture holds if and only if both Schanuel's conjecture and the [[Existential_Closedness_conjecture#Exponential_Closedness|Exponential-Algebraic Closedness conjecture]] hold.<ref>{{Cite journal |first=Boris |last=Zilber |title=Exponential sums equations and the Schanuel conjecture |journal=J. London Math. Soc. |issue=2 |volume=65 |year=2002 |pages=27–44 |doi= 10.1112/S0024610701002861|s2cid=123143365 }}</ref> As this construction can also give models with counterexamples of Schanuel's conjecture, this method cannot prove Schanuel's conjecture.<ref>{{cite journal |last1=Bays |first1=Martin |last2=Kirby |first2=Jonathan |title=Pseudo-exponential maps, variants, and quasiminimality |journal=Algebra Number Theory |date=2018 |volume=12 |issue=3 |pages=493–549 |doi=10.2140/ant.2018.12.493 |arxiv=1512.04262 |s2cid=119602079 }}</ref>
+
+== See also ==
+* [[Four exponentials conjecture]]
+* [[Algebraic independence]]
+* [[List of unsolved problems in mathematics]]
+* [[Existential Closedness conjecture]]
+* [[Zilber–Pink conjecture]]
+* [[Pregeometry (model theory)|Pregeometry]]
+
+==References==
+{{Reflist}}
+
+==Sources==
+*{{Citation | last=Weierstrass | first=K. | author-link=Karl Weierstrass | year=1885 | title=Zu Lindemann's Abhandlung. "Über die Ludolph'sche Zahl". | journal=Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften zu Berlin | volume=5 | pages=1067–1085 | url=https://books.google.com/books?id=jhlEAQAAMAAJ&pg=PA1067}}
+
+==External links==
+*{{MathWorld|urlname=SchanuelsConjecture|title=Schanuel's Conjecture}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Exponentials]]
+[[Category:Transcendental numbers]]

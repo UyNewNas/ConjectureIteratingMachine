@@ -1,0 +1,186 @@
+{{short description|Cuboid whose edges and face diagonals have integer lengths}}
+In [[mathematics]], an '''Euler brick''', named after [[Leonhard Euler]], is a [[rectangular cuboid]] whose [[Edge (geometry)|edges]] and [[face diagonal]]s all have integer lengths. A '''primitive Euler brick''' is an Euler brick whose edge lengths are [[relatively prime]]. A '''perfect Euler brick''' is one whose [[space diagonal]] is also an integer, but such a brick has not yet been found.
+[[File:Euler_brick.svg|right|399x199px|thumb|Euler brick with edges {{math|''a'', ''b'', ''c''}} and face diagonals {{math|''d'', ''e'', ''f''}}]]
+
+== Definition ==
+The definition of an Euler brick in geometric terms is equivalent to a solution to the following system of [[Diophantine equation]]s:
+:<math>\begin{cases} a^2 + b^2 = d^2\\ a^2 + c^2 = e^2\\ b^2 + c^2 = f^2\end{cases}</math>
+
+where {{math|''a'', ''b'', ''c''}} are the edges and {{math|''d'', ''e'', ''f''}} are the diagonals.
+
+== Properties ==
+
+* If {{math|(''a'', ''b'', ''c'')}} is a solution, then {{math|(''ka'', ''kb'', ''kc'')}} is also a solution for any {{math|''k''}}. Consequently, the solutions in [[rational number]]s are all rescalings of integer solutions. Given an Euler brick with edge-lengths {{math|(''a'', ''b'', ''c'')}}, the triple {{math|(''bc'', ''ac'', ''ab'')}} constitutes an Euler brick as well.<ref name=Sierpinski>[[Wacław Sierpiński]], ''[[Pythagorean Triangles]]'', Dover Publications, 2003 (orig. ed. 1962).</ref>{{rp|p. 106}}
+
+* Exactly one edge and two face diagonals of a ''primitive'' Euler brick are odd.
+
+* At least two edges of an Euler brick are divisible by 3.<ref name=Sierpinski/>{{rp|p. 106}}
+
+* At least two edges of an Euler brick are divisible by 4.<ref name=Sierpinski/>{{rp|p. 106}}
+
+* At least one edge of an Euler brick is divisible by 11.<ref name=Sierpinski/>{{rp|p. 106}}
+
+== Examples ==
+The smallest Euler brick, discovered by [[Paul Halcke]] in 1719, has edges {{math|(''a'', ''b'', ''c'') <nowiki>=</nowiki> (44, 117, 240)}} and face diagonals {{math|(''d'', ''e'', ''f'' ) <nowiki>=</nowiki> (125, 244, 267)}}.<ref>''[https://books.google.com/books?id=S8SBBRNbj6cC&dq=smallest+Euler+brick%2C+discovered+by+Paul+Halcke&pg=PT219 Visions of Infinity: The Great Mathematical Problems]'' By Ian Stewart, Chapter 17</ref> Some other small primitive solutions, given as edges {{math|(''a'', ''b'', ''c'')}} — face diagonals {{math|(''d'', ''e'', ''f'')}}, are below:
+[[File:Euler_brick_examples.svg|thumb|400px|All five primitive Euler bricks with dimensions under 1000]]
+:{| style="border-collapse:collapse;text-align:right;white-space:nowrap;"
+|(|| 85,|| 132,|| 720||) — (|| 157,|| 725,|| 732||)
+|-
+|(||140,|| 480,|| 693||) — (|| 500,|| 707,|| 843||)
+|-
+|(||160,|| 231,|| 792||) — (|| 281,|| 808,|| 825||)
+|-
+|(||187,||1020,||1584||) — (||1037,||1595,||1884||)
+|-
+|(||195,|| 748,||6336||) — (|| 773,||6339,||6380||)
+|-
+|(||240,|| 252,|| 275||) — (|| 348,|| 365,|| 373||)
+|-
+|(||429,|| 880,||2340||) — (|| 979,||2379,||2500||)
+|-
+|(||495,||4888,||8160||) — (||4913,||8175,||9512||)
+|-
+|(||528,||5796,||6325||) — (||5820,||6347,||8579||)
+|}
+
+== Generating formula ==
+
+Euler found at least two [[parametric solution]]s to the problem, but neither gives all solutions.<ref>{{mathworld|urlname=EulerBrick|title=Euler Brick}}</ref>
+
+An infinitude of Euler bricks can be generated with [[Nicholas Saunderson|Saunderson]]'s<ref name=Saunderson>{{cite web |series=Math table |title=Treasure Hunting Perfect Euler bricks |date=February 24, 2009 |first=Oliver |last=Knill |url=http://www.math.harvard.edu/~knill/various/eulercuboid/lecture.pdf |publisher=[[Harvard University]]}}</ref> [[parametric formula]]. Let {{math|(''u'', ''v'', ''w'')}} be a [[Pythagorean triple]] (that is, {{math|''u''{{sup|2}} + ''v''{{sup|2}} {{=}} ''w''{{sup|2}}}}.) Then<ref name=Sierpinski/>{{rp|105}} the edges
+
+:<math> a=u|4v^2-w^2| ,\quad b=v|4u^2-w^2|, \quad c=4uvw </math>
+
+give face diagonals
+
+:<math>d=w^3, \quad e=u(4v^2+w^2), \quad f=v(4u^2+w^2).</math>
+
+There are many Euler bricks which are not parametrized as above, for instance the Euler brick with edges {{math|(''a'', ''b'', ''c'') <nowiki>=</nowiki> (240, 252, 275)}} and face diagonals {{math|(''d'', ''e'', ''f'' ) <nowiki>=</nowiki> (348, 365, 373)}}.
+
+== Perfect cuboid ==
+{{unsolved|mathematics|Does a perfect cuboid exist?}}
+A '''perfect cuboid''' (also called a '''perfect Euler brick''' or '''perfect box''') is an Euler brick whose [[space diagonal]] also has integer length.  In other words, the following equation is added to the system of [[Diophantine equation]]s defining an Euler brick:
+
+:<math>a^2 + b^2 + c^2 = g^2,</math>
+
+where {{math|''g''}} is the space diagonal.  {{As of|2020|March|df=}}, no example of a perfect cuboid had been found and no one has proven that none exist.<ref>{{Cite journal |last1=Ivanov |first1=A. A. |last2=Skopin |first2=A. V. |title=On sets with integer n-distances |journal=Journal of Mathematical Sciences |volume=251 |issue=4 |pages=548–556 |date=March 2020 |doi=10.1007/s10958-020-05159-4 |url=https://link.springer.com/article/10.1007/s10958-020-05159-4 |access-date=October 11, 2024|url-access=subscription }}</ref>
+[[File:Euler_brick_perfect.svg|right|thumb|Euler brick with edges {{math|''a'', ''b'', ''c''}} and face diagonals {{math|''d'', ''e'', ''f''}} along with space diagonal {{math|''g''}}]]
+
+Exhaustive computer searches show that, if a perfect cuboid exists,
+* the odd edge must be greater than 2.5 × 10<sup>13</sup>,<ref name=Matson>{{cite web |first=Robert D. |last=Matson |title=Results of a Computer Search for a Perfect Cuboid |url=http://unsolvedproblems.org/S58.pdf |date= January 18, 2015|work=unsolvedproblems.org |accessdate=February 24, 2020}}</ref>
+* the smallest edge must be greater than {{val|5e11}},<ref name=Matson/> and
+* the space diagonal must be greater than 9 × 10<sup>15</sup>.<ref name=Belogourov>{{cite web |first=Alexander |last=Belogourov |title=Distributed search for a perfect cuboid |url=https://www.academia.edu/39920706/Distributed_search_for_a_perfect_cuboid |year=2019}}</ref>
+
+Some facts are known about properties that must be satisfied by a ''primitive'' perfect cuboid, if one exists, based on [[modular arithmetic]]:<ref>M. Kraitchik, On certain Rational Cuboids, Scripta Mathematica, volume 11 (1945).</ref>
+
+* One edge, two face diagonals and the space diagonal must be odd, one edge and the remaining face diagonal must be divisible by 4, and the remaining edge must be divisible by 16.
+* Two edges must have length divisible by 3 and at least one of those edges must have length divisible by 9.
+* One edge must have length divisible by 5.
+* One edge must have length divisible by 7.
+* One edge must have length divisible by 11.
+* One edge must have length divisible by 19.
+* One edge or space diagonal must be divisible by 13.
+* One edge, face diagonal or space diagonal must be divisible by 17.
+* One edge, face diagonal or space diagonal must be divisible by 29.
+* One edge, face diagonal or space diagonal must be divisible by 37.
+
+In addition:
+
+* The space diagonal is neither a [[prime power]] nor a [[Semiprime|product of two primes]].<ref name=Korec/>{{rp|p. 579}}
+* The space diagonal can only contain prime divisors that are congruent to 1 modulo 4.<ref name=Korec>I. Korec, Lower bounds for Perfect Rational Cuboids, Math. Slovaca, 42 (1992), No. 5, p. 565-582.</ref>{{rp|p. 566}}<ref>Ronald van Luijk, On Perfect Cuboids, June 2000</ref>
+
+===Heronian triangles===
+If a perfect cuboid exists with edges <math>a, b, c</math>, corresponding face diagonals <math>d, e, f</math>, and space diagonal <math>g</math>, then the following [[Heronian triangle|Heronian triangles]] exist:
+* A Heronian triangle with side lengths <math>(d^2, e^2, f^2)</math>, an area of <math>abcg</math>, and rational angle bisectors.<ref name="Luca">Florian Luca (2000). "Perfect Cuboids and Perfect Square Triangles". ''Mathematics Magazine'', 73(5), 400–401.</ref>
+* An acute Heronian triangle with side lengths <math>(af, be, cd)</math> and an area of <math>\frac{abcg}{2}</math>.
+* Obtuse Heronian triangles with side lengths <math>(bf, ae, gd)</math>, <math>(ad, cf, ge)</math>, and <math>(ce, bd, gf)</math>, each with an area of <math>\frac{abcg}{2}</math>.
+* Right Heronian triangles with side lengths <math>(ab, cg, ef)</math>, <math>(ac, bg, df)</math>, and <math>(bc, ag, de)</math>, each with an area of <math>\frac{abcg}{2}</math>.
+
+===Cuboid conjectures===
+Three '''cuboid conjectures''' are three [[mathematics|mathematical]] propositions claiming [[irreducible polynomial|irreducibility]] of three univariate [[polynomial]]s with [[integer]] [[coefficient]]s depending on several integer parameters. The conjectures are related to the [[#Perfect cuboid|perfect cuboid]] problem.<ref name=shr_01>{{cite journal |author=Sharipov R.A. |title=Perfect cuboids and irreducible polynomials|journal=Ufa Math Journal|year=2012 |volume=4 |issue=1 |pages=153&ndash;160|arxiv=1108.5348|bibcode=2011arXiv1108.5348S}}</ref><ref name=shr_02>{{cite journal |author=Sharipov R.A. |title=Asymptotic approach to the perfect cuboid problem|journal=Ufa Math Journal|year=2015 |volume=7 |issue=3 |pages=100&ndash;113|doi=10.13108/2015-7-3-95 |doi-access=free }}</ref> Though they are not equivalent to the perfect cuboid problem, if all of these three conjectures  are true, then no perfect cuboids exist. They are neither proved nor disproved.
+
+'''Cuboid conjecture 1.''' ''For any two positive [[coprime]] integer numbers <math>a \neq u</math> the eighth degree polynomial''
+{{NumBlk|:|<math>
+P_{au}(t)=t^8+6\,(u^2-a^2)\,t^6+(a^4-4\,a^2\,u^2+u^4)\,t^4-6\,a^2\,u^2\,(u^2-a^2)\,t^2+u^4\,a^4</math>|{{EquationRef|1}}}}
+''is irreducible over the [[ring (mathematics)|ring]] of integers <math>\mathbb Z</math>''.
+
+'''Cuboid conjecture 2.''' ''For any two positive coprime integer numbers <math>p \neq q</math> the tenth-degree polynomial''
+
+{{NumBlk|:|<math>\begin{align}
+Q_{pq}(t)= {} & t^{10}+(2q^2+p^2)(3q^2-2p^2)t^8 \\[4pt]
+& {} +(q^8+10p^2q^6+4p^4q^4-14p^6q^2+p^8)t^6\\[4pt]
+& {} -p^2 q^2(q^8-14p^2q^6+4p^4q^4+10p^6\,q^2+p^8)t^4 \\[4pt]
+& {} -p^6\,q^6\,(q^2+2\,p^2)\,(-2\,q^2+3\,p^2)\,t^2\\[4pt]
+& {} -q^{10}\,p^{10}
+\end{align}
+</math>|{{EquationRef|2}}}}
+
+''is irreducible over the ring of integers <math>\mathbb Z</math>''.
+
+'''Cuboid conjecture 3.''' ''For any three positive coprime integer numbers <math>a</math>, <math>b</math>, <math>u</math> such that none of the conditions''
+
+{{NumBlk|:|<math>\begin{array}{lcr}
+\text{1)}\qquad a=b;\qquad\qquad & \text{3)}\qquad b\,u=a^2;\qquad\qquad &\text{5)}\qquad a=u;\\
+\text{2)}\qquad a=b=u;\qquad\qquad &\text{4)}\qquad a\,u=b^2;\qquad\qquad &\text{6)}\qquad b=u
+\end{array}</math>|{{EquationRef|3}}}}
+
+''are fulfilled, the twelfth-degree polynomial''
+
+{{NumBlk|:|<math>\begin{align}
+P_{abu}(t) = {} & t^{12}+(6u^2-2a^2-2b^2)t^{10} \\
+& {} + (u^4+b^4+a^4+4a^2u^2+4b^2u^2-12b^2 a^2)t^8 \\
+& {} + (6a^4u^2+6u^2b^4-8a^2b^2u^2-2u^4a^2-2u^4b^2-2a^4b^2-2b^4a^2)t^6 \\
+& {} + (4u^2b^4a^2+4a^4u^2b^2-12u^4a^2b^2+u^4a^4+u^4b^4+a^4b^4)t^4 \\
+& {} + (6a^4u^2b^4-2u^4a^4b^2-2u^4a^2b^4)t^2+u^4a^4b^4.
+\end{align}</math>|{{EquationRef|4}}}}
+
+''is irreducible over the ring of integers <math>\mathbb Z</math>''.
+
+== Almost-perfect cuboids ==
+An almost-perfect cuboid has 6 out of the 7 lengths as rational. Such cuboids can be sorted into three types, called ''body'', ''edge'', and ''face'' cuboids.<ref>Rathbun R. L., Granlund Т., The integer cuboid table with body, edge, and face type of solutions // Math. Comp., 1994, Vol. 62, P. 441-442.</ref>  In the case of the body cuboid, the body (space) diagonal {{math|''g''}} is irrational. For the edge cuboid, one of the edges {{math|''a'', ''b'', ''c''}} is irrational. The face cuboid has one of the face diagonals {{math|''d'', ''e'', ''f''}} irrational.
+
+The body cuboid is commonly referred to as the ''Euler cuboid'' in honor of Leonhard Euler, who discussed this type of cuboid.<ref>Euler, Leonhard, Vollst¨andige Anleitung zur Algebra, Kayserliche Akademie der Wissenschaften, St. Petersburg, 1771</ref> He was also aware of face cuboids, and provided the (104, 153, 672) example.<ref> Euler, Leonhard, Vollst¨andige Anleitung zur Algebra, 2, Part II, 236, English translation: Euler, Elements of Algebra, Springer-Verlag 1984</ref> The three integer cuboid edge lengths and three integer diagonal lengths of a face cuboid can also be interpreted as the edge lengths of a [[Heronian tetrahedron]] that is also a [[Schläfli orthoscheme]]. There are infinitely many face cuboids, and infinitely many Heronian orthoschemes.<ref>{{citation
+ | date = May 1985
+ | department = Solutions
+ | issue = 5
+ | journal = Crux Mathematicorum
+ | pages = 162–166
+ | title = Problem 930
+ | url = https://cms.math.ca/crux/backfile/Crux_v11n05_May.pdf
+ | volume = 11}}</ref>
+
+The smallest solutions for each type of almost-perfect cuboids, given as edges, face diagonals and the space diagonal {{math|(''a'', ''b'', ''c'', ''d'', ''e'', ''f'', ''g'')}}, are as follows:
+* '''Body cuboid''': {{math|(44, 117, 240, 125, 244, 267, {{sqrt|73225}})}}
+* '''Edge cuboid''': {{math|(520, 576, {{sqrt|618849}}, 776, 943, 975, 1105)}}
+* '''Face cuboid''': {{math|(104, 153, 672, 185, 680, {{sqrt|474993}}, 697)}}
+
+{{Asof|2020|July}}, there are 167,043 found cuboids with the smallest integer edge less than 200,000,000,027: 61,042 are Euler (body) cuboids, 16,612 are edge cuboids with a [[complex number]] edge length, 32,286 were edge cuboids, and 57,103 were face cuboids.<ref>{{cite arXiv |eprint=1705.05929v4 |class=math.NT |first=Randall L. |last=Rathbun |title=The Integer Cuboid Table |date=14 Jul 2020}}</ref>
+
+{{Asof|2017|December}}, an exhaustive search counted all edge and face cuboids with the smallest integer space diagonal less than 1,125,899,906,842,624: 194,652 were edge cuboids, 350,778 were face cuboids.<ref name=Belogourov/>
+
+== Perfect parallelepiped ==
+A perfect [[parallelepiped]] is a parallelepiped with integer-length edges, face diagonals, and body diagonals, but not necessarily with all right angles; a perfect cuboid is a special case of a perfect parallelepiped. In 2009, dozens of perfect parallelepipeds were shown to exist,<ref>{{Cite journal|first1=Jorge F.|last1=Sawyer|first2=Clifford A.|last2=Reiter|year=2011|title=Perfect parallelepipeds exist|journal=[[Mathematics of Computation]]|volume=80|issue=274|pages=1037–1040|arxiv=0907.0220|doi=10.1090/s0025-5718-2010-02400-7|s2cid=206288198 }}.</ref> answering an open question of [[Richard K. Guy|Richard Guy]]. Some of these perfect parallelepipeds have two rectangular faces. The smallest perfect parallelepiped has edges 271, 106, and 103; short face diagonals 101, 266, and 255; long face diagonals 183, 312, and 323; and body diagonals 374, 300, 278, and 272.
+
+== Connection to elliptic curves ==
+
+In 2022, [[Aubrey de Grey]] published<ref>{{Cite journal|first1=Aubrey D.N.J.|last1=de Grey|year=2022|title=Perfect plinths: a path to resolving the perfect cuboid question?|journal=[[Geombinatorics]]|volume=31|pages=156–161}}</ref> an exploration of perfect isosceles rectangular [[frustum|frusta]], which he termed "plinths". These are hexahedra with two rectangular faces of the same aspect ratio and four faces that are [[Isosceles trapezoid|isosceles trapezia]]. Thus, as for almost-perfect cuboids and perfect parallelepipeds, a perfect cuboid would be a special case of a perfect plinth. Perfect plinths exist, but are much rarer for a given size than perfect parallelepipeds or almost-perfect cuboids. In a subsequent paper,<ref>{{Cite journal|first1=Aubrey D.N.J.|last1=de Grey|first2=Philip|last2=Gibbs|first3=Louie|last3=Helm|year=2024|title=Novel required properties of, and efficient algorithms to seek, perfect cuboids|journal=[[Geombinatorics]]|volume=33|pages=107–131}}</ref> de Grey, Philip Gibbs and Louie Helm built on this finding to explore classes of [[elliptic curve]] that correspond to perfect plinths, almost-perfect cuboids, and other generalisations of perfect cuboids. By this means they dramatically increased the range up to which perfect cuboids can be sought computationally. They also showed that a large proportion of Pythagorean triples cannot form a face of a perfect cuboid, by identifying several families of elliptic curves that must have positive rank if a perfect cuboid exists. Independently, Paulsen and West showed<ref>{{Cite journal|first1=William|last1=Paulsen|first2=Graham|last2=West|year=2022|title=On perfect cuboids and CN-elliptic curves|journal=[[Houston Journal of Mathematics]]|volume=48|pages=227–240}}</ref> that a perfect cuboid must correspond to a [[Congruent_number#Relation_to_elliptic_curves|congruent number elliptic curve]] of rank at least 2.
+
+== See also ==
+* [[Pythagorean quadruple]]
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* {{cite journal | first=John | last=Leech | authorlink=John Leech (mathematician) | title=The Rational Cuboid Revisited | journal=American Mathematical Monthly | volume=84 | issue=7 | pages=518–533 | year=1977 | doi=10.2307/2320014 | jstor=2320014 }}
+* {{cite journal | first=Sherrill| last=Shaffer| title=Necessary Divisors of Perfect Integer Cuboids | journal=Abstracts of the American Mathematical Society | volume=8 | issue=6 | page=440 | year=1987}}
+* {{cite book|last=Guy|first=Richard K.|authorlink=Richard K. Guy|title=Unsolved Problems in Number Theory|publisher=[[Springer-Verlag]]|year=2004|isbn=0-387-20860-7|pages=275–283}}
+* {{cite journal | first = M. | last = Kraitchik | title = On certain rational cuboids | journal = Scripta Mathematica | volume = 11 | year =1945 | pages = 317–326}}
+* {{cite journal | first=Tim | last=Roberts | title=Some constraints on the existence of a perfect cuboid | journal=Australian Mathematical Society Gazette | volume=37 | pages=29–31 | year=2010 | issn=1326-2297 }}
+
+{{DEFAULTSORT:Euler Brick}}
+
+[[Category:Arithmetic problems of solid geometry]]
+[[Category:Pythagorean theorem]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Cuboids]]

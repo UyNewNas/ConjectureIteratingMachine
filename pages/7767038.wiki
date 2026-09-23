@@ -1,0 +1,108 @@
+{{Short description|Computational problem of interest in computer science}}
+{{DISPLAYTITLE:''k''-server problem}}
+{{unsolved|computer science|Is there a <math>k</math>-competitive algorithm for solving the <math>k</math>-server problem in an arbitrary metric space?}}
+The '''{{var|k}}-server problem''' is a problem of [[theoretical computer science]] in the category of  [[online algorithm]]s, one of two abstract problems on [[metric space]]s that are central to the theory of [[Competitive analysis (online algorithm)|competitive analysis]] (the other being [[metrical task systems]]). In this problem, an online algorithm must control the movement of a set of ''k'' ''servers'', represented as points in a metric space, and handle ''requests'' that are also in the form of points in the space. As each request arrives, the algorithm must determine which server to move to the requested point. The goal of the algorithm is to keep the total distance all servers move small, relative to the total distance the servers could have moved by an optimal adversary who knows in advance the entire sequence of requests.
+
+The problem was first posed by Mark Manasse, Lyle A. McGeoch and [[Daniel Sleator]] (1988).<ref>{{Cite book |last1=Manasse |first1=Mark |last2=McGeoch |first2=Lyle |last3=Sleator |first3=Daniel |title=Proceedings of the twentieth annual ACM symposium on Theory of computing - STOC '88 |chapter=Competitive algorithms for on-line problems |date=1988-01-01 |chapter-url=https://doi.org/10.1145/62212.62243 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=322–333 |doi=10.1145/62212.62243 |isbn=978-0-89791-264-8|s2cid=13356897 }}</ref> The most prominent open question concerning the ''k''-server problem is the so-called ''k''-server conjecture, also posed by Manasse et al. This conjecture states that there is an algorithm for solving the ''k''-server problem in an arbitrary [[metric space]] and for any number ''k'' of servers that has competitive ratio exactly ''k''. Manasse et al. were able to prove their conjecture when ''k'' = 2, and for more general values of ''k'' for some metric spaces restricted to have exactly ''k''+1 points. [[Marek Chrobak]] and [[Lawrence L. Larmore]] (1991) proved the conjecture for tree metrics.  The special case of metrics in which all distances are equal is called the ''paging problem'' because it models the problem of [[page replacement algorithm]]s in memory caches, and was also already known to have a {{var|k}}-competitive algorithm ([[Daniel Sleator|Sleator]] and [[Robert Tarjan|Tarjan]] 1985). Fiat et al. (1990) first proved that there exists an algorithm with finite competitive ratio for any constant ''k'' and any metric space, and finally Koutsoupias and [[Christos Papadimitriou|Papadimitriou]] (1995) proved that Work Function Algorithm (WFA) has competitive ratio 2''k'' - 1. However, despite the efforts of many other researchers, reducing the competitive ratio to {{var|k}} or providing an improved lower bound remains open {{As of|2014|lc=on}}. The most common believed scenario is that the Work Function Algorithm is ''k''-competitive. To this direction, in 2000 Bartal and Koutsoupias showed that this is true for some special cases (if the metric space is a line, a weighted star or any metric of ''k''+2 points).
+
+The ''k''-server conjecture has also a version for [[Randomized algorithm|randomized algorithms]], which asks if there exists a randomized algorithm with competitive ratio O(log ''k'') in any arbitrary metric space (with at least ''k'' + 1 points).<ref name=":0">{{cite conference |last1=Bubeck |first1=Sébastien |last2=Coester |first2=Christian |last3=Rabani |first3=Yuval |date=June 20–23, 2023 |title=The Randomized 𝑘-Server Conjecture Is False! |url=https://doi.org/10.1145/3564246.3585132 |conference=55th Annual ACM Symposium on Theory of Computing (STOC '23) |location=Orlando, FL, USA |publisher=ACM |pages=14 |arxiv=2211.05753 |doi=10.1145/3564246.3585132}}</ref> In 2011, a randomized algorithm with competitive bound Õ(log<sup>2</sup>k log<sup>3</sup>n) was found.<ref>{{cite journal
+ | last1 = Bansal | first1 = Nikhil
+ | last2 = Buchbinder | first2 = Niv
+ | last3 = Madry | first3 = Aleksander
+ | last4 = Naor | first4 = Joseph | author4-link = Joseph Seffi Naor
+ | doi = 10.1145/2783434
+ | issue = 5
+ | journal = [[Journal of the ACM]]
+ | mr = 3424197
+ | page = A40:1–A40:49
+ | title = A polylogarithmic-competitive algorithm for the {{mvar|k}}-server problem
+ | url = https://people.csail.mit.edu/madry/docs/kserver.pdf
+ | volume = 62
+ | year = 2015| arxiv = 1110.1580
+ | s2cid = 15668961
+ }}</ref><ref>{{Cite web|url=http://rjlipton.wordpress.com/2011/11/19/another-annoying-open-problem/|title = Another Annoying Open Problem|date = 19 November 2011}}</ref> In 2017, a randomized algorithm with competitive bound O(log<sup>6</sup> k) was announced,<ref>{{cite arXiv |eprint=1711.01789 |author=Lee, James R. |title=Fusible HSTs and the Randomized k-Server Conjecture |year=2017|class=cs.DS }}</ref> but was later retracted.<ref>{{Cite web|url=https://homes.cs.washington.edu/~jrl/papers/kserver-erratum.html|title=Erratum: Fusible HSTS and the randomized k-server conjecture}}</ref> In 2022 it was shown that the randomized version of the conjecture is false.<ref name=":0" /><ref>{{Cite web |last=Goldberg |first=Madison |date=2023-11-20 |title=Researchers Refute a Widespread Belief About Online Algorithms |url=https://www.quantamagazine.org/researchers-refute-a-widespread-belief-about-online-algorithms-20231120/ |access-date=2023-11-26 |website=Quanta Magazine |language=en}}</ref><ref>The [https://www.youtube.com/watch?v=uIM08IuDwuQ video presentation] of the paper "The Randomized k-Server Conjecture is False!" at STOC 2023 is available in YouTube.</ref>
+
+== Example ==
+
+To make the problem more concrete, imagine sending [[customer support]] technicians to customers when they have trouble with their equipment. In our example problem there are two technicians, Mary and Noah, serving three customers, in San Francisco, California; Washington, DC; and Baltimore, Maryland. As a ''k''-server problem, the servers are the technicians, so ''k'' = 2 and this is a 2-server problem. Washington and Baltimore are {{convert|35|mi|km}} apart, while San Francisco is {{convert|3000|mi|km}} away from both, and initially Mary and Noah are both in San Francisco.
+
+Consider an algorithm for assigning servers to requests that always assigns the closest server to the request, and suppose that each weekday morning the customer in Washington needs assistance while each weekday afternoon the customer in Baltimore needs assistance, and that the customer in San Francisco never needs assistance. Then, our algorithm will assign one of the servers (say Mary) to the Washington area, after which she will always be the closest server and always be assigned to all customer requests. Thus, every day our algorithm incurs the cost of traveling between Washington and Baltimore and back, {{convert|70|mi|km}}. After a year of this request pattern, the algorithm will have incurred {{convert|20500|mi|km}} travel: 3,000 to send Mary to the East Coast, and 17,500 for the trips between Washington and Baltimore. On the other hand, an optimal adversary who knows the future request schedule could have sent both Mary and Noah to Washington and Baltimore respectively, paying {{convert|6000|mi|km}} of travel once but then avoiding any future travel costs. The competitive ratio of our algorithm on this input is 20,500/6,000 or approximately 3.4, and by adjusting the parameters of this example the competitive ratio of this algorithm can be made arbitrarily large.
+
+Thus we see that always assigning the closest server can be far from optimal. On the other hand, it seems foolish for an algorithm that does not know future requests to send both of its technicians away from San Francisco, as the next request could be in that city and it would have to send someone back immediately. So it seems that it is difficult or impossible for a ''k''-server algorithm to perform well relative to its adversary. However, for the 2-server problem, there exists an algorithm that always has a total travel distance of at most twice the adversary's distance.
+The ''k''-server conjecture states that similar solutions exist for problems with any larger number of technicians.
+
+== The offline k-server problem ==
+The k-server problem is also useful in an offline setting, that is, when the sequence of requests is completely known. For examples,
+for some algorithms the sequence of memory accesses is independent of the input (an example is [[matrix multiplication]]), and so the paging
+problem can be solved offline. This problem has been shown to be solvable in polynomial time.{{sfnp|Chrobak|Karloff|Payne|Vishwnathan|1991}}
+
+== Notes ==
+<references />
+
+== References ==
+*{{cite journal
+  |last1 = Chrobak | first1 = Marek | author1-link = Marek Chrobak
+  |last2 = Larmore | first2 = Lawrence L. | author2-link = Lawrence L. Larmore
+  | title = An optimal on-line algorithm for ''K''-servers on trees
+  | journal = SIAM Journal on Computing
+  | volume = 20
+  | issue = 1
+  | year = 1991
+  | pages = 144–148
+  | doi = 10.1137/0220008| citeseerx = 10.1.1.53.2395
+  }}
+
+*{{cite journal
+  |last1 = Chrobak | first1 = Marek | author1-link = Marek Chrobak
+  |last2 = Karloff | first2 = Howard | author2-link = Howard Karloff 
+  |last3 = Payne | first3 = Tom | author3-link = Tom Payne (computer science)
+  |last4 = Vishwnathan | first4 = Sundar | author4-link = Sundar Vishwnathan
+  | title = New ressults on server problems
+  | journal = SIAM Journal on Discrete Mathematics
+  | volume = 4
+  | issue = 2
+  | year = 1991
+  | pages = 172–181
+  |doi=10.1137/0404017 }}
+
+*{{cite conference
+  |author1=Fiat, A. |author2=Rabani, Y. |author3=Ravid, Y. | title = Competitive ''k''-server algorithms
+  | book-title = Proceedings of the 31st Annual IEEE Symposium on Foundations of Computer Science
+  | date = 1990
+  | pages = 454–463}}
+
+*{{cite journal
+  |author1=Koutsoupias, Elias |author2=[[Christos Papadimitriou|Papadimitriou, Christos H.]]
+ | title = On the ''k''-server conjecture
+  | journal = Journal of the ACM
+  | volume = 42
+  | issue = 5
+  | year = 1995
+  | pages = 971–983
+  | doi = 10.1145/210118.210128|s2cid=5813837
+ }}
+
+*{{cite journal 
+  |author1=Manasse, Mark |author2=McGeoch, Lyle A. |author3=[[Daniel Sleator|Sleator, Daniel D.]]
+ | title=Competitive algorithms for server problems
+  | journal= Journal of Algorithms
+  | year=1990 
+  | volume=11 
+  | pages= 208–230
+  | doi=10.1016/0196-6774(90)90003-W 
+  | issue= 2}}
+
+*{{cite journal
+  |author1=[[Daniel Sleator|Sleator, Daniel D.]] |author2=[[Robert Tarjan|Tarjan, Robert E.]]
+ | title = Amortized efficiency of list update and paging rules
+  | journal = Communications of the ACM
+  | volume = 28
+  | year = 1985
+  | pages = 202–208
+  | doi = 10.1145/2786.2793
+  | issue = 2|s2cid=2494305
+ | doi-access = free
+  }}
+
+[[Category:Online algorithms]]
+[[Category:Unsolved problems in computer science]]

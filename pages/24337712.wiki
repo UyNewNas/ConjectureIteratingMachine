@@ -1,0 +1,9 @@
+#REDIRECT [[PSPACE#Relation among other classes]]
+
+{{Redirect category shell|1=
+{{R with possibilities}}
+{{R to section}}
+}}
+
+{{DEFAULTSORT:P Pspace Problem}}
+[[Category:Unsolved problems in computer science]]

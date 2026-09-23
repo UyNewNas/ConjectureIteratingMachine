@@ -1,0 +1,112 @@
+{{Short description|Estimation in number theory}}
+{{log(x)}}
+In [[number theory]], '''Cramér's conjecture''', formulated by the Swedish mathematician [[Harald Cramér]] in 1936,<ref name="Cramér1936">{{Citation |last=Cramér |first=Harald |title=On the order of magnitude of the difference between consecutive prime numbers |url=http://matwbn.icm.edu.pl/ksiazki/aa/aa2/aa212.pdf |journal=[[Acta Arithmetica]] |volume=2 |year=1936 |pages=23–46 |doi=10.4064/aa-2-1-23-46 |access-date=2012-03-12 |archive-url=https://web.archive.org/web/20180723035707/http://matwbn.icm.edu.pl/ksiazki/aa/aa2/aa212.pdf |archive-date=2018-07-23 }}</ref> is an estimate for the size of [[prime gap|gaps between consecutive prime numbers]]: intuitively, that gaps between consecutive primes are always small, and the [[conjecture]] quantifies [[asymptotics|asymptotically]] just how small they must be.  It states that
+:<math>p_{n+1}-p_n=O((\log p_n)^2),</math>
+where ''p<sub>n</sub>'' denotes the ''n''th [[prime number]], ''O'' is [[big O notation]], and "log" is the [[natural logarithm]]. While this is the statement explicitly conjectured by Cramér, his [[heuristic]] actually supports the stronger statement
+:<math>\limsup_{n\rightarrow\infty} \frac{p_{n+1}-p_n}{(\log p_n)^2} = 1,</math>
+and sometimes this formulation is called Cramér's conjecture. However, this stronger version is not supported by more accurate heuristic models, which nevertheless support the first version of Cramér's conjecture.
+
+The strongest form of all, which was never claimed by Cramér but is the one used in [[Experimental mathematics|experimental]] verification computations and the [[#Related conjectures and heuristics|plot in this article]], is simply
+:<math>p_{n+1}-p_n < (\log p_n)^2.</math>
+
+which is the same as Mohebbi's conjecture for large values of <math>n</math>: 
+:<math>p_{n+1}-p_n<p_{n}\left(p_{n}^{p_{n}^{\frac{1}{p_{n}}}-1}-1\right)</math>.
+
+None of the three forms have yet been proven or disproven.
+
+==Conditional proven results on prime gaps==
+Cramér gave a [[conditional proof]] of the much [[List of mathematical jargon#weak|weaker]] statement that
+:<math>p_{n+1}-p_n = O(\sqrt{p_n}\,\log p_n)</math>
+on the assumption of the [[Riemann hypothesis]].<ref name="Cramér1936" /> The best known unconditional upper bound is
+:<math>p_{n+1}-p_n = O(p_n^{0.525})</math>
+due to Baker, [[Glyn Harman|Harman]], and [[János Pintz|Pintz]].<ref>{{Citation |author=Baker, R. C. |author2=Harman, G. |author3=Pintz, J. | year=2001 | title=The Difference Between Consecutive Primes, II | journal=Proceedings of the London Mathematical Society | volume=83 | issue=3 | pages=532–562 | publisher=Wiley | doi=10.1112/plms/83.3.532}}</ref>
+
+In the other direction, E. Westzynthius proved in 1931 that prime gaps grow more than logarithmically. That is,<ref>{{Citation |last=Westzynthius |first=E. |title=Über die Verteilung der Zahlen die zu den ''n'' ersten Primzahlen teilerfremd sind |language=de |journal=Commentationes Physico-Mathematicae Helsingsfors |volume=5 |issue=5 |year=1931 |pages=1–37 |zbl=0003.24601 |jfm=57.0186.02}}</ref>
+:<math>\limsup_{n\to\infty}\frac{p_{n+1}-p_n}{\log p_n}=\infty.</math>
+
+His result was improved by [[R. A. Rankin]],<ref>{{cite journal |first=R. A. |last=Rankin |author-link=R. A. Rankin |title=The difference between consecutive prime numbers |journal=J. London Math. Soc. |volume=13 |issue=4 |date=December 1938 |pages=242–247 |doi=10.1017/S0013091500025633 |doi-access=free}}</ref> who proved that
+:<math>\limsup_{n\to\infty}\frac{p_{n+1}-p_n}{\log p_n}\cdot\frac{\left(\log\log\log p_n\right)^2}{\log\log p_n\,\log\log\log\log p_n}>0.</math>
+
+[[Paul Erdős]] conjectured that the left-hand side of the above formula is infinite, and this was proven in 2014 by [[Kevin Ford (mathematician)|Kevin Ford]], [[Ben Green (mathematician)|Ben Green]], [[Sergei Konyagin]], and [[Terence Tao]],<ref>{{cite journal |last1=Ford |first1=Kevin |last2=Green |first2=Ben |last3=Konyagin |first3=Sergei |last4=Tao |first4=Terence |title=Large gaps between consecutive prime numbers |journal=Annals of Mathematics |series=Second series |volume=183 |date=2016 |issue=3 |pages=935–974 |doi=10.4007/annals.2016.183.3.4 |doi-access=free |arxiv=1408.4505}}</ref> and independently by [[James Maynard (mathematician)|James Maynard]].<ref>{{cite journal |last1=Maynard |first1=James |title=Large gaps between primes |journal=Annals of Mathematics |series=Second series |volume=183 |date=2016 |issue=3 |pages=915–933 |doi=10.4007/annals.2016.183.3.3 |doi-access=free |arxiv=1408.5110}}</ref>
+
+The two approaches were subsequently combined by Ford, Green, Konyagin, Maynard, and Tao,<ref>{{cite journal |last1=Ford |first1=Kevin |last2=Green |first2=Ben |last3=Konyagin |first3=Sergei |last4=Maynard |first4=James |last5=Tao |first5=Terence |title=Long gaps between primes |journal=Journal of the American Mathematical Society |volume=31 |date=2018 |pages=65–105 |doi=10.1090/jams/876 |doi-access=free |arxiv=1412.5029}}</ref> who showed that, infinitely often,
+:<math>p_{n+1}-p_n>\frac{c\,\log p_n\,\log\log p_n\,\log\log\log\log p_n}{\log\log\log p_n},</math>
+where <math>c>0</math> is an absolute constant.
+
+In August 2026, a manuscript listing the [[OpenAI]] model [[GPT-5.6]] Sol as its author<ref>{{cite web
+ |author=GPT 5.6 Sol
+ |title=A Tilted Residue-Class Construction for Long Prime-Free Intervals
+ |date=25 August 2026
+ |url=https://github.com/plby/lean-proofs/blob/20b8b276b518c99ea5da3f4e3e76ee202a836373/output/pdf/Erdos_4_GPT_5.6_Sol.tex
+ |website=GitHub
+ |access-date=31 August 2026
+}}</ref> gave the stronger bound
+:<math>p_{n+1}-p_n>\frac{c\,\log p_n\,\log\log p_n}{\log\log\log\log p_n}</math>
+for infinitely many <math>n</math>, equivalently
+:<math>G(X)\gg\frac{\log X\,\log_2 X}{\log_4 X},</math>
+where <math>G(X)</math> denotes the largest gap between consecutive primes with upper endpoint at most <math>X</math> and <math>\log_k</math> denotes the <math>k</math>-fold iterated logarithm. This improves the 2018 Ford–Green–Konyagin–Maynard–Tao bound by a factor of
+:<math>\frac{\log_3 X}{(\log_4 X)^2}.</math>
+Boris Alexeev subsequently released a formalization of the result in the [[Lean (proof assistant)|Lean]] proof assistant.<ref>{{cite web
+|author=Alexeev, Boris
+|title=Formalize tilted covering and prime-gap bounds
+|date=27 August 2026
+|website=GitHub
+|url=https://github.com/plby/lean-proofs/commit/20b8b276b518c99ea5da3f4e3e76ee202a836373
+|access-date=31 August 2026
+}}</ref> As of August 2026, the result had not appeared in a peer-reviewed publication, although the formalization provided a machine-checkable version of its main prime-gap bound.
+
+== <span class="anchor" id="Cramér model"></span> Heuristic justification==
+Cramér's conjecture is based on a [[Probabilistic number theory|probabilistic]] model—essentially a [[heuristic]]—in which the probability that a number of size ''x'' is prime is 1/log ''x''. This is known as the '''Cramér random model''' or Cramér model of the primes.<ref>[[Terry Tao]], [https://terrytao.wordpress.com/2015/01/04/254a-supplement-4-probabilistic-models-and-heuristics-for-the-primes-optional/#more-7956 254A, Supplement 4: Probabilistic models and heuristics for the primes (optional)], section on The Cramér random model, January 2015.</ref>
+
+In the Cramér random model,
+:<math>\limsup_{n\rightarrow\infty} \frac{p_{n+1}-p_n}{\log^2 p_n} = 1</math>
+with [[Almost sure convergence|probability one]].<ref name="Cramér1936" /> However, as pointed out by [[Andrew Granville]],<ref>{{Citation |last=Granville |first=A. |title=Harald Cramér and the distribution of prime numbers |journal=Scandinavian Actuarial Journal |volume=1 |year=1995 |pages=12–28 |url=http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf |doi=10.1080/03461238.1995.10413946 |access-date=2007-06-05 |archive-date=2015-09-23 |archive-url=https://web.archive.org/web/20150923212842/http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf }}.</ref> [[Maier's theorem]] shows that the Cramér random model does not adequately describe the distribution of primes on short intervals, and a refinement of Cramér's model taking into account divisibility by small primes suggests that the limit should not be 1, but a constant <math>c \ge 2e^{-\gamma}\approx1.1229\ldots</math> ({{OEIS2C|id=A125313}}), where <math>\gamma</math> is the [[Euler–Mascheroni constant]]. [[János Pintz]] has suggested that the [[Limit superior and limit inferior|limit sup]] may be infinite,<ref>{{cite journal |first=János |last=Pintz |author-link=János Pintz |title=Very large gaps between consecutive primes |journal=Journal of Number Theory |volume=63 |issue=2 |date=April 1997 |pages=286–301 |doi=10.1006/jnth.1997.2081 |url=https://core.ac.uk/download/pdf/81196811.pdf}}</ref> and similarly [[Leonard Adleman]] and Kevin McCurley write
+:''As a result of the work of [[Helmut Maier|H. Maier]] on gaps between consecutive primes, the exact formulation of Cramér's conjecture has been called into question [...] It is still probably true that for every constant <math>c>2</math>, there is a constant <math>d>0</math> such that there is a prime between <math>x</math> and <math>x+d(\log x)^c</math>.''<ref>{{cite book |first1=Leonard |last1=Adleman |author-link=Leonard Adleman |first2=Kevin |last2=McCurley |chapter=Open Problems in Number Theoretic Complexity, II |title=ANTS-I: Proceedings of the First International Symposium on Algorithmic Number Theory |location=Ithaca, NY<!--Conference location; publisher location is Berlin--> |date=6 May 1994<!--Conference was 6-9 May; proceedings publication was later in 1994--> |pages=291–322 |series=Lecture Notes in Computer Science |volume=877 |publisher=Springer |doi=10.1007/3-540-58691-1_70 |isbn=3-540-58691-1 |citeseerx=10.1.1.48.4877}}</ref>
+
+Similarly, Robin Visser writes
+:''In fact, due to the work done by Granville, it is now widely believed that Cramér's conjecture is false. Indeed, there [are] some theorems concerning short intervals between primes, such as Maier's theorem, which contradict Cramér's model.''<ref>Robin Visser, [https://warwick.ac.uk/fac/sci/maths/people/staff/visser/large_gaps_between_primes.pdf Large Gaps Between Primes], University of Cambridge (2020).</ref>
+(internal references removed).
+
+==Related conjectures and heuristics<span id="Shanks conjecture"></span><span id="Cramér–Granville conjecture"></span>==
+[[File:Primegaps-new.png|thumb|294px|Prime gap function]]
+[[Daniel Shanks]] conjectured the following asymptotic equality, stronger than Cramér's conjecture,<ref>{{Citation |first=Daniel |last=Shanks |title=On Maximal Gaps between Successive Primes |journal=Mathematics of Computation |volume=18 |issue=88 |year=1964 |pages=646–651 |doi=10.2307/2002951 |publisher=American Mathematical Society |jstor=2002951|zbl=0128.04203 |doi-access=free }}.</ref> for record gaps:
+<math>G(x)\sim \log^2 x.</math>
+
+J.H. Cadwell<ref name="Cadwell1971">{{Citation |last=Cadwell |first= J. H.  |title=Large Intervals Between Consecutive Primes |journal= Mathematics of Computation |volume= 25 |issue=116 |year=1971 |pages=909–913 |jstor=2004355 |doi=10.2307/2004355|doi-access=free }}</ref> has proposed the formula for the maximal gaps:
+<math>G(x)\sim \log^2 x - \log x\log\log x,</math>
+which is formally identical to the Shanks conjecture but suggests a lower-order term.
+
+Marek Wolf<ref name="Wolf2014">{{Citation |last=Wolf |first=Marek |title=Nearest-neighbor-spacing distribution of prime numbers and quantum chaos |journal=Phys. Rev. E |volume=89 |year=2014 |issue=2 |article-number=022922 |url=https://journals.aps.org/pre/abstract/10.1103/PhysRevE.89.022922 |doi=10.1103/physreve.89.022922|pmid=25353560 |arxiv=1212.3841 |bibcode=2014PhRvE..89b2922W |s2cid=25003349 }}</ref> has proposed the formula for the maximal gaps <math>G(x)</math>
+expressed in terms of the [[prime-counting function]]
+<math>\pi(x)</math>:
+:<math>G(x)\sim \frac{x}{\pi(x)}(2\log\pi(x)-\log x+c),</math>
+where <math>c=\log(2C_2)=0.2778769...</math> and <math>C_2=0.6601618...</math> is the [[Twin prime#First Hardy–Littlewood conjecture|twin primes constant]]; see {{OEIS2C|A005597}}, {{OEIS link|A114907}}. This is again formally equivalent to the Shanks conjecture but suggests lower-order terms
+:<math>G(x) \sim \log^2 x - 2\log x\log\log x - (1-c)\log x.</math>.
+
+[[Thomas Nicely#Chronology|Thomas Nicely]] has calculated many large prime gaps.<ref>{{Citation |last=Nicely |first=Thomas R. |doi=10.1090/S0025-5718-99-01065-0 |mr=1627813 |issue=227 |journal=Mathematics of Computation |pages=1311–1315 |title=New maximal prime gaps and first occurrences |volume=68 |year=1999 |doi-access=free |bibcode=1999MaCom..68.1311N }}.</ref> He measures the quality of fit to Cramér's conjecture by measuring the ratio
+:<math>R = \frac{\log p_n}{\sqrt{p_{n+1}-p_n}}.</math>
+
+He writes, "For the largest known maximal gaps, <math>R</math> has remained near 1.13."
+
+==See also==
+*[[Prime number theorem]]
+*[[Legendre's conjecture]] and [[Andrica's conjecture]], much weaker but still unproven upper bounds on prime gaps
+*[[Firoozbakht's conjecture]]
+*[[Maier's theorem]] on the numbers of primes in short intervals for which the model predicts an incorrect answer
+
+==References==
+{{Reflist}}
+* {{cite book |last=Guy | first=Richard K. | author-link=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=3rd | year=2004 | isbn=978-0-387-20860-2 | zbl=1058.11001 | at=A8 }}
+* {{cite journal | author-link=János Pintz | last1=Pintz | first1=János | title=Cramér vs. Cramér. On Cramér's probabilistic model for primes | url=http://projecteuclid.org/euclid.facm/1229619660 | mr=2363833 | year=2007 | journal= Functiones et Approximatio Commentarii Mathematici | volume=37 | issue=2 | pages=361–376 | zbl=1226.11096 | issn=0208-6573 | doi=10.7169/facm/1229619660| doi-access=free | url-access=subscription }}
+* {{cite book | last=Soundararajan | first=K. | author-link=Kannan Soundararajan | chapter=The distribution of prime numbers | editor1-last=Granville | editor1-first=Andrew | editor1-link=Andrew Granville | editor2-last=Rudnick | editor2-first=Zeév | title=Equidistribution in number theory, an introduction. Proceedings of the NATO Advanced Study Institute on equidistribution in number theory, Montréal, Canada, July 11--22, 2005 | location=Dordrecht |publisher=[[Springer-Verlag]] | series=NATO Science Series II: Mathematics, Physics and Chemistry | volume=237 | pages=59–83 | year=2007 | isbn=978-1-4020-5403-7 | zbl=1141.11043 }}
+
+==External links==
+*{{mathworld|title=Cramér Conjecture|urlname=CramerConjecture}}
+*{{mathworld|title=Cramér-Granville Conjecture|urlname=Cramer-GranvilleConjecture}}
+
+{{Prime number conjectures}}
+
+{{DEFAULTSORT:Cramer's Conjecture}}
+[[Category:Analytic number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

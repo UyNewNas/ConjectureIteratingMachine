@@ -1,0 +1,95 @@
+{{Short description|List of unsolved computational problems}}
+{{Dynamic list}}
+This article is a [[Lists of unsolved problems|list of notable unsolved problems]] in [[computer science]]. A problem in computer science is considered unsolved when no solution is known or when experts in the field disagree about proposed solutions.
+
+==Computational complexity==
+{{Main article|Computational complexity theory}}
+* [[P versus NP problem]] – The P vs NP problem is a major unsolved question in computer science that asks whether every problem whose solution can be quickly verified by a computer (NP) can also be quickly solved by a computer (P). This question has profound implications for fields such as cryptography, algorithm design, and computational theory.<ref>{{Cite web |date=2023-12-01 |title=P vs. NP – The Greatest Unsolved Problem in Computer Science |url=https://www.quantamagazine.org/videos/p-vs-np-the-greatest-unsolved-problem-in-computer-science/ |access-date=2025-03-11 |website=Quanta Magazine |language=en}}</ref>
+* What is the relationship between [[BQP]] and [[NP (complexity)|NP]]?
+* [[NC = P problem]]
+* [[NP = co-NP problem]]
+* [[P = BPP problem]]
+* [[P = PSPACE problem]]
+* [[NL (complexity)|L = NL problem]]
+* [[Polynomial hierarchy|PH = PSPACE problem]]
+* L = P problem
+* L = [[RL (complexity)|RL]] problem
+* [[Unique games conjecture]]
+* Is the [[exponential time hypothesis]] true?
+** Is the strong exponential time hypothesis (SETH) true?
+* Do [[one-way function]]s exist?
+** Is [[public-key cryptography]] possible?
+* [[Log-rank conjecture]]
+* [[Hartmanis–Stearns conjecture]]
+
+==Polynomial versus nondeterministic-polynomial time for specific algorithmic problems==
+{{Main article|NP-intermediate}}
+* Can [[integer factorization]] be done in [[polynomial time]] on a classical (non-quantum) computer?
+* Can the [[discrete logarithm#Algorithms|discrete logarithm]] be computed in polynomial time on a classical (non-quantum) computer?
+* Can the [[Lattice problem#Shortest vector problem (SVP)|shortest vector]] of a lattice be computed in polynomial time on a classical or quantum computer?
+* Can the [[graph isomorphism problem]] be solved in polynomial time on a classical computer?  
+
+The graph isomorphism problem involves determining whether two finite graphs are isomorphic, meaning there is a one-to-one correspondence between their vertices and edges that preserves adjacency. While the problem is known to be in NP, it is not known whether it is NP-complete or solvable in polynomial time. This uncertainty places it in a unique complexity class, making it a significant open problem in computer science.<ref>{{Cite web |last=Klarreich |first=Erica |date=2015-12-14 |title=Landmark Algorithm Breaks 30-Year Impasse |url=https://www.quantamagazine.org/algorithm-solves-graph-isomorphism-in-record-time-20151214/ |access-date=2025-03-11 |website=Quanta Magazine |language=en}}</ref>
+
+* Is [[graph canonization]] polynomial-time equivalent to the graph isomorphism problem?
+* Can [[leaf power]]s and {{mvar|k}}-leaf powers be recognized in polynomial time?
+* Can [[parity game]]s be solved in polynomial time?
+* Can graphs of bounded [[clique-width]] be recognized in polynomial time?<ref>{{Cite journal |last1=Fellows |first1=Michael R. |author-link1=Michael Fellows |last2=Rosamond |first2=Frances A. |author-link2=Frances A. Rosamond |last3=Rotics |first3=Udi |last4=Szeider |first4=Stefan |author-link4=Stefan Szeider |year=2009 |title=Clique-width is NP-complete |url=http://pdfs.semanticscholar.org/92fb/456bfe2f1f9f7f7445a1c24f0ee53b7e264b.pdf |journal=[[SIAM Journal on Discrete Mathematics]] |volume=23 |issue=2 |pages=909–939 |doi=10.1137/070687256 |mr=2519936 |s2cid=18055798 |archive-url=https://web.archive.org/web/20190227163512/http://pdfs.semanticscholar.org/92fb/456bfe2f1f9f7f7445a1c24f0ee53b7e264b.pdf |archive-date=2019-02-27}}</ref>
+* Can one find a [[Theorem of the three geodesics|simple closed quasigeodesic]] on a convex polyhedron in polynomial time?<ref>{{Cite book |last1=Demaine |first1=Erik D. |author-link1=Erik Demaine |title=Geometric folding algorithms: Linkages, origami, polyhedra |title-link=Geometric Folding Algorithms |last2=O'Rourke |first2=Joseph |author-link2=Joseph O'Rourke (professor) |publisher=Cambridge University Press |year=2007 |isbn=978-0-521-71522-5 |location=Cambridge, England |pages=372–375 |chapter=24 Geodesics: Lyusternik–Schnirelmann |doi=10.1017/CBO9780511735172 |mr=2354878}}</ref>
+* Can a [[simultaneous embedding]] with fixed edges for two given graphs be found in polynomial time?<ref>{{Cite book |last1=Gassner |first1=Elisabeth |url=http://e-archive.informatik.uni-koeln.de/507/2/zaik2006-507.pdf |title=Graph-Theoretic Concepts in Computer Science: 32nd International Workshop, WG 2006, Bergen, Norway, June 22–24, 2006, Revised Papers |last2=Jünger |first2=Michael |last3=Percan |first3=Merijam |last4=Schaefer |first4=Marcus |last5=Schulz |first5=Michael |publisher=Springer |year=2006 |isbn=978-3-540-48381-6 |series=Lecture Notes in Computer Science |volume=4271 |location=Berlin, Germany |pages=325–335 |chapter=Simultaneous graph embeddings with fixed edges |doi=10.1007/11917496_29 |mr=2290741 |chapter-url=http://e-archive.informatik.uni-koeln.de/507/2/zaik2006-507.pdf}}</ref>
+* Can the [[square-root sum problem]] be solved in polynomial time in the Turing machine model?
+
+==Algorithmic number theory==
+
+* [[Skolem problem]]: Is it decidable whether an algebraic linear recurrence sequence has a zero?
+* [[Hilbert's tenth problem#Extensions of Hilbert's tenth problem|Hilbert's tenth problem over the field of rational numbers]]
+
+==Other algorithmic problems==
+* The [[Splay tree#Dynamic optimality conjecture|dynamic optimality conjecture]]: Do splay trees have a bounded competitive ratio?
+* Can a [[Trémaux tree|depth-first search tree]] be constructed in [[NC (complexity)|NC]]?
+* Can the [[fast Fourier transform]] be computed in {{math|''o''(''n'' log ''n'')}} time?
+* What is the fastest [[Multiplication algorithms#Computational complexity of multiplication|algorithm for multiplication]] of two ''n''-digit numbers?
+* What is the lowest possible average-case time complexity of [[Shellsort]] with a deterministic fixed gap sequence?
+* Can [[3SUM]] be solved in strongly sub-quadratic time, that is, in time {{math|''O''(''n''<sup>2−ϵ</sup>)}} for some {{math|ϵ > 0}}?
+* Can the [[edit distance]] between two strings of length {{math|''n''}} be computed in strongly sub-quadratic time? (This is only possible if the strong [[exponential time hypothesis]] is false.)
+* Can [[X + Y sorting]] be done in {{math|''o''(''n''<sup>2</sup> log ''n'')}} time?
+* What is the [[Computational complexity of matrix multiplication|fastest algorithm for matrix multiplication]]?
+* Can [[Shortest path problem#All-pairs shortest paths|all-pairs shortest paths]] be computed in strongly sub-cubic time, that is, in time {{math|''O''(''V''<sup>3−ϵ</sup>)}} for some {{math|ϵ > 0}}?
+* Can the [[Schwartz–Zippel lemma]] for [[polynomial identity testing]] be [[Randomized algorithm#Derandomization|derandomized]]?
+* Does [[Linear programming#Open problems and recent work|linear programming]] admit a [[strongly-polynomial time]] algorithm? (This is problem #9 in [[Smale's problems|Smale's list]] of problems.)
+* How many queries are required for [[envy-free cake-cutting]]?
+* What is the algorithmic complexity of the [[minimum spanning tree problem]]? Equivalently, what is the [[Minimum spanning tree#Decision trees|decision tree]] complexity of the MST problem? The optimal algorithm to compute MSTs is [[Minimum spanning tree#Optimal algorithm|known]], but it relies on decision trees, so its complexity is unknown.
+* [[Gilbert–Pollak conjecture]]: Is the [[Steiner ratio]] of the [[Euclidean plane]] equal to <math>2/\sqrt{3}</math>?
+
+==Programming language theory==
+{{Main article|Programming language theory}}
+* [[Barendregt–Geuvers–Klop conjecture]]: Is every weakly normalizing pure type system also strongly normalizing?
+
+==Other problems==
+* Is [[linear logic#Decidability/complexity of entailment|multiplicative-exponential linear logic]] decidable?
+* Is the [[Aanderaa–Karp–Rosenberg conjecture]] true?
+* [[Synchronizing word#Length|Černý conjecture]]: If a [[deterministic finite automaton]] with <math>n</math> states has a [[synchronizing word]], must it have one of length at most <math>(n - 1)^2</math>?
+* [[Generalized star-height problem]]: Can all [[regular language]]s be expressed using generalized regular expressions with a limited nesting depth of [[Kleene star]]s?
+* [[Separating words problem]]: How many states are needed in a [[deterministic finite automaton]] that behaves differently on two given [[string (computer science)|strings]] of length <math>n</math>?
+* What is the [[Turing completeness]] status of all unique [[elementary cellular automaton|elementary cellular automata]]?
+* Determine whether the length of the minimal uncompletable word of <math>M</math> is polynomial in <math>l(M)</math>, or even in <math>sl(M)</math>. It is known that <math>M</math> is a [[variable-length code]] if for all <math>u_1,...,u_n,v_1,...,v_m \in M</math>, <math>u_1...u_n = v_1...v_m</math> implies <math>n = m</math> and <math>u_i = v_i</math> for all <math>0 < i \leq n</math>. In such cases, we do not yet know if a polynomial bound exists. This is a possible weakening of the [[:fr:Conjecture de Restivo|Restivo conjecture]] (already disproven in general, though upper bounds remain unknown).
+* Determine all positive integers <math>n</math> such that the concatenation of <math>n</math> and <math>n^2</math> in base <math>b</math> uses at most <math>k</math> distinct characters, for fixed <math>b</math> and <math>k</math>.{{cn|date=September 2024}}
+
+==See also==
+* [[List of unsolved problems in physics]]
+* [[List of unsolved problems in mathematics]]
+
+==References==
+{{reflist}}
+
+==External links==
+* {{cite journal |url=https://www.sciencedirect.com/science/article/pii/S0166218X0700128X |title=Open problems around exact algorithms |author-link=Gerhard J. Woeginger |first=Gerhard J. |last=Woeginger |journal=Discrete Applied Mathematics |volume=156 (2008) |pages=397–405}}
+* [https://www.cs.tau.ac.il/~nachum/rtaloop/ The RTA list of open problems] – Open problems in [[rewriting]].
+* [https://tlca.di.unito.it/opltlca/ The TLCA List of Open Problems] – Open problems in the area of [[typed lambda calculus]].
+
+{{unsolved problems}}
+
+{{DEFAULTSORT:Unsolved Problems In Computer Science}}
+[[Category:Conjectures|Computer Science]]
+[[Category:Lists of unsolved problems|Computer Science]]
+[[Category:Unsolved problems in computer science| ]]

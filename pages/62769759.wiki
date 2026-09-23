@@ -1,0 +1,49 @@
+{{short description|Unsolved problem in mathematics}}
+{{Distinguish||text=the conjecture by Charles M. Newman about the [[de Bruijn–Newman constant]]}}{{Infobox mathematical statement
+| name = Newman's conjecture
+| image = 
+| caption = 
+| type = [[conjecture]]
+| field = [[analytic number theory]]
+| conjectured by = Morris Newman
+| conjecture date = 25 March 1960
+| open problem = Yes
+| known cases = [[Prime power|Prime powers]] except [[powers of 2]] or [[powers of 3]], plus selected other numbers (e.g. 16, 40, 65)
+| first proof by = 
+| first proof date = 
+| implied by = 
+| equivalent to = 
+| generalizations = 
+| consequences = Erdős-Ivić conjecture
+}}{{Unsolved|mathematics|Given arbitrary {{mvar|m}}, {{mvar|r}}, are there infinitely many values of {{mvar|n}} such that the partition function at {{mvar|n}} is congruent to {{mvar|r}} mod {{mvar|m}}?}}
+In [[mathematics]], specifically in [[number theory]], '''Newman's conjecture''' is a [[conjecture]] about the behavior of the [[partition function (number theory)|partition function]] [[modular arithmetic|modulo]] any integer.  Specifically, it states that for any integers {{mvar|m}} and {{mvar|r}} such that <math>0 \le r \le m-1</math>, the value of the partition function <math>p(n)</math> satisfies the congruence <math>p(n) \equiv r \pmod{m}</math> for infinitely many non-negative integers {{mvar|n}}.  It was formulated by mathematician Morris Newman in 1960.<ref name=":1">{{Cite journal|last=Newman|first=Morris|date=1960|title=Periodicity Modulo m and Divisibility Properties of the Partition Function|journal=Transactions of the American Mathematical Society|volume=97|issue=2|pages=225–236|doi=10.2307/1993300|issn=0002-9947|jstor=1993300}}</ref> It is unsolved as of {{CURRENTYEAR}}.
+
+==History==
+Oddmund Kolberg was probably the first to [[mathematical proof|prove]] a related result, namely that the partition function takes both [[parity (mathematics)|even]] and [[parity (mathematics)|odd]] values infinitely often. The proof employed was of elementary nature and easily accessible, and was proposed as an exercise by Newman in the [[American Mathematical Monthly]].<ref>{{Cite journal|last=Subbarao|first=M. V.|date=1966|title=Some Remarks on the Partition Function|journal=The American Mathematical Monthly|volume=73|issue=8|pages=851–854|doi=10.2307/2314179|issn=0002-9890|jstor=2314179}}</ref><ref>{{Cite journal|last=Kolberg|first=O.|date=1959-12-01|title=Note on the Parity of the Partition Functions.|journal=Mathematica Scandinavica|language=en|volume=7|pages=377–378|doi=10.7146/math.scand.a-10584|issn=1903-1807|doi-access=free}}</ref><ref>{{Cite journal|last=Newman|first=Morris|last2=van Lint|first2=J. H.|date=1962|title=4944|journal=The American Mathematical Monthly|volume=69|issue=2|pages=175|doi=10.2307/2312568|issn=0002-9890|jstor=2312568}}</ref>
+
+1 year later, in 1960, Newman proposed the conjecture and proved the cases ''m''=5 and 13 in his original paper,<ref name=":1" /> and ''m''=65 two years later.<ref>{{Cite journal|last=Newman|first=Morris|date=March 1962|title=Congruences for the partition function to composite moduli|journal=Illinois Journal of Mathematics|language=EN|volume=6|issue=1|pages=59–63|doi=10.1215/ijm/1255631806|issn=0019-2082|doi-access=free}}</ref>
+
+[[Ken Ono]], an American mathematician, made further advances by exhibiting sufficient conditions for the conjecture to hold for [[prime number|prime]] {{mvar|m}}. He first showed that Newman's conjecture holds for prime {{mvar|m}} if for each {{mvar|r}} between 0 and {{math|''m''−1}}, there exists a nonnegative integer {{mvar|n}} such that the following holds:
+
+*<math>24 \mid mn+1</math>
+*<math>p \left(\frac{mn+1}{24} \right) \equiv r \pmod{m}</math>
+
+He used the result, together with a computer program, to prove the conjecture for all primes less than 1000, except 3.<ref name=":0">{{Cite journal|last=Ono|first=Ken|date=2000|title=Distribution of the Partition Function Modulo m|journal=Annals of Mathematics|volume=151|issue=1|pages=293–307|doi=10.2307/121118|issn=0003-486X|jstor=121118|bibcode=2000math......8140O|arxiv=math/0008140}}</ref> Ahlgren expanded on his result to show that Ono's condition is, in fact, true for all [[composite number|composite]] numbers [[coprime integers|coprime]] to 6.<ref>{{Cite journal|last=Ahlgren|first=Scott|date=2000-12-01|title=Distribution of the partition function modulo composite integers M|journal=Mathematische Annalen|language=en|volume=318|issue=4|pages=795–803|doi=10.1007/s002080000142|issn=1432-1807}}</ref>
+
+Three years later, Ono showed that for every prime {{mvar|m}} greater than 3, one of the following must hold:
+
+* Newman's conjecture holds for {{mvar|m}}, or
+* <math>m\mid p(mn+k)</math> for all nonnegative integers {{mvar|n}}, and <math>1\le k < 24, 24k\equiv 1 \pmod{m}</math>.
+
+Using a computer, he proved the theorem for all primes less than 200,000, except 3.<ref name=":2">{{Cite journal|last=Bruinier|first=Jan H.|last2=Ono|first2=Ken|date=2003-03-01|title=Coefficients of half-integral weight modular forms|journal=Journal of Number Theory|volume=99|issue=1|pages=164–179|doi=10.1016/S0022-314X(02)00061-6|issn=0022-314X|doi-access=free}}</ref>
+
+Afterwards, Ahlgren and Boylan used Ono's criterion to extend Newman's conjecture to all primes except possibly 3.<ref>{{Cite journal|last=Ahlgren|first=Scott|last2=Boylan|first2=Matthew|date=2003-09-01|title=Arithmetic properties of the partition function|journal=Inventiones Mathematicae|language=en|volume=153|issue=3|pages=487–502|doi=10.1007/s00222-003-0295-6|issn=1432-1297|bibcode=2003InMat.153..487A}}</ref> Two years afterwards, they extended their result to all [[prime power]]s except powers of 2 or 3.<ref>{{Cite journal|last=Ahlgren|first=Scott|last2=Boylan|first2=Matthew|date=2005-01-01|title=Coefficients of half-integral weight modular forms modulo ℓj|journal=Mathematische Annalen|language=en|volume=331|issue=1|pages=219–239|doi=10.1007/s00208-004-0555-9|issn=1432-1807}}</ref>
+
+== Partial progress and solved cases ==
+The weaker statement that <math>p(n)\equiv 0 \pmod{m}</math> has at least 1 solution has been proved for all primes {{Mvar|m}}. It was formerly known as the [[Erdős–Ivić conjecture]], named after mathematicians [[Paul Erdős]] and [[Aleksandar Ivić]]. It was settled by [[A. Schinzel]].<ref name=":0" />
+
+== References ==
+{{Reflist}}
+
+[[Category:Unsolved problems in number theory]]
+[[Category:Analytic number theory]]

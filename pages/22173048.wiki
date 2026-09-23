@@ -1,0 +1,144 @@
+{{Short description|Conjecture in knot theory relating quantum invariants and hyperbolic geometry}}
+{{Infobox mathematical statement
+| name = Volume conjecture
+| image = 
+| caption = 
+| field = [[Knot theory]]
+| conjectured by = {{plainlist|
+* Hitoshi Murakami
+* Jun Murakami
+* Rinat Kashaev}}
+| conjecture date =
+| first proof by =
+| first proof date =
+| open problem = 
+| known cases = {{plainlist|
+* [[Figure-eight knot (mathematics)|figure-eight knot]]
+* [[three-twist knot]]
+* [[Borromean ring]]s
+* [[torus knot]]s
+* all knots and links with volume zero
+* twisted Whitehead links
+* [[Whitehead double]]s of nontrivial torus knots <math>T(p,q)</math> with <math>q=2</math>}}
+| implied by =
+| equivalent to =
+| generalizations = 
+| consequences = [[Vassiliev invariant]]s detect the [[unknot]]
+}}
+
+In the branch of [[mathematics]] called [[knot theory]], the '''volume conjecture''' is an [[open problem]] that relates [[quantum invariant]]s of knots to the [[hyperbolic geometry]] of their [[Knot complement|complements]].
+
+== Statement ==
+Let ''O'' denote the [[unknot]]. For any knot <math>K</math>, let <math>\langle K \rangle_N</math> be the '''Kashaev invariant''' of <math>K</math>, which may be defined as
+
+:<math>\langle K \rangle_N=\lim_{q\to e^{2\pi i/N}}\frac{J_{K,N}(q)}{J_{O,N}(q)}</math>,
+
+where <math>J_{K,N}(q)</math> is the <math>N</math>-[[Jones polynomial#Colored Jones polynomial|Colored Jones polynomial]] of <math>K</math>. The volume conjecture states that{{sfn|Murakami|2010|p=17}}
+
+:<math>\lim_{N\to\infty} \frac{2\pi\log |\langle K \rangle_N|}{N} = \operatorname{vol}(S^3 \backslash K)</math>,
+
+where <math>\operatorname{vol}(S^3 \backslash K)</math> is the [[simplicial volume]] of the complement of <math>K</math> in the [[3-sphere]], defined as follows. By the [[JSJ decomposition]], the complement <math>S^3 \backslash K</math> may be uniquely decomposed into a system of tori
+
+:<math>S^3 \backslash K = \left( \bigsqcup_i H_i \right) \sqcup \left( \bigsqcup_j E_j \right)</math>
+
+with <math>H_i</math> [[Hyperbolic 3-manifold|hyperbolic]] and <math>E_j</math> [[Seifert-fibered]]. The '''simplicial volume''' <math>\operatorname{vol}(S^3 \backslash K)</math> is then defined as the sum
+
+:<math>\operatorname{vol}(S^3 \backslash K) = \sum_i \operatorname{vol}(H_i)</math>,
+
+where <math>\operatorname{vol}(H_i)</math> is the [[hyperbolic volume]] of the hyperbolic manifold <math>H_i</math>.{{sfn|Murakami|2010|p=17}}
+
+As a special case, if <math>K</math> is a [[Hyperbolic link|hyperbolic knot]], then the JSJ decomposition simply reads <math>S^3 \backslash K = H_1</math>, and by definition the simplicial volume <math>\operatorname{vol}(S^3 \backslash K)</math> agrees with the hyperbolic volume <math>\operatorname{vol}(H_1)</math>.
+
+== History ==
+The Kashaev invariant was first introduced by Rinat M. Kashaev in 1994 and 1995 for hyperbolic links as a state sum using the theory of [[quantum dilogarithm]]s.<ref>{{Cite journal |last=Kashaev |first=R.M. |date=1994-12-28 |title=Quantum Dilogarithm as a 6j-Symbol |url=https://www.worldscientific.com/doi/abs/10.1142/S0217732394003610 |journal=[[Modern Physics Letters A]] |language=en |volume=09 |issue=40 |pages=3757–3768 |doi=10.1142/S0217732394003610 |arxiv=hep-th/9411147 |bibcode=1994MPLA....9.3757K |issn=0217-7323}}</ref><ref>{{Cite journal |last=Kashaev |first=R.M. |date=1995-06-21 |title=A Link Invariant from Quantum Dilogarithm |url=https://www.worldscientific.com/doi/abs/10.1142/S0217732395001526 |journal=Modern Physics Letters A |language=en |volume=10 |issue=19 |pages=1409–1418 |doi=10.1142/S0217732395001526 |arxiv=q-alg/9504020 |bibcode=1995MPLA...10.1409K |issn=0217-7323}}</ref> Kashaev stated the formula of the volume conjecture in the case of hyperbolic knots in 1997.<ref>{{Cite journal |last=Kashaev |first=R. M. |date=1997 |title=The Hyperbolic Volume of Knots from the Quantum Dilogarithm |url=http://link.springer.com/10.1023/A:1007364912784 |journal=[[Letters in Mathematical Physics]] |volume=39 |issue=3 |pages=269–275 |doi=10.1023/A:1007364912784|arxiv=q-alg/9601025 |bibcode=1997LMaPh..39..269K }}</ref>
+
+{{Harvtxt|Murakami|Murakami|2001}} pointed out that the Kashaev invariant is related to the [[Jones polynomial#Colored Jones polynomial|colored Jones polynomial]] by replacing the variable <math>q</math> with the root of unity <math>e^{i\pi/N}</math>. They used an [[R-matrix]] as the [[discrete Fourier transform]] for the equivalence of these two descriptions. This paper was the first to state the volume conjecture in its modern form using the simplicial volume. They also prove that the volume conjecture implies the following conjecture of [[Victor Vasiliev]]:
+: If all [[Vassiliev invariant]]s of a knot agree with those of the unknot, then the knot is the unknot.
+The key observation in their proof is that if every Vassiliev invariant of a knot <math>K</math> is trivial, then <math>J_{K,N}(q) = 1</math> for any <math>N</math>.
+
+== Status ==
+The volume conjecture is open for general knots, and it is known to be false for arbitrary links. The volume conjecture has been verified in many special cases, including:
+* The [[Figure-eight knot (mathematics)|figure-eight knot]] (Tobias Ekholm),{{sfn|Murakami|2010|p=22}}
+* The [[three-twist knot]] (Rinat Kashaev and Yoshiyuki Yokota),{{sfn|Murakami|2010|p=22}}
+* The [[Borromean ring]]s ([[Stavros Garoufalidis]] and [[Thang Le]]),{{sfn|Murakami|2010|p=22}}
+* [[Torus knot]]s (Rinat Kashaev and Olav Tirkkonen),{{sfn|Murakami|2010|p=22}}
+* All knots and links with volume zero ([[Roland van der Veen]]),{{sfn|Murakami|2010|p=22}}
+* Twisted Whitehead links ([[Hao Zheng]]),<ref name="Zheng">{{citation|last=Zheng|first=Hao|arxiv=math/0508138|journal=[[Chinese Annals of Mathematics, Series B]]|pages=375–388|title=Proof of the volume conjecture for Whitehead doubles of a family of torus knots|year=2007|volume=28 |issue=4 |doi=10.1007/s11401-006-0373-3 }}</ref>
+* [[Whitehead double]]s of nontrivial torus knots <math>T(p,q)</math> with <math>q=2</math> (Hao Zheng).<ref name="Zheng" />
+
+== Relation to Chern-Simons theory ==
+
+Using complexification, {{harvtxt|Murakami|Murakami|Okamoto|Takata|2002}} conjectured that for a hyperbolic knot <math>K</math>,
+
+:<math>\lim_{N\to\infty} \frac{2\pi\log \langle K\rangle_N}{N} = \operatorname{vol}(S^3\backslash K) + CS(S^3\backslash K)</math>,
+
+where <math>CS</math> is the [[Chern–Simons theory|Chern–Simons invariant]] of the frame field of the hyperbolic structure of <math>K</math>. This suggests a relationship between the colored Jones polynomial and complexified Chern–Simons theory.
+
+==References==
+
+===Notes===
+{{reflist}}
+
+===Sources===
+*{{cite arXiv
+ |last=Murakami
+ |first=Hitoshi
+ |title=An Introduction to the Volume Conjecture
+ |year=2010
+ |class=math.GT
+ |eprint=1002.0126
+ }}.
+*{{citation
+ | last = Kashaev | first = Rinat M.
+ | doi = 10.1023/A:1007364912784
+ | arxiv = q-alg/9601025 
+ | issue = 3
+ | journal = Letters in Mathematical Physics
+ | pages = 269–275
+ | title = The hyperbolic volume of knots from the quantum dilogarithm
+ | volume = 39
+ | year = 1997
+ | bibcode = 1997LMaPh..39..269K
+ }}.
+*{{citation
+ | last1 = Murakami | first1 = Hitoshi
+ | last2 = Murakami | first2 = Jun
+ | doi = 10.1007/BF02392716
+ | arxiv = math/9905075 
+ | issue = 1
+ | journal = [[Acta Mathematica]]
+ | pages = 85–104
+ | title = The colored Jones polynomials and the simplicial volume of a knot
+ | volume = 186
+ | year = 2001
+ }}.
+*{{citation
+ | last1 = Murakami | first1 = Hitoshi
+ | last2 = Murakami | first2 = Jun
+ | last3 = Okamoto | first3 = Miyuki
+ | last4 = Takata | first4 = Toshie
+ | last5 = Yokota | first5 = Yoshiyuki
+ | doi = 10.1080/10586458.2002.10504485
+ | arxiv = math/0203119 
+ | issue = 1
+ | journal = [[Experimental Mathematics (journal)|Experimental Mathematics]]
+ | pages = 427–435
+ | title = Kashaev's conjecture and the Chern-Simons invariants of knots and links
+ | volume = 11
+ | year = 2002
+ }}.
+*{{citation
+ | last1 = Gukov | first1 = Sergei
+ | doi = 10.1007/s00220-005-1312-y
+ | arxiv = hep-th/0306165 
+ | issue = 1
+ | journal = [[Communications in Mathematical Physics]]
+ | pages = 557–629
+ | title = Three-Dimensional Quantum Gravity, Chern-Simons Theory, And The A-Polynomial　
+ | volume = 255
+ | year = 2005| bibcode = 2005CMaPh.255..577G
+ }}.
+
+[[Category:Knot theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]

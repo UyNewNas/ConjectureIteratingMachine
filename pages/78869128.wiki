@@ -1,0 +1,34 @@
+{{short description|Mathematical problem concerning limit cycles in dynamical systems}}
+{{unsolved|mathematics|Is there a [[uniformly bounded|uniform bound]] on [[limit cycles]] in generic finite-parameter families of [[vector fields]] on a sphere?}}
+In [[mathematics]], particularly in [[dynamical systems]], the '''Hilbert–Arnold problem''' is an [[list of unsolved problems in mathematics|unsolved problem]] concerning the estimation of [[limit cycle]]s of the dynamics of a flow on a sphere, and whether the number of such cycles can be bounded. A flow on a sphere means that one can imagine that the [[Velocity|velocities]] of particles are prescribed, and a limit cycle is a limit of those velocities, like the [[Gulf Stream]] on the globe.<ref>A similar interpretation can be found in Moore, A. M., & Mariano, A. J. (1999). "[https://journals.ametsoc.org/downloadpdf/view/journals/phoc/29/2/1520-0485_1999_029_0158_tdoega_2.0.co_2.pdf The Dynamics of Error Growth and Predictability in a Model of the Gulf Stream. Part I]": Singular Vector Analysis. ''[[Journal of Physical Oceanography]]'', 29(2), 158–176. https://doi.org/10.1175/1520-0485(1999)029<0158:tdoega>2.0.co;2 (free full access article) {{Better source needed|reason=Citation is not about the same idea, just another mathematical treatment.|date=June 2025}}</ref> The problem asks whether in a [[generic property|generic]] family of smooth vector fields, smoothly parameterized over a [[compact set]] in finite dimensional [[Euclidean space]], the number of limit cycles is uniformly bounded across all parameter values. Thus, under perturbations of climate conditions, it asks whether there is a bounded number of "Gulf Streams".  The problem is historically related to [[Hilbert's sixteenth problem]] and was first formulated by Russian [[mathematicians]] [[Vladimir Arnold]] and [[Yulij Ilyashenko]] in the 1980s.<ref name="I94">Ilyashenko, Yu. (1994). "Normal forms for local families and nonlocal bifurcations". ''[[Astérisque]]'', Vol. 222, 233-258.</ref><ref>Yu. Ilyashenko (2002). "[https://scispace.com/pdf/centennial-history-of-hilbert-s-16th-problem-4ywi8ywo2m.pdf Centennial History of Hilbert's 16 Problem]", ''Bulletin of the AMS'', Volume 39, Number 3, pp. 301–354</ref> In ''[[Arnold's Problems]]'' there are many questions related to the Hilbert–Arnold problem: 1978–6, 1979–16, 1980–1, 1983–11, 1989–17, 1990–24, 1990–25, 1994–51 and 1994–52.<ref>Bravo, J. L., Mardešić, P., Novikov, D., & Pontigo-Herrera, J. (2025). "Infinitesimal and tangential 16-th Hilbert problem on zero-cycles". ''Bulletin Des Sciences Mathématiques'', 202, 103634. https://doi.org/10.1016/j.bulsci.2025.103634 https://arxiv.org/abs/2312.03081</ref>
+
+== Overview ==
+[[File:Saddle_separatrix_loop_polycycle.svg|right|thumb|Polycycle]]
+The problem arises from considering modern approaches to [[Hilbert's sixteenth problem]]. While Hilbert's original question focused on [[Polynomial ring|polynomial]] [[vector fields]], mathematical attention shifted toward properties of generic families within certain classes. Unlike polynomial systems, typical smooth systems on a sphere can have arbitrarily many hyperbolic limit cycles that persist under small [[perturbation (mathematics)|perturbations]]. However, the question of uniform boundedness across parameter families remains meaningful and forms the basis of the Hilbert–Arnold problem.<ref name="IK">Ilyashenko, Yu.; Kaloshin, V. (1999). "Bifurcations of planar and spatial polycycles: Arnold's program and its development". Fields Inst. Commun., 24, 241-271.</ref>
+
+Due to the compactness of both the parameter base and phase space, the Hilbert–Arnold problem can be reduced to a local problem studying [[Bifurcation theory|bifurcation]]s of special [[degeneracy (mathematics)|degenerate]] vector fields. This leads to the concept of polycycles&mdash;[[Cyclically ordered group|cyclically ordered]] sets of [[singular point of a curve|singular points]] connected by [[Phase line (mathematics)|phase curve]] arcs&mdash;and their cyclicity, which measures the number of limit cycles born in bifurcations.
+
+=== Local Hilbert–Arnold problem ===
+The local version of the Hilbert–Arnold problem asks whether the maximum cyclicity of nontrivial polycycles in generic k-parameter families (known as the '''bifurcation number''' <math>B(k)</math>) is finite, and seeks explicit upper bounds.<ref name="K01">Kaloshin, V. (2001). "The Hilbert-Arnold problem and estimates for the cyclicity of polycycles on the plane and in space". ''Functional Analysis and Its Applications'', 35(2), 78–81.</ref>
+The local Hilbert–Arnold problem has been solved for <math>k=1</math> and <math>k=2</math>, with <math>B(1) = 1</math> and <math>B(2) = 2</math>. For <math>k=3</math>, a solution strategy exists but remains incomplete. A simplified version considering only elementary polycycles (where all vertices are elementary singular points with at least one nonzero [[eigenvalue]]) has been more thoroughly studied. Ilyashenko and Yakovenko proved in 1995 that the elementary bifurcation number <math>E(k)</math> is finite for all <math>k>0</math>.<ref name="IYa">Ilyashenko, Yu.; Yakovenko, S. (1991). "Finitely-smooth normal forms of local families of diffeomorphisms and vector fields". ''[[Russian Mathematical Surveys]]'', 46(1), 3–39.</ref>
+
+In 2003, mathematician [[Vadim Kaloshin]] established the explicit bound <math>E(k) < 25^{k^2}</math>.<ref name="K">Kaloshin, V. (2003). "The Existential Hilbert 16th Problem and an Estimate for Cyclicity of Elementary Polycycles". ''[[Inventiones Mathematicae]]'', 151, 451–512. https://arxiv.org/abs/math/0111053v1 </ref>
+
+==See also==
+*[[Arnold's Problems#Notable problems]]
+*[[Bifurcation theory]]
+*[[Limit cycle]]
+*[[List of unsolved problems in mathematics]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+* Yu. Ilyashenko. "[https://scispace.com/pdf/centennial-history-of-hilbert-s-16th-problem-4ywi8ywo2m.pdf Centennial History of Hilbert's 16 Problem]", Bulletin of the AMS, Volume 39, Number 3, pp. 301–354
+* Bravo, J. L., Mardešić, P., Novikov, D., & Pontigo-Herrera, J. (2025). "Infinitesimal and tangential 16-th Hilbert problem on zero-cycles". ''Bulletin Des Sciences Mathématiques'', 202, 103634. https://doi.org/10.1016/j.bulsci.2025.103634 https://arxiv.org/abs/2312.03081
+*V. Arnold, Yu. Ilyashenko, "Ordinary differential equations, Dynamical systems–1", ''Encyclopedia of Mathematical Sciences'', vol. 1, Springer, 1988, pp. 1–148.
+
+[[Category:Dynamical systems]]
+[[Category:Systems theory]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Bifurcation theory]]

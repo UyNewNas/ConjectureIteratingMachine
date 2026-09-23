@@ -1,0 +1,51 @@
+{{see also|Hadwiger conjecture (graph theory)}}
+[[File:Hadwiger covering.svg|thumb|A triangle can be covered by three smaller copies of itself; a square requires four smaller copies]]
+{{unsolved|mathematics|Can every <math>n</math>-dimensional convex body be covered by <math>2^n</math> smaller copies of itself?}}
+In [[combinatorial geometry]], the '''Hadwiger conjecture''' states that any [[convex body]] in ''n''-dimensional [[Euclidean space]] can be covered by 2<sup>''n''</sup> or fewer smaller bodies [[Homothetic transformation|homothetic]] with the original body, and that furthermore, the upper bound of 2<sup>''n''</sup> is necessary if and only if the body is a [[parallelepiped]]. There also exists an equivalent formulation in terms of the number of floodlights needed to illuminate the body.
+
+The Hadwiger conjecture is named after [[Hugo Hadwiger]], who included it on a list of unsolved problems in 1957; it was, however, previously studied by {{harvtxt|Levi|1955}} and independently, {{harvtxt|Gohberg|Markus|1960}}. Additionally, there is a different [[Hadwiger conjecture (graph theory)|Hadwiger conjecture]] concerning [[graph coloring]], and in some sources the geometric Hadwiger conjecture is also called the '''Levi–Hadwiger conjecture''' or the''' Hadwiger–Levi covering problem'''.
+
+The [[conjecture]] remains unsolved even in three dimensions, though the two-dimensional case was resolved by {{harvtxt|Levi|1955}}.
+
+==Formal statement==
+Formally, the Hadwiger conjecture is: If ''K'' is any [[bounded set|bounded]] [[convex set]] in the ''n''-dimensional [[Euclidean space]] '''R'''<sup>''n''</sup>, then there exists a set of 2<sup>''n''</sup> [[Scalar multiplication|scalar]]s ''s''<sub>''i''</sub> and a set of 2<sup>''n''</sup> [[Translation (geometry)|translation vector]]s ''v''<sub>''i''</sub> such that all ''s''<sub>''i''</sub> lie in the range 0&nbsp;&lt;&nbsp;''s''<sub>''i''</sub>&nbsp;&lt;&nbsp;1 and 
+
+<math display="block">K\subseteq\bigcup_{i=1}^{2^n} s_i K + v_i.</math>
+
+Furthermore, the upper bound is necessary if and only if ''K'' is a parallelepiped, in which case all 2<sup>''n''</sup> of the scalars may be chosen to be equal to 1/2.
+
+===Alternate formulation with illumination===
+As shown by [[Vladimir Boltyansky|Boltyansky]], the problem is equivalent to [[illumination problem|one of illumination]]: how many floodlights must be placed outside of an opaque convex body in order to completely illuminate its exterior? For the purposes of this problem, a body is only considered to be illuminated if for each point of the boundary of the body, there is at least one floodlight that is separated from the body by all of the [[tangent plane]]s intersecting the body on this point; thus, although the faces of a cube may be lit by only two floodlights, the planes tangent to its vertices and edges cause it to need many more lights in order for it to be fully illuminated. For any convex body, the number of floodlights needed to completely illuminate it turns out to equal the number of smaller copies of the body that are needed to cover it.<ref name="BMP"/>
+
+==Examples==
+As shown in the illustration, a triangle may be covered by three smaller copies of itself, and more generally in any dimension a [[simplex]] may be covered by ''n''&nbsp;+&nbsp;1 copies of itself, scaled by a factor of ''n''/(''n''&nbsp;+&nbsp;1). However, covering a square by smaller squares (with parallel sides to the original) requires four smaller squares, as each one can cover only one of the larger square's four corners. In higher dimensions, covering a [[hypercube]] or more generally a [[parallelepiped]] by smaller homothetic copies of the same shape requires a separate copy for each of the [[vertex (geometry)|vertices]] of the original hypercube or parallelepiped; because these shapes have 2<sup>''n''</sup> vertices, 2<sup>''n''</sup> smaller copies are necessary. This number is also sufficient: a cube or parallelepiped may be covered by 2<sup>''n''</sup> copies, scaled by a factor of 1/2. Hadwiger's conjecture is that parallelepipeds are the worst case for this problem, and that any other convex body may be covered by fewer than 2<sup>''n''</sup> smaller copies of itself.<ref name="BMP"/>
+
+==Known results==
+The two-dimensional case was settled by {{harvtxt|Levi|1955}}: every two-dimensional bounded convex set may be covered with four smaller copies of itself, with the fourth copy needed only in the case of parallelograms. However, the conjecture remains open in higher dimensions except for some special cases. The best known asymptotic upper bound on the number of smaller copies needed to cover a given body is<ref>{{harvtxt|Campos|van Hintum|Morris|Tiba|2023}}.</ref>
+<math display="block">\displaystyle 4^n\exp\frac{-cn}{\log^8 n},</math>
+where <math>c</math> is a positive constant. For small <math>n</math> the upper bound of <math>(n+1)n^{n-1}-(n-1)(n-2)^{n-1}</math> established by {{harvtxt|Lassak|1988}} is better than the asymptotic one. In three dimensions it was shown by {{harvtxt|Papadoperakis|1999}} that 16 copies always suffice and then by {{harvtxt|Prymak|2023}} that 14 copies always suffice, but this is still far from the conjectured bound of 8 copies.<ref name="BMP">{{harvtxt|Brass|Moser|Pach|2005}}.</ref>
+
+The conjecture is known to hold for certain special classes of convex bodies, including, in dimension three, centrally symmetric polyhedra and [[Surface of constant width|bodies of constant width]].<ref name="BMP"/> The number of copies needed to cover any [[zonotope]] (other than a parallelepiped) is at most <math>(3/4)2^n</math>, while for bodies with a smooth surface (that is, having a single tangent plane per boundary point), at most <math>n+1</math> smaller copies are needed to cover the body, as [[Friedrich Wilhelm Levi|Levi]] already proved.<ref name="BMP"/>
+
+==See also==
+*[[Borsuk's conjecture]] on covering convex bodies with sets of smaller diameter
+
+==Notes==
+{{reflist}}
+
+==References==
+* {{cite book | last1=Boltjansky | first1=Vladimir G. | author-link1 = Vladimir Boltyansky | last2=Gohberg | first2=Israel |author-link2=Israel Gohberg | title=Results and Problems in Combinatorial Geometry | publisher=[[Cambridge University Press]] | publication-place=Cambridge | year=1985|contribution=11. Hadwiger's Conjecture |pages=44–46 | isbn=978-0-521-26923-0}}.
+*{{cite book|first1=Peter|last1=Brass|first2=William|last2=Moser|
+first3=János|last3=Pach|author3-link=János Pach|contribution=3.3 Levi–Hadwiger Covering Problem and Illumination|pages=136–142|title=Research Problems in Discrete Geometry|publisher=Springer-Verlag|year=2005| isbn=978-0-387-23815-9}}.
+*{{citation|first1=Marcelo|last1=Campos|first2=Peter|last2=van Hintum|first3=Robert|last3=Morris|author3-link=Robert Morris (mathematician)|first4=Marius|last4=Tiba|title=Towards Hadwiger's Conjecture via Bourgain Slicing|journal=[[International Mathematics Research Notices]]|doi=10.1093/imrn/rnad198|year=2023|volume=2024 |issue=10 |pages=8282–8295 |arxiv=2206.11227}}.
+*{{citation|first1=Israel Ts.|last1=Gohberg|authorlink1=Israel Gohberg|first2=Alexander S.|last2=Markus|language= Russian|year=1960|title=A certain problem about the covering of convex sets with homothetic ones|journal=Izvestiya Moldavskogo Filiala Akademii Nauk SSSR|volume=10|issue=76|pages=87–90}}.
+*{{citation|first=Hugo|last=Hadwiger|authorlink=Hugo Hadwiger|year=1957|title=Ungelöste Probleme Nr. 20|journal=[[Elemente der Mathematik]]|volume=12|pages=121}}.
+*{{Citation |last1=Huang |first1=Han |last2=Slomka |first2=Boaz A. |last3=Tkocz |first3=Tomasz |last4=Vritsiou |first4=Beatrice-Helen |date=2022 |title=Improved bounds for Hadwiger's covering problem via thin-shell estimates |journal=[[Journal of the European Mathematical Society]] |language=en |volume=24 |issue=4 |pages=1431–1448 |doi=10.4171/jems/1132 |doi-access=free |issn=1435-9855|arxiv=1811.12548 }}.
+*{{citation|first=Marek|last=Lassak|year=1988|title=Covering the boundary of a convex set by tiles|journal=[[Proceedings of the American Mathematical Society]]|volume=104|issue=1|pages=269–272|mr=0958081|doi=10.1090/s0002-9939-1988-0958081-7|doi-access=free}}.
+*{{citation|first=Ioannis|last=Papadoperakis|year=1999|title=An estimate for the problem of illumination of the boundary of a convex body in <math>E^3</math>|journal=[[Geometriae Dedicata]]|volume=75|issue=3 |pages=275–285|doi=10.1023/A:1005056207406}}.
+*{{citation|first=Andriy|last=Prymak|year=2023|title=A new bound for Hadwiger's covering problem in <math>\mathbb{E}^3</math>|journal=[[SIAM Journal on Discrete Mathematics]]|volume=37|issue=1|pages=17–24|doi=10.1137/22M1490314}}.
+*{{citation|first=Friedrich Wilhelm|last=Levi|authorlink=Friedrich Wilhelm Levi|title=Überdeckung eines Eibereiches durch Parallelverschiebungen seines offenen Kerns|journal=[[Archiv der Mathematik]]|volume=6|year=1955|pages=369–370|issue=5|doi=10.1007/BF01900507|doi-access=free|s2cid=121459171}}.
+
+[[Category:Discrete geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]

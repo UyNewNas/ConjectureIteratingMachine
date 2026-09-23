@@ -1,0 +1,461 @@
+{{Short description|Algorithmic runtime requirements for common math procedures}}
+{{more citations needed|date=April 2015}}
+[[File:comparison computational complexity.svg|thumb|Graphs of functions commonly used in the analysis of algorithms, showing the number of operations <math>N</math> versus input size <math>n</math> for each function]]
+The following tables list the [[computational complexity]] of various [[algorithm]]s for common [[mathematical operation]]s.
+
+Here, complexity refers to the [[time complexity]] of performing computations on a [[multitape Turing machine]].<ref name="Schonhage">{{cite book |first1=A. |last1=Schönhage |first2=A.F.W. |last2=Grotefeld |first3=E. |last3=Vetter |title=Fast Algorithms—A Multitape Turing Machine Implementation |publisher=BI Wissenschafts-Verlag |date=1994 |isbn=978-3-411-16891-0 |pages= |oclc=897602049}}</ref> See [[big O notation]] for an explanation of the notation used.
+
+Note: Due to the variety of multiplication algorithms, <math>M(n)</math> below stands in for the complexity of the chosen multiplication algorithm.
+
+== Arithmetic functions ==
+This table lists the complexity of mathematical operations on integers.
+{{clear}}
+{| class="wikitable" style="width: auto"
+!Operation
+!Input
+!Output
+!Algorithm
+!Complexity 
+|-
+|[[Addition]]
+|Two <math>n</math>-digit numbers
+|One <math>n+1</math>-digit number
+|Schoolbook addition with carry
+|<math>O\mathord\left(n\right)</math>
+|-
+|[[Subtraction]]
+|Two <math>n</math>-digit numbers
+|One <math>n</math>-digit number
+|Schoolbook subtraction with borrow
+|<math>O\mathord\left(n\right)</math>
+|-
+|rowspan=7|[[Multiplication]]
+|rowspan=7|Two <math>n</math>-digit numbers<br />
+|rowspan=7|One <math>2n</math>-digit number
+|[[Multiplication algorithm#Long multiplication|Schoolbook long multiplication]]
+|<math>O\mathord\left(n^{2}\right)</math>
+|-
+|[[Karatsuba algorithm]]
+|<math>O\mathord\left(n^{1.585}\right)</math>
+|-
+|3-way [[Toom–Cook multiplication]]
+|<math>O\mathord\left(n^{1.465}\right)</math>
+|-
+|<math>k</math>-way Toom–Cook multiplication
+|<math>O\mathord\left(n^{\frac{\log(2k - 1)}{\log k}}\right)</math>
+|-
+|Mixed-level Toom–Cook (Knuth 4.3.3-T)<ref>{{harvnb|Knuth|1997}}</ref>
+|<math>O\mathord\left(n \, 2^{\sqrt{2 \log n}} \, \log n\right)</math>
+|-
+|[[Schönhage–Strassen algorithm]]
+|<math>O\mathord\left(n \log n \log \log n\right)</math>
+|-
+|[[Harvey-Hoeven algorithm]]<ref>{{cite journal |last1=Harvey |first1=D. |last2=Van Der Hoeven |first2=J. |title=Integer multiplication in time O (n log n) |journal=Annals of Mathematics |volume=193 |issue=2 |pages=563–617 |date=2021 |doi=10.4007/annals.2021.193.2.4  |s2cid=109934776 |url=https://hal.archives-ouvertes.fr/hal-02070778v2/file/nlogn.pdf}}</ref><ref>{{cite journal |first=Erica |last=Klarreich |title=Multiplication hits the speed limit |journal=Commun. ACM |volume=63 |issue=1 |pages=11–13 |date=December 2019 |doi=10.1145/3371387 |s2cid=209450552 |url=}}</ref>
+|<math>O(n \log n)</math>
+|-
+|rowspan=3|[[Division (mathematics)|Division]]
+|rowspan=3|Two <math>n</math>-digit numbers
+|rowspan=3|One <math>n</math>-digit number
+|[[Long division|Schoolbook long division]]
+|<math>O\mathord\left(n^{2}\right)</math>
+|-
+|Burnikel–Ziegler Divide-and-Conquer Division<ref>{{cite book |last1=Burnikel |first1=Christoph |first2=Joachim |last2=Ziegler |title=Fast Recursive Division |publisher=MPI Informatik Bibliothek & Dokumentation |series=Forschungsberichte des Max-Planck-Instituts für Informatik |date=1998 |id=MPII-98-1-022 |location=Saarbrücken |oclc=246319574}}</ref>
+|<math>O(M(n) \log n)</math>
+|-
+|[[Newton–Raphson division]]
+|<math>O(M(n))</math>
+|-
+|[[Square root]]
+|One <math>n</math>-digit number
+|One <math>n/2</math>-digit number
+|[[Newton's method]]
+|<math>O(M(n))</math>
+|-
+|rowspan=3|[[Modular exponentiation]]
+|rowspan=3|Two <math>n</math>-digit integers and a <math>k</math>-bit exponent
+|rowspan=3|One <math>n</math>-digit integer
+|Repeated multiplication and reduction
+|<math>O\mathord\left(M(n) \, 2^{k}\right)</math>
+|-
+|[[Exponentiation by squaring]]
+|<math>O(M(n) \, k)</math>
+|-
+|Exponentiation with [[Montgomery reduction]]
+|<math>O(M(n) \, k)</math>
+|}
+
+On stronger computational models, specifically a [[pointer machine]] and consequently also a [[random-access machine|unit-cost random-access machine]] it is possible to multiply two {{mvar|n}}-bit numbers in time ''O''(''n'').<ref>{{cite journal |last1=Schönhage |first1=Arnold |title=Storage Modification Machines |journal=SIAM Journal on Computing |date=1980 |volume=9 |issue=3 |pages=490–508 |doi=10.1137/0209036}}</ref>
+
+== Algebraic functions ==
+Here we consider operations over polynomials and {{mvar|n}} denotes their degree; for the coefficients we use a '''unit-cost''' model, ignoring the number of bits in a number. In practice this means that we assume them to be machine integers. For this section <math>M(n)</math> indicates the time needed for multiplying two polynomials of degree at most <math>n</math>.<ref name="vzG"/>{{rp|p=242}}
+{| class="wikitable"
+!Operation
+!Input
+!Output
+!Algorithm
+!Complexity
+|-
+|rowspan=2|[[Polynomial]] evaluation
+|rowspan=2| One polynomial of degree <math>n</math> with integer coefficients
+|rowspan=2| One number
+|Direct evaluation
+|<math>\Theta(n)</math>
+|-
+|[[Horner's method]]
+|<math>\Theta(n)</math>
+|-
+|rowspan=2|Polynomial multipoint evaluation
+|rowspan=2| One polynomial of degree less than <math>n</math> with integer coefficients and <math>n</math> numbers as evaluation points
+|rowspan=2| <math>n</math> numbers
+|Direct evaluation
+|<math>\Theta(n^2)</math>
+|-
+|[[Fast multipoint evaluation]]<ref name="vzG">{{cite book |first1=J. |last1=von zur Gathen |first2=J. |last2=Gerhard |title=Modern Computer Algebra |edition=3rd |publisher=Cambridge University Press |date=2013 |isbn=9781139856065}}</ref>{{rp|p=295}}
+|<math>O(M(n) \log n)</math>
+|-
+|rowspan=2|Polynomial gcd (over <math>\mathbb{Z}[x]</math> or <math>F[x]</math>)
+|rowspan=2| Two polynomials of degree <math>n</math> with integer coefficients
+|rowspan=2| One polynomial of degree at most <math>n</math>
+|[[Euclidean algorithm]]
+|<math>O\mathord\left(n^{2}\right)</math>
+|-
+|Fast Euclidean algorithm<ref name="vzG"/>{{rp|p=318}} (Lehmer<ref name="vzG"/>{{rp|p=324}})
+|<math>O(M(n) \log n)</math>
+|}
+
+== Special functions ==
+Many of the methods in this section are given in Borwein & Borwein.<ref>{{cite book |first1=J. |last1=Borwein |first2=P. |last2=Borwein |title=Pi and the AGM: A Study in Analytic Number Theory and Computational Complexity |publisher=Wiley |date=1987 |isbn=978-0-471-83138-9 |oclc=755165897}}</ref>
+
+=== Elementary functions ===
+The [[elementary function]]s are constructed by composing arithmetic operations, the [[exponential function]] (<math>\exp</math>), the [[natural logarithm]] (<math>\log</math>), [[trigonometric function]]s (<math>\sin, \cos</math>), and their inverses. The complexity of an elementary function is equivalent to that of its inverse, since all elementary functions are [[analytic function|analytic]] and hence invertible by means of Newton's method. In particular, if either <math>\exp</math> or <math>\log</math> in the complex domain can be computed with some complexity, then that complexity is attainable for all other elementary functions.
+
+Below, the size <math>n</math> refers to the number of digits of precision at which the function is to be evaluated.
+
+{| class="wikitable"
+!Algorithm
+!Applicability
+!Complexity
+|-
+|[[Taylor series]]; repeated argument reduction (e.g. <math>\exp(2x) = [\exp(x)]^2</math>) and direct summation
+|<math>\exp, \log, \sin, \cos, \arctan</math>
+|<math>O\mathord\left(M(n) n^{1/2}\right)</math>
+|-
+|Taylor series; [[Fast Fourier transform|FFT]]-based acceleration
+|<math>\exp, \log, \sin, \cos, \arctan</math>
+|<math>O\mathord\left(M(n) n^{1/3} (\log n)^2\right)</math>
+|-
+|Taylor series; [[binary splitting]] + [[bit-burst algorithm]]<ref>{{cite book |first1=David |last1=Chudnovsky |first2=Gregory |last2=Chudnovsky |chapter=Approximations and complex multiplication according to Ramanujan |chapter-url= |title=Ramanujan revisited: Proceedings of the Centenary Conference |publisher=Academic Press |date=1988 |isbn=978-0-01-205856-5 |pages=375–472 |url=}}</ref>
+|<math>\exp, \log, \sin, \cos, \arctan</math>
+|<math>O\mathord\left(M(n) (\log n)^2\right)</math>
+|-
+|[[Arithmetic–geometric mean]] iteration<ref>{{cite book |arxiv=1004.3412 |first=Richard P. |last=Brent |chapter=Multiple-precision zero-finding methods and the complexity of elementary function evaluation |chapter-url={{GBurl|UZriBQAAQBAJ|p=151}} |editor-first=J.F. |editor-last=Traub |title=Analytic Computational Complexity |publisher=Elsevier |date=2014 |orig-date=1975 |isbn=978-1-4832-5789-1 |pages=151–176 |url=}}</ref>
+|<math>\exp, \log, \sin, \cos, \arctan</math>
+|<math>O(M(n) \log n)</math>
+|}
+
+It is not known whether <math>O(M(n) \log n)</math> is the optimal complexity for elementary functions. The best known lower bound is the trivial bound 
+[[Big O notation#Family of Bachmann–Landau notations|<math>\Omega</math>]]<math>(M(n))</math>.
+
+=== Non-elementary functions ===
+{| class="wikitable"
+!Function
+!Input
+!Algorithm
+!Complexity
+|-
+|rowspan=3|[[Gamma function]]
+|Integer <math>n</math>
+|Series approximation of the [[incomplete gamma function]]
+|<math>O\mathord\left(M(n) n^{1/2} (\log n)^2\right)</math>
+|-
+|Fixed rational number
+|Hypergeometric series
+|<math>O\mathord\left(M(n) (\log n)^2\right)</math>
+|-
+|<math>m/24</math>, for <math>m</math> integer.
+|[[Arithmetic-geometric mean]] iteration
+|<math>O(M(n) \log n)</math>
+|-
+|rowspan=2|[[Hypergeometric function]] <math>{}_p\!F_q</math>
+|<math>n</math>-digit number
+|(As described in Borwein & Borwein)
+|<math>O\mathord\left(M(n) n^{1/2} (\log n)^2\right)</math>
+|-
+|Fixed rational number
+|Hypergeometric series
+|<math>O\mathord\left(M(n) (\log n)^2\right)</math>
+|}
+
+=== Mathematical constants ===
+This table gives the complexity of computing approximations to the given constants to <math>n</math> correct digits.
+{| class="wikitable"
+!Constant
+!Algorithm
+!Complexity
+|-
+|[[Golden ratio]], <math>\phi</math>
+|[[Newton's method]]
+|<math>O(M(n))</math>
+|-
+|[[Square root of 2]], <math>\sqrt{2}</math>
+|Newton's method
+|<math>O(M(n))</math>
+|-
+|rowspan=2|[[e (mathematical constant)|Euler's number]], <math>e</math>
+|[[Binary splitting]] of the Taylor series for the exponential function
+|<math>O(M(n) \log n)</math>
+|-
+|Newton inversion of the natural logarithm
+|<math>O(M(n) \log n)</math>
+|-
+|rowspan=2|[[Pi]], <math>\pi</math>
+|Binary splitting of the arctan series in [[Machin's formula]]
+|<math>O\mathord\left(M(n) (\log n)^2\right)</math><ref name = brent>{{citation|title=The Borwein Brothers, Pi and the AGM|author=Richard P. Brent|series=Springer Proceedings in Mathematics & Statistics|year=2020|volume=313|doi=10.1007/978-3-030-36568-4|arxiv=1802.07558|isbn=978-3-030-36567-7|s2cid=214742997}}</ref>
+|-
+|[[Gauss–Legendre algorithm]]
+|<math>O(M(n) \log n)</math><ref name = brent/>
+|-
+|[[Euler–Mascheroni constant|Euler's constant]], <math>\gamma</math>
+|Sweeney's method (approximation in terms of the [[exponential integral]])
+|<math>O\mathord\left(M(n) (\log n)^2\right)</math>
+|}
+
+== Number theory ==
+Algorithms for [[number theory|number theoretical]] calculations are studied in [[computational number theory]].
+
+{| class="wikitable"
+!Operation
+!Input
+!Output
+!Algorithm
+!Complexity
+|-
+|rowspan=5|[[Greatest common divisor]]
+|rowspan=5|Two <math>n</math>-digit integers
+|rowspan=5|One integer with at most <math>n</math> digits
+|[[Euclidean algorithm]]
+|<math>O\mathord\left(n^{2}\right)</math>
+|-
+|[[Binary GCD algorithm]]
+|<math>O\mathord\left(n^2\right)</math>
+|-
+|Left/right ''k''-ary binary GCD algorithm<ref>{{cite journal |first= J. |last=Sorenson | title = Two Fast GCD Algorithms | journal = Journal of Algorithms | volume = 16 | issue = 1| pages = 110–144 | year = 1994 | doi=10.1006/jagm.1994.1006}}</ref>
+|<math>O\mathord\left(\frac{n^{2}}{\log n}\right)</math>
+|-
+|[[Stehlé–Zimmermann algorithm]]<ref>{{cite book |first1=R. |last1=Crandall |first2=C. |last2=Pomerance |chapter=Algorithm 9.4.7 (Stehlé-Zimmerman binary-recursive-gcd) |chapter-url={{GBurl|ZXjHKPS1LEAC|p=471}} |pages=471–3 |title=Prime Numbers – A Computational Perspective |publisher=Springer |edition=2nd |date=2005 |isbn=978-0-387-28979-3}}</ref>
+|<math>O(M(n) \log n)</math>
+|-
+|[[Schönhage controlled Euclidean descent algorithm]]<ref>{{cite journal | author = Möller N | title =  On Schönhage's algorithm and subquadratic integer gcd computation | journal = Mathematics of Computation | volume = 77 | issue = 261 | pages = 589–607 | doi = 10.1090/S0025-5718-07-02017-0 | year = 2008 | url=http://www.lysator.liu.se/~nisse/archive/sgcd.pdf| bibcode = 2008MaCom..77..589M | doi-access = free }}</ref>
+|<math>O(M(n) \log n)</math>
+|-
+|rowspan=2|[[Jacobi symbol]]
+|rowspan=2|Two <math>n</math>-digit integers
+|rowspan=2|<math>0</math>, <math>-1</math> or <math>1</math>
+|Schönhage controlled Euclidean descent algorithm<ref>{{cite web|url=http://cr.yp.to/papers/nonsquare.ps|title=Faster Algorithms to Find Non-squares Modulo Worst-case Integers|last=Bernstein |first=D.J.}}</ref>
+|<math>O(M(n) \log n)</math>
+|-
+|Stehlé–Zimmermann algorithm<ref>{{cite book |arxiv=1004.2091 |first1=Richard P. |last1=Brent |first2=Paul |last2=Zimmermann |chapter=An <math>O(M(n) \log n)</math> algorithm for the Jacobi symbol|year=2010 |title=International Algorithmic Number Theory Symposium |pages=83–95 |publisher=Springer |doi=10.1007/978-3-642-14518-6_10 |chapter-url=https://link.springer.com/chapter/10.1007/978-3-642-14518-6_10 |isbn=978-3-642-14518-6|s2cid=7632655 }}</ref>
+|<math>O(M(n) \log n)</math>
+|-
+|rowspan=3|[[Factorial]]
+|rowspan=3|A positive integer less than <math>m</math>
+|rowspan=3|One <math>O(m \log m)</math>-digit integer
+|Bottom-up multiplication
+|<math>O\mathord\left(M\left(m^2\right) \log m\right)</math>
+|-
+|Binary splitting
+|<math>O(M(m \log m) \log m)</math>
+|-
+|Exponentiation of the prime factors of <math>m</math>
+|<math>O(M(m \log m) \log \log m)</math>,<ref>{{cite journal | last1 = Borwein | first1 = P. | year = 1985 | title = On the complexity of calculating factorials | journal = Journal of Algorithms | volume = 6 | issue = 3| pages = 376–380 | doi=10.1016/0196-6774(85)90006-9}}</ref><br /><math>O(M(m \log m))</math><ref name="Schonhage" />
+|-
+|rowspan=5|[[Primality test]]
+|rowspan=5|A <math>n</math>-digit integer
+|rowspan=5|True or false
+|[[AKS primality test]]
+|<math>O\mathord\left(n^{6+o(1)}\right)</math><ref name=Lenstra19>{{cite journal |first1=H.W. |last1=Lenstra jr. |first2=Carl |last2=Pomerance |author1-link=Hendrik Lenstra |author2-link=Carl Pomerance |title=Primality testing with Gaussian periods |journal=[[Journal of the European Mathematical Society]] |year=2019 |volume=21 |issue=4 |pages=1229–69 |doi=10.4171/JEMS/861 |hdl=21.11116/0000-0005-717D-0 |url=http://www.math.dartmouth.edu/~carlp/aks041411.pdf}}</ref><ref name="tao-aks">{{cite book|title=An epsilon of room, II: Pages from year three of a mathematical blog|last=Tao|first=Terence|publisher=American Mathematical Society|year=2010|isbn=978-0-8218-5280-4|series=Graduate Studies in Mathematics|volume=117 |pages=82–86|contribution=1.11 The AKS primality test|doi=10.1090/gsm/117|mr=2780010|author-link=Terence Tao|contribution-url=https://terrytao.wordpress.com/2009/08/11/the-aks-primality-test/}}</ref><br /><math>O(n^{3})</math>, assuming [[Agrawal's conjecture]]
+|-
+|[[Elliptic curve primality proving]]
+|<math>O\mathord\left(n^{4+\varepsilon}\right)</math> ''heuristically<ref name="morain">{{cite journal|last=Morain|first=F.|year=2007|title=Implementing the asymptotically fast version of the elliptic curve primality proving algorithm|journal=[[Mathematics of Computation]]|volume=76|issue=257|pages=493–505|arxiv=math/0502097|bibcode=2007MaCom..76..493M|doi=10.1090/S0025-5718-06-01890-4|mr=2261033|s2cid=133193}}</ref>''
+|-
+|[[Baillie–PSW primality test]]
+|<math>O\mathord\left(n^{2+\varepsilon}\right)</math><ref name="PSW">{{cite journal|first1=Carl |last1=Pomerance|first2=John L. |last2=Selfridge|author-link2=John L. Selfridge|first3=Samuel S. |last3=Wagstaff, Jr.|author-link3=Samuel S. Wagstaff, Jr.|date=July 1980|title=The pseudoprimes to 25·10<sup>9</sup>|url=//math.dartmouth.edu/~carlp/PDF/paper25.pdf|journal=Mathematics of Computation|volume=35|issue=151|pages=1003–26|doi=10.1090/S0025-5718-1980-0572872-7|jstor=2006210|author-link1=Carl Pomerance|doi-access=free}}</ref><ref name="lpsp">{{cite journal|first1=Robert |last1=Baillie|first2=Samuel S. |last2=Wagstaff, Jr.|author-link2=Samuel S. Wagstaff, Jr.|date=October 1980|title=Lucas Pseudoprimes|url=http://mpqs.free.fr/LucasPseudoprimes.pdf|journal=Mathematics of Computation|volume=35|issue=152|pages=1391–1417|doi=10.1090/S0025-5718-1980-0583518-6|jstor=2006406|mr=583518|doi-access=free}}</ref>
+|-
+|[[Miller–Rabin primality test]]
+|<math>O\mathord\left(kn^{2+\varepsilon}\right)</math><ref name="monier">{{cite journal|last=Monier|first=Louis|year=1980|title=Evaluation and comparison of two efficient probabilistic primality testing algorithms|journal=[[Theoretical Computer Science (journal)|Theoretical Computer Science]]|volume=12|issue=1|pages=97–108|doi=10.1016/0304-3975(80)90007-9|mr=582244|doi-access=free}}</ref>
+|-
+|[[Solovay–Strassen primality test]]
+|<math>O\mathord\left(kn^{2+\varepsilon}\right)</math><ref name="monier" />
+|-
+|rowspan=2|[[Integer factorization]]
+|rowspan=2|A <math>b</math>-bit input integer
+|rowspan=2|A set of factors
+|[[General number field sieve]]
+|<math>O\mathord\left((1+\varepsilon)^b\right)</math><ref group="nb">This form of sub-exponential time is valid for all <math>\varepsilon > 0</math>. A more precise form of the complexity can be given as <math>O\mathord\left(\exp\sqrt[3]{\frac{64}{9} b (\log b)^2}\right).</math></ref>
+|-
+|[[Shor's algorithm]]
+|<math>O(M(b)  b)</math>, on a [[quantum computer]]
+|-
+|}
+
+== Matrix algebra ==
+{{main|Computational complexity of matrix multiplication}}
+The following complexity figures assume that arithmetic with individual elements has complexity ''O''(1), as is the case with fixed-precision [[floating-point arithmetic]] or operations on a [[finite field]].
+
+{| class="wikitable"
+!Operation
+!Input
+!Output
+!Algorithm
+!Complexity
+|-
+|rowspan=6|[[Matrix multiplication algorithm|Matrix multiplication]]
+|rowspan=4|Two <math>n \times n</math> matrices
+|rowspan=4|One <math>n \times n</math> matrix
+|[[Matrix multiplication algorithm#Iterative algorithm|Schoolbook matrix multiplication]]
+|<math>O(n^{3})</math>
+|-
+|[[Strassen algorithm]]
+|<math>O\mathord\left(n^{2.807}\right)</math>
+|-
+|[[Coppersmith–Winograd algorithm]] ([[galactic algorithm]])
+|<math>O\mathord\left(n^{2.376}\right)</math>
+|-
+|[[Computational complexity of matrix multiplication#Matrix multiplication exponent|Optimized CW-like algorithms]]<ref name="aw20">
+{{Citation
+ | last1=Alman
+ | first1=Josh
+ | last2=Williams
+ | first2=Virginia Vassilevska
+ | contribution=A Refined Laser Method and Faster Matrix Multiplication
+ | year = 2020 |doi=10.1137/1.9781611976465.32
+ | arxiv=2010.05846
+ | title = 32nd Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2021)
+ | pages=522–539
+ | isbn=978-1-61197-646-5
+ | s2cid=222290442
+ |url=https://www.siam.org/conferences/cm/program/accepted-papers/soda21-accepted-papers
+}}</ref><ref>{{Citation | last1=Davie | first1=A.M. | last2=Stothers | first2=A.J. | title=Improved bound for complexity of matrix multiplication|journal=Proceedings of the Royal Society of Edinburgh|volume=143A| issue=2 |pages=351–370|year=2013|doi=10.1017/S0308210511001648| s2cid=113401430 }}</ref><ref>{{Citation | last1=Vassilevska Williams | first1=Virginia |author-link= Virginia Vassilevska Williams | title=Breaking the Coppersmith-Winograd barrier: Multiplying matrices in O(n<sup>2.373</sup>) time | url=https://www.scribd.com/document/397495001/Breaking-the-Coppersmith-Winograd-Barrier-for-Matrix-Multiplication-Algorithms | year=2014 }}</ref><ref>{{Citation | last1=Le Gall | first1=François | contribution=Powers of tensors and fast matrix multiplication | year = 2014 | arxiv=1401.7714 | title = Proceedings of the 39th International Symposium on Symbolic and Algebraic Computation — ISSAC '14| bibcode=2014arXiv1401.7714L | title-link=ISSAC | page=23 | doi=10.1145/2608628.2627493 | isbn=9781450325011 | s2cid=353236 }}</ref> ([[galactic algorithm]]s)
+|<math>O\mathord\left(n^{\psi=2.3728596}\right)</math>
+|-
+|One <math>n \times m</math> matrix, and <br/>one <math>m \times p</math> matrix
+|One <math>n \times p</math> matrix
+|Schoolbook matrix multiplication
+|<math>O(nmp)</math>
+|-
+|One <math>n \times \left\lceil n^k \right\rceil</math> matrix, and <br/>one <math>\left\lceil n^k \right\rceil \times n</math> matrix, for some <math>k \geq 0</math>
+|One <math>n \times n</math> matrix
+|Algorithms given in <ref name="Le Gall">{{cite book |last1=Le Gall |first1=François |last2=Urrutia |first2=Floren |editor1-last=Czumaj |editor1-first=Artur |title=Proceedings of the Twenty-Ninth Annual ACM-SIAM Symposium on Discrete Algorithms |date=2018 |publisher=Society for Industrial and Applied Mathematics |isbn=978-1-61197-503-1 |chapter=Improved Rectangular Matrix Multiplication using Powers of the Coppersmith-Winograd Tensor |doi=10.1137/1.9781611975031.67|s2cid=33396059 }}</ref>
+|<math>O(n^{\omega(k)+\epsilon})</math>, where upper bounds on <math>\omega(k)</math> are given in <ref name="Le Gall" />
+|-
+|rowspan=4|[[Matrix inversion]]
+|rowspan=4|One <math>n \times n</math> matrix
+|rowspan=4|One <math>n \times n</math> matrix
+|[[Gauss–Jordan elimination]]
+|<math>O\mathord\left(n^3\right)</math>
+|-
+|Strassen algorithm
+|<math>O\mathord\left(n^{2.807}\right)</math>
+|-
+|Coppersmith–Winograd algorithm
+|<math>O\mathord\left(n^{2.376}\right)</math>
+|-
+|[[Computational complexity of matrix multiplication|Fast matrix multiplication algorithms]]
+|<math>O({n^\omega })</math> for <math>~2.37 \le \omega  < 3</math><ref>{{cite journal |last1=Pan |first1=V. |date=1984 |title=How can we speed up matrix multiplication?|journal= SIAM Review |volume=26 |issue=3 |pages=393–415 | doi=10.1137/1026076}}</ref><sup>, Sect. 11, pp. 413-414 </sup>.
+|-
+|rowspan=2|[[Singular value decomposition]]
+|rowspan=2|One <math>m \times n</math> matrix
+|One <math>m \times m</math> matrix, <br /> one <math>m \times n</math> matrix, & <br /> one <math>n \times n</math> matrix
+| Bidiagonalization and QR algorithm
+|<math>O\mathord\left(m^{2}n\right)</math> <br /> (<math>m \geq n</math>)
+|-
+|One <math>m\times n</math> matrix, <br /> one <math>n \times n</math> matrix, & <br /> one <math>n \times n</math> matrix
+| Bidiagonalization and QR algorithm
+|<math>O\mathord\left(mn^{2}\right)</math> <br /> (<math>m \leq n</math>)
+|-
+|[[QR decomposition]]
+|One <math>m \times n</math> matrix
+|One <math>m \times n</math> matrix, & <br /> one <math>n \times n</math> matrix
+| Algorithms in <ref>{{Cite journal |last=Knight |first=Philip A. |date=May 1995 |title=Fast rectangular matrix multiplication and QR decomposition |journal=Linear Algebra and Its Applications |volume=221 |pages=69–81 |doi=10.1016/0024-3795(93)00230-w |issn=0024-3795|doi-access=free }}</ref> by [[Computational complexity of matrix multiplication|fast matrix multiplication]]
+|<math>O\mathord\left(mn^{1+\frac{1}{4-\omega}}\right)</math> <br /> (<math>m \geq n</math>)
+|-
+|rowspan=5|[[Determinant]]
+|rowspan=5|One <math>n \times n</math> matrix
+|rowspan=5|One number
+|[[Laplace expansion]]
+|<math>O(n!)</math>
+|-
+|Division-free algorithm<ref>{{cite book |first=G. |last=Rote |chapter=Division-free algorithms for the determinant and the pfaffian: algebraic and combinatorial approaches |chapter-url=http://page.mi.fu-berlin.de/rote/Papers/pdf/Division-free+algorithms.pdf |title=Computational discrete mathematics  |publisher=Springer |date=2001 |isbn=3-540-45506-X |pages=119–135 |url=}}</ref>
+|<math>O\mathord\left(n^4\right)</math>
+<math>O\mathord\left(n^{2.697263}\right)</math><ref>{{cite journal | last1=Kaltofen | first1=Erich | last2=Villard | first2=Gilles | title=On the complexity of computing determinants | journal=Computational Complexity | date=2005 | volume=13 | issue=3–4 | pages=91–130 | doi=10.1007/s00037-004-0185-3 | url=https://link.springer.com/article/10.1007/s00037-004-0185-3 | url-access=subscription }}</ref>
+|-
+|[[LU decomposition]]
+|<math>O(n^3)</math>
+|-
+|[[Bareiss algorithm]]
+|<math>O\mathord\left(n^3\right)</math>
+|-
+|[[Computational complexity of matrix multiplication|Fast matrix multiplication]]<ref>{{cite journal |first1=James R. |last1=Bunch |first2=John E. |author-link2=John Hopcroft |last2=Hopcroft |title=Triangular Factorization and Inversion by Fast Matrix Multiplication |journal=[[Mathematics of Computation]] |volume=28 |year=1974 |issue=125 |pages=231–236 |doi=10.1090/S0025-5718-1974-0331751-8}}</ref>
+|<math>O({n^\omega })</math>
+|-
+|Back substitution
+|[[Triangular matrix]]
+|<math>n</math> solutions
+|Back substitution<ref>{{cite book |first1=J.B. |last1=Fraleigh |first2=R.A. |last2=Beauregard |title=Linear Algebra |publisher=Addison-Wesley |edition=3rd |date=1987 |isbn=978-0-201-15459-7 |pages=95 |url=}}</ref>
+|<math>O\mathord\left(n^2\right)</math>
+|-
+|rowspan=4|[[Characteristic polynomial]]
+|rowspan=4|One <math>n \times n</math> matrix
+|rowspan=4|One degree-<math>n</math> polynomial
+|[[Faddeev-LeVerrier algorithm]]
+|<math>O(n^{\psi+1})</math>
+|-
+|[[Samuelson-Berkowitz algorithm]]
+|<math>O(n^{\psi+1})</math> (smaller constant factor)
+|-
+|[[Preparata-Sarwate algorithm]]<ref>{{Cite journal|last1=Preparata|first1=F.P.|last2=Sarwate|first2=D.V.|date=April 1978|title=An improved parallel processor bound in fast matrix inversion|journal=Information Processing Letters|volume=7|issue=3|pages=148–150|doi=10.1016/0020-0190(78)90079-0|doi-access=free}}</ref><ref>{{Cite journal|last1=Galil|first1=Zvi|last2=Pan|first2=Victor|date=January 16, 1989|title=Parallel evaluation of the determinant and of the inverse of a matrix|journal=Information Processing Letters|volume=30|issue=1|pages=148–150|doi=10.1016/0020-0190(89)90173-7|doi-access=free}}, in which the <math>O(n^3)</math> term is reduced</ref>
+|<math>O(n^{\psi+1/2}+n^3)</math>
+|-
+|[[Computational complexity of matrix multiplication|By fast matrix multiplication]]<ref>{{cite journal |last1=Neiger |first1=Vincent|last2=Pernet |first2=Clément |date=December  2021 |title=Deterministic computation of the characteristic polynomial in the time of matrix multiplication |url=https://www.sciencedirect.com/science/article/pii/S0885064X21000273 |journal= Journal of Complexity|volume=67 |pages= |doi=10.1016/j.jco.2021.101572|arxiv=2010.04662 }}</ref>
+|<math>O({n^\omega })</math>
+|-
+|}
+
+In 2005, [[Henry Cohn]], [[Robert Kleinberg]], [[Balázs Szegedy]], and [[Chris Umans]] showed that either of two different conjectures would imply that the exponent of matrix multiplication is 2.<ref>{{cite book |first1=Henry |last1=Cohn |first2=Robert |last2=Kleinberg |first3=Balazs |last3=Szegedy |first4=Chris |last4=Umans |arxiv=math.GR/0511460 |chapter=Group-theoretic Algorithms for Matrix Multiplication |chapter-url= |title=Proceedings of the 46th Annual Symposium on Foundations of Computer Science |year=2005 |publisher=IEEE |isbn=0-7695-2468-0 |pages=379–388 |doi=10.1109/SFCS.2005.39|s2cid=6429088 }}</ref>
+
+== Transforms ==
+Algorithms for computing [[Transformation (function)|transforms]] of functions (particularly [[integral transform]]s) are widely used in all areas of mathematics, particularly [[Mathematical analysis|analysis]] and [[signal processing]].
+{| class="wikitable"
+!Operation
+!Input
+!Output
+!Algorithm
+!Complexity
+|-
+|rowspan=2|[[Discrete Fourier transform]]
+|rowspan=2|Finite data sequence of size <math>n</math>
+|rowspan=2|Set of complex numbers
+|Schoolbook
+|<math>O(n^2)</math>
+|-
+|[[Fast Fourier transform]]
+|<math>O(n \log n)</math>
+|}
+
+== Notes ==
+{{reflist|group=nb}}
+
+== References ==
+{{reflist|40em}}
+
+== Further reading ==
+{{refbegin}}
+* {{cite book |last1=Brent |first1=Richard P. |author-link1=Richard P. Brent |last2=Zimmermann |first2=Paul |author-link2=Paul Zimmermann (mathematician) |title=Modern Computer Arithmetic |year=2010 |publisher=Cambridge University Press |isbn=978-0-521-19469-3}}
+* {{cite book |last1=Knuth |first1=Donald Ervin |author-link=Donald Knuth |series=[[The Art of Computer Programming]] |volume=2 |title=Seminumerical Algorithms|year=1997| edition=3rd |publisher=Addison-Wesley |isbn=978-0-201-89684-8}}
+{{refend}}
+
+[[Category:Computer arithmetic algorithms]]
+[[Category:Computational complexity theory]]
+[[Category:Mathematics-related lists]]
+[[Category:Number theoretic algorithms]]
+[[Category:Unsolved problems in computer science]]

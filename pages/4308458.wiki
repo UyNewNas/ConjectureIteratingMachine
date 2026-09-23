@@ -1,0 +1,244 @@
+{{Short description|1979 conjecture in combinatorics}}
+{{unsolved|mathematics|If any two sets in some finite family of sets have a union that also belongs to the family, must some element belong to at least half of the sets in the family?}}
+[[File:Union-closed sets.svg|thumb|upright=0.75|A [[hypergraph]] representing a family of union-closed sets. Vertices 1 and 2 (highlighted red and blue respectively) are present in over half the edges.]]
+
+The '''union-closed sets conjecture''', also known as '''Frankl’s conjecture''', is an [[open problem]] in [[combinatorics]] posed by [[Péter Frankl]] in 1979. A [[family of sets]] is said to be ''union-closed'' if the [[union (set theory)|union]] of any two [[set (mathematics)|set]]s from the family belongs to the family. The [[conjecture]] states: <blockquote> For every finite union-closed family of sets, other than the empty family, there exists an element that belongs to at least half of the sets in the family.</blockquote>
+
+Professor [[Timothy Gowers]] has called this "''one of the best known open problems in combinatorics''" and has said that the conjecture "''feels as though it ought to be easy (and as a result has attracted a lot of false [[mathematical proof|proofs]] over the years). A good way to understand why it isn't easy is to spend an afternoon trying to prove it. That clever averaging argument you had in mind doesn't work ...''"<ref>{{Cite tweet |number=1593157232543207424 |user=wtgowers |title=One of the best known open problems in combinatorics is the union-closed conjecture, which states that if you have a finite collection X of sets such that if A and B belong to X then so does the union of A and B, then at least one element of X belongs to at least half of them. 1/ |first=Timothy |last=Gowers |author-link=Timothy Gowers |date=17 November 2022 |quote=The conjecture feels as though it ought to be easy (and as a result has attracted a lot of false proofs over the years). A good way to understand why it isn't easy is to spend an afternoon trying to prove it. That clever averaging argument you had in mind doesn't work ...  4/4}}</ref>
+
+== Example ==
+The family of sets
+:<math>\varnothing, \{1\}, \{1,2\}, \{2,3,4\}, \{1,2,3,4\}</math>
+consists of five different sets and is union-closed. The element <math>1</math> is contained in three of the five sets (and so is the element <math>2</math>), thus the conjecture holds in this case.
+
+== Basic results ==
+It is easy to show that if a union-closed family contains a [[singleton (mathematics)|singleton]] <math>\{a\}</math> (as in the example above), then the element <math>a</math> must occur in at least half of the sets of the family.
+
+If there is a [[counterexample]] to the conjecture, then there is also a counterexample consisting only of finite sets. Therefore, without loss of generality, we will assume that all sets in the given union-closed family are finite.{{sfnp|Bruhn|Schaudt|2015}}
+
+Given a finite non-empty set <math>U</math>, the [[power set]] <math>P(U)</math> consisting of all [[subset]]s of <math>U</math> is union-closed. Each element of <math>U</math> is contained in exactly half of the subsets of <math>U</math>. Therefore, in general we cannot ask for an element contained in more than half of the sets of the family: the [[upper and lower bounds|bound]] of the conjecture is sharp.
+
+== Equivalent forms ==
+
+=== Intersection formulation ===
+
+The union-closed set conjecture is true [[if and only if]] a set system <math>X</math> which is intersection-closed contains an element of <math>U(X)</math> in at most half of the sets of <math>X</math>, where <math>U(X)</math> is the universe set, i.e. the union of all members of the system <math>X</math>.
+ 
+The following facts show the equivalence.
+ 
+Firstly, we show that a set system is union-closed if and only if its complement is intersection-closed.
+ 
+Lemma 1. If <math>X</math> is a union-closed family of sets with universe <math>U(X)</math>, the family of [[complement set]]s to sets in <math>X</math> is closed under [[intersection (set theory)|intersection]].
+ 
+Proof.
+We define the complement of the set system <math>X</math> as <math>X^c := \{U(X) - S : S \in X\} </math>. 
+ 
+Let <math>X_1</math>, <math>X_2</math> be arbitrary sets in <math>X</math> and so <math>U(X) - X_1</math> and <math>U(X) - X_2</math> are both in <math>X^c</math>. Since <math>X</math> is union-closed, <math>X_1 \cup X_2 = X_3</math> is in <math>X</math>, and therefore the complement of <math>X_3</math>, <math>U(X) - X_3</math> is in <math>X^c</math>, the elements in neither <math>X_1</math>, nor <math>X_2</math>.
+ 
+And this is exactly the intersection of the complements of <math>X_1</math> and <math>X_2</math>, <math>(U(X)-X_1) \cap (U(X)-X_2)</math>. Therefore, <math>X</math> is union-closed if and only if the complement of <math>X</math>, <math>X^c</math> is intersection closed.
+ 
+Secondly, we show that if a set system contains an element in at least half the sets, then its complement has an element in at most half.
+ 
+Lemma 2. A set system <math>X</math> contains an element in half of its sets if and only if the complement set system <math>X</math>, <math>X^*</math> contains an element in at most half of its sets.
+Proof. Trivial.
+
+Therefore, if <math>X</math> is a union-closed family of sets, the family of complement sets to sets in <math>X</math> relative to the universe <math>U(X)</math> is closed under intersection, and an element that belongs to at least half of the sets of <math>X</math> belongs to at most half of the complement sets. Thus, an equivalent form of the conjecture (the form in which it was originally stated) is that, for any intersection-closed family of sets that contains more than one set, there exists an element that belongs to at most half of the sets in the family.
+
+=== Lattice formulation ===
+Although stated above in terms of families of sets, Frankl's conjecture has also been formulated and studied as a question in [[lattice theory]]. A [[lattice (order)|lattice]] is a [[partially ordered set]] in which for two elements ''x'' and ''y'' there is a unique greatest element less than or equal to both of them (the [[meet and join|meet]] of ''x'' and ''y'') and a unique least element greater than or equal to both of them (the [[meet and join|join]] of ''x'' and ''y''). The family of all subsets of a set ''S'', ordered by set inclusion, forms a lattice in which the meet is represented by the [[set-theoretic]] intersection and the join is represented by the set-theoretic union; a lattice formed in this way is called a [[Boolean algebra (structure)|Boolean lattice]].
+The lattice-theoretic version of Frankl's conjecture is that in any finite lattice there exists an element ''x'' that is not the join of any two smaller elements, and such that the number of elements greater than or equal to ''x'' totals at most half the lattice, with equality only if the lattice is a Boolean lattice. As {{harvtxt|Abe|2000}} shows, this statement about lattices is equivalent to the Frankl conjecture for union-closed sets: each lattice can be translated into a union-closed set family, and each union-closed set family can be translated into a lattice, such that the truth of the Frankl conjecture for the translated object implies the truth of the conjecture for the original object. This lattice-theoretic version of the conjecture is known to be true for several natural subclasses of lattices<ref>{{harvtxt|Abe|2000}}; {{harvtxt|Poonen|1992}}; {{harvtxt|Reinhold|2000}}.</ref> but remains open in the general case.
+
+=== Proof of equivalence ===
+Let ''L'' be a finite lattice, and let ''J(L)'' denote the set of [[join-irreducible element]]s of ''L''. For each element <math>x \in L</math>, define
+<math>T_x = \{ j \in J(L) : j \le x \}.</math>
+
+The map <math>x \mapsto T_x</math> is injective, because in a finite lattice every element is the join of the join-irreducible elements below it. Thus, if <math>T_x = T_y</math>, then ''x'' and ''y'' have the same join-irreducible elements below them, and therefore <math>x=y</math>. It follows that the family
+<math>\mathcal{F}=\{T_x : x\in L\}</math>
+has cardinality <math>|L|</math>.
+
+Moreover, <math>\mathcal{F}</math> is intersection-closed. Indeed, for any <math>x,y\in L</math>,
+<math>j\le x\wedge y</math> if and only if <math>j\le x</math> and <math>j\le y</math>, so
+<math>T_{x\wedge y}=T_x\cap T_y.</math>
+
+Assume now that every finite intersection-closed family has an element contained in at most half of its sets. Applying this statement to <math>\mathcal{F}</math>, there exists some <math>j\in J(L)</math> such that ''j'' belongs to at most half of the sets <math>T_x</math>. But
+<math>j\in T_x</math>
+holds exactly when <math>j\le x</math>. Therefore the number of members of <math>\mathcal{F}</math> containing ''j'' is exactly the number of elements of ''L'' lying above ''j'', namely
+<math>|\uparrow j|</math>,
+where
+<math>\uparrow j = \{x\in L : j\le x\}.</math>
+Hence
+<math>|\uparrow j|\le \frac{|L|}{2}.</math>
+This proves the lattice-theoretic statement.
+
+For the converse, let <math>\mathcal{A}</math> be a finite intersection-closed family of sets. Ordered by inclusion, <math>\mathcal{A}</math> is a finite lattice in which the meet is set intersection and the join of two elements is the least member of <math>\mathcal{A}</math> containing their union. Assume that every finite lattice contains a join-irreducible element ''j'' such that
+<math>|\uparrow j|\le \frac{|L|}{2}.</math>
+Applying this to the lattice <math>L=\mathcal{A}</math>, choose such a join-irreducible element ''j''.
+
+Because ''j'' is join-irreducible in a finite lattice, it has a unique lower cover, denoted <math>j_*</math>. Choose an element
+<math>a \in j\setminus j_*.</math>
+Such an element exists because <math>j_* \subsetneq j</math>.
+
+It is then claimed that every member of <math>\mathcal{A}</math> containing ''a'' lies above ''j''. Let <math>A\in\mathcal{A}</math> and suppose <math>a\in A</math>. If <math>j\nsubseteq A</math>, then <math>j\wedge A = j\cap A</math> is a proper subset of ''j'', and hence
+<math>j\wedge A \le j_*.</math>
+But <math>a\in j</math> and <math>a\in A</math>, so <math>a\in j\cap A = j\wedge A</math>, which would imply <math>a\in j_*</math>, contrary to the choice of ''a''. Therefore <math>j\subseteq A</math>, that is, <math>j\le A</math> in the lattice order.
+
+So every set in <math>\mathcal{A}</math> containing ''a'' belongs to <math>\uparrow j</math>. Conversely, if <math>A\in\uparrow j</math>, then <math>j\subseteq A</math>, and since <math>a\in j</math>, the set ''A'' contains ''a''. Thus the sets in <math>\mathcal{A}</math> containing ''a'' are exactly the elements of <math>\uparrow j</math>.
+
+It follows that the number of members of <math>\mathcal{A}</math> containing ''a'' is
+<math>|\uparrow j| \le \frac{|\mathcal{A}|}{2}.</math>
+Therefore ''a'' belongs to at most half of the sets in <math>\mathcal{A}</math>. This proves the intersection-closed formulation.
+
+=== Graph-theoretic formulation ===
+Another equivalent formulation of the union-closed sets conjecture uses [[graph theory]]. In an [[undirected graph]], an [[Independent set (graph theory)|Independent set]] is a set of vertices no two of which are adjacent to each other; an independent set is [[maximal independent set|maximal]] if it is not a subset of a larger independent set. In any graph, the "heavy" vertices that appear in more than half of the maximal independent sets must themselves form an independent set. So, if the graph is non-empty, there always exists at least one non-heavy vertex, a vertex that appears in at most half of the maximal independent sets. The graph formulation of the union-closed sets conjecture states that every finite non-empty graph contains two adjacent non-heavy vertices. It is automatically true when the graph contains an [[parity (mathematics)|odd]] [[cycle (graph theory)|cycle]], because the independent set of all heavy vertices cannot cover all the edges of the cycle. Therefore, the more interesting case of the conjecture is for [[bipartite graph]]s, which have no odd cycles. Another equivalent formulation of the conjecture is that, in every bipartite graph, there exist two vertices, one on each side of the bipartition, such that each of these two vertices belongs to at most half of the graph's maximal independent sets. This conjecture is known to hold for [[chordal bipartite graph]]s, bipartite [[series–parallel graph]]s, and bipartite graphs of maximum [[degree (graph theory)|degree]] three.{{sfnp|Bruhn|Charbit|Schaudt|Telle|2015}}
+
+== Partial results ==
+The conjecture has been proven for many special cases of union-closed set families. In particular, it is known to be true for
+* families of at most 50 sets,<ref>{{harvtxt|Roberts|Simpson|2010}} show that a minimal counterexample's number of sets is at least <math>4q-1</math>, where <math>q</math> is the number of elements in the union of all the sets. Combined with the statement of {{harvtxt|Vuckovic|Zivkovic|2017}} stating that a counterexample has at least 13 elements in the union, the conjecture follows for families of at most 50 sets.</ref>
+* families of sets whose union has at most 12 elements,<ref>{{harvtxt|Vuckovic|Zivkovic|2017}}, improving previous bounds by {{harvtxt|Bošnjak|Marković|2008}}, {{harvtxt|Morris|2006}}, {{harvtxt|Lo Faro|1994}} and others.</ref>
+* families of sets in which the smallest set has one or two elements,<ref>{{harvtxt|Sarvate|Renaud|1989}}, since rediscovered by several other authors. If a one-element or two-element set ''S'' exists, some element of ''S'' belongs to at least half the sets in the family, but the same property does not hold for three-element sets, due to counterexamples of Sarvate, Renaud, and [[Ronald Graham]].</ref>
+* families of at least <math>(\tfrac{1}{2}-\varepsilon)2^n</math> subsets of an <math>n</math>-element set, for some constant <math>\varepsilon>0</math>, according to an unpublished preprint.{{sfnp|Karpas|2017}}
+* families of sets with short chain no more than 3 or long chain no less than <math>n-1</math>.{{sfnp|Tian|2021}}
+
+Additionally, for every union-closed family, other than the family containing only the [[empty set]], there exists an element that belongs to at least <math>0.38271</math> of the sets in the family.<ref>{{cite arXiv |last=Liu |first=Jingbo |title=Improving the Lower Bound for the Union-closed Sets Conjecture via Conditionally IID Coupling |date=2023-06-15 |class=cs.IT |eprint=2306.08824}}</ref><ref>{{cite arXiv |last1=Lu |first1=Kengbo |title=Note on the union-closed sets conjecture and Reimer's average set size theorem |date=2024 |eprint=2405.10639 |last2=Raz |first2=Abigail |class=math.CO }}</ref> The proof of this was built upon the work of Gilmer who showed the first constant bound of <math>0.01</math> which was improved by others the same week to <math>\frac{3-\sqrt{5}}{2}\approx 0.381966</math>.<ref>{{cite arXiv |last=Gilmer |first=Justin |title=A constant lower bound for the union-closed sets conjecture |date=2022 |class=math.CO |eprint=2211.09055}}</ref>
+
+== History ==
+[[Péter Frankl]] stated the conjecture in terms of intersection-closed set families in 1979, and so the conjecture is usually credited to him and is sometimes referred to as the '''Frankl conjecture'''. The earliest publication of the union-closed version of the conjecture appears to be by {{harvtxt|Duffus|1985}}. A history of the work on the conjecture up to 2013 was published by {{harvtxt|Bruhn|Schaudt|2015}}.
+
+== Notes ==
+{{Reflist}}
+
+== References ==
+*{{cite journal
+ | last = Abe | first = Tetsuya
+ | title = Strong semimodular lattices and Frankl's conjecture
+ | journal = Algebra Universalis
+ | volume = 44
+ | year = 2000
+ | issue = 3–4
+ | pages = 379–382
+ | doi = 10.1007/s000120050195
+ | s2cid = 120741780
+ }}
+*{{cite journal
+ | last1 = Vuckovic | first1 = Bojan
+ | last2 = Zivkovic | first2 = Miodrag
+ | title = The 12-Element Case of Frankl's Conjecture
+ | journal = [[IPSI BGD Transactions on Internet Research]]
+ | volume = 13 | issue = 1 | year = 2017 | pages = 65
+ | url = https://ipsitransactions.org/journals/papers/tir/2017jan/p9.pdf
+ }}
+*{{cite journal
+ | last1 = Bošnjak | first1 = Ivica
+ | last2 = Marković | first2 = Peter
+ | title = The 11-element case of Frankl's conjecture
+ | journal = [[Electronic Journal of Combinatorics]]
+ | volume = 15 | issue = 1 | year = 2008 | pages = R88
+ | doi = 10.37236/812
+ | url = http://www.combinatorics.org/Volume_15/Abstracts/v15i1r88.html
+ | doi-access = free
+ }}
+*{{cite journal
+ | last1 = Bruhn | first1 = Henning
+ | last2 = Charbit | first2 = Pierre
+ | last3 = Schaudt | first3 = Oliver
+ | last4 = Telle | first4 = Jan Arne
+ | arxiv = 1212.4175
+ | doi = 10.1016/j.ejc.2014.08.030
+ | journal = [[European Journal of Combinatorics]]
+ | mr = 3266293
+ | pages = 210–219
+ | title = The graph formulation of the union-closed sets conjecture
+ | volume = 43
+ | year = 2015
+ | s2cid = 2373192
+ }}
+*{{Cite journal |last1=Bruhn |first1=Henning |last2=Schaudt |first2=Oliver |date=2015-11-01 |title=The Journey of the Union-Closed Sets Conjecture |url=https://doi.org/10.1007/s00373-014-1515-0 |journal=Graphs and Combinatorics |language=en |volume=31 |issue=6 |pages=2043–2074 |arxiv=1309.3297 |doi=10.1007/s00373-014-1515-0}}
+*{{cite conference
+ | authorlink = Dwight Duffus | last = Duffus | first = D.
+ | title = Open problem session
+ | conference = Graphs and Order
+ | editor = Rival, I.
+ | editor-link = Ivan Rival
+ | publisher = D. Reidel
+ | year = 1985
+ | pages = 525
+ }}
+*{{cite arXiv|last=Karpas|first=Ilan|year=2017|eprint=1708.01434|title= Two Results on Union-Closed Families|class=math.CO}}
+*{{Cite arXiv|last=Tian|first=Chenxiao|year=2021|title=Union-closed Sets Conjecture Holds for Height H(𝓕)≤ 𝟑 and H(𝓕)≥ 𝐧 - 𝟏 |eprint=2112.06659 |class=math.CO}}
+*{{cite journal
+ | last = Lo Faro | first = Giovanni
+ | title = Union-closed sets conjecture: improved bounds
+ | journal = J. Combin. Math. Combin. Comput.
+ | volume = 16
+ | year = 1994
+ | pages = 97–102
+ |mr=1301213
+ }}
+*{{cite journal
+ | last = Morris | first = Robert
+ | author-link = Robert Morris (mathematician)
+ | title = FC-families and improved bounds for Frankl's conjecture
+ | journal = [[European Journal of Combinatorics]]
+ | volume = 27
+ | year = 2006
+ | issue = 2
+ | pages = 269–282
+ |mr=2199779
+ | doi = 10.1016/j.ejc.2004.07.012
+ | arxiv = math/0702348
+ | s2cid = 17633023
+ }}
+*{{cite journal
+ | last = Poonen | first = Bjorn
+ | author-link = Bjorn Poonen
+ | title = Union-closed families
+ | journal = [[Journal of Combinatorial Theory]] | series = Series A
+ | volume = 59
+ | year = 1992
+ | issue = 2
+ | pages = 253–268
+ | mr = 1149898
+ | doi = 10.1016/0097-3165(92)90068-6
+ | doi-access = free
+ }}
+*{{cite journal
+ | last = Reinhold | first = Jürgen
+ | title = Frankl's conjecture is true for lower semimodular lattices
+ | journal = [[Graphs and Combinatorics]]
+ | volume = 16
+ | year = 2000
+ | issue = 1
+ | pages = 115–116
+ | doi = 10.1007/s003730050008
+ | s2cid = 12660895
+ }}
+*{{cite journal
+ | last1 = Roberts | first1 = Ian | last2 = Simpson | first2 = Jamie
+ | title = A note on the union-closed sets conjecture
+ | year = 2010
+ | journal = Australas. J. Combin.
+ | volume = 47
+ | pages = 265–267
+ | url = http://ajc.maths.uq.edu.au/pdf/47/ajc_v47_p265.pdf
+ }}
+*{{cite journal
+ | last1 = Sarvate | first1 = D. G.
+ | last2 = Renaud | first2 = J.-C.
+ | title = On the union-closed sets conjecture
+ | journal = Ars Combin.
+ | volume = 27
+ | year = 1989
+ | pages = 149–153
+ | mr = 0989460
+ }}
+*{{Cite journal|last=Yu|first=Lei|date=2023 |title=Dimension-free bounds for the union-closed sets conjecture|journal=Entropy |volume=25 |issue=5 |page=767 |doi=10.3390/e25050767 |doi-access=free |pmid=37238522 |pmc=10217025 |arxiv=2212.00658|bibcode=2023Entrp..25..767Y }}
+
+==External links==
+*[http://garden.irmacs.sfu.ca/?q=op/frankls_union_closed_sets_conjecture Frankl's union-closed sets conjecture], the Open Problem Garden.
+*[http://www.math.uiuc.edu/~west/openp/unionclos.html Union-Closed Sets Conjecture (1979)]. In ''[http://www.math.uiuc.edu/~west/openp/index.html Open Problems – Graph Theory and Combinatorics]'', collected by D. B. West.
+
+[[Category:Families of sets]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Lattice theory]]
+[[Category:Extremal combinatorics]]

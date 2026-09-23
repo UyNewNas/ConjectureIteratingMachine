@@ -1,0 +1,226 @@
+{{short description|Determining whether a knot is the unknot}}
+{{unsolved|mathematics|Can unknots be recognized in polynomial time?}}
+[[Image:unknots.svg|right|165px|thumb|Two simple diagrams of the unknot]]
+[[Image:thistlethwaite unknot.svg|right|thumb|A tricky unknot diagram by [[Morwen Thistlethwaite]]]]
+
+In [[mathematics]], the '''unknotting problem''' is the problem of [[algorithm]]ically recognizing the [[unknot]], given some representation of a knot, e.g., a [[knot diagram]]. There are several types of unknotting algorithms.  A major unresolved challenge is to determine if the problem admits a [[polynomial time]] algorithm; that is, whether the problem lies in the complexity class [[P (complexity)|P]].
+
+==Computational complexity==
+First steps toward determining the computational complexity were undertaken in proving that the problem is
+in larger complexity classes, which contain the class P. By using [[normal surface]]s to describe the [[Seifert surface]]s of a given knot, {{harvtxt|Hass|Lagarias|Pippenger|1999}} showed that the unknotting problem is in the complexity class [[NP (complexity)|NP]]. {{harvtxt|Hara|Tani|Yamamoto|2005}} claimed the weaker result that unknotting is in  [[Arthur&ndash;Merlin protocol|AM&nbsp;&cap;&nbsp;co-AM]]; however, later they retracted this claim.<ref>Mentioned as a "personal communication" in reference [15] of {{harvtxt|Kuperberg|2014}}.</ref> In 2011, [[Greg Kuperberg]] proved that (assuming the [[generalized Riemann hypothesis]]) the unknotting problem is in [[co-NP]],<ref>{{harvtxt|Kuperberg|2014}}</ref> and in 2016, [[Marc Lackenby]] provided an unconditional proof of co-NP membership.<ref>{{harvtxt|Lackenby|2021}}</ref>
+
+In 2021, Lackenby announced an unknot recognition algorithm which he claimed ran in [[quasi-polynomial time]].<ref>{{cite web |title=Marc Lackenby announces a new unknot recognition algorithm that runs in quasi-polynomial time |url=https://www.maths.ox.ac.uk/node/38304 |publisher=Mathematical Institute of the University of Oxford |access-date=21 May 2024}}</ref> As of October 2025, the result has not been published in the peer-reviewed literature.
+
+The unknotting problem has the same computational complexity as testing whether an embedding of an [[undirected graph]] in [[Euclidean space]] is [[linkless embedding|linkless]].{{sfnp|Kawarabayashi|Kreutzer|Mohar|2010}}
+
+==Unknotting algorithms==
+
+Several algorithms solving the unknotting problem are based on [[Wolfgang Haken|Haken]]'s theory of [[normal surface]]s:
+* [[Haken's algorithm]] uses the theory of normal surfaces to find a disk whose boundary is the knot. Haken originally used this algorithm to show that unknotting is decidable, but did not analyze its complexity in more detail.
+* Hass, Lagarias, and Pippenger showed that the set of all normal surfaces may be represented by the integer points in a [[polyhedral cone]] and that a surface witnessing the unknottedness of a curve (if it exists) can always be found on one of the extreme rays of this cone. Therefore, [[Vertex enumeration problem|vertex enumeration methods]] can be used to list all of the extreme rays and test whether any of them corresponds to a bounding disk of the knot. Hass, Lagarias, and Pippenger used this method to show that the unknottedness is in NP; later researchers such as {{harvtxt|Burton|2011a}} refined their analysis, showing that this algorithm can be useful (though not polynomial time), with its complexity being a low-order singly-exponential function of the number of crossings.
+* The algorithm of {{harvtxt|Birman|Hirsch|1998}} uses [[braid foliation]]s, a somewhat different type of structure than a normal surface. However to analyze its behavior they return to normal surface theory.
+
+Other approaches include:
+* The number of [[Reidemeister move]]s needed to change an unknot diagram to the standard unknot diagram is at most polynomial in the number of crossings.{{sfnp|Lackenby|2015}} Therefore, a brute force search for all sequences of Reidemeister moves can detect unknottedness in exponential time.
+* Similarly, any two triangulations of the same [[knot complement]] may be connected by a sequence of [[Pachner moves]] of length at most doubly exponential in the number of crossings.<ref>{{harvtxt|Mijatović|2005}}.</ref> Therefore, it is possible to determine whether a knot is the unknot by testing all sequences of Pachner moves of this length, starting from the complement of the given knot, and determining whether any of them transforms the complement into a standard triangulation of a [[solid torus]]. The time for this method would be triply exponential; however, experimental evidence suggests that this bound is very pessimistic and that many fewer Pachner moves are needed.<ref>{{harvtxt|Burton|2011b}}.</ref>
+* Any [[Arc-presentations of links|arc-presentation]] of an unknot can be monotonically simplified to a minimal one using elementary moves.<ref>{{harvtxt|Dynnikov|2006}}.</ref> So a brute force search among all arc-presentations of not greater complexity gives a single-exponential algorithm for the unknotting problem.
+* [[residually finite|Residual finiteness]] of the [[knot group]] (which follows from [[geometrization conjecture|geometrization]] of [[Haken manifold]]s) gives an algorithm: check if the group has non-cyclic finite group quotient. This idea is used in Kuperberg's result that the unknotting problem is in co-NP.
+* [[Heegaard Floer homology|Knot Floer homology]] of the knot detects the genus of the knot, which is 0 if and only if the knot is an unknot. A combinatorial version of knot Floer homology allows it to be computed {{harv|Manolescu|Ozsváth|Sarkar|2009}}.
+* [[Khovanov homology]] detects the unknot according to a result of [[Peter B. Kronheimer|Kronheimer]] and [[Tomasz Mrowka|Mrowka]].<ref>{{harvtxt|Kronheimer|Mrowka|2011}}</ref> The complexity of Khovanov homology at least as high as the [[Sharp-P-complete|#P-hard]] problem of computing the [[Jones polynomial]], but it may be calculated in practice using an algorithm and program of {{harvtxt|Bar-Natan|2007}}. Bar-Natan provides no rigorous analysis of his algorithm, but heuristically estimates it to be exponential in the [[pathwidth]] of a crossing diagram, which in turn is at most proportional to the square root of the number of crossings.
+
+Understanding the complexity of these algorithms is an active field of study.
+
+==See also==
+* [[Algorithmic topology]]
+* [[Unknotting number]]
+* [[Hard unknot]]
+
+==Notes==
+{{reflist|colwidth=30em}}
+
+==References==
+*{{citation
+ | last = Bar-Natan | first = Dror | author-link = Dror Bar-Natan
+ | arxiv = math.GT/0606318
+ | doi = 10.1142/S0218216507005294
+ | issue = 3
+ | journal = [[Journal of Knot Theory and Its Ramifications]]
+ | mr = 2320156
+ | pages = 243–255
+ | title = Fast Khovanov homology computations
+ | volume = 16
+ | year = 2007| s2cid = 17036344 }}.
+*{{citation
+ | last1 = Birman | first1 = Joan S. | author1-link = Joan Birman
+ | last2 = Hirsch | first2 = Michael
+ | doi = 10.2140/gt.1998.2.175
+ | journal = [[Geometry and Topology]]
+ | pages = 178–220
+ | title = A new algorithm for recognizing the unknot
+ | volume = 2
+ | year = 1998| arxiv = math/9801126| s2cid = 17776505 }}.
+*{{citation
+ | last = Burton | first = Benjamin A.
+ | arxiv = 1004.2605
+ | doi = 10.1016/j.jcta.2010.12.011
+ | issue = 4
+ | journal = [[Journal of Combinatorial Theory]] | series = Series A
+ | mr = 2763065
+ | pages = 1410–1435
+ | title = Maximal admissible faces and asymptotic bounds for the normal surface solution space
+ | url = http://www.maths.uq.edu.au/~bab/papers/burton11-asymptotic.pdf
+ | volume = 118
+ | year = 2011a| s2cid = 11461722
+ }}.
+*{{citation
+ | last = Burton | first = Benjamin
+ | arxiv = 1011.4169
+ | contribution = The Pachner graph and the simplification of 3-sphere triangulations
+ | doi = 10.1145/1998196.1998220
+ | pages = 153–162
+ | title = Proc. 27th ACM Symposium on Computational Geometry
+ | url = http://www.maths.uq.edu.au/~bab/papers/2011-pachner-scg.html
+ | year = 2011b| isbn = 978-1-4503-0682-9
+ | s2cid = 382685
+ }}.
+*{{citation
+ | last = Dynnikov | first = Ivan
+ | journal = [[Fundamenta Mathematicae]]
+ | arxiv = math/0208153
+ | doi = 10.4064/fm190-0-3
+ | pages = 29–76
+ | title = Arc-presentations of links: monotonic simplification
+ | year = 2006
+ | volume = 190| s2cid = 14137437
+ }}.
+*{{citation
+ | last = Haken | first = Wolfgang | author-link = Wolfgang Haken
+ | journal = [[Acta Mathematica]]
+ | pages = 245–375
+ | title = Theorie der Normalflächen
+ | volume = 105
+ | year = 1961
+ | doi=10.1007/BF02559591| doi-access = free
+ }}.
+*{{citation
+ | last1 = Hara | first1 = Masao
+ | last2 = Tani | first2 = Seiichi
+ | last3 = Yamamoto | first3 = Makoto
+ | contribution = Unknotting is in AM ∩ co-AM
+ | pages = 359–364
+ | title = Proc. 16th ACM-SIAM Symposium on Discrete algorithms (SODA '05)
+ | url = http://dl.acm.org/citation.cfm?id=1070432.1070482
+ | year = 2005| publisher = Society for Industrial and Applied Mathematics
+ | isbn = 978-0-89871-585-9
+ }}.
+*{{citation
+ | last1 = Hass | first1 = Joel | author1-link = Joel Hass
+ | last2 = Lagarias | first2 = Jeffrey C. | author2-link = Jeffrey Lagarias
+ | last3 = Pippenger | first3 = Nicholas | author3-link = Nick Pippenger
+ | doi = 10.1145/301970.301971
+ | issue = 2
+ | journal = [[Journal of the ACM]]
+ | pages = 185–211
+ | title = The computational complexity of knot and link problems
+ | volume = 46
+ | year = 1999
+ | arxiv = math/9807016
+ | mr = 1693203| s2cid = 125854 }}.
+*{{citation
+ | last1 = Hass | first1 = Joel | author1-link = Joel Hass
+ | last2 = Lagarias | first2 = Jeffrey C. | author2-link = Jeffrey Lagarias
+ | doi = 10.1090/S0894-0347-01-00358-7
+ | issue = 2
+ | journal = [[Journal of the American Mathematical Society]]
+ | mr = 1815217
+ | pages = 399–428
+ | title = The number of Reidemeister moves needed for unknotting
+ | volume = 14
+ | year = 2001| arxiv = math/9807012| s2cid = 15654705 }}.
+*{{citation
+ | last1 = Kawarabayashi | first1 = Ken-ichi | author1-link = Ken-ichi Kawarabayashi
+ | last2 = Kreutzer | first2 = Stephan
+ | last3 = Mohar | first3 = Bojan | author3-link = Bojan Mohar
+ | contribution = Linkless and flat embeddings in 3-space and the unknot problem
+ | doi = 10.1145/1810959.1810975
+ | pages = 97–106
+ | title = [[Symposium on Computational Geometry|Proc. ACM Symposium on Computational Geometry (SoCG '10)]]
+ | year = 2010
+ | isbn = 978-1-4503-0016-2 | s2cid = 12290801 | chapter-url = http://www.cs.ox.ac.uk/people/stephan.kreutzer/Publications/10-socg.pdf }}.
+*{{citation
+ | last1 = Kronheimer | first1 = Peter
+ | last2 = Mrowka | first2 = Tomasz
+ | arxiv = 1005.4346
+ | doi = 10.1007/s10240-010-0030-y
+ | journal = [[Publications Mathématiques de l'IHÉS]]
+ | pages = 97–208
+ | title = Khovanov homology is an unknot-detector
+ | volume = 113
+ | issue = 1
+ | year = 2011| s2cid = 119586228
+ }}
+*{{citation
+ | last = Kuperberg | first = Greg | author-link = Greg Kuperberg
+ | arxiv = 1112.0845
+ | doi = 10.1016/j.aim.2014.01.007
+ | journal = [[Advances in Mathematics]]
+ | pages = 493–506
+ | title = Knottedness is in NP, modulo GRH
+ | volume = 256
+ | year = 2014
+ | mr = 3177300| s2cid = 12634367 }}.
+*{{citation
+ | last = Lackenby | first = Marc | author-link = Marc Lackenby
+ | arxiv = 1302.0180
+ | doi = 10.4007/annals.2015.182.2.3
+ | issue = 2
+ | journal = Annals of Mathematics
+ | mr = 3418524
+ | pages = 491–564
+ | series = Second Series
+ | title = A polynomial upper bound on Reidemeister moves
+ | volume = 182
+ | year = 2015| s2cid = 119662237 }}.
+*{{citation
+ | last = Lackenby | first = Marc | author-link = Marc Lackenby
+ | arxiv = 1604.00290
+ | title = The efficient certification of Knottedness and Thurston norm
+ | journal = [[Advances in Mathematics]]
+ | volume = 387
+ | date = 2021
+ | article-number = 107796
+ | doi = 10.1016/j.aim.2021.107796| s2cid = 119307517 }}.
+*{{citation
+ | last1 = Manolescu | first1 = Ciprian | author1-link = Ciprian Manolescu
+ | last2 = Ozsváth | first2 = Peter S. | author2-link = Peter Ozsváth
+| last3 = Sarkar | first3 = Sucharit |author3-link = Sucharit Sarkar
+ | arxiv = math/0607691
+ | doi = 10.4007/annals.2009.169.633
+ | issue = 2
+ | journal = [[Annals of Mathematics]] | series = Second Series
+ | pages = 633–660
+ | title = A combinatorial description of knot Floer homology
+ | volume = 169
+ | year = 2009
+ | mr = 2480614 | bibcode = 2006math......7691M| s2cid = 15427272 }}.
+*{{citation
+ | last = Mijatović | first = Aleksandar
+ | arxiv = math/0306117
+ | issue = 6
+ | journal = Mathematical Research Letters
+ | pages = 843–856
+ | title = Simplical structures of knot complements
+ | volume = 12
+ | year = 2005
+ | doi=10.4310/mrl.2005.v12.n6.a6
+ | mr = 2189244| s2cid = 7726354
+ }}
+
+{{Knot theory}}
+
+[[Category:Knot theory]]
+[[Category:3-manifolds]]
+[[Category:Geometric topology]]
+[[Category:Computational problems]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Quasi-polynomial time algorithms]]

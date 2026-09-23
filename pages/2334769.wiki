@@ -1,0 +1,262 @@
+{{Short description|Area of a right triangle with rational-numbered sides}}
+[[File:Rtriangle-mathsinegypt.svg|thumb|Right triangle with the area 6, a congruent number.]]
+In [[number theory]], a '''congruent number''' is a positive [[integer]] that is the [[area]] of a [[right triangle]] with three [[rational number]] sides.<ref>{{MathWorld |urlname=CongruentNumber |title=Congruent Number}}</ref><ref>{{Cite book|last=Guy|first=Richard K.|title=Unsolved problems in number theory|date=2004|publisher=Springer|isbn=0-387-20860-7|edition=[3rd ed.]|location=New York|pages=195–197|oclc=54611248}}</ref>  A more general definition includes all positive rational numbers with this property.<ref name=Koblitz>{{citation |first = Neal |last = Koblitz |author-link = Neal Koblitz |title = Introduction to Elliptic Curves and Modular Forms |isbn = 0-387-97966-2 |publisher = [[Springer-Verlag]] |year = 1993| page = 3 |location = New York}}</ref>
+
+The sequence of (integer) congruent numbers starts with
+
+:5, 6, 7, 13, 14, 15, 20, 21, 22, 23, 24, 28, 29, 30, 31, 34, 37, 38, 39, 41, 45, 46, 47, 52, 53, 54, 55, 56, 60, 61, 62, 63, 65, 69, 70, 71, 77, 78, 79, 80, 84, 85, 86, 87, 88, 92, 93, 94, 95, 96, 101, 102, 103, 109, 110, 111, 112, 116, 117, 118, 119, 120, ... {{OEIS|A003273}}
+
+{{hidden begin |title = Congruent number table: {{mvar|n}} &le; 120 |titlestyle=text-align:center}}
+{| class="wikitable floatright" style="text-align:center"
+|+ Congruent number table: {{mvar|n}} &le; 120<br />&mdash;: non-Congruent number<br /><span style="background-color:#FFC0CB">C: square-free Congruent number</span><br /><span style="background-color:#98FB98">S: Congruent number with square factor</span>
+|-
+! {{mvar|n}}
+! 1 !! 2 !! 3 !! 4 !! 5 !! 6 !! 7 !! 8
+|-
+| 
+| &mdash; || &mdash; || &mdash; || &mdash; || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || &mdash;
+|-
+! {{mvar|n}}
+! 9 !! 10 !! 11 !! 12 !! 13 !! 14 !! 15 !! 16
+|-
+| 
+| &mdash; || &mdash; || &mdash; || &mdash; || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || &mdash;
+|-
+! {{mvar|n}}
+! 17 !! 18 !! 19 !! 20 !! 21 !! 22 !! 23 !! 24
+|-
+| 
+| &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S
+|-
+! {{mvar|n}}
+! 25 !! 26 !! 27 !! 28 !! 29 !! 30 !! 31 !! 32
+|-
+| 
+| &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || &mdash;
+|-
+! {{mvar|n}}
+! 33 !! 34 !! 35 !! 36 !! 37 !! 38 !! 39 !! 40
+|-
+| 
+| &mdash; || style="background-color:#FFC0CB" | C || &mdash; || &mdash; || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || &mdash;
+|-
+! {{mvar|n}}
+! 41 !! 42 !! 43 !! 44 !! 45 !! 46 !! 47 !! 48
+|-
+| 
+| style="background-color:#FFC0CB" | C || &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || &mdash;
+|-
+! {{mvar|n}}
+! 49 !! 50 !! 51 !! 52 !! 53 !! 54 !! 55 !! 56
+|-
+| 
+| &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S
+|-
+! {{mvar|n}}
+! 57 !! 58 !! 59 !! 60 !! 61 !! 62 !! 63 !! 64
+|-
+| 
+| &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S || &mdash;
+|-
+! {{mvar|n}}
+! 65 !! 66 !! 67 !! 68 !! 69 !! 70 !! 71 !! 72
+|-
+| 
+| style="background-color:#FFC0CB" | C || &mdash; || &mdash; || &mdash; || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || &mdash;
+|-
+! {{mvar|n}}
+! 73 !! 74 !! 75 !! 76 !! 77 !! 78 !! 79 !! 80
+|-
+| 
+| &mdash; || &mdash; || &mdash; || &mdash; || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S
+|-
+! {{mvar|n}}
+! 81 !! 82 !! 83 !! 84 !! 85 !! 86 !! 87 !! 88
+|-
+| 
+| &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S
+|-
+! {{mvar|n}}
+! 89 !! 90 !! 91 !! 92 !! 93 !! 94 !! 95 !! 96
+|-
+| 
+| &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S
+|-
+! {{mvar|n}}
+! 97 !! 98 !! 99 !! 100 !! 101 !! 102 !! 103 !! 104
+|-
+| 
+| &mdash; || &mdash; || &mdash; || &mdash; || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || &mdash;
+|-
+! {{mvar|n}}
+! 105 !! 106 !! 107 !! 108 !! 109 !! 110 !! 111 !! 112
+|-
+| 
+| &mdash; || &mdash; || &mdash; || &mdash; || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S
+|-
+! {{mvar|n}}
+! 113 !! 114 !! 115 !! 116 !! 117 !! 118 !! 119 !! 120
+|-
+| 
+| &mdash; || &mdash; || &mdash; || style="background-color:#98FB98" | S || style="background-color:#98FB98" | S || style="background-color:#FFC0CB" | C || style="background-color:#FFC0CB" | C || style="background-color:#98FB98" | S
+|}
+{{hidden end}}
+
+For example, 5 is a congruent number because it is the area of a (20/3, 3/2, 41/6) triangle. Similarly, 6 is a congruent number because it is the area of a (3,4,5) triangle. 3 and 4 are not congruent numbers. The triangle sides demonstrating a number is congruent can have very large numerators and denominators, for example 263 is the area of a triangle whose two shortest sides are 16277526249841969031325182370950195/2303229894605810399672144140263708 and 4606459789211620799344288280527416/61891734790273646506939856923765.<ref>{{cite arXiv | title=Triangle Sides for Congruent Numbers less than 10,000 |last=Goldberg |first=David |eprint=2106.07373 |date=2021 |class=math.NT }}</ref>
+
+If {{mvar|q}} is a congruent number then {{math|''s''<sup>2</sup>''q''}} is also a congruent number for any [[natural number]] {{mvar|s}} (just by multiplying each side of the triangle by {{mvar|s}}), and vice versa.  This leads to the observation that whether a nonzero rational number {{mvar|q}} is a congruent number depends only on its residue in the [[group (mathematics)|group]]
+
+:<math>\mathbb{Q}^{*}/\mathbb{Q}^{*2}, </math>
+
+where <math>\mathbb{Q}^{*}</math> is the set of nonzero rational numbers.
+
+Every residue class in this group contains exactly one [[square-free integer]], and it is common, therefore, only to consider square-free positive integers when speaking about congruent numbers. 
+
+==History==
+While solutions of [[quadratic equations]] and construction of [[Pythagorean triples]] were known in ancient times and were transmitted through [[Greek Mathematics|Greek]] and [[Indian Mathematics]], congruent numbers were first tabulated in Arabic manuscripts by the 10th century{{emdash}}including a formulation of the congruent number problem by [[Persians|Persian]] mathematician [[Al-Khazin]]{{emdash}}with 5 and 6 among the earliest known examples.<ref name=Schappacher>{{cite web |url=https://irma.math.unistra.fr/~schappa/NSch/Publications_files/1998cBis_Dioph.pdf |title=Diophantus of Alexandria: A Text and its History
+|author=[[Norbert Schappacher]]}}</ref><ref name=Oort>{{Cite book |last1=Vrolijk |first1=Arnoud |url=https://books.google.com/books?id=RvWvCQAAQBAJ&dq=It+is+not+clear+to+me+whether+the+Congruent+Number+Problem+has+an+Indian+origin+as+some+authors+seem+to+think&pg=PA95 |title=O ye Gentlemen: Arabic Studies on Science and Literary Culture: In Honour of Remke Kruk |page=95 |last2=Hogendijk |first2=Jan |date=2007-10-31 |publisher=Brill |isbn=978-90-474-2205-1 |language=en}}</ref> Some scholars speculate an Indian origin for the congruent number problem, mathematician [[Frans Oort]] finds such an origin unclear since it is not evidenced in standard literature even though related quadratic equations were studied in [[medieval India]].<ref name=Oort/> According to historians of mathematics [[Norbert Schappacher]] and [[Roshdi Rashed]], 3rd century Greek mathematician [[Diophantus]] didn't formulate the problem of congruent numbers.<ref name=Schappacher/><ref>{{Citation |last=Rashed |first=Roshdi |title= Mathematics and Physics in Classical Islam|chapter=Science in Islam and Classical Modernity |date=2022-05-16 |pages=8–21 |url=https://brill.com/display/book/edcoll/9789004513402/BP000002.xml |access-date=2026-06-06 |publisher=Brill |language=en |isbn=9789004513402}}</ref> In the 13th century, Fibonacci identified 7 as a congruent number and noted that 1 is not. The first accepted proof of the non-congruence of 1 was later given by [[Pierre de Fermat]], who also proved that 2 and 3 are not congruent numbers.<ref>{{Cite journal |last=Conrad |first=Keith |date=2008 |title=The Congruent Number Problem |url=https://kconrad.math.uconn.edu/articles/congruentnumber.pdf |journal=University of Connecticut}}</ref><ref>{{cite arXiv|last=Izadi |first=Farzali |title=Congruent Numbers Via the Pell Equation and its Analogous Counterpart |date=2010-12-30 |class=math.HO |eprint=1004.0261}}</ref>
+
+==Congruent number problem==
+The question of determining whether a given rational number is a congruent number is called the '''congruent number problem'''.  {{as of|2019}}, this problem has not been brought to a successful resolution. [[Tunnell's theorem]] provides an easily testable criterion for determining whether a number is congruent; but his result relies on the [[Birch and Swinnerton-Dyer conjecture]], which is still unproven.
+
+[[Fermat's right triangle theorem]], named after [[Pierre de Fermat]], states that no [[square number]] can be a congruent number. However, in the form that every [[congruum]] (the difference between consecutive elements in an [[arithmetic progression]] of three squares) is non-square, it was already known (without proof) to [[Fibonacci]].<ref>{{citation|title=Number Theory and Its History|first=Øystein|last=Ore|author-link=Øystein Ore|publisher=Courier Dover Corporation|year=2012|isbn=978-0-486-13643-1|pages=202–203|url=https://books.google.com/books?id=beC7AQAAQBAJ&pg=PA202}}.</ref> Every congruum is a congruent number, and every congruent number is a product of a congruum and the square of a rational number.<ref>{{citation|first=Keith|last=Conrad|title=The congruent number problem|journal=Harvard College Mathematical Review|url=http://www.thehcmr.org/issue2_2/congruent_number.pdf|volume=2|issue=2|date=Fall 2008|pages=58–73|url-status=dead|archive-url=https://web.archive.org/web/20130120090003/http://www.thehcmr.org/issue2_2/congruent_number.pdf|archive-date=2013-01-20}}.</ref> However, determining whether a number is a congruum is much easier than determining whether it is congruent, because there is a parameterized formula for congrua for which only finitely many parameter values need to be tested.<ref name="ubm">{{citation|title=The Universal Book of Mathematics: From Abracadabra to Zeno's Paradoxes|first=David|last=Darling|publisher=John Wiley & Sons|year=2004|isbn=978-0-471-66700-1|page=77|url=https://books.google.com/books?id=HrOxRdtYYaMC&pg=PA77}}.</ref>
+
+==Solutions==
+
+''n'' is a congruent number [[if and only if]] the system
+
+:<math>x^2 - n y^2 = u^2</math>, <math>x^2 + n y^2 = v^2</math>
+
+has a solution where <math>x, y, u</math>, and <math>v</math> are integers.<ref>{{cite book |title = Elementary Number Theory |first1 = J. V. |last1 = Uspensky |first2 = M. A. |last2 = Heaslet |author-link1 = J. V. Uspensky |volume = 2 |publisher = McGraw Hill |year = 1939 |page = 419 }}</ref>
+
+Given a solution, the three numbers <math>u^2</math>, <math>x^2</math>, and <math>v^2</math> will be in an [[arithmetic progression]] with common difference <math>n y^2</math>.
+
+Furthermore, if there is one solution (where the right-hand sides are squares), then there are infinitely many: given any solution <math>(x, y)</math>,
+another solution <math>(x', y')</math> can be computed from<ref>{{cite book |title = History of the Theory of Numbers |first = Leonard Eugene |last = Dickson |author-link = Leonard Eugene Dickson |volume = 2 |publisher = Chelsea |year = 1966 |pages = 468–469 }}</ref>
+
+:<math>x' = (x u)^2 + n (y v)^2, </math>
+:<math>y' = 2 x y u v.</math>
+
+For example, with <math>n = 6</math>, the equations are:
+:<math>x^2 - 6 y^2 = u^2, </math>
+:<math>x^2 + 6 y^2 = v^2. </math>
+One solution is <math>x = 5, y = 2</math> (so that <math>u = 1, v = 7</math>). Another solution is
+:<math>x' = (5 \cdot 1)^2 + 6 (2 \cdot 7)^2 = 1201, </math>
+:<math>y' = 2 \cdot 5 \cdot 2 \cdot 1  \cdot 7 = 140. </math>
+With this new <math>x'</math> and <math>y'</math>, the new right-hand sides are still both squares:
+:<math>u'^2 = 1201^2 - 6 \cdot 140^2 = 1324801 = 1151^2, </math>
+:<math>v'^2 = 1201^2 + 6 \cdot 140^2 = 1560001 = 1249^2. </math>
+
+Using <math>x'=1201, y'=140, u', v'</math> as above gives
+:<math>u''=1,727,438,169,601</math>
+:<math>v''=2,405,943,600,001</math>
+
+Given <math>x, y, u</math>, and <math>v</math>, one can obtain <math>a, b</math>, and <math>c</math> such that
+:<math>a^2 + b^2 = c^2</math>, and <math>\frac{ab}{2} = n</math>
+from
+:<math>a = \frac{v - u}{y}, \quad b = \frac{v + u}{y}, \quad c = \frac{2x}{y}.</math>
+Then <math>a, b</math> and <math>c</math> are the legs and [[hypotenuse]] of a right triangle with area <math>n</math>.
+
+The above values <math>(x, y, u, v) = (5, 2, 1, 7)</math> produce <math>(a, b, c) = (3, 4, 5)</math>. The values <math>(1201, 140, 1151, 1249)</math> give <math>(a, b, c) = (7/10, 120/7, 1201/70)</math>. Both of these right triangles have area <math>n = 6</math>.
+
+==Relation to elliptic curves==
+According to [[Leonard Eugene Dickson]]'s compilation of historical texts, a tenth-century Arabic manuscript by [[Mohammed Ben Alhocain]] states that the core goal of the theory of rational right triangles is to identify a square that, when increased or decreased by a given number, results in another square. In modern terminology, this task translates to locating a rational point of infinite order on the elliptic curve <math>my^2 = x^3 - x</math>.<ref>{{Cite journal |last=Tian |first=Ye |date=2012-12-26 |title=Congruent numbers with many prime factors |journal=Proceedings of the National Academy of Sciences |volume=109 |issue=52 |pages=21256–21258 |doi=10.1073/pnas.1216991109 |doi-access=free |pmc=3535615 |pmid=23213259 |bibcode=2012PNAS..10921256T }}</ref>
+
+The question of whether a given number is congruent turns out to be equivalent to the condition that a certain [[elliptic curve]] has positive [[rank of an abelian group|rank]].<ref name="Koblitz" />  An alternative approach to the idea is presented below (as can essentially also be found in the introduction to Tunnell's paper).
+
+Fix nonzero {{mvar|n}}. Suppose {{mvar|a}}, {{mvar|b}}, {{mvar|c}} are numbers (not necessarily positive or rational) which satisfy the following two equations:
+
+:<math>\begin{align}
+a^2 + b^2 &= c^2, \\
+\tfrac{1}{2}ab &= n.
+\end{align}</math>
+
+Then set {{math|''x'' {{=}} ''n''(''a'' + ''c'')/''b''}} and
+{{math|''y'' {{=}} 2''n''<sup>2</sup>(''a'' + ''c'')/''b''<sup>2</sup>}}.
+A calculation shows
+:<math>y^2 = x^3 - n^2 x</math>
+and {{mvar|y}} is not 0 (if {{math|''y'' {{=}} 0}} then {{math|''a'' {{=}} −''c''}}, so {{math|''b'' {{=}} 0}}, but {{math|({{frac|1|2}})''ab'' {{=}} ''n''}} is nonzero, a contradiction).
+
+[[Converse (logic)|Converse]]ly, if {{mvar|x}} and {{mvar|y}} are numbers which satisfy the above equation and {{mvar|y}} is not 0, set
+{{math|''a'' {{=}} (''x''<sup>2</sup> − ''n''<sup>2</sup>)/''y''}},
+{{math|''b'' {{=}} 2''nx''/''y''}}, and {{math|''c'' {{=}} (''x''<sup>2</sup> + ''n''<sup>2</sup>)/''y''}}.  A calculation shows these three numbers
+satisfy the two equations for {{mvar|a}}, {{mvar|b}}, and {{mvar|c}} above.
+
+These two correspondences between ({{mvar|a}},{{mvar|b}},{{mvar|c}}) and ({{mvar|x}},{{mvar|y}}) are inverses of each other, so we have a [[one-to-one correspondence]] between any solution of the two equations in
+{{mvar|a}}, {{mvar|b}}, and {{mvar|c}} and any solution of the equation in {{mvar|x}} and {{mvar|y}} with {{mvar|y}} nonzero.   In particular, from the formulas in the two correspondences, for rational {{mvar|n}} we see that {{mvar|a}}, {{mvar|b}}, and {{mvar|c}} are rational if and only if the corresponding {{mvar|x}} and {{mvar|y}} are rational, and vice versa.
+(We also have that {{mvar|a}}, {{mvar|b}}, and {{mvar|c}} are all positive if and only if {{mvar|x}} and {{mvar|y}} are all positive;
+from the equation {{math|''y''<sup>2</sup> {{=}} ''x''<sup>3</sup> − ''xn''<sup>2</sup> {{=}} ''x''(''x''<sup>2</sup> − ''n''<sup>2</sup>)}}
+we see that if {{mvar|x}} and {{mvar|y}} are positive then {{math|''x''<sup>2</sup> − ''n''<sup>2</sup>}} must be positive, so the formula for {{mvar|a}} above is positive.)
+
+Thus a positive rational number {{mvar|n}} is congruent if and only if the equation
+{{math|''y''<sup>2</sup> {{=}} ''x''<sup>3</sup> − ''n''<sup>2</sup>''x''}} has a [[rational point]] with {{mvar|y}} not equal to 0.
+It can be shown (as an application of [[Dirichlet's theorem on arithmetic progressions|Dirichlet's theorem]] on [[prime number|primes]] in arithmetic progression)
+that the only torsion points on this elliptic curve are those with {{mvar|y}} equal to 0, hence the
+existence of a rational point with {{mvar|y}} nonzero is equivalent to saying the elliptic curve has positive rank.
+
+Another approach to solving is to start with integer value of ''n'' denoted as ''N'' and solve
+
+:<math>N^2 = ed^2 + e^2</math>
+
+where
+
+:<math>\begin{align}
+c &= n^2/e + e\\
+a &= 2n\\
+b &= n^2/e - e
+\end{align}</math>
+
+==Current progress==
+For example, it is known that for a prime number {{mvar|p}}, the following holds:<ref>{{citation |author=Paul Monsky |author-link=Paul Monsky |title=Mock Heegner Points and Congruent Numbers |journal=Mathematische Zeitschrift |volume=204 |issue=1 |year=1990 |pages=45–67 |doi=10.1007/BF02570859|s2cid=121911966 }}</ref>
+*if {{math|''p'' ≡ 3 ([[modular arithmetic|mod]] 8)}}, then {{mvar|p}} is not a congruent number, but 2{{mvar|p}} is a congruent number.
+*if {{math|''p'' ≡ 5 (mod 8)}}, then {{mvar|p}} is a congruent number.
+*if {{math|''p'' ≡ 7 (mod 8)}}, then {{mvar|p}} and 2{{mvar|p}} are congruent numbers.
+
+It is also known that in each of the congruence classes {{math|5, 6, 7 (mod 8)}}, for any given {{mvar|k}} there are infinitely many square-free congruent numbers with {{mvar|k}} odd prime factors.<ref>{{citation
+ | last = Tian | first = Ye | author-link = Tian Ye (mathematician)
+ | arxiv = 1210.8231
+ | doi = 10.4310/CJM.2014.v2.n1.a4
+ | issue = 1
+ | journal = Cambridge Journal of Mathematics
+ | mr = 3272014
+ | pages = 117–161
+ | title = Congruent numbers and Heegner points
+ | volume = 2
+ | year = 2014| s2cid = 55390076 }}.</ref>
+
+==Notes==
+{{Reflist|2}}
+
+==References==
+*{{citation |last=Alter |first=Ronald |author-link=Ronald Alter |title=The Congruent Number Problem |journal=American Mathematical Monthly |volume=87 |issue=1 |year=1980 |pages=43–45 |doi=10.2307/2320381 |publisher=Mathematical Association of America |jstor=2320381}}
+*{{citation |doi=10.1007/BF02837344 |last=Chandrasekar |first=V. |title=The Congruent Number Problem |journal=Resonance |volume=3 |issue=8 |year=1998 |pages=33–45 |s2cid=123495100 |url=https://www.math.rug.nl/~top/Chandrasekar.pdf}}
+*{{citation |last=Dickson |first=Leonard Eugene |author-link=Leonard Eugene Dickson |title=[[History of the Theory of Numbers]] |volume=II: Diophantine Analysis |date=2005 |series=Dover Books on Mathematics |publisher=Dover Publications |isbn=978-0-486-44233-4 |chapter=Chapter XVI}} – see, for a history of the problem.
+*{{citation |last=Guy |first=Richard |author-link=Richard K. Guy |title=Unsolved Problems in Number Theory |series=Problem Books in Mathematics (Book 1) |edition=3rd |date=2004 |publisher=Springer |isbn=978-0-387-20860-2 | zbl=1058.11001}} – Many references are given in it.
+* {{citation
+  | last = Tunnell
+  | first = Jerrold B.
+  | author-link= Jerrold B. Tunnell
+  | title = A classical Diophantine problem and modular forms of weight 3/2
+  | journal = [[Inventiones Mathematicae]]
+  | volume = 72
+  | issue = 2
+  | pages = 323–334
+  | year = 1983
+  | doi = 10.1007/BF01389327
+  | bibcode = 1983InMat..72..323T
+  | url = https://www.digizeitschriften.de/dms/img/?PID=GDZPPN002099403
+  | hdl = 10338.dmlcz/137483
+  | hdl-access = free
+  }}
+
+==External links==
+*{{MathWorld |urlname=CongruentNumber |title=Congruent Number}}
+*A short discussion of the current state of the problem with many references can be found in [[Alice Silverberg]]'s [https://www.math.uci.edu/~asilverb/bibliography/pcmibook.ps Open Questions in Arithmetic Algebraic Geometry] (Postscript).
+*[http://www.aimath.org/news/congruentnumbers/ A Trillion Triangles] - mathematicians have resolved the first one trillion cases (conditional on the [[Birch and Swinnerton-Dyer conjecture]]).
+
+{{Classes of natural numbers}}
+
+[[Category:Arithmetic problems of plane geometry]]
+[[Category:Elliptic curves]]
+[[Category:Triangle geometry]]
+[[Category:Unsolved problems in number theory]]

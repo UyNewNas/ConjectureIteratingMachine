@@ -1,0 +1,114 @@
+In [[differential geometry]], [[Mikhail Gromov (mathematician)|Mikhail Gromov]]'s '''filling area conjecture''' asserts that the [[Sphere|hemisphere]] has minimum area among the [[orientable]] surfaces that fill a closed curve of given length without introducing shortcuts between its points.
+<!--
+TO DO: summarize all known cases and related results at some single point, and mention relation to scattering rigidity.
+Cite Michel's paper on boundary rigidity, and Ivanov's survey talk at the ICM 2010.-->
+
+== Definitions and statement of the conjecture ==
+
+Every smooth surface {{math|''M''}} or curve in [[Euclidean space]] is a [[metric space]], in which the [[Riemannian manifold#Riemannian manifolds as metric spaces|(intrinsic) distance]] {{math|''d''<sub>''M''</sub>(''x'',''y'')}} between two points {{math|''x'',&nbsp;''y''}} of {{math|''M''}} is defined as the infimum of the lengths of the curves that go from {{math|''x''}} to {{math|''y''}} ''along'' {{math|''M''}}. For example, on a closed curve <math> C </math> of length {{math|2''L''}}, for each point {{math|''x''}} of the curve there is a unique other point of the curve (called the '''antipodal''' of {{math|''x''}}) at distance {{math|''L''}} from {{math|''x''}}.
+
+A [[compact space|compact]] surface {{math|''M''}} '''fills''' a closed curve {{math|C}} if its border (also called [[Manifold#Manifold with boundary|boundary]], denoted {{math|∂''M''}}) is the curve {{math|C}}. The filling {{math|''M''}} is said to be '''isometric''' if for any two points {{math|''x'',''y''}} of the boundary curve {{math|''C''}}, the distance {{math|''d''<sub>''M''</sub>(''x'',''y'')}} between them along {{math|''M''}} is the same (not less) than the distance {{math|''d''<sub>''C''</sub>(''x'',''y'')}} along the boundary. In other words, to fill a curve isometrically is to fill it without introducing shortcuts.
+
+'''Question:''' ''How small can be the area of a surface that isometrically fills its boundary curve, of given length?''
+
+For example, in three-dimensional Euclidean space, the circle
+
+:<math> C = \{(x,y,0):\ x^2+y^2=1\} </math>
+
+(of length 2{{pi}}) is filled by the flat disk
+
+:<math> D = \{(x,y,0):\ x^2+y^2\leq 1\} </math>
+
+which is not an isometric filling, because any straight chord along it is a shortcut. In contrast, the hemisphere
+
+:<math> H = \{(x,y,z):\ x^2+y^2+z^2=1\text{ and }z\geq 0\}</math>
+
+is an isometric filling of the same circle {{math|''C''}}, which has [[On the Sphere and Cylinder|twice the area of the flat disk]]. Is this the minimum possible area?
+
+The surface can be imagined as made of a flexible but non-stretchable material, that allows it to be moved around and bended in Euclidean space. None of these transformations modifies the area of the surface nor the length of the curves drawn on it, which are the magnitudes relevant to the problem. The surface can be removed from Euclidean space altogether, obtaining a [[Riemannian manifold|Riemannian surface]], which is an abstract [[differentiable manifold|smooth surface]] with a [[Riemannian metric]] that encodes the lengths and area. Reciprocally, according to the [[Nash-Kuiper theorem]], any Riemannian surface with boundary can be embedded in Euclidean space preserving the lengths and area specified by the Riemannian metric. Thus the filling problem can be stated equivalently as a question about [[differential geometry of surfaces|Riemannian surfaces]], that are not placed in Euclidean space in any particular way.
+
+:'''Conjecture''' (Gromov's filling area conjecture, 1983): ''The hemisphere has minimum area among the [[orientable]] compact Riemannian surfaces that fill isometrically their boundary curve, of given length.''<ref name=gromov1983filling>{{cite journal| last = Gromov | first = Mikhail | year = 1983 | title = Filling Riemannian Manifolds | journal = J. Diff. Geom. | volume = 18 | issue = 1 | pages  = 1–147 | doi = 10.4310/jdg/1214509283 | mr=0697984 | doi-access = free }}</ref>{{rp|p. 13}}
+
+== Gromov's proof for the case of Riemannian disks ==
+
+In the same paper where Gromov stated the conjecture, he proved that
+
+:''the hemisphere has least area among the Riemannian surfaces that isometrically fill a circle of given length, and are [[homeomorphic]] to a [[disk (mathematics)|disk]].''<ref name=gromov1983filling/>
+
+'''Proof:''' Let <math> M </math> be a Riemannian disk that isometrically fills its boundary of length <math> 2L </math>. Glue each point <math> x\in \partial M</math> with its antipodal point <math> -x </math>, defined as the unique point of <math> \partial M </math> that is at the maximum possible distance <math> L </math> from <math> x </math>. Gluing in this way we obtain a closed Riemannian surface <math> M' </math> that is homeomorphic to the [[real projective plane]] and whose [[Systolic geometry#The notion of systole|systole]] (the length of the shortest non-contractible curve) is equal to <math> L </math>. (And reciprocally, if we cut open a projective plane along a shortest noncontractible loop of length <math> L </math>, we obtain a disk that fills isometrically its boundary of length <math> 2L </math>.) Thus the minimum area that the isometric filling <math> M </math> can have is equal to the minimum area that a Riemannian projective plane of systole <math> L </math> can have. But then [[Pu's inequality|Pu's systolic inequality]] asserts precisely that a Riemannian projective plane of given systole has minimum area [[if and only if]] it is round (that is, obtained from a Euclidean sphere by identifying each point with its opposite). The area of this round projective plane equals the area of the hemisphere (because each of them has half the area of the sphere).
+
+The proof of Pu's inequality relies, in turn, on the [[uniformization theorem]].
+
+== Fillings with Finsler metrics ==
+
+In 2001, Sergei Ivanov presented another way to prove that the hemisphere has smallest area among isometric fillings homeomorphic to a disk.<ref>{{cite journal | title= On two-dimensional minimal fillings |  language = Russian | first = Sergei V. | last = Ivanov | journal = Algebra i Analiz | volume = 13 | number = 1 | pages = 26–38 | year=2001}}</ref><ref>{{cite journal | title= On two-dimensional minimal fillings | language = english | first = Sergei V. | last = Ivanov | journal = St. Petersburg Math. J. | volume = 13 | number = 1 | year = 2002 | pages = 17–25 | mr = 1819361 }}</ref><ref>{{ cite journal | title = Filling minimality of Finslerian 2-discs | first = Sergei V. | last = Ivanov | journal = Proc. Steklov Inst. Math. | volume = 273 | number = 1 | pages = 176–190 | year = 2011 | doi = 10.1134/S0081543811040079 | arxiv = 0910.2257 }}</ref> His argument does not employ the [[uniformization theorem]] and is based instead on the topological fact that two curves on a disk must cross if their four endpoints are on the boundary and interlaced. Moreover, Ivanov's proof applies more generally to disks with [[Finsler manifold|Finsler metrics]], which differ from Riemannian metrics in that they need not satisfy the [[Pythagorean equation]] at the [[infinitesimal]] level. The area of a Finsler surface can be defined in various inequivalent ways, and the one employed here is the [[Holmes–Thompson volume|Holmes–Thompson area]], which coincides with the usual area when the metric is Riemannian. What Ivanov proved is that
+
+:''The hemisphere has minimum Holmes–Thompson area among Finsler disks that isometrically fill a closed curve of given length.''
+
+{{collapse top| title = Proof of Ivanov's theorem}}
+Let {{math|(''M'',''F'')}} be a Finsler disk that isometrically fills its boundary of length {{math|2''L''}}. We may assume that {{math|''M''}} is the standard round disk in <math>\mathbb{R}^2</math>, and the [[Finsler manifold#Definition|Finsler metric]] <math>F:\text{T}M = \text{M} \times \mathbb{R}^2 \rarr [0,+\infin)</math> is smooth and strongly convex.<ref>If the original metric is not smooth and strongly convex, then we approximate it by one that enjoys these properties.</ref> The Holmes–Thompson area of the filling [[Holmes–Thompson volume#Symplectic (coordinate-free) definition|can be computed by the formula]]
+
+: <math> \operatorname{Area}_{\mathrm{HT}}(M,F) = \frac{1}{\pi} \iint_M |B^*_x| \,\mathrm dx_0 \,\mathrm dx_1 </math>
+
+where for each point <math> x\in M </math>, the set <math> B^*_x \subseteq \mathbb R^2 </math> is the dual unit ball of the norm <math> F_x </math> (the unit ball of the [[dual norm]] <math> F_x^* </math>), and <math> |B_x^*| </math> is its usual area as a subset of <math> \mathbb R^2</math>.
+
+Choose a collection <math> P = (p_i)_{0\leq i<n} \subseteq \partial M </math> of boundary points, listed in counterclockwise order. For each point <math> p_i </math>, we define on ''M'' the scalar function <math> f_i(x)=\mathrm{dist}_F(p_i,x)</math>. These functions have the following properties:
+* Each function <math> f_i:M\to\mathbb R </math> is Lipschitz on ''M'' and therefore (by [[Rademacher's theorem]]) differentiable at [[almost every]] point <math> x\in M </math>.
+* If <math> f_i </math> is differentiable at an interior point <math> x\in M^\circ </math>, then there is a unique shortest curve from <math> p_i </math> to ''x'' (parametrized with unit speed), that arrives at ''x'' with a speed <math> v_i </math>. The differential <math> \mathrm d_xf_i</math> has norm 1 and is the unique covector <math> \varphi\in B_x^* </math> such that <math> \varphi(v_i)=F_x(v_i) </math>.
+* In each point <math> x\in M^\circ </math> where all the functions <math> f_i </math> are differentiable, the covectors <math> \mathrm d f_i </math> are distinct and placed in counterclockwise order on the dual unit sphere <math> \partial B_x^* </math>. Indeed, they must be distinct because different geodesics cannot arrive at <math> x </math> with the same speed. Also, if three of these covectors <math> \mathrm d_xf_i, \mathrm d_xf_j,\mathrm d_xf_k  </math> (for some <math> 0\leq i<j<k<n </math>) appeared in inverted order, then two of the three shortest curves from the points <math> p_i, p_j, p_k \in\partial M </math> to <math> x </math> would cross each other, which is not possible.
+
+In summary, for almost every interior point <math> x\in M^\circ </math>, the covectors <math> \mathrm d_xf_i </math> are vertices, listed in counterclockwise order, of a convex polygon inscribed in the dual unit ball <math> B_x^* </math>. The area of this polygon is <math> \sum_i \frac 12 \mathrm d_xf_i\wedge\mathrm d_xf_{i+1} </math> (where the index ''i''&nbsp;+&nbsp;1 is computed modulo ''n''). Therefore, we have a lower bound
+
+::<math> c_P:=\int_M \sum_i \frac 12 \mathrm df_i\wedge\mathrm df_{i+1} \leq \pi\, \operatorname{Area}_{\mathrm{HT}}(M,F), </math>
+
+for the area of the filling. If we define the 1-form <math> \theta_P = \sum_i \frac 12 f_i\,\mathrm df_{i+1} </math>, then we can rewrite this lower bound using the [[Stokes' theorem|Stokes formula]] as
+
+::<math> c_P = \int_M \mathrm d\theta_P = \int_{\partial M} \theta_P = \dots = 2L^2 - \sum_i \delta_i^2\ \xrightarrow{P\ \text{dense}}\ 2L^2 </math>.
+
+The boundary integral that appears here is defined in terms of the distance functions <math> f_i </math> restricted to the boundary, which ''do not depend on the isometric filling''. The result of the integral therefore depends only on the placement of the points <math> p_i </math> on the circle of length ''2L''. We omitted the computation, and expressed the result in terms of the lengths <math> \delta_i </math> of each counterclockwise boundary arc from a point <math> p_i </math> to the following point <math> p_{i+1} </math>. The computation is valid only if <math> \delta_i < \frac L 2 </math>.
+
+In summary, our lower bound for the area of the Finsler isometric filling converges to <math> \frac 1\pi 2L^2 </math> as the collection <math> P\subseteq \partial M </math> is densified. This implies that
+
+::<math> \operatorname{Area}_{\mathrm{HT}}(M,F) \geq \frac 1\pi\,2L^2 = \operatorname{Area}(\text{hemisphere})</math>,
+
+as we had to prove.
+
+<!-- he formula <math> \operatorname{Area}_{\mathrm{HT}}(M,F)\simeq \int_M \mathrm d\theta_P </math> can be thought of as a finite-sum approximation of [[Holmes–Thompson volume#Santaló's formula|Santalo's formula]] for computing the area of a Riemannian (or Finslerian) disk with no conjugate points in terms of boundary distances. [cite Ivanov for this] -->
+
+{{collapse bottom}}
+
+Unlike the Riemannian case, there is a great variety of Finsler disks that isometrically fill a closed curve and have the same Holmes–Thompson area as the hemisphere. If the [[Hausdorff measure|Hausdorff area]] is used instead, then the minimality of the hemisphere still holds, but the hemisphere becomes the unique minimizer. This follows from Ivanov's theorem since [[Holmes–Thompson volume#Normalization and comparison with Euclidean and Hausdorff measure|the Hausdorff area of a Finsler manifold is never less than the Holmes–Thompson area]], and the two areas are equal if and only if the metric is Riemannian.
+
+=== Non-minimality of the hemisphere among rational fillings with Finsler metrics ===
+A Euclidean disk that fills a circle can be replaced, without decreasing the distances between boundary points, by a Finsler disk that fills the same circle {{math|''N''}}=10 times (in the sense that its boundary wraps around the circle {{math|''N''}} times), but whose Holmes–Thompson area is less than {{math|''N''}} times the area of the disk.<ref>{{cite journal | title = On Asymptotic Volume of Finsler Tori, Minimal Surfaces in Normed Spaces, and Symplectic Filling Volume | doi = 10.2307/3597285 | first1 = Dmitri | last1 = Burago | first2 = Sergei V. | last2 = Ivanov | journal = Ann. of Math. |series =  2 | volume = 156 | number = 3 | year = 2002 | pages = 891–914 | mr = 1954238| jstor = 3597285 }}</ref> For the hemisphere, a similar replacement can be found. In other words, the filling area conjecture is false if Finsler 2-[[chain (algebraic topology)|chains]] with ''rational coefficients'' are allowed as fillings, instead of orientable surfaces (which can be considered as 2-chains with ''integer coefficients'').
+
+== Riemannian fillings of genus one and hyperellipticity ==
+
+An orientable Riemannian surface of [[genus (mathematics)|genus]] one that isometrically fills the circle cannot have less area than the hemisphere.<ref>{{ cite journal | first1 = Victor | last1 = Bangert |author-link=Victor Bangert | first2 = Christopher B. | last2 = Croke | first3 = Sergei | last3 = Ivanov | first4 = Mikhail G. | last4 = Katz | title = Filling area conjecture and ovalless real hyperelliptic surfaces | journal = Geom. Funct. Anal. | volume = 15 | number = 3 | pages= 577–597 | year = 2005 | doi = 10.1007/S00039-005-0517-8 | mr = 2221144 | arxiv = math/0405583 }}</ref> The proof in this case again starts by gluing antipodal points of the boundary. The non-orientable closed surface obtained in this way has an [[Orientability#Orientable double cover|orientable double cover]] of genus two, and is therefore [[hyperelliptic curve|hyperelliptic]]. The proof then exploits a formula by J.&nbsp;Hersch from [[integral geometry]]. Namely, consider the family of figure-8 loops on a football, with the self-intersection point at the equator. Hersch's formula expresses the area of a metric in the conformal class of the football, as an average of the energies of the figure-8 loops from the family. An application of Hersch's formula to the hyperelliptic quotient of the [[Riemann surface]] proves the filling area conjecture in this case.
+
+== Almost flat manifolds are minimal fillings of their boundary distances ==
+
+If a Riemannian manifold {{math|''M''}} (of any dimension) is '''almost flat''' (more precisely, {{math|''M''}} is a region of <math> \mathbb R^n </math> with a Riemannian metric that is <math> C^2 </math>-near the standard Euclidean metric), then {{math|''M''}} is a '''volume minimizer''': it cannot be replaced by an orientable Riemannian manifold that fills the same boundary and has less volume without reducing the distance between some boundary points.<ref name="burago2010boundary">{{ cite journal | title = Boundary rigidity and filling volume minimality of metrics close to a flat one | first1 = Dmitri | last1 = Burago | first2 = Sergei V. | last2 = Ivanov | journal = Ann. of Math. |series =  2 | volume = 171 | number = 2 | year = 2010 | pages = 1183–1211 | doi = 10.4007/annals.2010.171.1183 | mr = 2630062 | doi-access = free }}</ref> This implies that if a piece of sphere is sufficiently small (and therefore, nearly flat), then it is a volume minimizer. If this theorem can be extended to large regions (namely, to the whole hemisphere), then the filling area conjecture is true. It has been conjectured that all simple Riemannian manifolds (those that are convex at their boundary, and where every two points are joined by a unique geodesic) are volume minimizers.<ref name="burago2010boundary"/>
+
+The proof that each almost flat manifold {{math|''M''}} is a volume minimizer involves [[Kuratowski embedding|embedding {{math|''M''}} in <math> L^\infty(\partial M)</math>]], and then showing that any isometric replacement of {{math|''M''}} can also be mapped into the same space <math> L^\infty (\partial M)</math>, and projected onto {{math|''M''}}, without increasing its volume. This implies that the replacement has not less volume than the original manifold {{math|''M''}}.
+
+==See also==
+
+*[[Filling radius]]
+*[[Pu's inequality]]
+*[[Systolic geometry]]
+
+==References==
+{{Reflist}}
+*{{Citation | last1=Katz | first1=Mikhail G. | title=Systolic geometry and topology| publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-4177-8 | year=2007 | volume=137 | author1-link=Mikhail Katz }}
+
+{{Systolic geometry navbox}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Riemannian geometry]]
+[[Category:Differential geometry]]
+[[Category:Differential geometry of surfaces]]
+[[Category:Surfaces]]
+[[Category:Area]]
+[[Category:Systolic geometry]]

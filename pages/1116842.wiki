@@ -1,0 +1,70 @@
+{{Short description|Theory of irregularities of distribution}}
+{{more citations needed|date=January 2018}}
+
+In mathematics, '''discrepancy theory''' describes the deviation of a situation from the state one would like it to be in. It is also called the '''theory of irregularities of distribution'''. This refers to the theme of ''classical'' discrepancy theory, namely distributing points in some space such that they are evenly distributed with respect to some (mostly geometrically defined) subsets. The discrepancy (irregularity) measures how far a given distribution deviates from an ideal one.
+
+Discrepancy theory can be described as the study of inevitable irregularities of distributions, in [[Measure theory|measure-theoretic]] and [[Combinatorics|combinatorial]] settings. Just as [[Ramsey theory]] elucidates the impossibility of total disorder, discrepancy theory studies the deviations from total uniformity.
+
+A significant event in the history of discrepancy theory was the 1916 paper of [[Hermann Weyl|Weyl]] on the uniform distribution of sequences in the unit interval.<ref>{{Cite journal|last1=Weyl|first1=Hermann|author1-link=Hermann Weyl|date=1 September 1916|title=Über die Gleichverteilung von Zahlen mod. Eins|trans-title=About the equal distribution of numbers|journal=Mathematische Annalen|language=de|volume=77|issue=3|pages=313–352|doi=10.1007/BF01475864|s2cid=123470919|issn=1432-1807|url=https://zenodo.org/record/2425535}}</ref>
+
+== Theorems ==
+Discrepancy theory is based on the following classic theorems:
+* [[Geometric discrepancy theory]]
+* The theorem of [[Tatyana Pavlovna Ehrenfest|van Aardenne-Ehrenfest]]
+* Arithmetic progressions (Roth, Sarkozy, [[Jozsef Beck|Beck]], Matousek & [[Joel Spencer|Spencer]])
+* [[Beck–Fiala theorem]]<ref>{{cite journal
+  | title = "Integer-making" theorems
+  | journal =  Discrete Applied Mathematics
+  | volume =  3
+  | issue =  1
+  | doi = 10.1016/0166-218x(81)90022-6    
+  | author =  József Beck and Tibor Fiala
+  | year = 1981
+ | pages=1–8| doi-access =free
+  }}</ref>
+* Six Standard Deviations Suffice (Spencer)<ref>{{cite journal
+|title   = Six Standard Deviations Suffice
+|author  = Joel Spencer
+|author-link = Joel Spencer
+|journal = Transactions of the American Mathematical Society
+|volume  = 289
+|issue   = 2
+|date=June 1985
+|pages   = 679–706
+|doi     = 10.2307/2000258
+|publisher   = Transactions of the American Mathematical Society, Vol. 289, No. 2
+|jstor   = 2000258
+|doi-access= free
+}}</ref>
+
+== Major open problems ==
+The unsolved problems relating to discrepancy theory include:
+* Axis-parallel rectangles in dimensions three and higher (folklore)
+* [[János Komlós (mathematician)|Komlós]] conjecture 
+* [[Heilbronn triangle problem]] on the minimum area of a triangle determined by three points from an ''n''-point set
+
+== Applications ==
+Applications for discrepancy theory include:
+* Numerical integration: [[Monte Carlo method]]s in high dimensions
+* Computational geometry: [[Divide-and-conquer algorithm]]
+* Image processing: [[Halftone|Halftoning]]
+* Random trial formulation: [[Randomized controlled trial]]<ref>{{cite journal|last=Harshaw|first=Christopher| author2=Sävje, Fredrik | author3= Spielman, Daniel A | author4 = Zhang, Peng | title=Balancing covariates in randomized experiments with the Gram--Schmidt walk design | journal=Journal of the American Statistical Association | pages=2934–2946 | year=2024 |volume=119 |issue=548 |doi=10.1080/01621459.2023.2285474 | url= https://www.tandfonline.com/doi/full/10.1080/01621459.2023.2285474| arxiv=1911.03071 }}</ref><ref>{{cite video|last1=Spielman|first1=Daniel|date=11 May 2020|title= Using discrepancy theory to improve the design of randomized controlled trials|url= https://www.ias.edu/video/csdm/2020/0511-DanielSpielman}}</ref><ref>{{cite video|last1=Spielman|first1=Daniel|date=29 January 2021|title= Discrepancy Theory and Randomized Controlled Trials|url= https://www.youtube.com/watch?v=ZMRAeq-7hHU}}</ref>
+
+== See also ==
+*[[Discrepancy of hypergraphs]]
+*[[Geometric discrepancy theory]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+*{{cite book |title=Irregularities of Distribution |last=Beck |first=József |author2=Chen, William W. L. |year=1987 |publisher=Cambridge University Press |location=New York |isbn=0-521-30792-9 }}
+*{{cite book |title=The Discrepancy Method: Randomness and Complexity |last=Chazelle |first=Bernard |author-link=Bernard Chazelle |year=2000 |publisher=Cambridge University Press |location=New York |isbn=0-521-77093-9 |url=https://archive.org/details/discrepancymetho0000chaz|url-access=registration }}
+*{{cite book |title=Geometric Discrepancy: An Illustrated Guide |last=Matousek |first=Jiri |year=1999 |series=Algorithms and combinatorics |volume=18 |publisher=Springer |location=Berlin |isbn=3-540-65528-X }}
+
+{{Authority control}}
+
+[[Category:Diophantine approximation]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Discrepancy theory]]
+[[Category:Measure theory]]

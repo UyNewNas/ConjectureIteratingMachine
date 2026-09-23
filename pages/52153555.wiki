@@ -1,0 +1,44 @@
+{{Short description|Unsolved geometry problem}}
+{{other uses of|universal cover|universal covering|Covering space#Universal covers}}
+[[File:Lebesgue-circle-triangle.svg|right|thumb|An equilateral triangle of diameter 1 doesn’t fit inside a circle of diameter 1]]
+'''Lebesgue's universal covering problem''' is an unsolved problem in [[geometry]] that asks for the [[convex set|convex]] shape of smallest area that can cover every planar set of diameter one. The [[diameter]] of a set by definition is the least upper bound of the distances between all pairs of points in the set. A shape covers a set if it contains a congruent subset. In other words the set may be rotated, translated or reflected to fit inside the shape.
+{{unsolved|mathematics|What is the minimum area of a convex shape that can cover every planar set of diameter one?}}
+
+==Formulation and early research==
+The problem was posed by [[Henri Lebesgue]] in a letter to [[Gyula Pál]] in 1914. It was published in a paper by Pál in 1920 along with Pál's analysis.<ref>{{Cite journal | last1 = Pál | first1 = J. | title = 'Über ein elementares Variationsproblem | volume = 2 | year = 1920 | journal =  Danske Mat.-Fys. Meddelelser III}}</ref> He showed that a cover for all [[Curve of constant width|curves of constant width]] one is also a cover for all sets of diameter one and that a cover can be constructed by taking a regular [[hexagon]] with an inscribed circle of diameter one and removing two corners from the hexagon to give a cover of area <math display=block>2-\frac{2}{\sqrt3}\approx 0.84529946.</math>
+[[File:Pál's_solution_to_Lebesgue's_universal_covering_problem.svg|thumb|The shape outlined in black is Pál's solution to Lebesgue's universal covering problem. Within it, planar shapes with diameter one have been included: a circle (in blue), a Reuleaux triangle (in red) and a square (in green).]]
+
+In 1936, [[Roland Sprague]] showed that a part of Pál's cover could be removed near one of the other corners while still retaining its property as a cover.<ref>{{Cite journal | last1 = Sprague | first1 = R. | title = Über ein elementares Variationsproblem | year = 1936 | journal =  Matematiska Tidsskrift Ser. B | pages = 96–99 | jstor = 24530328}}</ref> This reduced the upper bound on the area to <math>a \le 0.844137708436</math>. 
+
+==Current bounds==
+After a sequence of improvements to Sprague's solution, each removing small corners from the solution,<ref>{{Cite journal | last1 = Hansen | first1 = H. C. | title = Small universal covers for sets of unit diameter 
+| volume = 42 | year = 1992 | journal = [[Geometriae Dedicata]] | issue = 2 | pages = 205–213 | mr = 1163713 | doi = 10.1007/BF00147549| s2cid = 122081393 }}</ref><ref>{{Cite journal | last1 = Baez | first1 = John C. | author1-link = John C. Baez | last2 = Bagdasaryan | first2 = Karine | last3 = Gibbs | first3 = Philip | title = The Lebesgue universal covering problem 
+| volume = 6 | year = 2015 | journal = [[Journal of Computational Geometry]] | pages = 288–299 | mr = 3400942 | doi = 10.20382/jocg.v6i1a12| arxiv = 1502.01251 | s2cid = 20752239 }}</ref>
+a 2018 preprint of Philip Gibbs claimed the best upper bound known, a further reduction to area 0.8440935944.<ref>{{ cite arXiv
+ |title  = An upper bound for Lebesgue's covering problem
+ |first  = Philip |last= Gibbs |date=23 October 2018
+ |class = math.MG |eprint = 1810.10089
+ }}</ref><ref>{{cite web
+ |title   = Amateur mathematician finds smallest universal cover
+ |website   = [[Quanta Magazine]]
+ |url   = https://www.quantamagazine.org/amateur-mathematician-finds-smallest-universal-cover-20181115
+ |access-date   = 2018-11-16
+ |archive-url   = https://web.archive.org/web/20190114113805/https://www.quantamagazine.org/amateur-mathematician-finds-smallest-universal-cover-20181115/
+ |archive-date   = 2019-01-14
+ |url-status   = dead
+ }}</ref>
+
+The best known lower bound for the area was provided by Peter Brass and Mehrbod Sharifi using a combination of three shapes in optimal alignment, proving that the area of an optimal cover is at least 0.832.<ref>{{Cite journal | last1 = Brass | first1 = Peter | last2 = Sharifi | first2 = Mehrbod | title = A lower bound for Lebesgue's universal cover problem 
+| volume = 15 | issue = 5 | year = 2005 | journal = [[International Journal of Computational Geometry and Applications]] | pages = 537–544 | mr = 2176049 | doi = 10.1142/S0218195905001828}}</ref>
+
+==See also==
+* [[Moser's worm problem]], what is the minimum area of a shape that can cover every unit-length curve?
+* [[Moving sofa problem]], the problem of finding a maximum-area shape that can be rotated and translated through an L-shaped corridor
+* [[Kakeya set]], a set of minimal area that can accommodate every unit-length line segment (with translations allowed, but not rotations)
+*[[Blaschke selection theorem]], which can be used to prove that Lebesgue's universal covering problem has a solution.
+
+==References==
+{{reflist}}
+
+[[Category:Discrete geometry]]
+[[Category:Unsolved problems in geometry]]

@@ -1,0 +1,159 @@
+{{distinguish|XY problem}}
+{{DISPLAYTITLE:''X'' + ''Y'' sorting}}
+{{short description|Problem of sorting pairs of numbers by their sum}}
+{{good article}}
+{{unsolved|computer science|Is there an <math>X + Y</math> sorting algorithm faster than <math>O(n^2 \log n)</math>?}}
+[[File:X+Y sorting.svg|thumb|upright=1.35|Geometric visualization of the <math>X+Y</math> sorting problem. The input sets <math>X</math> and <math>Y</math> are represented by the sets of vertical and horizontal black lines (respectively), and the goal of the problem is to sort the crossing points by the positions of the red diagonal lines through them.]]
+In [[computer science]], '''''X'' + ''Y'' sorting''' is the problem of [[Sorting algorithm|sorting]] pairs of numbers by their sums. Applications of the problem include [[transit fare]] minimisation, [[VLSI]] design, and [[sparse polynomial]] multiplication. As with [[comparison sort]]ing and [[integer sorting]] more generally, algorithms for this problem can be based only on comparisons of these sums, or on other operations that work only when the inputs are small integers.
+
+It is unknown whether this problem has a comparison-based solution whose running time is [[asymptotic analysis|asymptotically]] faster than sorting an unstructured list of equally many items. Therefore, research on the problem has focused on two approaches to settle the question of whether such an improvement is possible: the development of algorithms that improve on unstructured sorting in their number of comparisons rather than in their total running time, and [[lower bound]]s for the number of comparisons based on counting cells in subdivisions of high-dimensional spaces. Both approaches are historically tied together, in that the first algorithms that used few comparisons were based on the weakness of the cell-counting lower bounds.
+
+==Problem statement and history==
+The input to the <math>X+Y</math> sorting problem consists of two finite [[Collection (abstract data type)|collections]] of numbers <math>X</math> and <math>Y</math>, of the same length. The problem's output is the collection of all [[ordered pair|pairs]] of a number from <math>X</math> and a number from <math>Y</math>, arranged into sorted order by the sum of each pair.{{r|topp}} As a small example, for the inputs <math>X=\{1,2,9\}</math> and <math>Y=\{0,4,9\}</math>, the output should be the list of pairs<math display=block>(1,0),\, (2,0),\, (1,4),\, (2,4),\, (9,0),\, (1,9),\, (2,9),\, (9,4),\, (9,9)</math>of one element from <math>X</math> and one element from <math>Y</math>, listed in sorted order by their sums of pairs<math display="block">1, 2, 5, 6, 9, 10, 11, 13, 18.</math>One way to solve the problem would be to construct the pairs to be sorted (the [[Cartesian product]] of the two collections) and use these pairs as input to a standard [[comparison sort]]ing algorithm such as [[merge sort]] or [[heapsort]]. When the inputs have length <math>n</math>, they form <math>n^2</math> pairs, and the time to sort the pairs in this way is <math>O(n^2\log n)</math>. In terms of its [[big O notation]], this method is the fastest known algorithm for <math>X+Y</math> sorting.  Whether a faster algorithm exists is an [[List of unsolved problems in computer science|open problem]],{{r|topp|skiena}} posed by [[Elwyn Berlekamp]] prior to 1975.{{r|topp|harper}}
+
+A variant of the problem sorts the [[sumset]], the [[set (mathematics)|set]] of sums of pairs, with duplicate sums condensed to a single value. For this variant, the size of the sumset may be significantly smaller than <math>n^2</math>, and [[output-sensitive algorithm]]s for constructing it have been investigated.{{r|arroc}}
+
+==Applications==
+[[Steven Skiena]] recounts a practical application in transit [[fare]] minimisation, an instance of the [[shortest path problem]]: find the cheapest two-hop airplane ticket between two given cities, from an input that describes both the cost of each hop and which pairs of hops may be combined into a single ticket. Skiena's solution consists of sorting pairs of hops by their total cost as an instance of the <math>X+Y</math> sorting problem, and then testing the resulting pairs in this sorted order until finding one that is allowed. To generate the sorted pairs in this order, Skiena uses a [[priority queue]] of pairs, initially containing only a single pair, the one consisting of the two cheapest hops. Then, when a pair <math>(x,y)</math> is removed from the queue and found to be disallowed, two more pairs are added, with one of these two pairs combining <math>x</math> with the next hop after <math>y</math> in a sorted list of the hops to the destination, and the other pair combining <math>y</math> with the next hop after <math>x</math> in a sorted list of hops from the start. In this way, each successive pair can be found in logarithmic time, and only the pairs up to the first allowable one need to be sorted.{{r|skiena}}
+
+<math>X+Y</math> sorting is the most expensive subroutine in an algorithm for a problem in [[VLSI]] design, in which one must place two subunits of a VLSI circuit side-by-side along a communications channel in order to minimize the width of the channel needed to route pairs of wires from one subunit to the other. As one subunit is continuously shifted relative to the other, the channel width only changes at discrete positions where the ends of two wires line up with each other, and finding the sorted ordering of these positions in order to compute the sequence of changes to the width can be performed by <math>X+Y</math> sorting. If this sorting problem could be sped up, it would also speed up this VLSI design task.{{r|lp}}
+
+Another application involves [[polynomial multiplication]] for polynomials of a single variable that may have many fewer terms than their [[Degree of a polynomial|degrees]]. The product of two polynomials can be expressed as a sum of products of pairs of terms, one from each polynomial, and placing these term-by-term products into degree order amounts to sorting them by the sum of degrees. For example, the instance of <math>X+Y</math> sorting with <math>n=3</math> given as an example above corresponds to the  multiplication of two [[Trinomial|three-term polynomials]] to produce a nine-term polynomial:
+<math display=block>\begin{align}
+(&x+x^2+x^9)(1+x^4+x^9)\\
+&=x+x^2+x^5+x^6+x^9+x^{10}+x^{11}+x^{13}+x^{18}.\\
+\end{align}</math>
+The degrees are always integers, so integer-based algorithms for <math>X+Y</math> sorting may be applied.{{r|klip}} However, for polynomials whose number of terms is comparable to their degree, [[Discrete Fourier transform#Polynomial multiplication|FFT-based polynomial multiplication algorithms]] may be significantly more efficient than term-by-term multiplication.{{r|klarreich}}
+
+==Number of orderings==
+A well-known lower bound for unstructured sorting, in the [[decision tree model]], is based on the [[factorial]] number of sorted orders that an unstructured list may have. Because each comparison can at best reduce the number of possible orderings by a factor of two, sorting requires a number of comparisons at least equal to the [[binary logarithm]] of the factorial, which is <math>n\log_2 n-O(n)</math>.{{r|clrs}} Early work on <math>X+Y</math> sorting followed a similar approach by asking how many different sorted orderings are possible for this problem, and proving that this number is at most <math>O(n^{8n})</math>. However, because its binary logarithm is at most <math>8n\log_2 n+O(1)</math>, much smaller than the known time bounds for <math>X+Y</math> sorting, this method can only lead to weak lower bounds on the number of comparisons.{{r|harper|fredman}}
+
+The proof of this bound relates <math>X+Y</math> sorting to the complexity of an [[arrangement of hyperplanes]] in high-dimensional geometry. The two input collections for the <math>X+Y</math> sorting problem comprise <math>2n</math> numbers, which can alternatively be interpreted as the [[Cartesian coordinates]] of a point in the <math>2n</math>-dimensional space <math>\mathbb{R}^{2n}</math>. This space can be subdivided into cells, so that within a single cell all points correspond to inputs that produce the same sorted order. For this subdivision, each boundary between two cells lies within a [[hyperplane]] defined by an equality of pairs <math>x_i+y_j=x_k+y_\ell</math>, where <math>(x_i,y_j)</math> and <math>(x_k,y_\ell)</math> are two pairs whose ordering changes from one adjacent cell to the other. These hyperplanes are either generated by two disjoint pairs, or they have the simplified forms <math>x_i=x_k</math> or <math>y_j=y_\ell</math>, so the number of distinct hyperplanes that can be determined in this way is
+<math display=block>k=2\binom{n}{2}^2+2\binom{n}{2}.</math>
+The number of cells that this number of hyperplanes can divide a space of dimension <math>2n</math> into is
+<math display=block>\binom{k}{2n}+\binom{k}{2n-1}+\cdots+\binom{k}{0}=O(n^{8n}).</math> Therefore, the set <math>X+Y</math> has <math>O(n^{8n})</math> different possible sorted orderings.{{r|harper|fredman|oeis}}
+
+A similar style of analysis has been more successful in ruling out fast solutions to certain generalizations of <math>X+Y</math> sorting, by showing that they have too many orderings to sort quickly. In particular, {{harvtxt|Harper|Payne|Savage|Straus|1975}} suggest separately sorting <math>X</math> and <math>Y</math>, and then constructing a two-dimensional matrix of the values of <math>X+Y</math> that is sorted both by rows and by columns before using this partially-sorted data to complete the sort of <math>X+Y</math>.{{r|harper}} This idea of using a row-sorted and column-sorted matrix forms the basis for the method used by Skiena in the transportation application,{{r|skiena}} and it can reduce the number of comparisons by a constant factor relative to naive comparison sorting. However, for matrices whose rows and columns are sorted in this way, the number of possible sorted orderings of the whole matrix is much larger than <math>O(n^{8n})</math>, so large that any comparison sorting algorithm that can work for arbitrary <math>n\times n</math> matrices that are sorted by rows and columns still requires <math>\Omega(n^2\log n)</math> comparisons. Therefore, if the <math>X+Y</math> sorting problem is to be solved quickly, the solution must use
+additional information about the set <math>X+Y</math> beyond this matrix ordering.{{r|harper}}
+
+==Number of comparisons==
+For the classical comparison sorting problem, the time to sort and the number of comparisons needed to sort are within constant factors of each other.
+But for <math>X + Y</math> sorting, the number of comparisons is smaller than the best time bound known: [[Michael Fredman]] showed in 1976 that <math>X + Y</math> sorting can be done using only <math>O(n^2)</math> comparisons. More generally, he showed that any set of <math>N</math> elements, whose sorted ordering has already been restricted to a family <math>\Gamma</math> of orderings, can be sorted using <math>\log_2|\Gamma|+O(N)</math> comparisons, by a form of [[binary insertion sort]]. For the <math>X + Y</math> sorting problem, <math>N=n^2</math>, and <math>|\Gamma|=O(n^{8n})</math>, so <math>\log_2|\Gamma|=O(n\log n)</math> and Fredman's bound implies that only <math>O(n^2)</math> comparisons are needed. However, in Fredman's method, the time needed to decide which comparisons to perform may be significantly higher than the bound on the number of comparisons.{{r|fredman}}
+
+The first explicit algorithm that achieves both <math>O(n^2)</math> comparisons and <math>O(n^2\log n)</math> total complexity was published sixteen years after Fredman by {{harvtxt|Lambert|1992}}. The algorithm performs the following steps:
+#Recursively sort the two sets <math>X+X</math> and <math>Y+Y</math>.
+#Use the equivalence <math>x_i-x_j\le x_k-x_\ell \Leftrightarrow x_i+x_\ell\le x_j+x_k</math> to infer the sorted orderings of <math>X-X</math> and <math>Y-Y</math> without additional comparisons.
+#[[Merge algorithm|Merge]] the two sets <math>X-X</math> and <math>Y-Y</math> into a single sorted order, using a number of comparisons linear in their total size.
+#Use the merged order and the equivalence <math>x_i+y_j\le x_k+y_\ell\Leftrightarrow x_i-x_k\le y_\ell-y_j</math> to infer the sorted order of <math>X+Y</math> without additional comparisons.
+The part of the algorithm that recursively sorts <math>X+X</math> (or equivalently <math>Y+Y</math>) does so by the following steps:
+#Split <math>X</math> into two equal sublists <math>A</math> and <math>B</math>.
+#Recursively sort <math>A+A</math> and <math>B+B</math>
+#Infer the ordering on <math>A+B</math> using only the comparisons from a single merge step as above.
+#Merge the sorted results <math>A+A</math>, <math>B+B</math>, and <math>A+B</math> together.
+The number of comparisons <math>C(n)</math> needed to perform this recursive algorithm on an input of <math>n</math> items can be analyzed using the [[recurrence relation]]
+<math display=block>C(n)\le 2C(n/2)+O(n^2),</math>
+where the <math>2C(n/2)</math> term of the recurrence counts the number of comparisons in the recursive calls to the algorithm to sort <math>A+A</math> and <math>B+B</math>, and the <math>O(n^2)</math> term counts the number of comparisons used to merge the results. The [[Master theorem (analysis of algorithms)|master theorem]] for recurrence relations of this form shows that <math>C(n)=O(n^2).</math> The total time complexity is slower, <math>O(n^2\log n)</math>, because of the steps of the algorithm that use already-made comparisons to infer orderings of other sets. These steps can be performed in time <math>O(n^2\log n)</math> by using a standard comparison-sorting algorithm with its comparison steps replaced by the stated inferences.{{r|lambert}}
+
+If only comparisons between elements of <math>X+Y</math> are allowed, then there is also a matching lower bound of <math>\Omega(n^2)</math> on the number of comparisons,{{r|fredman|dietzfelbinger}} but with more general comparisons involving linear combinations of constant numbers of elements, only <math>O(n\log^2 n)</math> comparisons are needed.{{r|klm}}
+
+==Non-comparison-based algorithms==
+Just as [[integer sorting]] can be faster than comparison sorting for small-enough integers, the same is true for <math>X+Y</math> sorting. In particular,
+with integer inputs in the range from <math>0</math> to some upper limit <math>M</math>, the problem can be solved in <math>O(n+M\log M)</math> operations by means of the [[fast Fourier transform]].{{r|topp|harper}}
+
+==Related problems==
+Several other problems in [[computational geometry]] have equivalent or harder complexity to <math>X+Y</math> sorting, including constructing [[Minkowski sum]]s of staircase polygons, finding the crossing points of an [[arrangement of lines]] in sorted order by their <math>x</math>-coordinates, listing pairs of points in sorted order by their distances, and testing whether one [[rectilinear polygon]] can be translated to fit within another.{{r|hb}}
+
+The problem of testing whether two of the pairs in the <math>X+Y</math> sorting problem have equal sums can be solved by sorting the pairs and then testing consecutive pairs for equality. In turn, it could be used to solve the [[3SUM]] problem, implying that it is unlikely to have a strongly subquadratic algorithm.{{r|topp}}
+
+==References==
+<references>
+
+<ref name=arroc>{{cite conference
+ | last1 = Arnold | first1 = Andrew
+ | last2 = Roche | first2 = Daniel S.
+ | contribution = Output-sensitive algorithms for sumset and sparse polynomial multiplication
+ | doi = 10.1145/2755996.2756653
+ | location = New York
+ | mr = 3388279
+ | pages = 29–36
+ | publisher = ACM
+ | title = Proceedings of the 2015 ACM International Symposium on Symbolic and Algebraic Computation (ISSAC'15)
+ | year = 2015| arxiv = 1501.05296
+ | isbn = 978-1-4503-3435-8
+ }}</ref>
+
+<ref name=clrs>{{Introduction to Algorithms|chapter=8.1 Lower bounds for sorting|pages=191–193|edition=3}}</ref>
+
+<ref name=dietzfelbinger>{{cite journal|last=Dietzfelbinger|first=Martin|doi=10.1016/0304-3975(89)90132-1|issue=2|journal=[[Theoretical Computer Science (journal)|Theoretical Computer Science]]|mr=1019082|pages=137–155|title=Lower bounds for sorting of sums|volume=66|year=1989|doi-access=}}</ref>
+
+<ref name=fredman>{{cite journal |first=Michael L. |last=Fredman |author-link=Michael Fredman |title=How good is the information theory bound in sorting? |journal=[[Theoretical Computer Science (journal)|Theoretical Computer Science]] |volume=1 |issue=4 |pages=355–361 |doi=10.1016/0304-3975(76)90078-5 |year=1976 |mr=0416100|doi-access= }}</ref>
+
+<ref name=harper>{{cite journal |last1=Harper |first1=L. H. |last2=Payne |first2=T. H. |last3=Savage |first3=J. E. |author3-link= John E. Savage |last4=Straus |first4=E.|author4-link= Ernst G. Straus |title=Sorting {{math|''X'' + ''Y''}} |journal=[[Communications of the ACM]] |volume=18 |issue=6 |year=1975 |pages=347–349 |doi=10.1145/360825.360869|mr=0378473|s2cid=26360885 |doi-access=free }}</ref>
+
+<ref name=hb>{{cite conference|contribution-url=http://www.cccg.ca/proceedings/1996/cccg1996_0048.pdf|contribution=Finding an {{math|''o''(''n''<sup>2</sup> log ''n'')}} algorithm is sometimes hard|first=Antonio|last=Hernández Barrera|pages=289–294|title=Proceedings of the 8th Canadian Conference on Computational Geometry (CCCG'96)|year=1996}}</ref>
+
+<ref name=klarreich>{{cite journal
+ | last = Klarreich | first = Erica | author-link = Erica Klarreich
+ | date = December 2019
+ | doi = 10.1145/3371387
+ | issue = 1
+ | journal = [[Communications of the ACM]]
+ | pages = 11–13
+ | title = Multiplication hits the speed limit
+ | volume = 63| s2cid = 209450552 }}</ref>
+
+<ref name=klip>{{cite journal
+ | last = Klip | first = Dorothea A.
+ | doi = 10.1137/0208025
+ | issue = 3
+ | journal = [[SIAM Journal on Computing]]
+ | mr = 539251
+ | pages = 326–343
+ | title = New algorithms for polynomial multiplication
+ | volume = 8
+ | year = 1979}}</ref>
+
+<ref name=klm>{{cite journal
+ | last1 = Kane | first1 = Daniel M. | author1-link = Daniel Kane (mathematician)
+ | last2 = Lovett | first2 = Shachar
+ | last3 = Moran | first3 = Shay
+ | arxiv = 1705.01720
+ | doi = 10.1145/3285953
+ | issue = 3
+ | journal = [[Journal of the ACM]]
+ | mr = 3941341
+ | page = A16:1–A16:18
+ | title = Near-optimal linear decision trees for {{mvar|k}}-sum and related problems
+ | volume = 66
+ | year = 2019| s2cid = 145914158 }}</ref>
+
+<ref name=lambert>{{cite journal |first=Jean-Luc |last=Lambert |title=Sorting the sums ({{mvar|x<sub>i</sub>}} + {{mvar|y<sub>j</sub>}}) in {{math|''O''(''n''<sup>2</sup>)}} comparisons |journal=[[Theoretical Computer Science (journal)|Theoretical Computer Science]] |volume=103 |issue=1 |pages=137–141 |year=1992 |doi=10.1016/0304-3975(92)90089-X|mr=1181041|doi-access= }}</ref>
+
+<ref name=lp>{{cite conference
+ | last1 = LaPaugh | first1 = Andrea S. | author1-link = Andrea LaPaugh
+ | last2 = Pinter | first2 = Ron Y. | author2-link = Ron Pinter
+ | contribution = On minimizing channel density by lateral shifting
+ | pages = 123–124
+ | title = IEEE International Conference on Computer-Aided Design
+ | year = 1983}} As cited by {{cite conference
+ | last1 = Johnson | first1 = David S. | author1-link = 
+David S. Johnson
+ | last2 = LaPaugh | first2 = Andrea S.
+ | last3 = Pinter | first3 = Ron Y. | author3-link = Ron Pinter
+ | editor-last = Sleator | editor-first = Daniel Dominic
+ | contribution = Minimizing channel density by lateral shifting of components
+ | contribution-url = https://dl.acm.org/citation.cfm?id=314464.314486
+ | pages = 122–131
+ | title = Proceedings of the Fifth Annual ACM-SIAM Symposium on Discrete Algorithms. 23-25 January 1994, Arlington, Virginia, USA
+ | year = 1994}}</ref>
+
+<ref name=oeis>{{cite OEIS|A343245}}</ref>
+
+<ref name=skiena>{{cite book |first=Steven |last=Skiena |author-link=Steven Skiena |title=The Algorithm Design Manual |publisher=Springer |year=2008 |contribution=4.4 War Story: Give me a Ticket on an Airplane|pages=118–120|edition=2nd|doi=10.1007/978-1-84800-070-4_4}}</ref>
+
+<ref name=topp>{{cite web |first1=Erik |last1=Demaine |author-link1=Erik Demaine |first2=Jeff |last2=Erickson |first3=Joseph |last3=O'Rourke|author3-link=Joseph O'Rourke (professor) |title=Problem 41: Sorting {{math|''X'' + ''Y''}} (Pairwise Sums) |date=20 August 2006 |access-date=23 September 2014 |website=The Open Problems Project |url=http://cs.smith.edu/~orourke/TOPP/P41.html}}</ref>
+
+</references>
+
+[[Category:Sorting algorithms]]
+[[Category:Unsolved problems in computer science]]

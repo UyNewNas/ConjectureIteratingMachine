@@ -1,0 +1,95 @@
+{{Short description|Type of composite number}}
+In [[number theory]], a '''Giuga number''' is a [[composite number]] <math>n</math> such that for each of its distinct [[prime factor]]s <math>p_i</math> we have <math>p_i | \left({n \over p_i} - 1\right)</math>, or equivalently such that for each of its distinct [[prime factor]]s ''p''<sub>''i''</sub> we have <math>p_i^2 | (n - p_i)</math>. For example, {{nowrap|1=30 = 2 × 3 × 5}} is a Giuga number since we can verify that:
+* {{nowrap|1=30/2 − 1 = 14 = 2 × 7}},
+* {{nowrap|1=30/3 − 1 = 9 = 3<sup>2</sup>}}, and
+* {{nowrap|1=30/5 − 1 = 5}}.
+
+The Giuga numbers are named after the mathematician [[Giuseppe Giuga]], and relate to [[Giuga's conjecture|his conjecture]] on primality.
+
+== Definitions ==
+Alternative definition for a '''Giuga number''' due to [[Takashi Agoh]] is:  a [[composite number]] ''n'' is a '''Giuga number''' [[if and only if]] the congruence
+
+:<math>nB_{\varphi(n)} \equiv -1 \pmod n</math> 
+
+holds true, where ''B'' is a [[Bernoulli number]] and <math>\varphi(n)</math> is [[Euler's totient function]].
+
+An equivalent formulation due to [[Giuseppe Giuga]] is:  a [[composite number]] ''n'' is a '''Giuga number''' if and only if the congruence
+
+:<math>\sum_{i=1}^{n-1} i^{\varphi(n)} \equiv -1 \pmod n</math>
+
+and if and only if
+
+:<math>\sum_{p|n} \frac{1}{p} - \prod_{p|n} \frac{1}{p} \in \mathbb{N}.</math>
+
+All known Giuga numbers ''n'' in fact satisfy the stronger condition
+
+:<math>\sum_{p|n} \frac{1}{p} - \prod_{p|n} \frac{1}{p} = 1.</math>
+
+== List of numbers ==
+Thirteen Giuga numbers are known. The list is complete up to the 12th term and for numbers with 8 or fewer prime factors, but it is unknown if there is a Giuga number between the 12th and 13th terms.<ref>{{cite OEIS|A007850}}</ref>
+{| class="wikitable"
+|-
+! Rank !! Number !! Prime factorization
+|-
+| 1 || 30 || 2 × 3 × 5
+|-
+| 2 || 858 || 2 × 3 × 11 × 13
+|-
+| 3 || 1722 || 2 × 3 × 7 × 41
+|-
+| 4 || 66198 || 2 × 3 × 11 × 17 × 59
+|-
+| 5 || 2214408306 || 2 × 3 × 11 × 23 × 31 × 47057
+|-
+| 6 || 24423128562 || 2 × 3 × 7 × 43 × 3041 × 4447
+|-
+| 7 || 432749205173838 || 2 × 3 × 7 × 59 × 163 × 1381 × 775807
+|-
+| 8 || 14737133470010574 || 2 × 3 × 7 × 71 × 103 × 67213 × 713863
+|-
+| 9 || 550843391309130318 || 2 × 3 × 7 × 71 × 103 × 61559 × 29133437
+|-
+| 10 || 244197000982499715087866346 || 2 × 3 × 11 × 23 × 31 × 47137 × 28282147 × 3892535183
+|-
+| 11 || 554079914617070801288578559178 || 2 × 3 × 11 × 23 × 31 × 47059 × 2259696349 × 110725121051
+|-
+| 12 || 1910667181420507984555759916338506 || 2 × 3 × 7 × 43 × 1831 × 138683 × 2861051 × 1456230512169437
+|-
+| colspan=3| ...
+|-
+| 13? || 42000179497077470620387115096706566324041957537516<br />30609228764416142557211582098432545190323474818 || 2 × 3 × 11 × 23 × 31 × 47059 × 2217342227 × 1729101023519 × 8491659218261819498490029296021 × 58254480569119734123541298976556403
+|-
+| colspan=3| ...
+|-
+|}
+
+== Properties ==
+The prime factors of a Giuga number must be distinct. If <math>p^2</math> divides <math>n</math>, then it follows that <math>{n \over p} - 1 = m-1</math>, where <math>m=n/p</math> is divisible by <math>p</math>.  Hence, <math>m-1</math> would not be divisible by <math>p</math>, and thus <math>n</math> would not be a Giuga number. 
+
+Thus, only [[square-free integer]]s can be Giuga numbers.  For example, the factors of 60 are 2, 2, 3 and 5, and 60/2 - 1 = 29, which is not divisible by 2. Thus, 60 is not a Giuga number.
+
+This rules out squares of primes, but [[semiprime]]s cannot be Giuga numbers either. For if <math>n=p_1p_2</math>, with <math>p_1<p_2</math> primes, then
+<math>{n \over p_2} - 1 =p_1 - 1 <p_2</math>, so <math>p_2</math> will not divide <math>{n \over p_2} - 1 </math>, and thus <math>n</math> is not a Giuga number.
+
+{{unsolved|mathematics|Are there infinitely many Giuga numbers? Is there a composite Giuga number that is also a Carmichael number?}}
+All known Giuga numbers are even. If an odd Giuga number exists, it must be the product of at least 14 [[prime number|prime]]s. It is not known if there are infinitely many Giuga numbers.
+
+It has been conjectured by Paolo P. Lava (2009) that Giuga numbers are the solutions of the differential equation ''n' = n+1'', where ''n' '' is the [[arithmetic derivative]] of ''n''. (For square-free numbers <math> n = \prod_i {p_i} </math>, <math> n' = \sum_i \frac{n}{p_i} </math>, so ''n' = n+1'' is just the last equation in the above section ''Definitions'', multiplied by ''n''.)
+
+José Mª Grau and Antonio Oller-Marcén have shown that an integer ''n'' is a  Giuga number if and only if it satisfies ''n' = a n + 1'' for some integer ''a'' > 0, where ''n' '' is the [[arithmetic derivative]] of ''n''. (Again, ''n' = a n + 1'' is identical to the third equation in ''Definitions'', multiplied by ''n''.)
+
+==See also==
+*[[Carmichael number]]
+*[[Primary pseudoperfect number]]
+*[[Znám's problem]]
+
+== References ==
+{{Reflist}}
+* {{MathWorld|title=Giuga Number|urlname=GiugaNumber}}
+* {{cite journal | author1-link=David Borwein | last1=Borwein | first1=D. | author2-link=Jonathan Borwein | last2=Borwein | first2=J. M. | author3-link=Peter Borwein | last3=Borwein | first3=P. B. | last4=Girgensohn | first4=R. | title=Giuga's Conjecture on Primality | journal=[[American Mathematical Monthly]] | volume=103 | issue=1 | pages=40–50 | year=1996 | zbl=0860.11003 | url=http://www.math.uwo.ca/~dborwein/cv/giuga.pdf | doi=10.2307/2975213 | archive-url=https://web.archive.org/web/20050531164907/http://www.math.uwo.ca/~dborwein/cv/giuga.pdf | archive-date=2005-05-31 | jstor=2975213 }}
+* {{cite book | first1=Giorgio | last1=Balzarotti | first2=Paolo P. | last2=Lava | title=Centotre curiosità matematiche | location=Milan | publisher=Hoepli Editore | year=2010 | isbn=978-88-203-4556-3 | page=129 }}
+
+{{Classes of natural numbers}}
+
+[[Category:Integer sequences]]
+[[Category:Unsolved problems in number theory]]

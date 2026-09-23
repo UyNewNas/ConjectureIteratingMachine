@@ -1,0 +1,106 @@
+{{Short description|Integer sequence in number theory}}
+{{distinguish|Juggling pattern}}
+
+In [[number theory]], a '''juggler sequence''' is an [[integer sequence]] that starts with a [[positive integer]] ''a''<sub>0</sub>, with each subsequent term in the sequence defined by the [[recurrence relation]]:
+<math display="block">a_{k+1}= \begin{cases}
+ \left \lfloor a_k^{\frac{1}{2}} \right \rfloor,  & \text{if } a_k \text{ is even} \\
+ \\
+ \left \lfloor a_k^{\frac{3}{2}} \right \rfloor,  & \text{if } a_k \text{ is odd}.
+\end{cases}</math>
+
+==Background==
+Juggler sequences were publicized by American mathematician and author [[Clifford A. Pickover]].<ref>{{cite book |last=Pickover |first=Clifford A. |authorlink=Clifford A. Pickover |date=1992 |title=Computers and the Imagination |publisher=St. Martin's Press |chapter=Chapter 40 |isbn=978-0-312-08343-4 |url-access=registration |url=https://archive.org/details/computersimagina00clif }}</ref> The name is derived from the rising and falling nature of the sequences, like balls in the hands of a [[juggler]].<ref>{{cite book |last=Pickover |first=Clifford A. |authorlink=Clifford A. Pickover |date=2002 |title=The Mathematics of Oz: Mental Gymnastics from Beyond the Edge |url=https://archive.org/details/mathematicsofozm0000pick |url-access=registration |publisher=Cambridge University Press |chapter=Chapter 45: Juggler Numbers |pages=[https://archive.org/details/mathematicsofozm0000pick/page/102 102–106] |isbn=978-0-521-01678-0}}</ref>
+
+For example, the juggler sequence starting with ''a''<sub>0</sub> = 3 is
+
+:<math>a_1= \lfloor 3^\frac{3}{2} \rfloor = \lfloor 5.196\dots \rfloor = 5, </math>
+:<math>a_2= \lfloor 5^\frac{3}{2} \rfloor = \lfloor 11.180\dots \rfloor = 11, </math>
+:<math>a_3= \lfloor 11^\frac{3}{2} \rfloor = \lfloor 36.482\dots \rfloor = 36, </math>
+:<math>a_4= \lfloor 36^\frac{1}{2} \rfloor = \lfloor 6 \rfloor = 6, </math>
+:<math>a_5= \lfloor 6^\frac{1}{2} \rfloor = \lfloor 2.449\dots \rfloor = 2, </math>
+:<math>a_6= \lfloor 2^\frac{1}{2} \rfloor = \lfloor 1.414\dots \rfloor = 1. </math>
+
+If a juggler sequence reaches 1, then all subsequent terms are equal to 1. It is conjectured that all juggler sequences eventually reach 1. This conjecture has been verified for all initial terms up to 7110200, so that 7110201 is the first number that lacks verification, but has not been proven or disproven.<ref>[https://derneueschwan.ch/juggler/ derneueschwan.ch/juggler, 12 May 2026]</ref>
+
+For a given initial term ''n'', one defines ''l''(''n'') to be the number of steps which the juggler sequence starting at ''n'' takes to first reach 1, and ''h''(''n'') to be the maximum value in the juggler sequence starting at ''n''. For small values of ''n'' we have:
+
+:{| class="wikitable"
+|-
+! ''n''
+! Juggler sequence
+! ''l''(''n'')
+{{OEIS|id=A007320}}
+! ''h''(''n'')
+{{OEIS|id=A094716}}
+|-
+| 2
+| 2, 1
+| align="center" | 1
+| align="center" | 2
+|-
+| 3
+| 3, 5, 11, 36, 6, 2, 1
+| align="center" | 6
+| align="center" | 36
+|-
+| 4
+| 4, 2, 1
+| align="center" | 2
+| align="center" | 4
+|-
+| 5
+| 5, 11, 36, 6, 2, 1
+| align="center" | 5
+| align="center" | 36
+|-
+| 6
+| 6, 2, 1
+| align="center" | 2
+| align="center" | 6
+|-
+| 7
+| 7, 18, 4, 2, 1
+| align="center" | 4
+| align="center" | 18
+|-
+| 8
+| 8, 2, 1
+| align="center" | 2
+| align="center" | 8
+|-
+| 9
+| 9, 27, 140, 11, 36, 6, 2, 1
+| align="center" | 7
+| align="center" | 140
+|-
+| 10
+| 10, 3, 5, 11, 36, 6, 2, 1
+| align="center" | 7
+| align="center" | 36
+|}
+
+Juggler sequences can reach very large values before descending to 1. For example, the juggler sequence starting at ''a''<sub>0</sub> = 37 reaches a maximum value of 24906114455136. Harry J. Smith has determined that the juggler sequence starting at ''a''<sub>0</sub> = 48443 reaches a maximum value at ''a''<sub>60</sub> with 972,463 digits, before reaching 1 at ''a''<sub>157</sub>.<ref>[https://web.archive.org/web/20091027155431/http://geocities.com/hjsmithh/Juggler/Juggle3L.html Letter from Harry J. Smith to Clifford A. Pickover, 27 June 1992]</ref>
+
+==See also==
+* [[Arithmetic dynamics#Other areas in which number theory and dynamics interact|Arithmetic dynamics]]
+* [[Collatz conjecture]]
+* [[Recurrence relation]]
+
+==References==
+<references/>
+
+==External links==
+*{{Mathworld|id=JugglerSequence}}
+*[[oeis:A094683|Juggler sequence]] (A094683) at the [[On-Line Encyclopedia of Integer Sequences]]. See also:
+**[[oeis:A007320|Number of steps needed for juggler sequence (A094683) started at n to reach 1.]]
+**[[oeis:A094679|n sets a new record for number of iterations to reach 1 in the juggler sequence problem.]]
+**[[oeis:A094698|Number of steps where the Juggler sequence reaches a new record.]]
+**[[oeis:A094670|Smallest number which requires n iterations to reach 1 in the juggler sequence problem.]]
+**[[oeis:A143742|Starting values that produce a larger juggler number than smaller starting values.]]
+*[https://web.archive.org/web/20110607051447/http://members.chello.nl/k.ijntema/juggler.html Juggler sequence calculator] at Collatz Conjecture Calculation Center 
+*[https://web.archive.org/web/20091027103635/http://geocities.com/hjsmithh/Juggler/index.html Juggler Number pages] by Harry J. Smith
+
+[[Category:Arithmetic dynamics]]
+[[Category:Integer sequences]]
+[[Category:Recurrence relations]]
+[[Category:Unsolved problems in number theory]]

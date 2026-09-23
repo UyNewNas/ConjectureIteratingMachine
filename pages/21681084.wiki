@@ -1,0 +1,337 @@
+{{Short description|Unsolved problem on graph query complexity}}
+{{unsolved|computer science|Prove or disprove Aanderaa–Karp–Rosenberg conjecture.}}
+In [[theoretical computer science]], the '''Aanderaa–Karp–Rosenberg conjecture''' (also known as the '''Aanderaa–Rosenberg conjecture''' or the '''evasiveness conjecture''') is a group of related [[conjecture]]s about the number of questions of the form "Is there an edge between vertex <math>u</math> and vertex <math>v</math>?" that have to be answered to determine whether or not an [[undirected graph]] has a particular property such as [[planar graph|planarity]] or [[bipartite graph|bipartiteness]]. They are named after [[Stål Aanderaa]], [[Richard M. Karp]], and [[Arnold L. Rosenberg]]. According to the conjecture, for a wide class of properties, no algorithm can guarantee that it will be able to skip any questions: any [[algorithm]] for determining whether the graph has the property, no matter how clever, might need to examine every pair of vertices before it can give its answer. A property satisfying this conjecture is called [[evasive Boolean function|evasive]].
+
+More precisely, the Aanderaa–Rosenberg conjecture states that any [[deterministic algorithm]] must test at least a constant fraction of all possible pairs of vertices, in the [[Worst-case complexity|worst case]], to determine any non-trivial monotone graph property. In this context, a property is monotone if it remains true when edges are added; for example, planarity is not monotone, but non-planarity is monotone. A stronger version of this conjecture, called the evasiveness conjecture or the Aanderaa–Karp–Rosenberg conjecture, states that exactly <math>\tbinom{n}{2}=n(n-1)/2</math> tests are needed for a graph with <math>n</math> vertices. Versions of the problem for [[randomized algorithm]]s and [[quantum algorithm]]s have also been formulated and studied.
+
+The deterministic Aanderaa–Rosenberg conjecture was proven by {{harvtxt|Rivest|Vuillemin|1975}}, but the stronger Aanderaa–Karp–Rosenberg conjecture remains unproven. Additionally, there is a large gap between the conjectured lower bound and the best proven lower bound for randomized and quantum query complexity.
+
+==Example==
+The property of being non-empty (that is, having at least one edge) is monotone, because adding another edge to a non-empty graph produces another non-empty graph. There is a simple algorithm for testing whether a graph is non-empty: loop through all of the pairs of vertices, testing whether each pair is connected by an edge. If an edge is ever found in this way, break out of the loop, and report that the graph is non-empty, and if the loop completes without finding any edges, then report that the graph is empty. On some graphs (for instance the [[complete graph]]s) this algorithm will terminate quickly, without testing every pair of vertices, but on the [[empty graph]] it tests all possible pairs before terminating. Therefore, the query complexity of this algorithm is <math>\tbinom{n}{2}=n(n-1)/2</math>: in the worst case, the algorithm performs <math>n(n-1)/2</math> tests.
+
+The algorithm described above is not the only possible method of testing for non-emptiness, but
+the Aanderaa–Karp–Rosenberg conjecture implies that every deterministic algorithm for testing non-emptiness has the same worst-case query complexity, <math>n(n-1)/2</math>. That is, the property of being non-empty is ''evasive''. For this property, the result is easy to prove directly: if an algorithm does not perform <math>n(n-1)/2</math> tests, it cannot distinguish the empty graph from a graph that has one edge connecting one of the untested pairs of vertices, and must give an incorrect answer on one of these two graphs.
+
+==Definitions==
+In the context of this article, all [[Graph (discrete mathematics)|graphs]] will be [[simple graph|simple]] and [[undirected graph|undirected]], unless stated otherwise. This means that the edges of the graph form a set (and not a [[multiset]]) and each edge is a pair of distinct vertices. Graphs are assumed to have an [[implicit graph|implicit representation]] in which each vertex has a unique identifier or label and in which it is possible to test the adjacency of any two vertices, but for which adjacency testing is the only allowed primitive operation.
+
+Informally, a [[graph property]] is a property of a graph that is independent of labeling. More formally, a graph property is a mapping from the class of all graphs to <math>\{0,1\}</math> such that isomorphic graphs are mapped to the same value. For example, the property of containing at least one vertex of degree two is a graph property, but the property that the first vertex has degree two is not, because it depends on the labeling of the graph (in particular, it depends on which vertex is the "first" vertex). A graph property is called non-trivial if it does not assign the same value to all graphs. For instance, the property of being a graph is a trivial property, since all graphs possess this property. On the other hand, the property of being empty is non-trivial, because the [[empty graph]] possesses this property, but non-empty graphs do not. A graph property is said to be [[Hereditary property#Monotone property|monotone]] if the addition of edges does not destroy the property. Alternately, if a graph possesses a monotone property, then every [[Glossary of graph theory#supergraph|supergraph]] of this graph on the same vertex set also possesses it. For instance, the property of being [[planar graph|nonplanar]] is monotone: a supergraph of a nonplanar graph is itself nonplanar. However, the property of being [[regular graph|regular]] is not monotone.
+
+The [[big O notation]] is often used for query complexity. In short, <math>f(n)</math> is <math>O(g(n))</math> (read as "of the order of <math>g(n)</math>") if there exist positive constants <math>c</math> and <math>N</math> such that, for all <math>n\ge N</math>, <math>f(n)\le c\cdot g(n)</math>. Similarly, <math>f(n)</math> is <math>\Omega(g(n))</math> if there exist positive constants <math>c</math> and <math>N</math> such that, for all <math>n\ge N</math>, <math>f(n)\ge c\cdot g(n)</math>. Finally, <math>f(n)</math> is <math>\Theta(g(n))</math> if it is both <math>O(g(n))</math> and <math>\Omega(g(n))</math>.
+
+==Query complexity==
+The deterministic query complexity of evaluating a function on <math>n</math> bits (where the bits may be labeled as <math>x_1,x_2,\dots x_n</math>) is the number of bits <math>x_i</math> that have to be read in the worst case by a deterministic algorithm that computes the function. For instance, if the function takes the value 0 when all bits are 0 and takes value 1 otherwise (this is the [[Logical disjunction|OR]] function), then its deterministic query complexity is exactly <math>n</math>. In the worst case, regardless of the order it chooses to examine its input, the first <math>n-1</math> bits read could all be 0, and the value of the function now depends on the last bit. If an algorithm doesn't read this bit, it might output an incorrect answer. (Such arguments are known as adversary arguments.) The number of bits read are also called the number of queries made to the input. One can imagine that the algorithm asks (or queries) the input for a particular bit and the input responds to this query.
+
+The randomized query complexity of evaluating a function is defined similarly, except the algorithm is allowed to be randomized. In other words, it can flip coins and use the outcome of these coin flips to decide which bits to query in which order. However, the randomized algorithm must still output the correct answer for all inputs: it is not allowed to make errors. Such algorithms are called [[Las Vegas algorithm]]s. (A different class of algorithms, [[Monte Carlo algorithm]]s, are allowed to make some error.) Randomized query complexity can be defined for both Las Vegas and Monte Carlo algorithms, but the randomized version of the Aanderaa–Karp–Rosenberg conjecture is about the Las Vegas query complexity of graph properties.
+
+Quantum query complexity is the natural generalization of randomized query complexity, of course allowing quantum queries and responses. Quantum query complexity can also be defined with respect to Monte Carlo algorithms or Las Vegas algorithms, but it is usually taken to mean Monte Carlo quantum algorithms.
+
+In the context of this conjecture, the function to be evaluated is the graph property, and the input can be thought of as a string of size <math>n(n-1)/2</math>, describing for each pair of vertices whether there is an edge with that pair as its endpoints. The query complexity of any function on this input is at most <math>n(n-1)/2</math>, because an algorithm that makes <math>n(n-1)/2</math> queries can read the whole input and determine the input graph completely.
+
+==Deterministic query complexity==
+For deterministic algorithms, {{Harvtxt|Rosenberg|1973}} originally conjectured that for all nontrivial graph properties on <math>n</math> vertices, deciding whether a graph possesses this property requires <math>\Omega(n^2)</math> The non-triviality condition is clearly required because there are trivial properties like "is this a graph?" which can be answered with no queries at all.{{sfnp|Rosenberg|1973}}
+
+[[File:Scorpion graph.svg|thumb|A scorpion graph. One of the three red path vertices is adjacent to all other vertices and the other two red vertices have no other adjacencies.]]
+The conjecture was disproved by Aanderaa, who exhibited a directed graph property (the property of containing a "sink") which required only <math>O(n)</math> queries to test. A ''sink'', in a directed graph, is a vertex of indegree <math>n-1</math> and outdegree zero. The existence of a sink can be tested with less than <math>3n</math> queries.{{sfnp|Best|van Emde Boas|Lenstra|1974}} An undirected graph property which can also be tested with <math>O(n)</math> queries is the property of being a scorpion graph, first described in {{harvtxt|Best|van Emde Boas|Lenstra|1974}}. A scorpion graph is a graph containing a three-vertex path, such that one endpoint of the path is connected to all remaining vertices, while the other two path vertices have no incident edges other than the ones in the path.{{sfnp|Best|van Emde Boas|Lenstra|1974}}
+
+Then Aanderaa and Rosenberg formulated a new conjecture (the '''Aanderaa–Rosenberg conjecture''') which says that deciding whether a graph possesses a non-trivial monotone graph property requires <math>\Omega(n^2)</math> queries.{{sfnp|Triesch|1996}} This conjecture was resolved by {{harvtxt|Rivest|Vuillemin|1975}} by showing that at least <math>\tfrac{1}{16}n^2</math> queries are needed to test for any nontrivial monotone graph property.{{sfnp|Rivest|Vuillemin|1975}} Through successive improvements this bound was further increased to <math>\bigl(\tfrac{1}{3}-\varepsilon\bigr)n^2</math>.<ref>{{Harvtxt|Kleitman|Kwiatkowski|1980}}; {{Harvtxt|Kahn|Saks|Sturtevant|1984}}; {{Harvtxt|Korneffel|Triesch|2010}}; {{Harvtxt|Scheidweiler|Triesch|2013}}.</ref>
+
+[[Richard Karp]] conjectured the stronger statement (which is now called the '''evasiveness conjecture''' or the '''Aanderaa–Karp–Rosenberg conjecture''') that "every nontrivial monotone graph property for graphs on <math>n</math> vertices is evasive."{{sfnp|Lutz|2001}} A property is called ''evasive'' if determining whether a given graph has this property sometimes requires all <math>n(n-1)/2</math> possible queries.{{sfnp|Kozlov|2008|pp=226–228}} This conjecture says that the best algorithm for testing any nontrivial monotone property must (in the worst case) query all possible edges. This conjecture is still open, although several special graph properties have shown to be evasive for all <math>n</math>. The conjecture has been resolved for the case where <math>n</math> is a [[prime power]] using a [[Topological combinatorics|topological]] approach.{{sfnp|Kahn|Saks|Sturtevant|1984}} The conjecture has also been resolved for all non-trivial monotone properties on bipartite graphs.{{sfnp|Yao|1988}} [[Minor (graph theory)|Minor]]-closed properties have also been shown to be evasive for large <math>n</math>.{{sfnp|Chakrabarti|Khot|Shi|2001}}
+
+In {{Harvtxt|Kahn|Saks|Sturtevant|1984}} the conjecture was generalized to properties of other (non-graph) functions too, conjecturing that any non-trivial monotone function that is weakly symmetric is evasive. This case is also solved when <math>n</math> is a prime power.{{sfnp|Lovász|Young|2002}}
+
+==Randomized query complexity==
+Richard Karp also conjectured that <math>\Omega(n^2)</math> queries are required for testing nontrivial monotone properties even if randomized algorithms are permitted. No nontrivial monotone property is known which requires less than <math>\tfrac{1}{4}n^2</math> queries to test. A linear lower bound (i.e., <math>\Omega(n)</math>) on all monotone properties follows from a very general [[Computational complexity#Models of computation|relationship between randomized and deterministic query complexities]]. The first superlinear lower bound for all monotone properties  was given by {{harvtxt|Yao|1991}} who showed that <math>\Omega\bigl(n(\log n)^{1/12}\bigr)</math> queries are required. This was further improved by {{harvtxt|King|1991}} to <math>\Omega(n^{5/4})</math>, and then by {{Harvtxt|Hajnal|1991}} {{nowrap|to <math>\Omega(n^{4/3})</math>.}} This was subsequently improved to the current best known lower bound (among bounds that hold for all monotone properties) of <math>\Omega\bigl(n^{4/3}(\log n)^{1/3}\bigr)</math> by {{harvtxt|Chakrabarti|Khot|2007}}.
+
+Some recent results give lower bounds which are determined by the critical probability <math>p</math> of the monotone graph property under consideration. The critical probability <math>p</math> is defined as the unique number <math>p</math> in the range <math>[0,1]</math> such that a [[Erdős–Rényi model|random graph]] <math>G(n,p)</math> (obtained by choosing randomly whether each edge exists, independently of the other edges, with probability <math>p</math> per edge) possesses this property with probability equal to <math>\tfrac12</math>. {{Harvtxt|Friedgut|Kahn|Wigderson|2002}} showed that any monotone property with critical probability <math>p</math> requires <math display=block>\Omega\left(\min\left\{\frac{n}{\min(p,1-p)},\frac{n^2}{\log n}\right\}\right)</math> queries. For the same problem, {{Harvtxt|O'Donnell|Saks|Schramm|Servedio|2005}} showed a lower bound of <math>\Omega(n^{4/3}/p^{1/3})</math>.
+
+As in the deterministic case, there are many special properties for which an <math>\Omega(n^2)</math> lower bound is known.  Moreover, better lower bounds are known for several classes of graph properties. For instance, for testing whether the graph has a subgraph isomorphic to any given graph (the so-called [[subgraph isomorphism]] problem), the best known lower bound is <math>\Omega(n^{3/2})</math> due to {{harvtxt|Gröger|1992}}.
+
+==Quantum query complexity==
+For bounded-error [[Decision tree model#Quantum decision tree|quantum query complexity]], the best known lower bound is <math>\Omega\bigl(n^{2/3}(\log n)^{1/6}\bigr)</math> as observed by Andrew Yao.<ref>The result is unpublished, but mentioned in {{Harvtxt|Magniez|Santha|Szegedy|2005}}.</ref> It is obtained by combining the randomized lower bound with the quantum adversary method. The best possible lower bound one could hope to achieve is <math>\Omega(n)</math>, unlike the classical case, due to [[Grover's algorithm]] which gives an <math>O(n)</math>-query algorithm for testing the monotone property of non-emptiness. Similar to the deterministic and randomized case, there are some properties which are known to have an <math>\Omega(n)</math> lower bound, for example non-emptiness (which follows from the optimality of Grover's algorithm) and [[triangle finding problem|the property of containing a triangle]]. There are some graph properties which are known to have an <math>\Omega(n^{3/2})</math> lower bound, and even some properties with an <math>\Omega(n^2)</math> lower bound. For example, the monotone property of nonplanarity requires <math>\Theta(n^{3/2})</math> queries,{{sfnp|Ambainis|Iwama|Nakanishi|Nishimura|2008}} and the monotone property of containing more than half the possible number of edges (also called the majority function) requires <math>\Theta(n^2)</math> queries.{{sfnp|Beals|Buhrman|Cleve|Mosca|2001}}
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+{{refbegin|30em}}
+*{{citation
+ | last1 = Ambainis | first1 = Andris | author1-link = Andris Ambainis
+ | last2 = Iwama | first2 = Kazuo | author2-link = Kazuo Iwama (computer scientist)
+ | last3 = Nakanishi | first3 = Masaki
+ | last4 = Nishimura | first4 = Harumichi
+ | last5 = Raymond | first5 = Rudy
+ | last6 = Tani | first6 = Seiichiro
+ | last7 = Yamashita | first7 = Shigeru
+ | editor1-last = Hong | editor1-first = Seok-Hee | editor1-link = Seok-Hee Hong
+ | editor2-last = Nagamochi | editor2-first = Hiroshi
+ | editor3-last = Fukunaga | editor3-first = Takuro
+ | contribution = Quantum query complexity of Boolean functions with small on-sets
+ | doi = 10.1007/978-3-540-92182-0_79
+ | isbn = 978-3-540-92181-3
+ | mr = 2539981
+ | pages = 907–918
+ | publisher = [[Springer-Verlag]]
+ | series = [[Lecture Notes in Computer Science]]
+ | title = Proceedings of the 19th International Symposium on Algorithms and Computation (ISAAC 2008)
+ | volume = 5369
+ | year = 2008}}
+*{{citation
+ | last1 = Beals | first1 = Robert
+ | last2 = Buhrman | first2 = Harry
+ | last3 = Cleve | first3 = Richard | author3-link = Richard Cleve
+ | last4 = Mosca | first4 = Michele | author4-link = Michele Mosca
+ | last5 = de Wolf | first5 = Ronald
+ | arxiv = quant-ph/9802049
+ | doi = 10.1145/502090.502097
+ | issue = 4
+ | journal = [[Journal of the ACM]]
+ | mr = 2144930
+ | pages = 778–797
+ | title = Quantum lower bounds by polynomials
+ | volume = 48
+ | year = 2001}}
+*{{citation
+ | last1 = Best | first1 = M. R.
+ | last2 = van Emde Boas | first2 = P. | author2-link = Peter van Emde Boas
+ | last3 = Lenstra | first3 = H. W. | author3-link = Hendrik Lenstra
+ | hdl = 1887/3792
+ | publisher = [[Centrum Wiskunde & Informatica|Mathematisch Centrum Amsterdam]]
+ | series = Report ZW 30/74
+ | title = A sharpened version of the Aanderaa-Rosenberg conjecture
+ | year = 1974}}
+*{{citation
+ | last1 = Chakrabarti | first1 = Amit
+ | last2 = Khot | first2 = Subhash | author2-link = Subhash Khot
+ | doi = 10.1002/rsa.20164
+ | issue = 3
+ | journal = Random Structures & Algorithms
+ | mr = 2309625
+ | pages = 427–440
+ | title = Improved lower bounds on the randomized complexity of graph properties
+ | volume = 30
+ | year = 2007| s2cid = 8384071
+ }}
+*{{citation
+ | last1 = Chakrabarti | first1 = Amit
+ | last2 = Khot | first2 = Subhash | author2-link = Subhash Khot
+ | last3 = Shi | first3 = Yaoyun
+ | doi = 10.1137/S0097539700382005
+ | issue = 3
+ | journal = [[SIAM Journal on Computing]]
+ | mr = 1896462
+ | pages = 866–875
+ | title = Evasiveness of subgraph containment and related properties
+ | volume = 31
+ | year = 2001}}
+*{{citation
+ | last1 = Friedgut | first1 = Ehud
+ | last2 = Kahn | first2 = Jeff
+ | last3 = Wigderson | first3 = Avi | author3-link = Avi Wigderson
+ | editor1-last = Rolim | editor1-first = José D. P.
+ | editor2-last = Vadhan | editor2-first = Salil
+ | contribution = Computing graph properties by randomized subcube partitions
+ | doi = 10.1007/3-540-45726-7_9
+ | isbn = 978-3-540-44147-2
+ | pages = 105–113
+ | publisher = [[Springer-Verlag]]
+ | series = [[Lecture Notes in Computer Science]]
+ | title = Proceedings of the 6th International Workshop on Randomization and Approximation Techniques in Computer Science (RANDOM 2002)
+ | volume = 2483
+ | year = 2002}}
+*{{citation
+ | last = Gröger
+ | first = Hans Dietmar
+ | issue = 3
+ | journal = Acta Cybernetica
+ | mr = 1206981
+ | pages = 119–127
+ | title = On the randomized complexity of monotone graph properties
+ | url = https://www.inf.u-szeged.hu/actacybernetica/edb/vol10n3/pdf/Groger_1992_ActaCybernetica.pdf
+ | volume = 10
+ | year = 1992
+ | access-date = 2021-06-20
+ | archive-date = 2015-09-24
+ | archive-url = https://web.archive.org/web/20150924034620/http://www.inf.u-szeged.hu/actacybernetica/edb/vol10n3/pdf/Groger_1992_ActaCybernetica.pdf
+ }}
+*{{citation
+ | last = Hajnal | first = Péter
+ | doi = 10.1007/BF01206357
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | mr = 1136162
+ | pages = 131–143
+ | title = An <math>\Omega(n^{4/3})</math> lower bound on the randomized complexity of graph properties
+ | volume = 11
+ | year = 1991| s2cid = 28514616
+ }}
+*{{citation
+ | last1 = Kahn | first1 = Jeff
+ | last2 = Saks | first2 = Michael | author2-link = Michael Saks (mathematician)
+ | last3 = Sturtevant | first3 = Dean
+ | doi = 10.1007/BF02579140
+ | issue = 4
+ | journal = [[Combinatorica]]
+ | mr = 779890
+ | pages = 297–306
+ | title = A topological approach to evasiveness
+ | volume = 4
+ | year = 1984| s2cid = 5215059
+ }}
+*{{citation
+ | last = King | first = Valerie | author-link = Valerie King
+ | doi = 10.1007/BF01375470
+ | issue = 1
+ | journal = [[Combinatorica]]
+ | mr = 1112271
+ | pages = 23–32
+ | title = An <math>\Omega(n^{5/4})</math> lower bound on the randomized complexity of graph properties
+ | volume = 11
+ | year = 1991| s2cid = 34416460 }}
+*{{Citation | last1=Kleitman | first1=D.J. | author1-link=Daniel Kleitman | last2=Kwiatkowski | first2=DJ | title=Further results on the Aanderaa-Rosenberg conjecture | year=1980 | journal=Journal of Combinatorial Theory, Series B | volume=28 | pages=85–95 | doi=10.1016/0095-8956(80)90057-X| doi-access=free }}
+*{{citation |title=Combinatorial Algebraic Topology |last=Kozlov |first=Dmitry |year=2008 |publisher=Springer-Verlag |isbn=978-3-540-73051-4}}
+*{{citation
+|last=Lutz 
+|first=Frank H. 
+|year=2001 
+|title=Some results related to the evasiveness conjecture  
+|journal=Journal of Combinatorial Theory, Series B
+|volume=81 
+|issue=1 
+|pages=110–124
+|doi = 10.1006/jctb.2000.2000|doi-access=free 
+}}
+*{{Citation
+| last1 = Korneffel
+| first1 = Torsten
+| last2 = Triesch
+| first2 = Eberhard
+| title = An asymptotic bound for the complexity of monotone graph properties
+| journal=Combinatorica
+| year=2010
+| volume=30
+| issue=6
+| pages=735–743
+| publisher=Springer-Verlag
+| doi=10.1007/s00493-010-2485-3| s2cid = 27956060
+}}
+*{{Citation
+| publisher = [[Society for Industrial and Applied Mathematics]]
+| pages = 1109&ndash;1117
+| last1 = Magniez
+| first1 = Frédéric
+| first2 = Miklos | last2 = Santha
+| first3 = Mario | last3 = Szegedy | author3-link = Mario Szegedy
+| contribution = Quantum algorithms for the triangle problem
+| title = Proceedings of the Sixteenth Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2005)
+| location = Vancouver, British Columbia
+| year = 2005
+| contribution-url = http://portal.acm.org/citation.cfm?id=1070591
+| arxiv = quant-ph/0310134
+| bibcode = 2003quant.ph.10134M| isbn = 978-0-89871-585-9
+}}
+*{{Citation
+| doi = 10.1109/SFCS.2005.34
+| pages = 31–39
+| last1 = O'Donnell
+| first1 = Ryan
+| author1-link = Ryan O'Donnell (computer scientist)
+| first2 = Michael | last2 = Saks | author2-link = Michael Saks (mathematician)
+| first3 = Oded | last3 = Schramm | author3-link = Oded Schramm
+| first4 = Rocco A. | last4 = Servedio
+| contribution = Every decision tree has an influential variable
+| title = Proceedings of the 46th IEEE Symposium on Foundations of Computer Science (FOCS 2005)
+| year = 2005
+| isbn = 978-0-7695-2468-9
+| arxiv = cs/0508071| title-link = Symposium on Foundations of Computer Science| s2cid = 3259694
+}}
+*{{Citation
+| doi = 10.1145/800116.803747
+| pages = 6&ndash;11
+| last1 = Rivest
+| first1 = Ronald L.
+| author-link = Ron Rivest
+| first2 = Jean | last2 = Vuillemin | author2-link = Jean Vuillemin
+| contribution = A generalization and proof of the Aanderaa-Rosenberg conjecture
+| title = Proceedings of the 7th ACM Symposium on Theory of Computing (STOC 1975): ''Albuquerque, New Mexico, United States''
+| date = 1975
+| title-link = Symposium on Theory of Computing
+| s2cid = 16220596
+}}
+*{{Citation
+| doi = 10.1145/1008299.1008302
+| volume = 5
+| issue = 4
+| pages = 15&ndash;16
+| last = Rosenberg
+| first = Arnold L. | author-link = Arnold L. Rosenberg
+| title = On the time required to recognize properties of graphs: a problem
+| journal = [[SIGACT News]]
+| year = 1973| doi-access = free
+}}
+* {{Citation
+| last1=Scheidweiler
+| first1 = Robert
+| last2 = Triesch
+| first2 = Eberhard
+| title=A lower bound for the complexity of monotone graph properties
+| journal=SIAM Journal on Discrete Mathematics
+| year=2013
+| volume=27
+| number=1
+| pages=257–265
+| doi=10.1137/120888703}}
+*{{Citation
+| doi = 10.1007/BF01844851
+| volume = 16
+| issue = 2
+| pages = 259&ndash;268
+| last = Triesch
+| first = Eberhard
+| title = On the recognition complexity of some graph properties
+| journal = [[Combinatorica]]
+| year = 1996| s2cid = 40830285
+}}
+*{{Citation
+| volume = 17
+| issue = 3
+| pages = 517–520
+| last = Yao
+| first = Andrew Chi-Chih | author-link = Andrew Yao
+| title = Monotone bipartite graph properties are evasive
+| journal = [[SIAM Journal on Computing]]
+| year = 1988
+| doi = 10.1137/0217031}}
+*{{Citation
+| volume = 42
+| issue = 3
+| pages = 267&ndash;287
+| last = Yao
+| first = Andrew Chi-Chih
+| author-link = Andrew Yao
+| title = Lower bounds to randomized algorithms for graph properties
+| journal = [[Journal of Computer and System Sciences]]
+| year = 1991
+| doi = 10.1016/0022-0000(91)90003-N| doi-access = free
+}}
+{{refend}}
+
+==Further reading==
+*{{Citation | last1=Bollobás | first1=Béla | author1-link=Béla Bollobás | title=Extremal Graph Theory | publisher=[[Dover Publications]] | location=New York | isbn=978-0-486-43596-1 | year=2004 | contribution = Chapter VIII. Complexity and packing | pages = 401–437}}.
+*{{cite arXiv|eprint=cs/0205031v1|last1=Lovász |first1=László |author1-link=László Lovász |last2=Young | first2=Neal E.|title=Lecture Notes on Evasiveness of Graph Properties|year=2002|mode=cs2}}
+*{{Citation
+| last = Chronaki
+| first = Catherine E
+| title = A survey of Evasiveness: Lower Bounds on the Decision-Tree Complexity of Boolean Functions
+| year = 1990
+| citeseerx = 10.1.1.37.1041
+| postscript = .
+}}
+*{{citation|author=Michael Saks|author-link=Michael Saks (mathematician)|title=Decision Trees: Problems and Results, Old and New|url=http://www.math.rutgers.edu/~saks/PUBS/dtsurvey.pdf}}
+
+{{DEFAULTSORT:Aanderaa-Karp-Rosenberg conjecture}}
+[[Category:Conjectures]]
+[[Category:Statements in graph theory]]
+[[Category:Combinatorics]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Computational complexity theory]]

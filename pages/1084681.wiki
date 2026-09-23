@@ -1,0 +1,74 @@
+{{Short description|Number theory conjecture}}
+In [[number theory]], the '''Agoh–Giuga conjecture''' on the [[Bernoulli number]]s <math>B_k</math> postulates that <math>p</math> is a [[prime number]] [[if and only if]] 
+
+:<math>pB_{p-1} \equiv -1 \!\pmod p.</math> 
+
+It is named after [[Takashi Agoh]] and [[Giuseppe Giuga]].
+
+==Equivalent formulation==
+The conjecture as stated above is due to Takashi Agoh;{{sfnp|Agoh|1995}} an equivalent formulation is due to Giuseppe Giuga, from 1950,{{sfnp|Giuga|1950}} to the effect that <math>p</math> is prime if and only if
+
+:<math>1^{p-1}+2^{p-1}+ \cdots +(p-1)^{p-1} \equiv -1 \!\pmod p</math>,
+
+which may also be written as
+
+:<math>\sum_{i=1}^{p-1} i^{p-1} \equiv -1 \!\pmod p.</math>
+
+It is trivial to show that <math>p</math> being prime is sufficient for the second equivalence to hold, since if <math>p</math> is prime, [[Fermat's little theorem]] states that
+
+:<math>a^{p-1} \equiv 1 \pmod p</math>
+
+for <math>a = 1,2,\dots,p-1</math>, and the equivalence follows since <math>p-1 \equiv -1 \!\pmod p.</math>
+
+==Status==
+The statement is still a conjecture since it has not yet been proven that if a number <math>n</math> is not prime (that is, if <math>n</math> is [[composite number|composite]]), then the formula does not hold. It has been shown that a composite number <math>n</math> satisfies the formula if and only if it is both a [[Carmichael number]] and a [[Giuga number]], and that if such a number exists, it has at least 13,800 digits.{{sfnp|Borwein|Borwein|Borwein|Girgensohn|1996}} In 2001, Sorini showed that a possible counterexample should be greater than 10<sup>36067</sup>,{{sfnp|Sorini|2001}} which represents the limit suggested by Bedocchi for the demonstration technique specified by Giuga to his own conjecture.
+
+==Relation to Wilson's theorem==
+The Agoh–Giuga conjecture bears a similarity to [[Wilson's theorem]], which has been proven to be true. Wilson's theorem states that a number <math>p</math> is prime if and only if
+
+:<math>(p-1)! \equiv -1 \!\pmod p,</math>
+
+which may also be written as
+
+:<math>\prod_{i=1}^{p-1} i \equiv -1 \!\pmod p.</math>
+
+For an odd prime <math>p</math> we have
+
+:<math>\prod_{i=1}^{p-1} i^{p-1} \equiv (-1)^{p-1} \equiv 1 \!\pmod p,</math>
+
+and for <math>p=2</math> we have
+
+:<math>\prod_{i=1}^{p-1} i^{p-1} \equiv (-1)^{p-1} \equiv 1 \!\pmod p.</math>
+
+So, the truth of the Agoh–Giuga conjecture combined with Wilson's theorem gives: a number <math>p</math> is prime if and only if
+ 
+:<math>\sum_{i=1}^{p-1} i^{p-1} \equiv -1 \!\pmod p</math>
+
+and
+
+:<math>\prod_{i=1}^{p-1} i^{p-1} \equiv 1 \!\pmod p.</math>
+
+== See also ==
+
+* {{slink|Bernoulli number#Arithmetical properties of the Bernoulli numbers}}
+
+==Notes==
+{{reflist}}
+
+==References==
+{{refbegin}}
+
+* {{cite journal | last=Giuga | first=Giuseppe | title=Su una presumibile proprietà caratteristica dei numeri primi | language=Italian | journal=Istituto Lombardo di Scienze e Lettere, Rendiconti, Classe di Scienze Matematiche e Naturali | volume=14 | issue=83 | pages=511–518 | year=1950 | issn=0375-9164 | zbl=0045.01801 }}
+
+* {{cite journal | last=Agoh | first=Takashi | title=On Giuga's conjecture | journal=Manuscripta Mathematica | volume=87 | number=4 | pages=501–510 | year=1995 | zbl=0845.11004 | doi=10.1007/bf02570490}}
+
+* {{cite journal | author1-link=David Borwein | last1=Borwein | first1=D. | author2-link=Jonathan Borwein | last2=Borwein | first2=J. M. | author3-link=Peter Borwein | last3=Borwein | first3=P. B. | last4=Girgensohn | first4=R. | title=Giuga's conjecture on primality | journal=[[American Mathematical Monthly]] | volume=103 | issue=1 | pages=40–50 | year=1996 | zbl=0860.11003 | doi=10.2307/2975213 | jstor=2975213 }}
+
+* {{cite journal | last=Sorini | first=Laerte | title=Un metodo euristico per la soluzione della congettura di Giuga | language=it | journal=Quaderni di Economia, Matematica e Statistica, DESP, Università di Urbino Carlo Bo | volume=68 | year=2001 | issn=1720-9668 }}
+
+{{refend}}
+{{Prime number conjectures}}
+
+{{DEFAULTSORT:Agoh-Giuga conjecture}}
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

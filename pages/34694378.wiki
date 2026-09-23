@@ -1,0 +1,17 @@
+In [[algebraic geometry]], the '''Virasoro conjecture''' states that a certain [[generating function]] encoding [[Gromov–Witten invariant]]s of a [[singular point of an algebraic variety|smooth]] [[projective variety]] is fixed by an action of half of the [[Virasoro algebra]]. The Virasoro conjecture is named after [[Theoretical physics|theoretical physicist]] [[Miguel Ángel Virasoro (physicist)|Miguel Ángel Virasoro]]. {{harvs|txt | last3=Xiong | first3=Chuan-Sheng | last2=Hori | first2=Kentaro | last1=Eguchi | first1=Tohru | title=Quantum cohomology and Virasoro algebra | url=https://dx.doi.org/10.1016/S0370-2693(97)00401-2 | doi=10.1016/S0370-2693(97)00401-2 |mr=1454328 | year=1997 | journal=Physics Letters B | issn=0370-2693 | volume=402 | issue=1 | pages=71–80}}
+proposed the Virasoro conjecture as a generalization of [[Witten's conjecture]]. {{harvs|txt|last=Getzler|first=Ezra|authorlink=Ezra Getzler|year=1999}} gave a survey of the Virasoro conjecture.
+
+The proof of the genus 0 Virasoro conjecture for all smooth projective varieties (or more generally, compact symplectic manifolds) was first given by [[Xiaobo Liu (mathematician)|Xiaobo Liu]] and [[Tian Gang|Gang Tian]] (1998).<ref>{{Citation |last1=Liu |first1=Xiaobo |title=Virasoro Constraints For Quantum Cohomology |date=1998-10-20 |last2=Tian |first2=Gang|arxiv=math/9806028 |bibcode=1998math......6028L }}</ref>
+
+==References==
+{{Reflist}}
+
+*{{Citation | last1=Getzler | first1=Ezra |author1-link=Ezra Getzler| editor1-last=Wiśniewski | editor1-first=Jarosław | editor2-last=Szurek | editor2-first=Michał | editor3-last=Pragacz | editor3-first=Piotr | title=Algebraic geometry: Hirzebruch 70 (Warsaw, 1998) | arxiv=math/9812026 | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Contemporary Mathematics | isbn=978-0-8218-1149-8  |mr=1718143 | year=1999 | volume=241 | chapter=The Virasoro conjecture for Gromov-Witten invariants | pages=147–176| bibcode=1998math.....12026G | doi=10.1090/conm/241/03634 }}
+*{{Citation | last3=Xiong | first3=Chuan-Sheng | last2=Hori | first2=Kentaro | last1=Eguchi | first1=Tohru | title=Quantum cohomology and Virasoro algebra | doi=10.1016/S0370-2693(97)00401-2 |mr=1454328 | year=1997 | journal=Physics Letters B | issn=0370-2693 | volume=402 | issue=1 | pages=71–80| arxiv=hep-th/9703086 | bibcode=1997PhLB..402...71E }}
+*{{Citation |last1=Liu |first1=Xiaobo |title=Virasoro Constraints For Quantum Cohomology |date=1998-10-20 |bibcode=1998math......6028L |arxiv=math/9806028 |last2=Tian |first2=Gang}}
+
+[[Category:Algebraic geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+
+{{algebraic-geometry-stub}}

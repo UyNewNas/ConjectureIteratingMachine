@@ -1,0 +1,143 @@
+{{Short description|Unsolved problem about oriented graphs}}
+{{Use mdy dates|cs1-dates=ly|date=May 2025}}
+{{Use list-defined references|date=May 2025}}
+{{CS1 config|mode=cs2}}
+[[File:2nd neighborhood problem.svg|thumb|upright=1.25|For any [[oriented graph]], the conjecture states that at least one vertex <math>v</math> (here, the white vertex) can be found with a number of first neighbors (blue vertices) less than or equal to the number of second neighbors (red vertices).]]
+In mathematics, the '''second neighborhood problem''' is an unsolved problem about [[oriented graph]]s posed by [[Paul Seymour (mathematician)|Paul Seymour]]. Intuitively, it suggests that in a social network described by such a graph, someone will have at least as many friends-of-friends as friends.{{r|ghazal|west}}
+
+The problem is also known as the '''second neighborhood conjecture''' or '''Seymour’s distance two conjecture'''.
+
+==Statement==
+An [[oriented graph]] is a finite [[directed graph]] obtained from a simple [[undirected graph]] by assigning an [[orientation (graph theory)|orientation]] to each edge. Equivalently, it is a directed graph that has no self-loops, no parallel edges, and no two-edge cycles. The first neighborhood of a vertex <math>v</math> (also called its [[Neighbourhood (graph theory)|open neighborhood]]) consists of all vertices at [[Distance (graph theory)|distance]] one from <math>v</math>, and the second neighborhood of <math>v</math> consists of all vertices at distance two from <math>v</math>. These two neighborhoods form [[disjoint sets]], neither of which contains <math>v</math> itself.
+
+In 1990, [[Paul Seymour (mathematician)|Paul Seymour]] conjectured that, in every oriented graph, there always exists at least one vertex <math>v</math> whose second neighborhood is at least as large as its first neighborhood. Equivalently, in the [[Graph power|square of the graph]], the [[Degree (graph theory)|degree]] of <math>v</math> is at least doubled. The problem was first published by [[Nathaniel Dean (mathematician)|Nathaniel Dean]] and Brenda J. Latka in 1995, in a paper that studied the problem on a restricted class of oriented graphs, the [[tournament (graph theory)|tournaments]] (orientations of complete graphs). Dean had previously conjectured that every tournament obeys the second neighborhood conjecture, and this special case became known as Dean's conjecture.{{r|dl95}}
+
+{{unsolved|mathematics|Does every oriented graph contain a Seymour vertex?}}
+A vertex in a directed graph whose second neighborhood is at least as large as its first neighborhood is called a '''Seymour vertex'''.{{r|cgwz16}}
+
+In the second neighborhood conjecture, the condition that the graph have no two-edge cycles is necessary, for in graphs that have such cycles (for instance the complete oriented graph) all second neighborhoods may be empty or small.
+
+==Partial results==
+{{harvtxt|Fisher|1996}} proved Dean's conjecture, the special case of the second neighborhood problem for tournaments.{{r|f96}}
+
+For some graphs, a vertex of minimum out-degree will be a Seymour vertex. For instance, if a directed graph has a sink, a vertex of out-degree zero, then the sink is automatically a Seymour vertex, because its first and second neighborhoods both have size zero. In a graph without sinks, a vertex of out-degree one is always a Seymour vertex. In the orientations of [[triangle-free graph]]s, any vertex <math>v</math> of minimum out-degree is again a Seymour vertex, because for any edge from <math>v</math> to another vertex <math>w</math>, the out-neighbors of <math>w</math> all belong to the second neighborhood of <math>v</math>.{{r|bbks09}}
+
+For arbitrary graphs with higher vertex degrees, the vertices of minimum degree might not be Seymour vertices, but the existence of a low-degree vertex can still lead to the existence of a nearby Seymour vertex. Using this sort of reasoning, the second neighborhood conjecture has been proven to be true for any oriented graph that contains at least one vertex of out-degree&nbsp;≤&nbsp;6.{{r|kl01}}. Following this, the conjecture is true for all graphs with a number of vertices&nbsp;≤&nbsp;14, as these must contain at least one vertex with out-degree&nbsp;≤&nbsp;6. This can be improved to graphs with a number of vertices&nbsp;≤&nbsp;15, because the only graphs with 15 vertices and none with out-degree&nbsp;≤&nbsp;6 are tournament graphs. 
+
+Every oriented [[bipartite graph]] follows the conjecture, as well as all oriented graphs whose vertex set can be partitioned into an [[independent set (graph theory)| independent set]] and a [[degeneracy (graph theory)|2-degenerate graph]].<ref name=dara22>{{citation
+ | last1 = Dara | first1 = Suresh
+ | last2 = Francis | first2 = Mathew C.
+ | last3 = Jacob | first3 = Dalu
+ | last4 = Narayanan | first4 = N.
+ | title = Extending some results on the second neighborhood conjecture
+ | journal = Discrete Applied Mathematics
+ | volume = 311
+ | pages = 1–17
+ | year = 2022
+ | doi = 10.1016/j.dam.2021.12.034
+ | issn = 0166-218X
+ | arxiv = 1808.02247
+}}</ref>
+
+Random tournaments and some random directed graphs have many Seymour vertices with high probability.{{r|cgwz16}}
+Every oriented graph has a vertex whose second neighborhood is at least <math>\gamma</math> times as big as the first neighborhood,
+where
+:<math>\gamma=\frac{1}{6}\left(-1+\sqrt[3]{53-6\sqrt{78}}+\sqrt[3]{53+6\sqrt{78}}\right) \approx 0.657</math>
+is the real root of the polynomial <math>2x^3+x^2-1</math>.{{r|csy03}}
+
+==See also==
+*[[Friendship paradox]]
+
+==References==
+<references>
+
+<ref name=bbks09>{{citation
+ | last1 = Brantner | first1 = James
+ | last2 = Brockman | first2 = Greg
+ | last3 = Kay | first3 = Bill
+ | last4 = Snively | first4 = Emma
+ | doi = 10.2140/involve.2009.2.387
+ | issue = 4
+ | journal = Involve
+ | mr = 2579558
+ | pages = 385–393
+ | title = Contributions to Seymour's second neighborhood conjecture
+ | volume = 2
+ | year = 2009| arxiv = 0808.0946
+ | s2cid = 6206110
+ }}</ref>
+
+<ref name=cgwz16>{{citation
+ | last1 = Cohn | first1 = Zachary
+ | last2 = Godbole | first2 = Anant
+ | last3 = Wright Harkness | first3 = Elizabeth
+ | last4 = Zhang | first4 = Yiguang
+ | doi = 10.1007/s00373-015-1672-9
+ | issue = 5
+ | journal = Graphs and Combinatorics
+ | mr = 3543199
+ | pages = 1805–1816
+ | title = The number of Seymour vertices in random tournaments and digraphs
+ | volume = 32
+ | year = 2016| arxiv = 1502.04061
+ | s2cid = 253889516
+ }}</ref>
+
+<ref name=csy03>{{citation
+ | last1 = Chen | first1 = Guantao
+ | last2 = Shen | first2 = Jian
+ | last3 = Yuster | first3 = Raphael | author3-link = Raphael Yuster
+ | doi = 10.1007/s000260300001
+ | issue = 1
+ | journal = [[Annals of Combinatorics]]
+ | mr = 1984642
+ | pages = 15–20
+ | title = Second neighborhood via first neighborhood in digraphs
+ | volume = 7
+ | year = 2003| s2cid = 11503071
+ }}</ref>
+
+<ref name=dl95>{{citation
+ | last1 = Dean | first1 = Nathaniel
+ | last2 = Latka | first2 = Brenda J.
+ | department = Proceedings of the Twenty-Sixth Southeastern International Conference on Combinatorics, Graph Theory and Computing (Boca Raton, FL, 1995)
+ | journal = Congressus Numerantium
+ | mr = 1369296
+ | pages = 73–80
+ | title = Squaring the tournament—an open problem
+ | volume = 109
+ | year = 1995}}</ref>
+
+<ref name=f96>{{citation
+ | last = Fisher | first = David C.
+ | doi = 10.1002/(SICI)1097-0118(199609)23:1<43::AID-JGT4>3.0.CO;2-K
+ | issue = 1
+ | journal = [[Journal of Graph Theory]]
+ | mr = 1402137
+ | pages = 43–48
+ | title = Squaring a tournament: a proof of Dean's conjecture
+ | volume = 23
+ | year = 1996}}</ref>
+
+<ref name=ghazal>{{citation |last=Ghazal |first=Salman |title=A remark on the second neighborhood problem |journal=Electronic Journal of Graph Theory and Applications |year=2015 |volume=3 |issue=2 |pages=182–190 |doi=10.5614/ejgta.2015.3.2.6|arxiv=1509.03282 |s2cid=12891714|mr=3417914 }}</ref>
+
+<ref name=kl01>{{citation
+ | last1 = Kaneko | first1 = Yoshihiro
+ | last2 = Locke | first2 = Stephen C.
+ | department = Proceedings of the Thirty-Second Southeastern International Conference on Combinatorics, Graph Theory and Computing (Baton Rouge, LA, 2001)
+ | journal = Congressus Numerantium
+ | mr = 1887387
+ | pages = 201–206
+ | title = The minimum degree approach for Paul Seymour's distance 2 conjecture
+ | volume = 148
+ | year = 2001}}</ref>
+
+<ref name=west>{{citation |title=Seymour's 2nd Neighborhood Conjecture|url=https://dwest.web.illinois.edu/openp/2ndnbhd.html|work=Open Problems – Graph Theory and Combinatorics |first=Douglas B.|last=West|publisher=University of Illinois|access-date=2025-05-11}}</ref>
+
+</references>
+
+==External links==
+*{{webarchive|url=https://web.archive.org/web/20230611011312/https://faculty.math.illinois.edu/~west/openp/2ndnbhd.html|date=June 11, 2023|title=Seymour's 2nd Neighborhood Conjecture}}, Open Problems in Graph Theory and Combinatorics, [[Douglas West (mathematician)|Douglas B. West]].
+
+[[Category:Unsolved problems in graph theory]]
+[[Category:Conjectures]]

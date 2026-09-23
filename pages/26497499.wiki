@@ -1,0 +1,27 @@
+{{Short description|On mathematics of sums of prime powers}}
+The '''Waring–Goldbach problem''' is a problem in [[additive number theory]], concerning the representation of [[integer]]s as sums of powers of [[prime number]]s. It is named as a combination of [[Waring's problem]] on sums of powers of integers, and the [[Goldbach conjecture]] on sums of primes. It was initiated by [[Hua Luogeng]]<ref>L. K. Hua: [http://qjmath.oxfordjournals.org/cgi/pdf_extract/os-9/1/68 Some results in additive prime number theory], ''Quart. J. Math. Oxford'', '''9'''(1938), 68&ndash;80.</ref> in 1938.
+
+==Problem statement==
+It asks whether large numbers can be expressed as a sum, with at most a constant number of terms, of like powers of primes. That is, for any given natural number, ''k'', is it true that for sufficiently large integer ''N'' there necessarily exist a set of primes, {''p''<sub>1</sub>,&nbsp;''p''<sub>2</sub>,&nbsp;...,&nbsp;''p''<sub>''t''</sub>}, such that ''N'' = ''p''<sub>1</sub><sup>''k''</sup>&nbsp;+&nbsp;''p''<sub>2</sub><sup>''k''</sup>&nbsp;+&nbsp;...&nbsp;+&nbsp;''p''<sub>''t''</sub><sup>''k''</sup>, where ''t'' is at most some constant value?<ref>{{cite journal|last=Buttcane|first=Jack |date=January 2010|title=A note on the Waring–Goldbach problem|journal=Journal of Number Theory|publisher=Elsevier|volume=130|issue=1|pages=116–127|doi=10.1016/j.jnt.2009.07.006|doi-access=}}</ref>
+
+The case, ''k''&nbsp;=&nbsp;1, is a weaker version of the Goldbach conjecture. Some progress has been made on the cases ''k''&nbsp;=&nbsp;2 to 7.
+
+==Heuristic justification==
+By the [[prime number theorem]], the number of ''k''-th powers of a prime below ''x'' is of the order ''x''<sup>1/''k''</sup>/log ''x''.
+From this, the number of ''t''-term expressions with sums ≤''x'' is roughly ''x''<sup>''t''/''k''</sup>/(log ''x'')<sup>''t''</sup>.
+It is reasonable to assume that for some sufficiently large number ''t'' this is ''x''&nbsp;−&nbsp;''c'', i.e., all numbers up to ''x'' are ''t''-fold sums of ''k''-th powers of primes. This argument is, of course, a long way from a strict proof.
+
+==Relevant results==
+{{Expand section|Published results that are very similar, or that are likely to contribute to its eventual proof|date=March 2010}}
+
+In his monograph,<ref>Hua Lo Keng: ''Additive theory of prime numbers'', Translations of Mathematical Monographs, '''13''', American Mathematical Society, Providence, R.I.  1965 xiii+190 pp</ref> using and refining the methods of [[Hardy–Littlewood circle method|Hardy, Littlewood]] and [[Ivan Matveyevich Vinogradov|Vinogradov]],  Hua Luogeng obtains a ''O''(''k''<sup>2</sup>&nbsp;log&nbsp;''k'') upper bound for the number of terms required to exhibit all sufficiently large numbers as the sum of ''k''-th powers of primes.
+
+Every sufficiently large odd integer is the sum of 21 fifth powers of primes.<ref>{{citation|first1=Koichi|last1=Kawada|first2=Trevor D.|last2=Wooley|title=On the Waring–Goldbach problem for fourth and fifth powers|journal=[[Proceedings of the London Mathematical Society]]|year=2001|volume=83|issue=1|pages=1–50|doi=10.1112/plms/83.1.1|hdl=2027.42/135164|url=https://deepblue.lib.umich.edu/bitstream/2027.42/135164/1/plms0001.pdf|hdl-access=free}}.</ref>
+
+==References==
+<references/>
+
+{{DEFAULTSORT:Waring-Goldbach problem}}
+[[Category:Additive number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

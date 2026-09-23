@@ -1,0 +1,153 @@
+{{Short description|How many integer lattice points there are in a circle}}
+{{CS1 config|mode=cs1}}
+[[File:Grid points in radius-5 circle.svg|thumb|A circle of radius 5 centered at the origin has area 25{{pi}}, approximately 78.54, but it contains 81 integer points, so the error in estimating its area by counting grid points is approximately 2.46. For a circle with slightly smaller radius, the area is nearly the same, but the circle contains only 69 points, producing a larger error of approximately 9.54. The Gauss circle problem concerns bounding this error more generally, as a function of the radius of the circle.]]
+In [[mathematics]], the '''Gauss circle problem''' is the problem of determining how many [[integer lattice]] points there are in a [[circle]] centered at the origin and with [[radius]] <math>r</math>.  This number is approximated by the area of the circle, so the real problem is to accurately bound the [[error term]] describing how the number of points differs from the area.
+The first progress on a solution was made by [[Carl Friedrich Gauss]], hence its name.
+
+==The problem==
+
+Consider a circle in <math>\mathbb{R}^2</math> with center at the origin and radius <math>r\ge 0</math>.  Gauss's circle problem asks how many points there are inside this circle of the form <math>(m,n)</math> where <math>m</math> and <math>n</math> are both integers.  Since the [[equation]] of this circle is given in [[Cartesian coordinate system|Cartesian coordinates]] by <math>x^2+y^2= r^2</math>, the question is equivalently asking how many pairs of integers ''m'' and ''n'' there are such that
+:<math>m^2+n^2\leq r^2.</math>
+
+If the answer for a given <math>r</math> is denoted by <math>N(r)</math> then the following list shows the first few values of <math>N(r)</math> for ''<math>r</math>'' an integer between 0 and 12 followed by the list of values <math> \pi r^2 </math> rounded to the nearest integer:
+:1, 5, 13, 29, 49, 81, 113, 149, 197, 253, 317, 377, 441 {{OEIS|id=A000328}} 
+:0, 3, 13, 28, 50, 79, 113, 154, 201, 254, 314, 380, 452 {{OEIS|id=A075726}}
+
+==Bounds on a solution and conjecture==
+<math>N(r)</math> is roughly <math>\pi r^2</math>, the [[Area of a disk|area inside a circle]] of radius <math>r</math>. This is because on average, each [[unit square]] contains one lattice point. Thus, the actual number of lattice points in the circle is approximately equal to its area, <math>\pi r^2</math>.  So it should be expected that
+:<math>N(r)=\pi r^2 +E(r)\,</math>
+for some error term <math>E(r)</math> of relatively small [[absolute value]]. Finding a correct upper bound for <math>\mid E(r)\mid</math> is thus the form the problem has taken. Note that <math>r</math> does not have to be an integer. After  <math>N(4)=49 </math> one has<math>N(\sqrt{17})=57 ,N(\sqrt{18})=61, N(\sqrt{20})=69, N(5)=81 .</math> At these places <math> E(r)</math> increases by <math>8,4,8,12</math> after which it decreases (at a rate of <math> 2 \pi r </math>) until the next time it increases.
+
+Gauss managed to prove<ref>{{cite journal
+ | last1 = Berndt | first1 = Bruce C.
+ | last2 = Kim | first2 = Sun
+ | last3 = Zaharescu | first3 = Alexandru
+ | doi = 10.1080/00029890.2018.1401853
+ | issue = 2
+ | journal = American Mathematical Monthly
+ | jstor = 48661825
+ | mr = 3756337
+ | pages = 99–114
+ | title = The circle problem of Gauss and the divisor problem of Dirichlet—still unsolved
+ | volume = 125
+ | year = 2018}} See Theorem 1, p. 101.</ref> that for <math>r \ge \sqrt{2}</math>,
+:<math>| E(r) - 2 |\leq 2\sqrt{2}\pi r.</math>
+[[G. H. Hardy|Hardy]]<ref>{{cite journal
+ | last = Hardy | first = G. H.
+ | journal = Quarterly Journal of Mathematics
+ | pages = 263–283
+ | title = On the expression of a number as the sum of two squares
+ | volume = 46
+ | year = 1915}}</ref> and, independently, [[Edmund Landau|Landau]] found a lower bound by showing that
+:<math>| E(r) |\neq o\left(r^{1/2}(\log r)^{1/4}\right),</math>
+using the [[Big O notation#Little-o notation|little o-notation]].  It is conjectured<ref name="Guy">{{cite book
+ | last = Guy | first = Richard K. | author-link = Richard K. Guy
+ | contribution = F1: Gauß's lattice point problem
+ | doi = 10.1007/978-0-387-26677-0
+ | edition = 3rd
+ | isbn = 0-387-20860-7
+ | mr = 2076335
+ | pages = 365–367
+ | publisher = Springer-Verlag | location = New York
+ | series = Problem Books in Mathematics
+ | title = Unsolved Problems in Number Theory
+ | year = 2004| volume = 1 }}</ref> that the correct bound is
+:<math>| E(r) |=O\left(r^{1/2+\varepsilon}\right).</math>
+
+Writing <math>E(r)\le Cr^t</math>, the current bounds on <math>t</math> are
+:<math>\frac{1}{2}< t\leq\frac{131}{208}=0.6298\ldots,</math>
+with the lower bound from Hardy and Landau in 1915, and the upper bound proved by [[Martin Huxley]] in 2000.<ref>{{cite book
+ | last = Huxley | first = M. N. | author-link = Martin Huxley
+ | editor1-last = Bennett | editor1-first = M. A.
+ | editor2-last = Berndt | editor2-first = B. C.
+ | editor3-last = Boston | editor3-first = N.
+ | editor4-last = Diamond | editor4-first = H. G.
+ | editor5-last = Hildebrand | editor5-first = A. J.
+ | editor6-last = Philipp | editor6-first = W.
+ | contribution = Integer points, exponential sums and the Riemann zeta function
+ | location = Natick, Massachusetts
+ | mr = 1956254
+ | pages = 275–290
+ | publisher = A K Peters
+ | title = Number theory for the millennium, II: Papers from the conference held at the University of Illinois at Urbana–Champaign, Urbana, IL, May 21–26, 2000
+ | year = 2002}}</ref>
+
+==Exact forms==
+
+The value of <math>N(r)</math> can be given by several series.  In terms of a sum involving the [[floor function]] it can be expressed as:<ref>{{cite book
+ | last1 = Hilbert | first1 = D. | author1-link = David Hilbert
+ | last2 = Cohn-Vossen | first2 = S. | author2-link = Stefan Cohn-Vossen
+ | location = New York, N. Y.
+ | mr = 0046650
+ | pages = 37–38
+ | publisher = Chelsea Publishing Company
+ | title = Geometry and the Imagination
+ | title-link = Geometry and the Imagination
+ | year = 1952}}</ref>
+:<math>N(r)=1+4\sum_{i=0}^\infty \left(\left\lfloor\frac{r^2}{4i+1}\right\rfloor-\left\lfloor\frac{r^2}{4i+3}\right\rfloor\right).</math>
+
+This is a consequence of [[Jacobi's two-square theorem]], which follows almost immediately from the [[Jacobi triple product]].<ref>{{Cite journal|last=Hirschhorn|first=Michael D.|date=2000|title=Partial fractions and four classical theorems of number theory|jstor=2589321|journal=[[The American Mathematical Monthly]]|volume=107|issue=3|pages=260–264|doi=10.2307/2589321}}</ref>
+
+A much simpler sum appears if the [[sum of squares function]] <math>r_2(n)</math> is defined as the number of ways of writing the number <math>n</math> as the sum of two squares. Then<ref name="Hardy">{{cite book
+ | last = Hardy | first = G. H. | author-link = G. H. Hardy
+ | edition = 3rd
+ | location = New York
+ | mr = 0106147
+ | page = 67
+ | publisher = Chelsea Publishing Company
+ | title = Ramanujan: Twelve Lectures on Subjects Suggested by His Life and Work
+ | year = 1959}}</ref>
+
+:<math>N(r)=\sum_{n=0}^{r^2} r_2(n).</math>
+
+Most recent progress rests on the following Identity, which has been first discovered by Hardy:<ref>{{cite book |last=Landau |first=Edmund |title=Vorlesungen über Zahlentheorie|volume=2|publisher=Verlag S. Hirzel |date=1927 |page=189}}</ref>
+:<math> N(x)-\frac {r_2(x^2)}2 = \pi x^2 + x \sum_{n=1}^\infty \frac {r_2(n)}{\sqrt {n}}  J_1(2 \pi x \sqrt n), </math>
+where <math>J_1</math> denotes the [[Bessel function]] of the first kind with order 1.
+
+==Generalizations==
+
+Although the original problem asks for integer lattice points in a circle, there is no reason not to consider other shapes, for example [[conic]]s; indeed [[Dirichlet's divisor problem#Dirichlet's divisor problem|Dirichlet's divisor problem]] is the equivalent problem where the circle is replaced by the rectangular [[hyperbola]].<ref name="Guy"/>  Similarly one could extend the question from two dimensions to higher dimensions, and ask for integer points within a [[N-sphere|sphere]] or other objects. There is an extensive literature on these problems. If one ignores the geometry and merely considers the problem an algebraic one of [[Diophantine approximation|Diophantine inequalities]], then there one could increase the exponents appearing in the problem from squares to cubes, or higher.
+
+The [[dot planimeter]] is physical device for estimating the area of shapes based on the same principle. It consists of a square grid of dots, printed on a transparent sheet; the area of a shape can be estimated as the product of the number of dots in the shape with the area of a grid square.<ref>{{cite journal
+ | last = Steinhaus | first = Hugo | author-link = Hugo Steinhaus
+ | issue = 1–2
+ | journal = Przegląd Matematyczno-Fizyczny
+ | language = pl
+ | pages = 24–29
+ | title = O mierzeniu pól płaskich
+ | url = https://cstaecker.fairfield.edu/~cstaecker/files/machines/filer.php?name=dotplanpapersteinhaus.pdf
+ | volume = 2}}</ref>
+
+===The primitive circle problem===
+
+Another generalization is to calculate the number of [[coprime]] integer solutions <math>m,n</math> to the inequality
+:<math>m^2+n^2\leq r^2.\,</math>
+This problem is known as the '''primitive circle problem''', as it involves searching for primitive solutions to the original circle problem.<ref name="jw02">{{cite journal
+ | last = Wu | first = Jie
+ | doi = 10.1007/s006050200006
+ | issue = 1
+ | journal = [[Monatshefte für Mathematik]]
+ | mr = 1894296
+ | pages = 69–81
+ | title = On the primitive circle problem
+ | volume = 135
+ | year = 2002| s2cid = 119451320
+ }}</ref> It can be intuitively understood as the question of how many trees within a distance of r are visible in the [[Euclid's orchard]], standing in the origin. If the number of such solutions is denoted <math>V(r)</math> then the values of <math>V(r)</math> for ''<math>r</math>'' taking small integer values are 
+:0, 4, 8, 16, 32, 48, 72, 88, 120, 152, 192 … {{OEIS|A175341}}.
+Using the same ideas as the usual Gauss circle problem and the fact that the [[Coprime integers#Probability of coprimality|probability that two integers are coprime]] is <math>6/\pi^2</math>, it is relatively straightforward to show that
+:<math>V(r)=\frac{6}{\pi}r^2+O(r^{1+\varepsilon}).</math>
+As with the usual circle problem, the problematic part of the primitive circle problem is reducing the exponent in the error term. At present, the best known exponent is <math>221/304+\varepsilon</math> if one assumes the [[Riemann hypothesis]].<ref name="jw02" /> Without assuming the Riemann hypothesis, the best upper bound currently known is
+:<math>V(r)=\frac{6}{\pi}r^2+O(r\exp(-c(\log r)^{3/5}(\log\log r^2)^{-1/5}))</math>
+for a positive constant <math>c</math>.<ref name="jw02" /> In particular, no bound on the error term of the form <math>r^{1-\varepsilon}</math> for any <math>\varepsilon>0</math> is currently known that does not assume the Riemann Hypothesis.
+
+==Notes==
+{{reflist}}
+
+==External links==
+*{{MathWorld|urlname=GausssCircleProblem|title=Gauss's circle problem}}
+*{{cite web|first=Grant|last=Sanderson|title=Pi hiding in prime regularities|url=https://www.youtube.com/watch?v=NaL_Cb42WyY|website=[[3Blue1Brown]]|date=19 May 2017 |language=en}}
+
+[[Category:Arithmetic functions]]
+[[Category:Lattice points]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Circles]]

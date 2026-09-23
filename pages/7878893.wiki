@@ -1,0 +1,59 @@
+{{Short description|Conjecture about gaps between prime numbers}}
+{{multiple image
+|footer=Graphical proof for Andrica's conjecture for the first (a)100, (b)200 and (c)500 prime numbers. It is conjectured that the function <math>A_n</math> is always less than 1.
+
+|align=right
+|direction=vertical
+|width=300
+|image1=Andrica's Conjecture.svg
+|caption1=(a) The function <math>A_n</math> for the first 100 primes.
+|image2=Andrica's Conjecture2.svg
+|caption2=(b) The function <math>A_n</math> for the first 200 primes.
+|image3=Andrica's Conjecture3.svg
+|caption3=(c) The function <math>A_n</math> for the first 500 primes.
+}}
+'''Andrica's conjecture''' (named after Romanian mathematician {{ill|Dorin Andrica|es}}) is a [[conjecture]] regarding the [[prime gap|gaps]] between [[prime number]]s.<ref>{{cite journal | first=D. | last=Andrica | title=Note on a conjecture in prime number theory | journal=Studia Univ. Babes–Bolyai Math. | volume=31 | year=1986 | number=4 | pages=44–48 | zbl=0623.10030 | issn=0252-1938 }}</ref>
+
+The conjecture states that the inequality
+:<math>\sqrt{p_{n+1}} - \sqrt{p_n} < 1 </math>
+holds for all <math>n</math>, where <math>p_n</math> is the <math>n</math>-th prime number. If <math>g_n = p_{n+1} - p_n</math> denotes the <math>n</math>-th [[prime gap]], then Andrica's conjecture can also be rewritten as
+:<math>g_n < 2\sqrt{p_n} + 1.</math>
+
+
+
+== Empirical evidence ==
+Imran Ghory has used data on the largest prime gaps to confirm the conjecture for <math>n</math> up to {{val|1.3002|e=16}}.<ref name="Wells 2005 prime numbers">{{cite book | last=Wells | first=David | title=Prime Numbers: The Most Mysterious Figures in Math | publisher=Wiley | publication-place=Hoboken (N.J.) | date=May 18, 2005 | isbn=978-0-471-46234-7 | page=13}}</ref> Using a more recent table of [[Prime gaps#Numerical results|maximal gaps]], the confirmation value can be extended exhaustively to {{val|2|e=19}} > 2<sup>64</sup>.
+
+The discrete function <math>A_n = \sqrt{p_{n+1}}-\sqrt{p_n}</math> is plotted in the figures opposite. The high-water marks for <math>A_n</math> occur for ''n''&nbsp;=&nbsp;1,&nbsp;2, and&nbsp;4, with ''A''<sub>4</sub> ≈ 0.670873..., with no larger value among the first 10<sup>5</sup> primes. Since the Andrica function decreases [[asymptotically]] as ''n'' increases, a prime gap of ever increasing size is needed to make the difference large as ''n'' becomes large. It therefore seems highly likely the conjecture is true, although this has not yet been proven.
+
+The best proven bound on gap sizes is {{nowrap|''g''<sub>''n''</sub> < ''p''<sub>''n''</sub><sup>0.525</sup>}} (for ''n'' sufficiently large). Thus, using an inequality of {{nowrap| ''p''<sub>''n''</sub><sup>0.525</sup>< ''2p''<sub>''n''</sub><sup>0.5</sup>+1}}, the conjecture is verified for {{nowrap| ''p''<sub>''n''</sub>}}  up to 1.099532599291×10<sup>12</sup>.
+
+== Generalizations ==
+[[File:Generalized Andrica's conjecture.svg|300px|thumb|Value of ''x'' in the generalized Andrica's conjecture for the first 100 primes, with the conjectured value of ''x''<sub>min</sub> labeled.]]
+As a generalization of Andrica's conjecture, the following equation has been considered:
+:<math> p _ {n+1} ^ x - p_ n ^ x = 1, </math>
+where <math> p_n </math> is the ''n''th prime and ''x'' can be any positive number.
+
+The largest possible solution for ''x'' is easily seen to occur for ''n''=1, when ''x''<sub>max</sub>&nbsp;=&nbsp;1. The smallest solution for ''x'' is conjectured to be ''x''<sub>min</sub>&nbsp;≈&nbsp;0.567148... {{OEIS|id=A038458}} which occurs for ''n''&nbsp;=&nbsp;30.
+
+This conjecture has also been stated as an [[inequality (mathematics)|inequality]], the generalized Andrica conjecture:
+:<math> p _ {n+1} ^ x - p_ n ^ x < 1 </math> for <math>x < x_{\min}.</math>
+
+== See also ==
+* [[Cramér's conjecture]]
+* [[Legendre's conjecture]]
+* [[Firoozbakht's conjecture]]
+
+== References and notes ==
+{{reflist}}
+* {{cite book |last=Guy | first=Richard K. | author-link=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=3rd | year=2004 |section=Section A8|isbn=978-0-387-20860-2 | zbl=1058.11001 }}
+
+== External links ==
+* [https://web.archive.org/web/20070711030648/http://planetmath.org/encyclopedia/AndricasConjecture.html ''Andrica's Conjecture''] at [[PlanetMath]]
+* [http://planetmath.org/?op=getobj&from=objects&id=9636 ''Generalized Andrica conjecture''] at [[PlanetMath]]
+* https://drive.google.com/file/d/1jWbjCbTn5Tf0twXJJochRt7ONwqs6l3D/view?usp=sharing
+
+{{Prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

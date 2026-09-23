@@ -1,0 +1,218 @@
+{{Short description|Number, non-palindrome after repeated sum with reverse}}
+{{unsolved|mathematics|Do any base-10 Lychrel numbers exist?}}
+A '''Lychrel number''' is a [[natural number]] that cannot form a [[Palindromic number|palindrome]] through the [[iteration|iterative]] process of repeatedly reversing its digits and adding the resulting numbers. This process is sometimes called the ''[[196 (number)|196]]-algorithm'', after the most famous number associated with the process. In [[base ten]], no Lychrel numbers have been yet [[mathematical proof|proven]] to exist, but many, including 196, are suspected on [[heuristics|heuristic]]<ref>{{cite web |last=O'Bryant |first=Kevin |date=26 December 2012 |title=Reply to ''Status of the 196 conjecture?'' |website=[[MathOverflow]] |url=https://mathoverflow.net/q/117277 }}</ref>{{Better source needed|reason=The current source is insufficiently reliable ([[WP:NOTRS]]).|date=January 2026}} and [[statistics|statistical]] grounds. The name "Lychrel" was coined by Wade Van Landingham as a rough [[anagram]] of "Cheryl", his girlfriend's first name.<ref>{{Cite web|url=https://www.p196.org/faq.html|archive-url=https://web.archive.org/web/20061201050326/https://www.p196.org/faq.html|url-status=dead|archive-date=2006-12-01|title=FAQ}}</ref>
+
+== Reverse-and-add process ==
+The reverse-and-add process produces the sum of a number and the number formed by reversing the order of its digits. For example, 56 + 65 = 121. As another example, 125 + 521 = 646.
+
+Some numbers become palindromes quickly after repeated reversal and addition, and are therefore not Lychrel numbers. All one-digit and two-digit numbers eventually become palindromes after repeated reversal and addition.
+
+About 80% of all numbers under 10,000 resolve into a palindrome in four or fewer steps; about 90% of those resolve in seven steps or fewer. Here are a few examples of non-Lychrel numbers:
+
+*56 becomes palindromic after one iteration: 56+65 = ''121''.
+*57 becomes palindromic after two iterations: 57+75 = 132, 132+231 = ''363''.
+*59 becomes a palindrome after three iterations: 59+95 = 154, 154+451 = 605, 605+506 = 1111
+*89 takes an unusually large 24 iterations (the most of any number under 10,000 that is known to resolve into a palindrome) to reach the palindrome ''8813200023188''.<ref>{{cite web|url=http://www.jasondoucette.com/pal/89|title=REVERSAL-ADDITION PALINDROME TEST ON 89|work=Palindromes and World Records page|first=Jason|last=Doucette|access-date=2026-08-16}}</ref>
+
+The smallest number that is not known to form a palindrome is [[196 (number)|196]]. It is therefore the smallest Lychrel number candidate.
+
+The number resulting from the reversal of the digits of a Lychrel number not ending in zero is also a Lychrel number.
+
+=== Formal definition of the process ===
+Let <math>n</math> be a natural number. We define the '''Lychrel function''' for a [[number base]] ''b''&nbsp;>&thinsp;1, <math>F_b : \mathbb{N} \rightarrow \mathbb{N}</math>, to be the following:
+:<math>F_b(n) = n + \sum_{i=0}^{k-1} d_i b^{k - i - 1}</math>
+where <math>k = \lfloor \log_{b} n \rfloor + 1</math> is the number of digits in the number in base <math>b</math>, and 
+:<math>d_i = \frac{n \bmod{b^{i+1}} - n \bmod b^i}{b^i}</math>
+is the value of each digit of the number. A number is a '''Lychrel number''' if there does not exist a natural number <math>i</math> such that <math>F_b^{i+1}(n) = 2 F_b^i(n)</math>, where <math>F^i</math> is the <math>i</math>-th [[Iterated function|iteration]] of <math>F</math>
+
+== Proof not found ==
+In other [[number base|bases]] (these bases are [[powers of 2]], like [[binary number|binary]] and [[hexadecimal]]), certain numbers can be proven to never form a palindrome after repeated reversal and addition,<!-- link is unreachable - "You don't have permission to access" - <ref>http://www.math.niu.edu/~rusin/known-math/96/palindrome {{Dead link|date=February 2022}}</ref> --><ref name=":0">{{cite web |last=Brown |first=Kevin |title=Digit Reversal Sums Leading to Palindromes |website=MathPages |url=http://www.mathpages.com/home/kmath004/kmath004.htm }}</ref> but no such proof has been found for 196 and other base 10 numbers.
+
+It is [[conjecture]]d that 196 and other numbers that have not yet yielded a palindrome are Lychrel numbers, but no number in base ten has yet been proven to be Lychrel. Numbers which have not been absolutely demonstrated to be non-Lychrel are informally called "candidate Lychrel" numbers. The first few candidate Lychrel numbers {{OEIS|A023108}} are:
+:'''196''', 295, 394, 493, 592, 689, 691, 788, 790, '''879''', 887, 978, 986, 1495, 1497, 1585, 1587, 1675, 1677, 1765, 1767, 1855, 1857, 1945, 1947, '''1997'''.
+
+The numbers in bold are suspected Lychrel seed numbers (see below). Computer programs by Jason Doucette, Ian Peters and Benjamin Despres have found other Lychrel candidates. Indeed, Benjamin Despres' program has identified all suspected Lychrel seed numbers of less than 17 digits.<ref>{{cite web |last=VanLandingham |first=Wade |author-link=Wade VanLandingham |title=Lychrel Records |website=p196.org |url=http://www.p196.org/lychrel_records.html |access-date=2011-08-29 |archive-url=https://web.archive.org/web/20160428155517/http://www.p196.org/lychrel_records.html |archive-date=2016-04-28 |url-status=dead }}</ref> Wade Van Landingham's site lists the total number of found suspected Lychrel seed numbers for each digit length.<ref>{{cite web |last=VanLandingham |first=Wade |author-link=Wade VanLandingham |title=Identified Seeds |website=p196.org |url=http://www.p196.org/lychrel_seeds.html |access-date=2011-08-29 |archive-url=https://web.archive.org/web/20160428161428/http://www.p196.org/lychrel_seeds.html |archive-date=2016-04-28 |url-status=dead }}</ref>
+
+The brute-force method originally deployed by John Walker has been refined to take advantage of iteration behaviours. For example, [[Vaughn Suite]] devised a program that only saves the first and last few digits of each iteration, enabling testing of the digit patterns in millions of iterations to be performed without having to save each entire iteration to a file.<ref>{{cite web |title=On Non-Brute Force Methods |url=http://home.cfl.rr.com/p196/math%20solutions.html |archive-url=https://web.archive.org/web/20061015175443/http://home.cfl.rr.com/p196/math%20solutions.html |archive-date=2006-10-15}}</ref> However, so far no algorithm has been developed to circumvent the reversal and addition iterative process.
+
+== Threads, seed and kin numbers ==
+The term '''thread''', coined by Jason Doucette, refers to the [[sequence]] of numbers that may or may not lead to a palindrome through the reverse and add process. Any given '''seed''' and its associated '''kin''' numbers will converge on the same thread. The thread does not include the original '''seed''' or '''kin''' number, but only the numbers that are common to both, after they converge.
+
+'''Seed''' numbers are a [[subset]] of Lychrel numbers, that is the smallest number of each non palindrome producing thread. A seed number may be a palindrome itself. The first three examples are shown in bold in the list above.
+
+'''Kin''' numbers are a subset of Lychrel numbers, that include all numbers of a thread, except the seed, or any number that will converge on a given thread after a single iteration. This term was introduced by [[Koji Yamashita]] in 1997.
+
+==196 palindrome quest==
+Because [[196 (number)|196]] ([[base-10]]) is the smallest candidate Lychrel number, it has received the most attention.
+
+In the 1980s, the 196 palindrome problem attracted the attention of [[microcomputer]] hobbyists, with search programs by [[Jim Butterfield]] and others appearing in several mass-market computing magazines.<ref name="transactor406">{{cite journal
+  |author=<!-- Staff writer; no byline -->
+  |year=1984
+  |title=Bits and Pieces
+  |journal=[[The Transactor]]
+  |publisher=[[Transactor Publishing]]
+  |volume=4
+  |issue=6
+  |pages=16–23
+  |url=https://archive.org/details/transactor-magazines-v4-i06
+  |access-date=26 December 2014
+}}</ref><ref name="ahoy1984">{{cite journal |last=Rupert |first=Dale |date=October 1984 |title=Commodares: Programming Challenges |publisher=Ion International |journal=[[Ahoy!]] |number=10 |pages=23, 97–98 |url=https://archive.org/details/ahoy-magazine-10}}</ref><ref name="ahoy1985">{{cite journal |last=Rupert |first=Dale |date=June 1985 |title=Commodares: Programming Challenges |journal=[[Ahoy!]] |publisher=Ion International |number=18 |pages=81–84,114 |url=https://archive.org/details/ahoy-magazine-18}}</ref> In 1985 a program by James Killman ran unsuccessfully for over 28 days, cycling through 12,954 passes and reaching a 5366-digit number.<ref name="ahoy1985" />
+
+[[John Walker (programmer)|John Walker]] began his 196 Palindrome Quest on 12 August 1987 on a [[Sun Microsystems|Sun]] 3/260 workstation. He wrote a [[C (programming language)|C]] program to perform the reversal and addition iterations and to check for a palindrome after each step. The program ran in the [[background (computer software)|background]] with a low priority and produced a checkpoint to a file every two hours and when the system was shut down, recording the number reached so far and the number of iterations. It restarted itself automatically from the last checkpoint after every shutdown. It ran for almost three years, then terminated (as instructed) on 24 May 1990 with the message:
+:Stop point reached on pass 2,415,836.
+:Number contains 1,000,000 digits.
+The sequence starting with 196 had grown to a number of one million digits after 2,415,836 iterations without reaching a palindrome. Walker published his findings on the internet along with the last checkpoint, inviting others to resume the quest using the number reached so far.
+
+In 1995, Tim Irvin and Larry Simkins used a [[Multiprocessing|multiprocessor]] computer and reached the two million digit mark in only three months without finding a palindrome. Jason Doucette then followed suit and reached 12.5 million digits in May 2000. Wade VanLandingham used Jason Doucette's program to reach 13 million digits, a record published in Yes Mag: Canada's Science Magazine for Kids. Since June 2000, Wade VanLandingham has been carrying the flag using programs written by various enthusiasts. By 1 May 2006, VanLandingham had reached the 300 million digit mark (at a rate of one million digits every 5 to 7 days). Using [[distributed processing]],<ref>{{cite conference |last1=Swierczewski |first1=Lukasz |last2=Dolbeau |first2=Romain |date=June 23, 2014 |title=The p196_mpi Implementation of the Reverse-And-Add Algorithm for the Palindrome Quest |conference=[[International Supercomputing Conference]] |location=[[Leipzig, Germany]] |url=http://www.isc-events.com/isc14_ap/presentationdetails.htm?t=presentation&o=264&a=select&ra=sessiondetails |access-date=June 11, 2014 |archive-date=April 19, 2015 |archive-url=https://web.archive.org/web/20150419100449/http://www.isc-events.com/isc14_ap/presentationdetails.htm?t=presentation&o=264&a=select&ra=sessiondetails |url-status=dead }}</ref> in 2011 Romain Dolbeau completed a billion iterations to produce a number with 413,930,770 digits, and in February 2015 his calculations reached a number with a billion digits.<ref>{{cite web |last=Dolbeau |first=Romain |author-link=Romain Dolbeau |title=The p196_mpi page |website=www.dolbeau.name |url=http://www.dolbeau.name/dolbeau/p196/p196.html |archive-url=https://web.archive.org/web/20161020091408/http://www.dolbeau.name/dolbeau/p196/p196.html |archive-date=20 October 2016}}</ref> A palindrome has yet to be found.
+
+Other potential Lychrel numbers which have also been subjected to the same brute force method of repeated reversal addition include 879, 1997 and 7059: they have been taken to several million iterations with no palindrome being found.<ref>{{cite web |title=Lychrel Records |url=http://home.cfl.rr.com/p196/lychrel+records.html |access-date=September 2, 2016 |archive-date=October 21, 2006 |archive-url=https://web.archive.org/web/20061021025636/http://home.cfl.rr.com/p196/lychrel+records.html |url-status=dead }}</ref>
+
+==Other bases==
+In [[Binary number|base 2]], 10110 (22 in decimal) has been proven to be a Lychrel number, since after 4 steps it reaches 10110100, after 8 steps it reaches 1011101000, after 12 steps it reaches 101111010000, and in general after 4''n'' steps it reaches a number consisting of 10, followed by ''n''&nbsp;+&thinsp;1 ones, followed by 01, followed by ''n''&nbsp;+&thinsp;1 zeros. This number obviously cannot be a palindrome, and none of the other numbers in the sequence are palindromes.
+
+Lychrel numbers have been proven to exist in the following bases: 11, 17, 20, 26, and all powers of 2.<ref name=":1">{{OEIS2C|id=A060382}}</ref><ref name=":0" /><ref>{{cite web |title=Letter from David Seal |url=http://www.mathpages.com/home/dseal.htm |access-date=2017-03-08 |archive-url=https://web.archive.org/web/20130530003702/http://mathpages.com/home/dseal.HTM |archive-date=2013-05-30 |url-status=dead }}</ref>
+
+No base contains any Lychrel numbers smaller than the base. In fact, in any given base ''b'', no single-digit number takes more than two iterations to form a palindrome. For ''b'' > 4, if ''k'' < ''b''/2 then ''k'' becomes palindromic after one iteration: ''k'' + ''k'' = 2''k'', which is single-digit in base ''b'' (and thus a palindrome). If ''k'' > ''b''/2, ''k'' becomes palindromic after two iterations.
+
+The smallest number in each base which could possibly be a Lychrel number are {{OEIS|id=A060382}}:
+{|class="wikitable"
+|-
+!''b''
+!Smallest possible Lychrel number in base ''b''<br />written in base ''b'' (base 10)
+|-
+|2
+|10110<ref name=":1" /> (22)
+|-
+|3
+|10211 (103)
+|-
+|4
+|10202 (290)
+|-
+|5
+|10313 (708)
+|-
+|6
+|4555 (1079)
+|-
+|7
+|10513 (2656)
+|-
+|8
+|1775 (1021)
+|-
+|9
+|728 (593)
+|-
+|10
+|196 (196)
+|-
+|11
+|83A (1011)
+|-
+|12
+|179 (237)
+|-
+|13
+|12CA (2701)
+|-
+|14
+|1BB (361)
+|-
+|15
+|1EC (447)
+|-
+|16
+|19D (413)
+|-
+|17
+|B6G (3297)
+|-
+|18
+|1AF (519)
+|-
+|19
+|HI (341)
+|-
+|20
+|IJ (379)
+|-
+|21
+|1CI (711)
+|-
+|22
+|KL (461)
+|-
+|23
+|LM (505)
+|-
+|24
+|MN (551)
+|-
+|25
+|1FM (1022)
+|-
+|26
+|OP (649)
+|-
+|27
+|PQ (701)
+|-
+|28
+|QR (755)
+|-
+|29
+|RS (811)
+|-
+|30
+|ST (869)
+|-
+|31
+|TU (929)
+|-
+|32
+|UV (991)
+|-
+|33
+|VW (1055)
+|-
+|34
+|1IV (1799)
+|-
+|35
+|1JW (1922)
+|-
+|36
+|YZ (1259)
+|}
+
+==Extension to negative integers==
+Lychrel numbers can be extended to the negative [[integer]]s by use of a [[signed-digit representation]] to represent each integer.
+
+==See also==
+* [[Arithmetic dynamics#Other areas in which number theory and dynamics interact|Arithmetic dynamics]]
+* [[Palindromic number]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{OEIS el|sequencenumber=A023108|name=Positive integers which apparently never result in a palindrome under ...|formalname=Positive integers which apparently never result in a palindrome under repeated applications of the function f(x) = x + (x with digits reversed)}}
+*[http://www.fourmilab.ch/documents/threeyears/threeyears.html John Walker] – Three years of computing
+*[http://www.fourmilab.ch/documents/threeyears/two_months_more.html Tim Irvin] – About two months of computing
+*[http://www.jasondoucette.com/worldrecords.html Jason Doucette – World records] – 196 Palindrome Quest, Most Delayed Palindromic Number
+*[http://users.tmok.com/~pla/Lychrel/Lychrel.shtml Benjamin Despres]
+*[https://web.archive.org/web/20061104023524/http://www.p196.org/ 196 and Other Lychrel Numbers] by Wade VanLandingham
+*{{MathWorld|urlname=196-Algorithm|title=196-Algorithm}}
+*[http://www.mathpages.com/home/kmath004/kmath004.htm MathPages – Digit Reversal Sums Leading to Palindromes]
+*[https://www.youtube.com/watch?v=bN8PE3eljdA   NumberPhile]
+*[https://dmaslov.me/mdpn/records.html All known delayed palindromic numbers] – Dmitry Maslov, MDPN project
+*[https://dmaslov.me/mdpn/checkpal.html Testing a delayed palindrome] – Dmitry Maslov, MDPN project
+*{{cite web |title=Open-source reverse-and-add search program for Lychrel candidates |url=https://github.com/vinnyrom/lychrel |website=Github |publisher=Vinny Romano}}
+
+{{Classes of natural numbers}}
+
+{{DEFAULTSORT:Lychrel Number}}
+[[Category:Arithmetic dynamics]]
+[[Category:Base-dependent integer sequences]]
+[[Category:Unsolved problems in number theory]]

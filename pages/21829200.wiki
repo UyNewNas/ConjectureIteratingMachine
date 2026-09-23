@@ -1,0 +1,45 @@
+In [[algebraic number theory]], '''Leopoldt's conjecture''', introduced by [[Heinrich-Wolfgang Leopoldt]],{{sfnp|Leopoldt|1962}}{{sfnp|Leopoldt|1975}} states that the [[p-adic numbers|''p''-adic]] regulator of a [[Algebraic number field|number field]] does not vanish. The ''p''-adic regulator is an analogue of the usual 
+[[Regulator_(mathematics)|regulator]] defined using [[p-adic exponential function#p-adic logarithm function|''p''-adic logarithms]] instead of the usual logarithms.
+
+==Formulation==
+
+Let ''K'' be a [[number field]] and for each [[prime number|prime]] ''P'' of ''K'' above some fixed rational prime ''p'', let ''U''<sub>''P''</sub> denote the local [[unit (ring theory)|units]] at ''P'' and let ''U''<sub>1,''P''</sub> denote the subgroup of principal units in ''U''<sub>''P''</sub>. Set
+
+:<math>U_1 = \prod_{P\,\mid\, p} U_{1,P}.</math>
+
+Then let ''E''<sub>1</sub> denote the set of global units ''ε'' that map to ''U''<sub>1</sub> via the [[diagonal embedding]] of the global units in&nbsp;''E''.
+
+Since ''E''<sub>1</sub> is a finite-[[Index of a subgroup|index]] subgroup of the global units, it is an [[abelian group]] of rank ''r''<sub>1</sub> + ''r''<sub>2</sub> – 1, where ''r''<sub>1</sub> is the number of real embeddings of ''K'' and ''r''<sub>2</sub> the number of pairs of complex embeddings. '''Leopoldt's conjecture''' states that the <math>\mathbb{Z}_p</math>-module rank of the closure of <math>E_1</math> embedded diagonally in ''U''<sub>1</sub> is also ''r''<sub>1</sub> + ''r''<sub>2</sub> – 1.
+
+Leopoldt's conjecture is known in the special case where ''K'' is an [[abelian extension]] of <math>\mathbb{Q}</math> or an abelian extension of an imaginary [[quadratic field|quadratic number field]]: [[James Ax|Ax]] reduced the abelian case to a ''p''-adic version of [[Baker's theorem]],{{sfnp|Ax|1965}} which was  proved shortly afterwards by Brumer.{{sfnp|Brumer|1967}} [[Preda Mihăilescu|Mihăilescu]] has announced a proof of Leopoldt's conjecture for all CM-extensions of <math>\mathbb{Q}</math>.{{sfnp|Mihăilescu|2009}}{{sfnp|Mihăilescu|2011}}
+
+[[Pierre Colmez|Colmez]] expressed the residue of the ''p''-adic [[Dedekind zeta function]] of a [[totally real field]] at ''s''&nbsp;=&nbsp;1 in terms of the ''p''-adic regulator.{{sfnp|Colmez|1988}} As a consequence, Leopoldt's conjecture for those fields is equivalent to their ''p''-adic Dedekind zeta functions having a simple pole at ''s''&nbsp;=&nbsp;1.
+
+==References==
+{{refbegin}}
+
+* {{cite journal | last=Ax | first=James | authorlink=James Ax | title=On the units of an algebraic number field | mr=0181630 | year=1965 | journal=[[Illinois Journal of Mathematics]] | volume=9 | issue=4 | pages=584–589 | doi=10.1215/ijm/1256059299 | zbl=0132.28303 }}
+
+* {{cite journal | last=Brumer | first=Armand | title=On the units of algebraic number fields | doi=10.1112/S0025579300003703 | mr=0220694 | year=1967 | journal=[[Mathematika]] | volume=14 | issue=2 | pages=121–124 | zbl=0171.01105 }}
+
+* {{cite journal | last=Colmez | first=Pierre | authorlink=Pierre Colmez | title=Résidu en ''s'' = 1 des fonctions zêta ''p''-adiques | doi=10.1007/BF01389373 | mr=922806 | year=1988 | journal=[[Inventiones Mathematicae]] | volume=91 | issue=2 | pages=371–389 | bibcode=1988InMat..91..371C | zbl=0651.12010 }}
+
+* {{eom | id=l/l110120 | first=M. | last=Kolster}}
+
+* {{cite journal | last1=Leopoldt | first1=Heinrich-Wolfgang | author-link=Heinrich-Wolfgang Leopoldt | title=Zur Arithmetik in abelschen Zahlkörpern | url=http://resolver.sub.uni-goettingen.de/purl?GDZPPN002179482 | mr=0139602 | year=1962 | journal=[[Journal für die reine und angewandte Mathematik]] | volume=209 | pages=54–71 | doi=10.1515/crll.1962.209.54 | zbl=0204.07101 }}
+
+* {{cite journal | first=Heinrich-Wolfgang | last=Leopoldt | author-link=Heinrich-Wolfgang Leopoldt | title=Eine ''p''-adische Theorie der Zetawerte. II | journal=[[Journal für die reine und angewandte Mathematik]] | volume=274–275 | year=1975 | pages=224–239 | doi=10.1515/crll.1975.274-275.224 | zbl=0309.12009 }}
+
+* {{cite arXiv | last=Mihăilescu | first=Preda | year=2009 | title=The ''T'' and ''T*'' components of Λ-modules and Leopoldt's conjecture | eprint=0905.1274 | authorlink=Preda Mihăilescu | class=math.NT }}
+
+* {{cite arXiv | last=Mihăilescu | first=Preda | year=2011 | title=Leopoldt's conjecture for CM fields | eprint=1105.4544 | authorlink=Preda Mihăilescu | class=math.NT }}
+
+* {{cite book | last1=Neukirch | first1=Jürgen | authorlink=Jürgen Neukirch | last2=Schmidt | first2=Alexander | author2-link=Alexander Schmidt (mathematician) | last3=Wingberg | first3=Kay | title=Cohomology of Number Fields | edition=second | year=2008 | location=[[Berlin]], [[Heidelberg]] | publisher=[[Springer-Verlag|Springer]] | series=A Series of Comprehensive Studies in Mathematics | volume=323 | isbn=978-3-540-37888-4 | zbl=1136.11001 | orig-year=2000 | mr=2392026 }}
+
+* {{cite book | last=Washington | first=Lawrence C. | authorlink=Lawrence C. Washington | title=Introduction to Cyclotomic Fields | edition=second | year=1997 | location=[[New York City|New York]] | publisher=[[Springer-Verlag|Springer]] | series=[[Graduate Texts in Mathematics]] | volume=83 | isbn=978-0-387-94762-4 | zbl=0966.11047 | orig-year=1982 }}
+
+{{refend}}
+
+[[Category:Algebraic number theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

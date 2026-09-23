@@ -1,0 +1,224 @@
+{{short description|Infinite integer series where the next number is the sum of the two preceding it}}
+{{distinguish|text=[[Lucas sequence]]s, the general class of sequences to which the Lucas numbers belong}}
+{{More footnotes|date=December 2019}}
+[[File:Lucas number spiral.svg|400x240px|thumb|right|The Lucas spiral, made with quarter-[[circular arc|arcs]], is a good approximation of the [[golden spiral]] when its terms are large. However, when its terms become very small, the arc's radius decreases rapidly from 3 to 1 then increases from 1 to 2.]]
+The '''Lucas sequence''' is an [[integer sequence]] named after the mathematician [[Édouard Lucas|François Édouard Anatole Lucas]] (1842&ndash;1891), who studied both that [[sequence]] and the closely related [[Fibonacci sequence]]. Individual numbers in the Lucas sequence are known as '''Lucas numbers'''. Lucas numbers and Fibonacci numbers form complementary instances of [[Lucas sequence]]s. 
+
+The Lucas sequence has the same [[recurrence relation|recursive relationship]] as the Fibonacci sequence, where each term is the sum of the two previous terms, but with different starting values.<ref name="mathworld wolfram weisstein">{{Cite web|last=Weisstein|first=Eric W.|title=Lucas Number|url=https://mathworld.wolfram.com/LucasNumber.html|access-date=2020-08-11|website=mathworld.wolfram.com|language=en}}</ref> This produces a sequence where the ratios of successive terms approach the [[golden ratio]], and in fact the terms themselves are [[rounding]]s of [[integer]] powers of the golden ratio.<ref>{{cite book |last1=Parker |first1=Matt |title=Things to Make and Do in the Fourth Dimension |date=2014 |publisher=Farrar, Straus and Giroux |isbn=978-0-374-53563-6 |page=284 |language=English |chapter=13}}</ref> The sequence also has a variety of relationships with the Fibonacci numbers, like the fact that adding any two Fibonacci numbers two terms apart in the Fibonacci sequence results in the Lucas number in between.<ref>{{cite book |last1=Parker |first1=Matt |title=Things to Make and Do in the Fourth Dimension |date=2014 |publisher=Farrar, Straus and Giroux |isbn=978-0-374-53563-6 |page=282 |language=English |chapter=13}}</ref>
+
+The first few Lucas numbers are 
+: 2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, 199, 322, 521, 843, 1364, 2207, 3571, 5778, 9349, ...&thinsp;. {{OEIS|id=A000032}}
+
+which coincides for example with the number of [[Independent set (graph theory)|independent vertex sets ]] for [[cyclic graph|cyclic graphs]] <math>C_n</math> of length <math>n\geq2</math>.<ref name="mathworld wolfram weisstein" />
+== Definition ==
+As with the Fibonacci numbers, each Lucas number is defined to be the sum of its two immediately previous terms, thereby forming a [[Generalizations of Fibonacci numbers#Fibonacci integer sequences|Fibonacci integer sequence]].  The first two Lucas numbers are <math>L_0=2</math> and <math>L_1=1</math>, which differs from the first two Fibonacci numbers <math>F_0=0</math> and <math>F_1=1</math>. Though closely related in definition, Lucas and Fibonacci numbers exhibit distinct properties.
+
+The Lucas numbers may thus be defined as follows:
+:<math> 
+  L_n :=
+  \begin{cases}
+    2               & \text{if } n = 0; \\
+    1               & \text{if } n = 1; \\
+    L_{n-1}+L_{n-2} & \text{if } n > 1.
+   \end{cases}
+ </math>
+(where ''n'' belongs to the [[natural number]]s)
+
+All Fibonacci-like integer sequences appear in shifted form as a row of the [[Wythoff array]]; the Fibonacci sequence itself is the first row and the Lucas sequence is the second row. Also like all Fibonacci-like integer sequences, the ratio between two consecutive Lucas numbers [[limit of a sequence|converges]] to the [[golden ratio]].
+
+==Extension to negative integers==
+Using <math>L_{n-2}=L_{n}-L_{n-1}</math>, one can extend the Lucas numbers to negative integers to obtain a doubly infinite sequence: 
+:..., &minus;11, 7, &minus;4, 3, &minus;1, 2, 1, 3, 4, 7, 11, ...  (terms <math>L_n</math> for <math>-5\leq{}n\leq5</math> are shown).
+The formula for terms with negative indices in this sequence is
+: <math>L_{-n}=(-1)^nL_n.\!</math>
+
+==Relationship to Fibonacci numbers==
+[[File:Comparison_Fibonacci_and_Lucas_numbers.svg|thumb|300px|The first identity expressed visually]]
+The Lucas numbers are related to the Fibonacci numbers by many [[identity (mathematics)|identities]].  Among these are the following:
+* <math>L_n = F_{n+1}+F_{n-1} = F_{n+2}-F_{n-2}.</math>
+* <math>L_{n+k} = L_{n+1}F_k + L_n F_{k-1}.</math>
+* <math>F_{n+k} = L_k F_n - (-1)^k F_{n-k};</math> in particular when <math>k=n,</math> <math>F_{2n} = L_n F_n.</math>
+* <math>2F_{n+k} = L_n F_k + L_k F_n.</math>
+* <math>L_{2n} = 5 F_n^2 + 2(-1)^n = L_n^2 - 2(-1)^n</math>, so <math>\lim_{n\to\infty} \frac{L_n}{F_n}=\sqrt{5}.</math>
+* <math>L_n - \sqrt{5} F_n = \frac{2}{(-\varphi)^n} \to 0.</math>
+* <math>L_{n+k} - (-1)^k L_{n-k} = 5 F_n F_k</math>; in particular when <math>k=1,</math> <math>5F_n = L_{n+1}+L_{n-1} = 2L_{n+1} - L_n = L_n + 2L_{n-1},</math> while when <math>k=n,</math> the identity above for <math>L_{2n}</math> is obtained.
+
+Their [[Closed-form expression|closed formula]] is given as:
+:<math>
+L_n = \varphi^n + (1-\varphi)^{n}
+= \varphi^n + (-\varphi)^{-n}
+= \left({ 1+ \sqrt{5} \over 2}\right)^n + \left({ 1- \sqrt{5} \over 2}\right)^n ,
+</math>
+
+where <math>\varphi</math> is the [[golden ratio]]. For <math>n>1</math> the magnitude of the term <math display=inline>(1-\varphi)^n</math> is less than 1/2, therefore <math>L_n</math> is the closest integer to <math>\varphi^n</math> or, equivalently, the integer part of <math>\varphi^n+1/2</math>, also written as <math>\lfloor \varphi^n+1/2 \rfloor</math>.
+
+Combining the above with [[Binet's formula]],
+
+:<math>F_n = \frac{\varphi^n - (1-\varphi)^n}{\sqrt 5} = \frac{\varphi^n - (-\varphi)^{-n}}{\sqrt 5} \, ,</math>
+
+a formula for <math>\varphi^n</math> is obtained:
+
+:<math>\varphi^n = {L_n + F_n \sqrt 5 \over 2}\, .</math>
+
+For integers ''n'' ≥ 2, we also get:
+
+:<math> \varphi^n = L_n - (1-\varphi)^n = L_n - (-1)^n L_n^{-1} - L_n^{-3} + R </math>
+
+with remainder ''R'' satisfying
+
+:<math> \vert R \vert < 3 L_n^{-5}.</math>
+
+==Lucas identities==
+
+Many of the Fibonacci identities have parallels in Lucas numbers. For example, the [[Cassini identity]] becomes
+
+:<math>L_n^2 - L_{n-1}L_{n+1} = (-1)^{n}5</math>
+
+Also
+
+:<math>\sum_{k=0}^n L_k = L_{n+2} - 1</math>
+
+:<math>\sum_{k=0}^n L_k^2 = L_nL_{n+1} + 2</math>
+
+:<math>2L_{n-1}^2 + L_n^2 = L_{2n+1} + 5F_{n-2}^2</math>
+
+where <math>\textstyle F_n=\frac{L_{n-1}+L_{n+1}}{5}</math>.
+
+:<math> L_n^k = \sum_{j=0}^{\lfloor \frac{k}{2} \rfloor} (-1)^{nj} \binom{k}{j} L'_{(k-2j)n} </math>
+
+where <math>L'_n=L_n</math> except for <math>L'_0=1</math>.
+
+For example if ''n'' is [[parity (mathematics)|odd]], <math>L_n^3 = L'_{3n}-3L'_n</math> and <math>L_n^4 = L'_{4n}-4L'_{2n}+6L'_0</math>
+
+Checking, <math>L_3=4, 4^3=64=76-3(4)</math>, and <math>256=322-4(18)+6</math>
+
+==Generating function==
+The [[ordinary generating function]] of the sequence of Lucas numbers is the [[power series]]
+
+<math display=block>
+\Phi(x) = \sum_{k=0}^\infty L_k x^k = 2 + x + 3x^2 + 4x^3 + 7x^4 + 11x^5 + \cdots.
+</math>
+
+This series is convergent for any [[complex number]] <math>x</math> satisfying <math>|x| < 1/\varphi \approx 0.618,</math> and its sum has a simple closed form:
+<math display=block>\Phi(x)=\frac{2-x}{1-x-x^2}.</math>
+
+This can be proved by multiplying by <math display="inline">(1-x-x^2)</math>:
+<math display=block>\begin{align}
+(1 - x- x^2) \Phi(x)
+  &= \sum_{k=0}^{\infty} L_k x^k - \sum_{k=0}^{\infty} L_k x^{k+1} - \sum_{k=0}^{\infty} L_k x^{k+2} \\
+  &= \sum_{k=0}^{\infty} L_k x^k - \sum_{k=1}^{\infty} L_{k-1} x^k - \sum_{k=2}^{\infty} L_{k-2} x^k \\
+  &= 2x^0 + 1x^1 - 2x^1 + \sum_{k=2}^{\infty} (L_k - L_{k-1} - L_{k-2}) x^k \\
+  &= 2 - x,
+\end{align}</math>
+where all terms involving <math>x^k</math> for <math>k \ge 2</math> cancel out because of the defining Lucas numbers recurrence relation.
+
+<math>\Phi\!\left(-\frac{1}{x}\right)</math> gives the generating function for the [[#Extension_to_negative_integers|negative indexed Lucas numbers]], <math>\sum_{n = 0}^\infty (-1)^nL_nx^{-n} = \sum_{n = 0}^\infty L_{-n}x^{-n}</math>, and
+
+:<math>\Phi\!\left(-\frac{1}{x}\right) = \frac{x + 2x^2}{1 - x - x^2}</math>
+
+<math>\Phi(x)</math> satisfies the [[functional equation]]
+
+:<math>\Phi(x) - \Phi\!\left(-\frac{1}{x}\right) = 2</math>
+
+As the [[Fibonacci number#Generating function|generating function for the Fibonacci numbers]] is given by
+
+:<math>s(x) = \frac{x}{1 - x - x^2}</math>
+
+we have
+
+:<math>s(x) + \Phi(x) = \frac{2}{1 - x - x^2}</math>
+
+which [[mathematical proof|proves]] that
+
+:<math>F_n + L_n = 2F_{n+1},</math>
+
+and
+
+:<math>5s(x) + \Phi(x) = \frac2x\Phi(-\frac1x) = 2\frac{1}{1 - x - x^2} + 4\frac{x}{1 - x - x^2}</math>
+
+proves that
+
+:<math>5F_n + L_n = 2L_{n+1}</math>
+
+The [[partial fraction decomposition]] is given by
+
+:<math>\Phi(x) = \frac{1}{1 - \phi x} + \frac{1}{1 - \psi x}</math>
+
+where <math>\phi = \frac{1 + \sqrt{5}}{2}</math> is the golden ratio and <math>\psi = \frac{1 - \sqrt{5}}{2}</math> is its [[conjugate (square roots)|conjugate]].
+
+This can be used to prove the generating function, as
+
+:<math>\sum_{n = 0}^\infty L_nx^n = \sum_{n = 0}^\infty (\phi^n + \psi^n)x^n = \sum_{n = 0}^\infty \phi^nx^n + \sum_{n = 0}^\infty \psi^nx^n = \frac{1}{1 - \phi x} + \frac{1}{1 - \psi x} = \Phi(x)</math>
+
+Using <math>x</math> equal to any of 0.01, 0.001, 0.0001, etc. lays out the first Lucas numbers in the decimal expansion of <math>\Phi(x)</math>. For example, <math>\Phi(0.001) = \frac{1.999}{0.998999} = \frac{1999000}{998999} = 
+2.001003004007011018029047\ldots.</math>
+
+==Congruence relations==
+
+If <math>F_n\geq 5</math> is a Fibonacci number then no Lucas number is divisible by <math>F_n</math>.
+
+The Lucas numbers satisfy [[Gauss congruence]]. This implies that <math>L_n</math> is [[modular arithmetic|congruent]] to 1 modulo <math>n</math> if <math>n</math> is [[prime number|prime]]. The [[composite number|composite]] values of <math>n</math> which satisfy this property are known as [[Lucas pseudoprime#Fibonacci pseudoprimes|Fibonacci pseudoprimes]].
+
+<math>L_n-L_{n-4}</math> is congruent to 0 modulo 5.
+
+== Lucas primes ==
+
+A '''Lucas prime''' is a Lucas number that is [[prime number|prime]]. The first few Lucas primes are
+:2, 3, 7, 11, 29, 47, 199, 521, 2207, 3571, 9349, 3010349, 54018521, 370248451, 6643838879, ... {{OEIS|id=A005479}}.
+
+The indices of these primes are (for example, ''L''<sub>4</sub> = 7)
+:0, 2, 4, 5, 7, 8, 11, 13, 16, 17, 19, 31, 37, 41, 47, 53, 61, 71, 79, 113, 313, 353, 503, 613, 617, 863, 1097, 1361, 4787, 4793, 5851, 7741, 8467, ... {{OEIS|id=A001606}}.
+{{as of|2015|09}}, the largest confirmed Lucas prime is ''L''<sub>148091</sub>, which has 30950 decimal digits.<ref>{{cite web |title=The Top Twenty: Lucas Number |url=https://primes.utm.edu/top20/page.php?id=48 |website=primes.utm.edu |access-date=6 January 2022}}</ref> {{as of|2022|08}}, the largest known Lucas [[probable prime]] is ''L''<sub>5466311</sub>, with 1,142,392 decimal digits.<ref>{{cite web |title=Henri & Renaud Lifchitz's PRP Top - Search by form |url=http://www.primenumbers.net/prptop/searchform.php?form=L%28n%29&action=Search |website=www.primenumbers.net |access-date=6 January 2022}}</ref>
+
+If ''L<sub>n</sub>'' is prime then ''n'' is 0, prime, or a [[power of 2]].<ref>Chris Caldwell, "[http://primes.utm.edu/glossary/page.php?sort=LucasPrime The Prime Glossary: Lucas prime]" from The [[Prime Pages]].</ref> ''L''<sub>2<sup>''m''</sup></sub> is prime for ''m''&nbsp;= 1,&nbsp;2,&nbsp;3,&nbsp;and&nbsp;4 and no other known values of&nbsp;''m''.
+
+==Lucas polynomials==
+In the same way as [[Fibonacci polynomials]] are derived from the [[Fibonacci number]]s, the [[Lucas polynomials]] <math>L_{n}(x)</math> are a [[polynomial sequence]] derived from the Lucas numbers.
+
+== Continued fractions for powers of the golden ratio ==
+For all but the smallest values of {{mvar|n}}, the integer&nbsp;{{math|''L''{{sub|''n''}}}} very closely approximates the {{mvar|n}}-th power of the golden ratio,&nbsp;{{tmath|\varphi^n}}.  Furthermore, close [[Diophantine approximation|rational approximations]] for powers of the golden ratio can be obtained from their [[continued fraction]]s.
+
+For positive integers ''n'', the continued fractions are:
+:<math> \varphi^{2n-1} = [L_{2n-1}; L_{2n-1}, L_{2n-1}, L_{2n-1}, \ldots] </math>
+:<math> \varphi^{2n} = [L_{2n}-1; 1, L_{2n}-2, 1, L_{2n}-2, 1, L_{2n}-2, 1, \ldots] </math>.
+
+For example:
+:<math> \varphi^5 = [11; 11, 11, 11, \ldots] </math>
+is the limit of
+:<math> \frac{11}{1}, \frac{122}{11}, \frac{1353}{122}, \frac{15005}{1353}, \ldots </math>
+with the error in each term being about 1% of the error in the previous term; and
+:<math> \varphi^6 = [18 - 1; 1, 18 - 2, 1, 18 - 2, 1, 18 - 2, 1, \ldots] = [17; 1, 16, 1, 16, 1, 16, 1, \ldots] </math>
+is the limit of
+:<math> \frac{17}{1}, \frac{18}{1}, \frac{305}{17}, \frac{323}{18}, \frac{5473}{305}, \frac{5796}{323}, \frac{98209}{5473}, \frac{104005}{5796}, \ldots </math>
+with the error in each term being about 0.3% that of the ''second'' previous term.
+
+==Applications==
+Lucas numbers are the second most common pattern in [[sunflower]]s after Fibonacci numbers, when clockwise and counter-clockwise spirals are counted, according to an analysis of 657 sunflowers in 2016.<ref>{{Cite journal |last1=Swinton |first1=Jonathan |last2=Ochu |first2=Erinma |last3=null |first3=null |title=Novel Fibonacci and non-Fibonacci structure in the sunflower: results of a citizen science experiment |journal=Royal Society Open Science |year=2016 |volume=3 |issue=5 |article-number=160091 |doi=10.1098/rsos.160091  |doi-access=free|pmc=4892450 |pmid=27293788|bibcode=2016RSOS....360091S }}</ref>
+
+==See also==
+*[[Generalizations of Fibonacci numbers]]
+
+== References ==
+{{reflist}}
+
+==External links==
+* {{springer|title=Lucas polynomials|id=p/l130120}}
+* {{MathWorld|urlname=LucasNumber|title=Lucas Number}}
+* {{MathWorld | urlname=LucasPolynomial | title=Lucas Polynomial}}
+* "[https://web.archive.org/web/20051126021243/http://www.mcs.surrey.ac.uk/Personal/R.Knott/Fibonacci/lucasNbs.html The Lucas Numbers]", Dr Ron Knott
+* [https://web.archive.org/web/20051030021553/http://milan.milanovic.org/math/english/lucas/lucas.html Lucas numbers and the Golden Section]
+* [https://web.archive.org/web/20070216024906/http://www.plenilune.pwp.blueyonder.co.uk/fibonacci-calculator.asp A Lucas Number Calculator can be found here.]
+* {{OEIS el|1=A000032|2=Lucas numbers beginning at 2|formalname=Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1}}
+
+{{Prime number classes}}
+{{Classes of natural numbers}}
+{{series (mathematics)}}
+
+[[Category:Integer sequences]]
+[[Category:Fibonacci numbers]]
+[[Category:Recurrence relations]]
+[[Category:Unsolved problems in number theory]]
+[[bn:লুকাস ধারা]]
+[[fr:Suite de Lucas]]
+[[he:סדרת לוקאס]]
+[[pt:Sequência de Lucas]]

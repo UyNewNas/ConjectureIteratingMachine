@@ -1,0 +1,73 @@
+{{Short description|Conjecture linking two mathematical areas}}
+[[File:Baum_and_Connes.jpg | thumb | right | Photo of Baum and Connes]]In [[mathematics]], specifically in [[operator K-theory]], the '''Baum&ndash;Connes conjecture''' suggests a link between the [[operator K-theory|K-theory]] of the  [[reduced C*-algebra]] of a [[group theory|group]] and the [[K-homology]] of the [[classifying space]] of [[proper action]]s of that group. The conjecture sets up a correspondence between different areas of mathematics, with the K-homology of the classifying space being related to geometry, [[differential operator]] theory, and [[homotopy theory]], while the K-theory of the group's reduced C*-algebra is a purely analytical object.
+
+The conjecture, if true, would have some older famous conjectures as consequences. For instance, the surjectivity part implies the [[Kaplansky's conjectures#Group rings|Kadison–Kaplansky conjecture for discrete torsion-free groups]], and the injectivity is closely related to the [[Novikov conjecture]].
+
+The conjecture is also closely related to [[index theory]], as the [[assembly map]] <math>\mu</math> is a sort of index, and it plays a major role in [[Alain Connes]]' [[noncommutative geometry]] program.
+
+The origins of the conjecture go back to [[Fredholm theory]], the [[Atiyah–Singer index theorem]] and the interplay of geometry with operator K-theory as expressed in the works of Brown, Douglas and Fillmore, among many other motivating subjects.
+
+==Formulation==
+Let Γ be a [[Second-countable space|second countable]] [[locally compact group]] (for instance a countable [[discrete group]]). One can define a [[morphism]]
+
+:<math> \mu: RK^\Gamma_*(\underline{E\Gamma}) \to K_*(C^*_r(\Gamma)),</math>
+
+called the '''assembly map''', from the equivariant K-homology with <math>\Gamma</math>-compact supports of the classifying space of proper actions <math>\underline{E\Gamma}</math> to the K-theory of the [[reduced C*-algebra]] of Γ. The subscript index <sub>*</sub> can be 0 or 1.
+
+[[Paul Baum (mathematician)|Paul Baum]] and [[Alain Connes]] introduced the following conjecture (1982) about this morphism:
+
+:'''Baum-Connes Conjecture.''' The assembly map <math>\mu</math> is an [[isomorphism]].
+
+As the left hand side tends to be more easily accessible than the right hand side, because there are hardly any general structure theorems of the <math>C^*</math>-algebra, one usually views the conjecture as an "explanation" of the right hand side.
+
+The original formulation of the conjecture was somewhat different, as the notion of equivariant K-homology was not yet common in 1982.
+
+In case <math>\Gamma</math> is discrete and torsion-free, the left hand side reduces to the non-equivariant K-homology with compact supports of the ordinary classifying space <math>B\Gamma</math> of <math>\Gamma</math>.
+
+There is also more general form of the conjecture, known as Baum–Connes conjecture with coefficients, where both sides have coefficients in the form of a <math>C^*</math>-algebra <math>A</math> on which <math>\Gamma</math> acts by <math>C^*</math>-automorphisms. It says in [[KK-theory|KK-language]] that the assembly map
+
+:<math> \mu_{A,\Gamma}: RKK^\Gamma_*(\underline{E\Gamma},A) \to K_*(A\rtimes_\lambda \Gamma),</math>
+
+is an isomorphism, containing the case without coefficients as the case <math>A=\C.</math>
+
+However, counterexamples to the conjecture with coefficients were found in 2002 by [[Nigel Higson]], [[Vincent Lafforgue]] and [[Georges Skandalis]]. However, the conjecture with coefficients remains an active area of research, since it is, not unlike the classical conjecture, often seen as a statement concerning particular groups or class of groups.
+
+==Examples==
+Let <math>\Gamma</math> be the integers <math>\Z</math>. Then the left hand side is the [[K-homology]] of <math>B\Z</math> which is the circle. The <math>C^*</math>-algebra of the integers is by the commutative Gelfand–Naimark transform, which reduces to the [[Fourier transform]] in this case, isomorphic to the algebra of continuous functions on the circle. So the right hand side is the topological K-theory of the circle. One can then show that the assembly map is [[KK-theory|KK-theoretic]] [[Poincaré duality]] as defined by [[Gennadi Kasparov]], which is an isomorphism.
+
+==Results==
+
+The conjecture without coefficients is still open, although the field has received great attention since 1982.
+
+The conjecture is proved for the following classes of groups:
+
+* Discrete subgroups of [[Indefinite orthogonal group|<math>SO(n,1)</math>]] and <math>SU(n,1)</math>.
+* Groups with the [[Haagerup property]], sometimes called [[a-T-menability|a-T-menable groups]]. These are groups that admit an isometric action on an affine Hilbert space <math>H</math> which is proper in the sense that <math>\lim_{n\to\infty} g_n\xi\to\infty</math> for all <math>\xi\in H</math> and all sequences of group elements <math>g_n</math> with <math>\lim_{n\to\infty}g_n\to\infty</math>. Examples of a-T-menable groups are [[amenable group]]s, [[Coxeter group]]s, groups acting properly on [[Tree (graph theory)|trees]], and groups acting properly on simply connected [[CAT(k) space|<math>CAT(0)</math>]] cubical complexes.
+* Groups that admit a [[Presentation of a group|finite presentation]] with only one relation.
+* Discrete cocompact subgroups of real Lie groups of real rank 1.
+* Cocompact lattices in <math>SL(3,\R), SL(3,\C)</math> or <math>SL(3,\Q_p)</math>. It was a long-standing problem since the first days of the conjecture to expose a single infinite [[Kazhdan's property (T)|property T-group]] that satisfies it. However, such a group was given by V. Lafforgue in 1998 as he showed that cocompact lattices in <math>SL(3,\R)</math> have the property of rapid decay and thus satisfy the conjecture.
+* [[Hyperbolic group|Gromov hyperbolic groups]] and their subgroups.
+* Among non-discrete groups, the conjecture has been shown in 2003 by J. Chabert, S. Echterhoff and R. Nest for the vast class of all almost connected groups (i. e. groups having a cocompact connected component), and all groups of <math>k</math>-rational points of a [[linear algebraic group]] over a [[local field]] <math>k</math> of characteristic zero (e.g. <math>k = \Q_p</math>). For the important subclass of real reductive groups, the conjecture had already been shown in 1987 by [[Antony Wassermann]].<ref>[https://mathscinet.ams.org/mathscinet-getitem?mr=894996 MathSciNet bibliographic data]</ref>
+Injectivity is known for a much larger class of groups thanks to the Dirac-dual-Dirac method. This goes back to ideas of [[Michael Atiyah]] and was developed in great generality by [[Gennadi Kasparov]] in 1987.
+Injectivity is known for the following classes:
+* Discrete subgroups of connected [[Lie group]]s or virtually connected Lie groups.
+* Discrete subgroups of [[P-adic number|p-adic groups]].
+* Bolic groups (a certain generalization of hyperbolic groups).
+* Groups which admit an amenable action on some compact space.
+
+The simplest example of a group for which it is not known whether it satisfies the conjecture is <math>SL_3(\Z)</math>.
+
+==References==
+<references />
+*{{Citation |first=Guido |last=Mislin |name-list-style=amp |first2=Alain |last2=Valette |year=2003 |title=Proper Group Actions and the Baum–Connes Conjecture |location=Basel |publisher=Birkhäuser |isbn=0-8176-0408-1 }}.
+*{{Citation |first=Alain |last=Valette  |year=2002 |title=Introduction to the Baum-Connes Conjecture |location=Basel | publisher= Birkhäuser |isbn=978-3-7643-6706-0}}.
+
+==External links==
+*[https://web.archive.org/web/20080221181939/http://www.math.ist.utl.pt/~matsnev/BCexpository.pdf On the Baum-Connes conjecture] by Dmitry Matsnev.
+
+{{DEFAULTSORT:Baum-Connes conjecture}}
+[[Category:C*-algebras]]
+[[Category:K-theory]]
+[[Category:Surgery theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

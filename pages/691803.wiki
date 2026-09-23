@@ -1,0 +1,173 @@
+{{Short description|Conjecture about coloring graphs}}
+[[Image:Erdős–Faber–Lovász conjecture.svg|thumb|upright=1.2|An instance of the Erdős–Faber–Lovász conjecture: a graph formed from four [[clique (graph theory)|clique]]s of four vertices each, any two of which intersect in a single vertex, can be {{nowrap|4-colored}}.]]
+{{unsolved|mathematics|'''Conjecture:''' If {{mvar|k}} [[complete graph]]s, each having exactly {{mvar|k}} vertices, have the property that every pair of complete graphs has at most one shared vertex, then the union of the [[graph (discrete mathematics)|graph]]s can be properly colored with {{mvar|k}}&nbsp;colors.}}
+In [[graph theory]], the '''Erdős–Faber–Lovász conjecture''' is a problem about [[graph coloring]], named after [[Paul Erdős]], [[Vance Faber]], and [[László Lovász]], who formulated it in 1972.<ref name="e81">{{harvtxt|Erdős|1981}}.</ref>  It says:
+
+:If {{mvar|k}} [[complete graph]]s, each having exactly {{mvar|k}} vertices, have the property that every pair of complete graphs has at most one shared vertex, then the union of the [[graph (discrete mathematics)|graph]]s can be properly colored with {{mvar|k}}&nbsp;colors.
+
+The [[conjecture]] for all sufficiently large values of {{mvar|k}} was [[mathematical proof|proved]] by Dong Yeap Kang, Tom Kelly, [[Daniela Kühn]], Abhishek Methuku, and [[Deryk Osthus]].<ref>{{harvtxt|Kalai|2021}}; {{harvtxt|Kang|Kelly|Kühn|Methuku|2023}}; {{harvtxt|Houston-Edwards|2021}}</ref>
+
+==Equivalent formulations==
+{{harvtxt|Haddad|Tardif|2004}} introduced the problem with a story about seating assignment in committees: suppose that, in a university department, there are {{mvar|k}} committees, each consisting of {{mvar|k}} faculty members, and that all committees meet in the same room, which has {{mvar|k}} chairs. Suppose also that at most one person belongs to the intersection of any two committees. Is it possible to assign the committee members to chairs in such a way that each member sits in the same chair for all the different committees to which he or she belongs? In this model of the problem, the faculty members correspond to graph vertices, committees correspond to complete graphs, and chairs correspond to vertex colors.
+
+A ''linear hypergraph'' (also known as [[partial linear space]]) is a [[hypergraph]] with the property that every two [[hyperedge]]s have at most one vertex in common. A hypergraph is said to be uniform if all of its hyperedges have the same number of vertices as each other. The {{mvar|n}} [[clique (graph theory)|clique]]s of size {{mvar|n}} in the Erdős–Faber–Lovász conjecture may be interpreted as the hyperedges of an {{mvar|n}}-uniform linear hypergraph that has the same vertices as the underlying graph. In this language, the Erdős–Faber–Lovász conjecture states that, given any {{mvar|n}}-uniform linear hypergraph with {{mvar|n}} hyperedges, one may {{mvar|n}}-color the vertices such that each hyperedge has one vertex of each color.<ref>{{harvtxt|Romero|Sánchez Arroyo|2007}}.</ref>
+
+A ''simple hypergraph'' is a hypergraph in which at most one hyperedge connects any pair of vertices and there are no hyperedges of size at most one. In the graph coloring formulation of the Erdős–Faber–Lovász conjecture, it is safe to remove vertices that belong to a single clique, as their coloring presents no difficulty; once this is done, the hypergraph that has a vertex for each clique, and a hyperedge for each graph vertex, forms a simple hypergraph.
+And, the hypergraph dual of [[graph coloring|vertex coloring]] is [[edge coloring]]. Thus, the Erdős–Faber–Lovász conjecture is equivalent to the statement that any simple hypergraph with {{mvar|n}} vertices has chromatic index (edge coloring number) at most {{mvar|n}}.<ref>{{harvtxt|Chiang|Lawler|1988}}. {{harvtxt|Hindman|1981}} describes an equivalent problem in the language of set systems instead of hypergraphs.</ref>
+
+The graph of the Erdős–Faber–Lovász conjecture may be represented as an [[intersection graph]] of sets: to each vertex of the graph, correspond the set of the cliques containing that vertex, and connect any two vertices by an edge whenever their corresponding sets have a [[empty set|nonempty]] intersection. Using this description of the graph, the conjecture may be restated as follows: if some family of sets has {{mvar|n}} total elements, and any two sets intersect in at most one element, then the intersection graph of the sets may be {{mvar|n}}-colored.<ref>{{harvtxt|Hindman|1981}}.</ref>
+
+The [[Intersection number (graph theory)|intersection number]] of a graph {{mvar|G}} is the minimum number of elements in a family of sets whose intersection graph is {{mvar|G}}, or equivalently the minimum number of vertices in a hypergraph whose [[Line graph of a hypergraph|line graph]] is {{mvar|G}}.  {{harvtxt|Klein|Margraf|2003}} define the linear intersection number of a graph, similarly, to be the minimum number of vertices in a linear hypergraph whose line graph is {{mvar|G}}. As they observe, the Erdős–Faber–Lovász conjecture is equivalent to the statement that the chromatic number of any graph is at most equal to its linear intersection number.
+
+{{harvtxt|Haddad|Tardif|2004}} present another yet equivalent formulation, in terms of the theory of [[clone (algebra)|clones]].
+
+==History, partial results, and eventual proof==
+Paul Erdős, Vance Faber, and László Lovász formulated the harmless-looking conjecture at a party in Boulder, Colorado in September 1972. Its difficulty was realised only slowly.<ref name="e81"/>
+Paul Erdős originally offered US$50 for proving the conjecture in the affirmative, and later raised the reward to US$500.<ref name="e81"/><ref>{{harvtxt|Chung|Graham|1998}}.</ref> In fact, Paul Erdős considered this to be one of his three most favourite [[combinatorics|combinatorial]] problems.<ref name="e81"/><ref name="k97">{{harvtxt|Kahn|1997}}.</ref>
+
+{{harvtxt|Chiang|Lawler|1988}} proved that the chromatic number of the graphs in the conjecture is at most <math>\tfrac{3}{2} k - 2</math>, and {{harvtxt|Kahn|1992}} improved this to {{math|''k'' + ''o''(''k'')}}.
+
+In 2023, almost 50 years after the original conjecture was stated,<ref name="e81"/> it was resolved for all sufficiently large {{math|''n''}} by Dong Yeap Kang, Tom Kelly, Daniela Kühn, Abhishek Methuku, and Deryk Osthus.<ref>{{harvtxt|Kang|Kelly|Kühn|Methuku|Osthus|2023}}.</ref>
+
+==Related problems==
+It is also of interest to consider the chromatic number of graphs formed as the union of {{mvar|k}} cliques of {{mvar|k}} vertices each, without restricting how big the intersections of pairs of cliques can be. In this case, the chromatic number of their union is at most {{math|1+ ''k''{{sqrt|''k'' − 1}}}}, and some graphs formed in this way require this many colors.<ref>{{harvtxt|Erdős|1991}}; {{harvtxt|Horák|Tuza|1990}}.</ref>
+
+A version of the conjecture that uses the [[Fractional coloring|fractional chromatic number]] in place of the chromatic number is known to be true. That is, if a graph {{mvar|G}} is formed as the union of {{mvar|k}} {{mvar|k}}-cliques that intersect pairwise in at most one vertex, then {{mvar|G}} can be {{mvar|k}}-colored.<ref>{{harvtxt|Kahn|Seymour|1992}}.</ref>
+
+In the framework of edge coloring simple hypergraphs, {{harvtxt|Hindman|1981}} defines a number {{mvar|L}} from a simple hypergraph as the number of hypergraph vertices that belong to a hyperedge of three or more vertices. He shows that, for any fixed value of {{mvar|L}}, a finite calculation suffices to verify that the conjecture is true for all simple hypergraphs with that value of {{mvar|L}}. Based on this idea, he shows that the conjecture is indeed true for all simple hypergraphs with {{math|''L'' ≤ 10}}. In the formulation of coloring graphs formed by unions of cliques, [[Neil Hindman|Hindman's]] result shows that the conjecture is true whenever at most ten of the cliques contain a vertex that belongs to three or more cliques. In particular, it is true for {{math|''n'' ≤ 10}}.
+
+==See also==
+* [[List of conjectures by Paul Erdős]]
+
+== Notes ==
+{{reflist|colwidth=40em}}
+
+== References ==
+{{refbegin|colwidth=40em}}
+*{{citation
+ | last1 = Chiang | first1 = W. I.
+ | last2 = Lawler | first2 = E. L. | author2-link = Eugene Lawler
+ | title = Edge coloring of hypergraphs and a conjecture of Erdős, Faber, Lovász
+ | journal = Combinatorica
+ | volume = 8 | issue = 3 | year = 1988 | pages = 293–295 | doi = 10.1007/BF02126801
+ | mr = 0963120 | s2cid = 1991737
+ }}.
+*{{citation
+ | last1 = Chung | first1 = Fan | authorlink1 = Fan Chung
+ | last2 = Graham | first2 = Ron | authorlink2 = Ronald Graham
+ | title = Erdős on Graphs: His Legacy of Unsolved Problems
+ | title-link = Erdős on Graphs
+ | year = 1998
+ | publisher = A K Peters
+ | pages = 97–99}}.
+*{{citation
+ | last=Erdős | first = Paul | authorlink = Paul Erdős
+ | title = On the combinatorial problems which I would most like to see solved
+ | journal = Combinatorica | year = 1981 | volume = 1 | pages = 25–42
+ | mr = 0602413 
+ | doi = 10.1007/BF02579174| citeseerx = 10.1.1.294.9566 | s2cid = 189916865 }}.
+*{{citation
+ | last=Erdős | first = Paul | authorlink = Paul Erdős
+ | title = Advanced problem 6664
+ | journal = [[American Mathematical Monthly]]
+ | volume = 98 | issue = 7 | pages = 655 | year = 1991
+ | doi=10.2307/2324942
+ | jstor=2324942
+ | publisher=Mathematical Association of America}}. [https://www.jstor.org/stable/2323901 Solutions by Ilias Kastanas, Charles Vanden Eynden, and Richard Holzsager], [[American Mathematical Monthly]] '''100''' (7): 692–693, 1992.
+*{{citation
+ |first1=L. 
+ |last1=Haddad 
+ |first2=C. 
+ |last2=Tardif 
+ |title=A clone-theoretic formulation of the Erdős-Faber-Lovasz conjecture 
+ |journal=Discussiones Mathematicae Graph Theory 
+ |volume=24  | issue = 3 | doi = 10.7151/dmgt.1252
+ |year=2004 
+ |pages=545–549 
+ |mr=2120637 
+|doi-access=free 
+ }}.
+*{{citation
+ | doi = 10.4153/CJM-1981-046-9
+ | last = Hindman | first = Neil | author-link=Neil Hindman
+ | title = On a conjecture of Erdős, Faber, and Lovász about ''n''-colorings
+ | journal = Can. J. Math.
+ | volume = 33 | year = 1981 | issue = 3 | pages = 563–570
+ | mr = 0627643 | s2cid = 124025730 | doi-access = free }}.
+*{{citation
+ | last1 = Horák | first1 = P.
+ | last2 = Tuza | first2 = Z.
+ | title = A coloring problem related to the Erdős–Faber–Lovász conjecture
+ | journal = Journal of Combinatorial Theory, Series B
+ | volume = 50 | issue = 2 | year = 1990 | pages = 321–322
+ | doi = 10.1016/0095-8956(90)90087-G| doi-access = free}}. Corrected in [https://doi.org/10.1016/0095-8956(91)90046-M JCTB '''51''' (2): 329, 1991], to add Tuza's name as coauthor.
+*{{citation|url=https://www.quantamagazine.org/mathematicians-settle-erdos-coloring-conjecture-20210405/|title=Mathematicians settle Erdős coloring conjecture|last=Houston-Edwards|first=Kelsey|magazine=[[Quanta Magazine]]|date=April 5, 2021}}
+*{{citation
+ | last = Kahn | first = Jeff | authorlink = Jeff Kahn (mathematician)
+ | title = Coloring nearly-disjoint hypergraphs with ''n'' + ''o''(''n'') colors
+ | journal = Journal of Combinatorial Theory, Series A
+ | year = 1992 | volume = 59 | pages = 31–39
+ | doi = 10.1016/0097-3165(92)90096-D | mr = 1141320 | doi-access = free }}.
+*{{citation
+ | last1 = Kahn | first1 = Jeff | authorlink1 = Jeff Kahn (mathematician)
+ | last2 = Seymour | first2 = Paul D. | authorlink2 = Paul Seymour (mathematician)
+ | title = A fractional version of the Erdős-Faber-Lovász conjecture
+ | journal = Combinatorica
+ | volume = 12 | issue = 2 | year = 1992 | pages = 155–160
+ | doi = 10.1007/BF01204719 | mr = 1179253 | s2cid = 6144958 }}.
+*{{citation
+ |last= Kahn
+ |first= Jeff
+ |title= The Mathematics of Paul Erdös I
+ |author-link= Jeff Kahn (mathematician)
+ |date = 1997
+ |chapter = On Some Hypergraph Problems of Paul Erdős and the Asymptotics of Matchings, Covers and Colorings
+ |series= Algorithms and Combinatorics
+ |volume= 13
+ |chapter-url = https://doi.org/10.1007/978-3-642-60408-9_26
+ |publisher = Springer Berlin Heidelber
+ |pages = 345–371
+ |doi= 10.1007/978-3-642-60408-9_26
+ |isbn = 978-3-642-60408-9
+}}
+*{{citation
+ | last = Kalai | first = Gil | author-link = Gil Kalai
+ | contribution = To cheer you up in difficult times 17: Amazing! The Erdős-Faber-Lovász conjecture (for large n) was proved by Dong Yeap Kang, Tom Kelly, Daniela Kühn, Abhishek Methuku, and Deryk Osthus!
+ | contribution-url = https://gilkalai.wordpress.com/2021/01/14/to-cheer-you-up-in-difficult-times-17-amazing-the-erdos-faber-lovasz-conjecture-for-large-n-was-proved-by-dong-yeap-kang-tom-kelly-daniela-kuhn-abhishek-methuku-and-deryk-osthus/
+ | date = January 14, 2021
+ | title = Combinatorics and more}}
+*{{citation
+ | last1 = Kang | first1 = Dong Yeap
+ | last2 = Kelly | first2 = Tom
+ | last3 = Kühn | first3 = Daniela
+ | last4 = Methuku | first4 = Abhishek
+ | last5 = Osthus | first5 = Deryk
+ | title = A proof of the Erdős-Faber-Lovász conjecture
+ | journal = Annals of Mathematics
+ | arxiv = 2101.04698
+ | volume = 198 | issue = 2 | year = 2023 | pages = 537–618 | doi = 10.4007/annals.2023.198.2.2}}
+*{{citation
+ | last1 = Klein | first1 = Hauke
+ | last2 = Margraf | first2 = Marian
+ | title = On the linear intersection number of graphs
+ | year = 2003
+ | arxiv = math.CO/0305073| bibcode = 2003math......5073K
+ }}.
+*{{citation
+ | contribution = Advances on the Erdős–Faber–Lovász conjecture
+ | last1 = Romero | first1 = David
+ | last2 = Sánchez Arroyo | first2 = Abdón
+ | doi = 10.1093/acprof:oso/9780198571278.003.0017
+ | title = Combinatorics, Complexity, and Chance : A Tribute to Dominic Welsh
+ | editor1-last = Grimmet | editor1-first = Geoffrey
+ | editor2-last = McDiarmid | editor2-first = Colin
+ | series = Oxford Lecture Series in Mathematics and Its Applications
+ | publisher = Oxford University Press
+ | year = 2007 | pages = 285–298| isbn = 9780198571278 }}.
+{{refend}}
+
+{{DEFAULTSORT:Erdos-Faber-Lovasz conjecture}}
+[[Category:Graph coloring]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Paul Erdős|Faber–Lovász conjecture]]

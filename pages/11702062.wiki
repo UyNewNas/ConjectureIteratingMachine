@@ -1,0 +1,64 @@
+{{Short description|Subset of mathematical connundrums}}
+'''Problems involving [[arithmetic progression]]s''' are of interest in [[number theory]],<ref name=wagstaff>
+{{cite journal|author=Samuel S. Wagstaff, Jr.|authorlink=Samuel S. Wagstaff, Jr.
+|title=Some Questions About Arithmetic Progressions
+|journal=[[American Mathematical Monthly]]
+|volume=86|issue=7|pages=579–582|year=1979
+|doi=10.2307/2320590|publisher=Mathematical Association of America|jstor=2320590}}
+</ref> [[combinatorics]], and [[computer science]], both from theoretical and applied points of view.
+
+==Largest progression-free subsets==
+Find the [[cardinality]] (denoted by ''A''<sub>''k''</sub>(''m'')) of the largest subset of {1,&nbsp;2,&nbsp;...,&nbsp;''m''} which contains no progression of ''k'' distinct terms. The elements of the forbidden progressions are not required to be consecutive. For example, ''A''<sub>4</sub>(10)&nbsp;=&nbsp;8, because {1,&nbsp;2,&nbsp;3,&nbsp;5,&nbsp;6,&nbsp;8,&nbsp;9,&nbsp;10} has no arithmetic progressions of length&nbsp;4, while all 9-element subsets of {1,&nbsp;2,&nbsp;...,&nbsp;10} have one. 
+
+In 1936, [[Paul Erdős]] and [[Pál Turán]] posed a question related to this number<ref name="erdos turan">{{cite journal|author-link1=Paul Erdős|first1=Paul|last1=Erdős|author-link2=Pál Turán|first2=Paul|last2=Turán|title=On some sequences of integers|journal=[[Journal of the London Mathematical Society]]|volume=11|issue=4|year=1936|pages=261–264|url=http://www.renyi.hu/~p_erdos/1936-05.pdf|doi=10.1112/jlms/s1-11.4.261|mr=1574918}}</ref> and Erdős set a $1000 prize for an answer to it. The prize was collected by [[Endre Szemerédi]] for a solution published in 1975, what has become known as [[Szemerédi's theorem]].
+
+==Arithmetic progressions from prime numbers==
+{{main|Primes in arithmetic progression}}
+[[Szemerédi's theorem]] states that a set of [[natural number]]s of non-zero [[upper asymptotic density]] contains finite arithmetic progressions, of any arbitrary length ''k''.
+
+Erdős made [[Erdős conjecture on arithmetic progressions|a more general conjecture]] from which it would follow that
+:''The sequence of primes numbers contains arithmetic progressions of any length.''
+
+This result was proven by [[Ben Green (mathematician)|Ben Green]] and [[Terence Tao]] in 2004 and is now known as the [[Green–Tao theorem]].<ref>{{cite journal | arxiv=1403.2957 | title=The Green–Tao theorem: an exposition | first1=David | last1=Conlon | author1link=David Conlon | first2=Jacob | last2=Fox | author2link=Jacob Fox | first3=Yufei | last3=Zhao | mr=3285854 | journal=EMS Surveys in Mathematical Sciences | year=2014 | doi=10.4171/EMSS/6 | volume=1 | issue=2 | pages=249–282 | s2cid=119301206 }}</ref>
+
+See also [[Dirichlet's theorem on arithmetic progressions]].
+
+{{As of|2020}}, the longest known arithmetic progression of primes has length 27:<ref>Jens Kruse Andersen, [http://primerecords.dk/aprecords.htm ''Primes in Arithmetic Progression Records'']. Retrieved on 2020-08-10.</ref>
+:224584605939537911 + 81292139·23#·''n'', for ''n'' = 0 to 26. ([[Primorial|23# = 223092870]])
+
+As of 2011, the longest known arithmetic progression of ''consecutive'' primes has length 10. It was found in 1998.<ref>H. Dubner; T. Forbes; N. Lygeros; M. Mizony; H. Nelson; P. Zimmermann,  "Ten consecutive primes in arithmetic progression",  Math. Comp.  71  (2002), 1323–1328.</ref><ref>[http://members.aon.at/toplicm/cp09.html the Nine and Ten Primes Project]</ref> The progression starts with a 93-digit number
+
+:100 99697 24697 14247 63778 66555 87969 84032 95093 24689
+:19004 18036 03417 75890 43417 03348 88215 90672 29719
+
+and has the common difference 210.
+
+==Primes in arithmetic progressions==
+[[Prime number theorem#Prime number theorem for arithmetic progressions|The prime number theorem for arithmetic progressions]] deals with the [[Asymptotic analysis|asymptotic]] distribution of prime numbers in an arithmetic progression.
+
+==Covering by and partitioning into  arithmetic progressions==
+*Find minimal ''l<sub>n</sub>'' such that any set of ''n'' residues modulo ''p'' can be covered by an arithmetic progression of the length ''l<sub>n</sub>''.<ref>{{cite journal
+|author=Vsevolod F. Lev
+|title=Simultaneous approximations and covering by arithmetic progressions over F<sub>p</sub>
+|doi=10.1006/jcta.1999.3034
+|year=2000
+|journal=[[Journal of Combinatorial Theory]] | series=Series A
+|volume=92
+|issue=2
+|pages=103–118|doi-access=free
+}}</ref>
+*For a given set ''S'' of integers find the minimal number of arithmetic progressions that cover ''S''
+*For a given set ''S'' of integers find the minimal number of nonoverlapping arithmetic progressions that cover ''S''
+*Find the number of ways to partition {1,&nbsp;...,&nbsp;''n''} into arithmetic progressions.<ref>{{Cite OEIS|sequencenumber=A053732|name=Number of ways to partition {1,...,n} into arithmetic progressions of length >= 1}}</ref>
+*Find the number of ways to partition {1,&nbsp;...,&nbsp;''n''} into arithmetic progressions of length at least 2 with the same period.<ref>{{Cite OEIS|sequencenumber=A072255|name=Number of ways to partition {1,2,...,n} into arithmetic progressions...}}</ref>
+* See also [[Covering system]]
+
+==See also==
+* [[Arithmetic combinatorics]]
+* [[PrimeGrid]]
+
+==Notes==
+<references/>
+
+[[Category:Series (mathematics)]]
+[[Category:Unsolved problems in number theory]]

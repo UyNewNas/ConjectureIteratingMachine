@@ -1,0 +1,32 @@
+{{Short description|none}}
+{{Dynamic list}}
+There are many longstanding [[List of unsolved problems in mathematics|unsolved problems in mathematics]] for which a solution has still not yet been found. The '''notable unsolved problems in [[statistics]]''' are generally of a different flavor; according to John Tukey,<ref>{{cite journal|last = Tukey | first = John W. |title = Unsolved Problems of Experimental Statistics|journal= Journal of the American Statistical Association|volume= 49|issue= 268|year= 1954|pages= 706–731 |doi = 10.2307/2281535|jstor = 2281535}}
+</ref> "difficulties in identifying problems have delayed statistics far more than difficulties in solving problems." A list of "one or two open problems" (in fact 22 of them) was given by [[David Cox (statistician)|David Cox]].<ref>{{Cite journal |jstor = 2981685|title = Present Position and Potential Developments: Some Personal Views: Design of Experiments and Regression|last1 = Cox|first1 = D. R.|journal = Journal of the Royal Statistical Society. Series A (General)|volume = 147|issue = 2|pages = 306–315|year = 1984|doi = 10.2307/2981685}}</ref>
+
+==Inference and testing==
+* How to detect and correct for '''[[systematic error]]s''', especially in sciences where [[random error]]s are large (a situation [[John Tukey]] termed [[uncomfortable science]]).
+* The [[Graybill–Deal estimator]] is often used to estimate the common mean of two normal populations with unknown and possibly unequal variances. Though this estimator is generally unbiased, its [[admissible decision rule|admissibility]] remains to be shown.<ref>{{Cite journal |doi = 10.1016/S0378-3758(96)00202-9|title = A note on second-order admissibility of the Graybill-Deal estimator of a common mean of several normal populations|year = 1997|last1 = Pal|first1 = Nabendu|last2 = Lim|first2 = Wooi K.|journal = Journal of Statistical Planning and Inference|volume = 63|pages = 71–78}}</ref> 
+* '''[[Meta-analysis]]''': Though independent [[p-value]]s can be combined using [[Fisher's method]], techniques are still being developed to handle the case of [[Harmonic mean p-value|dependent p-values]].
+* '''[[Behrens–Fisher problem]]''': [[Yuri Linnik]] showed in 1966 that there is no [[uniformly most powerful test]] for the difference of two means when the variances are unknown and possibly unequal. That is, there is no [[exact test]] (meaning that, if the means are in fact equal, one that rejects the [[null hypothesis]] with [[significance level|probability exactly α]]) that is also the most powerful for all values of the variances (which are thus [[nuisance parameter]]s). Though there are many approximate solutions (such as [[Welch's t-test]]), the problem continues to attract attention<ref>{{Cite journal |doi = 10.1093/biomet/asm093|title = Studentization and deriving accurate p-values|year = 2008|last1 = Fraser|first1 = D.A.S.|last2 = Rousseau|first2 = J.|journal = Biometrika|volume = 95|pages = 1–16|url = https://basepub.dauphine.fr//bitstream/123456789/555/2/plugin-2006-33.pdf}}</ref> as one of the classic problems in statistics.
+* '''[[Multiple comparisons problem|Multiple comparisons]]''': There are various ways to adjust p-values to compensate for the simultaneous or [[sequential testing]] of hypotheses.  Of particular interest is how to simultaneously control the overall error rate,  preserve statistical power, and incorporate the dependence between tests into the adjustment. These issues are especially relevant when the number of simultaneous tests can be very large, as is increasingly the case in the analysis of data from [[DNA microarray]]s.{{citation needed|date=July 2012}}
+*'''[[Bayesian statistics]]''': A list of open problems in Bayesian statistics has been proposed.<ref>{{cite journal |last=Jordan |first=M. I. |year=2011 |url=https://www.stat.berkeley.edu/~aldous/157/Papers/Bayesian_open_problems.pdf |title=What are the open problems in Bayesian statistics? |journal=The ISBA Bulletin|volume=18|issue=1|pages=1–5}}</ref>
+
+==Experimental design==
+* As the theory of [[Latin square]]s is a cornerstone in the [[design of experiments]], solving the '''[[problems in Latin squares]]''' could have immediate applicability to experimental design.{{citation needed|date=August 2016}}
+
+==Problems of a more philosophical nature==
+* '''[[Unseen species problem|Sampling of species problem]]''': How is a probability updated when there is unanticipated new data?<ref>{{ cite journal | author=Zabell, S. L. | title=Predicting the unpredictable | year=1992 | journal=Synthese | volume=90 | issue=2 | page=205 | doi=10.1007/bf00485351| s2cid=9416747 }}</ref>
+* '''[[Doomsday argument]]''': How valid is the [[probability theory|probabilistic argument]] that claims to [[predict]] the [[future]] lifetime of the [[Human|human race]] given only an estimate of the total number of humans born so far?
+
+==Notes==
+<references/>
+
+==References==
+*{{cite book | last = Linnik | first = Yurii | title = Statistical Problems with Nuisance Parameters | publisher = American Mathematical Society | year = 1968 | isbn = 0-8218-1570-9 }}
+*{{cite journal |last=Sawilowsky |first=Shlomo S. |year=2002 |title=Fermat, Schubert, Einstein, and Behrens&ndash;Fisher: The Probable Difference Between Two Means When σ<sub>1</sub> ≠ σ<sub>2</sub> |journal=Journal of Modern Applied Statistical Methods |volume=1 |issue=2|doi=10.22237/jmasm/1036109940 |doi-access=free }}
+
+{{unsolved problems}}
+
+[[Category:Lists of unsolved problems|Statistics]]
+[[Category:Statistics-related lists|Unsolved problems]]
+[[Category:Unsolved problems in mathematics|*Statistics]]

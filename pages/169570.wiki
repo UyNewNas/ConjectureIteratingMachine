@@ -1,0 +1,68 @@
+{{Short description|Odd number with specific properties}}
+In [[number theory]], a '''Sierpiński number''' is an [[Parity (mathematics)|odd]] [[natural number]] ''k'' such that <math>k \times 2^n  + 1 </math> is [[composite number|composite]] for all natural numbers ''n''. In 1960, [[Wacław Sierpiński]] proved that there are [[Infinity|infinitely many]] odd [[integer]]s ''k'' which have this property.
+
+In other words, when ''k'' is a Sierpiński number, all members of the following [[Set (mathematics)|set]] are composite:
+
+:<math>\left\{\, k \cdot 2^n + 1 : n \in\mathbb{N}\,\right\}.</math>
+
+If the form is instead <math>k \times 2^n  - 1 </math>, then ''k'' is a [[Riesel number]].
+
+==Known Sierpiński numbers==
+The sequence of currently ''known'' Sierpiński numbers begins with:
+: 78557, 271129, 271577, 322523, 327739, 482719, 575041, 603713, 903983, 934909, 965431, 1259779, 1290677, 1518781, 1624097, 1639459, 1777613, 2131043, 2131099, 2191531, 2510177, 2541601, 2576089, 2931767, 2931991, ... {{OEIS|id=A076336}}.
+
+The number 78557 was proved to be a Sierpiński number by [[John Selfridge]] in 1962, who showed that all numbers of the form {{nowrap|78557⋅2<sup>''n''</sup> + 1}} have a [[factorization|factor]] in the [[covering set]] {{math|{3, 5, 7, 13, 19, 37, 73}}}. For another known Sierpiński number, 271129, the covering set is {{math|{3, 5, 7, 13, 17, 241}}}. Most currently known Sierpiński numbers possess similar covering sets.<ref name="PG">{{Cite web |title=The Prime Glossary: Sierpinski number |url=https://t5k.org/glossary/page.php?sort=SierpinskiNumber |access-date=2026-06-29 |website=t5k.org}}</ref>
+
+However, in 1995 A. S. Izotov showed that some fourth powers could be proved to be Sierpiński numbers without establishing a covering set for all values of ''n''. His proof depends on the [[aurifeuillean factorization]] {{math|''t''<sup>4</sup>⋅2<sup>4''m''+2</sup> + 1 {{=}} (''t''<sup>2</sup>⋅2<sup>2''m''+1</sup> + ''t''⋅2<sup>''m''+1</sup> + 1)⋅(''t''<sup>2</sup>⋅2<sup>2''m''+1</sup> − ''t''⋅2<sup>''m''+1</sup> + 1)}}. This establishes that all {{math|''n'' ≡ 2 (mod 4)}} give rise to a composite, and so it remains to eliminate only {{math|''n'' ≡ 0, 1, 3 (mod 4)}} using a covering set.<ref name="FQ">{{cite journal |author=Anatoly S. Izotov |url=http://www.fq.math.ca/Scanned/33-3/izotov.pdf |title=Note on Sierpinski Numbers |journal=Fibonacci Quarterly |volume=33 |issue=3 |year=1995 |page=206 |doi=10.1080/00150517.1995.12429134 }}</ref>
+
+==Smallest Sierpiński number==
+
+{{unsolved|mathematics|Is 78,557 the smallest Sierpiński number?}}
+
+The '''Sierpiński problem''' asks for the value of the smallest Sierpiński number. In private correspondence with [[Paul Erdős]], Selfridge [[conjecture]]d that 78,557 was the smallest Sierpiński number.<ref>{{Cite journal|last1=Erdős|first1=Paul|author1-link=Paul Erdős|last2=Odlyzko|first2=Andrew Michael|author2-link=Andrew Odlyzko|date=May 1, 1979|title=On the density of odd integers of the form {{math|(''p'' − 1)2<sup>−''n''</sup>}} and related questions|journal=[[Journal of Number Theory]]|publisher=[[Elsevier]]|volume=11|issue=2|page=258|language=en|doi=10.1016/0022-314X(79)90043-X|issn=0022-314X|doi-access=free}}</ref> No smaller Sierpiński numbers have been discovered, and it is now believed that 78,557 is the smallest number.<ref>{{Cite book|last1=Guy|first1=Richard Kenneth|author1-link=Richard K. Guy|year=2005|title=Unsolved Problems in Number Theory|publisher=[[Springer Science+Business Media|Springer-Verlag]]|location=New York|language=en|isbn=978-0-387-20860-2|pages=B21:119{{ndash}}121, F13:383{{ndash}}385|oclc=634701581}}</ref>
+
+To show that 78,557 really is the smallest Sierpiński number, one must show that all the odd numbers smaller than 78,557 are ''not'' Sierpiński numbers. That is, for every odd ''k'' below 78,557, there needs to exist a positive integer ''n'' such that {{math|''k''2<sup>''n''</sup> + 1}} is prime.<ref name="PG" /> The distributed volunteer computing project [[PrimeGrid]] is attempting to eliminate all the remaining values of ''k'':<ref>{{Cite web|url=https://www.primegrid.com/stats_sob_llr.php|title=Seventeen or Bust statistics|website=PrimeGrid|access-date=November 21, 2019}}</ref>
+
+: ''k'' = 21181, 22699, 24737, 55459, and 67607.
+
+The current status for the remaining multipliers can be seen at PrimeGrid's website.<ref>{{cite web |url=https://www.primegrid.com/stats_sob_llr.php |title=Seventeen or Bust statistics |website=PrimeGrid |access-date=2020-04-06 |archive-date=2020-04-06 |archive-url=https://web.archive.org/web/20200406190855/https://www.primegrid.com/stats_sob_llr.php |url-status=live }}</ref>
+
+==Smallest prime Sierpiński number==
+
+{{unsolved|mathematics|Is 271,129 the smallest prime Sierpiński number?}}
+
+In 1976, Nathan Mendelsohn determined that the prime number 271,129 is a Sierpiński number. It is the second-smallest known Sierpiński number, and the smallest known prime Sierpiński number, but it is unknown whether others might be smaller. The '''prime Sierpiński problem''' asks for the value of the smallest ''prime'' Sierpiński number, and there is an ongoing "Prime Sierpiński search" which tries to prove that 271129 is the first Sierpiński number which is also a prime.<ref>{{Cite web|url=https://www.primegrid.com/forum_thread.php?id=972|title=About the Prime Sierpinski Problem|last=Goetz|first=Michael|date=July 10, 2008|website=PrimeGrid|access-date=September 12, 2019}}</ref>
+
+==Extended Sierpiński problem==
+
+{{unsolved|mathematics|Is 271,129 the second Sierpiński number?}}
+
+Suppose that 78,557 is the smallest Sierpiński number and 271,129 is the smallest prime Sierpiński number. This leaves the ''second'' Sierpinski number unknown: there could exist a composite Sierpiński number between 78,557 and 271,129. An ongoing search is trying to prove that 271,129 is the second Sierpiński number by testing all integers in that range, prime or not.<ref>{{Cite web|url=https://www.primegrid.com/forum_thread.php?id=5758|title=Welcome to the Extended Sierpinski Problem|last=Goetz|first=Michael|date=6 April 2018|website=[[PrimeGrid]]|access-date=21 August 2019}}</ref>
+
+==Simultaneously Sierpiński and Riesel==
+A number that is both Sierpiński and [[Riesel number|Riesel]] is a Brier number (after [[Éric Brier]]). The smallest five known examples are 3316923598096294713661, 10439679896374780276373, 11615103277955704975673, 12607110588854501953787, and 17855036657007596110949 ({{OEIS link|A076335}}); it is not known whether other Brier numbers smaller than these exist (i.e., they may not be the five smallest).<ref>{{Cite web |title=Problem 29.- Brier Numbers |url=https://www.primepuzzles.net/problems/prob_029.htm |access-date=2026-06-29 |website=www.primepuzzles.net}}</ref>
+
+==See also==
+{{Portal|Mathematics}}
+* [[Cullen number]]
+* [[Proth number]]
+* [[Woodall number]]
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==Further reading==
+* {{citation |first=Richard K. |last=Guy |author-link=Richard K. Guy |title=Unsolved Problems in Number Theory |publisher=[[Springer-Verlag]] |location=New York |year=2004 |page=120 |isbn=0-387-20860-7 }}
+
+==External links==
+* [http://www.prothsearch.com/sierp.html The Sierpinski problem: definition and status]
+* {{MathWorld| urlname=SierpinskisCompositeNumberTheorem |title=Sierpinski's composite number theorem}}
+* Archived at [https://ghostarchive.org/varchive/youtube/20211211/fcVjitaM3LY Ghostarchive]{{cbignore}} and the [https://web.archive.org/web/20171115104329/https://www.youtube.com/watch?v=fcVjitaM3LY Wayback Machine]{{cbignore}}: {{cite web|last1=Grime|first1=Dr. James|title=78557 and Proth Primes|url=https://www.youtube.com/watch?v=fcVjitaM3LY|website=YouTube|date=13 November 2017 |publisher=[[Brady Haran]]|access-date=13 November 2017|format=video}}{{cbignore}}
+
+{{Classes of natural numbers}}
+
+{{DEFAULTSORT:Sierpinski Number}}
+[[Category:Prime numbers]]
+[[Category:Conjectures|Sierpinski-Selfridge conjecture]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Science and technology in Poland]]

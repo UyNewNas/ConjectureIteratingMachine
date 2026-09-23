@@ -1,0 +1,80 @@
+{{unsolved|mathematics|Does every countable graph have an unfriendly partition into two parts?}}
+[[File:Unfriendly partition.svg|thumb|upright=0.8|An unfriendly partition of the graph into two groups of vertices (red and blue) where each vertex has at least as many neighbors with vertices from the other group as ones from their own.]]
+In the mathematics of [[infinite graph]]s, an '''unfriendly partition''' or '''majority coloring''' is a [[Partition of a set|partition]] of the vertices of the graph into disjoint subsets, so that every vertex has at least as many neighbors in other sets as it has in its own set. It is a generalization of the concept of a [[maximum cut]] for finite graphs, which is automatically an unfriendly partition. (If not, a vertex with more neighbors in its own set could be moved to the other set, increasing the number of cut edges.) The '''unfriendly partition conjecture''' is an unsolved problem asking whether every [[countable set|countable]] graph has an unfriendly partition into two subsets.{{r|garden}}
+
+Robert H. Cowan and William R. Emerson, in unpublished work, conjectured that every infinite graph has an unfriendly partition into two subsets. However, [[Saharon Shelah]] and [[Eric Charles Milner]] disproved the conjecture, showing that [[uncountable set|uncountable]] graphs might not have two-subset unfriendly partitions. Nevertheless, they showed that an unfriendly partition into three subsets always exists.{{r|shemil}}
+
+Among countable graphs, the existence of a two-subset unfriendly partition is known for the following special cases:
+*Graphs that have finitely many vertices of infinite degree{{r|amp}}
+*Graphs in which all vertices have infinite degree, by an argument using the [[back-and-forth method]]{{r|garden}}
+*Graphs with no [[End (graph theory)|end]]{{r|bdgs}}
+*Graphs without a [[Homeomorphism (graph theory)|subdivision]] of an infinite [[Clique (graph theory)|clique]]{{r|berger}}
+The case for arbitrary countable graphs remains open.{{r|garden}}
+
+==References==
+<references>
+
+<ref name=amp>{{citation
+ | last1 = Aharoni | first1 = R.
+ | last2 = Milner | first2 = E. C.
+ | last3 = Prikry | first3 = K.
+ | doi = 10.1016/0095-8956(90)90092-E
+ | issue = 1
+ | journal = Journal of Combinatorial Theory
+ | mr = 1070461
+ | pages = 1–10
+ | series = Series B
+ | title = Unfriendly partitions of a graph
+ | volume = 50
+ | year = 1990| doi-access = free
+ }}</ref>
+
+<ref name=bdgs>{{citation
+ | last1 = Bruhn | first1 = Henning
+ | last2 = Diestel | first2 = Reinhard
+ | last3 = Georgakopoulos | first3 = Agelos
+ | last4 = Sprüssel | first4 = Philipp
+ | doi = 10.1007/s00493-010-2590-3
+ | issue = 5
+ | journal = Combinatorica
+ | mr = 2776717
+ | pages = 521–532
+ | title = Every rayless graph has an unfriendly partition
+ | volume = 30
+ | year = 2010| s2cid = 9304176
+ }}</ref>
+
+<ref name=berger>{{citation
+ | last = Berger | first = Eli
+ | doi = 10.1007/s00493-015-3261-1
+ | issue = 2
+ | journal = Combinatorica
+ | mr = 3638340
+ | pages = 157–166
+ | title = Unfriendly partitions for graphs not containing a subdivision of an infinite clique
+ | volume = 37
+ | year = 2017| s2cid = 254028041
+ }}</ref>
+
+<ref name=garden>{{citation|url=http://www.openproblemgarden.org/op/unfriendly_partitions|title=Unfriendly partitions|work=Open problem garden|first=Matthew|last=DeVos|date=October 22, 2007}}</ref>
+
+<ref name=shemil>{{citation
+ | last1 = Shelah | first1 = Saharon | author1-link = Saharon Shelah
+ | last2 = Milner | first2 = E. C. | author2-link = Eric Charles Milner
+ | editor1-last = Baker | editor1-first = A.
+ | editor2-last = Bollobás | editor2-first = B.
+ | editor3-last = Hajnal | editor3-first = A.
+ | contribution = Graphs with no unfriendly partitions
+ | contribution-url = https://shelah.logic.at/files/129081/graphs-with-no-unfriendly-partitions.pdf
+ | doi = 10.1017/CBO9780511983917.031
+ | mr = 1117030
+ | pages = 373–384
+ | publisher = Cambridge University Press
+ | title = A tribute to Paul Erdős
+ | year = 1990| s2cid = 143480036 }}</ref>
+
+</references>
+
+[[Category:Graph theory objects]]
+[[Category:Infinite graphs]]
+[[Category:Unsolved problems in graph theory]]

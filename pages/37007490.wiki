@@ -1,0 +1,24 @@
+{{Short description|Elliptic curves}}
+In [[mathematics]], '''Hodge–Arakelov theory''' of [[elliptic curve]]s is an analogue of classical and [[p-adic Hodge theory]] for elliptic curves carried out in the framework of [[Arakelov theory]]. It was introduced by {{harvs|txt|last=Mochizuki|authorlink=Shinichi Mochizuki|year=1999}}. It bears the name of two mathematicians, [[Suren Arakelov]] and [[W. V. D. Hodge]].
+The main comparison in this theory remains unpublished as of 2019.
+
+Mochizuki's main comparison  theorem in Hodge–Arakelov theory states (roughly) that the space of [[polynomial function]]s of degree less than ''d'' on the universal extension of a smooth elliptic curve in [[characteristic (algebra)|characteristic]] 0 is naturally [[isomorphism|isomorphic]] (via restriction) to the ''d'' <sup>2</sup>-dimensional space of functions on the ''d''-[[Torsion (algebra)|torsion points]].
+It is called a 'comparison theorem' as it is an analogue for Arakelov theory of comparison theorems in cohomology relating [[de Rham cohomology]] to [[singular cohomology]] of complex varieties or [[étale cohomology]] of ''p''-adic varieties.
+
+In {{harvs|txt|last=Mochizuki|authorlink=Shinichi Mochizuki|year=1999}} and {{harvs|txt|last=Mochizuki|authorlink=Shinichi Mochizuki|year=2002a}} he pointed out that arithmetic [[Kodaira–Spencer map]] and [[Gauss–Manin connection]] may give some important hints for [[Vojta's conjecture]], [[ABC conjecture]] and so on; in 2012, he published his [[Inter-universal Teichmuller theory]], in which he didn't use Hodge-Arakelov theory but used the theory of [[frobenioid]]s, anabelioids and [[anabelian geometry|mono-anabelian geometry]].
+
+==See also==
+* [[Hodge theory]]
+* [[Arakelov theory]]
+* [[P-adic Hodge theory]]
+* [[Inter-universal Teichmüller theory]]
+
+==References==
+*{{Citation | last1=Mochizuki | first1=Shinichi | title=The Hodge-Arakelov theory of elliptic curves: global discretization of local Hodge theories | url=http://www.kurims.kyoto-u.ac.jp/~motizuki/The%20Hodge-Arakelov%20Theory%20of%20Elliptic%20Curves.pdf | series= Preprint No. 1255/1256, Res. Inst. Math. Sci., Kyoto Univ., Kyoto | year=1999}}
+*{{Citation | last1=Mochizuki | first1=Shinichi | editor1-last=Fried | editor1-first=Michael D. |editor-link=Michael D. Fried | editor2-last=Ihara | editor2-first=Yasutaka |editor2-link=Yasutaka Ihara | title=Arithmetic fundamental groups and noncommutative algebra (Berkeley, CA, 1999) | url=http://www.kurims.kyoto-u.ac.jp/~motizuki/A%20Survey%20of%20the%20Hodge-Arakelov%20Theory%20of%20Elliptic%20Curves%20I.pdf | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Proc. Sympos. Pure Math. | isbn=978-0-8218-2036-0  |mr=1935421 | year=2002a | volume=70 | chapter=A survey of the Hodge-Arakelov theory of elliptic curves. I | pages=533–569}}
+*{{Citation | last1=Mochizuki | first1=Shinichi | title=Algebraic geometry 2000, Azumino (Hotaka) | url=http://www.kurims.kyoto-u.ac.jp/~motizuki/A%20Survey%20of%20the%20Hodge-Arakelov%20Theory%20of%20Elliptic%20Curves%20II.pdf | publisher=Math. Soc. Japan | location=Tokyo | series=Adv. Stud. Pure Math. | isbn=978-4-931469-20-4  |mr=1971513 | year=2002b | volume=36 | chapter=A survey of the Hodge-Arakelov theory of elliptic curves. II | pages=81–114}}
+
+{{DEFAULTSORT:Hodge-Arakelov theory}}
+[[Category:Number theory]]
+[[Category:Algebraic geometry]]
+[[Category:Abc conjecture]]

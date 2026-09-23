@@ -1,0 +1,82 @@
+In [[number theory]], the '''Néron–Tate height''' (or '''canonical height''') is a [[quadratic form]] on the [[Mordell–Weil group]] of [[rational points]] of an [[abelian variety]] defined over a [[global field]].  It is named after [[André Néron]] and [[John Tate (mathematician)|John Tate]].
+
+==Definition and properties==
+Néron defined the Néron–Tate height as a sum of local heights.<ref>{{cite journal | first=André | last=Néron | title=Quasi-fonctions et hauteurs sur les variétés abéliennes | journal=[[Ann. of Math.]] |  volume=82 | year=1965 | issue=2 | pages=249–331 | doi=10.2307/1970644 | jstor=1970644 | mr=0179173 | language=fr}}</ref> Although the global Néron–Tate height is quadratic, the constituent local heights are not quite quadratic. Tate (unpublished) defined it globally by observing that the [[Height function#Naive height|logarithmic height]] <math>h_L</math> associated to a symmetric [[invertible sheaf]] <math>L</math> on an [[abelian variety]] <math>A</math> is “almost quadratic,” and used this to show that the limit
+
+:<math>\hat h_L(P) = \lim_{N\rightarrow\infty}\frac{h_L(NP)}{N^2}</math>
+
+exists, defines a quadratic form on the Mordell–Weil group of rational points, and satisfies
+
+:<math>\hat h_L(P) = h_L(P) + O(1),</math>
+
+where the implied <math>O(1)</math> constant is independent of <math>P</math>.<ref name=L72>Lang (1997) p.72</ref> If <math>L</math> is anti-symmetric, that is <math>[-1]^*L=L^{-1}</math>, then the analogous limit
+
+:<math>\hat h_L(P) = \lim_{N\rightarrow\infty}\frac{h_L(NP)}{N}</math>
+
+converges and satisfies <math>\hat h_L(P) = h_L(P) + O(1)</math>, but in this case <math>\hat h_L</math> is a linear function on the Mordell-Weil group. For general invertible sheaves, one writes <math>L^{\otimes2} = (L\otimes[-1]^*L)\otimes(L\otimes[-1]^*L^{-1})</math> as a product of a symmetric sheaf and an anti-symmetric sheaf, and then
+
+:<math>\hat h_L(P) = \frac12 \hat h_{L\otimes[-1]^*L}(P) + \frac12 \hat h_{L\otimes[-1]^*L^{-1}}(P)</math>
+
+is the unique quadratic function satisfying
+
+:<math>\hat h_L(P) = h_L(P) + O(1) \quad\mbox{and}\quad \hat h_L(0)=0.</math>
+
+The Néron–Tate height depends on the choice of an invertible sheaf on the abelian variety, although the associated [[bilinear form]] depends only on the image of <math>L</math> in
+the [[Néron–Severi group]] of <math>A</math>. If the abelian variety <math>A</math> is defined over a number field ''K'' and the invertible sheaf is symmetric and ample, then the Néron–Tate height is positive definite in the sense that it vanishes only on torsion elements of the Mordell–Weil group <math>A(K)</math>. More generally, <math>\hat h_L</math> induces a positive definite quadratic form on the real vector space <math>A(K)\otimes\mathbb{R}</math>.
+
+On an [[elliptic curve]], the Néron–Severi group is of rank one and has a unique ample generator, so this generator is often used to define the Néron–Tate height, which is denoted <math>\hat h</math> without reference to a particular line bundle. (However, the height that naturally appears in the statement of the [[Birch and Swinnerton-Dyer conjecture]] is twice this height.) On  abelian varieties of higher dimension, there need not be a particular choice of smallest [[ample line bundle]] to be used in defining the Néron–Tate height, and the height used in the statement of the Birch–Swinnerton-Dyer conjecture is the Néron–Tate height associated to the [[Poincare line bundle|Poincaré line bundle]] on <math>A\times\hat A</math>, the product of <math>A</math> with its [[Dual abelian variety|dual]].
+
+==The elliptic and abelian regulators==
+The bilinear form associated to the canonical height <math>\hat h</math> on an elliptic curve ''E'' is
+
+:<math> \langle P,Q\rangle = \frac{1}{2} \bigl( \hat h(P+Q) - \hat h(P) - \hat h(Q) \bigr) .</math>
+
+The '''elliptic regulator''' of ''E''/''K'' is
+
+:<math> \operatorname{Reg}(E/K) = \det\bigl( \langle P_i,P_j\rangle \bigr)_{1\le i,j\le r},</math>
+
+where ''P''<sub>1</sub>,...,''P''<sub>''r''</sub> is a basis for the Mordell–Weil group ''E''(''K'') modulo torsion  (cf. [[Gram determinant]]). The elliptic regulator does not depend on the choice of basis.
+
+More generally, let ''A''/''K'' be an abelian variety, let  ''B'' ≅ Pic<sup>0</sup>(''A'') be the dual abelian variety to ''A'', and let ''P'' be the [[Poincaré line bundle]] on ''A'' &times; ''B''. Then the '''abelian regulator''' of ''A''/''K'' is defined by choosing a basis ''Q''<sub>1</sub>,...,''Q''<sub>''r''</sub> for the Mordell–Weil group ''A''(''K'') modulo torsion and a basis ''η''<sub>1</sub>,...,''η''<sub>''r''</sub> for the Mordell–Weil group ''B''(''K'') modulo torsion and setting
+
+:<math> \operatorname{Reg}(A/K) = \det\bigl( \langle Q_i,\eta_j\rangle_{P} \bigr)_{1\le i,j\le r}.</math>
+
+(The definitions of elliptic and abelian regulator are not entirely consistent, since if ''A'' is an elliptic curve, then the latter is 2<sup>''r''</sup> times the former.)
+
+The elliptic and abelian regulators appear in the [[Birch–Swinnerton-Dyer conjecture]].
+
+==Lower bounds for the Néron–Tate height==
+There are two fundamental conjectures that give lower bounds for the Néron–Tate height. In the first, the field ''K'' is fixed and the elliptic curve  ''E''/''K''  and point ''P'' ∈ ''E''(''K'') vary, while in the second, the [[elliptic Lehmer conjecture]], the curve ''E''/''K'' is fixed while the [[field of definition]] of the point ''P'' varies.
+
+* (Lang)<ref name=L734>Lang (1997) pp.73–74</ref> &nbsp;&nbsp;&nbsp;&nbsp;<math> \hat h(P) \ge c(K) \log\max\bigl\{\operatorname{Norm}_{K/\mathbb{Q}}\operatorname{Disc}(E/K),h(j(E))\bigr\}\quad</math> for all <math>E/K</math> and all nontorsion <math>P\in E(K).</math>
+* (Lehmer)<ref name=L243>Lang (1997) pp.243</ref>&nbsp;&nbsp;&nbsp;&nbsp; <math>\hat h(P) \ge \frac{c(E/K)}{[K(P):K]}</math> for all nontorsion <math>P\in E(\bar K).</math>
+
+In both conjectures, the constants are positive and depend only on the indicated quantities. (A stronger form of Lang's conjecture asserts that <math>c</math> depends only on the degree <math>[K:\mathbb Q]</math>.) It is known that the [[Abc conjecture|''abc'' conjecture]] implies Lang's conjecture, and that the analogue of Lang's conjecture over one dimensional characteristic 0 function fields  is unconditionally true.<ref name=L734/><ref>{{cite journal | first1=Marc |last1=Hindry |first2=Joseph H. |last2=Silverman | authorlink2=Joseph H. Silverman| title=The canonical height and integral points on elliptic curves | journal=[[Invent. Math.]] | volume=93 |year=1988 | pages=419–450 | zbl=0657.14018 | doi=10.1007/bf01394340 | issue=2 | mr=0948108|s2cid=121520625 }}</ref> The best general result on Lehmer's conjecture is the weaker estimate <math>\hat h(P)\ge c(E/K)/[K(P):K]^{3+\varepsilon}</math> due to [[David Masser|Masser]].<ref>{{cite journal | first=David W. | last=Masser | title=Counting points of small height on elliptic curves | journal=Bull. Soc. Math. France | volume=117 | year=1989 | pages=247–265 | issue=2 | doi=10.24033/bsmf.2120 | mr=1015810 | url=http://www.numdam.org/item?id=BSMF_1989__117_2_247_0| doi-access=free | url-access=subscription }}</ref> When the elliptic curve has [[complex multiplication]], this has been improved to <math>\hat h(P)\ge c(E/K)/[K(P):K]^{1+\varepsilon}</math> by Laurent.<ref>{{cite encyclopaedia | first=Michel | last=Laurent | chapter=Minoration de la hauteur de Néron–Tate | trans-chapter=Lower bounds of the Nerón-Tate height | language=fr | title=Séminaire de théorie des nombres, Paris 1981–82 | trans-title=Seminar on number theory, Paris 1981–82 | series=Progress in Mathematics | publisher=Birkhäuser | year=1983 | pages=137–151 | mr=0729165 | isbn=0-8176-3155-0 | editor-last=Bertin | editor-first=Marie-José}}</ref> There are analogous conjectures for abelian varieties, with the nontorsion condition replaced by the condition that the multiples of <math>P</math> form a Zariski dense subset of <math>A</math>, and the lower bound in Lang's conjecture replaced by <math>\hat h(P)\ge c(K)h(A/K)</math>, where <math>h(A/K)</math> is the [[Faltings height]] of <math>A/K</math>.
+
+==Call-Silverman Canonical Height==
+A polarized [[arithmetic dynamics|algebraic dynamical system]] is a triple <math>(V,\varphi, L)</math> consisting of a (smooth projective) [[algebraic variety]] <math>V</math>, an endomorphism <math>\varphi:V \to V</math>, and a line bundle <math>L \to V</math> with the property that <math>\varphi^*L = L^{\otimes d}</math> for some integer <math>d > 1</math>. Gregory Call and [[Joseph Silverman]] defines an analogue of the Néron-Tate height, called the canonical height. It is given by the Tate limit<ref>{{cite journal | first1=Gregory S. | last1=Call | first2=Joseph H. | last2=Silverman | title=Canonical heights on varieties with morphisms | journal=[[Compositio Mathematica]] | volume=89 | year=1993 | pages=163–205 | issue=2 | mr=1255693 | url=http://www.numdam.org/item?id=CM_1993__89_2_163_0}}</ref>
+
+:<math> \hat h_{V,\varphi,L}(P) = \lim_{n\to\infty} \frac{h_{V,L}(\varphi^{(n)}(P))}{d^n}, </math>
+
+where <math>\varphi^{(n)} = \varphi\circ \cdots \circ \varphi</math> is the ''n''-fold iteration of <math>\varphi</math>. For example, any morphism <math>\varphi: \mathbb{P}^n \to \mathbb{P}^n</math> of degree <math>d > 1</math> yields a canonical height associated to the line bundle relation <math>\varphi^*\mathcal{O}(1) = \mathcal{O}(n)</math>. If <math>V</math> is defined over a number field and <math>L</math> is ample, then the canonical height is non-negative, and
+
+:<math> \hat h_{V,\varphi,L}(P) = 0 ~~ \Longleftrightarrow ~~ P \text{ is preperiodic for } \varphi.</math>
+
+(<math>P</math> is preperiodic if its forward orbit <math>P, \varphi(P), \varphi^2(P), \varphi^3(P),\ldots</math> contains only finitely many distinct points.)
+
+==References==
+{{reflist}}
+
+General references for the theory of canonical heights
+* {{cite book | first1=Enrico | last1=Bombieri | authorlink1=Enrico Bombieri | first2=Walter | last2=Gubler | title=Heights in Diophantine Geometry | series=New Mathematical Monographs | volume=4 | publisher=[[Cambridge University Press]] | year=2006 | isbn=978-0-521-71229-3 | zbl=1130.11034 }}
+* {{cite book | first1=Marc | last1=Hindry | first2=Joseph H. | last2=Silverman | authorlink2=Joseph H. Silverman | title=Diophantine Geometry: An Introduction | series=[[Graduate Texts in Mathematics]] | volume=201 | year=2000 | isbn=0-387-98981-1 | zbl=0948.11023 }}
+* {{cite book | first=Serge | last=Lang | authorlink=Serge Lang | title=Survey of Diophantine Geometry | publisher=[[Springer-Verlag]] | year=1997 | isbn=3-540-61223-8 | zbl=0869.11051 }}
+*J. H. Silverman, ''The Arithmetic of Elliptic Curves'', {{isbn|0-387-96203-4}}
+
+==External links==
+* {{planetmath reference|urlname=CanonicalHeightOnAnEllipticCurve|title=Canonical height on an elliptic curve}}
+
+{{DEFAULTSORT:Neron-Tate height}}
+[[Category:Number theory]]
+[[Category:Algebraic geometry]]
+[[Category:Abc conjecture]]

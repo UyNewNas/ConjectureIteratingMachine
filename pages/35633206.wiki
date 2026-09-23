@@ -1,0 +1,52 @@
+{{Short description|Mathematical problem in number theory}}
+{{unsolved|mathematics|In the complex plane, is it possible to "walk to infinity" in the Gaussian integers using the Gaussian primes as stepping stones and taking bounded-length steps?}}
+[[File:Gaussian moat 15x15.svg|thumb|upright=1.35|The Gaussian primes with real and imaginary part at most seven, showing portions of a Gaussian moat of width two separating the origin from infinity]]
+In [[number theory]], the '''Gaussian moat''' problem asks whether it is possible to find an infinite sequence of distinct [[Gaussian prime]] numbers such that the difference between consecutive numbers in the sequence is bounded. More colorfully, if one imagines the Gaussian primes to be stepping stones in a sea of [[complex number]]s, the question is whether one can walk from the origin to infinity with steps of bounded size, without getting wet. The problem was first posed in 1962 by [[Basil Gordon]] (although it has sometimes been erroneously attributed to [[Paul Erdős]]) and it remains unsolved.<ref name="gww">{{citation
+ | last1 = Gethner | first1 = Ellen
+ | last2 = Wagon | first2 = Stan | author2-link = Stan Wagon
+ | last3 = Wick | first3 = Brian
+ | doi = 10.2307/2589708
+ | issue = 4
+ | journal = [[The American Mathematical Monthly]]
+ | mr = 1614871 | zbl=0946.11002 
+ | pages = 327–337
+ | title = A stroll through the Gaussian primes
+ | volume = 105
+ | year = 1998| jstor = 2589708
+ }}</ref>
+
+With the usual [[prime number]]s, such a sequence is impossible: the [[prime number theorem]] implies that there are arbitrarily large [[prime gap|gaps]] in the sequence of prime numbers, and there is also an elementary direct proof: for any ''n'', the ''n''&nbsp;&minus;&nbsp;1 consecutive numbers ''n''!&nbsp;+&nbsp;2, ''n''!&nbsp;+&nbsp;3, ..., ''n''!&nbsp;+&nbsp;''n'' are all composite.<ref name="gww"/>
+
+The problem of finding a path between two Gaussian primes that minimizes the maximum hop size is an instance of the [[Widest path problem|minimax path problem]], and the hop size of an optimal path is equal to the width of the widest ''moat'' between the two primes, where a moat may be defined by a partition of the primes into two subsets and its width is the distance between the closest pair that has one element in each subset. Thus, the Gaussian moat problem may be phrased in a different but equivalent form: is there a finite bound on the widths of the moats that have finitely many primes on the side of the origin?<ref name="gww"/>
+
+Computational searches have shown that the origin is separated from infinity by a moat of width&nbsp;6.<ref>{{citation
+ | last = Tsuchimura | first = Nobuyuki
+ | issue = 5
+ | journal = IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences
+ | pages = 1267–1273
+ | title = Computational results for Gaussian moat problem
+ | volume = 88
+ | year = 2005| doi = 10.1093/ietfec/e88-a.5.1267
+ | bibcode = 2005IEITF..88.1267T
+ }}.</ref> 
+It is known that, for any positive number ''k'', there exist Gaussian primes whose nearest neighbor is at distance ''k'' or larger. In fact, these numbers may be constrained to be on the real axis. For instance, the number 20785207 is surrounded by a moat of width 17. Thus, there definitely exist moats of arbitrarily large width, but these moats do not necessarily separate the origin from infinity.<ref name="gww"/>
+
+A very similar problem exists for the [[Eisenstein prime]]s as well; the '''Eisenstein moat''' problem, like its Gaussian counterpart, remains unsolved. Computational searches have shown that for the Eisenstein primes, the origin is separated from infinity by a moat of width at least 4.<ref>{{citation
+ | last = West | first = Philip P.
+ | title = A Computational Exploration of Gaussian and Eisenstein Moats
+ | year = 2014
+ | url = https://scholarworks.calstate.edu/concern/parent/v405sc818/file_sets/1831cn31v
+}}</ref>
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{citation |last=Guy | first=Richard K. | authorlink=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=3rd | year=2004 | isbn=978-0-387-20860-2 | zbl=1058.11001 | pages=55–57}}
+
+==External links==
+* {{Mathworld| title=Moat-Crossing Problem |urlname= Moat-CrossingProblem}}
+
+[[Category:Prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Complex numbers]]

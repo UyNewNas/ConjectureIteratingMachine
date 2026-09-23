@@ -1,0 +1,213 @@
+{{Short description|Mathematical conjectures about Mersenne primes}}
+In [[mathematics]], the '''Mersenne conjectures''' concern the characterization of a kind of [[prime number]]s called [[Mersenne prime]]s, meaning prime numbers that are a [[power of two]] minus one.
+
+== Original Mersenne conjecture ==
+The original, called '''Mersenne's conjecture''', was a statement by [[Marin Mersenne]] in his ''Cogitata Physico-Mathematica'' (1644; see e.g. Dickson 1919) that the numbers <math>2^n - 1</math> were prime for ''n'' = 2, 3, 5, 7, 13, 17, 19, 31, 67, 127 and 257 {{OEIS|A109461}}, and were [[composite number|composite]] for all other positive [[integer]]s ''n'' ≤ 257. The first seven entries of his list (<math>2^n - 1</math> for ''n'' = 2, 3, 5, 7, 13, 17, 19) had already been proven to be primes by trial division before Mersenne's time;<ref>See the sources given for the individual primes in [[List of Mersenne primes and perfect numbers]].</ref> only the last four entries were new claims by Mersenne. Due to the size of those last numbers, Mersenne did not and could not test all of them, nor could his peers in the 17th century. It was eventually determined, after three centuries and the availability of new techniques such as the [[Lucas–Lehmer primality test|Lucas–Lehmer test]], that Mersenne's conjecture contained five errors, namely two entries are composite (those corresponding to the primes ''n'' = 67, 257) and three primes are missing (those corresponding to the primes ''n'' = 61, 89, 107). The correct list for ''n'' ≤ 257 is: ''n'' = 2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107 and 127.
+
+While Mersenne's original [[conjecture]] is false, it may have led to the '''New Mersenne conjecture'''.
+
+== New Mersenne conjecture ==
+The '''New Mersenne conjecture''' or '''Bateman, Selfridge and Wagstaff conjecture''' (Bateman et al. 1989) states that for any [[parity (mathematics)|odd]] [[natural number]] ''p'', if any two of the following conditions hold, then so does the third:
+
+# ''p'' = 2<sup>''k''</sup> ± 1 or ''p'' = 4<sup>''k''</sup> ± 3 for some natural number ''k''. ({{oeis|A122834}})
+# 2<sup>''p''</sup> − 1 is prime (a [[Mersenne prime]]). ({{oeis|A000043}})
+# (2<sup>''p''</sup>&nbsp;+&thinsp;1)/3 is prime (a [[Wagstaff prime]]). ({{oeis|A000978}})
+
+If ''p'' is an odd composite number, then 2<sup>''p''</sup>&nbsp;−&nbsp;1 and (2<sup>''p''</sup>&nbsp;+&nbsp;1)/3 are both composite. Therefore it is only necessary to test primes to verify the truth of the conjecture.
+
+Currently, there are nine known numbers for which all three conditions hold: 3, 5, 7, 13, 17, 19, 31, 61, 127 {{OEIS|id=A107360}}. Bateman et al. expected that no number greater than 127 satisfies all three conditions, and showed that heuristically no greater number would even satisfy two conditions, which would make the New Mersenne conjecture trivially true.
+
+If at least one of the [[double Mersenne number]]s MM61 and MM127 is prime, then the New Mersenne conjecture would be false, since both M61 and M127 satisfy the first condition (since they are Mersenne primes themselves), but (2^M61+1)/3 and (2^M127+1)/3 are both composite, they are divisible by 1328165573307087715777 and 886407410000361345663448535540258622490179142922169401, respectively.
+
+{{As of|2026}}, all the Mersenne primes up to 2<sup>82589933</sup> − 1 are known, and for none of these does the first condition or the third condition hold except for the ones just mentioned.<ref name="auto">{{Cite web|url=https://t5k.org/mersenne/NewMersenneConjecture.html|title=The New Mersenne Prime Conjecture|website=t5k.org}}</ref><ref name="Wanless">{{cite web|author=Wanless|first=James|title=Mersenneplustwo Factorizations|url=https://sites.google.com/site/bearnol/math/mersenneplustwo}}</ref><ref name="Hoglund">{{cite web|author=Höglund|first=Andreas|title=New Mersenne Conjecture|url=http://www.hoegge.dk/mersenne/NMC.html}}</ref><ref>[http://www.primenumbers.net/rl/nmc/ Status of the "New Mersenne Conjecture"]</ref>
+Primes which satisfy at least one condition are
+:2, 3, 5, 7, 11, 13, 17, 19, 23, 31, 43, 61, 67, 79, 89, 101, 107, 127, 167, 191, 199, 257, 313, 347, 521, 607, 701, 1021, 1279, 1709, 2203, 2281, 2617, 3217, 3539, 4093, 4099, 4253, 4423, 5807, 8191, 9689, 9941, ... {{OEIS|id=A120334}}
+
+Note that the two primes for which the original Mersenne conjecture is false (67 and 257) satisfy the first condition of the new conjecture (67 = 4<sup>3</sup> + 3, 257 = 2<sup>8</sup> + 1), but not the other two. 89 and 107, which were missed by Mersenne, satisfy the second condition but not the other two. Mersenne may have thought that 2<sup>''p''</sup> − 1 is prime only if ''p'' = 2<sup>''k''</sup> ± 1 or ''p'' = 4<sup>''k''</sup> ± 3 for some natural number ''k'', but if he thought it was "[[if and only if]]" he would have included 61.
+
+{| class="wikitable"
+|+ Status of new Mersenne conjecture for the first 100 primes
+! style="color:#ff0000;background:#00ffff"|2<ref>2=2<sup>0</sup> + 1 satisfies exactly two of the three conditions, but is explicitly excluded from  the conjecture due to being even</ref>
+! style="color:#ff0000;background:#00ffff"|''3''
+! style="color:#ff0000;background:#00ffff"|''5''
+! style="color:#ff0000;background:#00ffff"|''7''
+! style="text-align: center;"|''11''
+! style="color:#ff0000;background:#00ffff"|''13''
+! style="color:#ff0000;background:#00ffff"|''17''
+! style="color:#ff0000;background:#00ffff"|''19''
+! style="text-align: center;"|''23''
+| style="text-align: center;"|29
+|-
+! style="color:#ff0000;background:#00ffff"|''31''
+| style="text-align: center;"|37
+| style="text-align: center;"|41
+! style="text-align: center;"|''43''
+| style="text-align: center;"|47
+| style="text-align: center;"|53
+| style="text-align: center;"|59
+! style="color:#ff0000;background:#00ffff"|''61''
+| style="text-align: center;color:#ff0000;|'''67'''
+| style="text-align: center;"|71
+|-
+| style="text-align: center;"|73
+! style="text-align: center;"|''79''
+| style="text-align: center;"|83
+! style="background:#00ffff"|89
+| style="text-align: center;"|97
+! style="text-align: center;"|''101''
+| style="text-align: center;"|103
+! style="background:#00ffff"|107
+| style="text-align: center;"|109
+| style="text-align: center;"|113
+|-
+! style="color:#ff0000;background:#00ffff"|''127''
+| style="text-align: center;"|131
+| style="text-align: center;"|137
+| style="text-align: center;"|139
+| style="text-align: center;"|149
+| style="text-align: center;"|151
+| style="text-align: center;"|157
+| style="text-align: center;"|163
+! style="text-align: center;"|''167''
+| style="text-align: center;"|173
+|-
+| style="text-align: center;"|179
+| style="text-align: center;"|181
+! style="text-align: center;"|''191''
+| style="text-align: center;"|193
+| style="text-align: center;"|197
+! style="text-align: center;"|''199''
+| style="text-align: center;"|211
+| style="text-align: center;"|223
+| style="text-align: center;"|227
+| style="text-align: center;"|229
+|-
+| style="text-align: center;"|233
+| style="text-align: center;"|239
+| style="text-align: center;"|241
+| style="text-align: center;"|251
+| style="color:#ff0000;text-align: center;"|'''257'''
+| style="text-align: center;"|263
+| style="text-align: center;"|269
+| style="text-align: center;"|271
+| style="text-align: center;"|277
+| style="text-align: center;"|281
+|-
+| style="text-align: center;"|283
+| style="text-align: center;"|293
+| style="text-align: center;"|307
+| style="text-align: center;"|311
+! style="text-align: center;"|''313''
+| style="text-align: center;"|317
+| style="text-align: center;"|331
+| style="text-align: center;"|337
+! style="text-align: center;"|''347''
+| style="text-align: center;"|349
+|-
+| style="text-align: center;"|353
+| style="text-align: center;"|359
+| style="text-align: center;"|367
+| style="text-align: center;"|373
+| style="text-align: center;"|379
+| style="text-align: center;"|383
+| style="text-align: center;"|389
+| style="text-align: center;"|397
+| style="text-align: center;"|401
+| style="text-align: center;"|409
+|-
+| style="text-align: center;"|419
+| style="text-align: center;"|421
+| style="text-align: center;"|431
+| style="text-align: center;"|433
+| style="text-align: center;"|439
+| style="text-align: center;"|443
+| style="text-align: center;"|449
+| style="text-align: center;"|457
+| style="text-align: center;"|461
+| style="text-align: center;"|463
+|-
+| style="text-align: center;"|467
+| style="text-align: center;"|479
+| style="text-align: center;"|487
+| style="text-align: center;"|491
+| style="text-align: center;"|499
+| style="text-align: center;"|503
+| style="text-align: center;"|509
+! style="background:#00ffff"|521
+| style="text-align: center;"|523
+| style="text-align: center;"|541
+|}
+
+{| class="wikitable" style="padding-left:1em;"
+| style="color:#ff0000;|Red: ''p'' is of the form 2<sup>''n''</sup>±1 or 4<sup>''n''</sup>±3
+| style="background:#00ffff"|Cyan background: 2<sup>''p''</sup>−1 is prime
+|''Italics:'' (2<sup>''p''</sup>+1)/3 ''is prime''
+|'''Bold: ''p'' satisfies at least one condition'''
+|}
+
+The New Mersenne conjecture can be thought of as an attempt to salvage the centuries-old Mersenne's conjecture, which is false. However, according to [http://www.mersenneforum.org/showpost.php?p=53533&postcount=3 Robert D. Silverman], [[John Selfridge]] agreed that the New Mersenne conjecture is "obviously true" as it was chosen to fit the known data and [[counter-example]]s beyond those cases are exceedingly unlikely. It may be regarded more as a curious observation than as an open question in need of [[mathematical proof|proving]].
+
+[[Prime Pages]] shows that the New Mersenne conjecture is true for all integers less than or equal to 10000000<ref name="auto"/> by systematically listing all primes for which it is already known that one of the conditions holds. In fact, currently it is known that the New Mersenne conjecture is true for all integers less than or equal to the current search limit of the Mersenne primes (see [https://www.mersenne.org/ this page] for the current search limit of the Mersenne primes), also currently it is known that the New Mersenne conjecture is true for all integers less than 1073741827 which satisfy the first condition, also currently it is known that the New Mersenne conjecture is true for all known integers which satisfy the second or third condition.<ref name="Wanless"/><ref name="Hoglund"/>
+
+== Lenstra–Pomerance–Wagstaff conjecture ==
+[[Hendrik Lenstra|Lenstra]], [[Carl Pomerance|Pomerance]], and [[Samuel S. Wagstaff Jr.|Wagstaff]] have conjectured that there are infinitely many [[Mersenne prime]]s, and, more precisely, that the number of Mersenne primes less than ''x'' is [[Asymptotic analysis|asymptotically]] approximated by
+
+:<math>e^\gamma\cdot\log_2 \log_2(x),</math><ref name=heur>[http://primes.utm.edu/mersenne/heuristic.html Heuristics: Deriving the Wagstaff Mersenne Conjecture]. [[The Prime Pages]]. Retrieved on 2014-05-11.</ref>
+
+where &gamma; is the [[Euler–Mascheroni constant]]. 
+In other words, the number of Mersenne primes with exponent ''p'' less than ''y'' is asymptotically
+
+:<math>e^\gamma\cdot\log_2(y).</math><ref name=heur/>
+
+This means that there should on average be about <math>e^\gamma\cdot\log_2(10)</math> ≈ 5.92 primes ''p'' of a given number of decimal digits such that <math>M_p</math> is prime. The conjecture is fairly accurate for the first 40 Mersenne primes (up to 2<sup>20,996,011</sup>), but between 2<sup>20,000,000</sup> and 2<sup>85,000,000</sup> there are at least 12,<ref>{{cite journal |author=Michael Le Page |title=Inside the race to find the first billion-digit prime number |journal=New Scientist |date=Aug 10, 2019 |url=https://www.newscientist.com/article/mg24332420-800-inside-the-race-to-find-the-first-billion-digit-prime-number/}}</ref> rather than the expected number which is around 3.7.
+
+More generally, the number of primes ''p'' ≤ ''y'' such that <math>\frac{a^p-b^p}{a-b}</math> is prime (where ''a'', ''b'' are [[coprime]] integers, ''a'' > 1, −''a'' < ''b'' < ''a'', ''a'' and ''b'' are not both perfect ''r''-th powers for any natural number ''r''&nbsp;>&thinsp;1, and −4''ab'' is not a perfect fourth power) is asymptotically
+
+:<math>(e^\gamma+m\cdot\log_e(2))\cdot\log_a(y).</math>
+
+where ''m'' is the largest nonnegative integer such that ''a'' and −''b'' are both perfect 2<sup>''m''</sup>-th powers. The case of Mersenne primes is one case of (''a'',&nbsp;''b'') = (2,&thinsp;1).
+
+== See also ==
+* [[Gillies' conjecture]] on the distribution of numbers of prime factors of Mersenne numbers
+* [[Lucas–Lehmer primality test]] 
+* [[Lucas primality test]]
+* [[Catalan's Mersenne conjecture]]
+* [[Mersenne's laws]]
+
+== References ==
+*{{cite journal
+ | author = Bateman, P. T.
+ | author-link = Paul T. Bateman
+ | author2 = Selfridge, J. L.
+ | author2-link = John Selfridge
+ | author3 = Wagstaff Jr., Samuel S.
+ | author3-link = Samuel S. Wagstaff Jr.
+ | title = The new Mersenne conjecture
+ | journal = [[American Mathematical Monthly]]
+ | volume = 96
+ | year = 1989
+ | pages = 125–128
+ |mr=0992073
+ | doi = 10.2307/2323195
+ | issue = 2
+ | publisher = Mathematical Association of America
+ | jstor = 2323195 }}
+*{{cite book
+ | author = Dickson, L. E.
+ | author-link = Leonard Eugene Dickson
+ | title = [[History of the Theory of Numbers]]
+ | publisher = Carnegie Institute of Washington
+ | year = 1919
+ | ol=6616242M
+ | page = 31 }} Reprinted by Chelsea Publishing, New York, 1971, {{isbn|0-8284-0086-5}}.
+{{Reflist}}
+
+== External links ==
+* The Prime Glossary. [https://primes.utm.edu/glossary/page.php?sort=NewMersenneConjecture New Mersenne prime conjecture.]
+
+{{Mersenne}}
+{{Prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Mersenne primes]]

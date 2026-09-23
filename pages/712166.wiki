@@ -1,0 +1,70 @@
+{{Short description|Prime number of the form (2ᵖ+1)/3}}
+
+{{Infobox integer sequence
+| named_after           = [[Samuel S. Wagstaff, Jr.]]
+| publication_year      = 1989<ref>{{Cite journal | last1 = Bateman | first1 = P. T. | author1-link = Paul T. Bateman | last2 = Selfridge | first2 = J. L. | author2-link = John Selfridge | last3 = Wagstaff, Jr. | first3 = S. S. | title = The New Mersenne Conjecture | journal = American Mathematical Monthly | year = 1989 | volume = 96 | pages = 125–128 | jstor = 2323195 | doi = 10.2307/2323195 }}</ref>
+| author                = [[Paul T. Bateman|Bateman, P. T.]], [[John Selfridge|Selfridge, J. L.]], [[Samuel S. Wagstaff, Jr.|Wagstaff Jr., S. S.]]
+| terms_number          = 44
+| first_terms           = [[3 (number)|3]], [[11 (number)|11]], [[43 (number)|43]], [[683 (number)|683]]
+| largest_known_term    = (2<sup>138937</sup>+1)/3
+| OEIS                  = A000979
+| OEIS_name             = Wagstaff primes: primes of form (2^p + 1)/3
+}}
+In [[number theory]], a '''Wagstaff prime''' is a [[prime number]] of the form
+:<math>{{2^p+1}\over 3}</math>
+
+where ''p'' is an [[parity (mathematics)|odd]] prime. Wagstaff primes are named after the mathematician [[Samuel S. Wagstaff Jr.]]; the [[prime pages]] credit François Morain for naming them in a lecture at the Eurocrypt 1990 conference. Wagstaff primes appear in the [[Mersenne conjectures#New Mersenne conjecture|New Mersenne conjecture]] and have applications in [[cryptography]].
+
+== Examples ==
+
+The first three Wagstaff primes are 3, 11, and 43 because
+:<math>\begin{align}
+3 & = {2^3+1 \over 3}, \\[5pt]
+11 & = {2^5+1 \over 3}, \\[5pt]
+43 & = {2^7+1 \over 3}.
+\end{align}</math>
+
+== Known Wagstaff primes ==
+
+The first few Wagstaff primes are:
+:3, 11, 43, 683, 2731, 43691, 174763, 2796203, 715827883, 2932031007403, 768614336404564651, ... {{OEIS|id=A000979}}
+
+Exponents which produce Wagstaff primes or [[probable prime]]s are:
+:3, 5, 7, 11, 13, 17, 19, 23, 31, 43, 61, 79, 101, 127, 167, 191, 199, 313, 347, 701, 1709, 2617, 3539, 5807, ... {{OEIS|A000978}}
+
+== Generalizations ==
+It is natural to consider<ref>[[Harvey Dubner|Dubner, H.]] and Granlund, T.: [https://cs.uwaterloo.ca/journals/JIS/VOL3/DUBNER/dubner.pdf Primes of the Form (b<sup>n</sup> + 1)/(b + 1)], ''Journal of Integer Sequences'', Vol. 3 (2000)</ref> more generally numbers of the form
+:<math>Q(b,n)=\frac{b^n+1}{b+1}</math>
+where the base <math>b \ge 2</math>. Since for <math>n</math> odd we have
+:<math>\frac{b^n+1}{b+1}=\frac{(-b)^n-1}{(-b)-1}=R_n(-b)</math>
+these numbers are called "Wagstaff numbers base <math>b</math>", and sometimes considered<ref>{{Cite web |last=Weisstein |first=Eric W. |title=Repunit |url=https://mathworld.wolfram.com/Repunit.html |access-date=2026-06-29 |website=mathworld.wolfram.com |language=en}}</ref> a case of the [[repunit]] numbers with negative base <math>-b</math>.
+
+For some specific values of <math>b</math>, all <math>Q(b,n)</math> (with a possible exception for very small <math>n</math>) are [[composite number|composite]] because of an "algebraic" factorization. Specifically, if <math>b</math> has the form of a [[perfect power]] with odd exponent (like 8, 27, 32, 64, 125, 128, 216, 243, 343, 512, 729, 1000, etc. {{OEIS|id=A070265}}), then the fact that <math>x^m+1</math>, with <math>m</math> odd, is divisible by <math>x+1</math> shows that <math>Q(a^m, n)</math> is divisible by <math>a^n+1</math> in these special cases. Another case is <math>b=4k^4</math>, with ''k'' a positive integer (like 4, 64, 324, 1024, 2500, 5184, etc. {{OEIS|id=A141046}}), where we have the [[aurifeuillean factorization]].
+
+However, when <math>b</math> does not admit an algebraic factorization, it is [[conjecture]]d that an infinite number of <math>n</math> values make <math>Q(b,n)</math> prime, notice all <math>n</math> are odd primes.
+
+For <math>b=10</math>, the primes themselves have the following appearance: 9091, 909091, 909090909090909091, 909090909090909090909090909091, … {{OEIS|id=A097209}}, and these ''n''s are: 5, 7, 19, 31, 53, 67, 293, 641, 2137, 3011, 268207, ... {{OEIS|id=A001562}}.
+
+See {{slink|Repunit#Repunit primes}} for the list of the generalized Wagstaff primes base <math>b</math>. (Generalized Wagstaff primes base <math>b</math> are generalized repunit primes base <math>-b</math> with odd <math>n</math>)
+
+The least primes ''p'' such that <math>Q(n, p)</math> is prime are (starts with ''n'' = 2, 0 if no such ''p'' exists)
+:3, 3, 3, 5, 3, 3, 0, 3, 5, 5, 5, 3, 7, 3, 3, 7, 3, 17, 5, 3, 3, 11, 7, 3, 11, 0, 3, 7, 139, 109, 0, 5, 3, 11, 31, 5, 5, 3, 53, 17, 3, 5, 7, 103, 7, 5, 5, 7, 1153, 3, 7, 21943, 7, 3, 37, 53, 3, 17, 3, 7, 11, 3, 0, 19, 7, 3, 757, 11, 3, 5, 3, ... {{OEIS|id=A084742}}
+
+The least bases ''b'' such that <math>Q(b, prime(n))</math> is prime are (starts with ''n'' = 2)
+:2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 16, 61, 2, 6, 10, 6, 2, 5, 46, 18, 2, 49, 16, 70, 2, 5, 6, 12, 92, 2, 48, 89, 30, 16, 147, 19, 19, 2, 16, 11, 289, 2, 12, 52, 2, 66, 9, 22, 5, 489, 69, 137, 16, 36, 96, 76, 117, 26, 3, ... {{OEIS|id=A103795}}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+
+*{{MathWorld|urlname=WagstaffPrime|title=Wagstaff prime|author=John Renze and [[Eric W. Weisstein]]}}
+*Chris Caldwell, [http://primes.utm.edu/top20/page.php?id=67 ''The Top Twenty: Wagstaff''] at The [[Prime Pages]].
+* Renaud Lifchitz, [http://primenumbers.net/Documents/TestNP.pdf "An efficient probable prime test for numbers of the form (2<sup>''p''</sup>&nbsp;+&nbsp;1)/3"].
+* Tony Reix, [https://www.mersenneforum.org/attachment.php?attachmentid=24152&d=1610368418 "Three conjectures about primality testing for Mersenne, Wagstaff and Fermat numbers based on cycles of the Digraph under ''x''<sup>2</sup>&nbsp;&minus;&nbsp;2 modulo a prime"] {{Webarchive|url=https://web.archive.org/web/20210330125451/https://www.mersenneforum.org/attachment.php?attachmentid=24152&d=1610368418 |date=2021-03-30 }}.
+*[http://www.primenumbers.net/Henri/us/MersFermus.htm List of repunits in base -50 to 50]
+*[http://www.fermatquotient.com/PrimSerien/GenRepuP.txt List of Wagstaff primes base 2 to 160]
+{{Prime number classes|state=collapsed}}
+
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

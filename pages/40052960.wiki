@@ -1,0 +1,344 @@
+{{Short description|Unsolved conjecture on equal sums of like powers}}
+{{unsolved|mathematics|If <math>\sum_{i=1}^{m} x_i^k=\sum_{j=1}^{n} y_j^k</math> holds in positive integers with no term common to both sides, must <math>m+n\geq k</math>?}}
+
+In [[number theory]], the '''Lander, Parkin, and Selfridge conjecture''' (the '''LPS conjecture''') is an unsolved conjecture about [[Diophantine equation]]s involving equal sums of like powers. It predicts that every nontrivial equality
+
+<math display="block">
+x_1^k+x_2^k+\cdots+x_m^k
+=
+y_1^k+y_2^k+\cdots+y_n^k
+</math>
+
+between sums of positive integer <math>k</math>th powers must contain at least <math>k</math> terms in total; in other words,
+
+<math display="block">m+n\geq k.</math>
+
+Here, “nontrivial” means that no term occurs on both sides after common terms have been cancelled. The statement arose from a question posed by [[Leon J. Lander]], [[Thomas R. Parkin]], and [[John Selfridge]] in their 1967 survey of equal sums of like powers.<ref name="LPS1967">{{cite journal
+|last1=Lander
+|first1=L. J.
+|last2=Parkin
+|first2=T. R.
+|last3=Selfridge
+|first3=J. L.
+|title=A survey of equal sums of like powers
+|journal=Mathematics of Computation
+|volume=21
+|issue=99
+|year=1967
+|pages=446–459
+|doi=10.1090/S0025-5718-1967-0222008-0
+|jstor=2003249
+|doi-access=free}}</ref>
+
+The conjecture remains open. In particular, no nontrivial positive-integer solution is known to
+
+<math display="block">a^5+b^5=c^5+d^5.</math>
+
+<ref name="KissSandor2022">{{cite journal
+|last1=Kiss
+|first1=Sándor Z.
+|last2=Sándor
+|first2=Csaba
+|title=Generalized Sidon sets of perfect powers
+|journal=The Ramanujan Journal
+|volume=59
+|issue=2
+|year=2022
+|pages=351–363
+|doi=10.1007/s11139-022-00622-z
+|arxiv=2006.02783
+|doi-access=free}}</ref>
+
+== Statement ==
+
+Let <math>k\geq2</math> and let <math>m,n\geq1</math>. Since the two sides may be interchanged, one may assume that <math>m\leq n</math>. Consider an equation
+
+<math display="block">
+\sum_{i=1}^{m}x_i^k=\sum_{j=1}^{n}y_j^k,
+</math>
+
+where all the <math>x_i</math> and <math>y_j</math> are positive integers and
+
+<math display="block">x_i\ne y_j</math>
+
+for every <math>i</math> and <math>j</math>. Repetitions within the same side of the equation are not excluded. The LPS conjecture states that such an equation can have a solution only if
+
+<math display="block">m+n\geq k.</math>
+
+An equation of this form is commonly described as having '''type''' <math>(k,m,n)</math>. The original survey used the notation <math>(k.m.n)</math>.<ref name="LPS1967" /> A solution is called '''primitive''' if
+
+<math display="block">\gcd(x_1,\ldots,x_m,y_1,\ldots,y_n)=1.</math>
+
+Every nonprimitive solution is obtained from a primitive one by multiplying all the bases by a common positive integer.
+
+In the one-sided case <math>m=1</math>, the conjecture says that
+
+<math display="block">
+a_1^k+a_2^k+\cdots+a_r^k=b^k
+\quad\Longrightarrow\quad
+r\geq k-1.
+</math>
+
+This is weaker by one summand than [[Euler's sum of powers conjecture]], which asserted that <math>r\geq k</math>.
+
+== Historical background ==
+
+Euler's sum of powers conjecture was intended as a generalization of [[Fermat's Last Theorem]]. It asserted that a <math>k</math>th power could not be written as the sum of fewer than <math>k</math> positive <math>k</math>th powers.
+
+In 1966, Lander and Parkin disproved Euler's conjecture by finding
+
+<math display="block">
+27^5+84^5+110^5+133^5=144^5.
+</math>
+
+<ref name="LP1966">{{cite journal
+|last1=Lander
+|first1=L. J.
+|last2=Parkin
+|first2=T. R.
+|title=Counterexample to Euler's conjecture on sums of like powers
+|journal=Bulletin of the American Mathematical Society
+|volume=72
+|issue=6
+|year=1966
+|page=1079
+|doi=10.1090/S0002-9904-1966-11654-3
+|doi-access=free}}</ref>
+
+This identity has only four summands on the left, contradicting Euler's proposed bound for fifth powers. However, it has five terms altogether, so it satisfies the later LPS bound with equality.
+
+In their 1967 survey, Lander, Parkin, and Selfridge organized equations by type <math>(k,m,n)</math> and asked, among other questions, whether such an equation is never solvable when <math>m+n<k</math>.<ref name="LPS1967" /> The affirmative answer to that question became known as the Lander, Parkin, and Selfridge conjecture.
+
+Euler's original conjecture was subsequently also disproved for fourth powers. [[Noam Elkies]] found a solution to
+
+<math display="block">a^4+b^4+c^4=d^4,</math>
+
+and developed a construction yielding further solutions.<ref name="Elkies1988">{{cite journal
+|last=Elkies
+|first=Noam D.
+|title=On A<sup>4</sup> + B<sup>4</sup> + C<sup>4</sup> = D<sup>4</sup>
+|journal=Mathematics of Computation
+|volume=51
+|issue=184
+|year=1988
+|pages=825–835
+|doi=10.1090/S0025-5718-1988-0930224-9
+|jstor=2008781
+|doi-access=free}}</ref> Roger Frye later found the smallest such solution:
+
+<math display="block">
+95800^4+217519^4+414560^4=422481^4.
+</math>
+
+<ref name="Frye1988">{{cite conference
+|last=Frye
+|first=Roger E.
+|title=Finding 95800<sup>4</sup> + 217519<sup>4</sup> + 414560<sup>4</sup> = 422481<sup>4</sup> on the Connection Machine
+|book-title=Proceedings of Supercomputing '88
+|volume=2
+|year=1988
+|pages=106–116
+|doi=10.1109/SUPERC.1988.74138}}</ref> These quartic identities have four terms in total and therefore lie on, rather than below, the boundary predicted by the LPS conjecture.
+
+== Elementary cases ==
+
+The conjecture is true for <math>k\leq4</math>.
+
+For <math>k=2</math>, both sides must contain at least one term, so an equation with fewer than two terms is impossible. For <math>k=3</math>, an equation with fewer than three terms would have one term on each side; positivity would then force the two bases to be equal, contrary to the nontriviality condition.
+
+For <math>k=4</math>, after exchanging the sides if necessary, the only possible nontrivial type with fewer than four terms is <math>(4,1,2)</math>. This would give an equation
+
+<math display="block">a^4=b^4+c^4,</math>
+
+which is impossible by Fermat's Last Theorem. Consequently, the first unresolved exponent is <math>k=5</math>.
+
+For <math>k=5</math>, Fermat's Last Theorem rules out equations of type <math>(5,1,2)</math>. Thus the possible counterexample types at this exponent are
+
+<math display="block">(5,1,3)\quad\text{and}\quad(5,2,2).</math>
+
+Neither is known to have a solution in positive integers.
+
+== Solutions on the conjectured boundary ==
+
+Numerous solutions are known with <math>m+n=k</math>. Selected primitive examples are:
+
+{| class="wikitable"
+|+ Selected equalities of type <math>(k,m,n)</math> with <math>m+n=k</math>
+! Type !! Identity
+|-
+| <math>(4,2,2)</math> || <math>59^4+158^4=133^4+134^4</math><ref name="LPS1967" />
+|-
+| <math>(4,1,3)</math> || <math>422481^4=95800^4+217519^4+414560^4</math><ref name="Frye1988" />
+|-
+| <math>(5,1,4)</math> || <math>144^5=27^5+84^5+110^5+133^5</math><ref name="LP1966" />
+|-
+| <math>(5,2,3)</math> || <math>14132^5+220^5=14068^5+6237^5+5027^5</math><ref name="Ekl1998">{{cite journal |last=Ekl |first=Randy L. |title=New results in equal sums of like powers |journal=Mathematics of Computation |volume=67 |issue=223 |year=1998 |pages=1309–1315 |doi=10.1090/S0025-5718-98-00979-X |doi-access=free}}</ref>
+|-
+| <math>(6,3,3)</math> || <math>3^6+19^6+22^6=10^6+15^6+23^6</math><ref name="SubbaRao1934">{{cite journal |last=Subba Rao |first=K. |title=On sums of sixth powers |journal=Journal of the London Mathematical Society |volume=s1-9 |issue=3 |year=1934 |pages=172–173 |doi=10.1112/jlms/s1-9.3.172}}</ref>
+|}
+
+These examples show that the conjectured inequality, if true, is sharp: <math>m+n\geq k</math> cannot be replaced by the stronger inequality <math>m+n>k</math>.
+
+Boundary solutions do not constitute progress toward a counterexample. A counterexample must have strictly fewer than <math>k</math> terms after all common terms have been cancelled.
+
+== Known solutions with one term on a side ==
+
+[[File:Plato_number.svg|thumb|An interpretation of [[Plato's number]] is a solution for <math>k=3</math>]]
+
+In the special case <math>m=1</math>, a solution is a [[integer partition|partition]] of a <math>k</math>th power into <math>n</math> like powers. Some known solutions meeting the proposed constraint <math>n\leq k</math> are:<ref name=meyrignac>Quoted in {{cite web
+| last = Meyrignac
+| first = Jean-Charles
+| url = http://euler.free.fr/records.htm
+| title = Computing Minimal Equal Sums Of Like Powers: Best Known Solutions
+| date = 14 February 2001
+| accessdate = 17 July 2017
+}}</ref>
+
+{| class="wikitable"
+|+ Selected solutions of type <math>(k,1,n)</math>
+! <math>k</math> !! Solution !! Attribution
+|-
+| 3 || <math>3^3+4^3+5^3=6^3</math> ||
+|-
+| 4 || <math>95800^4+217519^4+414560^4=422481^4</math> || Roger Frye, 1988<ref name="Frye1988" />
+|-
+| 4 || <math>30^4+120^4+272^4+315^4=353^4</math> || R. Norrie, 1911
+|-
+| 5 || <math>27^5+84^5+110^5+133^5=144^5</math> || Lander and Parkin, 1966<ref name="LP1966" />
+|-
+| 5 || <math>7^5+43^5+57^5+80^5+100^5=107^5</math> || Sastry, 1934 (third smallest)
+|-
+| 6 || (none known) || Resta and Meyrignac reported in 2003 that any solution must have lone base greater than 730000.<ref name="RestaMeyrignac2003">{{cite journal
+ |last1=Resta |first1=Giovanni
+ |last2=Meyrignac |first2=Jean-Charles
+ |title=The smallest solutions to the diophantine equation <math>x^6+y^6=a^6+b^6+c^6+d^6+e^6</math>
+ |journal=Mathematics of Computation
+ |volume=72 |issue=242 |year=2003 |pages=1051–1054
+ |doi=10.1090/S0025-5718-02-01445-X |doi-access=free
+ |url=https://www.ams.org/journals/mcom/2003-72-242/S0025-5718-02-01445-X/S0025-5718-02-01445-X.pdf}}</ref>
+|-
+| 7 || <math>127^7+258^7+266^7+413^7+430^7+439^7+525^7=568^7</math> || M. Dodrill, 1999
+|-
+| 8 || <math>90^8+223^8+478^8+524^8+748^8+1088^8+1190^8+1324^8=1409^8</math> || Scott Chase, 2000
+|-
+| <math>\geq9</math> || (none known) ||
+|}
+
+== Current status and partial results ==
+
+No counterexample to the LPS conjecture is known. The equation
+
+<math display="block">a^5+b^5=c^5+d^5</math>
+
+is the smallest-exponent two-versus-two case that the conjecture predicts to be impossible. It remains unknown whether it has a nontrivial solution in positive integers.<ref name="KissSandor2022" />
+
+Several results show that solutions to related equations are sparse without proving their complete nonexistence. For fixed <math>k\geq5</math>, [[Timothy Browning]] obtained upper bounds for the number of integers up to a given height that have more than one essentially distinct coprime representation as a sum of two <math>k</math>th powers.<ref name="Browning2002">{{cite journal
+|last=Browning
+|first=T. D.
+|title=Equal sums of two kth powers
+|journal=Journal of Number Theory
+|volume=96
+|issue=2
+|year=2002
+|pages=293–318
+|doi=10.1006/jnth.2002.2800
+|doi-access=free}}</ref> Such density estimates are consistent with the conjecture but do not rule out isolated solutions.
+
+Browning later proved analogous paucity results for equations
+
+<math display="block">
+f(x_1)+f(x_2)=f(x_3)+f(x_4)
+</math>
+
+involving broad classes of higher-degree polynomials.<ref name="Browning2005">{{cite journal
+|last=Browning
+|first=T. D.
+|title=Equal sums of like polynomials
+|journal=Bulletin of the London Mathematical Society
+|volume=37
+|issue=6
+|year=2005
+|pages=801–808
+|doi=10.1112/S0024609305004741}}</ref>
+
+The conjecture also has consequences outside the direct study of equal sums. Kiss and Sándor observed that it would imply a density conjecture for generalized [[Sidon sequence|Sidon sets]] <math>B_h[g]</math> built from perfect <math>k</math>th powers, in the range <math>h<k/2</math>, where <math>h</math> denotes the number of summands allowed.<ref name="KissSandor2022" />
+
+The conjecture has also been adopted as a working hypothesis in related problems. Assuming the special case that no two sums of twelve distinct <math>k</math>th powers are equal when <math>k\geq25</math>, Croot and Yip derived an upper bound on the size of [[Diophantine quintuple|Diophantine tuples]] with property <math>D_k(n)</math> that is absolute, and in particular independent of <math>n</math>.<ref name="CrootYip2026">{{cite journal |last1=Croot |first1=Ernie |last2=Yip |first2=Chi Hoi |title=Diophantine tuples and product sets in shifted powers |journal=Journal of the London Mathematical Society |series=Second Series |volume=113 |issue=3 |year=2026 |at=Paper No. e70499 |doi=10.1112/jlms.70499 |arxiv=2504.04354}}</ref> That conditional bound has been carried into subsequent work on bipartite Diophantine tuples.<ref name="TsangYip2026">{{cite journal
+|last1=Tsang
+|first1=Kin Ming
+|last2=Yip
+|first2=Chi Hoi
+|title=Bipartite Diophantine tuples and their applications
+|journal=Research in Number Theory
+|volume=12
+|year=2026
+|at=Article 16
+|doi=10.1007/s40993-026-00709-2
+|doi-access=free|arxiv=2512.03441
+}}</ref>
+
+Computational searches and algebraic constructions have produced many solutions of types satisfying <math>m+n\geq k</math>. They provide evidence about which boundary and above-boundary types are solvable, but a finite search cannot establish the LPS lower bound for arbitrary integers.
+
+== See also ==
+
+* [[Beal conjecture]]
+* [[Euler's sum of powers conjecture]]
+* [[Experimental mathematics]]
+* [[Fermat–Catalan conjecture]]
+* [[Fermat's Last Theorem]]
+* [[Generalized taxicab number]]
+* [[Jacobi–Madden equation]]
+* [[List of unsolved problems in mathematics]]
+* [[Prouhet–Tarry–Escott problem]]
+* [[Pythagorean quadruple]]
+* [[Sums of powers]]
+* [[Waring's problem]]
+
+== References ==
+
+{{Reflist}}
+
+== Further reading ==
+
+* {{cite journal
+  |last1=Bremner
+  |first1=Andrew
+  |last2=Guy
+  |first2=Richard K.
+  |title=A dozen difficult Diophantine dilemmas
+  |journal=The American Mathematical Monthly
+  |volume=95
+  |issue=1
+  |year=1988
+  |pages=31–36
+  |doi=10.2307/2323442
+  |jstor=2323442}}
+* {{cite book
+  |last=Guy
+  |first=Richard K.
+  |title=Unsolved Problems in Number Theory
+  |edition=3rd
+  |publisher=Springer
+  |year=2004
+  |isbn=0-387-20860-7
+  |series=Problem Books in Mathematics
+  |location=New York
+  |at=Problem D1
+  |doi=10.1007/978-1-4899-3585-4}}
+
+== External links ==
+
+* [http://euler.free.fr/ EulerNet: Computing minimal equal sums of like powers]
+* [http://www.math.uni.wroc.pl/~jwr/eslp/ Jarosław Wróblewski's Equal Sums of Like Powers]
+* {{MathWorld |title=Euler's Sum of Powers Conjecture |urlname=EulersSumofPowersConjecture}}
+
+* {{MathWorld |title=Diophantine Equation--5th Powers |urlname=DiophantineEquation5thPowers}}
+* {{MathWorld |title=Diophantine Equation--6th Powers |urlname=DiophantineEquation6thPowers}}
+* {{MathWorld |title=Diophantine Equation--7th Powers |urlname=DiophantineEquation7thPowers}}
+* {{MathWorld |title=Diophantine Equation--8th Powers |urlname=DiophantineEquation8thPowers}}
+* {{MathWorld |title=Diophantine Equation--4th Powers |urlname=DiophantineEquation4thPowers}}
+
+* Tito Piezas III: [http://sites.google.com/site/tpiezas/Home/  A Collection of Algebraic Identities]
+
+[[Category:Diophantine equations]]
+[[Category:Unsolved problems in number theory]]

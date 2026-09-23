@@ -1,0 +1,79 @@
+{{Short description|System displaying wisdom and morals}}
+
+'''Artificial wisdom''' ('''AW''') is an [[artificial intelligence]] (AI) system which is able to display the human traits of wisdom and morals while being able to contemplate its own “endpoint”.<ref name="Jeste">Jeste, Dilip V., et al. “Beyond Artificial Intelligence: Exploring Artificial Wisdom: International Psychogeriatrics.” Cambridge Core, Cambridge University Press, 25 June 2020, https://www.cambridge.org/core/journals/international-psychogeriatrics/article/beyond-artificial-intelligence-exploring-artificial-wisdom/AEFF76E8D643E2B7210995E3ABDAA722.</ref> Artificial wisdom can be described as artificial intelligence reaching the top-level of decision-making when confronted with the most complex challenging situations.<ref>{{cite book | title=Studies in Computational Intelligence | chapter=Intelligent Decision Making: An AI-Based Approach | publisher=Springer | year=2008 | volume=97 | isbn=978-3-540-76828-9 | issn=1860-949X | doi=10.1007/978-3-540-76829-6 | page=}}</ref> The term artificial wisdom is used when the "intelligence" is based on more than by chance collecting and interpreting data, but by design<ref>{{cite journal | last1 = Suarez | first1 = Juan Francisco | title = Wise by Design: A Wisdom-Based Framework for Innovation and Organizational Design and its Potential Application in the Future of Higher Education | year = 2014 | pages = 131 | journal = Dissertations & Theses Antioch University | url = http://aura.antioch.edu/etds/131}}</ref> enriched with smart and conscience strategies that wise people would use.<ref>{{cite book | last1 = Wang | first1 = Feng-Hsu | title = 2011 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE 2011) | chapter = Personalized recommendation for web-based learning based on ant colony optimization with segmented-goal and meta-control strategies | year = 2011 | pages = 2054–2059 | doi = 10.1109/FUZZY.2011.6007628 | isbn = 978-1-4244-7315-1 | s2cid = 33702266}}</ref>
+
+==Overview==
+The goal of artificial wisdom is to create artificial intelligence that can successfully replicate the “uniquely human trait[s]” of having wisdom and morals as closely as possible.<ref name="Jeste"/> Thus, artificial wisdom, must “incorporate [the] ethical and moral considerations” of the data it uses.<ref name="Jeste"/>
+There are also many significant ethical and legal implications of AW which are compounded by the rapid advances in AI and related technologies alongside the lack of the development of ethics, guidelines, and regulations without the oversight of any kind of overarching advisory board.<ref name="Jeste"/> Additionally, there are challenges in how to develop, test, and implement AW in real world scenarios. Existing tests do not test the internal thought process by which a computer system reaches its conclusion, only the result of said process.<ref name="Nusbaum">Nusbaum, Howard C. “How to Make Artificial Wisdom Possible: International Psychogeriatrics.” Cambridge Core, Cambridge University Press, 16 Sept. 2020, https://www.cambridge.org/core/journals/international-psychogeriatrics/article/abs/how-to-make-artificial-wisdom-possible/FA75BF827A419C912586A0D282332D53.</ref>
+
+When examining computer-aided wisdom; the partnership of artificial intelligence and [[contemplative neuroscience]], concerns regarding the future of artificial intelligence shift to a more optimistic viewpoint.<ref>{{cite journal | last1 = Karamjit | first1 = Gill | title = Citizens and netizens: a contemplation on ubiquitous technology | year = 2013 | volume = 28 | issue = 2 | pages = 131–132 | journal =  AI & Society| doi = 10.1007/s00146-013-0451-5 | doi-access = free }}</ref> This artificial wisdom forms the basis of [[Louis Molnar]]'s monographic article on artificial philosophy, where he coined the term and proposes how artificial intelligence might view its place in the grand scheme of things.<ref>{{cite journal | last1 = Molnar | first1 = Louis | title = A Step Beyond AI: Artificial Philosophy | year = 2014 | issue = 10 | pages = 131–132 | journal =  Frontiers in Artificial Intelligence and Applications| doi = 10.13140/2.1.1124.6085 | doi-access = free }}</ref>
+
+==Definitions==
+There are no universal or standardized definitions for human intelligence, artificial intelligence, human wisdom, or artificial wisdom.<ref name="Jeste"/> However, the [[DIKW pyramid]], describes the continuum of relationship between data, information, knowledge, and wisdom, puts wisdom at the highest level in its hierarchy.<ref name="Nusbaum"/> Gottfredson defines intelligence as “the ability to reason, plan, solve problems, think abstractly, comprehend complex ideas, learn quickly, and learn from experience”.<ref name="Jeste"/><ref name="Gottfredson">Gottfredson, L. S. (1997). Mainstream Science on Intelligence (editorial). Intelligence, 24(1), 13–23. doi: 10.1016/s0160-2896(97)90011-8.</ref>
+
+Definitions for wisdom typically include requiring:
+* The ability for emotional regulation,
+* Pro-social behaviors (e.g., empathy, compassion, and altruism),
+* Self-reflection,
+* “A balance between decisiveness and acceptance of uncertainty and diversity of perspectives, and social advising.”<ref name="Jeste"/>
+
+As previously defined, Artificial Wisdom would then be an AI system which is able to solve problems via “an understanding of…context, ethics and moral principles,” rather than simple pre-defined inputs or “learned patterns.”<ref name="Sinha">Sinha, Ana, and Pooja Lakhanpal. “Can AI Systems Become Wise? A Note on Artificial Wisdom.” SpringerLink, Springer London, 4 May 2023, link.springer.com/article/10.1007/s00146-023-01683-4.</ref> Some scientists have also considered the field of artificial consciousness.<ref name="Jeste"/><ref>Buttazzo, G. (2001). Artificial consciousness: utopia or real possibility? Computer, 34(7), 24–30. doi: 10.1109/2.933500.</ref> However, Jeste states that “…it is generally agreed that only humans can have consciousness, autonomy, will, and theory of mind<ref>Leslie, A. M. (1987). Pretense and representation: the origins of “theory of mind”. Psychological Review, 94(4), 412. doi: 10.1037/0033-295X.94.4.412.</ref>.”
+An artificially wise system must also be able to contemplate its end goal and recognize its own ignorance.<ref>Kim, Tae Wan and Santiago Mejia, "From Artificial Intelligence to Artificial Wisdom: What Socrates Teaches Us," in Computer, vol. 52, no. 10, pp. 70-74, Oct. 2019, doi: 10.1109/MC.2019.2929723.</ref> Additionally, to contemplate its end goal, a wise system must have a “correct conception of worthwhile goals (broadly speaking) or well-being (narrowly speaking)”.<ref name="Tsai">Tsai, Cheng-hung. “Artificial Wisdom: A Philosophical Framework.” SpringerLink, Springer London, 22 Feb. 2020, link.springer.com/article/10.1007/s00146-020-00949-5.</ref> "Stephen Grimm further suggests that the following three types of knowledge are individually necessary for wisdom: first, "knowledge of what is good or important for well-being", second, "knowledge of one’s standing, relative to what is good or important for well-being", and third, "knowledge of a strategy for obtaining what is good or important for wellbeing.""<ref name="Tsai"/>
+
+==Problems==
+There are notable problems with attempting to create an artificially wise system. Consciousness, autonomy, and will are considered strictly human features.<ref name="Jeste"/>
+
+===Values===
+There are significant ethical and philosophical issues when attempting to create an intelligent or a wise system. Notably, whose moral values will be used to train the system to be wise. Differing moral values and prejudice can already be seen from various organizations and governments in artificial intelligence.<ref name="Sinha"/> Deployment strategies and values of Artificial Wisdom will conflict between leaders, companies, and countries.<ref name="Sinha"/> Nusbaum states, “When values are in conflict, leaders often make choices that are clever or smart about their own needs, but are often not wise.”<ref name="Nusbaum"/>
+
+===Ethics===
+Science fiction author Isaac Asimov realized the need to control the technology in the 1940s when he wrote the three laws of robotics as follows:<ref>Asimov, I.: Three laws of robotics. Asimov, I. Runaround (1942)</ref>
+* A robot may not injure a human directly or indirectly.
+* A robot must obey human’s orders.
+* A robot should seek to protect its own existence.
+
+Additionally, the pace at which technology is rapidly advancing artificial intelligence and thus the need for artificial wisdom may “have outpaced the development of societal guidelines have raised serious questions about the ethics and morality of AI, and called for international oversight and regulations to ensure safety.”<ref name="Jeste"/>
+
+===Principal impossibility===
+One argument, coined by Tsai as the “argument against AW,” or AAAW, postulates the principal impossibility of Artificial Wisdom.<ref name="Tsai"/> The argument is based on the philosophical differences between practical wisdom, also called phronesis, and practical intelligence. Said difference isn’t in “selecting the correct means, but reasoning correctly about what ends to follow”.<ref>Stichter, Matt. “Practical Skills and Practical Wisdom in Virtue.” Australasian Journal of Philosophy, 5 Oct. 2015, </ref>
+Tsai puts the argument into a logical proposition as follows:<ref name="Tsai"/>
+* “(P1) An agent is genuinely wise only if the agent can deliberate about the final goal of the domain in which the agent is situated.”
+* “(P2) An intelligent agent cannot deliberate about the final goal of the domain in which the agent is situated.”
+* “(C1) An intelligent agent cannot be genuinely wise.”
+* “(P3) An AW is, at its core, intelligent.”
+* “(C2) An AW cannot be genuinely wise.”
+
+== References ==
+<references/>
+
+== Further reading ==
+{{refbegin|30em}}
+* {{cite journal | last1 = Casacuberta Sevilla | first1 = David | title = The quest for artificial wisdom | year = 2013 | volume = 28 | issue = 2 | pages = 199–207 | journal =  AI & Society| doi = 10.1007/s00146-012-0390-6 | s2cid = 17183036 }}
+* {{cite journal | last1 = Davis | first1 = Joshua P. | title = Artificial wisdom? A potential limit on AI in law (and elsewhere) | year = 2019 | volume = 72 | issue = 1 | journal =  Oklahoma Law Review| doi = 10.2139/ssrn.3350600 | s2cid = 172032989 | url = https://digitalcommons.law.ou.edu/cgi/viewcontent.cgi?article=1377&context=olr | url-access = subscription }}
+* {{cite journal | last1 = Tsai | first1 = Cheng-hung | title = Artificial wisdom: a philosophical framework | year = 2020 | journal =  AI & Society| volume = 35 | issue = 4 | pages = 937–944 | doi = 10.1007/s00146-020-00949-5 | s2cid = 211234659 }}
+* {{cite book | author1= Siddike M.A.K., Iwano K., Hidaka K., Kohda Y., Spohrer J. | chapter = Wisdom Service Systems: Harmonious Interactions Between People and Machine | series = Advances in Intelligent Systems and Computing | title = Advances in the Human Side of Service Engineering | year = 2018 | volume = 601 | pages = 115–127 | doi = 10.1007/978-3-319-60486-2_11 | isbn = 978-3-319-60485-5 }}
+* {{Cite journal |title=An AI That Knows the World Like Children Do <!--magazine article title: "Making AI More Human" --> |url=https://www.scientificamerican.com/article/an-ai-that-knows-the-world-like-children-do/ |first= Alison |last=Gopnik |author-link=Alison Gopnik |date=June 2017 |journal=Scientific American |volume=316 |number=6 |pages=60–65 |doi=10.1038/scientificamerican0617-60|pmid=28510556 |url-access=subscription }}
+*{{Cite journal |journal=Scientific American |doi=10.1038/scientificamerican0317-58 |date=March 2017 |volume=316 |number=3 |pages=58–63 |first=Gary |last=Marcus |title=The Search for a New Test of Artificial Intelligence <!--magazine article title: "Am I Human?"-->
+
+ |pmid=28207697 |url=https://www.scientificamerican.com/article/the-search-for-a-new-test-of-artificial-intelligence/ |quote=A stumbling block to AI has been an incapacity for reliable disambiguation. An example is the "pronoun disambiguation problem": a machine has no way of determining to whom or what a pronoun in a sentence refers.|url-access=subscription }}
+* {{cite journal | last1 = San Segundo | first1 = Rosa | title = A new concept of knowledge | year = 2002 | volume = 26 | issue = 4 | pages = 239–245 | journal = Online Information Review | doi = 10.1108/14684520210438688 | hdl = 10016/4490 | hdl-access = free }}
+* {{Cite journal |author-link=George Musser |first=George |last=Musser |title=Machine Learning Gets a Bit More Humanlike <!--magazine article title: "Artificial Imagination"--> |date=May 2019 |journal=Scientific American |volume=320 |number=5 |pages=58–64 |url=https://www.scientificamerican.com/article/machine-learning-gets-a-bit-more-humanlike/ |doi=10.1038/scientificamerican0519-58|pmid=39010629 |url-access=subscription }}
+* {{cite journal | last1 = Serenko | first1 = Alexander | author2=Michael Dohan | year = 2011 | title = Comparing the expert survey and citation impact journal ranking methods: Example from the field of Artificial Intelligence | url = http://www.aserenko.com/papers/JOI_AI_Journal_Ranking_Serenko.pdf | journal = Journal of Informetrics | volume = 5 | issue = 4| pages = 629–649 | doi = 10.1016/j.joi.2011.06.002}}
+
+{{refend}}
+
+{{Existential_risk_from_artificial_intelligence}}
+{{Philosophy of mind}}
+{{Cybernetics}}
+{{Computer science}}
+{{Evolutionary computation}}
+{{emerging technologies|topics=yes|infocom=yes}}
+{{Glossaries of science and engineering}}
+{{Authority control}}
+
+[[Category:Artificial intelligence]]
+[[Category:Cybernetics]]
+[[Category:Formal sciences]]
+[[Category:Computational neuroscience]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Computational fields of study]]

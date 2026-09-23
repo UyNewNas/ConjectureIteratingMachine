@@ -1,0 +1,24 @@
+In [[model theory]], '''Tarski's exponential function problem''' asks whether the [[Theory (mathematical logic)|theory]] of the [[real number]]s together with the [[exponential function]] is [[Decidability (logic)#Decidability of a theory|decidable]]. [[Alfred Tarski]] had previously shown that the [[Decidability of first-order theories of the real numbers|theory of the real numbers (without the exponential function) is decidable]].<ref>{{Cite web |last=Kuhlmann |first=S. |title=Model theory of the real exponential function |url=https://encyclopediaofmath.org/index.php?title=Model_theory_of_the_real_exponential_function |access-date=2024-08-07 |website=Encyclopedia of Mathematics |publisher=Springer-Verlag |place=Heidelberg}}</ref>
+
+==The problem==
+
+The ordered real field <math>\R</math> is a structure over the language of [[ordered ring]]s <math>L_{\text{or}}=(+,-,<,0,1)</math>, with the usual interpretation given to each symbol.  It was proved by Tarski that the theory of the [[Real closed field|real field]], <math>\operatorname{Th}(\R)</math>, is decidable.  That is, given any <math>L_{\text{or}}</math>-sentence <math>\varphi</math> there is an effective procedure for determining whether
+
+:<math>\R\models\varphi.</math>
+
+He then asked whether this was still the case if one added a unary function <math>\exp</math> to the language that was interpreted as the [[exponential function]] on <math>\R</math>, to get the structure <math>\R_{\exp}</math>.
+
+==Conditional and equivalent results==
+The problem can be reduced to finding an effective procedure for determining whether any given [[exponential polynomial]] in <math>n</math> variables and with coefficients in <math>\Z</math> has a solution in <math>\R^n</math>.  {{harvtxt|Macintyre|Wilkie|1996}} showed that [[Schanuel's conjecture]] implies such a procedure exists, and hence gave a conditional solution to Tarski's problem.<ref>{{Cite book |last1=Macintyre |first1=Angus |author-link=Angus Macintyre |title=On the Decidability of the Real Exponential Field, in: Kreiseliana: about and around Georg Kreisel |last2=Wilkie |first2=Alex |author-link2=Alex Wilkie |publisher=A K Peters |year=1996 |isbn=9781568810614 |editor-last=Oddifreddi |editor-first=Piergiorgio |editor-link=Piergiorgio Odifreddi |location=Wellesley, MA |pages=441–467 |language=en |mr=1435773 |zbl=0896.03012}}</ref> Schanuel's conjecture deals with all complex numbers so would be expected to be a stronger result than the decidability of <math>\R_{\exp}</math>, and indeed, Macintyre and Wilkie proved that only a real version of Schanuel's conjecture is required to imply the decidability of this theory.
+
+Even the real version of Schanuel's conjecture is not a [[Necessary and sufficient condition|necessary condition]] for the decidability of the theory.  In their paper, Macintyre and Wilkie showed that an equivalent result to the decidability of <math>\operatorname{Th}(\R_{\exp})</math> is what they dubbed the weak Schanuel's conjecture.  This conjecture states that there is an effective procedure that, given <math>n\ge 1</math> and exponential polynomials in <math>n</math> variables with integer coefficients <math>f_1,\dots, f_n, g</math>, produces an integer <math>\eta\ge 1</math> that depends on <math>n, f_1,\dots, f_n, g</math>, and such that if <math>\alpha\in\R^n</math> is a [[Singular point of a curve|non-singular]] solution of the system
+
+:<math>f_1(x_1,\ldots,x_n,e^{x_1},\ldots,e^{x_n})=\ldots=f_n(x_1,\ldots,x_n,e^{x_1},\ldots,e^{x_n})=0</math>
+
+then either <math>g(\alpha)=0</math> or <math>|g(\alpha)|>\tfrac{1}{\eta}</math>.
+
+==References==
+{{Reflist}}
+
+[[Category:Model theory]]
+[[Category:Unsolved problems in mathematics]]

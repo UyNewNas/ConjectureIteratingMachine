@@ -1,0 +1,1562 @@
+{{Short description|Square of numbers with equal row, column and diagonal totals}}
+{{About|mathematical arrays|the association football formation|Formation (association football)#4–2–2–2 (magic rectangle)}}
+
+[[Image:Magicsquareexample.svg|thumb|The smallest (and unique [[up to]] rotation and reflection) non-trivial case of a magic square, order 3, magic sum 15]]
+
+In [[mathematics]], especially [[History of mathematics|historical]] and [[recreational mathematics]], a '''magic square''' is a square array of numbers, usually [[positive integer]]s, where the sums of the numbers in each row, each column, and both main diagonals are the same.<ref>{{cite web | url = http://jeff560.tripod.com/m.html | title = Earlier Known Uses of Some of the Words of Mathematics (M) | date = September 3, 2016 | first = Jeff | last = Miller}}</ref><ref>{{cite book | first = Steven | last = Schwartzman | url = {{google books|id=iuoZSkSOBQsC|page=130|plainurl=yes}} | title = The Words of Mathematics: An Etymological Dictionary of Mathematical Terms Used in English | page = 130 | publisher = MAA | date = 1994 }}</ref> The ''order'' of a magic square is the number of integers along one side (''n''), and the constant sum is called the ''[[magic constant]]'' or ''magic sum''. If the array includes just the positive integers <math>1,2,...,n^2</math>, the magic square is said to be ''normal''. Many authors take magic square to mean normal magic square.
+
+Magic squares that include repeated entries do not fall under this definition and are referred to as ''trivial''. Some well-known examples, including the [[#Sagrada Família magic square|Sagrada Família magic square]] are trivial in this sense. When all the rows and columns but not both diagonals sum to the magic constant, this gives a ''semimagic square'' (sometimes called ''orthomagic square'').
+
+The mathematical study of magic squares typically deals with its construction, classification, and enumeration. Although completely general methods for producing all the magic squares of all orders do not exist, historically three general techniques have been discovered: by bordering, by making composite magic squares, and by adding two preliminary squares. There are also more specific strategies like the continuous enumeration method that reproduces specific patterns. Magic squares are generally classified according to their order ''n'' as: odd if ''n'' is odd, evenly even (also referred to as "doubly even") if ''n'' is a multiple of 4, oddly even (also known as "singly even") if ''n'' is any other even number. This classification is based on different techniques required to construct odd, evenly even, and oddly even squares. Beside this, depending on further properties, magic squares are also classified as [[associative magic square]]s, [[pandiagonal magic square]]s, [[most-perfect magic square]]s, and so on. More challengingly, attempts have also been made to classify all the magic squares of a given order as transformations of a smaller set of squares. Except for ''n'' ≤ 5, the enumeration of higher-order magic squares is still an open challenge. The enumeration of most-perfect magic squares of any order was only accomplished in the late 20th century.
+
+Magic squares have a long history, dating back to at least 190 BCE in China{{citation needed|date=May 2026}}. At various times they have acquired occult or mythical significance, and have appeared as symbols in works of art. In modern times they have been generalized a number of ways, including using extra or different constraints, multiplying instead of adding cells, using alternate shapes or more than two dimensions, and replacing numbers with shapes and addition with geometric operations.
+[[File:Dürer Melancholia I.jpg|thumb|''[[Melencolia I]] ([[Albrecht Dürer]], 1514)'' includes an order 4 square with magic sum 34]]
+[[File:Albrecht Dürer - Melencolia I (detail).jpg|thumb|alt=An order 4 magic square, detail from Albrecht Dürer's Melencolia I.|An order 4 magic square, detail from ''[[Melencolia I]]''.]]
+
+==History==
+[[File:Yuan dynasty iron magic square.jpg|thumb|right|220px|Iron plate with an order-6 magic square in [[Eastern Arabic numerals]] from China, dating to the [[Yuan Dynasty]] (1271–1368).]]
+The third-order magic square was known to [[List of Chinese mathematicians|Chinese mathematicians]] as early as 190 BCE, and explicitly given by the first century of the common era. The first dateable instance of the fourth-order magic square occurred in 550 CE in [[India]]. Specimens of magic squares of order 3 to 9 appear in an encyclopedia from [[Baghdad]] {{circa|983}}, the ''[[Encyclopedia of the Brethren of Purity]]'' (''Rasa'il Ikhwan al-Safa''). By the end of the 12th century, the general methods for constructing magic squares were well established. Around this time, some of these squares were increasingly used in conjunction with magic letters, as in [[Shams Al-ma'arif]], for occult purposes.<ref>The most famous Arabic book on magic, named "Shams Al-ma'arif ({{langx|ar|كتاب شمس المعارف}}), for [[Ahmed bin Ali Al-boni]], who died about 1225 (622 AH). Reprinted in [[Beirut]] in 1985</ref> In India, all the fourth-order pandiagonal magic squares were enumerated by Narayana in 1356. Magic squares were made known to Europe through translation of Arabic sources as occult objects during the Renaissance, and the general theory had to be re-discovered independent of prior developments in China, India, and Middle East. Also notable are the ancient cultures with a tradition of mathematics and numerology that did not discover the magic squares: Greeks, Babylonians, Egyptians, and Pre-Columbian Americans.
+
+Magic squares also appear in art. For example, a magic square appears in Albrecht Dürer's ''Melencolia'' (see the photograph of the work). Another one appears in Wilfredo Lam's ''Bélial, Emperor of the Flies'', a magic square is seen in the lower left quadrant of the painting.<ref>Veronica Simpson. (Sept. 14, 2016). The EY Exhibition: Wifredo Lam ''Studio International''</ref> 
+
+===China===
+[[File:Suanfatongzong-790-790.jpg|thumb|right|220px|A page displaying 9×9 magic square from Cheng Dawei's ''Suanfa tongzong'' (1593).]]
+
+While ancient references to the pattern of even and odd numbers in the 3×3 magic square appear in the ''[[I Ching]]'', the first unequivocal instance of this magic square appears in the chapter called ''Mingtang'' (Bright Hall) of a 1st-century book ''Da Dai Liji'' (Record of Rites by the Elder Dai), which purported to describe ancient Chinese rites of the Zhou dynasty.<ref name="Yoke">{{cite book |last=Yoke |first=Ho Peng | series=Encyopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures | date=2008 | edition=2 | pages=1252–1259| publisher=Springer |doi=10.1007/978-1-4020-4425-0_9350 |title=Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures |isbn=978-1-4020-4559-2 |chapter=Magic Squares in China }}</ref> 
+<ref name="Andrews122">{{cite book |last=Andrews |first=William Symes |title=Magic Squares and Cubes |publisher=Open Court Publishing Company| date=1917| edition=2nd| page=122| url=https://archive.org/details/MagicSquaresAndCubes_754}}</ref><ref name="Cammann">{{cite journal| last = Cammann | first= Schuyler| title=The Evolution of Magic Squares in China | journal=Journal of the American Oriental Society | volume = 80 | issue = 2 | pages= 116–124| date=April 1960 | url= http://www.chinesehsc.org/downloads/cammann/camman_the_evolution_of_magic_squares_in_china.pdf| doi= 10.2307/595587| jstor= 595587}}</ref><ref name="Swetz2008"/> These numbers also occur in a possibly earlier mathematical text called ''Shushu jiyi'' (Memoir on Some Traditions of Mathematical Art), said to be written in 190 BCE. This is the earliest appearance of a magic square on record; and it was mainly used for divination and astrology.<ref name="Yoke"/> The 3×3 magic square was referred to as the "Nine Halls" by earlier Chinese mathematicians.<ref name="Cammann"/> The identification of the 3×3 magic square to the legendary Luoshu chart was only made in the 12th century, after which it was referred to as the Luoshu square.<ref name="Yoke"/><ref name="Cammann"/> The oldest surviving Chinese treatise that displays magic squares of order larger than 3 is [[Yang Hui]]'s ''Xugu zheqi suanfa'' (Continuation of Ancient Mathematical Methods for Elucidating the Strange) written in 1275.<ref name="Yoke"/><ref name="Cammann"/> The contents of Yang Hui's treatise were collected from older works, both native and foreign; and he only explains the construction of third and fourth-order magic squares, while merely passing on the finished diagrams of larger squares.<ref name="Cammann"/> He gives a magic square of order 3, two squares for each order of 4 to 8, one of order nine, and one semi-magic square of order 10. He also gives six magic circles of varying complexity.<ref name="Connor">{{cite web |url= http://www-groups.dcs.st-and.ac.uk/~history/Biographies/Yang_Hui.html|title= Yang Hui|last1= O'Connor|first1= J.J. | last2 = Robertson| first2 = E.F. |website=MacTutor History of Mathematics Archive |access-date= 15 March 2018}}</ref>
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=top}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 4 || 9 || 2
+|-
+| 3 || 5 || 7
+|-
+| 8 || 1 || 6
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 2 || 16 || 13 || 3
+|-
+| 11 || 5 || 8 || 10
+|- 
+| 7 || 9 || 12 || 6
+|-
+| 14 || 4 || 1 || 15
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 23 || 16 || 4 || 21
+|-
+| 15 || style="background-color: silver;"|14 || style="background-color: silver;"|7 || style="background-color: silver;"|18 || 11
+|-
+| 24 || style="background-color: silver;"|17 || style="background-color: silver;"|13 || style="background-color: silver;"|9 || 2 
+|-
+| 20 || style="background-color: silver;"|8 || style="background-color: silver;"|19 || style="background-color: silver;"|12 || 6
+|-
+| 5 || 3 || 10 || 22 || 25
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|13 || style="background-color: silver;"|22 || 18 || 27 || style="background-color: silver;"|11 || style="background-color: silver;"|20
+|-
+| style="background-color: silver;"|31 || style="background-color: silver;"|'''4''' || 36 || '''9''' || style="background-color: silver;"|29 || style="background-color: silver;"|'''2'''
+|-
+| 12 || 21 || style="background-color: silver;"|14 || style="background-color: silver;"|23 || 16 || 25 
+|-
+| 30 || '''3''' || style="background-color: silver;"|'''5''' || style="background-color: silver;"|32 || 34 || '''7'''
+|-
+| style="background-color: silver;"|17 || style="background-color: silver;"|26 || 10 || 19 || style="background-color: silver;"|15 || style="background-color: silver;"|24 
+|-
+| style="background-color: silver;"|'''8''' || style="background-color: silver;"|35 || 28 || '''1''' || style="background-color: silver;"|'''6''' || style="background-color: silver;"|33
+|}
+{{col-end}}
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|46 || style="background-color: silver;"|8 || style="background-color: silver;"|16 || style="background-color: silver;"|20 || style="background-color: silver;"|29 || style="background-color: silver;"|7 || style="background-color: silver;"|49
+|-
+| style="background-color: silver;"|3 || 40 || 35 || 36 || 18 || 41 || style="background-color: silver;"|2
+|-
+| style="background-color: silver;"|44 || 12 || style="background-color: silver;"|33 || style="background-color: silver;"|23 || style="background-color: silver;"|19 || 38 || style="background-color: silver;"|6 
+|-
+| style="background-color: silver;"|28 || 26 || style="background-color: silver;"|11 || style="background-color: silver;"|25 || style="background-color: silver;"|39 || 24 || style="background-color: silver;"|22
+|-
+| style="background-color: silver;"|5 || 37 || style="background-color: silver;"|31 || style="background-color: silver;"|27 || style="background-color: silver;"|17 || 13 || style="background-color: silver;"|45 
+|-
+| style="background-color: silver;"|48 || 9 || 15 || 14 || 32 || 10 || style="background-color: silver;"|47 
+|-
+| style="background-color: silver;"|1 || style="background-color: silver;"|43 || style="background-color: silver;"|34 || style="background-color: silver;"|30 || style="background-color: silver;"|21 || style="background-color: silver;"|42 || style="background-color: silver;"|4
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 61 || 3 || 2 || 64 || style="background-color: silver;"|57 || style="background-color: silver;"|7 || style="background-color: silver;"|6 || style="background-color: silver;"|60
+|-
+| 12 || 54 || 55 || 9 || style="background-color: silver;"|16 || style="background-color: silver;"|50 || style="background-color: silver;"|51 || style="background-color: silver;"|13
+|-
+| 20 || 46 || style="border-left:double; border-top:double;"|47 || style="border-top:double;"|17 || style="background-color: silver; border-top:double;"|24 || style="background-color: silver; border-top:double; border-right:double;"|42 || style="background-color: silver;"|43 || style="background-color: silver;"|21 
+|-
+| 37 || 27 || style="border-left:double;"|26 || 40 || style="background-color: silver;"|33 || style="background-color: silver; border-right:double;"|31 || style="background-color: silver;"|30 || style="background-color: silver;"|36
+|-
+| style="background-color: silver;"|29 || style="background-color: silver;"|35 || style="background-color: silver; border-left:double;"|34 || style="background-color: silver;"|32 || 25 || style="border-right:double;"|39 || 38 || 28 
+|-
+| style="background-color: silver;"|44 || style="background-color: silver;"|22 || style="background-color: silver; border-left:double; border-bottom:double;"|23 || style="background-color: silver; border-bottom:double;"|41 || style="border-bottom:double;"|48 || style="border-right:double; border-bottom:double;"|18 || 19 || 45 
+|-
+| style="background-color: silver;"|52 || style="background-color: silver;"|14 || style="background-color: silver;"|15 || style="background-color: silver;"|49 || 56 || 10 || 11 || 53 
+|-
+| style="background-color: silver;"|5 || style="background-color: silver;"|59 || style="background-color: silver;"|58 || style="background-color: silver;"|8 || 1 || 63 || 62 || 4 
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|31 || style="background-color: silver;"|76 || style="background-color: silver;"|13 || 36 || 81 || 18 || style="background-color: silver;"|29 || style="background-color: silver;"|74 || style="background-color: silver;"|11
+|-
+| style="background-color: silver;"|22 || style="background-color: silver;"|40 || style="background-color: silver;"|58 || 27 || 45 || 63 || style="background-color: silver;"|20 || style="background-color: silver;"|38 || style="background-color: silver;"|56
+|-
+| style="background-color: silver;"|67 || style="background-color: silver;"|'''4''' || style="background-color: silver;"|49 || 72 || '''9''' || 54 || style="background-color: silver;"|65 || style="background-color: silver;"|'''2''' || style="background-color: silver;"|47
+|-
+| 30 || 75 || 12 || style="background-color: silver;"|32 || style="background-color: silver;"|77 || style="background-color: silver;"|14 || 34 || 79 || 16
+|-
+| 21 || 39 || 57 || style="background-color: silver;"|23 || style="background-color: silver;"|41 || style="background-color: silver;"|59 || 25 || 43 || 61
+|-
+| 66 || '''3''' || 48 || style="background-color: silver;"|68 || style="background-color: silver;"|'''5''' || style="background-color: silver;"|50 || 70 || '''7''' || 52
+|-
+| style="background-color: silver;"|35 || style="background-color: silver;"|80 || style="background-color: silver;"|17 || 28 || 73 || 10 || style="background-color: silver;"|33 || style="background-color: silver;"|78 || style="background-color: silver;"|15
+|-
+| style="background-color: silver;"|26 || style="background-color: silver;"|44 || style="background-color: silver;"|62 || 19 || 37 || 55 || style="background-color: silver;"|24 || style="background-color: silver;"|42 || style="background-color: silver;"|60
+|-
+| style="background-color: silver;"|71 || style="background-color: silver;"|'''8''' || style="background-color: silver;"|53 || 64 || '''1''' || 46 || style="background-color: silver;"|69 || style="background-color: silver;"|'''6''' || style="background-color: silver;"|51
+|}
+{{col-end}}
+
+The above magic squares of orders 3 to 9 are taken from Yang Hui's treatise, in which the Luo Shu principle is clearly evident.<ref name="Cammann"/><ref name="Swetz2008"/> The order 5 square is a bordered magic square, with central 3×3 square formed according to Luo Shu principle. The order 9 square is a composite magic square, in which the nine 3×3 sub squares are also magic.<ref name="Cammann"/> After Yang Hui, magic squares frequently occur in [[Chinese mathematics]] such as in Ding Yidong's ''Dayan suoyin'' ({{circa|1300}}), [[Cheng Dawei]]'s ''[[Suanfa tongzong]]'' (1593), Fang Zhongtong's ''Shuduyan'' (1661) which contains magic circles, cubes and spheres, Zhang Chao's ''Xinzhai zazu'' ({{circa|1650}}), who published China's first magic square of order ten, and lastly Bao Qishou's ''Binaishanfang ji'' ({{circa|1880}}), who gave various three dimensional magic configurations.<ref name="Yoke"/><ref name="Swetz2008"/> However, despite being the first to discover the magic squares and getting a head start by several centuries, the Chinese development of the magic squares are much inferior compared to the Indian, Middle Eastern, or European developments. The high point of Chinese mathematics that deals with the magic squares seems to be contained in the work of Yang Hui; but even as a collection of older methods, this work is much more primitive, lacking general methods for constructing magic squares of any order, compared to a similar collection written around the same time by the Byzantine scholar [[Manuel Moschopoulos]].<ref name="Cammann"/> This is possibly because of the Chinese scholars' enthralment with the Lo Shu principle, which they tried to adapt to solve higher squares; and after Yang Hui and the fall of [[Yuan dynasty]], their systematic purging of the foreign influences in Chinese mathematics.<ref name="Cammann"/>
+
+===Japan===
+Japan and China have similar mathematical traditions and have repeatedly influenced each other in the history of magic squares.<ref>[https://core.ac.uk/download/pdf/161528551.pdf The Influence of Chinese Mathematical Arts on Seki Kowa] by Shigeru Jochi, MA, School of Oriental and African Studies, University of London, 1993</ref> The Japanese interest in magic squares began after the dissemination of Chinese works—Yang Hui's ''Suanfa'' and Cheng Dawei's ''Suanfa tongzong''—in the 17th century, and as a result, almost all the ''[[Japanese mathematics|wasans]]'' devoted their time to its study.
+
+In the 1660 edition of ''Ketsugi-sho'', Isomura Kittoku gave both odd and even ordered bordered magic squares as well as magic circles; while the 1684 edition of the same book contained a large section on magic squares, demonstrating that he had a general method for constructing bordered magic squares.<ref name="DESmith69">{{cite book |last1=Smith |first1=David Eugene | last2 = Mikami | first2= Yoshio |title=A history of Japanese mathematics |publisher=Open Court Publishing Company| date=1914| page=[https://archive.org/details/in.ernet.dli.2015.161063/page/n74 69]–75| url=https://archive.org/details/in.ernet.dli.2015.161063|quote=Isomura Kittoku.}}</ref> In ''Jinko-ki'' (1665) by Muramatsu Kudayu Mosei, both magic squares and magic circles are displayed. The largest square Mosei constructs is of 19th order. Various magic squares and magic circles were also published by Nozawa Teicho in ''Dokai-sho'' (1666), Sato Seiko in ''Kongenki'' (1666), and Hosino Sanenobu in ''Ko-ko-gen Sho'' (1673).<ref name="DESmith79">{{cite book |last1=Smith |first1=David Eugene | last2 = Mikami | first2= Yoshio |title=A history of Japanese mathematics |publisher=Open Court Publishing Company| date=1914| page=[https://archive.org/details/in.ernet.dli.2015.161063/page/n84 79]–80 | url=https://archive.org/details/in.ernet.dli.2015.161063|quote=Isomura Kittoku.}}</ref> One of [[Seki Takakazu]]'s ''Seven Books'' (''Hojin Yensan'') (1683) is devoted completely to magic squares and circles. This is the first Japanese book to give a general treatment of magic squares in which the algorithms for constructing odd, singly even and doubly even bordered magic squares are clearly described.<ref name="DESmith116">{{cite book |last1=Smith |first1=David Eugene | last2 = Mikami | first2= Yoshio |title=A history of Japanese mathematics |publisher=Open Court Publishing Company| date=1914| page=[https://archive.org/details/in.ernet.dli.2015.161063/page/n121 116]–122| url=https://archive.org/details/in.ernet.dli.2015.161063|quote=Isomura Kittoku.}}</ref> In 1694 and 1695, Yueki Ando gave different methods to create the magic squares and displayed squares of order 3 to 30. A fourth-order magic cube was constructed by Yoshizane Tanaka (1651–1719) in ''Rakusho-kikan'' (1683). The study of magic squares was continued by Seki's pupils, notably by Katahiro Takebe, whose squares were displayed in the fourth volume of ''Ichigen Kappo'' by Shukei Irie, Yoshisuke Matsunaga in ''Hojin-Shin-jutsu'', Yoshihiro Kurushima in ''Kyushi Iko'' who rediscovered a method to produce the odd squares given by Agrippa,<ref name="DESmith178">{{cite book |last1=Smith |first1=David Eugene | last2 = Mikami | first2= Yoshio |title=A history of Japanese mathematics |publisher=Open Court Publishing Company| date=1914| page=[https://archive.org/details/in.ernet.dli.2015.161063/page/n183 178]| url=https://archive.org/details/in.ernet.dli.2015.161063|quote=Isomura Kittoku.}}</ref> and [[Ajima Naonobu|Naonobu Ajima]].<ref name="Michiwaki">{{cite book |last=Michiwaki |first=Yoshimasa | series=Encyopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures | date=2008 | edition=2 | pages=1252–1259| publisher=Springer |doi=10.1007/978-1-4020-4425-0_9154 |title=Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures |isbn=978-1-4020-4559-2 |chapter=Magic Squares in Japanese Mathematics }}</ref><ref name="Mikami">{{cite book |last=Mikami |first=Yoshio | title=Magic squares in Japanese mathematics |publisher=Imperial Academy of Science| date=1917 | location=Tokyo | language=ja | url=https://books.google.com/books?id=sU1tAAAAMAAJ&q=Isomura++Kittoku}}</ref> Thus by the beginning of the 18th century, the Japanese mathematicians were in possession of methods to construct magic squares of arbitrary order. After this, attempts at enumerating the magic squares was initiated by Nushizumi Yamaji.<ref name="Mikami"/>
+
+===India===
+[[File:Hindi Manuscript 317, folio 2b Wellcome L0024035.jpg|thumb|right|220px|The 3×3 magic square in different orientations forming a non-normal 6×6 magic square, from an unidentified 19th century Indian manuscript.]]
+The 3×3 magic square first appears in India in ''Gargasamhita'' by Garga, who recommends its use to pacify the nine planets (''navagraha''). The oldest version of this text dates from 100 CE, but the passage on planets could not have been written earlier than 400 CE. The first dateable instance of 3×3 magic square in India occur in a medical text ''Siddhayog'' ({{Circa|966 CE}}) by Vrnda, which was prescribed to women in labor in order to have easy delivery.<ref name="Hayashi"/>
+
+The oldest dateable fourth order magic square in the world is found in an encyclopaedic work written by [[Varāhamihira|Varahamihira]] around 550 CE called ''Brhat Samhita''. The magic square is constructed for the purpose of making perfumes using 4 substances selected from 16 different substances. Each cell of the square represents a particular ingredient, while the number in the cell represents the proportion of the associated ingredient, such that the mixture of any four combination of ingredients along the columns, rows, diagonals, and so on, gives the total volume of the mixture to be 18. Although the book is mostly about divination, the magic square is given as a matter of combinatorial design, and no magical properties are attributed to it. The special features of this magic square were commented on by [[Bhattotpala]] ({{Circa|900 CE}})<ref name="Datta"/><ref name="Hayashi">{{cite book |last=Hayashi |first=Takao | date=2008 | edition=2 | pages=1252–1259| publisher=Springer |doi=10.1007/978-1-4020-4425-0_9778 |title=Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures |isbn=978-1-4020-4559-2 |chapter=Magic Squares in Indian Mathematics }}</ref> 
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=top}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 2 || 3 || 5 || 8
+|-
+| 5 || 8 || 2 || 3
+|-
+| 4 || 1 || 7 || 6
+|-
+| 7 || 6 || 4 || 1
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 10 || 3 || 13 || 8
+|-
+| 5 || 16 || 2 || 11
+|-
+| 4 || 9 || 7 || 14
+|-
+| 15 || 6 || 12 || 1
+|}
+{{col-end}}
+
+The square of Varahamihira as given above has sum of 18. Here the numbers 1 to 8 appear twice in the square. It is a [[pandiagonal magic square|pan-diagonal magic square]]. Four different magic squares can be obtained by adding 8 to one of the two sets of 1 to 8 sequence. The sequence is selected such that the number 8 is added exactly twice in each row, each column and each of the main diagonals. One of the possible magic squares shown in the right side. This magic square is remarkable in that it is a 90 degree rotation of a magic square that appears in the 13th century Islamic world as one of the most popular magic squares.<ref name="Hayashi1">{{cite journal |last=Hayashi |first=Takao |title=Varahamihira's Pandiagonal Magic Square of the Order Four | journal=Historia Mathematica | date=1987 | volume=14 | 
+ issue=2 | pages=159–166| url=https://core.ac.uk/download/pdf/82500954.pdf |doi=10.1016/0315-0860(87)90019-X |doi-access=free }}</ref>
+
+The construction of 4th-order magic square is detailed in a work titled ''Kaksaputa'', composed by the alchemist [[Nagarjuna (metallurgist)|Nagarjuna]] around 10th century CE. All of the squares given by Nagarjuna are 4×4 magic squares, and one of them is called ''Nagarjuniya'' after him. Nagarjuna gave a method of constructing 4×4 magic square using a primary skeleton square, given an odd or even magic sum.<ref name="Datta">{{cite journal |last1=Datta |first1=Bibhutibhusan |last2=Singh |first2=Awadhesh Narayan |title=Magic Squares in India |journal=Indian Journal of History of Science |date=1992 |volume=27 |issue=1 |pages=51–120 |url=http://124.108.19.235:12000/jspui/bitstream/123456789/11663/1/Vol27_1_5_BDatta.pdf |access-date=2018-01-16 |archive-url=https://web.archive.org/web/20180117131236/http://124.108.19.235:12000/jspui/bitstream/123456789/11663/1/Vol27_1_5_BDatta.pdf |archive-date=2018-01-17 }}</ref> The Nagarjuniya square is given below, and has the sum total of 100.
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=top}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 30 || 16 || 18 || 36
+|-
+| 10 || 44 || 22 || 24
+|-
+| 32 || 14 || 20 || 34
+|-
+| 28 || 26 || 40 || 6
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| '''7''' || 1 || '''4''' || 6
+|-
+| '''2''' || 8 || '''5''' || 3
+|-
+| 5 || '''3''' || 2 || '''8'''
+|-
+| 4 || '''6''' || 7 || '''1'''
+|}
+{{col-end}}
+
+The Nagarjuniya square is a [[pandiagonal magic square|pan-diagonal magic square]]. It is made up of two arithmetic progressions starting from 6 and 16 with eight terms each, with a common difference between successive terms as 4. When these two progressions are reduced to the normal progression of 1 to 8, the adjacent square is obtained.
+
+Around 12th-century, a 4×4 magic square was inscribed on the wall of [[Parshvanatha temple, Khajuraho|Parshvanath]] temple in [[Khajuraho]], India. Several Jain hymns teach how to make magic squares, although they are undateable.<ref name="Hayashi"/>
+
+As far as is known, the first systematic study of magic squares in India was conducted by [[Thakkar Pheru]], a Jain scholar, in his ''Ganitasara Kaumudi'' (c. 1315). This work contains a small section on magic squares which consists of nine verses. Here he gives a square of order four, and alludes to its rearrangement; classifies magic squares into three (odd, evenly even, and oddly even) according to its order; gives a square of order six; and prescribes one method each for constructing even and odd squares. For the even squares, Pheru divides the square into component squares of order four, and puts the numbers into cells according to the pattern of a standard square of order four. For odd squares, Pheru gives the method using [[Knight (chess)|horse move or knight's move]]. Although algorithmically different, it gives the same square as the De la Loubere's method.<ref name="Hayashi"/>
+
+The next comprehensive work on magic squares was taken up by [[Narayana Pandit]], who in the fourteenth chapter of his ''Ganita Kaumudi'' (1356) gives general methods for their construction, along with the principles governing such constructions. It consists of 55 verses for rules and 17 verses for examples. Narayana gives a method to construct all the pan-magic squares of fourth order using knight's move; enumerates the number of pan-diagonal magic squares of order four, 384, including every variation made by rotation and reflection; three general methods for squares having any order and constant sum when a standard square of the same order is known; two methods each for constructing evenly even, oddly even, and odd squares when the sum is given. While Narayana describes one older method for each species of square, he claims the method of [[Superposition principle|superposition]] for evenly even and odd squares and a method of interchange for oddly even squares to be his own invention. The superposition method was later re-discovered by [[De la Hire]] in Europe. In the last section, he conceives of other figures, such as circles, rectangles, and hexagons, in which the numbers may be arranged to possess properties similar to those of magic squares.<ref name="Datta"/><ref name="Hayashi"/> Below are some of the magic squares constructed by Narayana:<ref name="Datta"/>
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=top}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 8 || 1 || 6
+|-
+| 3 || 5 || 7
+|-
+| 4 || 9 || 2
+|} 
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 14 || 4 || 15
+|-
+| 8 || 11 || 5 || 10
+|-
+| 13 || 2 || 16 || 3
+|-
+| 12 || 7 || 9 || 6
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 16 || 14 || 7 || 30 || 23
+|-
+| 24 || 17 || 10 || 8 || 31
+|-
+| 32 || 25 || 18 || 11 || 4
+|-
+| 5 || 28 || 26 || 19 || 12
+|-
+| 13 || 6 || 29 || 22 || 20
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 35 || 4 || 33 || 32 || 6
+|-
+| 25 || 11 || 9 || 28 || 8 || 30
+|-
+| 24 || 14 || 18 || 16 || 17 || 22
+|-
+| 13 || 23 || 19 || 21 || 20 || 15
+|-
+| 12 || 26 || 27 || 10 || 29 || 7
+|-
+| 36 || 2 || 34 || 3 || 5 || 31
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 35 || 26 || 17 || 1 || 62 || 53 || 44
+|-
+| 46 || 37 || 21 || 12 || 3 || 64 || 55
+|-
+| 57 || 41 || 32 || 23 || 14 || 5 || 66
+|-
+| 61 || 52 || 43 || 34 || 25 || 16 || 7
+|-
+| 2 || 63 || 54 || 45 || 36 || 27 || 11
+|-
+| 13 || 4 || 65 || 56 || 47 || 31 || 22
+|-
+| 24 || 15 || 6 || 67 || 51 || 42 || 33
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 60 || 53 || 44 || 37 || 4 || 13 || 20 || 29
+|-
+| 3 || 14 || 19 || 30 || 59 || 54 || 43 || 38
+|-
+| 58 || 55 || 42 || 39 || 2 || 15 || 18 || 31
+|-
+| 1 || 16 || 17 || 32 || 57 || 56 || 41 || 40
+|-
+| 61 || 52 || 45 || 36 || 5 || 12 || 21 || 28
+|-
+| 6 || 11 || 22 || 27 || 62 || 51 || 46 || 35
+|-
+| 63 || 50 || 47 || 34 || 7 || 10 || 23 || 26 
+|-
+| 8 || 9 || 24 || 25 || 64 || 49 || 48 || 33
+|}
+{{col-end}}
+
+The order 8 square is interesting in itself since it is an instance of the most-perfect magic square. Incidentally, Narayana states that the purpose of studying magic squares is to construct ''yantra'', to destroy the ego of bad mathematicians, and for the pleasure of good mathematicians. The subject of magic squares is referred to as ''bhadraganita'' and Narayana states that it was first taught to men by god [[Shiva]].<ref name="Hayashi"/>
+
+===Middle East, North Africa, Muslim Iberia===
+[[File:16th century arabic magic square.jpg|thumb|A 6×6 magic square from ''[[Book of Wonders]]'' (from 16th century manuscript).]]
+Although the early history of magic squares in Persia and Arabia is not known, it has been suggested that they were known in pre-Islamic times.<ref>J. P. Hogendijk, A. I. Sabra, ''The Enterprise of Science in Islam: New Perspectives'', Published by MIT Press, 2003, {{isbn|0-262-19482-1}}, p. xv.</ref> It is clear, however, that the study of magic squares was common in [[Islamic Golden Age|medieval Islam]], and it was thought to have begun after the introduction of [[chess]] into the region.<ref>[[Helaine Selin]], [[Ubiratan D'Ambrosio]], ''Mathematics Across Cultures: The History of Non-Western Mathematics'', Published by Springer, 2001, {{isbn|1-4020-0260-2}}, p. 160.</ref><ref name="Sesiano2003">{{cite journal| last = Sesiano | first= Jacques| title=Construction of magic squares using the knight's move in Islamic mathematics | journal=Archive for History of Exact Sciences | volume = 58 | issue = 1 | pages= 1–20| date=November 2003 | url=http://doc.rero.ch/record/316928/files/407_2003_Article_71.pdf | doi= 10.1007/s00407-003-0071-4| s2cid= 123219466}}</ref><ref name="Sesiano1997">{{cite book| last = Sesiano | first= Jacques| chapter=Magic squares in Islamic mathematics | title=Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures | pages=1259–1260 | date=1997 }}</ref> The first dateable appearance of a magic square of order 3 occurs in [[Jabir ibn Hayyan|Jābir ibn Hayyān]]'s ([[Floruit|fl.]] c. 721 – c. 815) ''Kitab al-mawazin al-Saghir'' (The Small Book of Balances) where the magic square and its related numerology is associated with alchemy.<ref name="Swetz2008"/> While it is known that treatises on magic squares were written in the 9th century, the earliest extant treaties date from the 10th-century: one by [[Buzjani|Abu'l-Wafa al-Buzjani]] ({{circa|998}}) and another by Ali b. Ahmad al-Antaki ({{circa|987}}).<ref name="Sesiano2003"/><ref name="Sesiano2007">{{cite book| last = Sesiano | first= Jacques| title=Magic squares in the tenth century: Two Arabic treatises by Antaki and Buzjani| publisher=Springer | date=2007 }}</ref><ref>Sesiano, J., ''Abūal-Wafā\rasp's treatise on magic squares'' (French), Z. Gesch. Arab.-Islam. Wiss. 12 (1998), 121–244.</ref> These early treatises were purely mathematical, and the Arabic designation for magic squares used is ''wafq al-a'dad'', which translates as ''harmonious disposition of the numbers''.<ref name="Sesiano1997"/> By the end of 10th century, the two treatises by Buzjani and Antaki makes it clear that the Middle Eastern mathematicians had understood how to construct bordered squares of any order as well as simple magic squares of small orders (''n'' ≤ 6) which were used to make composite magic squares.<ref name="Sesiano2003"/><ref name="Sesiano2007"/> A specimen of magic squares of orders 3 to 9 devised by Middle Eastern mathematicians appear in an encyclopedia from [[Baghdad]] {{circa|983}}, the [[Rasa'il Ikhwan al-Safa]] (the ''[[Encyclopedia of the Brethren of Purity]]'').<ref name="Cammann1969a">{{cite journal| last = Cammann | first= Schuyler| title=Islamic and Indian Magic Squares, Part I | journal=History of Religions| volume = 8 | issue = 3 | pages= 181–209| date=February 1969 | doi= 10.1086/462584| s2cid= 162095408}}</ref> The squares of order 3 to 7 from Rasa'il are given below:<ref name="Cammann1969a"/>
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=top}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 2 || 7 || 6
+|-
+| 9 || 5 || 1
+|-
+| 4 || 3 || 8
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|4 || 14 || 15 || style="background-color: silver;"|1
+|-
+| 9 || style="background-color: silver;"|7 || style="background-color: silver;"|6 || 12
+|-
+| 5 || style="background-color: silver;"|11 || style="background-color: silver;"|10 || 8
+|-
+| style="background-color: silver;"|16 || 2 || 3 || style="background-color: silver;"|13
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|21 || 3 || 4 || 12 || style="background-color: silver;"|25
+|-
+| 15 || style="background-color: silver;"|17 || 6 || style="background-color: silver;"|19 || 8
+|-
+| 10 || 24 || style="background-color: silver;"|13 || 2 || 16
+|-
+| 18 || style="background-color: silver;"|7 || 20 || style="background-color: silver;"|9 || 11
+|-
+| style="background-color: silver;"|1 || 14 || 22 || 23 || style="background-color: silver;"|5
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|11 || style="background-color: silver;"|22 || 32 || 5 || style="background-color: silver;"|23 || style="background-color: silver;"|18
+|-
+| style="background-color: silver;"|25 || style="background-color: silver;"|16 || 7 || 30 || style="background-color: silver;"|13 || style="background-color: silver;"|20
+|- 
+| 27 || 6 || 35 || 36 || 4 || 3
+|-
+| 10 || 31 || 1 || 2 || 33 || 34
+|-
+| style="background-color: silver;"|14 || style="background-color: silver;"|19 || 8 || 29 || style="background-color: silver;"|26 || style="background-color: silver;"|15
+|-
+| style="background-color: silver;"|24 || style="background-color: silver;"|17 || 28 || 9 || style="background-color: silver;"|12 || style="background-color: silver;"|21
+|}
+
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|47 || style="background-color: silver;"|11 || style="background-color: silver;"|8 || style="background-color: silver;"|9 || style="background-color: silver;"|6 || style="background-color: silver;"|45 || style="background-color: silver;"|49
+|-
+| style="background-color: silver;"|4 || 37 || 20 || 17 || 16 || 35 || style="background-color: silver;"|46
+|- 
+| style="background-color: silver;"|2 || 18 || style="background-color: silver;"|26 || style="background-color: silver;"|21 || style="background-color: silver;"|28 || 32 || style="background-color: silver;"|48
+|-
+| style="background-color: silver;"|43 || 19 || style="background-color: silver;"|27 || style="background-color: silver;"|25 || style="background-color: silver;"|23 || 31 || style="background-color: silver;"|7
+|-
+| style="background-color: silver;"|38 || 36 || style="background-color: silver;"|22 || style="background-color: silver;"|29 || style="background-color: silver;"|24 || 14 || style="background-color: silver;"|12
+|-
+| style="background-color: silver;"|40 || 15 || 30 || 33 || 34 || 13 || style="background-color: silver;"|10
+|-
+| style="background-color: silver;"|1 || style="background-color: silver;"|39 || style="background-color: silver;"|42 || style="background-color: silver;"|41 || style="background-color: silver;"|44 || style="background-color: silver;"|5 || style="background-color: silver;"|3
+|}
+{{col-end}}
+
+The 11th century saw the finding of several ways to construct simple magic squares for odd and evenly even orders; the more difficult case of oddly even case (''n = 4k + 2'') was solved by [[Ibn al-Haytham]] with ''k'' even (c. 1040), and completely by the beginning of 12th century, if not already in the latter half of the 11th century.<ref name="Sesiano2003"/> Around the same time, pandiagonal squares were being constructed. Treaties on magic squares were numerous in the 11th and 12th century. These later developments tended to be improvements on or simplifications of existing methods. From the 13th century onwards, magic squares were increasingly put to occult purposes.<ref name="Sesiano2003"/> However, much of these later texts written for occult purposes merely depict certain magic squares and mention their attributes, without describing their principle of construction, with only some authors keeping the general theory alive.<ref name="Sesiano2003"/> One such occultist was the Algerian [[Ahmad al-Buni]] (c. 1225), who gave general methods on constructing bordered magic squares; some others were the 17th century Egyptian Shabramallisi and the 18th century Nigerian al-Kishnawi.<ref name="Sesiano1994">{{cite journal| last = Sesiano | first= Jacques| title=Quelques methodes arabes de construction des carres magiques impairs (some Arabic construction methods of odd magical squares)| journal=Bulletin de la Société Vaudoise des Sciences Naturelles | language=fr | volume = 83 | issue = 1 | pages= 51–76 | date=2004 }}</ref>
+
+The magic square of order three was described as a child-bearing charm<ref>Peter, J. Barta, The Seal-Ring of Proportion and the magic rings (2016), pp.&nbsp;6–9.</ref><ref name="Needham1987">{{cite book| last = Needham | first= Joseph | title=Theoretical Influences of China on Arabic Alchemy| publisher=UC Biblioteca Geral 1 | date=1987 | url=https://books.google.com/books?id=4b2zC7fL558C}}</ref> since its first literary appearances in the alchemical works of [[Jabir ibn Hayyan|Jābir ibn Hayyān]] (fl. c. 721 – c. 815)<ref name="Needham1987"/><ref>Jābir ibn Hayyān, Book of the Scales. French translation in: Marcelin Berthelot (1827–1907), Histoire de sciences. La chimie au moyen âge, Tom. III: L'alchimie arabe. Paris, 1893. [rprt.. Osnabruck: O. Zeller, 1967], pp.&nbsp;139–162, in particular: pp.&nbsp;150–151</ref> and [[Al-Ghazali|al-Ghazālī]] (1058–1111)<ref>al-Ghazālī, Deliverance From Error (al-munqidh min al-ḍalāl ) ch. 145. Arabic: al-Munkidh min al-dalal. ed. J. Saliba – K. Ayyad. Damascus: Maktab al-Nashr al-'Arabi, 1934, p. 79. English tr.: Richard Joseph McCarthy, Freedom and Fulfillment: An annotated translation of al-Ghazali's al-Munkidh min al-Dalal and other relevant works of al-Ghazali. Boston, Twayer, 1980. He refers a book titled 'The Marvels of Special Properties' as his source. This square was named in the Orient as the ''Seal of Ghazali'' after him.</ref> and it was preserved in the tradition of the planetary tables. The earliest occurrence of the association of seven magic squares to the virtues of the seven heavenly bodies appear in Andalusian scholar [[Abū Ishāq Ibrāhīm al-Zarqālī|Ibn Zarkali]]'s (known as Azarquiel in Europe) (1029–1087) ''Kitāb tadbīrāt al-kawākib'' (''Book on the Influences of the Planets'').<ref name="Comes2016"/> A century later, the Algerian scholar Ahmad al-Buni attributed mystical properties to magic squares in his highly influential book ''Shams al-Ma'arif'' (''The Book of the Sun of Gnosis and the Subtleties of Elevated Things''), which also describes their construction. This tradition about a series of magic squares from order three to nine, which are associated with the seven planets, survives in Greek, Arabic, and Latin versions.<ref>The Latin version is Liber de septem figuris septem planetarum figurarum Geberi regis Indorum. This treatise is the identified source of Dürer and Heinrich Cornelius Agrippa von Nettesheim. Cf. Peter, J. Barta, The Seal-Ring of Proportion and the magic rings (2016), pp.&nbsp;8–9, n. 10</ref> There are also references to the use of magic squares in astrological calculations, a practice that seems to have originated with the Arabs.<ref name="Sesiano2004">{{cite book| last = Sesiano | first= Jacques| title=Les carrés magiques dans les pays islamiques| publisher=PPUR presses polytechniques | language=fr | date=2004 }}</ref><ref name="Schimmel1993">{{cite book| last = Schimmel | first= Annemarie| title=The mystery of numbers| publisher=Oxford University Press | location = New York | date=1993 }}</ref>
+
+===Latin Europe===
+[[File:Sigillum Iovis.jpg|thumb|215px|right|This page from [[Athanasius Kircher]]'s ''Oedipus Aegyptiacus'' (1653) belongs to a treatise on magic squares and shows the ''Sigillum Iovis'' associated with Jupiter]]
+Unlike in Persia and Arabia, better documentation exists of how the magic squares were transmitted to Europe. Around 1315, influenced by Arab sources, the Greek Byzantine scholar [[Manuel Moschopoulos]] wrote a mathematical treatise on the subject of magic squares, leaving out the mysticism of his Middle Eastern predecessors, where he gave two methods for odd squares and two methods for evenly even squares. Moschopoulos was essentially unknown to the Latin Europe until the late 17th century, when Philippe de la Hire rediscovered his treatise in the Royal Library of Paris.<ref>{{Cite web|url=https://www.maa.org/press/periodicals/convergence/the-magic-squares-of-manuel-moschopoulos-introduction|title=The Magic Squares of Manuel Moschopoulos - Introduction {{pipe}} Mathematical Association of America|website=www.maa.org|access-date=2018-01-18|archive-date=2019-12-05|archive-url=https://web.archive.org/web/20191205132327/https://www.maa.org/press/periodicals/convergence/the-magic-squares-of-manuel-moschopoulos-introduction}}</ref> However, he was not the first European to have written on magic squares; and the magic squares were disseminated to rest of Europe through Spain and Italy as occult objects. The early occult treaties that displayed the squares did not describe how they were constructed. Thus the entire theory had to be rediscovered.
+
+Magic squares had first appeared in Europe in ''Kitāb tadbīrāt al-kawākib'' (''Book on the Influences of the Planets'') written by Ibn Zarkali of Toledo, Al-Andalus, as planetary squares by 11th century.<ref name="Comes2016"/> The magic square of three was discussed in numerological manner in early 12th century by Jewish scholar [[Abraham ibn Ezra]] of Toledo, which influenced later Kabbalists.<ref name="Cammann1969">{{cite journal| last = Cammann | first= Schuyler| title=Islamic and Indian Magic Squares, part II | journal=History of Religions | volume = 8 | issue = 4 | pages= 271–299| date=May 1969 | jstor= 1062018| doi= 10.1086/462589| s2cid= 224806255}}</ref> Ibn Zarkali's work was translated as ''Libro de Astromagia'' in the 1280s,<ref>presently in the Biblioteca Vaticana (cod. Reg. Lat. 1283a)</ref> due to [[Alfonso X]] of Castille.<ref>See ''Alfonso X el Sabio, Astromagia (Ms. Reg. lat. 1283a)'', a cura di A.D'Agostino, Napoli, Liguori, 1992</ref><ref name="Comes2016">{{cite book| last = Comes | first= Rosa | contribution = The Transmission of Azarquiel's Magic Squares in Latin Europe | pages = 159–198 | title = Medieval Textual Cultures: Agents of Transmission, Translation and Transformation | editor1-first=Faith | editor1-last=Wallis | editor2-first=Robert | editor2-last= Wisnovsky | series = Judaism, Christianity, and Islam – Tension, Transmission, Transformation | volume = 6 | publisher = Walter de Gruyter GmbH & Co KG | isbn = 978-3-11-046730-7 | year= 2016 }}</ref> In the Alfonsine text, magic squares of different orders are assigned to the respective planets, as in the Islamic literature; unfortunately, of all the squares discussed, the Mars magic square of order five is the only square exhibited in the manuscript.<ref>Mars magic square appears in figure 1 of "Saturn and Melancholy: Studies in the History of Natural Philosophy, Religion, and Art" by [[Raymond Klibansky]], [[Erwin Panofsky]] and [[Fritz Saxl]], Basic Books (1964)</ref><ref name="Comes2016"/>
+
+Magic squares surface again in Florence, Italy in the 14th century. A 6×6 and a 9×9 square are exhibited in a manuscript of the ''Trattato d'Abbaco'' (Treatise of the Abacus) by [[Paolo Dagomari]].<ref>The squares can be seen on folios 20 and 21 of MS. 2433, at the Biblioteca Universitaria of Bologna. They also appear on folio 69rv of Plimpton 167, a manuscript copy of the ''Trattato dell'Abbaco'' from the 15th century in the Library of Columbia University.</ref><ref>In a 1981 article ("Zur Frühgeschichte der magischen Quadrate in Westeuropa" i.e. "Prehistory of Magic Squares in Western Europe", Sudhoffs Archiv Kiel (1981) vol. 65, pp. 313–338) German scholar [[Menso Folkerts]] lists several manuscripts in which the "Trattato d'Abbaco" by Dagomari contains the two magic squares. Folkerts quotes a 1923 article by Amedeo Agostini in the Bollettino dell'Unione Matematica Italiana: "A. Agostini in der Handschrift Bologna, Biblioteca Universitaria, Ms. 2433, f. 20v–21r; siehe Bollettino della Unione Matematica Italiana 2 (1923), 77f. Agostini bemerkte nicht, dass die Quadrate zur Abhandlung des Paolo dell'Abbaco gehören und auch in anderen Handschriften dieses Werks vorkommen, z. B. New York, Columbia University, Plimpton 167, f. 69rv; Paris, BN, ital. 946, f. 37v–38r; Florenz, Bibl. Naz., II. IX. 57, f. 86r, und Targioni 9, f. 77r; Florenz, Bibl. Riccard., Ms. 1169, f. 94–95."</ref> It is interesting to observe that Paolo Dagomari, like Pacioli after him, refers to the squares as a useful basis for inventing mathematical questions and games, and does not mention any magical use. Incidentally, though, he also refers to them as being respectively the Sun's and the Moon's squares, and mentions that they enter astrological calculations that are not better specified. As said, the same point of view seems to motivate the fellow Florentine [[Luca Pacioli]], who describes 3×3 to 9×9 squares in his work ''De Viribus Quantitatis'' by the end of 15th century.<ref>This manuscript text (circa 1496–1508) is also at the Biblioteca Universitaria in Bologna. It can be seen in full at the address http://www.uriland.it/matematica/DeViribus/Presentazione.html {{Webarchive|url=https://web.archive.org/web/20120301085501/http://www.uriland.it/matematica/DeViribus/Presentazione.html |date=2012-03-01 }}</ref><ref>Pacioli states: ''A lastronomia summamente hanno mostrato li supremi di quella commo Ptolomeo, al bumasar ali, al fragano, Geber et gli altri tutti La forza et virtu de numeri eserli necessaria'' (Masters of astronomy, such as [[Ptolemy]], [[Albumasar]], [[Alfraganus]], [[Jabir ibn Aflah|Jabir]] and all the others, have shown that the force and the virtue of numbers are necessary to that science) and then goes on to describe the seven planetary squares, with no mention of magical applications.</ref>
+
+===Europe after 15th century===
+[[File:Siamese Square.jpg|thumb|215px|right|A page from Simon de la Loubère's ''Du Royaume de Siam'' (1691) showcasing the Indian method of constructing an odd magic square.]]
+The planetary squares had disseminated into northern Europe by the end of the 15th century. For instance, the Cracow manuscript of ''[[Picatrix]]'' from Poland displays magic squares of orders 3 to 9. The same set of squares as in the Cracow manuscript later appears in the writings of [[Paracelsus]] in ''Archidoxa Magica'' (1567), although in highly garbled form. In 1514 [[Albrecht Dürer]] immortalized a 4×4 square in his famous engraving ''[[Melencolia I]].'' Paracelsus' contemporary [[Heinrich Cornelius Agrippa von Nettesheim]] published his famous three volume book ''De occulta philosophia'' in 1531, where he devoted Chapter 22 of Book II to the planetary squares shown below.<ref name="Cammann1969"/> The same set of squares given by Agrippa reappear in 1539 in ''Practica Arithmetice'' by [[Girolamo Cardano]], where he explains the construction of the odd ordered squares using "diamond method", which was later reproduced by Bachet.<ref name="Muurinen2020"/> The tradition of planetary squares was continued into the 17th century by [[Athanasius Kircher]] in ''Oedipi Aegyptici'' (1653). In Germany, mathematical treaties concerning magic squares were written in 1544 by [[Michael Stifel]] in ''Arithmetica Integra'', who rediscovered the bordered squares, and [[Adam Riese]], who rediscovered the continuous numbering method to construct odd ordered squares published by Agrippa. However, due to the religious upheavals of that time, these works were unknown to the rest of Europe.<ref name="Cammann1969"/>
+
+{{col-begin|width=auto; margin:0.5em auto}}
+{{col-break|valign=top}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ [[Saturn (astrology)|Saturn]]=15
+|-
+| 4 || 9 || 2
+|-
+| 3 || 5 || 7
+|-
+| 8 || 1 || 6
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ [[Jupiter (astrology)|Jupiter]]=34
+|-
+| 4 || 14 || 15 || 1
+|-
+| 9 || 7 || 6 || 12
+|-
+| 5 || 11 || 10 || 8
+|-
+| 16 || 2 || 3 || 13
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ [[Mars (astrology)|Mars]]=65
+|-
+| 11 || 24 || 7 || 20 || 3
+|-
+| 4 || 12 || 25 || 8 || 16
+|-
+| 17 || 5 || 13 || 21 || 9
+|-
+| 10 || 18 || 1 || 14 || 22
+|-
+| 23 || 6 || 19 || 2 || 15
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ [[Sun (astrology)|Sol]]=111
+|-
+| 6 || 32 || 3 || 34 || 35 || 1
+|-
+| 7 || 11 || 27 || 28 || 8 || 30
+|-
+| 19 || 14 || 16 || 15 || 23 || 24
+|-
+| 18 || 20 || 22 || 21 || 17 || 13
+|-
+| 25 || 29 || 10 || 9 || 26 || 12
+|-
+| 36 || 5 || 33 || 4 || 2 || 31
+|}
+{{col-end}}
+{{col-begin|width=auto; margin:0.5em auto}}
+{{col-break|valign=top}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ [[Venus (astrology)|Venus]]=175
+|-
+| 22 || 47 || 16 || 41 || 10 || 35 || 4
+|-
+| 5 || 23 || 48 || 17 || 42 || 11 || 29
+|-
+| 30 || 6 || 24 || 49 || 18 || 36 || 12
+|-
+| 13 || 31 || 7 || 25 || 43 || 19 || 37
+|-
+| 38 || 14 || 32 || 1 || 26 || 44 || 20
+|-
+| 21 || 39 || 8 || 33 || 2 || 27 || 45
+|-
+| 46 || 15 || 40 || 9 || 34 || 3 || 28
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ [[Mercury (astrology)|Mercury]]=260
+|-
+| 8 || 58 || 59 || 5 || 4 || 62 || 63 || 1
+|-
+| 49 || 15 || 14 || 52 || 53 || 11 || 10 || 56
+|-
+| 41 || 23 || 22 || 44 || 45 || 19 || 18 || 48
+|-
+| 32 || 34 || 35 || 29 || 28 || 38 || 39 || 25
+|-
+| 40 || 26 || 27 || 37 || 36 || 30 || 31 || 33
+|-
+| 17 || 47 || 46 || 20 || 21 || 43 || 42 || 24
+|-
+| 9 || 55 || 54 || 12 || 13 || 51 || 50 || 16
+|-
+| 64 || 2 || 3 || 61 || 60 || 6 || 7 || 57
+|}
+{{col-break|valign=top|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ [[Moon (astrology)|Luna]]=369
+|-
+| 37 || 78 || 29 || 70 || 21 || 62 || 13 || 54 || 5
+|-
+| 6 || 38 || 79 || 30 || 71 || 22 || 63 || 14 || 46
+|-
+| 47 || 7 || 39 || 80 || 31 || 72 || 23 || 55 || 15
+|-
+| 16 || 48 || 8 || 40 || 81 || 32 || 64 || 24 || 56
+|-
+| 57 || 17 || 49 || 9 || 41 || 73 || 33 || 65 || 25
+|-
+| 26 || 58 || 18 || 50 || 1 || 42 || 74 || 34 || 66
+|-
+| 67 || 27 || 59 || 10 || 51 || 2 || 43 || 75 || 35
+|-
+| 36 || 68 || 19 || 60 || 11 || 52 || 3 || 44 || 76
+|-
+| 77 || 28 || 69 || 20 || 61 || 12 || 53 || 4 || 45
+|}
+{{col-end}}
+
+In 1624 France, [[Claude Gaspard Bachet de Méziriac|Claude Gaspard Bachet]] described the "diamond method" for constructing Agrippa's odd ordered squares in his book ''Problèmes Plaisants''. During 1640 [[Bernard Frenicle de Bessy]] and [[Pierre Fermat]] exchanged letters on magic squares and cubes, and in one of the letters Fermat boasts of being able to construct 1,004,144,995,344 magic squares of order 8 by his method.<ref name="Muurinen2020">{{cite thesis | type= MSc | title= Fermat, magic squares and the idea of self-supporting blocks | last= Muurinen |first= Ismo | date= 2020 | publisher=University of Helsinki | url= https://helda.helsinki.fi/bitstream/handle/10138/322537/Muurinen_Ismo_gradu_2020.pdf?sequence=2}}</ref> An early account on the construction of bordered squares was given by [[Antoine Arnauld]] in his ''Nouveaux éléments de géométrie'' (1667).<ref>{{cite book | title= A History of Algorithms: From the Pebble to the Microchip | editor-last= Chabert |editor-first= Jean-Luc | date= 1999 | contribution=2.4 Arnauld's Borders Method|pages=70–80 | publisher= Springer | isbn= 978-3-540-63369-3|doi=10.1007/978-3-642-18192-4}}</ref> In the two treatise ''Des quarrez ou tables magiques'' and ''Table générale des quarrez magiques de quatre de côté'', published posthumously in 1693, twenty years after his death, [[Bernard Frenicle de Bessy]] demonstrated that there were exactly 880 distinct magic squares of order four. Frenicle gave methods to construct magic square of any odd and even order, where the even ordered squares were constructed using borders. He also showed that interchanging rows and columns of a magic square produced new magic squares.<ref name="Muurinen2020" /> In 1691, [[Simon de la Loubère]] described the Indian continuous method of constructing odd ordered magic squares in his book ''Du Royaume de Siam'', which he had learned while returning from a diplomatic mission to Siam, which was faster than Bachet's method. In an attempt to explain its working, de la Loubere used the primary numbers and root numbers, and rediscovered the method of adding two preliminary squares. This method was further investigated by Abbe Poignard in ''Traité des quarrés sublimes'' (1704), by [[Philippe de La Hire]] in ''Mémoires de l'Académie des Sciences'' for the Royal Academy (1705), and by [[Joseph Sauveur]] in ''Construction des quarrés magiques'' (1710). Concentric bordered squares were also studied by De la Hire in 1705, while Sauveur introduced magic cubes and lettered squares, which was taken up later by [[Euler]] in 1776, who is often credited for devising them. In 1750 d'Ons-le-Bray rediscovered the method of constructing doubly even and singly even squares using bordering technique; while in 1767 [[Benjamin Franklin]] published a semi-magic square which had the properties of eponymous Franklin square.<ref>{{cite web |url= http://www-history.mcs.st-andrews.ac.uk/Biographies/Franklin_Benjamin.html|title= Benjamin Franklin|last1= O'Connor|first1= J.J. | last2 = Robertson| first2 = E.F. |website=MacTutor History of Mathematics Archive |access-date= 15 December 2018}}</ref> By this time the earlier mysticism attached to the magic squares had completely vanished, and the subject was treated as a part of recreational mathematics.<ref name="Cammann1969"/><ref name="RouseBall1904">{{cite book| last =Rouse Ball | first= W.W. | title=Mathematical Recreations and Essays | chapter= Magic Squares | edition = 4 | pages= 122–142| publisher = Mac Millan and Co., Limited | location= London}}</ref>
+
+In the 19th century, Bernard Violle gave a comprehensive treatment of magic squares in his three volume ''Traité complet des carrés magiques'' (1837–1838), which also described magic cubes, parallelograms, parallelopipeds, and circles. Pandiagonal squares were extensively studied by Andrew Hollingworth Frost, who learned it while in the town of Nasik, India, (thus calling them Nasik squares) in a series of articles: ''On the knight's path'' (1877), ''On the General Properties of Nasik Squares'' (1878), ''On the General Properties of Nasik Cubes'' (1878), ''On the construction of Nasik Squares of any order'' (1896). He showed that it is impossible to have normal singly-even pandiagonal magic square. Frederick A.P. Barnard constructed inlaid magic squares and other three dimensional magic figures like magic spheres and magic cylinders in ''Theory of magic squares and of magic cubes'' (1888).<ref name="RouseBall1904"/> In 1897, Emroy McClintock published ''On the most perfect form of magic squares'', coining the words ''pandiagonal square'' and ''most perfect square'', which had previously been referred to as perfect, or diabolic, or Nasik.
+
+=== West Africa ===
+[[Muhammad ibn Muhammad al-Kishnawi]] wrote on the theory of magic squares in the 18th century. He gave the treatment of the standard construction of magic squares and "also studied several other constructions—using knight's moves, borders added to a magic square of lower order, and the formation of a square from a square number of smaller magic squares."<ref>{{cite book |url=https://books.google.com/books?id=yJIMx9nXB6kC&pg=PA1167&dq=muhammad+ibn+muhammad+al+kishnawi+mathematic&hl=en&newbks=1&newbks_redir=0&source=gb_mobile_search&ovdme=1&sa=X&ved=2ahUKEwiaj_iwjs-WAxXLTkEAHYZQPS8QuwV6BAgLEAc#v=onepage&q=muhammad%20ibn%20muhammad%20al%20kishnawi%20mathematic&f=false |editor-last=Rosen |editor-first=Kenneth H. |year=1999 |title=Handbook of Discrete and Combinatorial Mathematics |publisher=[[CRC Press]]|page=1167 |isbn=978-1-4398-3290-5 }}</ref>
+
+==Some famous magic squares==
+[[File:Magic square Lo Shu.png|thumb|right|220px|Lo Shu from "The Astronomical Phenomena" (''Tien Yuan Fa Wei''). Compiled by Bao Yunlong in 13th century, published during the [[Ming dynasty]], 1457–1463.]]
+
+===Luo Shu magic square===
+{{main|Lo Shu Square}}
+Legends dating from as early as 650 BCE tell the story of the [[Lo Shu]] (洛書) or "scroll of the river Lo".<ref name="Swetz2008">{{cite book| first = Frank J. | last = Swetz| title= The Legacy of the Luoshu | publisher = A.K. Peters/CRC Press | date=2008 | edition= 2nd}}</ref> According to the legend, there was at one time in [[History of China#Ancient China|ancient China]] a huge flood. While the [[Yu the Great|great king Yu]] was trying to channel the water out to sea, a [[turtle]] emerged from it with a curious pattern on its shell: a 3×3 grid in which circular dots of numbers were arranged, such that the sum of the numbers in each row, column and diagonal was the same: 15. According to the legend, thereafter people were able to use this pattern in a certain way to control the river and protect themselves from floods.{{Citation needed|date=September 2024}} The [[Lo Shu Square]], as the magic square on the turtle shell is called, is the unique normal magic square of order three in which 1 is at the bottom and 2 is in the upper right corner. Every normal magic square of order three is obtained from the Lo Shu by rotation or reflection.
+
+===Magic square in Parshavnath temple===
+[[File:Magic square at the Parshvanatha temple, Khajuraho.png|thumb|right|upright|220px|Magic Square at the [[Parshvanatha temple, Khajuraho|Parshvanatha temple]], in [[Khajuraho]], [[India]]]]
+There is a well-known 12th-century 4×4 normal magic square inscribed on the wall of the [[Parshvanatha temple, Khajuraho|Parshvanath]] temple in [[Khajuraho]], India.<ref name="Datta"/><ref name="Hayashi"/><ref name="Andrews">{{cite book |last=Andrews |first=William Symes |title=Magic Squares and Cubes |publisher=Open Court Publishing Company| date=1917| edition=2nd| pages=124–126| url=https://archive.org/details/MagicSquaresAndCubes_754}}</ref>
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 7 || 12 || 1 ||14
+|-
+| 2 || 13 || 8 || 11
+|-
+| 16 || 3 || 10 || 5
+|-
+| 9 || 6 || 15 || 4
+|}
+This is known as the ''Chautisa Yantra'' (''Chautisa'', 34; ''[[wikt:hi:यन्त्र|Yantra]]'', lit. "device"), since its magic sum is 34. It is one of the three 4×4 [[pandiagonal magic square]]s and is also an instance of the [[most-perfect magic square]]. The study of this square led to the appreciation of pandiagonal squares by European mathematicians in the late 19th century. Pandiagonal squares were referred to as Nasik squares or Jain squares in older English literature.
+
+===Albrecht Dürer's magic square===
+[[Image:Albrecht Dürer - Melencolia I (detail).jpg|thumb|Detail of ''Melencolia I'']]
+The order four normal magic square [[Albrecht Dürer]] immortalized in his 1514 engraving ''[[Melencolia I]]'', referred to above, is believed to be the first seen in European art. The square associated with Jupiter appears as a talisman used to drive away melancholy. It is very similar to [[Yang Hui]]'s square, which was created in China about 250 years before Dürer's time. As with every order 4 normal magic square, the magic sum is 34. But in the Durer square this sum is also found 
+in each of the quadrants, in the center four squares, and in the corner squares (of the 4×4 as well as the four contained 3×3 grids). This sum can also be found in the four outer numbers clockwise from the corners (3+8+14+9) and likewise the four counter-clockwise (the locations of four [[Queen (chess)|queens]] in the two solutions of the [[eight queens puzzle|4 queens puzzle]]<ref>{{cite web |url=http://www.muljadi.org/MagicSquares.htm |title=Virtual Home of Paul Muljadi |access-date=2005-03-18 |archive-url=https://web.archive.org/web/20051109234521/http://www.muljadi.org/MagicSquares.htm |archive-date=2005-11-09 }}</ref>), the two sets of four symmetrical numbers (2+8+9+15 and 3+5+12+14), the sum of the middle two entries of the two outer columns and rows (5+9+8+12 and 3+2+15+14), and in four kite or cross shaped quartets (3+5+11+15, 2+10+8+14, 3+9+7+15, and 2+6+12+14). The two numbers in the middle of the bottom row give the date of the engraving: 1514. The numbers 1 and 4 at either side of the date correspond respectively to the letters "A" and "D", the initials of the artist.
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 16 || 3 || 2 || 13
+|-
+| 5 || 10 || 11 || 8
+|-
+| 9 || 6 || 7 || 12
+|-
+| 4 || 15 || 14 || 1
+|}
+Dürer's magic square can also be extended to a magic cube.<ref>"[http://sites.google.com/site/aliskalligvaen/home-page/-magic-cube-with-duerer-s-square Magic cube with Dürer's square]" Ali Skalli's magic squares and magic cubes</ref>
+{{See also|Albrecht Dürer's magic square}}
+
+===Sagrada Família magic square===
+[[File:Barcelona Sagrada Familia passion facade magic square.jpg|right|thumb|220px|A magic square on the Sagrada Família church façade]]
+
+The Passion façade of the [[Sagrada Família]] church in [[Barcelona]], conceptualized by [[Antoni Gaudí]] and designed by sculptor [[Josep Maria Subirachs|Josep Subirachs]], features a trivial order 4 magic square: The magic constant of the square is 33, the age of [[Jesus]] at the time of the [[Passion (Christianity)|Passion]].<ref>{{cite web| title= The magic square on the Passion façade: keys to understanding it | date = 7 February 2018| url=https://blog.sagradafamilia.org/en/divulgation/the-magic-square-the-passion-facade-keys-to-understanding-it/}}</ref> Structurally, it is very similar to the [[Melencolia I|Melancholia magic square]], but it has had the numbers in four of the cells reduced by 1.
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 14 || 14 || 4
+|-
+| 11 || 7 || 6 || 9
+|-
+| 8 || 10 || 10 || 5
+|-
+| 13 || 2 || 3 || 15
+|}
+
+Trivial squares such as this one are not generally mathematically interesting and only have historical significance. Lee Sallows has pointed out that, due to Subirachs's ignorance of magic square theory, the renowned sculptor made a needless blunder, and supports this assertion by giving several examples of non-trivial 4×4 magic squares showing the desired magic constant of 33.<ref>Letters: The Mathematical Intelligencer; 2003; 25; 4: pp. 6–7.</ref>
+
+Similarly to Dürer's magic square, the Sagrada Familia's magic square can also be extended to a magic cube.<ref>{{Cite web |last=Skalli |first=Ali |date=14 October 2009 |title=Magic cube with Gaudi's square |url=https://sites.google.com/site/aliskalligvaen/home-page/-magic-cube-with-gaudi-s-square |archive-url=https://web.archive.org/web/20211215212634/https://sites.google.com/site/aliskalligvaen/home-page/-magic-cube-with-gaudi-s-square |archive-date=15 December 2021}}</ref>
+
+==Properties of magic squares==
+===Magic constant===
+{{main|Magic constant}}
+The constant that is the sum of any row, or column, or diagonal is called the [[magic constant]] or magic sum, ''M.'' Every normal magic square has a constant dependent on the order {{mvar|n}}, calculated by the formula <math>M = n(n^2 + 1)/2</math>. This can be demonstrated by noting that the sum of <math>1,2,...,n^2</math> is <math>n^2(n^2 + 1)/2</math>. Since the sum of each row is <math>M</math>, the sum of <math>n</math> rows is <math>n M = n^2(n^2 + 1)/2</math>, which when divided by the order {{mvar|n}} yields the magic constant as <math>M = n(n^2 + 1)/2</math>. For normal magic squares of orders ''n'' = 3, 4, 5, 6, 7, and 8, the magic constants are, respectively: 15, 34, 65, 111, 175, and 260 (sequence [[OEIS:A006003|A006003]] in the [[On-Line Encyclopedia of Integer Sequences|OEIS]]).
+
+===Magic square of order 1 is trivial===
+The 1×1 magic square, with only one cell containing the number 1, is called ''[[Triviality (mathematics)|trivial]]'', because it is typically not under consideration when discussing magic squares; but it is indeed a magic square by definition, if a single cell is regarded as a square of order one.
+
+===Magic square of order 2 cannot be constructed===
+Normal magic squares of all sizes can be constructed except 2×2 (that is, where order ''n'' = 2).<ref>{{cite web | url = http://mathforum.org/alejandre/magic.square/adler/adler5.html | archive-url = https://web.archive.org/web/20180302092216/http://mathforum.org/alejandre/magic.square/adler/adler5.html | archive-date = 2018-03-02 | title = Why there are no 2x2 magic squares | website = mathforum.org | first1 = Allan | last1 = Adler | first2 = Suzanne | last2 = Alejandre }}</ref>
+
+===Center of mass===
+If the numbers in the magic square are seen as masses located in various cells, then the [[center of mass]] of a magic square coincides with its geometric center.
+
+===Moment of inertia===
+The ''moment of inertia'' of a magic square has been defined as the sum over all cells of the number in the cell times the squared distance from the center of the cell to the center of the square; here the unit of measurement is the width of one cell.<ref name=Loly>{{cite journal | last = Loly | first = Peter | title = The invariance of the moment of inertia of magic squares | journal = [[Mathematical Gazette]] | volume = 88 | issue = 511 | date = March 2004 | pages = 151–153 | doi = 10.1017/S002555720017456X | orig-date = 1 August 2016 <!-- date published online --> | url = http://home.cc.umanitoba.ca/~loly/MathGaz.pdf | s2cid = 125989925 | archive-date = 14 November 2017 | access-date = 5 June 2017 | archive-url = https://web.archive.org/web/20171114111409/http://home.cc.umanitoba.ca/~loly/MathGaz.pdf }}</ref> (Thus for example a corner cell of a 3×3 square has a distance of <math>\sqrt{2},</math> a non-corner edge cell has a distance of 1, and the center cell has a distance of 0.) Then all magic squares of a given order have the same moment of inertia as each other. For the order-3 case the moment of inertia is always 60, while for the order-4 case the moment of inertia is always 340. In general, for the ''n''×''n'' case the moment of inertia is <math>n^2(n^4-1)/12.</math><ref name=Loly/>
+
+===Birkhoff–von Neumann decomposition===
+Dividing each number of the magic square by the magic constant will yield a [[doubly stochastic matrix]], whose row sums and column sums equal to unity. However, unlike the doubly stochastic matrix, the diagonal sums of such matrices will also equal to unity. Thus, such matrices constitute a subset of doubly stochastic matrix. The Birkhoff–von Neumann theorem states that for any doubly stochastic matrix <math>A</math>, there exists real numbers <math>\theta_1,\ldots,\theta_k \ge 0</math>, where <math>\sum_{i=1}^k \theta_i = 1</math> and [[permutation matrices]] <math>P_1,\ldots,P_k</math> such that
+
+:<math>A = \theta_1 P_1 + \cdots + \theta_k P_k. </math>
+
+This representation may not be unique in general. By Marcus-Ree theorem, however, there need not be more than <math> k \le n^2 - 2n + 2</math> terms in any decomposition.<ref>{{cite journal|last1=Marcus|first1=M.|last2=Ree|first2=R.|title=Diagonals of doubly stochastic matrices|journal=The Quarterly Journal of Mathematics|date=1959|volume=10|issue=1|pages=296–302|doi=10.1093/qmath/10.1.296}}</ref> Clearly, this decomposition carries over to magic squares as well, since a magic square can be recovered from a doubly stochastic matrix by multiplying it by the magic constant.
+
+==Classification of magic squares==
+[[File:4x4_magic_square_hierarchy.svg|thumb|upright|[[Euler diagram]] of the properties of some types of 4×4 magic squares. Cells of the same colour sum to the magic constant.<br /><nowiki>*</nowiki> In 4×4 most-perfect magic squares, any 2 cells that are 2 cells diagonally apart (including wraparound) sum to half the magic constant, hence any 2 such pairs also sum to the magic constant.]]
+
+While the classification of magic squares can be done in many ways, some useful categories are given below. An ''n''×''n'' square array of integers 1, 2, ..., ''n''<sup>2</sup> is called:
+* ''Semi-magic square'' when its rows and columns sum to give the magic constant.
+* ''Simple magic square'' when its rows, columns, and two diagonals sum to give magic constant and no more. They are also known as ''ordinary magic squares'' or ''normal magic squares''.
+* ''Self-complementary magic square'' when it is a magic square which when complemented (i.e. each number subtracted from ''n''<sup>2</sup> + 1) will give a rotated or reflected version of the original magic square.
+* ''[[Associative magic square]]'' when it is a magic square with a further property that every number added to the number equidistant, in a straight line, from the center gives ''n''<sup>2</sup> + 1. They are also called ''symmetric magic squares''. Associative magic squares do not exist for squares of singly even order. All associative magic square are self-complementary magic squares as well.
+* ''[[Pandiagonal magic square]]'' when it is a magic square with a further property that the broken diagonals sum to the magic constant. They are also called ''panmagic squares'', ''perfect squares'', ''diabolic squares'', ''Jain squares'', or ''Nasik squares''. Panmagic squares do not exist for singly even orders. However, singly even non-normal squares can be panmagic. 
+* ''Ultra magic square'' when it is both associative and pandiagonal magic square. Ultra magic square exist only for orders ''n'' ≥ 5.
+* ''Bordered magic square'' when it is a magic square and it remains magic when the rows and columns on the outer edge are removed. They are also called ''concentric bordered magic squares'' if removing a border of a square successively gives another smaller bordered magic square. Bordered magic square do not exist for order 4.
+* ''Composite magic square'' when it is a magic square that is created by "multiplying" (in some sense) smaller magic squares, such that the order of the composite magic square is a multiple of the order of the smaller squares. Such squares can usually be partitioned into smaller non-overlapping magic sub-squares. 
+* ''Inlaid magic square'' when it is a magic square inside which a magic sub-square is embedded, regardless of construction technique. The embedded magic sub-squares are themselves referred to as ''inlays''.
+* ''[[Most-perfect magic square]]'' when it is a pandiagonal magic square with two further properties (i) each 2×2 subsquare add to 1/''k'' of the magic constant where ''n'' = 4''k'', and (ii) all pairs of integers distant ''n''/2 along any diagonal (major or broken) are complementary (i.e. they sum to ''n''<sup>2</sup> + 1). The first property is referred to as ''compactness'', while the second property is referred to as ''completeness''. Most-perfect magic squares exist only for squares of doubly even order. All the pandiagonal squares of order 4 are also most perfect.
+* ''Franklin magic square'' when it is a doubly even magic square with three further properties (i) every bent diagonal adds to the magic constant, (ii) every half row and half column starting at an outside edge adds to half the magic constant, and (iii) the square is ''compact''.
+* ''[[Multimagic square]]'' when it is a magic square that remains magic even if all its numbers are replaced by their ''k''-th power for 1 ≤ ''k'' ≤ ''P''. They are also known as ''P-multimagic square'' or ''satanic squares''. They are also referred to as ''bimagic squares'', ''trimagic squares'', ''tetramagic squares'', and ''pentamagic squares'' when the value of ''P'' is 2, 3, 4, and 5 respectively.
+
+==Enumeration of magic squares==
+{{unsolved|mathematics|How many magic tori and  magic squares of order {{mvar|n}} are there for <math>n > 5</math> and  <math>n > 6</math>, respectively? }}
+
+;Low-order squares
+There is only one (trivial) magic square of order 1 and no magic square of order 2. As mentioned above, the set of normal squares of order three constitutes a single [[equivalence class]]-all equivalent to the Lo Shu square. Thus there is basically just one normal magic square of order 3.
+
+The number of different ''n'' × ''n'' magic squares for ''n'' from 1 to 6, not counting rotations and reflections is:
+: 1, 0, 1, 880, 275305224, 17753889197660635632. {{OEIS|id=A006052}}
+
+; Magic tori
+Cross-referenced to the above sequence, a new classification enumerates the magic tori that display these magic squares. The number of magic tori of order ''n'' from 1 to 5, is: 
+: 1, 0, 1, 255, 251449712 {{OEIS|id=A270876}}.
+
+; Higher-order squares and tori
+[[File:Journal.pone.0125062.g001.PNG|thumb|right|Semi-log plot of Pn, the probability of magic squares of dimension n]]
+The number of distinct normal magic squares rapidly increases for higher orders.<ref>[http://www.trump.de/magic-squares/howmany.html How many magic squares are there?] by Walter Trump, Nürnberg, January 11, 2001</ref>
+
+The 880 magic squares of order 4 are displayed on 255 magic tori of order 4 and the 275,305,224 squares of order 5 are displayed on 251,449,712 magic tori of order 5. The numbers of magic tori and distinct normal squares are not yet known for orders beyond 5 and 6, respectively.<ref name=sudoku>[https://plus.maths.org/content/anything-square-magic-squares-sudoku Anything but square: from magic squares to Sudoku] by Hardeep Aiden, [[Plus Magazine]], March 1, 2006</ref>{{Citation needed|reason=The claim in this sentence is not in this reference.|date=August 2023}}
+
+Algorithms tend to only generate magic squares of a certain type or classification, making counting all possible magic squares quite difficult. Since traditional counting methods have proven unsuccessful, statistical analysis using the [[Monte Carlo method]] has been applied. The basic principle applied to magic squares is to randomly generate ''n'' × ''n'' matrices of elements 1 to ''n''<sup>2</sup> and check if the result is a magic square. The probability that a randomly generated matrix of numbers is a magic square is then used to approximate the number of magic squares.<ref>{{cite journal |last1=Kitajima |first1=Akimasa |last2=Kikuchi |first2=Macoto |last3=Altmann |first3=Eduardo G. |title=Numerous but Rare: An Exploration of Magic Squares |journal=PLOS ONE |date=14 May 2015 |volume=10 |issue=5 |article-number=e0125062 |doi=10.1371/journal.pone.0125062 |pmc=4431883 |pmid=25973764|bibcode=2015PLoSO..1025062K |doi-access=free }}</ref>
+
+More intricate versions of the Monte Carlo method, such as the exchange Monte Carlo, and Monte Carlo backtracking have produced even more accurate estimations. Using these methods it has been shown that the probability of magic squares decreases rapidly as n increases. Using fitting functions give the curves seen to the right.
+
+==Transformations that preserve the magic property==
+===For any magic square===
+* A magic square remains magic when its numbers are multiplied by any constant.<ref name="Kraitchik1953"/>
+* A magic square remains magic when a constant is added or subtracted to its numbers, or if its numbers are subtracted from a constant. In particular, if every element in a normal magic square is subtracted from ''n''<sup>2</sup> + 1, the resulting square is the ''complement'' of the original square.<ref name="Kraitchik1953"/> In the example below, elements of 4×4 square on the left is subtracted from 17 to obtain the complement of the square on the right.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 10 || 3 || 13 || 8
+|-
+| 5 || 16 || 2 || 11
+|-
+| 4 || 9 || 7 || 14
+|-
+| 15 || 6 || 12 || 1
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 7 || 14 || 4 || 9 
+|-
+| 12 || 1 || 15 || 6 
+|-
+| 13 || 8 || 10 || 3
+|- 
+| 2 || 11 || 5 || 16
+|}
+{{col-end}}
+* The numbers of a magic square can be substituted with corresponding numbers from a set of ''s'' arithmetic progressions with the same common difference among ''r'' terms, such that ''r × s'' = ''n''<sup>2</sup>, and whose initial terms are also in arithmetic progression, to obtain a non-normal magic square. Here either ''s'' or ''r'' should be a multiple of ''n''. Let us have ''s'' arithmetic progressions given by
+::<math>
+\begin{array}{lllll}
+a & a + c & a + 2c & \cdots & a + (r-1)c \\
+a + d & a + c + d & a + 2c + d & \cdots & a + (r-1)c + d \\
+a + 2d & a + c + 2d & a + 2c + 2d & \cdots & a + (r-1)c + 2d \\
+\cdots & \cdots & \cdots & \cdots & \cdots \\
+a + (s-1)d & a + c + (s-1)d & a + 2c + (s-1)d & \cdots & a + (r-1)c + (s-1)d \\
+\end{array}
+</math>
+:where ''a'' is the initial term, ''c'' is the common difference of the arithmetic progressions, and ''d'' is the common difference among the initial terms of each progression. The new magic constant will be 
+::<math> M = na + \frac{n}{2} \big[ (r-1)c+ (s-1)d \big]. </math>
+:If ''s'' = ''r'' = ''n'', then we have the simplification
+::<math> M = na + \frac{n}{2}(n-1)(c+d). </math>
+:If we further have ''a'' = ''c'' = 1 and ''d'' = ''n'', we obtain the usual ''M'' = ''n''(''n''<sup>2</sup>+1)/2. For given ''M'' we can find the required ''a'', ''c'', and ''d'' by solving the [[linear Diophantine equation]]. In the examples below, we have order 4 normal magic square on the left most side. The second square is a corresponding non-normal magic square with ''r'' = 8, ''s'' = 2, ''a'' = 1, ''c'' = 1, and ''d'' = 10 such that the new magic constant is ''M'' = 38. The third square is an order 5 normal magic square, which is a 90 degree clockwise rotated version of the square generated by De la Loubere method. On the right most side is a corresponding non-normal magic square with ''a'' = 4, ''c'' = 1, and ''d'' = 6 such that the new magic constant is ''M'' = 90. 
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 15 || 14 || 4
+|-
+| 12 || 6 || 7 || 9 
+|-
+| 8 || 10 || 11 || 5 
+|-
+| 13 || 3 || 2 || 16
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 17 || 16 || 4
+|-
+| 14 || 6 || 7 || 11 
+|-
+| 8 || 12 || 13 || 5 
+|-
+| 15 || 3 || 2 || 18
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 11 || 10 || 4 || 23 || 17
+|-
+| 18 || 12 || 6 || 5 || 24
+|-
+| 25 || 19 || 13 || 7 || 1
+|-
+| 2 || 21 || 20 || 14 || 8
+|-
+| 9 || 3 || 22 || 16 || 15
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 16 || 14 || 7 || 30 || 23
+|-
+| 24 || 17 || 10 || 8 || 31
+|-
+| 32 || 25 || 18 || 11 || 4
+|-
+| 5 || 28 || 26 || 19 || 12
+|-
+| 13 || 6 || 29 || 22 || 20
+|}
+{{col-end}}
+* Any magic square can be [[rotation (mathematics)|rotated]] and [[reflection (mathematics)|reflected]] to produce 8 trivially distinct squares. In magic square theory, all of these are generally deemed equivalent and the eight such squares are said to make up a single [[equivalence class]].<ref name=lost-theorem>{{cite journal | title = The lost theorem | first = Lee | last = Sallows | journal = [[The Mathematical Intelligencer]] | date = Fall 1997 | volume = 19 | issue = 4 | pages = 51–54 | orig-date = 9 January 2009 <!-- date published online --> | doi = 10.1007/BF03024415 | s2cid = 122385051 }}</ref><ref name="Kraitchik1953">{{cite book | first = Maurice | last = Kraitchik | chapter = Magic Squares | title = Mathematical Recreations | url = https://archive.org/details/mathematicalrecr0000krai | url-access = registration | edition = 2nd | pages = [https://archive.org/details/mathematicalrecr0000krai/page/142 142–192] | publisher = Dover Publications, Inc. | place = New York | date = 1953 | isbn = ((9780486201634))<!-- isbn ok, goes to later reprint of same edition by same publisher --> }}</ref> In discussing magic squares, equivalent squares are usually not considered as distinct. The 8 equivalent squares are given for the 3×3 magic square below:
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 8 || 1 || 6 
+|-
+| 3 || 5 || 7
+|-
+| 4 || 9 || 2 
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 6 || 1 || 8 
+|-
+| 7 || 5 || 3
+|-
+| 2 || 9 || 4 
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 2 || 7 || 6 
+|-
+| 9 || 5 || 1
+|-
+| 4 || 3 || 8 
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 4 || 3 || 8 
+|-
+| 9 || 5 || 1
+|-
+| 2 || 7 || 6 
+|}
+{{col-end}}
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 2 || 9 || 4 
+|-
+| 7 || 5 || 3
+|-
+| 6 || 1 || 8 
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 4 || 9 || 2 
+|-
+| 3 || 5 || 7
+|-
+| 8 || 1 || 6 
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 8 || 3 || 4 
+|-
+| 1 || 5 || 9
+|-
+| 6 || 7 || 2 
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 6 || 7 || 2 
+|-
+| 1 || 5 || 9
+|-
+| 8 || 3 || 4 
+|}
+{{col-end}}
+* Given any magic square, another magic square of the same order can be formed by interchanging the row and the column which intersect in a cell on a diagonal with the row and the column which intersect in the complementary cell (i.e. cell symmetrically opposite from the center) of the same diagonal.<ref name="Kraitchik1953"/><ref name="RouseBall1904"/> For an even square, there are ''n''/2 pairs of rows and columns that can be interchanged; thus we can obtain 2<sup>''n''/2</sup> equivalent magic squares by combining such interchanges. For odd square, there are (''n''−1)/2 pairs of rows and columns that can be interchanged; and 2<sup>(''n''−1)/2</sup> equivalent magic squares obtained by combining such interchanges. Interchanging all the rows and columns rotates the square by 180 degree. In the example using a 4×4 magic square, the left square is the original square, while the right square is the new square obtained by interchanging the 1st and 4th rows and columns.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|'''1''' || style="background-color: silver;"|15 || style="background-color: silver;"|14 || style="background-color: silver;"|'''4'''
+|-
+| style="background-color: silver;"|12 || 6 || 7 || style="background-color: silver;"|9 
+|-
+| style="background-color: silver;"|8 || 10 || 11 || style="background-color: silver;"|5 
+|-
+| style="background-color: silver;"|'''13''' || style="background-color: silver;"|3 || style="background-color: silver;"|2 || style="background-color: silver;"|'''16'''
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 16 || 3 || 2 || 13 
+|-
+| 9 || 6 || 7 || 12 
+|-
+| 5 || 10 || 11 || 8
+|- 
+| 4 || 15 || 14 || 1
+|}
+{{col-end}}
+* Given any magic square, another magic square of the same order can be formed by interchanging two rows on one side of the center line, and then interchanging the corresponding two rows on the other side of the center line; then interchanging like columns. For an even square, since there are ''n''/2 same sided rows and columns, there are ''n''(''n''−2)/8 pairs of such rows and columns that can be interchanged. Thus we can obtain 2<sup>''n''(''n''−2)/8</sup> equivalent magic squares by combining such interchanges. For odd square, since there are (''n''−1)/2 same sided rows and columns, there are (''n''−1)(''n''−3)/8 pairs of such rows and columns that can be interchanged. Thus, there are 2<sup>(''n''−1)(''n''−3)/8</sup> equivalent magic squares obtained by combining such interchanges. Interchanging every possible pairs of rows and columns rotates each quadrant of the square by 180 degree. In the example using a 4×4 magic square, the left square is the original square, while the right square is the new square obtained by this transformation. In the middle square, row 1 has been interchanged with row 2; and row 3 and 4 has been interchanged. The final square on the right is obtained by interchanging columns 1 and 2, and columns 3 and 4 of the middle square. In this particular example, this transform amounts to rotating the quadrants by 180 degree. The middle square is also a magic square, since the original square is an associative magic square.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 15 || 14 || 4
+|-
+| 12 || 6 || 7 || 9 
+|-
+| 8 || 10 || 11 || 5 
+|-
+| 13 || 3 || 2 || 16
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 12 || 6 || 7 || 9 
+|-
+| 1 || 15 || 14 || 4 
+|-
+| 13 || 3 || 2 || 16
+|- 
+| 8 || 10 || 11 || 5
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 6 || 12 || 9 || 7 
+|-
+| 15 || 1 || 4 || 14 
+|-
+| 3 || 13 || 16 || 2
+|- 
+| 10 || 8 || 5 || 11
+|}
+{{col-end}}
+* A magic square remains magic when any of its non-central rows ''x'' and ''y'' are interchanged, along with the interchange of their complementary rows ''n'' − ''x'' + 1 and ''n'' − ''y'' + 1; and then interchanging like columns. This is a generalization of the above two transforms. When ''y'' = ''n'' − ''x'' + 1, this transform reduces to the first of the above two transforms. When ''x'' and ''y'' are on the same side of the center line, this transform reduces to the second of the above two transforms. In the example below, the original square is on the left side, while the final square on the right. The middle square has been obtained by interchanging rows 1 and 3, and rows 2 and 4 of the original square. The final square on the right is obtained by interchanging columns 1 and 3, and columns 2 and 4 of the middle square. In this example, this transform amounts to interchanging the quadrants diagonally. Since the original square is associative, the middle square also happens to be magic. 
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 15 || 14 || 4
+|-
+| 12 || 6 || 7 || 9 
+|-
+| 8 || 10 || 11 || 5 
+|-
+| 13 || 3 || 2 || 16
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 8 || 10 || 11 || 5 
+|-
+| 13 || 3 || 2 || 16 
+|-
+| 1 || 15 || 14 || 4
+|- 
+| 12 || 6 || 7 || 9
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 11 || 5 || 8 || 10 
+|-
+| 2 || 16 || 13 || 3 
+|-
+| 14 || 4 || 1 || 15
+|- 
+| 7 || 9 || 12 || 6
+|}
+{{col-end}}
+* A magic square remains magic when its quadrants are diagonally interchanged because this is another symmetric permutation of the form described above. For even-order <math>n</math>, permute the rows and columns by permutation <math>p</math> where <math>p(i) = i+\frac{n}{2}</math> for <math>i\le\frac{n}{2}</math>, and <math>p(i) = i-\frac{n}{2}</math> for <math>i>\frac{n}{2}</math>. For odd-order <math>n</math>, permute rows and columns by permutation <math>p</math> where <math>p(i) = i+\frac{n+1}{2}</math> for <math>i<\frac{n+1}{2}</math>, and <math>p(i) = i-\frac{n+1}{2}</math> for <math>i>\frac{n+1}{2}</math>. For odd ordered square, the halves of the central row and column are also interchanged.<ref name="Kraitchik1953"/> Examples for order 4 and 5 magic squares are given below:
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|1 || style="background-color: silver;"|15 || 14 || 4 
+|-
+| style="background-color: silver;"|12 || style="background-color: silver;"|6 || 7 || 9 
+|-
+| 8 || 10 || style="background-color: silver;"|11 || style="background-color: silver;"|5
+|- 
+| 13 || 3 || style="background-color: silver;"|2 || style="background-color: silver;"|16
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 11 || 5 || 8 || 10 
+|-
+| 2 || 16 || 13 || 3 
+|-
+| 14 || 4 || 1 || 15
+|- 
+| 7 || 9 || 12 || 6
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|17 || style="background-color: silver;"|24 || '''1''' || 8 || 15
+|-
+| style="background-color: silver;"|23 || style="background-color: silver;"|5 || '''7''' || 14 || 16
+|-
+| '''4''' || '''6''' || 13 || '''20''' || '''22'''
+|-
+| 10 || 12 || '''19''' || style="background-color: silver;"|21 || style="background-color: silver;"|3
+|-
+| 11 || 18 || '''25''' || style="background-color: silver;"|2 || style="background-color: silver;"|9
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 21 || 3 || 19 || 10 || 12
+|-
+| 2 || 9 || 25 || 11 || 18
+|-
+| 20 || 22 || 13 || 4 || 6
+|-
+| 8 || 15 || 1 || 17 || 24
+|-
+| 14 || 16 || 7 || 23 || 5
+|}
+{{col-end}}
+
+===For associative magic squares===
+* An associative magic square remains associative when two rows or columns equidistant from the center are interchanged.<ref name="White-Assoc-Magic">{{cite web | url = https://budshaw.ca/Associative.html | title = Associative Magic Squares | website = budshaw.ca | first1 = S. Harry | last1 = White}}</ref><ref name="Hawley2011">{{cite web | url = https://nrich.maths.org/1338 | title = Magic Squares II | website = nrich.maths.org | first = Del | last = Hawley | publisher = University of Cambridge | date = 2011 }}</ref> For an even square, there are ''n''/2 pairs of rows or columns that can be interchanged; thus {{nowrap|2<sup>''n''/2</sup> × 2<sup>''n''/2</sup> = 2<sup>''n''</sup>}} equivalent magic squares by combining such interchanges can be obtained. For odd square, there are {{nowrap|(''n'' &minus; 1)/2}} pairs of rows or columns that can be interchanged; and 2<sup>''n''&minus;1</sup> equivalent magic squares obtained by combining such interchanges. Interchanging all the rows flips the square vertically (i.e. reflected along the horizontal axis), while interchanging all the columns flips the square horizontally (i.e. reflected along the vertical axis). In the example below, a 4×4 associative magic square on the left is transformed into a square on the right by interchanging the second and third row, yielding the famous Durer's magic square.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 16 || 3 || 2 || 13 
+|-
+| style="background-color: silver;"|9 || style="background-color: silver;"|6 || style="background-color: silver;"|7 || style="background-color: silver;"|12 
+|-
+| style="background-color: silver;"|5 || style="background-color: silver;"|10 || style="background-color: silver;"|11 || style="background-color: silver;"|8
+|- 
+| 4 || 15 || 14 || 1
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 16 || 3 || 2 || 13 
+|-
+| 5 || 10 || 11 || 8 
+|-
+| 9 || 6 || 7 || 12
+|- 
+| 4 || 15 || 14 || 1
+|}
+{{col-end}}
+* An associative magic square remains associative when two same sided rows (or columns) are interchanged along with corresponding other sided rows (or columns).<ref name="White-Assoc-Magic"/><ref name="Hawley2011"/> For an even square, since there are ''n''/2 same sided rows (or columns), there are ''n''(''n'' &minus; 2)/8 pairs of such rows (or columns) that can be interchanged. Thus, 2<sup>''n''(''n'' &minus; 2)/8</sup> × 2<sup>''n''(''n'' &minus; 2)/8</sup> = 2<sup>''n''(''n'' &minus; 2)/4</sup> equivalent magic squares can be obtained by combining such interchanges. For odd square, since there are (''n'' &minus; 1)/2 same sided rows or columns, there are (''n'' &minus; 1)(''n'' &minus; 3)/8 pairs of such rows or columns that can be interchanged. Thus, there are 2<sup>(''n'' &minus; 1)(''n'' &minus; 3)/8</sup> × 2<sup>(''n'' &minus; 1)(''n'' &minus; 3)/8</sup> = 2<sup>(''n'' &minus; 1)(''n'' &minus; 3)/4</sup> equivalent magic squares obtained by combining such interchanges. Interchanging all the same sided rows flips each quadrants of the square vertically, while interchanging all the same sided columns flips each quadrant of the square horizontally. In the example below, the original square is on the left, whose rows 1 and 2 are interchanged with each other, along with rows 3 and 4, to obtain the transformed square on the right.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 15 || 14 || 4
+|-
+| 12 || 6 || 7 || 9 
+|-
+| 8 || 10 || 11 || 5 
+|-
+| 13 || 3 || 2 || 16
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 12 || 6 || 7 || 9 
+|-
+| 1 || 15 || 14 || 4 
+|-
+| 13 || 3 || 2 || 16
+|- 
+| 8 || 10 || 11 || 5
+|}
+{{col-end}}
+
+===For pan-diagonal magic squares===
+* A pan-diagonal magic square remains a pan-diagonal magic square under cyclic shifting of rows or of columns or both.<ref name="Kraitchik1953" /> This allows us to position a given number in any one of the ''n''<sup>2</sup> cells of an ''n'' order square. Thus, for a given pan-magic square, there are ''n''<sup>2</sup> equivalent pan-magic squares. In the example below, the original square on the left is transformed by shifting the first row to the bottom to obtain a new pan-magic square in the middle. Next, the 1st and 2nd column of the middle pan-magic square is circularly shifted to the right to obtain a new pan-magic square on the right.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|10 || style="background-color: silver;"|3 || style="background-color: silver;"|13 || style="background-color: silver;"|8
+|-
+| 5 || 16 || 2 || 11
+|-
+| 4 || 9 || 7 || 14
+|-
+| 15 || 6 || 12 || 1
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| style="background-color: silver;"|5 || style="background-color: silver;"|16 || 2 || 11
+|-
+| style="background-color: silver;"|4 || style="background-color: silver;"|9 || 7 || 14
+|-
+| style="background-color: silver;"|15 || style="background-color: silver;"|6 || 12 || 1
+|-
+| style="background-color: silver;"|10 || style="background-color: silver;"|3 || 13 || 8
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 2 || 11 || 5 || 16
+|-
+| 7 || 14 || 4 || 9
+|-
+| 12 || 1 || 15 || 6
+|-
+| 13 || 8 || 10 || 3
+|}
+{{col-end}}
+
+===For bordered magic squares===
+* A bordered magic square remains a bordered magic square after permuting the border cells in the rows or columns, together with their corresponding complementary terms, keeping the corner cells fixed. Since the cells in each row and column of every concentric border can be permuted independently, when the order ''n'' ≥ 5 is odd, there are <math>((n-2)!  (n-4)!  \dots \cdot 3!)^2</math> equivalent bordered squares. When ''n'' ≥ 6 is even, there are <math>((n-2)! (n-4)! \dots \cdot 4!)^2</math> equivalent bordered squares. In the example below, a square of order 5 is given whose border row has been permuted and (3!)<sup>2</sup> = 36 such equivalent squares can be obtained.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || '''23''' || '''16''' || 4 || 21
+|-
+| 15 || style="background-color: silver;"|14 || style="background-color: silver;"|7 || style="background-color: silver;"|18 || 11
+|-
+| 24 || style="background-color: silver;"|17 || style="background-color: silver;"|13 || style="background-color: silver;"|9 || 2 
+|-
+| 20 || style="background-color: silver;"|8 || style="background-color: silver;"|19 || style="background-color: silver;"|12 || 6
+|-
+| 5 || '''3''' || '''10''' || 22 || 25
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 16 || 23 || 4 || 21
+|-
+| 15 || style="background-color: silver;"|14 || style="background-color: silver;"|7 || style="background-color: silver;"|18 || 11
+|-
+| 24 || style="background-color: silver;"|17 || style="background-color: silver;"|13 || style="background-color: silver;"|9 || 2 
+|-
+| 20 || style="background-color: silver;"|8 || style="background-color: silver;"|19 || style="background-color: silver;"|12 || 6
+|-
+| 5 || 10 || 3 || 22 || 25
+|}
+{{col-end}}
+* A bordered magic square remains a bordered magic square after each of its concentric borders are independently rotated or reflected with respect to the central core magic square. If there are ''b'' borders, then this transform will yield 8<sup>''b''</sup> equivalent squares. In the example below of the 5×5 magic square, the border has been rotated 90 degrees anti-clockwise.
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 1 || 23 || 16 || 4 || 21
+|-
+| 15 || style="background-color: silver;"|14 || style="background-color: silver;"|7 || style="background-color: silver;"|18 || 11
+|-
+| 24 || style="background-color: silver;"|17 || style="background-color: silver;"|13 || style="background-color: silver;"|9 || 2 
+|-
+| 20 || style="background-color: silver;"|8 || style="background-color: silver;"|19 || style="background-color: silver;"|12 || 6
+|-
+| 5 || 3 || 10 || 22 || 25
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 21 || 11 || 2 || 6 || 25
+|-
+| 4 || style="background-color: silver;"|14 || style="background-color: silver;"|7 || style="background-color: silver;"|18 || 22
+|-
+| 16 || style="background-color: silver;"|17 || style="background-color: silver;"|13 || style="background-color: silver;"|9 || 10 
+|-
+| 23 || style="background-color: silver;"|8 || style="background-color: silver;"|19 || style="background-color: silver;"|12 || 3
+|-
+| 1 || 15 || 24 || 20 || 5
+|}
+{{col-end}}
+
+===For composite magic squares===
+* A composite magic square remains a composite magic square when the embedded magic squares undergo transformations that do not disturb the magic property (e.g. rotation, reflection, shifting of rows and columns, and so on).
+
+==Special methods of construction==
+{{main article|Constructions of magic squares}}
+{{Excerpt|Constructions of magic squares}}
+<!-- Please expand this section with a select few constructions on magic squares -->
+
+==Solving partially completed magic squares==
+Solving partially completed magic squares is a popular mathematical pastime. The techniques needed are similar to those used in [[Sudoku]] or [[KenKen]] puzzles, and involve deducing the values of unfilled squares using logic and [[permutation group|permutation group theory]] (Sudoku grids are ''not'' magic squares but are based on a related idea called [[Graeco-Latin square]]s).<ref name=sudoku/>
+
+==Variations of the magic square==
+
+===Extra constraints===
+[[File:Ramanujan's_magic_square.jpg|thumb|Ramanujan's magic square]]
+
+Certain extra restrictions can be imposed on magic squares.
+
+If raising each number to the ''n''th power yields another magic square, the result is a bimagic (n&nbsp;=&nbsp;2), a trimagic (n&nbsp;=&nbsp;3), or, in general, a [[multimagic square]].
+
+A magic square in which the number of letters in the name of each number in the square generates another magic square is called an [[alphamagic square]].
+
+There are magic squares consisting [[prime magic square|entirely of primes]]. [[Rudolf Ondrejka]] (1928–2001) discovered the following 3×3 magic square of [[prime number|primes]], in this case nine [[Chen prime]]s:
+
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| 17 || 89 || 71
+|-
+| 113 || 59 || 5
+|-
+| 47 || 29 || 101
+|}
+
+The [[Green–Tao theorem]] implies that there are arbitrarily large magic squares consisting of primes.
+
+The following "reversible magic square" has a magic constant of 264 both upside down and right way up:<ref>Karl Fulves, [http://www.markfarrar.co.uk/othmsq01.htm#reversible Self-working Number Magic (Dover Magic Books)]</ref>
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+| 96 || 11 || 89 || 68
+|-
+| 88 || 69 || 91 || 16
+|-
+| 61 || 86 || 18 || 99
+|-
+| 19 || 98 || 66 || 81
+|}
+
+When the extra constraint is to display some date, especially a birth date, then such magic squares are called birthday magic square. An early instance of such birthday magic square was created by [[Srinivasa Ramanujan]]. He created a 4×4 square in which he entered his date of birth in DD&ndash;MM&ndash;CC&ndash;YY format in the top row and the magic happened with additions and subtractions of numbers in squares. Not only do the rows, columns, and diagonals add up to the same number, but the four corners, the four middle squares (17, 9, 24, 89), the first and last rows two middle numbers (12, 18, 86, 23), and the first and last columns two middle numbers (88, 10, 25, 16) all add up to the sum of 139.
+
+===Multiplicative magic squares===
+Instead of ''adding'' the numbers in each row, column and diagonal, one can apply some other operation. For example, a multiplicative magic square has a constant ''product'' of numbers. A multiplicative magic square can be derived from an additive magic square by raising 2 (or any other integer) to the power of each element, because the [[logarithm]] of the product of 2 numbers is the sum of logarithm of each. Alternatively, if any 3 numbers in a line are 2<sup>''a''</sup>, 2<sup>''b''</sup> and 2<sup>''c''</sup>, their product is 2<sup>''a''+''b''+''c''</sup>, which is constant if ''a''+''b''+''c'' is constant, as they would be if ''a'', ''b'' and ''c'' were taken from ordinary (additive) magic square.<ref>{{citation
+ | last = Stifel | first = Michael | author-link = Michael Stifel
+ | language=la
+ | pages = 29–30
+ | title = Arithmetica integra
+ | url = https://books.google.com/books?id=fndPsRv08R0C
+ | year = 1544}}.</ref> For example, the original Lo-Shu magic square becomes:
+
+{| class="wikitable" style="margin:0.5em auto;text-align:center;table-layout:fixed;"
+|-
+|+ ''M'' = 32768
+|-
+| 16 || 512 || 4
+|-
+| 8 || 32 || 128
+|-
+| 256 || 2 || 64
+|}
+
+Other examples of multiplicative magic squares include:
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ ''M'' = 216
+|-
+| 2 || 9 || 12
+|-
+| 36 || 6 || 1
+|-
+| 3 || 4 || 18
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ ''M'' = 6720
+|-
+| 1 || 6 || 20 || 56
+|-
+| 40 || 28 || 2 || 3
+|-
+| 14 || 5 || 24 || 4
+|-
+| 12 || 8 || 7 || 10
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+|+ ''M'' = 6,227,020,800
+|-
+|27 ||50 ||66 ||84 ||13 ||2 ||32
+|-
+|24 ||52 ||3 ||40 ||54 ||70 ||11
+|-
+|56 ||9 ||20 ||44 ||36 ||65 ||6
+|-
+|55 ||72 ||91 ||1 ||16 ||36 ||30
+|-
+|4 ||24 ||45 ||60 ||77 ||12 ||26
+|-
+|10 ||22 ||48 ||39 ||5 ||48 ||63
+|-
+|78 ||7 ||8 ||18 ||40 ||33 ||60
+|}
+{{col-end}}
+
+===Multiplicative magic squares of complex numbers===
+Still using [[Ali Skalli]]'s non [[iterative method]], it is possible to produce an infinity of multiplicative magic squares of [[complex numbers]]<ref>"[http://sites.google.com/site/aliskalligvaen/home-page/-multiplicative-of-complex-numbers-8x8 8x8 multiplicative magic square of complex numbers]" Ali Skalli's magic squares and magic cubes</ref> belonging to <math>\mathbb C</math> set. On the example below, the real and imaginary parts are integer numbers, but they can also belong to the entire set of real numbers <math>\mathbb R</math>.
+The product is: '''−352,507,340,640 − 400,599,719,520 ''i'''''.
+
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:left;"
+|+ Skalli multiplicative 7×7 of [[complex numbers]]
+|-
+| style="text-align:right;border-right:none;padding-right:0;width:5ex;"|       21 ||style="border-left:none;padding-left:0;width:6ex;"|      +14''i''
+| style="text-align:right;border-right:none;padding-right:0;width:5ex;"|&minus;70 ||style="border-left:none;padding-left:0;width:6ex;"|      +30''i''
+| style="text-align:right;border-right:none;padding-right:0;width:5ex;"|&minus;93 ||style="border-left:none;padding-left:0;width:6ex;"|&minus;9''i''
+| style="text-align:right;border-right:none;padding-right:0;width:5ex;"|&minus;105||style="border-left:none;padding-left:0;width:6ex;"|&minus;217''i''
+| style="text-align:right;border-right:none;padding-right:0;width:5ex;"|       16 ||style="border-left:none;padding-left:0;width:6ex;"|      +50''i''
+| style="text-align:right;border-right:none;padding-right:0;width:5ex;"|       4  ||style="border-left:none;padding-left:0;width:6ex;"|&minus;14''i''
+| style="text-align:right;border-right:none;padding-right:0;width:5ex;"|       14 ||style="border-left:none;padding-left:0;width:6ex;"|&minus;8''i''
+|-
+| style="text-align:right;border-right:none;padding-right:0;"| 63||style="border-left:none;padding-left:0;"|&minus;35''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 28||style="border-left:none;padding-left:0;"|+114''i''
+| style="text-align:right;border-right:none;padding-right:0;"| ||style="border-left:none;padding-left:0;"|&minus;14''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 2||style="border-left:none;padding-left:0;"|+6''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 3||style="border-left:none;padding-left:0;"|&minus;11''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 211||style="border-left:none;padding-left:0;"|+357''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;123||style="border-left:none;padding-left:0;"|&minus;87''i''
+|-
+| style="text-align:right;border-right:none;padding-right:0;"| 31||style="border-left:none;padding-left:0;"|&minus;15''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 13||style="border-left:none;padding-left:0;"|&minus;13''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;103||style="border-left:none;padding-left:0;"|+69''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;261||style="border-left:none;padding-left:0;"|&minus;213''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 49||style="border-left:none;padding-left:0;"|&minus;49''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;46||style="border-left:none;padding-left:0;"|+2''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;6||style="border-left:none;padding-left:0;"|+2''i''
+|-
+| style="text-align:right;border-right:none;padding-right:0;"| 102||style="border-left:none;padding-left:0;"|&minus;84''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;28||style="border-left:none;padding-left:0;"|&minus;14''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 43||style="border-left:none;padding-left:0;"|+247''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;10||style="border-left:none;padding-left:0;"|&minus;2''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 5||style="border-left:none;padding-left:0;"|+9''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 31||style="border-left:none;padding-left:0;"|&minus;27''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;77||style="border-left:none;padding-left:0;"|+91''i''
+|-
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;22||style="border-left:none;padding-left:0;"|&minus;6''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 7||style="border-left:none;padding-left:0;"|+7''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 8||style="border-left:none;padding-left:0;"|+14''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 50||style="border-left:none;padding-left:0;"|+20''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;525||style="border-left:none;padding-left:0;"|&minus;492''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;28||style="border-left:none;padding-left:0;"|&minus;42''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;73||style="border-left:none;padding-left:0;"|+17''i''
+|-
+| style="text-align:right;border-right:none;padding-right:0;"| 54||style="border-left:none;padding-left:0;"|+68''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 138||style="border-left:none;padding-left:0;"|&minus;165''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;56||style="border-left:none;padding-left:0;"|&minus;98''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;63||style="border-left:none;padding-left:0;"|+35''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 4||style="border-left:none;padding-left:0;"|&minus;8''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 2||style="border-left:none;padding-left:0;"|&minus;4''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 70||style="border-left:none;padding-left:0;"|&minus;53''i''
+|-
+| style="text-align:right;border-right:none;padding-right:0;"| 24||style="border-left:none;padding-left:0;"|+22''i''
+| style="text-align:right;border-right:none;padding-right:0;"| &minus;46||style="border-left:none;padding-left:0;"|&minus;16''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 6||style="border-left:none;padding-left:0;"|&minus;4''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 17||style="border-left:none;padding-left:0;"|+20''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 110||style="border-left:none;padding-left:0;"|+160''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 84||style="border-left:none;padding-left:0;"|&minus;189''i''
+| style="text-align:right;border-right:none;padding-right:0;"| 42||style="border-left:none;padding-left:0;"|&minus;14''i''
+|}
+
+===Additive-multiplicative magic and semimagic squares===
+
+Additive-multiplicative magic squares and semimagic squares satisfy properties of both ordinary and multiplicative magic squares and semimagic squares, respectively.<ref>{{cite web|title=Multimagie.com – Additive-Multiplicative magic squares, 8th and 9th-order|url=http://multimagie.com/English/Multiplicative8_9.htm|access-date=26 August 2015}}</ref>
+{| width="100%"
+| valign="top"|
+{| class="wikitable" style="text-align:center;"
+|+
+First known<br />additive-multiplicative magic square<br />
+{{nobold|1=
+8×8 found by W. W. Horner in 1955<br />
+Sum = 840<br />
+Product = {{val|2058068231856000}}}}
+|-
+| 162 || 207 || 51 || 26 || 133 || 120 || 116 || 25
+|-
+| 105 || 152 || 100 || 29 || 138 || 243 || 39 || 34
+|-
+| 92 || 27 || 91 || 136 || 45 || 38 || 150 || 261
+|-
+| 57 || 30 || 174 || 225 || 108 || 23 || 119 || 104
+|-
+| 58 || 75 || 171 || 90 || 17 || 52 || 216 || 161
+|-
+| 13 || 68 || 184 || 189 || 50 || 87 || 135 || 114
+|-
+| 200 || 203 || 15 || 76 || 117 || 102 || 46 || 81
+|-
+| 153 || 78 || 54 || 69 || 232 || 175 || 19 || 60
+|}
+| valign="top"|
+{| class="wikitable" style="text-align:center;"
+|+
+Smallest known additive-multiplicative semimagic square<br />
+{{nobold|1=4×4 found by L. Morgenstern in 2007<br />
+Sum = 247<br />
+Product = {{val|3369600}}}}
+|-
+| 156 || 18 || 48 || 25
+|-
+| 30 || 144 || 60 || 13
+|-
+| 16 || 20 || 130 || 81
+|-
+| 45 || 65 || 9 || 128
+|}
+|}
+It is unknown if any additive-multiplicative magic squares smaller than 7×7 exist, but it has been proven that no 3×3 or 4×4 additive-multiplicative magic squares and no 3×3 additive-multiplicative semimagic squares exist.<ref>{{cite web|title=Multimagie.com – Smallest additive-multiplicative magic square|url=http://multimagie.com/English/SmallestAddMult.htm|access-date=16 January 2024}}</ref>
+
+{| class="wikitable" style="text-align:center;"
+|+
+Smallest known additive-multiplicative magic square<br />
+{{nobold|1=7×7 found by Sébastien Miquel(Sébastien Miquel<!--Q103036398-->) in August 2016<br />
+Sum = 465<br />
+Product = {{val|150885504000}}}}
+|-
+|126
+|66
+|50
+|90
+|48
+|1
+|84
+|-
+|20
+|70
+|16
+|54
+|189
+|110
+|6
+|-
+|100
+|2
+|22
+|98
+|36
+|72
+|135
+|-
+|96
+|60
+|81
+|4
+|10
+|49
+|165
+|-
+|3
+|63
+|30
+|176
+|120
+|45
+|28
+|-
+|99
+|180
+|14
+|25
+|7
+|108
+|32
+|-
+|21
+|24
+|252
+|18
+|55
+|80
+|15
+|}
+
+===Geometric magic squares===
+[[File:Geomagic square - Diamonds.jpg|thumb|right| text-bottom |160px|A geometric magic square.]]
+Magic squares may be constructed which contain geometric shapes instead of numbers. Such squares, known as [[geometric magic square]]s, were invented and named by [[Lee Sallows]] in 2001.<ref>[https://www.theguardian.com/science/2011/apr/03/magic-squares-geomagic-lee-sallows Magic squares are given a whole new dimension], [[The Observer]], April 3, 2011</ref>
+
+In the example shown the shapes appearing are two dimensional. It is clear that ''all'' magic squares are geometric, in that the numbers that appear in numerical magic squares can be interpreted as a shorthand notation which indicates the lengths of straight line segments that are the geometric 'shapes' occurring in the square. That is, numerical magic squares are that special case of a geometric magic square using one dimensional shapes.<ref name=PourlaScience>[https://www.pourlascience.fr/sd/mathematiques/les-carres-magiques-geometriques-7372.php Les carrés magiques géométriques] by Jean-Paul Delahaye, ''Pour La Science'' No. 428, June 2013</ref>
+
+=== Area magic squares ===
+[[File:Trump Walkington Taneja first linear area magic square 170106.jpg|thumb|168x168px|The first linear area magic square
+]]
+In 2017, following initial ideas of William Walkington and Inder Taneja, the first linear area magic square (L-AMS) was constructed by [[Walter Trump]].<ref>{{Cite journal |last=Delahaye |first=Jean-Paul |date=2018 |title=Les carrés magique d'aire |url=https://www.cristal.univ-lille.fr/~jdelahay/pls/297.pdf |journal=Pour la Science |issue=487 |page=80}}</ref><ref>{{Cite web|url=https://www.futilitycloset.com/2017/01/19/area-magic-squares/|title=Area Magic Squares|date=2017-01-19|website=[[Futility Closet]]|access-date=2017-06-12}}</ref>
+
+===Other magic shapes===
+[[File:magic_tesseract_flattened.svg|thumb|A 3&times;3&times;3&times;3 magic tesseract with numbers 1 to 81 and magic constant 123, flattened for viewing in 2D. Each three shaded numbers of a colour denotes an axis perpendicular to the others. Each 3&times;3 block is a magic square, and each row or column of blocks is a flattened magic cube.<ref>{{Cite web|url=https://mathworld.wolfram.com/MagicTesseract.html|title=Magic Tesseract|first=Eric W.|last=Weisstein|publisher=Wolfram Research, Inc.|website=mathworld.wolfram.com}}</ref>]]
+Other two dimensional shapes than squares can be considered. The general case is to consider a design with ''N'' parts to be magic if the ''N'' parts are labeled with the numbers 1 through ''N'' and a number of identical sub-designs give the same sum. Examples include [[Magic circle (mathematics)|magic circle]]s, magic rectangles, [[Magic triangle (mathematics)|magic triangle]]s<ref name=Ely>Magic Designs, Robert B. Ely III, Journal of Recreational Mathematics volume 1 number 1, January 1968</ref> [[magic star]]s, [[magic hexagon]]s, magic diamonds. Going up in dimension results in magic spheres, magic cylinders, [[magic cube]]s, magic [[parallelepiped]], magic solids, and other [[magic hypercube]]s.
+
+Possible magic shapes are constrained by the number of equal-sized, equal-sum subsets of the chosen set of labels. For example, if one proposes to form a magic shape labeling the parts with {1, 2, 3, 4}, the sub-designs will have to be labeled with {1,4} and {2,3}.<ref name=Ely />
+
+==Related problems==
+[[File:Euler_knight_tour_semimagic_square.svg|thumb|A semimagic square (its diagonals do not sum to its magic constant, 260) also forming a [[knight's tour]] &ndash; no 8×8 fully magic tours exist,<ref>{{cite web | url=http://mathworld.wolfram.com/news/2003-08-06/magictours/ | title=MathWorld News: There Are No Magic Knight's Tours on the Chessboard }}</ref> though 12×12 ones do.<ref>Mayhematics, [http://mayhematics.com/t/md.htm "12×12 Magic Knight's Tours"]</ref>]]
+
+===''n''-Queens problem===
+In 1992, Demirörs, Rafraf, and Tanik published a method for converting some magic squares into [[Eight queens puzzle|''n''-queens]] solutions, and vice versa.<ref>{{cite journal | last1 = Demirörs | first1 = O. | last2 = Rafraf | first2 = N. | last3 = Tanik | first3 = M. M. | title = Obtaining ''n''-queens solutions from magic squares and constructing magic squares from ''n''-queens solutions | journal = Journal of Recreational Mathematics | volume = 24 | issue = 272–280| page = 1992 }}</ref>
+<!--{{Citation needed|date=September 2009}}--><!-- paper not listed in references --><!-- added reference -->
+
+==Magic squares in occultism==
+Magic squares of order 3 through 9, assigned to the seven planets, and described as means to attract the influence of planets and their angels (or demons) during magical practices, can be found in several manuscripts all around Europe starting at least since the 15th century. Among the best known, the ''Liber de Angelis'', a magical handbook written around 1440, is included in Cambridge Univ. Lib. MS Dd.xi.45.<ref>See Juris Lidaka, ''The Book of Angels, Rings, Characters and Images of the Planets'' in ''Conjuring Spirits'', C. Fangier ed. (Pennsylvania State University Press, 1994)</ref> The text of the ''Liber de Angelis'' is very close to that of ''De septem quadraturis planetarum seu quadrati magici'', another handbook of planetary image magic contained in the Codex 793 of the Biblioteka Jagiellońska (Ms BJ 793).<ref>Benedek Láng, ''Demons in Krakow, and Image Magic in a Magical Handbook'', in ''Christian Demonology and Popular Mythology'', Gábor Klaniczay and Éva Pócs eds. (Central European University Press, 2006)</ref> The magical operations involve engraving the appropriate square on a plate made with the metal assigned to the corresponding planet,<ref>According to the correspondence principle, each of the seven planets is associated to a given metal: lead to Saturn, iron to Mars, gold to the Sun, etc.</ref> as well as performing a variety of rituals. For instance, the 3×3 square, that belongs to Saturn, has to be inscribed on a lead plate. It will, in particular, help women during a difficult childbirth.
+
+In about 1510 [[Heinrich Cornelius Agrippa]] wrote ''De Occulta Philosophia'', drawing on the [[Hermeticism|Hermetic]] and [[Magic (paranormal)|magical]] works of [[Marsilio Ficino]] and [[Pico della Mirandola]]. In its 1531 edition, he expounded on the magical virtues of the seven magical squares of orders 3 to 9, each associated with one of the [[astrology|astrological]] planets, much in the same way as the older texts did. This book was very influential throughout Europe until the [[Counter-Reformation]], and Agrippa's magic squares, sometimes called kameas, continue to be used within modern ceremonial magic in much the same way as he first prescribed.<ref name="DruryDict">{{cite book |last=Drury |first=Nevill |author-link=Nevill Drury |title=Dictionary of Mysticism and the Esoteric Traditions |year=1992 |location=Bridport, Dorset |publisher=Prism Press |isbn=978-1-85327-075-8}}</ref>
+
+[[Image:Hagiel sigil derivation.svg|thumb|The derivation of the [[Sigil (magic)|sigil]] of Hagiel, the [[planetary intelligence]] of [[Venus (astrology)|Venus]], drawn on the magic square of Venus. Each [[Hebrew language|Hebrew]] letter provides a numerical value, giving the vertices of the sigil.]]
+The most common use for these kameas is to provide a pattern upon which to construct the sigils of spirits, [[angel]]s or [[demon]]s; the letters of the entity's name are converted into numbers, and lines are traced through the pattern that these successive numbers make on the kamea.
+In a magical context, the term ''magic square'' is also applied to a variety of [[word square]]s or number squares found in magical [[grimoire]]s, including some that do not follow any obvious pattern, and even those with differing numbers of rows and columns. They are generally intended for use as talismans. For instance the following squares are: The [[Sator Arepo Tenet Opera Rotas|Sator square]], one of the most famous magic squares found in a number of grimoires including the ''[[Key of Solomon]]''; a square "to overcome envy", from ''The Book of Power'';<ref>"The Book of Power: Cabbalistic Secrets of Master Aptolcater, Mage of Adrianople", transl. 1724. In {{cite book |last=Shah |first=Idries |author-link=Idries Shah |year=1957 |title=The Secret Lore of Magic |location=London |publisher=Frederick Muller Ltd}}</ref> and two squares from ''[[The Book of the Sacred Magic of Abramelin the Mage]]'', the first to cause the illusion of a superb palace to appear, and the second to be worn on the head of a child during an angelic [[invocation]]:
+
+{{col-begin|width=auto;margin:0.5em auto}}
+{{col-break|valign=bottom}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| S || A || T || O || R
+|-
+| A || R || E || P || O
+|-
+| T || E || N || E || T
+|-
+| O || P || E || R || A
+|-
+| R || O || T || A || S
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;width:12em;height:8em;table-layout:fixed;"
+|-
+| 6 || 66 || 848 || 938
+|-
+| 8 || 11 || 544 || 839
+|-
+| 1 || 11 || 383 || 839
+|-
+| 2 || 73 || 774 || 447
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;"
+|-
+| H || E || S || E || B
+|-
+| E || Q || A || L ||
+|-
+| S || || || ||
+|-
+| E || || G || ||
+|-
+| B || || || ||
+|}
+{{col-break|valign=bottom|gap=1em}}
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;width:8em;height:10em;table-layout:fixed;"
+|-
+| A || D || A || M
+|-
+| D || A || R || A
+|-
+| A || R || A || D
+|-
+| M || A || D || A
+|}
+{{col-end}}
+
+==See also==
+{{div col|colwidth=15em}}
+* [[Antimagic square]]
+* [[Arithmetic sequence]]
+* [[Associative magic square]]
+* [[Combinatorial design]]
+* [[Freudenthal magic square]]
+* [[Hexagonal tortoise problem]]
+* [[John R. Hendricks]]
+* [[Latin square]]
+* [[Magic circle (mathematics)|Magic circle]]
+* [[Magic cube]]
+* [[Magic cube classes]]
+* [[Magic polygon]]
+* [[Magic series]]
+* [[Matrix (mathematics)#Square matrices|Square matrices]]
+* [[Most-perfect magic square]]
+* [[Nasik magic hypercube]]
+* [[Prime reciprocal magic square]]
+* [[Room square]]
+* [[Sigil (magic)]]
+* [[Sriramachakra]]
+* [[Sudoku]]
+* [[Unsolved problems in mathematics]]
+{{Div col end}}
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+{{refbegin}}
+* {{MathWorld|urlname=MagicSquare|title=Magic Square}}
+* [https://web.archive.org/web/20070715054451/http://mathdl.maa.org/convergence/1/?pa=content&sa=viewDocument&nodeId=528&bodyId=784 Magic Squares] at [https://web.archive.org/web/20070713083148/http://mathdl.maa.org/convergence/1/ Convergence]
+* John Lee Fults, ''Magic Squares''. (La Salle, Illinois: Open Court, 1974).
+* [[Cliff Pickover]], ''The Zen of Magic Squares, Circles, and Stars'' (Princeton, New Jersey: Princeton University Press)
+* Leonhard Euler, ''[https://arxiv.org/abs/math/0408230 On magic squares]''
+* Leonhard Euler, ''[http://eulerarchive.maa.org//docs/translations/E530.pdf Investigations on new type of magic square]''
+* [https://web.archive.org/web/20070702055428/http://cboyer.club.fr/multimagie/English/BensonDickinson.htm William H. Benson] and [[Oswald Jacoby]], "New Recreations with Magic Squares". (New York: Dover, 1976).
+* {{wikicite|ref={{harvid|Kostelanetz|2003}}|reference=[[Richard Kostelanetz|Kostelanetz, Richard]]. 2003. ''Conversing with Cage'', 2nd edition. New York: Routledge. {{ISBN|0-415-93792-2}}.}}
+{{refend}}
+
+==Further reading==
+{{refbegin}}
+* {{cite book | last = Andrews | first = W.S. | title = Magic Squares and Cubes | edition = 2nd | publisher = Open Court Publishing | year = 1917 | page = [https://archive.org/details/MagicSquaresCubesAndrewsEdited/page/n12 428] | url = https://archive.org/details/MagicSquaresCubesAndrewsEdited}}
+* {{cite book | last = Block | first = Seymour | title = Before Sudoku: The World of Magic Squares | publisher = Oxford University Press | year = 2009 | isbn = 978-0-19-536790-4}}
+* {{cite book | last = Schinz | first = Alfred | title = The Magic Square: Cities in Ancient China | publisher = Edition Axel Menges | year = 1996 | page = 428 | isbn = 978-3-930698-02-8}}
+* {{cite journal | last = McCranie | first = Judson | date=November 1988 | title = Magic Squares of All Orders | journal = Mathematics Teacher | volume = 81 | issue = 8 | pages = 674–78 | doi = 10.5951/MT.81.8.0674 }}
+* {{cite book | last1 = Ollerenshaw | first1 = Kathleen | last2 = Bree | first2 = David | title = Most perfect pandiagonal magic squares: their construction and enumeration | publisher = The Institute of Mathematics and its Applications | date = October 1998 | isbn = 978-0-905091-06-8 | url-access = registration | url = https://archive.org/details/mostperfectpandi0000olle }}
+* {{cite journal | last1 = Benjamin | first1 = Arthur T. | last2 = Brown | first2 = Ethan J. | title = Challenging Magic Squares for Magicians | journal = The College Mathematics Journal | volume = 45 | issue = 2 | date = November 2014 | pages = 92–100 | doi = 10.4169/college.math.j.45.2.092| s2cid = 125255312 | url = http://www.mathaware.org/mam/2014/calendar/MagicSquaresCMJFinal.pdf}}
+{{refend}}
+
+==External links==
+{{Wikisource1911Enc|Magic Square}}
+* ''Min Chen''. [https://news.artnet.com/art-world/5-occult-symbols-decoded-2704827 Unlocking the Occult: 5 Mystical Symbols and Their Secret Histories] // Artnet News — Oct. 30, 2025.
+
+{{Magic polygons}}
+{{Authority control}}
+
+{{DEFAULTSORT:Magic Square}}
+[[Category:Magic squares| ]]
+[[Category:Matrices (mathematics)]]
+[[Category:Chinese mathematical discoveries]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Magic symbols]]

@@ -1,0 +1,157 @@
+{{Short description|Type of measurement in quantum mechanics}}
+[[Image:Regular tetrahedron inscribed in a sphere.svg|thumb|right|In the [[Bloch sphere]] representation of a [[qubit]], the states of a SIC-POVM form a [[regular tetrahedron]]. Zauner conjectured that analogous structures exist in complex [[Hilbert space]]s of all finite dimensions.]]
+In the context of [[quantum mechanics]] and [[Quantum information|quantum information theory]], '''symmetric, informationally complete, positive operator-valued measures''' (SIC-[[POVM]]s) are a particular type of [[POVM|generalized measurement (POVM)]]. SIC-POVMs are particularly notable thanks to their defining features of (1) being informationally complete; (2) having the minimal number of outcomes compatible with informational completeness, and (3) being highly symmetric. In this context, informational completeness is the property of a POVM of allowing to fully reconstruct input states from measurement data.
+
+The properties of SIC-POVMs make them an interesting candidate for a "standard quantum measurement", utilized in the study of foundational quantum mechanics, most notably in [[Quantum Bayesianism|QBism]].<ref>{{cite journal|title=Can QBism exist without Q? Morphophoric measurements in generalised probabilistic theories |first1=Anna |last1=Szymusiak |first2=Wojciech |last2=Słomczyński |journal=[[Quantum (journal)|Quantum]] |year=2025 |volume=9 |article-number=1598 |doi=10.22331/q-2025-01-15-1598 |arxiv=2302.04957 |bibcode=2025Quant...9.1598S }}</ref> SIC-POVMs have several applications in the context of [[quantum state tomography]]<ref>{{Cite journal|last1=Caves|first1=Carlton M.|author-link=Carlton M. Caves|last2=Fuchs|first2=Christopher A.|author-link2=Christopher A. Fuchs|last3=Schack|first3=Rüdiger|date=September 2002|title=Unknown quantum states: The quantum de Finetti representation|journal=[[Journal of Mathematical Physics]]|language=en|volume=43|issue=9|pages=4537–4559|doi=10.1063/1.1494475|issn=0022-2488|arxiv=quant-ph/0104088|bibcode=2002JMP....43.4537C|s2cid=17416262}}</ref> and [[quantum cryptography]],<ref>{{cite journal|first1=C. A. |last1=Fuchs |first2=M. |last2=Sasaki |title=Squeezing Quantum Information through a Classical Channel: Measuring the 'Quantumness' of a Set of Quantum States |journal=Quant. Info. Comp. |volume=3 |pages=377–404 |year=2003 |arxiv=quant-ph/0302092 |bibcode=2003quant.ph..2092F}}</ref> and a possible connection has been discovered with [[Hilbert's twelfth problem]].<ref>{{Cite journal|last1=Appleby|first1=Marcus|last2=Flammia|first2=Steven|last3=McConnell|first3=Gary|last4=Yard|first4=Jon|date=2017-04-24|title=SICs and Algebraic Number Theory|journal=[[Foundations of Physics]]|language=en|volume=47|issue=8|pages=1042–1059|arxiv=1701.05200|bibcode=2017FoPh...47.1042A|doi=10.1007/s10701-017-0090-7|s2cid=119334103|issn=0015-9018}}</ref>
+
+==Definition==
+{{unsolved|mathematics|Do SIC-POVMs exist in all dimensions?}}A POVM over a <math>d</math>-dimensional Hilbert space <math>\mathcal{H}</math> is a set of <math>m</math> [[positive-definite kernel|positive-semidefinite operators]] <math>\left\{F_i \right\}_{i=1}^m</math> that sum to the [[Identity matrix|identity]]:<math display="block">
+ \sum_{i=1}^m F_i = I.
+</math>
+If a POVM consists of at least <math>d^2</math> operators which [[Spanning set|span]] the space of self-adjoint operators <math>\mathcal{L}(\mathcal{H})</math>, it is said to be an informationally complete POVM (IC-POVM). IC-POVMs consisting of exactly <math>d^2</math> elements are called minimal. A set of <math>d^2</math> [[Rank (linear algebra)|rank]]-1 [[Projection (linear algebra)|projectors]] <math>\left\{\Pi_i \right\}_{i=1}^{d^2}</math> which have equal pairwise [[Hilbert–Schmidt inner product]]s,
+<math display="block">
+ \mathrm{Tr}\left( \Pi_i \Pi_j \right) = \frac{d\delta_{ij} + 1}{d + 1},</math>
+defines a minimal IC-POVM with elements <math>F_i = \frac{1}{d} \Pi_i</math> called a SIC-POVM.
+
+==Properties==
+
+===Symmetry===
+Consider an arbitrary set of rank-1 projectors <math>(\Pi_i)_{i=1}^{d^2}</math> such that <math>F_i=\Pi_i/d</math> is a POVM, and thus <math> \frac{1}{d} \sum_i \Pi_i = I</math>. Asking the projectors to have equal pairwise inner products, <math> \mathrm{Tr}(\Pi_i \Pi_j ) = c</math> for all <math>i \neq j</math>, fixes the value of <math>c</math>. To see this, observe that
+<math display="block">
+ \begin{align}
+  d &= \mathrm{Tr}(I^2) \\
+    &= \frac{1}{d^2} \sum_{i,j} \mathrm{Tr}(\Pi_i \Pi_j) \\
+    &= \frac{1}{d^2} \left( d^2 + c d^2 (d^2-1) \right)
+ \end{align}
+</math>
+implies that <math>c = \frac{1}{d + 1}</math>. Thus,
+<math display="block">
+ \mathrm{Tr}\left( \Pi_i \Pi_j \right) = \frac{d\delta_{ij} + 1}{d + 1}.
+</math>
+This property is what makes SIC-POVMs ''symmetric'': Any pair of elements has the same [[Hilbert–Schmidt inner product#Space of Hilbert–Schmidt operators|Hilbert–Schmidt inner product]] as any other pair.
+
+===Superoperator===
+In using the SIC-POVM elements, an interesting [[superoperator]] can be constructed, the likes of which map <math> \mathcal{L}(\mathcal{H}) \rightarrow \mathcal{L}(\mathcal{H}) </math>. This operator is most useful in considering the [[#Relation to spherical t-designs|relation of SIC-POVMs with spherical t-designs]]. Consider the map
+
+:<math> \begin{align} \mathcal{G}: \mathcal{L}(\mathcal{H}) &\rightarrow  \mathcal{L}(\mathcal{H})\\
+                                                          A &\mapsto      \displaystyle \sum_\alpha |\psi_\alpha \rangle \langle \psi_\alpha | A |\psi_\alpha \rangle \langle \psi_\alpha | \end{align}</math>
+
+This operator acts on a SIC-POVM element in a way very similar to identity, in that
+:<math> \begin{align} \mathcal{G}(\Pi_\beta) &= \displaystyle \sum_\alpha \Pi_\alpha \left| \langle \psi_\alpha | \psi_\beta \rangle \right|^2 \\
+                                             &= \displaystyle \Pi_\beta + \frac{1}{d+1} \sum_{\alpha \neq \beta} \Pi_\alpha \\
+                                             &= \displaystyle \frac{d}{d+1} \Pi_\beta + \frac{1}{d+1} \Pi_\beta + \frac{1}{d+1} \sum_{\alpha \neq \beta} \Pi_\alpha \\
+                                             &= \displaystyle \frac{d}{d+1} \Pi_\beta + \frac{d}{d+1}\sum_\alpha \frac{1}{d}\Pi_\alpha \\
+                                             &= \displaystyle \frac{d}{d+1} \left( \Pi_\beta + I \right) 
+\end{align}</math>
+
+But since elements of a SIC-POVM can completely and uniquely determine any quantum state, this linear operator can be applied to the decomposition of any state, resulting in the ability to write the following:
+:<math> G = \frac{d}{d+1} \left( \mathcal{I} + I \right) </math> where <math> I(A) = A \text{ and } \mathcal{I}(A) = \mathrm{Tr}(A)I </math>
+From here, the [[inverse element|left inverse]] can be calculated<ref>C.M. Caves (1999); http://info.phys.unm.edu/~caves/reports/infopovm.pdf</ref> to be <math> G^{-1} = \frac1d \left[ \left(d+1\right)I - \mathcal{I} \right]</math>, and so with the knowledge that 
+:<math> I=G^{-1}G = \frac1d \sum_\alpha \left[ (d+1)\Pi_\alpha \odot \Pi_\alpha - I\odot \Pi_\alpha \right]</math>,
+an expression for a state <math> \rho </math> can be created in terms of a [[quasi-probability distribution]], as follows:
+
+:<math> \begin{align} \rho = I | \rho ) &= \displaystyle \sum_\alpha \left[ (d+1)\Pi_\alpha - I \right] \frac{ (\Pi_\alpha|\rho)}{d} \\
+&= \displaystyle \sum_\alpha \left[ (d+1)\Pi_\alpha - I \right] \frac{ \mathrm{Tr}(\Pi_\alpha\rho)}{d} \\
+&= \displaystyle \sum_\alpha p_\alpha \left[ (d+1)\Pi_\alpha - I \right] \quad \text{ where } p_\alpha = \mathrm{Tr}(\Pi_\alpha\rho)/d\\
+&= \displaystyle -I + (d+1) \sum_\alpha p_\alpha |\psi_\alpha \rangle \langle \psi_\alpha | \\
+&= \displaystyle \sum_\alpha \left[ (d+1)p_\alpha - \frac1d \right]  |\psi_\alpha \rangle \langle \psi_\alpha |
+\end{align} </math>
+where <math> | \rho ) </math> is the [[Bra–ket notation|Dirac notation]] for the [[Density matrix|density operator]] viewed in the Hilbert space <math> \mathcal{L} (\mathcal{H}) </math>. This shows that the appropriate quasi-probability distribution (termed as such because it may yield negative results) representation of the state <math> \rho </math> is given by
+:<math>(d+1)p_\alpha - \frac1d</math>
+
+==Finding SIC sets==
+===Simplest example===
+For <math>d=2</math> the equations that define the SIC-POVM can be solved by hand, yielding the vectors
+:<math display="block">
+\begin{align}
+|\psi_1\rangle &= |0\rangle \\
+|\psi_2\rangle &= \frac1{\sqrt3}|0\rangle + \sqrt{\frac23}|1\rangle \\
+|\psi_3\rangle &= \frac1{\sqrt3}|0\rangle + \sqrt{\frac23}e^{i\frac{2\pi}{3}}|1\rangle \\
+|\psi_4\rangle &= \frac1{\sqrt3}|0\rangle + \sqrt{\frac23}e^{i\frac{4\pi}{3}}|1\rangle,
+\end{align}
+</math>
+which form the vertices of a regular tetrahedron in the [[Bloch sphere]]. The projectors that define the SIC-POVM are given by <math>\Pi_i = |\psi_i\rangle\langle\psi_i|</math>, and the elements of the SIC-POVM are thus <math>F_i=\Pi_i/2=|\psi_i\rangle\!\langle\psi_i|/2</math>.
+
+For higher dimensions this is not feasible, necessitating the use of a more sophisticated approach.
+===Group covariance ===
+
+====General group covariance====
+A SIC-POVM <math>P</math> is said to be ''group covariant'' if there exists a group <math> G </math> with a <math>d^2</math>-dimensional [[Unitary representation|unitary]] [[group representation|representation]] such that
+* <math> \forall |\psi\rangle\langle \psi | \in P, \quad \forall U_g \in G,\quad U_g|\psi\rangle \in P </math>
+* <math> \forall |\psi\rangle\langle \psi |, |\phi \rangle\langle \phi | \in P, \quad \exists U_g \in G, \quad U_g |\phi \rangle = | \psi \rangle </math>
+
+The search for SIC-POVMs can be greatly simplified by exploiting the property of group covariance. Indeed, the problem is reduced to finding a normalized ''fiducial vector'' <math> | \phi \rangle </math> such that 
+:<math> | \langle \phi | U_g | \phi \rangle |^2 =  \frac{1}{d+1} \ \forall g \neq id </math>.
+The SIC-POVM is then the set [[Generating set of a group|generated]] by the [[Group action (mathematics)|group action]] of <math> U_g </math> on <math> |\phi \rangle </math>.
+
+====The case of Z<sub>''d''</sub> × Z<sub>''d''</sub> ====
+So far, most SIC-POVM's have been found by considering group covariance under <math> \mathbb{Z}_d \times \mathbb{Z}_d </math>.<ref name="history2017"/> To construct the [[unitary representation]], we map <math> \mathbb{Z}_d \times \mathbb{Z}_d</math> to <math> U(d) </math>, the group of unitary operators on d-dimensions. Several operators must first be introduced. Let <math> |e_j \rangle </math> be a basis for <math> \mathcal{H}</math>, then the ''phase operator'' is
+:<math> T|e_j \rangle = \omega^j |e_j \rangle </math> where <math> \omega = e^{\frac{2\pi i}{d}}</math> is a [[root of unity]]
+and the ''shift operator'' as
+:<math> S|e_j \rangle = |e_{j+1 \pmod{d}} \rangle </math>
+
+Combining these two operators yields the [[unitary operator|unitary]] ''Weyl operator'' <math> W(p,q) = S^p T^q </math>, which generates the Heisenberg-Weyl group.
+
+It can be checked that the mapping <math> (p,q) \in \mathbb{Z}_d \times \mathbb{Z}_d \rightarrow W(p,q) </math> is a projective unitary representation. It also satisfies all of the properties for group covariance,<ref name="Appleby2004"/> and is useful for numerical calculation of SIC sets.
+
+===Zauner's conjecture===
+Given some of the useful properties of SIC-POVMs, it would be useful if it were positively known whether such sets could be constructed in a Hilbert space of arbitrary dimension. Originally proposed in the dissertation of Zauner,<ref name="Zauner1999">G. Zauner, Quantendesigns – Grundzüge einer nichtkommutativen Designtheorie. Dissertation, Universität Wien, 1999. http://www.gerhardzauner.at/documents/gz-quantendesigns.pdf</ref> a conjecture about the existence of a fiducial vector for arbitrary dimensions was hypothesized.
+
+More specifically,
+<blockquote>
+For every dimension <math>d\geq 2</math> there exists a SIC-POVM whose elements are the orbit of a positive rank-one operator <math>E_0</math> under the [[Generalizations of Pauli matrices#A non-Hermitian generalization of Pauli matrices|Weyl&ndash;Heisenberg group]] <math> H_d </math>. What is more, <math>E_0</math> commutes with an element T of the Jacobi group <math>J_d=H_d \rtimes SL(2,\mathbb{Z}_d)</math>. The action of T on <math>H_d</math> modulo the center has order three.
+</blockquote>
+
+Utilizing the notion of group covariance on <math> \mathbb{Z}_d \times \mathbb{Z}_d </math>, this can be restated as <ref name="Renes2004"/>
+<blockquote>
+For any dimension <math> d \in \mathbb{N} </math>, let <math> \left\{ k \right\}_{k=0}^{d-1} </math> be an orthonormal basis for <math> \mathbb{C}^d </math>, and define
+: <math> \displaystyle \omega = e^{\frac{2\pi i}{d}}, \quad \quad D_{j,k} = \omega^{\frac{jk}{2}} \sum_{m=0}^{d-1}\omega^{jm} | k+m\pmod{d} \rangle \langle m |</math>
+Then <math> \exists |\phi \rangle \in \mathbb{C}^d </math> such that the set <math> \left\{ D_{j,k} |\phi \rangle \right\}_{j,k=1}^d </math> is a SIC-POVM.
+</blockquote>
+
+===Partial results===
+The proof for the existence of SIC-POVMs for arbitrary dimensions remains an open question,<ref name="Appleby2004">{{Cite journal|arxiv=quant-ph/0412001|last1= Appleby|first1= D. M.|title= SIC-POVMs and the Extended Clifford Group|journal= Journal of Mathematical Physics|volume= 46|issue= 5|pages= 052107|year= 2005|doi= 10.1063/1.1896384|bibcode= 2005JMP....46e2107A}}</ref> but is an ongoing field of research in the quantum information community.
+
+Exact expressions for SIC sets have been found for Hilbert spaces of all dimensions from <math> d=2 </math> through <math> d = 53 </math> inclusive, and in some higher dimensions as large as <math> d = 5779 </math>, for 115 values of <math> d </math> in all.{{efn|Details of these exact solutions can be found in the literature.<ref name="Zauner1999" /><ref name="Renes2004" /><ref>A. Koldobsky and H. König, "Aspects of the Isometric Theory of Banach Spaces," in Handbook of the Geometry of Banach Spaces, Vol. 1, edited by W. B. Johnson and J. Lindenstrauss, (North Holland, Dordrecht, 2001), pp. 899–939.</ref><ref name="ScottGrassl">{{Cite journal|arxiv=0910.5784|last1= Scott|first1= A. J.|title= SIC-POVMs: A new computer study|journal= Journal of Mathematical Physics|volume= 51|issue= 4|pages= 042203|last2=  Grassl|first2= M.|year= 2010|doi= 10.1063/1.3374022|bibcode= 2010JMP....51d2203S|s2cid= 115159554}}</ref><ref>TY Chien. ''[https://www.math.auckland.ac.nz/~waldron/Tuan/Thesis.pdf Equiangular lines, projective symmetries and nice error frames]''. PhD thesis University of Auckland (2015); </ref><ref>{{Cite web|url=https://www.physics.usyd.edu.au/~sflammia/SIC/|title=Exact SIC fiducial vectors|website=[[University of Sydney]]|access-date=2018-03-07}}</ref><ref>{{cite journal|last1=Appleby|first1=Marcus|last2=Chien|first2=Tuan-Yow|last3=Flammia|first3=Steven|last4=Waldron|first4=Shayne|year=2018|title=Constructing exact symmetric informationally complete measurements from numerical solutions|journal=Journal of Physics A: Mathematical and Theoretical|volume=51|issue=16|pages=165302|arxiv=1703.05981 |doi=10.1088/1751-8121/aab4cd|bibcode=2018JPhA...51p5302A|s2cid=119736328}}</ref><ref name="Stacey2021">{{Cite book|last=Stacey|first=Blake C.|title=A First Course in the Sporadic SICs|date=2021|publisher=Springer|isbn=978-3-030-76104-2|location=Cham, Switzerland|pages=6|oclc=1253477267}}</ref>}} Furthermore, using the Heisenberg group covariance on <math> \mathbb{Z}_d\times \mathbb{Z}_d </math>, numerical solutions have been found for all integers up through <math> d=193 </math>, and in some larger dimensions up to <math> d = 2208</math>.{{efn|Like the exact solutions, the numerical solutions have been presented over the years in a series of publications by different authors.<ref name="Renes2004"/><ref name="ScottGrassl"/><ref>{{cite arXiv|last1=Fuchs|first1=Christopher A.|last2=Stacey|first2=Blake C.|date=2016-12-21|title=QBism: Quantum Theory as a Hero's Handbook |eprint=1612.07308 |class=quant-ph}}</ref><ref>{{cite arXiv|last=Scott|first=A. J.|date=2017-03-11|title=SICs: Extending the list of solutions|eprint=1703.03993 |class=quant-ph}}</ref><ref name="history2017">{{cite journal|last1=Fuchs|first1=Christopher A.|last2=Hoang|first2=Michael C.|last3=Stacey|first3=Blake C.|date=2017-03-22|title=The SIC Question: History and State of Play|arxiv=1703.07901 |doi=10.3390/axioms6030021|volume=6|issue=4|journal=Axioms|page=21|doi-access=free}}</ref><ref name="Stacey2021"/>}}
+
+There exists a construction that has been conjectured to work for all prime dimensions of the form <math>n^2+3</math> for [[integer]] <math>n</math>,<ref>{{cite journal |author1=Marcus Appleby |author2=Ingemar Bengtsson |author3=Markus Grassl |author4=Michael Harrison |author5=Gary McConnell |title=SIC-POVMs from Stark units: Prime dimensions n^2+3 |journal=J. Math. Phys. |date=2022 |volume=63 |issue=11 |page=112205 |doi=10.1063/5.0083520 | arxiv=2112.05552}}</ref> and another that has been conjectured to work for all dimensions.<ref>{{cite arXiv |author1=Marcus Appleby |author2=Steven T Flammia |author3=Gene S Kopp |title=A Constructive Approach to Zauner's Conjecture via the Stark Conjectures |date=2025 | eprint = 2501.03970 | class = math.NT}}</ref>
+
+==Relation to spherical t-designs==
+A ''[[spherical t-design]]'' is a set of vectors <math> S=\left\{ | \phi_k \rangle : |\phi_k \rangle \in \mathbb{S}^d \right\} </math> on the d-dimensional generalized [[hypersphere]], such that the average value of any <math> t^{th}</math>-order polynomial <math> f_t(\psi) </math> over <math> S </math> is equal to the average of <math> f_t(\psi) </math> over all normalized vectors <math> | \psi \rangle </math>. Defining <math> \mathcal{H}_t = \displaystyle \bigotimes_{i=1}^t \mathcal{H} </math> as the t-fold [[tensor product]] of the Hilbert spaces, and
+: <math>S_t = \displaystyle \sum_{k=1}^n | \Phi_k^t \rangle \langle \Phi_k^t | , \quad |\Phi_k^t\rangle = |\phi_k\rangle^{\otimes t} </math>
+as the t-fold tensor product [[Frame of a vector space|frame]] operator, it can be shown that<ref name="Renes2004">{{Cite journal|arxiv=quant-ph/0310075|last1= Renes|first1= Joseph M.|title= Symmetric Informationally Complete Quantum Measurements|journal= Journal of Mathematical Physics|volume= 45|issue= 6|pages= 2171|last2= Blume-Kohout|first2= Robin|last3=  Scott|first3= A. J.|last4=  Caves|first4= Carlton M.|year= 2004|doi= 10.1063/1.1737053|bibcode= 2004JMP....45.2171R|s2cid= 17371881}}</ref> a set of normalized vectors <math> \left\{ | \phi_k \rangle \in \mathbb{S}^d \right\}_{k=1}^n </math> with <math> n \geq {t+d-1 \choose d-1} </math> forms a spherical t-design [[if and only if]]
+::<math> \displaystyle \mathrm{Tr}\left[ S_t^2 \right] = \sum_{j,k} \left| \langle \phi_j | \phi_k \rangle \right|^{2t} = \frac{n^2 t! (d-1)!}{(t+d-1)!} </math>
+
+It then immediately follows that every SIC-POVM is a 2-design, since <math>d^2 \geq {d+2-1 \choose d-1} = \frac{d(d+1)}{2}</math> and 
+::<math> \mathrm{Tr}(S^2_2) =  \displaystyle \sum_{j,k} |\langle \phi_j |\phi_k \rangle |^4 = \frac{2d^3}{d+1} </math>
+which is precisely the necessary value that satisfies the above theorem.
+
+==Relation to mutually unbiased bases ==
+In a ''d''-dimensional Hilbert space, two ''distinct'' bases <math> \left\{|\psi_i\rangle \right\}, \left\{ |\phi_j \rangle \right\} </math> are said to be [[mutually unbiased bases|mutually unbiased]] if 
+: <math>\displaystyle |\langle \psi_i | \phi_j \rangle|^2 = \frac{1}{d}, \quad \forall i,j </math>
+This seems similar in nature to the symmetric property of SIC-POVMs. [[William Wootters|Wootters]] points out that a complete set of <math>d+1</math> unbiased bases yields a geometric structure known as a [[finite projective plane]], while a SIC-POVM (in any dimension that is a [[prime power]]) yields a [[Affine plane (incidence geometry)|finite affine plane]], a type of structure whose definition is identical to that of a finite projective plane with the roles of points and lines exchanged. In this sense, the problems of SIC-POVMs and of mutually unbiased bases are dual to one another.<ref>{{cite arXiv |eprint=quant-ph/0406032|last1= Wootters|first1= William K.|title= Quantum measurements and finite geometry|year= 2004}}</ref>
+
+In dimension <math>d = 3</math>, the analogy can be taken further: a complete set of mutually unbiased bases can be directly constructed from a SIC-POVM.<ref>{{cite journal|last=Stacey|first=Blake C.|title=SIC-POVMs and Compatibility among Quantum States|journal=Mathematics|volume=4|issue=2|pages=36|doi=10.3390/math4020036|arxiv=1404.3774|year=2016|doi-access=free}}</ref> The 9 vectors of the SIC-POVM, together with the 12 vectors of the mutually unbiased bases, form a set that can be used in a [[Kochen–Specker theorem|Kochen–Specker proof]].<ref>{{cite journal|first1=Ingemar |last1=Bengtsson |first2=Kate |last2=Blanchfield |first3=Adán |last3=Cabello |title=A Kochen–Specker inequality from a SIC |journal=[[Physics Letters A]] |volume=376 |issue=4 |year=2012 |pages=374&ndash;376 |doi=10.1016/j.physleta.2011.12.011 |arxiv=1109.6514|bibcode=2012PhLA..376..374B |s2cid=55755390 }}</ref> However, in 6-dimensional Hilbert space, a SIC-POVM is known, but no complete set of mutually unbiased bases has yet been discovered, and it is widely believed that no such set exists.<ref>{{cite arXiv |eprint=quant-ph/0406175|last1=Grassl|first1=Markus|title=On SIC-POVMs and MUBs in Dimension 6|year=2004 }}</ref><ref>{{Cite book|title=Geometry of quantum states : an introduction to quantum entanglement |title-link=Geometry of Quantum States |last1=Bengtsson|first1=Ingemar|last2=Życzkowski|first2=Karol|publisher=[[Cambridge University Press]]|year=2017|isbn=9781107026254|edition=Second|location=Cambridge, United Kingdom|pages=313&ndash;354|oclc=967938939|author-link2=Karol Życzkowski}}</ref>
+
+==See also==
+* [[Measurement in quantum mechanics]]
+* [[Mutually unbiased bases]]
+* [[POVM]]
+* [[Quantum Bayesianism|QBism]]
+
+==Notes==
+{{Notes|30em}}
+
+==References ==
+<references/>
+
+[[Category:Quantum measurement]]
+[[Category:Unsolved problems in physics]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Hilbert spaces]]
+[[Category:Operator theory]]
+[[Category:Incidence geometry]]
+[[Category:Euclidean plane geometry]]
+[[Category:Algebraic geometry]]
+[[Category:Hypergraphs]]
+[[Category:Computer-assisted proofs]]

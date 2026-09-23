@@ -1,0 +1,161 @@
+{{short description|Proposition on the domination number of Cartesian products of graphs}}
+{{unsolved|mathematics|'''Conjecture:'''<br /><math> \gamma(G\,\Box\,H) \ge \gamma(G)\gamma(H) \, </math>}}
+
+In [[graph theory]], '''Vizing's conjecture''' concerns a relation between the [[Dominating set|domination number]] and the [[cartesian product of graphs]]. 
+This conjecture was first stated by {{harvs|first=Vadim G.|last=Vizing|authorlink=Vadim G. Vizing|year=1968|txt}}, and states that, if {{math|γ(''G'')}} denotes the minimum number of [[Vertex (graph theory)|vertices]] in a [[dominating set]] for the [[Graph (discrete mathematics)|graph]] {{mvar|G}}, then
+
+: <math> \gamma(G\,\Box\,H) \ge \gamma(G)\gamma(H). \, </math>
+
+{{harvtxt|Gravier|Khelladi|1995}} conjectured a similar bound for the domination number of the [[tensor product of graphs]]; however, a counterexample was found by {{harvtxt|Klavžar|Zmazek|1996}}. Since Vizing proposed his conjecture, many mathematicians have worked on it, with partial results described below. For a more detailed overview of these results, see {{harvtxt|Brešar|Dorbec|Goddard|Hartnell|2012}}.
+
+== Examples ==
+[[File:Star product domination.svg|thumb|240px|An optimal five-vertex dominating set in the product of two stars, {{math|''K''{{sub|1,4}} □ ''K''{{sub|1,4}}}}. Examples such as this one show that, for some graph products, Vizing's conjecture can be far from tight.]]
+
+A 4-[[cycle graph|cycle]] {{math|''C''{{sub|4}}}} has domination number two: any single vertex only dominates itself and its two neighbors, but any pair of vertices dominates the whole graph. The product {{math|''C''{{sub|4}} □ ''C''{{sub|4}}}} is a four-dimensional [[hypercube graph]]; it has 16 vertices, and any single vertex can only dominate itself and four neighbors, so three vertices could only dominate 15 of the 16 vertices. Therefore, at least four vertices are required to dominate the entire graph, the bound given by Vizing's conjecture.
+
+It is possible for the domination number of a product to be much larger than the bound given by Vizing's conjecture. For instance, for a [[star (graph theory)|star]] {{math|''K''{{sub|1,''n''}}}}, its domination number {{math|γ(K{{sub|1,''n''}})}} is one: it is possible to dominate the entire star with a single vertex at its hub. Therefore, for the graph {{math|1=''G'' = ''K''{{sub|1,''n''}} □ ''K''{{sub|1,''n''}}}} formed as the product of two stars, Vizing's conjecture states only that the domination number should be at least {{math|1=1 × 1 = 1}}. However, the domination number of this graph is actually much higher. It has {{math|''n''<sup>2</sup> + 2''n'' + 1}} vertices: {{math|''n''<sup>2</sup>}} formed from the product of a leaf in both factors, {{math|2''n''}} from the product of a leaf in one factor and the hub in the other factor, and one remaining vertex formed from the product of the two hubs. Each leaf-hub product vertex in {{mvar|G}} dominates exactly {{mvar|n}} of the leaf-leaf vertices, so {{mvar|n}} leaf-hub vertices are needed to dominate all of the leaf-leaf vertices. However, no leaf-hub vertex dominates any other such vertex, so even after {{mvar|n}} leaf-hub vertices are chosen to be included in the dominating set, there remain {{mvar|n}} more undominated leaf-hub vertices, which can be dominated by the single hub-hub vertex. Thus, the domination number of this graph is {{math|1=γ(''K''{{sub|1,''n''}} □ ''K''{{sub|1,''n''}}) = ''n'' + 1}} far higher than the trivial bound of one given by Vizing's conjecture.
+
+There exist infinite families of graph products for which the bound of Vizing's conjecture is exactly met.<ref>{{harvtxt|Payan|Xuong|1982}}; {{harvtxt|Fink|Jacobson|Kinch|Roberts|1985}}; {{harvtxt|Jacobson|Kinch|1986}}; {{harvtxt|Hartnell|Rall|1991}}.</ref> For instance, if {{mvar|G}} and {{mvar|H}} are both connected graphs, each having at least four vertices and having exactly twice as many total vertices as their domination numbers, then {{math|1=γ(''G'' □ ''H'') = γ(''G'') γ(''H'')}}.<ref name="fjkr">{{harvtxt|Fink|Jacobson|Kinch|Roberts|1985}}.</ref> The graphs {{mvar|G}} and {{mvar|H}} with this property consist of the four-vertex cycle {{math|''C''{{sub|4}}}} together with the [[rooted product of graphs|rooted products]] of a connected graph and a single edge.<ref name="fjkr"/>
+
+==Partial results==
+
+Clearly, the conjecture holds when either {{mvar|G}} or {{mvar|H}} has domination number one: for, the product contains an isomorphic copy of the other factor, dominating which requires at least {{math|γ(''G'')γ(''H'')}} vertices.
+
+Vizing's conjecture is also known to hold for cycles<ref>{{harvtxt|Jacobson|Kinch|1986}}; {{harvtxt|El-Zahar|Pareek|1991}}.</ref> and for graphs with domination number two.<ref>{{harvtxt|Barcalkin|German|1979}}.</ref>
+
+{{harvtxt|Clark|Suen|2000}} proved that the domination number of the product is at least half as large as the conjectured bound, for all {{mvar|G}} and {{mvar|H}}.
+
+==Upper bounds==
+
+{{harvtxt|Vizing|1968}} observed that
+
+: <math> \gamma(G \,\Box\, H) \le \min\{\gamma(G) |V(H)|,\gamma(H)|V(G)|\}. </math>
+
+A dominating set meeting this bound may be formed as the cartesian product of a dominating set in one of ''G'' or ''H'' with the set of all vertices in the other graph.
+
+==Notes==
+{{reflist}}
+
+==References==
+{{refbegin|2}}
+*{{citation
+ | last1 = Barcalkin | first1 = A. M. | last2 = German | first2 = L. F.
+ | title = The external stability number of the Cartesian product of graphs
+ | language = Russian
+ | year = 1979
+ | journal = Bul. Akad. Stiince RSS Moldoven
+ | volume = 1
+ | pages = 5–8
+ |mr=0544028}}.
+*{{citation
+ | last1 = Brešar | first1 = Boštjan
+ | last2 = Dorbec | first2 = Paul
+ | last3 = Goddard | first3 = Wayne
+ | last4 = Hartnell | first4 = Bert L.
+ | last5 = Henning | first5 = Michael A.
+ | last6 = Klavžar | first6 = Sandi
+ | last7 = Rall | first7 = Douglas F.
+ | doi = 10.1002/jgt.20565
+ | issue = 1
+ | journal = [[Journal of Graph Theory]]
+ | mr = 2864622
+ | pages = 46–76
+ | title = Vizing's conjecture: a survey and recent results
+ | volume = 69
+ | year = 2012}}.
+*{{citation
+ | last1 = Clark | first1 = W. Edwin | last2 = Suen | first2 = Stephen
+ | title = Inequality related to Vizing's conjecture
+ | journal = Electronic Journal of Combinatorics
+ | url = http://www.combinatorics.org/Volume_7/Abstracts/v7i1n4.html
+ | year = 2000
+ | volume = 7
+ | issue = 1
+ | pages = N4
+ | doi = 10.37236/1542 |mr=1763970}}.
+*{{citation
+ | last1 = El-Zahar | first1 = M. | last2 = Pareek | first2 = C. M.
+ | year = 1991
+ | title = Domination number of products of graphs
+ | journal = [[Ars Combinatoria (journal)|Ars Combinatoria]]
+ | volume = 31
+ | pages = 223–227
+ |mr=1110240}}.
+*{{citation
+ | last1 = Fink | first1 = J. F.
+ | last2 = Jacobson | first2 = M. S.
+ | last3 = Kinch | first3 = L. F.
+ | last4 = Roberts | first4 = J.
+ | title = On graphs having domination number half their order
+ | year = 1985
+ | journal = Period. Math. Hungar.
+ | volume = 16
+ | pages = 287–293
+ |mr=0833264
+ | doi = 10.1007/BF01848079
+ | issue = 4}}.
+*{{citation
+ | last1 = Gravier | first1 = S. | last2 = Khelladi | first2 = A.
+ | year = 1995
+ | title = On the domination number of cross products of graphs
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | volume = 145
+ | issue = 1–3 | pages = 273–277
+ |mr=1356600
+ | doi = 10.1016/0012-365X(95)00091-A| doi-access = free
+ }}.
+*{{citation
+ | last1 = Hartnell | first1 = B. L. | last2 = Rall | first2 = D. F.
+ | title = On Vizing's conjecture
+ | year = 1991
+ | journal = Congr. Numer.
+ | volume = 82
+ | pages = 87–96
+ |mr=1152060}}.
+*{{citation
+ | last1 = Jacobson | first1 = M. S. | last2 = Kinch | first2 = L. F.
+ | title = On the domination of the products of graphs II: trees
+ | journal = [[Journal of Graph Theory]]
+ | volume = 10
+ | year = 1986
+ | pages = 97–106
+ |mr=0830061
+ | doi = 10.1002/jgt.3190100112}}.
+*{{citation
+ | last1 = Klavžar | first1 = Sandi | last2 = Zmazek | first2 = B.
+ | year = 1996
+ | title = On a Vizing-like conjecture for direct product graphs
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | volume = 156
+ | issue = 1–3 | pages = 243–246
+ |mr=1405022
+ | doi = 10.1016/0012-365X(96)00032-5| doi-access = free
+ }}.
+*{{citation
+ | last1 = Payan | first1 = C. | last2 = Xuong | first2 = N. H.
+ | title = Domination-balanced graphs
+ | year = 1982
+ | journal = [[Journal of Graph Theory]]
+ | volume = 6
+ | pages = 23–32
+ |mr=0644738
+ | doi = 10.1002/jgt.3190060104}}.
+*{{citation
+ | last = Vizing | first = V. G. | authorlink = Vadim G. Vizing
+ | title = Some unsolved problems in graph theory
+ | language = Russian
+ | journal =  Uspekhi Mat. Nauk
+ | volume = 23
+ | year = 1968
+ | issue = 6
+ | pages = 117–134
+ | doi = 10.1070/RM1968v023n06ABEH001252 | bibcode = 1968RuMaS..23..125V |mr=0240000}}.
+{{refend}}
+
+==External links==
+*{{mathworld | title = Vizing Conjecture | urlname = VizingConjecture}}
+
+[[Category:Graph invariants]]
+[[Category:Graph products]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

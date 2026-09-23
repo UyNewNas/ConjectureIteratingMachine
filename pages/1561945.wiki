@@ -1,0 +1,160 @@
+{{Short description|On surrounding polygons by layers of copies}}
+{{multiple image
+|image1  =Heesch_number_1_parts.svg
+|caption1=Heesch's polygon with Heesch number 1 (black) showing its decomposition into a square, and one and a half equilateral triangles, with its only layer (cyan; darker tiles needed to surround its respective vertex)
+|image2  =Heesch_number_2_minimal_polyomino.svg
+|caption2=The smallest [[polyomino]] (a [[nonomino]]) with Heesch number 2 (black) surrounded by its first (red) and second coronas (amber)
+|width=128
+}}
+In [[geometry]], the '''Heesch number''' of a shape is the maximum number of layers of copies of the same shape that can surround it with no overlaps and no gaps. '''Heesch's problem''' is the problem of determining the set of numbers that can be Heesch numbers. Both are named for geometer [[Heinrich Heesch]],<ref>{{harvtxt|Heesch|1968}}, as cited by {{harvtxt|Grünbaum|Shephard|1987}} and {{harvtxt|Fontaine|1991}}.</ref> who found a tile with Heesch number 1 (the union of a square, equilateral triangle, and 30-60-90 right triangle)<ref>{{cite web
+  | title = The Heesch Tile: An Interesting Non-Tiler
+  | url = http://www.uwgb.edu/dutchs/symmetry/heesch.htm
+  | last = Dutch
+  | first = Steven
+  | publisher = Natural and Applied Sciences, [[University of Wisconsin–Green Bay]]
+  | access-date = 2008-12-22
+  | archive-url = https://web.archive.org/web/20170825072326/http://www.uwgb.edu/dutchs/symmetry/heesch.htm
+  | archive-date = 2017-08-25
+  | url-status = dead
+  }}</ref> and proposed the more general problem.<ref>{{harvtxt|Grünbaum|Shephard|1987| pages = 155–156|loc=Heesch's Problem}}</ref>
+
+For example, a square may be surrounded by infinitely many layers of [[congruence (geometry)|congruent]] squares in the [[square tiling]], while a circle cannot be surrounded by even a single layer of congruent circles without leaving some gaps. The Heesch number of the square is infinite and the Heesch number of the circle is zero.  In more complicated examples, such as the one shown in the illustration, a [[polygon]]al tile can be surrounded by several layers, but not by infinitely many; the maximum number of layers is the tile's Heesch number.
+
+== Formal definitions ==
+
+[[Image:A_polygon_with_Heesch_number_6.svg|thumb|240px|A polygon with Heesch number 6, found by [[Bojan Bašić]] in 2020<ref name="basic"/>]]
+[[Image:Heesch-5.svg|thumb|240px|A polygon with Heesch number 5, found by [[Casey Mann]]<ref name="mann"/>]]
+[[Image:Amman-Heesch-4.svg|thumb|240px|[[Robert Ammann|Ammann]]'s example of a polygon with Heesch number 3 (or 4, depending on the definition)]]
+
+A [[tessellation]] of the plane is a partition of the plane into smaller regions called '''tiles'''.  The zeroth corona of a tile is defined as the tile itself, and for ''k''&nbsp;>&nbsp;0 the ''k''th corona is the set of tiles sharing a boundary point with the (''k''&nbsp;&minus;&nbsp;1)th corona. The '''Heesch number''' of a figure ''S'' is the maximum value ''k'' such that there exists a tiling of the plane, and tile ''t'' within that tiling, for which that all tiles in the zeroth through ''k''th coronas of ''t'' are congruent to ''S''. In some work on this problem this definition is modified to additionally require that the union of the zeroth through ''k''th coronas of ''t'' is a [[simply connected]] region.<ref name="mann"/>
+
+If there is no upper bound on the number of layers by which a tile may be surrounded, its Heesch number is said to be infinite. In this case, an argument based on [[Kőnig's lemma]] can be used to show that there exists a tessellation of the whole plane by congruent copies of the tile.<ref>{{harvtxt|Grünbaum|Shephard|1987|loc= 3.8.1 The Extension Theorem| p=151}}</ref>
+
+== Example ==
+Consider the non-convex polygon ''P'' shown in the figure to the right, which is formed from a regular hexagon by adding projections on two of its sides and matching indentations on three sides. The figure shows a tessellation consisting of 61 copies of ''P'', one large infinite region, and four small diamond-shaped polygons within the fourth layer. The first through fourth coronas of the central polygon consist entirely of congruent copies of ''P'', so its Heesch number is at least four. One cannot rearrange the copies of the polygon in this figure to avoid creating the small diamond-shaped polygons, because the 61 copies of ''P'' have too many indentations relative to the number of projections that could fill them. By formalizing this argument, one can prove that the Heesch number of ''P'' is exactly four. According to the modified definition that requires that coronas be simply connected, the Heesch number is three. This example was discovered by [[Robert Ammann]].<ref name="mann"/>
+
+== Known results ==
+It is unknown whether all positive integers can be Heesch numbers. The first examples of polygons with Heesch number&nbsp;2 were provided by {{harvtxt|Fontaine|1991}}, who showed that infinitely many [[polyomino]]es have this property.<ref name="mann"/><ref>{{cite journal
+  | last = Fontaine | first = Anne
+  | title = An infinite number of plane figures with Heesch number two
+  | journal = Journal of Combinatorial Theory | series = Series A
+  | volume = 57
+  | issue = 1
+  | pages = 151–156
+  | date = 1991
+  | doi = 10.1016/0097-3165(91)90013-7| doi-access = 
+  }}.</ref> Casey Mann has constructed a family of tiles, each with the Heesch number 5. Mann's tiles have Heesch number&nbsp;5 even with the restricted definition in which each corona must be simply connected.<ref name="mann">{{cite journal
+ | last = Mann | first = Casey
+ | doi = 10.2307/4145069
+ | issue = 6
+ | journal = [[American Mathematical Monthly]]
+ | mr = 2076583
+ | pages = 509–517
+ | title = Heesch's tiling problem
+ | volume = 111
+ | year = 2004
+ | url=https://faculty.washington.edu/cemann/Heesch.pdf
+ |jstor=4145069}}.</ref> In 2020, Bojan Bašić found a figure with Heesch number 6, the highest finite number until the present.<ref name="basic">{{Cite journal|last=Bašić|first=Bojan|date=2021|title=A Figure with Heesch Number 6: Pushing a Two-Decade-Old Boundary|journal=The Mathematical Intelligencer|language=en|volume=43|issue=3 |pages=50–53|doi=10.1007/s00283-020-10034-w|pmid=34934265 |pmc=7812982 |issn=0343-6993|doi-access=free}}</ref>
+
+{| class="wikitable"
+|+ History of the discoveries of shapes with finite Heesch numbers
+|-
+! Heesch number !! Discovered !! Discovered by !! Shape
+|-
+| 1 || 1928|| {{interlanguage link|Walther Lietzmann|de}}<ref>{{Cite book |last=Lietzmann |first=Walther |title=Lustiges und Merkwuerdiges von Zahlen und Formen |publisher=Hirt |year=1928 |location=Breslau |page=242 |trans-title=Funny and curious facts about numbers and shapes}}</ref>||[[File:Lietzmann heesch 1.svg|250px]]
+|-
+|-
+| 1 || 1968 || [[Heinrich Heesch]] ||[[File:Heesch 1.svg|250px]]
+|-
+| 2 || 1991 || [[Anne Fontaine (Mathematician)|Anne Fontaine]] ||[[File:Fontaine heesch 2.svg|250px]]
+|-
+| 3 || 1990-1995<ref name="senechal">{{cite book
+ | last = Senechal | first = Marjorie
+ | pages = 145–146
+ | title = Quasicrystals and Geometry
+ | publisher = Cambridge University Press
+ | volume = 111
+ | year = 1995}}.</ref> || [[Robert Ammann]] || [[Image:Amman-Heesch-4.svg|250px]]
+|-
+| 4 || 2001<ref name="mann">{{cite journal
+ | last = Mann | first = Casey
+ | doi = 10.2307/4145069
+ | issue = 6
+ | journal = [[American Mathematical Monthly]]
+ | mr = 2076583
+ | pages = 509–517
+ | title = Heesch's tiling problem
+ | volume = 111
+ | year = 2004
+ | url=https://faculty.washington.edu/cemann/Heesch.pdf
+ |jstor=4145069}}.</ref> || [[Casey Mann]] ||
+|-
+| 5 || 2001<ref name="mann">{{cite journal
+ | last = Mann | first = Casey
+ | doi = 10.2307/4145069
+ | issue = 6
+ | journal = [[American Mathematical Monthly]]
+ | mr = 2076583
+ | pages = 509–517
+ | title = Heesch's tiling problem
+ | volume = 111
+ | year = 2004
+ | url=https://faculty.washington.edu/cemann/Heesch.pdf
+ |jstor=4145069}}.</ref> || [[Casey Mann]] || [[Image:Heesch-5.svg|250px]]
+|-
+| 6 || 2020<ref name="basic">{{Cite journal|last=Bašić|first=Bojan|date=2021|title=A Figure with Heesch Number 6: Pushing a Two-Decade-Old Boundary|journal=The Mathematical Intelligencer|language=en|volume=43|issue=3 |pages=50–53|doi=10.1007/s00283-020-10034-w|pmid=34934265 |pmc=7812982 |issn=0343-6993|doi-access=free}}</ref> || [[Bojan Bašić]] || [[File:Polygon with Heesch Number 6.png|250px]]
+|}
+
+
+For the corresponding problem in the [[hyperbolic plane]], the Heesch number may be arbitrarily large.<ref>{{cite journal
+ | last = Тарасов | first = А. С.
+ | doi = 10.4213/mzm5251
+ | issue = 1
+ | journal = [[Mathematical Notes|Matematicheskie Zametki]]
+ | mr = 2882166
+ | pages = 97–104
+ | script-title=ru:О числе Хееша для плоскости Лобачевского
+ | trans-title = On the Heesch number for the hyperbolic plane
+ | volume = 88
+ | year = 2010| language = ru
+ | doi-access = free
+ }}. English translation in ''Math. Notes'' 88 (1–2): 97–102, 2010, {{doi|10.1134/S0001434610070096}}.</ref>
+
+
+==References==
+{{reflist|30em}}
+===Sources===
+* {{cite book
+ | last = Heesch | first = H. | author-link = Heinrich Heesch
+ | location = Cologne and Opladen
+ | publisher = Westdeutscher Verlag
+ | title = Reguläres Parkettierungsproblem
+ | year = 1968}}
+* {{cite book
+ | last1 = Grünbaum | first1 = Branko | author1-link = Branko Grünbaum
+ | last2 = Shephard | first2 = G. C. | author2-link = Geoffrey Colin Shephard 
+ | publisher = W. H. Freeman
+ | title = Tilings and Patterns
+ | year = 1987}}
+
+===Further reading===
+* {{cite web 
+  | author = Eppstein, David
+  | author-link = David Eppstein
+  | title = The Geometry Junkyard: Heesch's Problem
+  | url = http://www.ics.uci.edu/~eppstein/junkyard/heesch/
+  | access-date = 2009-08-31}}
+* {{cite web 
+  | author = Friedman, Erich
+  | title = Heesch Tiles with Surround Numbers 3 and 4
+  | url = https://erich-friedman.github.io/papers/heesch/heesch.html
+  | access-date = 2006-09-05}}
+
+==External links==
+* {{mathworld|id=HeeschNumber|title=Heesch Number}}
+*[https://www.youtube.com/watch?v=6aFcgATW9Mw Numberphile video about Heesch Numbers].
+
+{{Tessellation}}
+
+[[Category:Tessellation]]
+[[Category:Unsolved problems in geometry]]

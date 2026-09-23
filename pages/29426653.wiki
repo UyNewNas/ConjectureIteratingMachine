@@ -1,0 +1,106 @@
+{{Short description|Special type of prime number}}
+{{distinguish|Wolstenholme number}}
+{{Use dmy dates|date=August 2022}}
+{{Infobox integer sequence
+| named_after           = [[Joseph Wolstenholme]]
+| publication_year      = 1995<ref>Wolstenholme primes were first described by McIntosh in {{Harvnb|McIntosh|1995|p=385}}</ref>
+| author                = McIntosh, R. J.
+| terms_number          = 2
+| con_number            = Infinite
+| parentsequence        = [[Irregular prime]]s
+| first_terms           = [[16843 (number)|16843]], [[2124679 (number)|2124679]]
+| largest_known_term    = [[2124679 (number)|2124679]]
+| OEIS                  = A088164
+| OEIS_name             = Wolstenholme primes: primes p such that binomial(2p-1,p-1) == 1 (mod p^4)
+}}
+
+In [[number theory]], a '''Wolstenholme prime''' is a special type of [[prime number]] satisfying a stronger version of [[Wolstenholme's theorem]]. Wolstenholme's theorem is a [[congruence relation]] satisfied by all prime numbers greater than 3. Wolstenholme primes are named after mathematician [[Joseph Wolstenholme]], who first described this theorem in the 19th century.
+
+Interest in these primes first arose due to their connection with [[Fermat's Last Theorem]]. Wolstenholme primes are also related to other special classes of numbers, studied in the hope to be able to generalize a proof for the truth of the theorem to all positive integers greater than two.
+
+The only two known Wolstenholme primes are 16843 and 2124679 {{OEIS|A088164 }}. There are no other Wolstenholme primes less than&nbsp;10<sup>11</sup>.
+
+==Definition==
+{{unsolved|mathematics|Are there any Wolstenholme primes other than 16843 and 2124679?}}
+
+Wolstenholme prime can be defined in a number of equivalent ways.
+
+===Definition via binomial coefficients===
+A Wolstenholme prime is a prime number ''p''&nbsp;>&nbsp;7 that satisfies the [[congruence relation|congruence]]
+:<math>{2p-1 \choose p-1} \equiv 1 \pmod{p^4},</math>
+where the expression in [[left-hand side]] denotes a [[binomial coefficient]].<ref>{{citation| url = http://www.johndcook.com/binomial_coefficients.html | title = Binomial coefficients | first = J. D. | last = Cook | access-date = 21 December 2010}}</ref>
+In comparison, [[Wolstenholme's theorem]] states that for every prime ''p''&nbsp;>&nbsp;3 the following congruence holds:
+:<math>{2p-1 \choose p-1} \equiv 1 \pmod{p^3}.</math>
+
+===Definition via Bernoulli numbers===
+A Wolstenholme prime is a prime ''p'' that divides the numerator of the [[Bernoulli number]] ''B''<sub>''p''−3</sub>,{{sfn|Clarke|Jones|2004|p=553}}{{sfn|McIntosh|1995|p=387}}{{sfn|Zhao|2008|p=25}} or equivalently,
+
+<math display="block">B_{p-3} \equiv 0 \pmod p</math>
+
+The Wolstenholme primes therefore form a subset of the [[irregular prime]]s.
+
+===Definition via irregular pairs===
+{{Main|Regular prime|l1=Irregular prime}}
+A Wolstenholme prime is a prime ''p'' such that (''p'', ''p''−3) is an [[Regular prime#Irregular pairs|irregular pair]].{{sfn|Johnson|1975|p=114}}{{sfn|Buhler|Crandall|Ernvall|Metsänkylä|1993|p=152}}
+
+===Definition via harmonic numbers===
+A Wolstenholme prime is a prime ''p'' such that{{sfn|Zhao|2007|p=18}}
+
+:<math>H_{p - 1} \equiv 0 \pmod{p^3}\, ,</math>
+
+i.e. the numerator of the [[harmonic number]] <math>H_{p-1}</math> expressed in lowest terms is divisible by ''p''<sup>3</sup>.
+
+==Properties==
+
+A prime ''p'' > 7 is a Wolstenholme prime if and only if<ref>{{MathWorld|urlname=WolstenholmePrime|title=Wolstenholme prime|mode=cs2|ref=none}}</ref>
+:<math>\sum_{k=\lfloor p/6\rfloor+1}^{\lfloor p/4\rfloor}\frac1{k^3}\equiv0\pmod p</math>
+
+==Search and current status==
+The search for Wolstenholme primes began in the 1960s and continued over the following decades, with the latest results published in 2022. The first Wolstenholme prime 16843 was found in 1964, although it was not explicitly reported at that time.<ref>Selfridge and Pollack published the first Wolstenholme prime in {{Harvnb|Selfridge|Pollack|1964|p=97}} (see {{Harvnb|McIntosh|Roettger|2007|p=2092}}).</ref> The 1964 discovery was later independently confirmed in the 1970s. This remained the only known example of such a prime for almost 20 years, until the discovery announcement of the second Wolstenholme prime 2124679 in 1993.{{sfn|Ribenboim|2004|p=23}} Up to 1.2{{e|7}}, no further Wolstenholme primes were found.{{sfn|Zhao|2007|p=25}} This was later extended to 2{{e|8}} by McIntosh in 1995{{sfn|McIntosh|1995|p=387}} and Trevisan and Weber were able to reach 2.5{{e|8}}.{{sfn|Trevisan|Weber|2001|p=283–284}} The latest result as of 2022 is that there are only those two Wolstenholme primes up to 10<sup>11</sup>.<ref>{{Cite journal |last1=Booker |first1=Andrew R. |last2=Hathi |first2=Shehzad |last3=Mossinghoff |first3=Michael J. |last4=Trudgian |first4=Timothy S. | author4-link=Timothy Trudgian| date=2022-07-01 |title=Wolstenholme and Vandiver primes |url=https://link.springer.com/article/10.1007/s11139-021-00438-3 |journal=The Ramanujan Journal |language=en |volume=58 |issue=3 |pages=913–941 |doi=10.1007/s11139-021-00438-3 |issn=1572-9303|arxiv=2101.11157 }}</ref>
+
+==Expected number of Wolstenholme primes==
+It is conjectured that infinitely many Wolstenholme primes exist. It is conjectured that the number of Wolstenholme primes less than <math>x</math> is about <math>\log\log x</math>. For each prime <math>p\geq 5</math>, the '''Wolstenholme quotient''' is defined as
+: <math>W_p = \frac{{2p-1 \choose p-1}-1}{p^3}.</math>
+Clearly, <math>p</math> is a Wolstenholme prime if and only if <math>W_p\equiv 0\!\pmod{p}</math>. [[Empirical relationship|Empirically]], one may assume that the remainders of <math>W_p</math> modulo <math>p</math> are [[Uniform distribution (discrete)|uniformly distributed]] in the set <math>\{0,1,\dots,p-1\}</math>. By this reasoning, the probability that the remainder takes on a particular value (e.g., 0) is about <math>1/p</math>.{{sfn|McIntosh|1995|p=387}}
+
+==See also==
+* [[Wieferich prime]]
+* [[Wall–Sun–Sun prime]]
+* [[Wilson prime]]
+* [[Table of congruences]]
+
+==Notes==
+{{Reflist}}
+
+==References==
+{{Refbegin|colwidth=30em}}
+* {{Citation | last1=Buhler | first1=J. | last2=Crandall | first2=R. | last3=Ernvall | first3=R. | last4=Metsänkylä | first4=T. | title=Irregular Primes and Cyclotomic Invariants to Four Million | year=1993 | journal=[[Mathematics of Computation]] | volume=61 | issue=203 | pages=151–153 | url=http://www.ams.org/journals/mcom/1993-61-203/S0025-5718-1993-1197511-5/S0025-5718-1993-1197511-5.pdf | doi=10.2307/2152942 | jstor=2152942 | bibcode=1993MaCom..61..151B | doi-access=free | access-date=10 November 2010 | archive-date=22 September 2021 | archive-url=https://archive.today/20210922005744/https://www.ams.org/journals/mcom/1993-61-203/S0025-5718-1993-1197511-5/S0025-5718-1993-1197511-5.pdf | url-status=dead }}
+* {{Citation | last1=Clarke | first1=F. | last2=Jones | first2=C. | title=A Congruence for Factorials | year=2004 | journal=Bulletin of the London Mathematical Society | volume=36 | pages=553–558 | url=http://blms.oxfordjournals.org/content/36/4/553.full.pdf | doi=10.1112/S0024609304003194 | issue=4 | s2cid=120202453 }}
+* {{Citation | last1=Johnson | first1=W. | title=Irregular Primes and Cyclotomic Invariants | year=1975 | journal=[[Mathematics of Computation]] | volume=29 | issue=129 | pages=113–120 | url=http://www.ams.org/journals/mcom/1975-29-129/S0025-5718-1975-0376606-9/S0025-5718-1975-0376606-9.pdf | doi=10.2307/2005468 | jstor=2005468 | doi-access=free | access-date=20 December 2010 | archive-date=28 December 2021 | archive-url=https://archive.today/20211228083543/https://www.ams.org/journals/mcom/1975-29-129/S0025-5718-1975-0376606-9/S0025-5718-1975-0376606-9.pdf | url-status=dead }}
+* {{Citation | last1=McIntosh | first1=R. J. | title=On the converse of Wolstenholme's Theorem | year=1995 | journal=[[Acta Arithmetica]] | volume=71 | issue=4 | pages=381–389 | url=http://matwbn.icm.edu.pl/ksiazki/aa/aa71/aa7144.pdf | doi=10.4064/aa-71-4-381-389 | doi-access=free }}
+* {{Citation | last1=McIntosh | first1=R. J. | last2=Roettger | first2=E. L. | title=A search for Fibonacci-Wieferich and Wolstenholme primes | year=2007 | journal=Mathematics of Computation | volume=76 | issue=260 | pages=2087–2094 | doi=10.1090/S0025-5718-07-01955-2 | url=http://www.ams.org/mcom/2007-76-260/S0025-5718-07-01955-2/S0025-5718-07-01955-2.pdf | bibcode=2007MaCom..76.2087M | doi-access=free }}
+* {{Citation | author1-link=Paulo Ribenboim | last1=Ribenboim | first1=P. | title=The Little Book of Bigger Primes | location=New York | publisher=Springer-Verlag New York, Inc. | year=2004 | isbn=978-0-387-20169-6 |chapter=Chapter 2. How to Recognize Whether a Natural Number is a Prime}}
+* {{Citation | last1=Selfridge | first1=J. L. | last2=Pollack | first2=B. W. | title=Fermat's last theorem is true for any exponent up to 25,000 | year=1964 | journal=Notices of the American Mathematical Society | volume=11 | pages=97}}
+* {{Citation | last1=Trevisan | first1=V. | last2=Weber | first2=K. E. | title=Testing the Converse of Wolstenholme's Theorem | year=2001 | journal=Matemática Contemporânea | volume=21 | issue=16 | pages=275–286 | doi=10.21711/231766362001/rmc2116 | hdl=10183/448 | url=http://www.lume.ufrgs.br/bitstream/handle/10183/448/000317407.pdf?sequence=1 | access-date=7 April 2011 | archive-date=6 October 2011 | archive-url=https://web.archive.org/web/20111006064608/http://www.lume.ufrgs.br/bitstream/handle/10183/448/000317407.pdf?sequence=1 | url-status=dead }}
+* {{Citation | last1=Zhao | first1=J. | title=Bernoulli numbers, Wolstenholme's theorem, and p<sup>5</sup> variations of Lucas' theorem | year=2007 | journal=Journal of Number Theory | volume=123 | pages=18–26 | doi=10.1016/j.jnt.2006.05.005 | s2cid=937685 | url=http://home.eckerd.edu/~zhaoj/research/ZhaoJNTBern.pdf | doi-access=free | access-date=9 November 2010 | archive-date=30 June 2010 | archive-url=https://web.archive.org/web/20100630160329/http://home.eckerd.edu/~zhaoj/research/ZhaoJNTBern.pdf | url-status=dead }}
+* {{Citation | last1=Zhao | first1=J. | title=Wolstenholme Type Theorem for Multiple Harmonic Sums | year=2008 | journal=International Journal of Number Theory | volume=4 | issue=1 | pages=73–106 | url=http://home.eckerd.edu/~zhaoj/research/ZhaoIJNT.pdf | doi=10.1142/s1793042108001146 }}
+{{Refend}}
+
+==Further reading==
+{{Refbegin}}
+* {{Citation | last1=Babbage | first1=C. | title=Demonstration of a theorem relating to prime numbers | journal=The Edinburgh Philosophical Journal | volume=1 | year=1819 | pages=46–49 | url=https://books.google.com/books?id=KrA-AAAAYAAJ&pg=PA46 }}
+* {{Citation | last1=Krattenthaler | first1=C. | last2=Rivoal | first2=T. | title=On the integrality of the Taylor coefficients of mirror maps, II | year=2009 | journal=Communications in Number Theory and Physics | volume=3 | issue=  3| pages=555–591 | arxiv=0907.2578 | bibcode=2009arXiv0907.2578K | doi=10.4310/CNTP.2009.v3.n3.a5 }}
+* {{Citation | last1=Wolstenholme | first1=J. | title=On Certain Properties of Prime Numbers | year=1862 | journal=The Quarterly Journal of Pure and Applied Mathematics | volume=5 | pages=35–39 | url=https://books.google.com/books?id=vL0KAAAAIAAJ&pg=PA35 }}
+{{Refend}}
+
+==External links==
+* Caldwell, Chris K. [http://primes.utm.edu/glossary/xpage/Wolstenholme.html Wolstenholme prime] from The Prime Glossary
+* McIntosh, R. J. [http://www.loria.fr/~zimmerma/records/Wieferich.status Wolstenholme Search Status as of March 2004] e-mail to [[Paul Zimmermann (mathematician)|Paul Zimmermann]]
+* Bruck, R. [https://web.archive.org/web/20130208001700/http://imperator.usc.edu/~bruck/research/stirling Wolstenholme's Theorem, Stirling Numbers, and Binomial Coefficients]
+* Conrad, K. [http://www.math.uconn.edu/~kconrad/blurbs/ugradnumthy/padicharmonicsum.pdf The ''p''-adic Growth of Harmonic Sums] interesting observation involving the two Wolstenholme primes
+
+{{Classes of natural numbers}}
+{{Prime number classes|state=collapsed}}
+
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

@@ -1,0 +1,148 @@
+{{Use mdy dates|date=September 2025}}
+{{short description|Finding an optimal algorithm for playing chess}}
+'''Solving chess''' consists of finding an optimal strategy for the game of [[chess]]; that is, one by which one of the players ([[White and Black in chess|White or Black]]) can always force either a victory or a draw (see [[solved game]]). It is also related to more generally solving ''chess-like'' games (i.e. [[Game theory#Combinatorial games|combinatorial games]] of [[perfect information]]) such as [[Capablanca chess]] and [[infinite chess]]. In a weaker sense, ''solving chess'' may refer to proving which one of the three possible outcomes (White wins; Black wins; draw) is the result of two perfect players, without necessarily revealing the optimal strategy itself (see [[indirect proof]]).<ref>
+{{cite web
+|first=V.
+|last=Allis
+|url=http://www.dphu.org/uploads/attachements/books/books_3721_0.pdf
+|title=PhD thesis: Searching for Solutions in Games and Artificial Intelligence
+|work=Department of Computer Science
+|publisher=[[University of Limburg]]
+|year=1994
+|access-date=2012-07-14
+}}</ref>
+
+No complete solution for chess in either of the two senses [[Solved game#Partially solved games|is known]], nor is it expected that chess will be solved in the near future (if ever). Progress to date is extremely limited; there are [[Endgame tablebase|tablebases]] of perfect endgame play with a small number of pieces (up to seven), and some [[Chess variant|chess variants]] have been solved at least weakly. Calculated estimates of [[Game complexity|game-tree complexity]] and state-space complexity of chess exist which provide a bird's eye view of the computational effort that might be required to solve the game. 
+==Partial results==
+===Endgame tablebases===
+{{Chess diagram
+| floatright
+| 
+|  |  |  |  |  |  |  |
+|rd|  |  |  |  |  |  |nd
+|  |  |ql|  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |kd|  |
+|  |  |  |kl|  |  |  |
+|  |  |  |  |  |  |  |nl
+|  |  |  |bd|  |  |  |qd
+| A mate-in-546 position found in the Lomonosov 7-piece tablebase. White to move. (In this example an 8th piece is added with a trivial first-move capture.)
+}}
+
+[[Endgame tablebase]]s are computerized databases that contain precalculated exhaustive analyses of positions with small numbers of pieces remaining on the board. Tablebases have solved chess to a limited degree, determining perfect play in a number of [[Chess endgame|endgame]]s, including all non-trivial endgames with no more than seven pieces or pawns (including the two kings).<ref name="Lomonosov Tablebases">
+{{cite web |title=ChessOK: Lomonosov Tablebases |url=https://tb7.chessok.com/ |access-date=2023-12-30}}</ref>
+
+One consequence of developing the seven-piece endgame tablebase is that many interesting theoretical chess endings have been found. The longest seven-piece example is a mate-in-549 position discovered in the Lomonosov tablebase by Guy Haworth, ignoring the [[50-move rule]].<ref>{{Cite web |title=What is the longest known 7-piece checkmate? |url=https://chess.stackexchange.com/questions/37240/what-is-the-longest-known-7-piece-checkmate |access-date=2023-06-14 |website=Chess Stack Exchange |language=en}}</ref><ref>{{Cite web |title=Probe |url=https://tb7.chessok.com/probe/3/61 |access-date=2023-06-14 |website=tb7.chessok.com}}</ref> Such a position is beyond the ability of any human to solve, and no chess engine plays it correctly, either, without access to the tablebase, which initially (in 2014) required 140 TB of storage space and the use of a supercomputer but was later reduced down to 18.4 TB through the Syzygy tablebase. Such endgames are sometimes distinguished between DTM (moves to mate) and DTZ (moves to zero ply or a reset of the 50 move rule). As of January 2023, the longest known forced winning sequence for the eight-piece tablebase (also ignoring the 50-move rule) was 584 moves. This was discovered in mid-2022 by Marc Bourzutschky.<ref>{{Cite web |last=Silver |first=Albert |date=2022-05-11 |title=8-piece endgame tablebases - first findings and interview! |url=https://en.chessbase.com/post/8-piece-endgame-tablebases-first-findings-and-interview |access-date=2023-01-26 |website=chessbase.com |publisher=Chess News |language=en}}</ref> The eight-piece tablebase is currently incomplete, though, so it is not guaranteed that this is the absolute limit for the eight-piece tablebase.{{Chess diagram
+| floatright
+| 
+||nd|  |kd||  |  |||  |  |
+|  |  |ql|||  ||  |  |kl|pl|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  ||  |bd
+|  |rd||||  |  |
+|  |  |  ||  |  |  ||  |  |||  |  |  |
+| A mate-in-549 position found in the 7-piece tablebase. White to move.
+}}{{Chess diagram
+| floatright
+| 
+|rl|  |  |  ||  |  |
+||  |  |  |  |  |  ||  |  ||  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  ||  |qd
+|  |  |kl||bl|  |  |pd
+|  |  |  ||  |  |  |pl|  |  |bl|kd|  |  |  |
+| A win-in-584 position found in the 8-piece tablebase. White to move.
+}}
+
+===Chess variants===
+
+A variant first described by [[Claude Shannon]] provides an argument about the game-theoretic value of chess: he proposes allowing the move of “pass”. In this variant, it is provable with a [[strategy stealing argument]] that the first player has at least a draw thus: if the first player has a winning move in the initial position, let him play it, else pass. The second player now faces the same situation owing to the mirror symmetry of the initial position: if the first player had no winning move in the first instance, the second player has none now. Therefore, the second player can at best draw, and the first player can at least draw, so a perfect game results in the first player winning or drawing.<ref name="CSpaper"/>
+
+Some [[Chess Variant|chess variants]] which are simpler than chess have been solved. A winning strategy for Black in [[Maharajah and the Sepoys]] can be easily memorised. The 5×5 [[Minichess#5×5 chess|Gardner's Minichess]] variant has been [[Solved game|weakly solved]] as a draw.<ref>{{cite arXiv|last1=Mhalla|first1=Mehdi|last2=Prost|first2=Frederic|date=2013-07-26|title=Gardner's Minichess Variant is solved|eprint=1307.7118|class=cs.GT}}</ref> Although [[Losing Chess|losing chess]] is played on an 8×8 board, its forced capture rule greatly limits its complexity, and a computational analysis managed to weakly solve this variant as a win for White.<ref>{{Cite web|url=https://magma.maths.usyd.edu.au/~watkins/LOSING_CHESS/LCsolved.pdf|title=Losing Chess: 1. e3 wins for White|last=Watkins|first=Mark}}</ref>
+
+The prospect of solving individual, specific, chess-like games becomes more difficult as the board-size is increased, such as in large chess variants, and [[infinite chess]].<ref>{{Citation |author1=Aviezri Fraenkel |author2=D. Lichtenstein | title = Computing a perfect strategy for n×n chess requires time exponential in n | journal = J. Combin. Theory Ser. A | volume = 31 | year = 1981 | pages = 199–214 | doi = 10.1016/0097-3165(81)90016-9 | issue = 2| doi-access = free }}</ref>
+
+==Complexity of chess==
+[[Information theory|Information theorist]] [[Claude Shannon]] in 1950 outlined a theoretical procedure for playing a perfect game (i.e. solving chess): {{quote|"With chess it is possible, in principle, to play a perfect game or construct a machine to do so as follows: One considers in a given position all possible moves, then all moves for the opponent, etc., to the end of the game (in each variation). The end must occur, by the rules of the games after a finite number of moves (remembering the [[fifty-move rule|50 move drawing rule]]). Each of these variations ends in win, loss or draw. By working backward from the end one can determine whether there is a forced win, the position is a draw or is lost."}} 
+
+Shannon then went on to estimate that solving chess according to that procedure would require comparing some 10{{sup|120}} ([[Shannon number]]) possible game variations, or having a "dictionary" denoting an optimal move for each of the approximately 4.8x10{{sup|44}}{{efn|This estimate was published in 2021. Shannon's 1950 estimate of this quantity was 10{{sup|43}}.}} possible board positions.<ref name="CSpaper">
+{{cite journal|last=Shannon|first=C.|author-link=Claude Shannon|date=March 1950|title=Programming a Computer for Playing Chess|url=http://archive.computerhistory.org/projects/chess/related_materials/text/2-0%20and%202-1.Programming_a_computer_for_playing_chess.shannon/2-0%20and%202-1.Programming_a_computer_for_playing_chess.shannon.062303002.pdf|url-status=live|journal=[[Philosophical Magazine]]|series=7|volume=41|archive-url=https://web.archive.org/web/20100706211229/http://archive.computerhistory.org/projects/chess/related_materials/text/2-0%20and%202-1.Programming_a_computer_for_playing_chess.shannon/2-0%20and%202-1.Programming_a_computer_for_playing_chess.shannon.062303002.pdf|archive-date=2010-07-06|access-date=2008-06-27|number=314}}</ref><ref>{{cite web |title=Chess Position Ranking |author=John Tromp |website=[[GitHub]] | year=2021 | url=https://github.com/tromp/ChessPositionRanking }}</ref> The number of mathematical operations required to solve chess, however, may be significantly different than the number of operations required to produce the entire [[Game tree|game-tree]] of chess. In particular, if White has a forced win, only a subset of the game-tree would require evaluation to confirm that a forced-win exists (i.e. with no refutations from Black). Furthermore, Shannon's calculation for the complexity of chess assumes an average game length of 40 moves, but there is no mathematical basis to say that a forced win by either side would have any relation to this game length. Indeed, some expertly played games (grandmaster-level play) have been as short as 16 moves. For these reasons, mathematicians and game theorists have been reluctant to categorically state that solving chess is an intractable problem.<ref name="CSpaper"/><ref>[http://www.chessgames.com/perl/chessgame?gid=1736556 http://www.chessgames.com] Magnus Carlsen vs Viswanathlan Anand, King's Indian Attack: Double Fianchetto (A07), 1/2-1/2, 16 moves.</ref>
+
+==Predictions on when or if chess will be solved==
+In 1950, Shannon calculated, based on a game tree complexity of 10{{sup|120}} and a computer operating at one megahertz (a big stretch at that time: the UNIVAC 1 introduced in 1951 could perform ~2000 operations per second or 2 kilohertz) that could evaluate a terminal node in 1 microsecond would take 10{{sup|90}} years to make its first move. Even allowing for technological advances, solving chess within a practical time frame would therefore seem beyond any conceivable technology.
+
+[[Hans-Joachim Bremermann]], a professor of [[mathematics]] and [[biophysics]] at the [[University of California at Berkeley]], further argued in a 1965 paper that the "speed, memory, and processing capacity of any possible future computer equipment are limited by specific physical barriers: the ''[[Speed of light|light barrier]]'', the ''quantum barrier'', and the ''thermodynamical barrier''. These limitations imply, for example, that no computer, however constructed, will ever be able to examine the entire tree of possible move sequences of the game of chess." Nonetheless, Bremermann did not foreclose the possibility that a computer would someday be able to solve chess. He wrote, "In order to have a computer play a perfect or nearly perfect game, it will be necessary either to analyze the game completely ... or to analyze the game in an approximate way and combine this with a limited amount of tree searching. ... A theoretical understanding of such heuristic programming, however, is still very much wanting."<ref>
+{{cite web
+|last=Bremermann
+|first=H.J.
+|author-link=Hans-Joachim Bremermann
+|title=Quantum Noise and Information
+|publisher=Proc. 5th Berkeley Symp. Math. Statistics and Probability
+|url=http://www.aeiveos.com/~bradbury/Authors/Computing/Bremermann-HJ/QNaI.html
+|year=1965
+|archive-url=https://web.archive.org/web/20010527190358/http://www.aeiveos.com/~bradbury/Authors/Computing/Bremermann-HJ/QNaI.html
+|archive-date=2001-05-27
+}}</ref>
+
+Recent scientific advances have not significantly changed these assessments. The game of [[English draughts|checkers]] was (weakly) solved in 2007,<ref>
+{{cite journal
+|last1=Schaeffer
+|first1=Jonathan
+|last2=Burch
+|first2=Neil
+|last3=Björnsson
+|first3=Yngvi
+|display-authors=3
+|last4=Kishimoto
+|first4=Akihiro
+|last5=Müller
+|first5=Martin
+|last6=Lake
+|first6=Robert
+|last7=Lu
+|first7=Paul
+|last8=Sutphen
+|first8=Steve
+|author-link=Jonathan Schaeffer
+|title=Checkers Is Solved
+|journal=[[Science (journal)|Science]]
+|date=14 September 2007
+|volume=317
+|number=5844
+|pages=1518–1522
+|doi=10.1126/science.1144079
+|pmid=17641166
+|bibcode=2007Sci...317.1518S
+|s2cid=10274228
+|doi-access=free
+}}{{subscription required |date=July 2012}}</ref> but it has roughly the square root of the number of positions in chess. [[Jonathan Schaeffer]], the scientist who led the effort, said a breakthrough such as [[quantum computing]] would be needed before solving chess could even be attempted, but he does not rule out the possibility, saying that the one thing he learned from his 16-year effort of solving checkers "is to never underestimate the advances in technology".<ref>
+{{cite web
+ |last        = Sreedhar
+ |first       = Suhas
+ |url         = http://www.spectrum.ieee.org/print/5379
+ |title       = Checkers, Solved!
+ |publisher   = [[IEEE]]
+ |access-date  = 2009-03-21
+ |url-status     = dead
+ |archive-url  = https://web.archive.org/web/20090325220009/http://www.spectrum.ieee.org/print/5379
+ |archive-date = 2009-03-25
+}}</ref>
+
+==See also==
+* [[Shannon number]] (a calculation of the lower bound of the game-tree complexity of chess)
+* [[First-move advantage in chess]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*[https://www.youtube.com/watch?v=PN-I6u-AxMg "Infinite Chess, PBS Infinite Series"] Infinite Chess, PBS Infinite Series.
+
+{{Chess|state=expanded}}
+{{Game theory|state=collapsed}}
+
+[[Category:Chess theory]]
+[[Category:Unsolved problems in computer science]]

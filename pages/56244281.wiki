@@ -1,0 +1,129 @@
+{{unsolved|mathematics|Can every simplex be dissected into a bounded number of orthoschemes?}}
+In geometry, it is an unsolved [[conjecture]] of [[Hugo Hadwiger]] that every [[simplex]] can be [[Dissection problem|dissected]] into [[Schläfli orthoscheme|orthoscheme]]s, using a number of orthoschemes bounded by a function of the dimension of the simplex.{{r|bkks}} If true, then more generally every [[convex polytope]] could be dissected into orthoschemes.
+
+==Definitions and statement==
+In this context, a simplex in <math>d</math>-dimensional [[Euclidean space]] is the [[convex hull]] of <math>d+1</math> points that do not all lie in a common [[hyperplane]]. For example, a 2-dimensional simplex is just a [[triangle]] (the convex hull of three points in the plane) and a 3-dimensional simplex is a [[tetrahedron]] (the convex of four points in three-dimensional space). The points that form the simplex in this way are called its [[vertex (geometry)|vertices]].
+
+An orthoscheme, also called a path simplex, is a special kind of simplex. In it, the vertices can be connected by a [[path graph|path]], such that every two edges in the path are at right angles to each other. A two-dimensional orthoscheme is a [[right triangle]]. A three-dimensional orthoscheme can be constructed from a [[cube]] by finding a path of three edges of the cube that do not all lie on the same square face, and forming the convex hull of the four vertices on this path.
+
+[[File:Triangulated cube.svg|thumb|upright=1.5|Dissection of a cube into six orthoschemes]]
+A dissection of a shape <math>S</math> (which may be any [[closed set]] in Euclidean space) is a representation of <math>S</math> as a union of other shapes whose [[Interior (topology)|interiors]] are [[disjoint sets|disjoint from each other]]. That is, intuitively, the shapes in the union do not overlap, although they may share points on their boundaries. For instance, a [[cube]] can be dissected into six three-dimensional orthoschemes. A similar result applies more generally: every [[hypercube]] or [[hyperrectangle]] in <math>d</math> dimensions can be dissected into <math>d!</math> orthoschemes.
+
+Hadwiger's conjecture is that there is a function <math>f</math> such that every <math>d</math>-dimensional simplex can be dissected into at most <math>f(d)</math> orthoschemes. Hadwiger posed this problem in 1956;{{r|hh}} it remains unsolved in general, although special cases for small values of <math>d</math> are known.{{r|bkks}}
+
+==In small dimensions==
+[[File:Altezza.svg|thumb|upright=1.35|The altitude from a sharp angle may fail to dissect a triangle, but the altitude from its widest angle always dissects it into two right triangles]]
+In two dimensions, every triangle can be dissected into at most two right triangles, by dropping an [[Altitude (triangle)|altitude]] from its widest angle onto its longest edge.{{r|hh}}
+
+In three dimensions, some tetrahedra can be dissected in a similar way, by dropping an altitude perpendicularly from a vertex <math>v</math> to a point <math>p</math> in an opposite face, connecting <math>p</math> perpendicularly to the sides of the face, and using the three-edge perpendicular paths through <math>v</math> and <math>p</math> to a side and then to a vertex of the face.{{r|hh}} However, this does not always work. In particular, there exist tetrahedra for which none of the vertices have altitudes with a foot inside the opposite face.
+Using a more complicated construction, {{harvtxt|Lenhard|1960}} proved that every tetrahedron can be dissected into at most 12 orthoschemes.{{r|len}}
+{{harvtxt|Böhm|1980}} proved that this is optimal: there exist tetrahedra that cannot be dissected into fewer than 12 orthoschemes.{{r|bohm}} In the same paper, Böhm also generalized Lenhard's result to three-dimensional [[spherical geometry]] and three-dimensional [[hyperbolic geometry]].
+
+In four dimensions, at most 500 orthoschemes are needed.{{r|tschirpke93}} In five dimensions, a finite number of orthoschemes is again needed, roughly bounded as at most 12.5 million. Again, this applies to spherical geometry and hyperbolic geometry as well as to Euclidean geometry.{{r|tschirpke94}}
+
+Hadwiger's conjecture remains unproven for all dimensions greater than five.{{r|bkks}}
+
+==Consequences==
+Every [[convex polytope]] may be dissected into simplexes. Therefore, if Hadwiger's conjecture is true, every convex polytope would also have a dissection into orthoschemes.{{r|tschirpke94}}
+
+A related result is that every orthoscheme can itself be dissected into <math>d</math> or <math>d+1</math> smaller orthoschemes.{{r|debrunner|bkk}} Therefore, for simplexes that can be partitioned into orthoschemes, their dissections can have arbitrarily large numbers of orthoschemes.
+
+==References==
+<references>
+
+<ref name=bkk>{{citation
+ | last1 = Brandts | first1 = Jan
+ | last2 = Korotov | first2 = Sergey
+ | last3 = Křížek | first3 = Michal
+ | doi = 10.1016/j.laa.2006.10.010
+ | issue = 2–3
+ | journal = Linear Algebra and Its Applications
+ | mr = 2294350
+ | pages = 382–393
+ | title = Dissection of the path-simplex in <math>\mathbb R^n</math> into <math>n</math> path-subsimplices
+ | volume = 421
+ | year = 2007| doi-access = free
+ }}</ref>
+
+<ref name=bkks>{{citation
+ | last1 = Brandts | first1 = Jan
+ | last2 = Korotov | first2 = Sergey
+ | last3 = Křížek | first3 = Michal
+ | last4 = Šolc | first4 = Jakub
+ | doi = 10.1137/060669073
+ | issue = 2
+ | journal = SIAM Review
+ | mr = 2505583
+ | pages = 317–335
+ | title = On nonobtuse simplicial partitions
+ | volume = 51
+ | year = 2009| bibcode = 2009SIAMR..51..317B
+ | url = https://pure.uva.nl/ws/files/836396/73198_315330.pdf}}. See in particular Conjecture 23, p. 327.</ref>
+
+<ref name=bohm>{{citation
+ | last = Böhm | first = Johannes
+ | issue = 9
+ | journal = Martin-Luther-Universität Halle-Wittenberg
+ | mr = 579516
+ | pages = 29–54
+ | title = Zur vollständigen Zerlegung der euklidischen und nichteuklidischen Tetraeder in Orthogonal-Tetraeder
+ | year = 1980}}</ref>
+
+<ref name=debrunner>{{citation
+ | last = Debrunner | first = Hans E.
+ | doi = 10.1007/BF00183080 | doi-access = 
+ | issue = 2
+ | journal = [[Geometriae Dedicata]]
+ | mr = 1050606
+ | pages = 123–152
+ | title = Dissecting orthoschemes into orthoschemes
+ | volume = 33
+ | year = 1990}}</ref>
+
+<ref name=hh>{{citation
+ | last = Hadwiger | first = Hugo | author-link = Hugo Hadwiger
+ | journal = [[Elemente der Mathematik]]
+ | pages = 109–110
+ | title = Ungelöste Probleme
+ | url = https://www.digizeitschriften.de/dms/img/?PID=GDZPPN002074028
+ | volume = 11
+ | year = 1956}}</ref>
+
+<ref name=len>{{citation
+ | last = Lenhard | first = H.-Chr.
+ | journal = [[Elemente der Mathematik]]
+ | mr = 0116226
+ | pages = 106–107
+ | title = Zerlegung von Tetraedern in Orthogonaltetraeder
+ | url = http://www.digizeitschriften.de/dms/img/?PID=PPN378850199_0015%7Clog34
+ | volume = 15
+ | year = 1960}}</ref>
+
+<Ref name=tschirpke93>{{citation
+ | last = Tschirpke | first = Katrin
+ | doi = 10.1007/BF01263622 | doi-access = 
+ | issue = 3
+ | journal = [[Geometriae Dedicata]]
+ | mr = 1220122
+ | pages = 313–329
+ | title = On the dissection of simplices into orthoschemes
+ | volume = 46
+ | year = 1993}}</ref>
+
+<ref name=tschirpke94>{{citation
+ | last = Tschirpke | first = Katrin
+ | issue = 1
+ | journal = Beiträge zur Algebra und Geometrie
+ | mr = 1287191
+ | pages = 1–11
+ | title = The dissection of five-dimensional simplices into orthoschemes
+ | volume = 35
+ | year = 1994
+ | url = https://www.emis.de/journals/BAG/vol.35/no.1/b35h1tsc.ps.gz}}</ref>
+
+</references>
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Geometric dissection]]
+[[Category:Multi-dimensional geometry]]

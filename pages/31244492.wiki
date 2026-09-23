@@ -1,0 +1,53 @@
+{{Short description|Unsolved problem in number theory}}{{distinguish|Erdős conjecture on arithmetic progressions|}}The '''Erdős–Turán conjecture''' is an old unsolved problem in [[additive number theory]] posed by [[Paul Erdős]] and [[Pál Turán]] in 1941. 
+
+It concerns [[additive basis|additive bases]], subsets of natural numbers with the property that every natural number can be represented as the sum of a bounded number of elements from the basis. Roughly, it states that the number of representations of this type cannot also be bounded.
+
+==Background and formulation==
+The question concerns [[subset]]s of the [[natural number]]s, typically denoted by <math> \mathbb{N} </math>, called [[additive basis|additive bases]]. A subset <math>B</math> is called an (asymptotic) additive basis of finite order if there is some positive [[integer]] <math>h</math> such that every sufficiently large natural number <math>n</math> can be written as the sum of at most <math>h</math> elements of <math>B</math>. For example, the natural numbers are themselves an additive basis of order 1, since every natural number is trivially a sum of at most one natural number. [[Lagrange's four-square theorem]] says that the set of positive [[square number]]s is an additive basis of order 4. Another highly non-trivial and celebrated result along these lines is [[Vinogradov's theorem]]. 
+
+One is naturally inclined to ask whether these results are optimal. It turns out that [[Lagrange's four-square theorem]] cannot be improved, as there are infinitely many positive integers which are not the sum of three squares. This is because no positive integer which is the sum of three squares can leave a remainder of 7 when divided by 8. However, one should perhaps expect that a set <math>B</math> which is about as sparse as the squares (meaning that in a given [[interval (mathematics)|interval]] <math>[1,N]</math>, roughly <math>N^{1/2}</math> of the integers in <math>[1,N]</math> lie in <math>B</math>) which does not have this obvious deficit should have the property that every sufficiently large positive integer is the sum of three elements from <math>B</math>. This follows from the following probabilistic model: suppose that <math>N/2 < n \leq N</math> is a positive integer, and <math>x_1, x_2, x_3</math> are 'randomly' selected from <math>B \cap [1,N]</math>. Then the probability of a given element from <math>B</math> being chosen is roughly <math>1/N^{1/2}</math>. One can then estimate the expected value, which in this case will be quite large. Thus, we 'expect' that there are many representations of <math>n</math> as a sum of three elements from <math>B</math>, unless there is some arithmetic obstruction (which means that <math> B </math> is somehow quite different than a 'typical' set of the same density), like with the squares. Therefore, one should expect that the squares are quite inefficient at representing positive integers as the sum of four elements, since there should already be lots of representations as sums of three elements for those positive integers <math>n</math> that passed the arithmetic obstruction. Examining [[Vinogradov's theorem]] quickly reveals that the [[prime number|primes]] are also very inefficient at representing positive integers as the sum of four primes, for instance. 
+
+This begets the question: suppose that <math>B</math>, unlike the squares or the prime numbers, is very efficient at representing positive integers as a sum of <math>h</math> elements of <math>B</math>. How efficient can it be? The best possibility is that we can find a positive integer <math>h</math> and a set <math>B</math> such that every positive integer <math>n</math> is the sum of at most <math> h </math> elements of <math> B </math> in exactly one way. Failing that, perhaps we can find a <math>B</math> such that every positive integer <math>n</math> is the sum of at most <math>h</math> elements of <math>B</math> in at least one way and at most <math>S(h)</math> ways, where <math>S</math> is a function of <math>h</math>.
+
+This is basically the question that [[Paul Erdős]] and [[Pál Turán]] asked in 1941. Indeed, they [[conjecture]]d a ''negative'' answer to this question, namely that if <math>B</math> is an additive basis of order <math>h</math> of the natural numbers, then it cannot represent positive integers as a sum of at most <math>h</math> too efficiently; the number of representations of <math>n</math>, as a function of <math>n</math>, must tend to infinity.
+
+==History==
+
+The conjecture was made jointly by [[Paul Erdős]]  and [[Pál Turán]] in 1941.<ref>{{Cite journal |last1=Erdős |first1=Paul. |last2=Turán|first2=Pál |year=1941 |title=On a problem of Sidon in additive number theory, and on some related problems |journal=Journal of the London Mathematical Society |volume=16 |issue=4 |pages=212–216 |doi=10.1112/jlms/s1-16.4.212}}</ref> In the original paper, they write
+
+:"(2) If <math>f(n) > 0</math> for <math>n > n_0</math>, then <math>\varlimsup_{n \rightarrow \infty} f(n) = \infty</math>",
+
+where <math>\varlimsup_{n \rightarrow \infty}</math> denotes the [[limit superior]]. Here <math>f(n)</math> is the number of ways one can write the natural number <math>n</math> as the sum of two (not necessarily distinct) elements of <math>B</math>. If <math>f(n)</math> is always positive for sufficiently large <math>n</math>, then <math>B</math> is called an additive basis (of order 2).<ref name="TaoVu13">{{cite book |author-link=Terence Tao |first1=T. |last1=Tao |first2=V. |last2=Vu |title=Additive Combinatorics |location=New York |publisher=Cambridge University Press |year=2006 |isbn=978-0-521-85386-6 |page=13 }}</ref> This problem has attracted significant attention<ref name="TaoVu13" /> but remains unsolved.
+
+In 1964, Erdős published a multiplicative version of this conjecture.<ref>{{cite journal
+| last1=Erdős | first1=Paul | authorlink1=Paul Erdős
+| title=On the multiplicative representation of integers
+| journal=[[Israel Journal of Mathematics]]
+| volume=2
+| date=1964
+| issue=4 | pages=251–261
+| doi=10.1007/BF02759742 | doi-access=free| citeseerx=10.1.1.210.8322
+}}</ref>
+
+==Progress==
+
+While the conjecture remains unsolved, there have been some advances on the problem. First, we express the problem in modern language. For a given subset <math>B \subset \mathbb{N}</math>, we define its ''representation function'' <math>r_B(n) = \#\{(a_1, a_2) \in B^2 \mid a_1 + a_2 = n \}</math>. Then the conjecture states that if <math> r_B(n) > 0 </math> for all <math>n</math> sufficiently large, then <math> \limsup_{n \rightarrow \infty} r_B(n) = \infty </math>.
+
+More generally, for any <math>h \in \mathbb{N}</math> and subset <math>B \subset \mathbb{N}</math>, we can define the <math>h</math> representation function as <math>r_{B,h}(n) = \#\{(a_1, \cdots, a_h) \in B^h \mid a_1 + \cdots + a_h = n \}</math>. We say that <math>B</math> is an additive basis of order <math>h</math> if <math>r_{B,h}(n) > 0</math> for all <math>n</math> sufficiently large. One can see from an elementary argument that if <math>B</math> is an additive basis of order <math>h</math>, then
+
+:<math>\displaystyle n \leq \sum_{m=1}^n r_{B,h}(m) \leq |B \cap [1,n]|^h</math>
+
+So we obtain the lower bound <math>n^{1/h} \leq |B \cap [1,n]|</math>.
+
+The original conjecture spawned as Erdős and Turán sought a partial answer to Sidon's problem (see: [[Sidon sequence]]). Later, Erdős set out to answer the following question posed by Sidon: how close to the lower bound <math> |B \cap [1,n]| \geq n^{1/h} </math> can an additive basis <math> B </math> of order <math> h </math> get? This question was answered in the case <math>h=2</math> by Erdős in 1956.<ref>{{cite journal |first=P. |last=Erdős |title=Problems and results in additive number theory |journal=Colloque sur la Théorie des Nombres |year=1956 |pages=127–137 }}</ref> Erdős proved that there exists an additive basis <math>B</math> of order 2 and constants <math>c_1, c_2 > 0 </math> such that <math>c_1 \log n \leq r_B(n) \leq c_2 \log n </math> for all <math>n </math> sufficiently large. In particular, this implies that there exists an additive basis <math>B</math> such that <math>r_B(n) = n^{1/2 + o(1)} </math>, which is essentially best possible. This motivated Erdős to make the following conjecture:
+
+:If <math>B</math> is an additive basis of order <math>h</math>, then <math> \limsup_{n \rightarrow \infty} r_B(n)/\log n > 0.</math>
+
+In 1986, [[Eduard Wirsing]] proved that a large class of additive bases, including the prime numbers, contains a subset that is an additive basis but significantly thinner than the original.<ref>{{Cite journal |last = Wirsing |first=Eduard | year = 1986 | title = Thin subbases |journal=Analysis | volume=6 |issue= 2–3| pages= 285–308 | doi=10.1524/anly.1986.6.23.285|s2cid=201721463 }}</ref> In 1990, Erdős and [[Prasad V. Tetali]] extended Erdős's 1956 result to [[Erdős–Tetali theorem|bases of arbitrary order]].<ref>{{Cite journal |last1=Erdős |first1=Paul. |last2=Tetali|first2=Prasad|author2-link=Prasad V. Tetali |year=1990 |title=Representations of integers as the sum of <math>k</math> terms|journal=Random Structures Algorithms|volume=1 |issue = 3 |pages=245–261 |doi=10.1002/rsa.3240010302 }}</ref> In 2000, [[Van H. Vu|V. Vu]] proved that thin subbases exist in the Waring bases using the [[Hardy–Littlewood circle method]] and his polynomial concentration results.<ref>{{Cite journal |last = Vu | first=Van | year = 2000 | title = On a refinement of Waring's problem |journal=Duke Mathematical Journal |volume=105 | issue = 1 |pages= 107–134 |doi=10.1215/S0012-7094-00-10516-9 | citeseerx=10.1.1.140.3008 }}</ref> In 2006, Borwein, Choi, and Chu proved that for all additive bases <math>B</math>, <math>f(n)</math> eventually exceeds 7.<ref>{{Cite journal |last1 = Borwein | first1=Peter | last2 = Choi | first2=Stephen |last3=Chu |first3=Frank|year=2006|title = An old conjecture of Erdős–Turán on additive bases |journal=Mathematics of Computation |volume=75 |issue= 253|pages=475–484 |doi= 10.1090/s0025-5718-05-01777-1|doi-access=free }}</ref><ref>{{cite thesis |type=MSc |last=Xiao |first=Stanley Yao |date=2011 |title=On the Erdős–Turán conjecture and related results|hdl= 10012/6150|hdl-access=free}}</ref>
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Erdos-Turan Conjecture On Additive Bases}}
+[[Category:Additive number theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

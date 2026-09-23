@@ -1,0 +1,14 @@
+{{Short description|Conjecture in algebraic geometry}}
+In [[anabelian geometry]], a branch of [[algebraic geometry]], the '''section conjecture''' gives a conjectural description of the splittings of the [[group homomorphism]] <math>\pi_1(X)\to \operatorname{Gal}(k)</math>, where <math>X</math> is a complete [[smooth curve]] of genus at least 2 over a [[field (mathematics)|field]] <math>k</math> that is finitely generated over <math>\mathbb{Q}</math>, in terms of decomposition groups of rational points of <math>X</math>. The conjecture was introduced by {{harvs|txt|first=Alexander|last=Grothendieck|year=1997|authorlink=Grothendieck}} in a 1983 letter to [[Gerd Faltings]].
+
+==References==
+
+*{{Citation | last1=Grothendieck | first1=Alexander | author1-link=Alexander Grothendieck | editor1-last=Schneps | editor1-first=Leila | editor2-last=Lochak | editor2-first=Pierre | editor1-link=Leila Schneps|title=Geometric Galois actions, 1 | publisher=[[Cambridge University Press]] | series=London Math. Soc. Lecture Note Ser. | isbn= 978-0-521-59642-8 |mr=1483108 | year=1997 | volume=242 | chapter=Brief an G. Faltings | pages=49–58}}
+
+== External links ==
+*{{cite web|url=https://mathoverflow.net/q/179664 |title=Why is the section conjecture important?|website=mathoverflow.net}}
+
+[[Category:Algebraic geometry]]
+[[Category:Unsolved problems in geometry]]
+{{algebraic-geometry-stub}}
+[[Category:Arithmetic geometry]]

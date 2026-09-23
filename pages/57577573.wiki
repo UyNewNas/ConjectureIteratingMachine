@@ -1,0 +1,327 @@
+{{Short description|Fifteen open problems in mathematical physics}}
+{{distinguish|text=[[Simon's problem]] in computational complexity}}
+{{Multiple issues|{{Primary sources|date=June 2021}}
+{{Context|article|date=June 2021}}}}
+In [[mathematics]], the '''Simon problems''' (or '''Simon's problems''') are a series of fifteen questions posed in the year 2000 by [[Barry Simon]], an American [[mathematical physicist]].<ref name="simon imperial">{{cite book|last=Simon |first=Barry |chapter=Schrödinger Operators in the Twenty-First Century | title=Mathematical Physics 2000 |pages=283–288 |publisher=[[Imperial College London]] |isbn=978-1-86094-230-3 |doi=10.1142/9781848160224_0014 |year=2000}}</ref><ref>{{cite journal|title=Dynamics and Spectral Theory of Quasi-Periodic Schrödinger-type Operators |first1=C. A. |last1=Marx |first2=Svetlana |last2=Jitomirskaya |journal=Ergodic Theory and Dynamical Systems |volume=37 |issue=8 |pages=2353–2393 |year=2017 |arxiv=1503.05740 |doi=10.1017/etds.2016.16|s2cid=119317111 |author-link2=Svetlana Jitomirskaya}}</ref> Inspired by other collections of mathematical problems and open [[conjecture]]s, such as [[Hilbert problems|the famous list]] by [[David Hilbert]], the Simon problems concern [[Operator (physics)#Operators in quantum mechanics|quantum operators]].<ref>{{cite web|url=http://www.math.pku.edu.cn/teachers/gansb/conference09/Damanik-Minicourse-2009-08-09.pdf |title=Dynamics of SL(2,R)-Cocycles and Applications to Spectral Theory; Lecture 1: Barry Simon's 21st Century Problems |first=David |last=Damanik |access-date=2018-07-07 |website=Beijing International Center for Mathematical Research, [[Peking University]]}}</ref> Eight of the problems pertain to the anomalous [[Spectrum (functional analysis)|spectral]] behavior of [[Schrodinger operator|Schrödinger operators]], and five concern operators that incorporate the [[Coulomb potential]].<ref name="simon imperial" /><ref>{{cite web |title=Simon's Problem |url=https://home.cs.colorado.edu/~alko5368/lecturesCSCI3090/lecture11.pdf |website=[[University of Colorado Boulder]]}}</ref> 
+
+In 2014, [[Artur Avila]] won a [[Fields Medal]] for work including the solution of three Simon problems.<ref>{{cite web|url=http://www2.cnrs.fr/en/2435.htm?debut=8&theme1=12 |title=Fields Medal awarded to Artur Avila |website=[[Centre national de la recherche scientifique]] |date=2014-08-13 |access-date=2018-07-07}}</ref><ref name="guardian">{{cite web|url=https://www.theguardian.com/science/alexs-adventures-in-numberland/2014/aug/13/fields-medals-2014-maths-avila-bhargava-hairer-mirzakhani |title=Fields Medals 2014: the maths of Avila, Bhargava, Hairer and Mirzakhani explained |website=[[The Guardian]] |last=Bellos |first=Alex |date=2014-08-13 |access-date=2018-07-07|author-link=Alex Bellos}}</ref> Among these was the problem of [[mathematical proof|proving]] the set of [[Energy level|energy levels]] of one particular abstract quantum system was, in fact, the [[Cantor set]], a challenge known as the "[[Ten Martini Problem]]" after the reward [[Mark Kac]] offered for solving it.<ref name="guardian" /><ref>{{cite web|last=Tao |first=Terry |title=Avila, Bhargava, Hairer, Mirzakhani |url=https://terrytao.wordpress.com/2014/08/12/avila-bhargava-hairer-mirzakhani/ |website=What's New |date=2014-08-12 |access-date=2018-07-07 |author-link=Terence Tao}}</ref> 
+
+The 2000 list was a refinement of a similar set of problems Simon had posed in 1984.<ref name="simon birkhauser">{{cite book|last=Simon|first=Barry|url=http://www.math.caltech.edu/SimonPapers/R27.pdf|title=Perspectives in Mathematics: Anniversary of Oberwolfach 1984|publisher=[[Birkhäuser]]|year=1984|pages=423&ndash;454|chapter=Fifteen problems in mathematical physics|access-date=24 June 2021}}</ref><ref>{{cite journal|last=Coley |first=Alan A. |title=Open problems in mathematical physics |journal=Physica Scripta |volume=92 |issue=9 |pages=093003 |arxiv=1710.02105 |doi=10.1088/1402-4896/aa83c1 |year=2017 |bibcode=2017PhyS...92i3003C |s2cid=3892374 }}</ref>
+
+== Context ==
+Background definitions for the "Coulomb energies" problems (<math>N</math> non-relativistic particles ([[electron]]s) in <math>\mathbb{R}^{3}</math> with [[spin (physics)|spin]] <math> 1/2 </math> and an infinitely heavy [[atomic nucleus|nucleus]] with charge <math>Z</math> and Coulombic mutual interaction): 
+
+* <math>\mathcal{H}_f^{(N)}</math> is the space of functions on <math>L^2(\mathbb{R}^{3N}; \mathbb{C}^{2N})</math> which are asymmetrical under exchange of the <math>N</math> spin and space coordinates.<ref name="simon imperial" /> Equivalently, the subspace of <math> (L^2(\mathbb{R}^{3})\otimes  \mathbb{C}^{2})^{\otimes N}</math> which is asymmetrical under the exchange of the <math>N</math> factors.
+* The [[Hamiltonian (quantum mechanics)|Hamiltonian]] is <math>H(N, Z) := \sum_{i = 1}^N(-\Delta_i - \frac{Z}{|x_i|} ) + \sum_{i < j}\frac{1}{|x_i - x_j|}</math>. Here <math>x_i \in \mathbb{R}^3 </math> is the coordinate of the  <math>i</math>-th particle, <math>\Delta_i</math> is the [[Laplace operator|Laplacian]] with respect to the coordinate <math>x_i</math>. Even if the Hamiltonian does not explicitly depend on the state of the spin sector, the presence of spin has an effect due to the asymmetry condition on the total wave-function.
+* We define <math>E(N, Z) := \min_{\mathcal{H}_f} H(N, Z)</math>, that is, the [[ground state]] energy of the <math>(N,Z)</math> system.
+* We define <math>N_0(Z)</math> to be the smallest value of <math>N</math> such that <math>E(N + j, Z) = E(N, Z)</math> for all positive [[integer]]s <math>j</math>; it is known such a number always exists and is always between <math>Z</math> and <math>2Z</math>, inclusive.<ref name="simon imperial" />
+
+== The 1984 list ==
+Simon listed the following problems in 1984:<ref name="simon birkhauser" />
+{| class="wikitable sortable"
+!No.
+!Short name
+!Statement
+!Status
+!Year solved
+|-
+| rowspan="2" |1st
+|(a) Almost always global existence for Newtonian gravitating particles
+|(a) Prove that the set of initial conditions for which Newton's equations fail to have global solutions has [[measure zero]].
+|[[Open problem|Open]] as of 1984.<ref name="simon birkhauser" />{{Update inline|date=June 2021}} In 1977, [[Donald G. Saari|Donald Saari]] showed this is true for 4-body problems.<ref>{{cite journal |last1=Saari |first1=Donald G. |title=A global existence theorem for the four-body problem of Newtonian mechanics |journal=Journal of Differential Equations |date=October 1977 |volume=26 |issue=1 |pages=80–111 |doi=10.1016/0022-0396(77)90100-0 |doi-access=free |bibcode=1977JDE....26...80S }}</ref>
+|?
+|-
+|(b) [[Painlevé conjecture|Existence of non-collisional singularities in the Newtonian ''N''-body problem]]
+|Show that there are non-collisional singularities in the Newtonian [[N-body problem|''N''-body problem]] for some ''N'' and suitable masses.
+|In 1988, Xia gave an example of a 5-body configuration which undergoes a non-collisional singularity.<ref>{{cite journal |last1=Xia |first1=Zhihong |title=The Existence of Noncollision Singularities in Newtonian Systems |journal=Annals of Mathematics |date=1992 |volume=135 |issue=3 |pages=411–468 |mr=1166640 |doi=10.2307/2946572 |jstor=2946572 |author-link=Zhihong Xia}}</ref><ref>{{cite journal |last1=Saari |first1=Donald G. |last2=Xia |first2=Zhihong |title=Off to infinity in finite time |journal=Notices of the American Mathematical Society |date=April 1995 |volume=42 |issue=5 |pages=538–546 |url=https://www.ams.org/journals/notices/199505/saari-2.pdf }}</ref> 
+In 1991, Gerver showed 3''n''-body problems in the plane for some sufficiently large value of ''n'' also undergo non-collisional singularities.<ref>{{cite journal |last1=Gerver |first1=Joseph L. |title=The existence of pseudocollisions in the plane |journal=Journal of Differential Equations |date=January 1991 |volume=89 |issue=1 |pages=1–68 |doi=10.1016/0022-0396(91)90110-U |bibcode=1991JDE....89....1G |doi-access=free }}</ref>
+|1989
+|-
+| rowspan="3" |2nd
+|(a) Ergodicity of gases with soft cores
+|Find repulsive smooth potentials for which the dynamics of ''N'' particles in a box (with, e.g., smooth wall potentials) is [[Ergodicity|ergodic]].
+|Open as of 1984.{{Update inline|date=June 2021}}
+[[Yakov Sinai]] once proved the [[Hard spheres|hard sphere gas]] is ergodic, but no complete proof has appeared except for the case of two particles, and a sketch for three, four, and five particles.<ref name="simon birkhauser" />
+|?
+|-
+|(b) Approach to equilibrium
+|Use the scenario above to justify that large systems with forces that are attractive at suitable distances approach equilibrium, or find an alternate scenario that does not rely on strict ergodicity in finite volume.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+|(c) Asymptotic abelianness for the quantum Heisenberg dynamics
+|Prove or disprove that the multidimensional [[quantum Heisenberg model]] is asymptotically abelian.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+|3rd
+|[[Turbulence]] and all that
+|Develop a comprehensive theory of long-time behavior of [[dynamical system]]s, including a theory of the onset of and of fully developed turbulence.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+| rowspan="2" |4th
+|(a) Fourier's heat law
+
+|Find a mechanical model in which a system of size <math>L</math> with temperature difference <math>\Delta T</math> between its ends has a [[Rate of heat flow|rate of heat]] temperature that goes as <math>L^{-1}</math> in the [[limit (mathematics)|limit]] <math>L\to\infty</math>.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+|(b) Kubo's formula
+|Justify [[Kubo formula|Kubo's formula]] in a quantum model or find an alternate theory of conductivity.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+| rowspan="4" |5th
+|(a) Exponential decay of <math>v = 2</math> classical Heisenberg correlations
+|Consider the two-dimensional [[classical Heisenberg model]]. Prove that for any [[Thermodynamic beta|beta]], [[Correlation function (statistical mechanics)|correlations]] decay exponentially as distance approaches infinity.
+| rowspan="4" |Open as of 1984.{{Update inline|date=June 2021}}
+| rowspan="4" |?
+|-
+|(b) Pure phases and low temperatures for the <math>v\geq 3</math> classical Heisenberg model
+|Prove that, in the <math>D = 3</math> model at large beta and at dimension <math>v\geq 3</math>, the [[Equilibrium state|equilibrium states]] form a single orbit under <math>SO(3)</math>: the sphere.
+|-
+|(c) GKS for classical Heisenberg models
+|Let <math>f</math> and <math>g</math> be finite products of the form <math>(\sigma_{\alpha}\cdot\sigma_{\gamma})</math> in the <math>D = 3</math> model. Is it true that <math><fg>_{\Lambda, \beta}\geq<f>_{\Lambda, \beta}<g>_{\Lambda, \beta}</math> ?{{Clarification needed|date=June 2021|reason=unclear notation}}
+|-
+|(d) Phase transitions in the quantum Heisenberg model
+|Prove that for <math>v\geq 3</math> and large beta, the quantum Heisenberg model has long range [[Order (group theory)|order]].
+|-
+|6th
+|Explanation of [[ferromagnetism]]
+|Verify the [[Heisenberg picture]] of the origin of ferromagnetism (or an alternative) in a suitable model of a realistic quantum system.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+|7th
+|Existence of [[Continuous phase transitions|continuum phase transitions]]
+|Show that for suitable choices of [[pair potential]] and [[Density functional theory|density]], the [[Thermodynamic free energy|free energy]] is non-<math>C^1</math> at some beta.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+| rowspan="2" |8th
+|(a) Formulation of the [[renormalization group]]
+
+|Develop [[mathematical rigor|mathematically precise]] renormalization transformations for <math>v</math>-dimensional Ising-type systems.
+
+| rowspan="2" |Open as of 1984.{{Update inline|date=June 2021}}
+| rowspan="2" |?
+|-
+|(b) Proof of universality
+|Show that critical exponents for Ising-type systems with nearest neighbor coupling but different bond strengths in the three directions are independent of ratios of bond strengths.
+|-
+| rowspan="2" |9th
+|(a) Asymptotic completeness for short-range ''N''-body quantum systems
+|Prove asymptotic completeness for N-body Schrödinger operators with short-range potentials (<math>\oplus~\text{Ran}~\Omega_a^+ = L^2(X)</math>).{{Clarify|date=June 2021|reason=unclear notation}}
+|Proved for generic N-body systems in 1987 by [[Israel Michael Sigal|I. M. Sigal]] and A. Soffer;<ref>{{Cite journal |last1=Sigal |first1=I. M. |last2=Soffer |first2=A. |date=1987 |title=The N-Particle Scattering Problem: Asymptotic Completeness for Short-Range Systems |url=https://www.jstor.org/stable/1971345 |journal=Annals of Mathematics |volume=126 |issue=1 |pages=35–108 |doi=10.2307/1971345 |jstor=1971345 |issn=0003-486X|url-access=subscription }}</ref> and later by Jan Derezinski and C. Gérard.<ref>{{Cite journal |last=Dereziński |first=Jan |date=1993 |title=Asymptotic Completeness of Long-Range N-Body Quantum Systems |url=https://www.jstor.org/stable/2946615 |journal=Annals of Mathematics |volume=138 |issue=2 |pages=427–476 |doi=10.2307/2946615 |jstor=2946615 |issn=0003-486X|url-access=subscription }}</ref><ref>{{Cite journal |last1=Gérard |first1=Christian |last2=Møller |first2=Jacob Schach |last3=Rasmussen |first3=Morten Grud |date=2011 |title=Asymptotic Completeness in Quantum Field Theory: Translation Invariant Nelson Type Models Restricted to the Vacuum and One-Particle Sectors |journal=Letters in Mathematical Physics |volume=95 |issue=2 |pages=109–134 |doi=10.1007/s11005-010-0445-x |arxiv=1503.02166 |bibcode=2011LMaPh..95..109G |issn=0377-9017}}</ref>
+|1987
+|-
+|(b) Asymptotic completeness for Coulomb potentials
+|Suppose <math>v = 3, V_{ij}(x) = e_{ij}|x|^{-1}</math>. Prove that <math>\oplus~\text{Ran}~\Omega_a^{D, +} = L^2(X)</math>.{{Clarify|date=June 2021}}
+| Open as of 1984.<ref name="simon birkhauser" />
+| ?
+|-
+| rowspan="5" |10th
+|(a) [[Monotonic function|Monotonicity]] of [[ionization energy]]
+|(a) Prove that <math>(\Delta E)(N - 1, Z)\geq (\Delta E)(N, Z)</math>.{{Clarify|date=June 2021|reason=unclear notation}}
+|Open as of 2026.
+|?
+|-
+|(b) The Scott correction
+|Prove that the ground state energy of a heavy atom of atomic number Z follows the predicted asymptotic expansion, rigorously justifying the "Scott Correction" <math>(c_2 Z^2)</math> to the [[Thomas–Fermi model|Thomas-Fermi model]].
+|Proved by H. Siedentop and R. Weikard,<ref>{{Cite journal |last1=Siedentop |first1=Heinz |last2=Weikard |first2=Rudi |date=1987-03-09 |title=Upper bound on the ground state energy of atoms that proves Scott's conjecture |journal=Physics Letters A |volume=120 |issue=7 |pages=341–342 |doi=10.1016/0375-9601(87)90727-4 |bibcode=1987PhLA..120..341S |issn=0375-9601}}</ref><ref>{{Cite journal |last1=Siedentop |first1=Heinz |last2=Weikard |first2=Rudi |date=1987-09-01 |title=On the leading energy correction for the statistical model of the atom: Interacting case |journal=Communications in Mathematical Physics |language=en |volume=112 |issue=3 |pages=471–490 |doi=10.1007/BF01218487 |bibcode=1987CMaPh.112..471S |issn=1432-0916}}</ref> and later by [[Charles Fefferman|C. Fefferman]] and [[Luis A. Seco|L. Seco]].<ref>{{Cite journal |last1=Solovej |first1=Jan Philip |author-link1=Jan Philip Solovej |last2=Østergaard Sørensen |first2=Thomas |last3=Spitzer |first3=Wolfgang Ludwig |date=2010 |title=Relativistic Scott correction for atoms and molecules |url=https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.20296 |journal=Communications on Pure and Applied Mathematics |language=en |volume=63 |issue=1 |pages=39–118 |doi=10.1002/cpa.20296 |issn=1097-0312|url-access=subscription }}</ref>
+|1987
+|-
+|(c) Asymptotic ionization
+|Find the leading [[asymptotics]] of <math>(\Delta E)(Z, Z)</math>.
+Prove that the maximum number of electrons <math>N_{max}</math> an atom can bind cannot exceed Z by more than a small amount.
+|Proved by [[Elliott H. Lieb]] and [[Michael Loss]].<ref>{{Citation |last1=Lieb |first1=Elliott H. |title=Existence of Atoms and Molecules in Non-Relativistic Quantum Electrodynamics |date=2003-12-23 |arxiv=math-ph/0307046 |last2=Loss |first2=Michael |bibcode=2003math.ph...7046L }}</ref>
+|2003
+|-
+|(d) Asymptotics of maximal ionized charge
+|Prove that <math>\lim_{Z\to\infty}N(Z)/Z = 1</math>.{{Clarify|date=June 2021|reason=unclear notation}}
+|Proved by Fefferman and Seco.<ref>{{Cite journal |last1=Fefferman |first1=Charles L. |last2=Seco |first2=Luis A. |date=1990-03-01 |title=Asymptotic neutrality of large ions |journal=Communications in Mathematical Physics |language=en |volume=128 |issue=1 |pages=109–130 |doi=10.1007/BF02097048 |bibcode=1990CMaPh.128..109F |issn=1432-0916}}</ref>
+|1997
+|-
+|(e) Rate of collapse of Bose matter
+|Find suitable <math>C_1, C_2, \alpha</math> such that <math>-C_1 N^{\alpha}\leq\tilde{E}_B(N, N; 1)\leq C_2 N^{\alpha}</math>.{{Clarify|date=June 2021|reason=unclear notation}}
+|Open as of 2026.
+|?
+|-
+|11th
+|Existence of [[crystal]]s
+|Prove a suitable version of the existence of crystals (e.g. there is a choice of minimizing configurations that converge to some infinite lattice configuration).
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+| rowspan="5" |12th
+|(a) Existence of extended states in the Anderson model
+|Prove that in <math>v\geq 3</math> and for small <math>\lambda</math> that there is a region of absolutely continuous spectrum of the Anderson model, and determine whether this is false for <math>v = 2</math>.{{Clarify|date=June 2021}}
+| rowspan="5" |Open as of 1984.{{Update inline|date=June 2021}}
+| rowspan="5" |?
+|-
+|(b) Diffusive bound on "transport" in random potentials
+|Prove that <math>\text{Exp}(\delta_0, (e^{itH}\vec{N}e^{-itH})^2\delta_0)\leq c(1 + |t|)</math> for the Anderson model, and more general random potentials.{{Clarify|date=June 2021}}
+|-
+|(c) [[Smoothness]] of <math>k(E)</math> through the mobility edge in the Anderson model
+|Is <math>k(E)</math>, the integrated density of states,{{Clarify|date=June 2021}} a <math>C^{\infty}</math> function in the Anderson model at all couplings?
+|-
+|(d) Analysis of the almost Mathieu equation
+|Verify the following for the almost Mathieu equation:
+* If <math>\alpha</math> is a [[Liouville number]] and <math>\lambda\neq 0</math>, then the spectrum is purely singular continuous for almost all <math>\theta</math>.
+* If <math>\alpha</math> is a [[Roth number]] and <math>|\lambda| < 2</math>, then the spectrum is purely absolutely continuous for almost all <math>\theta</math>.
+* If <math>\alpha</math> is a Roth number and <math>|\lambda| > 2</math>, then the spectrum is purely dense pure point.
+* If <math>\alpha</math> is a Roth number and <math>|\lambda| = 2</math>, then <math>\sigma(h)</math> has [[Lebesgue measure|Lebesgue]] [[measure zero]] and the spectrum is purely singular continuous.{{Clarify|date=June 2021}}
+|-
+|(e) Point spectrum in a continuous almost periodic model
+|Show that <math>-\frac{d^2}{dx^2} + \lambda\cos(2\pi x) + \mu\cos(2\pi\alpha x + \theta)</math> has some [[Spectrum (functional analysis)|point spectrum]] for suitable <math>\alpha, \lambda, \mu</math> and almost all <math>\theta</math>.
+|-
+|13th
+|[[Critical exponent]] for [[Self-avoiding walk|self-avoiding walks]]
+|Let <math>D(n)</math> be the mean displacement of a random self-avoiding walk of length <math>n</math>. Show that <math>v := \lim_{n\to\infty}n^{-1}\ln D(n)</math> is <math>\frac{1}{2}</math> for dimension at least four and is greater otherwise.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|-
+| rowspan="4" |14th
+|(a) Construct [[Quantum chromodynamics|QCD]]
+|Give a precise mathematical construction of [[quantum chromodynamics]].
+| rowspan="4" |Open as of 1984.{{Update inline|date=June 2021}}
+| rowspan="4" |?
+|-
+|(b) Renormalizable [[Quantum field theory|QFT]]
+|Construct a nontrivial quantum field theory that is renormalizable but not superrenormalizable.
+|-
+|(c) Inconsistency of [[Quantum electrodynamics|QED]]
+|Prove that QED is not a consistent theory.
+|-
+|(d) Inconsistency of <math>\varphi_4^4</math>
+|Prove that a nontrivial <math>\varphi_4^4</math> theory does not exist.
+|-
+|15th
+|[[Cosmic censorship]]
+|Formulate and then prove or disprove a suitable version of cosmic censorship.
+|Open as of 1984.{{Update inline|date=June 2021}}
+|?
+|}
+In 2000, Simon claimed five of the problems he listed (namely 1B, 9A, 10B, 10C and 10D, 12D) were solved.<ref name="simon imperial" />
+
+== The 2000 list ==
+The Simon problems as listed in 2000 (with original categorizations), are:<ref name="simon imperial" /><ref name="denisov">{{Cite web|last=Weisstein|first=Eric W.|title=Simon's Problems|url=https://mathworld.wolfram.com/SimonsProblems.html|access-date=2021-06-22|website=mathworld.wolfram.com|language=en}}</ref>
+{| class="wikitable sortable"
+!No.
+!Short name
+!Statement
+!Status
+!Year solved
+|-
+| colspan="5" |'''Quantum transport and anomalous spectral behavior'''
+|-
+|1st
+|Extended states
+|Prove that the [[Anderson localization|Anderson model]] has purely absolutely continuous spectrum for <math>v\geq 3</math> and suitable values of <math>b-a</math> in some energy range. 
+|?
+|?
+|-
+|2nd
+|Localization in 2 dimensions
+|Prove that the spectrum of the Anderson model for <math>v=2</math> is dense pure point.
+|?
+|?
+|-
+|3rd
+|Quantum diffusion
+|Prove that, for <math>v\geq 3</math> and values of <math>|b - a|</math> where there is absolutely continuous spectrum, that <math>\sum_{n\in\mathbb{Z}^{\nu}} n^2|e^{itH}(n, 0)|^2</math> grows like <math>ct</math> as <math>t\to\infty</math>.
+|?
+|?
+|-
+|[[Ten Martini Problem|4th]]
+|[[Ten Martini Problem|Ten Martini problem]]
+|Prove that the spectrum of <math>h_{\alpha, \lambda, \theta}</math> is a [[Cantor set]] (that is, nowhere dense) for all <math>\lambda\neq 0</math> and all [[irrational number|irrational]] <math>\alpha</math>.
+|Solved by Puig (2003).<ref name="denisov" /><ref>{{cite journal |last1=Puig |first1=Joaquim |title=Cantor Spectrum for the Almost Mathieu Operator |journal=Communications in Mathematical Physics |date=1 January 2004 |volume=244 |issue=2 |pages=297–309 |doi=10.1007/s00220-003-0977-3 |bibcode=2004CMaPh.244..297P |s2cid=120589515 |arxiv=math-ph/0309004 }}</ref>
+|2003
+|-
+|5th
+|
+|Prove that the spectrum of <math>h_{\alpha, \lambda, \theta}</math> has [[measure zero]] for <math>\lambda = 2</math> and all irrational <math>\alpha</math>.
+|Solved by [[Artur Avila|Avila]] and [[Raphaël Krikorian|Krikorian]] (2003).<ref name="denisov" /><ref>{{cite journal |last1=Ávila Cordeiro de Melo |first1=Artur |last2=Krikorian |first2=Raphaël |title=Reducibility or nonuniform hyperbolicity for quasiperiodic Schrödinger cocycles |journal=Annals of Mathematics |date=1 November 2006 |volume=164 |issue=3 |pages=911–940 |doi=10.4007/annals.2006.164.911 |arxiv=math/0306382 |s2cid=14625584 }}</ref>
+|2003
+|-
+|6th
+|
+|Prove that the spectrum of <math>h_{\alpha, \lambda, \theta}</math> is absolutely continuous for <math>\lambda = 2</math> and all irrational <math>\alpha</math>.
+|?
+|?
+|-
+|7th
+|
+|Do there exist potentials <math>V(x)</math> on <math>[0,\infty)</math> such that <math>|V(x)|\leq C|x|^{\frac{1}{2}+\varepsilon}</math> for some <math>\varepsilon</math> and such that <math>-\frac{d^2}{dx^2} + V</math> has some singular continuous spectrum?
+|Essentially solved by Denisov (2003) with only <math>L^2</math> decay.
+Solved entirely by Kiselev (2005).<ref name="denisov" /><ref>{{cite journal |last1=Denisov |first1=Sergey A. |title=On the coexistence of absolutely continuous and singular continuous components of the spectral measure for some Sturm–Liouville operators with square summable potential |journal=Journal of Differential Equations |date=June 2003 |volume=191 |issue=1 |pages=90–104 |doi=10.1016/S0022-0396(02)00145-6 |doi-access=free |bibcode=2003JDE...191...90D }}</ref><ref>{{cite journal |last1=Kiselev |first1=Alexander |title=Imbedded singular continuous spectrum for Schrödinger operators |journal=Journal of the American Mathematical Society |date=27 April 2005 |volume=18 |issue=3 |pages=571–603 |doi=10.1090/S0894-0347-05-00489-3 |doi-access=free }}</ref>
+|2003, 2005
+|-
+|8th
+|
+|Suppose that <math>V(x)</math> is a function on <math>\mathbb{R}^{\nu}</math> such that <math>\int |x|^{-\nu + 1} |V(x)|^2 d^{\nu}x < \infty</math>, where <math>\nu\geq 2</math>. Prove that <math>-\Delta + V</math> has absolutely continuous spectrum of infinite [[Multiplicity (mathematics)|multiplicity]] on <math>[0,\infty)</math>.
+|?
+|?
+|-
+| colspan="5" |'''Coulomb energies'''
+|-
+|9th
+|
+|Prove that <math>N_0(Z) - Z</math> is bounded for <math>Z\to\infty</math>.
+|?
+|?
+|-
+|10th
+|
+|What are the [[asymptotics]] of <math>(\delta E)(Z) := E(Z, Z-1) - E(Z,Z)</math> for <math>Z\to\infty</math>?
+|?
+|?
+|-
+|11th
+|
+|Make mathematical sense of the [[nuclear shell model]].
+|?
+|?
+|-
+|12th
+|
+|Is there a mathematical sense in which one can justify current techniques for determining [[Molecular configuration|molecular configurations]] from first principles?
+|?
+|?
+|-
+|13th
+|
+|Prove that, as the number of nuclei approaches infinity, the ground state of some neutral system of molecules and electrons approaches a periodic limit (i.e. that [[Crystal|crystals]] exist based on quantum principles).
+|?
+|?
+|-
+| colspan="5" |'''Other problems'''
+|-
+|14th
+|
+|Prove that the integrated density of states <math>k(E)</math> is continuous in the energy.
+|<nowiki>| k(E1 + ΔE) − k(E1) | < ε</nowiki>
+|?
+|-
+|15th
+|[[Lieb–Thirring inequality|Lieb-Thirring conjecture]]
+|Prove the Lieb-Thirring conjecture on the constants <math>L_{\gamma, \nu}</math> where <math>\nu = 1, \frac{1}{2} < \gamma < \frac{3}{2}</math>.
+|?
+|?
+|}
+
+==See also==
+*[[Almost Mathieu operator]]
+*[[Lieb–Thirring inequality]]
+
+==External links==
+*{{cite web|url=http://mathworld.wolfram.com/SimonsProblems.html |title=Simon's Problems |website=[[MathWorld]] |access-date=2018-06-13}}
+
+==References==
+{{reflist}}
+
+[[Category:unsolved problems in mathematics]]
+[[Category:Unsolved problems in physics]]
+[[Category:Mathematical physics]]

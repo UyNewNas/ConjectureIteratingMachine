@@ -1,0 +1,294 @@
+{{Short description|Unproven generalization of the four-color theorem}}
+{{see also|Hadwiger conjecture (combinatorial geometry)}}
+{{unsolved|mathematics|Does every graph with [[chromatic number]] <math>k</math> have a {{nowrap|<math>k</math>-vertex}} [[complete graph]] as a [[Minor (graph theory)|minor]]?}}
+[[File:Hadwiger conjecture.svg|thumb|upright=1.2|A graph that requires four colors in any coloring, and four connected subgraphs that, when contracted, form a complete graph, illustrating the case ''k''&nbsp;=&nbsp;4 of Hadwiger's conjecture]]
+In [[graph theory]], the '''Hadwiger conjecture''' states that if <math>G</math> is [[Loop (graph theory)|loopless]] and has no <math>K_t</math> [[Graph minor|minor]] then its [[chromatic number]] satisfies {{nowrap|<math>\chi(G) < t</math>.}} It is known to be true for {{nowrap|<math>1 \leq t \leq 6</math>.}} The conjecture is a generalization of the [[four color theorem]] and is considered to be one of the most important and challenging open problems in the field.
+
+Reversing the implication, the conjecture can equivalently be stated in the following form. According to it, if all [[graph coloring|proper colorings]] of an [[undirected graph]] <math>G</math> use <math>k</math> or more colors, then one can find <math>k</math> [[disjoint set|disjoint]] [[connected graph|connected]] [[Glossary of graph theory#Subgraphs|subgraphs]] of <math>G</math> such that each subgraph is connected by an [[edge (graph theory)|edge]] to each other subgraph. Contracting the edges within each of these subgraphs so that each subgraph collapses to a single vertex produces a [[complete graph]] <math>K_k</math> on <math>k</math> vertices as a [[minor (graph theory)|minor]] {{nowrap|of <math>G</math>.}}
+
+The conjecture was made by [[Hugo Hadwiger]] in 1943.{{sfnp|Diestel|2017}} {{harvtxt|Bollobás|Catlin|Erdős|1980}} call it "one of the deepest unsolved problems in graph theory".{{sfnp|Bollobás|Catlin|Erdős|1980}}
+
+==Equivalent forms==
+One form of the Hadwiger conjecture is that, if there is no sequence of [[edge contraction]]s (each merging the two endpoints of some edge into a single supervertex) that brings a graph <math>G</math> to the complete {{nowrap|graph <math>K_k</math>,}} then <math>G</math> must have a vertex coloring with <math>k-1</math> colors. Equivalently (the [[contrapositive]] of the same statement), if a given graph has no such coloring, then there is a way of contracting edges to produce <math>K_k</math> as a [[graph minor]].
+
+In a [[complete coloring|minimal]] {{nowrap|<math>k</math>-coloring}} of any {{nowrap|graph <math>G</math>,}} contracting each color class of the coloring to a single vertex will produce a complete {{nowrap|graph <math>K_k</math>.}} However, this contraction process does not produce a minor {{nowrap|of <math>G</math>}} because there is (by definition) no edge between any two vertices in the same color class, thus the contraction is not an [[edge contraction]] (which is required for minors). Hadwiger's conjecture states that there exists a different way of properly edge contracting sets of vertices to single vertices, producing a complete {{nowrap|graph <math>K_k</math>,}} in such a way that all the contracted sets are connected.
+
+If <math>\mathcal{F}_k</math> denotes the family of graphs having the property that all minors of graphs in <math>\mathcal{F}_k</math> can be {{nowrap|<math>(k-1)</math>-colored,}} then it follows from the [[Robertson–Seymour theorem]] that <math>\mathcal{F}_k</math> can be characterized by a [[finite set]] of [[Forbidden graph characterization|forbidden minors]]. Hadwiger's conjecture is that this set consists of a single forbidden {{nowrap|minor, <math>K_k</math>.}}
+
+The [[Hadwiger number]] <math>h(G)</math> of a graph <math>G</math> is the size <math>k</math> of the largest complete graph <math>K_k</math> that is a minor of <math>G</math> (or equivalently can be obtained by contracting edges {{nowrap|of <math>G</math>).}} It is also known as the '''contraction clique number''' {{nowrap|of <math>G</math>.{{sfnp|Bollobás|Catlin|Erdős|1980}}}} The Hadwiger conjecture can be stated in the simple algebraic form <math>\chi(G)\le h(G)</math> where <math>\chi(G)</math> denotes the [[chromatic number]] {{nowrap|of <math>G</math>.}}
+
+==Special cases and partial results==
+The case <math>k=2</math> is trivial: a graph requires more than one color if and only if it has an edge, and that edge is itself a <math>K_2</math> minor. The case <math>k=3</math> is also easy: the graphs requiring three colors are the non-[[bipartite graph]]s, and every non-bipartite graph has an odd [[cycle (graph theory)|cycle]], which can be contracted to a 3-cycle, that is, a <math>K_3</math> minor.
+
+In the same paper in which he introduced the conjecture, Hadwiger proved its truth {{nowrap|for <math>k=4</math>.}} The graphs with no <math>K_4</math> minor are the [[series–parallel graph]]s and their subgraphs. Each graph of this type has a vertex with at most two incident edges; one can 3-color any such graph by removing one such vertex, coloring the remaining graph recursively, and then adding back and coloring the removed vertex. Because the removed vertex has at most two edges, one of the three colors will always be available to color it when the vertex is added back.
+
+The truth of the conjecture for <math>k=5</math> implies the [[four color theorem]]: for, if the conjecture is true, every graph requiring five or more colors would have a <math>K_5</math> minor and would (by [[Wagner's theorem]]) be nonplanar.
+[[Klaus Wagner (mathematician)|Klaus Wagner]] proved in 1937 that the case <math>k=5</math> is actually equivalent to the four color theorem and therefore we now know it to be true. As Wagner showed, every graph that has no <math>K_5</math> minor can be decomposed via [[clique-sum]]s into pieces that are either planar or an 8-vertex [[Möbius ladder]], and each of these pieces can be 4-colored independently of each other, so the 4-colorability of a <math>K_5</math>-minor-free graph follows from the 4-colorability of each of the planar pieces.
+
+{{harvtxt|Robertson|Seymour|Thomas|1993}} proved the conjecture {{nowrap|for <math>k=6</math>,}} also using the four color theorem; their paper with this proof won the 1994 [[Fulkerson Prize]]. It follows from their proof that [[linkless embedding|linklessly embeddable graphs]], a three-dimensional analogue of planar graphs, have chromatic number at most five.{{sfnp|Nešetřil|Thomas|1985}} Due to this result, the conjecture is known to be true {{nowrap|for <math>k\le 6</math>,}} but it remains unsolved for {{nowrap|all <math>k>6</math>.}}
+
+For <math>k=7</math>, some partial results are known: every 7-chromatic graph must contain either a <math>K_7</math> minor or both a <math>K_{4,4}</math> minor and a <math>K_{3,5}</math> minor.<ref>The existence of either a <math>K_7</math> or <math>K_{3,5}</math> minor was shown by [[Ken-ichi Kawarabayashi]], and {{harvtxt|Kawarabayashi|Toft|2005}} proved the existence of either a <math>K_7</math> or <math>K_{4,4}</math> minor.</ref>
+
+Every graph <math>G</math> has a vertex with at most <math display=inline>O\bigl(h(G)\sqrt{\log h(G)}\bigr)</math> incident edges,<ref>{{harvtxt|Kostochka|1984}}. The letter <math>O</math> in this expression invokes [[big O notation]].</ref> from which it follows that a [[greedy coloring]] algorithm that removes this low-degree vertex, colors the remaining graph, and then adds back the removed vertex and colors it, will color the given graph with <math display=inline>O\bigl(h(G)\sqrt{\log h(G)}\bigr)</math> colors.
+
+In the 1980s, [[Alexandr Kostochka]]{{sfnp|Kostochka|1984}} and Andrew Thomason{{sfnp|Thomason|1984}} both independently proved that every graph with no <math>K_k</math> minor has average degree <math display=inline>O (k \sqrt {\log k})</math> and can thus be colored using <math display=inline>O (k \sqrt {\log k})</math> colors. 
+A sequence of improvements to this bound have led to a proof of <math>O(k \log \log k)</math>-colorability for graphs without <math>K_k</math> {{nowrap|minors.<ref>{{harvtxt|Delcourt|Postle|2024}}; {{harvtxt|Norin|Postle|Song|2023}}</ref>}}
+
+==Generalizations==
+[[György Hajós]] [[Hajós' cycle conjecture|conjectured]] (not to be confused with the Hajós conjecture on graph decomposition into cycles) that Hadwiger's conjecture could be strengthened to [[Homeomorphism (graph theory)|subdivisions]] rather than minors: that is, that every graph with chromatic number <math>k</math> contains a subdivision of a complete {{nowrap|graph <math>K_k</math>.}} Hajós' conjecture is true {{nowrap|for <math>k\le 4</math>,}} but {{harvtxt|Catlin|1979}} found counterexamples to this strengthened conjecture {{nowrap|for <math>k\ge 7</math>;}} the cases <math>k=5</math> and <math>k=6</math> remain {{nowrap|open.{{sfnp|Yu|Zickfeld|2006}}}} {{harvtxt|Erdős|Fajtlowicz|1981}} observed that Hajós' conjecture fails badly for [[random graph]]s: for {{nowrap|any <math>\varepsilon>0</math>,}} in the limit as the number of vertices, {{nowrap|<math>n</math>,}} goes to infinity, the probability approaches one that a random {{nowrap|<math>n</math>-vertex}} graph has chromatic {{nowrap|number <math>\ge(\tfrac12-\varepsilon)n/\log_2 n</math>,}} and that its largest clique subdivision has <math display=inline>O(\sqrt n)</math> vertices. In this context, it is worth noting that the probability also approaches one that a random {{nowrap|<math>n</math>-vertex}} graph has Hadwiger number greater than or equal to its chromatic number, so the Hadwiger conjecture holds for random graphs [[with high probability]]; more precisely, the Hadwiger number is with high probability proportional {{nowrap|to <math display=inline>n/\sqrt{\log n}</math>.{{sfnp|Bollobás|Catlin|Erdős|1980}}}}
+
+{{harvtxt|Borowiecki|1993}} asked whether Hadwiger's conjecture could be extended to [[list coloring]]. {{nowrap|For <math>k\le 4</math>,}} every graph with list chromatic number <math>k</math> has a {{nowrap|<math>k</math>-vertex}} clique minor. However, the maximum list chromatic number of planar graphs is 5, not 4, so the extension fails already for {{nowrap|<math>K_5</math>-minor-free}} graphs.<ref>{{harvtxt|Voigt|1993}}; {{harvtxt|Thomassen|1994}}.</ref> More generally, for {{nowrap|every <math>t\ge 1</math>,}} there exist graphs whose Hadwiger number is <math>3t+1</math> and whose list chromatic number {{nowrap|is <math>4t+1</math>.{{sfnp|Barát|Joret|Wood|2011}}}}
+
+Gerards and Seymour conjectured that every graph <math>G</math> with chromatic number <math>k</math> has a complete graph <math>K_k</math> as an ''odd minor''. Such a structure can be represented as a family of <math>k</math> vertex-disjoint subtrees of <math>G</math>, each of which is two-colored, such that each pair of subtrees is connected by a monochromatic edge. Although graphs with no odd <math>K_k</math> minor are not necessarily [[sparse graph|sparse]], a similar upper bound holds for them as it does for the standard Hadwiger conjecture: a graph with no odd <math>K_k</math> minor has chromatic number {{nowrap|<math display=inline>\chi(G)=O\bigl(k\sqrt{\log k}\bigr)</math>.<ref>{{harvtxt|Geelen|Gerards|Reed|Seymour|2006}}; {{harvtxt|Kawarabayashi|2009}}.</ref>}} A 2025 preprint claims a lower bound of <math>(\tfrac32-o(1))k</math>, disproving this conjecture.{{sfnp|Kühn|Sauermann|Steiner|Wigderson|2025}}
+
+By imposing extra conditions on <math>G</math>, it may be possible to prove the existence of larger minors {{nowrap|than <math>K_k</math>.}} One example is the [[Snark (graph theory)|snark theorem]], that every [[cubic graph]] requiring four colors in any [[edge coloring]] has the [[Petersen graph]] as a minor, conjectured by [[W. T. Tutte]] and announced to be proved in 2001 by Robertson, Sanders, Seymour, and Thomas.{{sfnp|Pegg|2002}}
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+{{refbegin|30em}}
+*{{citation
+ | last1 = Barát | first1 = János
+ | last2 = Joret | first2 = Gwenaël
+ | last3 = Wood | first3 = David R. | author3-link = David Wood (mathematician)
+ | arxiv = 1110.2272
+ | doi = 10.37236/719
+ | issue = 1
+ | journal = Electronic Journal of Combinatorics
+ | article-number = P232
+ | s2cid = 13822279
+ | title = Disproof of the list Hadwiger conjecture
+ | url = http://www.combinatorics.org/Volume_18/Abstracts/v18i1p232.html
+ | volume = 18
+ | year = 2011}}
+*{{citation
+ | last1 = Bollobás | first1 = B. | author1-link = Béla Bollobás
+ | last2 = Catlin | first2 = P. A.
+ | last3 = Erdős | first3 = Paul | author3-link = Paul Erdős
+ | doi = 10.1016/s0195-6698(80)80001-1 | doi-access = free
+ | issue = 3
+ | journal = [[European Journal of Combinatorics]]
+ | pages = 195–199
+ | title = Hadwiger's conjecture is true for almost every graph
+ | url = https://www.renyi.hu/~p_erdos/1980-10.pdf
+ | volume = 1
+ | year = 1980}}
+*{{citation
+ | last = Borowiecki | first = Mieczyslaw
+ | doi = 10.1016/0012-365X(93)90557-A | doi-access = free
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | pages = 235–236
+ | title = Research problem 172
+ | volume = 121
+ | year = 1993}}
+*{{citation
+ | last = Catlin | first = P. A.
+ | doi = 10.1016/0095-8956(79)90062-5 | doi-access = free
+ | issue = 2
+ | journal = Journal of Combinatorial Theory, Series B
+ | pages = 268–274
+ | title = Hajós's graph-colouring conjecture: variations and counterexamples
+ | volume = 26
+ | year = 1979}}
+*{{citation
+ | last1 = Delcourt | first1 = Michelle
+ | last2 = Postle | first2 = Luke
+ | arxiv = 2108.01633
+ | date = July 2024
+ | doi = 10.1090/jams/1047
+ | journal = Journal of the American Mathematical Society
+ | title = Reducing linear Hadwiger's conjecture to coloring small graphs| volume = 38
+ | issue = 2
+ | pages = 481–507
+ }}
+*{{citation
+ | last = Diestel | first = Reinhard
+ | contribution = 7.3 Hadwiger's conjecture
+ | edition = 5th
+ | isbn = 978-3-662-57560-4
+ | mr = 3822066
+ | pages = 183–186
+ | publisher = Springer, Berlin
+ | series = Graduate Texts in Mathematics
+ | title = Graph Theory
+ | volume = 173
+ | year = 2017}}
+*{{citation
+ | last1 = Erdős | first1 = Paul | author1-link = Paul Erdős
+ | last2 = Fajtlowicz | first2 = Siemion | author2-link = Siemion Fajtlowicz
+ | doi = 10.1007/BF02579269
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | pages = 141–143
+ | s2cid = 1266711
+ | title = On the conjecture of Hajós
+ | volume = 1
+ | year = 1981}}
+*{{citation
+ | last1 = Geelen | first1 = Jim | author1-link = Jim Geelen
+ | last2 = Gerards | first2 = Bert
+ | last3 = Reed | first3 = Bruce | author3-link = Bruce Reed (mathematician)
+ | last4 = Seymour | first4 = Paul | author4-link = Paul Seymour (mathematician)
+ | last5 = Vetta | first5 = Adrian
+ | doi = 10.1016/j.jctb.2008.03.006
+ | issue = 1
+ | journal = Journal of Combinatorial Theory, Series B
+ | pages = 20–29
+ | title = On the odd-minor variant of Hadwiger's conjecture
+ | url = https://ir.cwi.nl/pub/13651
+ | volume = 99
+ | year = 2006}}
+*{{citation
+ | last = Hadwiger | first = Hugo | author-link = Hugo Hadwiger
+ | journal = Vierteljschr. Naturforsch. Ges. Zürich
+ | pages = 133–143
+ | title = Über eine Klassifikation der Streckenkomplexe
+ | volume = 88
+ | year = 1943}}
+*{{citation
+ | last = Kawarabayashi | first = Ken-ichi | authorlink = Ken-ichi Kawarabayashi
+ | doi = 10.1016/j.jctb.2008.12.001 | doi-access=free
+ | issue = 4
+ | journal = Journal of Combinatorial Theory
+ | mr = 2518204
+ | pages = 728–731
+ | series = Series B
+ | title = Note on coloring graphs without odd-{{math|''K''<sub>''k''</sub>}}-minors
+ | volume = 99
+ | year = 2009}}
+*{{citation
+ | last1 = Kawarabayashi | first1 = Ken-ichi | author1-link = Ken-ichi Kawarabayashi
+ | last2 = Toft | first2 = Bjarne
+ | doi = 10.1007/s00493-005-0019-1
+ | issue = 3
+ | journal = Combinatorica
+ | pages = 327–353
+ | s2cid = 41451753
+ | title = Any 7-chromatic graph has {{math|''K''<sub>7</sub>}} or {{math|''K''<sub>4,4</sub>}} as a minor
+ | volume = 25
+ | year = 2005}}
+*{{citation
+ | last = Kostochka | first = A. V.
+ | doi = 10.1007/BF02579141
+ | issue = 4
+ | journal = Combinatorica
+ | mr = 0779891
+ | pages = 307–316
+ | s2cid = 15736799
+ | title = Lower bound of the Hadwiger number of graphs by their average degree
+ | volume = 4
+ | year = 1984}}
+*{{citation
+ | last1 = Kühn | first1 = Marcus
+ | last2 = Sauermann | first2 = Lisa | author2-link = Lisa Sauermann
+ | last3 = Steiner | first3 = Raphael
+ | last4 = Wigderson | first4 = Yuval
+ | arxiv = 2512.20392
+ | title = Disproof of the odd Hadwiger conjecture
+ | year = 2025}}
+*{{citation
+ | last1 = Nešetřil | first1 = Jaroslav | author1-link = Jaroslav Nešetřil
+ | last2 = Thomas | first2 = Robin | author2-link = Robin Thomas (mathematician)
+ | hdl = 10338.dmlcz/106404
+ | issue = 4
+ | journal = Commentationes Mathematicae Universitatis Carolinae
+ | mr = 0831801
+ | pages = 655–659
+ | title = A note on spatial representation of graphs
+ | volume = 26
+ | year = 1985}}
+*{{citation
+ | last1 = Norin | first1 = Sergey
+ | last2 = Postle | first2 = Luke
+ | last3 = Song | first3 = Zi-Xia
+ | arxiv = 1910.09378
+ | title = Breaking the degeneracy barrier for coloring graphs with no <math>K_t</math> minor
+ | journal = [[Advances in Mathematics]]
+ | volume = 422
+ | article-number=109020
+ | year = 2023
+ | doi = 10.1016/j.aim.2023.109020
+ | mr = 4576840}}
+*{{citation
+ | last = Pegg | first = Ed Jr. | author-link = Ed Pegg, Jr.
+ | issue = 9
+ | journal = Notices of the American Mathematical Society
+ | pages = 1084–1086
+ | title = Book Review: The Colossal Book of Mathematics
+ | url = https://www.ams.org/notices/200209/rev-pegg.pdf
+ | volume = 49
+ | year = 2002}}
+*{{citation
+ | last1 = Robertson | first1 = Neil | author1-link = Neil Robertson (mathematician)
+ | last2 = Seymour | first2 = Paul | author2-link = Paul Seymour (mathematician)
+ | last3 = Thomas | first3 = Robin | author3-link = Robin Thomas (mathematician)
+ | doi = 10.1007/BF01202354
+ | issue = 3
+ | journal = [[Combinatorica]]
+ | mr = 1238823
+ | pages = 279–361
+ | s2cid=9608738
+ | title = Hadwiger's conjecture for {{math|''K''<sub>6</sub>}}-free graphs
+ | url = https://www.math.gatech.edu/~thomas/PAP/hadwiger.pdf
+ | volume = 13
+ | year = 1993}}
+*{{citation
+ | last = Thomason | first = Andrew
+ | doi = 10.1017/S0305004100061521
+ | issue = 2
+ | journal = [[Mathematical Proceedings of the Cambridge Philosophical Society]]
+ | mr = 735367
+ | pages = 261–265
+ | title = An extremal function for contractions of graphs
+ | volume = 95
+ | year = 1984| s2cid = 124801301
+ }}
+*{{citation
+ | last = Thomassen | first = Carsten | author-link = Carsten Thomassen (mathematician)
+ | doi = 10.1006/jctb.1994.1062 | doi-access = free
+ | issue = 1
+ | journal = [[Journal of Combinatorial Theory]] | series = Series B
+ | mr = 1290638
+ | pages = 180–181
+ | title = Every planar graph is 5-choosable
+ | volume = 62
+ | year = 1994}}
+*{{citation
+ | last = Voigt | first = Margit | authorlink = Margit Voigt
+ | doi = 10.1016/0012-365X(93)90579-I | doi-access = free
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1235909
+ | pages = 215–219
+ | title = List colourings of planar graphs
+ | volume = 120
+ | year = 1993}}
+*{{citation
+ | last = Wagner | first = Klaus | author-link = Klaus Wagner (mathematician)
+ | doi = 10.1007/BF01594196
+ | journal = Mathematische Annalen
+ | pages = 570–590
+ | s2cid=123534907
+ | title = Über eine Eigenschaft der ebenen Komplexe
+ | volume = 114
+ | year = 1937}}
+*{{citation
+ | last1 = Yu | first1 = Xingxing
+ | last2 = Zickfeld | first2 = Florian
+ | doi = 10.1016/j.jctb.2005.10.001 | doi-access = free
+ | issue = 4
+ | journal = Journal of Combinatorial Theory, Series B
+ | mr = 2232386
+ | pages = 482–492
+ | title = Reducing Hajós' 4-coloring conjecture to 4-connected graphs
+ | volume = 96
+ | year = 2006}}
+{{refend}}
+
+{{DEFAULTSORT:Hadwiger Conjecture (Graph Theory)}}
+[[Category:Graph coloring]]
+[[Category:Graph minor theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

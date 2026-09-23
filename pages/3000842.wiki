@@ -1,0 +1,432 @@
+{{Short description|Unsolved problem in computational complexity theory}}
+{{Use mdy dates|cs1-dates=ly|date=November 2023}}
+{{CS1 config|mode=cs2}}
+{{Use list-defined references|date=January 2025}}
+{{unsolved|computer science|Is the Unique Games Conjecture true?}}
+In [[computational complexity theory]], the '''unique games conjecture''' (often referred to as '''UGC''') is a conjecture made by [[Subhash Khot]] in 2002.<ref name="klarreich"/><ref name="lipton"/><ref name="khot02onthepower"/> The conjecture postulates that the problem of determining the approximate ''value'' of a certain type of game, known as a ''unique game'', has [[NP-hard]] [[Computational complexity theory|computational complexity]].  It has broad applications in the theory of [[hardness of approximation]]. If the unique games conjecture is true and P&nbsp;≠&nbsp;NP,<ref>The unique games conjecture is vacuously true if P&nbsp;=&nbsp;NP, as then every problem in NP would also be NP-hard.</ref> then for many important problems it is not only impossible to get an exact solution in [[polynomial time]] (as postulated by the [[P versus NP problem]]), but also impossible to get a good polynomial-time approximation. The problems for which such an inapproximability result would hold include [[constraint satisfaction problem]]s, which crop up in a wide variety of disciplines.
+
+According to [[Ryan O'Donnell (computer scientist)|Ryan O'Donnell]] as quoted by the [[Simons Foundation]], academics are roughly evenly divided on whether the conjecture is true or false.<ref name="klarreich"/>
+
+==Formulations==
+
+The unique games conjecture can be stated in a number of equivalent ways.
+
+===Unique label cover===
+The following formulation of the unique games conjecture is often used in [[hardness of approximation]]. The conjecture postulates the [[NP-hard]]ness of the following [[promise problem]] known as ''label cover with unique constraints''. For each edge, the colors on the two vertices are restricted to some particular ordered pairs. ''Unique'' constraints means that for each edge none of the ordered pairs have the same color for the same node.
+
+This means that an instance of label cover with unique constraints over an alphabet of size <math>k</math> can be represented as a [[directed graph]] together with a collection of [[permutation]]s <math>\pi_e: [k] \to [k]</math>, one for each edge <math>e</math> of the graph. An assignment to a label cover instance gives to each vertex of <math>G</math> a value in the set <math>[k] = \{1, 2, \ldots, k\}</math>, often called “colours”.
+
+<gallery widths="256px" perrow="2">
+File:Unique label cover yes-instance.svg|An instance of unique label cover. The 4 vertices may be assigned the colors red, blue, and green while satisfying the constraints at each edge.
+File:Unique label cover yes-instance with assignment.svg|A solution to the unique label cover instance.
+</gallery>
+
+Such instances are strongly constrained in the sense that the colour of a vertex uniquely defines the colours of its neighbours, and hence for its entire connected component. Thus, if the input instance admits a valid assignment, then such an assignment can be found efficiently by iterating over all colours of a single node. In particular, the problem of deciding if a given instance admits a satisfying assignment can be solved in polynomial time.
+
+<gallery widths="256px" perrow="2">
+File:Unique label cover no-instance.svg|An instance of unique label cover that does not allow a satisfying assignment.
+File:Unique label cover no-instance with assignment.svg|An assignment that satisfies all edges except the thick edge. Thus, this instance has value 3/4.
+</gallery>
+
+The ''value'' of a unique label cover instance is the fraction of constraints that can be satisfied by any assignment. For satisfiable instances, this value is 1 and is easy to find. On the other hand, it seems to be very difficult to determine the value of an unsatisfiable game, even approximately. The unique games conjecture formalises this difficulty.
+
+More formally, the <math>(c, s)</math>-gap label-cover problem with unique constraints is the following promise problem <math>(L_{\text{yes}}, L_{\text{no}})</math>:
+* <math>L_{\text{yes}} = \{G: \text{some assignment satisfies at least a }c\text{-fraction of constraints in }G\}</math>,
+* <math>L_{\text{no}} = \{G: \text{every assignment satisfies at most an }s\text{-fraction of constraints in }G\}</math>,
+where <math>G</math> is an instance of the label cover problem with unique constraints.
+
+The unique games conjecture states that for every sufficiently small pair of constants <math>\varepsilon,\delta>0</math>, there exists a constant <math>k</math> such that the <math>(1-\delta,\varepsilon)</math>-gap label-cover problem with unique constraints over alphabet of size <math>k</math> is [[NP-hard]].
+
+===Maximizing linear equations modulo ''k''===
+Consider the following [[system of linear equations]] over the integers modulo <math>k</math>:<math display="block">
+\begin{align}
+a_1 x_1 & \equiv b_1 \cdot x_2 + c_1 \pmod k, \\
+a_2 x_2 & \equiv b_2 \cdot x_5 + c_2 \pmod k, \\
+& {}\  \  \vdots \\
+a_m x_1 & \equiv b_m \cdot x_7 + c_m \pmod k.
+\end{align}
+</math>When each equation involves exactly two variables, this is an instance of the label cover problem with unique constraints; such instances are known as instances of the Max2Lin(k) problem. It is not immediately obvious that the inapproximability of Max2Lin(k) is equivalent to the UGC, but this is in fact the case, by a reduction.<ref name="KKMO07optimal" /> Namely, the UGC is equivalent to: for every sufficiently small pair of constants ''ε'',&nbsp;''δ''&nbsp;>&nbsp;0, there exists a constant ''k'' such that the (1&nbsp;−&nbsp;''δ'',&nbsp;''ε'')-gap Max2Lin(k) problem is [[NP-hard]].
+
+===Connection with computational topology===
+It has been argued that the UGC is essentially a question of [[computational topology]],<ref name="topology"/> involving local-global principles (the latter are also evident in the proof of the 2-2 Games Conjecture, see below). 
+
+Linial<ref name="Linial"/> observed that unique label cover is an instance of the Maximum Section of a Covering Graph problem (covering graphs is the terminology from [[topology]]; in the context of unique games these are often referred to as graph lifts). To date, all known problems whose inapproximability is equivalent to the UGC are instances of this problem, including Unique Label Cover and Max2Lin(k). When the latter two problems are viewed as instances of Max Section of a Covering Graph, the reduction between them<ref name="KKMO07optimal"/> preserves the structure of the graph covering spaces,<ref name="topology"/> so not only the problems, but the reduction between them has a natural topological interpretation. Grochow and Tucker-Foltz exhibited a third computational topology problem whose inapproximability is equivalent to the UGC: 1-Cohomology Localization on Triangulations of 2-Manifolds.<ref name="topology"/>
+
+===Two-prover proof systems===
+
+A '''unique game''' is a special case of a ''two-prover one-round (2P1R) game''.  A two-prover one-round game has two players (also known as provers) and a referee.  The referee sends each player a question drawn from a known [[probability distribution]], and the players each have to send an answer. The answers come from a set of fixed size.  The game is specified by a predicate that depends on the questions sent to the players and the answers provided by them.
+
+The players may decide on a strategy beforehand, although they cannot communicate with each other during the game.  The players win if the predicate is satisfied by their questions and their answers.
+
+A two-prover one-round game is called a ''unique game'' if for every question and every answer by the first player, there is exactly one answer by the second player that results in a win for the players, and vice versa. The ''value'' of a game is the maximum winning probability for the players over all strategies.
+
+The '''unique games conjecture''' states that for every sufficiently small pair of constants ''ε'',&nbsp;''δ''&nbsp;>&nbsp;0, there exists a constant ''k'' such that the following [[promise problem]] (''L''<sub>yes</sub>, ''L''<sub>no</sub>) is [[NP-hard]]:
+* ''L''<sub>yes</sub> = {''G'': the value of ''G'' is at least 1&nbsp;&minus;&nbsp;δ}
+* ''L''<sub>no</sub> = {''G'': the value of ''G'' is at most&nbsp;ε}
+where ''G'' is a unique game whose answers come from a set of size&nbsp;''k''.
+
+===Probabilistically checkable proofs===
+Alternatively, the unique games conjecture postulates the existence of a certain type of [[probabilistically checkable proof]] for problems in NP.
+
+A unique game can be viewed as a special kind of nonadaptive probabilistically checkable proof with query complexity 2, where for each pair of possible queries of the verifier and each possible answer to the first query, there is exactly one possible answer to the second query that makes the verifier accept, and vice versa.
+
+The unique games conjecture states that for every sufficiently small pair of constants <math>\varepsilon,\delta>0</math> there is a constant <math>K</math> such that every problem in NP has a probabilistically checkable proof over an alphabet of size <math>K</math> with completeness <math>1-\delta</math>, soundness <math>\varepsilon</math>, and randomness complexity <math>O(\log n)</math> which is a unique game.
+
+==Relevance==
+{| class="wikitable" style="float: right; margin-left: 1em;" border="1"
+|+ '''Approximability results assuming P ≠ NP versus the UGC'''
+! Problem || Poly.-time approx. || NP hardness || UG hardness
+|-
+| [[2-satisfiability|Max 2SAT]] || <math>0.940\dots</math><ref name="FG95approximating"/> || <math>0.954\dots+\varepsilon</math><ref name="hastad99someoptimal"/> || <math>0.940\dots+\varepsilon</math><ref name="brahuazwi"/>
+|-
+| [[Maximum cut|Max cut]] || <math>0.878...\dots</math><ref name="GW95improved"/> || <math>\tfrac{16}{17}+\varepsilon\approx 0.941</math><ref name="hastad99someoptimal"/> || <math>0.878\dots+\varepsilon</math><ref name="KKMO07optimal"/>
+|-
+| [[Vertex cover|Min vertex cover]] || <math>2</math> || <math>\sqrt 2-\varepsilon</math><ref name="2to2Theorem"/> || <math>2-\varepsilon</math><ref name="KR03vertex"/>
+|-
+| [[Feedback arc set]] ||  <math>O(\log n\log\log n)</math><ref>{{citation
+ | last1 = Even | first1 = G.
+ | last2 = Naor | first2 = J. | author2-link = Joseph Seffi Naor
+ | last3 = Schieber | first3 = B. | author3-link = Baruch Schieber
+ | last4 = Sudan | first4 = M. | author4-link = Madhu Sudan
+ | doi = 10.1007/PL00009191
+ | issue = 2
+ | journal = [[Algorithmica]]
+ | mr = 1484534
+ | pages = 151–174
+ | title = Approximating minimum feedback sets and multicuts in directed graphs
+ | volume = 20
+ | year = 1998| s2cid = 2437790
+ }}</ref> || <math>1.360\dots-\varepsilon</math><ref name="IS05onthehardness"/> || All constants<ref name=gmr08/>
+|-
+| [[Feedback arc set|Max acyclic subgraph]] || <math>\tfrac12+\Omega(1/\sqrt\Delta)</math><ref name="bersho"/> || <math>\tfrac{2}{3}+\varepsilon</math><ref name="bhankhot"/> || <math>\tfrac12+\varepsilon</math><ref name=gmr08/>
+|-
+| [[Betweenness problem|Betweenness]] || <math>\tfrac13</math> || <math>\tfrac{1}{2}+\varepsilon</math><ref name="austrinmw"/> || <math>\tfrac13+\varepsilon</math><ref name="chagur"/>
+|}
+
+{{pull quote|text=Some very natural, intrinsically interesting statements about things like voting and foams just popped out of studying the UGC.... Even if the UGC turns out to be false, it has inspired a lot of interesting math research.|author=[[Ryan O'Donnell (computer scientist)|Ryan O’Donnell]]|source=<ref name="klarreich"/>}}
+The unique games conjecture was introduced by [[Subhash Khot]] in 2002 in order to make progress on certain questions in the theory of [[hardness of approximation]].
+
+The truth of the unique games conjecture would imply the optimality of many known [[approximation algorithms]] (assuming P&nbsp;≠&nbsp;NP).  For example, the approximation ratio achieved by the [[semidefinite programming#Example 3 (Goemans–Williamson max cut approximation algorithm)|algorithm of Goemans and Williamson]] for approximating the [[maximum cut]] in a [[Graph (discrete mathematics)|graph]] is optimal to within any additive constant assuming the unique games conjecture and P&nbsp;≠&nbsp;NP.
+
+A list of results that the unique games conjecture is known to imply is shown in the adjacent table together with the corresponding best results for the weaker assumption P&nbsp;≠&nbsp;NP. A constant of <math>c+\varepsilon</math> or <math>c-\varepsilon</math> means that the result holds for every ''constant'' (with respect to the problem size) strictly greater than or less than <math>c</math>, respectively.
+
+==Discussion and alternatives==
+Currently, there is no consensus regarding the truth of the unique games conjecture.  Certain stronger forms of the conjecture have been disproved. {{which|date=January 2026}}
+
+A different form of the conjecture postulates that distinguishing the case when the value of a unique game is at least <math>1-\delta</math> from the case when the value is at most <math>\varepsilon</math> is impossible for [[polynomial time|polynomial-time algorithms]] (but perhaps not NP-hard).  This form of the conjecture would still be useful for applications in hardness of approximation.
+
+The constant <math>\delta>0</math> in the above formulations of the conjecture is necessary unless P&nbsp;=&nbsp;NP.  If the uniqueness requirement is removed the corresponding statement is known to be true by the [[parallel repetition theorem]], even {{nowrap|when <math>\delta=0</math>.}}
+
+==Results==
+[[Marek Karpinski]] and Warren Schudy have constructed linear time approximation schemes for dense instances of unique games problem.<ref name="karpinskischudy" />
+
+In 2008, Prasad Raghavendra has shown that if the unique games conjecture is true, then for every [[constraint satisfaction problem]] the best approximation ratio is given by a certain simple [[semidefinite programming]] instance, which is in particular polynomial.<ref name="every-csp"/>
+
+In 2010, Prasad Raghavendra and David Steurer defined the ''gap-small-set expansion'' problem, and conjectured that it is NP-hard. The resulting [[small set expansion hypothesis]] implies the unique games conjecture.<ref name="small-set"/> It has also been used to prove strong [[hardness of approximation]] results for finding [[complete bipartite graph|complete bipartite subgraphs]].<ref name="biclique"/>
+
+In 2010, [[Sanjeev Arora (computer scientist)|Sanjeev Arora]], Boaz Barak and David Steurer found a subexponential time approximation algorithm for the unique games problem.<ref name="subexponential"/> A key ingredient in their result was the spectral algorithm of Alexandra Kolla<ref name="spectral"/> (see also the earlier manuscript of A. Kolla and Madhur Tulsiani<ref name="KollaTulsiani"/>). The latter also re-proved<ref name="expanders"/> that unique games on [[expander graph]]s could be solved in polynomial time, and was one of (if not the) first graph algorithms to take advantage of the full spectrum of a graph rather than just its first two eigenvalues. 
+
+In 2012, it was shown that distinguishing instances with value at most <math>\tfrac38+\delta</math> from instances with value at least <math>\tfrac12</math> is NP-hard.<ref name="new-point"/>
+
+In 2018, after a series of papers, a weaker version of the conjecture, called the 2-2 games conjecture, was proven. In a certain sense, this proves "a half" of the original conjecture.<ref name="big-steps"/><ref name="halfway"/> This also improves the best known gap for unique label cover: it is NP-hard to distinguish instances with value at most <math>\delta</math> from instances with value at least <math>\tfrac12</math>.<ref name="grassmann"/>
+
+==References==
+<references>
+
+<ref name="hastad99someoptimal">{{Citation
+ |author-link=Johan Håstad
+ |first=Johan
+ |last=Håstad
+ |title=Some Optimal Inapproximability Results
+ |journal=Journal of the ACM
+ |volume=48
+ |issue=4
+ |pages=798–859
+ |year=1999
+ |url=http://www.nada.kth.se/~johanh/optimalinap.ps
+ |postscript=.
+ |doi=10.1145/502090.502098
+|s2cid=5120748
+ }}</ref>
+<ref name="FG95approximating">{{citation
+|first1=Uriel|last1=Feige|author1-link=Uriel Feige
+|first2=Michel X.|last2=Goemans|author2-link=Michel Goemans
+|contribution=Approximating the value of two prover proof systems, with applications to MAX 2SAT and MAX DICUT
+|title=Proc. 3rd Israel Symp. Theory of Computing and Systems
+|publisher=IEEE Computer Society Press
+|year=1995
+|pages=182–189
+}}</ref>
+<ref name="GW95improved">{{citation
+ |first1=Michel X.
+ |last1=Goemans | author1-link = Michel Goemans
+ |first2=David P.
+ |last2=Williamson | author2-link = David P. Williamson
+ |title=Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming
+ |journal=Journal of the ACM
+ |volume=42 |issue=6 |pages=1115–1145 |year=1995
+ |doi= 10.1145/227683.227684
+|s2cid=15794408 |doi-access=free}}</ref>
+<ref name="IS05onthehardness">{{Citation
+ | first1=Irit | last1=Dinur | author-link1=Irit Dinur
+ | first2=Samuel | last2=Safra | author-link2=Shmuel Safra
+ | title=On the hardness of approximating minimum vertex cover
+ | journal=[[Annals of Mathematics]]
+ | volume=162 | issue=1
+ | pages=439–485
+ | year=2005
+ | doi=10.4007/annals.2005.162.439
+ | url=https://www.wisdom.weizmann.ac.il/~dinuri/mypapers/vc.pdf
+ | access-date=2010-03-05
+ | postscript=.
+}}</ref>
+<ref name="2to2Theorem">{{Citation
+ | first1=Subhash | last1=Khot | author-link1=Subhash Khot
+ | first2=Dor | last2=Minzer
+ | first3=Muli | last3=Safra | author3-link = Shmuel Safra
+ | title=2018 IEEE 59th Annual Symposium on Foundations of Computer Science (FOCS) | chapter=Pseudorandom Sets in Grassmann Graph Have Near-Perfect Expansion
+ | year=2018
+ | pages=592–601 | doi=10.1109/FOCS.2018.00062 | isbn=978-1-5386-4230-6 | s2cid=3688775 }}</ref>
+<ref name="khot02onthepower">{{citation
+ | author-link = Subhash Khot
+ | last = Khot | first = Subhash
+ | contribution = On the power of unique 2-prover 1-round games
+ | doi = 10.1145/509907.510017
+ | pages = 767–775
+ | title = Proceedings of the thirty-fourth annual ACM symposium on Theory of computing
+ | isbn = 1-58113-495-9
+ | year = 2002
+| s2cid = 207635974 }}</ref>
+<ref name="KKMO07optimal">{{citation
+ | author1-link = Subhash Khot
+ | last1 = Khot | first1 = Subhash
+ | last2 = Kindler | first2 = Guy
+ | last3 = Mossel | first3 = Elchanan
+ | last4 = O'Donnell | first4 = Ryan
+ | author4-link = Ryan O'Donnell (computer scientist)
+ | doi = 10.1137/S0097539705447372
+ | issue = 1
+ | journal = [[SIAM Journal on Computing]]
+ | pages = 319–357
+ | title = Optimal inapproximability results for MAX-CUT and other two-variable CSPs?
+ | url = https://www.cs.cornell.edu/~abrahao/tdg/papers/KKMO-maxcut.pdf
+ | volume = 37
+ | year = 2007
+| s2cid = 2090495 }}</ref>
+<ref name="KR03vertex">{{citation
+ | author1-link = Subhash Khot
+ | first1 = Subhash | last1 = Khot
+ | author2-link = Oded Regev (computer scientist)
+ | first2 = Oded | last2 = Regev
+ | title = Vertex cover might be hard to approximate to within 2&nbsp;−&nbsp;''ε''
+ | journal = IEEE Conference on Computational Complexity
+ | year = 2003
+ | pages = 379–
+}}</ref>
+<ref name="karpinskischudy">{{citation
+ | last1=Karpinski | first1=Marek | last2=Schudy | first2=Warren
+ | title=Proceedings of the forty-first annual ACM symposium on Theory of computing | chapter=Linear time approximation schemes for the Gale-Berlekamp game and related minimization problems | pages=313–322
+ | year=2009
+ | doi=10.1145/1536414.1536458
+| arxiv=0811.3244| isbn=9781605585062 | s2cid=6117694 }}
+</ref>
+<ref name="klarreich">{{citation
+ | url=https://simonsfoundation.org/features/feature-articles/mathematics-and-physical-science/approximately-hard-the-unique-games-conjecture/
+ | title=Approximately Hard: The Unique Games Conjecture
+ | work=Simons Foundation
+ | first=Erica|last=Klarreich|author-link=Erica Klarreich
+ | date=2011-10-06
+ | access-date=2012-10-29 }}
+</ref><ref name="lipton">{{citation | url=http://rjlipton.wordpress.com/2010/05/05/unique-games-a-three-act-play/
+ | title=Unique Games: A Three Act Play
+ | work=Gödel’s Lost Letter and P=NP
+ | first=Dick|last=Lipton|author-link=Richard Lipton
+ | date=2010-05-05
+ | access-date=2012-10-29 }}
+</ref>
+<ref name="brahuazwi">{{Cite journal |last1=Brakensiek |first1=Joshua |last2=Huang |first2=Neng |last3=Zwick |first3=Uri |author-link3=Uri Zwick |year=2024 |title=Tight approximability of MAX 2-SAT and relatives, under UGC |journal=ACM-SIAM Symposium on Discrete Algorithms|arxiv=2310.12911 }}</ref>
+<ref name="bersho">{{citation
+ | last1 = Berger | first1 = Bonnie | author1-link = Bonnie Berger
+ | last2 = Shor | first2 = Peter W. | author2-link = Peter Shor
+ | doi = 10.1006/jagm.1997.0864
+ | issue = 1
+ | journal = Journal of Algorithms
+ | mr = 1474592
+ | pages = 1–18
+ | title = Tight bounds for the maximum acyclic subgraph problem
+ | volume = 25
+ | year = 1997}}</ref>
+<ref name=gmr08>{{citation
+ | last1 = Guruswami | first1 = Venkatesan
+ | last2 = Manokaran | first2 = Rajsekar
+ | last3 = Raghavendra | first3 = Prasad
+ | contribution = Beating the Random Ordering is Hard: Inapproximability of Maximum Acyclic Subgraph
+ | doi = 10.1109/FOCS.2008.51
+ | pages = 573–582
+ | title = 49th Annual IEEE Symposium on Foundations of Computer Science, FOCS 2008, October 25-28, 2008, Philadelphia, PA, USA
+ | year = 2008| isbn = 978-0-7695-3436-7
+ | s2cid = 8762205
+ }}</ref>
+<ref name="chagur">{{citation
+ | last1 = Charikar | first1 = Moses | author1-link = Moses Charikar
+ | last2 = Guruswami | first2 = Venkatesan | author2-link = Venkatesan Guruswami
+ | last3 = Manokaran | first3 = Rajsekar
+ | contribution = Every permutation CSP of arity 3 is approximation resistant
+ | doi = 10.1109/CCC.2009.29
+ | mr = 2932455
+ | pages = 62–73
+ | title = 24th Annual IEEE Conference on Computational Complexity
+ | year = 2009| isbn = 978-0-7695-3717-7 | s2cid = 257225 }}.</ref>
+<ref name="every-csp">{{citation
+ | last = Raghavendra | first = Prasad
+ | editor-last = Dwork | editor-first = Cynthia | editor-link = Cynthia Dwork
+ | contribution = Optimal algorithms and inapproximability results for every CSP?
+ | contribution-url = https://people.eecs.berkeley.edu/~prasad/Files/extabstract.pdf
+ | doi = 10.1145/1374376.1374414
+ | pages = 245–254
+ | publisher = Association for Computing Machinery
+ | title = Proceedings of the 40th Annual ACM Symposium on Theory of Computing, Victoria, British Columbia, Canada, May 17-20, 2008
+ | year = 2008| isbn = 978-1-60558-047-0
+ | s2cid = 15075197
+ }}</ref>
+<ref name="small-set">{{citation
+ | last1 = Raghavendra | first1 = Prasad
+ | last2 = Steurer | first2 = David
+ | contribution = Graph expansion and the unique games conjecture
+ | contribution-url = https://people.eecs.berkeley.edu/~prasad/Files/expansion.pdf
+ | doi = 10.1145/1806689.1806792
+ | mr = 2743325
+ | pages = 755–764
+ | publisher = Association for Computing Machinery
+ | title = STOC'10—Proceedings of the 2010 ACM International Symposium on Theory of Computing
+ | year = 2010| isbn = 978-1-4503-0050-6
+ | s2cid = 1601199
+ }}</ref>
+<ref name="biclique">{{citation
+ | last = Manurangsi | first = Pasin
+ | contribution = Inapproximability of Maximum Edge Biclique, Maximum Balanced Biclique and Minimum ''k''-Cut from the Small Set Expansion Hypothesis
+ | doi = 10.4230/LIPIcs.ICALP.2017.79
+ | isbn = 978-3-95977-041-5
+ | location = Dagstuhl, Germany
+ | pages = 79:1–79:14
+ | publisher = Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik
+ | series = Leibniz International Proceedings in Informatics (LIPIcs)
+ | title = 44th International Colloquium on Automata, Languages, and Programming (ICALP 2017)
+ | volume = 80
+ | year = 2017| doi-access = free
+ }}</ref>
+<ref name="subexponential">{{citation
+ | last1 = Arora | first1 = Sanjeev | author1-link = Sanjeev Arora (computer scientist)
+ | last2 = Barak | first2 = Boaz
+ | last3 = Steurer | first3 = David
+ | doi = 10.1145/2775105
+ | issue = 5
+ | journal = [[Journal of the ACM]]
+ | mr = 3424199
+ | page = Art. 42, 25
+ | title = Subexponential algorithms for unique games and related problems
+ | volume = 62
+ | year = 2015| s2cid = 622344 }}. Previously announced at FOCS 2010.</ref>
+<ref name="spectral">{{citation
+ | last1 = Kolla | first1 = Alexandra
+ | doi = 10.1007/s00037-011-0011-7
+ | issue = 2
+ | journal = Computational Complexity
+ | mr = 2822872
+ | page = 177-206
+ | title = Spectral algorithms for unique games
+ | volume = 20
+ | year = 2011 | arxiv = 1102.2300
+ }}. Previously announced at CCC 2010.</ref>
+<ref name="KollaTulsiani">{{citation
+ | last1 = Kolla | first1 = Alexandra
+ | last2 = Tulsiani | first2 = Madhur
+ | title = Playing Unique Games Using Graph Spectra
+ | url = https://home.cs.colorado.edu/~alko5368/UGspec.pdf
+ | year = 2007 }}. </ref>
+<ref name="Linial">{{citation
+ | last1 = Linial | first1 = Nati
+ | title = Lifts of graphs
+ | url = https://www.cs.huji.ac.il/~nati/PAPERS/lifts_talk.pdf
+ | year = 2005 }}. Slides of talk given in Summer 2005.</ref>
+<ref name="expanders">
+{{cite conference
+ | last1 = Arora | first1 = Sanjeev
+ | last2 = Khot | first2 = Subhash
+ | last3 = Kolla | first3 = Alexandra
+ | last4 = Steurer | first4 = David
+ | last5 = Tulsiani | first5 = Madhur
+ | last6 = Vishnoi | first6 = Nisheeth
+ | doi = 10.1145/1374376.1374380
+ | conference = ACM Symp. Theory Comput. (STOC) '08
+ | mr = 2582928
+ | page = 21-28
+ | title = Unique games on expanding constraint graphs are easy: extended abstract
+ | year = 2008 }}.
+</ref>
+<ref name="austrinmw">
+{{Citation
+ | last1 = Austrin | first1 = Per
+ | last2 = Manokaran | first2 = Rajsekar
+ | last3 = Wenner | first3 = Cenny
+ | doi = 10.4086/toc.2015.v011a010
+ | journal = Theory of Computing
+ | page = 257--283
+ | title = On the NP-Hardness of Approximating Ordering-Constraint Satisfaction Problems
+ | year = 2015
+ | volume = 11
+ | number = 10}}.
+</ref>
+<ref name="bhankhot">
+{{Citation
+ | last1 = Bhangale | first1 = Amey
+ | last2 = Khot | first2 = Subhash
+ | doi = 10.4086/toc.2022.v018a005
+ | journal = Theory of Computing
+ | page = 1--28
+ | title = UG-hardness to NP-hardness by Losing Half
+ | year = 2022
+ | volume = 18
+ | number = 15| doi-access = free
+ }}.
+</ref>
+<ref name="topology">
+{{cite conference
+ | last1 = Grochow | first1 = Joshua
+ | last2 = Tucker-Foltz | first2 = Jamie
+ | doi = 10.4230/LIPIcs.SoCG.2018.43
+ | conference = 34th Internat. Symp. Comput. Geom. (SoCG) '18
+ | mr = 3824287
+ | page = 43:1-43:16
+ | title = Computational Topology and the Unique Games Conjecture
+ | year = 2018 
+ | doi-access = free
+ | eprint = 1803.06800}}.
+</ref>
+<ref name="new-point">{{citation|last1=O'Donnell|first1=Ryan| author1-link = Ryan O'Donnell (computer scientist)|title=Proceedings of the 2012 ACM Symposium on Theory of Computing (STOC'12)|pages=289–306|year=2012|contribution=A new point of NP-hardness for unique games|location=New York|publisher=ACM|doi=10.1145/2213977.2214005|mr=2961512|last2=Wright|first2=John|isbn=978-1-4503-1245-5 |s2cid=6737664}}.</ref>
+<ref name="big-steps">{{citation |last=Klarreich |first=Erica|author-link=Erica Klarreich |date=April 24, 2018 |title=First Big Steps Toward Proving the Unique Games Conjecture |work=[[Quanta Magazine]] |url=https://www.quantamagazine.org/computer-scientists-close-in-on-unique-games-conjecture-proof-20180424/}}</ref>
+<ref name="halfway">{{citation |last=Barak |first= Boaz |date=2018-01-10 |title=Unique Games Conjecture – halfway there? |url=https://windowsontheory.org/2018/01/10/unique-games-conjecture-halfway-there/ |access-date=2023-03-15 |website=Windows On Theory |language=en}}</ref>
+<ref name="grassmann">{{citation|first1=Subhash|last1=Khot|author1-link=Subhash Khot|last2=Minzer|first2=Dor|last3=Safra|first3=M.|author3-link=Shmuel Safra|title=2018 IEEE 59th Annual Symposium on Foundations of Computer Science (FOCS) |chapter=Pseudorandom Sets in Grassmann Graph Have Near-Perfect Expansion |date=October 2018|pages=592–601|doi=10.1109/FOCS.2018.00062|isbn=978-1-5386-4230-6 |s2cid=3688775 }}</ref>
+
+</references>
+
+==Further reading==
+* {{citation
+ | author-link = Subhash Khot
+ | last = Khot | first = Subhash
+ | contribution = On the Unique Games Conjecture
+ | title = Proc. 25th IEEE Conference on Computational Complexity
+ | url = https://cs.nyu.edu/~khot/papers/UGCSurvey.pdf
+ | year = 2010
+ | pages = 99–121
+ | doi = 10.1109/CCC.2010.19
+}}.
+
+{{Computational hardness assumptions}}
+
+[[Category:2002 in computing]]
+[[Category:Approximation algorithms]]
+[[Category:Computational complexity theory]]
+[[Category:Computational hardness assumptions]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Conjectures]]

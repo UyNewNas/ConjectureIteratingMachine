@@ -1,0 +1,186 @@
+{{good article}}
+{{Short description|Unsolved problem on graph coloring}}
+{{Use dmy dates|cs1-dates=ly|date=January 2023}}
+{{Use list-defined references|date=January 2023}}
+{{CS1 config|mode=cs2}}
+{{unsolved|mathematics|How many colors are needed to color biplanar graphs?}}
+The '''Earth–Moon problem''' is an unsolved problem on [[graph coloring]] in mathematics. It is an extension of the planar map coloring problem (solved by the [[four color theorem]]), and was posed by [[Gerhard Ringel]] in 1959.{{r|ringel}} An intuitive form of the problem asks how many colors are needed to color political maps of the Earth and Moon, in a hypothetical future where each Earth country has a Moon colony which must be given the same color. In mathematical terms, it seeks the [[chromatic number]] of [[biplanar graph]]s. It is known that this number is at least 9 and at most 12.
+
+The Earth–Moon problem has been extended to analogous problems of coloring maps on any number of planets. For this extension the [[lower bound]]s and [[upper bound]]s on the number of colors are closer, within two of each other. One real-world application of the Earth–Moon problem involves testing [[printed circuit board]]s.
+
+==Formulation and history==
+In the map coloring problem, finitely many [[Simply connected space|simply connected]] regions in the [[Euclidean plane]] or a topologically equivalent space, such as countries on the surface of the Earth, are to be colored so that, when two regions share a boundary of nonzero length, they have different colors. It can be transformed into a [[graph coloring]] problem by making a [[vertex (graph theory)|vertex]] for each region and an [[edge (graph theory)|edge]] for each two neighboring regions, producing a [[planar graph]] whose vertices are to be colored. Corresponding to the requirement that adjacent regions should have different colors, adjacent vertices (the two endpoints of any edge) should have different colors. According to the [[four color theorem]], the resulting planar graph (or any planar graph) can be colored using at most four different colors, no matter how many regions are given.{{r|hutchinson}}
+
+In 1959, [[Gerhard Ringel]] published a book on colorings of surfaces, surveying the results at the time on the four color problem and the [[Heawood conjecture]] on coloring maps on non-planar surfaces such as the [[torus]] and [[Klein bottle]].{{r|ringel}} Both had been long-conjectured but were unsolved at the time. Ringel himself later proved the Heawood conjecture in a 1968 paper with [[John William Theodore Youngs|J. W. T. Youngs]];{{r|hutchinson|ringel-youngs}} the four-color theorem evaded proof until 1976.{{r|hutchinson|appel-haken}} Another topic of Ringel's book was a result of [[Percy John Heawood]] from 1890, on the "empire problem": coloring maps in which each empire has some number <math>m</math> of distinct regions on the Earth (a home country and <math>m-1</math> colonies). As Heawood showed for <math>m=2</math>, and Ringel later proved with Jackson in 1984 for <math>m>2</math>, <math>6m</math> colors are necessary and sufficient.{{r|hutchinson|heawood|gardner|jr-empire}} Perhaps inspired by this problem and the dawn of the [[space age]], Ringel included the Earth-Moon problem in his book as a variant of the empire problem in which the colonies are on the Moon rather than on the Earth.{{r|ringel|hutchinson}} In a formulation of [[Martin Gardner]], the colonies are instead on Mars.{{r|gardner}}
+
+=== Classical Earth-Moon problem ===
+In Ringel's Earth–Moon problem, each country on the Earth has a corresponding colony on the surface of the Moon, that must be given the same color. These colonies may have borders that are completely different from the arrangement of the borders on the Earth. The countries must be colored, using the same color for each country and its colony, so that when two countries share a border either on the Earth or on the Moon they are given different colors. Ringel's problem asks: how many colors are needed to guarantee that the countries can all be colored, no matter how their boundaries are arranged?{{r|hutchinson}} Ringel proved that the number of colors needed was at least 8 and at most 12, conjecturing that 8 was the correct answer.{{r|gardner}}
+
+==== Evaluation using biplanar graphs ====
+Again, one can phrase the same question equivalently as one in graph theory, with a single vertex for each pair of a country and its colony, and an edge for each adjacency between countries or colonies. As in the planar case, after this transformation, it is the vertices that must be colored, with different colors for the endpoints of each edge. The graphs that result in this version of the problem are [[biplanar graph]]s, or equivalently the graphs of [[Thickness (graph theory)|thickness]] two: their edges can be partitioned into two subsets (the edges coming from Earth adjacencies and those coming from Moon adjacencies) such that the corresponding two subgraphs are both planar. In mathematical terms, Ringel's problem asks for the maximum [[chromatic number]] of biplanar graphs.{{r|hutchinson}}
+
+==Bounds==
+A biplanar graph on <math>n</math> vertices has at most <math>6n-12</math> edges (double the number that a planar graph can have), from which it follows from the [[degree sum formula]] that it has at least one vertex with at most 11 neighbors. Removing this vertex, coloring the remaining graph recursively, and then using the smallest-numbered unused color for the removed vertex leads to a coloring with at most 12 colors; this is the [[greedy coloring]] for a [[Degeneracy (graph theory)|degeneracy ordering]] of the graph. Therefore, biplanar graphs require at most 12 colors.{{r|hutchinson}}
+
+<!-- Do not move this image to the lead; lead images can only be upright=1.35 or less and that would make it too small -->
+[[File:Sulanke Earth-Moon map.svg|thumb|upright=1.8|Sulanke's nine-color Earth–Moon map (left and right), with adjacencies described by the [[Graph operations|join]] of a 6-vertex [[complete graph]] and 5-vertex cycle graph (center)|alt=Refer to caption]]
+An example of a biplanar graph requiring 9 colors can be constructed as the [[Graph operations#Binary operations|join]] of a 6-vertex [[complete graph]] and a 5-vertex [[cycle graph]]. This means that these two subgraphs are connected by all possible edges from one subgraph to the other. The resulting graph has 11 vertices, and requires 6 colors for the complete subgraph and 3 colors for the cycle subgraph, giving 9 colors overall.{{r|hutchinson}} This construction, by Thom Sulanke in 1974, disproved the conjecture of Ringel that 8 colors would always suffice.{{r|gardner}} Subsequently, an infinite family of biplanar [[critical graph|9-critical graphs]] (minimal graphs that require nine colors) has been constructed.{{r|boutin-gethner-sulanke|gethner-sulanke}}
+
+Despite a lack of further progress on the problem, in 2018 [[Ellen Gethner]] conjectured that the correct number of colors for this problem is 11. She suggests several candidates for 10-chromatic biplanar graphs, including the graph <math>C_7\boxtimes K_4</math> obtained as the [[strong product of graphs|strong product]] of a cycle graph with a clique, and the graph obtained by removing any vertex from <math>C_5\boxtimes K_4</math>. These graphs can be shown to require 10 colors, because they have no [[Independent set (graph theory)|independent set]] large enough to be the largest color class in a coloring with fewer colors. Additionally, they meet the bounds on the number of edges a biplanar graph can have. However, a representation of them as biplanar graphs (or Earth–Moon maps) remains elusive.{{r|gethner}} In 2023, it was confirmed that <math>C_5\boxtimes K_4-v</math> is not biplanar.{{r|kss}}
+
+==Application==
+One application of colorings of biplanar graphs involves testing [[printed circuit board]]s for short circuits. The electrical conductors within these boards include crossings, but (for double-sided printed circuit boards) their adjacencies can be assumed to form a biplanar graph. After coloring this graph, short circuits between adjacent conductors can be detected by adding extra circuitry to connect all conductors with the same colors to each other and testing for connections between pairs of different colors. With some care, this idea can be used to reduce the number of tests needed per circuit to only four.{{r|hutchinson|garey-johnson-so}}
+
+==Generalizations==
+Various generalizations of the problem have also been considered, including versions of the problem with more than two planets or with countries that can have more than one region per planet.{{r|stewart|jr-variations}} Maps with one planet and multiple regions per country give Heawood's empire problem.{{r|hutchinson|jr-empire}} Maps with more than two planets but only one region per planet correspond to graphs whose [[thickness (graph theory)|thickness]] is at most equal to the number of planets. For these graphs, more precise (although still incomplete) results are known. For the graphs of thickness <math>t\ge 3</math>, and the corresponding <math>t</math>-planet maps, the chromatic number is at most <math>6t</math> by the same degeneracy argument used in the Earth–Moon problem. As well, for <math>t\ge 3</math>, a complete graph with <math>6t-2</math> vertices has thickness <math>t</math>, showing some of these graphs require <math>6t-2</math> colors. Thus, in this case, the upper and lower bounds are within two colors of each other.{{r|alekseev-goncakov}}
+
+==References==
+<references>
+
+<ref name=alekseev-goncakov>{{citation | last1 = Alekseev | first1 = V. B. | last2 = Gončakov | first2 = V. S.  | journal = [[Matematicheskii Sbornik]] |series=New Series | mr = 0460162 | pages = 212–230 | title = The thickness of an arbitrary complete graph | volume = 101 | issue = 143 | year = 1976| doi = 10.1070/SM1976v030n02ABEH002267 | bibcode = 1976SbMat..30..187A }}</ref>
+
+<ref name=appel-haken>{{citation
+ | last1 = Appel | first1 = K.
+ | last2 = Haken | first2 = W.
+ | doi = 10.1090/S0002-9904-1976-14122-5
+ | issue = 5
+ | journal = Bulletin of the American Mathematical Society
+ | mr = 424602
+ | pages = 711–712
+ | title = Every planar map is four colorable
+ | volume = 82
+ | year = 1976| doi-access = free
+ | url = https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-82/issue-5/Every-planar-map-is-four-colorable/bams/1183538218.pdf
+ }}</ref>
+
+<ref name=boutin-gethner-sulanke>{{citation
+ | last1 = Boutin | first1 = Debra L. | author1-link = Debra Boutin
+ | last2 = Gethner | first2 = Ellen | author2-link = Ellen Gethner
+ | last3 = Sulanke | first3 = Thom
+ | doi = 10.1002/jgt.20282
+ | issue = 3
+ | journal = [[Journal of Graph Theory]]
+ | mr = 2384020
+ | pages = 198–214
+ | title = Thickness-two graphs, I: New nine-critical graphs, permuted layer graphs, and Catlin's graphs
+ | volume = 57
+ | year = 2008| s2cid = 39576387 }}</ref>
+
+<ref name=gardner>{{citation
+ | last = Gardner | first = Martin | author-link = Martin Gardner
+ | date = February 1980
+ | department = Mathematical Games
+ | issue = 2
+ | journal = [[Scientific American]]
+ | jstor = 24966248
+ | pages = 14–23
+ | title = The coloring of unusual maps leads into uncharted territory
+ | volume = 242| doi = 10.1038/scientificamerican0280-14 }}</ref>
+
+<ref name=garey-johnson-so>{{citation
+ | last1 = Garey | first1 = M. | author1-link = Michael Garey
+ | last2 = Johnson | first2 = D. | author2-link = David S. Johnson
+ | last3 = So | first3 = Hing
+ | date = October 1976
+ | doi = 10.1109/tcs.1976.1084138
+ | issue = 10
+ | journal = IEEE Transactions on Circuits and Systems
+ | pages = 591–599
+ | title = An application of graph coloring to printed circuit testing
+ | volume = 23 | bibcode = 1976ITCS...23..591G }}</ref>
+
+<ref name=gethner>{{citation
+ | last = Gethner | first = Ellen | author-link = Ellen Gethner
+ | editor1-last = Gera | editor1-first = Ralucca | editor1-link = Ralucca Gera
+ | editor2-last = Haynes | editor2-first = Teresa W. | editor2-link = Teresa W. Haynes
+ | editor3-last = Hedetniemi | editor3-first = Stephen T.
+ | contribution = To the Moon and beyond
+ | doi = 10.1007/978-3-319-97686-0_11
+ | mr = 3930641
+ | pages = 115–133
+ | publisher = Springer International Publishing
+ | series = Problem Books in Mathematics
+ | title = Graph Theory: Favorite Conjectures and Open Problems, II
+ | year = 2018| isbn = 978-3-319-97684-6 }}</ref>
+
+<ref name=gethner-sulanke>{{citation
+ | last1 = Gethner | first1 = Ellen | author1-link = Ellen Gethner
+ | last2 = Sulanke | first2 = Thom
+ | doi = 10.1007/s00373-008-0833-5
+ | issue = 2
+ | journal = [[Graphs and Combinatorics]]
+ | mr = 2511878
+ | pages = 197–217
+ | title = Thickness-two graphs, II: More new nine-critical graphs, independence ratio, cloned planar graphs, and singly and doubly outerplanar graphs
+ | volume = 25
+ | year = 2009| s2cid = 2209541 }}</ref>
+
+<ref name=heawood>{{Citation|last=Heawood |first=P. J. |title=Map-Colour Theorem |periodical= Quarterly Journal of Mathematics, Oxford |volume= 24 |year = 1890 |pages = 332–338 |author-link=Percy John Heawood}}</ref>
+
+<ref name=hutchinson>{{citation
+ | last = Hutchinson | first = Joan P. | author-link = Joan Hutchinson
+ | date = October 1993
+ | doi = 10.2307/2690733
+ | issue = 4
+ | journal = [[Mathematics Magazine]]
+ | jstor = 2690733
+ | pages = 211–226
+ | title = Coloring ordinary maps, maps of empires, and maps of the Moon
+ | volume = 66}}</ref>
+
+<ref name=jr-empire>{{citation
+ | last1 = Jackson | first1 = Brad
+ | last2 = Ringel | first2 = Gerhard
+ | doi = 10.1515/crll.1984.347.146
+ | journal = Journal für die Reine und Angewandte Mathematik
+ | mr = 733049
+ | pages = 146–153
+ | title = Solution of Heawood's empire problem in the plane
+ | volume = 347
+ | year = 1984}}</ref>
+
+<ref name=jr-variations>{{citation
+ | last1 = Jackson | first1 = Brad
+ | last2 = Ringel | first2 = Gerhard | author2-link = Gerhard Ringel
+ | doi = 10.1016/S0012-365X(99)00278-2
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1735339
+ | pages = 233–242
+ | title = Variations on Ringel's earth-moon problem
+ | volume = 211
+ | year = 2000}}</ref>
+
+<ref name=kss>{{citation |last1=Kirchweger |first1=Markus |last2=Scheucher |first2=Manfred |last3=Szeider |first3=Stefan |date=2023 |editor-last=Mahajan |editor-first=Meena |contribution=SAT-based generation of planar graphs |editor2-last=Slivovsky |editor2-first=Friedrich|title=26th International Conference on Theory and Applications of Satisfiability Testing (SAT 2023) |series=Leibniz International Proceedings in Informatics (LIPIcs) |location=Dagstuhl, Germany |publisher=Schloss Dagstuhl – Leibniz-Zentrum für Informatik |volume=271 |pages=14:1–14:18 |doi=10.4230/LIPIcs.SAT.2023.14 |doi-access=free |isbn=978-3-95977-286-0}}</ref>
+
+<ref name=ringel>{{citation
+ | last = Ringel | first = Gerhard | author-link = Gerhard Ringel
+ | mr = 0109349
+ | publisher = VEB Deutscher Verlag der Wissenschaften | location = Berlin
+ | series = Mathematische Monographien
+ | title = Färbungsprobleme auf Flächen und Graphen
+ | volume = 2
+ | year = 1959}}</ref>
+
+<ref name=ringel-youngs>{{citation |last1=Ringel |first1= G.|author1-link= Gerhard Ringel |last2=Youngs |first2=J. W. T. |author2-link= John William Theodore Youngs |title=Solution of the Heawood Map-Coloring Problem|periodical= Proc. Natl. Acad. Sci. USA|year=1968 |pages=438–445 |issue=2|volume = 60 |doi=10.1073/pnas.60.2.438 |pmc=225066 |pmid=16591648|bibcode = 1968PNAS...60..438R |doi-access= free}}</ref>
+
+<ref name=stewart>{{citation
+ | last = Stewart | first = Ian | author-link = Ian Stewart (mathematician)
+ | date = April 1993
+ | department = Mathematical Recreations
+ | issue = 4
+ | journal = [[Scientific American]]
+ | jstor = 24941454
+ | pages = 120–121
+ | title = The rise and fall of the Lunar M-pire
+ | volume = 268| doi = 10.1038/scientificamerican0493-120 | bibcode = 1993SciAm.268d.120S }}</ref>
+
+</references>
+
+==External links==
+*{{mathworld|id=Earth-MoonProblem|title=Earth-Moon Problem|mode=cs2}}
+*{{citation|url=http://www.openproblemgarden.org/op/earth_moon_problem|title=Earth-Moon Problem|work=Open Problem Garden}}
+
+[[Category:Graph coloring]]
+[[Category:Unsolved problems in graph theory]]
+{{DEFAULTSORT:Earth-Moon problem}}

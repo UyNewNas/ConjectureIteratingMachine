@@ -1,0 +1,79 @@
+{{Short description|Mathematical conjecture}}
+{{for|synchronizing words in the theory of synchronized codes|Self-synchronizing code#Synchronizing word}}
+[[File:Road coloring conjecture.svg|thumb|This drawing represents a DFA with eight states and two input symbols, red and blue. The word blue-red-red-blue-red-red-blue-red-red is a synchronizing word that sends all states to the yellow state (as is the word red-red-red-blue-red-red-blue-red-red); the word blue-blue-red-blue-blue-red-blue-blue-red is another synchronizing word that sends all states to the green state.]]
+In [[computer science]], more precisely, in the theory of [[deterministic finite automata]] (DFA), a '''synchronizing word''' or '''reset sequence''' is a word in the input alphabet of the DFA that sends any state of the DFA to one and the same state.<ref name=trakht-syn>Avraham Trakhtman: [http://www.cs.biu.ac.il/~trakht/syn.html ''Synchronizing automata, algorithms, Cerny Conjecture'']. Accessed May 15, 2010.</ref> That is, if an ensemble of copies of the DFA are each started in different states, and all of the copies process the synchronizing word, they will all end up in the same state. Not every DFA has a synchronizing word; for instance, a DFA with two states, one for words of even length and one for words of odd length, can never be synchronized.
+
+==Existence==
+Given a DFA, the problem of determining if it has a synchronizing word can be solved in [[polynomial time]]<ref name=eppstein /> using a theorem due to Ján Černý. A simple approach considers the power set of states of the DFA, and builds a directed graph where nodes belong to the power set, and a directed edge describes the action of the transition function. A path from the node of all states to a singleton state shows the existence of a synchronizing word. This algorithm is [[exponential time|exponential]] in the number of states. A polynomial algorithm results however, due to a theorem of Černý that exploits the substructure of the problem, and shows that a synchronizing word exists if and only if every pair of states has a synchronizing word.
+
+==Length==
+{{unsolved|computer science|If a DFA with <math>n</math> states has a synchronizing word, must it have one of length at most <math>(n-1)^2</math>?}}
+The problem of estimating the length of synchronizing words has a long history and was posed independently by several authors, but it is commonly known as the '''Černý conjecture'''. In 1969, [[Ján Černý (mathematician)|Ján Černý]] conjectured that (''n''&nbsp;&minus;&nbsp;1)<sup>2</sup> is the [[upper bound]] for the length of the shortest synchronizing word for any ''n''-state complete DFA (a DFA with complete [[State diagram#Directed graph|state transition graph]]).<ref>{{citation
+ | first = Mikhail V.
+ | last = Volkov
+ | contribution = Synchronizing Automata and the Černý Conjecture
+ | title = Proc. 2nd Int'l. Conf. Language and Automata Theory and Applications (LATA 2008)
+ | year = 2008
+ | pages = 11&ndash;27
+ | series = LNCS
+ | volume = 5196
+ | publisher = Springer-Verlag
+ | doi = 10.1007/978-3-540-88282-4_4
+| isbn = 978-3-540-88281-7
+ }}; see in particular p. 19</ref> If this is true, it would be tight: in his 1964 paper, Černý exhibited a class of automata (indexed by the number ''n'' of states) for which the shortest reset words have this length.<ref name="cerny">{{citation |first=Ján |last=Černý |title=Poznámka k homogénnym experimentom s konečnými automatmi |journal=Matematicko-fyzikálny časopis Slovenskej Akadémie Vied |volume=14 |year=1964 |pages=208–216 |url=http://dml.cz/bitstream/handle/10338.dmlcz/126647/MathSlov_14-1964-3_2.pdf}} (in Slovak).</ref> The best upper bound known is 0.1654''n''<sup>3</sup>, far from the lower bound.<ref>{{citation
+ | last = Shitov | first = Yaroslav
+ | arxiv = 1901.06542
+ | issue = 2–4
+ | journal = Journal of Automata, Languages and Combinatorics
+ | mr = 4023068
+ | pages = 367–373
+ | title = An improvement to a recent upper bound for synchronizing words of finite automata
+ | url = https://www.jalc.de/issues/2019/issue_24_2-4/pp-367-373.pdf
+ | volume = 24
+ | year = 2019}}</ref> 
+For ''n''-state DFAs over a ''k''-letter input alphabet, an algorithm by [[David Eppstein]] finds a synchronizing word of length at most 11''n''<sup>3</sup>/48&nbsp;+&nbsp;[[Big O notation|O]](''n''<sup>2</sup>), and runs in [[time complexity]] [[Big O notation|O]](''n''<sup>3</sup>+''kn''<sup>2</sup>). This algorithm does not always find the shortest possible synchronizing word for a given automaton; as Eppstein also shows, the problem of finding the shortest synchronizing word is [[NP-complete]]. However, for a special class of automata in which all state transitions preserve the [[cyclic order]] of the states, he describes a different algorithm with time O(''kn''<sup>2</sup>) that always finds the shortest synchronizing word, proves that these automata always have a synchronizing word of length at most (''n''&nbsp;&minus;&nbsp;1)<sup>2</sup> (the bound given in Černý's conjecture), and exhibits examples of automata with this special form whose shortest synchronizing word has length exactly (''n''&nbsp;&minus;&nbsp;1)<sup>2</sup>.<ref name=eppstein>{{Citation|author=Eppstein, David|author-link=David Eppstein|url=http://www.ics.uci.edu/~eppstein/pubs/Epp-SJC-90.pdf
+|title=Reset Sequences for Monotonic Automata
+|journal=[[SIAM Journal on Computing]]
+|volume=19|issue=3|pages=500–510|year=1990|doi=10.1137/0219033|postscript=.}}</ref>
+
+==Road coloring==
+The [[road coloring problem]] is the problem of labeling the edges of a [[regular graph|regular]] [[directed graph]] with the symbols of a ''k''-letter input alphabet (where ''k'' is the [[degree (graph theory)|outdegree]] of each vertex) in order to form a synchronizable DFA. It was conjectured in 1970 by Benjamin Weiss and [[Roy Adler]] that any [[Strongly connected graph|strongly connected]] and [[Aperiodic graph|aperiodic]] regular digraph can be labeled in this way; their conjecture was proven in 2007 by [[Avraham Trahtman]].<ref>{{citation
+ | last1 = Adler | first1 = R. L.
+ | last2 = Weiss | first2 = B.
+ | journal = Memoirs of the American Mathematical Society
+ | title = Similarity of automorphisms of the torus
+ | volume = 98
+ | year = 1970}}.</ref><ref>{{citation|last=Trahtman|first=A. N.|arxiv=0709.0099|doi=10.1007/s11856-009-0062-5|doi-access=free|journal=[[Israel Journal of Mathematics]]|mr=2534238|pages=51–60|title=The road coloring problem|volume=172|year=2009}}</ref>
+
+==Related: transformation semigroups==
+A [[transformation semigroup]] is ''synchronizing'' if it contains an element of rank 1, that is, an element whose image is of cardinality 1.<ref>{{citation
+ | last1 = Cameron | first1 = Peter
+ | title = Permutation groups and transformation semigroups
+ | url = http://www.maths.qmul.ac.uk/~pjc/talks/gsta/pjc_gsta2.pdf
+ | year = 2013}}.</ref> A DFA corresponds to a transformation semigroup with a distinguished generator set.
+
+==References==
+{{reflist}}
+
+==Further reading==
+*{{citation
+ | first = I. C. | last = Rystsov
+ | contribution = Černý's conjecture: retrospects and prospects
+ | title = Proc. Worksh. Synchronizing Automata, Turku (WSA 2004)
+ | year = 2004}}.
+*{{citation | last = Jürgensen | first = H. | year = 2008 | title = Synchronization | journal = Information and Computation | volume = 206 | issue = 9&ndash;10 | pages = 1033&ndash;1044 | doi = 10.1016/j.ic.2008.03.005 | doi-access = free }}
+*{{citation
+ | first = Mikhail V.
+ | last = Volkov
+ | contribution = Synchronizing Automata and the Černý Conjecture
+ | title = Proc. 2nd Int'l. Conf. Language and Automata Theory and Applications (LATA 2008)
+ | year = 2008
+ | pages = 11&ndash;27
+ | series = LNCS
+ | volume = 5196
+ | publisher = Springer-Verlag
+ | url = http://csseminar.kadm.usu.ru/tarragona_volkov2008.pdf
+}}
+
+[[Category:Finite-state machines]]
+[[Category:Unsolved problems in computer science]]

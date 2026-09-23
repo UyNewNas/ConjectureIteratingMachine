@@ -1,0 +1,1859 @@
+{{Short description|none}}
+{{Redirect|Open problems in mathematics|the book|Open Problems in Mathematics}}
+{{CS1 config|mode=cs1}}
+{{Dynamic list}}
+
+Many [[mathematical problems]] have been stated but not yet solved. These problems come from many [[areas of mathematics]], such as [[theoretical physics]], [[computer science]], [[algebra]], [[Mathematical analysis|analysis]], [[combinatorics]], [[Algebraic geometry|algebraic]], [[Differential geometry|differential]], [[Discrete geometry|discrete]] and [[Euclidean geometry|Euclidean geometries]], [[graph theory]], [[group theory]], [[mathematical logic]], [[number theory]], [[set theory]], [[Ramsey theory]], [[dynamical system]]s, and [[partial differential equation]]s. Some problems belong to more than one discipline and are studied using techniques from different areas. Prizes are often awarded for the solution to a long-standing problem, and some lists of unsolved problems, such as the [[Millennium Prize Problems]], receive considerable attention.
+
+This list is a composite of notable unsolved problems mentioned in previously published lists, including but not limited to lists considered authoritative, and the problems listed here vary widely in both difficulty and importance.
+
+== Notable lists ==
+For over a century, various mathematicians and organizations have published and promoted lists of unsolved mathematical problems. In some cases, the lists have been associated with prizes for the discoverers of solutions, with the Millennium Prize Problems each containing a reward of one million dollars.
+
+{| class="wikitable sortable"
+|-
+! List !! Number of<br />problems !! Number unsolved <br /> or incompletely solved !! Proposed by !! Proposed<br />in
+|-
+| [[Hilbert's problems]]<ref>{{citation|last=Thiele|first=Rüdiger|chapter=On Hilbert and his twenty-four problems|title=Mathematics and the historian's craft. The Kenneth O. May Lectures|pages=243–295|isbn=978-0-387-25284-1|editor-last=Van Brummelen|editor-first=Glen|year=2005|series=[[Canadian Mathematical Society|CMS]] Books in Mathematics/Ouvrages de Mathématiques de la SMC |volume=21|title-link=Kenneth May}}</ref> || 23 || 13 || [[David Hilbert]] || 1900
+|-
+| [[Landau's problems]]<ref>{{citation|title=Unsolved Problems in Number Theory|first=Richard|last=Guy|author-link=Richard K. Guy|edition=2nd|publisher=Springer|year=1994|page=vii|url=https://books.google.com/books?id=EbLzBwAAQBAJ&pg=PR7|isbn=978-1-4899-3585-4|access-date=2016-09-22|archive-url=https://web.archive.org/web/20190323220345/https://books.google.com/books?id=EbLzBwAAQBAJ&pg=PR7|archive-date=2019-03-23|url-status=live}}.</ref> || 4 || 4 || [[Edmund Landau]] || 1912
+|-
+| [[Taniyama's problems]]<ref>{{cite journal | last = Shimura | first = G. | author-link = Goro Shimura | title = Yutaka Taniyama and his time | journal = Bulletin of the London Mathematical Society | volume = 21 | issue = 2 | pages = 186–196 | year = 1989 | doi = 10.1112/blms/21.2.186 }}</ref> || 36 || – || [[Yutaka Taniyama]] || 1955
+|-
+| [[Thurston's 24 questions]]<ref>{{cite journal
+ | last = Friedl | first = Stefan
+ | doi = 10.1365/s13291-014-0102-x
+ | issue = 4
+ | journal = Jahresbericht der Deutschen Mathematiker-Vereinigung
+ | mr = 3280572
+ | pages = 223–241
+ | title = Thurston's vision and the virtual fibering theorem for 3-manifolds
+ | volume = 116
+ | year = 2014| s2cid = 56322745
+ }}</ref><ref>{{cite journal
+ | last = Thurston | first = William P.
+ | doi = 10.1090/S0273-0979-1982-15003-0
+ | issue = 3
+ | journal = Bulletin of the American Mathematical Society
+ | mr = 648524
+ | pages = 357–381
+ | series = New Series
+ | title = Three-dimensional manifolds, Kleinian groups and hyperbolic geometry
+ | volume = 6
+ | year = 1982}}</ref> || 24 || 2 || [[William Thurston]] || 1982
+|-
+| [[Smale's problems]] || 18 || 14 || [[Stephen Smale]] || 1998
+|-
+| [[Millennium Prize Problems]] || 7 || 6<ref name="auto1">{{cite web |title=Millennium Problems |url=http://claymath.org/millennium-problems |archive-url=https://web.archive.org/web/20170606121331/http://claymath.org/millennium-problems |archive-date=2017-06-06 |access-date=2015-01-20 |website=claymath.org}}</ref>{{when|date=September 2026}}|| [[Clay Mathematics Institute]] || 2000
+|-
+| [[Simon problems]] || 15 || 12<ref>{{cite web |url=http://www2.cnrs.fr/en/2435.htm?debut=8&theme1=12 |title=Fields Medal awarded to Artur Avila |website=[[Centre national de la recherche scientifique]] |date=2014-08-13 |access-date=2018-07-07 |archive-url=https://web.archive.org/web/20180710010437/http://www2.cnrs.fr/en/2435.htm?debut=8&theme1=12 |archive-date=2018-07-10 }}</ref><ref name="guardian">{{cite web |url=https://www.theguardian.com/science/alexs-adventures-in-numberland/2014/aug/13/fields-medals-2014-maths-avila-bhargava-hairer-mirzakhani |title=Fields Medals 2014: the maths of Avila, Bhargava, Hairer and Mirzakhani explained |website=[[The Guardian]] |last=Bellos |first=Alex |date=2014-08-13 |access-date=2018-07-07 |archive-url=https://web.archive.org/web/20161021115900/https://www.theguardian.com/science/alexs-adventures-in-numberland/2014/aug/13/fields-medals-2014-maths-avila-bhargava-hairer-mirzakhani |archive-date=2016-10-21 |url-status=live }}</ref> || [[Barry Simon]] || 2000
+|-
+| [[DARPA]]'s math challenges<ref>{{cite web | title = DARPA invests in math | publisher = [[Cable News Network|CNN]] | date = 2008-10-14 | url = http://edition.cnn.com/2008/TECH/science/10/09/darpa.challenges/index.html | access-date = 2013-01-14 | archive-url = https://web.archive.org/web/20090304121240/http://edition.cnn.com/2008/TECH/science/10/09/darpa.challenges/index.html | archive-date = 2009-03-04}}</ref><ref>{{cite web | title = Broad Agency Announcement (BAA 07-68) for Defense Sciences Office (DSO) | publisher = DARPA | date = 2007-09-10 | url = http://www.math.utk.edu/~vasili/refs/darpa07.MathChallenges.html | access-date = 2013-06-25 | archive-url = https://web.archive.org/web/20121001111057/http://www.math.utk.edu/~vasili/refs/darpa07.MathChallenges.html
+ | archive-date = 2012-10-01}}</ref> || 23 || – || [[DARPA]] || 2007
+|-
+| [[List of conjectures by Paul Erdős|Erdős's problems]]<ref>{{cite web|url=https://www.erdosproblems.com/|title=Erdős Problems|first=Thomas|last=Bloom|author-link=Thomas Bloom|access-date=2026-05-09}}</ref> || data-sort-value="1217" | ≥&nbsp;1221 || 635|| [[Paul Erdős]] || Over six decades of Erdős' career, from the 1930s to 1990s
+|}
+[[File:Riemann-Zeta-Func.png|thumb|250px|The [[Riemann zeta function]], subject of the [[Riemann hypothesis]]<ref>{{Cite web |title=Math Problems Guide: From Simple to Hardest Math Problems Tips & Examples. |url=https://blendedlearningmath.com/math-word-problems-to-challenge-university-students/ |access-date=2024-11-28 |website=blendedlearningmath |language=en-US}}</ref>]]
+
+=== Millennium Prize Problems ===
+Of the original seven [[Millennium Prize Problems]] listed by the [[Clay Mathematics Institute]] in 2000, six remain unsolved to date:<ref name="auto1">{{cite web |title=Millennium Problems |url=http://claymath.org/millennium-problems |archive-url=https://web.archive.org/web/20170606121331/http://claymath.org/millennium-problems |archive-date=2017-06-06 |access-date=2015-01-20 |website=claymath.org}}</ref>
+
+* [[Birch and Swinnerton-Dyer conjecture]]
+* [[Hodge conjecture]]
+* [[Navier–Stokes existence and smoothness]]{{when|date=September 2026}}
+* [[P versus NP problem|P versus NP]]
+* [[Riemann hypothesis]]
+* [[Yang–Mills existence and mass gap]]
+
+The seventh problem, the [[Poincaré conjecture]], was solved by [[Grigori Perelman]] in 2003.<ref>{{cite web |title=Poincaré Conjecture |url=http://www.claymath.org/millenium-problems/poincar%C3%A9-conjecture |archive-url=https://web.archive.org/web/20131215120130/http://www.claymath.org/millenium-problems/poincar%C3%A9-conjecture |archive-date=2013-12-15 |website=Clay Mathematics Institute}}</ref> 
+
+Contrary to most of the Hilbert problems and many other problems described in this article which allow for varying interpretations, the Millennium Prize problem are precisely described to provide clear conditions to award winners. After Perelman's resolution of the Poincaré conjecture, the official descriptions of the remaining six problems were codified by six specialist and released publicly. While the problems can touch upon greater research topics, and can themselves be only special cases of more general open problems, the Clay Institute decided upon these particular cases of the problems:
+* The '''Poincaré conjecture''' can be formulated in terms of the [[generalized Poincaré conjecture]] for different categories of manifolds. In the category of [[piecewise linear manifold]]s, the generalized conjecture is still an open problem for 4-dimensional manifolds. For [[differential manifold]]s, it is known to be false generally, but it is an open problem to determine in which dimensions it is true. In other words, it is not yet fully known on which spheres there exist no [[exotic sphere|exotic smooth structures]]. The Millennium Prize was offered for the topological version of the conjecture, that remained open only for 3-dimensional manifolds during the publication of the list.
+* The '''Birch and Swinnerton-Dyer conjecture''' can be formulated for [[elliptic curves]] over any [[number field]], and generalizations for more general arithmetic objects have been proposed. The Millennium Prize is offered for resolving the conjecture for elliptic curves over [[rational numbers]].
+* '''Navier-Stokes equations''' have a general form that can take into account many physical phenomena including the difference between [[volume viscosity]] and [[dynamic viscosity]], [[compressible flow]], change of viscosities in the flow, and an external force. The Millennium Prize is offered for either 
+** proving existence and smoothness of incompressible flow with constant but nonzero dynamic viscosity and no external force, or 
+** demonstrating a singularity in finite time for incompressible flow with constant but nonzero dynamic viscosity and a [[smooth function|smooth]] external force. 
+* The '''Riemann hypothesis''' has [[generalized Riemann hypothesis|many generalizations]] for different types of [[L-function]]s that are expected to be true. The Millennium Prize problem is offered for showing the original Riemann hypothesis for the [[Riemann zeta function]].
+
+=== Notebooks ===
+* The [[Kourovka, Sverdlovsk Oblast|Kourovka]] Notebook ({{Langx|ru|Коуровская тетрадь}}) is a collection of unsolved problems in [[group theory]], first published in 1965 and updated many times since.<ref>{{citation |last1=Khukhro |first1=Evgeny I. |title=Unsolved Problems in Group Theory. The Kourovka Notebook |year=2019 |arxiv=1401.0300v16 |last2=Mazurov |first2=Victor D. |author-link2=Victor Mazurov}}</ref>
+* The [[Yekaterinburg|Sverdlovsk]] Notebook ({{Langx|ru|Свердловская тетрадь}}) is a collection of unsolved problems in [[semigroup theory]], first published in 1965 and updated every 2 to 4 years since.<ref>{{Cite book |last1=RSFSR |first1=MV i SSO |url=https://books.google.com/books?id=nKwgzgEACAAJ |title=Свердловская тетрадь: нерешенные задачи теории подгрупп |last2=Russie) |first2=Uralʹskij gosudarstvennyj universitet im A. M. Gorʹkogo (Ekaterinbourg |date=1969 |publisher=S. l. |language=ru}}</ref><ref>{{cite book| title = Свердловская тетрадь: Сб. нерешённых задач по теории полугрупп |location= [[Свердловск]] |date = 1979 |publisher= [[Уральский государственный университет]] }}</ref><ref>{{cite book| title = Свердловская тетрадь: Сб. нерешённых задач по теории полугрупп |location= [[Свердловск]] |date = 1989 |publisher= [[Уральский государственный университет]] }}</ref>
+* The [[Dniester]] Notebook ({{Langx|ru|Днестровская тетрадь}}) lists several hundred unsolved problems in algebra, particularly [[ring theory]] and [[Modulus (algebraic number theory)|modulus theory]].<ref>{{citation |title=ДНЕСТРОВСКАЯ ТЕТРАДЬ |url=http://math.nsc.ru/LBRT/a1/files/dnestr93.pdf |year=1993 |trans-title=DNIESTER NOTEBOOK |publisher=The Russian Academy of Sciences |language=ru}}</ref><ref>{{citation |title=DNIESTER NOTEBOOK: Unsolved Problems in the Theory of Rings and Modules |url=https://math.usask.ca/~bremner/research/publications/dniester.pdf |website=[[University of Saskatchewan]] |access-date=2019-08-15}}</ref>
+* The [[Erlagol]] Notebook ({{Langx|ru|Эрлагольская тетрадь}}) lists unsolved problems in algebra and [[model theory]].<ref>{{citation |title=Эрлагольская тетрадь |url=https://uamt.conf.nstu.ru/erl_note.pdf |year=2018 |trans-title=Erlagol notebook |publisher=The Novosibirsk State University |language=ru}}</ref>
+
+== Unsolved problems ==
+
+=== Algebra ===
+{{Main|Algebra}}
+[[File:Regular tetrahedron inscribed in a sphere.svg|thumb|In the [[Bloch sphere]] representation of a [[qubit]], a [[SIC-POVM]] forms a [[regular tetrahedron]]. Zauner conjectured that analogous structures exist in complex [[Hilbert space]]s of all finite dimensions.]]
+
+* [[Birch–Tate conjecture]] on the relation between the order of the [[Center (group theory)|center]] of the [[Steinberg group (K-theory)|Steinberg group]] of the [[ring of integers]] of a [[Algebraic number field|number field]] to the field's [[Dedekind zeta function]].
+* [[Casas-Alvero conjecture]]: if a polynomial of degree <math>d</math> defined over a [[Field (mathematics)|field]] <math>K</math> of [[Characteristic (algebra)|characteristic]] <math>0</math> has a factor in common with its first through <math>d - 1</math>-th derivative, then must <math>f</math> be the <math>d</math>-th power of a linear polynomial?
+* [[Connes embedding problem]] in [[Von Neumann algebra]] theory
+* [[Determinantal conjecture]] on the [[determinant]] of the sum of two [[Normal matrix|normal matrices]].
+* [[Eilenberg–Ganea conjecture]]: a group with [[cohomological dimension]] 2 also has a 2-dimensional [[Eilenberg–MacLane space]] <math>K(G, 1)</math>.
+* [[Farrell–Jones conjecture]] on whether certain [[assembly map]]s are [[isomorphisms]].
+** [[Farrell–Jones conjecture#Bost conjecture|Bost conjecture]]: a specific case of the Farrell–Jones conjecture
+* [[Finite lattice representation problem]]: is every finite [[Lattice (order)|lattice]] isomorphic to the [[Quotient (universal algebra)#Congruence lattice|congruence lattice]] of some finite [[Universal algebra|algebra]]?<ref>{{cite journal |last1=Dowling |first1=T. A. |title=A class of geometric lattices based on finite groups|journal=[[Journal of Combinatorial Theory]] |series=Series B |date=February 1973 |volume=14 |issue=1 |pages=61–86 |doi=10.1016/S0095-8956(73)80007-3 | doi-access=free }}</ref>
+* [[Goncharov conjecture]] on the [[cohomology]] of certain [[Motivic cohomology|motivic complexes]].
+* [[Green's conjecture]]: the [[Clifford's theorem on special divisors|Clifford index]] of a non-[[hyperelliptic curve]] is determined by the extent to which it, as a [[Canonical bundle|canonical curve]], has [[Linear relation|linear syzygies]].
+* [[Grothendieck–Katz p-curvature conjecture]]: a conjectured [[Hasse principle|local–global principle]] for [[Linear differential equation|linear ordinary differential equations]].
+* [[Hadamard conjecture]]: for every positive integer <math>k</math>, a [[Hadamard matrix]] of order <math>4k</math> exists.{{efn|Constructions are now known for every order below 2000 divisible by 4. In August 2026, Levent Alpöge, Philippe Voinov and Saul Reynolds-Haertle announced matrices for the twelve remaining unknown orders below 2000, the smallest of which, 668, had been open since 2005.<ref>{{cite web |last=Weisstein |first=Eric W. |title=Hadamard Matrix |url=https://mathworld.wolfram.com/HadamardMatrix.html |website=MathWorld |access-date=2026-09-10}}</ref>}}
+** [[Williamson conjecture]]: the problem of finding Williamson matrices, which can be used to construct Hadamard matrices.
+** [[Difference set#Ryser and Lander conjectures|Lander's conjecture]]: if an abelian group of order <math>v</math> contains a difference set of order <math>n</math>, and a prime <math>p</math> divides both <math>v</math> and <math>n</math>, must the Sylow <math>p</math>-subgroup be non-cyclic? This implies Ryser's cyclic difference-set conjecture, and hence the circulant Hadamard conjecture.
+** [[Ryser's conjecture on circulant Hadamard matrices]]: no real circulant Hadamard matrix has order greater than 4.
+*** [[Barker code#Barker sequence conjecture|Barker sequence conjecture]]: no Barker sequence has length greater than 13; equivalently, none has even length greater than 4.<ref>{{cite journal |last1=Schmidt |first1=Kai-Uwe |last2=Willms |first2=Jürgen |title=Barker sequences of odd length |journal=Designs, Codes and Cryptography |volume=80 |issue=2 |pages=409–414 |year=2016 |doi=10.1007/s10623-015-0104-4}}</ref>
+* [[Hadamard's maximal determinant problem]]: what is the largest [[determinant]] of a matrix with entries all equal to 1 or −1?
+* [[Hilbert's fifteenth problem]]: put [[Schubert calculus]] on a rigorous foundation.
+* [[Hilbert's sixteenth problem]]: what are the possible configurations of the [[Connected space|connected components]] of [[Harnack's curve theorem|M-curves]]?
+* [[Homological conjectures in commutative algebra]]
+* [[Jacobson's conjecture]]: the intersection of all powers of the [[Jacobson radical]] of a left-and-right [[Noetherian ring]] is precisely 0.
+* [[Kaplansky's conjectures]]
+* [[Köthe conjecture]]: if a ring has no [[nil ideal]] other than <math>\{0\}</math>, then it has no nil [[Ideal (ring theory)|one-sided ideal]] other than <math>\{0\}</math>.
+* [[Monomial conjecture]] on [[Noetherian ring|Noetherian]] [[local ring]]s
+* Existence of [[perfect cuboid]]s and associated [[cuboid conjectures]]
+* [[Pierce–Birkhoff conjecture]]: every piecewise-polynomial <math>f:\mathbb{R}^{n}\rightarrow\mathbb{R}</math> is the maximum of a finite set of minimums of finite collections of polynomials.
+* [[Rota's basis conjecture]]: for matroids of rank <math>n</math> with <math>n</math> disjoint bases <math>B_{i}</math>, it is possible to create an <math>n \times n</math> matrix whose rows are <math>B_{i}</math> and whose columns are also bases.
+* [[Serre's conjecture II (algebra)|Serre's conjecture II]]: if <math>G</math> is a [[Simply connected space|simply connected]] [[semisimple algebraic group]] over a perfect [[Field (mathematics)|field]] of [[cohomological dimension]] at most <math>2</math>, then the [[Galois cohomology]] set <math>H^{1}(F, G)</math> is zero.
+* [[Serre's multiplicity conjectures|Serre's positivity conjecture]] that if <math>R</math> is a commutative [[regular local ring]], and <math>P, Q</math> are [[prime ideal]]s of <math>R</math>, then <math>\dim (R/P) + \dim (R/Q) = \dim (R)</math> implies <math>\chi(R/P, R/Q) > 0</math>.
+* [[Uniform boundedness conjecture for rational points]]: do [[algebraic curve]]s of [[Geometric genus|genus]] <math>g \geq 2</math> over [[Algebraic number field|number fields]] <math>K</math> have at most some bounded number <math>N(K, g)</math> of <math>K</math>-[[rational point]]s?
+* [[Wild problem]]s: problems involving classification of pairs of <math>n\times n</math> matrices under simultaneous conjugation.
+* [[Zariski–Lipman conjecture]]: for a [[complex algebraic variety]] <math>V</math> with [[coordinate ring]] <math>R</math>, if the [[Derivation (algebra)|derivations]] of <math>R</math> are a [[free module]] over <math>R</math>, then <math>V</math> is [[Smooth algebraic variety|smooth]].
+* Zauner's conjecture: do [[SIC-POVM]]s exist in all dimensions?
+
+==== Group theory ====
+{{Main|Group theory }}
+[[File:FreeBurnsideGroupExp3Gens2.png|thumb|The [[free Burnside group]] <math>B(2,3)</math> is finite; in its [[Cayley graph]], shown here, each of its 27 elements is represented by a vertex. The question of which other groups <math>B(m,n)</math> are finite remains open.]]
+* [[Andrews–Curtis conjecture]]: every balanced [[Presentation of a group|presentation]] of the [[trivial group]] can be transformed into a trivial presentation by a sequence of [[Nielsen transformation]]s on [[Presentation of a group#Definition|relators]] and conjugations of relators
+* [[Burnside problem#Bounded Burnside problem|Bounded Burnside problem]]: for which positive integers ''m'', ''n'' is the free Burnside group {{nowrap|B(''m'',''n'')}} finite? In particular, is {{nowrap|B(2, 5)}} finite?
+* Guralnick–Thompson conjecture on the composition factors of groups in genus-0 systems<ref>{{citation |last=Aschbacher |first=Michael |author-link=Michael Aschbacher |title=On Conjectures of Guralnick and Thompson |journal=[[Journal of Algebra]] |volume=135 |issue=2 |pages=277–343 |year=1990 |doi=10.1016/0021-8693(90)90292-V}}</ref>
+* [[Herzog–Schönheim conjecture]]: if a finite system of left [[coset]]s of subgroups of a group <math>G</math> form a partition of <math>G</math>, then the finite indices of said subgroups cannot be distinct.
+* The [[inverse Galois problem]]: is every finite group the Galois group of a Galois extension of the rationals?
+* [[Isomorphism problem of Coxeter groups]]
+* Are there an infinite number of [[Leinster group]]s?
+* Does [[Monstrous moonshine#Generalized moonshine|generalized moonshine]] exist?
+* Is every [[finitely presented group|finitely presented]] [[periodic group]] finite?
+* Is every group [[surjunctive group|surjunctive]]?
+* [[Problems in loop theory and quasigroup theory]] consider generalizations of groups
+
+==== Representation theory ====
+* [[Arthur's conjectures]]
+* [[Dade's conjecture]] relating the numbers of [[Character theory|characters]] of [[Modular representation theory#Blocks and the structure of the group algebra|blocks]] of a finite group to the numbers of characters of blocks of local [[subgroup]]s.
+* [[Demazure conjecture]] on [[Group representation|representations]] of [[algebraic group]]s over the integers.
+* [[Kazhdan–Lusztig polynomial#Kazhdan–Lusztig conjectures|Kazhdan–Lusztig conjectures]] relating the values of the [[Kazhdan–Lusztig polynomial]]s at 1 with [[Group representation|representations]] of complex [[Semisimple Lie algebra#Semisimple and reductive groups|semisimple Lie groups]] and [[Semisimple Lie algebra|Lie algebras]].
+* [[McKay conjecture]]: in a group <math>G</math>, the number of [[Character theory#Definitions|irreducible complex characters]] of degree not divisible by a [[prime number]] <math>p</math> is equal to the number of irreducible complex characters of the [[centralizer and normalizer|normalizer]] of any [[Sylow theorems|Sylow <math>p</math>-subgroup]] within <math>G</math>.
+
+=== Analysis ===
+{{Main|Mathematical analysis}}
+* The [[Brennan conjecture]]: estimating the integral powers of the moduli of the derivative of [[conformal map]]s into the open unit disk, on certain subsets of <math>\mathbb{C}</math>
+* [[Fuglede's conjecture]] on whether nonconvex sets in <math>\mathbb{R}</math> and <math>\mathbb{R}^{2}</math> are spectral if and only if they tile by [[Translation (geometry)|translation]].
+* [[Goodman's conjecture]] on the coefficients of [[multivalent function|multivalued function]]s
+* [[Invariant subspace problem]] – does every [[bounded operator]] on a complex [[Banach space]] send some non-trivial [[Closed set|closed]] subspace to itself?
+* Kung–Traub conjecture on the optimal order of a multipoint iteration without memory<ref>{{citation |last1=Kung |first1=H. T. |last2=Traub |first2=Joseph Frederick |author-link1=H. T. Kung |author-link2=Joseph F. Traub |title=Optimal order of one-point and multipoint iteration |journal=[[Journal of the ACM]] |year=1974 |volume=21 |number=4 |pages=643–651|doi=10.1145/321850.321860 |s2cid=74921 }}</ref>
+* [[Lehmer's conjecture]] on the Mahler measure of non-cyclotomic polynomials<ref>{{citation | first=Chris | last=Smyth | chapter=The Mahler measure of algebraic numbers: a survey | pages=322–349 | editor1-first=James | editor1-last=McKee | editor2-last=Smyth | editor2-first=Chris | title=Number Theory and Polynomials | series=London Mathematical Society Lecture Note Series | volume=352 | publisher=[[Cambridge University Press]] | year=2008 | isbn=978-0-521-71467-9 }}</ref>
+* The [[mean value problem]]: given a [[complex number|complex]] [[polynomial]] <math>f</math> of [[Degree of a polynomial|degree]] <math>d \ge 2</math> and a complex number <math>z</math>, is there a [[critical point (mathematics)|critical point]] <math>c</math> of <math>f</math> such that <math>|f(z)-f(c)| \le |f'(z)||z-c|</math>?
+* The [[Pompeiu problem]] on the topology of domains for which some nonzero function has integrals that vanish over every congruent copy<ref>{{SpringerEOM|title=Pompeiu problem|id=Pompeiu_problem&oldid=14506|author-last1=Berenstein|author-first1=Carlos A.}}</ref>
+* [[Analytic capacity#Vitushkin's conjecture|Vitushkin's conjecture]] on compact subsets of <math>\mathbb{C}</math> with [[analytic capacity]] <math>0</math>
+* What is the exact value of [[Landau's constants]], including [[Bloch's theorem (complex variables)#Bloch's and Landau's constants|Bloch's constant]]?
+* Regularity of solutions of [[Euler equations (fluid dynamics)|Euler equations]]{{cn|date=September 2026}}
+* Convergence of [https://mathworld.wolfram.com/FlintHillsSeries.html Flint Hills series]
+* Regularity of solutions of [[Vlasov–Maxwell equations]]
+* Are there infinitely many [[Lehmer pair]]s?<ref>{{citation
+ | last1 = Csordas | first1 = George
+ | last2 = Smith | first2 = Wayne
+ | last3 = Varga | first3 = Richard S. | author3-link = Richard S. Varga
+ | doi = 10.1007/BF01205170
+ | issue = 1
+ | journal = [[Constructive Approximation]]
+ | mr = 1260363
+ | pages = 107–129
+ | title = Lehmer pairs of zeros, the de Bruijn-Newman constant Λ, and the Riemann hypothesis
+ | volume = 10
+ | year = 1994| s2cid = 122664556
+ }}</ref>
+
+=== Combinatorics ===
+{{Main|Combinatorics}}
+* The [[1/3–2/3 conjecture]] – does every finite [[partially ordered set]] that is not [[totally ordered]] contain two elements ''x'' and ''y'' such that the probability that ''x'' appears before ''y'' in a random [[linear extension]] is between 1/3 and 2/3?<ref>{{citation
+ | last1 = Brightwell | first1 = Graham R.
+ | last2 = Felsner | first2 = Stefan
+ | last3 = Trotter | first3 = William T.
+ | doi = 10.1007/BF01110378
+ | mr = 1368815
+ | issue = 4
+ | journal = [[Order (journal)|Order]]
+ | pages = 327–349
+ | title = Balancing pairs and the cross product conjecture
+ | volume = 12
+ | year = 1995
+ | s2cid = 14793475
+ }}.</ref>
+* The [[Dittert conjecture]] concerning the maximum achieved by a particular function of matrices with real, nonnegative entries satisfying a summation condition
+* [[Problems in Latin squares]] – open questions concerning [[Latin squares]]
+* The [[lonely runner conjecture]] – if <math>k</math> runners with pairwise distinct speeds run round a track of unit length, will every runner be "lonely" (that is, be at least a distance <math>1/k</math> from each other runner) at some time?<ref>{{cite journal
+| last=Tao | first=Terence | author-link=Terence Tao
+| title=Some remarks on the lonely runner conjecture
+| journal=Contributions to Discrete Mathematics
+| volume=13
+| issue=2
+| pages=1–31
+| date=2018
+| arxiv=1701.02048
+| doi=10.11575/cdm.v13i2.62728 | doi-access=free}}</ref>
+* [[Superpermutation]]s - smallest possible string of n digits that contains all possible permutations of n
+* [[Map folding]] – various problems in map folding and stamp folding.
+* [[No-three-in-line problem]] – how many points can be placed in the <math>n \times n</math> grid so that no three of them lie on a line?
+* [[Rudin's conjecture]] on the number of squares in finite [[arithmetic progression]]s<ref>{{cite journal|journal=LMS Journal of Computation and Mathematics|volume=17|issue=1|year=2014|pages=58–76|title=On a conjecture of Rudin on squares in arithmetic progressions|author=González-Jiménez, Enrique|author2=Xarles, Xavier|doi=10.1112/S1461157013000259|arxiv=1301.5122|s2cid=11615385 }}</ref>
+* The [[sunflower (mathematics)|sunflower conjecture]] – can the number of <math>k</math> size sets required for the existence of a sunflower of <math>r</math> sets be bounded by an exponential function in <math>k</math> for every fixed <math>r>2</math>?
+* Frankl's [[union-closed sets conjecture]] – for any family of sets closed under sums there exists an element (of the underlying space) belonging to half or more of the sets<ref>{{citation
+ | last1 = Bruhn
+ | first1 = Henning
+ | last2 = Schaudt
+ | first2 = Oliver
+ | doi = 10.1007/s00373-014-1515-0
+ | issue = 6
+ | journal = Graphs and Combinatorics
+ | mr = 3417215
+ | pages = 2043–2074
+ | title = The journey of the union-closed sets conjecture
+ | url = http://www.zaik.uni-koeln.de/~schaudt/UCSurvey.pdf
+ | volume = 31
+ | year = 2015
+ | arxiv = 1309.3297
+ | s2cid = 17531822
+ | access-date = 2017-07-18
+ | archive-url = https://web.archive.org/web/20170808104232/http://www.zaik.uni-koeln.de/~schaudt/UCSurvey.pdf
+ | archive-date = 2017-08-08
+ | url-status = live
+ }}</ref>
+
+* Give a combinatorial interpretation of the [[Kronecker coefficient]]s<ref>{{citation
+ | last = Murnaghan | first = F. D.
+ | doi = 10.2307/2371542
+ | issue = 1
+ | journal = [[American Journal of Mathematics]]
+ | mr = 1507301
+ | pages = 44–65
+ | title = The Analysis of the Direct Product of Irreducible Representations of the Symmetric Groups
+ | volume = 60
+ | year = 1938| pmc = 1076971
+ | pmid=16577800
+ | jstor = 2371542
+ }}</ref>
+* The size <math>m(n)</math> of the smallest collection of <math>n</math>-uniform sets without [[Property B]] for <math>n \ge 5</math>
+* The values of the [[Dedekind number]]s <math>M(n)</math> for <math>n \ge 10</math><ref>{{Cite web |url=http://www.sfu.ca/~tyusun/ThesisDedekind.pdf |title=Dedekind Numbers and Related Sequences |access-date=2020-04-30 |archive-date=2015-03-15 |archive-url=https://web.archive.org/web/20150315021125/http://www.sfu.ca/~tyusun/ThesisDedekind.pdf }}</ref>
+* The values of the [[Ramsey numbers]] (particularly <math>R(5, 5)</math>) as well as asymptotic growth (e.g. of <math>R(n,n)</math>)
+* The values of the [[Van der Waerden number]]s
+* Finding a function to model n-step [[self-avoiding walk]]s<ref>{{Cite journal|last1=Liśkiewicz|first1=Maciej|last2=Ogihara|first2=Mitsunori|last3=Toda|first3=Seinosuke|date=2003-07-28|title=The complexity of counting self-avoiding walks in subgraphs of two-dimensional grids and hypercubes|journal=Theoretical Computer Science|volume=304|issue=1|pages=129–156|doi=10.1016/S0304-3975(03)00080-X|s2cid=33806100 }}</ref>
+
+=== Dynamical systems ===
+{{Main|Dynamical system}}
+[[File:Mandel zoom 07 satellite.jpg|thumb|A detail of the [[Mandelbrot set]]. It is not known whether the Mandelbrot set is [[locally connected space|locally connected]] or not.]]
+* [[Arnold–Givental conjecture]] and [[Symplectomorphism#Arnold conjecture|Arnold conjecture]] – relating symplectic geometry to Morse theory.
+* [[Quantum chaos#Berry–Tabor conjecture|Berry–Tabor conjecture]] in [[quantum chaos]]
+* [[Stefan Banach|Banach's]] problem – is there an [[Measure-preserving dynamical system|ergodic system]] with simple Lebesgue spectrum?<ref>S. M. Ulam, Problems in Modern Mathematics. Science Editions John Wiley & Sons, Inc., New York, 1964, page 76.</ref>
+* [[George David Birkhoff|Birkhoff]] conjecture – if a [[dynamical billiards|billiard table]] is strictly convex and integrable, is its boundary necessarily an ellipse?<ref>{{cite journal |last1=Kaloshin |first1=Vadim |author-link1=Vadim Kaloshin |last2=Sorrentino |first2=Alfonso |title=On the local Birkhoff conjecture for convex billiards |doi=10.4007/annals.2018.188.1.6 |volume=188 |number=1 |year=2018 |pages=315–380 |journal=[[Annals of Mathematics]]|arxiv=1612.09194 |s2cid=119171182 }}</ref>
+* [[Collatz conjecture]] (also known as the <math>3n + 1</math> conjecture)
+* [[Eden's conjecture]] that the [[Infimum and supremum|supremum]] of the local [[Lyapunov dimension]]s on the global [[attractor]] is achieved on a stationary point or an unstable periodic orbit embedded into the attractor.
+* [[Fatou conjecture]] that a quadratic family of maps from the [[complex plane]] to itself is hyperbolic for an open dense set of parameters.
+* [[Hillel Furstenberg|Furstenberg]] conjecture – is every invariant and [[ergodicity|ergodic]] measure for the <math>\times 2,\times 3</math> action on the circle either Lebesgue or atomic?
+* [[Kaplan–Yorke conjecture]] on the dimension of an [[attractor]] in terms of its [[Lyapunov exponent]]s
+* [[Grigory Margulis|Margulis]] conjecture – measure classification for diagonalizable actions in higher-rank groups.
+* [[Hilbert–Arnold problem]] – is there a [[uniformly bounded|uniform bound]] on [[limit cycles]] in generic finite-parameter families of [[vector fields]] on a sphere?
+* [[MLC conjecture]] – is the Mandelbrot set locally connected?
+* Many problems concerning an [[Outer billiard#open problems|outer billiard]], for example showing that outer billiards relative to almost every convex polygon have unbounded orbits.
+* Quantum unique ergodicity conjecture on the distribution of large-frequency [[eigenfunction]]s of the [[Laplace operator|Laplacian]] on a [[curvature|negatively-curved]] [[manifold]]<ref>{{citation |last=Sarnak |first=Peter |author-link=Peter Sarnak |title=Recent progress on the quantum unique ergodicity conjecture |journal=[[Bulletin of the American Mathematical Society]] |volume=48 |issue=2 |year=2011 |pages=211–228 |doi=10.1090/S0273-0979-2011-01323-4 |mr=2774090|doi-access=free }}</ref>
+* [[Vladimir Abramovich Rokhlin|Rokhlin's]] multiple mixing problem – are all [[Mixing (mathematics)|strongly mixing]] systems also strongly 3-mixing?<ref>Paul Halmos, Ergodic theory. Chelsea, New York, 1956.</ref>
+* [[Triangular billiards]] – does every triangle have a periodic billiards path?<ref>{{citation
+ | last = Bowman | first = Joshua
+ | doi = 10.4169/mathhorizons.22.3.18
+ | issue = 3
+ | journal = Math Horizons
+ | jstor = 10.4169/mathhorizons.22.3.18
+ | mr = 3313808
+ | pages = 18–22
+ | title = The way the billiard ball bounces
+ | volume = 22
+ | year = 2015}}</ref>
+* [[Weinstein conjecture]] – does a regular compact [[contact type]] [[level set]] of a [[Hamiltonian function|Hamiltonian]] on a [[symplectic manifold]] carry at least one periodic orbit of the Hamiltonian flow?
+* Does every positive integer generate a [[juggler sequence]] terminating at 1?
+* [[Lyapunov function|Lyapunov function: Lyapunov's second method for stability]] – For what classes of [[Ordinary differential equation|ODEs]], describing dynamical systems, does Lyapunov's second method, formulated in the classical and canonically generalized forms, define the necessary and sufficient conditions for the (asymptotical) stability of motion?
+* Is every [[reversible cellular automaton]] in three or more dimensions locally reversible?<ref>{{cite conference |last=Kari |first=Jarkko |author-link=Jarkko Kari |year=2009 |title=Structure of Reversible Cellular Automata |conference=International Conference on Unconventional Computation |series=[[Lecture Notes in Computer Science]] |publisher=Springer |volume=5715 |page=6 |bibcode=2009LNCS.5715....6K |doi=10.1007/978-3-642-03745-0_5 |isbn=978-3-642-03744-3 |doi-access=free |contribution=Structure of reversible cellular automata}}</ref>
+
+=== Games and puzzles ===
+{{Main|Game theory}}
+
+====Combinatorial games====
+{{Main|Combinatorial game theory}}
+* [[Sudoku]]:
+** How many puzzles have exactly one solution?<ref name="openq"/>
+** How many puzzles with exactly one solution are [[Glossary of Sudoku#Other terminology|minimal]]?<ref name="openq"/>
+** What is the [[Mathematics of Sudoku#Maximum number of givens|maximum number of givens]] for a [[Glossary of Sudoku#Other terminology|minimal]] puzzle?<ref name="openq">{{Cite web |title=Open Q – Solving and rating of hard Sudoku |url=http://english.log-it-ex.com/2.html |archive-url=https://web.archive.org/web/20171110030932/http://english.log-it-ex.com/2.html |archive-date=10 November 2017 |website=english.log-it-ex.com}}</ref>
+* [[Tic-tac-toe variants]]:
+** Given the width of a tic-tac-toe board, what is the smallest dimension such that X is guaranteed to have a winning strategy? (See also [[Hales–Jewett theorem]] and [[Nd game|''n''<sup>''d''</sup> game]])<ref>{{cite web |url=https://www.youtube.com/watch?v=FwJZa-helig |title=Higher-Dimensional Tic-Tac-Toe |website=[[PBS Digital Studios|PBS Infinite Series]] |publisher=[[YouTube]] |date=2017-09-21 |access-date=2018-07-29 |archive-url=https://web.archive.org/web/20171011000653/https://www.youtube.com/watch?v=FwJZa-helig |archive-date=2017-10-11 |url-status=live }}</ref>
+* [[Chess]]:
+** What is the outcome of a perfectly played game of chess? (See also [[first-move advantage in chess]])
+* [[Go (game)|Go]]:
+** What is the perfect value of [[Komi (Go)|Komi]]?
+* [[Set (card game)|Set]]:
+** What is the largest possible [[cap set]], as a function of <math>n</math> in the <math>n</math>-dimensional [[affine space]] over the [[finite field|three-element field]]?<ref name="austin">{{citation|url=https://www.ams.org/samplings/feature-column/fc-2016-08|title=Game. SET. Polynomial.|work=Feature column|publisher=[[American Mathematical Society]]|first=David|last=Austin|date=August 2016}}.</ref>
+* Are the nim-sequences of all finite [[octal game]]s eventually periodic?
+* Is the nim-sequence of [[Grundy's game]] eventually periodic?
+
+====Games with imperfect information====
+* [[Rendezvous problem]]
+
+=== Geometry ===
+{{Main|Geometry}}
+
+==== Algebraic geometry ====
+{{Main|Algebraic geometry}}
+* [[Abundance conjecture]]: if the [[canonical bundle]] of a [[projective variety]] with [[Canonical singularity#Pairs|Kawamata log terminal singularities]] is [[Nef line bundle|nef]], then it is semiample.
+* [[Bass conjecture]] on the [[Finitely generated group|finite generation]] of certain [[Algebraic K-theory|algebraic K-groups]].
+* [[Bass–Quillen conjecture]] relating [[vector bundle]]s over a [[Regular local ring#Regular ring|regular]] [[Noetherian ring]] and over the [[polynomial ring]] <math>A[t_{1}, \ldots, t_{n}]</math>.
+* [[Deligne conjecture]]: any one of numerous named for [[Pierre Deligne]].
+** [[Deligne's conjecture on Hochschild cohomology]] about the [[operad]]ic structure on [[Hochschild homology|Hochschild cochain complex]].
+* [[Dixmier conjecture]]: any [[endomorphism]] of the [[Weyl algebra]]s <math>A_{1}</math> and <math>A_{2}</math> is an [[automorphism]].
+* [[Fröberg conjecture]] on the [[Hilbert series and Hilbert polynomial|Hilbert functions]] of a set of forms.
+* [[Fujita conjecture]] regarding the line bundle <math>K_{M} \otimes L^{\otimes m}</math> constructed from a [[Positive form#Positive line bundles|positive]] [[Holomorphic vector bundle|holomorphic line bundle]] <math>L</math> on a [[Compact space|compact]] [[complex manifold]] <math>M</math> and the [[Canonical bundle|canonical line bundle]] <math>K_{M}</math> of <math>M</math>
+* [[General elephant|General elephant problem]]: do [[general elephant]]s have at most [[du Val singularity|Du Val singularities]]?
+* Hartshorne's conjectures<ref>{{cite journal|title=On two conjectures of Hartshorne's |last1=Barlet |first1=Daniel |last2=Peternell |first2=Thomas |last3=Schneider |first3=Michael |doi=10.1007/BF01453563 |journal=[[Mathematische Annalen]] |year=1990 |volume=286 |issue=1–3 |pages=13–25|s2cid=122151259 }}</ref>
+* In [[Spherical geometry|spherical]] or [[hyperbolic geometry]], must polyhedra with the same volume and [[Dehn invariant]] be [[scissors-congruent]]?<ref>{{citation
+ |last        = Dupont
+ |first       = Johan L.
+ |doi         = 10.1142/9789812810335
+ |isbn        = 978-981-02-4507-8
+ |mr          = 1832859
+ |page        = 6
+ |publisher   = World Scientific Publishing Co., Inc., River Edge, NJ
+ |series      = Nankai Tracts in Mathematics
+ |title       = Scissors congruences, group homology and characteristic classes
+ |url         = http://home.math.au.dk/dupont/scissors.ps
+ |volume      = 1
+ |year        = 2001
+ |url-status     = dead
+ |archive-url  = https://web.archive.org/web/20160429152252/http://home.math.au.dk/dupont/scissors.ps
+ |archive-date = 2016-04-29
+}}.</ref>
+* [[Jacobian conjecture]] for two-dimensional spaces: if a two-dimensional [[polynomial mapping]] over a [[Characteristic (algebra)|characteristic]]-0 field has a constant nonzero [[Jacobian matrix and determinant|Jacobian determinant]], then does it have a [[Morphism of algebraic varieties|regular]] (i.e. with polynomial components) inverse function?
+* [[Maulik–Nekrasov–Okounkov–Pandharipande conjecture]] on an equivalence between [[Gromov–Witten invariant|Gromov–Witten theory]] and [[Donaldson–Thomas theory]]<ref>{{citation
+ |last1=Maulik |first1=Davesh
+ |last2=Nekrasov |first2=Nikita |author-link2=Nikita Nekrasov
+ |last3=Okounov |first3=Andrei |author-link3=Andrei Okounov
+ |last4=Pandharipande |first4=Rahul |author-link4=Rahul Pandharipande
+ |title=Gromov–Witten theory and Donaldson–Thomas theory, I
+ |arxiv=math/0312059
+ |date=2004-06-05|bibcode=2003math.....12059M
+ }}</ref>
+* [[Nagata's conjecture on curves]], specifically the minimal degree required for a [[Algebraic curve|plane algebraic curve]] to pass through a collection of very general points with prescribed [[Multiplicity (mathematics)|multiplicities]].
+* [[Nagata–Biran conjecture]] that if <math>X</math> is a smooth [[algebraic surface]] and <math>L</math> is an [[ample line bundle]] on <math>X</math> of degree <math>d</math>, then for sufficiently large <math>r</math>, the [[Seshadri constant]] satisfies <math>\varepsilon(p_1,\ldots,p_r;X,L) = d/\sqrt{r}</math>.
+* [[Nakai conjecture]]: if a [[complex algebraic variety]] has a ring of [[differential operator]]s generated by its contained [[Derivation (differential algebra)|derivations]], then it must be [[Singular point of an algebraic variety|smooth]].
+* [[Parshin's conjecture]]: the higher [[Algebraic K-theory|algebraic K-groups]] of any [[Smooth morphism|smooth]] [[projective variety]] defined over a [[finite field]] must vanish up to torsion.
+* [[Section conjecture]] on splittings of [[group homomorphism]]s from [[fundamental group]]s of complete [[Curve#Differential geometry|smooth curves]] over finitely-generated [[Field (mathematics)|fields]] <math>k</math> to the [[Galois group]] of <math>k</math>.
+* [[Standard conjectures]] on algebraic cycles
+* [[Tate conjecture]] on the connection between [[algebraic cycle]]s on [[Algebraic variety|algebraic varieties]] and [[Galois module|Galois representations]] on [[Étale cohomology|étale cohomology groups]].
+* [[Virasoro conjecture]]: a certain [[generating function]] encoding the [[Gromov–Witten invariant]]s of a [[Singular point of an algebraic variety|smooth]] [[projective variety]] is fixed by an action of half of the [[Virasoro algebra]].
+* Zariski multiplicity conjecture on the topological equisingularity and equimultiplicity of [[algebraic variety|varieties]] at [[singular point of an algebraic variety|singular points]]<ref>{{cite journal|last=Zariski |first=Oscar |author-link=Oscar Zariski |title=Some open questions in the theory of singularities |journal=[[Bulletin of the American Mathematical Society]] |volume=77 |issue=4 |year=1971 |pages=481–491 |doi=10.1090/S0002-9904-1971-12729-5 |mr=0277533|doi-access=free }}</ref>
+* Are infinite sequences of [[Flip (algebraic geometry)|flips]] possible in dimensions greater than 3?
+* [[Resolution of singularities]] in characteristic <math>p</math>
+
+====Covering and packing====
+* [[Borsuk's conjecture|Borsuk's problem]] on upper and lower bounds for the number of smaller-diameter subsets needed to cover a [[bounded set|bounded]] ''n''-dimensional set.
+* The [[covering problem of Rado]]: if the union of finitely many axis-parallel squares has unit area, how small can the largest area covered by a disjoint subset of squares be?<ref>{{citation|last1=Bereg|first1=Sergey|last2=Dumitrescu|first2=Adrian|last3=Jiang|first3=Minghui|doi=10.1007/s00453-009-9298-z|issue=3|journal=Algorithmica|mr=2609053|pages=538–561|title=On covering problems of Rado|volume=57|year=2010|s2cid=6511998}}</ref>
+* The [[Circle packing in an equilateral triangle|Erdős–Oler conjecture]]: when <math>n</math> is a [[triangular number]], packing <math>n-1</math> circles in an equilateral triangle requires a triangle of the same size as packing <math>n</math> circles.<ref>{{citation|last=Melissen|first=Hans|doi=10.2307/2324212|issue=10|journal=American Mathematical Monthly|mr=1252928|pages=916–925|title=Densest packings of congruent circles in an equilateral triangle|volume=100|year=1993|jstor=2324212}}</ref>
+* The [[disk covering problem]] about finding the smallest [[real number]]  <math>r(n)</math> such that <math>n</math> [[disk (mathematics)|disks]] of radius <math>r(n)</math> can be arranged in such a way as to cover the [[unit disk]].
+* The [[kissing number problem]] for dimensions other than 1, 2, 3, 4, 8 and 24<ref>{{citation |first=John H. |last=Conway |author-link=John Horton Conway |author2=Neil J.A. Sloane |author-link2=Neil Sloane |year=1999 |title=Sphere Packings, Lattices and Groups |title-link=Sphere Packings, Lattices and Groups |edition=3rd |publisher=Springer-Verlag |location=New York |isbn=978-0-387-98585-5|pages=[https://books.google.com/books?id=upYwZ6cQumoC&pg=PA21 21–22]}}</ref>
+* [[Reinhardt's conjecture]]: the smoothed octagon has the lowest maximum packing density of all centrally-symmetric convex plane sets<ref>{{citation
+ | last = Hales | first = Thomas | author-link = Thomas Callister Hales
+ | arxiv = 1703.01352
+ | title = The Reinhardt conjecture as an optimal control problem
+ | year = 2017}}</ref>
+* [[Sphere packing]] problems, including the density of the densest packing in dimensions other than 1, 2, 3, 8 and 24, and its asymptotic behavior for high dimensions.
+* [[Square packing in a square]]: what is the asymptotic growth rate of wasted space?<ref>{{citation|last1=Brass|first1=Peter|last2=Moser|first2=William|last3=Pach|first3=János|author3-link=János Pach|isbn=978-0387-23815-9|mr=2163782|page=45|publisher=Springer|location=New York|title=Research Problems in Discrete Geometry|url=https://books.google.com/books?id=WehCspo0Qa0C&pg=PA45|year=2005}}</ref>
+* [[Ulam's packing conjecture]] about the identity of the worst-packing convex solid<ref>{{citation |last=Gardner |first=Martin |date=1995 |title=New Mathematical Diversions (Revised Edition) |location=Washington |publisher=Mathematical Association of America |page=251 }}</ref>
+* The [[Tammes problem]] for numbers of nodes greater than 14 (except 24).<ref>{{cite journal |last1=Musin |first1=Oleg R. |last2=Tarasov |first2=Alexey S. |title=The Tammes Problem for N = 14 |journal=Experimental Mathematics |date=2015 |volume=24 |issue=4 |pages=460–468 |doi=10.1080/10586458.2015.1022842|s2cid=39429109 }}</ref>
+
+==== Differential geometry ====
+{{Main|Differential geometry}}
+* For which dimensions of sphere [[generalized Poincaré conjecture|differential Poincaré conjecture]] is true?
+* The [[spherical Bernstein's problem]], a generalization of [[Bernstein's problem]]
+* [[Carathéodory conjecture]]: any convex, closed, and twice-differentiable surface in three-dimensional [[Euclidean space]] admits at least two [[umbilical point]]s.
+* [[Cartan–Hadamard conjecture]]: can the classical [[isoperimetric inequality]] for subsets of Euclidean space be extended to spaces of nonpositive curvature, known as [[Hadamard manifold|Cartan–Hadamard manifolds]]?
+* [[Chern's conjecture (affine geometry)]] that the [[Euler characteristic]] of a [[Closed manifold|compact]] [[affine manifold]] vanishes.
+* [[Chern's conjecture for hypersurfaces in spheres]], a number of closely related conjectures.
+* Closed curve problem: find (explicit) necessary and sufficient conditions that determine when, given two periodic functions with the same period, the integral curve is closed.<ref>{{citation
+ | last = Barros | first = Manuel
+ | jstor = 2162098
+ | journal = [[Proceedings of the American Mathematical Society]]
+ | pages = 1503–1509
+ | title = General Helices and a Theorem of Lancret
+ | volume = 125
+ | issue = 5
+ | year = 1997| doi = 10.1090/S0002-9939-97-03692-7
+ | doi-access = free
+ }}</ref>
+* The [[filling area conjecture]], that a hemisphere has the minimum area among shortcut-free surfaces in Euclidean space whose boundary forms a closed curve of given length<ref>{{citation
+ | last = Katz | first = Mikhail G.
+ | doi = 10.1090/surv/137
+ | isbn = 978-0-8218-4177-8
+ | mr = 2292367
+ | page = 57
+ | publisher = American Mathematical Society, Providence, RI
+ | series = Mathematical Surveys and Monographs
+ | title = Systolic geometry and topology
+ | url = https://books.google.com/books?id=R5_zBwAAQBAJ&pg=PA57
+ | volume = 137
+ | year = 2007}}</ref>
+* The [[Hopf conjecture]]s relating the curvature and Euler characteristic of higher-dimensional Riemannian manifolds<ref>{{citation
+ | last = Rosenberg | first = Steven
+ | doi = 10.1017/CBO9780511623783
+ | isbn = 978-0-521-46300-3
+ | location = Cambridge
+ | mr = 1462892
+ | pages = 62–63
+ | publisher = Cambridge University Press
+ | series = London Mathematical Society Student Texts
+ | title = The Laplacian on a Riemannian Manifold: An introduction to analysis on manifolds
+ | url = https://books.google.com/books?id=gzJ6Vn0y7XQC&pg=PA62
+ | volume = 31
+ | year = 1997}}</ref>
+* [[Osserman conjecture]]: that every [[Osserman manifold]] is either [[flat manifold|flat]] or locally [[Isometry|isometric]] to a rank-one [[symmetric space]]<ref>{{citation | last = Nikolayevsky | first = Y. | journal = Differential Geometry and Its Applications | title = Two theorems on Osserman manifolds | volume = 18 | pages = 239–253 | year = 2003 | issue = 3 | doi = 10.1016/S0926-2245(02)00160-2}}</ref>
+* [[Yau's conjecture on the first eigenvalue]] that the first [[Eigenvalues and eigenvectors|eigenvalue]] for the [[Laplace–Beltrami operator]] on an embedded [[Minimal surface|minimal hypersurface]] of <math>S^{n+1}</math> is <math>n</math>.
+
+==== Discrete geometry ====
+{{Main|Discrete geometry }}
+[[File:Kissing-3d.png|thumb|In three dimensions, the [[kissing number problem|kissing number]] is 12, because 12 non-overlapping unit spheres can be put into contact with a central unit sphere. (Here, the centers of outer spheres form the vertices of a [[regular icosahedron]].) Kissing numbers are only known exactly in dimensions 1, 2, 3, 4, 8 and 24.]]
+* The [[big-line-big-clique conjecture]] on the existence of either many collinear points or many mutually visible points in large planar point sets<ref>{{citation
+ | last1 = Ghosh | first1 = Subir Kumar
+ | last2 = Goswami | first2 = Partha P.
+ | arxiv = 1012.5187
+ | doi = 10.1145/2543581.2543589
+ | issue = 2
+ | journal = ACM Computing Surveys
+ | pages = 22:1–22:29
+ | title = Unsolved problems in visibility graphs of points, segments, and polygons
+ | volume = 46
+ | year = 2013| s2cid = 8747335
+ }}</ref>
+* The [[Sylvester–Gallai theorem#The number of ordinary lines|Dirac–Motzkin conjecture]] on the minimum number of ordinary lines for ''n'' points in the Euclidean plane<ref>{{Citation |last1=Brass|first1=Peter|last2=Moser|first2=William|last3=Pach|first3=János|authorlink3=János Pach|title=Research problems in discrete geometry |publisher=Springer |location=Berlin |year=2005 |isbn=0-387-23815-8}}</ref>
+* The [[Hadwiger conjecture (combinatorial geometry)|Hadwiger conjecture]] on covering ''n''-dimensional convex bodies with at most 2<sup>''n''</sup> smaller copies<ref>{{citation|title=Results and Problems in Combinatorial Geometry|first1=V.|last1=Boltjansky|first2=I.|last2=Gohberg|publisher=Cambridge University Press|year=1985|contribution=11. Hadwiger's Conjecture|pages=44–46}}.</ref>
+* Solving the [[happy ending problem]] for arbitrary <math>n</math><ref>{{citation
+ | last1 = Morris | first1 = Walter D.
+ | last2 = Soltan | first2 = Valeriu
+ | doi = 10.1090/S0273-0979-00-00877-6
+ | issue = 4
+ | journal = Bull. Amer. Math. Soc.
+ | mr = 1779413
+ | pages = 437–458
+ | title = The Erdős-Szekeres problem on points in convex position—a survey
+ | volume = 37
+ | year = 2000| doi-access = free
+ }}; {{citation
+ | last = Suk | first = Andrew
+ | arxiv = 1604.08657
+ | doi = 10.1090/jams/869
+ | journal = J. Amer. Math. Soc.
+ | title = On the Erdős–Szekeres convex polygon problem
+ | year = 2016
+ | volume=30
+ | issue = 4
+ | pages=1047–1053| s2cid = 15732134
+ }}</ref>
+*Improving lower and upper bounds for the [[Heilbronn triangle problem]].
+* [[Kalai's 3^d conjecture|Kalai's 3<sup>''d''</sup> conjecture]] on the least possible number of faces of [[point symmetry|centrally symmetric]] [[polytopes]].<ref name="kalai">{{citation
+ | last = Kalai | first = Gil | author-link = Gil Kalai
+ | doi = 10.1007/BF01788696
+ | issue = 1
+ | journal = [[Graphs and Combinatorics]]
+ | mr = 1554357
+ | pages = 389–391
+ | title = The number of faces of centrally-symmetric polytopes
+ | volume = 5
+ | year = 1989| s2cid = 8917264 }}.</ref>
+* The [[Kobon triangle problem]] on triangles in line arrangements<ref>{{cite journal
+ | last1 = Moreno | first1 = José Pedro
+ | last2 = Prieto-Martínez | first2 = Luis Felipe
+ | hdl = 10486/705416
+ | issue = 1
+ | journal = La Gaceta de la Real Sociedad Matemática Española
+ | language = es
+ | mr = 4225268
+ | pages = 111–130
+ | title = El problema de los triángulos de Kobon
+ | trans-title = The Kobon triangles problem
+ | volume = 24
+ | year = 2021}}</ref>
+* The [[Kusner conjecture]]: at most <math>2d</math> points can be equidistant in <math>L^1</math> spaces<ref>{{citation
+ | last = Guy | first = Richard K. | author-link = Richard K. Guy
+ | issue = 3
+ | journal = [[American Mathematical Monthly]]
+ | mr = 1540158
+ | pages = 196–200
+ | title = An olla-podrida of open problems, often oddly posed
+ | jstor = 2975549
+ | volume = 90
+ | year = 1983
+ | doi = 10.2307/2975549 }}</ref>
+* The [[McMullen problem]] on projectively transforming sets of points into [[convex position]]<ref>{{citation
+ | last = Matoušek | first = Jiří | author-link = Jiří Matoušek (mathematician)
+ | doi = 10.1007/978-1-4613-0039-7
+ | isbn = 978-0-387-95373-1
+ | mr = 1899299
+ | page = 206
+ | publisher = Springer-Verlag, New York
+ | series = Graduate Texts in Mathematics
+ | title = Lectures on discrete geometry
+ | volume = 212
+ | year = 2002}}</ref>
+*[[Opaque forest problem]] on finding [[opaque set]]s for various planar shapes
+* [[Orchard-planting problem]] on the maximum number of 3-point lines attainable by a configuration of ''n'' points in the plane<ref>{{citation|title=The Orchard problem|last1=Burr|first1=S. A.|authorlink1=Stefan Burr|last2=Grünbaum|first2=B.|authorlink2=Branko Grünbaum|last3=Sloane|first3=N. J. A.|authorlink3=Neil Sloane|journal=[[Geometriae Dedicata]]|volume=2|issue=4|pages=397–424|year=1974|doi=10.1007/BF00147569|s2cid=120906839}}</ref>
+* [[Unit distance graph#Number of edges|How many unit distances]] can be determined by a set of {{mvar|n}} points in the Euclidean plane?<ref>{{citation
+ | last1 = Brass | first1 = Peter
+ | last2 = Moser | first2 = William
+ | last3 = Pach | first3 = János
+ | contribution = 5.1 The Maximum Number of Unit Distances in the Plane
+ | isbn = 978-0-387-23815-9
+ | mr = 2163782
+ | pages = 183–190
+ | publisher = Springer, New York
+ | title = Research problems in discrete geometry
+ | year = 2005}}</ref>
+* Finding matching upper and lower bounds for [[K-set (geometry)|''k''-sets]] and halving lines<ref>{{citation
+ | last = Dey | first = Tamal K. | author-link = Tamal Dey
+ | doi = 10.1007/PL00009354
+ | journal = [[Discrete & Computational Geometry]]
+ | mr = 1608878
+ | pages = 373–382
+ | title = Improved bounds for planar ''k''-sets and related problems
+ | volume = 19
+ | issue = 3
+ | year = 1998| doi-access = free
+ }}; {{citation
+ | last = Tóth | first = Gábor
+ | doi = 10.1007/s004540010022
+ | issue = 2
+ | journal = [[Discrete & Computational Geometry]]
+ | mr = 1843435
+ | pages = 187–194
+ | title = Point sets with many ''k''-sets
+ | volume = 26
+ | year = 2001| doi-access = free
+ }}.</ref>
+** For each arrangement of points in which the ''rectilinear [[crossing number (graph theory)|crossing number]]'' is minimized, is the number of halving lines maximized?<ref>{{cite journal
+| last1       = Aichholzer
+| first1      = Oswin
+| last2       = García
+| first2      = Jesús
+| last3       = Orden
+| first3      = David
+| last4       = Ramos
+| first4      = Pedro
+| title       = New Lower Bounds for the Number of (≤ k)-Edges and the Rectilinear Crossing Number of Kn
+| journal     = Discrete & Computational Geometry
+| volume      = 38
+| issue       = 1
+| pages       = 1–14
+| date        = 2007
+| doi         = 10.1007/s00454-007-1325-8
+| url         = https://link.springer.com/content/pdf/10.1007/s00454-007-1325-8.pdf
+| access-date = 22 July 2025
+}}</ref>
+* [[Tripod packing]]:<ref>{{citation|last1=Aronov|first1=Boris|author1-link=Boris Aronov|last2=Dujmović|first2=Vida|author2-link=Vida Dujmović|last3=Morin|first3=Pat|author3-link= Pat Morin |last4=Ooms|first4=Aurélien|last5=Schultz Xavier da Silveira |first5=Luís Fernando|issue=1|journal=[[Electronic Journal of Combinatorics]]|page=1.8|title=More Turán-type theorems for triangles in convex point sets |url=https://www.combinatorics.org/ojs/index.php/eljc/article/view/v26i1p8 |volume=26 |year=2019 |bibcode=2017arXiv170610193A |arxiv=1706.10193 |access-date=2019-02-18 |archive-url=https://web.archive.org/web/20190218082023/https://www.combinatorics.org/ojs/index.php/eljc/article/view/v26i1p8|archive-date=2019-02-18|url-status=live|doi-access=free|doi=10.37236/7224}}</ref> how many tripods can have their apexes packed into a given cube?
+
+====Euclidean geometry====
+{{Main|Euclidean geometry}}
+* The [[Atiyah conjecture on configurations]] on the invertibility of a certain <math>n</math>-by-<math>n</math> matrix depending on <math>n</math> points in <math>\mathbb{R}^{3}</math><ref>{{Citation | last1=Atiyah | first1=Michael | author1-link=Michael Atiyah | title=Configurations of points | doi=10.1098/rsta.2001.0840 | mr=1853626 | year=2001 | journal= Philosophical Transactions of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences| issn=1364-503X | volume=359 | issue=1784 | pages=1375–1387| bibcode=2001RSPTA.359.1375A | s2cid=55833332 }}</ref>
+* [[Bellman's lost-in-a-forest problem]] – find the shortest route that is guaranteed to reach the boundary of a given shape, starting at an unknown point of the shape with unknown orientation<ref>{{citation|author1-link=Steven R. Finch |last1=Finch |first1=S. R. |last2=Wetzel |first2=J. E. |title=Lost in a forest |volume=11 |issue=8 |year=2004 |journal=[[American Mathematical Monthly]] |pages=645–654 |mr=2091541 |doi=10.2307/4145038 |jstor=4145038}}</ref>
+* [[Borromean rings]] — are there three unknotted space curves, not all three circles, which cannot be arranged to form this link?<ref>{{citation
+ | last = Howards | first = Hugh Nelson
+ | arxiv = 1406.3370
+ | doi = 10.1142/S0218216513500831
+ | issue = 14
+ | journal = Journal of Knot Theory and Its Ramifications
+ | mr = 3190121
+ | pages = 1350083, 15
+ | title = Forming the Borromean rings out of arbitrary polygonal unknots
+ | volume = 22
+ | year = 2013| s2cid = 119674622
+ }}</ref>
+* [[Connelly’s blooming conjecture]]: Does every net of a convex polyhedron have a [[Blooming (geometry)|blooming]]?<ref>{{citation
+ | last1 = Miller | first1 = Ezra
+ | last2 = Pak | first2 = Igor | author2-link = Igor Pak
+ | doi = 10.1007/s00454-008-9052-3
+ | issue = 1–3
+ | journal = [[Discrete & Computational Geometry]]
+ | mr = 2383765
+ | pages = 339–388
+ | title = Metric combinatorics of convex polyhedra: Cut loci and nonoverlapping unfoldings
+ | volume = 39
+ | year = 2008| doi-access = free
+ }}. Announced in 2003.</ref>
+* Danzer's problem and Conway's dead fly problem – do [[Danzer set]]s of bounded density or bounded separation exist?<ref>{{citation |last1=Solomon |first1=Yaar |last2=Weiss |first2=Barak |arxiv=1406.3807 |doi=10.24033/asens.2303 |issue=5 |journal=Annales Scientifiques de l'École Normale Supérieure |mr=3581810 |pages=1053–1074 |title=Dense forests and Danzer sets |volume=49 |year=2016 |s2cid=672315}}; {{citation |last=Conway |first=John H. |author-link=John Horton Conway |publisher=[[On-Line Encyclopedia of Integer Sequences]] |title=Five $1,000 Problems (Update 2017) |url=https://oeis.org/A248380/a248380.pdf |archive-url=https://web.archive.org/web/20190213123825/https://oeis.org/A248380/a248380.pdf |archive-date=2019-02-13 |access-date=2019-02-12 |url-status=live}}</ref>
+* [[Dissection into orthoschemes]] – is it possible for [[simplex|simplices]] of every dimension?<ref>{{citation |last1=Brandts |first1=Jan |last2=Korotov |first2=Sergey |last3=Křížek |first3=Michal |last4=Šolc |first4=Jakub |doi=10.1137/060669073 |issue=2 |journal=SIAM Review |mr=2505583 |pages=317–335 |title=On nonobtuse simplicial partitions |volume=51 |year=2009 |url=https://pure.uva.nl/ws/files/836396/73198_315330.pdf |bibcode=2009SIAMR..51..317B |s2cid=216078793 |access-date=2018-11-22 |archive-date=2018-11-04 |archive-url=https://web.archive.org/web/20181104211116/https://pure.uva.nl/ws/files/836396/73198_315330.pdf |url-status=live}}. See in particular Conjecture 23, p. 327.</ref>
+* [[Ehrhart's volume conjecture]]: a convex body <math>K</math> in <math>n</math> dimensions containing a single lattice point in its interior as its [[center of mass]] cannot have volume greater than <math>(n+1)^{n}/n!</math>
+* [[Falconer's conjecture]]: sets of Hausdorff dimension greater than <math>d/2</math> in <math>\mathbb{R}^d</math> must have a distance set of nonzero [[Lebesgue measure]]<ref>{{citation |last1=Arutyunyants |first1=G. |last2=Iosevich |first2=A. |editor-last=Pach |editor-first=János |editor-link=János Pach |contribution=Falconer conjecture, spherical averages and discrete analogs |doi=10.1090/conm/342/06127 |mr=2065249 |pages=15–24 |publisher=Amer. Math. Soc., Providence, RI|series=Contemp. Math. |title=Towards a Theory of Geometric Graphs |volume=342 |year=2004 |isbn=978-0-8218-3484-8 |doi-access=free}}</ref>
+* The values of the [[Hermite constant]]s for dimensions other than 1–8 and 24
+* What is the lowest number of faces possible for a [[holyhedron]]?
+* [[Inscribed square problem]], also known as [[Toeplitz' conjecture]] and the square peg problem – does every [[Jordan curve]] have an inscribed square?<ref name="matschke">{{citation|last=Matschke|first=Benjamin|date=2014|title=A survey on the square peg problem|journal=[[Notices of the American Mathematical Society]]|volume=61|issue=4|pages=346–352|doi=10.1090/noti1100|doi-access=free}}</ref>
+* The [[Kakeya conjecture]] –&nbsp;do <math>n</math>-dimensional sets that contain a unit line segment in every direction necessarily have [[Hausdorff dimension]] and [[Minkowski dimension]] equal to <math>n</math>?<ref>{{citation |last1=Katz |first1=Nets |author1-link=Nets Katz|last2=Tao|first2=Terence|author2-link=Terence Tao|title=Proceedings of the 6th International Conference on Harmonic Analysis and Partial Differential Equations (El Escorial, 2000) |doi=10.5565/PUBLMAT_Esco02_07|series=Publicacions Matemàtiques|mr=1964819 |pages=161–179 |contribution=Recent progress on the Kakeya conjecture |year=2002 |s2cid=77088 }}</ref>
+* The Kelvin problem on minimum-surface-area partitions of space into equal-volume cells, and the optimality of the [[Weaire–Phelan structure]] as a solution to the Kelvin problem<ref>{{citation |title=The Kelvin Problem |editor-first=Denis |editor-last=Weaire |editor-link=Denis Weaire |publisher=CRC Press |year=1997 |isbn=978-0-7484-0632-6 |page=1 |url=https://books.google.com/books?id=otokU4KQnXIC&pg=PA1}}</ref>
+* [[Lebesgue's universal covering problem]] on the minimum-area convex shape in the plane that can cover any shape of diameter one<ref>{{citation |last1=Brass |first1=Peter |last2=Moser |first2=William |last3=Pach |first3=János |location=New York |mr=2163782 |page=457 |publisher=Springer |title=Research problems in discrete geometry|url=https://books.google.com/books?id=cT7TB20y3A8C&pg=PA457 |year=2005 |isbn=978-0-387-29929-7}}</ref>
+* [[Mahler volume|Mahler's conjecture]] on the product of the volumes of a [[central symmetry|centrally symmetric]] [[convex body]] and its [[Polar set|polar]].<ref>{{Cite journal|last1=Mahler|first1=Kurt|title=Ein Minimalproblem für konvexe Polygone |journal=Mathematica (Zutphen) B|pages=118–127|year=1939}}</ref>
+* In [[Meissner body]]):
+:* Are the two Meissner tetrahedra the minimum-volume three-dimensional shapes of constant width?<ref>{{citation
+  | last1 = Kawohl | first1 = Bernd | last2 = Weber | first2 = Christof
+  | title = Meissner's Mysterious Bodies
+  | journal = [[Mathematical Intelligencer]]
+  | volume = 33
+  | issue = 3
+  | year = 2011
+  | pages = 94–101
+  | doi = 10.1007/s00283-011-9239-y
+  | s2cid = 120570093
+  | url = https://www.mi.uni-koeln.de/mi/Forschung/Kawohl/kawohl/pub100.pdf}}.</ref> 
+* [[Moser's worm problem]] – what is the smallest area of a shape that can cover every unit-length curve in the plane?<ref>{{citation |last1=Norwood |first1=Rick |last2=Poole |first2=George |last3=Laidacker |first3=Michael |doi=10.1007/BF02187832 |issue=2 |journal=[[Discrete & Computational Geometry]] |mr=1139077 |pages=153–162 |title=The worm problem of Leo Moser |volume=7 |year=1992 |doi-access=free}}</ref>
+* The [[moving sofa problem]] – what is the largest area of a shape that can be maneuvered through a unit-width L-shaped corridor?<ref>{{citation |last=Wagner |first=Neal R. |date=1976 |title=The Sofa Problem |journal=The American Mathematical Monthly |doi=10.2307/2977022 |jstor=2977022 |volume=83 |issue=3 |pages=188–189 |url=http://www.cs.utsa.edu/~wagner/pubs/corner/corner_final.pdf |access-date=2014-05-14 |archive-url=https://web.archive.org/web/20150420160001/http://www.cs.utsa.edu/~wagner/pubs/corner/corner_final.pdf |archive-date=2015-04-20 |url-status=live}}</ref>
+* In [[parallelohedron]]:
+** Can every spherical non-convex polyhedron that tiles space by translation have its faces grouped into patches with the same combinatorial structure as a parallelohedron?<ref>{{cite journal|last1=Senechal|first1=Marjorie|author1-link=Marjorie Senechal|last2=Galiulin|first2=R. V.|hdl=2099/1195|issue=10|journal=Structural Topology|language=en,fr|mr=768703|pages=5–22|title=An introduction to the theory of figures: the geometry of E. S. Fedorov|year=1984}}</ref>
+** Does every higher-dimensional tiling by translations of convex polytope tiles have an affine transformation taking it to a [[Voronoi diagram]]?<ref>{{cite journal|last1=Grünbaum|first1=Branko|author1-link=Branko Grünbaum|last2=Shephard|first2=G. C.|author2-link=Geoffrey Colin Shephard|doi=10.1090/S0273-0979-1980-14827-2|issue=3|journal=Bulletin of the American Mathematical Society|mr=585178|pages=951–973|series=New Series|title=Tilings with congruent tiles|volume=3|year=1980|doi-access=free}}</ref>
+* [[Ropelength]] problems:
+** Is there a general expression for the minimum ropelength of an arbitrary closed knot?
+** What constant <math>1.1 < a \leq 10.76</math> governs the lower bound of a closed knot <math>K</math>'s minimum ropelength <math>L(K) \geq a\operatorname{Cr}(K)^{3/4}</math>?
+** Is the upper bound of a closed knot's minimum ropelength linear to its crossing number?
+** Is there a general expression for how much the ends of a long rope of radius 1 get closer when a tight open knot is tied into it?
+* Does every convex polyhedron have [[Prince Rupert's cube#Generalizations|Rupert's property]]?<ref name=cyz>{{citation |first1=Ying |last1=Chai |first2=Liping |last2=Yuan |first3=Tudor |last3=Zamfirescu |title=Rupert Property of Archimedean Solids |journal=[[The American Mathematical Monthly]] |volume=125 |issue=6 |pages=497–504 |date=June–July 2018 |doi=10.1080/00029890.2018.1449505| s2cid=125508192}}</ref><ref name=styu>{{citation|title=An algorithmic approach to Rupert's problem |first1=Jakob |last1=Steininger |first2=Sergey |last2=Yurkevich| date=December 27, 2021 |arxiv=2112.13754}}</ref>{{efn|A counterexample has been announced, with a preprint made available on [[arXiv]].<ref>{{citation | title = A convex polyhedron without Rupert's property | year = 2025 | first1 = Jakob | last1 = Steininger | first2 = Sergey | last2 = Yurkevich | arxiv = 2508.18475}}</ref>}}
+* [[Shephard's conjecture|Shephard's problem (a.k.a. Dürer's conjecture)]] – does every [[convex polyhedron]] have a [[net (polyhedron)|net]], or simple edge-unfolding?<ref>{{citation |last1=Demaine |first1=Erik D. |author1-link=Erik Demaine |last2=O'Rourke |first2=Joseph |author2-link=Joseph O'Rourke (professor) |date=2007 |title=Geometric Folding Algorithms: Linkages, Origami, Polyhedra |title-link=Geometric Folding Algorithms |publisher=Cambridge University Press |contribution=Chapter 22. Edge Unfolding of Polyhedra |pages=306–338}}</ref><ref>{{Cite journal |last=Ghomi |first=Mohammad |date=2018-01-01 |title=Dürer's Unfolding Problem for Convex Polyhedra |journal=Notices of the American Mathematical Society |volume=65 |issue=1 |pages=25–27 |doi=10.1090/noti1609 |issn=0002-9920 |doi-access=free}}</ref>
+* Is there a non-convex polyhedron without self-intersections with [[Szilassi polyhedron|more than seven faces]], each of which shares exactly one edge with each other?
+* The [[Thomson problem]] – what is the minimum energy configuration of <math>n</math> mutually-repelling particles on a unit sphere?<ref>{{citation|last=Whyte|first=L. L.|doi=10.2307/2306764|journal=The American Mathematical Monthly|mr=0050303|pages=606–611|title=Unique arrangements of points on a sphere|volume=59|issue=9|year=1952|jstor=2306764}}</ref>
+* Convex [[uniform 5-polytope]]s – find and classify the complete set of these shapes<ref>{{citation |author=ACW |date=May 24, 2012 |title=Convex uniform 5-polytopes |url=http://www.openproblemgarden.org/op/convex_uniform_5_polytopes |work=Open Problem Garden |access-date=2016-10-04 |archive-url=https://web.archive.org/web/20161005164840/http://www.openproblemgarden.org/op/convex_uniform_5_polytopes |archive-date=October 5, 2016 |url-status=live}}.</ref>
+
+====Non-Euclidean geometry====
+{{Main|Non-Euclidean geometry}}
+* [[Hilbert's third problem#Further information|Hilbert's third problem]] for non-Euclidean geometries: in spherical or hyperbolic geometry, must polyhedra with the same volume and [[Dehn invariant]] be scissors-congruent?
+
+=== Graph theory ===
+{{Main|Graph theory}}
+
+==== Algebraic graph theory ====
+* [[Babai's problem]]: which groups are Babai invariant groups?
+* [[Brouwer's conjecture]] on upper bounds for sums of [[eigenvalues and eigenvectors|eigenvalues]] of [[Laplacian matrix|Laplacians]] of graphs in terms of their number of edges
+
+==== Games on graphs ====
+* [[Eternal dominating set#Open questions|γ–θ conjecture]]: Does there exist a graph <math>G</math> such that the [[dominating set|dominating number]], [[eternal dominating set|eternal domination number]], and [[clique cover|clique covering number]] satisfy <math>\gamma(G)=\gamma_\infty(G)<\theta(G)</math>?<ref>{{cite journal
+  |last1=Klostermeyer |first1=W.
+  |last2=Mynhardt |first2=C.
+  |year=2015
+  |title=Protecting a graph with mobile guards
+  |journal=Applicable Analysis and Discrete Mathematics
+  |volume=10 |pages=21
+  |arxiv=1407.5228
+  |doi=10.2298/aadm151109021k
+  }}</ref><ref>{{cite journal
+  |last1=MacGillivray |first1=Gary
+  |last2=Mynhardt |first2=C. M.
+  |last3=Virgile |first3=Virgélot
+  |year=2022
+  |title=Eternal domination and clique covering
+  |journal=Electronic Journal of Graph Theory and Applications
+  |volume=10 |issue=2
+  |pages=603–624
+  |doi=10.5614/ejgta.2022.10.2.19
+  |doi-access=free
+  }}</ref>
+* [[Graham's pebbling conjecture]] on the pebbling number of Cartesian products of graphs<ref>{{cite journal
+ | last = Pleanmani | first = Nopparat
+ | doi = 10.1142/s179383091950068x
+ | issue = 6
+ | journal = Discrete Mathematics, Algorithms and Applications
+ | mr = 4044549
+ | pages = 1950068, 7
+ | title = Graham's pebbling conjecture holds for the product of a graph and a sufficiently large complete bipartite graph
+ | volume = 11
+ | year = 2019| s2cid = 204207428
+ }}</ref>
+* Meyniel's conjecture that [[cop number]] is <math>O(\sqrt n)</math><ref>{{cite journal
+ | last1 = Baird | first1 = William
+ | last2 = Bonato | first2 = Anthony
+ | arxiv = 1308.3385
+ | doi = 10.4310/JOC.2012.v3.n2.a6
+ | issue = 2
+ | journal = Journal of Combinatorics
+ | mr = 2980752
+ | pages = 225–238
+ | title = Meyniel's conjecture on the cop number: a survey
+ | volume = 3
+ | year = 2012| s2cid = 18942362
+ }}</ref>
+* Suppose Alice has a winning strategy for the [[graph coloring game|vertex coloring game]] on a graph <math>G</math> with <math>k</math> colors. Does she have one for <math>k+1</math> colors?<ref name=zhu1999>{{cite journal
+| last         = Zhu
+| first        = Xuding
+| date         = 1999
+| title        = The Game Coloring Number of Planar Graphs
+| journal      = Journal of Combinatorial Theory, Series B
+| volume       = 75
+| issue        = 2
+| pages        =245–258
+| doi=10.1006/jctb.1998.1878
+| doi-access= free
+}}</ref>
+
+==== Graph coloring and labeling ====
+[[File:Erdős–Faber–Lovász conjecture.svg|thumb|An instance of the Erdős–Faber–Lovász conjecture: a graph formed from four cliques of four vertices each, any two of which intersect in a single vertex, can be four-colored.]]
+* The [[Graph factorization#1-factorization conjecture|1-factorization conjecture]] that if <math>n</math> is odd or even and <math>k \geq n, n - 1</math>, respectively, then a <math>k</math>-[[regular graph]] with <math>2n</math> vertices is [[Graph factorization#1-factorization|1-factorable]].
+** The [[Graph factorization#Perfect 1-factorization|perfect 1-factorization conjecture]] that every [[complete graph]] on an even number of vertices admits a [[Graph factorization#Perfect 1-factorization|perfect 1-factorization]].
+* [[Cereceda's conjecture]] on the diameter of the space of colorings of degenerate graphs<ref>{{citation
+ | last1 = Bousquet | first1 = Nicolas
+ | last2 = Bartier | first2 = Valentin
+ | editor1-last = Bender | editor1-first = Michael A.
+ | editor2-last = Svensson | editor2-first = Ola
+ | editor3-last = Herman | editor3-first = Grzegorz
+ | contribution = Linear Transformations Between Colorings in Chordal Graphs
+ | doi = 10.4230/LIPIcs.ESA.2019.24
+ | pages = 24:1–24:15
+ | publisher = Schloss Dagstuhl – Leibniz-Zentrum für Informatik
+ | series = LIPIcs
+ | title = 27th Annual European Symposium on Algorithms, ESA 2019, September 9-11, 2019, Munich/Garching, Germany
+ | volume = 144
+ | year = 2019| doi-access = free
+ | isbn = 978-3-95977-124-5
+ | s2cid = 195791634
+ }}</ref>
+* The [[Earth–Moon problem]]: what is the maximum chromatic number of biplanar graphs?<ref>{{citation
+ | last = Gethner | first = Ellen | author-link = Ellen Gethner
+ | editor1-last = Gera | editor1-first = Ralucca | editor1-link = Ralucca Gera
+ | editor2-last = Haynes | editor2-first = Teresa W. | editor2-link = Teresa W. Haynes
+ | editor3-last = Hedetniemi | editor3-first = Stephen T.
+ | contribution = To the Moon and beyond
+ | doi = 10.1007/978-3-319-97686-0_11
+ | mr = 3930641
+ | pages = 115–133
+ | publisher = Springer International Publishing
+ | series = Problem Books in Mathematics
+ | title = Graph Theory: Favorite Conjectures and Open Problems, II
+ | year = 2018| isbn = 978-3-319-97684-6 }}</ref>
+* The [[Erdős–Faber–Lovász conjecture]] on coloring unions of cliques<ref>{{citation
+ | last1 = Chung | first1 = Fan | author-link1 = Fan Chung
+ | last2 = Graham | first2 = Ron | author-link2 = Ronald Graham
+ | title = Erdős on Graphs: His Legacy of Unsolved Problems
+ | year = 1998
+ | publisher = A K Peters
+ | pages = 97–99}}.</ref>
+* The [[graceful labeling|graceful tree conjecture]] that every tree admits a graceful labeling
+** [[Graceful labeling|Rosa's conjecture]] that all [[Cactus graph#Triangular cactus|triangular cacti]] are graceful or nearly-graceful
+* The [[Gyárfás–Sumner conjecture]] on χ-boundedness of graphs with a forbidden induced tree<ref>{{citation
+ | last1 = Chudnovsky | first1 = Maria | author1-link = Maria Chudnovsky
+ | last2 = Seymour | first2 = Paul | author2-link = Paul Seymour (mathematician)
+ | doi = 10.1016/j.jctb.2013.11.002
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 3171779
+ | pages = 11–16
+ | series = Series B
+ | title = Extending the Gyárfás-Sumner conjecture
+ | volume = 105
+ | year = 2014| doi-access = free
+ }}</ref>
+* The [[Hadwiger conjecture (graph theory)|Hadwiger conjecture]] relating coloring to clique minors<ref>{{citation
+ | last = Toft | first = Bjarne
+ | journal = Congressus Numerantium
+ | mr = 1411244
+ | pages = 249–283
+ | title = A survey of Hadwiger's conjecture
+ | volume = 115
+ | year = 1996}}.</ref>
+* The [[Hadwiger–Nelson problem]] on the chromatic number of unit distance graphs<ref>{{citation
+ | last1 = Croft | first1 = Hallard T.
+ | last2 = Falconer | first2 = Kenneth J.
+ | last3 = Guy | first3 = Richard K. | author-link3 = Richard K. Guy
+ | title = Unsolved Problems in Geometry
+ | publisher = Springer-Verlag
+ | year = 1991}}, Problem G10.</ref>
+* [[Petersen graph#Petersen coloring conjecture|Jaeger's Petersen-coloring conjecture]]: every bridgeless cubic graph has a cycle-continuous mapping to the Petersen graph<ref>{{citation
+ | last1 = Hägglund
+ | first1 = Jonas
+ | last2 = Steffen
+ | first2 = Eckhard
+ | issue = 1
+ | journal = Ars Mathematica Contemporanea
+ | mr = 3047618
+ | pages = 161–173
+ | title = Petersen-colorings and some families of snarks
+ | url = http://amc-journal.eu/index.php/amc/article/viewFile/288/247
+ | volume = 7
+ | year = 2014
+ | doi = 10.26493/1855-3974.288.11a
+ | access-date = 2016-09-30
+ | archive-url = https://web.archive.org/web/20161003070647/http://amc-journal.eu/index.php/amc/article/viewFile/288/247
+ | archive-date = 2016-10-03
+ | url-status = live
+ | doi-access = free
+ }}.</ref>
+* The [[list coloring conjecture]]: for every graph, the list chromatic index equals the chromatic index<ref>{{citation |last1=Jensen |first1=Tommy R. |last2=Toft |first2=Bjarne |year=1995 |title=Graph Coloring Problems |location=New York |publisher=Wiley-Interscience |isbn=978-0-471-02865-9 |chapter=12.20 List-Edge-Chromatic Numbers |pages=201–202}}.</ref>
+* The [[Overfull graph#Overfull conjecture|overfull conjecture]] that a graph with maximum degree <math>\Delta(G) \geq n/3</math> is [[Vizing's theorem|class 2]] if and only if it has an [[Overfull graph|overfull subgraph]] <math>S</math> satisfying <math>\Delta(S) = \Delta(G)</math>.
+* The [[total coloring conjecture]] of Behzad and Vizing that the total chromatic number is at most two plus the maximum degree<ref>{{citation
+ | last1 = Molloy | first1 = Michael
+ | last2 = Reed | first2 = Bruce | author1-link = Bruce Reed (mathematician)
+ | doi = 10.1007/PL00009820
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | mr = 1656544
+ | pages = 241–280
+ | title = A bound on the total chromatic number
+ | volume = 18
+ | year = 1998
+ | hdl = 1807/9465
+ | s2cid = 9600550
+ }}.</ref>
+
+==== Graph drawing and embedding ====
+* The [[Albertson conjecture]]: the crossing number can be lower-bounded by the crossing number of a [[complete graph]] with the same [[chromatic number]]<ref>{{citation|first1=János|last1=Barát|first2=Géza|last2=Tóth|year=2010|title=Towards the Albertson Conjecture|arxiv=0909.0413|journal=Electronic Journal of Combinatorics|volume=17|issue=1|page=R73|bibcode=2009arXiv0909.0413B|doi-access=free|doi=10.37236/345}}.</ref>
+* [[Conway's thrackle conjecture]]<ref>{{citation |last1=Fulek |first1=Radoslav |last2=Pach |first2=János |author-link2=János Pach |title=A computational approach to Conway's thrackle conjecture|journal=[[Computational Geometry (journal)|Computational Geometry]] |volume=44 |year=2011|issue=6–7 |pages=345–355 |mr=2785903 |doi=10.1016/j.comgeo.2011.02.001|doi-access=free|arxiv=1002.3904 }}.</ref> that [[thrackle]]s cannot have more edges than vertices
+* The [[GNRS conjecture]] on whether minor-closed graph families have <math>\ell_1</math> embeddings with bounded distortion<ref>{{citation
+ | last1 = Gupta | first1 = Anupam
+ | last2 = Newman | first2 = Ilan
+ | last3 = Rabinovich | first3 = Yuri
+ | last4 = Sinclair | first4 = Alistair | author4-link = Alistair Sinclair
+ | doi = 10.1007/s00493-004-0015-x
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | mr = 2071334
+ | pages = 233–269
+ | title = Cuts, trees and <math>\ell_1</math>-embeddings of graphs
+ | volume = 24
+ | year = 2004
+ | s2cid = 46133408
+ }}</ref>
+* [[Harborth's conjecture]]: every planar graph can be drawn with integer edge lengths<ref>{{citation|title=Pearls in Graph Theory: A Comprehensive Introduction|title-link= Pearls in Graph Theory |series=Dover Books on Mathematics|last1=Hartsfield|first1=Nora|last2=Ringel|first2=Gerhard|author2-link=Gerhard Ringel|publisher=Courier Dover Publications|year=2013|isbn=978-0-486-31552-2|at=[https://books.google.com/books?id=VMjDAgAAQBAJ&pg=PA247 p. 247]|mr=2047103}}.</ref>
+* [[Negami's conjecture]] on projective-plane embeddings of graphs with planar covers<ref>{{citation | last = Hliněný | first = Petr | doi = 10.1007/s00373-010-0934-9 | issue = 4 | journal = [[Graphs and Combinatorics]] | mr = 2669457 | pages = 525–536 | title = 20 years of Negami's planar cover conjecture | url = http://www.fi.muni.cz/~hlineny/papers/plcover20-gc.pdf | volume = 26 | year = 2010 | s2cid = 121645 | access-date = 2016-10-04 | archive-url = https://web.archive.org/web/20160304030722/http://www.fi.muni.cz/~hlineny/papers/plcover20-gc.pdf | archive-date = 2016-03-04 | url-status = live }}.</ref>
+* The [[Greedy embedding#Planar graphs|strong Papadimitriou–Ratajczak conjecture]]: every polyhedral graph has a convex greedy embedding<ref>{{citation | last1 = Nöllenburg | first1 = Martin | last2 = Prutkin | first2 = Roman | last3 = Rutter | first3 = Ignaz | doi = 10.20382/jocg.v7i1a3 | issue = 1 | journal = [[Journal of Computational Geometry]] | mr = 3463906 | pages = 47–69 | title = On self-approaching and increasing-chord drawings of 3-connected planar graphs | volume = 7 | year = 2016| arxiv = 1409.0315 | s2cid = 1500695 }}</ref>
+* [[Turán's brick factory problem]] – Is there a drawing of any complete bipartite graph with fewer crossings than the number given by Zarankiewicz?<ref>{{citation | last1 = Pach | first1 = János | author1-link = János Pach | last2 = Sharir | first2 = Micha | author2-link = Micha Sharir | contribution = 5.1 Crossings—the Brick Factory Problem | pages = 126–127 | publisher = [[American Mathematical Society]] | series = Mathematical Surveys and Monographs | title = Combinatorial Geometry and Its Algorithmic Applications: The Alcalá Lectures | volume = 152 | year = 2009}}.</ref>
+*Guy's conjecture on the [[crossing number (graph theory)|crossing number]] for [[complete graph]]s – Is there a drawing of any complete graph with fewer crossings than the number given by his upper bound?<ref name=nabla>{{Cite journal |title=A combinatorial problem |first1=R. K. |last1=Guy |author-link=Richard K. Guy |journal=Nabla (Bulletin of the Malayan Mathematical Society) |volume=7 |year=1960 |pages=68–72 }}</ref>
+* [[Universal point set]]s of subquadratic size for planar graphs<ref>{{citation | last1 = Demaine | first1 = E. | author1-link = Erik Demaine | last2 = O'Rourke | first2 = J. | author2-link = Joseph O'Rourke (professor) | contribution = Problem 45: Smallest Universal Set of Points for Planar Graphs | title = The Open Problems Project | url = http://cs.smith.edu/~orourke/TOPP/P45.html | year = 2002–2012 | access-date = 2013-03-19 | archive-url = https://web.archive.org/web/20120814154255/http://cs.smith.edu/~orourke/TOPP/P45.html | archive-date = 2012-08-14 | url-status = live }}.</ref>
+
+==== Restriction of graph parameters ====
+* Does there exist a [[conference graph]] for every number of vertices <math>v>1</math> where <math>v \equiv 1 \bmod 4</math> and <math>v</math> is an odd sum of two squares?<ref>{{cite book
+| last1 = Brouwer
+| first1 = Andries E.
+| last2 = Van Maldeghem
+| first2 = Hendrik
+| title = Strongly regular graphs
+| chapter = 8.2 Conference matrices and conference graphs
+| pages = 189–190
+| year = 2022
+| publisher = American Mathematical Society
+| series = New Mathematical Monographs
+| volume = 41
+| isbn = 978-1-316-51203-6
+| url = https://homepages.cwi.nl/~aeb/math/srg/rk3/srgw.pdf
+}}</ref>
+* [[Conway's 99-graph problem]]: does there exist a [[strongly regular graph]] with parameters <math>(99,14,1,2)</math>?<ref>{{citation
+ | last = Conway
+ | first = John H.
+ | author-link = John Horton Conway
+ | access-date = 2019-02-12
+ | publisher = Online Encyclopedia of Integer Sequences
+ | title = Five $1,000 Problems (Update 2017)
+ | url = https://oeis.org/A248380/a248380.pdf
+ | archive-url = https://web.archive.org/web/20190213123825/https://oeis.org/A248380/a248380.pdf
+ | archive-date = 2019-02-13
+ | url-status = live
+ }}</ref>
+* [[Degree diameter problem]]: given two positive integers <math>d, k</math>, what is the largest graph of diameter <math>k</math> such that all vertices have degrees at most <math>d</math>?
+* Jørgensen's conjecture that every 6-vertex-connected <math>K_6</math>-minor-free graph is an [[apex graph]]<ref>{{citation |last1=mdevos |title=Jorgensen's Conjecture |date=December 7, 2019 |url=http://www.openproblemgarden.org/op/jorgensens_conjecture |work=Open Problem Garden |archive-url=https://web.archive.org/web/20161114232136/http://www.openproblemgarden.org/op/jorgensens_conjecture |access-date=2016-11-13 |archive-date=2016-11-14 |last2=Wood |first2=David |url-status=live}}.</ref>
+* Does a [[Moore graph]] with girth 5 and degree 57 exist?<ref>{{citation
+ | last=Ducey
+ | first=Joshua E.
+ | doi=10.1016/j.disc.2016.10.001
+ | issue=5
+ | journal=[[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr=3612450
+ | pages=1104–1109
+ | title=On the critical group of the missing Moore graph
+ | volume=340
+ | year=2017
+ | arxiv=1509.00327
+ | s2cid=28297244}}
+</ref>
+* Do there exist infinitely many [[strongly regular graph|strongly regular]] [[geodetic graph]]s, or any strongly regular geodetic graphs that are not Moore graphs?<ref>{{citation
+ | last1 = Blokhuis | first1 = A.
+ | last2 = Brouwer | first2 = A. E. | author-link = Andries Brouwer
+ | doi = 10.1007/BF00191941
+ | issue = 1–3
+ | journal = [[Geometriae Dedicata]]
+ | mr = 925851
+ | pages = 527–533
+ | title = Geodetic graphs of diameter two
+ | volume = 25
+ | year = 1988| s2cid = 189890651
+ }}</ref>
+
+==== Subgraphs ====
+* [[Barnette's conjecture]]: every cubic bipartite three-connected planar graph has a Hamiltonian cycle<ref>{{citation
+ | last = Florek | first = Jan
+ | doi = 10.1016/j.disc.2010.01.018
+ | issue = 10–11
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 2601261
+ | pages = 1531–1535
+ | title = On Barnette's conjecture
+ | volume = 310
+ | year = 2010}}.</ref>
+* [[Gilbert–Pollak conjecture]] on the Steiner ratio of the Euclidean plane that the Steiner ratio is <math>\sqrt{3}/2</math>
+* [[Graph toughness|Chvátal's toughness conjecture]], that there is a number {{mvar|t}} such that every {{mvar|t}}-tough graph is Hamiltonian<ref>{{citation
+ | last1 = Broersma | first1 = Hajo
+ | last2 = Patel | first2 = Viresh
+ | last3 = Pyatkin | first3 = Artem
+ | doi = 10.1002/jgt.21734
+ | issue = 3
+ | journal = [[Journal of Graph Theory]]
+ | mr = 3153119
+ | pages = 244–255
+ | title = On toughness and Hamiltonicity of <math>2K_2</math>-free graphs
+ | volume = 75
+ | year = 2014| s2cid = 1377980
+ | url = https://ris.utwente.nl/ws/files/6416631/jgt21734.pdf
+ }}</ref>
+* The [[cycle double cover conjecture]]: every bridgeless graph has a family of cycles that includes each edge twice<ref>{{citation
+ | last = Jaeger | first = F.
+ | contribution = A survey of the cycle double cover conjecture
+ | doi = 10.1016/S0304-0208(08)72993-1
+ | pages = 1–12
+ | series = North-Holland Mathematics Studies
+ | title = Annals of Discrete Mathematics 27 – Cycles in Graphs
+ | volume = 27
+ | year = 1985| isbn = 978-0-444-87803-8
+ }}.</ref>
+* The [[Erdős–Gyárfás conjecture]] on cycles with power-of-two lengths in cubic graphs<ref>{{citation|title=Erdös-Gyárfás conjecture for cubic planar graphs |first1=Christopher Carl |last1=Heckman |first2=Roi |last2=Krakovski |volume=20 |issue=2 |year=2013 |at=P7 |journal=Electronic Journal of Combinatorics |doi-access=free |doi=10.37236/3252}}.</ref>
+* The [[Erdős–Hajnal conjecture]] on large cliques or independent sets in graphs with a forbidden induced subgraph<ref>{{citation
+ | last = Chudnovsky
+ | first = Maria
+ | author-link = Maria Chudnovsky
+ | arxiv = 1606.08827
+ | doi = 10.1002/jgt.21730
+ | issue = 2
+ | journal = [[Journal of Graph Theory]]
+ | mr = 3150572
+ | zbl = 1280.05086
+ | pages = 178–190
+ | title = The Erdös–Hajnal conjecture—a survey
+ | url = http://www.columbia.edu/~mc2775/EHsurvey.pdf
+ | volume = 75
+ | year = 2014
+ | s2cid = 985458
+ | access-date = 2016-09-22
+ | archive-url = https://web.archive.org/web/20160304102611/http://www.columbia.edu/~mc2775/EHsurvey.pdf
+ | archive-date = 2016-03-04
+ | url-status = live
+ }}.</ref>
+* The [[Grünbaum–Nash-Williams conjecture]] on whether every [[k-vertex-connected graph|4-vertex-connected]] [[toroidal graph]] has a [[Hamiltonian cycle]].<ref>{{citation
+ | last1 = Kawarabayashi | first1 = Ken-ichi | author1-link = Ken-ichi Kawarabayashi
+ | last2 = Niu | first2 = Jianbing
+ | last3 = Zhang | first3 = Cun-Quan
+ | doi = 10.1016/j.ejc.2005.07.017
+ | issue = 1
+ | journal = [[European Journal of Combinatorics]]
+ | mr = 2261821
+ | pages = 315–321
+ | title = Chords of longest circuits in locally planar graphs
+ | volume = 28
+ | year = 2007}}</ref>
+* The [[linear arboricity]] conjecture on decomposing graphs into disjoint unions of paths according to their maximum degree<ref>{{citation
+ | last1 = Akiyama | first1 = Jin | author1-link = Jin Akiyama
+ | last2 = Exoo | first2 = Geoffrey
+ | last3 = Harary | first3 = Frank
+ | doi = 10.1002/net.3230110108
+ | issue = 1
+ | journal = Networks
+ | mr = 608921
+ | pages = 69–72
+ | title = Covering and packing in graphs. IV. Linear arboricity
+ | volume = 11
+ | year = 1981}}.</ref>
+* The [[Lovász conjecture]] on Hamiltonian paths in symmetric graphs<ref>{{Cite book |last=Babai |first=László |url=https://newtraell.cs.uchicago.edu/files/tr_authentic/TR-94-10.ps |title=Handbook of Combinatorics |date=June 9, 1994 |chapter=Automorphism groups, isomorphism, reconstruction |format=PostScript |author-link=László Babai |archive-url=https://web.archive.org/web/20070613201449/http://www.cs.uchicago.edu/research/publications/techreports/TR-94-10 |archive-date=13 June 2007}}</ref>
+* The [[Oberwolfach problem]] on which 2-regular graphs have the property that a complete graph on the same number of vertices can be decomposed into edge-disjoint copies of the given graph.<ref>{{citation
+ | last1 = Lenz | first1 = Hanfried
+ | last2 = Ringel | first2 = Gerhard
+ | doi = 10.1016/0012-365X(91)90416-Y
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1140782
+ | pages = 3–16
+ | title = A brief review on Egmont Köhler's mathematical work
+ | volume = 97
+ | year = 1991}}</ref>
+* What is the largest possible [[pathwidth]] of an {{mvar|n}}-vertex [[cubic graph]]?<ref>{{citation
+ | last1 = Fomin | first1 = Fedor V.
+ | last2 = Høie | first2 = Kjartan
+ | doi = 10.1016/j.ipl.2005.10.012
+ | issue = 5
+ | journal = Information Processing Letters
+ | mr = 2195217
+ | pages = 191–196
+ | title = Pathwidth of cubic graphs and exact algorithms
+ | volume = 97
+ | year = 2006}}
+</ref>
+* The [[reconstruction conjecture]] and [[new digraph reconstruction conjecture]] on whether a graph is uniquely determined by its vertex-deleted subgraphs.<ref>{{cite conference |last=Schwenk |first=Allen |year=2012 |title=Some History on the Reconstruction Conjecture |url=https://faculty.nps.edu/rgera/conjectures/jmm2012/Schwenk,%20%20Some%20History%20on%20the%20RC.pdf |conference=Joint Mathematics Meetings |archive-url=https://web.archive.org/web/20150409233306/http://faculty.nps.edu/rgera/Conjectures/jmm2012/Schwenk,%20%20Some%20History%20on%20the%20RC.pdf |archive-date=2015-04-09 |access-date=2018-11-26}}</ref><ref>{{citation
+ | last = Ramachandran | first = S.
+ | doi = 10.1016/S0095-8956(81)80019-6
+ | issue = 2
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 630977
+ | pages = 143–149
+ | series = Series B
+ | title = On a new digraph reconstruction conjecture
+ | volume = 31
+ | year = 1981| doi-access = free
+ }}</ref>
+* The [[snake-in-the-box]] problem: what is the longest possible [[induced path]] in an <math>n</math>-dimensional [[hypercube]] graph?
+* [[Sumner's conjecture]]: does every <math>(2n-2)</math>-vertex tournament contain as a subgraph every <math>n</math>-vertex oriented tree?<ref>{{citation
+ | last1 = Kühn | first1 = Daniela | author1-link = Daniela Kühn
+ | last2 = Mycroft | first2 = Richard
+ | last3 = Osthus | first3 = Deryk
+ | arxiv = 1010.4430
+ | doi = 10.1112/plms/pdq035
+ | issue = 4
+ | journal = Proceedings of the London Mathematical Society | series = Third Series
+ | mr = 2793448 | zbl=1218.05034
+ | pages = 731–766
+ | title = A proof of Sumner's universal tournament conjecture for large tournaments
+ | volume = 102
+ | year = 2011| s2cid = 119169562 }}.</ref>
+* [[Szymanski's conjecture]]: every [[permutation]] on the <math>n</math>-dimensional doubly-[[Directed graph|directed]] [[hypercube graph]] can be routed with edge-disjoint [[Path (graph theory)|paths]].
+* [[Tuza's conjecture]]: if the maximum number of disjoint triangles is <math>\nu</math>, can all triangles be hit by a set of at most <math>2\nu</math> edges?<ref>{{cite journal
+ | last = Tuza | first = Zsolt
+ | doi = 10.1007/BF01787705
+ | issue = 4
+ | journal = Graphs and Combinatorics
+ | mr = 1092587
+ | pages = 373–380
+ | title = A conjecture on triangles of graphs
+ | volume = 6
+ | year = 1990| s2cid = 38821128
+ }}</ref>
+* The [[unfriendly partition]] conjecture: Does every countable graph have an unfriendly partition into two parts?<ref>{{citation|url=https://www.openproblemgarden.org/op/unfriendly_partitions|title=Unfriendly partitions|work=Open problem garden|first=Matthew|last=DeVos|date=October 22, 2007}}</ref>
+* [[Vizing's conjecture]] on the [[domination number]] of [[cartesian product of graphs|cartesian products of graphs]]<ref>{{citation
+ | last1 = Brešar | first1 = Boštjan
+ | last2 = Dorbec | first2 = Paul
+ | last3 = Goddard | first3 = Wayne
+ | last4 = Hartnell | first4 = Bert L.
+ | last5 = Henning | first5 = Michael A.
+ | last6 = Klavžar | first6 = Sandi
+ | last7 = Rall | first7 = Douglas F.
+ | doi = 10.1002/jgt.20565
+ | issue = 1
+ | journal = [[Journal of Graph Theory]]
+ | mr = 2864622
+ | pages = 46–76
+ | title = Vizing's conjecture: a survey and recent results
+ | volume = 69
+ | year = 2012
+ | s2cid = 9120720
+ | url = https://dk.um.si/IzpisGradiva.php?id=51799
+ }}.</ref>
+* [[Hamiltonian decomposition#Uniform Hypergraphs|Walescki's theorem for hypergraphs]]: Do complete <math>k</math>-uniform hypergraphs admit [[Hamiltonian decomposition]]s into tight cycles?<ref name=baileystevens>{{citation
+| last1 = Bailey
+| first1 = R. F.
+| last2 = Stevens
+| first2 = B.
+| title = Hamiltonian decompositions of complete $k$-uniform hypergraphs
+| journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+| volume = 310
+| issue = 22
+| pages = 3088–3095
+| year = 2010
+| doi = 10.1016/j.disc.2009.03.047
+| url = https://www.sciencedirect.com/science/article/pii/S0012365X09001769
+| issn = 0012-365X
+}}</ref>
+* [[Zarankiewicz problem]]: how many edges can there be in a [[bipartite graph]] on a given number of vertices with no [[complete bipartite graph|complete bipartite subgraphs]] of a given size?
+
+==== Word-representation of graphs ====
+*Are there any graphs on ''n'' vertices whose [[Word-representable graph|representation]] requires more than floor(''n''/2) copies of each letter?<ref name="KL15">{{Cite book |last1=Kitaev |first1=Sergey | author1-link = Sergey Kitaev|url=https://link.springer.com/book/10.1007/978-3-319-25859-1 |title=Words and Graphs |last2=Lozin |first2=Vadim |year=2015 |isbn=978-3-319-25857-7 |series=Monographs in Theoretical Computer Science. An EATCS Series |doi=10.1007/978-3-319-25859-1 |via=link.springer.com |s2cid=7727433}}</ref><ref name="K17">{{Cite conference |last=Kitaev |first=Sergey |date=2017-05-16 |title=A Comprehensive Introduction to the Theory of Word-Representable Graphs |conference=[[International Conference on Developments in Language Theory]] |language=en |doi=10.1007/978-3-319-62809-7_2|arxiv=1705.05924v1 }}</ref><ref name="KP18">{{Cite journal|title=Word-Representable Graphs: a Survey|first1=S. V.|last1=Kitaev|first2=A. V.|last2=Pyatkin|date=April 1, 2018|journal=Journal of Applied and Industrial Mathematics|volume=12|issue=2|pages=278–296|via=Springer Link|doi=10.1134/S1990478918020084|s2cid=125814097 }}</ref><ref name="KP18-2">{{Cite journal |last1=Kitaev |first1=Sergey V. |last2=Pyatkin |first2=Artem V. |date=2018 |title=Графы, представимые в виде слов. Обзор результатов |trans-title=Word-representable graphs: A survey |url=http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=da&paperid=894&option_lang=rus |journal=Дискретн. Анализ И Исслед. Опер. |language=ru |volume=25 |issue=2 |pages=19–53 |doi=10.17377/daio.2018.25.588}}</ref>
+*Characterise (non-)[[Word-representable graph|word-representable]] [[planar graph]]s<ref name="KL15"/><ref name="K17"/><ref name="KP18"/><ref name="KP18-2"/>
+*Characterise [[word-representable graph]]s in terms of (induced) forbidden subgraphs.<ref name="KL15"/><ref name="K17"/><ref name="KP18"/><ref name="KP18-2"/>
+*Characterise [[Word-representable graph|word-representable]] near-triangulations containing the complete graph ''K''<sub>4</sub> (such a characterisation is known for ''K''<sub>4</sub>-free planar graphs<ref name="Glen2019">{{cite arXiv |eprint=1605.01688|author1=Marc Elliot Glen|title=Colourability and word-representability of near-triangulations|class=math.CO|year=2016}}</ref>)
+*Classify graphs with representation number 3, that is, graphs that can be [[Word-representable graph|represented]] using 3 copies of each letter, but cannot be represented using 2 copies of each letter<ref name="Kit2013-3-repr">{{Cite arXiv|last=Kitaev |first=Sergey |date=2014-03-06 |title=On graphs with representation number 3 |class=math.CO |eprint=1403.1616v1 }}</ref>
+*Is it true that out of all [[bipartite graph]]s, [[crown graph]]s require longest word-representants?<ref name="GKP18">{{cite journal|url = https://www.sciencedirect.com/science/article/pii/S0166218X18301045 | doi=10.1016/j.dam.2018.03.013 | volume=244 | title=On the representation number of a crown graph | year=2018 | journal=Discrete Applied Mathematics | pages=89–93 | last1 = Glen | first1 = Marc | last2 = Kitaev | first2 = Sergey | last3 = Pyatkin | first3 = Artem| arxiv=1609.00674 | s2cid=46925617 }}</ref>
+*Is the [[line graph]] of a non-[[Word-representable graph|word-representable]] graph always non-[[Word-representable graph|word-representable]]?<ref name="KL15"/><ref name="K17"/><ref name="KP18"/><ref name="KP18-2"/>
+*Which (hard) problems on graphs can be translated to words [[Word-representable graph|representing]] them and solved on words (efficiently)?<ref name="KL15"/><ref name="K17"/><ref name="KP18"/><ref name="KP18-2"/>
+
+==== Miscellaneous graph theory ====
+* Delta-conjecture (1978): consider a [[complete graph]] <math>(V; E_1, \dots, E_d)</math> each edge of which is colored by one of <math>d</math> colors such that there exists a triangle <math>\Delta</math> colored in three pairwise distinct colors. Then, in each chromatic component <math>(V, E_i), i = 1, \dots, d</math>, one can choose a maximal [[Independent set (graph theory)|independent vertex-set]] such that the intersection of the obtained <math>d</math> sets is empty.<ref>{{cite journal |last1=Gurvich |first1=V. |title=On exact blockers and anti-blockers, <math>\Delta</math>-conjecture, and related problems |journal=Discrete Applied Mathematics |volume=159 |year=2011 |issue=5 |pages=311–321 |doi=10.1016/j.dam.2010.11.014 }}</ref><ref>{{cite book |last1=Andrade |first1=Diogo V. |last2=Boros |first2=Endre |last3=Gurvich |first3=Vladimir |editor-last=Goldengorin |editor-first=Boris |title=Optimization Problems in Graph Theory: In Honor of Gregory Z. Gutin's 60th Birthday |publisher=Springer Optimization and Its Applications 139 |year=2018 |pages=3–64}}</ref>
+* The [[imbalance conjecture]]: If the imbalance for each edge of a graph is at least 1, is the multiset of all edge imbalances always [[degree sequence|graphic]]?<ref>{{cite journal |last1=Kozerenko |first1=Sergiy |last2=Skochko |first2=Volodymyr |title=On graphs with graphic imbalance sequences |journal=Algebra and Discrete Mathematics |date=2014 |volume=18 |issue=1 |pages=97–108 |url=https://www.researchgate.net/publication/289776294}}</ref>
+* The [[implicit graph conjecture]] on the existence of implicit representations for slowly-growing [[Hereditary property#In graph theory|hereditary families of graphs]]<ref>{{citation|first=Jeremy P.|last=Spinrad|title=Efficient Graph Representations|year=2003|isbn=978-0-8218-2815-1|chapter=2. Implicit graph representation|pages=17–30|publisher=American Mathematical Soc. |chapter-url=https://books.google.com/books?id=RrtXSKMAmWgC&pg=PA17}}.</ref>
+* [[Ryser's conjecture]] relating the maximum [[Matching in hypergraphs|matching]] size and minimum [[Vertex cover in hypergraphs|transversal]] size in [[hypergraph]]s
+* The [[second neighborhood problem]]: does every oriented graph contain a vertex for which there are at least as many other vertices at distance two as at distance one?<ref>{{Cite web |title=Seymour's 2nd Neighborhood Conjecture |url=https://faculty.math.illinois.edu/~west/openp/2ndnbhd.html |url-status=live |archive-url=https://web.archive.org/web/20190111175310/https://faculty.math.illinois.edu/~west/openp/2ndnbhd.html |archive-date=11 January 2019 |access-date=17 August 2022 |website=faculty.math.illinois.edu}}</ref>
+* [[Sidorenko's conjecture]] on [[Homomorphism density|homomorphism densities]] of graphs in [[graphon]]s
+* Teschner's [[bondage number]] conjecture: is the bondage number of a graph always less than or equal to 3/2 times its maximum [[degree (graph theory)|degree]]?<ref>{{cite journal |last=Teschner |first=Ulrich |date=1997 |title=New results about the bondage number of a graph |journal=Discrete Mathematics |volume=171 |issue=1–3 |pages=249–259 |doi=10.1016/S0012-365X(96)00007-6}}</ref>
+* Tutte's conjectures:
+** every bridgeless graph has a [[nowhere-zero flows|nowhere-zero 5-flow]]<ref>{{cite web |last=mdevos |date=May 4, 2007 |title=5-flow conjecture |url=http://www.openproblemgarden.org/op/5_flow_conjecture |url-status=live |archive-url=https://web.archive.org/web/20181126134833/http://www.openproblemgarden.org/op/5_flow_conjecture |archive-date=November 26, 2018 |website=Open Problem Garden}}</ref>
+** every [[Petersen graph|Petersen]]-[[Graph minor|minor]]-free bridgeless graph has a nowhere-zero 4-flow<ref>{{cite web |last=mdevos |date=March 31, 2010 |title=4-flow conjecture |url=http://www.openproblemgarden.org/op/4_flow_conjecture |url-status=live |archive-url=https://web.archive.org/web/20181126134908/http://www.openproblemgarden.org/op/4_flow_conjecture |archive-date=November 26, 2018 |website=Open Problem Garden}}</ref>
+* [[Woodall's conjecture]] that the minimum number of edges in a [[dicut]] of a [[directed graph]] is equal to the maximum number of disjoint [[dijoin]]s.
+
+=== Model theory and formal languages ===
+{{Main|Model theory|formal languages}}
+* The [[Stable group|Cherlin–Zilber conjecture]]: A simple group whose first-order theory is [[Stable theory|stable]] in <math>\aleph_0</math> is a simple algebraic group over an algebraically closed field.
+* [[Generalized star height problem]]: can all [[regular language]]s be expressed using [[Regular expression#Expressive power and compactness|generalized regular expressions]] with limited nesting depths of [[Kleene star]]s?
+* For which number fields does [[Hilbert's tenth problem]] hold?
+* Kueker's conjecture<ref>{{cite journal |last1=Hrushovski |first1=Ehud |year=1989 |title=Kueker's conjecture for stable theories |journal=Journal of Symbolic Logic |volume=54 |issue=1| pages=207–220 |doi=10.2307/2275025| jstor=2275025 |s2cid=41940041}}</ref>
+* The main gap conjecture, e.g. for uncountable [[First order theory|first order theories]], for [[Abstract elementary class|AECs]], and for <math>\aleph_1</math>-saturated models of a countable theory.<ref name=":0">{{cite book |vauthors=Shelah S |title=Classification Theory |publisher=North-Holland |year=1990}}</ref>
+* Shelah's categoricity conjecture for <math>L_{\omega_1,\omega}</math>: If a sentence is categorical above the Hanf number then it is categorical in all cardinals above the Hanf number.<ref name=":0"/>
+* Shelah's eventual categoricity conjecture: For every cardinal <math>\lambda</math> there exists a cardinal <math>\mu(\lambda)</math> such that if an [[Abstract elementary class|AEC]] ''K'' with LS(''K'')<math>{} \le \lambda</math> is categorical in a cardinal above <math>\mu(\lambda)</math> then it is categorical in all cardinals above <math>\mu(\lambda)</math>.<ref name=":0"/><ref>{{Cite book
+| title = Classification theory for abstract elementary classes
+| last = Shelah
+| first = Saharon
+| publisher = College Publications
+| year = 2009
+| isbn = 978-1-904987-71-0
+}}</ref>
+* The stable field conjecture: every infinite field with a [[Stable theory|stable]] first-order theory is separably closed.
+* The stable forking conjecture for simple theories<ref>{{cite journal | last1 = Peretz | first1 = Assaf | year = 2006 | title = Geometry of forking in simple theories | journal = Journal of Symbolic Logic| volume = 71 | issue = 1| pages = 347–359 | doi=10.2178/jsl/1140641179| arxiv = math/0412356| s2cid = 9380215 }}</ref>
+* [[Tarski's exponential function problem]]: is the [[Theory (mathematical logic)|theory]] of the [[real number]]s with the [[exponential function]] [[Decidability (logic)#Decidability of a theory|decidable]]?
+* The universality problem for ''C''-free graphs: For which finite sets ''C'' of graphs does the class of ''C''-free countable graphs have a universal member under strong embeddings?<ref>{{cite journal |last1=Cherlin |first1=Gregory |last2=Shelah |first2=Saharon | author-link2=Saharon Shelah|date=May 2007 |title=Universal graphs with a forbidden subtree |journal=[[Journal of Combinatorial Theory]] | series=Series B |arxiv=math/0512218 |doi=10.1016/j.jctb.2006.05.008 | doi-access=free |volume=97 |issue=3 |pages=293–333|s2cid=10425739 }}</ref>
+* The universality spectrum problem: Is there a first-order theory whose universality spectrum is minimum?<ref>Džamonja, Mirna, "Club guessing and the universal models." ''On PCF'', ed. M. Foreman, (Banff, Alberta, 2004).</ref>
+* [[Vaught conjecture]]: the number of [[Countable set|countable]] models of a [[First-order logic|first-order]] [[complete theory]] in a countable [[Formal language|language]] is either finite, <math>\aleph_0</math>, or <math>2^{\aleph_0}</math>.
+* Assume ''K'' is the class of models of a countable first order theory omitting countably many [[Type (model theory)|types]]. If ''K'' has a model of cardinality <math>\aleph_{\omega_1}</math> does it have a model of cardinality continuum?<ref>{{cite journal |last=Shelah |first=Saharon |author-link=Saharon Shelah |date=1999 |title=Borel sets with large squares |journal=[[Fundamenta Mathematicae]] |arxiv=math/9802134 |volume=159 |issue=1 |pages=1–50|bibcode=1998math......2134S |doi=10.4064/fm-159-1-1-50 |s2cid=8846429 }}</ref>
+* Do the [[Henson graph]]s have the [[finite model property]]?
+* Does a finitely presented homogeneous structure for a finite relational language have finitely many [[reduct]]s?
+* Does there exist an [[o-minimal]] first order theory with a trans-exponential (rapid growth) function?
+* If the class of atomic models of a complete first order theory is [[Categorical (model theory)|categorical]] in the <math>\aleph_n</math>, is it categorical in every cardinal?<ref>{{cite book |last=Baldwin |first=John T. |date=July 24, 2009 |title=Categoricity |publisher=[[American Mathematical Society]] |isbn=978-0-8218-4893-7 |url=https://www.math.uic.edu/~jbaldwin/pub/AEClec.pdf |access-date=February 20, 2014 |archive-url=https://web.archive.org/web/20100729073738/http://www.math.uic.edu/%7Ejbaldwin/pub/AEClec.pdf |archive-date=July 29, 2010 |url-status=live }}</ref><ref>{{cite arXiv |last=Shelah |first=Saharon |title=Introduction to classification theory for abstract elementary classes |year=2009 |class=math.LO |eprint=0903.3428 }}</ref>
+* Is every infinite, minimal field of characteristic zero [[algebraically closed field|algebraically closed]]? (Here, "minimal" means that every definable subset of the structure is finite or co-finite.)
+* Is the Borel monadic theory of the real order (BMTO) decidable? Is the monadic theory of well-ordering (MTWO) consistently decidable?<ref>Gurevich, Yuri, "Monadic Second-Order Theories," in [[Jon Barwise|J. Barwise]], [[Solomon Feferman|S. Feferman]], eds., ''Model-Theoretic Logics'' (New York: Springer-Verlag, 1985), 479–506.</ref>
+* Is the theory of the field of Laurent series over <math>\mathbb{Z}_p</math> [[Decidability (logic)|decidable]]? of the field of polynomials over <math>\mathbb{C}</math>?
+* Is there a logic L which satisfies both the Beth property and Δ-interpolation, is compact but does not satisfy the interpolation property?<ref>Makowsky J, "Compactness, embeddings and definability," in ''Model-Theoretic Logics'', eds Barwise and Feferman, Springer 1985 pps. 645–715.</ref>
+* Determine the structure of Keisler's order.<ref>{{cite journal | last1 = Keisler | first1 = HJ | year = 1967 | title = Ultraproducts which are not saturated | journal = J. Symb. Log. | volume = 32 | issue = 1| pages = 23–46 | doi=10.2307/2271240| jstor = 2271240 | s2cid = 250345806 }}</ref><ref>{{Cite journal |arxiv=1208.2140 |first1=Maryanthe |last1=Malliaris |first2=Saharon |last2=Shelah |authorlink1=Maryanthe Malliaris |authorlink2=Saharon Shelah |title=A dividing line within simple unstable theories |date=20 December 2013 |journal=[[Advances in Mathematics]] |pages=250–288 |volume=249 |doi=10.1016/j.aim.2013.08.027 |doi-access=free}}</ref>
+* What is the nature of the [[proof-theoretic ordinal]] (the smallest ordinal a theory cannot prove well-founded) for [[second-order arithmetic]], [[Zermelo–Fraenkel set theory|ZFC]], or stronger theories?<ref>{{Cite journal |last=Rathjen |first=Michael |date=2023-08-01 |title=The Art of Measuring the Strength of Theories |url=https://www.ams.org/notices/202307/rnoti-p1071.pdf |journal=[[Notices of the American Mathematical Society]] |language=en |volume=70 |issue=7 |pages=1071–1079 |doi=10.1090/noti2733  |doi-access=free|issn=0002-9920}}</ref>
+
+=== Probability theory ===
+{{Main|Probability theory}}
+* [[Ibragimov–Iosifescu conjecture for φ-mixing sequences]]
+
+=== Number theory ===
+{{Main|Category:Unsolved problems in number theory}}
+{{See also|Number theory }}
+
+==== General ====
+[[File:Perfect number Cuisenaire rods 6 exact.svg|thumb|6 is a [[perfect number]] because it is the sum of its proper positive divisors, 1, 2 and 3. It is not known how many perfect numbers there are, nor if any of them is odd.]]
+* [[Büchi's problem]] on sufficiently large sequences of square numbers with constant second difference.
+* [[Carmichael's totient function conjecture]]: do all values of [[Euler's totient function]] have [[Multiplicity (mathematics)|multiplicity]] greater than <math>1</math>?
+* [[Aliquot sequence#Catalan-Dickson conjecture|Catalan–Dickson conjecture on aliquot sequences]]: no [[aliquot sequence]]s are infinite but non-repeating.
+* [[Van der Corput's method#Exponent pairs|Exponent pair conjecture]]: for all <math>\varepsilon > 0</math>, is the pair <math>(\varepsilon, 1/2 + \varepsilon)</math> an [[Van der Corput's method#Exponent pairs|exponent pair]]?
+* The [[Gauss circle problem]]: how far can the number of integer points in a circle centered at the origin be from the area of the circle?
+* [[Grimm's conjecture]]: each element of a set of consecutive [[composite number]]s can be assigned a distinct [[prime number]] that divides it.
+* [[Hall's conjecture]]: for any <math>\varepsilon > 0</math>, there is some constant <math>c(\varepsilon)</math> such that either <math>y^2 = x^3</math> or <math>|y^2 - x^3| > c(\varepsilon)x^{1/2 - \varepsilon}</math>.
+*[[Lehmer's totient problem]]: if <math>\phi(n)</math> divides <math>n - 1</math>, must <math>n</math> be prime?
+* [[Magic square of squares]]: is there a 3x3 magic square composed of distinct perfect squares?
+* [[Mahler's 3/2 problem]] that no real number <math>x</math> has the property that the fractional parts of <math>x(3/2)^n</math> are less than <math>1/2</math> for all positive integers <math>n</math>.
+* [[Newman's conjecture]]: the [[Partition function (number theory)|partition function]] satisfies any arbitrary congruence infinitely often.
+* [[Scholz conjecture]]: the length of the shortest [[addition chain]] producing <math>2^n - 1</math> is at most <math>n - 1</math> plus the length of the shortest addition chain producing <math>n</math>.
+* [[Singmaster's conjecture]]: is there a finite upper bound on the multiplicities of the entries greater than 1 in [[Pascal's triangle]]?<ref>{{citation |last=Singmaster |first=David |title=Research Problems: How often does an integer occur as a binomial coefficient? |journal=[[American Mathematical Monthly]] |volume=78 |issue=4 |pages=385–386 |year=1971 |doi=10.2307/2316907 |jstor=2316907 |mr=1536288 |author-link=David Singmaster}}.</ref>
+* [[Sister Beiter conjecture]]: the maximal coefficient of a ternary [[cyclotomic polynomial]] is bounded by <math>2/3</math> of the smallest prime factor of its index.
+* Are there infinitely many [[perfect number]]s?
+* Do any [[odd perfect number]]s exist?
+* Do [[quasiperfect number]]s exist?
+* Do any non-power of 2 [[almost perfect number]]s exist?
+* Are there 65, 66, or 67 [[idoneal number]]s?
+* Are there any pairs of [[amicable numbers]] which have opposite parity?
+* Are there any pairs of [[betrothed numbers]] which have same parity?
+* Are there any pairs of [[relatively prime]] [[amicable numbers]]?
+* Are there infinitely many pairs of [[amicable numbers]]?
+* Are there infinitely many [[betrothed numbers]]?
+* Are there infinitely many [[Giuga number]]s?
+* Do any [[Lychrel number]]s exist in base 10?
+* Do any odd [[noncototient]]s exist?
+* Do any odd [[weird number]]s exist?
+* Do any [[Superperfect number#Generalizations|(2, 5)-perfect numbers]] exist?
+* Do any [[Generalized taxicab number|Taxicab(5, 2, n)]] exist for ''n''&nbsp;>&nbsp;1?
+* Is there a [[covering system]] with odd distinct moduli?<ref>{{citation
+ | last1 = Guo | first1 = Song
+ | last2 = Sun | first2 = Zhi-Wei
+ | doi = 10.1016/j.aam.2005.01.004
+ | issue = 2
+ | journal = Advances in Applied Mathematics
+ | mr = 2152886
+ | pages = 182–187
+ | title = On odd covering systems with distinct moduli
+ | volume = 35
+ | year = 2005| arxiv = math/0412217
+ | s2cid = 835158
+ }}</ref>
+* Is <math>\pi</math> a [[normal number]] (i.e., is each digit 0–9 equally frequent)?<ref>{{cite web|url=http://www2.lbl.gov/Science-Articles/Archive/pi-random.html|title=Are the Digits of Pi Random? Berkeley Lab Researcher May Hold Key|access-date=2016-03-18|archive-url=https://web.archive.org/web/20160327035021/http://www2.lbl.gov/Science-Articles/Archive/pi-random.html|archive-date=2016-03-27|url-status=live}}</ref>
+* Are all [[Irrational number|irrational]] [[Algebraic number|algebraic]] numbers normal?
+* Is 10 a [[solitary number]]?
+
+==== Additive number theory ====
+{{Main|Additive number theory }}
+{{See also|Problems involving arithmetic progressions}}
+* [[Erdős conjecture on arithmetic progressions]] that if the sum of the reciprocals of the members of a set of positive integers diverges, then the set contains arbitrarily long [[arithmetic progression]]s.
+* [[Erdős–Turán conjecture on additive bases]]: if <math>B</math> is an [[additive basis]] of order <math>2</math>, then the number of ways that positive integers <math>n</math> can be expressed as the sum of two numbers in <math>B</math> must tend to infinity as <math>n</math> tends to infinity.
+* [[Gilbreath's conjecture]] on consecutive applications of the unsigned [[Finite difference|forward difference]] operator to the sequence of [[prime number]]s.
+* [[Goldbach's conjecture]]: every even natural number greater than <math>2</math> is the sum of two [[prime number]]s.
+* [[Lander, Parkin, and Selfridge conjecture]]: if the sum of <math>m</math> <math>k</math>-th powers of positive integers is equal to a different sum of <math>n</math> <math>k</math>-th powers of positive integers, then <math>m + n \geq k</math>.
+* [[Lemoine's conjecture]]: all odd integers greater than <math>5</math> can be represented as the sum of an odd [[prime number]] and an even [[semiprime]].
+* [[Minimum overlap problem]] of estimating the minimum possible maximum number of times a number appears in the termwise difference of two equally large sets partitioning the set <math>\{1, \ldots, 2n\}</math>
+* [[Pollock's conjectures]]
+* Does every nonnegative integer appear in [[Recamán's sequence]]?
+* [[Skolem problem]]: can an algorithm determine if a [[constant-recursive sequence]] contains a zero?
+* The values of ''g''(''k'') and ''G''(''k'') in [[Waring's problem]]
+* Do the [[Ulam number]]s have a positive density?
+* Determine growth rate of ''r''<sub>''k''</sub>(''N'') (see [[Szemerédi's theorem]])
+
+==== Algebraic number theory ====
+{{Main|Algebraic number theory }}
+* [[Class number problem]]: are there infinitely many [[Class number problem#Real quadratic fields|real quadratic number fields]] with [[unique factorization]]?
+* [[Fontaine–Mazur conjecture]]: actually numerous conjectures, all proposed by [[Jean-Marc Fontaine]] and [[Barry Mazur]].
+* [[Gan–Gross–Prasad conjecture]]: a [[Restricted representation|restriction]] problem in [[Representation of a Lie group|representation theory of real or p-adic Lie groups]].
+* [[Greenberg's conjectures]]
+* [[Hermite's problem]]: is it possible, for any natural number <math>n</math>, to assign a sequence of [[natural number]]s to each [[real number]] such that the sequence for <math>x</math> is eventually [[Periodic sequence|periodic]] if and only if <math>x</math> is [[Algebraic number|algebraic]] of degree <math>n</math>?
+* [[Hilbert's ninth problem|Hilbert's 9th problem]]: find the most general [[reciprocity law]] for the [[Hilbert symbol|norm residues]] of <math>k</math>-th order in a general [[algebraic number field]], where <math>k</math> is a power of a prime.
+* [[Hilbert's twelfth problem|Hilbert's 12th problem]]: extend the [[Kronecker–Weber theorem]] on [[Abelian extension]]s of <math>\mathbb{Q}</math> to any base number field.
+* [[Kummer–Vandiver conjecture]]: primes <math>p</math> do not divide the [[Ideal class group#Properties|class number]] of the maximal real [[Field extension|subfield]] of the <math>p</math>-th [[cyclotomic field]].
+* Lang and Trotter's conjecture on [[Supersingular prime (algebraic number theory)|supersingular primes]] that the number of [[Supersingular prime (algebraic number theory)|supersingular primes]] less than a constant <math>X</math> is within a constant multiple of <math>\sqrt{X}/\ln{X}</math>
+* [[Leopoldt's conjecture]]: a [[p-adic number|p-adic]] analogue of the [[Dirichlet's unit theorem#The regulator|regulator]] of an [[algebraic number field]] does not vanish.
+* [[Stark conjectures]] (including [[Brumer–Stark conjecture]])
+* Characterize all algebraic number fields that have some [[Algebraic number field#Bases for number fields|power basis]].
+
+====Analytic number theory====
+{{main|Analytic number theory}}
+*Beilinson's conjectures about [[special values of L-functions]].
+* Do [[Siegel zero]]s exist?
+* Find the value of the [[De Bruijn–Newman constant]].
+* Is [[Selberg class]] of Dirichlet series equal to class of [[automorphic L-function]]s?
+* [[Hardy–Littlewood zeta function conjectures]]
+* Keating–Snaith conjecture concerning the asymptotics of an integral involving the [[Riemann zeta function]]<ref>{{citation
+ |last=Conrey |first=Brian |author-link=Brian Conrey
+ |doi=10.1090/bull/1525
+ |title=Lectures on the Riemann zeta function (book review)
+ |journal=[[Bulletin of the American Mathematical Society]]
+ |volume=53 |number=3 |pages=507–512 |year=2016|doi-access=free}}</ref>
+* [[Hilbert–Pólya conjecture]]: the nontrivial zeros of the [[Riemann zeta function]] correspond to [[Eigenvalues and eigenvectors|eigenvalues]] of a [[self-adjoint operator]].
+* [[Lindelöf hypothesis]] that for all <math>\varepsilon > 0</math>, <math>\zeta(1/2 + it) = o(t^\varepsilon)</math>
+** The [[Bombieri–Vinogradov theorem|density hypothesis]] for zeroes of the Riemann zeta function.
+* Location of nontrivial zeros of L-functions, especially conjectures concerning their critical lines:
+**[[Grand Riemann hypothesis]]: do the nontrivial zeros of all automorphic L-functions lie on the critical line <math>1/2 + it</math> with real <math>t</math>?
+** [[Generalized Riemann hypothesis#Generalized Riemann hypothesis for Selberg class|Generalized Riemann hypothesis for Selberg class]]: do the nontrivial zeros of all functions in Selberg class lie on the critical line <math>1/2 + it</math> with real <math>t</math>?
+** [[Generalized Riemann hypothesis#Extended Riemann Hypothesis (ERH)|Extended Riemann Hypothesis]]: do the nontrivial zeros of all [[Dedekind zeta function]]s lie on the critical line <math>1/2 + it</math> with real <math>t</math>?
+** [[Generalized Riemann hypothesis]]: do the nontrivial zeros of all [[Dirichlet L-function]]s lie on the critical line <math>1/2 + it</math> with real <math>t</math>?
+** [[Riemann hypothesis]]: do the nontrivial zeros of the [[Riemann zeta function]] lie on the critical line <math>1/2 + it</math> with real <math>t</math>?
+* [[Montgomery's pair correlation conjecture]]: the normalized pair [[correlation function]] between pairs of zeros of the Riemann zeta function is the same as the pair correlation function of [[Random matrix#Gaussian ensembles|random Hermitian matrices]].
+* [[Divisor summatory function#Piltz divisor problem|Piltz divisor problem]] on bounding <math display=inline>\Delta_k(x) = D_k(x) - xP_k(\log(x))</math>
+** [[Divisor summatory function#Dirichlet's divisor problem|Dirichlet's divisor problem]]: the specific case of the Piltz divisor problem for: <math display=inline>k = 1</math>
+* [[Ramanujan–Petersson conjecture]]: a number of generalizations of the original conjecture, concerning growth rate of coefficients of automorphic forms.
+* [[Selberg's 1/4 conjecture]]: the [[Eigenvalues and eigenvectors|eigenvalues]] of the [[Laplace operator]] on [[Maass wave form]]s of [[congruence subgroup]]s are at least <math>1/4</math>.
+* [[Selberg class#Conjectures|Selberg's orthogonality conjecture]]: generalization of [[Mertens' theorems#Second theorem|Mertens' theorem]] for functions in Selberg class.
+
+====Arithmetic geometry====
+{{main|Arithmetic geometry}}
+* [[Bombieri–Lang conjecture]]: <math> K </math>-rational points on a [[Kodaira dimension#General type|variety of general type]] over a number field <math> K </math> are not a dense set in Zariski topology.
+* [[Erdős–Ulam problem]]: Is there a [[dense set]] of points in the plane all at rational distances from one another?
+* [[Manin conjecture]]: if K-rational points on [[Fano variety]] are Zariski-dense subset, then the distribution of points of [[Height function|height]]: <math display=inline>H(x)\leq B</math> in any Zariski-open subset <math display=inline>U</math> is proportional to <math display=inline>B \log (B)^{r-1}</math>, where <math display=inline>r</math> is rank of [[Picard group]] of that variety. 
+* [[Sato–Tate conjecture]]: also a number of related conjectures that are generalizations of the original conjecture.
+* In [[Unit square]]:
+** [[Unit square#Rational dense problem|Rational dense problem]]: Is there a point in the plane at a rational distance from all four corners of a unit square?<ref>{{citation
+ | last = Guy | first = Richard K. |authorlink = Richard K. Guy
+ | title = Unsolved Problems in Number Theory
+ | series = Problem Books in Mathematics | volume = 1
+ | publisher = Springer-Verlag
+ | edition = 2nd
+ | year = 1991
+ | pages = 181–185
+ | doi = 10.1007/978-1-4899-3585-4
+| isbn = 978-1-4899-3587-8 }}</ref>
+* [[Vojta's conjecture]]: points on non-singular [[algebraic variety]] over [[algebraic number field]] that not satisfy certain [[Height function|height]] inequality are contained in some Zariski-closed set.
+* [[n conjecture|''n'' conjecture]]: a generalization of the ''abc'' conjecture to more than three integers.
+** [[abc conjecture|''abc'' conjecture]]: for any <math>\varepsilon > 0</math>, <math>\operatorname{rad}(abc)^{1+\varepsilon} < c</math> is true for only finitely many positive <math>a, b, c</math> such that <math>a + b = c</math>.
+** [[Szpiro's conjecture]]: for any <math>\varepsilon > 0</math>, there is some constant <math>C(\varepsilon)</math> such that, for any elliptic curve <math>E</math> defined over <math>\mathbb{Q}</math> with minimal discriminant <math>\Delta</math> and conductor <math>f</math>, we have <math>|\Delta| \leq C(\varepsilon) \cdot f^{6+\varepsilon}</math>.
+* [[Zilber–Pink conjecture]] that if <math>X</math> is a mixed [[Shimura variety]] or [[Abelian variety#Semiabelian variety|semiabelian variety]] defined over <math>\mathbb{C}</math>, and <math>V \subseteq X</math> is a subvariety, then <math>V</math> contains only finitely many maximal atypical subvarieties.
+
+====Computational number theory====
+{{Main|Computational number theory}}
+* Can [[integer factorization]] be done in [[polynomial time]]?
+* Can a [[discrete logarithm]] be computed in [[polynomial time]]?
+** Can a [[discrete logarithm]] on a [[elliptic curve]] be computed in [[sub-exponential time]]?
+* Does every [[rational number]] with an odd denominator have an [[odd greedy expansion]]?
+
+==== Diophantine approximation and transcendental number theory ====
+{{Further|Diophantine approximation|Transcendental number theory}}
+[[File:gamma-area.svg|right|thumb|The area of the blue region converges to the [[Euler–Mascheroni constant]], which may or may not be a rational number.]]
+* [[Littlewood conjecture]]: for any two real numbers <math>\alpha, \beta</math>, <math>\liminf_{n \rightarrow \infty} n\,\Vert n\alpha\Vert\,\Vert n\beta\Vert = 0</math>, where <math>\Vert x\Vert</math> is the distance from <math>x</math> to the nearest integer.
+* [[Schanuel's conjecture]] on the [[transcendence degree]] of certain [[field extension]]s of the rational numbers.<ref name="waldschmidt">{{citation |last=Waldschmidt |first=Michel |title=Diophantine Approximation on Linear Algebraic Groups: Transcendence Properties of the Exponential Function in Several Variables |pages=14, 16 |year=2013 |url=https://books.google.com/books?id=Wrj0CAAAQBAJ&pg=PA14 |publisher=Springer |isbn=978-3-662-11569-5}}</ref> In particular: Are <math>\pi</math> and <math>e</math> [[Algebraic independence|algebraically independent]]? Which nontrivial combinations of [[transcendental number]]s (such as <math>e + \pi, e\pi, \pi^e, \pi^{\pi}, e^e</math>) are themselves transcendental?<ref>{{Cite conference |last=Waldschmidt |first=Michel |date=2008 |title=An introduction to irrationality and transcendence methods. |url=https://webusers.imj-prg.fr/~michel.waldschmidt/articles/pdf/AWSLecture5.pdf |conference=2008 Arizona Winter School |archive-url=https://web.archive.org/web/20141216004531/http://webusers.imj-prg.fr/~michel.waldschmidt/articles/pdf/AWSLecture5.pdf |archive-date=16 December 2014 |access-date=15 December 2014}}</ref><ref>{{Citation |last=Albert |first=John |title=Some unsolved problems in number theory |url=http://www2.math.ou.edu/~jalbert/courses/openprob2.pdf |access-date=15 December 2014 |archive-url=https://web.archive.org/web/20140117150133/http://www2.math.ou.edu/~jalbert/courses/openprob2.pdf |archive-date=17 January 2014}}</ref>
+* The [[four exponentials conjecture]]: the transcendence of at least one of four exponentials of combinations of irrationals<ref name="waldschmidt"/>
+* Are [[Euler's constant]] <math>\gamma</math> and [[Catalan's constant]] <math>G</math> irrational? Are they transcendental? Is [[Apéry's constant]] <math>\zeta(3)</math> transcendental?<ref>For some background on the numbers in this problem, see articles by [[Eric W. Weisstein]] at [[Wolfram MathWorld|''Wolfram'' ''MathWorld'']] (all articles accessed 22 August 2024):
+*[https://mathworld.wolfram.com/Euler-MascheroniConstant.html Euler's Constant]
+*[https://mathworld.wolfram.com/CatalansConstant.html Catalan's Constant]
+*[https://mathworld.wolfram.com/AperysConstant.html Apéry's Constant]
+*[http://mathworld.wolfram.com/IrrationalNumber.html irrational numbers] ({{Webarchive|url=https://web.archive.org/web/20150327024040/http://mathworld.wolfram.com/IrrationalNumber.html|date=2015-03-27}})
+*[http://mathworld.wolfram.com/TranscendentalNumber.html transcendental numbers] ({{Webarchive|url=https://web.archive.org/web/20141113174913/http://mathworld.wolfram.com/TranscendentalNumber.html|date=2014-11-13}})
+*[http://mathworld.wolfram.com/IrrationalityMeasure.html irrationality measures] ({{Webarchive|url=https://web.archive.org/web/20150421203736/http://mathworld.wolfram.com/IrrationalityMeasure.html|date=2015-04-21}})</ref><ref name=":1">{{Cite arXiv |last=Waldschmidt |first=Michel |date=2003-12-24 |title=Open Diophantine Problems |eprint=math/0312440 |language=en}}</ref>
+* Which transcendental numbers are [[Period (algebraic geometry)|(exponential) periods]]?<ref>{{Citation |last1=Kontsevich |first1=Maxim |author-link1=Maxim Kontsevich |chapter=Periods |date=2001 |title=Mathematics Unlimited — 2001 and Beyond |pages=771–808 |editor-last=Engquist |editor-first=Björn |editor1-link=Björn Engquist |chapter-url=https://link.springer.com/chapter/10.1007/978-3-642-56478-9_39 |access-date=2024-08-22 |place=Berlin, Heidelberg |publisher=Springer |language=en |doi=10.1007/978-3-642-56478-9_39 |isbn=978-3-642-56478-9 |last2=Zagier |first2=Don |author-link2=Don Zagier |editor2-last=Schmid |editor2-first=Wilfried |editor2-link=Wilfried Schmid}}</ref>
+* How well can [[Quadratic equation|non-quadratic]] irrational numbers be approximated? What is the [[irrationality measure]] of specific (suspected) transcendental numbers such as <math>\pi</math> and <math>\gamma</math>?<ref name=":1"/>
+* Which irrational numbers have [[simple continued fraction]] terms whose [[geometric mean]] converges to [[Khinchin's constant]]?<ref>{{Cite web |last=Weisstein |first=Eric W. |title=Khinchin's Constant |url=https://mathworld.wolfram.com/KhinchinsConstant.html |access-date=2024-09-22 |website=mathworld.wolfram.com |language=en}}</ref>
+* [[Hartmanis–Stearns conjecture]]
+
+==== Diophantine equations ====
+{{Further|Diophantine equation}}
+* [[Beal's conjecture]]: for all integral solutions to <math>A^x + B^y = C^z</math> where <math>x, y, z > 2</math>, all three numbers <math>A, B, C</math> must share some prime factor.
+* [[Brocard's problem]]: are there any integer solutions to <math>n! + 1 = m^{2}</math> other than <math>n = 4, 5, 7</math>?
+* [[Congruent number problem]] (a corollary to [[Birch and Swinnerton-Dyer conjecture]], per [[Tunnell's theorem]]): determine precisely what rational numbers are [[congruent number]]s.
+* Erdős–Moser problem: is <math>1^1 + 2^1 = 3^1</math> the only solution to the [[Erdős–Moser equation]]?
+* [[Erdős–Straus conjecture]]: for every <math>n \geq 2</math>, there are positive integers <math>x, y, z</math> such that <math>4/n = 1/x + 1/y + 1/z</math>.
+* [[Fermat–Catalan conjecture]]: there are finitely many distinct solutions <math>(a^m, b^n, c^k)</math> to the equation <math>a^m + b^n = c^k</math> with <math>a, b, c</math> being positive [[coprime integers]] and <math>m, n, k</math> being positive integers satisfying <math>1/m + 1/n + 1/k < 1</math>.
+* [[Goormaghtigh conjecture]] on solutions to <math>(x^m - 1)/(x - 1) = (y^n - 1)/(y - 1)</math> where <math>x > y > 1</math> and <math>m, n > 2</math>.
+* The [[Markov number#Other properties|uniqueness conjecture for Markov numbers]]<ref>{{citation
+ | last = Aigner | first = Martin
+ | doi = 10.1007/978-3-319-00888-2
+ | isbn = 978-3-319-00887-5
+ | location = Cham
+ | mr = 3098784
+ | publisher = Springer
+ | title = Markov's theorem and 100 years of the uniqueness conjecture
+ | year = 2013}}</ref> that every [[Markov number]] is the largest number in exactly one normalized solution to the Markov [[Diophantine equation]].
+* [[Pillai's conjecture]]: for any <math>A, B, C</math>, the equation <math>Ax^m - By^n = C</math> has finitely many solutions when <math>m, n</math> are not both <math>2</math>.
+* Which integers can be written as the [[Sums of three cubes|sum of three perfect cubes]]?<ref>{{Cite arXiv |eprint = 1604.07746|last1 = Huisman |first1 = Sander G.|title = Newer sums of three cubes|class = math.NT|year = 2016}}</ref>
+* [[Sum of four cubes problem|Can every integer be written as a sum of four perfect cubes?]]
+
+==== Prime numbers ====
+{{Main|Prime numbers}}
+{{Prime number conjectures}}
+[[File:Goldbach partitions of the even integers from 4 to 50 rev4b.svg|thumb=Goldbach_partitions_of_the_even_integers_from_4_to_28_300px.png|[[Goldbach's conjecture]] states that all even integers greater than 2 can be written as the sum of two primes. Here this is illustrated for the even integers from 4 to 28.]]
+* [[Agoh–Giuga conjecture]] on the [[Bernoulli number]]s that <math>p</math> is prime if and only if <math>pB_{p-1} \equiv -1 \pmod p</math>
+* [[Agrawal's conjecture]] that given [[Coprime integers|coprime positive integers]] <math>n</math> and <math>r</math>, if <math>(X - 1)^n \equiv X^n - 1 \pmod{n, X^r - 1}</math>, then either <math>n</math> is prime or <math>n^{2} \equiv 1 \pmod{r}</math>
+* [[Artin's conjecture on primitive roots]] that if an integer is neither a perfect square nor <math>-1</math>, then it is a [[Primitive root modulo n|primitive root]] modulo infinitely many [[prime number]]s <math>p</math>
+* [[Brocard's conjecture]]: there are always at least <math>4</math> [[prime number]]s between consecutive squares of prime numbers, aside from <math>2^{2}</math> and <math>3^{2}</math>.
+* [[Bunyakovsky conjecture]]: if an integer-coefficient polynomial <math>f</math> has a positive leading coefficient, is irreducible over the integers, and has no common factors over all <math>f(x)</math> where <math>x</math> is a positive integer, then <math>f(x)</math> is prime infinitely often.
+* [[Catalan's Mersenne conjecture]]: some [[Double Mersenne number#Catalan–Mersenne number conjecture|Catalan–Mersenne number]] is composite and thus all Catalan–Mersenne numbers are composite after some point.
+* [[Dickson's conjecture]]: for a finite set of linear forms <math>a_1 + b_1 n, \ldots, a_k + b_k n</math> with each <math>b_i \geq 1</math>, there are infinitely many <math>n</math> for which all forms are [[prime number|prime]], unless there is some [[Modular arithmetic|congruence]] condition preventing it.
+* Dubner's conjecture: every even number greater than <math>4208</math> is the sum of two [[prime number|primes]] which both have a [[Twin prime|twin]].
+* [[Elliott–Halberstam conjecture]] on the distribution of [[prime number]]s in [[arithmetic progression]]s.
+* [[Powerful number#Mathematical properties|Erdős–Mollin–Walsh conjecture]]: no three consecutive numbers are all [[Powerful number|powerful]].
+* [[Feit–Thompson conjecture]]: for all distinct [[prime number]]s <math>p</math> and <math>q</math>, <math>(p^q - 1)/(p - 1)</math> does not divide <math>(q^p - 1)/(q - 1)</math>
+* Fortune's conjecture that no [[Fortunate number]] is composite.
+* The [[Gaussian moat]] problem: is it possible to find an infinite sequence of distinct [[Gaussian prime number]]s such that the difference between consecutive numbers in the sequence is bounded?
+* [[Gillies' conjecture]] on the distribution of [[Prime number|prime]] divisors of [[Mersenne prime|Mersenne numbers]].
+* [[Landau's problems]]
+** [[Goldbach conjecture]]: all even [[natural number]]s greater than <math>2</math> are the sum of two [[prime number]]s.
+** [[Legendre's conjecture]]: for every positive integer <math>n</math>, there is a prime between <math>n^{2}</math> and <math>(n+1)^{2}</math>.
+** [[Twin prime#Twin prime conjecture|Twin prime conjecture]]: there are infinitely many [[twin prime]]s.
+** Are there infinitely many primes of the form <math>n^{2} + 1</math>?
+* Problems associated to [[Linnik's theorem]]
+* [[Mersenne conjectures#New Mersenne conjecture|New Mersenne conjecture]]: for any odd [[natural number]] <math>p</math>, if any two of the three conditions <math>p = 2^k \pm 1</math> or <math>p = 4^k \pm 3</math>, <math>2^p - 1</math> is prime, and <math>(2^{p} + 1)/3</math> is prime are true, then the third condition is also true.
+* [[Polignac's conjecture]]: for all positive even numbers <math>n</math>, there are infinitely many [[prime gap]]s of size <math>n</math>.
+* [[Schinzel's hypothesis H]] that for every finite collection <math>\{f_1, \ldots, f_k\}</math> of nonconstant [[irreducible polynomial]]s over the integers with positive leading coefficients, either there are infinitely many positive integers <math>n</math> for which <math>f_1(n), \ldots, f_k(n)</math> are all [[prime number|primes]], or there is some fixed divisor <math>m > 1</math> which, for all <math>n</math>, divides some <math>f_i(n)</math>.
+* [[Sierpiński number|Selfridge's conjecture]]: is 78,557 the lowest [[Sierpiński number]]?
+* Does the [[Wolstenholme's theorem#The converse as a conjecture|converse of Wolstenholme's theorem]] hold for all natural numbers?
+* Are all [[Euclid number]]s [[Square-free integer|square-free]]?
+* Are all [[Fermat number]]s [[Square-free integer|square-free]]?
+* Are all [[Mersenne number]]s of prime index [[Square-free integer|square-free]]?
+* Are there any composite ''c'' satisfying 2<sup>''c'' − 1</sup> ≡ 1 (mod ''c''<sup>2</sup>)?
+* Are there any [[Wall–Sun–Sun prime]]s?
+* Are there any [[Wieferich prime]]s in base 47?
+* Are there infinitely many [[balanced prime]]s?
+* Are there infinitely many [[cluster prime]]s?
+* Are there infinitely many [[cousin prime]]s?
+* Are there infinitely many [[Cullen number|Cullen prime]]s?
+* Are there infinitely many [[Euclid number|Euclid prime]]s?
+* Are there infinitely many [[Fibonacci prime]]s?
+* Are there infinitely many [[Euclid number#Generalization|Kummer prime]]s?
+* Are there infinitely many Kynea primes?
+* Are there infinitely many [[Lucas number#Lucas primes|Lucas prime]]s?
+* Are there infinitely many [[Mersenne prime]]s ([[Lenstra–Pomerance–Wagstaff conjecture]]); equivalently, infinitely many even [[perfect number]]s?
+* Are there infinitely many [[Newman–Shanks–Williams prime]]s?
+* Are there infinitely many [[palindromic prime]]s to every base?
+* Are there infinitely many [[Pell number|Pell primes]]?
+* Are there infinitely many [[Pierpont prime]]s?
+* Are there infinitely many [[prime quadruplet]]s?
+* Are there infinitely many [[prime triplet]]s?
+* [[Regular prime|Siegel's conjecture]]: are there infinitely many regular primes, and if so is their [[natural density]] as a subset of all primes <math>e^{-1/2}</math>?
+* Are there infinitely many [[sexy prime]]s?
+* Are there infinitely many [[safe and Sophie Germain primes]]?
+* Are there infinitely many [[Wagstaff prime]]s?
+* Are there infinitely many [[Wieferich prime]]s?
+* Are there infinitely many [[Wilson prime]]s?
+* Are there infinitely many [[Wolstenholme prime]]s?
+* Are there infinitely many [[Woodall number#Woodall primes|Woodall prime]]s?
+* Can a prime ''p'' satisfy <math>2^{p-1}\equiv 1\pmod{p^2}</math> and <math>3^{p-1}\equiv 1\pmod{p^2}</math> simultaneously?<ref>{{cite arXiv |last1=Dobson |first1=John Blythe |date=1 April 2017 |title=On Lerch's formula for the Fermat quotient |eprint=1103.3907v6 |page=23 |class=math.NT}}</ref>
+* Does every prime number appear in the [[Euclid–Mullin sequence]]?
+* What is the smallest [[Skewes's number]]?
+* For any given integer ''a'' > 0, are there infinitely many [[Lucas–Wieferich prime]]s associated with the pair (''a'', −1)? (Specially, when ''a'' = 1, this is the Fibonacci-Wieferich primes, and when ''a'' = 2, this is the Pell-Wieferich primes)
+* For any given integer ''a'' > 0, are there infinitely many primes ''p'' such that ''a''<sup>''p'' − 1</sup> ≡ 1 (mod ''p''<sup>2</sup>)?<ref>{{cite book |last=Ribenboim |first=P. |author-link=Paulo Ribenboim |date=2006 |title=Die Welt der Primzahlen |edition=2nd |language=de |publisher=Springer |doi=10.1007/978-3-642-18079-8 |isbn=978-3-642-18078-1 |pages=242–243 |url=https://books.google.com/books?id=XMyzh-2SClUC&q=die+folgenden+probleme+sind+ungel%C3%B6st&pg=PA242|series=Springer-Lehrbuch }}</ref>
+* For any given integer ''b'' which is not a perfect power and not of the form −4''k''<sup>4</sup> for integer ''k'', are there infinitely many [[repunit]] primes to base ''b''?
+* For any given integers <math>k\geq 1, b\geq 2, c\neq 0</math>, with {{nowrap|1=gcd(''k'', ''c'') = 1}} and {{nowrap|1=gcd(''b'', ''c'') = 1,}} are there infinitely many primes of the form <math>(k\times b^n+c)/\gcd(k+c,b-1)</math> with integer ''n'' ≥ 1?
+* Is every [[Fermat number]] <math>2^{2^n} + 1</math> composite for <math>n > 4</math>?
+* Is 509,203 the lowest [[Riesel number]]?
+
+=== Set theory ===
+{{Main|Set theory}}
+
+The following conjectures are expressed in the [[First-order logic|first-order]] language of [[axiomatic set theory]] and, unless stated otherwise, are here taken to be over [[Zermelo-Frankel set theory]], possibly with [[axiom of choice|Choice]]. In particular, the conjecture's [[Independence (mathematical logic)#Independence results in set theory|independence]] may not be open in set theories with a wider or conflicting class of [[model theory|models]], such as the various [[constructive set theory|constructive]] resp. [[non-wellfounded set theory|non-wellfounded]] set theories, etc.
+
+* Does the [[Axiom of choice#Possibly equivalent implications of AC|partition principle]] (PP) imply the [[axiom of choice]] (AC)?
+* ([[W. Hugh Woodin|Woodin]]) Does the [[generalized continuum hypothesis]] below a [[strongly compact cardinal]] imply the [[generalized continuum hypothesis]] everywhere?
+* Does the [[generalized continuum hypothesis]] entail [[Diamondsuit|<math>{\diamondsuit(E^{\lambda^+}_{\operatorname{cf}(\lambda)}})</math>]] for every [[singular cardinal]] <math>\lambda</math>?
+* Does the [[generalized continuum hypothesis]] imply the existence of an [[Suslin tree|ℵ<sub>2</sub>-Suslin tree]]?
+* If ℵ<sub>ω</sub> is a strong limit cardinal, is <math>2^{\aleph_\omega} < \aleph_{\omega_1}</math> (see [[Singular cardinals hypothesis]])? The best bound, ℵ<sub>ω<sub>4</sub></sub>, was obtained by [[Saharon Shelah|Shelah]] using his [[PCF theory]].
+* The problem of finding the ultimate [[core model]], one that contains all [[Large cardinal property|large cardinals]].
+* [[W. Hugh Woodin|Woodin's]] [[Ω-logic|Ω-conjecture]]: if there is a [[Class (set theory)|proper class]] of [[Woodin cardinal]]s, then [[Ω-logic]] satisfies an analogue of [[Gödel's completeness theorem]].
+* Does the [[consistency]] of the existence of a [[strongly compact cardinal]] imply the consistent existence of a [[supercompact cardinal]]?
+* Does there exist a [[Jónsson cardinal|Jónsson algebra]] on ℵ<sub>ω</sub>?
+* Is OCA (the [[open coloring axiom]]) consistent with <math>2^{\aleph_{0}}>\aleph_{2}</math>?
+* [[Reinhardt cardinal]]s: Without assuming the [[axiom of choice]], can a [[Reinhardt cardinal|nontrivial elementary embedding]] ''V''→''V'' exist?
+
+===Topology===
+{{Main|Topology}}
+[[File:Ochiai_unknot.svg|thumb|The [[unknotting problem]] asks whether there is an efficient algorithm to identify when the shape presented in a [[knot diagram]] is actually the [[unknot]].]]
+* [[Baum–Connes conjecture]]: the [[Baum–Connes conjecture#Formulation|assembly map]] is an [[isomorphism]].
+* [[Berge knot|Berge conjecture]] that the only [[Knot (mathematics)|knots]] in the [[3-sphere]] which admit [[lens space]] [[Dehn surgery|surgeries]] are [[Berge knot]]s.
+* [[Bing–Borsuk conjecture]]: every <math>n</math>-dimensional [[Homogeneous space|homogeneous]] [[Retraction (topology)|absolute neighborhood retract]] is a [[topological manifold]].
+* [[Borel conjecture]]: [[Aspherical space|aspherical]] and [[closed manifold]]s are determined up to [[homeomorphism]] by their [[fundamental group]]s.
+* [[Halperin conjecture]] on rational [[Serre spectral sequence]]s of certain [[fibration]]s.
+* [[Hilbert–Smith conjecture]]: if a [[Locally compact space|locally compact]] [[topological group]] has a [[Continuous function|continuous]], [[Group action#Remarkable properties of actions|faithful group action]] on a [[topological manifold]], then the group must be a [[Lie group]].
+* Mazur's conjectures<ref>{{citation |last=Mazur |first=Barry |author-link=Barry Mazur |title=The topology of rational points |journal=[[Experimental Mathematics (journal)|Experimental Mathematics]] |volume=1 |number=1 |year=1992 |pages=35–45 |doi=10.1080/10586458.1992.10504244 |s2cid=17372107 |url=https://projecteuclid.org/euclid.em/1048709114 |access-date=2019-04-07 |archive-url=https://web.archive.org/web/20190407161124/https://projecteuclid.org/euclid.em/1048709114 |archive-date=2019-04-07 |url-status=live }}</ref>
+* [[Novikov conjecture]] on the [[Homotopy#Invariance|homotopy invariance]] of certain [[polynomial]]s in the [[Pontryagin class]]es of a [[manifold]], arising from the [[fundamental group]].
+* [[Quadrisecant]]s of [[wild knot]]s: it has been conjectured that wild knots always have infinitely many quadrisecants.<ref>{{citation
+ | last = Kuperberg | first = Greg | author-link = Greg Kuperberg
+ | arxiv = math/9712205
+ | doi = 10.1142/S021821659400006X
+ | journal = [[Journal of Knot Theory and Its Ramifications]]
+ | mr = 1265452
+ | pages = 41–50
+ | title = Quadrisecants of knots and links
+ | volume = 3
+ | year = 1994| s2cid = 6103528 }}</ref>
+* [[Ravenel's conjectures|Telescope conjecture]]: the last of [[Ravenel's conjectures]] in [[stable homotopy theory]] to be resolved.{{efn|A disproof has been announced, with a preprint made available on [[arXiv]].<ref>{{cite arXiv |last1=Burklund |first1=Robert |last2=Hahn |first2=Jeremy |last3=Levy |first3=Ishan |last4=Schlank |first4=Tomer |title=K-theoretic counterexamples to Ravenel's telescope conjecture |date=2023 |class=math.AT |eprint=2310.17459 }}</ref>}}
+* [[Unknotting problem]]: can [[unknot]]s be recognized in [[Time complexity#Polynomial time|polynomial time]]?
+* [[Volume conjecture]] relating [[quantum invariant]]s of [[Knot (mathematics)|knots]] to the [[hyperbolic geometry]] of their [[knot complement]]s.
+* [[Whitehead conjecture]]: every [[Connectedness|connected]] [[CW complex#Inductive construction of CW complexes|subcomplex]] of a two-dimensional [[Aspherical space|aspherical]] [[CW complex]] is aspherical.
+* [[Zeeman conjecture]]: given a finite [[Contractible space|contractible]] two-dimensional [[CW complex]] <math>K</math>, is the space <math>K \times [0, 1]</math> [[Collapse (topology)|collapsible]]?
+* [[Nearby Lagrangian conjecture]]: prove or find a counter-example to the statement: Any closed exact [[Lagrangian submanifold]] of the [[cotangent bundle]] of a [[closed manifold]] is [[Symplectomorphism#Flows|Hamiltonian isotopic]] to the [[Vector bundle#Sections and locally free sheaves|zero section]].<ref>{{Cite web|url=https://celebratio.org/Eliashberg_Y/article/1188/|title=Celebratio Mathematica — Eliashberg — Generating functions|website=Celebratio.org|access-date=June 16, 2026}}</ref>
+
+== Problems solved since 2015 ==
+[[File:Aperiodic monotile tiling.png|thumb|The [[Einstein problem]] asks whether aperiodic monotiles, like the Tile(1,1) pictured here, exist.]]
+
+{{See also|List of mathematical discoveries by artificial intelligence}}
+
+===Algebra===
+* [[Jacobian conjecture]] for more than 2 dimensions ([[Levent Alpöge]], 2026 using [[Claude Mythos|Claude Fable 5]]).<ref>{{cite news|url=https://www.newscientist.com/article/2580374-ais-solution-to-87-year-old-riddle-takes-mathematicians-by-surprise/|title=AI's solution to 87-year-old riddle takes mathematicians by surprise|author= Matthew Sparkes|date=July 20, 2026|publisher=[[New Scientist]]}}</ref><ref>{{Cite tweet |user=__alpoge__ |number=2079028340955197566 |title=hello there the jacobian conjecture is false}}</ref><ref name=mathworld>{{MathWorld |id=JacobianConjecture |title=Jacobian Conjecture}}</ref>
+** [[Dixmier conjecture]] for <math>n \geq 3</math>, stably equivalent to the Jacobian conjecture.
+* [[Uniform boundedness conjecture for rational points#Mazur's conjecture B|Mazur's conjecture B]] ([[Vesselin Dimitrov|Vessilin Dimitrov]], [[Ziyang Gao]], and [[Philipp Habegger]], 2020).<ref>{{cite journal
+ |first1=Vessilin
+ |last1=Dimitrov
+ |first2=Ziyang
+ |last2=Gao
+ |first3=Philipp
+ |last3=Habegger
+ |title=Uniformity in Mordell–Lang for curves
+ |journal = [[Annals of Mathematics]]
+ |volume = 194
+ |year=2021
+ |pages=237–298
+ |doi=10.4007/annals.2021.194.1.4
+ |arxiv=2001.10276
+ |s2cid=210932420
+ |url=https://hal.sorbonne-universite.fr/hal-03374335/file/Dimitrov%20et%20al.%20-%202021%20-%20Uniformity%20in%20Mordell%E2%80%93Lang%20for%20curves.pdf}}
+</ref>
+* [[Suita conjecture]] (Qi'an Guan and [[Xiangyu Zhou]], 2015).<ref>{{cite journal
+ | jstor=24523356
+ | last1=Guan
+ | first1=Qi'an
+ | last2=Zhou
+ | first2=Xiangyu
+ | author2-link=Xiangyu Zhou
+ | title=A solution of an <math>L^2</math> extension problem with optimal estimate and applications
+ | journal=Annals of Mathematics
+ | year=2015
+ | volume=181
+ | issue=3
+ | pages=1139–1208
+ | doi=10.4007/annals.2015.181.3.6
+ | s2cid=56205818
+ | arxiv=1310.7169}}
+</ref>
+
+====Group theory====
+* Existence of a [[sofic group|non-sofic]], discrete, countable group (solution in an anonymized paper published by [[OpenAI]], 2026).<ref>{{Cite web |date=2026-07-29 |title=Ten advances in mathematics and theoretical computer science |url=https://openai.com/index/ten-advances-in-mathematics/ |access-date=2026-08-01 |website=OpenAI |language=en-US}}</ref>
+* [[Umbral moonshine]] conjecture (John F. R. Duncan, Michael J. Griffin, [[Ken Ono]], 2015).<ref>{{cite journal|title=Proof of the umbral moonshine conjecture|first1=John F. R.|last1=Duncan|first2=Michael J.|last2=Griffin|first3=Ken|last3=Ono|date=1 December 2015|journal=Research in the Mathematical Sciences|volume=2|issue=1|page=26|doi=10.1186/s40687-015-0044-7|bibcode=2015arXiv150301472D|arxiv=1503.01472|s2cid=43589605 |doi-access=free }}</ref>
+
+===Analysis===
+* [[Sendov's conjecture]] and Phelps–Rodriguez conjecture (Lech Mazur using [[GPT-5.6]] Pro, 2026).<ref>{{cite web|url=https://www.proofatlas.ai/papers/sendov-conjecture/SENDOV_CONJECTURE_PROOF_AUGUST_5_2026.pdf |title=A Computer-Assisted Proof of Sendov's Conjecture|website=Proofatlas.ai|access-date=2026-08-28}}</ref><ref>{{Cite web |date=2026-08-12 |title=A digestion of the proof of Sendov's conjecture |url=https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/ |access-date=2026-08-20 |website=Terence Tao's Blog |language=en}}</ref>
+* [[Crouzeix's conjecture]] (Shanmu Jin using [[GPT-5|GPT-5.6 Sol]], 2026. Independent proof by Emiel Lorist and Felix Schwenninger, 2026).<ref>{{cite journal |last=Jin |first=Shanmu |title=The Numerical Range Is a 2-Spectral Set |year=2026 |doi=10.20944/preprints202607.1919.v1 |doi-access=free}}</ref><ref>{{cite arXiv |last1=Lorist |first1=Emiel |last2=Schwenninger |first2=Felix |title=A solution to Crouzeix's conjecture |year=2026 |eprint=2608.03841 |class=math.CA}}</ref><ref name="TownsendGreenbaum2026">{{cite web |last1=Townsend |first1=Alex |last2=Greenbaum |first2=Anne |title=The Neurosurgery Resident Who Proved Crouzeix's Conjecture |url=https://alextownsend.net/essays/SIAMNews_CrouzeixConjecture.pdf |date=2026-08-14 |access-date=2026-09-10}}</ref>
+* [[Heil–Ramanathan–Topiwala conjecture]] (Markus Faulhuber, Philipp Petersen, Jordy Timo van Velthoven, Felix Voigtlaender using [[GPT-5.6]] Pro, 2026).<ref>{{Cite web |date=2026-08-06 |title=A partial digestion of the HRT counterexample |url=https://terrytao.wordpress.com/2026/08/06/a-partial-digestion-of-the-hrt-counterexample/ |access-date=2026-08-20 |website=Terence Tao's Blog |language=en}}</ref>
+* [[Mizohata–Takeuchi conjecture]] ([[Hannah Cairo]], 2025).<ref>{{Cite web |last=Hartnett |first=Kevin |date=2025-08-01 |title=At 17, Hannah Cairo Solved a Major Math Mystery |url=https://www.quantamagazine.org/at-17-hannah-cairo-solved-a-major-math-mystery-20250801/ |access-date=2025-08-08 |website=Quanta Magazine |language=en}}</ref><ref>{{cite arXiv | last1=Cairo | first1=Hannah |author-link1=Hannah Cairo | title=A Counterexample to the Mizohata-Takeuchi Conjecture | date=2025 | class=math.CA | eprint=2502.06137 }}</ref>
+
+===Combinatorics===
+* [[Unit distance graph#Number of edges|Erdős unit distance conjecture]] (published in an anonymized paper by [[OpenAI]], 2026).<ref>{{Cite web | url=https://community.wolfram.com/groups/-/m/t/3719376 | title=OpenAI disproves Erdős unit distance conjecture | website=Wolfram Community}}</ref><ref>{{Cite web | url=https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf |title = Planar Point Sets with Many Unit Distances | website = OpenAI}}</ref>
+* [[Bunkbed conjecture]] (Nikita Gladkov, [[Igor Pak]], Alexander Zimin, 2025).<ref>{{Cite journal |last1=Gladkov |first1=Nikita |last2=Pak |first2=Igor |last3=Zimin |first3=Aleksandr |date=2025-06-17 |title=The bunkbed conjecture is false |journal=Proceedings of the National Academy of Sciences |volume=122 |issue=24 |article-number=e2420725122 |bibcode=2025PNAS..12220725G |doi=10.1073/pnas.2420725122 |pmc=12184427 |pmid=40512791 |bibcode-access=free |doi-access=free |arxiv=2410.02545 }}</ref>
+* [[Erdős sumset conjecture]] (Joel Moreira, Florian Richter, Donald Robertson, 2018).<ref>{{Cite journal |last1=Moreira |first1=Joel |last2=Richter |first2=Florian K. |last3=Robertson |first3=Donald |title=A proof of a sumset conjecture of Erdős |journal=[[Annals of Mathematics]] |doi=10.4007/annals.2019.189.2.4 |volume=189 |number=2 |pages=605–652 |language=en-US|year=2019 |arxiv=1803.00498 |s2cid=119158401 }}</ref>
+* [[Simplicial sphere|McMullen's g-conjecture]] on the possible numbers of faces of different dimensions in a [[simplicial sphere]] (also Grünbaum conjecture, several conjectures of Kühnel). ([[Karim Adiprasito]], 2018).<ref>{{Cite book |last1=Bisztriczky |first1=Tibor |chapter-url=https://books.google.com/books?id=gHjrCAAAQBAJ&pg=PA316 |title=Polytopes: Abstract, Convex and Computational |last2=McMullen |first2=Peter |author-link2=Peter McMullen |last3=Schneider |first3=Rolf |author-link3=Rolf Schneider |last4=Weiss |first4=Asia Ivic |last5=Stanley |first5=Richard P. |author-link5=Richard P. Stanley |date=2012-12-06 |publisher=Springer Science & Business Media |isbn=978-94-011-0924-6 |pages=301–333 |language=en |chapter=A survey of Eulerian posets}}</ref><ref>{{cite web |last1=Kalai |first1=Gil |title=Amazing: Karim Adiprasito proved the g-conjecture for spheres! |url=https://gilkalai.wordpress.com/2018/12/25/amazing-karim-adiprasito-proved-the-g-conjecture-for-spheres/ |access-date=2019-02-15 |archive-url=https://web.archive.org/web/20190216031650/https://gilkalai.wordpress.com/2018/12/25/amazing-karim-adiprasito-proved-the-g-conjecture-for-spheres/ |archive-date=2019-02-16 |url-status=live |date=2018-12-25 }}</ref>
+* Upper bound for the [[cap set problem]] ([[Jordan Ellenberg]], Dion Gijswijt, 2016).<ref>{{Cite journal |date=2017 |last1=Ellenberg |first1=Jordan S. |last2=Gijswijt |first2=Dion |title=On large subsets of <math>\mathbb{F}_q^n</math> with no three-term arithmetic progression |journal=Annals of Mathematics |volume=185 |issue=1 |pages=339–343 |doi=10.4007/annals.2017.185.1.8 |mr=3583358 |zbl=06686590 |doi-access=free}}</ref>
+* [[Erdős discrepancy problem]] ([[Terence Tao]], 2015)<ref>{{Cite arXiv |eprint = 1509.05363v5|last1 = Tao|first1 = Terence | author-link1=Terence Tao|title = The Erdős discrepancy problem|class = math.CO|year = 2015}}</ref>
+
+===Dynamical systems===
+* [[Alexandre Eremenko|Eremenko's]] conjecture: every component of the [[escaping set]] of an [[entire function|entire]] [[transcendental function|transcendental]] function is unbounded. (David Martí-Pete, [[Lasse Rempe]], and James Waterman, 2025).<ref>
+{{cite journal|first1=David|last1=Martí-Pete|first2=Lasse|last2=Rempe|first3=James|last3=Waterman|title=Eremenko's conjecture, wandering Lakes of Wada, and maverick points|journal=Journal of the American Mathematical Society |date=2025|volume=38 |issue=4 |pages=877–918 |doi=10.1090/jams/1049 |arxiv=2108.10256}}
+</ref>
+* [[Zimmer's conjecture]] (Aaron Brown, David Fisher, and [[Sebastián Hurtado-Salazar]], 2017).<ref>{{cite arXiv
+ | last1=Brown
+ | first1=Aaron
+ | last2=Fisher
+ | first2=David
+ | last3=Hurtado
+ | first3=Sebastian
+ | date=2017-10-07
+ | title=Zimmer's conjecture for actions of {{not a typo|SL(𝑚,ℤ)}}
+ | eprint=1710.02735
+ | class=math.DS}}
+</ref>
+
+===Game theory===
+* Existence of a non-terminating game of [[beggar-my-neighbour]] (Brayden Casella, 2024).<ref>
+{{cite web | url= https://richardpmann.com/beggar-my-neighbour-records.html | title= Known Historical Beggar-My-Neighbour Records |author=  Richard P Mann |access-date= 2024-02-10 }}</ref><ref>{{Cite journal |last1=Casella |first1=Brayden |last2=Anderson |first2=Philip M. |last3=Kleber |first3=Michael |last4=Mann |first4=Richard P. |last5=Nessler |first5=Reed |last6=Rucklidge |first6=William |last7=Williams |first7=Samuel G. |last8=Wu |first8=Nicolas |date=2025-11-26 |title=A Non-Terminating Game of Beggar-My-Neighbor |url=https://doi.org/10.1080/00029890.2025.2558484 |journal=The American Mathematical Monthly |volume=132 |issue=10 |pages=978–994 |doi=10.1080/00029890.2025.2558484 |issn=0002-9890}}</ref>
+
+===Geometry===
+* Existence of a complex structure on <math>S^6</math> (Levent Alpöge, 2026 using [[Claude Fable 5]]).<ref>https://alpo.ge/s6.pdf</ref><ref>https://philip-engel.github.io/S6.pdf</ref><ref>{{cite web | title=Plby/HopfProblem | website=[[GitHub]] | url=https://github.com/plby/HopfProblem }}</ref>
+* [[Talagrand's convexity conjecture]] (Dongming Hua, [[Antoine Song]], Stefan Tudose using [[GPT-5.5]] Pro, 2026).<ref>{{cite web |last=Kasal |first=Krystal |date=24 May 2026 |editor-last=Clark |editor-first=Gaby |editor2-last=Egan |editor2-first=Robert |title=Mathematicians solve decades-old mystery about the hidden order in high-dimensional randomness |url=https://phys.org/news/2026-05-mathematicians-decades-mystery-hidden-high.html |website=Phys.org}}</ref><ref>{{cite web |last=Howlett |first=Joseph |date=19 May 2026 |editor-last=Billings |editor-first=Lee |title='Sensational' proof topples decades-old geometry problem |url=https://www.scientificamerican.com/article/sensational-proof-topples-decades-old-geometry-problem/ |website=[[Scientific American]]}}</ref>
+* [[Carathéodory conjecture]] for surfaces of smoothness <math>C^{4}</math> (Brendan Guilfoyle and Wilhelm Klingenberg, 2025).<ref>{{cite journal |first1=B. |last1=Guilfoyle |first2=W. |last2=Klingenberg |year=2025 |title= The three obdurate conjectures of differential geometry |journal= Math. Proc. R. Ir. Acad. |volume=125A |pages=9–17 | arxiv=2502.11716 | doi=10.1353/mpr.2025.a968272 }}</ref>
+* [[Einstein problem]] (David Smith, Joseph Samuel Myers, Craig S. Kaplan, [[Chaim Goodman-Strauss]], 2024).<ref>{{Cite journal |last1=Smith |first1=David |last2=Myers |first2=Joseph Samuel |last3=Kaplan |first3=Craig S. |last4=Goodman-Strauss |first4=Chaim |date=2024 |title=An aperiodic monotile |url=https://escholarship.org/uc/item/3317z9z9 |journal=Combinatorial Theory |language=en |volume=4 |issue=1 |doi=10.5070/C64163843  |doi-access=free|issn=2766-1334}}</ref>
+* [[Egan conjecture]] (Sergei Drozdov, 2023).<ref>{{Cite journal |last=Drozdov |first=Sergei |date=2025-12-31 |title=Egan conjecture holds |url=https://www.sciencedirect.com/science/article/pii/S0166218X25004809 |journal=Discrete Applied Mathematics |volume=377 |pages=562–572 |arxiv=2310.10816 |doi=10.1016/j.dam.2025.08.034 |s2cid=264172309}}</ref>
+* [[Keller's conjecture]] (Joshua Brakensiek, Marijn Heule, John Mackey, David Narvaez, 2019).<ref>{{Citation |last1=Brakensiek |first1=Joshua |title=The Resolution of Keller's Conjecture |date=2020 |journal=Automated Reasoning |volume=12166 |pages=48–65 |editor-last=Peltier |editor-first=Nicolas |place=Cham |publisher=Springer International Publishing |language=en |arxiv=1910.03740 |doi=10.1007/978-3-030-51074-9_4 |isbn=978-3-030-51073-2 |pmc=7324133 |s2cid=203951899 |last2=Heule |first2=Marijn |last3=Mackey |first3=John |last4=Narváez |first4=David |editor2-last=Sofronie-Stokkermans |editor2-first=Viorica}}</ref>
+* [[Maximal rank conjecture]] (Eric Larson, 2018).<ref>{{Cite arXiv| eprint=1711.04906 | last1=Larson | first1=Eric | title=The Maximal Rank Conjecture | year=2017 | class=math.AG }}</ref>
+* [[Weibel's conjecture]] (Moritz Kerz, Florian Strunk, and Georg Tamme, 2018).<ref>{{citation
+ | first1=Moritz
+ | last1=Kerz
+ | first2=Florian
+ | last2=Strunk
+ | first3=Georg
+ | last3=Tamme
+ | title=Algebraic ''K''-theory and descent for blow-ups
+ | journal=[[Inventiones Mathematicae]]
+ | volume=211
+ | year=2018
+ | issue=2
+ | pages=523–577
+ | mr=3748313
+ | doi=10.1007/s00222-017-0752-2
+ | arxiv=1611.08466| bibcode=2018InMat.211..523K
+ | s2cid=253741858
+ }}
+</ref>
+* [[Yau's conjecture]] ([[Antoine Song]], 2018).<ref>{{cite web
+ | url = https://www.ams.org/amsmtgs/2251_abstracts/1147-53-499.pdf 
+ | title =  Existence of infinitely many minimal hypersurfaces in closed manifolds.
+ | author =  Song, Antoine
+ | work = www.ams.org
+ | quote = "..I will present a solution of the conjecture, which builds on min-max methods developed by F. C. Marques and A. Neves.."
+ |  access-date = 19 June 2021}}
+</ref><ref>{{Cite web
+ | url=https://www.claymath.org/people/antoine-song
+ | title = Antoine Song &#124; Clay Mathematics Institute
+ | quote="...Building on work of Codá Marques and Neves, in 2018 Song proved Yau's conjecture in complete generality"}}
+</ref>
+* [[Pentagonal tiling]] (Michaël Rao, 2017).<ref>{{citation|url=https://www.quantamagazine.org/pentagon-tiling-proof-solves-century-old-math-problem-20170711/|magazine=[[Quanta Magazine]]|title=Pentagon Tiling Proof Solves Century-Old Math Problem|first=Natalie|last=Wolchover|date=July 11, 2017|access-date=July 18, 2017|archive-url=https://web.archive.org/web/20170806093353/https://www.quantamagazine.org/pentagon-tiling-proof-solves-century-old-math-problem-20170711/|archive-date=August 6, 2017}}</ref>
+
+===Graph theory===
+* [[Dinitz–Garg–Goemans conjecture]] (Dmitry Rybin using [[GPT-5.6]] Pro, 2026).<ref>{{cite web |last1=Sparkes |first1=Matthew |date=23 July 2026 |title=Extremely basic AI prompt cracks decades-old maths problem |url=https://www.newscientist.com/article/2580932-extremely-basic-ai-prompt-cracks-decades-old-maths-problem/ |work=New Scientist}}</ref>
+* [[Kahn–Kalai conjecture]] ([[Jinyoung Park (mathematician)|Jinyoung Park]] and Huy Tuan Pham, 2022).<ref>{{cite journal |last1=Park |first1=Jinyoung |last2=Pham |first2=Huy Tuan |date=2024 |title=A Proof of the Kahn-Kalai Conjecture |arxiv=2203.17207 |journal=Journal of the American Mathematical Society |volume=37 |pages=235–243 |doi=10.1090/jams/1028 |doi-access=}}</ref>
+* [[Blankenship–Oporowski conjecture]] on the book thickness of subdivisions ([[Vida Dujmović]], [[David Eppstein]], Robert Hickingbotham, [[Pat Morin]], and [[David Wood (mathematician)|David Wood]], 2021).<ref>{{cite journal
+ | last1 = Dujmović | first1 = Vida | author1-link = Vida Dujmović
+ | last2 = Eppstein | first2 = David | author2-link = David Eppstein
+ | last3 = Hickingbotham | first3 = Robert
+ | last4 = Morin | first4 = Pat | author4-link = Pat Morin
+ | last5 = Wood | first5 = David R. | author5-link = David Wood (mathematician)
+ | arxiv = 2011.04195
+ | date = August 2021
+ | doi = 10.1007/s00493-021-4585-7
+ | journal = [[Combinatorica]]
+ | title = Stack-number is not bounded by queue-number| volume = 42 | issue = 2 | pages = 151–164 | s2cid = 226281691 }}</ref>
+*[[Graceful labeling|Ringel's conjecture]] that the [[complete graph]] <math>K_{2n+1}</math> can be decomposed into <math>2n+1</math> copies of any tree with <math>n</math> edges ([[Richard Montgomery (mathematician)|Richard Montgomery]], [[Benny Sudakov]], [[Alexey Pokrovskiy]], 2020).<ref>{{cite journal|last1=Huang |first1=C.|title=Further results on tree labellings |journal=Utilitas Mathematica |volume=21 |pages=31–48 |year=1982|mr=668845|last2=Kotzig|first2=A.|last3=Rosa|first3=A.|author2-link=Anton Kotzig}}.</ref><ref>{{Cite web |url=https://www.quantamagazine.org/mathematicians-prove-ringels-graph-theory-conjecture-20200219/|title=Rainbow Proof Shows Graphs Have Uniform Parts|last=Hartnett |first=Kevin|website=Quanta Magazine|date=19 February 2020|language=en|access-date=2020-02-29}}</ref>
+*Disproof of [[Hedetniemi's conjecture]] on the chromatic number of [[Tensor product of graphs|tensor products of graphs]] (Yaroslav Shitov, 2019).<ref>{{cite journal |last1=Shitov |first1=Yaroslav |date=2019-09-01 |df=dmy-all |title=Counterexamples to Hedetniemi's conjecture |journal=Annals of Mathematics |volume=190 |issue=2 |pages=663–667 |arxiv=1905.02167 |doi=10.4007/annals.2019.190.2.6 |jstor=10.4007/annals.2019.190.2.6 |mr= 3997132 |zbl=1451.05087 |s2cid=146120733 |url=https://annals.math.princeton.edu/2019/190-2/p06 |access-date=2021-07-19}}</ref>
+* [[Kelmans–Seymour conjecture]] (Dawei He, Yan Wang, and Xingxing Yu, 2020).<ref>{{Cite journal
+ | last1=He
+ | first1=Dawei
+ | last2=Wang
+ | first2=Yan
+ | last3=Yu
+ | first3=Xingxing
+ | date=2019-12-11
+ | title=The Kelmans-Seymour conjecture I: Special separations
+ | url=http://www.sciencedirect.com/science/article/pii/S0095895619301224
+ | journal=Journal of Combinatorial Theory, Series B
+ | volume=144
+ | pages=197–224
+ | doi=10.1016/j.jctb.2019.11.008
+ | issn=0095-8956
+ | arxiv=1511.05020
+ | s2cid=29791394}}
+</ref><ref>{{Cite journal
+ | last1=He
+ | first1=Dawei
+ | last2=Wang
+ | first2=Yan
+ | last3=Yu
+ | first3=Xingxing
+ | date=2019-12-11
+ | title=The Kelmans-Seymour conjecture II: 2-Vertices in K4−
+ | url=http://www.sciencedirect.com/science/article/pii/S0095895619301212
+ | journal=Journal of Combinatorial Theory, Series B
+ | volume=144
+ | pages=225–264
+ | doi=10.1016/j.jctb.2019.11.007
+ | issn=0095-8956
+ | arxiv=1602.07557| s2cid=220369443
+ }}
+</ref><ref>{{Cite journal
+ | last1=He
+ | first1=Dawei
+ | last2=Wang
+ | first2=Yan
+ | last3=Yu
+ | first3=Xingxing
+ | date=2019-12-09
+ | title=The Kelmans-Seymour conjecture III: 3-vertices in K4−
+ | url=http://www.sciencedirect.com/science/article/pii/S0095895619301200
+ | journal=Journal of Combinatorial Theory, Series B
+ | volume=144
+ | pages=265–308
+ | doi=10.1016/j.jctb.2019.11.006
+ | issn=0095-8956
+ | arxiv=1609.05747
+ | s2cid=119625722}}
+</ref><ref>{{Cite journal
+ | last1=He
+ | first1=Dawei
+ | last2=Wang
+ | first2=Yan
+ | last3=Yu
+ | first3=Xingxing
+ | date=2019-12-19
+ | title=The Kelmans-Seymour conjecture IV: A proof
+ | url=http://www.sciencedirect.com/science/article/pii/S0095895619301248
+ | journal=Journal of Combinatorial Theory, Series B
+ | volume=144
+ | pages=309–358
+ | doi=10.1016/j.jctb.2019.12.002
+ | issn=0095-8956
+ | arxiv=1612.07189
+ | s2cid=119175309}}
+</ref>
+* [[Goldberg–Seymour conjecture]] (Guantao Chen, Guangming Jing, and Wenan Zang, 2019).<ref>{{Cite arXiv
+ | last1=Zang
+ | first1=Wenan
+ | last2=Jing
+ | first2=Guangming
+ | last3=Chen
+ | first3=Guantao
+ | date=2019-01-29
+ | title=Proof of the Goldberg–Seymour Conjecture on Edge-Colorings of Multigraphs
+ | class=math.CO
+ | language=en
+ | eprint=1901.10316v1}}
+</ref>
+* [[Babai's problem]] (Alireza Abdollahi, Maysam Zallaghi, 2015).<ref>{{cite journal | first= Zallaghi M.|last= Abdollahi A. | year = 2015 | journal = Communications in Algebra | title = Character sums for Cayley graphs | volume = 43| issue = 12| pages = 5159–5167 | doi = 10.1080/00927872.2014.967398 |s2cid= 117651702 }}</ref>
+
+===Number theory===
+*[[André–Oort conjecture]] ([[Jonathan Pila]], Ananth Shankar, [[Jacob Tsimerman]], 2021).<ref>{{cite arXiv |last1=Pila |first1=Jonathan |last2=Shankar |first2=Ananth |last3=Tsimerman |first3=Jacob |last4=Esnault |first4=Hélène |last5=Groechenig |first5=Michael |date=2021-09-17 |title=Canonical Heights on Shimura Varieties and the André-Oort Conjecture |class=math.NT |eprint=2109.08788}}</ref>
+*[[Duffin–Schaeffer theorem]] ([[Dimitris Koukoulopoulos]], [[James Maynard (mathematician)|James Maynard]], 2019).<ref>{{Cite journal |last1=Koukoulopoulos |first1=Dimitris |last2=Maynard |first2=James |date=2020-07-01 |title=On the Duffin-Schaeffer conjecture |url=https://projecteuclid.org/journals/annals-of-mathematics/volume-192/issue-1/On-the-Duffin-Schaeffer-conjecture/10.4007/annals.2020.192.1.5.full |journal=Annals of Mathematics |volume=192 |issue=1 |pages=251–307 |arxiv=1907.04594 |doi=10.4007/annals.2020.192.1.5 |jstor=10.4007/annals.2020.192.1.5 |s2cid=195874052}}</ref>
+* [[Vinogradov's mean-value theorem#The conjectured form|Main conjecture in Vinogradov's mean-value theorem]] ([[Jean Bourgain]], Ciprian Demeter, [[Larry Guth]], 2015).<ref>{{cite journal|last1=Bourgain |first1=Jean|first2=Demeter|last2=Ciprian|first3=Guth|last3=Larry|title=Proof of the main conjecture in Vinogradov's Mean Value Theorem for degrees higher than three|journal=Annals of Mathematics |year=2015|doi=10.4007/annals.2016.184.2.7|volume=184|issue=2|pages=633–682|hdl=1721.1/115568|bibcode=2015arXiv151201565B|arxiv=1512.01565|s2cid=43929329}}</ref>
+
+===Ramsey theory===
+* [[Burr–Erdős conjecture]] (Choongbum Lee, 2017).<ref>{{cite journal | last1 = Lee | first1 = Choongbum | year = 2017 | title = Ramsey numbers of degenerate graphs | journal = Annals of Mathematics | volume = 185 | issue = 3| pages = 791–829 | doi = 10.4007/annals.2017.185.3.2 | arxiv = 1505.04773 | s2cid = 7974973 }}</ref>
+* [[Boolean Pythagorean triples problem]] ([[Marijn Heule]], Oliver Kullmann, [[Victor W. Marek]], 2016).<ref>{{cite journal |last=Lamb |first=Evelyn |date=26 May 2016 |title=Two-hundred-terabyte maths proof is largest ever |journal=Nature |doi=10.1038/nature.2016.19990 |volume=534 |issue=7605 |pages=17–18 |pmid=27251254 |bibcode=2016Natur.534...17L|doi-access=free }}</ref><ref>{{cite book
+ | last1 = Heule | first1 = Marijn J. H. | author1-link=Marijn Heule
+ | last2 = Kullmann | first2 = Oliver
+ | last3 = Marek | first3 = Victor W. | author3-link=Victor W. Marek
+ | editor-last1 = Creignou | editor-first1 = N.
+ | editor-last2 = Le Berre | editor-first2 = D. 
+ | arxiv = 1605.00723
+ | chapter = Solving and Verifying the Boolean Pythagorean Triples Problem via Cube-and-Conquer
+ | doi = 10.1007/978-3-319-40970-2_15
+ | mr = 3534782
+ | pages = 228–245
+ | publisher = Springer, [Cham]
+ | series = Lecture Notes in Computer Science
+ | title = Theory and Applications of Satisfiability Testing – SAT 2016
+ | volume = 9710
+ | year = 2016| isbn = 978-3-319-40969-6
+ | s2cid = 7912943
+ }}</ref>
+
+===Theoretical computer science===
+*[[Sensitivity theorem|Sensitivity conjecture]] for [[Boolean function|Boolean functions]] ([[Hao Huang (mathematician)|Hao Huang]], 2019).<ref>{{cite web |author=Linkletter, David |date=27 December 2019 |title=The 10 Biggest Math Breakthroughs of 2019 |url=https://www.popularmechanics.com/science/math/g30346822/biggest-math-breakthroughs-2019/ |access-date=20 June 2021 |work=[[Popular Mechanics]]}}</ref>
+
+===Topology===
+*Deciding whether the [[Conway knot]] is a [[slice knot]] ([[Lisa Piccirillo]], 2020).<ref>{{Cite journal |last=Piccirillo |first=Lisa |date=2020 |title=The Conway knot is not slice |url=https://annals.math.princeton.edu/2020/191-2/p05 |journal=[[Annals of Mathematics]] |volume=191 |issue=2 |pages=581–591 |doi=10.4007/annals.2020.191.2.5|s2cid=52398890 }}</ref><ref>{{Cite web |last=Klarreich |first=Erica |author-link=Erica Klarreich |date=2020-05-19 |title=Graduate Student Solves Decades-Old Conway Knot Problem |url=https://www.quantamagazine.org/graduate-student-solves-decades-old-conway-knot-problem-20200519/ |access-date=2022-08-17 |website=[[Quanta Magazine]] |language=en}}</ref>
+
+== See also ==
+* [[List of conjectures]]
+* [[List of unsolved problems in statistics]]
+* [[List of unsolved problems in computer science]]
+* [[List of unsolved problems in physics]]
+* [[List of problems in loop theory and quasigroup theory]]
+* [[Lists of unsolved problems]]
+* ''[[Open Problems in Mathematics]]''
+* [[Scottish Book]]
+* ''[[The Great Mathematical Problems]]''
+
+==Notes==
+{{notelist}}
+
+== References ==
+{{reflist|colwidth=30em}}
+
+== Further reading ==
+
+=== Books discussing problems solved since 1995 ===
+
+* {{cite book |last=Singh |first=Simon |author-link=Simon Singh |date=2002 |title=Fermat's Last Theorem |publisher=Fourth Estate |isbn=978-1-84115-791-7|title-link=Fermat's Last Theorem (book) }}
+* {{cite book |last=O'Shea |first=Donal |author-link=Donal O'Shea| date=2007 |title=The Poincaré Conjecture |publisher=Penguin |isbn=978-1-84614-012-9}}
+* {{cite book |last=Szpiro |first=George G. |author-link=George Szpiro| date=2003 |title=Kepler's Conjecture |publisher=Wiley |isbn=978-0-471-08601-7}}
+* {{cite book |last=Ronan |first=Mark |author-link=Mark Ronan| date=2006 |title=Symmetry and the Monster |publisher=Oxford |isbn=978-0-19-280722-9}}
+
+=== Books discussing unsolved problems ===
+* {{cite book |first1=Fan|last1= Chung|author-link1=Fan Chung |last2=Graham |first2=Ron |author-link2=Ronald Graham| title=Erdös on Graphs: His Legacy of Unsolved Problems|title-link= Erdős on Graphs |publisher=AK Peters |year=1999 |isbn=978-1-56881-111-6}}
+* {{cite book |last1=Croft |first1=Hallard T. |authorlink1=Hallard Croft |last2=Falconer |first2=Kenneth J. |last3=Guy |first3=Richard K. |author-link2=Kenneth Falconer (mathematician) |author-link3=Richard K. Guy |date=1994 |title=Unsolved Problems in Geometry |publisher=Springer |isbn=978-0-387-97506-1 |url-access=registration |url=https://archive.org/details/unsolvedproblems0000crof }}
+* {{cite book |last=Guy |first=Richard K. |author-link=Richard K. Guy |date=2004 |title=Unsolved Problems in Number Theory |publisher=Springer |isbn=978-0-387-20860-2}}
+* {{cite book |last1=Klee |first1=Victor |author-link1=Victor Klee |last2=Wagon |first2=Stan |author-link2=Stan Wagon |date=1996 |title=Old and New Unsolved Problems in Plane Geometry and Number Theory |url=https://archive.org/details/oldnewunsolvedpr0000klee |url-access=registration |publisher=The Mathematical Association of America |isbn=978-0-88385-315-3}}
+* {{cite book |last=du Sautoy |first=Marcus |author-link=Marcus du Sautoy |date=2003 |title=The Music of the Primes: Searching to Solve the Greatest Mystery in Mathematics |publisher=Harper Collins |isbn=978-0-06-093558-0 |url-access=registration |url=https://archive.org/details/musicofprimes00marc }}
+* {{cite book |last=Derbyshire |first=John |author-link=John Derbyshire |date=2003 |title=Prime Obsession: Bernhard Riemann and the Greatest Unsolved Problem in Mathematics |publisher=Joseph Henry Press |isbn=978-0-309-08549-6 |url-access=registration |url=https://archive.org/details/primeobsessionbe00derb_0 }}
+* {{cite book |last=Devlin |first=Keith |author-link=Keith Devlin |date=2006 |title=The Millennium Problems – The Seven Greatest Unsolved* Mathematical Puzzles Of Our Time |publisher=Barnes & Noble |isbn=978-0-7607-8659-8}}
+* {{cite book |last1=Blondel |first1=Vincent D. |last2=Megrestski |first2=Alexandre |author-link1=Vincent Blondel |date=2004 |title=Unsolved problems in mathematical systems and control theory |publisher=Princeton University Press |isbn=978-0-691-11748-5}}
+* {{cite book |first1=Lizhen|last1= Ji|author-link1=Lizhen Ji |first2=Yat-Sun|last2= Poon |first3=Shing-Tung|last3= Yau|author-link3=Shing-Tung Yau |date=2013 |title=Open Problems and Surveys of Contemporary Mathematics (volume 6 in the Surveys in Modern Mathematics series) (Surveys of Modern Mathematics) |publisher=International Press of Boston |isbn=978-1-57146-278-7}}
+* {{cite journal |last=Waldschmidt |first=Michel |author-link=Michel Waldschmidt |date=2004 |title=Open Diophantine Problems |journal=Moscow Mathematical Journal |issn=1609-3321 |zbl=1066.11030 |volume=4 |number=1 |pages=245–305 |url=http://www.math.jussieu.fr/~miw/articles/pdf/odp.pdf |doi=10.17323/1609-4514-2004-4-1-245-305 |doi-broken-date=31 August 2026 |arxiv=math/0312440 |s2cid=11845578 }}
+* {{cite arXiv |last1=Mazurov |first1=V. D. |author-link1=Victor Mazurov |last2=Khukhro |first2=E. I. |eprint=1401.0300v6 |title= Unsolved Problems in Group Theory. The Kourovka Notebook. No. 18 (English version) |date= 1 Jun 2015|class=math.GR }}
+
+== External links ==
+* [https://faculty.evansville.edu/ck6/integer/unsolved.html 24 Unsolved Problems and Rewards for them]
+* [https://www.openproblems.net/ List of links to unsolved problems in mathematics, prizes and research]
+* [http://garden.irmacs.sfu.ca/ Open Problem Garden]
+* [http://aimpl.org/ AIM Problem Lists]
+* [https://google-deepmind.github.io/formal-conjectures/ Formal Conjectures]
+* [https://cage.ugent.be/~hvernaev/problems/archive.html Unsolved Problem of the Week Archive]. MathPro Press.
+* {{cite web|last1=Ball|first1=John M.|author-link=John M. Ball|title=Some Open Problems in Elasticity|url=https://people.maths.ox.ac.uk/ball/Articles%20in%20Conference%20Proceedings%20and%20Books/JMB%202002%20re%20Marsden%2060th.pdf}}
+* {{cite web|last1=Constantin|first1=Peter|author-link=Peter Constantin|title=Some open problems and research directions in the mathematical study of fluid dynamics|url=https://web.math.princeton.edu/~const/2k.pdf}}
+* {{cite web|last1=Serre|first1=Denis|author-link=Denis Serre|title=Five Open Problems in Compressible Mathematical Fluid Dynamics|url=https://mym.iimas.unam.mx/ramon/LeyesConservacion-2014-1/Serre2012.pdf}}
+* [https://unsolvedproblems.org/ Unsolved Problems in Number Theory, Logic and Cryptography]
+* [http://www.sci.ccny.cuny.edu/~shpil/gworld/problems/oproblems.html 200 open problems in graph theory] {{Webarchive|url=https://web.archive.org/web/20170515145908/http://www.sci.ccny.cuny.edu/~shpil/gworld/problems/oproblems.html |date=2017-05-15 }}
+* [https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-of-data-science-fall-2015/pages/projects/ Topics in Mathematics of Data Science]
+* [http://cs.smith.edu/~orourke/TOPP/ The Open Problems Project (TOPP)], discrete and computational geometry problems
+* [https://math.berkeley.edu/~kirby/problems.ps.gz Kirby's list of unsolved problems in low-dimensional topology]
+* [https://epoch.ai/frontiermath/open-problems FrontierMath: Open Problems]
+* [https://www.math.ucsd.edu/~erdosproblems/ Erdős' Problems on Graphs]
+* {{cite arXiv
+|last1=Fenn |first1=Roger
+|last2=Ilyutko |first2=Denis P.
+|last3=Kauffman |first3=Louis H.
+|author-link3=Louis Kauffman
+|last4=Manturov |first4=Vassily O.
+|date=2014-09-09
+|title=Unsolved Problems in Virtual Knot Theory and Combinatorial Knot Theory
+|eprint=1409.2823
+|class=math.GT}}
+* [http://www.sciencedirect.com/science/article/pii/S0165011414003194 Open problems from the 12th International Conference on Fuzzy Set Theory and Its Applications]
+* [https://ivv5hpp.uni-muenster.de/u/rds/list.html List of open problems in inner model theory]
+* [https://math.vanderbilt.edu/peters10/problems.html Open problems in operator algebras]
+* {{cite web|last1=Aizenman|first1=Michael|author-link=Michael Aizenman|title=Open Problems in Mathematical Physics|url=https://web.math.princeton.edu/~aizenman/OpenProblems_MathPhys/OPlist.html}}
+* {{cite web|last1=Simon|first1=Barry|author-link=Barry Simon|title=15 Problems in Mathematical Physics|url=http://math.caltech.edu/SimonPapers/R27.pdf}}
+* [[Alexandre Eremenko]]. [https://www.math.purdue.edu/~eremenko/uns1.html Unsolved problems in Function Theory]
+* [https://www.statslab.cam.ac.uk/~rrw1/research/unsolved.html Unsolved Problems in OR]
+* [https://www.erdosproblems.com/start Erdős Problems collection]
+* [https://www.problemsilike.com/range/1-end Litt Problems]
+* {{cite web|last1=Green|first1=Ben|author-link=Ben Green|title=100 OPEN PROBLEMS|url=https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf}}
+* [https://conjectures.io/ Conjectures.io]
+* [https://www.ulam.ai/unsolvedmath UnsolvedMath: A Benchmark for Mathematical Reasoning]
+* [https://www.unsolvedmath.com/ UnsolvedMath | Mathematics Problem Archive]
+* [http://maths.nju.edu.cn/~zwsun/ Zhi-Wei Sun's conjectures]
+* {{cite web|last1=Talagrand|first1=Michel|author-link=Michel Talagrand|title=My favourite problems|url=https://michel.talagrand.net/Korea15.pdf}}
+* {{cite web|last1=Gowers|first1=Timothy|author-link=Timothy Gowers|title=Some unsolved problems in additive/combinatorial number theory|url=https://www.dpmms.cam.ac.uk/~wtg10/addnoth.survey.dvi}}
+* {{cite arXiv
+|last1=Baber |first1=Rahil
+|last2=Behague |first2=Natalie
+|last3=Calbet |first3=Asier
+|last4=Ellis |first4=David
+|last5=Erde |first5=Joshua
+|last6=Gray |first6=Ron
+|last7=Ivan |first7=Maria-Romina
+|last8=Janzer |first8=Barnabás
+|last9=Johnson |first9=Robert
+|last10=Milićević |first10=Luka
+|last11=Talbot |first11=John
+|last12=Tan |first12=Ta Sheng
+|last13=Wickes |first13=Belinda
+|display-authors=1
+|date=2023-10-27
+|title=A collection of open problems in celebration of Imre Leader's 60th birthday
+|eprint=2310.18163
+|class=math.CO
+}}
+* {{cite web|last1=Gromov|first1=Misha|author-link=Mikhael Gromov (mathematician)|title=101 Questions, Problems and Conjectures around Scalar Curvature.|url=https://www.ihes.fr/~gromov/wp-content/uploads/2018/08/101-problemsOct1-2017.pdf}}
+* [https://aimath.org/WWN/rh/ Some of the conjectures and open problems concerning The Riemann Hypothesis]
+* [https://web.archive.org/web/20170809122458/https://www.birs.ca/workshops//2015/15w5053/report15w5053.pdf Some open problems in Hopf algebras]
+* [https://www.imath.kiev.ua/~skolyada/opds_et.html Open  Problems in  Dynamical Systems & Ergodic Theory]
+* {{cite arXiv
+|last1=Bielefeld |first1=Ben
+|last2=Lyubich |first2=Mikhail|author-link2=Mikhail Lyubich
+|last3=Carleson |first3=Lenart |author-link3=Lennart Carleson
+|last4=Devaney |first4=Robert |author-link4=Robert Devaney
+|last5=Eremenko |first5=Alexandre |author-link5=Alexandre Eremenko
+|last6=McMullen |first6=Curt |author-link6=Curtis T. McMullen
+|last7=Milnor |first7=John|author-link7=John Milnor
+|last8=Przytycki |first8=Feliks |author-link8=Feliks Przytycki
+|last9=Rees |first9=Mary |author-link9=Mary Rees
+|last10=Sutherland |first10=Scott
+|display-authors=1
+|date=1992-05-09
+|title=Problems in holomorphic dynamics
+|arxiv=math/9205209
+}}
+* {{cite arXiv
+|last1=Bielefeld |first1=Ben
+|last2=Douady |first2=Adrien|author-link2=Adrien Douady
+|last3=McMullen |first3=Curt |author-link3=Curtis T. McMullen
+|last4=Milnor |first4=Jack|author-link4=John Milnor
+|last5=Shishikura |first5=Misuhiro |author-link5=Misuhiro Shishikura
+|last6=Tangerman |first6=Folkert
+|last10=Veerman |first10=Peter
+|display-authors=1
+|date=1990-01-18
+|title=Conformal dynamics problem list
+|arxiv=math/9201271
+}}
+* {{cite arXiv
+|last1=Bolsinov |first1=A.
+|last2=Matveev |first2=V.
+|last3=Miranda |first3=E. |author-link3=Eva Miranda
+|last4=Tabachikov |first4=S.|author-link4=Sergei Tabachikov
+|display-authors=1
+|date=2020-01-14
+|title=Open Problems, Questions, and Challenges in Finite-Dimensional Integrable Systems
+|eprint=1804.03737v2
+|class=math.DS
+}}
+* {{cite arXiv
+|last=Deift |first=Percy|author-link=Percy Deift
+|date=2017-03-15
+|title=Some Open Problems in Random Matrix Theory and the Theory of Integrable Systems. II
+|eprint=1703.04931
+|class=math-ph
+}}
+* {{cite arXiv
+|last1=Bolsinov |first1=Alexey V.
+|last2=Konyaev |first2=Andrey Yu.|author-link2=Andrey Konyaev
+|last3=Matveev |first3=Vladimir S.
+|display-authors=1
+|date=2024-10-05
+|title=Research problems on relations between Nijenhuis geometry and integrable systems
+|eprint=2410.04276
+|class=math.DG
+}}
+* {{cite journal |last1=Rosemann |first1=Stefan |last2=Schöbel |first2=Konrad |title=Open problems in the theory of finite-dimensional integrable systems and related fields |journal=Journal of Geometry and Physics |volume=87 |pages=396–414 |year=2025 |doi=10.1016/j.geomphys.2014.07.016}}
+* {{cite journal |last=Lou |first=Senyue |title=Progresses on Some Open Problems Related to Infinitely Many Symmetries |journal=Mathematics |volume=12 |issue=20 |pages=1–18 |article-number=3224 |year=2024 |doi=10.3390/math12203224 |doi-access=free}}
+*{{cite web|last=August|first=M|title=2002 MTNS Problem Book|url=https://perso.uclouvain.be/vincent.blondel/op/opmtns.pdf}}
+*{{ResearchGatePub|228698702 Unsolved Problems in Mathematical Systems and Control Theory}}
+
+{{unsolved problems}}
+
+{{DEFAULTSORT:Unsolved problems in mathematics}}
+[[Category:Unsolved problems in mathematics| ]]
+<!--Keep at start of list (eponymous category) -->
+[[Category:Conjectures| ]]
+[[Category:Lists of unsolved problems|Mathematics]]
+[[Category:Lists of problems]]

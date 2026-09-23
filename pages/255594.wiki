@@ -1,0 +1,99 @@
+{{Short description|Conjecture in graph theory}}
+{{unsolved|mathematics|Are graphs uniquely determined by their subgraphs?}}
+In [[graph theory]], informally, the '''reconstruction conjecture''' says that [[graph (discrete mathematics)|graph]]s are determined uniquely by their subgraphs.  It is due to [[Paul Kelly (mathematician)|Kelly]]<ref name=Kelly57>Kelly, P. J., [https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-7/issue-1/A-congruence-theorem-for-trees/pjm/1103043674.full A congruence theorem for trees], ''Pacific J. Math.'' '''7''' (1957), 961&ndash;968.</ref> and [[Stanislaw Ulam|Ulam]].<ref name=Ulam60>Ulam, S. M., A collection of mathematical problems, Wiley, New York, 1960.</ref><ref>{{cite journal|author=O'Neil, Peter V.|title=Ulam's conjecture and graph reconstructions|journal=Amer. Math. Monthly|volume=77|year=1970|issue=1 |pages=35–43|url=http://www.maa.org/programs/maa-awards/writing-awards/ulams-conjecture-and-graph-reconstructions|doi=10.2307/2316851|jstor=2316851| archive-url=https://web.archive.org/web/20240615231234/https://maa.org/programs/maa-awards/writing-awards/ulams-conjecture-and-graph-reconstructions |archive-date=June 15, 2024 }}</ref>
+
+== Formal statements ==
+
+[[File:A graph and its deck as described in the Reconstruction conjecture of graph theory.jpg|thumbnail|right|300px|A graph and the associated deck of single-vertex-deleted subgraphs. Note some of the cards show isomorphic graphs.]]
+
+Given a graph <math>G = (V,E)</math>, a '''vertex-deleted subgraph''' of <math>G</math> is a [[Glossary of graph theory#Subgraphs|subgraph]] formed by deleting exactly one vertex from <math>G</math>. By definition, it is an [[induced subgraph]] of <math>G</math>.
+
+For a graph <math>G</math>, the '''deck of G''', denoted <math>D(G)</math>, is the [[multiset]] of isomorphism classes of all vertex-deleted subgraphs of <math>G</math>.  Each graph in <math>D(G)</math> is called a '''card'''.  Two graphs that have the same deck are said to be '''hypomorphic'''.
+
+With these definitions, the conjecture can be stated as:
+
+* '''Reconstruction Conjecture:''' Any two hypomorphic graphs on at least three vertices are isomorphic.
+
+: (The requirement that the graphs have at least three vertices is necessary because both graphs on two vertices have the same decks.)
+
+[[Frank Harary|Harary]]<ref name="Harary64">Harary, F., On the reconstruction of a graph from a collection of subgraphs. In ''Theory of Graphs and its Applications (Proc. Sympos. Smolenice, 1963)''. Publ. House Czechoslovak Acad. Sci., Prague, 1964, pp. 47–52.</ref> suggested a stronger version of the conjecture:
+
+* '''Set Reconstruction Conjecture:''' Any two graphs on at least four vertices with the same sets of vertex-deleted subgraphs are isomorphic.
+
+Given a graph <math>G = (V,E)</math>, an '''edge-deleted subgraph''' of <math>G</math> is a [[Glossary of graph theory#Subgraphs|subgraph]] formed by deleting exactly one edge from <math>G</math>.
+
+For a graph <math>G</math>, the '''edge-deck of G''', denoted <math>ED(G)</math>, is the [[multiset]] of all isomorphism classes of edge-deleted subgraphs of <math>G</math>.  Each graph in <math>ED(G)</math> is called an '''edge-card'''.
+
+* '''Edge Reconstruction Conjecture:''' (Harary, 1964)<ref name="Harary64"/> Any two graphs with at least four edges and having the same edge-decks are isomorphic.
+
+==Recognizable properties==
+
+In context of the reconstruction conjecture, a [[graph property]] is called '''recognizable''' if one can determine the property from the deck of a graph.  The following properties of graphs are recognizable:
+
+*[[Glossary of graph theory|Order of the graph]] – The order of a graph <math>G</math>, <math>|V(G)|</math> is recognizable from <math>D(G)</math> as the multiset <math>D(G)</math> contains each subgraph of <math>G</math> created by deleting one vertex of <math>G</math>.  Hence <math>|V(G)| = |D(G)|</math> <ref name="Wall"/>
+*[[Glossary of graph theory|Number of edges of the graph]] – The number of edges in a graph <math>G</math> with <math>n</math> vertices, <math>|E(G)|</math> is recognizable.  First note that each edge of <math>G</math> occurs in <math>n-2</math> members of <math>D(G)</math>.  This is true by the definition of <math>D(G)</math> which ensures that each edge is included every time that each of the vertices it is incident with is included in a member of <math>D(G)</math>, so an edge will occur in every member of <math>D(G)</math> except for the two in which its endpoints are deleted.  Hence, <math>|E(G)| = \sum \frac{q_i}{n-2}</math> where <math>q_i</math> is the number of edges in the ''i''th member of <math>D(G)</math>.<ref name="Wall"/>
+*Number of Subgraphs of order <math>k<n</math> (Kelly's Lemma) - Generalizing the edge count strategy, we can say for some subgraph <math> H </math> with <math> k </math> vertices in <math> G </math> with <math>n</math> vertices, the number of times <math> H </math> appears in <math> G </math> (referred to as <math> \binom{G}{H} </math>) is reconstructible. As every instance of <math> H </math> in G will appear in exactly all the cards in which a vertex of <math>H</math> is not removed, each distinct instance of <math>H</math> will appear in <math>n-k </math> cards. As such, <math>\binom{G}{H} = \sum \frac{\binom{D_i}{H}}{n-k}</math>, where <math>D_i</math> is the <math> i </math>th card. <ref name="Wall"/>
+*[[Degree sequence]] – The degree sequence of a graph <math>G</math> is recognizable because the degree of every vertex is recognizable.  To find the degree of a vertex <math>v_i</math>—the vertex absent from the ''i''th member of <math>D(G)</math>—, we will examine the graph created by deleting it, <math>G_i</math>.  This graph contains all of the edges not incident with <math>v_i</math>, so if <math>q_i</math> is the number of edges in <math>G_i</math>, then <math>|E(G)| - q_i = \deg(v_i)</math>.  If we can tell the degree of every vertex in the graph, we can tell the degree sequence of the graph.<ref name="Wall"/>
+*[[Connectivity (graph theory)|(Vertex-)Connectivity]] – By definition, a graph is <math>n</math>-vertex-connected when deleting any vertex creates a <math>n-1</math>-vertex-connected graph; thus, if every card is a <math>n-1</math>-vertex-connected graph, we know the original graph was <math>n</math>-vertex-connected. We can also determine if the original graph was connected, as this is equivalent to having any two of the <math>G_i</math> being connected.<ref name="Wall"/>
+*[[Tutte polynomial]]
+*[[Characteristic polynomial]]
+*[[Planar graph|Planarity]]
+*The number of [[spanning tree (mathematics)|spanning tree]]s in a graph
+*[[Chromatic polynomial]]
+*Being a [[perfect graph]] or an [[interval graph]], or certain other subclasses of perfect graphs<!--to verify later which ones are listed there--><ref name=rim>von Rimscha, M.: Reconstructibility and perfect graphs. ''Discrete Mathematics'' '''47''', 283–291 (1983)</ref>
+
+==Verification==
+
+Both the reconstruction and set reconstruction conjectures have been verified for all graphs with at most 13 vertices by [[Brendan McKay (mathematician)|Brendan McKay]].<ref name=McKay97>McKay, B. D., Small graphs are reconstructible, ''Australas. J. Combin.'' '''15''' (1997), 123&ndash;126.</ref><ref>{{cite journal |last1=McKay |first1=Brendan |authorlink=Brendan McKay (mathematician)|title=Reconstruction of Small Graphs and Digraphs |journal = Austras. J. Combin.|volume=83|date=2022|pages=448–457|arxiv=2102.01942 }}</ref>
+
+In a probabilistic sense, it has been shown by [[Béla Bollobás]] that almost all graphs are reconstructible.<ref name=Bollobas90>Bollobás, B., Almost every graph has reconstruction number three, ''J. Graph Theory'' '''14''' (1990), 1&ndash;4.</ref>  This means that the probability that a randomly chosen graph on <math>n</math> vertices is not reconstructible goes to 0 as <math>n</math> goes to infinity.  In fact, it was shown that not only are almost all graphs reconstructible, but in fact that the entire deck is not necessary to reconstruct them &mdash; almost all graphs have the property that there exist three cards in their deck that uniquely determine the graph.
+
+===Reconstructible graph families===
+
+The conjecture has been verified for a number of infinite classes of graphs (and, trivially, their complements).
+
+*[[Regular graph]]s<ref name=h74>{{Citation | last=Harary | first=F. | title=Graphs and Combinatorics | chapter=A survey of the reconstruction conjecture | series= [[Lecture Notes in Mathematics]]| pages=18–28 | year=1974 | publisher=Springer | doi=10.1007/BFb0066431 | volume=406| isbn=978-3-540-06854-9 }}</ref> - Regular Graphs are reconstructible by direct application of some of the facts that can be recognized from the deck of a graph.  Given an <math>n</math>-regular graph <math>G</math> and its deck <math>D(G)</math>, we can recognize that the deck is of a regular graph by recognizing its degree sequence.  Let us now examine one member of the deck <math>D(G)</math>, <math>G_i</math>.  This graph contains some number of vertices with a degree of <math>n</math> and <math>n</math> vertices with a degree of <math>n-1</math>.  We can add a vertex to this graph and then connect it to the <math>n</math> vertices of degree <math>n-1</math> to create an <math>n</math>-regular graph which is isomorphic to the graph which we started with.  Therefore, all regular graphs are reconstructible from their decks.  A particular type of regular graph which is interesting is the [[complete graph]].<ref name="Wall">{{cite web|last=Wall|first=Nicole|title=The Reconstruction Conjecture|url=http://www.geocities.ws/kirstensmom1998/ulam.pdf|accessdate=2014-03-31}}</ref> 
+*[[Tree (graph theory)|Trees]]<ref name=h74/>
+*[[Connected graph|Disconnected graphs]]<ref name=h74/>
+*[[Unit interval graph]]s <ref name=rim/>
+*[[Separable graph]]s without [[Leaf vertex|end vertices]]<ref name=Bondy>{{Cite journal | last=Bondy | first=J.-A. | title=On Ulam's conjecture for separable graphs | journal=Pacific J. Math. | volume=31 | year=1969 | issue=2 | pages=281–288 | doi=10.2140/pjm.1969.31.281| doi-access=free }}</ref>
+*[[Maximal planar graph]]s
+*[[Maximal outerplanar graph]]s
+*[[Outerplanar graph]]s
+*[[Critical blocks]]
+
+==Reduction==
+The reconstruction conjecture is true if all 2-connected graphs are reconstructible.<ref name=yang>Yang Yongzhi:The reconstruction conjecture is true if all 2-connected graphs are reconstructible. ''Journal of graph theory'' '''12''', 237–243 (1988)</ref>
+
+==Duality==
+
+The vertex reconstruction conjecture obeys the duality that if <math>G</math> can be reconstructed from its vertex deck <math>D(G)</math>, then its complement <math>G'</math> can be reconstructed from <math>D(G')</math> as follows: Start with <math>D(G')</math>, take the complement of every card in it to get <math>D(G)</math>, use this to reconstruct <math>G</math>, then take the complement again to get <math>G'</math>.
+
+Edge reconstruction does not obey any such duality: Indeed, for some classes of edge-reconstructible graphs it is not known if their complements are edge reconstructible.
+
+==Other structures==
+
+It has been shown that the following are not in general reconstructible:
+
+* [[Graph (discrete mathematics)#Directed graph|Digraphs]]: Infinite families of non-reconstructible digraphs are known, including [[tournament (mathematics)|tournaments]] (Stockmeyer<ref name=Stockmeyer77>Stockmeyer, P. K., The falsity of the reconstruction conjecture for tournaments, ''J. Graph Theory'' '''1''' (1977), 19&ndash;25.</ref>) and non-tournaments (Stockmeyer<ref name=Stockmeyer81>Stockmeyer, P. K., A census of non-reconstructable digraphs, I: six related families, ''J. Combin. Theory Ser. B'' '''31''' (1981), 232&ndash;239.</ref>). A tournament is reconstructible if it is not strongly connected.<ref name=HararyPalmer>Harary, F. and Palmer, E., On the problem of reconstructing a tournament from sub-tournaments, ''Monatsh. Math.'' '''71''' (1967), 14&ndash;23.</ref> A weaker version of the reconstruction conjecture has been conjectured for digraphs, see [[new digraph reconstruction conjecture]].
+* [[Hypergraph]]s, including all k-uniform hypergraphs for k>2 ([[William Lawrence Kocay|Kocay]]<ref name=Kocay87>Kocay, W. L., A family of nonreconstructible hypergraphs, ''J. Combin. Theory Ser. B'' '''42''' (1987), 46&ndash;63.</ref>).
+* [[Infinite graph]]s. If  ''T'' is the tree where every vertex has [[countably infinite]] degree, then the union of two disjoint copies of ''T'' is hypomorphic, but not isomorphic, to ''T''.([[Joseph A. Fisher|Fisher]]<ref name=Fisher69>Fisher, Joshua, A counterexample to the countable version of a conjecture of Ulam, ''J. Combin. Theory'' '''7 (4)''' (1969), 364&ndash;365.</ref>) <ref>{{Cite journal |last1=Fisher |first1=J. |last2=Graham |first2=R. L. |author-link2=Ronald Graham |last3=Harary |first3=F. |year=1972 |title=A simpler counterexample to the reconstruction conjecture for denumerable graphs |journal=Journal of Combinatorial Theory, Series B |volume=12 |issue=2 |pages=203–204 }}</ref><ref>{{cite journal |last1=Nash-Williams |first1=C. St. J. A. |last2=Hemminger |first2=Robert |title=Reconstruction of infinite graphs |journal=Discrete Mathematics |date=3 December 1991 |volume=95 |issue=1 |pages=221–229 |doi=10.1016/0012-365X(91)90338-3 |url=https://www.sciencedirect.com/science/article/pii/0012365X91903383/pdf?md5=fd99dc0796c81d8351f912d3d86b7d5c&pid=1-s2.0-0012365X91903383-main.pdf}}</ref>
+* Locally finite graphs, which are graphs where every vertex has finite degree. The question of reconstructibility for locally finite infinite trees (the Harary-Schwenk-Scott conjecture from 1972) was a longstanding [[open problem]] until 2017, when a non-reconstructible tree of maximum degree 3 was found by Bowler et al.<ref>Bowler, N., Erde, J., Heinig, P., Lehner, F. and Pitz, M. (2017), A counterexample to the reconstruction conjecture for locally finite trees. Bull. London Math. Soc.. {{doi|10.1112/blms.12053}}</ref>
+
+==See also==
+
+* [[New digraph reconstruction conjecture]]
+* [[Partial symmetry]]
+
+==Further reading==
+For further information on this topic, see the survey by [[Crispin St. J. A. Nash-Williams|Nash-Williams]].<ref name=NashWilliams78>[[Crispin St. J. A. Nash-Williams|Nash-Williams, C. St. J. A.]], The Reconstruction Problem, in ''Selected topics in graph theory'', 205&ndash;236 (1978).</ref>
+
+==References==
+
+{{Reflist}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Reconstruction Conjecture}}
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

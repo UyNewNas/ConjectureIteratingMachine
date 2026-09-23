@@ -1,0 +1,44 @@
+{{Short description|On the distribution of prime numbers in arithmetic progressions}}
+{{technical|date=September 2026}}
+In [[number theory]], the '''Elliott–Halberstam conjecture''' is a [[conjecture]] about the distribution of [[prime number]]s in [[arithmetic progression]]s. It has many applications in [[sieve theory]]. It is named for [[Peter D. T. A. Elliott]] and [[Heini Halberstam]], who stated a specific version of the conjecture in 1968.<ref name=EH>{{cite encyclopedia|year=1970|title=Symposia Mathematica, Vol. IV (INDAM, Rome, 1968/69)|publisher=Academic Press|location=London|pages=59–72|mr=0276195|first1=Peter D. T. A.|last1=Elliott|first2=Heini|last2=Halberstam|chapter=A conjecture in prime number theory}}</ref>
+
+One version of the conjecture is as follows. Let <math>\pi(x)</math>, the [[prime-counting function]], denote the number of primes less than or equal to <math>x</math>.  If <math>q</math> is a [[negative and positive numbers|positive]] [[integer]] and <math>a</math> is [[coprime]] to <math>q</math>, we let <math>\pi(x;q,a)</math> denote the number of primes less than or equal to <math>x</math> which are equal to <math>a</math> modulo <math>q</math>.  [[Dirichlet's theorem on primes in arithmetic progressions]] then tells us
+that
+
+:<math> \pi(x;q,a) \sim  \frac{\pi(x)}{\varphi(q)}\ \ (x\rightarrow\infty)</math>
+
+where <math>\varphi</math> is [[Euler's totient function]].  If we then define the error function
+
+:<math> E(x;q) = \max_{\text{gcd}(a,q) = 1} \left|\pi(x;q,a) - \frac{\pi(x)}{\varphi(q)}\right|</math>
+
+where the max is taken over all <math>a</math> coprime to <math>q</math>, then the Elliott–Halberstam conjecture is the assertion that
+for every <math>\theta < 1</math> and <math>A > 0</math> there exists a constant <math>C > 0</math> such that
+
+:<math> \sum_{1 \leq q \leq x^\theta} E(x;q) \leq \frac{C x}{\log^A x}</math>
+
+for all <math>x > 2</math>.
+
+This conjecture was proven for all <math>\theta < 1/2</math> by [[Enrico Bombieri]]<ref>{{cite journal |first=Enrico |last=Bombieri |title=On the large sieve |journal=[[Mathematika]] |volume=12 |year=1965 |issue=2 |pages=201–225 |doi= 10.1112/s0025579300005313 | mr=0197425}}</ref> and [[A. I. Vinogradov]]<ref>{{cite journal |first=Askold Ivanovich |last=Vinogradov |title=The density hypothesis for Dirichlet L-series |language=ru |journal=Izv. Akad. Nauk SSSR Ser. Mat. |volume=29 |issue=4 |year=1965 |pages=903–934 |mr=197414 }} Corrigendum. ibid. 30 (1966), pages 719-720. (Russian)</ref> (the [[Bombieri–Vinogradov theorem]], sometimes known simply as "Bombieri's theorem"); this result is already quite useful, being an averaged form of the [[generalized Riemann hypothesis]]. It is known that the conjecture fails at the endpoint <math>\theta = 1</math>.<ref>{{cite journal | last1=Friedlander | first1=John | last2=Granville | first2=Andrew | title=Limitations to the equi-distribution of primes I | journal=[[Annals of Mathematics]] | volume=129 | issue=2 | year=1989 | pages=363–382 | mr=0986796 | doi=10.2307/1971450| jstor=1971450 }}</ref> In 1986, Bombieri, Friedlander and Iwaniec generalized the Elliott-Halberstam conjecture,{{undefined|date=September 2026|reason=What part of it is generalised? How?}} using [[Dirichlet convolution]] of arithmetic functions related to the [[von Mangoldt function]].<ref name="BFI GEH">{{cite journal | last=Bombieri | first=E. | last2=Friedlander | first2=J. B. | last3=Iwaniec | first3=H. | title=Primes in arithmetic progressions to large moduli | journal=Acta Mathematica | publisher=International Press of Boston | volume=156 | issue=1 | year=1986 | issn=0001-5962 | doi=10.1007/bf02399204 | doi-access=free | pages=203–251}}</ref>
+
+The Elliott–Halberstam conjecture has several consequences.  A striking one is the result announced by [[Dan Goldston]], [[János Pintz]], and [[Cem Yıldırım]],<ref>{{cite journal|arxiv=math.NT/0508185|last1=Goldston|first1=D. A.|last2=Pintz|first2=J.|last3=Yıldırım|first3=C. Y.|title=Primes in Tuples I|journal=Annals of Mathematics|series=Second Series|pages=819–862|volume=170|date=2009|issue=2|doi=10.4007/annals.2009.170.819|doi-access=free}}<br/>{{cite journal|arxiv=math.NT/0505300|last1=Goldston|first1=D. A.|last2=Motohashi|first2=Y.|last3=Pintz|first3=J.|last4=Yıldırım|first4=C. Y.|title=Small Gaps between Primes Exist|journal=Proceedings of the Japan Academy, Series A, Mathematical Sciences|volume=82|issue=4|pages=61–65|date=April 2006|doi=10.3792/pjaa.82.61|doi-access=free}}<br/>{{cite journal|arxiv=math.NT/0506067|last1=Goldston|first1=D. A.|last2=Graham|first2=S. W.|last3=Pintz|first3=J.|last4=Yıldırım|first4=C. Y.|title=Small gaps between primes or almost primes|journal=Transactions of the American Mathematical Society|volume=361|issue=10|date=2009|pages=5285–5330|doi=10.1090/S0002-9947-09-04788-6|doi-access=free}}</ref><ref>{{cite journal |first=Kannan |last=Soundararajan |author-link=Kannan Soundararajan |title=Small gaps between prime numbers: The work of Goldston–Pintz–Yıldırım |journal=[[Bulletin of the American Mathematical Society]] |volume=44 |year=2007 |issue=1 |pages=1–18 |doi=10.1090/S0273-0979-06-01142-6 | mr=2265008|arxiv=math/0605696 |s2cid=119611838 }}</ref> which shows (assuming this conjecture) that there are infinitely many pairs of primes which differ by at most 16. In November 2013, [[James Maynard (mathematician)|James Maynard]] showed that subject to the Elliott–Halberstam conjecture, one can show the existence of infinitely many pairs of consecutive primes that differ by at most 12.<ref>{{cite journal | title=Small gaps between primes | last=Maynard | first=James | author-link=James Maynard (mathematician) | year=2015 | journal=[[Annals of Mathematics]] | volume=181 | issue=1 | pages=383–413 | mr=3272929 | doi=10.4007/annals.2015.181.1.7| arxiv=1311.4600 | s2cid=55175056 }}</ref> In August 2014, [[Polymath Project|Polymath]] group showed that subject to the generalized Elliott–Halberstam conjecture, one can show the existence of infinitely many pairs of consecutive primes that differ by at most 6.<ref>{{cite journal | author=D.H.J. Polymath | title=Variants of the Selberg sieve, and bounded intervals containing many primes | journal=Research in the Mathematical Sciences | volume=1 | number=12 | doi=10.1186/s40687-014-0012-7 | arxiv=1407.4897 | year=2014 | mr=3373710| s2cid=119699189 | doi-access=free }}</ref> Without assuming any form of the conjecture, the lowest proven bound is 240.{{cn|date=September 2026}}
+
+==Original conjecture==
+The original Elliott-Halberstam conjecture is not clearly stated in their paper,<ref name=EH /> {{original research span|but can be inferred there from (1) page 59 and the comment above the Theorem on page 62.|date=September 2026}} It says that
+:<math>\sum_{q\le x}\varphi(q)\max_{(h,q)=1} \left(\pi(x,q,h)-\frac{\operatorname{li}x}{\varphi(q)}\right)^2\ll\frac{x^2}{\log^Ax}</math>
+provided <math>X<x(\log x)^{-A-1}</math>,
+where <math>\operatorname{li} x</math> denotes the [[logarithmic integral]] and <math>\varphi</math> denotes [[Euler's totient function]].
+
+==See also==
+*[[Barban–Davenport–Halberstam theorem]]
+*[[Sexy prime]]
+*[[Siegel–Walfisz theorem]]
+
+==Notes==
+{{Reflist}}
+
+{{Prime number conjectures}}
+
+{{DEFAULTSORT:Elliott-Halberstam conjecture}}
+[[Category:Analytic number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

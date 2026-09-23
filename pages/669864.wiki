@@ -1,0 +1,22 @@
+In [[mathematics]], the '''grand Riemann hypothesis''' is a generalisation of both the [[Riemann hypothesis]] and the [[generalized Riemann hypothesis]]. It states that the non-trivial zeros of all [[Automorphic L-function|automorphic ''L''-functions]] lie on the critical line <math>1/2 + it</math> with <math>t</math> a real number variable and <math>i</math> the [[imaginary unit]].
+
+The '''modified grand Riemann hypothesis''' is the assertion that the nontrivial zeros of all automorphic ''L''-functions lie on the critical line or the [[real line]].
+
+== Notes ==
+* [[Robert Langlands]], in his general [[Langlands program#Functoriality|functoriality conjectures]], asserts that all global ''L''-functions should be automorphic.<ref>{{Cite book|last1=Sarnak |first1=Peter |author1-link=Peter Sarnak |editor1-last=Arthur |editor1-first=James |editor1-link=James Arthur (mathematician) |editor2-last=Ellwood |editor2-first=David |editor3-last=Kottwitz |editor3-first=Robert |editor3-link=Robert Kottwitz |year=2005 |title=Harmonic Analysis, The Trace Formula, and Shimura Varieties |chapter=Notes on the Generalized Ramanujan Conjectures |publisher=[[Clay Mathematics Institute]]. Clay Mathematics Proceedings |volume=4 |pages=659{{ndash}}685 |location=Princeton |language=English |issn=1534-6455 |oclc=637721920 |isbn=0-8218-3844-X |chapter-url=http://web.math.princeton.edu/sarnak/FieldNotesCurrent.pdf |access-date=November 11, 2020|url-status=live |archive-url=https://web.archive.org/web/20151004063221/http://web.math.princeton.edu/sarnak/FieldNotesCurrent.pdf |archive-date=October 4, 2015}}</ref>
+* The [[Siegel zero]], conjectured not to exist,<ref>{{Cite journal|last1=Conrey|first1=Brian|author1-link=Brian Conrey|last2=Iwaniec|first2=Henryk|author2-link=Henryk Iwaniec|date=2002|title=Spacing of zeros of Hecke L-functions and the class number problem|journal=[[Acta Arithmetica]]|language=en|volume=103|issue=3|pages=259–312|doi=10.4064/aa103-3-5|bibcode=2002AcAri.103..259C|issn=0065-1036|quote=Conrey and Iwaniec show that sufficiently many small gaps between zeros of the Riemann zeta function would imply the non-existence of Landau–Siegel zeros.|doi-access=free|arxiv=math/0111012}}</ref> is a possible real zero of a [[Dirichlet L-series|Dirichlet ''L''-series]], rather near ''s'' = 1.
+* ''L''-functions of Maass cusp forms can have trivial zeros which are off the real line.
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* {{citation |title=The Riemann hypothesis: a resource for the aficionado and virtuoso alike |volume=27 |series=CMS books in mathematics |first=Peter B. |last=Borwein |publisher=[[Springer-Verlag]] | year=2008 |isbn=978-0-387-72125-5 |ref=none}}
+
+{{Bernhard Riemann}}
+
+{{mathanalysis-stub}}
+[[Category:Zeta and L-functions]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Bernhard Riemann]]

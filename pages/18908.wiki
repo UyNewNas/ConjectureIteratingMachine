@@ -1,0 +1,927 @@
+{{pp-semi-indef|small=yes}}
+{{short description|Prime number of the form 2^n – 1}}
+{{infobox integer sequence
+| named_after        = [[Marin Mersenne]]
+| publication_year   = 
+| author             = 
+| terms_number       = 52 ([[List of Mersenne primes and perfect numbers|list]])
+| con_number         = Infinite
+| parentsequence     = Mersenne numbers
+| first_terms        = [[3 (number)|3]], [[7 (number)|7]], [[31 (number)|31]], [[127 (number)|127]], 8191
+| largest_known_term = {{nowrap|2<sup>136279841</sup> − 1}} (October 12, 2024)
+| OEIS               = A000668
+| OEIS_name          = Mersenne primes (primes of the form 2^n - 1).
+}}
+In [[mathematics]], a '''Mersenne prime''' is a [[prime number]] that is one less than a [[power of two]].  That is, it is a prime number [[of the form]] {{math|''M<sub>n</sub>'' {{=}} 2<sup>''n''</sup> − 1}} for some [[integer]] {{math|''n''}}.  They are named after [[Marin Mersenne]], a French [[Minims (religious order)|Minim friar]], who studied them in the early 17th century.  If {{math|''n''}} is a [[composite number]] then so is {{math|2<sup>''n''</sup> − 1}}.  Therefore, an equivalent definition of the Mersenne primes is that they are the prime numbers of the form {{math|''M<sub>p</sub>'' {{=}} 2<sup>''p''</sup> − 1}} for some prime {{math|''p''}}.
+
+The [[exponentiation|exponents]] {{math|''n''}} that give Mersenne primes are 2, 3, 5, 7, 13, 17, 19, 31,&nbsp;... {{OEIS|id=A000043}} and the resulting Mersenne primes are [[3 (number)|3]], [[7 (number)|7]], [[31 (number)|31]], [[127 (number)|127]], [[8191 (number)|8191]], 131071, 524287, [[2,147,483,647|2147483647]],&nbsp;... {{OEIS|id=A000668}}.
+
+Numbers of the form {{math|''M<sub>n</sub>'' {{=}} 2<sup>''n''</sup> − 1}} without the primality requirement may be called '''Mersenne numbers'''.  Sometimes, however, Mersenne numbers are defined to have the additional requirement that {{math|''n''}} should  be prime.
+The smallest composite Mersenne number with prime exponent {{math|''n''}} is {{nowrap|2<sup>11</sup> − 1 {{=}} 2047 {{=}} 23 × 89}}.
+
+Mersenne primes were studied in antiquity because of their close [[#Perfect numbers|connection to perfect numbers]]: the [[Euclid–Euler theorem]] asserts a one-to-one correspondence between even perfect numbers and Mersenne primes. Many of the largest known primes are Mersenne primes because Mersenne numbers are easier to check for primality.
+
+{{As of|2025|url=http://primes.utm.edu/top20/page.php?id=4}}, [[List of Mersenne primes and perfect numbers|52 Mersenne primes]] are known. The [[largest known prime number]], {{nowrap|2<sup>136279841</sup> − 1}}, is a Mersenne prime.<ref name="GIMPS-2024">{{cite web |title=GIMPS Discovers Largest Known Prime Number: 2<sup>136,279,841</sup> − 1 |url=https://www.mersenne.org/primes/?press=M136279841 |date=21 October 2024 |work=Mersenne Research, Inc. |access-date=21 October 2024 |archive-date=4 November 2024 |archive-url=https://web.archive.org/web/20241104020923/https://www.mersenne.org/primes/?press=M136279841 |url-status=live }}</ref><ref name="GIMPS-2018">{{cite web |title=GIMPS Project Discovers Largest Known Prime Number: 2<sup>82,589,933</sup> − 1 |url=https://www.mersenne.org/primes/press/M82589933.html |date=21 December 2018 |work=Mersenne Research, Inc. |access-date=21 December 2018 |archive-date=15 August 2020 |archive-url=https://archive.today/20200815183924/https://www.mersenne.org/primes/press/M82589933.html |url-status=live }}</ref> Since 1997, all newly found Mersenne primes have been discovered by the [[Great Internet Mersenne Prime Search]], a [[distributed computing]] project. In December 2020, a major milestone in the project was passed after all exponents below 100 million were checked at least once.<ref>{{cite web |title=GIMPS Milestones Report |url=http://www.mersenne.org/report_milestones/ |website=Mersenne.org |publisher=Mersenne Research, Inc. |access-date=5 December 2020 |archive-date=3 September 2016 |archive-url=https://web.archive.org/web/20160903040753/http://www.mersenne.org/report_milestones/ |url-status=live }}</ref>
+
+== About Mersenne primes ==
+A basic [[theorem]] about Mersenne numbers states that if {{mvar|M<sub>p</sub>}} is prime, then the exponent {{math|''p''}} must also be prime. This follows from the identity
+: <math>\begin{align}
+2^{ab}-1
+&=(2^a-1)\cdot \left(1+2^a+2^{2a}+2^{3a}+\cdots+2^{(b-1)a}\right)\\
+&=(2^b-1)\cdot \left(1+2^b+2^{2b}+2^{3b}+\cdots+2^{(a-1)b}\right).
+\end{align}</math>
+This rules out primality for Mersenne numbers with a composite exponent, such as {{math|1=''M''<sub>4</sub> = 2<sup>4</sup> − 1 = 15 = 3 × 5 = (2<sup>2</sup> − 1) × (1 + 2<sup>2</sup>)}}.
+
+Though the above examples might suggest that {{mvar|M<sub>p</sub>}} is prime for all primes {{mvar|p}}, this is not the case, and the smallest counterexample is the Mersenne number
+: {{math|1=''M''<sub>11</sub> = 2<sup>11</sup> − 1 = 2047 = 23 × 89}}.
+
+{{unsolved|mathematics|Are there infinitely many Mersenne primes?}}
+Many fundamental questions about Mersenne primes remain unresolved. It is not even known whether the set of Mersenne primes is finite or infinite.
+
+The [[Lenstra–Pomerance–Wagstaff conjecture]] claims that there are infinitely many Mersenne primes and predicts their [[asymptotic analysis|order of growth]] and frequency: For every number {{mvar|n}}, there should on average be about <math>e^\gamma\cdot\log_2(10) \approx 5.92</math> primes {{mvar|p}} with {{mvar|n}} decimal digits for which {{math|''M''<sub>''p''</sub>}} is prime. Here, {{mvar|γ}} is the [[Euler–Mascheroni constant]].
+
+It is also not known whether infinitely many Mersenne numbers with prime exponents are composite, although this would follow from widely believed [[conjecture]]s about prime numbers; for example, from the infinitude of [[Sophie Germain prime]]s [[Congruence relation|congruent]] to 3 ([[Modular arithmetic|mod 4]]). For these primes {{mvar|p}}, {{math|2''p'' + 1}} (which is also prime) will divide {{mvar|M<sub>p</sub>}}, for example, {{math|23 {{!}} ''M''<sub>11</sub>}}, {{math|47 {{!}} ''M''<sub>23</sub>}}, {{math|167 {{!}} ''M''<sub>83</sub>}}, {{math|263 {{!}} ''M''<sub>131</sub>}}, {{math|359 {{!}} ''M''<sub>179</sub>}}, {{math|383 {{!}} ''M''<sub>191</sub>}}, {{math|479 {{!}} ''M''<sub>239</sub>}}, and {{math|503 {{!}} ''M''<sub>251</sub>}} {{OEIS|id=A002515}}. For these primes {{mvar|p}}, {{math|2''p'' + 1}} is congruent to 7 mod 8, so 2 is a [[quadratic residue]] mod {{math|2''p'' + 1}}, and the [[multiplicative order]] of 2 mod {{math|2''p'' + 1}} must divide <math display="inline">\frac{(2p+1)-1}{2} = p</math>. Since {{mvar|p}} is a prime, it must be {{mvar|p}} or {{math|1}}. However, it cannot be 1 since {{math|1=Φ<sub>1</sub>(2) = 1}} and {{math|1}} has no [[prime factor]]s, so it must be {{mvar|p}}. Hence, {{math|2''p'' + 1}} divides {{math|1=Φ<sub>''p''</sub>(2) = 2<sup>''p''</sup> − 1}} and {{math|1=2<sup>''p''</sup> − 1 = ''M''<sub>''p''</sub>}} cannot be prime.
+The first four Mersenne primes are {{math|1=''M''<sub>2</sub> = 3}}, {{math|1=''M''<sub>3</sub> = 7}}, {{math|1=''M''<sub>5</sub> = 31}} and {{math|1=''M''<sub>7</sub> = 127}} and because the first Mersenne prime starts at {{math|''M''<sub>2</sub>}}, all Mersenne primes are congruent to 3 (mod 4). Other than {{math|1=''M''<sub>0</sub> = 0}} and {{math|1=''M''<sub>1</sub> = 1}}, all other Mersenne numbers are also congruent to 3 (mod 4). Consequently, in the [[prime factorization]] of a Mersenne number (&nbsp;{{math|&ge; ''M''<sub>2</sub>}}) there must be at least one prime factor congruent to 3 (mod 4).
+
+The evidence at hand suggests that a randomly selected Mersenne number is much more likely to be prime than an arbitrary randomly selected odd integer of similar size.<ref name="Wagstaff">{{cite web| url=http://primes.utm.edu/mersenne/heuristic.html| title=Heuristics: Deriving the Wagstaff Mersenne Conjecture| first=Chris| last=Caldwell| access-date=2015-09-22| archive-date=2018-03-05| archive-url=https://web.archive.org/web/20180305105609/http://primes.utm.edu/mersenne/heuristic.html| url-status=live}}</ref> Nonetheless, prime values of {{mvar|M<sub>p</sub>}} appear to grow increasingly sparse as {{mvar|p}} increases. For example, eight of the first 11 primes {{mvar|p}} give rise to a Mersenne prime {{mvar|M<sub>p</sub>}} (the correct terms on Mersenne's original list), while {{mvar|M<sub>p</sub>}} is prime for only 43 of the first two million prime numbers (up to 32452843).
+
+Since Mersenne numbers grow very rapidly, the search for Mersenne primes is a difficult task, even though there is a simple efficient test to determine whether a given Mersenne number is prime: the [[Lucas–Lehmer primality test]] (LLT), which makes it much easier to test the primality of Mersenne numbers than that of most other numbers of the same size. The search for the largest known prime has somewhat of a [[cult following]].{{citation needed|date=May 2023}} Consequently, a large amount of computer power has been expended searching for new Mersenne primes, much of which is now done using [[distributed computing]].
+
+Arithmetic modulo a Mersenne number is particularly efficient on a [[Binary number|binary computer]], making them popular choices when a prime modulus is desired, such as the [[Park–Miller random number generator]].  To find a [[Primitive polynomial (field theory)|primitive polynomial]] of Mersenne number order requires knowing the factorization of that number, so Mersenne primes allow one to find primitive polynomials of very high order.  Such [[primitive polynomial (field theory)#Primitive trinomials|primitive trinomials]] are used in [[pseudorandom number generator]]s with very large periods such as the [[Mersenne twister]], generalized shift register and [[Lagged Fibonacci generator]]s.
+
+== Perfect numbers ==
+{{main|Euclid–Euler theorem}}
+Mersenne primes {{math|''M''<sub>''p''</sub>}} are closely connected to [[perfect number]]s. In the 4th century BC, [[Euclid]] proved that if {{math|2<sup>''p''</sup> − 1}} is prime, then {{math|2<sup>''p'' − 1</sup>(2<sup>''p''</sup> − 1}}) is a perfect number. In the 18th century, [[Leonhard Euler]] proved that, conversely, all even perfect numbers have this form.<ref>Chris K. Caldwell, [http://primes.utm.edu/mersenne/index.html Mersenne Primes: History, Theorems and Lists] {{Webarchive|url=https://web.archive.org/web/20190313005102/http://primes.utm.edu/mersenne/index.html |date=2019-03-13 }}</ref> This is known as the [[Euclid–Euler theorem]]. It is unknown whether there are any [[odd perfect number]]s.
+
+== History ==
+{| class="wikitable floatright" style="width:1px;padding-left:1em;"
+|-
+! style="color:#dd0066;background:#99ffff;text-align:right;"|2
+! style="color:#dd0066;background:#99ffff;text-align:right;"|3
+! style="color:#dd0066;background:#99ffff;text-align:right;"|5
+! style="color:#dd0066;background:#99ffff;text-align:right;"|7
+| style="text-align: right;"|11
+! style="color:#dd0066;background:#99ffff;text-align:right;"|13
+! style="color:#dd0066;background:#99ffff;text-align:right;"|17
+! style="color:#dd0066;background:#99ffff;text-align:right;"|19
+|-
+| style="text-align: right;"|23
+| style="text-align: right;"|29
+! style="color:#dd0066;background:#99ffff;text-align:right;"|31
+| style="text-align: right;"|37
+| style="text-align: right;"|41
+| style="text-align: right;"|43
+| style="text-align: right;"|47
+| style="text-align: right;"|53
+|-
+| style="text-align: right;"|59
+! style="background:#99ffff;text-align:right;"|61
+! style="color:#dd0066;text-align:right;"|67
+| style="text-align: right;"|71
+| style="text-align: right;"|73
+| style="text-align: right;"|79
+| style="text-align: right;"|83
+! style="background:#99ffff;text-align:right;"|89
+|-
+| style="text-align: right;"|97
+| style="text-align: right;"|101
+| style="text-align: right;"|103
+! style="background:#99ffff;text-align:right;"|107
+| style="text-align: right;"|109
+| style="text-align: right;"|113
+! style="color:#dd0066;background:#99ffff;text-align:right;"|127
+| style="text-align: right;"|131
+|-
+| style="text-align: right;"|137
+| style="text-align: right;"|139
+| style="text-align: right;"|149
+| style="text-align: right;"|151
+| style="text-align: right;"|157
+| style="text-align: right;"|163
+| style="text-align: right;"|167
+| style="text-align: right;"|173
+|-
+| style="text-align: right;"|179
+| style="text-align: right;"|181
+| style="text-align: right;"|191
+| style="text-align: right;"|193
+| style="text-align: right;"|197
+| style="text-align: right;"|199
+| style="text-align: right;"|211
+| style="text-align: right;"|223
+|-
+| style="text-align: right;"|227
+| style="text-align: right;"|229
+| style="text-align: right;"|233
+| style="text-align: right;"|239
+| style="text-align: right;"|241
+| style="text-align: right;"|251
+! style="color:#dd0066;|257
+| style="text-align: right;"|263
+|-
+| style="text-align: right;"|269
+| style="text-align: right;"|271
+| style="text-align: right;"|277
+| style="text-align: right;"|281
+| style="text-align: right;"|283
+| style="text-align: right;"|293
+| style="text-align: right;"|307
+| style="text-align: right;"|311
+|-
+| colspan="8"|The first 64 prime exponents with those corresponding to Mersenne primes shaded in cyan and in bold, and those thought to do so by Mersenne in red and bold
+|}
+
+Mersenne primes take their name from the 17th-century [[French people|French]] scholar [[Marin Mersenne]], who compiled what was supposed to be a list of Mersenne primes with exponents up to 257.  The exponents listed by Mersenne in 1644 were as follows:
+: 2, 3, 5, 7, 13, 17, 19, 31, 67, 127, 257.
+
+His list replicated the known primes of his time with exponents up to 19. His next entry, 31, was correct, but the list then became largely incorrect, as Mersenne mistakenly included {{math|''M''<sub>67</sub>}} and {{math|''M''<sub>257</sub>}} (which are composite) and omitted {{math|''M''<sub>61</sub>}}, {{math|''M''<sub>89</sub>}}, and {{math|''M''<sub>107</sub>}} (which are prime). Mersenne gave little indication of how he came up with his list.<ref>The Prime Pages, [http://primes.utm.edu/glossary/page.php?sort=MersennesConjecture Mersenne's conjecture] {{Webarchive|url=https://web.archive.org/web/20180315031059/http://primes.utm.edu/glossary/page.php?sort=MersennesConjecture |date=2018-03-15 }}.</ref>
+
+[[Édouard Lucas]] proved in 1876 that {{math|''M''<sub>127</sub>}} is indeed prime, as Mersenne claimed. This was the largest known prime number for 75 years until 1951, when Aimé Ferrier found a larger prime, {{math|(2<sup>148</sup> + 1)/17}}, using a desk calculating machine.<ref>{{cite book |first1 = G. H. |last1 = Hardy |first2 = E. M. |last2 = Wright |author-link1 = G. H. Hardy |author-link2 = E. M. Wright |title=[[An Introduction to the Theory of Numbers]] |year = 1959 |edition=4th |publisher=Oxford University Press}}</ref>{{rp|page 22}} {{math|''M''<sub>61</sub>}} was determined to be prime in 1883 by [[Ivan Mikheevich Pervushin]], though Mersenne claimed it was composite, and for this reason it is sometimes called Pervushin's number.{{citation needed|date=January 2025}} This was the second-largest known prime number, and it remained so until 1911. Lucas had shown another error in Mersenne's list in 1876 by demonstrating that {{math|''M''<sub>67</sub>}} was composite without finding a factor. No factor was found until a famous talk by [[Frank Nelson Cole]] in 1903.<ref>{{cite journal |last1=Cole |first1=F. N. |title=On the factoring of large numbers |journal=Bulletin of the American Mathematical Society |date=1 December 1903 |volume=10 |issue=3 |pages=134–138 |doi=10.1090/S0002-9904-1903-01079-9 |doi-access=free }}</ref> Without speaking a word, he went to a blackboard and raised 2 to the 67th power, then subtracted one, resulting in the number {{nowrap|147573952589676412927}}. On the other side of the board, he multiplied {{nowrap|193707721 × 761838257287}} and got the same number, then returned to his seat (to applause) without speaking.<ref>{{cite book
+| title     = Mathematics, queen and servant of science
+| url     = https://archive.org/details/mathematicsqueen0000bell_n9l1
+| url-access = registration
+| author    = Bell, E.T. and Mathematical Association of America
+| year      = 1951
+| publisher = McGraw-Hill New York}} p. 228.</ref> He later said that the result had taken him "three years of Sundays" to find.<ref>{{cite news|url=http://news.bbc.co.uk/dna/place-lancashire/plain/A670051 |title=h2g2: Mersenne Numbers |work=BBC News |url-status=dead |archive-url=https://web.archive.org/web/20141205081512/http://news.bbc.co.uk/dna/place-lancashire/plain/A670051 |archive-date=December 5, 2014 }}</ref> A correct list of all Mersenne primes in this number range was completed and rigorously verified only about three centuries after Mersenne published his list.
+
+== Searching for Mersenne primes ==
+Fast algorithms for finding Mersenne primes are available, and {{as of|2024|10|lc=y}}, the seven [[largest known prime number]]s are Mersenne primes.
+
+The first four Mersenne primes {{math|''M''<sub>2</sub> {{=}} 3}}, {{math|''M''<sub>3</sub> {{=}} 7}}, {{math|''M''<sub>5</sub> {{=}} 31}} and {{math|''M''<sub>7</sub> {{=}} 127}} were known in antiquity. The fifth, {{math|''M''<sub>13</sub> {{=}} 8191}}, was discovered anonymously before 1461; the next two ({{math|''M''<sub>17</sub>}} and {{math|''M''<sub>19</sub>}}) were found by [[Pietro Cataldi]] in 1588. After nearly two centuries, {{math|''M''<sub>31</sub>}} was verified to be prime by [[Leonhard Euler]] in 1772. The next (in historical, not numerical order) was {{math|''M''<sub>127</sub>}}, found by [[Édouard Lucas]] in 1876, then {{math|''M''<sub>61</sub>}} by [[Ivan Mikheevich Pervushin]] in 1883. Two more ({{math|''M''<sub>89</sub>}} and {{math|''M''<sub>107</sub>}}) were found early in the 20th century, by [[R. E. Powers]] in 1911 and 1914, respectively.<ref>{{Cite web |title=List of known Mersenne prime numbers - PrimeNet |url=https://www.mersenne.org/primes/ |access-date=2026-09-01 |website=www.mersenne.org}}</ref>
+
+The most efficient method presently known for testing the primality of Mersenne numbers is the [[Lucas–Lehmer primality test]]. Specifically, it can be shown that for prime {{math|''p'' > 2}}, {{math|''M<sub>p</sub>'' {{=}} 2<sup>''p''</sup> − 1}} is prime [[if and only if]] {{math|''M<sub>p</sub>''}} divides {{math|''S''<sub>''p'' − 2</sub>}}, where {{math|''S''<sub>0</sub> {{=}} 4}} and {{math|''S<sub>k</sub>'' {{=}} (''S''<sub>''k'' − 1</sub>)<sup>2</sup> − 2}} for {{math|''k'' > 0}}.
+
+During the era of manual calculation, all previously untested exponents up to and including 257 were tested with the Lucas–Lehmer test and found to be composite. A notable contribution was made by retired Yale physics professor Horace Scudder Uhler, who did the calculations for exponents 157, 167, 193, 199, 227, and 229.<ref>{{cite journal |journal=Scripta Mathematica |volume=18 |year=1952 |pages=122–131 |title=A Brief History of the Investigations on Mersenne Numbers and the Latest Immense Primes |author=Horace S. Uhler |url=https://primes.utm.edu/mersenne/LukeMirror/lit/lit_019.htm |archive-date=2016-12-08 |access-date=2016-04-21 |archive-url=https://web.archive.org/web/20161208044927/http://primes.utm.edu/mersenne/LukeMirror/lit/lit_019.htm |url-status=live }}</ref> Unfortunately for those investigators, the interval they were testing contains the largest known relative gap between Mersenne primes: the next Mersenne prime exponent, 521, would turn out to be more than four times as large as the previous record of 127.
+
+[[File:Digits in largest prime found as a function of time.svg|thumb|right|400px|Graph of number of digits in largest known Mersenne prime by year – electronic era. The vertical scale is logarithmic in the number of digits, thus being a {{math|log(log(''y''))}} function in the value of the prime.]]
+The search for Mersenne primes was revolutionized by the introduction of the electronic digital computer. [[Alan Turing]] searched for them on the [[Manchester Mark 1]] in 1949,<ref>Brian Napper, [http://www.computer50.org/mark1/maths.html The Mathematics Department and the Mark 1] {{Webarchive|url=https://web.archive.org/web/20090204121459/http://www.computer50.org/mark1/maths.html |date=2009-02-04 }}.</ref> but the first successful identification of a Mersenne prime, {{math|''M''<sub>521</sub>}}, by this means was achieved at 10:00 pm on January 30, 1952, using the U.S. [[National Bureau of Standards]] [[SWAC (computer)|Western Automatic Computer (SWAC)]] at the Institute for Numerical Analysis at the [[University of California, Los Angeles]] (UCLA), under the direction of [[Derrick Henry Lehmer|D. H. Lehmer]], with a computer search program written and run by Prof. [[Raphael M. Robinson|R. M. Robinson]]. It was the first Mersenne prime to be identified in thirty-eight years; the next one, {{math|''M''<sub>607</sub>}}, was found by the computer a little less than two hours later. Three more –&nbsp;{{math|''M''<sub>1279</sub>}}, {{math|''M''<sub>2203</sub>}}, and {{math|''M''<sub>2281</sub>}}&nbsp;– were found by the same program in the next several months. {{math|''M''<sub>4423</sub>}} was the first prime discovered with more than 1000 digits, {{math|''M''<sub>44497</sub>}} was the first with more than 10000, and {{math|''M''<sub>6972593</sub>}} was the first with more than a million. In general, the number of digits in the decimal representation of {{math|''M<sub>n</sub>''}} equals {{math|⌊''n'' log<sub>10</sub>2⌋ + 1}}, where {{math|⌊''x''⌋}} denotes the [[floor function]] (or equivalently {{math|⌊log<sub>10</sub>''M<sub>n</sub>''⌋ + 1}}).
+
+In September 2008, mathematicians at UCLA participating in the [[Great Internet Mersenne Prime Search]] (GIMPS) won part of a {{val|p=$|100000}} prize from the [[Electronic Frontier Foundation]] for their discovery of a very nearly 13-million-digit Mersenne prime. The prize, finally confirmed in October 2009, is for the first known prime with at least 10 million digits.  The prime was found on a [[Dell OptiPlex]] 745 on August 23, 2008.  This was the eighth Mersenne prime discovered at UCLA.<ref>{{cite news|url=http://www.latimes.com/news/science/la-sci-prime27-2008sep27,0,2746766.story |title=UCLA mathematicians discover a 13-million-digit prime number|newspaper=Los Angeles Times|date=2008-09-27 |access-date=2011-05-21|first=Thomas H.|last=Maugh II}}</ref>
+
+On April 12, 2009, a GIMPS server log reported that a 47th Mersenne prime had possibly been found. The find was first noticed on June 4, 2009, and verified a week later. The prime is {{nowrap|2<sup>42643801</sup> − 1}}. Although it is chronologically the 47th Mersenne prime to be discovered, it is smaller than the largest known at the time, which was the 45th to be discovered.
+
+On January 25, 2013, [[Curtis Cooper (mathematician)|Curtis Cooper]], a mathematician at the [[University of Central Missouri]], discovered a 48th Mersenne prime, {{nowrap|2<sup>57885161</sup> − 1}} (a number with {{val|17425170}} digits), as a result of a search executed by a GIMPS server network.<ref>{{cite magazine |url=http://www.scientificamerican.com/article.cfm?id=largest-prime-number-disc |title=Largest Prime Number Discovered |author=Tia Ghose |magazine=[[Scientific American]] |access-date=2013-02-07 |archive-date=2013-02-06 |archive-url=https://web.archive.org/web/20130206164533/https://www.scientificamerican.com/article.cfm?id=largest-prime-number-disc |url-status=live }}</ref>
+
+On January 19, 2016, Cooper published his discovery of a 49th Mersenne prime, {{nowrap|2<sup>74207281</sup> − 1}} (a number with {{val|22338618}} digits), as a result of a search executed by a GIMPS server network.<ref name="GIMPS-2016">{{cite web |last=Cooper |first=Curtis |title=Mersenne Prime Number discovery – 2<sup>74207281</sup>&nbsp;−&nbsp;1 is Prime! |url=http://www.mersenne.org/primes/?press=M74207281 |date=7 January 2016 |work=Mersenne Research, Inc. |access-date=22 January 2016 |archive-date=7 April 2019 |archive-url=https://web.archive.org/web/20190407203531/https://www.mersenne.org/primes/?press=M74207281 |url-status=live }}</ref><ref>{{cite news |url=https://www.newscientist.com/article/2073909-prime-number-with-22-million-digits-is-the-biggest-ever-found/ |title=Prime number with 22 million digits is the biggest ever found |last=Brook |first=Robert |date=January 19, 2016 |work=[[New Scientist]] |access-date=19 January 2016 |archive-date=23 January 2016 |archive-url=https://web.archive.org/web/20160123091649/https://www.newscientist.com/article/2073909-prime-number-with-22-million-digits-is-the-biggest-ever-found/ |url-status=live }}</ref><ref name="NYT-20160121">{{cite news |last=Chang |first=Kenneth |title=New Biggest Prime Number = 2 to the 74 Mil ... Uh, It's Big |url=https://www.nytimes.com/2016/01/22/science/new-biggest-prime-number-mersenne-primes.html |date=21 January 2016 |work=[[The New York Times]] |access-date=22 January 2016 |archive-date=13 February 2019 |archive-url=https://web.archive.org/web/20190213170924/https://www.nytimes.com/2016/01/22/science/new-biggest-prime-number-mersenne-primes.html |url-status=live }}</ref> This was the fourth Mersenne prime discovered by Cooper and his team in the past ten years.
+
+On September 2, 2016, the Great Internet Mersenne Prime Search finished verifying all tests below {{math|''M''<sub>37156667</sub>}}, thus officially confirming its position as the 45th Mersenne prime.<ref>{{cite web|url = http://www.mersenne.org/report_milestones/ |title = Milestones|archive-url = https://web.archive.org/web/20160903040753/http://www.mersenne.org/report_milestones/ |archive-date = 2016-09-03}}</ref>
+
+On January 3, 2018, it was announced that Jonathan Pace, a 51-year-old electrical engineer living in [[Germantown, Tennessee]], had found a 50th Mersenne prime, {{nowrap|2<sup>77232917</sup> − 1}} (a number with {{val|23249425}} digits), as a result of a search executed by a GIMPS server network.<ref>{{cite web|url=https://www.mersenne.org/primes/?press=M77232917|title=Mersenne Prime Discovery – 2<sup>77232917</sup>−1 is Prime!|website=www.mersenne.org|language=en|access-date=2018-01-03|archive-date=2021-10-17|archive-url=https://web.archive.org/web/20211017052651/https://www.mersenne.org/primes/?press=M77232917|url-status=live}}</ref> The discovery was made by a computer in the offices of a church in the same town.<ref>{{cite web|url=https://christianchronicle.org/largest-known-prime-number-found-church-computer/|title=Largest-known prime number found on church computer|website=christianchronicle.org|date=January 12, 2018|access-date=May 15, 2021|archive-date=May 15, 2021|archive-url=https://web.archive.org/web/20210515202834/https://christianchronicle.org/largest-known-prime-number-found-church-computer/|url-status=live}}</ref><ref>{{cite web |url=https://www.atlasobscura.com/articles/found-special-mind-bogglingly-large-prime-number-mersenne |title=Found: A Special, Mind-Bogglingly Large Prime Number |date=January 5, 2018 }}</ref>
+
+On December 21, 2018, it was announced that The Great Internet Mersenne Prime Search (GIMPS) discovered a new prime number, {{nowrap|2<sup>82589933</sup> − 1}}, having {{val|24862048}} digits. A computer volunteered by Patrick Laroche from [[Ocala, Florida]] made the find on December 7, 2018.<ref>{{cite web|url=https://www.mersenne.org/primes/?press=M82589933|title=GIMPS Discovers Largest Known Prime Number: 2<sup>82,589,933</sup> − 1|language=en|access-date=2019-01-01|archive-date=2018-12-22|archive-url=https://web.archive.org/web/20181222180200/https://www.mersenne.org/primes/?press=M82589933|url-status=live}}</ref>
+
+In late 2020, GIMPS began using a new technique to rule out potential Mersenne primes called the [[Probable prime]] (PRP) test, based on development from Robert Gerbicz in 2017, and a simple way to verify tests developed by Krzysztof Pietrzak in 2018. Due to the low error rate and ease of proof, this nearly halved the computing time to rule out potential primes over the Lucas-Lehmer test (as two users would no longer have to perform the same test to confirm the other's result), although exponents passing the PRP test still require at least two Lucas-Lehmer tests to confirm their primality.<ref>{{cite web |title=GIMPS – The Math – PrimeNet |url=https://www.mersenne.org/various/math.php |website=www.mersenne.org |access-date=29 June 2021}}</ref>
+
+On October 12, 2024, a user named Luke Durant from San Jose, California, found the current largest known Mersenne prime, {{nowrap|2<sup>136279841</sup> − 1}}, having {{val|41024320}} digits. This marks the first Mersenne prime with an exponent over {{val|100000000}}. This was announced on October 21, 2024.<ref>{{cite web |title=Mersenne Prime Number discovery – 2<sup>136279841</sup> − 1 is Prime! |url=https://www.mersenne.org/primes/?press=M136279841 |website=www.mersenne.org |access-date=21 Oct 2024 |archive-date=4 November 2024 |archive-url=https://web.archive.org/web/20241104020923/https://www.mersenne.org/primes/?press=M136279841 |url-status=live }}</ref>
+
+== Theorems about Mersenne numbers ==
+<!-- WARNING: you're NOT going to get a nice display by intermixing HTML-style lists with WIKIMEDIA-style markup within list items ! this has been tried !-->
+Mersenne numbers are 0, 1, 3, 7, 15, 31, 63,&nbsp;... {{OEIS|id=A000225}}.
+# If {{math|''a''}} and {{mvar|p}} are natural numbers such that {{math|''a<sup>p</sup>'' − 1}} is prime, then {{math|''a'' {{=}} 2}} or {{math|''p'' {{=}} 1}}.
+#* '''Proof''': {{math|''a'' ≡ 1 ([[Modular arithmetic|mod]] ''a'' − 1)}}. Then {{math|''a<sup>p</sup>'' ≡ 1 (mod ''a'' − 1)}}, so {{math|''a<sup>p</sup>'' − 1 ≡ 0 (mod ''a'' − 1)}}. Thus {{math|''a'' − 1 {{!}} ''a<sup>p</sup>'' − 1}}. However, {{math|''a<sup>p</sup>'' − 1}} is prime, so {{math|''a'' − 1 {{=}} ''a<sup>p</sup>'' − 1}} or {{math|''a'' − 1 {{=}} ±1}}. In the former case, {{math|''a'' {{=}} ''a<sup>p</sup>''}}, hence {{math|''a'' {{=}} 0, 1}} (which is a contradiction, as neither −1 nor 0 is prime) or {{math|''p'' {{=}} 1.}} In the latter case, {{math|''a'' {{=}} 2}} or {{math|''a'' {{=}} 0}}. If {{math|''a'' {{=}} 0}}, however, {{math|0<sup>''p''</sup> − 1 {{=}} 0 − 1 {{=}} −1}}, which is not prime. Therefore, {{math|''a'' {{=}} 2}}.
+# If {{math|2<sup>''p''</sup> − 1}} is prime, then {{mvar|p}} is prime.
+#* '''Proof''': Suppose that {{mvar|p}} is composite, hence can be written {{math|''p'' {{=}} ''ab''}} with {{mvar|a}} and {{math|''b'' > 1}}. Then {{math|2<sup>''p''</sup> − 1}} {{math|{{=}} 2<sup>''ab''</sup> − 1}} {{math|{{=}} (2<sup>''a''</sup>)<sup>''b''</sup> − 1}} {{math|{{=}} (2<sup>''a''</sup> − 1)<big>(</big>(2<sup>''a''</sup>)<sup>''b''−1</sup> + (2<sup>''a''</sup>)<sup>''b''−2</sup> + ... + 2<sup>''a''</sup> + 1<big>)</big>}} so {{math|2<sup>''p''</sup> − 1}} is composite. By contraposition, if {{math|2<sup>''p''</sup> − 1}} is prime then ''p'' is prime.
+# If {{mvar|p}} is an odd prime, then every prime {{mvar|q}} that divides {{math|2<sup>''p''</sup> − 1}} must be 1 plus a multiple of {{math|2''p''}}. This holds even when {{math|2<sup>''p''</sup> − 1}} is prime.
+#* For example, {{nowrap|2<sup>5</sup> − 1 {{=}} 31}} is prime, and {{nowrap|31 {{=}} 1 + 3 × (2 × 5)}}.  A composite example is {{nowrap|2<sup>11</sup> − 1 {{=}} 23 × 89}}, where {{nowrap|23 {{=}} 1 + (2 × 11)}} and {{nowrap|89 {{=}} 1 + 4 × (2 × 11)}}.
+#* '''Proof''': By [[Fermat's little theorem]], {{mvar|q}} is a factor of {{math|2<sup>''q''−1</sup> − 1}}. Since {{mvar|q}} is a factor of {{math|2<sup>''p''</sup> − 1}}, for all positive integers {{math|''c''}}, {{mvar|q}} is also a factor of {{math|2<sup>''pc''</sup> − 1}}. Since {{mvar|p}} is prime and {{mvar|q}} is not a factor of {{nowrap|2<sup>1</sup> − 1}}, {{mvar|p}} is also the smallest positive integer {{mvar|x}} such that {{mvar|q}} is a factor of {{math|2<sup>''x''</sup> − 1}}. As a result, for all positive integers {{mvar|x}}, {{mvar|q}} is a factor of {{math|2<sup>''x''</sup> − 1}} if and only if {{mvar|p}} is a factor of {{mvar|x}}. Therefore, since {{mvar|q}} is a factor of {{math|2<sup>''q''−1</sup> − 1}}, {{mvar|p}} is a factor of {{math|''q'' − 1}} so {{math|''q'' ≡ 1 (mod ''p'')}}. Furthermore, since {{mvar|q}} is a factor of {{math|2<sup>''p''</sup> − 1}}, which is odd, {{mvar|q}} is odd. Therefore, {{math|''q'' ≡ 1 (mod 2''p'')}}.
+#* This fact leads to a proof of [[Euclid's theorem]], which asserts the infinitude of primes, distinct from the proof written by Euclid: for every odd prime {{mvar|p}}, all primes dividing {{math|2<sup>''p''</sup> − 1}} are larger than {{mvar|p}}; thus there are always larger primes than any particular prime.
+#* It follows from this fact that for every prime {{math|''p'' > 2}}, there is at least one prime of the form {{math|2''kp'' + 1}} less than or equal to {{mvar|M<sub>p</sub>}}, for some integer {{mvar|k}}.
+# If {{mvar|p}} is an odd prime, then every prime {{mvar|q}} that divides {{math|2<sup>''p''</sup> − 1}} is congruent to {{nowrap|±1 (mod 8)}}.
+#* '''Proof''': {{math|2<sup>''p''+1</sup> ≡ 2 (mod ''q'')}}, so {{math|2<sup>{{sfrac|1|2}}(p+1)</sup>}} is a square root of {{math|2 mod ''q''}}.  By [[quadratic reciprocity]], every prime modulus in which the number 2 has a square root is congruent to {{nowrap|±1 (mod 8)}}.
+# A Mersenne prime cannot be a [[Wieferich prime]].
+#* '''Proof''': We show if {{math|''p'' {{=}} 2<sup>''m''</sup> − 1}} is a Mersenne prime, then the congruence {{math|2<sup>''p''−1</sup> ≡ 1 (mod ''p''<sup>2</sup>)}} does not hold. By Fermat's little theorem, {{math|''m'' {{!}} ''p'' − 1}}.  Therefore, one can write {{math|''p'' − 1 {{=}} ''mλ''}}. If the given congruence is satisfied, then {{math|''p''<sup>2</sup> {{!}} 2<sup>''mλ''</sup> − 1}}, therefore {{math|0 ≡ {{sfrac|2<sup>''mλ''</sup> − 1|2<sup>''m''</sup> − 1}}}} {{math|{{=}} 1 + 2<sup>''m''</sup> + 2<sup>2''m''</sup> + ... + 2<sup>(''λ'' − 1)''m''</sup>}} {{math|≡ ''λ'' mod (2<sup>''m''</sup> − 1)}}. Hence {{math|p {{!}} ''λ''}}, and therefore {{math|1=−1 = 0 (mod p)}}, which is impossible.
+#If {{mvar|m}} and {{mvar|n}} are natural numbers then {{mvar|m}} and {{mvar|n}} are [[coprime]] if and only if {{math|2<sup>''m''</sup> − 1}} and {{math|2<sup>''n''</sup> − 1}} are coprime. Consequently, a prime number divides at most one prime-exponent Mersenne number.<ref>{{cite web |last=Edgington |first=Will |date=2014-10-14 |title=Will Edgington's Mersenne Page |url=http://www.garlic.com/~wedgingt/mersenne.html |url-status=dead |archive-url=https://web.archive.org/web/20141014102940/http://www.garlic.com/~wedgingt/mersenne.html |archive-date=2014-10-14 |access-date=2014-10-14}}</ref> That is, the set of [[pernicious number|pernicious]] Mersenne numbers is pairwise coprime.
+# If {{mvar|p}} and {{math|2''p'' + 1}} are both prime (meaning that {{mvar|p}} is a [[Sophie Germain prime]]), and {{mvar|p}} is [[Congruence relation|congruent]] to {{nowrap|3 (mod 4)}}, then {{math|2''p'' + 1}} divides {{math|2<sup>''p''</sup> − 1}}.<ref>{{cite web|url=http://primes.utm.edu/notes/proofs/MerDiv2.html|title=Proof of a result of Euler and Lagrange on Mersenne Divisors|first=Chris K.|last=Caldwell|work=[[Prime Pages]]}}</ref>
+#* '''Example''': 11 and 23 are both prime, and {{nowrap|11 {{=}} 2 × 4 + 3}}, so 23 divides {{nowrap|2<sup>11</sup> − 1}}.
+#* '''Proof''': Let {{mvar|q}} be {{math|2''p'' + 1}}. By Fermat's little theorem, {{math|2<sup>2''p''</sup> ≡ 1 (mod ''q'')}}, so either {{math|2<sup>''p''</sup> ≡ 1 (mod ''q'')}} or {{math|2<sup>''p''</sup> ≡ −1 (mod ''q'')}}. Supposing latter true, then {{math|2<sup>''p''+1</sup> {{=}} (2<sup>{{sfrac|1|2}}(''p'' + 1)</sup>)<sup>2</sup> ≡ −2 (mod ''q'')}}, so −2 would be a quadratic residue mod {{mvar|q}}. However, since {{mvar|p}} is congruent to {{nowrap|3 (mod 4)}}, {{mvar|q}} is congruent to {{nowrap|7 (mod 8)}} and therefore 2 is a quadratic residue mod {{mvar|q}}. Also since {{mvar|q}} is congruent to {{nowrap|3 (mod 4)}}, −1 is a quadratic nonresidue mod {{mvar|q}}, so −2 is the product of a residue and a nonresidue and hence it is a nonresidue, which is a contradiction. Hence, the former congruence must be true and {{math|2''p'' + 1}} divides {{mvar|M<sub>p</sub>}}.
+# All composite divisors of prime-exponent Mersenne numbers are [[strong pseudoprime]]s to the base 2.
+# With the exception of 1, a Mersenne number cannot be a perfect power. That is, and in accordance with [[Catalan's conjecture|Mihăilescu's theorem]], the equation {{math|2<sup>''m''</sup> − 1 {{=}} ''n<sup>k</sup>''}} has no solutions where {{mvar|m}}, {{mvar|n}}, and {{mvar|k}} are integers with {{math|''m'' > 1}} and {{math|''k'' > 1}}.
+#The Mersenne number sequence is a member of the family of [[Lucas sequence]]s. It is {{math|U<sub>''n''</sub>}}(3, 2). That is, Mersenne number {{math|''m''<sub>''n''</sub> {{=}} 3''m''<sub>''n''−1</sub> − 2''m''<sub>''n''−2</sub>}} with {{math|''m''<sub>0</sub> {{=}} 0}} and {{math|''m''<sub>1</sub> {{=}} 1}}.
+
+== List of exponents for known Mersenne primes ==
+{{main|List of Mersenne primes and perfect numbers}}
+{{As of|2024}}, the 52 known Mersenne primes are 2<sup>''p''</sup> − 1 for the following ''p'':
+: 2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107, 127, 521, 607, 1279, 2203, 2281, 3217, 4253, 4423, 9689, 9941, 11213, 19937, 21701, 23209, 44497, 86243, 110503, 132049, 216091, 756839, 859433, 1257787, 1398269, 2976221, 3021377, 6972593, 13466917, 20996011, 24036583, 25964951, 30402457, 32582657, 37156667, 42643801, 43112609, 57885161, 74207281, 77232917, 82589933, 136279841. {{OEIS|id=A000043}}
+
+== Factorization of composite Mersenne numbers ==
+Since they are prime numbers, Mersenne primes are divisible only by 1 and themselves. However, not all Mersenne numbers are Mersenne primes. Mersenne numbers are very good test cases for the [[special number field sieve]] algorithm, so often the largest number factorized with this algorithm has been a Mersenne number. {{As of|2019|6}}, {{math|2<sup>1193</sup> − 1}} is the record-holder,<ref>{{cite book |doi=10.1007/978-3-662-45611-8_19 |chapter=Mersenne Factorization Factory |title=Advances in Cryptology – ASIACRYPT 2014 |series=Lecture Notes in Computer Science |year=2014 |last1=Kleinjung |first1=Thorsten |last2=Bos |first2=Joppe W. |last3=Lenstra |first3=Arjen K. |volume=8874 |pages=358–377 |isbn=978-3-662-45607-1 }}</ref> having been factored with a variant of the special number field sieve that allows the factorization of several numbers at once. See ''[[Integer factorization records]]'' for links to more information. The special number field sieve can factorize numbers with more than one large factor. If a number has only one very large factor then other algorithms can factorize larger numbers by first finding small factors and then running a [[primality test]] on the cofactor. {{As of|2022|9}}, the largest completely factored number (with [[probable prime]] factors allowed) is {{math|2<sup>12720787</sup> − 1 {{=}}}} {{math|1119429257 ×}} {{math|175573124547437977 ×}} {{math|8480999878421106991 × ''q''}}, where {{mvar|q}} is a {{val|3829294}}-digit probable prime. It was discovered by a GIMPS participant with nickname "Funky Waddle".<ref>{{cite web|url=http://www.primenumbers.net/prptop/searchform.php?form=(2^p-1)/%3F&action=Search |title=PRP Top Records |first1=Henri|last1=Lifchitz|first2=Renaud|last2=Lifchitz|access-date=2022-09-05}}</ref><ref>{{cite web |title=M12720787 Mersenne number exponent details |url=https://www.mersenne.ca/exponent/12720787 |website=www.mersenne.ca |access-date=8 September 2026}}</ref> {{As of|2026|9}}, the Mersenne number ''M''<sub>1619</sub> is the smallest composite Mersenne number with no known factors.
+
+The table below shows factorizations for the first 20 composite Mersenne numbers where the exponent {{math|''p''}} is a prime number {{OEIS|id=A244453}}.
+
+{|class="wikitable" style="text-align:right;"
+!{{math|''p''}}
+!{{math|''M<sub>p</sub>''}}
+!Digits
+!Factorization of {{math|''M<sub>p</sub>''}}
+|-
+|11
+|2047
+|4
+|23 × 89
+|-
+|23
+|8388607
+|7
+|47 × 178481
+|-
+|29
+|536870911
+|9
+|233 × 1103 × 2089
+|-
+|37
+|137438953471
+|12
+|223 × 616318177
+|-
+|41
+|2199023255551
+|13
+|13367 × 164511353
+|-
+|43
+|8796093022207
+|13
+|431 × 9719 × 2099863
+|-
+|47
+|140737488355327
+|15
+|2351 × 4513 × 13264529
+|-
+|53
+|9007199254740991
+|16
+|6361 × 69431 × 20394401
+|-
+|59
+|576460752303423487
+|18
+|179951 × 3203431780337 (13 digits)
+|-
+|67
+|147573952589676412927
+|21
+|193707721 × 761838257287 (12 digits)
+|-
+|71
+|2361183241434822606847
+|22
+|228479 × 48544121 × 212885833
+|-
+|73
+|9444732965739290427391
+|22
+|439 × 2298041 × 9361973132609 (13 digits)
+|-
+|79
+|604462909807314587353087
+|24
+|2687 × 202029703 × 1113491139767 (13 digits)
+|-
+|83
+|9671406556917033397649407
+|25
+|167 × 57912614113275649087721 (23 digits)
+|-
+|97
+|158456325028528675187087900671
+|30
+|11447 × 13842607235828485645766393 (26 digits)
+|-
+|101
+|2535301200456458802993406410751
+|31
+|7432339208719 (13 digits) × 341117531003194129 (18 digits)
+|-
+|103
+|10141204801825835211973625643007
+|32
+|2550183799 × 3976656429941438590393 (22 digits)
+|-
+|109
+|649037107316853453566312041152511
+|33
+|745988807 × 870035986098720987332873 (24 digits)
+|-
+|113
+|10384593717069655257060992658440191
+|35
+|3391 × 23279 × 65993 × 1868569 × 1066818132868207 (16 digits)
+|-
+|131
+|2722258935367507707706996859454145691647
+|40
+|263 × 10350794431055162386718619237468234569 (38 digits)
+|}
+
+The number of factors for the first 500 Mersenne numbers can be found at {{OEIS|id=A046800}}.
+
+== Mersenne numbers in nature and elsewhere ==
+In the mathematical problem [[Tower of Hanoi]], optimally solving a puzzle with an {{math|''n''}}-disc tower requires {{math|''M<sub>n</sub>''}} steps.<ref>{{cite book|last=Petković|first=Miodrag|title=Famous Puzzles of Great Mathematicians|year=2009|publisher=AMS Bookstore|isbn=978-0-8218-4814-2|pages=197}}</ref> The number of rice grains on the whole chessboard in the [[wheat and chessboard problem]] is {{math|''M''<sub>64</sub>}}.<ref>{{cite web |last=Weisstein |first=Eric W. |title=Wheat and Chessboard Problem |url=https://mathworld.wolfram.com/ |access-date=2023-02-11 |website=Mathworld. Wolfram |language=en |archive-date=2000-02-29 |archive-url=https://web.archive.org/web/20000229101824/https://mathworld.wolfram.com/ |url-status=live }}</ref>
+
+The [[asteroid]] with [[minor planet]] number 8191 is named [[8191 Mersenne]] after Marin Mersenne, because 8191 is a Mersenne prime.<ref>{{cite web |author=Alan Chamberlin |url=http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=8191+Mersenne |title=JPL Small-Body Database Browser |publisher=Ssd.jpl.nasa.gov |access-date=2011-05-21 |archive-date=2020-06-10 |archive-url=https://web.archive.org/web/20200610115433/https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=8191+Mersenne |url-status=live }}</ref>
+
+In [[geometry]], an integer [[right triangle]] that is [[Pythagorean triple|primitive]] and has its even leg a power of 2 (&nbsp;{{math|&ge; 4}}) generates a unique right triangle such that its [[inradius]] is always a Mersenne number. For example, if the even leg is {{math|2<sup>''n''&nbsp;+&nbsp;1</sup>}} then because it is primitive it constrains the odd leg to be {{math|4<sup>''n''</sup>&nbsp;−&nbsp;1}}, the [[hypotenuse]] to be {{math|4<sup>''n''</sup>&nbsp;+&nbsp;1}} and its inradius to be {{math|2<sup>''n''</sup>&nbsp;−&nbsp;1}}.<ref>{{cite web |url=http://oeis.org/A016131 |title=OEIS A016131 |publisher=The On-Line Encyclopedia of Integer Sequences |access-date=2018-09-07 |archive-date=2018-09-07 |archive-url=https://web.archive.org/web/20180907221522/http://oeis.org/A016131 |url-status=live }}</ref>
+
+Also in geometry, the number of [[polytopes]] that are part of the family of polytopes formed by a [[Uniform polytope#Operations|truncation operation]] of a base regular polytope and its [[dual polyhedron#Dual polytopes and tessellations|dual]] (excluding alternation) is equal to {{math|''M<sub>n</sub>''}} where {{mvar|n}} is the dimension of the base polytope. For example, a [[tesseract]] and its dual the [[hexadecachoron]] have {{math|''M<sub>4</sub>'' {{=}} 15}} different polytopes in its family formed by truncation operations.<ref>{{cite book |last=Coxeter |first=H.S.M. |author-link=H. S. M. Coxeter |date=1999 |title=The Beauty of Geometry: Twelve Essays |publisher=Dover Publications |page=Chapter 3: Wythoff's Construction for Uniform Polytopes |isbn=978-0-486-40919-1 }}</ref>
+
+== Mersenne–Fermat primes ==
+A '''Mersenne–Fermat number''' is defined as {{math|{{sfrac|2''<sup>p<sup>r</sup></sup>'' − 1|2<sup>''p''<sup>''r'' − 1</sup></sup> − 1}}}}  with {{math|''p''}} prime, {{math|''r''}} natural number, and can be written as {{math|MF(''p'', ''r'')}}. When {{math|''r'' {{=}} 1}}, it is a Mersenne number. When {{math|''p'' {{=}} 2}}, it is a [[Fermat number]]. The only known Mersenne–Fermat primes with {{math|''r'' > 1}} are
+:{{math|MF(2, 2), MF(2, 3), MF(2, 4), MF(2, 5), MF(3, 2), MF(3, 3), MF(7, 2),}} and {{math|MF(59, 2)}}.<ref>{{cite web|url=http://staff.spd.dcu.ie/johnbcos/fermat6.htm|title=A research of Mersenne and Fermat primes|url-status=dead|archive-url=https://archive.today/20120529014233/http://staff.spd.dcu.ie/johnbcos/fermat6.htm|archive-date=2012-05-29}}</ref>
+
+In fact, {{math|MF(''p'', ''r'') {{=}} ''Φ<sub>p<sup>r</sup></sub>''(2)}}, where {{math|''Φ''}} is the [[cyclotomic polynomial]].
+
+== Generalizations ==
+{{main|Generalized Mersenne prime}}
+The simplest generalized Mersenne primes are prime numbers of the form {{math|''f''(2<sup>''n''</sup>)}}, where {{math|''f''(''x'')}} is a low-degree [[polynomial]] with small integer [[coefficients]].<ref>{{cite book|title=Encyclopedia of Cryptography and Security|first=Jerome A.|last=Solinas|editor-first1=Henk C. A. van|editor-last1=Tilborg|editor-first2=Sushil|editor-last2=Jajodia|date=1 January 2011|publisher=Springer US|pages=509–510|doi=10.1007/978-1-4419-5906-5_32|chapter = Generalized Mersenne Prime|isbn = 978-1-4419-5905-8}}</ref> An example is {{math|2<sup>64</sup> − 2<sup>32</sup> + 1}}, in this case, {{math|''n'' {{=}} 32}}, and {{math|''f''(''x'') {{=}} ''x''<sup>2</sup> − ''x'' + 1}}; another example is {{math|2<sup>192</sup> − 2<sup>64</sup> − 1}}, in this case, {{math|''n'' {{=}} 64}}, and {{math|''f''(''x'') {{=}} ''x''<sup>3</sup> − ''x'' − 1}}.
+
+It is also natural to try to generalize primes of the form {{math|2<sup>''n''</sup> − 1}} to primes of the form {{math|''b''<sup>''n''</sup> − 1}} (for {{math|''b'' ≠ 2}} and {{math|''n'' > 1}}). However (see also ''{{slink|#Theorems about Mersenne numbers}}'' above), {{math|''b''<sup>''n''</sup> − 1}} is always divisible by {{math|''b'' − 1}}, so unless the latter is a [[unit (ring theory)|unit]], the former is not a prime. This can be remedied by allowing ''b'' to be an algebraic integer instead of an integer:
+
+=== Complex numbers ===
+In the [[ring (mathematics)|ring]] of integers (on [[real number]]s), if {{math|''b'' − 1}} is a [[unit (ring theory)|unit]], then {{math|''b''}} is either 2 or 0. But {{math|2<sup>''n''</sup> − 1}} are the usual Mersenne primes, and the formula {{math|0<sup>''n''</sup> − 1}} does not lead to anything interesting (since it is always −1 for all {{math|''n'' > 0}}). Thus, we can regard a ring of "integers" on [[complex number]]s instead of [[real number]]s, like [[Gaussian integer]]s and [[Eisenstein integer]]s.
+
+==== Gaussian Mersenne primes ====
+If we regard the ring of [[Gaussian integer]]s, we get the case {{math|''b'' {{=}} 1 + ''i''}} and {{math|''b'' {{=}} 1 − ''i''}}, and can ask ([[without loss of generality|WLOG]]) for which {{math|''n''}} the number {{math|(1 + ''i'')<sup>''n''</sup> − 1}} is a [[Gaussian prime]], which will then be called a '''Gaussian Mersenne prime'''.<ref>Chris Caldwell: [http://primes.utm.edu/glossary/xpage/GaussianMersenne.html The Prime Glossary: Gaussian Mersenne] {{Webarchive|url=https://web.archive.org/web/20141006110422/http://primes.utm.edu/glossary/xpage/GaussianMersenne.html |date=2014-10-06 }} (part of the [[Prime Pages]])</ref>
+
+{{math|(1 + ''i'')<sup>''n''</sup> − 1}} is a Gaussian prime for the following {{math|''n''}}:
+: 2, 3, 5, 7, 11, 19, 29, 47, 73, 79, 113, 151, 157, 163, 167, 239, 241, 283, 353, 367, 379, 457, 997, 1367, 3041, 10141, 14699, 27529, 49207, 77291, 85237, 106693, 160423, 203789, 364289, 991961, 1203793, 1667321, 3704053, 4792057, ... {{OEIS|id=A057429}}
+
+Like the sequence of exponents for usual Mersenne primes, this sequence contains only (rational) prime numbers.
+
+As for all Gaussian primes, the [[Gaussian integer#Norm of a Gaussian integer|norm]]s (that is, squares of absolute values) of these numbers are rational primes:
+
+:5, 13, 41, 113, 2113, 525313, 536903681, 140737471578113, ... {{OEIS|id=A182300}}.
+
+====Eisenstein Mersenne primes====
+One may encounter cases where such a Mersenne prime is also an ''Eisenstein prime'', being of the form {{math|''b'' {{=}} 1 + ''ω''}} and {{math|''b'' {{=}} 1 − ''ω''}}. In these cases, such numbers are called '''Eisenstein Mersenne primes'''.
+
+{{math|(1 + ''ω'')<sup>''n''</sup> − 1}} is an Eisenstein prime for the following {{math|''n''}}:
+: 2, 5, 7, 11, 17, 19, 79, 163, 193, 239, 317, 353, 659, 709, 1049, 1103, 1759, 2029, 5153, 7541, 9049, 10453, 23743, 255361, 534827, 2237561, ... {{OEIS|id=A066408}}
+
+The norms (that is, squares of absolute values) of these Eisenstein primes are rational primes:
+: 7, 271, 2269, 176419, 129159847, 1162320517, ... {{OEIS|id=A066413}}
+
+=== Divide an integer ===
+==== Repunit primes ====
+{{main|Repunit}}
+The other way to deal with the fact that {{math|''b''<sup>''n''</sup> − 1}} is always divisible by {{math|''b'' − 1}}, it is to simply take out this factor and ask which values of {{math|''n''}} make
+: <math>\frac{b^n-1}{b-1}</math>
+be prime. (The integer {{math|''b''}} can be either positive or negative.) If, for example, we take {{math|''b'' {{=}} 10}}, we get {{math|''n''}} values of:
+: 2, 19, 23, 317, 1031, 49081, 86453, 109297, 270343, ... {{OEIS|id=A004023}},{{br}}corresponding to primes 11, 1111111111111111111, 11111111111111111111111, ... {{OEIS|id=A004022}}.
+These primes are called repunit primes. Another example is when we take {{math|''b'' {{=}} −12}}, we get {{math|''n''}} values of:
+: 2, 5, 11, 109, 193, 1483, 11353, 21419, 21911, 24071, 106859, 139739, ... {{OEIS|id=A057178}},{{br}}corresponding to primes −11, 19141, 57154490053, ....
+It is a conjecture that for every integer {{math|''b''}} that is not a [[perfect power]], there are infinitely many values of {{math|''n''}} such that {{math|{{sfrac|''b''<sup>''n''</sup> − 1|''b'' − 1}}}} is prime. (When {{math|''b''}} is a perfect power, it can be shown that there is at most one {{math|''n''}} value such that {{math|{{sfrac|''b''<sup>''n''</sup> − 1|''b'' − 1}}}} is prime)
+
+Least {{math|''n''}} such that {{math|{{sfrac|''b''<sup>''n''</sup> − 1|''b'' − 1}}}} is prime are (starting with {{math|''b'' {{=}} 2}}, {{math|0}} if no such {{math|''n''}} exists)
+: 2, 3, 2, 3, 2, 5, 3, 0, 2, 17, 2, 5, 3, 3, 2, 3, 2, 19, 3, 3, 2, 5, 3, 0, 7, 3, 2, 5, 2, 7, 0, 3, 13, 313, 2, 13, 3, 349, 2, 3, 2, 5, 5, 19, 2, 127, 19, 0, 3, 4229, 2, 11, 3, 17, 7, 3, 2, 3, 2, 7, 3, 5, 0, 19, 2, 19, 5, 3, 2, 3, 2, ... {{OEIS|id=A084740}}
+
+For negative bases {{math|''b''}}, they are (starting with {{math|''b'' {{=}} −2}}, {{math|0}} if no such {{math|''n''}} exists)
+: 3, 2, 2, 5, 2, 3, 2, 3, 5, 5, 2, 3, 2, 3, 3, 7, 2, 17, 2, 3, 3, 11, 2, 3, 11, 0, 3, 7, 2, 109, 2, 5, 3, 11, 31, 5, 2, 3, 53, 17, 2, 5, 2, 103, 7, 5, 2, 7, 1153, 3, 7, 21943, 2, 3, 37, 53, 3, 17, 2, 7, 2, 3, 0, 19, 7, 3, 2, 11, 3, 5, 2, ... {{OEIS|id=A084742}} (notice this OEIS sequence does not allow {{math|''n'' {{=}} 2}})
+
+Least base {{math|''b''}} such that {{math|{{sfrac|''b''<sup>prime(''n'')</sup> − 1|''b'' − 1}}}} is prime are
+: 2, 2, 2, 2, 5, 2, 2, 2, 10, 6, 2, 61, 14, 15, 5, 24, 19, 2, 46, 3, 11, 22, 41, 2, 12, 22, 3, 2, 12, 86, 2, 7, 13, 11, 5, 29, 56, 30, 44, 60, 304, 5, 74, 118, 33, 156, 46, 183, 72, 606, 602, 223, 115, 37, 52, 104, 41, 6, 338, 217, ... {{OEIS|id=A066180}}
+
+For negative bases {{math|''b''}}, they are
+: 3, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 16, 61, 2, 6, 10, 6, 2, 5, 46, 18, 2, 49, 16, 70, 2, 5, 6, 12, 92, 2, 48, 89, 30, 16, 147, 19, 19, 2, 16, 11, 289, 2, 12, 52, 2, 66, 9, 22, 5, 489, 69, 137, 16, 36, 96, 76, 117, 26, 3, ... {{OEIS|id=A103795}}
+
+==== Other generalized Mersenne primes ====
+Another generalized Mersenne number is
+: <math>\frac{a^n-b^n}{a-b}</math>
+with {{mvar|a}}, {{mvar|b}} any [[coprime]] integers, {{math|''a'' > 1}} and {{math|−''a'' < ''b'' < ''a''}}. (Since {{math|''a''<sup>''n''</sup> − ''b''<sup>''n''</sup>}} is always divisible by {{math|''a'' − ''b''}}, the division is necessary for there to be any chance of finding prime numbers.){{efn|This number is the same as the [[Lucas sequence|Lucas number]] {{math|''U<sub>n</sub>''(''a'' + ''b'', ''ab'')}}, since {{mvar|a}} and {{mvar|b}} are the [[zero of a function|roots]] of the [[quadratic equation]] {{math|''x''<sup>2</sup> − (''a'' + ''b'')''x'' + ''ab'' {{=}} 0}}.}}  We can ask which {{mvar|n}} makes this number prime.  It can be shown that such {{mvar|n}} must be primes themselves or equal to 4, and {{mvar|n}} can be 4 if and only if {{math|''a'' + ''b'' {{=}} 1}} and {{math|''a''<sup>2</sup> + ''b''<sup>2</sup>}} is prime.{{efn|Since {{math|{{sfrac|''a''<sup>4</sup> − ''b''<sup>4</sup>|''a'' − ''b''}} {{=}} (''a'' + ''b'')(''a''<sup>2</sup> + ''b''<sup>2</sup>)}}. Thus, in this case the pair {{math|(''a'', ''b'')}} must be {{math|(''x'' + 1, −''x'')}} and {{math|''x''<sup>2</sup> + (''x'' + 1)<sup>2</sup>}} must be prime. That is, {{mvar|x}} must be in {{oeis|id=A027861}}.}} It is a conjecture that for any pair {{math|(''a'', ''b'')}} such that {{mvar|a}} and {{mvar|b}} are not both perfect {{mvar|r}}th powers for any {{mvar|r}} and {{math|−4''ab''}} is not a perfect [[fourth power]], there are infinitely many values of {{mvar|n}} such that {{math|{{sfrac|''a''<sup>''n''</sup> − ''b''<sup>''n''</sup>|''a'' − ''b''}}}} is prime.{{efn|When {{mvar|a}} and {{mvar|b}} are both perfect {{mvar|r}}th powers for some {{math|''r'' > 1}} or when {{math|−4''ab''}} is a perfect fourth power, it can be shown that there are at most two values of {{mvar|n}} with this property: in these cases, {{math|{{sfrac|''a''<sup>''n''</sup> − ''b''<sup>''n''</sup>|''a'' − ''b''}}}} can be factored algebraically.{{citation needed|date=March 2022}}}} However, this has not been proved for any single value of {{math|(''a'', ''b'')}}.
+
+{|class="wikitable"
+|+For more information, see <ref>[http://www.primenumbers.net/Henri/us/MersFermus.htm {{math|(''x'', 1)}} and {{math|(''x'', −1)}} for {{mvar|x}} = 2 to 50]</ref><ref>[http://www.fermatquotient.com/PrimSerien/GenRepu.txt {{math|(''x'', 1)}} for {{mvar|x}} = 2 to 160]</ref><ref>[http://www.fermatquotient.com/PrimSerien/GenRepuP.txt {{math|(''x'', −1)}} for {{mvar|x}} = 2 to 160]</ref><ref>{{cite web |url=http://www.fermatquotient.com/PrimSerien/PrimPot.txt |title={{math|(''x'' + 1, ''x'')}} for {{mvar|x}} = 1 to 160 |access-date=2015-09-29 |archive-date=2015-08-15 |archive-url=https://web.archive.org/web/20150815233602/http://www.fermatquotient.com/PrimSerien/PrimPot.txt |url-status=live }}</ref><ref>{{cite web |url=http://www.fermatquotient.com/PrimSerien/PrimPotP.txt |title={{math|(''x'' + 1, −''x'')}} for {{mvar|x}} = 1 to 40 |access-date=2015-09-29 |archive-date=2015-08-16 |archive-url=https://web.archive.org/web/20150816022525/http://www.fermatquotient.com/PrimSerien/PrimPotP.txt |url-status=live }}</ref><ref>{{cite web |url=http://www.fermatquotient.com/PrimSerien/PrimPot2.txt |title={{math|(''x'' + 2, ''x'')}} for odd {{mvar|x}} = 1 to 107 |access-date=2015-09-29 |archive-date=2015-08-15 |archive-url=https://web.archive.org/web/20150815202141/http://www.fermatquotient.com/PrimSerien/PrimPot2.txt |url-status=live }}</ref><ref>[https://cs.uwaterloo.ca/journals/JIS/VOL3/DUBNER/dubner.pdf#search=%22107%20811%202819%204817%209601%22 {{math|(''x'', −1)}} for {{mvar|x}} = 2 to 200]</ref><ref>{{cite web |url=http://www.primenumbers.net/prptop/searchform.php?form=%28a%5En-b%5En%29%2Fc&action=Search |title=PRP records, search for {{math|(''a''<sup>''n''</sup> − ''b''<sup>''n''</sup>)/''c''}}, that is, {{math|(''a'', ''b'')}} |access-date=2016-11-20 |archive-date=2016-11-21 |archive-url=https://web.archive.org/web/20161121043617/http://www.primenumbers.net/prptop/searchform.php?form=%28a%5En-b%5En%29%2Fc&action=Search |url-status=live }}</ref><ref>{{cite web |url=http://www.primenumbers.net/prptop/searchform.php?form=%28a%5En%2Bb%5En%29%2Fc&action=Search |title=PRP records, search for {{math|(''a''<sup>''n''</sup> + ''b''<sup>''n''</sup>)/''c''}}, that is, {{math|(''a'', −''b'')}} |access-date=2016-11-20 |archive-date=2016-11-21 |archive-url=https://web.archive.org/web/20161121043746/http://www.primenumbers.net/prptop/searchform.php?form=%28a%5En%2Bb%5En%29%2Fc&action=Search |url-status=live }}</ref>
+!{{nobold|{{mvar|a}}}}
+!{{nobold|{{mvar|b}}}}
+!numbers {{nobold|{{mvar|n}}}} such that {{nobold|{{math|{{sfrac|''a''<sup>''n''</sup> − ''b''<sup>''n''</sup>|''a'' − ''b''}}}}}} is prime<br/>(some large terms are only [[probable prime]]s, these {{nobold|{{mvar|n}}}} are checked up to {{nobold|100000}} for {{nobold|{{math|{{abs|''b''}} ≤ 5}}}} or {{nobold|{{math|{{abs|''b''}} {{=}} ''a'' − 1}}}}, {{nobold|20000}} for {{nobold|{{math|5 < {{abs|''b''}} < ''a'' − 1}}}})
+![[OEIS]] sequence
+|-
+| style="text-align:right;" | 2
+| style="text-align:right;" | 1
+|2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107, 127, 521, 607, 1279, 2203, 2281, 3217, 4253, 4423, 9689, 9941, 11213, 19937, 21701, 23209, 44497, 86243, 110503, 132049, 216091, 756839, 859433, 1257787, 1398269, 2976221, 3021377, 6972593, 13466917, 20996011, 24036583, 25964951, 30402457, 32582657, 37156667, 42643801, 43112609, 57885161, ..., 74207281, ..., 77232917, ..., 82589933, ..., 136279841, ...
+|{{OEIS link|id=A000043}}
+|-
+| style="text-align:right;" | 2
+| style="text-align:right;" | −1
+|3, 4<sup>*</sup>, 5, 7, 11, 13, 17, 19, 23, 31, 43, 61, 79, 101, 127, 167, 191, 199, 313, 347, 701, 1709, 2617, 3539, 5807, 10501, 10691, 11279, 12391, 14479, 42737, 83339, 95369, 117239, 127031, 138937, 141079, 267017, 269987, 374321, 986191, 4031399, ..., 13347311, 13372531, ... 
+|{{OEIS link|id=A000978}}
+|-
+| style="text-align:right;" | 3
+| style="text-align:right;" | 2
+|2, 3, 5, 17, 29, 31, 53, 59, 101, 277, 647, 1061, 2381, 2833, 3613, 3853, 3929, 5297, 7417, 90217, 122219, 173191, 256199, 336353, 485977, 591827, 1059503, ...
+|{{OEIS link|id=A057468}}
+|-
+| style="text-align:right;" | 3
+| style="text-align:right;" | 1
+|3, 7, 13, 71, 103, 541, 1091, 1367, 1627, 4177, 9011, 9551, 36913, 43063, 49681, 57917, 483611, 877843, ...
+|{{OEIS link|id=A028491}}
+|-
+| style="text-align:right;" | 3
+| style="text-align:right;" | −1
+|2<sup>*</sup>, 3, 5, 7, 13, 23, 43, 281, 359, 487, 577, 1579, 1663, 1741, 3191, 9209, 11257, 12743, 13093, 17027, 26633, 104243, 134227, 152287, 700897, 1205459, ...
+|{{OEIS link|id=A007658}}
+|-
+| style="text-align:right;" | 3
+| style="text-align:right;" | −2
+|3, 4<sup>*</sup>, 7, 11, 83, 149, 223, 599, 647, 1373, 8423, 149497, 388897, ...
+|{{OEIS link|id=A057469}}
+|-
+| style="text-align:right;" | 4
+| style="text-align:right;" | 3
+|2, 3, 7, 17, 59, 283, 311, 383, 499, 521, 541, 599, 1193, 1993, 2671, 7547, 24019, 46301, 48121, 68597, 91283, 131497, 148663, 184463, 341233, ...
+|{{OEIS link|id=A059801}}
+|-
+| style="text-align:right;" | 4
+| style="text-align:right;" | 1
+|2 (no others)
+|
+|-
+| style="text-align:right;" | 4
+| style="text-align:right;" | −1
+|2<sup>*</sup>, 3 (no others)
+|
+|-
+| style="text-align:right;" | 4
+| style="text-align:right;" | −3
+|3, 5, 19, 37, 173, 211, 227, 619, 977, 1237, 2437, 5741, 13463, 23929, 81223, 121271, ...
+|{{OEIS link|id=A128066}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | 4
+|3, 43, 59, 191, 223, 349, 563, 709, 743, 1663, 5471, 17707, 19609, 35449, 36697, 45259, 91493, 246497, 265007, 289937, ...
+|{{OEIS link|id=A059802}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | 3
+|13, 19, 23, 31, 47, 127, 223, 281, 2083, 5281, 7411, 7433, 19051, 27239, 35863, 70327, ...
+|{{OEIS link|id=A121877}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | 2
+|2, 5, 7, 13, 19, 37, 59, 67, 79, 307, 331, 599, 1301, 12263, 12589, 18443, 20149, 27983, ...
+|{{OEIS link|id=A082182}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | 1
+|3, 7, 11, 13, 47, 127, 149, 181, 619, 929, 3407, 10949, 13241, 13873, 16519, 201359, 396413, 1888279, ...
+|{{OEIS link|id=A004061}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | −1
+|5, 67, 101, 103, 229, 347, 4013, 23297, 30133, 177337, 193939, 266863, 277183, 335429, ...
+|{{OEIS link|id=A057171}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | −2
+|2<sup>*</sup>, 3, 17, 19, 47, 101, 1709, 2539, 5591, 6037, 8011, 19373, 26489, 27427, ...
+|{{OEIS link|id=A082387}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | −3
+|2<sup>*</sup>, 3, 5, 7, 17, 19, 109, 509, 661, 709, 1231, 12889, 13043, 26723, 43963, 44789, ...
+|{{OEIS link|id=A122853}}
+|-
+| style="text-align:right;" | 5
+| style="text-align:right;" | −4
+|4<sup>*</sup>, 5, 7, 19, 29, 61, 137, 883, 1381, 1823, 5227, 25561, 29537, 300893, ...
+|{{OEIS link|id=A128335}}
+|-
+| style="text-align:right;" | 6
+| style="text-align:right;" | 5
+|2, 5, 11, 13, 23, 61, 83, 421, 1039, 1511, 31237, 60413, 113177, 135647, 258413, ...
+|{{OEIS link|id=A062572}}
+|-
+| style="text-align:right;" | 6
+| style="text-align:right;" | 1
+|2, 3, 7, 29, 71, 127, 271, 509, 1049, 6389, 6883, 10613, 19889, 79987, 608099, ...
+|{{OEIS link|id=A004062}}
+|-
+| style="text-align:right;" | 6
+| style="text-align:right;" | −1
+|2<sup>*</sup>, 3, 11, 31, 43, 47, 59, 107, 811, 2819, 4817, 9601, 33581, 38447, 41341, 131891, 196337, ...
+|{{OEIS link|id=A057172}}
+|-
+| style="text-align:right;" | 6
+| style="text-align:right;" | −5
+|3, 4<sup>*</sup>, 5, 17, 397, 409, 643, 1783, 2617, 4583, 8783, ...
+|{{OEIS link|id=A128336}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | 6
+|2, 3, 7, 29, 41, 67, 1327, 1399, 2027, 69371, 86689, 355039, ...
+|{{OEIS link|id=A062573}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | 5
+|3, 5, 7, 113, 397, 577, 7573, 14561, 58543, ...
+|{{OEIS link|id=A128344}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | 4
+|2, 5, 11, 61, 619, 2879, 2957, 24371, 69247, ...
+|{{OEIS link|id=A213073}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | 3
+|3, 7, 19, 109, 131, 607, 863, 2917, 5923, 12421, ...
+|{{OEIS link|id=A128024}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | 2
+|3, 7, 19, 79, 431, 1373, 1801, 2897, 46997, ...
+|{{OEIS link|id=A215487}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | 1
+|5, 13, 131, 149, 1699, 14221, 35201, 126037, 371669, 1264699, ...
+|{{OEIS link|id=A004063}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | −1
+|3, 17, 23, 29, 47, 61, 1619, 18251, 106187, 201653, ...
+|{{OEIS link|id=A057173}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | −2
+|2<sup>*</sup>, 5, 23, 73, 101, 401, 419, 457, 811, 1163, 1511, 8011, ...
+|{{OEIS link|id=A125955}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | −3
+|3, 13, 31, 313, 3709, 7933, 14797, 30689, 38333, ...
+|{{OEIS link|id=A128067}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | −4
+|2<sup>*</sup>, 3, 5, 19, 41, 47, 8231, 33931, 43781, 50833, 53719, 67211, ...
+|{{OEIS link|id=A218373}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | −5
+|2<sup>*</sup>, 11, 31, 173, 271, 547, 1823, 2111, 5519, 7793, 22963, 41077, 49739, ...
+|{{OEIS link|id=A128337}}
+|-
+| style="text-align:right;" | 7
+| style="text-align:right;" | −6
+|3, 53, 83, 487, 743, ...
+|{{OEIS link|id=A187805}}
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | 7
+|7, 11, 17, 29, 31, 79, 113, 131, 139, 4357, 44029, 76213, 83663, 173687, 336419, 615997, ...
+|{{OEIS link|id=A062574}}
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | 5
+|2, 19, 1021, 5077, 34031, 46099, 65707, ...
+|{{OEIS link|id=A128345}}
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | 3
+|2, 3, 7, 19, 31, 67, 89, 9227, 43891, ...
+|{{OEIS link|id=A128025}}
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | 1
+|3 (no others)
+|
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | −1
+|2<sup>*</sup> (no others)
+|
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | −3
+|2<sup>*</sup>, 5, 163, 191, 229, 271, 733, 21059, 25237, ...
+|{{OEIS link|id=A128068}}
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | −5
+|2<sup>*</sup>, 7, 19, 167, 173, 223, 281, 21647, ...
+|{{OEIS link|id=A128338}}
+|-
+| style="text-align:right;" | 8
+| style="text-align:right;" | −7
+|4<sup>*</sup>, 7, 13, 31, 43, 269, 353, 383, 619, 829, 877, 4957, 5711, 8317, 21739, 24029, 38299, ...
+|{{OEIS link|id=A181141}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | 8
+|2, 7, 29, 31, 67, 149, 401, 2531, 19913, 30773, 53857, 170099, ...
+|{{OEIS link|id=A059803}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | 7
+|3, 5, 7, 4703, 30113, ...
+|{{OEIS link|id=A273010}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | 5
+|3, 11, 17, 173, 839, 971, 40867, 45821, ...
+|{{OEIS link|id=A128346}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | 4
+|2 (no others)
+|
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | 2
+|2, 3, 5, 13, 29, 37, 1021, 1399, 2137, 4493, 5521, ...
+|{{OEIS link|id=A173718}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | 1
+|(none)
+|
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | −1
+|3, 59, 223, 547, 773, 1009, 1823, 3803, 49223, 193247, 703393, ...
+|{{OEIS link|id=A057175}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | −2
+|2<sup>*</sup>, 3, 7, 127, 283, 883, 1523, 4001, ...
+|{{OEIS link|id=A125956}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | −4
+|2<sup>*</sup>, 3, 5, 7, 11, 17, 19, 41, 53, 109, 167, 2207, 3623, 5059, 5471, 7949, 21211, 32993, 60251, ...
+|{{OEIS link|id=A211409}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | −5
+|3, 5, 13, 17, 43, 127, 229, 277, 6043, 11131, 11821, ...
+|{{OEIS link|id=A128339}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | −7
+|2<sup>*</sup>, 3, 107, 197, 2843, 3571, 4451, ..., 31517, ...
+|{{OEIS link|id=A301369}}
+|-
+| style="text-align:right;" | 9
+| style="text-align:right;" | −8
+|3, 7, 13, 19, 307, 619, 2089, 7297, 75571, 76103, 98897, ...
+|{{OEIS link|id=A187819}}
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | 9
+|2, 3, 7, 11, 19, 29, 401, 709, 2531, 15787, 66949, 282493, ...
+|{{OEIS link|id=A062576}}
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | 7
+|2, 31, 103, 617, 10253, 10691, ...
+|{{OEIS link|id=A273403}}
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | 3
+|2, 3, 5, 37, 599, 38393, 51431, ...
+|{{OEIS link|id=A128026}}
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | 1
+|2, 19, 23, 317, 1031, 49081, 86453, 109297, 270343, ...
+|{{OEIS link|id=A004023}}
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | −1
+|5, 7, 19, 31, 53, 67, 293, 641, 2137, 3011, 268207, ...
+|{{OEIS link|id=A001562}}
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | −3
+|2<sup>*</sup>, 3, 19, 31, 101, 139, 167, 1097, 43151, 60703, 90499, ...
+|{{OEIS link|id=A128069}}
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | −7
+|2<sup>*</sup>, 3, 5, 11, 19, 1259, 1399, 2539, 2843, 5857, 10589, ...
+|
+|-
+| style="text-align:right;" | 10
+| style="text-align:right;" | −9
+|4<sup>*</sup>, 7, 67, 73, 1091, 1483, 10937, ...
+|{{OEIS link|id=A217095}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 10
+|3, 5, 19, 311, 317, 1129, 4253, 7699, 18199, 35153, 206081, ...
+|{{OEIS link|id=A062577}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 9
+|5, 31, 271, 929, 2789, 4153, ...
+|{{OEIS link|id=A273601}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 8
+|2, 7, 11, 17, 37, 521, 877, 2423, ...
+|{{OEIS link|id=A273600}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 7
+|5, 19, 67, 107, 593, 757, 1801, 2243, 2383, 6043, 10181, 11383, 15629, ...
+|{{OEIS link|id=A273599}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 6
+|2, 3, 11, 163, 191, 269, 1381, 1493, ...
+|{{OEIS link|id=A273598}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 5
+|5, 41, 149, 229, 263, 739, 3457, 20269, 98221, ...
+|{{OEIS link|id=A128347}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 4
+|3, 5, 11, 17, 71, 89, 827, 22307, 45893, 63521, ...
+|{{OEIS link|id=A216181}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 3
+|3, 5, 19, 31, 367, 389, 431, 2179, 10667, 13103, 90397, ...
+|{{OEIS link|id=A128027}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 2
+|2, 5, 11, 13, 331, 599, 18839, 23747, 24371, 29339, 32141, 67421, ...
+|{{OEIS link|id=A210506}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | 1
+|17, 19, 73, 139, 907, 1907, 2029, 4801, 5153, 10867, 20161, 293831, ...
+|{{OEIS link|id=A005808}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −1
+|5, 7, 179, 229, 439, 557, 6113, 223999, 327001, ...
+|{{OEIS link|id=A057177}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −2
+|3, 5, 17, 67, 83, 101, 1373, 6101, 12119, 61781, ...
+|{{OEIS link|id=A125957}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −3
+|3, 103, 271, 523, 23087, 69833, ...
+|{{OEIS link|id=A128070}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −4
+|2<sup>*</sup>, 7, 53, 67, 71, 443, 26497, ...
+|{{OEIS link|id=A224501}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −5
+|7, 11, 181, 421, 2297, 2797, 4129, 4139, 7151, 29033, ...
+|{{OEIS link|id=A128340}}
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −6
+|2<sup>*</sup>, 5, 7, 107, 383, 17359, 21929, 26393, ...
+|
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −7
+|7, 1163, 4007, 10159, ...
+|
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −8
+|2<sup>*</sup>, 3, 13, 31, 59, 131, 223, 227, 1523, ...
+|
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −9
+|2<sup>*</sup>, 3, 17, 41, 43, 59, 83, ...
+|
+|-
+| style="text-align:right;" | 11
+| style="text-align:right;" | −10
+|53, 421, 647, 1601, 35527, ...
+|{{OEIS link|id=A185239}}
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | 11
+|2, 3, 7, 89, 101, 293, 4463, 70067, ...
+|{{OEIS link|id=A062578}}
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | 7
+|2, 3, 7, 13, 47, 89, 139, 523, 1051, ...
+|{{OEIS link|id=A273814}}
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | 5
+|2, 3, 31, 41, 53, 101, 421, 1259, 4721, 45259, ...
+|{{OEIS link|id=A128348}}
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | 1
+|2, 3, 5, 19, 97, 109, 317, 353, 701, 9739, 14951, 37573, 46889, 769543, ...
+|{{OEIS link|id=A004064}}
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | −1
+|2<sup>*</sup>, 5, 11, 109, 193, 1483, 11353, 21419, 21911, 24071, 106859, 139739, ...
+|{{OEIS link|id=A057178}}
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | −5
+|2<sup>*</sup>, 3, 5, 13, 347, 977, 1091, 4861, 4967, 34679, ...
+|{{OEIS link|id=A128341}}
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | −7
+|2<sup>*</sup>, 3, 7, 67, 79, 167, 953, 1493, 3389, 4871, ...
+|
+|-
+| style="text-align:right;" | 12
+| style="text-align:right;" | −11
+|47, 401, 509, 8609, ...
+|{{OEIS link|id=A213216}}
+|}
+
+<sup>*</sup> Note: if {{math|''b'' < 0}} and {{mvar|n}} is even, then the numbers {{mvar|n}} are not included in the corresponding OEIS sequence.
+
+When {{math|''a'' {{=}} ''b'' + 1}}, it is {{math|(''b'' + 1){{sup|''n''}} − ''b''{{sup|''n''}}}}, a difference of two consecutive perfect {{mvar|n}}th powers, and if {{math|''a''<sup>''n''</sup> − ''b''<sup>''n''</sup>}} is prime, then {{mvar|a}} must be {{math|''b'' + 1}}, because it is divisible by {{math|''a'' − ''b''}}.
+
+Least {{mvar|n}} such that {{math|(''b'' + 1){{sup|''n''}} − ''b''{{sup|''n''}}}} is prime are
+: 2, 2, 2, 3, 2, 2, 7, 2, 2, 3, 2, 17, 3, 2, 2, 5, 3, 2, 5, 2, 2, 229, 2, 3, 3, 2, 3, 3, 2, 2, 5, 3, 2, 3, 2, 2, 3, 3, 2, 7, 2, 3, 37, 2, 3, 5, 58543, 2, 3, 2, 2, 3, 2, 2, 3, 2, 5, 3, 4663, 54517, 17, 3, 2, 5, 2, 3, 3, 2, 2, 47, 61, 19, ... {{OEIS|id=A058013}}
+
+Least {{mvar|b}} such that {{math|(''b'' + 1){{sup|prime(''n'')}} − ''b''{{sup|prime(''n'')}}}} is prime are
+: 1, 1, 1, 1, 5, 1, 1, 1, 5, 2, 1, 39, 6, 4, 12, 2, 2, 1, 6, 17, 46, 7, 5, 1, 25, 2, 41, 1, 12, 7, 1, 7, 327, 7, 8, 44, 26, 12, 75, 14, 51, 110, 4, 14, 49, 286, 15, 4, 39, 22, 109, 367, 22, 67, 27, 95, 80, 149, 2, 142, 3, 11, ... {{OEIS|id=A222119}}
+
+== See also ==
+{{cols|colwidth=18em}}
+* [[Repunit]]
+* [[Fermat number]]
+* [[Power of two]]
+* [[Erdős–Borwein constant]]
+* [[Mersenne conjectures]]
+* [[Mersenne twister]]
+* [[Double Mersenne number]]
+* [[Prime95]] / MPrime
+* [[Great Internet Mersenne Prime Search]] (GIMPS)
+* [[Largest known prime number]]
+* [[Wieferich prime]]
+* [[Wagstaff prime]]
+* [[Cullen prime]]
+* [[Woodall prime]]
+* [[Proth prime]]
+* [[Solinas prime]]
+* [[Gillies' conjecture]]
+* [[Williams number]]
+{{colend}}
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+{{wiktionary|Mersenne prime}}
+* {{springer|title=Mersenne number|id=p/m063480}}
+* [http://www.mersenne.org GIMPS home page]
+* [https://www.mersenne.org/report_milestones/ GIMPS Milestones Report] – status page gives various statistics on search progress, typically updated every week, including progress towards proving the ordering of the largest known Mersenne primes
+* [http://www.mersenne.org/report_factors/ GIMPS, known factors of Mersenne numbers]
+* {{math|''M''<sub>''q''</sub> {{=}} (8''x'')<sup>2</sup> − (3''qy'')<sup>2</sup>}} [http://tony.reix.free.fr/Mersenne/Mersenne8x3qy.pdf Property of Mersenne numbers with prime exponent that are composite] (PDF)
+* {{math|''M''<sub>''q''</sub> {{=}} ''x''<sup>2</sup> + ''d''·''y''<sup>2</sup>}} [https://web.archive.org/web/20050221194456/http://www.math.leidenuniv.nl/scripties/jansen.ps math thesis] (PS)
+* {{cite web|last=Grime|first=James|title=31 and Mersenne Primes|url=http://www.numberphile.com/videos/31.html|work=Numberphile|publisher=[[Brady Haran]]|access-date=2013-04-06|archive-url=https://web.archive.org/web/20130531091712/http://numberphile.com/videos/31.html|archive-date=2013-05-31|url-status=dead}}
+* [http://www.utm.edu/research/primes/mersenne/LukeMirror/biblio.htm Mersenne prime bibliography] with hyperlinks to original publications
+* [http://www.taz.de/pt/2005/03/11/a0355.nf/text report about Mersenne primes] – detection in detail {{in lang|de}}
+* [https://web.archive.org/web/20061205062803/http://mersennewiki.org/index.php/Main_Page GIMPS wiki]
+* [https://web.archive.org/web/20141014102940/http://www.garlic.com/~wedgingt/mersenne.html Will Edgington's Mersenne Page] – contains factors for small Mersenne numbers
+* [http://www.mersenne.org/report_factors/ Known factors of Mersenne numbers]
+* [http://www.isthe.com/chongo/tech/math/prime/mersenne.html Decimal digits and English names of Mersenne primes]
+* [http://primes.utm.edu/curios/page.php/2305843009213693951.html Prime curios: 2305843009213693951]
+* http://www.leyland.vispa.com/numth/factorization/cunningham/2-.txt {{webarchive|url=https://web.archive.org/web/20141105173948/http://www.leyland.vispa.com/numth/factorization/cunningham/2-.txt |date=2014-11-05 }}
+*http://www.leyland.vispa.com/numth/factorization/cunningham/2+.txt {{webarchive|url=https://web.archive.org/web/20130502023640/http://www.leyland.vispa.com/numth/factorization/cunningham/2+.txt |date=2013-05-02 }}
+* {{OEIS el|1=A250197|2=Numbers n such that the left Aurifeuillian primitive part of 2^n+1 is prime}} – Factorization of Mersenne numbers {{math|''M<sub>n</sub>''}} ({{math|''n''}} up to 1280)
+* [https://web.archive.org/web/20141015022019/http://www.garlic.com/~wedgingt/factoredM.txt Factorization of completely factored Mersenne numbers]
+* [https://homes.cerias.purdue.edu/~ssw/cun/index.html The Cunningham project, factorization of {{math|1=''b<sup>n</sup>'' ± 1, ''b'' = 2, 3, 5, 6, 7, 10, 11, 12}}]
+* http://www.leyland.vispa.com/numth/factorization/cunningham/main.htm {{Webarchive|url=https://web.archive.org/web/20160304120336/http://www.leyland.vispa.com/numth/factorization/cunningham/main.htm |date=2016-03-04 }}
+* http://www.leyland.vispa.com/numth/factorization/anbn/main.htm {{Webarchive|url=https://web.archive.org/web/20160202122746/http://www.leyland.vispa.com/numth/factorization/anbn/main.htm |date=2016-02-02 }}
+
+=== MathWorld links ===
+* {{mathworld|urlname=MersenneNumber|title=Mersenne number}}
+* {{mathworld|urlname=MersennePrime|title=Mersenne prime}}
+
+{{prime number classes|state=collapsed}}
+{{classes of natural numbers}}
+{{Mersenne}}
+{{large numbers}}
+
+[[Category:Articles containing proofs]]
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Integer sequences]]
+[[Category:Mersenne primes| ]]
+[[Category:Perfect numbers]]

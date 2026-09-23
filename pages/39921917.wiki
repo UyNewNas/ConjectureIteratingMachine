@@ -1,0 +1,5 @@
+#REDIRECT [[Splay tree#Dynamic optimality conjecture]]
+{{R with possibilities}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in computer science]]

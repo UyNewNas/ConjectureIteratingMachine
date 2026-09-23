@@ -1,0 +1,87 @@
+{{Short description|Conjecture in algebraic geometry}}
+{{Infobox mathematical statement
+| name = Tate conjecture
+| image = John Tate.jpg
+| caption = John Tate in 1993
+| field = [[Algebraic geometry]] and [[number theory]]
+| conjectured by = [[John Tate (mathematician)|John Tate]]
+| conjecture date = 1963
+| first proof by = 
+| first proof date = 
+| open problem = 
+| known cases = divisors on [[abelian varieties]]
+| implied by = 
+| equivalent to = 
+| generalizations = 
+| consequences = [[Standard conjectures on algebraic cycles]]
+}}
+
+In [[mathematics]], specifically [[arithmetic geometry]], the '''Tate conjecture''' is a 1963 [[conjecture]] of [[John Tate (mathematician)|John Tate]] that would describe the [[algebraic cycle]]s on a [[algebraic variety|variety]] in terms of a more computable invariant, the [[Galois module|Galois representation]] on [[étale cohomology]]. The conjecture is a central problem in the theory of algebraic cycles. It can be considered an arithmetic analog of the [[Hodge conjecture]].
+
+==Statement of the conjecture==
+Let <math>V</math> be a [[smooth scheme|smooth]] [[projective variety]] over a [[field (mathematics)|field]] <math>k</math> which is finitely generated over its [[prime field]]. Let <math>k_s</math> be a [[algebraic closure|separable closure]] of <math>k</math>, and let <math>G</math> be the [[absolute Galois group]] <math>\operatorname{Gal}(k_s/k)</math> of <math>k</math>. Fix a [[prime number]] <math>\ell</math> which is invertible in <math>k</math>. Consider the [[l-adic cohomology|{{math|''ℓ''}}-adic cohomology]] groups (coefficients in the [[p-adic integer|{{math|''ℓ''}}-adic integer]]s <math>\Z_\ell</math>, scalars then extended to the [[l-adic number|{{math|''ℓ''}}-adic number]]s <math>\Q_\ell</math>) of the base extension of <math>V</math> to <math>k_s</math>; these groups are [[group representation|representations]] of <math>G</math>. For any <math>i\geq 0</math>, a [[codimension]]-<math>i</math> subvariety of <math>V</math> (understood to be defined over <math>k</math>) determines an element of the cohomology group
+
+:<math> H^{2i}(V_{k_s},\Q_{\ell}(i)) = W </math>
+
+which is fixed by <math>G</math>. Here <math>\Q_\ell(i)</math> denotes the <math>i</math>th [[Tate twist]], which means that this representation of the Galois group <math>G</math> is tensored with the <math>i</math>th power of the [[cyclotomic character]].
+
+The '''Tate conjecture''' states that the subspace <math>W^G</math> of <math>W</math> fixed by the Galois group <math>G</math> is spanned, as a <math>\Q_\ell</math>-vector space, by the classes of codimension-<math>i</math> subvarieties of <math>V</math>. An '''algebraic cycle''' means a finite linear combination of subvarieties; so an equivalent statement is that every element of <math>W^G</math> is the class of an algebraic cycle on <math>V</math> with <math>\Q_\ell</math> coefficients.
+
+==Known cases==
+The Tate conjecture for [[divisor (algebraic geometry)|divisors]] (algebraic cycles of codimension 1) is a major open problem. For example, let <math>f:X\to C</math> be a morphism from a smooth projective surface onto a smooth projective curve over a finite field. Suppose that the generic fiber <math>F</math> of <math>f</math>, which is a curve over the [[function field of an algebraic variety|function field]] <math>k(C)</math>, is smooth over <math>k(C)</math>. Then the Tate conjecture for divisors on <math>X</math> is equivalent to the [[Birch and Swinnerton-Dyer conjecture]] for the [[Jacobian variety]] of <math>F</math>.{{sfnp|Ulmer|2014|loc=proposition 5.1.2, theorem 6.3.1}} By contrast, the Hodge conjecture for divisors on any smooth complex projective variety is known; this is the [[Lefschetz theorem on (1,1)-classes|Lefschetz (1,1)-theorem]].
+
+Probably the most important known case is that the Tate conjecture is true for divisors on [[abelian variety|abelian varieties]]. This is a theorem of Tate for abelian varieties over finite fields, and of [[Gerd Faltings|Faltings]] for abelian varieties over number fields, part of Faltings' solution of the [[Mordell conjecture]]. Zarhin extended these results to any finitely generated base field. The Tate conjecture for divisors on abelian varieties implies the Tate conjecture for divisors on any product of curves <math>C_1\times\cdots\times C_n</math>.{{sfnp|Tate|1994|loc=theorem 5.2}}
+
+The (known) Tate conjecture for divisors on abelian varieties is equivalent to a powerful statement about homomorphisms between abelian varieties. Namely, for any abelian varieties <math>A</math> and <math>B</math> over a finitely generated field <math>k</math>, the natural map
+
+:<math> \text{Hom}(A,B)\otimes_{\Z}\Q_{\ell} \to \text{Hom}_G \left (H_1 \left (A_{k_s},\Q_{\ell} \right), H_1 \left (B_{k_s},\Q_{\ell} \right) \right )</math>
+
+is an isomorphism.{{sfnp|Tate|1965|loc=equation 8}} In particular, an abelian variety <math>A</math> is determined up to [[isogeny]] by the Galois representation on its [[Tate module]] <math>H_1(A_{k_s},\Z_\ell)</math>.
+
+The Tate conjecture also holds for [[K3 surface]]s over finitely generated fields of characteristic not 2.{{sfnp|Madapusi Peri|2013|loc=theorem 1}} (On a surface, the nontrivial part of the conjecture is about divisors.) In characteristic zero, the Tate conjecture for K3 surfaces was proved by André and Tankeev. For K3 surfaces over finite fields of characteristic not 2, the Tate conjecture was proved by Nygaard, [[Arthur Ogus|Ogus]], Charles, Madapusi Pera, and Maulik. 
+
+[[Burt Totaro|Totaro]] surveys known cases of the Tate conjecture.{{sfnp|Totaro|2017}}
+
+==Related conjectures==
+
+Let <math>X</math> be a smooth projective variety over a finitely generated field <math>k</math>. The '''semisimplicity conjecture''' predicts that the representation of the Galois group <math>G=\operatorname{Gal}(k_s/k)</math> on the <math>\ell</math>-adic cohomology of <math>X</math> is semisimple (that is, a direct sum of [[irreducible representation]]s). For <math>k</math> of characteristic 0, Moonen{{sfnp|Moonen|2017}} showed that the Tate conjecture (as stated above) implies the semisimplicity of
+
+:<math>H^I \big(X \times_k \overline{k}, \Q_\ell(n)\big).</math>
+
+For <math>k</math> finite of order <math>q</math>, Tate showed that the Tate conjecture plus the semisimplicity conjecture would imply the '''strong Tate conjecture''', namely that the order of the pole of the [[Hasse-Weil zeta function|zeta function]] <math>Z(X,t)</math> at <math>t=q^{-j}</math> is equal to the rank of the group of algebraic cycles of codimension <math>j</math> modulo [[numerical equivalence]].{{sfnp|Tate|1994|loc=theorem 2.9}}
+
+Like the Hodge conjecture, the Tate conjecture would imply most of Grothendieck's [[standard conjectures on algebraic cycles]]. Namely, it would imply the Lefschetz standard conjecture (that the inverse of the Lefschetz isomorphism is defined by an algebraic correspondence); that the Künneth components of the diagonal are algebraic; and that numerical equivalence and homological equivalence of algebraic cycles are the same.
+
+==Notes==
+{{reflist}}
+
+==References==
+{{refbegin}}
+
+* {{cite journal | last=André | first=Yves |authorlink=Yves André | year=1996 | title=On the Shafarevich and Tate conjectures for hyper-Kähler varieties | journal=[[Mathematische Annalen]] | volume=305 | pages=205–248 | doi=10.1007/BF01444219 | mr=1391213}}
+
+* {{cite journal | last=Faltings | first=Gerd |authorlink=Gerd Faltings | year=1983 | title=Endlichkeitssätze für abelsche Varietäten über Zahlkörpern | journal=[[Inventiones Mathematicae]] | volume=73 | issue=3 | pages=349–366 | doi=10.1007/BF01388432 | bibcode=1983InMat..73..349F | mr=0718935 |language=de}}
+
+* {{cite journal | doi=10.1007/s00222-014-0557-5 | last1=Madapusi Pera | first1=Keerthi | title=The Tate conjecture for K3 surfaces in odd characteristic | journal=[[Inventiones Mathematicae]] | year=2013 | volume=201 | issue=2 | pages=625–668}}
+
+* {{cite arXiv | last=Moonen |first=Ben |title=A remark on the Tate conjecture |eprint=1709.04489v1 |year=2017 |class=math.AG }}
+
+* {{cite book | authorlink=John Tate (mathematician) | first=John |last=Tate |chapter=Algebraic cycles and poles of zeta functions | title=Arithmetical Algebraic Geometry |year=1965 |editor-first=O. F. G. |editor-last=Schilling | pages=93–110 | location=[[New York City|New York]] | publisher=[[Harper (publisher)|Harper and Row]] | mr=0225778 |editor1-link=Otto Schilling}}
+
+* {{cite journal | authorlink=John Tate (mathematician) | first=John |last=Tate | title=Endomorphisms of abelian varieties over finite fields | journal=[[Inventiones Mathematicae]] | volume=2 | year=1966 | issue=2 | pages=134–144 | mr=0206004 | doi=10.1007/bf01404549 | bibcode=1966InMat...2..134T }}
+
+* {{cite book | authorlink=John Tate (mathematician) | last1=Tate | first1=John | chapter=Conjectures on algebraic cycles in <math>\ell</math>-adic cohomology | title=Motives | series=Proceedings of Symposia in Pure Mathematics | volume=55 | pages=71–83 | year=1994 | publisher=[[American Mathematical Society]] | isbn=0-8218-1636-5 | mr=1265523}}
+
+* {{cite book | last=Ulmer | first=Douglas | authorlink=Douglas Ulmer | chapter=Curves and Jacobians over function fields | title=Arithmetic Geometry over Global Function Fields | series=Advanced Courses in Mathematics - CRM Barcelona | year=2014 | pages=281–337 | publisher=[[Birkhäuser]] |location=[[Basel]] | doi=10.1007/978-3-0348-0853-8_5 | isbn=978-3-0348-0852-1 |editor1-last=Bars |editor1-first=Francesc |editor2-last=Longhi |editor2-first=Ignazio |editor3-last=Trihan |editor3-first=Fabien}}
+
+* {{cite journal |last=Totaro |first=Burt |author-link=Burt Totaro |title=Recent progress on the Tate conjecture |journal=[[Bulletin of the American Mathematical Society]] |volume=54 |issue=4 |pages=575–590 |year=2017 |doi=10.1090/bull/1588|doi-access=free }}
+
+{{refend}}
+
+== External links ==
+*[[James Milne (mathematician)|James Milne]], [http://www.jmilne.org/math/articles/2007e.pdf The Tate conjecture over finite fields (AIM talk)].
+
+[[Category:Topological methods of algebraic geometry]]
+[[Category:Diophantine geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

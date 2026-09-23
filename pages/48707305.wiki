@@ -1,0 +1,11 @@
+#REDIRECT [[Euler brick#Cuboid conjectures]]
+
+{{rcatsh|
+{{R from merge}}
+{{R to section}}
+{{r wikidata}}
+}}
+
+[[Category:Conjectures]]
+[[Category:Diophantine equations]]
+[[Category:Unsolved problems in number theory]]

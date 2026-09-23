@@ -1,0 +1,43 @@
+{{short description|Existence of a prime number between each square and pronic number}}
+{{unsolved|mathematics|Is every pair of a square number and a pronic number (both greater than one) separated by at least one prime?}}
+'''Oppermann's conjecture''' is an unsolved problem in [[mathematics]] on the distribution of [[prime number]]s.{{sfnp|Wells|2005|p=164}} It is closely related to but stronger than [[Legendre's conjecture]], [[Andrica's conjecture]], and [[Brocard's conjecture]]. It is named after Danish mathematician [[Ludvig Oppermann]], who announced it in an unpublished lecture in March 1877.{{sfnp|Oppermann|1882}}
+
+==Statement==
+The conjecture states that, for every integer <math>n>1</math>, there is at least one prime number between 
+: <math>n(n-1)</math> and&nbsp;<math>n^2</math>,
+and at least another prime between 
+: <math>n^2</math> and <math>n(n+1)</math>.
+It can also be phrased equivalently as stating that the [[prime-counting function]] must take unequal values at the endpoints of each range.{{sfnp|Ribenboim|2004|p=183}} That is:
+: <math>\pi(n^2-n)<\pi(n^2)<\pi(n^2+n)</math> for every <math>n>1</math>
+with <math>\pi(x)</math> being the number of prime numbers less than or equal to <math>x</math>.
+The end points of these two ranges are a [[square]] between two [[pronic number]]s, with each of the pronic numbers being twice a pair [[triangular number]]. The sum of the pair of triangular numbers is the square.
+
+==Consequences==
+If the conjecture is true, then the [[prime gap]] would be on the order of
+
+:<math> g_n < \sqrt{p_n}.\, </math>
+
+This also means there would be at least two primes between <math>n^2</math> and <math>(n+1)^2</math> (one in the range from <math>n^2</math> to <math>n(n+1)</math> and the second in the range from <math>n(n+1)</math> to <math>(n+1)^2</math>, strengthening [[Legendre's conjecture]] that there is at least one prime in this range. Because there is at least one non-prime between any two odd primes it would also imply [[Brocard's conjecture]] that there are at least four primes between the squares of consecutive odd primes.{{sfnp|Wells|2005|p=164}} Additionally, it would imply that the largest possible [[Prime gap|gaps]] between two consecutive prime numbers could be at most proportional to twice the [[square root]] of the numbers, as [[Andrica's conjecture]] states.
+
+The conjecture also implies that at least one prime can be found in every quarter revolution of the [[Ulam spiral]].
+
+== See also ==
+{{Portal|Mathematics}}
+* [[Bertrand's postulate]]
+* [[Firoozbakht's conjecture]]
+* [[Prime number theorem]]
+
+==References==
+{{reflist}}
+
+* {{cite journal |first=Ludv. |last=Oppermann |authorlink=Ludvig Oppermann |title=Om vor Kundskab om Primtallenes Mængde mellem givne Grændser |journal=Oversigt over Det Kongelige Danske Videnskabernes Selskabs Forhandlinger og Dets Medlemmers Arbejder |year=1882 |pages=169–179 |url=https://books.google.com/books?id=UQgXAAAAYAAJ&pg=PA169 }}
+
+* {{cite book |title=The Little Book of Bigger Primes |first=Paulo |last=Ribenboim |authorlink=Paulo Ribenboim |publisher=[[Springer-Verlag|Springer]] |year=2004 |orig-year=1991 |edition=second |isbn=978-0-387-20169-6 |location=[[New York City|New York]]}}
+
+* {{cite book |title=Prime Numbers: The Most Mysterious Figures in Math |first=David |last=Wells |publisher=[[John Wiley & Sons]] |year=2005 |isbn=978-0-471-46234-7 |location=[[Hoboken, New Jersey|Hoboken, NJ]]}}
+
+{{Prime number conjectures}}
+
+{{DEFAULTSORT:Oppermann's Conjecture}}
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

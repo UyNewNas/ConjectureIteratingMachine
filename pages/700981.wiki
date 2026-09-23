@@ -1,0 +1,82 @@
+{{short description|On properties of Galois representations associated with modular forms}}
+{{Multiple issues|
+{{Technical|date=February 2022}}
+{{more citations needed|date=January 2021}}
+}}
+
+'''Ribet's theorem''' (earlier called the '''epsilon conjecture''' or '''ε-conjecture''') is part of [[number theory]]. It concerns properties of [[Galois representation]]s associated with [[modular form]]s. It was proposed by [[Jean-Pierre Serre]] and [[mathematical proof|proven]] by [[Ken Ribet]]. The proof was a significant step towards the proof of [[Fermat's Last Theorem]] (FLT). As shown by Serre and Ribet, the [[Taniyama–Shimura conjecture]] (whose status was unresolved at the time) and the epsilon conjecture together imply that FLT is true.
+
+In mathematical terms, Ribet's theorem shows that if the Galois representation associated with an [[elliptic curve]] has certain properties, then that curve cannot be modular (in the sense that there cannot exist a modular form that gives rise to the same representation).<ref>{{cite web | url=http://cgd.best.vwh.net/home/flt/flt08.htm | archive-url=https://web.archive.org/web/20081210102243/http://cgd.best.vwh.net/home/flt/flt08.htm | archive-date=2008-12-10 | title=The Proof of Fermat's Last Theorem| date=2008-12-10}}</ref>
+
+== Statement ==
+
+Let {{math|''f''}} be a weight 2 [[Atkin–Lehner theory|newform]] on {{math|Γ<sub>0</sub>(''qN'')}} &ndash; i.e. of level {{math|''qN''}} where {{math|''q''}} does not divide {{math|''N''}} &ndash; with absolutely irreducible 2-dimensional mod {{math|''p''}} Galois representation {{math|''ρ<sub>f,p</sub>''}} unramified at {{math|''q''}} if {{math|''q'' ≠ ''p''}} and finite flat at {{math|''q'' {{=}} ''p''}}. Then there exists a weight 2 newform {{math|''g''}} of level {{math|''N''}} such that
+:<math> \rho_{f,p} \simeq \rho_{g,p}. </math>
+
+In particular, if {{math|''E''}} is an [[elliptic curve]] over <math>\mathbb{Q}</math> with [[conductor of an elliptic curve|conductor]] {{math|''qN''}}, then the [[modularity theorem]] guarantees that there exists a weight 2 newform {{math|''f''}} of level {{math|''qN''}} such that the 2-dimensional mod {{math|''p''}} Galois representation {{math|''ρ<sub>f, p</sub>''}} of {{math|''f''}} is isomorphic to the 2-dimensional mod {{math|''p''}} Galois representation {{math|''ρ<sub>E, p</sub>''}} of {{math|''E''}}. To apply Ribet's Theorem to {{math|''ρ''<sub>''E'', ''p''</sub>}}, it suffices to check the irreducibility and ramification of {{math|''ρ<sub>E, p</sub>''}}. Using the theory of the [[Tate curve]], one can prove that {{math|''ρ<sub>E, p</sub>''}} is unramified at {{math|''q'' ≠ ''p''}} and finite flat at {{math|''q'' {{=}} ''p''}} if {{math|''p''}} divides the power to which {{math|''q''}} appears in the minimal discriminant {{math|Δ<sub>''E''</sub>}}. Then Ribet's theorem implies that there exists a weight 2 newform {{math|''g''}} of level {{math|''N''}} such that {{math|''ρ''<sub>''g'', ''p''</sub> ≈ ''ρ''<sub>''E'', ''p''</sub>}}.
+
+== Level lowering ==
+
+Ribet's theorem states that beginning with an elliptic curve {{math|''E''}} of conductor {{math|''qN''}} does not guarantee the existence of an elliptic curve {{math|''E{{prime}}''}} of level {{math|''N''}} such that {{math|''ρ''<sub>''E, p''</sub> ≈ ''ρ''<sub>''E{{prime}}'', ''p''</sub>}}. The newform {{math|''g''}} of level {{math|''N''}} may not have rational [[Fourier series|Fourier]] coefficients, and hence may be associated to a higher-dimensional [[abelian variety]], not an elliptic curve. For example, elliptic curve 4171a1 in the Cremona database given by the equation
+
+:<math>E: y^2 + xy + y = x^3 - 663204x + 206441595</math>
+
+with conductor {{math|43 × 97}} and discriminant {{math|43<sup>7</sup> × 97<sup>3</sup>}} does not level-lower mod 7 to an elliptic curve of conductor 97. Rather, the mod {{math|''p''}} Galois representation is isomorphic to the mod {{math|''p''}} Galois representation of an irrational newform {{math|''g''}} of level 97.
+
+However, for {{math|''p''}} large enough compared to the level {{math|''N''}} of the level-lowered newform, a rational newform (e.g. an elliptic curve) must level-lower to another rational newform (e.g. elliptic curve). In particular for {{math|''p'' ≫ ''N''<sup>''N''<sup>1+''ε''</sup></sup>}}, the mod {{math|''p''}} Galois representation of a rational newform cannot be isomorphic to an irrational newform of level {{math|''N''}}.<ref>{{cite journal | last1=Silliman | first1 = Jesse| last2=Vogt| first2=Isabel | arxiv=1307.5078 |title=Powers in Lucas Sequences via Galois Representations |year=2015|mr=3293720|journal=[[Proceedings of the American Mathematical Society]]|volume=143|issue=3|pages=1027–1041|doi=10.1090/S0002-9939-2014-12316-1| s2cid = 16892383}}</ref>
+
+Similarly, the Frey-[[Barry Mazur|Mazur]] conjecture predicts that for large enough {{math|''p''}} (independent of the conductor {{math|''N''}}), elliptic curves with isomorphic mod {{math|''p''}} Galois representations are in fact [[Isogeny|isogenous]], and hence have the same conductor. Thus non-trivial level-lowering between rational newforms is not predicted to occur for large {{math|''p'' (''p'' > 17)}}.
+
+== History ==
+In his thesis, {{Interlanguage link|Yves Hellegouarch|fr}} originated the idea of associating solutions (''a'',''b'',''c'') of Fermat's equation with a different mathematical object: an elliptic curve.<ref>{{cite journal|last=Hellegouarch|first=Yves|title=Courbes elliptiques et equation de Fermat|journal=Doctoral Dissertation|year=1972|id={{BNF|359121326}}}}</ref> If ''p'' is an odd prime and ''a'', ''b'', and ''c'' are positive integers such that
+
+:<math>a^p + b^p = c^p,</math>
+
+then a corresponding [[Frey curve]] is an algebraic curve given by the equation
+
+:<math>y^2 = x(x - a^p)(x + b^p).</math>
+
+This is a nonsingular algebraic curve of genus one defined over <math>\mathbb{Q}</math>, and its projective completion is an elliptic curve over <math>\mathbb{Q}</math>.
+
+In 1982 [[Gerhard Frey (mathematician)|Gerhard Frey]] called attention to the unusual properties of the same curve, now called a [[Frey curve]].<ref>{{Citation | last1=Frey | first1=Gerhard | title=Rationale Punkte auf Fermatkurven und getwisteten Modulkurven| trans-title=Rational points on Fermat curves and twisted modular curves | language=de | year=1982 | journal=[[J. Reine Angew. Math.]] | volume=1982 | issue=331 | pages=185–191 | mr=0647382 | doi=10.1515/crll.1982.331.185| s2cid=118263144 }}</ref> This provided a bridge between [[Pierre de Fermat|Fermat]] and [[Yutaka Taniyama|Taniyama]] by showing that a counterexample to FLT would create a curve that would not be modular. The conjecture attracted considerable interest when Frey suggested that the Taniyama–Shimura conjecture implies FLT. However, his argument was not complete.<ref>{{Citation | last1=Frey | first1=Gerhard | title=Links between stable elliptic curves and certain Diophantine equations | mr=853387 | year=1986 | journal=Annales Universitatis Saraviensis. Series Mathematicae | issn=0933-8268 | volume=1 | issue=1 | pages=iv+40}}</ref> In 1985 [[Jean-Pierre Serre]] proposed that a Frey curve could not be modular and provided a partial proof.<ref>{{citation
+ | last = Serre | first = J.-P. | author-link = Jean-Pierre Serre
+ | contribution = Lettre à J.-F. Mestre [Letter to J.-F. Mestre]
+ | doi = 10.1090/conm/067/902597
+ | language = French
+ | mr = 902597
+ | pages = 263–268
+ | publisher = American Mathematical Society | location = Providence, RI
+ | series = Contemporary Mathematics
+ | title = Current trends in arithmetical algebraic geometry (Arcata, Calif., 1985)
+ | volume = 67
+ | year = 1987| isbn = 978-0-8218-5074-9 }}</ref><ref>{{Citation | last1=Serre | first1=Jean-Pierre | author1-link=Jean-Pierre Serre | title=Sur les représentations modulaires de degré 2 de Gal({{overline|'''Q'''}}/'''Q''') | doi=10.1215/S0012-7094-87-05413-5 | mr=885783 | year=1987 | journal=[[Duke Mathematical Journal]] | issn=0012-7094 | volume=54 | issue=1 | pages=179–230}}</ref> This showed that a proof of the semistable case of the Taniyama–Shimura conjecture would imply FLT. Serre did not provide a complete proof and the missing bit became known as the epsilon conjecture or ε-conjecture. In the summer of 1986, [[Kenneth Alan Ribet]] proved the epsilon conjecture, thereby proving that the [[Modularity theorem]] implied FLT.<ref name="ribet">{{cite journal|last=Ribet|first=Ken|author-link=Ken Ribet|title=On modular representations of Gal({{overline|'''Q'''}}/'''Q''') arising from modular forms|journal=Inventiones Mathematicae|volume=100|year=1990|issue=2|pages=431–476|doi=10.1007/BF01231195|mr=1047143|url=https://math.berkeley.edu/~ribet/Articles/invent_100.pdf|bibcode=1990InMat.100..431R|s2cid=120614740 }}</ref>
+
+The origin of the name is from the ε part of "Taniyama-Shimura conjecture + ε ⇒ Fermat's last theorem".
+
+== Implications ==
+Suppose that the Fermat equation with exponent {{math|''p'' ≥ 5}}<ref name="ribet"/> had a solution in non-zero integers {{math|''a'', ''b'', ''c''}}. The corresponding Frey curve {{math|''E''<sub>''a''<sup>''p''</sup>,''b''<sup>''p''</sup>,''c''<sup>''p''</sup></sub>}} is an elliptic curve whose [[Discriminant|minimal discriminant]] {{math|Δ}} is equal to {{math|2<sup>−8</sup> (''abc'')<sup>2''p''</sup>}} and whose conductor {{math|''N''}} is the [[radical of an integer|radical]] of {{math|''abc''}}, i.e. the product of all distinct primes dividing {{math|''abc''}}. An elementary consideration of the equation {{math|''a''<sup>''p''</sup> + ''b''<sup>''p''</sup> {{=}} ''c''<sup>''p''</sup>}}, makes it clear that one of {{math|''a'', ''b'', ''c''}} is even and hence so is ''N''. By the Taniyama–Shimura conjecture, {{math|''E''}} is a modular elliptic curve. Since all odd primes dividing {{math|''a'', ''b'', ''c''}} in {{math|''N''}} appear to a {{math|''p''th}} power in the minimal discriminant {{math|Δ}}, by Ribet's theorem repetitive [[Atkin–Lehner theory|level]] [[Descent (mathematics)|descent]] modulo {{math|''p''}} strips all odd primes from the conductor. However, no newforms of level 2 remain because the genus of the modular curve {{math|''X''<sub>0</sub>(2)}} is zero (and newforms of level ''N'' are differentials on {{math|''X''<sub>0</sub>(''N''))}}.
+
+== See also ==
+* [[abc conjecture|ABC conjecture]]
+* [[Wiles' proof of Fermat's Last Theorem]]
+
+== Notes ==
+<references responsive="0"/>
+
+== References ==
+{{Reflist}}
+* Kenneth Ribet, [https://www.numdam.org/item?id=AFST_1990_5_11_1_116_0 ''From the Taniyama-Shimura conjecture to Fermat's last theorem''.] Annales de la Faculté des Sciences de Toulouse Sér. 5, 11 no. 1 (1990), p.&nbsp;116–139.
+* {{cite journal | author = Andrew Wiles | author-link = Andrew Wiles | date = May 1995 | title = Modular elliptic curves and Fermat's Last Theorem | journal = Annals of Mathematics | volume = 141 | issue = 3 | pages = 443–551 | url = http://math.stanford.edu/~lekheng/flt/wiles.pdf | doi = 10.2307/2118559 | jstor = 2118559 | archive-date = 2011-05-10 | access-date = 2006-05-22 | archive-url = https://web.archive.org/web/20110510062158/http://math.stanford.edu/%7Elekheng/flt/wiles.pdf }}
+* {{cite journal | author = [[Richard Taylor (mathematician)|Richard Taylor]] and Andrew Wiles | date = May 1995 | title = Ring-theoretic properties of certain Hecke algebras | journal = Annals of Mathematics | volume = 141 | issue = 3 | pages = 553–572 | url = http://math.stanford.edu/~lekheng/flt/taylor-wiles.pdf | doi = 10.2307/2118560 | issn = 0003-486X | oclc = 37032255 | jstor = 2118560 | zbl = 0823.11030 | archive-date = 2017-03-09 | access-date = 2011-09-08 | archive-url = https://web.archive.org/web/20170309154750/http://math.stanford.edu/~lekheng/flt/taylor-wiles.pdf }}
+* [https://mathworld.wolfram.com/FreyCurve.html Frey Curve] and [https://mathworld.wolfram.com/RibetsTheorem.html Ribet's Theorem]
+
+== External links ==
+*[http://www.msri.org/communications/vmath/VMathVideos/VideoInfo/3830/show_video Ken Ribet and Fermat's Last Theorem] by [[Kevin Buzzard]] June 28, 2008
+
+[[Category:Algebraic curves]]
+[[Category:Riemann surfaces]]
+[[Category:Modular forms]]
+[[Category:Theorems in number theory]]
+[[Category:Theorems in algebraic geometry]]
+[[Category:Fermat's Last Theorem]]
+[[Category:Abc conjecture]]

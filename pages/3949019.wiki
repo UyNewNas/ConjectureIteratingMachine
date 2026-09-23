@@ -1,0 +1,45 @@
+{{Short description|Type of prime number}}
+In [[number theory]], a '''balanced prime''' is a [[prime number]] with equal-sized [[prime gap]]s above and below it, so that it is equal to the [[arithmetic mean]] of the nearest primes above and below. [[Algebra]]ically, the <math>n</math>th prime number <math>p_n</math> is a balanced prime if
+
+:<math>p_n = {{p_{n - 1} + p_{n + 1}} \over 2}.</math>
+
+For example, 53 is the sixteenth prime; the fifteenth and seventeenth primes, 47 and 59, add up to 106, and half of that is 53; thus 53 is a balanced prime.
+
+==Examples==
+The first few balanced primes are
+
+[[5 (number)|5]], [[53 (number)|53]], [[157 (number)|157]], [[173 (number)|173]], [[211 (number)|211]], [[257 (number)|257]], 263, 373, 563, 593, 607, 653, 733, 947, 977, 1103, 1123, 1187, 1223, 1367, 1511, 1747, 1753, 1907, 2287, 2417, 2677, 2903 {{OEIS|id=A006562}}.
+
+With the exception of <math>5=\frac{3+7}{2}</math>, no element of a [[twin prime]] pair is a balanced prime. This follows from the fact that there are no twin prime triplets of the form <math>(p-2,p,p+2)</math> other than <math>(3,5,7)</math>. This intermediate statement itself follows from the fact that a twin prime triplet gives all possible different remainders on division by 3, and therefore one element must be divisible by 3. For <math>p>5</math>, this contradicts the fact that no prime other than 3 is divisible by 3. Furthermore, a twin prime cannot be balanced except by being part of a twin prime triple because there is no possible closer prime than a twin prime for <math>p>3</math> (for <math>p=3</math>, <math>p-1=2</math> is prime), so <math>(p-2,p,p+n)</math> and <math>(p-n,p,p+2)</math> are not balanced for <math>n>2</math> and not a twin prime triple for <math>n=2</math> and <math>p>5</math>. Therefore, <math>5</math> is the only balanced prime that is also an element of a twin prime pair.
+
+In general, there are no balanced primes <math>p_n>5</math> for a given balanced prime gap <math>g=p_n-p_{n-1}=p_{n+1}-p_n</math> of the form <math>g\in \{2,4\} \pmod{6}</math>. This follows from a similar line of reasoning to that above: given <math>g</math> of the form <math>g\in \{2,4\} \pmod{6}</math>, the triple <math>(p-g,p,p+g)</math> contains all remainders on division by 3 and therefore any such balanced triple for which <math>p-g>3</math> is not all primes. But if <math>p-g=3</math>, then the next-greatest prime is <math>5</math>, so the only balanced prime triple containing <math>3</math> given the requirement of consecutiveness is <math>(3,5,7)</math>. As such, no other balanced primes exist with <math>g\in \{2,4\} \pmod{6}</math>, and therefore (apart from <math>2</math> for <math>p=5</math>) the only balanced prime gaps <math>g</math> are those of the form <math>g\equiv 0 \pmod{6}</math> or <math>g=6k</math> for <math>k\in\Z^+</math>.
+
+==Infinitude==
+{{unsolved|mathematics|Are there infinitely many balanced primes?}}
+
+It is [[conjecture]]d that there are [[infinite set|infinitely many]] balanced primes.
+
+Three consecutive [[primes in arithmetic progression]] is sometimes called a CPAP-3. A balanced prime is by definition the second prime in a CPAP-3. {{As of|2023}} the largest known CPAP-3 has 15004 decimal digits and was found by Serge Batalov. It is:<ref>[http://primerecords.dk/cpap.htm#k3 The Largest Known CPAP's]. Retrieved on 2023-01-06.</ref>
+
+:<math>p_n = 2494779036241 \times 2^{49800} + 7,\quad  p_{n-1} = p_n-6,\quad  p_{n+1} = p_n+6.</math>
+
+(The value of <math>n</math>, i.e. its position in the sequence of all primes, may never be known in full. Though, given that <math>n = \pi(p_n) \approx \frac{p_n}{log(p_n)}</math>, where <math>\pi(p)</math> is the [[prime counting function]], we would expect <math>n</math> to be in the region of <math>1.42 \times 10^{14999}</math>)
+
+==Generalization==
+The balanced primes may be generalized to the '''balanced primes of order ''n'''''. A balanced prime of order ''n'' is a prime number that is equal to the arithmetic mean of the nearest ''n'' primes above and below. Algebraically, the <math>k</math>th prime number <math>p_k</math> is a balanced prime of order <math>n</math> if
+
+:<math>p_k = { \sum_{i=1}^n ({p_{k - i} + p_{k + i})} \over 2n}.</math>
+
+Thus, an ordinary balanced prime is a balanced prime of order 1. The sequences of balanced primes of orders 2, 3, and 4 are {{nowrap|[[OEIS:A082077|A082077]]}}, {{nowrap|[[OEIS:A082078|A082078]]}}, and {{nowrap|[[OEIS:A082079|A082079]]}} in the OEIS respectively.
+
+==See also==
+*[[Strong prime]], a prime that is greater than the arithmetic mean of its two neighboring primes
+*[[Interprime]], a composite number balanced between two prime neighbours
+
+==References==
+{{reflist}}
+
+{{Prime number classes}}
+
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

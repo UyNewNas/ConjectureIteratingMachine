@@ -1,0 +1,163 @@
+{{Short description|Type of prime number}}
+{{CS1 config|mode=cs2}}
+{{distinguish|regular number}}
+{{unsolved|mathematics|Are there infinitely many regular primes, and if so, is their relative density <math>e^{-1/2}</math>?}}
+
+In [[number theory]], a '''regular prime''' is a special kind of [[prime number]], defined by [[Ernst Kummer]] in 1850 to prove certain cases of [[Fermat's Last Theorem]]. Regular primes may be defined via the [[divisibility]] of either [[class number (number theory)|class numbers]] or of [[Bernoulli number]]s.
+
+The first few regular odd primes are:
+{{bi|left=1.6| 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 43, 47, 53, 61, 71, 73, 79, 83, 89, 97, 107, 109, 113, 127, 137, 139, 151, 163, 167, 173, 179, 181, 191, 193, 197, 199, ... {{OEIS|id=A007703}}.}}
+
+== History and motivation ==
+In 1850, Kummer proved that [[Fermat's Last Theorem]] is true for a prime exponent <math>p</math> if <math>p</math> is regular. This focused attention on the irregular primes.<ref name="Gardiner1988">{{Citation | last1=Gardiner | first1=A. | title=Four Problems on Prime Power Divisibility | year=1988 | journal=American Mathematical Monthly | volume=95 | issue=10 | pages=926–931 | doi=10.2307/2322386| jstor=2322386 }}</ref> In 1852, [[Angelo Genocchi|Genocchi]] was able to prove that the [[First case of Fermat's last theorem|first case of Fermat's Last Theorem]] is true for an exponent <math>p</math>, if <math>(p,p-3)</math> is not an irregular pair. Kummer improved this further in 1857 by showing that for the "first case" of Fermat's Last Theorem (see [[Sophie Germain's theorem]]) it is sufficient to establish that either <math>(p,p-3)</math> or <math>(p,p-5)</math> fails to be an irregular pair. (As applied in these results, {{nowrap|<math>(p,2k)</math>}} is an irregular pair when <math>p</math> is irregular due to a certain condition, described below, being realized at <math>2k</math>.)
+
+Kummer found the irregular primes smaller than 165. In 1963, Lehmer reported results up to 10000 and Selfridge and Pollack announced in 1964 to have completed the table of irregular primes up to 25000. Although the two latter tables did not appear in print, Johnson found that <math>(p,p-3)</math> is in fact an irregular pair for <math>p=16843</math> and that this is the first and only time this occurs for <math>p<30000</math>.<ref>{{Citation | last1=Johnson | first1=W. | title=Irregular Primes and Cyclotomic Invariants | year=1975 | journal=[[Mathematics of Computation]] | volume=29 | issue=129 | pages=113–120 | url=https://www.ams.org/journals/mcom/1975-29-129/S0025-5718-1975-0376606-9/ | doi=10.2307/2005468 | jstor=2005468 | doi-access=free | url-access=subscription }}</ref> It was found in 1993 that the next time this happens is for <math>p=2124679</math>; see [[Wolstenholme prime]].<ref>{{citation | last1 = Buhler | first1 = J. | last2 = Crandall | first2 = R. | last3 = Ernvall | first3 = R. | last4 = Metsänkylä | first4 = T. | year = 1993 | title = Irregular primes and cyclotomic invariants to four million | journal = Math. Comp. | volume = 61 | issue = 203 | pages = 151–153 | doi=10.1090/s0025-5718-1993-1197511-5| bibcode = 1993MaCom..61..151B | doi-access = free }}</ref>
+
+== Definition ==
+
+=== Class number criterion ===
+An odd prime number <math>p</math> is defined to be regular if it does not divide the [[class number (number theory)|class number]] of the <math>p</math>th [[cyclotomic field]] <math>\Q(\zeta_p)</math>, where <math>\zeta_p</math> is a primitive <math>p</math>th root of unity.
+
+The prime number 2 is often considered regular as well.
+
+The [[class number (number theory)|class number]] of the cyclotomic
+field is the number of [[ideal (ring theory)|ideals]] of the [[ring of integers]] <math>\Z(\zeta_p)</math> up to equivalence. Two ideals <math>I</math> and <math>J</math> are considered equivalent if there is a nonzero <math>u</math> in <math>\Q(\zeta_p)</math> so that <math>I=uJ</math>. The first few of these class numbers are listed in {{oeis|id=A000927}}.
+
+=== Kummer's criterion ===
+{{main|Bernoulli number#The Kummer theorems}}
+[[Ernst Kummer]] {{harv|Kummer|1850}} showed that an equivalent criterion for regularity is that <math>p</math> does not divide the numerator of any of the [[Bernoulli number]]s <math>B_k</math> for <math>k=2,4,6,\dots,p-3</math>.
+
+Kummer's proof that this is equivalent to the class number definition is strengthened by the [[Herbrand–Ribet theorem]], which states certain consequences of <math>p</math> dividing the numerator of one of these Bernoulli numbers.
+
+== Siegel's conjecture ==
+It has been [[conjecture]]d that there are [[Infinite set|infinitely]] many regular primes. More precisely [[Carl Ludwig Siegel]]{{sfnp|Siegel|1964}} conjectured  that <math>e^{-1/2}</math>, or about 60.65%, of all prime numbers are regular, in the [[Asymptotic analysis|asymptotic]] sense of [[natural density]]. Here, <math>e\approx 2.718</math> is [[E (mathematical constant)|the base of the natural logarithm]].
+
+Taking Kummer's criterion, the chance that one numerator of the Bernoulli numbers <math>B_k</math>, <math>k=2,\dots,p-3</math>, is not divisible by the prime <math>p</math> is
+
+<math display=block>\dfrac{p-1}{p}</math>
+
+so that the chance that none of the numerators of these Bernoulli numbers are divisible by the prime <math>p</math> is
+
+<math display=block>\left(\dfrac{p-1}{p}\right)^{\dfrac{p-3}{2}}=\left(1-\dfrac{1}{p}\right)^{\dfrac{p-3}{2}}=\left(1-\dfrac{1}{p}\right)^{-3/2}\cdot\left\lbrace\left(1-\dfrac{1}{p}\right)^{p}\right\rbrace^{1/2}.</math>
+
+By the definition of <math>e</math>,
+<math display=block>\lim_{p\to\infty}\left(1-\dfrac{1}{p}\right)^{p}=\dfrac{1}{e}</math>
+giving the probability
+<math display=block>\lim_{p\to\infty}\left(1-\dfrac{1}{p}\right)^{-3/2}\cdot\left\lbrace\left(1-\dfrac{1}{p}\right)^{p}\right\rbrace^{1/2}=e^{-1/2}\approx0.606531.</math>
+
+It follows that about <math>60.6531\%</math> of the primes are regular by chance. Hart et al.<ref>{{citation
+ | last1 = Hart | first1 = William
+ | last2 = Harvey | first2 = David
+ | last3 = Ong | first3 = Wilson
+ | arxiv = 1605.02398
+ | doi = 10.1090/mcom/3211
+ | issue = 308
+ | journal = Mathematics of Computation
+ | mr = 3667037
+ | pages = 3031–3049
+ | title = Irregular primes to two billion
+ | volume = 86
+ | year = 2017}}</ref> indicate that <math>60.6590\%</math> of the primes less than <math>2^{31}=2,147,483,648</math> are regular.
+
+==<span class="anchor" id="Irregular primes"></span>Irregular primes ==
+An odd prime that is not regular is an '''irregular prime''' (or Bernoulli irregular or B-irregular to distinguish from other types of irregularity discussed below). The first few irregular primes are:
+: 37, 59, 67, 101, 103, 131, 149, 157, 233, 257, 263, 271, 283, 293, 307, 311, 347, 353, 379, 389, 401, 409, 421, 433, 461, 463, 467, 491, 523, 541, 547, 557, 577, 587, 593, ... {{OEIS|id=A000928}}
+
+=== Infinitude ===
+[[Kaj Løchte Jensen|K. L. Jensen]] (a student of [[Niels Nielsen (mathematician)|Niels Nielsen]]<ref>{{citation|url=http://tau.ac.il/~corry/publications/articles/pdf/Computers%20and%20FLT.pdf|first=Leo |last=Corry |title=Number Crunching vs. Number Theory: Computers and FLT, from Kummer to SWAC (1850–1960), and beyond}}</ref>) proved in 1915 that there are infinitely many irregular primes of the form <math>4n+3</math>.<ref>{{citation | last = Jensen | first = K. L. | title = Om talteoretiske Egenskaber ved de Bernoulliske Tal | jstor=24532219 | journal = Nyt Tidsskrift for Matematik| volume =  26| pages = 73–83 | year = 1915}}</ref>
+In 1954 [[Leonard Carlitz|Carlitz]] gave a simple proof of the weaker result that there are in general infinitely many irregular primes.<ref>{{citation | last = Carlitz | first = L. | title = Note on irregular primes | journal = Proceedings of the American Mathematical Society | volume = 5 | issue = 2 | pages = 329–331 | publisher = [[American Mathematical Society|AMS]] | year = 1954 | url = https://www.ams.org/journals/proc/1954-005-02/S0002-9939-1954-0061124-6/S0002-9939-1954-0061124-6.pdf  | issn = 1088-6826 | doi = 10.1090/S0002-9939-1954-0061124-6 | mr = 61124| doi-access = free}}</ref>
+
+Metsänkylä proved in 1971 that for any integer <math>T>6</math>, there are infinitely many irregular primes not of the form <math>mT\pm1</math>,<ref>{{citation |author=Tauno Metsänkylä |title=Note on the distribution of irregular primes |journal=Ann. Acad. Sci. Fenn. Ser. A I |volume=492 |year=1971 |mr=0274403}}</ref> and later generalized this.<ref>{{citation |author=Tauno Metsänkylä |title=Distribution of irregular prime numbers |journal=Journal für die reine und angewandte Mathematik |volume=1976 |issue=282 |doi=10.1515/crll.1976.282.126 |url=http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002191873 |year=1976|pages=126–130 |s2cid=201061944 }}</ref>
+
+=== Irregular pairs ===
+If <math>p</math> is an irregular prime and <math>p</math> divides the numerator of the Bernoulli number <math>B_{2k}</math> for <math>0<2k<p-1</math>, then <math>(p,2k)</math> is called an '''irregular pair'''.  In other words, an irregular pair is a bookkeeping device to record, for an irregular prime <math>p</math>, the particular indices of the Bernoulli numbers at which regularity fails. The first few irregular pairs (when ordered by <math>k</math>) are:
+{{bi|left=1.6|(691, 12), (3617, 16), (43867, 18), (283, 20), (617, 20), (131, 22), (593, 22), (103, 24), (2294797, 24), (657931, 26), (9349, 28), (362903, 28), ... {{OEIS|id=A189683}}.}}
+
+The smallest even <math>k</math> such that <math>n</math>th irregular prime divides <math>B_{2k}</math> are
+{{bi|left=1.6|32, 44, 58, 68, 24, 22, 130, 62, 84, 164, 100, 84, 20, 156, 88, 292, 280, 186, 100, 200, 382, 126, 240, 366, 196, 130, 94, 292, 400, 86, 270, 222, 52, 90, 22, ... {{OEIS|id=A035112}}.}}
+
+For a given prime <math>p</math>, the number of such pairs is called the '''index of irregularity''' of <math>p</math>.<ref name=Nark475>{{citation | last=Narkiewicz | first=Władysław | title=Elementary and analytic theory of algebraic numbers | edition=2nd, substantially revised and extended | publisher=[[Springer-Verlag]]; [[Polish Scientific Publishers PWN|PWN-Polish Scientific Publishers]] | year=1990 | isbn=3-540-51250-0 | zbl=0717.11045 | page=[https://archive.org/details/elementaryanalyt0000nark/page/475 475] | url=https://archive.org/details/elementaryanalyt0000nark/page/475 }}</ref>  Hence, a prime is regular if and only if its index of irregularity is zero. Similarly, a prime is irregular if and only if its index of irregularity is positive.
+
+It was discovered that <math>(p,p-3)</math> is in fact an irregular pair for <math>p=16843</math>, as well as for <math>p=2124679</math>.. There are no more occurrences for <math>p<10^9</math>.
+
+=== Irregular index ===
+An odd prime <math>p</math> has '''irregular index''' <math>n</math> [[if and only if]] there are <math>n</math> values of <math>k</math> for which <math>p</math> divides <math>B_{2k}</math> and these <math>k</math>s are less than <math>(p-1)/2</math>. The first irregular prime with irregular index greater than 1 is [[157 (number)|157]], which divides <math>B_{62}</math> and <math>B_{110}</math>, so it has an irregular index 2. Clearly, the irregular index of a regular prime is 0.
+
+The irregular index of the <math>n</math>th prime starting with <math>n=2</math>, or the prime 3 is
+{{bi|left=1.6|1=0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 2, 0, ... {{OEIS|id=A091888}}.}}
+
+The irregular index of the <math>n</math>th irregular prime is
+{{bi|left=1.6|1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 2, 1, 1, 2, 1, 1, 1, 3, 1, 2, 3, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, ... {{OEIS|id=A091887}}.}}
+
+The primes having irregular index 1 are
+{{bi|left=1.6|37, 59, 67, 101, 103, 131, 149, 233, 257, 263, 271, 283, 293, 307, 311, 347, 389, 401, 409, 421, 433, 461, 463, 523, 541, 557, 577, 593, 607, 613, 619, 653, 659, 677, 683, 727, 751, 757, 761, 773, 797, 811, 821, 827, 839, 877, 881, 887, 953, 971, ... {{OEIS|id=A073276}}.}}
+
+The primes having irregular index 2 are
+{{bi|left=1.6|157, 353, 379, 467, 547, 587, 631, 673, 691, 809, 929, 1291, 1297, 1307, 1663, 1669, 1733, 1789, 1933, 1997, 2003, 2087, 2273, 2309, 2371, 2383, 2423, 2441, 2591, 2671, 2789, 2909, 2957, ... {{OEIS|id=A073277}}.}}
+
+The primes having irregular index 3 are
+{{bi|left=1.6|491, 617, 647, 1151, 1217, 1811, 1847, 2939, 3833, 4003, 4657, 4951, 6763, 7687, 8831, 9011, 10463, 10589, 12073, 13217, 14533, 14737, 14957, 15287, 15787, 15823, 16007, 17681, 17863, 18713, 18869, ... {{OEIS|id=A060975}}.}}
+
+The least primes having irregular index <math>n</math> are
+{{bi|left=1.6|2, 3, 37, 157, 491, 12613, 78233, 527377, 3238481, ... {{OEIS|id=A061576}}.}}
+(This sequence defines "the irregular index of 2" as −1, and also starts at <math>n=-1</math>.)
+
+==Generalizations==
+
+=== Euler irregular primes ===
+Similarly, we can define an '''Euler irregular prime''' (or E-irregular) as a prime <math>p</math> that divides at least one [[Euler number]] <math>E_{2n}</math> with <math>0<2n\le p-3</math>. The first few Euler irregular primes are
+{{bi|left=1.6|19, 31, 43, 47, 61, 67, 71, 79, 101, 137, 139, 149, 193, 223, 241, 251, 263, 277, 307, 311, 349, 353, 359, 373, 379, 419, 433, 461, 463, 491, 509, 541, 563, 571, 577, 587, ... {{OEIS|id=A120337}}.}}
+
+The Euler irregular pairs are
+{{bi|left=1.6|(61, 6), (277, 8), (19, 10), (2659, 10), (43, 12), (967, 12), (47, 14), (4241723, 14), (228135437, 16), (79, 18), (349, 18), (84224971, 18), (41737, 20), (354957173, 20), (31, 22), (1567103, 22), (1427513357, 22), (2137, 24), (111691689741601, 24), (67, 26), (61001082228255580483, 26), (71, 28), (30211, 28), (2717447, 28), (77980901, 28), ... .}}
+
+Vandiver proved in 1940 that [[Fermat's Last Theorem]] (that <math>x^p+y^p=z^p</math> has no solution for integers <math>x</math>, <math>y</math>, <math>z</math> with <math>\gcd(xyz,p)=1</math>) is true  for prime exponents <math>p</math> that are Euler-regular. Gut proved that <math>x^{2p}+y^{2p}=z^{2p}</math> has no solution if <math>p</math> has an E-irregularity index less than 5.<ref>{{citation|title=The Top Twenty: Euler Irregular primes|url=https://primes.utm.edu/top20/page.php?id=25|access-date=2021-07-21|website=primes.utm.edu}}</ref>
+
+== See also ==
+* [[Wolstenholme prime]]
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+{{refbegin}}
+* {{citation|first=E. E.|last=Kummer|author-link=Ernst Kummer| title=Allgemeiner Beweis des Fermat'schen Satzes, dass die Gleichung ''x''<sup>''λ''</sup> + ''y''<sup>''λ''</sup> = ''z''<sup>''λ''</sup> durch ganze Zahlen unlösbar ist, für alle diejenigen Potenz-Exponenten ''λ'', welche ungerade Primzahlen sind und in den Zählern der ersten (''λ''−3)/2 Bernoulli'schen Zahlen als Factoren nicht vorkommen |journal=J. Reine Angew. Math. |volume=40 |year=1850 |pages=131–138 |url=http://www.digizeitschriften.de/resolveppn/GDZPPN002146738}}
+* {{citation
+ | last = Siegel | first = Carl Ludwig | author-link = Carl Ludwig Siegel
+ | journal = Nachrichten der Akademie der Wissenschaften in Göttingen
+ | mr = 0163899
+ | pages = 51–57
+ | title = Zu zwei Bemerkungen Kummers
+ | volume = 1964
+ | year = 1964
+ }}
+* {{Citation | last1=Iwasawa | first1=K. | last2=Sims | first2=C. C. | title=Computation of invariants in the theory of cyclotomic fields | year=1966 | journal=Journal of the Mathematical Society of Japan | volume=18 | issue=1 | pages=86–96 | url=https://projecteuclid.org/euclid.jmsj/1260541355 | doi=10.2969/jmsj/01810086 | doi-access=free }}
+* {{Citation | last1=Wagstaff, Jr. | first1=S. S. | title=The Irregular Primes to 125000 | year=1978 | journal=[[Mathematics of Computation]] | volume=32 | issue=142 | pages=583–591 | url=https://www.ams.org/journals/mcom/1978-32-142/S0025-5718-1978-0491465-4/| doi=10.2307/2006167 | jstor=2006167 | url-access=subscription }}
+* {{Citation | last1=Granville | first1=A. | last2=Monagan | first2=M. B. | title=The First Case of Fermat's Last Theorem is True for All Prime Exponents up to 714,591,416,091,389 | year=1988 | journal=Transactions of the American Mathematical Society | volume=306 | issue=1 | pages=329–359 | doi=10.1090/S0002-9947-1988-0927694-5 | mr = 0927694| doi-access=free }}
+* {{Citation | last1=Gardiner | first1=A. | title=Four Problems on Prime Power Divisibility | year=1988 | journal=American Mathematical Monthly | volume=95 | issue=10 | pages=926–931 | doi=10.2307/2322386| jstor=2322386 }}
+* {{Citation | last1=Ernvall | first1=R. | last2=Metsänkylä | first2=T. | title=Cyclotomic Invariants for Primes Between 125000 and 150000 | year=1991 | journal=[[Mathematics of Computation]] | volume=56 | issue=194 | pages=851–858 | url=https://www.ams.org/journals/mcom/1991-56-194/S0025-5718-1991-1068819-7/ | doi=10.2307/2008413 | jstor=2008413 | url-access=subscription }}
+* {{Citation | last1=Ernvall | first1=R. | last2=Metsänkylä | first2=T. | title=Cyclotomic Invariants for Primes to One Million | year=1992 | journal=Mathematics of Computation | volume=59 | issue=199 | pages=249–250 | url=https://www.ams.org/journals/mcom/1992-59-199/S0025-5718-1992-1134727-7/S0025-5718-1992-1134727-7.pdf | doi=10.2307/2152994| jstor=2152994 | doi-access=free }}
+* {{Citation | last1=Buhler | first1=J. P. | last2=Crandall | first2=R. E. | last3=Sompolski | first3=R. W. | title=Irregular Primes to One Million | year=1992 | journal=[[Mathematics of Computation]] | volume=59 | issue=200 | pages=717–722 | url=https://www.ams.org/journals/mcom/1992-59-200/S0025-5718-1992-1134717-4/ | doi=10.2307/2153086  | jstor=2153086 | doi-access=free | url-access=subscription }}
+* {{Citation | last1 = Boyd | first1 = D. W.| title = A ''p''-adic Study of the Partial Sums of the Harmonic Series | url = http://projecteuclid.org/euclid.em/1048515811| doi = 10.1080/10586458.1994.10504298 | journal = [[Experimental Mathematics (journal)|Experimental Mathematics]]| volume = 3 | issue = 4 | pages = 287–302 | year = 1994| zbl = 0838.11015}}
+* {{Citation | last1=Shokrollahi | first1=M. A. | title=Computation of Irregular Primes up to Eight Million (Preliminary Report) | year=1996 | series=ICSI Technical Report | volume=TR-96-002 | url = http://www.icsi.berkeley.edu/ftp/global/global/pub/techreports/1996/tr-96-002.ps.gz }}
+* {{Citation | last1=Buhler | first1=J. | last2=Crandall | first2=R. | last3=Ernvall | first3=R. | last4=Metsänkylä | first4=T. | last5=Shokrollahi | first5=M.A. | title=Irregular Primes and Cyclotomic Invariants to 12 Million | year=2001 | journal=Journal of Symbolic Computation | volume=31 | issue=1–2 | pages=89–96 | doi=10.1006/jsco.1999.1011| doi-access=free }}
+* {{Citation |author=Richard K. Guy |author-link=Richard K. Guy |title=Unsolved Problems in Number Theory |edition=3rd |publisher=[[Springer Verlag]] |year=2004 |isbn=0-387-20860-7 |chapter=Section D2. The Fermat Problem}}
+* {{Citation | last=Villegas | first=F. R. | title=Experimental Number Theory | publisher=Oxford University Press | year=2007 | location=New York | pages=166–167 | url=https://books.google.com/books?id=xXNFmoEaD9QC&pg=PA166 | isbn=978-0-19-852822-7}}
+{{refend}}
+
+== External links ==
+* {{mathworld|urlname=IrregularPrime|title=Irregular prime}}
+* Chris Caldwell, [http://primes.utm.edu/glossary/page.php?sort=Regular The Prime Glossary: regular prime] at The [[Prime Pages]].
+* Keith Conrad, [http://www.math.uconn.edu/~kconrad/blurbs/gradnumthy/fltreg.pdf Fermat's last theorem for regular primes].
+* [http://primes.utm.edu/top20/page.php?id=26 Bernoulli irregular prime]
+* [http://primes.utm.edu/top20/page.php?id=25 Euler irregular prime]
+* [http://www.luschny.de/math/primes/irregular.html Bernoulli and Euler irregular primes].
+* [http://homes.cerias.purdue.edu/~ssw/bernoulli/index.html Factorization of Bernoulli and Euler numbers]
+* [http://homes.cerias.purdue.edu/~ssw/bernoulli/full.pdf Factorization of Bernoulli and Euler numbers]
+
+{{Prime number classes}}
+
+[[Category:Algebraic number theory]]
+[[Category:Cyclotomic fields]]
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

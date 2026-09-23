@@ -1,0 +1,216 @@
+{{Short description|Listing all imaginary quadratic fields with a given class number}}
+In [[mathematics]], the '''Gauss class number problem''' ('''for imaginary quadratic fields'''), as usually understood, is to provide for each <math>n\geq 1</math> a complete list of [[imaginary quadratic field]]s <math>\mathbb{Q}(\sqrt{d})</math> (for negative integers <math>d</math>) having [[class number (number theory)|class number]] <math>n</math>. It is named after [[Carl Friedrich Gauss]]. It can also be stated in terms of [[Discriminant of an algebraic number field|discriminants]]. There are related questions for real quadratic fields and for the behavior as <math>d \to -\infty</math>.
+
+The difficulty is in effective computation of bounds: for a given discriminant, it is easy to compute the class number, and there are several ineffective lower bounds on class number (meaning that they involve a constant that is not computed), but effective bounds (and explicit proofs of completeness of lists) are harder.
+
+==Gauss's original conjectures==
+The problems are posed in Gauss's [[Disquisitiones Arithmeticae]] of 1801 (section V, articles 303 and 304).{{sfnp|Stark|2007}}
+
+Gauss discusses imaginary quadratic fields in Article 303, stating the first two conjectures, and discusses real quadratic fields in Article 304, stating the third conjecture.
+;Gauss conjecture (class number tends to infinity): <math>h(d) \to \infty\text{ as }d\to -\infty.</math>
+;Gauss class number problem (low class number lists): For given low class number (such as 1, 2, and 3), Gauss gives lists of imaginary quadratic fields with the given class number and believes them to be complete.
+;Infinitely many real quadratic fields with class number one: Gauss conjectures that there are infinitely many real quadratic fields with class number one.
+
+The original Gauss class number problem for imaginary quadratic fields is significantly different and easier than the modern statement: he restricted to even discriminants, and allowed non-fundamental discriminants.
+
+==Status==
+{{unsolved|mathematics|Are there infinitely many real quadratic fields with class number one?}}
+;Gauss conjecture: Solved, Heilbronn, 1934.{{sfnp|Heilbronn|1934}}
+;Low class number lists: Class number 1: solved, Baker (1966), Stark (1967), Heegner (1952).
+:Class number 2: solved, Baker (1971), Stark (1971){{sfnp|Ireland|Rosen|1990|pp=358–361}}
+:Class number 3: solved, Oesterlé (1985){{sfnp|Ireland|Rosen|1990|pp=358–361}}
+:Class numbers h up to 100: solved, Watkins 2004{{sfnp|Watkins|2004}}
+;Infinitely many real quadratic fields with class number one: Open.
+
+==Lists of discriminants of class number 1==
+{{details|Heegner number}}
+For imaginary quadratic number fields, the (fundamental) [[Imaginary quadratic field#Discriminant|discriminants]] of class number 1 are:
+:<math>d=-3,-4,-7,-8,-11,-19,-43,-67,-163.</math>
+The non-fundamental discriminants of class number 1 are:
+:<math>d=-12,-16,-27,-28.</math>
+Thus, the even discriminants of class number 1, fundamental and non-fundamental (Gauss's original question) are:
+:<math>d=-4,-8,-12,-16,-28.</math>
+
+==Modern developments==
+In 1934, [[Hans Heilbronn]] proved the Gauss conjecture.{{sfnp|Heilbronn|1934}} Equivalently, for any given class number, there are only finitely many imaginary quadratic number fields with that class number.
+
+Also in 1934, Heilbronn and [[Edward Linfoot]] showed that there were at most 10 imaginary quadratic number fields with class number 1 (the 9 known ones, and at most one further).{{sfnp|Heilbronn|Linfoot|1934}}
+The result was ineffective (see [[effective results in number theory]]): it did not give bounds on the size of the remaining field.
+
+In later developments, the case <math>n=1</math> was first discussed by [[Kurt Heegner]], using [[modular form]]s and [[modular equation]]s to show that no further such field could exist. This work was not initially accepted; only with later work of [[Harold Stark]] and [[Bryan Birch]] (e.g. on the [[Stark–Heegner theorem]] and [[Heegner number]]) was the position clarified and Heegner's work understood. Practically simultaneously, [[Alan Baker (mathematician)|Alan Baker]] proved what we now know as [[Baker's theorem]] on [[linear forms in logarithms]] of [[algebraic number]]s, which resolved the problem by a completely different method.  The case <math>n=2</math> was tackled shortly afterwards, at least in principle, as an application of Baker's work.{{sfnp|Baker|1975}}
+
+The complete list of imaginary quadratic fields with class number 1 is <math>\mathbf{Q}(\sqrt{d})</math> where ''d'' is one of
+:<math>-1, -2, -3, -7, -11, -19, -43, -67, -163.</math>
+
+The general case awaited the discovery of [[Dorian Goldfeld]] in 1976 that the class number problem could be connected to the [[L-function|''L''-function]]s of [[elliptic curve]]s.{{sfnp|Goldfeld|1985}} This effectively reduced the question of effective determination to one about establishing the existence of a multiple zero of such an ''L''-function.{{sfnp|Goldfeld|1985}} With the proof of the [[Gross–Zagier theorem]] in 1986, a complete list of imaginary quadratic fields with a given class number could be specified by a finite calculation. All cases up to <math>n=100</math> were computed by Watkins in 2004.{{sfnp|Watkins|2004}} The class number of <math>\mathbf{Q}(\sqrt{-d})</math> for <math>d=1,2,3,\dots</math> is
+
+:<math>1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 2, 4, 2, 1, 4, 1, 1, 2, 4, 2, 3, 2, 1, 6, 1, 1, 6, 4, 3, 1, ...</math> {{OEIS|A202084}}.
+
+==Real quadratic fields==
+The contrasting case of ''real'' quadratic fields is very different, and much less is known. That is because what enters the analytic formula for the class number is not <math>h</math>, the class number, on its own—but <math>h\log \varepsilon</math>, where <math>\varepsilon</math> is a [[fundamental unit (number theory)|fundamental unit]]. This extra factor is hard to control. It may well be the case that class number 1 for real quadratic fields occurs infinitely often.
+
+The Cohen–Lenstra heuristics{{sfnp|Cohen|1993|loc=chapter 5. 10}} are a set of more precise conjectures about the structure of class groups of quadratic fields. For real fields, they predict that about 75.45% of the fields obtained by adjoining the square root of a prime will have class number 1, a result that agrees with computations.{{sfnp|te Riele|Williams|2003}}
+
+==See also==
+* [[List of number fields with class number one]]
+
+==Notes==
+{{reflist}}
+
+==References==
+{{refbegin}}
+
+* {{cite book
+  | last=Baker
+  | first=Alan
+  | authorlink=Alan Baker (mathematician)
+  | title=Transcendental Number Theory
+  | publisher=[[Cambridge University Press]]
+  | isbn=0-521-20461-5
+  | mr=0422171
+  | year=1975
+}}
+
+* {{cite book
+  | last=Cohen 
+  | first=Henri
+  | authorlink=Henri Cohen (mathematician)
+  | title=A Course in Computational Algebraic Number Theory
+  | publisher=[[Springer-Verlag|Springer]]
+  | location=[[Berlin]], [[Heidelberg]]
+  | year=1993
+  | isbn=978-3-540-55640-4
+  | series=[[Graduate Texts in Mathematics]]
+  | volume=138
+}}
+
+* {{cite journal
+  | last=Goldfeld 
+  | first=Dorian
+  | authorlink=Dorian M. Goldfeld
+  | year=1985 
+  | title=Gauss' class number problem for imaginary quadratic fields 
+  | journal=[[Bulletin of the American Mathematical Society]] 
+  | volume=13
+  | issue=1 
+  | pages=23–37  
+  | doi=10.1090/S0273-0979-1985-15352-2 
+  | doi-access=free 
+  }}
+
+* {{cite journal
+  | last=Heegner
+  | first=Kurt 
+  | authorlink=Kurt Heegner 
+  | doi=10.1007/BF01174749
+  | mr=0053135 
+  | title=Diophantische Analysis und Modulfunktionen 
+  | journal=[[Mathematische Zeitschrift]] 
+  | volume=56 
+  | issue=3 
+  | year=1952 
+  | pages=227–253
+  | language=de 
+}}
+
+* {{cite journal 
+  | last=Heilbronn 
+  | first=Hans
+  | authorlink=Hans Heilbronn 
+  | title=On the class-number in imaginary quadratic fields
+  | journal=[[Quarterly Journal of Mathematics]]
+  | volume=os-5 
+  | issue=1 
+  | date=1934
+  | doi=10.1093/qmath/os-5.1.150 
+  | pages=150–160
+}}
+
+* {{cite journal 
+  | last1=Heilbronn 
+  | first1=H. 
+  | author1-link=Hans Heilbronn
+  | last2=Linfoot 
+  | first2=E. H. 
+  | author2-link=Edward Linfoot
+  | title=On the imaginary quadratic corpora of class-number one 
+  | journal=[[Quarterly Journal of Mathematics]] 
+  | volume=os-5 
+  | issue=1 
+  | date=1934 
+  | doi=10.1093/qmath/os-5.1.293 
+  | pages=293–301
+}}
+
+* {{cite book
+  | last1=Ireland 
+  | first1=Kenneth 
+  | last2=Rosen 
+  | first2=Michael
+  | author2-link=Michael Rosen (mathematician) 
+  | title=A Classical Introduction to Modern Number Theory 
+  | publisher=[[Springer-Verlag|Springer]] 
+  | year=1990  
+  | location=[[New York City|New York]]  
+  | isbn=978-0-387-97329-6 
+  | series=[[Graduate Texts in Mathematics]]
+  | volume=84
+}}
+
+* {{cite journal
+  | last1=te Riele
+  | first1=Herman
+  | author-link1=Herman te Riele
+  | last2=Williams
+  | first2=Hugh
+  | author-link2=Hugh C. Williams
+  | year=2003 
+  | title=New computations concerning the Cohen-Lenstra heuristics
+  | journal=[[Experimental Mathematics (journal)|Experimental Mathematics]]
+  | volume=12
+  | issue=1 
+  | pages=99–113
+  | doi=10.1080/10586458.2003.10504715 
+ }}
+
+* {{cite book 
+  | last=Stark 
+  | first=H. M. 
+  | author-link=Harold Stark
+  | chapter=The Gauss class-number problems 
+  | url=https://www.claymath.org/wp-content/uploads/2022/03/cmip07c.pdf 
+  | title=Analytic Number Theory: A Tribute to Gauss and Dirichlet 
+  | publisher=[[American Mathematical Society]] & [[Clay Mathematics Institute]] 
+  | year=2007 
+  | isbn=978-0-8218-4307-9 
+  | editor-last=Duke 
+  | editor-first=William 
+  | editor-link=William Duke (mathematician)
+  | editor-last2=Tschinkel 
+  | editor-first2=Yuri 
+  | editor-link2=Yuri Tschinkel 
+  | series=Clay Mathematics Proceedings 
+  | volume=7 
+  | pages=247–256  
+}}
+
+* {{cite journal 
+  | last=Watkins 
+  | first=Mark 
+  | title=Class numbers of imaginary quadratic fields 
+  | journal=[[Mathematics of Computation]] 
+  | volume=73 
+  | issue=246 
+  | year=2004 
+  | pages=907–938 
+  | doi=10.1090/S0025-5718-03-01517-5
+}}
+
+{{refend}}
+
+==External links==
+* {{MathWorld|title=Gauss's Class Number Problem|urlname=GausssClassNumberProblem}}
+
+[[Category:Algebraic number theory]]
+[[Category:Mathematical problems]]
+[[Category:Unsolved problems in number theory]]

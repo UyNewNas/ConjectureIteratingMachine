@@ -1,0 +1,146 @@
+{{unsolved|mathematics|Do minor-closed graph families have <math>\ell_1</math> embeddings with bounded distortion?}}
+[[File:ℓ₁ embedding.svg|thumb|upright=1.35|An [[isometry|isometric]] embedding of the weighted graph on the left into [[Lp space|{{math|ℓ₁}} space]]. The [[taxicab distance]] between each vertex in the embedding exactly matches the [[distance (graph theory)|graph distance]] between vertices in the weighted graph, meaning the ''stretch factor'' is 1 (and therefore it is isometric).]]
+In [[theoretical computer science]] and [[metric geometry]], the '''GNRS conjecture''' connects the theory of [[graph minor]]s, the [[stretch factor]] of [[embedding]]s, and the [[approximation ratio]] of [[multi-commodity flow problem]]s. It is named after Anupam Gupta, Ilan Newman, Yuri Rabinovich, and [[Alistair Sinclair]], who formulated it in 2004.{{r|gnrs}}
+
+==Formulation==
+One formulation of the conjecture involves embeddings of the [[shortest path problem|shortest path distances]] of weighted [[undirected graph]]s into [[Lp space|{{math|ℓ₁}} spaces]], real [[vector space]]s in which the distance between two vectors is the sum of their coordinate differences. If an embedding maps all pairs of vertices with distance <math>d</math> to pairs of vectors with distance in the range <math>[cd,Cd]</math> then its [[stretch factor]] or distortion is the ratio <math>C/c</math>; an [[isometry]] has stretch factor one, and all other embeddings have greater stretch factor.{{r|gnrs}}
+
+The graphs that have an embedding with at most a given distortion are closed under [[graph minor]] operations, operations that delete vertices or edges from a graph or contract some of its edges. The GNRS conjecture states that, conversely, every minor-closed family of graphs, other than the family of all graphs, can be embedded into an <math>\ell_1</math> space with bounded distortion. That is, the distortion of graphs in the family is bounded by a constant that depends on the family but not on the individual graphs. For instance, the [[planar graph]]s are closed under minors. Therefore, it would follow from the GNRS conjecture that the planar graphs have bounded distortion.{{r|gnrs}}
+
+An alternative formulation involves analogues of the [[max-flow min-cut theorem]] for undirected [[multi-commodity flow problem]]s. The ratio of the maximum flow to the minimum cut, in such problems, is known as the ''flow-cut gap''. The largest flow-cut gap that a flow problem can have on a given graph equals the distortion of the optimal <math>\ell_1</math> embedding of the graph.{{r|ad|llr}} Therefore, the GNRS conjecture can be rephrased as stating that the minor-closed families of graphs have bounded flow-cut gap.{{r|gnrs}}
+
+==Related results==
+Arbitrary <math>n</math>-vertex graphs (indeed, arbitrary <math>n</math>-point [[metric space]]s) have <math>\ell_1</math> embeddings with distortion <math>O(\log n)</math>.{{r|b}} Some graphs have logarithmic flow-cut gap, and in particular this is true for a multicommodity flow with every pair of vertices having equal demand on a bounded-degree [[expander graph]].{{r|lr}} Therefore, this logarithmic bound on the distortion of arbitrary graphs is tight. [[Planar graph]]s can be embedded with smaller distortion, <math>O(\sqrt{\log n})</math>.{{r|r}}
+
+Although the GNRS conjecture remains unsolved, it has been proven for some minor-closed graph families that bounded-distortion embeddings exist. These include the [[series–parallel graph]]s and the graphs of bounded [[circuit rank]],{{r|gnrs}} the graphs of bounded [[pathwidth]],{{r|ls}} the [[Clique-sum|2-clique-sums]] of graphs of bounded size,{{r|lp}} and the [[k-outerplanar graph|<math>k</math>-outerplanar graphs]].{{r|cgnrs}}
+
+In contrast to the behavior of metric embeddings into <math>\ell_1</math> spaces, every finite metric space has embeddings into <math>\ell_2</math> with stretch arbitrarily close to one by the [[Johnson–Lindenstrauss lemma]], and into <math>\ell_\infty</math> spaces with stretch exactly one by the [[tight span]] construction.
+
+==See also==
+* [[Partial cube]], a class of graphs with distortion-free unweighted <math>\ell_1</math>-embeddings
+
+==References==
+<references>
+
+<ref name=ad>{{citation
+ | last1 = Avis | first1 = David | author1-link = David Avis
+ | last2 = Deza | first2 = Michel | author2-link = Michel Deza
+ | doi = 10.1002/net.3230210602
+ | issue = 6
+ | journal = Networks
+ | mr = 1128272
+ | pages = 595–617
+ | title = The cut cone, <math>L^1</math> embeddability, complexity, and multicommodity flows
+ | volume = 21
+ | year = 1991}}</ref>
+
+<ref name=b>{{citation
+ | last = Bourgain | first = J. | authorlink = Jean Bourgain
+ | doi = 10.1007/BF02776078 | doi-access=
+ | issue = 1–2
+ | journal = [[Israel Journal of Mathematics]]
+ | mr = 815600
+ | pages = 46–52
+ | title = On Lipschitz embedding of finite metric spaces in Hilbert space
+ | volume = 52
+ | year = 1985}}</ref>
+
+<ref name=cgnrs>{{citation
+ | last1 = Chekuri | first1 = Chandra
+ | last2 = Gupta | first2 = Anupam
+ | last3 = Newman | first3 = Ilan
+ | last4 = Rabinovich | first4 = Yuri
+ | last5 = Sinclair | first5 = Alistair | author5-link = Alistair Sinclair
+ | doi = 10.1137/S0895480102417379
+ | issue = 1
+ | journal = [[SIAM Journal on Discrete Mathematics]]
+ | mr = 2257250
+ | pages = 119–136
+ | title = Embedding <math>k</math>-outerplanar graphs into <math>\ell_1</math>
+ | volume = 20
+ | year = 2006}}</ref>
+
+<ref name=gnrs>{{citation
+ | last1 = Gupta | first1 = Anupam
+ | last2 = Newman | first2 = Ilan
+ | last3 = Rabinovich | first3 = Yuri
+ | last4 = Sinclair | first4 = Alistair | author4-link = Alistair Sinclair
+ | doi = 10.1007/s00493-004-0015-x | doi-access=
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | mr = 2071334
+ | pages = 233–269
+ | title = Cuts, trees and <math>\ell_1</math>-embeddings of graphs
+ | volume = 24
+ | year = 2004}}</ref>
+
+<ref name=llr>{{citation
+ | last1 = Linial | first1 = Nathan | author1-link = Nati Linial 
+ | last2 = London | first2 = Eran
+ | last3 = Rabinovich | first3 = Yuri
+ | doi = 10.1007/BF01200757 | doi-access=
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | mr = 1337355
+ | pages = 215–245
+ | title = The geometry of graphs and some of its algorithmic applications
+ | volume = 15
+ | year = 1995}}</ref>
+
+<ref name=lp>{{citation
+ | last1 = Lee | first1 = James R.
+ | last2 = Poore | first2 = Daniel E.
+ | contribution = On the 2-sum embedding conjecture
+ | doi = 10.1145/2462356.2492436
+ | mr = 3208212
+ | pages = 197–206
+ | publisher = ACM | location = New York
+ | title = Proceedings of the Twenty-Ninth Annual Symposium on Computational Geometry (SoCG '13)
+ | year = 2013| isbn = 978-1-4503-2031-3
+ }}</ref>
+
+<ref name=lr>{{citation
+ | last1 = Leighton | first1 = Tom | author1-link = F. Thomson Leighton
+ | last2 = Rao | first2 = Satish
+ | doi = 10.1145/331524.331526
+ | issue = 6
+ | journal = [[Journal of the ACM]]
+ | mr = 1753034
+ | pages = 787–832
+ | title = Multicommodity max-flow min-cut theorems and their use in designing approximation algorithms
+ | volume = 46
+ | year = 1999| doi-access = free
+ }}</ref>
+
+<ref name=ls>{{citation
+ | last1 = Lee | first1 = James R.
+ | last2 = Sidiropoulos | first2 = Anastasios
+ | doi = 10.1007/s00493-013-2685-8
+ | issue = 3
+ | journal = [[Combinatorica]]
+ | mr = 3144806
+ | pages = 349–374
+ | title = Pathwidth, trees, and random embeddings
+ | volume = 33
+ | year = 2013| arxiv = 0910.1409
+ }}</ref>
+
+<ref name=r>{{citation
+ | last = Rao | first = Satish
+ | contribution = Small distortion and volume preserving embeddings for planar and Euclidean metrics
+ | doi = 10.1145/304893.304983
+ | mr = 1802217
+ | pages = 300–306
+ | publisher = ACM | location = New York
+ | title = Proceedings of the Fifteenth Annual Symposium on Computational Geometry (SoCG '99)
+ | year = 1999| doi-access = free
+ | isbn = 1-58113-068-6
+ }}</ref>
+
+</references>
+
+[[Category:Approximation algorithms]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Graph minor theory]]
+[[Category:Metric geometry]]

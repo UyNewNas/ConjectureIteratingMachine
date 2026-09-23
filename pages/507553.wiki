@@ -1,0 +1,263 @@
+{{Short description|Mathematics concept}}
+{{Use dmy dates|date=February 2023}}
+[[File:HadamardConjectureMIT.png|thumb|[[Gilbert Strang]] explains the Hadamard conjecture at [[MIT]] in 2005, using Sylvester's construction.]]
+In [[mathematics]], a '''Hadamard matrix''', named after the French mathematician [[Jacques Hadamard]], is a [[square matrix]] whose entries are either +1 or −1 and whose rows are mutually [[orthogonal matrix|orthogonal]]. In [[geometry|geometric]] terms, this means that each pair of rows in a Hadamard matrix represents two [[perpendicular]] [[vector (mathematics and physics)|vector]]s, while in [[combinatorics|combinatorial]] terms, it means that each pair of rows has matching entries in exactly half of their columns and mismatched entries in the remaining columns. It is a consequence of this definition that the corresponding properties hold for columns as well as rows. 
+
+The ''n''-dimensional [[Parallelepiped#Parallelotope|parallelotope]] spanned by the rows of an ''n'' × ''n'' Hadamard matrix has the maximum possible {{nowrap|''n''-dimensional}} [[volume]] among parallelotopes spanned by vectors whose entries are bounded in [[absolute value]] by 1. Equivalently, a Hadamard matrix has maximal [[determinant]] among [[matrix (mathematics)|matrices]] with entries of absolute value less than or equal to 1 and so is an extremal solution of [[Hadamard's maximal determinant problem]].
+
+Certain Hadamard matrices can almost directly be used as an [[error-correcting code]] using a [[Hadamard code]] (generalized in [[Reed–Muller code]]s), and are also used in [[balanced repeated replication]] (BRR), used by [[statistician]]s to estimate the [[variance]] of a [[parameter]] [[estimator]].
+
+==Properties==
+Let ''H'' be a Hadamard matrix of order ''n''. The [[transpose]] of ''H'' is closely related to its [[inverse matrix|inverse]]. In fact:
+
+: <math>H H^\textsf{T} = n I_n</math>
+
+where ''I<sub>n</sub>'' is the ''n'' × ''n'' [[identity matrix]] and ''H''<sup>T</sup> is the transpose of ''H''. To see that this is true, notice that the rows of ''H'' are all orthogonal vectors over the [[field (mathematics)|field]] of [[real number]]s and each have length <math>\sqrt{n}\,.</math> Dividing ''H'' through by this length gives an [[orthogonal matrix]] whose transpose is thus its inverse:
+
+: <math>\frac{1}{\sqrt{n}} H^\textsf{T} = \sqrt{n} H^{-1} </math>
+
+Multiplying by the length again gives the equality above. As a result,
+
+: <math>\operatorname{det}(H) = \pm\, n^{n/2},</math>
+
+where det(''H'') is the determinant of ''H''.
+
+Suppose that ''M'' is a [[complex number|complex]] matrix of order ''n'', whose entries are bounded by |''M<sub>ij</sub>''| ≤ 1, for each ''i'', ''j'' between 1 and ''n''. Then [[Hadamard's inequality|Hadamard's determinant bound]] states that
+
+: <math>|\operatorname{det}(M)| \leq n^{n/2}.</math>
+
+Equality in this bound is attained for a real matrix ''M'' [[if and only if]] ''M'' is a Hadamard matrix.
+
+The order of a Hadamard matrix must be 1, 2, or a multiple of 4.<ref>{{cite web|publisher=UC Denver|access-date=11 February 2023
+|url=http://math.ucdenver.edu/~wcherowi/courses/m6406/hadamard.pdf|title=Hadamard Matrices and Designs}}</ref>
+
+===Proof===
+The [[mathematical proof|proof]] of the nonexistence of Hadamard matrices with dimensions other than 1, 2, or a multiple of 4 follows:
+
+If <math>n>1</math>, then there is at least one scalar product of 2 rows which has to be 0. The scalar product is a sum of ''n'' values each of which is either 1 or −1, therefore the sum is [[parity (mathematics)|odd]] for odd ''n'', so ''n'' must be [[parity (mathematics)|even]].
+
+If <math>n = 4 m + 2</math> with <math>m \geq 1</math>, and there exists an <math>n \times n</math> Hadamard matrix <math>H = (h_{i,j})_{i,j \in \{0,1,...,n-1\}}</math>, then it has the property that for any <math>k \neq l</math>:
+:<math>\sum_{i=0}^{n-1} h_{k,i} h_{l,i} = 0</math>
+
+Now we define the matrix <math>A = (a_{i,j})_{i,j \in \{0,1,...,n-1\}}</math> by setting <math>a_{i,j} = h_{0,j}h_{i,j}</math>.
+Note that <math>A</math> has all 1s in row 0.
+We check that <math>A</math> is also a Hadamard matrix:
+:<math>\sum_{i=0}^{n-1} a_{k,i} a_{l,i} = \sum_{i=0}^{n-1} h_{0,i} h_{k,i} h_{0,i} h_{l,i} = \sum_{i=0}^{n-1} h_{0,i}^2 h_{k,i} h_{l,i} = \sum_{i=0}^{n-1} h_{k,i} h_{l,i} = 0.</math>
+
+Row 1 and row 2, like all other rows except row 0, must have <math>n/2</math> entries of 1 and <math>n/2</math> entries of −1 each. (*)
+
+Let <math>\alpha</math> denote the number of 1s of row 2 beneath 1s in row 1.
+Let <math>\beta</math> denote the number of −1s of row 2 beneath 1s in row 1.
+Let <math>\gamma</math> denote the number of 1s of row 2 beneath −1s in row 1.
+Let <math>\delta</math> denote the number of −1s of row 2 beneath −1s in row 1.
+
+Row 2 has to be orthogonal to row 1, so the number of products of entries of the rows resulting in 1, <math>\alpha + \delta</math>, has to match those resulting in −1, <math>\beta + \gamma</math>.
+Due to (*), we also have <math>n/2 = \alpha + \gamma = \beta + \delta</math>, from which we can express <math>\gamma = n/2 - \alpha</math> and <math>\delta = n/2 - \beta</math> and substitute:
+
+:<math>\alpha + \delta = \beta + \gamma</math>
+:<math>\alpha + \frac{n}{2} - \beta = \beta + \frac{n}{2} - \alpha</math>
+:<math>\alpha - \beta = \beta - \alpha</math>
+:<math>\alpha = \beta</math>
+
+But we have as the number of 1s in row 1 the odd number <math>n/2 = \alpha + \beta</math>, [[proof by contradiction|contradiction]].
+
+==Sylvester's construction==
+Examples of Hadamard matrices were actually first constructed by [[James Joseph Sylvester]] in 1867. Let ''H'' be a Hadamard matrix of order ''n''. Then the partitioned matrix
+:<math>\begin{bmatrix}
+  H &  H\\
+  H & -H
+\end{bmatrix}</math>
+
+is a Hadamard matrix of order 2''n''. This observation can be applied repeatedly and leads to the following sequence of matrices, also called [[Walsh matrix|Walsh matrices]].
+
+:<math>\begin{align}
+  H_1 &= \begin{bmatrix} 1 \end{bmatrix}, \\
+  H_2 &= \begin{bmatrix}
+    1 &  1 \\
+    1 & -1
+  \end{bmatrix}, \\
+  H_4 &= \begin{bmatrix}
+    1 &  1 &  1 &  1\\
+    1 & -1 &  1 & -1\\
+    1 &  1 & -1 & -1\\
+    1 & -1 & -1 &  1
+  \end{bmatrix},
+\end{align}</math>
+
+and
+
+:<math>
+  H_{2^k} = \begin{bmatrix}
+     H_{2^{k-1}} &  H_{2^{k-1}}\\
+     H_{2^{k-1}} & -H_{2^{k-1}}
+  \end{bmatrix} = H_2 \otimes H_{2^{k-1}},
+</math>
+
+for <math> 2 \le k \in N </math>, where <math> \otimes </math> denotes the [[Kronecker product]].
+
+In this manner, Sylvester constructed Hadamard matrices of order 2<sup>''k''</sup> for every non-negative [[integer]] ''k''.<ref>J.J. Sylvester. ''Thoughts on inverse orthogonal matrices, simultaneous sign successions, and tessellated pavements in two or more colours, with applications to Newton's rule, ornamental tile-work, and the theory of numbers.'' [[Philosophical Magazine]], 34:461–475, 1867</ref>
+
+Sylvester's matrices have a number of special properties. They are [[symmetric matrix|symmetric]] and, when ''k''&nbsp;≥&nbsp;1 (2<sup>''k''</sup> &nbsp;>&nbsp;1), have [[trace (linear algebra)|trace]] zero. The elements in the first column and the first row are all positive. The elements in all the other rows and columns are evenly divided between [[sign (mathematics)|positive and negative]]. Sylvester matrices are closely connected with [[Walsh function]]s.
+
+[[File:Binary Walsh matrix 16.svg|thumb|320px|Binary Hadamard matrix as a [[matrix multiplication|matrix product]].
+The binary matrix (white 0, red 1) is the result with operations in [[finite field|'''F'''<sub>2</sub>]]. The gray numbers show the result with operations in <math>\mathbb{N}</math>.]]
+===Alternative construction===
+If we map the elements of the Hadamard matrix using the [[group homomorphism]] <math> (\{1, -1\}, \times) \rightarrow (\{0, 1\}, +) </math>, where <math>(\{0, 1\}, +) </math> is the additive group of the [[finite field|field]] <math>\mathrm{GF}(2)</math> with two elements, we can describe an alternative construction of Sylvester's Hadamard matrix. First consider the matrix <math> F_n </math>, the <math> n\times 2^n </math> matrix whose columns consist of all ''n''-bit numbers arranged in ascending counting order. We may define <math> F_n </math> recursively by
+
+:<math>\begin{align}
+  F_1 &= \begin{bmatrix}0 & 1\end{bmatrix} \\
+  F_n &= \begin{bmatrix}
+    F_{n-1}             & F_{n-1} \\
+    0_{1\times 2^{n-1}} & 1_{1\times 2^{n-1}} \\
+  \end{bmatrix}.
+\end{align}</math>
+
+It can be shown by [[mathematical induction]] that the image of the Hadamard matrix under the above homomorphism is given by
+
+: <math>H_{2^n} \mapsto F_n^\textsf{T} F_n,</math>
+
+where the matrix arithmetic is done over <math>\mathrm{GF}(2)</math>.
+
+This construction demonstrates that the rows of the Hadamard matrix <math> H_{2^n} </math> can be viewed as a length <math> 2^n </math> linear [[error-correcting code]] of [[linear code#Popular notation|rank]] ''n'', and [[linear code#minimum distance|minimum distance]] <math> 2^{n-1} </math> with [[linear code#Popular notation|generating matrix]] <math> F_n. </math>
+
+This code is also referred to as a [[Walsh code]]. The [[Hadamard code]], by contrast, is constructed from the Hadamard matrix <math> H_{2^n} </math> by a slightly different procedure.
+
+==Hadamard conjecture==
+{{unsolved|mathematics|Is there a Hadamard matrix of order 4''k'' for every positive integer ''k''?}}
+The most important [[open problem|open question]] in the theory of Hadamard matrices is one of existence. Specifically, the '''Hadamard conjecture''' proposes that a Hadamard matrix of order 4''k'' exists for every positive integer ''k''. The Hadamard conjecture has also been attributed to Paley, although it was considered implicitly by others prior to Paley's work.<ref>{{cite journal
+ | last1 = Hedayat | first1 = A.
+ | last2 = Wallis | first2 = W. D.
+ | issue = 6
+ | journal = [[Annals of Statistics]]
+ | jstor = 2958712
+ | mr = 523759
+ | pages = 1184–1238
+ | title = Hadamard matrices and their applications
+ | volume = 6
+ | year = 1978
+ | doi=10.1214/aos/1176344370
+| doi-access = free
+ }}.</ref>
+
+A generalization of Sylvester's construction proves that if <math>H_n</math> and <math>H_m</math> are Hadamard matrices of orders ''n'' and ''m'' respectively, then <math>H_n \otimes H_m</math> is a Hadamard matrix of order ''nm''. This result is used to produce Hadamard matrices of higher order once those of smaller orders are known.
+
+Sylvester's 1867 construction yields Hadamard matrices of order 1, 2, 4, 8, 16, 32, etc. Hadamard matrices of orders 12 and 20 were subsequently constructed by Hadamard (in 1893).<ref>{{cite journal |first=J. |last=Hadamard |title=Résolution d'une question relative aux déterminants |journal=[[Bulletin des Sciences Mathématiques]] |volume=17 |pages=240–246 |year=1893 }}</ref> In 1933, [[Raymond Paley]] discovered the [[Paley construction]], which produces a Hadamard matrix of order ''q'' + 1 when ''q'' is any [[prime power]] that is [[modular arithmetic|congruent]] to 3 modulo 4 and that produces a Hadamard matrix of order 2(''q'' + 1) when ''q'' is a prime power that is congruent to 1 modulo 4.<ref>{{cite journal |first=R. E. A. C. |last=Paley |title=On orthogonal matrices |journal=[[Journal of Mathematics and Physics]] |volume=12 |issue= 1–4|pages=311–320 |year=1933 |doi= 10.1002/sapm1933121311}}</ref> His method uses [[finite field]]s.
+
+The smallest order that cannot be constructed by a combination of Sylvester's and Paley's methods is 92. A Hadamard matrix of this order was found using a computer by [[Leonard Baumert|Baumert]], [[Solomon W. Golomb|Golomb]], and [[Marshall Hall (mathematician)|Hall]] in 1962 at [[JPL]].<ref>{{cite journal |first1=L. |last1=Baumert |first2=S. W. |last2=Golomb |first3=M. Jr. |last3=Hall |title=Discovery of an Hadamard Matrix of Order 92 |journal=[[Bulletin of the American Mathematical Society]] |volume=68 |issue=3 |pages=237–238 |year=1962 |doi=10.1090/S0002-9904-1962-10761-7 |mr=0148686 |doi-access=free }}</ref> They used a construction, due to [[John Williamson (mathematician)|Williamson]],<ref>{{cite journal |first=J. |last=Williamson |title=Hadamard's determinant theorem and the sum of four squares |journal=[[Duke Mathematical Journal]] |volume=11 |issue=1 |pages=65–81 |year=1944 |doi=10.1215/S0012-7094-44-01108-7 |mr=0009590 }}</ref> that has yielded many additional orders. Many other methods for constructing Hadamard matrices are now known.
+
+In 2005, Hadi Kharaghani and Behruz Tayfeh-Rezaie published their construction of a Hadamard matrix of order 428.<ref>{{cite journal |first1=H. |last1=Kharaghani |first2=B. |last2=Tayfeh-Rezaie |title=A Hadamard matrix of order 428 |journal=Journal of Combinatorial Designs |volume=13 |year=2005 |issue=6 |pages=435–440 |doi=10.1002/jcd.20043 |s2cid=17206302 }}</ref>
+
+By 2014, there were 12 multiples of 4 less than 2000 for which no Hadamard matrix of that order was known.<ref name="dokovic">{{Cite journal| doi=10.1002/jcd.21358| last1=Đoković| first1=Dragomir Ž| last2=Golubitsky| first2=Oleg | last3=Kotsireas |first3=Ilias S. |title=Some new orders of Hadamard and Skew-Hadamard matrices| journal=Journal of Combinatorial Designs| year=2014| volume=22| issue=6|pages=270–277|  arxiv=1301.3671| s2cid=26598685}}</ref> They are:
+668, 716, 892, 1132, 1244, 1388, 1436, 1676, 1772, 1916, 1948, and 1964.
+
+In August 2026, [[Levent Alpöge]], Philippe Voinov, and Saul Reynolds-Haertle, assisted by [[Anthropic]]'s AI model [[Claude (language model)|Claude]], announced explicit constructions of Hadamard matrices for all twelve previously unknown orders below 2000, including order 668.<ref>{{cite web |last=Alpöge |first=Levent |date=August 12, 2026 |title=Hadamard matrices of orders below 2000 |url=https://x.com/__alpoge__/status/2087504785952182273 |website=X}}</ref>
+
+==Equivalence and uniqueness==
+Two Hadamard matrices are considered [[equivalence relation|equivalent]] if one can be obtained from the other by negating rows or columns, or by interchanging rows or columns. Up to equivalence, there is a unique Hadamard matrix of orders 1, 2, 4, 8, and 12. There are 5 inequivalent matrices of order 16, 3 of order 20, 60 of order 24, and 487 of order 28. Millions of inequivalent matrices are known for orders 32, 36, and 40. Using a [[equivalence relation#Comparing equivalence relations|coarser]] notion of equivalence that also allows [[transpose|transposition]], there are 4 inequivalent matrices of order 16, 3 of order 20, 36 of order 24, and 294 of order 28.<ref>{{cite journal|last=Wanless|first=I.M.|title=Permanents of matrices of signed ones|journal=Linear and Multilinear Algebra |year=2005 |volume=53 |issue=6|pages=427–433 |doi=10.1080/03081080500093990|s2cid=121547091}}</ref>
+
+Hadamard matrices are also uniquely recoverable, in the following sense: If an Hadamard matrix  <math>H</math> of order <math>n</math> has <math>O(n^2/\log n)</math> entries randomly deleted, then with overwhelming likelihood, one can perfectly recover the original matrix <math>H</math> from the damaged one. The algorithm of recovery has the same computational cost as matrix inversion.<ref>{{cite journal|last=Kline|first=J.|title=Geometric search for Hadamard matrices|journal=Theoretical Computer Science|year=2019 |volume=778 |pages=33–46|doi=10.1016/j.tcs.2019.01.025|s2cid=126730552|doi-access=free}}</ref>
+
+==Special cases==
+Many special cases of Hadamard matrices have been investigated in the mathematical literature.
+
+===Skew Hadamard matrices===
+A Hadamard matrix ''H'' is ''skew'' if <math>H^\textsf{T} + H = 2I.</math>  A skew Hadamard matrix remains a skew Hadamard matrix after multiplication of any row and its corresponding column by −1.   This makes it possible, for example, to normalize a skew Hadamard matrix so that all elements in the first row equal 1.
+
+Reid and Brown in 1972 showed that there exists a doubly regular [[tournament (graph theory)|tournament]] of order ''n'' if and only if there exists a skew Hadamard matrix of order ''n''&nbsp;+&nbsp;1.  In a mathematical tournament of order ''n'', each of ''n'' players plays one match against each of the other players, each match resulting in a win for one of the players and a loss for the other.  A tournament is regular if each player wins the same number of matches.  A regular tournament is doubly regular if the number of opponents beaten by both of two distinct players is the same for all pairs of distinct players.  Since each of the ''n''(''n'' − 1)/2 matches played results in a win for one of the players, each player wins (''n'' − 1)/2 matches (and loses the same number).  Since each of the (''n'' − 1)/2 players defeated by a given player also loses to (''n'' − 3)/2 other players, the number of player pairs (''i'', ''j'') such that ''j'' loses both to ''i'' and to the given player is (''n'' − 1)(''n'' − 3)/4.  The same result should be obtained if the pairs are counted differently: the given player and any of the ''n'' − 1 other players together defeat the same number of common opponents.  This common number of defeated opponents must therefore be (''n'' − 3)/4.  A skew Hadamard matrix is obtained by introducing an additional player who defeats all of the original players and then forming a matrix with rows and columns labeled by players according to the rule that row ''i'', column ''j'' contains 1 if ''i''&nbsp;=&nbsp;''j'' or ''i'' defeats ''j'' and −1 if ''j'' defeats ''i''.  This correspondence in reverse produces a doubly regular tournament from a skew Hadamard matrix, assuming the skew Hadamard matrix is normalized so that all elements of the first row equal 1.<ref>{{cite journal|last1=Reid|first1=K.B.|last2=Brown|first2=Ezra|title=Doubly regular tournaments are equivalent to skew hadamard matrices|journal=Journal of Combinatorial Theory, Series A |year=1972 |volume=12 |issue=3|pages=332–338 |doi=10.1016/0097-3165(72)90098-2|doi-access=free}}</ref>
+
+===Regular Hadamard matrices===
+[[Regular Hadamard matrices]] are real Hadamard matrices whose row and column sums are all equal. A necessary condition on the existence of a regular ''n'' × ''n'' Hadamard matrix is that ''n'' be a [[square number]]. A [[circulant]] matrix is manifestly regular, and therefore a circulant Hadamard matrix would have to be of square order. Moreover, if an ''n'' × ''n'' circulant Hadamard
+matrix existed with ''n'' > 1 then ''n'' would necessarily have to be of the form 4''u''<sup>2</sup> with ''u'' odd.<ref>{{cite journal |first=R. J. |last=Turyn |title=Character sums and difference sets |journal=[[Pacific Journal of Mathematics]] |volume=15 |issue=1 |pages=319–346 |year=1965 |mr=0179098 |doi=10.2140/pjm.1965.15.319|doi-access=free }}</ref><ref>{{cite book |first=R. J. |last=Turyn |chapter=Sequences with small correlation |editor-first=H. B. |editor-last=Mann |title=Error Correcting Codes |publisher=Wiley |location=New York |year=1969 |pages=195–228 }}</ref>
+
+===Circulant Hadamard matrices===
+{{main|Ryser's conjecture on circulant Hadamard matrices}}
+The circulant Hadamard matrix conjecture, however, asserts that, apart from the known 1 × 1 and 4 × 4 examples, no such matrices exist. This was verified for all but 26 values of ''u'' less than 10<sup>4</sup>.<ref>{{cite journal |first=B. |last=Schmidt |title=Cyclotomic integers and finite geometry |journal=[[Journal of the American Mathematical Society]] |volume=12 |issue=4 |pages=929–952 |year=1999 |doi=10.1090/S0894-0347-99-00298-2  |jstor=2646093 |doi-access=free |hdl=10356/92085 |hdl-access=free }}</ref>
+
+==Generalizations==
+One basic generalization is a [[weighing matrix]]. A weighing matrix is a square matrix in which entries may also be zero and which satisfies <math>WW^\textsf{T} = wI</math> for some w, its weight. A weighing matrix with its weight equal to its order is a Hadamard matrix.<ref name="Geramita1974">{{cite journal | last1=Geramita | first1=Anthony V. | last2=Pullman | first2=Norman J. | last3=Wallis | first3=Jennifer S. | title=Families of weighing matrices | journal=Bulletin of the Australian Mathematical Society | publisher=Cambridge University Press (CUP) | volume=10 | issue=1 | year=1974 | issn=0004-9727 | doi=10.1017/s0004972700040703 | pages=119–122| s2cid=122560830 | url=https://ro.uow.edu.au/infopapers/956 | doi-access=free }}</ref>
+
+Another generalization defines a [[complex Hadamard matrix]] to be a matrix in which the entries are complex numbers of unit [[Complex number#Polar complex plane|modulus]] and which satisfies ''H H<sup>*</sup> = n I<sub>n</sub>'' where ''H<sup>*</sup>'' is the [[conjugate transpose]] of ''H''. Complex Hadamard matrices arise in the study of [[operator algebra]]s and the theory of [[quantum computation]].
+[[Butson-type Hadamard matrices]] are complex Hadamard matrices in which the entries are taken to be ''q''<sup>th</sup> [[roots of unity]]. The term ''complex Hadamard matrix'' has been used by some authors to refer specifically to the case ''q'' = 4.
+
+Hadamard-type matrices over [[finite field]]s have also been considered. For an odd prime {{mvar|p}}, a Hadamard-type matrix over <math>\operatorname{GF}(p)</math> is an {{mvar|n}} by {{mvar|n}} matrix with entries in <math>\operatorname{GF}(p)</math> satisfying <math>HH^\textsf{T}=nI</math> modulo {{mvar|p}}. Kodama and Kojima showed that, while odd orders are restricted to quadratic residues modulo {{mvar|p}}, such matrices exist for every even order {{mvar|n}} with <math>n \not\equiv 0 \pmod p</math>.<ref>{{cite journal | last1=Kodama | first1=Iori | last2=Kojima | first2=Tetsuya | title=On Hadamard-Type Matrices of Even Orders over Finite Fields | journal=IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences | volume=E109-A | issue=3 | pages=393–395 | date=2026-03-01 | doi=10.1587/transfun.2025TAL0002 | bibcode=2026IEITF.109..393K | url=https://www.jstage.jst.go.jp/article/transfun/E109.A/3/E109.A_2025TAL0002/_article/-char/en }}</ref>
+
+==Practical applications==
+* [[Olivia MFSK]] – an amateur-radio digital protocol designed to work in difficult (low signal-to-noise ratio plus multipath propagation) conditions on shortwave bands.
+* [[Balanced repeated replication]] (BRR) – a technique used by statisticians to estimate the [[variance]] of a [[statistical estimator]].
+* [[Coded aperture]] spectrometry – an instrument for measuring the [[spectrum of light]]. The mask element used in coded aperture spectrometers is often a variant of a Hadamard matrix.
+* Feedback delay networks – Digital reverberation devices which use Hadamard matrices to blend sample values
+* [[Plackett–Burman design]] of experiments for investigating the dependence of some measured quantity on a number of [[independent variable]]s.
+* [[Robust parameter design (RPD)|Robust parameter designs]] for investigating noise factor impacts on responses
+* [[Compressed sensing]] for [[signal processing]] and under-determined linear systems (inverse problems)
+* [[Quantum gate#Hadamard gate|Quantum Hadamard gate]] for [[quantum computing]] and the [[Hadamard transform]] for quantum algorithms.
+* [[Phylogenetic tree|Phylogenetic inference]] using Hadamard transforms<ref>{{cite journal |author1=Hendy, Michael D |author2=Penny, David |title=A framework for the quantitative study of evolutionary trees |journal=Systematic Zoology |date=1989 |volume=38 |issue=4 |pages=297–309 |doi=10.2307/2992396 |jstor=2992396 |url=https://academic.oup.com/sysbio/article/38/4/297/1664224 |access-date=8 July 2026|url-access=subscription }}</ref>
+* [[Epistasis]] representations of all interaction orders<ref>{{cite book |last1=Bethke |first1=Albert D |title=Genetic Algorithms as Function Optimizers |date=1980 |pages=134 |url=https://www.proquest.com/docview/303018481 |access-date=8 July 2026 |id={{ProQuest|303018481}} |via=ProQuest }}</ref>
+
+==See also==
+* [[Combinatorial design]]
+* [[Hadamard transform]]
+* [[Quincunx matrix]]
+* [[Walsh matrix]]
+* [[Weighing matrix]]
+* [[Quantum logic gate]]
+* [[Algebraic signal processing]] – framework in which the Hadamard matrix arises as the character table of the elementary Abelian group <math>\mathbb{Z}_2^n</math>
+
+==Notes==
+{{reflist|2}}
+
+==Further reading==
+*{{cite journal|first1=L. D. | last1=Baumert | first2=Marshall | last2=Hall
+|title=Hadamard matrices of the Williamson type
+|journal=Math. Comp. | year=1965 | volume=19 | number=91 | pages=442–447
+|doi=10.1090/S0025-5718-1965-0179093-2  |mr=0179093| doi-access=free }}
+*{{cite book |first1=S. |last1=Georgiou |first2=C. |last2=Koukouvinos |first3=J. |last3=Seberry |chapter=Hadamard matrices, orthogonal designs and construction algorithms |pages=133–205 |title=Designs 2002: Further computational and constructive design theory |location=Boston |publisher=Kluwer |year=2003 |isbn=978-1-4020-7599-5 }}
+*{{cite journal | first1=J. M. |last1=Goethals | first2=J. J. | last2=Seidel
+|title=A skew Hadamard matrix of order 36 | journal=J. Austral. Math. Soc.
+|year=1970 | volume=11 | number=3 | pages=343–344
+|doi=10.1017/S144678870000673X |s2cid=14193297 |url=https://research.tue.nl/nl/publications/a-skew-hadamard-matrix-of-order-36(80ae7097-e743-4e80-b8d5-73bafbe12b58).html }}
+*{{cite journal|first1=Hiroshi | last1=Kimura
+|title=New Hadamard matrix of order 24
+|journal=[[Graphs and Combinatorics]] | year=1989 | volume=5 |
+pages=235–242 | number=1|doi=10.1007/BF01788676| s2cid=39169723
+}}
+* {{cite journal|doi=10.1214/aoms/1177730883 |first1=Alexander M.
+|last1=Mood
+|journal=Annals of Mathematical Statistics
+|year=1964
+|volume=17 |number=4 | title=On Hotelling's Weighing Problem
+|pages=432–446|doi-access=free
+}}
+*{{cite journal |first1=K. B. |last1=Reid |first2=E. |last2=Brown |title=Doubly regular tournaments are equivalent to skew Hadamard matrices |journal=J. Combin. Theory Ser. A |volume=12 |year=1972 |issue=3 |pages=332–338 |doi=10.1016/0097-3165(72)90098-2 |doi-access=free }}
+*{{cite journal| first1=Jennifer | last1=Seberry Wallis
+|title=On the existence of Hadamard matrices
+|year=1976 | journal=J. Comb. Theory A | volume=21 | number=2 | doi=10.1016/0097-3165(76)90062-5
+|pages=188–195| doi-access=free }}
+*{{cite journal|first1=Jennifer | last1=Seberry
+|title=A construction for generalized hadamard matrices
+|year=1980 | journal=J. Statist. Plann. Infer. | volume=4 | number=4 | doi=10.1016/0378-3758(80)90021-X 
+|pages=365–368| url=https://ro.uow.edu.au/infopapers/1001
+}}
+*{{cite journal |first1=J. |last1=Seberry |first2=B. |last2=Wysocki |first3=T. |last3=Wysocki |title=On some applications of Hadamard matrices |journal=Metrika |volume=62 |year=2005 |issue=2–3 |pages=221–239 |doi=10.1007/s00184-005-0415-y |s2cid=40646 |url=https://ro.uow.edu.au/infopapers/595 }}
+* {{cite journal| first1=Edward | last1=Spence
+|title=Classification of hadamard matrices of order 24 and 28
+|journal=Discrete Math.
+|year=1995 | volume=140 | number=1–3 | pages=185–242 | doi=10.1016/0012-365X(93)E0169-5 
+| doi-access=free }}
+*{{cite book |first1=R. K. |last1=Yarlagadda |first2=J. E. |last2=Hershey |title=Hadamard Matrix Analysis and Synthesis |year=1997 |location=Boston |publisher=Kluwer |isbn=978-0-7923-9826-4 }}
+
+==External links==
+*[http://rangevoting.org/SkewHad.html Skew Hadamard matrices] of all orders up to 100, including every type with order up to 28;
+* {{cite web | url = http://oeis.org/search?q=Hadamard+Matrix | title=Hadamard Matrix}} in [[OEIS]]
+* {{cite web | author=N. J. A. Sloane
+|url=http://neilsloane.com/hadamard
+|title=Library of Hadamard Matrices|author-link=N. J. A. Sloane
+}}
+*[https://drs.icar.gov.in/WebHadamard/WebHadamard.htm On-line utility] to obtain all orders up to 1000, except 668, 716, 876 & 892.
+*[https://cran.r-project.org/package=HadamardR R-Package] to generate Hadamard Matrices using [[R (programming language)|R]] 
+* [https://web.archive.org/web/20140714222854/http://blogs.jpl.nasa.gov/2013/08/slice-of-history-hadamard-matrix/ JPL: In 1961, mathematicians from NASA’s Jet Propulsion Laboratory and Caltech worked together to construct a Hadamard Matrix containing 92 rows and columns]
+
+{{Matrix classes}}
+
+[[Category:Combinatorial design]]
+[[Category:Matrices (mathematics)]]
+[[Category:Unsolved problems in mathematics]]

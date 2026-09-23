@@ -1,0 +1,125 @@
+{{Short description|On Hamiltonian cycles in toroidal graphs}}
+{{Use dmy dates|cs1-dates=ly|date=June 2025}}
+{{Use list-defined references|date=June 2025}}
+{{CS1 config|mode=cs2}}
+{{unsolved|mathematics|Does every [[k-vertex-connected graph|4-vertex-connected]] [[toroidal graph]] have a [[Hamiltonian cycle]]?}}
+[[File:Toroidal Hamiltonian.svg|thumb|upright=0.75|A [[k-vertex-connected graph|4-vertex-connected]] [[toroidal graph]] with a [[Hamiltonian cycle]] in red]]
+In [[graph theory]], the '''Grünbaum–Nash-Williams conjecture''' states that every [[k-vertex-connected graph|4-vertex-connected]] [[toroidal graph]] has a [[Hamiltonian cycle]].{{r|knz}} It is a generalization of [[Tutte's theorem on Hamiltonian cycles]], according to which every 4-vertex-connected [[planar graph]] has a Hamiltonian cycle.{{r|tutte}} An analogous theorem of Thomas and Yu holds for graphs on the [[projective plane]].{{r|ty94}}
+
+For 4-vertex-connected planar and projective planar graphs, more strongly, every edge belongs to a Hamiltonian cycle. However, this stronger property is not true of toroidal graphs. For instance, the [[Cartesian product of graphs|Cartesian product]] of two even cycles, with a diagonal added to one of its  quadrilateral faces, is a 4-vertex-connected toroidal graph none of whose Hamiltonian cycles contains the added diagonal.{{r|em|thomassen}}
+
+The conjecture was formulated in the early 1970s by [[Branko Grünbaum]]{{r|grunbaum}} and [[Crispin Nash-Williams]].{{r|nw}} As partial progress toward the conjecture, [[Robin Thomas (mathematician)|Robin Thomas]] and X. Yu proved that every 5-vertex-connected toroidal graph has a Hamiltonian cycle,{{r|ty97}} and (with W. Zang) that every 4-vertex-connected toroidal graph has a [[Hamiltonian path]].{{r|tyz}}
+
+==References==
+<references>
+
+<ref name=em>{{citation
+ | last1 = Ellingham | first1 = M. N.
+ | last2 = Marshall | first2 = Emily A.
+ | doi = 10.1007/s00373-015-1542-5
+ | issue = 1
+ | journal = [[Graphs and Combinatorics]]
+ | mr = 3436953
+ | pages = 111–121
+ | title = Criticality of counterexamples to toroidal edge-Hamiltonicity
+ | volume = 32
+ | year = 2016}}</ref>
+
+<ref name=grunbaum>{{citation
+ | last = Grünbaum | first = Branko | author-link = Branko Grünbaum
+ | doi = 10.1090/S0002-9904-1970-12601-5
+ | journal = [[Bulletin of the American Mathematical Society]]
+ | mr = 266050
+ | pages = 1131–1201
+ | title = Polytopes, graphs, and complexes
+ | volume = 76
+ | year = 1970| issue = 6 | doi-access = free
+ }}</ref>
+
+<ref name=knz>{{citation
+ | last1 = Kawarabayashi | first1 = Ken-ichi | author1-link = Ken-ichi Kawarabayashi
+ | last2 = Niu | first2 = Jianbing
+ | last3 = Zhang | first3 = Cun-Quan
+ | doi = 10.1016/j.ejc.2005.07.017
+ | issue = 1
+ | journal = [[European Journal of Combinatorics]]
+ | mr = 2261821
+ | pages = 315–321
+ | title = Chords of longest circuits in locally planar graphs
+ | volume = 28
+ | year = 2007}}</ref>
+
+<ref name=nw>{{citation
+ | last = Nash-Williams | first = C. St. J. A. | author-link = Crispin Nash-Williams
+ | contribution = Unexplored and semi-explored territories in graph theory
+ | mr = 387097
+ | pages = 149–186
+ | publisher = Academic Press
+ | title = New directions in the theory of graphs (Proc. Third Ann Arbor Conf., Univ. Michigan, Ann Arbor, Mich., 1971)
+ | year = 1973}}</ref>
+
+<ref name=thomassen>{{citation
+ | last = Thomassen | first = Carsten | author-link = Carsten Thomassen (mathematician)
+ | doi = 10.1002/jgt.3190070205
+ | issue = 2
+ | journal = [[Journal of Graph Theory]]
+ | mr = 698698
+ | pages = 169–176
+ | title = A theorem on paths in planar graphs
+ | volume = 7
+ | year = 1983}}</ref>
+
+<ref name=tutte>{{citation
+ | last = Tutte | first = W. T. | author-link = W. T. Tutte
+ | doi = 10.2307/1992980
+ | journal = [[Transactions of the American Mathematical Society]]
+ | mr = 81471
+ | pages = 99–116
+ | title = A theorem on planar graphs
+ | volume = 82
+ | year = 1956| issue = 1 | jstor = 1992980 }}</ref>
+
+<ref name=ty94>{{citation
+ | last1 = Thomas | first1 = Robin | author1-link = Robin Thomas (mathematician)
+ | last2 = Yu | first2 = Xingxing
+ | doi = 10.1006/jctb.1994.1058
+ | issue = 1
+ | journal = [[Journal of Combinatorial Theory, Series B]]
+ | mr = 1290634
+ | pages = 114–132
+ | title = 4-connected projective-planar graphs are Hamiltonian
+ | volume = 62
+ | year = 1994}}</ref>
+
+<ref name=ty97>{{citation
+ | last1 = Thomas | first1 = Robin | author1-link = Robin Thomas (mathematician)
+ | last2 = Yu | first2 = Xingxing
+ | doi = 10.1006/jctb.1996.1713
+ | issue = 1
+ | journal = [[Journal of Combinatorial Theory, Series B]]
+ | mr = 1426752
+ | pages = 79–96
+ | title = Five-connected toroidal graphs are Hamiltonian
+ | volume = 69
+ | year = 1997}}</ref>
+
+<ref name=tyz>{{citation
+ | last1 = Thomas | first1 = Robin | author1-link = Robin Thomas (mathematician)
+ | last2 = Yu | first2 = Xingxing
+ | last3 = Zang | first3 = Wenan
+ | doi = 10.1016/j.jctb.2005.01.002
+ | issue = 2
+ | journal = [[Journal of Combinatorial Theory, Series B]]
+ | mr = 2145513
+ | pages = 214–236
+ | series = Series B
+ | title = Hamilton paths in toroidal graphs
+ | volume = 94
+ | year = 2005| hdl = 10722/156133
+ | hdl-access = free
+ }}</ref>
+
+</references>
+
+[[Category:Hamiltonian paths and cycles]]
+[[Category:Unsolved problems in graph theory]]

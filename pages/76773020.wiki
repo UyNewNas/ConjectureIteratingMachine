@@ -1,0 +1,62 @@
+{{Short description|Problem in computational complexity theory}}
+
+{{unsolved|computer science|Is there an algorithm for solving the OMv problem in time <math>O(n^{3-\varepsilon})</math>, for some constant <math>\varepsilon>0</math>?}}
+
+In [[computational complexity theory]], the '''online matrix-vector multiplication problem''' (OMv) asks an [[online algorithm]] to return, at each round, the product of an <math>n\times n</math> matrix and a newly-arrived <math>n</math>-dimensional vector. OMv is conjectured to require roughly cubic time. This conjectured hardness implies lower bounds on the time needed to solve various [[Dynamic problem (algorithms)|dynamic problems]] and is of particular interest in [[Fine-grained reduction|fine-grained complexity]].<ref name=":1" /><ref name=":0" /><ref>{{Cite book |last1=Henzinger |first1=Monika |last2=Saha |first2=Barna |last3=Seybold |first3=Martin P. |last4=Ye |first4=Christopher |title=On the Complexity of Algorithms with Predictions for Dynamic Graph Problems |date=2024 |volume=287 |pages=62:1–62:25 |publisher=Schloss Dagstuhl – Leibniz-Zentrum für Informatik |language=en |doi=10.4230/LIPIcs.ITCS.2024.62|doi-access=free |isbn=978-3-95977-309-6 }}</ref>
+
+== Definition ==
+
+In OMv, an algorithm is given an integer <math>n</math> and an <math>n\times n</math> Boolean matrix <math>M</math>. The algorithm then runs for <math>n</math> rounds, and at each round <math>i</math> receives an <math>n</math>-dimensional Boolean vector <math>v_i</math> and must return the product <math>Mv_i</math> (before continuing to round <math>i+1</math>).<ref name=":0" />
+
+An algorithm is said to solve OMv if, with probability at least <math>2/3</math> over the randomness of the algorithm, it returns the product <math>Mv_i</math> at every round <math>i</math>.
+
+=== Variants of OMv ===
+
+The '''online vector-matrix-vector problem''' (OuMv) is a variant of OMv where the algorithm receives, at each round <math>i</math>, two Boolean vectors <math>u_i</math> and <math>v_i</math>, and returns the product <math>u_i M v_i</math>. This version has the benefit of returning a Boolean value at each round instead of a vector of an <math>n</math>-dimensional Boolean vector. The hardness of OuMv is implied by the hardness of OMv.<ref name=":0" />
+
+More heavily parameterized variants of OMv are also used, where the matrix <math>M</math> is not necessarily square and where the dimension of each vector <math>v_i</math> is not necessarily equal to the number of rounds.
+
+== Conjectured hardness ==
+
+In 2015, Henzinger, Krinninger, Nanongkai, and Saranurak conjectured that OMv cannot be solved in "truly subcubic" time.<ref name=":0">{{Cite book |last1=Henzinger |first1=Monika |last2=Krinninger |first2=Sebastian |last3=Nanongkai |first3=Danupon |last4=Saranurak |first4=Thatchaphol |chapter=Unifying and Strengthening Hardness for Dynamic Problems via the Online Matrix-Vector Multiplication Conjecture |title=Proceedings of the forty-seventh annual ACM symposium on Theory of Computing |chapter-url=https://doi.org/10.1145/2746539.2746609 |date=2015 |publisher=Association for Computing Machinery |pages=21–30 |doi=10.1145/2746539.2746609 |isbn=978-1-4503-3536-2|arxiv=1511.06773 }}</ref> Formally, they presented the following conjecture:
+
+{{Blockquote
+|text=For any constant <math>\varepsilon>0</math>, there is no <math>O(n^{3-\varepsilon})</math>-time algorithm that solves OMv with probability at least <math>2/3</math>.
+}}
+
+=== Algorithms for solving OMv ===
+
+OMv can be solved in <math>O(n^3)</math> time by a naive algorithm that, in each of the <math>n</math> rounds, multiplies the matrix <math>M</math> and the new vector <math>v_i</math> in <math>O(n^2)</math> time. A faster algorithm for OMv is implied by a result of Williams and runs in time <math>O(n^3/\log^2 n)</math>.<ref>{{Cite book |last=Williams |first=Ryan |chapter=Matrix-vector multiplication in sub-quadratic time: (Some preprocessing required) |date=2007-01-07 |chapter-url=https://dl.acm.org/doi/10.5555/1283383.1283490 |title=SODA '07: Proceedings of the eighteenth annual ACM-SIAM symposium on Discrete algorithms |pages=995–1001 |publisher=Society for Industrial and Applied Mathematics |isbn=978-0-89871-624-5}}</ref> The fastest known algorithm for OMv runs in time <math>n^3/2^{\Omega{\sqrt{\log n}}}</math>, due to Larsen and Williams.<ref>{{Cite book |last1=Larsen |first1=Kasper Green |last2=Williams |first2=Ryan |chapter=Faster Online Matrix-Vector Multiplication |date=2017-01-16 |chapter-url=https://dl.acm.org/doi/10.5555/3039686.3039828 |title=SODA '17: Proceedings of the Twenty-Eighth Annual ACM-SIAM Symposium on Discrete Algorithms |pages=2182–2189 |arxiv=1605.01695 |isbn= 978-1-61197-478-2}}</ref> 
+
+=== Implications of conjectured hardness ===
+
+The OMv conjecture implies lower bounds on the time needed to solve a large class of dynamic graph problems, including [[reachability]] and [[Connectivity (graph theory)|connectivity]], [[Shortest path problem|shortest path]], and subgraph detection. For many of these problems, the implied lower bounds have matching upper bounds.<ref name=":0" /> While some of these lower bounds also followed from previous conjectures (e.g., [[3SUM]]),<ref>{{cite book
+ | last1 = Abboud | first1 = Amir
+ | last2 = Williams | first2 = Virginia Vassilevska | title = 2014 IEEE 55th Annual Symposium on Foundations of Computer Science
+ | chapter = Popular Conjectures Imply Strong Lower Bounds for Dynamic Problems
+ | author2-link = Virginia Vassilevska Williams
+ | arxiv = 1402.0054
+ | doi = 10.1109/FOCS.2014.53
+ | pages = 434–443
+ | publisher = IEEE Computer Society
+ | year = 2014| isbn = 978-1-4799-6517-5
+ }}</ref> many of the lower bounds that follow from OMv are stronger or new.
+
+Later work showed that the OMv conjecture implies lower bounds on the time needed for subgraph counting in [[Average-case complexity|average-case]] graphs.<ref name=":1">{{Cite book |last1=Henzinger |first1=Monika |last2=Lincoln |first2=Andrea |last3=Saha|first3=Barna |title=Proceedings of the 2022 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA) |chapter=The Complexity of Average-Case Dynamic Subgraph Counting |chapter-url=https://doi.org/10.1137/1.9781611977073.23 |date=2022 |pages=459–498 |doi=10.1137/1.9781611977073.23 |isbn=978-1-61197-707-3 }}</ref>
+
+==== Lower bounds from OMv ====
+Several lower bounds for dynamic problems follow from the OMv conjecture. Examples of tight lower bounds include the following.
+
+* [[Pagh's problem]] on <math>k</math> subsets from a size-<math>n</math> universe requires linear time.<ref name=":0" />
+* Determining s-t [[reachability]] for a (worst-case) dynamic graph on a graph with <math>n</math> nodes and <math>m\leq n^2</math> edges requires <math>\widetilde{\Omega}(m)</math> time.<ref name=":0" />
+* Counting 4-cycles in average-case, dynamic graphs with <math>n</math> nodes requires <math>\widetilde{\Omega}(n^2)</math> time.<ref name=":1" />
+* Counting length-5 paths in average-case, dynamic graphs with <math>n</math> nodes requires <math>\widetilde{\Omega}(n^3)</math> time.<ref name=":1" />
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+{{Authority control}}
+
+[[Category:Unsolved problems in computer science]]
+[[Category:Computational problems]]

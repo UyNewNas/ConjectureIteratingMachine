@@ -1,0 +1,141 @@
+{{Short description|Unsolved problem in combinatorial geometry}}
+[[Image:Kobon triangles.gif|right|frame|Kobon triangles generated with 3, 4 and 5 straight line segments.]]
+{{unsolved|mathematics|How many non-overlapping triangles can be formed in an arrangement of <math>k</math> lines?}}
+
+The '''Kobon triangle problem''' is an [[open problem|unsolved problem]] in [[combinatorial geometry]] first stated by [[Kobon Fujimura]] (1903-1983). The problem asks for the largest number ''N''(''k'') of nonoverlapping [[triangle]]s whose sides lie on an [[arrangement of lines|arrangement of ''k'' lines]]. Variations of the problem consider the [[projective plane]] rather than the [[Euclidean plane]], and require that the triangles not be crossed by any other lines of the arrangement.<ref name="forge">{{citation|title=Straight line arrangements in the real projective plane|first1=D.|last1=Forge|first2=J. L.|last2=Ramírez Alfonsín|journal=[[Discrete and Computational Geometry]]|volume=20|issue=2|pages=155–161|year=1998|doi=10.1007/PL00009373|doi-access=free}}.</ref>
+
+== Known upper bounds ==
+Saburo Tamura [[mathematical proof|proved]] that the number of nonoverlapping triangles realizable by <math>k</math> lines is at most <math>\lfloor k(k-2)/3\rfloor</math>. G. Clément and J. Bader proved more strongly that this [[upper bound|bound]] cannot be achieved when <math>k</math> is [[modular arithmetic|congruent]] to 0 or 2 modulo 6.<ref name="bacl">{{Cite web |url=http://www.tik.ee.ethz.ch/sop/publicationListFiles/cb2007a.pdf |title=G. Clément and J. Bader. Tighter Upper Bound for the Number of Kobon Triangles. Draft Version, 2007. |access-date=2008-03-03 |archive-url=https://web.archive.org/web/20171111045109/http://www.tik.ee.ethz.ch/sop/publicationListFiles/cb2007a.pdf |archive-date=2017-11-11 |url-status=dead }}</ref> The maximum number of triangles is therefore at most one less in these cases. The same bounds can be equivalently stated, without use of the [[floor function]], as:
+<math display=block>\begin{cases}
+\frac 13 k (k-2) & \text{when } k \equiv 3,5 \pmod{6}; \\
+\frac 13 (k+1)(k-3) & \text{when } k \equiv 0,2 \pmod{6}; \\
+\frac 13 (k^2-2k-2) & \text{when } k \equiv 1,4 \pmod{6}.
+\end{cases}</math>
+
+Solutions yielding this number of triangles are known when <math>k</math> is 3, 4, 5, 6, 7, 8, 9, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31 or 33.<ref name="games">[http://www.mathpuzzle.com/MAA/45-Kobon/mathgames_02_08_06.html Ed Pegg Jr. on Math Games]</ref><ref name="Bartholdi">{{citation
+ | last1 = Bartholdi | first1 = Nicolas
+ | last2 = Blanc | first2 = Jérémy
+ | last3 = Loisel | first3 = Sébastien
+ | editor1-last = Goodman | editor1-first = Jacob E. | editor1-link = Jacob E. Goodman
+ | editor2-last = Pach | editor2-first = János | editor2-link = János Pach
+ | editor3-last = Pollack | editor3-first = Richard | editor3-link = Richard M. Pollack
+ | arxiv = 0706.0723
+ | contribution = On simple arrangements of lines and pseudo-lines in <math>\mathbb{P}^2</math> and <math>\mathbb{R}^2</math> with the maximum number of triangles
+ | contribution-url = https://algebra.dmi.unibas.ch/blanc/articles/simplearrangements.pdf
+ | doi = 10.1090/conm/453/08797
+ | isbn = 978-0-8218-4239-3
+ | mr = 2405679
+ | pages = 105–116
+ | publisher = American Mathematical Society | location = Providence, Rhode Island
+ | series = Contemporary Mathematics
+ | title = Surveys on Discrete and Computational Geometry: Proceedings of the 3rd AMS–IMS–SIAM Joint Summer Research Conference "Discrete and Computational Geometry—Twenty Years Later" held in Snowbird, UT, June 18–22, 2006
+ | volume = 453
+ | year = 2008}}</ref><ref>{{OEIS link|A006066}}</ref> 
+For ''k'' = 10, 11 and 12, the best solutions known reach a number of triangles one less than this upper bound.
+
+Furthermore, the upper bound for [[parity (mathematics)|even]] values <math>k</math> can be improved: <math>\lfloor k(k-7/3)/3\rfloor</math>.<ref name="Bartholdi" /> This bound can be reached for 10, 12 and 16.<ref name="games" />
+
+The upper bound for ''k'' = 11 has long been thought not to be reachable, which was shown to be correct in 2025 by Pavlo Savchuk with the use of a [[SAT solver]].<ref name="Savchuk">{{cite arXiv 
+| last1      = Savchuk
+| first1     = Pavlo
+| title      = Constructing Optimal Kobon Triangle Arrangements via Table Encoding, SAT Solving, and Heuristic Straightening
+| eprint      = 2507.07951
+| date       = 2025
+| class = math.CO
+}}</ref>
+
+== Known constructions ==
+The following bounds are known:
+
+{{-}}
+{| class="wikitable"
+|-
+| '''''k'''''|| '''3'''|| '''4'''|| '''5'''|| '''6'''||  '''7'''||  '''8'''||  '''9'''|| '''10'''|| '''11'''|| '''12'''|| '''13'''|| '''14'''|| '''15'''|| '''16'''|| '''17'''|| '''18'''|| '''19''' || '''20''' || '''21''' || ''' ''' || '''23''' || ''' ''' || '''25''' || ''' ''' || '''27''' || ''' ''' || '''29''' || ''' ''' || '''31''' || ''' ''' || '''33''' ||[[OEIS]]
+|-
+| Tamura's upper bound on ''N''(''k'')||  1|| 2|| 5|| 8|| 11|| 16|| 21|| 26|| 33|| 40|| 47|| 56|| 65|| 74|| 85|| 96|| 107 || 120|| 133|| || 161|| || 191|| || 225|| || 261|| ||299|| ||341||{{OEIS link|A032765}}
+|-
+| Improvements on Tamura's <ref name="bacl"/><ref name="Bartholdi"/><ref name="Savchuk"/>||  1|| 2|| 5|| 7|| 11|| 15|| 21|| 25|| 32|| 38|| 47|| 54|| 65|| 72|| 85|| 94|| 107|| 117|| 133|| || 161|| || 191|| ||225|| || 261|| ||299|| ||341||-
+|-
+| best known solution||style="background:palegreen;" | 1||style="background:palegreen;" | 2||style="background:palegreen;" | 5||style="background:palegreen;" | 7||style="background:palegreen;" | 11||style="background:palegreen;" | 15||style="background:palegreen;" | 21||  style="background:palegreen;" | 25||style="background:palegreen;" |  32|| style="background:palegreen;" | 38||style="background:palegreen;" | 47|| style="background:palegreen;" | 54||style="background:palegreen;" | 65|| style="background:palegreen;" | 72||style="background:palegreen;" | 85 || 93|| style="background:palegreen;" | 107 || style="background:palegreen;" | 117 || style="background:palegreen;" | 133 || ||style="background:palegreen;" | 161|| || style="background:palegreen;" |191|| ||style="background:palegreen;" | 225|| ||style="background:palegreen;" | 261|| ||style="background:palegreen;" | 299|| ||style="background:palegreen;" | 341||{{OEIS link|A006066}}
+|}
+
+==In the projective plane==
+[[File:Kobon 6 lines.png|thumb|Five lines forming a [[pentagram]], with one more horizontal line below them, form seven triangles: five in the pentagram, and two more formed by pairs of rays emanating from the corners of the pentagram. If the lower horizontal line is moved to the [[line at infinity]] of the [[projective plane]], all five pairs of rays emanating from the pentagram would form triangles with it.]]
+The version of the problem in the projective plane allows more triangles. In this version, it is convenient to include the [[line at infinity]] as one of the given lines, after which the triangles appear in three forms:
+*ordinary triangles among the remaining lines, bounded by three finite line segments,
+*triangles bounded by two rays that meet at a common apex and by a segment of the line at infinity, and
+*triangles bounded by a finite line segment and by two parallel rays that meet at a vertex on the line at infinity.
+For instance, an arrangement of five finite lines forming a [[pentagram]], together with a sixth line at infinity, has ten triangles: five in the pentagram, and five more bounded by pairs of rays.
+
+D. Forge and J. L. Ramirez Alfonsin provided a method for going from an arrangement in the projective plane with <math>k>3</math> lines and <math>\tfrac13k(k-1)</math> triangles (the maximum possible for <math>k>3</math>), with certain additional properties, to another solution with <math>K=2k-1</math> lines and <math>\tfrac13K(K-1)</math> triangles (again maximum), with the same additional properties. As they observe, it is possible to start this method with the projective arrangement of six lines and ten triangles described above, producing optimal projective arrangements whose numbers of lines are
+{{bi|left=1.6|6, 11, 21, 41, 81, ... .}}
+Thus, in the projective case, there are infinitely many different numbers of lines for which an optimal solution is known.<ref name="forge" />
+
+== In pseudoline arrangements ==
+The traditional problem of triangles in the Euclidean plane is often broken down into two parts: the equivalent problem but with an [[arrangement of pseudolines]], and the problem of the '''stretchability''' of the pseudoline arrangements that have an optimal triangle count. When working with pseudolines, pure [[combinatorics]] and [[group theory]] may be leveraged without needing to worry about violating rules like the [[theorem of Pappus]] or [[Desargues's theorem]].<ref name="Bartholdi"/><ref name="Felsner">
+{{cite book 
+ | last1 = Felsner
+ | first1 = Stefan
+ | last2 = Goodman
+ | first2 = Jacob E.
+ | title = Handbook of Discrete and Computational Geometry
+ | edition = 3rd
+ | date = 2017
+ | publisher = Chapman and Hall/CRC
+ | chapter = Pseudoline Arrangements
+ | chapter-url = https://page.math.tu-berlin.de/~felsner/Paper/pseudol.pdf
+ | isbn = 9781315119601
+}}
+</ref>
+
+A pseudoline arrangement is said to be ''stretchable'' if it is combinatorially equivalent to a line arrangement, meaning that you can straighten each one while maintaining the order in which each crosses each other, but it is [[Complete (complexity)|complete]] for the [[existential theory of the reals]] to distinguish stretchable arrangements from non-stretchable ones.<ref>
+{{citation
+ | last = Shor | first = P. W. | authorlink = Peter Shor
+ | contribution = Stretchability of pseudolines is NP-hard
+ | editor1-last = Gritzmann | editor1-first = P.
+ | editor2-last = Sturmfels | editor2-first = B. | editor2-link = Bernd Sturmfels
+ | location = Providence, R.I.
+ | pages = 531–554
+ | publisher = American Mathematical Society
+ | series = DIMACS Series in Discrete Mathematics and Theoretical Computer Science
+ | title = Applied Geometry and Discrete Mathematics: The Victor Klee Festschrift
+ | volume = 4
+ | year = 1991| title-link = Victor Klee }}</ref><ref>
+{{citation|first=Marcus|last=Schaefer|contribution=Complexity of some geometric and topological problems|contribution-url=http://ovid.cs.depaul.edu/documents/convex.pdf|title=Graph Drawing, 17th International Symposium, GS 2009, Chicago, IL, USA, September 2009, Revised Papers|series=Lecture Notes in Computer Science|publisher=Springer-Verlag|volume=5849|pages=334–344|doi=10.1007/978-3-642-11805-0_32|year=2010|title-link=International Symposium on Graph Drawing|isbn=978-3-642-11804-3|doi-access=free|access-date=2024-10-16|archive-date=2021-06-26|archive-url=https://web.archive.org/web/20210626212759/http://ovid.cs.depaul.edu/documents/convex.pdf|url-status=live}}
+</ref> 
+
+== Examples ==
+<gallery>
+Image:KobonTriangle_3.svg|3 lines, 1 triangle
+Image:KobonTriangle_4.svg|4 lines, 2 triangles
+Image:KobonTriangle_5.svg|5 lines, 5 triangles
+Image:KobonTriangle_6.svg|6 lines, 7 triangles
+Image:KobonTriangle_7.svg|7 lines, 11 triangles
+</gallery>
+<gallery widths=200 heights=200>
+</gallery>
+
+{| class="wikitable" width=100%
+!colspan=2|
+|- style="background:white; text-align:center;"
+|[[File:Kobon 19 107tri lines.svg|frameless|upright=1.75]] || [[File:Kobon 21 133tri 1 lines.svg|frameless|upright=1.75]]
+|- style="background:white; text-align:center;"
+|19 lines, 107 triangles || 21 lines, 133 triangles
+|-
+|}
+
+==See also==
+*[[Roberts's triangle theorem]], on the minimum number of triangles that <math>n</math> lines can form
+
+==References==
+{{Reflist}}
+
+==External links==
+*Johannes Bader, [https://web.archive.org/web/20160303180311/http://www.tik.ee.ethz.ch/sop/people/baderj/?page=other.php "Kobon Triangles"]
+*Roman Parpalak, [https://arnold.games/ Arnold's Puzzle], for problem 1983–4
+*Denis Utkin, Roman Parpalak, [https://ud1.github.io/kobon-solutions/gallery/ "Kobon & Arnold Solution gallery"]
+
+[[Category:Discrete geometry]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Recreational mathematics]]
+[[Category:Triangles]]

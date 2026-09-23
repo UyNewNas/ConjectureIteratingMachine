@@ -1,0 +1,719 @@
+{{Short description|Number used to approximate the square root of 2}}
+{{distinguish|Bell number}}
+
+[[File:Silver spiral approximation.svg|thumb|The sides of the [[square]]s used to construct a [[Silver ratio|silver spiral]] are the Pell numbers]]
+
+In [[mathematics]], the '''Pell numbers''' are an infinite [[integer sequence|sequence of integers]], known since ancient times, that comprise the [[denominator]]s of the [[closest rational approximation]]s to the [[square root of 2]]. This [[sequence]] of approximations begins {{sfrac|1|1}}, {{sfrac|3|2}}, {{sfrac|7|5}}, {{sfrac|17|12}}, and {{sfrac|41|29}}, so the sequence of Pell numbers begins with [[1]], [[2]], [[5]], [[12 (number)|12]], and [[29 (number)|29]]. The numerators of the same sequence of approximations are half the '''companion Pell numbers''' or '''Pell–Lucas numbers'''; these numbers form a second infinite sequence that begins with 2, [[6]], [[14 (number)|14]], [[34 (number)|34]], and [[82 (number)|82]].
+
+Both the Pell numbers and the companion Pell numbers may be calculated by means of a [[recurrence relation]] similar to that for the [[Fibonacci number]]s, and both sequences of numbers [[exponential growth|grow exponentially]], proportionally to [[Exponentiation#Integer powers in algebra|powers]] of the [[silver ratio]] 1&nbsp;+&nbsp;{{sqrt|2}}. As well as being used to approximate the [[Square root of 2|square root of two]], Pell numbers can be used to find [[square triangular number]]s, to construct [[integer]] approximations to the [[right isosceles triangle]], and to solve certain [[combinatorial enumeration]] problems.<ref>For instance, Sellers (2002) proves that the number of [[perfect matching]]s in the [[Cartesian product of graphs|Cartesian product]] of a [[path graph]] and the [[graph (discrete mathematics)|graph]] ''K''<sub>4</sub>&nbsp;−&nbsp;''e'' can be calculated as the product of a Pell number with the corresponding Fibonacci number.</ref>
+
+As with [[Pell's equation]], the name of the Pell numbers stems from [[Leonhard Euler]]'s mistaken attribution of the equation and the numbers derived from it to [[John Pell (mathematician)|John Pell]]. The Pell–Lucas numbers are also named after [[Édouard Lucas]], who studied sequences defined by recurrences of this type; the Pell and companion Pell numbers are [[Lucas sequence]]s.
+
+== Pell numbers ==
+
+The Pell numbers are defined by the [[recurrence relation]]:
+:<math>P_n=\begin{cases}0&\mbox{if }n=0;\\1&\mbox{if }n=1;\\2P_{n-1}+P_{n-2}&\mbox{otherwise.}\end{cases}</math>
+
+In words, the sequence of Pell numbers starts with 0 and 1, and then each Pell number is the sum of twice the previous Pell number, plus the Pell number before that. The first few terms of the sequence are
+:0, 1, 2, 5, 12, 29, 70, 169, 408, 985, 2378, 5741, 13860, … {{OEIS|id=A000129}}.
+
+Analogously to the [[Binet formula]], the Pell numbers can also be expressed by the closed form formula
+:<math>P_n=\frac{\left(1+\sqrt2\right)^n-\left(1-\sqrt2\right)^n}{2\sqrt2}.</math>
+For large values of ''n'', the {{nowrap|(1 + {{sqrt|2}})<sup>''n''</sup>}} term dominates this expression, so the Pell numbers are approximately proportional to powers of the [[silver ratio]] {{nowrap|1 + {{sqrt|2}}}}, analogous to the growth rate of Fibonacci numbers as powers of the [[golden ratio]].
+
+A third definition is possible, from the [[Matrix (mathematics)|matrix]] formula
+:<math>\begin{pmatrix} P_{n+1} & P_n \\ P_n & P_{n-1} \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ 1 & 0 \end{pmatrix}^n.</math>
+
+Many [[identity (mathematics)|identities]] can be derived or [[mathematical proof|proven]] from these definitions; for instance an identity analogous to [[Cassini's identity]] for Fibonacci numbers,
+:<math>P_{n+1}P_{n-1}-P_n^2 = (-1)^n,</math>
+is an immediate consequence of the matrix formula (found by considering the [[determinant]]s of the matrices on the left and right sides of the matrix formula).<ref>For the matrix formula and its consequences see Ercolano (1979) and Kilic and Tasci (2005). Additional identities for the Pell numbers are listed by Horadam (1971) and Bicknell (1975).</ref>
+
+== Approximation to the square root of two ==
+
+[[Image:Pell octagons.svg|thumb|300px|Rational approximations to [[regular polygon|regular]] [[octagon]]s, with coordinates derived from the Pell numbers.]]
+Pell numbers arise historically and most notably in the [[diophantine approximation|rational approximation]] to {{tmath|\sqrt2}}. If two large integers ''x'' and ''y'' form a solution to the [[Pell equation]]
+:<math>x^2-2y^2=\pm 1,</math>
+then their ratio {{tmath|x/y}} provides a close approximation to {{tmath|\sqrt2}}. The sequence of approximations of this form is
+:<math>\frac11, \frac32, \frac75, \frac{17}{12}, \frac{41}{29}, \frac{99}{70}, \dots</math>
+where the denominator of each [[fraction]] is a Pell number and the numerator is the sum of a Pell number and its predecessor in the sequence. That is, the solutions have the form
+:<math>\frac{P_{n-1}+P_n}{P_n}.</math>
+The approximation
+:<math>\sqrt 2\approx\frac{577}{408}</math>
+of this type was known to Indian mathematicians in the third or fourth century BCE.<ref>As recorded in the [[Shulba Sutras]]; see e.g. Dutka (1986), who cites Thibaut (1875) for this information.</ref> The Greek mathematicians of the fifth century BCE also knew of this sequence of approximations:<ref>See Knorr (1976) for the fifth century date, which matches [[Proclus]]' claim that the side and diameter numbers were discovered by the [[Pythagoreans]]. For more detailed exploration of later Greek knowledge of these numbers see Thompson (1929), Vedova (1951), Ridenhour (1986), Knorr (1998), and Filep (1999).</ref> Plato refers to the numerators as '''rational diameters'''.<ref>For instance, as several of the references from the previous note observe, in [[Plato's Republic]] there is a reference to the "rational diameter of 5", by which [[Plato]] means 7, the numerator of the approximation {{sfrac|7|5}} of which 5 is the denominator.</ref> In the second century CE [[Theon of Smyrna]] used the term the  '''side and diameter numbers''' to describe the denominators and numerators of this sequence.<ref>{{citation |title=History of Greek Mathematics |volume=I, From Thales to Euclid|first=Thomas Little|last=Heath|author-link=Thomas Little Heath |publisher=Oxford University Press |year=1921 |page=112 |url=https://archive.org/details/historyofgreekma01heat/page/112/ }}. Dover reprint, {{isbn|9780486240732 }}.</ref>
+
+These approximations can be derived from the [[simple continued fraction|continued fraction expansion]] of <math>\sqrt 2</math>:
+:<math> \sqrt2 = [1; 2, 2, 2, \ldots{}] = 1 + \cfrac 1 {2 + \cfrac 1 {2 + \cfrac 1 {2 + {{\vphantom x} \atop \displaystyle\ddots}}}}. </math>
+
+[[Truncation|Truncating]] this expansion to any number of terms produces one of the Pell-number-based approximations in this sequence; for instance, with seven {{tmath|2}}s,
+:<math>[1; 2, 2, 2, 2, 2, 2, 2] = \frac{577}{408}.</math>
+
+As [[Donald Knuth|Knuth]] (1994) describes, the fact that Pell numbers approximate {{tmath|\sqrt2}} allows them to be used for accurate rational approximations to a regular octagon with vertex coordinates {{nowrap|(±''P<sub>i</sub>'', ±''P''<sub>''i''+1</sub>)}} and {{nowrap|(±''P''<sub>''i''+1</sub>, ±''P<sub>i</sub>'')}}. All vertices are equally distant from the [[origin (mathematics)|origin]], and form nearly uniform [[angle]]s around the origin. Alternatively, the points  <math>(\pm(P_i+P_{i-1}),0)</math>, <math>(0,\pm(P_i+P_{i-1}))</math>, and <math>(\pm P_i,\pm P_i)</math> form approximate octagons in which the vertices are nearly equally distant from the origin and form uniform angles.
+
+== Primes and squares ==
+
+A '''Pell prime''' is a Pell number that is [[prime number|prime]]. The first few Pell primes are
+:2, 5, 29, 5741, 33461, 44560482149, 1746860020068409, 68480406462161287469, ... {{OEIS|id=A086383}}.
+The indices of these primes within the sequence of all Pell numbers are
+:2, 3, 5, 11, 13, 29, 41, 53, 59, 89, 97, 101, 167, 181, 191, 523, 929, 1217, 1301, 1361, 2087, 2273, 2393, 8093, ... {{OEIS|id=A096650}}
+These indices are all themselves prime. As with the Fibonacci numbers, a Pell number ''P''<sub>''n''</sub> can only be prime if ''n'' itself is prime, because if ''d'' is a [[divisor]] of ''n'' then ''P''<sub>''d''</sub> is a divisor of ''P''<sub>''n''</sub>.
+
+The only Pell numbers that are [[square number|squares]], [[perfect cube|cubes]], or any higher [[perfect power|power of an integer]] are 0, 1, and 169 = 13<sup>2</sup>.<ref>Pethő (1992); Cohn (1996). Although the Fibonacci numbers are defined by a very similar recurrence to the Pell numbers, Cohn writes that an analogous result for the Fibonacci numbers seems much more difficult to prove. (However, this was proven in 2006 by Bugeaud et al.)</ref>
+
+However, despite having so few squares or other powers, Pell numbers have a close connection to [[square triangular number]]s.<ref>Sesskin (1962). See the [[square triangular number]] article for a more detailed derivation.</ref> Specifically, these numbers arise from the following identity of Pell numbers:
+:<math>\bigl(\left(P_{k-1}+P_k\right)\cdot P_k\bigr)^2 = \frac{\left(P_{k-1}+P_k\right)^2\cdot\left(\left(P_{k-1}+P_k\right)^2-(-1)^k\right)}{2}.</math>
+The left side of this identity describes a square number, while the right side describes a [[triangular number]], so the result is a square triangular number.
+
+Falcón and Díaz-Barrero (2006) proved another identity relating Pell numbers to squares and showing that the sum of the Pell numbers up to ''P''<sub>4''n''+1</sub> is always a square:
+:<math>\sum_{i=0}^{4n+1} P_i = \left(\sum_{r=0}^n 2^r{2n+1\choose 2r}\right)^{\!2} = \left(P_{2n}+P_{2n+1}\right)^2.</math>
+For instance, the sum of the Pell numbers up to ''P''<sub>5</sub>, {{nowrap|1=0 + 1 + 2 + 5 + 12 + 29 = 49}}, is the square of {{nowrap|1=''P''<sub>2</sub> + ''P''<sub>3</sub> = 2 + 5 = 7}}. The numbers {{nowrap|''P''<sub>2''n''</sub> + ''P''<sub>2''n''+1</sub>}} forming the square roots of these sums,
+:1, 7, 41, 239, 1393, 8119, 47321, … {{OEIS|id=A002315}},
+are known as the [[Newman–Shanks–Williams number|Newman–Shanks–Williams (NSW) numbers]].
+
+== Pythagorean triples ==
+[[Image:Pell right triangles.svg|thumb|300px|Integer right triangles with nearly equal legs, derived from the Pell numbers.]]
+If a [[right triangle]] has integer side lengths ''a'', ''b'', ''c'' (necessarily satisfying the [[Pythagorean theorem]] {{nowrap|1=''a''<sup>2</sup> + ''b''<sup>2</sup> = ''c''<sup>2</sup>}}), then (''a'',''b'',''c'') is known as a [[Pythagorean triple]]. As Martin (1875) describes, the Pell numbers can be used to form Pythagorean triples in which ''a'' and ''b'' are one unit apart, corresponding to right triangles that are nearly [[isosceles triangle|isosceles]]. Each such triple has the form
+:<math>\left(2P_{n}P_{n+1}, P_{n+1}^2 - P_{n}^2, P_{n+1}^2 + P_{n}^2=P_{2n+1}\right).</math>
+The sequence of Pythagorean triples formed in this way is
+:(4,3,5), (20,21,29), (120,119,169), (696,697,985), …
+
+== Pell–Lucas numbers ==
+
+The '''companion Pell numbers''' or '''Pell–Lucas numbers''' are defined by the [[recurrence relation]]
+:<math>Q_n=\begin{cases}2&\mbox{if }n=0;\\2&\mbox{if }n=1;\\2Q_{n-1}+Q_{n-2}&\mbox{otherwise.}\end{cases}</math>
+
+In words: the first two numbers in the sequence are both 2, and each successive number is formed by adding twice the previous Pell–Lucas number to the Pell–Lucas number before that, or equivalently, by adding the next Pell number to the previous Pell number: thus, 82 is the companion to 29, and {{nowrap|1=82 = 2 × 34 + 14 = 70 + 12.}} The first few terms of the sequence are {{OEIS|id=A002203}}: [[2 (number)|2]], 2, [[6 (number)|6]], [[14 (number)|14]], [[34 (number)|34]], [[82 (number)|82]], [[198 (number)|198]], [[478 (number)|478]], …
+
+Like the relationship between [[Fibonacci number]]s and [[Lucas number]]s,
+:<math>Q_n=\frac{P_{2n}}{P_n}</math>
+for all [[natural number]]s ''n''.
+
+The companion Pell numbers can be expressed by the closed form formula
+:<math>Q_n=\left(1+\sqrt 2\right)^n+\left(1-\sqrt 2\right)^n.</math>
+
+These numbers are all [[parity (mathematics)|even]]; each such number is twice the numerator in one of the rational approximations to <math>\sqrt 2</math> discussed above.
+
+Like the Lucas sequence, if a Pell–Lucas number {{sfrac|1|2}}''Q<sub>n</sub>'' is prime, it is necessary that ''n'' be either prime or a [[power of 2]]. The Pell–Lucas primes are
+:3, 7, 17, 41, 239, 577, … {{OEIS|id=A086395}}.
+
+For these ''n'' are 
+:2, 3, 4, 5, 7, 8, 16, 19, 29, 47, 59, 163, 257, 421, … {{OEIS|id=A099088}}.
+
+== Computations and connections ==
+
+The following table gives the first few powers of the [[silver ratio]] ''δ'' = ''δ''<sub>S</sub> = 1&nbsp;+&nbsp;{{sqrt|2}} and its [[conjugate (square roots)|conjugate]] {{overline|''δ''}} = 1&nbsp;−&nbsp;{{sqrt|2}}. 
+
+:{| class="wikitable" style="text-align:center"
+|-
+! ''n''
+! (1 + {{sqrt|2}})<sup>''n''</sup>
+! (1 − {{sqrt|2}})<sup>''n''</sup>
+|-
+! 0
+| 1 + 0{{sqrt|2}} = 1
+| 1 − 0{{sqrt|2}} = 1
+|-
+! 1
+| 1 + 1{{sqrt|2}} = 2.41421…
+| 1 − 1{{sqrt|2}} = −0.41421…
+|-
+! 2
+| 3 + 2{{sqrt|2}} = 5.82842…
+| 3 − 2{{sqrt|2}} = 0.17157…
+|-
+! 3
+| 7 + 5{{sqrt|2}} = 14.07106…
+| 7 − 5{{sqrt|2}} = −0.07106…
+|-
+! 4
+| 17 + 12{{sqrt|2}} = 33.97056…
+| 17 − 12{{sqrt|2}} = 0.02943…
+|-
+! 5
+| 41 + 29{{sqrt|2}} = 82.01219…
+| 41 − 29{{sqrt|2}} = −0.01219…
+|-
+! 6
+| 99 + 70{{sqrt|2}} = 197.9949…
+| 99 − 70{{sqrt|2}} = 0.0050…
+|-
+! 7
+| 239 + 169{{sqrt|2}} = 478.00209…
+| 239 − 169{{sqrt|2}} = −0.00209…
+|-
+! 8
+| 577 + 408{{sqrt|2}} = 1153.99913…
+| 577 − 408{{sqrt|2}} = 0.00086…
+|-
+! 9
+| 1393 + 985{{sqrt|2}} = 2786.00035…
+| 1393 − 985{{sqrt|2}} = −0.00035…
+|-
+! 10
+| 3363 + 2378{{sqrt|2}} = 6725.99985…
+| 3363 − 2378{{sqrt|2}} = 0.00014…
+|-
+! 11
+| 8119 + 5741{{sqrt|2}} = 16238.00006…
+| 8119 − 5741{{sqrt|2}} = −0.00006…
+|-
+! 12
+| 19601 + 13860{{sqrt|2}} = 39201.99997…
+| 19601 − 13860{{sqrt|2}} = 0.00002…
+|}
+
+The [[coefficient]]s are the half-companion Pell numbers ''H<sub>n</sub>'' and the Pell numbers ''P<sub>n</sub>'' which are the (non-negative) solutions to {{nowrap|1=''H''<sup>2</sup> − 2''P''<sup>2</sup> = ±1}}.
+A [[square triangular number]] is a number
+
+:<math>N = \frac{t(t+1)}{2} = s^2,</math>
+
+which is both the ''t''-th triangular number and the ''s''-th square number. A ''near-isosceles Pythagorean triple'' is an integer solution to {{nowrap|1=''a''<sup>2</sup> + ''b''<sup>2</sup> = ''c''<sup>2</sup>}} where {{nowrap|1=''a'' + 1 = ''b''}}.
+
+The next table shows that splitting the [[parity (mathematics)|odd]] number ''H<sub>n</sub>'' into nearly equal halves gives a square triangular number when ''n'' is even and a near isosceles Pythagorean triple when ''n'' is odd. All solutions arise in this manner.
+
+:{| class="wikitable" style="text-align:center"
+|-
+!''n''
+!''H<sub>n</sub>''
+!''P<sub>n</sub>''
+!''t''
+!''t''&nbsp;+&thinsp;1
+!''s''
+!''a''
+!''b''
+!''c''
+|-
+!0
+|1
+|0
+|0
+|1
+|0
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|-
+!1
+|1
+|1
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|0
+|1
+|1
+|-
+!2
+|3
+|2
+|1
+|2
+|1
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|-
+!3
+|7
+|5
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|3
+|4
+|5
+|-
+!4
+|17
+|12
+|8
+|9
+|6
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|-
+!5
+|41
+|29
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|20
+|21
+|29
+|-
+!6
+|99
+|70
+|49
+|50
+|35
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|-
+!7
+|239
+|169
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|119
+|120
+|169
+|-
+!8
+|577
+|408
+|288
+|289
+|204
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|-
+!9
+|1393
+|985
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|696
+|697
+|985
+|-
+!10
+|3363
+|2378
+|1681
+|1682
+|1189
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|-
+!11
+|8119
+|5741
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|4059
+|4060
+|5741
+|-
+!12
+|19601
+|13860
+|9800
+|9801
+|6930
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|}
+
+=== Definitions ===
+The half-companion Pell numbers ''H<sub>n</sub>'' and the Pell numbers ''P<sub>n</sub>'' can be derived in a number of easily equivalent ways.
+
+==== Raising to powers ====
+
+:<math>\left(1+\sqrt2\right)^n = H_n+P_n\sqrt{2}</math>
+
+:<math>\left(1-\sqrt2\right)^n = H_n-P_n\sqrt{2}.</math>
+
+From this it follows that there are ''closed forms'':
+
+:<math>H_n = \frac{\left(1+\sqrt2\right)^n+\left(1-\sqrt2\right)^n}{2}.</math>
+and
+:<math>P_n\sqrt2 = \frac{\left(1+\sqrt2\right)^n-\left(1-\sqrt2\right)^n}{2}.</math>
+
+==== Paired recurrences ====
+
+:<math>H_n = \begin{cases}1&\mbox{if }n=0;\\H_{n-1}+2P_{n-1}&\mbox{otherwise.}\end{cases}</math>
+
+:<math>P_n = \begin{cases}0&\mbox{if }n=0;\\H_{n-1}+P_{n-1}&\mbox{otherwise.}\end{cases}</math>
+
+==== Reciprocal recurrence formulas ====
+Let ''n'' be at least 2.
+
+:<math>H_n = (3P_n-P_{n-2})/2 = 3P_{n-1}+P_{n-2};</math>
+
+:<math>P_n = (3H_n-H_{n-2})/4 = (3H_{n-1}+H_{n-2})/2.</math>
+
+==== Matrix formulations ====
+
+:<math>\begin{pmatrix} H_n \\ P_n \end{pmatrix} = \begin{pmatrix} 1 & 2 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} H_{n-1} \\ P_{n-1} \end{pmatrix} = \begin{pmatrix} 1 & 2 \\ 1 & 1 \end{pmatrix}^n \begin{pmatrix} 1 \\ 0 \end{pmatrix}.</math>
+
+So
+
+:<math>\begin{pmatrix} H_n & 2P_n \\ P_n & H_n \end{pmatrix} = \begin{pmatrix} 1 & 2 \\ 1 & 1 \end{pmatrix}^n .</math>
+
+=== Approximations ===
+
+The difference between ''H<sub>n</sub>'' and ''P<sub>n</sub>''{{sqrt|2}} is
+
+:<math>\left(1-\sqrt2\right)^n \approx (-0.41421)^n,</math>
+
+which goes rapidly to zero. So 
+
+:<math>\left(1+\sqrt2\right)^n = H_n+P_n\sqrt2</math>
+
+is extremely close to 2''H<sub>n</sub>''.
+
+From this last observation it follows that the integer ratios ''{{sfrac|H<sub>n</sub>|P<sub>n</sub>}}'' rapidly approach {{sqrt|2}}; and {{sfrac|''H<sub>n</sub>''|''H''<sub>''n''−1</sub>}} and {{sfrac|''P<sub>n</sub>''|''P''<sub>''n''−1</sub>}} rapidly approach 1&nbsp;+&nbsp;{{sqrt|2}}.
+
+=== ''H''<sup>2</sup>&nbsp;−&nbsp;2''P''<sup>2</sup>&nbsp;=&nbsp;±1 ===
+
+Since {{sqrt|2}} is irrational, we cannot have ''{{sfrac|H|P}}''&nbsp;=&nbsp;{{sqrt|2}}, i.e.,
+
+:<math>\frac{H^2}{P^2} = \frac{2P^2}{P^2}.</math>
+
+The best we can achieve is either
+
+:<math>\frac{H^2}{P^2} = \frac{2P^2-1}{P^2}\quad \mbox{or} \quad \frac{H^2}{P^2} = \frac{2P^2+1}{P^2}.</math>
+
+The (non-negative) solutions to {{nowrap|1=''H''<sup>2</sup> − 2''P''<sup>2</sup> = 1}} are exactly the pairs {{nowrap|(''H<sub>n</sub>'', ''P<sub>n</sub>'')}} with ''n'' even, and the solutions to {{nowrap|1=''H''<sup>2</sup> − 2''P''<sup>2</sup> = −1}} are exactly the pairs {{nowrap|(''H<sub>n</sub>'', ''P<sub>n</sub>'')}} with ''n'' odd. To see this, note first that
+
+:<math>H_{n+1}^2-2P_{n+1}^2 = \left(H_n+2P_n\right)^2-2\left(H_n+P_n\right)^2 = -\left(H_n^2-2P_n^2\right),</math>
+
+so that these differences, starting with {{nowrap|1=''H''{{su|b=0|p=2}} − 2''P''{{su|b=0|p=2}} = 1}}, are alternately 
+1 and −1. Then note that every positive solution comes in this way from a solution with smaller integers since 
+
+:<math>(2P-H)^2-2(H-P)^2 = -\left(H^2-2P^2\right).</math>
+
+The smaller solution also has positive integers, with the one exception: {{nowrap|1=''H'' = ''P'' = 1}} which comes from ''H''<sub>0</sub>&nbsp;=&nbsp;1 and ''P''<sub>0</sub>&nbsp;=&nbsp;0.
+
+=== Square triangular numbers ===
+{{main|Square triangular number}}
+The required equation
+
+:<math>\frac{t(t+1)}{2}=s^2</math>
+
+is equivalent to <math>4t^2+4t+1 = 8s^2+1,</math>
+which becomes {{nowrap|1=''H''<sup>2</sup> = 2''P''<sup>2</sup> + 1}} with the substitutions ''H''&nbsp;=&nbsp;2''t''&nbsp;+&thinsp;1 and ''P''&nbsp;=&nbsp;2''s''. Hence the ''n''-th solution is
+
+:<math>t_n = \frac{H_{2n}-1}{2} \quad\mbox{and}\quad s_n = \frac{P_{2n}}{2}.</math>
+
+Observe that ''t'' and ''t''&nbsp;+&thinsp;1 are relatively prime, so that {{sfrac|''t''(''t''&nbsp;+&thinsp;1)|2}}&nbsp;=&nbsp;''s''<sup>2</sup> happens exactly when they are adjacent integers, one a square ''H''<sup>2</sup> and the other twice a square 2''P''<sup>2</sup>. Since we know all solutions of that equation, we also have
+
+:<math>t_n=\begin{cases}2P_n^2&\mbox{if }n\mbox{ is even};\\H_{n}^2&\mbox{if }n\mbox{ is odd.}\end{cases}</math>
+and <math>s_n=H_nP_n.</math>
+
+This alternate expression is seen in the next table.
+
+:{| class="wikitable" style="text-align:center"
+|-
+!''n''
+!''H<sub>n</sub>''
+!''P<sub>n</sub>''
+!''t''
+!''t''&nbsp;+&thinsp;1
+!''s''
+!''a''
+!''b''
+!''c''
+|-
+!0
+|1
+|0
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|style="background: grey;"|&nbsp;
+|-
+!1
+|1
+|1
+|1
+|2
+|1
+|3
+|4
+|5
+|-
+!2
+|3
+|2
+|8
+|9
+|6
+|20
+|21
+|29
+|-
+!3
+|7
+|5
+|49
+|50
+|35
+|119
+|120
+|169
+|-
+!4
+|17
+|12
+|288
+|289
+|204
+|696
+|697
+|985
+|-
+!5
+|41
+|29
+|1681
+|1682
+|1189
+|4059
+|4060
+|5741
+|-
+!6
+|99
+|70
+|9800
+|9801
+|6930
+|23660
+|23661
+|33461
+|}
+
+=== Pythagorean triples ===
+
+The equality {{nowrap|1=''c''<sup>2</sup> = ''a''<sup>2</sup> + (''a'' + 1)<sup>2</sup> = 2''a''<sup>2</sup> + 2''a'' + 1}} occurs exactly when {{nowrap|1=2''c''<sup>2</sup> = 4''a''<sup>2</sup> + 4''a'' + 2}} which becomes {{nowrap|1=2''P''<sup>2</sup> = ''H''<sup>2</sup> + 1}} with the substitutions {{nowrap|1=''H'' = 2''a'' + 1}} and {{nowrap|1=''P'' = ''c''}}. Hence the ''n''-th solution is {{nowrap|1=''a<sub>n</sub>'' = {{sfrac|''H''<sub>2''n''+1</sub> − 1|2}}}} and {{nowrap|1=''c<sub>n</sub>'' = ''P''<sub>2''n''+1</sub>}}.
+
+The table above shows that, in one order or the other, ''a<sub>n</sub>'' and {{nowrap|1=''b<sub>n</sub>'' = ''a<sub>n</sub>'' + 1}} are {{nowrap|1=''H<sub>n</sub>H''<sub>''n''+1</sub>}} and {{nowrap|1=2''P<sub>n</sub>P''<sub>''n''+1</sub>}} while {{nowrap|1=''c<sub>n</sub>'' = ''H''<sub>''n''+1</sub>''P<sub>n</sub>'' + ''P''<sub>''n''+1</sub>''H<sub>n</sub>''}}.
+
+== Notes ==
+{{Reflist}}
+
+== References ==
+{{refbegin|30em}}
+*{{cite journal
+ | author = Bicknell, Marjorie
+ | title = A primer on the Pell sequence and related sequences
+ | journal = [[Fibonacci Quarterly]]
+ | volume = 13
+ | year = 1975
+ | issue = 4
+ | pages = 345–349
+ | doi = 10.1080/00150517.1975.12430627
+ | mr = 0387173 }}
+* {{cite journal | last1=Bugeaud | first1=Yann | last2=Mignotte | first2=Maurice | last3=Siksek | first3=Samir | title=Classical and modular approaches to exponential Diophantine equations I. Fibonacci and Lucas perfect powers | journal=Annals of Mathematics | volume=163 | issue=3 | date=2006 | issn=0003-486X | doi=10.4007/annals.2006.163.969 | doi-access=free | pages=969–1018 | url=http://annals.math.princeton.edu/wp-content/uploads/annals-v163-n3-p05.pdf | mr=2215137 | zbl=1113.11021 | access-date=2025-09-15}}
+*{{cite journal
+ | author = Cohn, J. H. E.
+ | title = Perfect Pell powers
+ | journal = [[Glasgow Mathematical Journal]]
+ | volume = 38
+ | year = 1996
+ | issue = 1
+ | pages = 19–20
+ | mr = 1373953 
+ | doi = 10.1017/S0017089500031207| doi-access = free
+ }}
+*{{cite journal
+ | author = Dutka, Jacques
+ | title = On square roots and their representations
+ | journal = [[Archive for History of Exact Sciences]]
+ | volume = 36
+ | issue = 1
+ | year = 1986
+ | pages = 21–39
+ | doi = 10.1007/BF00357439
+ | mr = 0863340 | s2cid = 122277481
+ }}
+*{{cite journal
+ | author = Ercolano, Joseph
+ | title = Matrix generators of Pell sequences
+ | journal = [[Fibonacci Quarterly]]
+ | volume = 17
+ | year = 1979
+ | issue = 1
+ | pages = 71–77
+ | doi = 10.1080/00150517.1979.12430264
+ | mr = 0525602 }}
+*{{cite journal
+ | author-link = László Filep
+ | author = Filep, László
+ | title = Pythagorean side and diagonal numbers
+ | journal = [[Acta Mathematica Academiae Paedagogicae Nyíregyháziensis]]
+ | volume = 15
+ | year = 1999
+ | pages = 1–7
+ | url = http://www.emis.de/journals/AMAPN/vol15/filep.pdf
+ | access-date = 2007-01-29
+ | archive-date = 2020-07-06
+ | archive-url = https://web.archive.org/web/20200706013018/https://www.emis.de/journals/AMAPN/vol15/filep.pdf
+ | url-status = dead
+ }}
+*{{cite journal
+ | author = Horadam, A. F.
+ | title = Pell identities
+ | journal = [[Fibonacci Quarterly]]
+ | volume = 9
+ | year = 1971
+ | issue = 3
+ | pages = 245–252, 263
+ | doi = 10.1080/00150517.1971.12431004
+ | mr = 0308029 }}
+*{{cite journal
+ |author1=Kilic, Emrah |author2=Tasci, Dursun | title = The linear algebra of the Pell matrix
+ | journal = Boletín de la Sociedad Matemática Mexicana, Tercera Serie
+ | volume = 11
+ | year = 2005
+ | issue = 2
+ | pages = 163–174
+ | mr = 2207722 }}
+*{{cite journal
+ | author = Knorr, Wilbur
+ | author-link = Wilbur Knorr
+ | title = Archimedes and the measurement of the circle: A new interpretation
+ | journal = [[Archive for History of Exact Sciences]]
+ | volume = 15
+ | issue = 2
+ | year = 1976
+ | pages = 115–140
+ | doi = 10.1007/BF00348496
+ | mr = 0497462 | s2cid = 120954547
+ }}
+*{{cite journal
+ | author = Knorr, Wilbur
+ | author-link = Wilbur Knorr
+ | title="Rational diameters" and the discovery of incommensurability
+ | jstor = 3109803
+ | journal = [[American Mathematical Monthly]]
+ | volume = 105
+ | issue = 5
+ | pages = 421–429
+ | year = 1998
+ | doi = 10.2307/3109803}}
+*{{cite journal
+ | author = Knuth, Donald E.
+ | author-link = Donald Knuth
+ | title = Leaper graphs
+ | jstor = 3620202
+ | journal = [[The Mathematical Gazette]]
+ | volume = 78
+ | issue = 483
+ | year = 1994
+ | pages = 274–297
+ | doi = 10.2307/3620202
+| arxiv=math.CO/9411240| bibcode = 1994math.....11240K
+ | s2cid = 16856513
+ }}
+*{{cite journal
+ | author = Martin, Artemas
+ | author-link = Artemas Martin
+ | title = Rational right angled triangles nearly isosceles
+ | journal = [[Annals of Mathematics|The Analyst]]
+ | volume = 3
+ | issue = 2
+ | pages = 47–50
+ | year = 1875
+ | jstor = 2635906
+ | doi = 10.2307/2635906}}
+*{{cite conference
+ | author = Pethő, A.
+ | title = The Pell sequence contains only trivial perfect powers
+ | book-title = Sets, graphs, and numbers (Budapest, 1991)
+ | publisher = Colloq. Math. Soc. János Bolyai, 60, North-Holland
+ | year = 1992
+ | pages = 561–568
+ | mr = 1218218 }}
+*{{cite journal
+ | doi = 10.2307/2690427
+ | author = Ridenhour, J. R.
+ | title = Ladder approximations of irrational numbers
+ | journal = [[Mathematics Magazine]]
+ | year = 1986
+ | volume = 59
+ | issue = 2
+ | pages = 95–105
+ | jstor = 2690427}}
+*{{cite journal
+ |last1       = Falcón Santana | first1 = Sergio
+ |last2       = Díaz-Barrero | first2 = José Luis
+ |year        = 2006
+ |title       = Some properties of sums involving Pell numbers
+ |journal     = [[Missouri Journal of Mathematical Sciences]]
+ |volume      = 18
+ |issue       = 1
+|doi=10.35834/2006/1801033|doi-access=free
+|hdl= 10553/72698
+ |hdl-access= free
+ }}
+*{{cite journal
+ | author = Sellers, James A.
+ | title = Domino tilings and products of Fibonacci and Pell numbers
+ | year = 2002
+ | journal = [[Journal of Integer Sequences]]
+ | volume = 5
+ | page = 12
+ | bibcode = 2002JIntS...5...12S
+ | url = http://www.emis.de/journals/JIS/VOL5/Sellers/sellers4.pdf
+ | mr = 1919941
+ | access-date = 2007-01-28
+ | archive-date = 2020-07-05
+ | archive-url = https://web.archive.org/web/20200705231252/https://www.emis.de/journals/JIS/VOL5/Sellers/sellers4.pdf
+ | url-status = dead
+ }}
+*{{cite journal
+ | doi = 10.2307/2688551
+ | author = Sesskin, Sam
+ | title = A "converse" to Fermat's last theorem?
+ | journal = [[Mathematics Magazine]]
+ | volume = 35
+ | issue = 4
+ | year = 1962
+ | pages = 215–217
+ | jstor=2688551}}
+*{{cite journal
+ | author = Thibaut, George
+ | author-link = George Thibaut
+ | title = On the Súlvasútras
+ | journal = [[Journal of the Royal Asiatic Society of Bengal]]
+ | volume = 44
+ | pages = 227–275
+ | year = 1875}}
+*{{cite journal
+ | author = Thompson, D'Arcy Wentworth
+ | author-link = D'Arcy Wentworth Thompson
+ | title = III.—Excess and defect: or the little more and the little less
+ | journal = [[Mind (journal)|Mind]] |series=New Series
+ | year = 1929
+ | volume = 38
+ | issue = 149
+ | pages = 43–55
+ | doi = 10.1093/mind/XXXVIII.149.43
+ | jstor = 2249223}}
+*{{cite journal
+ | author = Vedova, G. C.
+ | title = Notes on Theon of Smyrna
+ | jstor = 2307978
+ | journal = [[American Mathematical Monthly]]
+ | year = 1951
+ | volume = 58
+ | issue = 10
+ | pages = 675–683
+ | doi = 10.2307/2307978}}
+{{refend}}
+
+== External links ==
+*{{mathworld | title = Pell Number | urlname = PellNumber}}
+* {{OEIS el|1=A001333|2=Numerators of continued fraction convergents to sqrt(2)}}—The numerators of the same sequence of approximations
+
+{{Prime number classes}}
+{{Classes of natural numbers}}
+{{Metallic ratios}}
+{{series (mathematics)}}
+
+[[Category:Integer sequences]]
+[[Category:Recurrence relations]]
+[[Category:Unsolved problems in number theory]]

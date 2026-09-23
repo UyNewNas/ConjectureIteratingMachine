@@ -1,0 +1,82 @@
+{{Short description|Unsolved problem in mathematics}}
+{{Unsolved|mathematics|Is there an algorithm to test whether a constant-recursive sequence has a zero?}}
+
+In [[mathematics]], the '''Skolem problem''' (also called the '''Skolem-Pisot problem'''<ref>{{Cite book |last1=Luca |first1=Florian |last2=Ouaknine |first2=Joël |last3=Worrell |first3=James |date=2022 |editor-last=Szeider |editor-first=Stefan |title=A Universal Skolem Set of Positive Lower Density |editor2-last=Ganian |editor2-first=Robert |editor3-last=Silva |editor3-first=Alexandra  |volume=241 |pages=73:1–73:12 |doi=10.4230/LIPIcs.MFCS.2022.73 |doi-access=free |isbn=978-3-95977-256-3}}</ref>) is the problem of determining whether the values of a [[constant-recursive sequence]] include the number zero. The problem can be formulated for [[recurrence relation|recurrences]] over different types of numbers, including [[integer]]s, [[rational number]]s, and [[algebraic number]]s. It is not known whether there exists an [[algorithm]] that can solve this problem.<ref name="ow">{{citation
+ | last1 = Ouaknine | first1 = Joël
+ | last2 = Worrell | first2 = James
+ | contribution = Decision problems for linear recurrence sequences
+ | doi = 10.1007/978-3-642-33512-9_3
+ | mr = 3040104
+ | pages = 21–28
+ | publisher = Springer-Verlag | location = Heidelberg
+ | series = Lecture Notes in Computer Science
+ | title = Reachability Problems: 6th International Workshop, RP 2012, Bordeaux, France, September 17–19, 2012, Proceedings
+ | volume = 7550
+ | year = 2012| isbn = 978-3-642-33511-2
+ }}.</ref>
+
+A linear recurrence relation expresses the values of a [[sequence]] of numbers as a linear combination of earlier values; for instance, the [[Fibonacci number]]s may be defined from the recurrence relation
+:{{math|1=''F''(''n'') = ''F''(''n''&nbsp;−&thinsp;1) + ''F''(''n''&nbsp;−&nbsp;2)}}
+together with the initial values {{math|1=''F''(0) = 0}} and {{math|1=''F''(1) = 1}}.
+The Skolem problem is named after [[Thoralf Skolem]], because of his 1933 paper [[mathematical proof|proving]] the [[Skolem–Mahler–Lech theorem]] on the zeros of a sequence satisfying a [[linear recurrence with constant coefficients]].<ref>{{citation|last=Skolem|first=Th.|title=Einige Sätze über gewisse Reihenentwicklungen und exponentiale Beziehungen mit Anwendung auf diophantische Gleichungen|journal=Oslo Vid. Akad. Skrifter|volume=I|number=6|year=1933}}. {{harvtxt|Ouaknine|Worrell|2012}} instead cite a 1934 paper of Skolem for this result.</ref> This [[theorem]] states that, if such a sequence has zeros, then with finitely many exceptions the positions of the zeros repeat regularly. Skolem proved this for recurrences over the rational numbers, and Mahler and Lech extended it to other [[number system|systems of numbers]]. However, the proofs of the theorem do not show how to test whether there exist any zeros.
+
+There does exist an algorithm to test whether a constant-recursive sequence has infinitely many zeros, and if so to construct a decomposition of the positions of those zeros into periodic subsequences, based on the algebraic properties of the [[root of a polynomial|roots]] of the characteristic polynomial of the given recurrence.<ref>{{citation
+ | last1 = Berstel | first1 = Jean
+ | last2 = Mignotte | first2 = Maurice
+ | issue = 2
+ | journal = [[Bulletin de la Société Mathématique de France]]
+ | language = French
+ | mr = 0414475
+ | pages = 175–184
+ | title = Deux propriétés décidables des suites récurrentes linéaires
+ | url = http://www.numdam.org/item?id=BSMF_1976__104__175_0
+ | volume = 104
+ | year = 1976| doi = 10.24033/bsmf.1823
+ | doi-access = free
+ | url-access = subscription
+ }}.</ref> The remaining difficult part of the Skolem problem is determining whether the finite set of non-repeating zeros is [[empty set|empty]] or not.<ref name="ow"/>
+
+Partial solutions to the Skolem problem are known, covering the special case of the problem for recurrences of degree at most four. However, these solutions do not apply to recurrences of degree five or more.<ref name="ow"/><ref>{{citation
+ | last1 = Mignotte | first1 = M.
+ | last2 = Shorey | first2 = T. N. | author2-link = Tarlok Nath Shorey
+ | last3 = Tijdeman | first3 = R. | author3-link = Robert Tijdeman
+ | journal = [[Journal für die Reine und Angewandte Mathematik]]
+ | mr = 743965
+ | pages = 63–76
+ | title = The distance between terms of an algebraic recurrence sequence
+ | volume = 349
+ | year = 1984}}.</ref><ref>{{citation
+ | last = Vereshchagin | first = N. K.
+ | issue = 2
+ | journal = [[Mathematical Notes|Matematicheskie Zametki]]
+ | language = Russian
+ | mr = 808885
+ | pages = 177–189, 347
+ | title = The problem of the appearance of a zero in a linear recursive sequence
+ | volume = 38
+ | year = 1985}}.</ref>
+
+For integer recurrences, the Skolem problem is known to be [[NP-hard]].<ref>{{citation
+ | last1 = Blondel | first1 = Vincent D.
+ | last2 = Portier | first2 = Natacha
+ | doi = 10.1016/S0024-3795(01)00466-9
+ | journal = Linear Algebra and Its Applications
+ | mr = 1917474
+ | pages = 91–98
+ | title = The presence of a zero in an integer linear recurrent sequence is NP-hard to decide
+ | volume = 351/352
+ | year = 2002}}.</ref>
+
+==See also==
+
+* [[Constant-recursive sequence]]
+* [[Skolem–Mahler–Lech theorem]]
+
+==References==
+{{reflist}}
+
+==External links==
+*{{citation|url=https://terrytao.wordpress.com/2007/05/25/open-question-effective-skolem-mahler-lech-theorem/|first=Terence|last=Tao|authorlink=Terence Tao|title=Open question: effective Skolem–Mahler–Lech theorem|date=May 25, 2007|work=What's new}}
+
+[[Category:Recurrence relations]]
+[[Category:Unsolved problems in mathematics]]

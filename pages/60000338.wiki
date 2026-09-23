@@ -1,0 +1,205 @@
+{{unsolved|mathematics|How many tripods can have their apexes packed into a given cube?}}
+[[File:Tripod packing.svg|thumb|upright=1.35|A tripod packing and its corresponding monotonic matrix. This example corresponds to the 2-comparable set {(1,1,1), (1,3,3), (2,1,2), (2,4,3), (3,1,4), (3,4,5), (4,2,1), (4,5,3), (5,2,2), (5,3,4), (5,5,5)}.{{r|admos}}]]
+In [[combinatorics]], '''tripod packing''' is a problem of finding many disjoint tripods in a three-dimensional grid, where a tripod is an infinite [[polycube]], the union of the grid cubes along three positive axis-aligned rays with a shared apex.{{r|admos}}
+
+Several problems of tiling and packing tripods and related shapes were formulated in 1967 by [[Sherman K. Stein]].{{r|s67}} Stein originally called the tripods of this problem "semicrosses", and they were also called '''Stein corners''' by [[Solomon W. Golomb]].{{r|g}} A collection of disjoint tripods can be represented compactly as a '''monotonic matrix''', a square matrix whose nonzero entries increase along each row and column and whose equal nonzero entries are placed in a monotonic sequence of cells,{{r|ss}} and the problem can also be formulated in terms of finding sets of triples satisfying a compatibility condition called "2-comparability", or of finding compatible sets of triangles in a [[convex polygon]].{{r|admos}}
+
+The best lower bound known for the number of tripods that can have their apexes packed into an <math>n\times n\times n</math> grid is <math>\Omega(n^{1.546})</math>, and the best upper bound is <math display=block>\frac{n^2}{2^{\Omega(\log^* n)}},</math> both expressed in [[big Omega notation]].{{r|admos|gl}}
+
+==Equivalent problems==
+A tripod is an infinite [[polycube]], the union of sets of cubes in a three-dimensional grid that lie along three positive axis-aligned rays, all starting from the same grid cube. The cube at which these rays start is the ''apex'' of the tripod. The tripod packing problem asks for the maximum number of [[disjoint sets|disjoint]] tripods, all of whose apexes lie within a larger cube consisting of <math>n^3</math> grid cubes, as the parameter <math>n</math> varies.{{r|admos}}
+
+The coordinates <math>(x_i,y_i,z_i)</math> of the apexes of a solution to the tripod problem form a '''2-comparable sets of triples''', where two triples are defined as being 2-comparable if there are either at least two coordinates where one triple is smaller than the other, or at least two coordinates where one triple is larger than the other. This condition ensures that the tripods defined from these triples do not have intersecting rays. For packing tripods in an <math>n\times n\times n</math> cube, all of these coordinates can be assumed to be integers in the range from <math>1</math> to <math>n</math>. Thus, an equivalent version of the problem asks for the maximum size of a 2-comparable set of triples of numbers in this range.{{r|admos}}
+
+Another equivalent version of the question, in two dimensions rather than three, asks how many cells of an <math>n\times n</math> array of square cells (indexed from <math>1</math> to <math>n</math>) can be filled in by the numbers from <math>1</math> to <math>n</math> in such a way that the non-empty cells of each row and each column of the array form strictly increasing sequences of numbers, and the positions holding each value <math>i</math> form a monotonic chain within the array. An array with these properties is called a monotonic matrix. A collection of disjoint tripods with apexes <math>(x_i,y_i,z_i)</math> can be transformed into a monotonic matrix by placing the number <math>z_i</math> in array cell <math>(x_i,y_i)</math> and vice versa.{{r|admos}}
+
+The problem is also equivalent to finding as many triangles as possible among the vertices of a convex polygon, such that no two triangles that share a vertex have nested angles at that vertex. This triangle-counting problem was posed by Peter Braß{{r|b}} and its equivalence to tripod packing was observed by Aronov et al.{{r|admos}}
+
+==Lower bounds==
+It is straightforward to find a solution to the tripod packing problem with <math>\Omega(n^{3/2})</math> tripods: For <math>k=\lfloor\sqrt{n}\rfloor</math>, the <math>\Omega(n^{3/2})</math> triples
+<math display=block>\bigl\{ (ak+b+1,bk+c+1,ak+c+1) \mathrel{\big|} a,b,c\in[0,k-1]\bigr\}</math>
+are 2-comparable.{{r|admos}} For example, for <math>n=9</math> and <math>k=3</math> this construction produces a <math>9\times 9</math> monotonic matrix with <math>27</math> entries:
+<math display=block>\begin{pmatrix}
+&&&&&&7&8&9\\
+&&&7&8&9&&&\\
+7&8&9&&&&&&\\
+&&&&&&4&5&6\\
+&&&4&5&6&&&\\
+4&5&6&&&&&&\\
+&&&&&&1&2&3\\
+&&&1&2&3&&&\\
+1&2&3&&&&&&\\
+\end{pmatrix}</math>
+
+After several earlier improvements to this naïve bound,{{r|hs|s95|t}} Gowers and Long found solutions to the tripod problem of cardinality <math>\Omega(n^{1.546})</math>. As they observe, any tripod packing having more than <math>n^{1.5}</math> tripods for its problem size <math>n</math> could be expanded, through a recursive construction resembling the [[Kronecker product]] of matrices, into a family of solutions with exponent greater than <math>1.5</math>. However, their searches did not find a suitable tripod packing to start this recursive construction. Instead, they formulate a geometric [[Relaxation (approximation)|relaxation]] of the problem in which one must pack 2-comparable [[cuboid]]s within a larger cuboid, allowing the cuboids to have coordinates that are [[real number]]s rather than integers. They find five cuboids, distorted from the unit cuboids describing the five-tripod solution to the <math>n=3</math> tripod problem, for which recursively expanding these cuboids into copies of the same five cuboids yields solutions of the geometric problem that can be translated back into tripod packings of cardinality <math>\Omega(n^{1.546})</math>. The exponent of this solution was calculated numerically as <math>3\alpha</math> where <math>\alpha</math> is the largest real number for which{{r|gl}} <math display=block>1\le \sup_{0<x<\tfrac12}2x^{3\alpha}+3x^{2\alpha}(1-2x)^{\alpha}.</math>
+
+==Upper bounds==
+From any solution to the tripod packing problem, one can derive a balanced tripartite graph whose vertices are three copies of the numbers from <math>0</math> to <math>n-1</math> (one for each of the three coordinates) with a triangle of edges connecting the three vertices corresponding to the coordinates of the apex of each tripod. There are no other triangles in these graphs (they are [[locally linear graph]]s) because any other triangle would lead to a violation of 2-comparability. Therefore, by the known upper bounds to the [[Ruzsa–Szemerédi problem]] (one version of which is to find the maximum density of edges in a balanced tripartite locally linear graph), the maximum number of disjoint tripods that can be packed in an <math>n\times n\times n</math> grid is <math>o(n^2)</math>, and more precisely{{r|admos|gl|t|l}} <math display=block>\frac{n^2}{2^{\Omega(\log^* n)}}.</math> Although Tiskin writes that "tighter analysis of the parameters" can produce a bound that is less than quadratic by a polylogarithmic factor,{{r|t}} he does not supply details and his proof that the number is <math>o(n^2)</math> uses only the same techniques that are known for the Ruzsa–Szemerédi problem, so this stronger claim appears to be a mistake.{{r|admos}}
+
+An argument of Dean Hickerson shows that, because tripods cannot pack space with constant density, the same is true for analogous problems in higher dimensions.{{r|ss}}
+
+==Small instances==
+For small instances of the tripod problem, the exact solution is known. The numbers of tripods that can be packed into an <math>n\times n\times n</math> cube, for <math>n\le 11</math>, are:{{r|t|s13|op|A070214}}
+{{Block indent|left=1.6|1, 2, 5, 8, 11, 14, 19, 23, 28, 32, 38, ...}}
+For instance, the figure shows the 11 tripods that can be packed into a <math>5\times 5\times 5</math> cube.
+
+The number of distinct monotonic matrices of order <math>n</math>, for <math>n=1,2,3,\dots</math> is{{r|A086976}}
+{{Block indent|left=1.6|2, 19, 712, 87685, 31102080, 28757840751, ...}}
+
+==References==
+<references>
+
+<ref name=A070214>{{cite OEIS|A070214|mode=cs2}}</ref>
+
+<ref name=A086976>{{cite OEIS|A086976|mode=cs2}}</ref>
+
+<ref name=admos>{{citation
+ | last1 = Aronov | first1 = Boris | author1-link = Boris Aronov
+ | last2 = Dujmović | first2 = Vida | author2-link = Vida Dujmović
+ | last3 = Morin | first3 = Pat | author3-link = Pat Morin
+ | last4 = Ooms | first4 = Aurélien
+ | last5 = Schultz Xavier da Silveira | first5 = Luís Fernando
+ | issue = 1
+ | journal = [[Electronic Journal of Combinatorics]]
+ | page = P1.8
+ | title = More Turán-type theorems for triangles in convex point sets
+ | url = https://www.combinatorics.org/ojs/index.php/eljc/article/view/v26i1p8
+ | volume = 26
+ | year = 2019| doi = 10.37236/7224 | doi-access = free
+ }}</ref>
+
+<ref name=b>{{citation
+ | last = Braß | first = Peter
+ | editor-last = Pach | editor-first = János | editor-link = János Pach
+ | contribution = Turán-type extremal problems for convex geometric hypergraphs
+ | doi = 10.1090/conm/342/06128
+ | mr = 2065250
+ | pages = 25–33
+ | publisher = American Mathematical Society | location = Providence, Rhode Island
+ | series = Contemporary Mathematics
+ | title = Towards a theory of geometric graphs
+ | volume = 342
+ | year = 2004| isbn = 978-0-8218-3484-8
+ }}</ref>
+
+<ref name=g>{{citation
+ | last = Golomb | first = S. W. | authorlink = Solomon W. Golomb
+ | doi = 10.1109/tit.1969.1054308
+ | journal = [[IEEE Transactions on Information Theory]]
+ | mr = 0243902
+ | pages = 425–426
+ | title = A general formulation of error metrics
+ | volume = IT-15
+ | year = 1969}}</ref>
+
+<ref name=gl>{{citation
+ | last1 = Gowers | first1 = W. T. | author1-link = Timothy Gowers
+ | last2 = Long | first2 = J.
+ | arxiv = 1609.08688
+ | date = January 2021
+ | doi = 10.1017/s0963548320000371
+ | journal = [[Combinatorics, Probability and Computing]]
+ | pages = 686–721
+ | title = The length of an <math>s</math>-increasing sequence of <math>r</math>-tuples| volume = 30 | issue = 5 }}</ref>
+
+<ref name=hs>{{citation
+ | last1 = Hamaker | first1 = William
+ | last2 = Stein | first2 = Sherman
+ | doi = 10.1109/TIT.1984.1056868
+ | issue = 2, part 2
+ | journal = [[IEEE Transactions on Information Theory]]
+ | mr = 754867
+ | pages = 364–368
+ | title = Combinatorial packing of <math>\mathbf{R}^3</math> by certain error spheres
+ | volume = 30
+ | year = 1984}}</ref>
+
+<ref name=l>{{citation
+ | last = Loh | first = Po-Shen
+ | arxiv = 1505.07312
+ | title = Directed paths: from Ramsey to Ruzsa and Szemerédi
+ | year = 2015}}</ref>
+
+<ref name=op>{{citation
+ | last1 = Östergård | first1 = Patric R. J.
+ | last2 = Pöllänen | first2 = Antti
+ | doi = 10.1007/s00454-018-0012-2
+ | issue = 2
+ | journal = [[Discrete & Computational Geometry]]
+ | mr = 3903789
+ | pages = 271–284
+ | title = New results on tripod packings
+ | volume = 61
+ | year = 2019| url = https://research.aalto.fi/files/27004339/ELEC_ostergard_et_al_New_Results_Springer.pdf
+ }}</ref>
+
+<ref name=s67>{{citation
+ | last = Stein | first = S. K. | authorlink = Sherman K. Stein
+ | journal = [[Pacific Journal of Mathematics]]
+ | mr = 0219435
+ | pages = 523–541
+ | title = Factoring by subsets
+ | url = https://projecteuclid.org/euclid.pjm/1102992103
+ | volume = 22
+ | year = 1967
+ | issue = 3 | doi = 10.2140/pjm.1967.22.523| doi-access = free
+ }}</ref>
+
+<ref name=s95>{{citation
+ | last = Stein | first = Sherman K. | authorlink = Sherman K. Stein
+ | date = March 1995
+ | department = Mathematical entertainments
+ | doi = 10.1007/bf03024896
+ | issue = 2
+ | journal = [[The Mathematical Intelligencer]]
+ | pages = 37–39
+ | title = Packing tripods
+ | volume = 17}}. Reprinted in {{citation
+ | last = Gale | first = David | editor-first1 = David | editor-last1 = Gale | authorlink = David Gale
+ | doi = 10.1007/978-1-4612-2192-0
+ | isbn = 0-387-98272-8
+ | mr = 1661863
+ | pages = 131–136
+ | publisher = Springer-Verlag
+ | title = Tracking the Automatic ANT
+ | year = 1998}}</ref>
+
+<ref name=ss>{{citation
+ | last1 = Stein | first1 = Sherman K. | author1-link = Sherman K. Stein
+ | last2 = Szabó | first2 = Sándor
+ | isbn = 0-88385-028-1
+ | mr = 1311249
+ | page = 97
+ | publisher = Mathematical Association of America | location = Washington, DC
+ | series = Carus Mathematical Monographs
+ | title = Algebra and Tiling: Homomorphisms in the Service of Geometry
+ | title-link = Algebra and Tiling: Homomorphisms in the Service of Geometry
+ | volume = 25
+ | year = 1994}}</ref>
+
+<ref name=s13>{{citation
+ | last = Szabó | first = Sándor
+ | journal = Ann. Univ. Sci. Budapest Sect. Comput.
+ | mr = 3129145
+ | pages = 307–322
+ | title = Monotonic matrices and clique search in graphs
+ | volume = 41
+ | year = 2013
+ | doi = 10.1080/00455091.2001.10717569}}</ref>
+
+<ref name=t>{{citation
+ | last = Tiskin | first = Alexander
+ | doi = 10.1016/j.disc.2004.12.028
+ | issue = 16
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 2326159
+ | pages = 1973–1981
+ | title = Packing tripods: narrowing the density gap
+ | volume = 307
+ | year = 2007| doi-access = free
+ }}</ref>
+
+</references>
+
+[[Category:Packing problems]]
+[[Category:Unsolved problems in geometry]]

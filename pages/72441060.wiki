@@ -1,0 +1,28 @@
+{{One source|date=December 2022}}
+The '''Jacobi bound problem''' concerns the veracity of Jacobi's inequality which is an [[inequality (mathematics)|inequality]] on the [[absolute dimension]] of a [[differential algebraic variety]] in terms of its defining equations.
+This is one of [[Kolchin's Problems]].
+
+The inequality is the differential algebraic analog of [[Bézout's theorem]] in affine space. 
+Although first formulated by [[Carl Gustav Jacob Jacobi|Jacobi]], In 1936 [[Joseph Ritt]] recognized the problem as non-rigorous in that Jacobi didn't even have a rigorous notion of absolute dimension (Jacobi and Ritt used the term "order" - which Ritt first gave a rigorous definition for using the notion of [[transcendence degree]]). 
+Intuitively, the absolute dimension is the number of constants of integration required to specify a solution of a system of [[ordinary differential equation]]s.
+A [[mathematical proof]] of the inequality has been open since 1936. 
+
+==Statement==
+Let <math> (K,\partial) </math> be a [[differential field]] of characteristic zero and consider <math> \Gamma </math> a differential algebraic variety determined by the vanishing of differential polynomials <math> u_1,\ldots,u_n \in K\lbrace x_1,\ldots,x_n\rbrace </math>. 
+If <math> \Gamma_1 </math> is an irreducible component of <math> \Gamma </math> of finite absolute dimension then 
+
+<math> a(\Gamma_1) \leq J(u_1,u_2,\ldots,u_n). </math>
+
+In the above display <math> J(u_1,u_2,\ldots,u_n) </math> is the *jacobi number*. 
+It is defined to be 
+
+<math> \max_{\sigma \in S_n} \sum_{i=1}^n \operatorname{ord}_{x_i}^{\partial}(u_{\sigma(i)}) </math>.
+
+==References==
+{{reflist}}
+*{{cite book |title=Semicentennial Addresses of the American Mathematical Society |date=1938 |isbn=0-8218-0119-8|volume=2|publisher=AMS|pages=35–55|chapter=Algebraic aspects of the theory of differential equations|chapter-url=http://www.ams.org/samplings/math-history/procsemi-ritt.pdf|last1=Ritt |first1=Joseph F.}}
+*{{cite journal |doi=10.1090/S0002-9947-1970-0279079-1|title=Jacobi's bound for the order of systems of first order differential equations |year=1970 |last1=Lando |first1=Barbara A. |journal=Transactions of the American Mathematical Society |volume=152 |pages=119–135 |doi-access=free }}
+*{{cite journal |arxiv=2109.03620 |doi=10.1007/s00200-022-00547-6 |title=Jacobi's Bound: Jacobi's results translated in Kőnig's, Egerváry's and Ritt's mathematical languages |year=2022 |last1=Ollivier |first1=François |journal=Applicable Algebra in Engineering, Communication and Computing |volume=34 |issue=5 |pages=793–885 |s2cid=237440393 }}
+[[Category:Unsolved problems in mathematics]]
+[[Category:Differential algebra]]
+{{DEFAULTSORT:Jacobi Bound Problem}}

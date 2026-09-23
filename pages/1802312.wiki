@@ -1,0 +1,60 @@
+{{short description|American mathematician}}
+{{ Infobox scientist
+| name              = Paul Vojta
+| image             = Vojta Paul.jpg
+| image_size        = 
+| caption           = 
+| birth_date        = {{birth date and age|1957|09|30}}
+| birth_place       = 
+| death_date        = 
+| death_place       = 
+| fields            = [[Mathematics]]
+| workplaces        = [[University of California, Berkeley]]
+| education         = [[Harvard University]]<br>[[University of Minnesota]]
+| doctoral_advisor  = [[Barry Mazur]]
+| doctoral_students = 
+| known_for         = [[Vojta's conjecture]]
+| awards            = [[Cole Prize]] (1992)<br>[[Putnam Fellow]]
+}}
+'''Paul Alan Vojta''' (born September 30, 1957) is an American mathematician, known for his work in [[number theory]] on [[Diophantine geometry]] and [[Diophantine approximation]].
+
+==Contributions==
+In formulating [[Vojta's conjecture]], he pointed out the possible existence of parallels between the [[Nevanlinna theory]] of [[complex analysis]], and [[diophantine analysis]] in the circle of ideas around the [[Mordell conjecture]] and [[abc conjecture]]. This suggested the importance of the ''integer solutions'' ([[affine space]]) aspect of [[diophantine equation]]s.{{citation needed|date=August 2019}}
+
+Vojta wrote the [[DVI (file format)|.dvi]]-previewer [[xdvi]]. He also wrote a [[Vi (text editor)|vi]] clone.<ref>{{Citation |last=sylvandb |title=sylvandb/calvin |date=2024-06-07 |url=https://github.com/sylvandb/calvin |access-date=2024-06-07}}</ref><ref>{{Cite web |url=https://groups.google.com/g/comp.archives.msdos.announce/c/DMh6BYMgwPc/m/gTMAa0R4XskJ |title=calvin23.zip - Small partial clone of the Unix vi editor |last=Vojta |first=Paul |date=22 December 1997  |access-date=26 November 2024}}</ref>
+
+==Education and career==
+He was an undergraduate student at the [[University of Minnesota]], where he became a [[Putnam Fellow]] in 1977,<ref name="MMA">{{cite web |title=Putnam Competition Individual and Team Winners |url=http://www.maa.org/programs/maa-awards/putnam-competition-individual-and-team-winners |publisher=[[Mathematical Association of America]] |access-date=December 13, 2021 |archive-date=March 12, 2014 |archive-url=https://web.archive.org/web/20140312205244/http://www.maa.org/programs/maa-awards/putnam-competition-individual-and-team-winners |url-status=dead }}</ref> and a doctoral student at [[Harvard University]] (1983).<ref>{{MathGenealogy|id=22509}}</ref> He currently is a professor in the Department of Mathematics at the [[University of California, Berkeley]].
+
+==Awards and honors==
+In 2012 he became a fellow of the [[American Mathematical Society]].<ref>[http://www.ams.org/profession/fellows-list List of Fellows of the American Mathematical Society], retrieved 2013-08-29.</ref>
+
+==Selected publications==
+* ''Diophantine Approximations and Value Distribution Theory'', Lecture Notes in Mathematics '''1239''', Springer Verlag, 1987, {{isbn|978-3-540-17551-3}}
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://math.berkeley.edu/~vojta/ Vojta's home page]
+*{{IMO results|id=10338}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Vojta, Paul}}
+[[Category:1957 births]]
+[[Category:Living people]]
+[[Category:Arithmetic geometers]]
+[[Category:Putnam Fellows]]
+[[Category:Institute for Advanced Study visiting scholars]]
+[[Category:University of Minnesota alumni]]
+[[Category:Harvard University alumni]]
+[[Category:University of California, Berkeley faculty]]
+[[Category:20th-century American mathematicians]]
+[[Category:Fellows of the American Mathematical Society]]
+[[Category:International Mathematical Olympiad participants]]
+[[Category:21st-century American mathematicians]]
+[[Category:Abc conjecture]]
+
+
+{{US-mathematician-stub}}

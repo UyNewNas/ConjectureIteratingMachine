@@ -1,0 +1,47 @@
+{{Short description|Circle-packing on the surface of a sphere}}
+[[File:Tammes cropped.png|thumb|12 points in an optimal arrangement around a sphere, which also are the [[vertex (geometry)|vertices]] of a [[regular icosahedron]].]]
+
+In [[geometry]], the '''Tammes problem''' is a problem in [[circle packing|packing a given number of points]] on the surface of a [[sphere]] such that the minimum distance between points is maximized.  It is named after the Dutch botanist Pieter Merkus Lambertus Tammes (the nephew of pioneering botanist [[Jantina Tammes]]) who posed the problem in his 1930 doctoral dissertation on the distribution of pores on [[pollen]] grains.<ref name=phdpml>{{cite web|first1=Pieter Merkus Lambertus|last1=Tammes|year=1930|title=On the number and arrangements of the places of exit on the surface of pollen-grains|url=https://www.hars.us/Papers/Numerical_Tammes.pdf}}</ref> If circles with diameter equal to the minimum distance are drawn around each point, they will not cross. Another equivalent way of phrasing the problem is to ask for the largest radius such that the given number of circles of that radius can be packed disjointly on the sphere.
+
+{{unsolved|mathematics|What is the optimal packing of circles on the surface of a sphere for every possible amount of circles?}}
+
+It can be viewed as a particular special case of the [[Thomson problem#Generalizations|generalized Thomson problem]] of minimizing the total [[Coulomb force|Coulomb energy]] of [[electron]]s in a spherical arrangement.<ref name="bpopt">{{cite news |last1=Batagelj |first1=Vladimir |last2=Plestenjak |first2=Bor |title=Optimal arrangements of n points on a sphere and in a circle |url=https://www.fmf.uni-lj.si/~plestenjak/Talks/preddvor.pdf |archive-date=25 June 2018 |archive-url=https://web.archive.org/web/20180625050324/https://www.fmf.uni-lj.si/~plestenjak/Talks/preddvor.pdf |publisher=IMFM/TCS}}</ref> Thus far, solutions have been [[mathematical proof|proven]] only for small numbers of circles: 3 through 14, and 24.<ref name=musin15>{{cite journal |last1=Musin |first1=Oleg R. |last2=Tarasov |first2=Alexey S. |title=The Tammes Problem for N = 14 |journal=Experimental Mathematics |date=2015 |volume=24 |issue=4 |pages=460–468 |doi=10.1080/10586458.2015.1022842|s2cid=39429109 }}</ref> There are [[conjecture]]d solutions for many other cases, including those in higher dimensions.<ref name=sloanesp>{{cite web |last1=Sloane |first1=N. J. A. |title=Spherical Codes: Nice arrangements of points on a sphere in various dimensions |url=http://neilsloane.com/packings/}}</ref><ref>{{cite web|first1=Laslo|last1=Hars|title= Numerical solutions of the Tammes problem for up to 60 points|year=2020|url=https://www.hars.us/Papers/Numerical_Tammes.pdf}}</ref>
+
+[[File:Coral Sphere Flynn Reef.jpg|thumb|Some natural systems such as this coral require approximate solutions to problems similar to the Tammes problem]]
+
+==See also==
+* [[Spherical code]]
+* [[Kissing number problem]]
+* [[Cylinder sphere packing|Cylinder sphere packings]]
+
+==References==
+
+<references/>
+
+===Bibliography===
+
+; Journal articles
+
+* {{cite journal |author1=Tarnai T |author2=((Gáspár Zs)) | year = 1987 | title = Multi-symmetric close packings of equal spheres on the spherical surface | journal = Acta Crystallographica | volume = A43 |issue=5 | pages = 612&ndash;616 | doi = 10.1107/S0108767387098842 | doi-access =  |bibcode=1987AcCrA..43..612T }}
+* {{cite journal | vauthors = Erber T, Hockney GM | year = 1991 | title = Equilibrium configurations of ''N'' equal charges on a sphere | journal = Journal of Physics A: Mathematical and General | volume = 24 | issue = 23 | url = http://www.iop.org/EJ/article/0305-4470/24/23/008/ja912308.pdf | pages = Ll369&ndash;Ll377 | doi = 10.1088/0305-4470/24/23/008 | bibcode = 1991JPhA...24L1369E | s2cid = 122561279 }}
+* {{cite journal | author = Melissen JBM | year = 1998 | title = How Different Can Colours Be? Maximum Separation of Points on a Spherical Octant | journal = [[Proceedings of the Royal Society A]] | volume = 454 | pages = 1499&ndash;1508 | doi = 10.1098/rspa.1998.0218 | issue = 1973|bibcode = 1998RSPSA.454.1499M | s2cid = 122700006 }}
+* {{cite journal | vauthors = Bruinsma RF, Gelbart WM, Reguera D, Rudnick J, [[Roya Zandi|Zandi R]] | year = 2003 | title = Viral Self-Assembly as a Thermodynamic Process | journal = Physical Review Letters | volume = 90 | pages = 248101–1&ndash;248101–4 | url = http://personnel.physics.ucla.edu/directory/faculty/fac_files/bruinsma/viral_self-assembly.pdf | doi = 10.1103/PhysRevLett.90.248101 | issue = 24 | pmid = 12857229 | bibcode = 2003PhRvL..90x8101B | arxiv = cond-mat/0211390 | hdl = 2445/13275 | s2cid = 1353095 | url-status = dead | archiveurl = https://web.archive.org/web/20070915043650/http://personnel.physics.ucla.edu/directory/faculty/fac_files/bruinsma/viral_self-assembly.pdf | archivedate = 2007-09-15 }}
+*{{cite journal|first=Xiangjing|last1=Lai|first2=Dong|last2=Yue|first3=Jin-Kao|last3=Hao|title =Iterated dynamic neighborhood search for packing equal circles on a sphere|doi=10.1016/j.cor.2022.106121|journal = Comput. Operat. Res.|volume=151|year=2023|url=https://github.com/XiangjingLai/Tammes-problem|doi-access=free}}
+
+; Books
+
+* {{cite book | vauthors = Aste T, Weaire DL | year = 2000 | title = The Pursuit of Perfect Packing | title-link=The Pursuit of Perfect Packing | publisher = Taylor and Francis | isbn = 978-0-7503-0648-5 | pages = 108&ndash;110}}
+* {{cite book | author = Wells D | year = 1991 | title = The Penguin Dictionary of Curious and Interesting Geometry | publisher = Penguin Books | location = New York | isbn = 0-14-011813-6 | pages = [https://archive.org/details/penguindictionar0000well/page/31 31] | url = https://archive.org/details/penguindictionar0000well/page/31 }}
+
+==External links==
+* {{cite journal|first1=Bhaskar|last1=Bagchi|journal=Reconance J. Sci. Edu.|year=1997|volume=2|number=9|pages=18-26|url=https://www.ias.ac.in/article/fulltext/reso/002/09/0018-0026|title=How to Stay Away from Each Other in a Spherical Universe}}.
+* [http://www.mi.sanu.ac.rs/vismath/visbook/sugimoto/index.html Packing and Covering of Congruent Spherical Caps on a Sphere].
+* [http://users.ipfw.edu/dragnevp/Sigma_Xi1.ppt Science of Spherical Arrangements] ([[Microsoft PowerPoint|PPT]]).
+* [https://web.archive.org/web/20080806042822/http://wwwmaths.anu.edu.au/events/sy2005/odatalks/womersley.pdf General discussion of packing points on surfaces], with focus on [[torus|tori]] (PDF).
+
+{{Packing problem}}
+
+[[Category:Circle packing]]
+[[Category:Spherical geometry]]
+[[Category:Palynology]]
+[[Category:Unsolved problems in geometry]]

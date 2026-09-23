@@ -1,0 +1,95 @@
+{{Infobox mathematical statement
+| name = Kummer–Vandiver conjecture
+| image = 
+| caption = 
+| field = [[Algebraic number theory]]
+| conjectured by = [[Ernst Kummer]]
+| conjecture date = 1849
+| open problem = Yes
+}}
+
+In [[mathematics]], the '''Kummer–Vandiver conjecture''', or '''Vandiver conjecture''', states that a [[prime number|prime]] <math>p</math> does not divide the [[class number (number theory)|class number]] <math>h_K</math> of the maximal real [[field extension|subfield]] <math>K = \mathbb{Q}(\zeta_p)^+</math> of the <math>p</math>-th [[cyclotomic field]]. The [[conjecture]] was first made by [[Ernst Kummer]], on 28 December 1849 and 24 April 1853 in letters to [[Leopold Kronecker]],{{sfnp|Kummer|1975|pp=84, 93, 123–124}} and independently rediscovered around 1920 by [[Philipp Furtwängler]] and [[Harry Vandiver]].{{sfnp|Vandiver|1946|loc=p. 576}}
+
+As of 2011, there is no particularly strong evidence either for or against the conjecture and it is unclear whether it is true or false, though it is likely that [[counterexample]]s are very rare.
+
+==Background==
+
+The class number <math>h</math> of the cyclotomic field  <math>\mathbb{Q}(\zeta_p)</math> is a product of two [[integer]]s <math>h_1</math> and <math>h_2</math>, called the first and second factors of the class number, where <math>h_2</math> is the class number of the maximal real subfield <math>K = \mathbb{Q}(\zeta_p)^+</math> of the <math>p</math>-th cyclotomic field. The first factor <math>h_1</math> is well understood and can be computed easily in terms of [[Bernoulli number]]s, and is usually rather large. The second factor <math>h_2</math> is not well understood and is hard to compute explicitly, and in the cases when it has been computed it is usually small.
+
+Kummer showed that if a prime <math>p</math> does not divide the class number <math>h</math>, then [[Fermat's Last Theorem]] holds for exponent <math>p</math>.
+
+The Kummer–Vandiver conjecture states that <math>p</math> does not divide the second factor <math>h_2</math>. Kummer showed that if <math>p</math> divides the second factor, then it also divides the first factor. In particular the Kummer–Vandiver conjecture holds for [[regular prime]]s (those for which <math>p</math> does not divide the first factor).
+
+==Evidence for and against the Kummer–Vandiver conjecture==
+
+Kummer verified the Kummer–Vandiver conjecture for <math>p</math> less than 200, and Vandiver extended this to <math>p</math> less than 600. [[Joe Buhler|Buhler]], [[Richard Crandall|Crandall]] et al. verified it for ''p'' < 12000000.{{sfnp|Buhler|Crandall|Ernvall|Metsänkylä|2001}} Buhler and Harvey extended this to primes less than 163000000,{{sfnp|Buhler|Harvey|2011}} and Hart, Harvey, and Ong extended this to primes less than 2<sup>31</sup>.{{sfnp|Hart|Harvey|Ong|2017}}
+
+[[Lawrence C. Washington|Washington]] describes an informal probability argument,{{sfnp|Washington|1996|p=158}} based on rather dubious assumptions{{clarify|date=July 2026}} about the equidistribution of class numbers modulo <math>p</math>, suggesting that the number of primes less than <math>x</math> that are exceptions to the Kummer–Vandiver conjecture might grow like <math>(\log\log x)/2</math>. This grows extremely slowly, and suggests that the computer calculations do not provide much evidence for Vandiver's conjecture: for example, the probability argument (combined with the calculations for small primes) suggests that one should only expect about 1 counterexample in the first 10<sup>100</sup> primes, suggesting that it is unlikely any counterexample will be found by further brute force searches even if there are an infinite number of exceptions.
+
+[[René Schoof|Schoof]] gave conjectural calculations of the class numbers of real cyclotomic fields for primes up to 10000, which strongly suggest that the class numbers are not randomly distributed mod <math>p</math>.{{sfnp|Schoof|2003}} They tend to be quite small and are often just <math>1</math>. For example, assuming the [[generalized Riemann hypothesis]], the class number of the real cyclotomic field for the prime <math>p</math> is <math>1</math> for <math>p<163</math>, and divisible by <math>4</math> for <math>p=163</math>. This suggests that Washington's informal probability argument against the conjecture may be misleading.
+
+Mihăilescu gave a refined version of Washington's heuristic argument, suggesting that the Kummer–Vandiver conjecture is probably true.{{sfnp|Mihăilescu|2012}}
+
+==Consequences of the Kummer–Vandiver conjecture==
+Kurihara showed that the conjecture is equivalent to a statement in the [[algebraic K-theory]] of the integers, namely that  <math>K_n(\Z)=0</math> whenever <math>n</math> is a multiple of <math>4</math>.{{sfnp|Kurihara|1992}}{{sfnp|Ghate|2000}} In fact, from the Kummer–Vandiver conjecture and the [[norm residue isomorphism theorem]] follows a full conjectural calculation of the <math>K</math>-groups for all values of <math>n</math>; see [[Quillen–Lichtenbaum conjecture]] for details.
+
+==See also==
+
+* [[regular prime|Regular and irregular primes]]
+* [[Herbrand–Ribet theorem]]
+
+== References ==
+{{refbegin}}
+
+* {{cite journal | last1=Buhler | first1=Joe | authorlink=Joe Buhler | last2=Crandall | first2=Richard | author2-link=Richard Crandall | last3=Ernvall | first3=Reijo | last4=Metsänkylä | first4=Tauno | last5=Shokrollahi | first5=M. Amin | mr=1806208 | year=2001 | journal=[[Journal of Symbolic Computation]] | volume=31 | issue=1 | title=Irregular primes and cyclotomic invariants to 12 million |doi=10.1006/jsco.1999.1011 | pages=89–96}}
+
+* {{cite journal
+ | last1 = Buhler | first1 = J. P. | authorlink=Joe Buhler
+ | last2 = Harvey | first2 = D.
+ | doi = 10.1090/S0025-5718-2011-02461-0
+ | issue = 276
+ | journal = [[Mathematics of Computation]]
+ | mr = 2813369
+ | pages = 2435–2444
+ | title = Irregular primes to 163 million
+ | volume = 80
+ | year = 2011
+ }}
+
+* {{cite book | last1=Ghate | first1=Eknath | editor1-last=Adhikari | editor1-first=S. D. | editor2-last=Katre | editor2-first=S. A. | editor3-last=Thakur | editor3-first=Dinesh | title=Cyclotomic Fields and Related Topics | publisher=Bhaskaracharya Pratishthana |location=[[Pune]] | series=Proceedings of the Summer School on Cyclotomic Fields held in Pune, June 7–30, 1999 | mr=1802389 | year=2000 | pages=285–298 | chapter=Vandiver's conjecture via K-theory | authorlink=Eknath Prabhakar Ghate | chapter-url=https://www.bprim.org/sites/default/files/vand.pdf |editor3-link=Dinesh Thakur (mathematician)}}
+
+* {{cite journal
+ | last1 = Hart | first1 = William
+ | last2 = Harvey | first2 = David
+ | last3 = Ong | first3 = Wilson
+ | doi = 10.1090/mcom/3211
+ | journal = [[Mathematics of Computation]]
+ | mr = 3667037
+ | pages = 3031–3049
+ | title = Irregular primes to two billion
+ | volume = 86
+ | year = 2017
+ | issue = 308
+}}
+
+* {{cite book | last1=Kummer | first1=Ernst Eduard | author1-link=Ernst Kummer | editor1-last=Weil | editor1-first=André | editor1-link=André Weil | title=Collected Papers I: Contributions to Number Theory | publisher=[[Springer-Verlag|Springer]] | location=[[Berlin]], [[Heidelberg]] | isbn=978-0-387-06835-0 | mr=0465760 | year=1975}}
+
+* {{cite journal | last1=Kurihara | first1=Masato | title=Some remarks on conjectures about cyclotomic fields and ''K''-groups of '''Z''' | url=https://www.numdam.org/item?id=CM_1992__81_2_223_0 | mr=1145807 | year=1992 | journal=[[Compositio Mathematica]] | volume=81 | issue=2 | pages=223–236 |zbl=0747.11055 }}
+
+* {{cite book | last1=Mihăilescu | first1=Preda | chapter=Turning Washington's heuristics in favor of Vandiver's conjecture | year=2012 | doi=10.1007/978-3-642-28821-0_12 | publisher=[[Springer-Verlag|Springer]] | location=[[Berlin]], [[Heidelberg]] |title=Essays in Mathematics and its Applications |isbn=9783642288203 |editor1-last=Pardalos |editor1-first=Panos M. |editor1-link=Panos M. Pardalos |editor2-last=Rassias |editor2-first=Themistocles M. |editor2-link=
+Themistocles M. Rassias}}
+
+* {{cite journal | last=Schoof | first=René | title=Class numbers of real cyclotomic fields of prime conductor | doi=10.1090/S0025-5718-02-01432-1 | mr=1954975 | year=2003 | journal=[[Mathematics of Computation]] | volume=72 | issue=242 | pages=913–937 |authorlink=René Schoof}}
+
+* {{cite journal | last1=Vandiver | first1=H. S. | title=Fermat's last theorem. Its history and the nature of the known results concerning it | jstor=2305236 | mr=0018660 | year=1946 | journal=[[American Mathematical Monthly]] | volume=53 | issue=10 | pages=555–578 |authorlink=Harry Vandiver | doi=10.1080/00029890.1946.11991754}}
+
+* {{cite book | last=Washington | first=Lawrence C. | title=Introduction to Cyclotomic Fields | publisher=[[Springer-Verlag|Springer]] | year=1996 | isbn=978-0-387-94762-4 |edition=second |series=[[Graduate Texts in Mathematics]] |volume=83 |orig-year=1981 |location=[[New York City|New York]] |authorlink=Lawrence C. Washington}}
+
+{{refend}}
+
+{{DEFAULTSORT:Kummer-Vandiver conjecture}}
+
+[[Category:Cyclotomic fields]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Algebraic number theory]]

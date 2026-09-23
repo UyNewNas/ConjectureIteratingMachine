@@ -1,0 +1,71 @@
+In [[mathematics]], the '''Herzog–Schönheim conjecture''' is a combinatorial problem in the area of [[group theory]], posed by Marcel Herzog and Jochanan Schönheim in 1974.<ref>{{citation
+ | last1 = Herzog | first1 = M.
+ | last2 = Schönheim | first2 = J.
+ | journal = [[Canadian Mathematical Bulletin]]
+ | page = 150
+ | title = Research problem No. 9
+ | volume = 17
+ | year = 1974}}. As cited by {{harvtxt|Sun|2004}}.</ref>
+
+Let <math>G</math> be a [[group (mathematics)|group]], and let
+
+:<math>A=\{a_1G_1,\ \ldots,\ a_kG_k\}</math>
+
+be a finite system of left [[coset]]s of [[subgroup]]s
+<math>G_1,\ldots,G_k</math> of <math>G</math>.
+
+Herzog and Schönheim conjectured
+that if <math>A</math> forms a [[Partition of a set|partition]] of <math>G</math> 
+with <math>k>1</math>,
+then the (finite) indices <math>[G:G_1],\ldots,[G:G_k]</math> cannot be distinct. In contrast, if repeated indices are allowed, then partitioning a group into cosets is easy: if <math>H</math> is any subgroup of <math>G</math>
+with [[Index of a subgroup|index]] <math>k=[G:H]<\infty</math> then <math>G</math> can be partitioned into <math>k</math> left cosets of <math>H</math>.
+
+==Subnormal subgroups==
+In 2004, [[Zhi-Wei Sun]] proved a special case
+of the Herzog–Schönheim conjecture in the case where <math>G_1,\ldots,G_k</math> are [[subnormal subgroup|subnormal]] in <math>G</math>.<ref>{{citation
+ | last = Sun | first = Zhi-Wei | authorlink = Sun Zhiwei
+ | arxiv = math/0306099
+ | doi = 10.1016/S0021-8693(03)00526-X
+ | issue = 1
+ | journal = Journal of Algebra
+ | mr = 2032455
+ | pages = 153–175
+ | title = On the Herzog-Schönheim conjecture for uniform covers of groups
+ | volume = 273
+ | year = 2004| s2cid = 15736220 }}.</ref> A basic lemma in Sun's proof states that if <math>G_1,\ldots,G_k</math> are subnormal and of finite index in <math>G</math>, then
+
+:<math>\bigg[G:\bigcap_{i=1}^kG_i\bigg]\ \bigg|\ \prod_{i=1}^k[G:G_i]</math>
+
+and hence
+
+:<math>P\bigg(\bigg[G:\bigcap_{i=1}^kG_i\bigg]\ \bigg)
+=\bigcup_{i=1}^kP([G:G_i]),</math>
+
+where <math>P(n)</math> denotes the set of [[Prime number|prime]]
+[[divisor]]s of <math>n</math>.
+
+==Mirsky–Newman theorem==
+When <math>G</math> is the additive group <math>\Z</math> of integers, the cosets of <math>G</math> are the [[arithmetic progression]]s.
+In this case, the Herzog–Schönheim conjecture states that every [[covering system]], a family of arithmetic progressions that together cover all the integers, must either cover some integers more than once or include at least one pair of progressions that have the same difference as each other. This result was conjectured in 1950 by [[Paul Erdős]] and proved soon thereafter by [[Leon Mirsky]] and [[Donald J. Newman]]. However, Mirsky and Newman never published their proof. The same proof was also found independently by [[Harold Davenport]] and [[Richard Rado]].<ref name="soifer">{{citation
+ | last = Soifer | first = Alexander | author-link = Alexander Soifer
+ | isbn = 978-0-387-74640-1
+ | location = New York
+ | publisher = Springer
+ | title = The Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of its Creators
+ | title-link = The Mathematical Coloring Book
+ | year = 2008
+ | contribution = Chapter 1. A story of colored polygons and arithmetic progressions
+ | pages = 1–9}}.</ref>
+
+In 1970, a geometric coloring problem equivalent to the Mirsky–Newman theorem was given as Problem 8 in the Soviet mathematical olympiad for 10th grade: suppose that the vertices of a [[regular polygon]] are colored in such a way that every color class itself forms the vertices of a regular polygon. Then, there exist two color classes that form congruent polygons.<ref name="soifer"/> Nobody in the contestant had solved the problem.<ref>{{Cite book |title=Soviet Union mathematical olpympiad, grades 8, 9, and 10 |date=2016 |publisher=Mathematical Association of America |isbn=978-1-61444-408-4 |editor-last=Mathematical Association of America |series=Problem Books |location=Washington, D.C |translator-last=Liu |translator-first=A. C. F. |editor-last2=American Mathematical Society}}</ref>
+
+=== Newman-Znám theorem ===
+[[Štefan Znám]] in 1968<ref>{{Citation |title=Combinatorial theory and its applications. 2 |date=1970 |issue=4 |pages=221-225 |series=Colloquia mathematica Societatis János Bolyai |place=Amsterdam |publisher=North-Holland Publ |isbn=978-0-7204-2037-1}}</ref> and subsequently [[Morris Newman]] in 1971<ref>{{Cite journal |last=Newman |first=Morris |date=December 1971 |title=Roots of unity and covering sets |url=http://link.springer.com/10.1007/BF01350330 |journal=Mathematische Annalen |language=en |volume=191 |issue=4 |pages=279–282 |doi=10.1007/BF01350330 |issn=0025-5831|url-access=subscription }}</ref> proved a general form of Mirsky–Newman theorem, namely given a disjoint [[covering system]], suppose the maximum of the moduli <math>n</math> occurs <math>l</math> times, then <math>l \geq p</math>, the smallest prime dividing <math>n</math>. In 1986, an non-analytic proof of this general result was given.<ref>{{Cite journal |last=Berger |first=M. A. |last2=Felzenbaum |first2=A. |last3=Fraenkel |first3=A. S. |date=September 1986 |title=A non-analytic proof of the newman—znám result for disjoint covering systems |url=http://link.springer.com/10.1007/BF02579384 |journal=Combinatorica |language=en |volume=6 |issue=3 |pages=235–243 |doi=10.1007/BF02579384 |issn=0209-9683|url-access=subscription }}</ref>
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Herzog-Schonheim conjecture}}
+[[Category:Combinatorial group theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

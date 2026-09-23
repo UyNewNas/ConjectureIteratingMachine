@@ -1,0 +1,61 @@
+{{Short description|British mathematician}}
+{{Use dmy dates|date=April 2022}}
+{{ Infobox scientist
+| name              = David Masser
+| image             = David Masser.jpg
+| image_size        = 250px
+| caption           = 
+| honorific_suffix  = {{post-nominals|country=GBR|FRS}}
+| birth_date        = {{birth date and age|1948|11|08|df=y}}<ref name="CV"/>
+| birth_place       = London, United Kingdom
+| death_date        = 
+| death_place       = 
+| fields            = [[Mathematics]]
+| workplaces        = [[University of Basel]]
+| education         = [[University of Cambridge]]
+| doctoral_advisor  = [[Alan Baker (mathematician)|Alan Baker]]
+| doctoral_students = [[Philipp Habegger]]{{br}}[[Paula Tretkoff]]
+| known_for         = [[Euler%27s_constant#Generalizations|Masser–Gramain constant]]<br>[[abc conjecture|Oesterlé–Masser conjecture]]<br>[[Sparsely totient number]]
+| awards            = [[List_of_International_Congresses_of_Mathematicians_Plenary_and_Invited_Speakers|ICM Speaker]] (1983){{br}}[[Humboldt Prize]] (1991){{br}}{{no wrap|[[Fellow of the Royal Society]] (2005)}}{{br}}{{no wrap|Member of the [[Academia Europaea]] (2014)}}
+| website           =  
+}}
+'''David William Masser''' {{post-nominals|country=GBR|FRS}} (born 8 November 1948) is [[professor emeritus]] in the Department of Mathematics and Computer Science at the [[University of Basel]].<ref name="Basel">{{cite web |url=https://dmi.unibas.ch/en/persons/david-masser/ |website=[[University of Basel]] |title=Prof. Dr. David Masser |access-date=5 March 2021}}</ref> He is known for his work in [[transcendental number theory]], [[Diophantine approximation]], and [[Diophantine geometry]]. With [[Joseph Oesterlé]] in 1985, Masser formulated the [[abc conjecture]], which has been called "the most important unsolved problem in [[Diophantine analysis]]".<ref name="Goldfeld">{{Citation |authorlink=Dorian Goldfeld |first=Dorian |last=Goldfeld |title=Beyond the last theorem |journal=The Sciences |date=March–April 1996 |volume=36 |issue=2 |pages=34–40 |doi=10.1002/j.2326-1951.1996.tb03243.x }}.</ref>
+
+==Early life and education==
+Masser was born on 8 November 1948 in London, England.<ref name="CV">{{cite web |url=https://dmi.unibas.ch/fileadmin/user_upload/dmi/Forschung/Mathematik/Zahlentheorie/CV_Masser_April20.pdf |title=Curriculum Vitae and Publication list of D. W. Masser |website=[[University of Basel]] |date=14 February 2020 |access-date=5 March 2021}}</ref> He graduated from [[Trinity College, Cambridge|Trinity College]], [[University of Cambridge|Cambridge]] with a B.A. (Hons) in 1970.<ref name="CV"/> In 1974, he obtained his M.A. and Ph.D. at the University of Cambridge,<ref name="CV"/> with a doctoral thesis under the supervision of [[Alan Baker (mathematician)|Alan Baker]] titled ''Elliptic Functions and Transcendence''.<ref name=mathgene>{{MathGenealogy |id=7915 }}</ref>
+
+==Career==
+Masser was a Lecturer at the [[University of Nottingham]] from 1973 to 1975, before spending the 1975–1976 year as a Research Fellow of Trinity College at the University of Cambridge.<ref name="CV"/> He returned to the University of Nottingham to serve as a Lecturer from 1976 to 1979 and then as a Reader from 1979 to 1983.<ref name="CV"/> He was a professor at the [[University of Michigan]] from 1983 to 1992.<ref name="CV"/> He then moved to the Mathematics Institute at the [[University of Basel]] and became emeritus there in 2014.<ref name="Basel"/><ref name="CV"/><ref name="IAS"/>
+
+==Research==
+Masser's research focuses on [[transcendental number theory]], [[Diophantine approximation]], and [[Diophantine geometry]].<ref name="IAS"/>  The ''abc'' conjecture originated as the outcome of attempts by Oesterlé and Masser to understand the [[Szpiro conjecture]] about [[elliptic curve]]s.<ref>{{citation|title=Arithmetic deformation theory via arithmetic fundamental groups and nonarchimedean theta functions, notes on the work of Shinichi Mochizuki|journal=European Journal of Mathematics|first=Ivan|last=Fesenko|volume=1|issue=3|pages=405–440|year=2015|url=https://www.maths.nottingham.ac.uk/personal/ibf/notesoniut.pdf|doi=10.1007/s40879-015-0066-0|s2cid=52085917|doi-access=free|access-date=5 March 2021|archive-date=15 June 2018|archive-url=https://web.archive.org/web/20180615214843/https://www.maths.nottingham.ac.uk/personal/ibf/notesoniut.pdf|url-status=dead}}.</ref>
+
+==Awards==
+Masser was an [[invited speaker at the International Congress of Mathematicians]] in Warsaw in 1983.<ref name="CV"/><ref name="IAS">{{cite web |url=https://www.ias.edu/scholars/david-w-masser |website=[[Institute for Advanced Study]] |title=David W. Masser |date=9 December 2019 |access-date=5 March 2021}}</ref> In 1991, he received the [[Humboldt Prize]].<ref name="CV"/> He was elected as a [[Fellow of the Royal Society]] in 2005.<ref name="CV"/><ref name="IAS"/> In 2014, he was elected as a Member of the [[Academia Europaea]].<ref name="CV"/><ref name="IAS"/>
+
+==See also==
+*[[Analytic subgroup theorem]]
+*[[Bézout's theorem]]
+*[[Zilber–Pink conjecture]]
+
+==References==
+{{Reflist|35em}}
+
+{{FRS 2005}}
+{{Authority control}}
+
+{{DEFAULTSORT:Masser, David William}}
+[[Category:1948 births]]
+[[Category:Living people]]
+[[Category:20th-century British mathematicians]]
+[[Category:21st-century British mathematicians]]
+[[Category:Number theorists]]
+[[Category:Alumni of Trinity College, Cambridge]]
+[[Category:University of Michigan faculty]]
+[[Category:Academic staff of the University of Basel]]
+[[Category:Abc conjecture]]
+[[Category:Members of Academia Europaea]]
+[[Category:British fellows of the Royal Society]]
+
+
+{{UK-mathematician-stub}}

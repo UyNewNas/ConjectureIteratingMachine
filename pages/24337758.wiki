@@ -1,0 +1,9 @@
+#REDIRECT [[BPP (complexity)#Problems]]
+
+{{Redirect category shell|1=
+{{R with possibilities}}
+{{R to section}}
+}}
+
+{{DEFAULTSORT:P Bpp Problem}}
+[[Category:Unsolved problems in computer science]]

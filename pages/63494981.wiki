@@ -1,0 +1,24 @@
+In the mathematical field of [[spectral graph theory]], '''Brouwer's conjecture''' is a conjecture by [[Andries Brouwer]] on upper bounds for the intermediate sums of the [[Eigenvalues and eigenvectors|eigenvalues]] of the [[Laplacian matrix|Laplacian]] of a [[graph (discrete mathematics)|graph]] in term of its number of edges.<ref name=":0">{{Cite book|last1=Brouwer|first1=Andries E.|title=Spectra of Graphs|last2=Haemers|first2=Willem H.|date=2012|publisher=Springer New York|isbn=978-1-4614-1938-9|series=Universitext|location=New York, NY|doi=10.1007/978-1-4614-1939-6}}</ref>
+
+The conjecture states that if ''G'' is a simple undirected graph and ''L''(''G'') its Laplacian matrix, then its eigenvalues ''λ''<sub>''n''</sub>(''L''(''G'')) ≤ ''λ''<sub>''n''−1</sub>(''L''(''G'')) ≤ ... ≤ ''λ''<sub>1</sub>(''L''(''G'')) satisfy
+<math display="block">\sum_{i=1}^{t}\lambda_{i}(L(G))\leq m(G)+\left(\begin{array}{c}
+t+1\\
+2
+\end{array}\right),\quad t=1,\ldots,n</math>
+where ''m''(''G'') is the number of edges of ''G''.
+
+== State of the art ==
+Brouwer has confirmed by computation that the conjecture is valid for all graphs with at most 10 vertices.<ref name=":0" /> It was later shown that the conjecture also holds for all graphs with up to 11 vertices.<ref>{{Cite journal |last=Cooper |first=Joshua N. |date=2021 |title=Constraints on Brouwer's Laplacian spectrum conjecture |url=https://linkinghub.elsevier.com/retrieve/pii/S0024379520306017 |journal=Linear Algebra and its Applications |language=en |volume=615 |pages=11–27 |doi=10.1016/j.laa.2020.12.028|arxiv=2003.03447 }}</ref>
+
+It is also known that the conjecture is valid for any number of vertices if ''t'' = 1, 2, 3, ''n'' − 4, ''n'' − 3, ''n'' − 2, ''n'' − 1, and ''n''.<ref>{{Cite journal |last=Wang |first=Ke |last2=Lin |first2=Zhen |last3=Zhang |first3=Shumin |last4=Ye |first4=Chengfu |date=2026 |title=A Proof of Brouwer's Conjecture for k = 3 |url=https://linkinghub.elsevier.com/retrieve/pii/S0024379526000406 |journal=Linear Algebra and its Applications |language=en |doi=10.1016/j.laa.2026.01.026|url-access=subscription }}</ref>
+
+For certain types of graphs, Brouwer's conjecture is known to be valid for all ''t'' and for any number of vertices. In particular, it is known that is valid for trees,<ref>{{Cite journal|last1=Haemers|first1=W.H.|last2=Mohammadian|first2=A.|last3=Tayfeh-Rezaie|first3=B.|date=2010|title=On the sum of Laplacian eigenvalues of graphs|journal=Linear Algebra and Its Applications|language=en|volume=432|issue=9|pages=2214–2221|doi=10.1016/j.laa.2009.03.038|doi-access=free}}</ref> and for unicyclic and bicyclic graphs.<ref>{{Cite journal|last1=Du|first1=Zhibin|last2=Zhou|first2=Bo|date=2012|title=Upper bounds for the sum of Laplacian eigenvalues of graphs|journal=Linear Algebra and Its Applications|language=en|volume=436|issue=9|pages=3672–3683|doi=10.1016/j.laa.2012.01.007|doi-access=free}}</ref> It was also proved that Brouwer’s conjecture holds for two large families of graphs; the first family of graphs is obtained from a clique by identifying each of its vertices to a vertex of an arbitrary c-cyclic graph, and the second family is composed of the graphs in which the removal of the edges of the maximal complete bipartite subgraph gives a graph each of whose non-trivial components is a c-cyclic graph.<ref>{{Cite journal|last1=Ganie|first1=Hilal A.|last2=Pirzada|first2=S.|last3=Rather|first3=Bilal A.|last4=Trevisan|first4=V|date=2020|title=Further developments on Brouwer's conjecture for the sum of Laplacian eigenvalues of graphs|journal=Linear Algebra and Its Applications|language=en|volume=588|issue=1|pages=1–18|doi=10.1016/j.laa.2019.11.020|s2cid=213564785 |doi-access=free}}</ref> 
+For certain sequences of random graphs, Brouwer's conjecture holds true with probability tending to one as the number of vertices tends to infinity.<ref>{{Cite journal|last=Rocha|first=Israel|date=2020|title=Brouwer's conjecture holds asymptotically almost surely|journal=Linear Algebra and Its Applications|language=en|volume=597|pages=198–205|doi=10.1016/j.laa.2020.03.019|arxiv=1906.05368|s2cid=189762363 }}</ref>
+
+== References ==
+{{Reflist}}
+
+[[Category:Algebraic graph theory]]
+[[Category:Matrices (mathematics)]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

@@ -1,0 +1,144 @@
+{{Short description|Unsolved geometry problem about planar regions}}
+{{unsolved|mathematics|What is the minimum area of a shape that can cover every unit-length curve?}}
+[[File:moser_worm_problem.svg|thumb|upright=1.5|Some possible bounds to the Moser's worm problem:
+{|
+|valign="top"|{{nowrap|1.}}||An upper bound is a disc of diameter equal to the length of the worm.
+|-
+|valign="top"|2.||By symmetry, half the disc is sufficient.
+|-
+|valign="top"|3.||The cover must support a width at least the worm's length divided by {{pi}}
+|-
+|valign="top"|4.||A solution by John E. Wetzel.<ref>http://researchgate.net/figure/The-smallest-known-worm-cover_fig3_268673536</ref>
+|}
+]]
+'''Moser's worm problem''' (also known as '''mother worm's blanket problem'''{{cn|date=April 2026}}) is an unsolved problem in [[geometry]] formulated by the Austrian-Canadian mathematician [[Leo Moser]] in 1966. The problem asks for the region of smallest [[area]] that can accommodate every [[plane curve]] of length&nbsp;1.  Here "accommodate" means that the curve may be [[congruence (geometry)|rotated and translated]] to fit inside the region. In some variations of the problem, the region is restricted to be [[convex set|convex]].
+
+==Examples==
+For example, a [[circle|circular disk]] of radius 1/2 can accommodate any plane curve of length&nbsp;1 by placing the midpoint of the curve at the center of the disk.  Another possible solution has the shape of a [[rhombus]] with vertex angles of 60° and 120° and with a long diagonal of unit length.<ref>{{harvtxt|Gerriets|Poole|1974}}.</ref> However, these are not optimal solutions; other shapes are known that solve the problem with smaller areas.
+
+==Solution properties==
+It is not completely trivial that a minimum-area cover exists. An alternative possibility would be that there is some minimal area that can be approached but not actually attained. However, there does exist a smallest [[convex set|convex]] cover. Its existence follows from the [[Blaschke selection theorem]].<ref>{{harvtxt|Norwood|Poole|Laidacker|1992}} attribute this observation to an unpublished manuscript of Laidacker and Poole, dated 1986.</ref>
+
+It is also not trivial to determine whether a given shape forms a cover. {{harvtxt|Gerriets|Poole|1974}} conjectured that a shape accommodates every unit-length curve if and only if it accommodates every unit-length [[polygonal chain]] with three segments, a more easily tested condition,<ref>{{harvtxt|Gerriets|Poole|1974}}.</ref> but {{harvtxt|Panraksa|Wetzel|Wichiramala|2007}} showed that no finite bound on the number of segments in a polychain would suffice for this test.<ref>{{harvtxt|Panraksa|Wetzel|Wichiramala|2007}}.</ref>
+
+==Known bounds==
+The problem remains open, but over a series of papers, researchers have tightened the gap between the known lower and upper bounds. In particular,  {{harvtxt|Norwood|Poole|2003}} constructed a (nonconvex) universal cover and showed that the minimum shape has area at most 0.260437;<ref>{{harvtxt|Norwood|Poole|2003}}.</ref> {{harvtxt|Gerriets|Poole|1974}} and {{harvtxt|Norwood|Poole|Laidacker|1992}} gave weaker upper bounds.<ref>{{harvtxt|Gerriets|Poole|1974}}; {{harvtxt|Norwood|Poole|Laidacker|1992}}.</ref> In the convex case, {{harvtxt|Wang|2006}} improved an upper bound to 0.270911861.<ref>{{harvtxt|Wang|2006}}.</ref> {{harvtxt|Khandhawit|Pagonakis|Sriswasdi|2013}} used a min-max strategy for the area of a convex set containing a segment, a triangle, and a rectangle to show a lower bound of 0.232239 for a convex cover.<ref>{{harvtxt|Khandhawit|Pagonakis|Sriswasdi|2013}}.</ref>
+
+In the 1970s, John Wetzel conjectured that a 30° [[circular sector]] of unit radius is a cover with area <math>\pi/12 \approx 0.2618</math>. This conjecture was partially proved for "drapeable" unit arcs in {{harvtxt|Movshovich|Wetzel|2017}};<ref>{{harvtxt|Movshovich|Wetzel|2017}}.</ref> it was finally settled in general by {{harvtxt|Panraksa|Wichiramala|2021}}.<ref>{{harvtxt|Panraksa|Wichiramala|2021}}.</ref> This improves the upper bound for the convex cover by about 3%.
+
+==See also==
+* [[Moving sofa problem]], the problem of finding a maximum-area shape that can be rotated and translated through an L-shaped corridor
+* [[Kakeya set]], a set of minimal area that can accommodate every unit-length line segment (with translations allowed, but not rotations)
+* [[Lebesgue's universal covering problem]], find the smallest convex area that can cover any planar set of unit diameter
+* [[Bellman's lost-in-a-forest problem]], find the shortest path to escape from a forest of known size and shape.
+
+==Notes==
+{{reflist}}
+
+==References==
+*{{citation
+ | last1 = Gerriets | first1 = John
+ | last2 = Poole | first2 = George
+ | journal = [[The American Mathematical Monthly]]
+ | mr = 0333991
+ | pages = 36–41
+ | title = Convex regions which cover arcs of constant length
+ | volume = 81
+ | issue = 1
+ | year = 1974
+ | doi=10.2307/2318909| jstor = 2318909
+ }}.
+*{{citation
+ | last1 = Khandhawit | first1 = Tirasan
+ | last2 = Pagonakis | first2 = Dimitrios
+ | last3 = Sriswasdi | first3 = Sira
+ | journal = International Journal of Computational Geometry & Applications
+ | issue = 3
+ | volume = 23
+ | pages = 197–212
+ | mr = 3158583
+ | doi =10.1142/S0218195913500076
+ | title = Lower Bound for Convex Hull Area and Universal Cover Problems
+ | year = 2013| arxiv = 1101.5638| s2cid = 207132316
+ }}.
+*{{citation
+ | last1 = Norwood | first1 = Rick
+ | last2 = Poole | first2 = George
+ | doi = 10.1007/s00454-002-0774-3
+ | issue = 3
+ | journal = [[Discrete and Computational Geometry]]
+ | mr = 1961007
+ | pages = 409–417
+ | title = An improved upper bound for Leo Moser's worm problem
+ | volume = 29
+ | year = 2003| doi-access = free
+ }}.
+*{{citation
+ | last1 = Norwood | first1 = Rick
+ | last2 = Poole | first2 = George
+ | last3 = Laidacker | first3 = Michael
+ | doi = 10.1007/BF02187832
+ | issue = 2
+ | journal = [[Discrete and Computational Geometry]]
+ | mr = 1139077
+ | pages = 153–162
+ | title = The worm problem of Leo Moser
+ | volume = 7
+ | year = 1992| doi-access = free
+ }}.
+*{{citation
+ | last1 = Panraksa | first1 = Chatchawan
+ | last2 = Wetzel | first2 = John E.
+ | last3 = Wichiramala | first3 = Wacharin
+ | doi = 10.1007/s00454-006-1258-7
+ | issue = 2
+ | journal = [[Discrete and Computational Geometry]]
+ | mr = 2295060
+ | pages = 297–299
+ | title = Covering ''n''-segment unit arcs is not sufficient
+ | volume = 37
+ | year = 2007| doi-access = free
+ }}.
+*{{citation
+ | last = Wang | first = Wei
+ | issue = 4
+ | journal = Acta Mathematica Sinica
+ | mr = 2264090
+ | pages = 835–846
+ | title = An improved upper bound for the worm problem
+ | volume = 49
+ | year = 2006}}.
+*{{citation
+| last1 = Panraksa | first1 = Chatchawan
+| last2 = Wichiramala | first2 = Wacharin
+| title = Wetzel's sector covers unit arcs
+| journal = Periodica Mathematica Hungarica
+| volume = 82
+| year = 2021
+| issue = 2
+| pages = 213–222
+| doi = 10.1007/s10998-020-00354-x
+| arxiv = 1907.07351
+| s2cid = 225397486
+| url = https://link.springer.com/article/10.1007/s10998-020-00354-x
+| url-access = subscription
+}}.
+*{{citation
+| last1 = Movshovich | first1 = Yevgenya
+| last2 = Wetzel | first2 = John
+| title = Drapeable unit arcs fit in the unit 30° sector
+| journal = Advances in Geometry
+| volume = 17
+| year = 2017
+| issue = 4
+| pages = 497–506
+| doi = 10.1515/advgeom-2017-0011
+| s2cid = 125746596
+| url = https://www.researchgate.net/publication/318151097_Drapeable_unit_arcs_fit_in_the_unit_30_sector
+}}.
+
+[[Category:Discrete geometry]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Recreational mathematics]]
+[[Category:Curves]]
+[[Category:Area]]

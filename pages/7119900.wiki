@@ -1,0 +1,171 @@
+{{Short description|Unsolved problem in mathematics}}
+In [[mathematics]], '''Hall's conjecture''' is an [[open problem|open question]] on the differences between [[square number|perfect squares]] and [[perfect cube]]s. It asserts that a perfect square ''<math>y^2</math>'' and a perfect cube ''<math>x^3</math>'' that are not equal must lie a substantial distance apart. This question arose from consideration of the [[Mordell equation]] in the theory of [[integer point]]s on [[elliptic curve]]s.
+
+The original version of Hall's conjecture, formulated by [[Marshall Hall, Jr.]] in 1970, says that there is a positive constant ''<math>C</math>'' such that for any [[integer]]s ''<math>x</math>'' and ''<math>y</math>'' for which ''<math>y^2 \neq x^3</math>'',
+
+:<math>|y^2 - x^3| > C|x|^{1/2}</math>.
+
+Hall suggested that perhaps ''<math>C</math>'' could be taken as <math>1/5</math>, which was consistent with all the data known at the time the [[conjecture]] was proposed.
+
+In 1982, [[Danilov (no wiki page)|Danilov]] proved that <math>|y^2-x^3|</math> is less than <math>433\sqrt{2}\times|x|^{1/2}</math> infinitely often,<ref>{{Cite journal |last=Danilov |first=L. V. |date=September 1982 |title=Diophantine equation x3?y2=k and Hall's conjecture |url=http://link.springer.com/10.1007/BF01140190 |journal=Mathematical Notes of the Academy of Sciences of the USSR |language=en |volume=32 |issue=3 |pages=617–618 |doi=10.1007/BF01140190 |issn=0001-4346|url-access=subscription }}</ref> thus providing an upper bound on ''<math>C</math>'' and proving that the exponent <math>1/2</math> (that is, the use of <math>|x|^{1/2}</math>) is optimal and cannot be replaced by any higher power: for no <math>\delta > 0</math> is there a constant ''<math>C</math>'' such that <math>|y^2 - x^3| > C|x|^{1/2+\delta}</math> whenever <math>y^2 \neq x^3</math>.
+
+In 1965, Davenport proved an analogue of the above conjecture in the case of [[polynomial]]s: if <math>f(t)</math> and ''<math>g(t)</math>'' are nonzero polynomials over the [[complex number]]s '''<math>\mathbb{C}</math>''' such that ''<math>g(t)^3\neq f(t)^2</math>'' in ''<math>\mathbb{C}[t]</math>'', then
+
+:<math>\deg(g(t)^2 - f(t)^3) \geq \frac{1}{2}\deg f(t) + 1.</math>
+
+The ''weak'' form of Hall's conjecture, stated by Stark and Trotter around 1980, replaces the [[square root]] on the right side of the [[inequality (mathematics)|inequality]] by any exponent ''less'' than <math>1/2</math>: for any ''<math>\varepsilon > 0</math>'', there is some constant ''<math>c(\varepsilon)</math>'' depending on ''<math>\varepsilon</math>'' such that for any integers ''<math>x</math>'' and ''<math>y</math>'' for which ''<math>y^2 \neq x^3</math>'',
+
+:<math>|y^2 - x^3| > c(\varepsilon) |x|^{1/2 - \varepsilon}</math>.
+
+The original, ''strong'', form of the conjecture with exponent <math>1/2</math> has never been disproved, although it is no longer believed to be true and the term ''Hall's conjecture'' now generally means the version with the ''<math>\varepsilon</math>'' in it.  For example, in 1998, [[Noam Elkies]] found the example
+
+<math>447884928428402042307918^2 - 5853886516781223^3 = -1641843</math>,
+
+for which compatibility with Hall's conjecture would require ''<math>C</math>'' to be less than ''<math>0.0214\approx1/50</math>'', so roughly 10 times smaller than the original choice of <math>1/5</math> that Hall suggested.
+
+The weak form of Hall's conjecture would follow from the [[ABC conjecture]].<ref>{{cite book | last=Schmidt | first=Wolfgang M. | authorlink=Wolfgang M. Schmidt | title=Diophantine approximations and Diophantine equations | series=Lecture Notes in Mathematics | volume=1467 | publisher=[[Springer-Verlag]] | year=1996 | edition=2nd | isbn=3-540-54058-X | zbl=0754.11020 | pages=205–206 }}</ref>  A generalization to other perfect powers is [[Pillai's conjecture]], though it is also known that Pillai's conjecture would be true if Hall's conjecture held for any specific ''<math>0<\varepsilon<1/2</math>''.<ref>{{Cite journal |last=Nair |first=M |date=1 December 1977 |title=A NOTE ON THE EQUATION x^3−y^2=k |url=https://academic.oup.com/qjmath/article/29/4/483/1558203 |journal=The Quarterly Journal of Mathematics |volume=29 |issue=4 |pages=483–487|doi=10.1093/qmath/29.4.483 |url-access=subscription }}</ref>
+
+The table below displays the known cases with <math>r = \sqrt{x}/|y^2-x^3| > 1</math>. Note that ''y'' can be computed as the
+nearest integer to ''x''<sup>3/2</sup>.  This list is known to contain all examples with <math>x \le 10^{29}</math> (the first 44 entries in the table) but may be incomplete past that point.
+
+{| class="wikitable"
+|-
+! # !! x !! r !!
+|-
+| 1 || 2 || 1.41 ||
+|-
+| 2 || 5234 || 4.26 || {{efn-la|name=GPZ}}
+|-
+| 3 || 8158 || 3.76 || {{efn-la|name=GPZ}}
+|-
+| 4 || 93844 || 1.03 || {{efn-la|name=GPZ}}
+|-
+| 5 || 367806 || 2.93 || {{efn-la|name=GPZ}}
+|-
+| 6 || 421351 || 1.05 || {{efn-la|name=GPZ}}
+|-
+| 7 || 720114 || 3.77 || {{efn-la|name=GPZ}}
+|-
+| 8 || 939787 || 3.16 || {{efn-la|name=GPZ}}
+|-
+| 9 || 28187351 || 4.87 || {{efn-la|name=GPZ}}
+|-
+| 10 || 110781386 || 1.23 || {{efn-la|name=GPZ}}
+|-
+| 11 || 154319269 || 1.08 || {{efn-la|name=GPZ}}
+|-
+| 12 || 384242766 || 1.34 || {{efn-la|name=GPZ}}
+|-
+| 13 || 390620082 || 1.33 || {{efn-la|name=GPZ}}
+|-
+| 14 || 3790689201 || 2.20 || {{efn-la|name=GPZ}}
+|-
+| 15 || 65589428378 || 2.19 || {{efn-la|name=E}}
+|-
+| 16 || 952764389446 || 1.15 || {{efn-la|name=E}}
+|-
+| 17 || 12438517260105 || 1.27 || {{efn-la|name=E}}
+|-
+| 18 || 35495694227489 || 1.15 || {{efn-la|name=E}}
+|-
+| 19 || 53197086958290 || 1.66 || {{efn-la|name=E}}
+|-
+| 20 || 5853886516781223 || 46.60 || {{efn-la|name=E}}
+|-
+| 21 || 12813608766102806 || 1.30 || {{efn-la|name=E}}
+|-
+| 22 || 23415546067124892 || 1.46 || {{efn-la|name=E}}
+|-
+| 23 || 38115991067861271 || 6.50 || {{efn-la|name=E}}
+|-
+| 24 || 322001299796379844 || 1.04 || {{efn-la|name=E}}
+|-
+| 25 || 471477085999389882 || 1.38 || {{efn-la|name=E}}
+|-
+| 26 || 810574762403977064 || 4.66 || {{efn-la|name=E}}
+|-
+| 27 || 9870884617163518770 || 1.90 || {{efn-la|name=JHS}}
+|-
+| 28 || 42532374580189966073 || 3.47 || {{efn-la|name=JHS}}
+|-
+| 29 || 44648329463517920535 || 1.79 || {{efn-la|name=JHS}}
+|-
+| 30 || 51698891432429706382 || 1.75 || {{efn-la|name=JHS}}
+|-
+| 31 || 231411667627225650649 || 3.71 || {{efn-la|name=JHS}}
+|-
+| 32 || 601724682280310364065  || 1.88 || {{efn-la|name=JHS}}
+|-
+| 33 || 4996798823245299750533 || 2.17 || {{efn-la|name=JHS}}
+|-
+| 34 || 5592930378182848874404 || 1.38 || {{efn-la|name=JHS}}
+|-
+| 35 || 14038790674256691230847 || 1.27 || {{efn-la|name=JHS}}
+|-
+| 36 || 77148032713960680268604 || 10.18 || {{efn-la|name=JB}}
+|-
+| 37 || 180179004295105849668818 || 5.65 || {{efn-la|name=JB}}
+|-
+| 38 || 372193377967238474960883 || 1.33 || {{efn-la|name=JHS}}
+|-
+| 39 || 664947779818324205678136 || 16.53 || {{efn-la|name=JHS}}
+|-
+| 40 || 2028871373185892500636155 || 1.14 || {{efn-la|name=JB}}
+|-
+| 41 || 10747835083471081268825856 || 1.35 || {{efn-la|name=JHS}}
+|-
+| 42 || 37223900078734215181946587 || 1.87 || {{efn-la|name=JHS}}
+|-
+| 43 || 69586951610485633367491417 || 1.22 || {{efn-la|name=AKR}}
+|-
+| 44 || 3690445383173227306376634720 || 1.51 || {{efn-la|name=JHS}}
+|-
+| 45 || 133545763574262054617147641349 || 1.69 || {{efn-la|name=AKR}}
+|-
+| 46 || 162921297743817207342396140787 || 10.65 || {{efn-la|name=AKR}}
+|-
+| 47 || 374192690896219210878121645171 || 2.97 || {{efn-la|name=AKR}}
+|-
+| 48 || 401844774500818781164623821177 || 1.29 || {{efn-la|name=AKR}}
+|-
+| 49 || 500859224588646106403669009291 || 1.06 || {{efn-la|name=AKR}}
+|-
+| 50 || 1114592308630995805123571151844 || 1.04 || {{efn-la|name=D}}
+|-
+| 51 || 39739590925054773507790363346813 || 3.75 || {{efn-la|name=AKR}}
+|-
+| 52 || 862611143810724763613366116643858 || 1.10 || {{efn-la|name=AKR}}
+|-
+| 53 || 1062521751024771376590062279975859 || 1.006 || {{efn-la|name=AKR}}
+|-
+| 54 || 6078673043126084065007902175846955 || 1.03 || {{efn-la|name=JHS}}
+|}
+
+{{notelist-la|refs=
+{{efn-la|name=GPZ|J. Gebel, A. Pethö and H.G. Zimmer.}}
+{{efn-la|name=E|Noam D. Elkies (including entry 16 which Elkies found but omitted from his published table).}}
+{{efn-la|name=JHS|I. Jiménez Calvo, J. Herranz and G. Sáez (with the order of entries 29 and 30 corrected)}}
+{{efn-la|name=JB|Johan Bosman (using the software of JHS).}}
+{{efn-la|name=AKR|S. Aanderaa, L. Kristiansen and H.K. Ruud.}}
+{{efn-la|name=D|L.V. Danilov. Item 50 belongs to the infinite sequence found by Danilov.}}
+}}
+
+==References==
+{{reflist}}
+{{Refbegin}}
+<!-- Consider making these into footnotes proper, and using a citation format for all of them. -->
+* {{cite book |last=Guy | first=Richard K. | authorlink=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=3rd | year=2004 |isbn=978-0-387-20860-2 | zbl=1058.11001 | at=D9 }}
+* {{cite book| last=Hall, Jr. | first=Marshall | year=1971 | chapter=The Diophantine equation ''x''<sup>3</sup> - ''y''<sup>2</sup> = ''k'' | pages=173–198 | title=Computers in Number Theory | publisher=Academic Press | editor1-first=A.O.L. | editor1-last=Atkin | editor1-link=A. O. L. Atkin | editor2-first=B. J. |editor2-last=Birch | editor2-link=Bryan John Birch | isbn=0-12-065750-3 | zbl=0225.10012}}
+*Elkies, N.D. "Rational points near curves and small nonzero | 'x<sup>3</sup> - y<sup>2</sup>'| via lattice reduction", http://arxiv.org/abs/math/0005139
+*Danilov, L.V., "The Diophantine equation&nbsp;&nbsp; 'x<sup>3</sup> &nbsp; - &nbsp;y<sup>2&nbsp;</sup>'&nbsp; ' = &nbsp;k&nbsp; ' and Hall's conjecture", 'Math.  Notes Acad. Sci. USSR' ''32''(1982), 617-618.
+*Gebel, J., Pethö, A., and Zimmer, H.G.: "On Mordell's equation", 'Compositio Math.' ''110''(1998), 335-367.
+*I. Jiménez Calvo, J. Herranz and G. Sáez Moreno, "A new algorithm to search for small nonzero |'x3&nbsp;-&nbsp;y2'| values", 'Math. Comp.' ''78'' (2009), pp. 2435-2444.
+*S. Aanderaa, L. Kristiansen and H. K. Ruud, "Search for good examples of Hall's conjecture", 'Math. Comp.' ''87'' (2018), 2903-2914.
+{{Refend}}
+
+==External links==
+* [http://www.math.harvard.edu/~elkies/hall.html a page on the problem] by [[Noam Elkies]]
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Abc conjecture]]

@@ -1,0 +1,66 @@
+'''Hermite's problem''' is an [[open problem]] in [[mathematics]] posed by [[Charles Hermite]] in 1848.  He asked for a way of expressing [[real number]]s as [[sequence]]s of [[natural number]]s, such that the sequence is eventually periodic precisely when the original number is a cubic [[Irrational number|irrational]].
+
+==Motivation==
+
+A standard way of writing real numbers is by their [[decimal representation]], such as:
+:<math>x=a_0.a_1a_2a_3\ldots\ </math>
+where ''a''<sub>0</sub> is an [[integer]], the [[Floor and ceiling functions|integer part]] of ''x'', and ''a''<sub>1</sub>, ''a''<sub>2</sub>, ''a''<sub>3</sub>,&thinsp;... are integers between 0 and 9.  Given this representation the number ''x'' is equal to
+:<math>x=\sum_{n=0}^\infty \frac{a_n}{10^n}.</math>
+
+The real number ''x'' is a [[rational number]] only if its decimal expansion is eventually periodic, that is if there are natural numbers ''N'' and ''p'' such that for every ''n''&nbsp;&ge;&nbsp;''N'' it is the case that ''a''<sub>''n''+''p''</sub>&nbsp;=&nbsp;''a''<sub>''n''</sub>.
+
+Another way of expressing numbers is to write them as [[simple continued fraction]]s, as in:
+:<math>x=[a_0;a_1,a_2,a_3,\ldots],\ </math>
+where ''a''<sub>0</sub> is an integer and ''a''<sub>1</sub>, ''a''<sub>2</sub>, ''a''<sub>3</sub>... are natural numbers.  From this representation we can recover ''x'' since
+:<math>x=a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \ddots}}}.</math>
+
+If ''x'' is a rational number then the sequence (''a''<sub>''n''</sub>) terminates after finitely many terms.  On the other hand, [[Euler]] proved that irrational numbers require an infinite sequence to express them as continued fractions.<ref>{{citation|first=Leonhard|last=Euler|url=https://scholarlycommons.pacific.edu/euler-works/101/|title=Introductio in analysin infinitorum, Vol. I|year=1748|location=Lausanne|publisher=Marcum-Michaelem Bousquet|via=The Euler Archive}}</ref>  Moreover, this sequence is eventually periodic (again, so that there are natural numbers ''N'' and ''p'' such that for every ''n''&nbsp;&ge;&nbsp;''N'' we have ''a''<sub>''n''+''p''</sub>&nbsp;=&nbsp;''a''<sub>''n''</sub>), if and only if ''x'' is a [[quadratic irrational]].
+
+==Hermite's question==
+
+Rational numbers are [[algebraic number]]s that satisfy a [[polynomial]] of degree 1, while quadratic irrationals are algebraic numbers that satisfy a polynomial of degree 2.  For both these [[Set (mathematics)|sets]] of numbers we have a way to construct a sequence of natural numbers (''a''<sub>''n''</sub>) with the property that each sequence gives a unique real number and such that this real number belongs to the corresponding set if and only if the sequence is eventually periodic.
+
+In 1848, Charles Hermite wrote a letter to [[Carl Gustav Jacob Jacobi]] asking if this situation could be generalised, that is can one assign a sequence of natural numbers to each real number ''x'' such that the sequence is eventually periodic precisely when ''x'' is a cubic irrational, that is an algebraic number of degree 3?<ref>Émile Picard, ''L'œuvre scientifique de Charles Hermite'', Ann. Sci. École Norm. Sup. '''3''' 18 (1901), pp.9&ndash;34.</ref><ref>''Extraits de lettres de M. Ch. Hermite à M. Jacobi sur différents objects de la théorie des nombres. (Continuation).'', Journal für die reine und angewandte Mathematik '''40''' (1850), pp.279&ndash;315, {{doi|10.1515/crll.1850.40.279}}</ref>  Or, more generally, for each natural number ''d'' is there a way of assigning a sequence of natural numbers to each real number ''x'' that can pick out when ''x'' is algebraic of degree ''d''?
+
+==Approaches==
+
+Sequences that attempt to solve Hermite's problem are often called [[Generalized continued fraction#Higher dimensions|multidimensional continued fractions]].  Jacobi himself came up with an early example, finding a sequence corresponding to each pair of real numbers (''x'',&thinsp;''y'') that acted as a higher-dimensional analogue of continued fractions.<ref>C. G. J. Jacobi, ''Allgemeine Theorie der kettenbruchänlichen Algorithmen, in welche jede Zahl aus ''drei'' vorhergehenden gebildet wird'' (English: ''General theory of continued-fraction-like algorithms in which each number is formed from three previous ones''), Journal für die reine und angewandte Mathematik '''69''' (1868), pp.29&ndash;64.</ref>  He hoped to show that the sequence attached to (''x'',&thinsp;''y'') was eventually periodic if and only if both ''x'' and ''y'' belonged to a [[Cubic field|cubic number field]], but was unable to do so and whether this is the case remains unsolved.
+
+In 2015, for the first time, a periodic representation for any cubic irrational has been provided by means of ternary continued fractions, i.e., the problem of writing cubic irrationals as a periodic sequence of rational or integer numbers has been solved. However, the periodic representation does not derive from an algorithm defined over all real numbers and it is derived only starting from the knowledge of the [[Minimal polynomial (field theory)|minimal polynomial]] of the cubic irrational.<ref>Nadir Murru, ''On the periodic writing of cubic irrationals and a generalization of Rédei functions'', Int. J. Number Theory '''11''' (2015), no.&nbsp;3, pp. 779-799, doi: 10.1142/S1793042115500438</ref>
+
+Rather than generalising continued fractions, another approach to the problem is to generalise [[Minkowski's question-mark function]].  This function ?&nbsp;:&nbsp;[0,&thinsp;1]&nbsp;&rarr;&nbsp;[0,&thinsp;1] also picks out quadratic irrational numbers since ?(''x'') is rational if and only if ''x'' is either rational or a quadratic irrational number, and moreover ''x'' is rational if and only if ?(''x'') is a [[dyadic rational]], thus ''x'' is a quadratic irrational precisely when ?(''x'') is a non-dyadic rational number.  Various generalisations of this function to either the [[unit square]] [0,&thinsp;1]&nbsp;&times;&nbsp;[0,&thinsp;1] or the two-dimensional [[simplex]] have been made, though none has yet solved Hermite's problem.<ref>L. Kollros, ''Un Algorithme pour l'approximation simultanée de Deux Granduers'', Inaugural-Dissertation, Universität Zürich, 1905.</ref><ref>{{citation
+ | last1 = Beaver | first1 = Olga R. | author1-link = Olga Beaver
+ | last2 = Garrity | first2 = Thomas | author2-link = Thomas A. Garrity
+ | arxiv = math/0210480
+ | doi = 10.1016/j.jnt.2004.01.008
+ | issue = 1
+ | journal = Journal of Number Theory
+ | mr = 2059953
+ | pages = 105–134
+ | title = A two-dimensional Minkowski {{math|?(''x'')}} function
+ | volume = 107
+ | year = 2004}}</ref>
+
+Two subtractive algorithms for finding a periodic representative of cubic vectors were proposed by Oleg Karpenkov.<ref>{{citation
+ | last = Karpenkov | first = Oleg
+ | arxiv = 2101.12707
+ | doi = 10.4064/aa210614-5-1
+ | issue = 1
+ | journal = Acta Arithmetica
+ | mr = 4415995
+ | pages = 27–48
+ | title = On Hermite's problem, Jacobi–Perron type algorithms, and Dirichlet groups
+ | volume = 203
+ | year = 2022}}; see also Karpenkov's "On a periodic Jacobi-Perron type algorithm", {{arxiv|2101.12627}}, merged into the published journal version of this paper.</ref>
+The first (<math>\sin^2</math> algorithm) works for the totally real case only. The input for the algorithm is a triples of cubic vectors. A cubic vector is any vector generating a degree 3 extension of <math>\mathbb{Q}</math>. In this case the cubic vectors are conjugate if and only if the output of the algorithm is periodic. 
+The second ('''HAPD''' algorithm) is conjectured to work for all cases (including for complex cubic vectors) and all dimensions <math>d\geq3</math>.
+
+==See also==
+* [[Jacobi–Perron algorithm]]
+
+==References==
+{{Reflist}}
+
+[[Category:Continued fractions]]
+[[Category:Algebraic number theory]]
+[[Category:Unsolved problems in number theory]]

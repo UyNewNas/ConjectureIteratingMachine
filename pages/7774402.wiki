@@ -1,0 +1,26 @@
+{{short description|Mathematical conjecture}}
+{{one source |date=May 2024}}
+In [[mathematics]], specifically in [[algebraic K-theory]], the '''Birch–Tate conjecture''' is a [[conjecture]] proposed by [[Bryan John Birch]] and [[John Tate (mathematician)|John Tate]] relating the <math>K_2</math> group of a [[field (mathematics)|field]] to its [[Dedekind zeta function]].
+
+==Statement==
+Formally, the [[group (mathematics)|group]] <math>K_2</math> of a [[number field]] <math>F</math> is defined as the [[Center (group theory)|center]] of the [[Steinberg group (K-theory)|Steinberg group]] of the [[ring of integers]] of <math>F</math>. <math>K_2</math> is also known as the tame kernel of <math>F</math>. The Birch–Tate conjecture relates the [[Order (group theory)|order]] of this group (its number of elements) to the value of the [[Dedekind zeta function]] <math>\zeta_F</math>.
+
+More specifically, let <math>F</math> be a [[totally real number field]] and let <math>N</math> be the largest [[positive integer]] such that the [[Field extension|extension]] of <math>F</math> by the <math>N</math>-th [[root of unity]] has an [[Elementary abelian group|elementary abelian]] [[p-group|2-group]] as its [[Galois group]]. Then the conjecture states that
+:<math>\#K_2 = |N\cdot\zeta_F(-1)|.</math>
+
+==Status==
+Progress on this conjecture has been made as a consequence of work on [[Iwasawa theory]], and in particular of the proofs given for the so-called "[[main conjecture of Iwasawa theory]]."
+
+==References==
+
+* {{cite book |last=Tate |first=J. T. |authorlink=John Tate (mathematician) |chapter=Symbols in arithmetic |title=Actes du Congrès International des Mathématiciens (Nice, 1970), Tome 1 |publisher=Gauthier-Villars |location=[[Paris]] |year=1971 |editor1-last=Berger |editor1-first=M. |editor1-link=Marcel Berger |editor2-last=Dieudonné |editor2-first=J. |editor2-link=Jean Dieudonné |editor3-last=Leray |editor3-first=J. |editor3-link=Jean Leray |editor4-last=Lions |editor4-first=J.-L. |editor4-link=Jacques-Louis Lions |editor5-last=Malliavin |editor5-first=P. |editor5-link=Paul Malliavin |editor6-last=Serre |editor6-first=J.-P. |editor6-link=Jean-Pierre Serre |pages=201–211}}
+
+==External links==
+*{{SpringerEOM| title=Birch–Tate conjecture | id=Birch-Tate_conjecture | oldid=11217 | first=J. | last=Hurrelbrink }}
+
+[[Category:Conjectures]]
+[[Category:K-theory]]
+[[Category:Unsolved problems in mathematics]]
+
+
+{{numbertheory-stub}}

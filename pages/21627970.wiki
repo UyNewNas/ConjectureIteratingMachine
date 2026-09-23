@@ -1,0 +1,76 @@
+{{Short description|Mathematical conjecture}}
+[[File:Hugh Montgomery at Oberwolfach 2008.jpg|thumb|Hugh Montgomery at [[Oberwolfach Research Institute for Mathematics|Oberwolfach]] in 2008]]
+
+In [[mathematics]], '''Montgomery's pair correlation conjecture''' is a [[conjecture]] made by {{harvs|txt|authorlink=Hugh Montgomery (mathematician)|year=1973|last=Montgomery|first=Hugh}} that the pair correlation between pairs of [[zero of a function|zeros]] of the [[Riemann zeta function]] (normalized to have unit average spacing) is
+:<math>1-\left(\frac{\sin(\pi u)}{\pi u}\right)^{\!2},</math>
+which, as [[Freeman Dyson]] pointed out to him, is the same as the pair [[correlation function]] of [[Gaussian unitary ensemble|random Hermitian matrices]].
+
+== Conjecture ==
+''Under the assumption that the [[Riemann hypothesis]] is true.''<ref>It has recently been shown by [[Daniel Goldston]], Junghun Lee, Jordan Schettler, and Ade Irma Suriajaya that Montogomery's pair correlation conjecture can also be formulated without this assumption, but the result is not yet peer reviewed.</ref><ref>{{cite | last1=Goldston | first1=Daniel A. | last2=Lee | first2=Junghun | last3=Schettler | first3=Jordan | last4=Suriajaya | first4=Ade Irma | title=Pair Correlation Conjecture for the zeros of the Riemann zeta-function II: The Alternative Hypothesis | date=2025 | doi=10.48550/ARXIV.2507.06823 | url=https://arxiv.org/abs/2507.06823 | access-date=2026-09-05 | page=}}</ref>
+
+Let <math>\alpha\leq \beta </math> be fixed, then the conjecture states
+
+: <math>
+\begin{align}
+\lim_{T \to \infty} \frac{\#\{(\gamma,\gamma') :0 < \gamma,\gamma' \leq T \text{ and }2\pi\alpha/\log(T)\leq \gamma -\gamma' \leq 2\pi\beta/\log(T)\}}{\frac{T}{2\pi}\log{T}} 
+\\
+ = \int\limits_\alpha^\beta 1-\left(\frac{\sin(\pi u)}{\pi u}\right)^2  \mathrm{d}u + \delta(\alpha, \beta),
+\end{align}
+</math>
+
+where each <math>\gamma, \gamma'</math> is the imaginary part of the non-trivial zeros of [[Riemann zeta function]], that is <math>\tfrac{1}{2}+i\gamma</math>, and <math>\delta(\alpha, \beta) = 1</math> if <math>0 \in [\alpha, \beta]</math> and <math>\delta(\alpha, \beta) = 0</math> otherwise.
+
+== Explanation ==
+
+Informally, this means that the chance of finding a zero in a very short [[interval (mathematics)|interval]] of length 2π''L''/log(''T'') at a distance 2π''u''/log(''T'') from a zero 1/2+''iT'' is about ''L'' times the expression above. (The factor 2π/log(''T'') is a normalization factor that can be thought of informally as the average spacing between zeros with [[complex number|imaginary part]] about ''T''.) {{harvs|txt|authorlink=Andrew Odlyzko|year=1987|last=Odlyzko|first=Andrew}} showed that the conjecture was supported by large-scale computer calculations of the zeros. The conjecture has been extended to correlations of more than two zeros, and also to zeta functions of automorphic representations {{harv|Rudnick|Sarnak|1996}}. In 1982 a student of Montgomery's, Ali Erhan Özlük, proved the pair correlation conjecture for some of Dirichlet's L-functions ({{harvs|txt|authorlink=A.E.Ozluk |year=1982|last=Ozluk |first=A. E.}}).
+
+The connection with random unitary matrices could lead to a proof of the [[Riemann hypothesis]] (RH). The [[Hilbert–Pólya conjecture]] asserts that the zeros of the Riemann Zeta function correspond to the [[eigenvalue]]s of a [[linear operator]], and implies RH. Some people think this is a promising approach ({{harvs|txt|authorlink=Andrew Odlyzko|year=1987|last=Odlyzko|first=Andrew}}).
+
+Montgomery was studying the [[Fourier transform]] ''F''(''x'') of the pair correlation function, and showed (assuming the Riemann hypothesis) that it was
+equal to |''x''| for |''x''| < 1. His methods were unable to determine it for |''x''| ≥ 1, but he conjectured that it was equal to 1 for these ''x'', which implies that the pair correlation function is as above. He was also motivated by the notion that the Riemann hypothesis is not a brick wall, and one should feel free to make ''stronger'' conjectures.
+
+== F(α) conjecture or strong pair correlation conjecture ==
+Let again <math>\tfrac{1}{2}+i\gamma</math> and <math>\tfrac{1}{2}+i\gamma'</math> stand for non-trivial zeros of the Riemann zeta function. Montgomery introduced the function
+:<math>F(\alpha):=F_T(\alpha)=\left(\frac{T}{2\pi}\log(T)\right)^{-1}\sum\limits_{0<\gamma,\gamma'\leq T}T^{i\alpha(\gamma-\gamma')}w(\gamma-\gamma')</math>
+for <math>T>2,\;\alpha\in \mathbb{R}</math> and some weight function <math>w(u):=\tfrac{4}{(4+u^2)}</math>.
+
+Montgomery and Goldston<ref>{{Cite encyclopedia|first1=D. A.|last1=Goldston|first2=H. L.|last2=Montgomery|title=Pair correlation of zeros and primes in short intervals|editor1=Adolphson, A.C.|editor2=Conrey, J.B.|editor3=Ghosh, A.|editor4=Yager, R.I.|encyclopedia=Analytic number theory and Diophantine problems|series=Progress in Mathematics|volume=70|pages=183–203|publisher=Birkhäuser Boston|doi=10.1007/978-1-4612-4816-3_10|date=1987|isbn=978-1-4612-9173-2 }}</ref> proved under the Riemann hypothesis, that for <math>|\alpha|\leq 1</math> this function converges uniformly
+:<math>F(\alpha)=T^{-2|\alpha|}\log (T)(1+\mathcal{o}(1))+|\alpha|+\mathcal{o}(1),\quad T\to \infty.</math>
+
+Montgomery conjectured, which is now known as the ''F(α) conjecture'' or ''strong pair correlation conjecture'', that for <math>|\alpha|> 1</math> we have uniform convergence<ref>{{cite journal|doi=10.1515/crelle-2021-0084|arxiv=2108.09258|date=February 2022|publisher=Walter de Gruyter (GmbH)|number=786|pages= 205–243|first1=Emanuel|last1=Carneiro|first2=Vorrapan|last2=Chandee|first3=Andrés|last3=Chirre|first4=Micah B.|last4=Milinovich|title=On Montgomery's pair correlation conjecture: A tale of three integrals|journal=Journal für die reine und angewandte Mathematik (Crelle's Journal)}}</ref>
+:<math>F(\alpha)=1+\mathcal{o}(1),\quad T\to \infty</math>
+for <math>\alpha</math> in a bounded interval.
+
+== Numerical calculation by Odlyzko ==
+[[File:Montgomery-Odlyzko law.png|right|thumb|The real line describes the {{nowrap|two-point}} correlation function of the random matrix of type GUE. Blue dots describe the normalized spacings of the {{nowrap|non-trivial}} zeros of Riemann zeta function, the first 10<sup>5</sup> zeros.]]
+
+In the 1980s, motivated by Montgomery's conjecture, Odlyzko began an intensive numerical study of the statistics of the zeros of ζ(''s'').  He confirmed the distribution of the spacings between non-trivial zeros using detailed numerical calculations and demonstrated that Montgomery's conjecture would be true and that the distribution would agree with the distribution of spacings of [[Random matrix#Gaussian ensembles|GUE random matrix]] eigenvalues using [[Cray X-MP]]. In 1987 he reported the calculations in the paper {{harvs|txt|authorlink=Andrew Odlyzko|year=1987|last=Odlyzko|first=Andrew}}.
+
+For non-trivial zero, 1/2 + i&gamma;<sub>''n''</sub>, let the normalized spacings be
+:<math>\delta_n = \frac{\gamma_{n+1} - \gamma_{n}}{2 \pi}\, { \log{ \frac{\gamma_n}{2 \pi} }}.</math>
+Then we would expect the following formula as the limit for <math>M, N \to\infty</math>:
+
+:<math>\frac{1}{M} \{(n,k) \mid N \leq n \leq N+M, \,k \geq 0, \, \delta_{n} + \delta_{n+1} + \cdots +\delta_{n+k} \in [\alpha,  \beta] \} \sim \int_{\alpha}^{\beta} \left( 
+1- \biggl( \frac{\sin{\pi u}}{\pi u} \biggr)^2 \right) du</math>
+
+Based on a new algorithm developed by Odlyzko and [[Arnold Schönhage]] that allowed them to compute a value of ζ(1/2 + i''t'') in an average time of ''t''<sup>ε</sup> steps, Odlyzko computed millions of zeros at heights around 10<sup>20</sup> and gave some evidence for the GUE conjecture.<ref name ="odlyzko1989">A. M. Odlyzko, "The 10<sup>20</sup>-th zero of the Riemann zeta function and 70 million of its neighbors," AT&T Bell Lab. preprint (1989)</ref><ref name ="metha">M. Mehta (1990), chap.1</ref>
+
+The figure contains the first 10<sup>5</sup> non-trivial zeros of the Riemann zeta function. As more zeros are sampled, the more closely their distribution approximates the shape of the GUE random matrix.
+
+==See also==
+* [[Brownian motion and Riemann zeta function]]
+* [[Lehmer pair]]
+
+==References==
+{{reflist}}
+*{{Citation | last1=Ozluk |first1=A.E. | title=Pair Correlation of Zeros of Dirichlet L-functions | series=Ph. D. Dissertation |publisher=Univ. of Michigan |location=Ann Arbor |year=1982 | mr=2632180}}
+*{{Citation | author1-link=Nicholas M. Katz | author2-link=Peter Sarnak | last1=Katz | first1=Nicholas M. | last2=Sarnak | first2=Peter | title=Zeroes of zeta functions and symmetry | doi=10.1090/S0273-0979-99-00766-1  | mr=1640151  | year=1999 | journal=Bulletin of the American Mathematical Society |series=New Series | issn=0002-9904 | volume=36 | issue=1 | pages=1–26| doi-access=free }}
+*{{Citation | last1=Montgomery | first1=Hugh L. | title=Analytic number theory |series=Proc. Sympos. Pure Math.|volume= XXIV | publisher=[[American Mathematical Society]] | location=Providence, R.I. | mr=0337821  | year=1973 | chapter=The pair correlation of zeros of the zeta function | pages=181–193}}
+*{{Citation | authorlink=Odlyzko | last1=Odlyzko | first1=A. M. | title=On the distribution of spacings between zeros of the zeta function | jstor=2007890 | mr=866115  | year=1987 | journal=[[Mathematics of Computation]] | issn=0025-5718 | volume=48 | issue=177 | pages=273–308 | doi=10.2307/2007890 | doi-access=free }}
+*{{Citation | author2-link=Peter Sarnak | last1=Rudnick | first1=Zeév | last2=Sarnak | first2=Peter | title=Zeros of principal L-functions and random matrix theory | doi=10.1215/S0012-7094-96-08115-6 | mr=1395406  | year=1996 | journal=[[Duke Mathematical Journal]] | issn=0012-7094 | volume=81 | issue=2 | pages=269–322}}
+
+[[Category:Zeta and L-functions]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Analytic number theory]]
+[[Category:Random matrices]]

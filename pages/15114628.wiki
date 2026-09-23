@@ -1,0 +1,99 @@
+In [[mathematics]], specifically the field of [[transcendental number theory]], the '''four exponentials conjecture''' is a [[conjecture]] which, given the right conditions on the exponents, would guarantee the [[transcendental number|transcendence]] of at least one of four exponentials.  The conjecture, along with two related, stronger conjectures, is at the top of a hierarchy of conjectures and theorems concerning the arithmetic nature of a certain number of values of the [[exponential function]].
+
+==Statement==
+
+If ''x''<sub>1</sub>, ''x''<sub>2</sub> and ''y''<sub>1</sub>, ''y''<sub>2</sub> are two pairs of [[complex numbers]], with each pair being [[linearly independent]] over the [[rational numbers]], then at least one of the following four numbers is [[Transcendental number|transcendental]]:
+:<math>e^{x_1y_1}, e^{x_1y_2}, e^{x_2y_1}, e^{x_2y_2}.</math>
+
+An alternative way of stating the conjecture in terms of logarithms is the following.  For 1&nbsp;&le;&nbsp;''i'', ''j''&nbsp;&le;&nbsp;2 let λ<sub>''ij''</sub> be complex numbers such that exp(λ<sub>''ij''</sub>) are all [[algebraic number|algebraic]].  Suppose λ<sub>11</sub> and λ<sub>12</sub> are linearly independent over the rational numbers, and λ<sub>11</sub> and λ<sub>21</sub> are also linearly independent over the rational numbers, then
+:<math>\lambda_{11}\lambda_{22}\neq\lambda_{12}\lambda_{21}.\,</math>
+
+An equivalent formulation in terms of [[linear algebra]] is the following.  Let ''M'' be the 2×2 [[matrix (mathematics)|matrix]]
+:<math>M=\begin{pmatrix}\lambda_{11}&\lambda_{12} \\ \lambda_{21}&\lambda_{22}\end{pmatrix},</math>
+where exp(λ<sub>''ij''</sub>) is algebraic for 1&nbsp;&le;&nbsp;''i'', ''j''&nbsp;&le;&nbsp;2.  Suppose the two rows of ''M'' are linearly independent over the rational numbers, and the two columns of ''M'' are linearly independent over the rational numbers.  Then the [[Rank (linear algebra)|rank]] of ''M'' is 2.
+
+While a 2×2 matrix having linearly independent rows and columns usually means it has rank 2, in this case we require linear independence over a smaller field so the rank isn't forced to be 2.  For example, the matrix
+:<math>\begin{pmatrix}1&\pi \\ \pi&\pi^2\end{pmatrix}</math>
+has rows and columns that are linearly independent over the rational numbers, since ''π'' is [[irrational number|irrational]].  But the rank of the matrix is 1.  So in this case the conjecture would imply that at least one of ''e'', ''e''<sup>''π''</sup>, and ''e''<sup>''π''<sup>2</sup></sup> is transcendental (which in this case is already known since ''e'' is transcendental).
+
+==History==
+
+The conjecture was considered in the early 1940s by [[Atle Selberg]] who never formally stated the conjecture.<ref>Waldschmidt, (2006).</ref>  A special case of the conjecture is mentioned in a 1944 paper of [[Leonidas Alaoglu]] and [[Paul Erdős]] who suggest that it had been considered by [[Carl Ludwig Siegel]].<ref>Alaoglu and Erdős, (1944), p.455: "It is very likely that ''q''<sup> ''x''</sup> and ''p''<sup> ''x''</sup> cannot be rational at the same time except if ''x'' is an integer. ... At present we can not show this.  Professor Siegel has communicated to us the result that ''q''<sup> ''x''</sup>, ''r''<sup> ''x''</sup> and ''s''<sup> ''x''</sup> can not be simultaneously rational except if ''x'' is an integer."</ref>  An equivalent statement was first mentioned in print by [[Theodor Schneider]] who set it as the first of eight important, open problems in transcendental number theory in 1957.<ref>Schneider, (1957).</ref>
+
+The related [[six exponentials theorem]] was first explicitly mentioned in the 1960s by [[Serge Lang]]<ref>Lang, (1966), chapter 2 section 1.</ref> and [[Kanakanahalli Ramachandra]],<ref>Ramachandra, (1967/8).</ref> and both also explicitly conjecture the above result.<ref>Waldschmidt, (2000), p.15.</ref>  Indeed, after proving the six exponentials theorem Lang mentions the difficulty in dropping the number of exponents from six to four &mdash; the proof used for six exponentials "just misses" when one tries to apply it to four.
+
+==Corollaries==
+
+Using [[Euler's identity]] this conjecture implies the transcendence of many numbers involving [[E (mathematical constant)|''e'']] and [[Pi|π]].  For example, taking ''x''<sub>1</sub>&nbsp;=&nbsp;1, ''x''<sub>2</sub>&nbsp;=&nbsp;{{radic|2}}, ''y''<sub>1</sub>&nbsp;=&nbsp;''iπ'', and ''y''<sub>2</sub>&nbsp;=&nbsp;''iπ''{{radic|2}}, the conjecture&mdash;if true&mdash;implies that one of the following four numbers is transcendental:
+:<math>e^{i\pi}, e^{i\pi\sqrt{2}}, e^{i\pi\sqrt{2}}, e^{2i\pi}.</math>
+The first of these is just &minus;1, and the fourth is 1, so the conjecture implies that ''e''<sup>''iπ''{{radic|2}}</sup> is transcendental (which is already known, by consequence of the [[Gelfond–Schneider theorem]]).
+
+An [[open problem]] in [[number theory]] settled by the conjecture is the question of whether there exists a non-[[integer]] [[real number]] ''t'' such that both 2<sup>''t''</sup> and 3<sup>''t''</sup> are integers, or indeed such that ''a''<sup>''t''</sup> and ''b''<sup>''t''</sup> are both integers for some pair of integers ''a'' and ''b'' that are multiplicatively independent over the integers.  Values of ''t'' such that 2<sup>''t''</sup> is an integer are all of the form ''t''&nbsp;=&nbsp;log<sub>2</sub>''m'' for some integer ''m'', while for 3<sup>''t''</sup> to be an integer, ''t'' must be of the form ''t''&nbsp;=&nbsp;log<sub>3</sub>''n'' for some integer ''n''.  By setting ''x''<sub>1</sub>&nbsp;=&nbsp;1, ''x''<sub>2</sub>&nbsp;=&nbsp;''t'', ''y''<sub>1</sub>&nbsp;=&nbsp;log(2), and ''y''<sub>2</sub>&nbsp;=&nbsp;log(3), the four exponentials conjecture implies that if ''t'' is irrational then one of the following four numbers is transcendental:
+:<math>2, 3, 2^t, 3^t.\,</math>
+So if 2<sup>''t''</sup> and 3<sup>''t''</sup> are both integers then the conjecture implies that ''t'' must be a rational number.  Since the only rational numbers ''t'' for which 2<sup>''t''</sup> is also rational are the integers, this implies that there are no non-integer real numbers ''t'' such that both 2<sup>''t''</sup> and 3<sup>''t''</sup> are integers.  It is this consequence, for any two [[Prime number|primes]] (not just 2 and 3), that Alaoglu and Erdős desired in their paper as it would imply the conjecture that the quotient of two consecutive [[colossally abundant number]]s is prime, extending [[Srinivasa Ramanujan|Ramanujan's]] results on the quotients of consecutive [[superior highly composite number]].<ref>Ramanujan, (1915), section IV.</ref>
+
+==Sharp four exponentials conjecture==
+
+The four exponentials conjecture reduces the pair and triplet of complex numbers in the hypotheses of the six exponentials theorem to two pairs.  It is conjectured that this is also possible with the sharp six exponentials theorem, and this is the '''sharp four exponentials conjecture'''.<ref>Waldschmidt, "Hopf algebras..." (2005), p.200.</ref>  Specifically, this conjecture claims that if ''x''<sub>1</sub>, ''x''<sub>2</sub>, and ''y''<sub>1</sub>, ''y''<sub>2</sub> are two pairs of complex numbers with each pair being linearly independent over the rational numbers, and if β<sub>''ij''</sub> are four algebraic numbers for 1&nbsp;&le;&nbsp;''i'', ''j''&nbsp;&le;&nbsp;2 such that the following four numbers are algebraic:
+:<math>e^{x_1 y_1-\beta_{11}}, e^{x_1 y_2-\beta_{12}}, e^{x_2 y_1-\beta_{21}}, e^{x_2 y_2-\beta_{22}},</math>
+then ''x''<sub>''i''</sub>&nbsp;''y''<sub>''j''</sub>&nbsp;=&nbsp;β<sub>''ij''</sub> for 1&nbsp;&le;&nbsp;''i'', ''j''&nbsp;&le;&nbsp;2.  So all four exponentials are in fact 1.
+
+This conjecture implies both the sharp six exponentials theorem, which requires a third ''x'' value, and the as yet unproven sharp five exponentials conjecture that requires a further exponential to be algebraic in its hypotheses.
+
+==Strong four exponentials conjecture==
+
+[[File:N-Exponentials Conjecture.png|frame|alt=Logical implications between the various n-exponentials problems|The logical implications between the various problems in this circle.  Those in red are as yet unproven while those in blue are known results.  The top most result refers to that discussed at [[Baker's theorem#Extensions|Baker's theorem]], while the lower two rows are detailed at the [[six exponentials theorem]] article.]]
+The strongest result that has been conjectured in this circle of problems is the '''strong four exponentials conjecture'''.<ref>Waldschmidt, (2000), conjecture 11.17.</ref>  This result would imply both aforementioned conjectures concerning four exponentials as well as all the five and six exponentials conjectures and theorems, as illustrated to the right, and all the three exponentials conjectures detailed below.  The statement of this conjecture deals with the [[vector space]] over the algebraic numbers generated by 1 and all logarithms of non-zero algebraic numbers, denoted here as ''L''<sup>∗</sup>.  So ''L''<sup>∗</sup> is the set of all complex numbers of the form
+:<math>\beta_0+\sum_{i=1}^n \beta_i\log\alpha_i,</math>
+for some ''n''&nbsp;&ge;&nbsp;0, where all the β<sub>''i''</sub> and α<sub>''i''</sub> are algebraic and every [[Complex logarithm#Branches of the complex logarithm|branch of the logarithm]] is considered.  The statement of the strong four exponentials conjecture is then as follows.  Let ''x''<sub>1</sub>, ''x''<sub>2</sub>, and ''y''<sub>1</sub>, ''y''<sub>2</sub> be two pairs of complex numbers with each pair being linearly independent over the algebraic numbers, then at least one of the four numbers ''x''<sub>''i''</sub>&nbsp;''y''<sub>''j''</sub> for 1&nbsp;&le;&nbsp;''i'', ''j''&nbsp;&le;&nbsp;2 is not in ''L''<sup>∗</sup>.
+
+==Three exponentials conjecture==
+
+The four exponentials conjecture rules out a special case of non-trivial, [[Homogeneous polynomial|homogeneous]], quadratic relations between logarithms of algebraic numbers.  But a conjectural extension of [[Baker's theorem]] implies that there should be no non-trivial algebraic relations between logarithms of algebraic numbers at all, homogeneous or not.  One case of non-homogeneous quadratic relations is covered by the still open '''three exponentials conjecture'''.<ref>Waldschmidt, "Variations..." (2005), consequence 1.9.</ref>  In its logarithmic form it is the following conjecture.  Let λ<sub>1</sub>, λ<sub>2</sub>, and λ<sub>3</sub> be any three logarithms of algebraic numbers and γ be a non-zero algebraic number, and suppose that λ<sub>1</sub>λ<sub>2</sub>&nbsp;=&nbsp;γλ<sub>3</sub>.  Then λ<sub>1</sub>λ<sub>2</sub>&nbsp;=&nbsp;γλ<sub>3</sub>&nbsp;=&nbsp;0.
+
+The exponential form of this conjecture is the following.  Let ''x''<sub>1</sub>, ''x''<sub>2</sub>, and ''y'' be non-zero complex numbers and let γ be a non-zero algebraic number.  Then at least one of the following three numbers is transcendental:
+:<math>e^{x_1y}, e^{x_2y}, e^{\gamma x_1/x_2}.</math>
+
+There is also a '''sharp three exponentials conjecture''' which claims that if ''x''<sub>1</sub>, ''x''<sub>2</sub>, and ''y'' are non-zero complex numbers and α, β<sub>1</sub>, β<sub>2</sub>, and γ are algebraic numbers such that the following three numbers are algebraic
+:<math>e^{x_1 y-\beta_1}, e^{x_2 y-\beta_2}, e^{(\gamma x_1/x_2)-\alpha},</math>
+then either ''x''<sub>2</sub>''y''&nbsp;=&nbsp;β<sub>2</sub> or γ''x''<sub>1</sub>&nbsp;=&nbsp;α''x''<sub>2</sub>.
+
+The '''strong three exponentials conjecture''' meanwhile states that if ''x''<sub>1</sub>, ''x''<sub>2</sub>, and ''y'' are non-zero complex numbers with ''x''<sub>1</sub>''y'', ''x''<sub>2</sub>''y'', and ''x''<sub>1</sub>/''x''<sub>2</sub> all transcendental, then at least one of the three numbers ''x''<sub>1</sub>''y'', ''x''<sub>2</sub>''y'', ''x''<sub>1</sub>/''x''<sub>2</sub> is not in ''L''<sup>∗</sup>.
+
+As with the other results in this family, the strong three exponentials conjecture implies the sharp three exponentials conjecture which implies the three exponentials conjecture.  However, the strong and sharp three exponentials conjectures are implied by their four exponentials counterparts, bucking the usual trend.  And the three exponentials conjecture is neither implied by nor implies the four exponentials conjecture.
+
+The three exponentials conjecture, like the sharp five exponentials conjecture, would imply the transcendence of ''e''<sup>π<sup>2</sup></sup> by letting (in the logarithmic version) λ<sub>1</sub>&nbsp;=&nbsp;''i''π, λ<sub>2</sub>&nbsp;=&nbsp;−''i''π, and γ&nbsp;=&nbsp;1.
+
+==Bertrand's conjecture==
+
+Many of the theorems and results in transcendental number theory concerning the exponential function have analogues involving the modular function [[j-invariant|''j'']].  Writing ''q''&nbsp;=&nbsp;''e''<sup>2π''i''{{math|τ}}</sup> for the [[Nome (mathematics)|nome]] and ''j''({{math|τ}})&nbsp;=&nbsp;''J''(''q''), Daniel Bertrand conjectured that if ''q''<sub>1</sub> and ''q''<sub>2</sub> are non-zero algebraic numbers in the complex [[unit disc]] that are multiplicatively independent, then ''J''(''q''<sub>1</sub>) and ''J''(''q''<sub>2</sub>) are [[Algebraic independence|algebraically independent]] over the rational numbers.<ref>Bertrand, (1997), conjecture 2 in section 5.</ref>  Although not obviously related to the four exponentials conjecture, Bertrand's conjecture in fact implies a special case known as the '''weak four exponentials conjecture'''.<ref>Diaz, (2001), section 4.</ref>  This conjecture states that if ''x''<sub>1</sub> and ''x''<sub>2</sub> are two positive real algebraic numbers, neither of them equal to 1, then π<sup>2</sup> and the product {{nowrap|log(''x''<sub>1</sub>)log(''x''<sub>2</sub>)}} are linearly independent over the rational numbers.  This corresponds to the special case of the four exponentials conjecture whereby ''y''<sub>1</sub>&nbsp;=&nbsp;''i''π, ''y''<sub>2</sub>&nbsp;=&nbsp;&minus;''i''π, and ''x''<sub>1</sub> and ''x''<sub>2</sub> are real.  Perhaps surprisingly, though, it is also a corollary of Bertrand's conjecture, suggesting there may be an approach to the full four exponentials conjecture via the modular function ''j''.
+
+==See also==
+*[[Schanuel's conjecture]]
+
+==Notes==
+{{reflist}}
+
+==References==
+
+*{{cite journal | last1 = Alaoglu | first1 = Leonidas | author-link = Leonidas Alaoglu | last2 = Erdős | first2 = Paul | author2-link = Paul Erdős | title = On highly composite and similar numbers | journal = [[Transactions of the American Mathematical Society|Trans. Amer. Math. Soc.]] | volume = 56 | issue = 3 | pages = 448&ndash;469 | year = 1944 | mr = 0011087 | doi=10.2307/1990319| jstor = 1990319 }}
+*{{cite journal | last = Bertrand | first = Daniel | title = Theta functions and transcendence | journal = The Ramanujan Journal | volume = 1 | issue = 4 | pages = 339&ndash;350 | year = 1997 | mr = 1608721| doi = 10.1023/A:1009749608672 | s2cid = 118628723 }}
+*{{Cite book| last = Diaz | first = Guy | editor-last = Nesterenko | editor-first = Yuri V. | editor-link = Yuri Valentinovich Nesterenko | editor2-last = Philippon | editor2-first = Patrice | contribution = Mahler's conjecture and other transcendence results | publisher = Springer | series = Lecture Notes in Math. | volume = 1752 | year = 2001 | title = Introduction to algebraic independence theory | pages = 13&ndash;26 | isbn = 3-540-41496-7 | mr = 1837824}} {{text-source inline|date=March 2024}}
+*{{cite book | last = Lang | first = Serge | author-link = Serge Lang | title = Introduction to transcendental numbers | publisher = [[Addison-Wesley|Addison-Wesley Publishing Co.]] | year = 1966 | location = Reading, Mass. | mr = 0214547}}
+*{{cite journal | last = Ramachandra | first = Kanakanahalli | author-link = Kanakanahalli Ramachandra | title = Contributions to the theory of transcendental numbers. I, II. | journal = [[Acta Arithmetica|Acta Arith.]] | volume = 14 | pages = 65&ndash;72, 73&ndash;88 | year = 1967–1968 | mr = 0224566| doi = 10.4064/aa-14-1-65-72 | doi-access = free }}
+*{{cite journal | last = Ramanujan | first = Srinivasa | author-link = Srinivasa Ramanujan | title = Highly Composite Numbers | journal = Proc. London Math. Soc. | volume = 14 | issue = 2 | pages = 347&ndash;407 | year = 1915 | mr = 2280858 | doi = 10.1112/plms/s2_14.1.347 | url = https://zenodo.org/record/1433496 }}
+*{{cite book | last = Schneider | first = Theodor | author-link = Theodor Schneider | title = Einführung in die transzendenten Zahlen | publisher = Springer | year = 1957 | location = Berlin-Göttingen-Heidelberg | language = de | mr = 0086842}}
+*{{cite book | last = Waldschmidt | first = Michel | title = Diophantine approximation on linear algebraic groups | publisher = Springer | series = Grundlehren der Mathematischen Wissenschaften | volume = 326 | year = 2000 | location = Berlin | isbn = 3-540-66785-7 | mr = 1756786}}
+*{{cite conference | first = Michel | last = Waldschmidt | editor-last = Aoki | editor-first = Takashi | editor2-last = Kanemitsu
+  | editor2-first = Shigeru | editor3-last = Nakahara | editor3-first = Mikio |display-editors = 3 | editor4-last = Ohno | editor4-first = Yasuo | title = Hopf algebras and transcendental numbers | book-title = Zeta functions, topology, and quantum physics: Papers from the symposium held at Kinki University, Osaka, March 3–6, 2003 | pages = 197&ndash;219 | publisher = Springer | year = 2005 | series = Developments in mathematics | volume = 14 | mr = 2179279| citeseerx = 10.1.1.170.5648 }}
+*{{Cite book| last = Waldschmidt | first = Michel | editor-last = Tandon | editor-first = Rajat | contribution = Variations on the six exponentials theorem | year = 2005 | title = Algebra and number theory | pages = 338&ndash;355 | place = Delhi | publisher = Hindustan Book Agency | mr = 2193363}} {{text-source inline|date=March 2024}}
+*{{Cite book| last = Waldschmidt | first = Michel | editor-last = Balasubramanian | editor-first = B. | editor2-last = Srinivas | editor2-first = K. | contribution = On Ramachandra's contributions to transcendental number theory | year = 2006 | title = The Riemann zeta function and related themes: papers in honour of Professor K. Ramachandra | series = Ramanujan Math. Soc. Lect. Notes Ser. | volume = 2 | pages = 155&ndash;179 | place = Mysore | publisher = Ramanujan Math. Soc. | mr = 2335194}} {{text-source inline|date=March 2024}}
+
+==External links==
+*{{planetmath reference|urlname=FourExponentialsConjecture|title=Four exponentials conjecture}}
+*{{MathWorld|urlname=FourExponentialsConjecture|title=Four Exponentials Conjecture}}
+
+[[Category:Conjectures]]
+[[Category:Transcendental numbers]]
+[[Category:Exponentials]]
+[[Category:Unsolved problems in number theory]]

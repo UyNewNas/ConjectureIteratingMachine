@@ -1,0 +1,56 @@
+{{Short description|On the reciprocity law in algebraic number fields}}
+{{No footnotes|date=January 2021}}
+'''Hilbert's ninth problem''', from the list of 23 [[Hilbert's problems]] (1900), asked to find the most general [[reciprocity law (mathematics)|reciprocity law]] for the [[Hilbert symbol|norm residues]] of ''k''-th order in a general [[algebraic number field]], where ''k'' is a power of a [[prime number|prime]].
+
+The problem was partially solved for abelian extensions by [[Artin reciprocity]] and class field theory for [[abelian extensions]] of number fields. Generalization of these results to [[non-abelian class field theory]] seems to be one of the most challenging problems in [[algebraic number theory]], which is also related with [[Hilbert's twelfth problem]].
+
+== Original statement ==
+In english translation of 1902 Hilbert's article the problem is described very briefly:
+<blockquote>
+''For any field of numbers the law of reciprocity is to be proved for the residues of the l-th power, when l denotes an odd prime, and further when l is a power of 2 or a power of an odd prime. The law, as well as the means essential to its proof, will, I believe, result by suitably generalizing the theory of the field of the l-th roots of unity, developed by me, and my theory of relative quadratic fields.''
+</blockquote>
+
+== Progress made ==
+
+The problem was partially solved by {{harvtxt|Artin|1924}}, {{harvtxt|Artin|1927}} and {{harvtxt|Artin|1930}} by establishing the Artin reciprocity law which deals with abelian extensions of number fields. Together with the work of [[Teiji Takagi]] and [[Helmut Hasse]] (who established the more general Hasse reciprocity law), this led to the development of the [[class field theory]], realizing Hilbert's program in an abstract fashion. Certain explicit formulas for norm residues were later found by [[Igor Shafarevich]] (1948; 1949; 1950).
+
+[[Robert Langlands]] in his 1967 letter to [[André Weil]] made conjecture about nonabelian reciprocity involving [[Artin L-function]]s and [[automorphic L-function]]s: for finite number field extension <math>L/K</math>, let <math>\rho</math> be irreducible representation  of [[Galois group]] of this extension and <math>\mathbf{A}_K</math> be [[adele ring]] of <math>K</math>. If <math>L(s ,\rho , L/K)</math> is Artin L-function for that Galois group and this representation, then Langlands reciprocity conjecture says that there exists [[automorphic form|automorphic cuspidal representation]] <math>\pi</math> of [[general linear group]] <math>GL(n,A_K)</math> that:
+:<math> L(s, \pi) = L(s ,\rho , L/K) </math>
+where <math>L(s, \pi)</math> is automorphic L-function for this representation. This conjecture generalizes Artin reciprocity and became starting point for much more general [[Langlands program]]. Despite some results towards Langlands program, this conjecture seems to be far from proven, but stands as the best proposition of solution for Hilbert's ninth problem.
+
+==See also==
+*[[List of unsolved problems in mathematics]]
+
+==References==
+*{{cite journal
+ | last = Artin | first = Emil | author-link = Emil Artin
+ | year = 1924
+ | title = Über eine neue Art von L-Reihen
+ | journal = [[Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg]]
+ | volume = 3
+ | pages = 89–108
+}}
+*{{cite journal
+ | last = Artin | first = Emil | author-link = Emil Artin
+ | year = 1927
+ | title = Beweis des allgemeinen Reziprozitätsgesetzes
+ | journal = Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg
+ | volume = 5
+ | pages = 353–363}}
+*{{cite journal
+ | last = Artin | first = Emil | author-link = Emil Artin
+ | year = 1930
+ | title = Idealklassen in Oberkörpern und allgemeines Reziprozitätsgesetzes
+ | journal = Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg
+ | volume = 7
+ | pages = 46–51}}
+* {{cite book | editor=Felix E. Browder | editor-link=Felix Browder | title=Mathematical Developments Arising from Hilbert Problems | series=[[Proceedings of Symposia in Pure Mathematics]] | volume=XXVIII.2 | year=1976 | publisher=[[American Mathematical Society]] | isbn=0-8218-1428-1 | first=John | last=Tate | authorlink=John Tate (mathematician) | chapter=Problem 9: The general reciprocity law | pages=311–322 }}
+
+== External links ==
+* [http://aleph0.clarku.edu/~djoyce/hilbert/problems.html#prob9 English translation of Hilbert's original address]
+
+{{Hilbert's problems}}
+
+[[Category:Algebraic number theory]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Hilbert's problems|#09]]

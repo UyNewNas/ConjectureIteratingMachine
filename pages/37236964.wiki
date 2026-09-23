@@ -1,0 +1,25 @@
+{{short description|Unsolved problem in number theory}}
+[[File:Dr. Casas-Alvero talking about Casas-Alvero Conjecture.jpg|thumb|300px|Casas-Alvero talking about the conjecture in a conference in the [[University of Barcelona]] on March 16, 2016.]]
+In [[mathematics]], the '''Casas-Alvero conjecture''' is a problem about [[polynomial]]s which have factors in common with their [[derivative]]s, proposed by [[Eduardo Casas-Alvero]] in 2001. 
+==Formal statement==
+Let ''f'' be a polynomial of [[degree of a polynomial|degree]] ''d'' defined over a [[field (mathematics)|field]] ''K'' of [[characteristic (algebra)|characteristic]] zero.  If ''f'' has a factor in common with each of its derivatives ''f''<sup> (''i'')</sup>, ''i''&nbsp;=&nbsp;1,&nbsp;...,&nbsp;''d''&nbsp;−&nbsp;1, then the [[conjecture]] predicts that ''f'' must be a power of a [[linear polynomial]].
+
+==Analogue in non-zero characteristic==
+The conjecture is false over a field of positive characteristic ''p'': any [[inseparable polynomial]] ''f''(''X''<sup>''p''</sup>) without constant term satisfies the condition since all derivatives are zero.  Another [[counterexample]] (which is separable) is ''X''<sup>''p''+1</sup>&nbsp;−&nbsp;''X''<sup>''p''</sup>.
+
+==Special cases==
+The conjecture is known to hold in characteristic zero for degrees of the form ''p''<sup>''k''</sup> or 2''p''<sup>''k''</sup> where ''p'' is [[prime number|prime]] and ''k'' is a positive [[integer]]. Similarly, it is known for degrees of the form 3''p''<sup>''k''</sup> where ''p''&nbsp;≠&nbsp;2, for degrees of the form 4''p''<sup>''k''</sup> where
+''p''&nbsp;≠&nbsp;3, 5, 7, and for degrees of the form 5''p''<sup>''k''</sup> where ''p''&nbsp;≠&nbsp;2, 3, 7, 11, 131, 193, 599, 3541, 8009. Similar results are available for degrees of the form 6''p''<sup>''k''</sup> and 7''p''<sup>''k''</sup>.  It is later established for ''d''&nbsp;=&nbsp;12, making ''d''&nbsp;=&nbsp;20 the smallest open degree.
+
+
+
+==References==
+{{reflist}}
+* {{cite journal | zbl=0985.14012 | last=Casas-Alvero | first=Eduardo | title=Higher order polar germs | journal=J. Algebra | volume=240 | number=1 | pages=326–337 | year=2001 | issn=0021-8693 | doi=10.1006/jabr.2000.8727| doi-access=free }}
+* {{cite book | zbl=1108.65046 | last1=Diaz-Toca | first1=Gema M. | last2=Gonzalez-Vega |first2=Laureano | chapter=On analyzing a conjecture about univariate polynomials and their roots by using Maple | editor1-last=Kotsireas | editor1-first=Ilias | title=Maple conference 2006. Proceedings of the conference, Waterloo, Ontario, Canada, July 23–26, 2006 | location=Waterloo | publisher=[[Maplesoft]] | pages=81–98 | year=2006 | isbn=1-897310-13-7 }}
+* {{cite journal | zbl=1127.12002 | last1=Graf von Bothmer | first1=Hans-Christian | last2=Labs | first2=Oliver | last3=Schicho | first3=Josef | last4=van de Woestijne | first4=Christiaan | title=The Casas-Alvero conjecture for infinitely many degrees | journal=J. Algebra | volume=316 | number=1 | pages=224–230 | year=2007 | doi=10.1016/j.jalgebra.2007.06.017| arxiv=math/0605090 | s2cid=11623853 }}
+* {{cite journal|zbl=1292.12001 |last1=Draisma |first1=Jan |last2=de Jong |first2=Johan P. |title=On the Casas-Alvero conjecture |journal=Eur. Math. Soc. Newsl. |volume=80 |pages=29–33 |year=2011 |issn=1027-488X |url=http://www.ems-ph.org/journals/newsletter/pdf/2011-06-80.pdf |url-status=dead |archiveurl=https://web.archive.org/web/20160304090949/http://www.ems-ph.org/journals/newsletter/pdf/2011-06-80.pdf |archivedate=2016-03-04 }}
+* {{cite arXiv | eprint=1208.5404 | title=Constraints on counterexamples to the Casas-Alvero conjecture, and a verification in degree 12 | class=math.AG | year=2012 | first1=Wouter | last1=Castryck | first2=Robert | last2=Laterveer | first3=Myriam | last3=Ounaïes }}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

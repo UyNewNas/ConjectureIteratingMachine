@@ -1,0 +1,187 @@
+{{Short description|Unsolved problem in graph theory}}
+{{unsolved|mathematics|Does every <math>(2n-2)</math>-vertex tournament contain as a subgraph every <math>n</math>-vertex oriented tree?}}
+[[File:Polytrees in a tournament.svg|thumb|upright=1.3|A 6-vertex tournament, and copies of every 4-vertex oriented tree within it.]]
+'''Sumner's conjecture''' (also called '''Sumner's universal tournament conjecture''') is a conjecture in [[extremal graph theory]] on oriented [[tree (graph theory)|trees]] in [[tournament (graph theory)|tournaments]]. It states that every [[Orientation (graph theory)|orientation]] of every <math>n</math>-vertex [[Tree (graph theory)|tree]] is a [[Glossary of graph theory#Subgraphs|subgraph]] of every <math>(2n-2)</math>-vertex tournament.<ref>{{harvtxt|Kühn|Mycroft|Osthus|2011a}}. However the earliest published citations given by Kühn et al. are to {{harvtxt|Reid|Wormald|1983}} and {{harvtxt|Wormald|1983}}. {{harvtxt|Wormald|1983}} cites the conjecture as an undated private communication by Sumner.</ref> 
+[[David Sumner]], a [[graph theory|graph theorist]] at the [[University of South Carolina]], [[conjecture]]d in 1971 that [[tournament (graph theory)|tournaments]] are [[universal graph]]s for [[polytree]]s. The conjecture was proven for all large <math>n</math> by [[Daniela Kühn]], Richard Mycroft, and [[Deryk Osthus]].<ref>{{harvtxt|Kühn|Mycroft|Osthus|2011b}}.</ref>
+
+==Examples==
+Let polytree <math>P</math> be a [[Star (graph theory)|star]] <math>K_{1,n-1}</math>, in which all edges are oriented outward from the central vertex to the leaves. Then, <math>P</math> cannot be embedded in the tournament formed from the vertices of a regular <math>2n-3</math>-gon by directing every edge clockwise around the polygon. For, in this tournament, every vertex has indegree and outdegree equal to <math>n-2</math>, while the central vertex in <math>P</math> has larger outdegree <math>n-1</math>.<ref>This example is from {{harvtxt|Kühn|Mycroft|Osthus|2011a}}.</ref> Thus, if true, Sumner's conjecture would give the best possible size of a universal graph for polytrees.
+
+However, in every tournament of <math>2n-2</math> vertices, the average outdegree is <math>n-\frac{3}{2}</math>, and the maximum outdegree is an integer greater than or equal to the average. Therefore, there exists a vertex of outdegree <math>\left\lceil n-\frac{3}{2}\right\rceil=n-1</math>, which can be used as the central vertex for a copy of <math>P</math>.
+
+==Partial results==
+The following partial results on the conjecture have been proven.
+*There is a function <math>f(n)</math> with asymptotic growth rate <math>f(n)=2n+o(n)</math> with the property that every <math>n</math>-vertex polytree can be embedded as a subgraph of every <math>f(n)</math>-vertex tournament. Additionally and more explicitly, <math>f(n)\le 3n-3</math>.<ref>{{harvtxt|Kühn|Mycroft|Osthus|2011a}} and {{harvtxt|El Sahili|2004}}. For earlier weaker bounds on <math>f(n)</math>, see {{harvtxt|Chung|1981}}, {{harvtxt|Wormald|1983}}, {{harvtxt|Häggkvist|Thomason|1991}}, {{harvtxt|Havet|Thomassé|2000b}}, and {{harvtxt|Havet|2002}}.</ref>
+*There is a function <math>g(k)</math> such that tournaments on <math>n+g(k)</math> vertices are universal for polytrees with <math>k</math> leaves.<ref>{{harvtxt|Häggkvist|Thomason|1991}}; {{harvtxt|Havet|Thomassé|2000a}}; {{harvtxt|Havet|2002}}.</ref>
+*There is a function <math>h(n,\Delta)</math> such that every <math>n</math>-vertex polytree with maximum degree at most <math>\Delta</math> forms a subgraph of every tournament with <math>h(n,\Delta)</math> vertices. When <math>\Delta</math> is a fixed constant, the asymptotic growth rate of <math>h(n,\Delta)</math> is <math>n+o(n)</math>.<ref>{{harvtxt|Kühn|Mycroft|Osthus|2011a}}.</ref>
+*Every "near-regular" tournament on <math>2n-2</math> vertices contains every <math>n</math>-vertex polytree.<ref name="rw83">{{harvtxt|Reid|Wormald|1983}}.</ref>
+*Every orientation of an <math>n</math>-vertex [[caterpillar tree]] with [[diameter (graph theory)|diameter]] at most four can be embedded as a subgraph of every <math>(2n-2)</math>-vertex tournament.<ref name="rw83"/>
+*Every <math>(2n-2)</math>-vertex tournament contains as a subgraph every <math>n</math>-vertex [[Arborescence (graph theory)|arborescence]].<ref>{{harvtxt|Havet|Thomassé|2000b}}.</ref>
+
+==Related conjectures==
+{{harvtxt|Rosenfeld|1972}} conjectured that every orientation of an <math>n</math>-vertex [[path graph]] (with <math>n\ge 8</math>) can be embedded as a subgraph into every <math>n</math>-vertex tournament.<ref name="rw83"/> After partial results by {{harvtxt|Thomason|1986}}, this was proven by {{harvtxt|Havet|Thomassé|2000a}}.
+
+Havet and Thomassé<ref>In {{harvtxt|Havet|2002}}, but jointly credited to Thomassé in that paper.</ref> in turn conjectured a strengthening of Sumner's conjecture, that every tournament on <math>n+k-1</math> vertices contains as a subgraph every polytree with at most <math>k</math> leaves. This has been confirmed for almost every tree by Mycroft and {{harvtxt|Naia|2018}}.
+
+{{harvtxt|Burr|1980}} conjectured that, whenever a graph <math>G</math> requires <math>2n-2</math> or more colors in a [[graph coloring|coloring]] of <math>G</math>, then every orientation of <math>G</math> contains every orientation of an <math>n</math>-vertex tree. Because complete graphs require a different color for each vertex, Sumner's conjecture would follow immediately from Burr's conjecture.<ref>This is a corrected version of Burr's conjecture from {{harvtxt|Wormald|1983}}.</ref> As Burr showed, orientations of graphs whose chromatic number grows quadratically as a function of <math>n</math> are universal for polytrees.
+
+==Notes==
+{{reflist|colwidth=30em}}
+
+==References==
+*{{citation
+ | last = Burr | first = Stefan A. | author-link = Stefan Burr
+ | contribution = Subtrees of directed graphs and hypergraphs
+ | series = Congressus Numerantium
+ | mr = 608430
+ | pages = 227–239
+ | title = Proceedings of the Eleventh Southeastern Conference on Combinatorics, Graph Theory and Computing (Florida Atlantic Univ., Boca Raton, Fla., 1980), Vol. I
+ | volume = 28
+ | year = 1980}}.
+*{{citation
+ | last = Chung | first = F.R.K. | author-link = Fan Chung
+ | publisher = [[Bell Laboratories]]
+ | series = Internal Memorandum
+ | title = A note on subtrees in tournaments
+ | year = 1981}}. As cited by {{harvtxt|Wormald|1983}}.
+*{{citation
+ | last = El Sahili | first = A.
+ | doi = 10.1016/j.jctb.2004.04.002
+ | issue = 1
+ | journal = [[Journal of Combinatorial Theory]] | series = Series B
+ | mr = 2078502
+ | pages = 183–187
+ | title = Trees in tournaments
+ | volume = 92
+ | year = 2004| doi-access = free
+ }}.
+*{{citation
+ | last1 = Häggkvist | first1 = Roland
+ | last2 = Thomason | first2 = Andrew
+ | doi = 10.1007/BF01206356
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | mr = 1136161
+ | pages = 123–130
+ | title = Trees in tournaments
+ | volume = 11
+ | year = 1991}}.
+*{{citation
+ | last = Havet | first = Frédéric
+ | doi = 10.1016/S0012-365X(00)00463-5
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1874730
+ | pages = 121–134
+ | title = Trees in tournaments
+ | volume = 243
+ | year = 2002| doi-access = 
+ }}.
+*{{citation
+ | last1 = Havet | first1 = Frédéric
+ | last2 = Thomassé | first2 = Stéphan
+ | doi = 10.1006/jctb.1999.1945
+ | issue = 2
+ | journal = [[Journal of Combinatorial Theory]] | series = Series B
+ | mr = 1750898
+ | pages = 243–273
+ | title = Oriented Hamiltonian paths in tournaments: a proof of Rosenfeld's conjecture
+ | volume = 78
+ | year = 2000a| doi-access = free
+ }}.
+*{{citation
+ | last1 = Havet | first1 = Frédéric
+ | last2 = Thomassé | first2 = Stéphan
+ | doi = 10.1002/1097-0118(200012)35:4<244::AID-JGT2>3.0.CO;2-H
+ | issue = 4
+ | journal = Journal of Graph Theory
+ | mr = 1791347
+ | pages = 244–256
+ | title = Median orders of tournaments: a tool for the second neighborhood problem and Sumner's conjecture
+ | volume = 35
+ | year = 2000b}}.
+*{{citation
+ | last1 = Kühn | first1 = Daniela | author1-link = Daniela Kühn
+ | last2 = Mycroft | first2 = Richard
+ | last3 = Osthus | first3 = Deryk
+ | doi = 10.1016/j.jctb.2010.12.006
+ | issue = 6
+ | journal = [[Journal of Combinatorial Theory]] | series = Series B
+ | mr = 2832810 | zbl=1234.05115
+ | pages = 415–447
+ | title = An approximate version of Sumner's universal tournament conjecture
+ | volume = 101
+ | year = 2011a| arxiv = 1010.4429
+ }}.
+*{{citation
+ | last1 = Kühn | first1 = Daniela | author1-link = Daniela Kühn
+ | last2 = Mycroft | first2 = Richard
+ | last3 = Osthus | first3 = Deryk
+ | arxiv = 1010.4430
+ | doi = 10.1112/plms/pdq035
+ | issue = 4
+ | journal = Proceedings of the London Mathematical Society | series = Third Series
+ | mr = 2793448 | zbl=1218.05034 
+ | pages = 731–766
+ | title = A proof of Sumner's universal tournament conjecture for large tournaments
+ | volume = 102
+ | year = 2011b}}.
+*{{citation
+ | last = Naia | first = Tássio
+ | type = Doctoral thesis
+ | publisher = University of Birmingham
+ | title = Large structures in dense directed graphs
+ | year=2018
+ | url = https://etheses.bham.ac.uk/id/eprint/8658/
+ }}.
+*{{citation
+ | last1 = Reid | first1 = K. B.
+ | last2 = Wormald | first2 = N. C.
+ | issue = 2–4
+ | journal = Studia Scientiarum Mathematicarum Hungarica
+ | mr = 787942
+ | pages = 377–387
+ | title = Embedding oriented ''n''-trees in tournaments
+ | volume = 18
+ | year = 1983}}.
+*{{citation
+ | last = Rosenfeld | first = M.
+ | journal = [[Journal of Combinatorial Theory]] | series = Series B
+ | mr = 0285452
+ | pages = 93–99
+ | title = Antidirected Hamiltonian paths in tournaments
+ | volume = 12
+ | year = 1972
+ | doi=10.1016/0095-8956(72)90035-4| doi-access = 
+ }}.
+*{{citation
+ | last = Thomason | first = Andrew
+ | doi = 10.2307/2000567
+ | issue = 1
+ | journal = Transactions of the American Mathematical Society
+ | mr = 837805
+ | pages = 167–180
+ | title = Paths and cycles in tournaments
+ | volume = 296
+ | year = 1986| doi-access = free
+ | jstor = 2000567
+ }}.
+*{{citation
+ | last = Wormald | first = Nicholas C.
+ | contribution = Subtrees of large tournaments
+ | doi = 10.1007/BFb0071535
+ | location = Berlin
+ | mr = 731598
+ | pages = 417–419
+ | publisher = Springer
+ | series = Lecture Notes in Math.
+ | title = Combinatorial mathematics, X (Adelaide, 1982)
+ | volume = 1036
+ | year = 1983| isbn = 978-3-540-12708-6
+ }}.
+
+==External links==
+*[http://www.math.uiuc.edu/~west/openp/univtourn.html Sumner's Universal Tournament Conjecture (1971)], D. B. West, updated July 2008.
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

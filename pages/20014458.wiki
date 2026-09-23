@@ -1,0 +1,33 @@
+{{short description|Polish mathematician (1934–2015)}}
+{{Infobox scientist
+| name              = Jerzy Browkin
+| image             = Browkin.jpg
+| image_size        = 200px
+| caption           = Jerzy Browkin
+| birth_date        = 5 November 1934
+| birth_place       =
+| death_date        = {{Death date and age|df=y|2015|11|23|1934|11|5}}
+| death_place       =[[Warsaw]], Poland
+| fields            = [[Mathematics]], [[Number Theory]]
+| workplaces        = 
+| education         = [[University of Warsaw]]
+| doctoral_students = 
+| known_for         = 
+| awards            = 
+}}
+'''Jerzy Browkin''' (5 November 1934 – 23 November 2015) was a Polish [[mathematician]], studying mainly [[algebraic number theory]]. He was a professor at the Institute of Mathematics of the [[Polish Academy of Sciences]]. In 1994, together with Juliusz Brzeziński, he formulated the ''n''-conjecture—a version of the [[abc conjecture|''abc'' conjecture]] involving ''n''&nbsp;>&nbsp;2 integers.<ref>{{cite web|url=http://www.ptm.org.pl/zawartosc/zmar%C5%82-profesor-jerzy-browkin-1934-2015|title=Zmarł Profesor Jerzy Browkin (1934-2015)|work=ptm.org.pl}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Authority control}}
+{{DEFAULTSORT:Browkin, Jerzy}}
+[[Category:1934 births]]
+[[Category:2015 deaths]]
+[[Category:20th-century Polish mathematicians]]
+[[Category:21st-century  Polish  mathematicians]]
+[[Category:Number theorists]]
+[[Category:Abc conjecture]]
+
+
+{{Poland-mathematician-stub}}

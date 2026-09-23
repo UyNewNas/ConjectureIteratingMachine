@@ -1,0 +1,48 @@
+{{distinguish|Euclidean number}}
+{{Short description|Product of prime numbers, plus one}}
+In [[mathematics]], '''Euclid numbers''' are [[integer]]s of the form {{nowrap|1=''E''<sub>''n''</sub> = ''p''<sub>''n''&thinsp;</sub>#&nbsp;+&thinsp;1}}, where ''p''<sub>''n''&thinsp;</sub># is the ''n''th [[primorial]] (the product of the first ''n'' [[prime number]]s). They are named after the [[ancient Greek]] mathematician [[Euclid]], in connection with [[Euclid's theorem]] that there are infinitely many prime numbers.
+
+A '''Euclid number of the second kind''' (also called '''Kummer number''') is an integer of the form ''E<sub>n</sub>'' = ''p''<sub>''n''&thinsp;</sub>#&nbsp;−&thinsp;1, where ''p''<sub>''n''&thinsp;</sub># is the ''n''th primorial.
+
+==Examples==
+For example, the first three primes are 2, 3, 5; their product is 30, and the corresponding Euclid number is 31.
+
+The first few Euclid numbers are [[3 (number)|3]], [[7 (number)|7]], [[31 (number)|31]], [[211 (number)|211]], 2311, 30031, 510511, 9699691, 223092871, 6469693231, 200560490131, ... {{OEIS|id=A006862}}.
+
+The first few Kummer numbers are 1, 5, 29, 209, 2309, 30029, 510509, 9699689, 223092869, 6469693229, 200560490129, ... {{OEIS|id=A057588}}.
+
+==History==
+It is sometimes falsely stated that [[Euclid's theorem|Euclid's celebrated proof]] of the infinitude of [[prime number]]s relied on these numbers.<ref>Michael Hardy and Catherine Woodgold, "Prime Simplicity", ''[[Mathematical Intelligencer]]'', volume 31, number 4, fall 2009, pages 44&ndash;52.</ref>  Euclid did not begin with the assumption that the set of all primes is finite.  Rather, he said: consider any finite set of primes (he did not assume that it contained only the first ''n'' primes) and reasoned from there to the conclusion that at least one prime exists that is not in that set.<ref>{{cite web|title=Proposition 20 |url=http://aleph0.clarku.edu/~djoyce/java/elements/bookIX/propIX20.html }}</ref>
+Nevertheless, Euclid's argument, applied to the set of the first ''n'' primes, shows that the ''n''th Euclid number has a [[prime factor]] that is not in this set.
+
+==Properties==
+Not all Euclid or Kummer numbers are prime.
+''E''<sub>6</sub> = 13#&nbsp;+&thinsp;1 = 30031&thinsp;=&nbsp;59 × 509 is the first [[composite number|composite]] Euclid number, and 
+''E''<sub>4</sub> = 7#&nbsp;−&thinsp;1 = 209&thinsp;=&nbsp;11 × 19 is the first composite Kummer number.
+
+For all {{nowrap|''n'' ≥ 3}} the last digit of ''E''<sub>''n''</sub> is 1, since {{nowrap|''E''<sub>''n''</sub> − 1}} is divisible by 2 and 5. In other words, since all primorial numbers greater than ''E''<sub>2</sub> have 2 and 5 as prime factors, they are divisible by 10, thus all ''E''<sub>''n''&nbsp;≥&nbsp;3</sub> + 1 have a final digit of 1. Likewise, the last digit of every Kummer number is 9.
+
+No Euclid or Kummer numbers are [[perfect power]]s.<ref>{{cite journal|doi=10.1017/S0025557200008184|work=The Mathematical Gazette|volume=98|issue=543|year=2014|pp=482-483|title=Euclid numbers are free from powers|first=Nick|last=Lord}}</ref>
+
+==Unsolved problems==
+{{unsolved|mathematics|Are there an infinite number of prime Euclid numbers?}}
+{{unsolved|mathematics|Are there an infinite number of prime Kummer numbers?}}
+It is not known whether there is an infinite number of prime Euclid numbers ([[primorial prime]]s)<ref>{{Cite OEIS|A006862|name=Euclid numbers}}</ref> or prime Kummer numbers.<ref>{{Cite OEIS|A125549|name=Composite Kummer numbers}}</ref>
+It is also unknown whether every Euclid number is a [[squarefree number]].<ref>{{cite book|title=Computational Recreations in Mathematica|first=Ilan|last=Vardi|publisher=Addison-Wesley|year=1991|isbn=9780201529890|pages=82–89}}</ref>
+{{unsolved|mathematics|Is every Euclid number squarefree?}}
+
+== See also ==
+* [[Euclid–Mullin sequence]]
+* [[Prime number#Number of prime numbers|Proof of the infinitude of the primes]] (Euclid's theorem)
+
+==References==
+{{reflist}}
+
+==External links==
+* {{cite journal|url=https://www.ams.org/journals/mcom/2002-71-237/S0025-5718-01-01315-1/|access-date=2025-11-07|doi=10.1090/S0025-5718-01-01315-1|journal=Mathematics of Computation|pp=442-443|year=2002|volume=71|first1=Chris K.|last1=Caldwell|first2=Yves|last2=Gallot|title=On the primality of <math>n! \pm 1</math> and <math>2\times 3 \times 5 \times \dotsb \times p \pm 1</math>}}
+
+{{Prime number classes|state=collapsed}}
+{{Classes of natural numbers}}
+
+[[Category:Integer sequences]]
+[[Category:Unsolved problems in number theory]]

@@ -1,0 +1,251 @@
+{{Short description|Unsolved problem in graph theory}}
+{{unsolved|mathematics|For which 2-regular <math>n</math>-vertex graphs <math>G</math> can the complete graph <math>K_n</math> be decomposed into edge-disjoint copies of <math>G</math>?}}
+[[File:Oberwolfach-3-4.svg|thumb|upright=1.2|Decomposition of the complete graph <math>K_7</math> into three copies of <math>C_3+C_4</math>, solving the Oberwolfach problem for the input <math>(3,4)</math>]]
+In [[mathematics]], the '''Oberwolfach problem''' is an [[open problem]] that may be formulated either as a problem of scheduling seating assignments for diners,
+or more abstractly as a problem in [[graph theory]], on the [[edge cycle cover]]s of [[complete graph]]s. It is named after the [[Oberwolfach Research Institute for Mathematics]], where the problem was posed in 1967 by [[Gerhard Ringel]].{{r|lr}} It is known to be true for all sufficiently large complete graphs.
+
+==Formulation==
+In conferences held at Oberwolfach, it is the custom for the participants to dine together in a room with circular tables, not all the same size, and with assigned seating that rearranges the participants from meal to meal. The Oberwolfach problem asks how to make a seating chart for a given set of tables so that all tables are full at each meal and all pairs of conference participants are seated next to each other exactly once. An instance of the problem can be denoted as <math>OP(x,y,z,\dots)</math> where <math>x,y,z,\dots</math> are the given table sizes. Alternatively, when some table sizes are repeated, they may be denoted using exponential notation; for instance, <math>OP(5^3)</math> describes an instance with three tables of size five.{{r|lr}}
+
+Formulated as a problem in graph theory, the pairs of people sitting next to each other at a single meal can be represented as a [[disjoint union of graphs|disjoint union]] of [[cycle graph]]s <math>C_x+C_y+C_z+\cdots</math> of the specified lengths, with one cycle for each of the dining tables. This union of cycles is a {{nowrap|2-[[regular graph|regular]]}} graph, and every {{nowrap|2-regular}} graph has this form. If <math>G</math> is this {{nowrap|2-regular}} graph and has <math>n</math> vertices, the question is whether the complete graph <math>K_n</math> of order <math>n</math> can be represented as an edge-disjoint union of copies of <math>G</math>.{{r|lr}}
+
+In order for a solution to exist, the total number of conference participants (or equivalently, the total capacity of the tables, or the total number of vertices of the given cycle graphs) must be an odd number. For, at each meal, each participant sits next to two neighbors, so the total number of neighbors of each participant must be even, and this is only possible when the total number of participants is odd. The problem has, however, also been extended to even values of <math>n</math> by asking, for those <math>n</math>, whether all of the edges of the complete graph except for a [[perfect matching]] can be covered by copies of the given {{nowrap|2-regular}} graph. Like the [[ménage problem]] (a different mathematical problem involving seating arrangements of diners and tables), this variant of the problem can be formulated by supposing that the <math>n</math> diners are arranged into <math>n/2</math> married couples, and that the seating arrangements should place each diner next to each other diner except their own spouse exactly once.{{r|hkr}}
+
+==Known results==
+Glock, Joos, Kim, Kühn, and Osthus{{r|gjkko}} find a solution for all but finitely many instances of the Oberwolfach problem. 
+It is known that for <math>OP(3^2)</math>, <math>OP(3^4)</math>, <math>OP(4,5)</math>, and <math>OP(3,3,5)</math> no solution is possible{{r|opsd}} and it is widely believed that all other instances have a solution. 
+
+The solution for large number for vertices involves many randomised steps. Cases for which a constructive solution is known include:
+*All instances <math>OP(x^y)</math> except <math>OP(3^2)</math> and <math>OP(3^4)</math>.{{r|h|ah|assw|hs|hkr}}
+*All instances in which all of the cycles have even length.{{r|h|bd}}
+*All instances (other than the known exceptions) with <math>n\le 60</math>.{{r|dfhmr|opsd}}
+*All instances for certain choices of <math>n</math>, belonging to infinite subsets of the [[natural number]]s.{{r|bs|abhms}}
+*All instances <math>OP(x,y)</math> other than the known exceptions <math>OP(3,3)</math> and <math>OP(4,5)</math>.{{r|t}}
+
+==Related problems==
+Glock, Kühn, and Osthus{{r|gko}} suggested a generalisation of the Oberwolfach problem for <math>k</math>-uniform [[Hypergraph|hypergraphs]] (for large <math>n</math>).
+{{unsolved|mathematics| Suppose <math>n</math> divides <math>\tbinom{n}{k}</math> and let <math>F</math> be an <math>n</math>-vertex graph which is a vertex-disjoint union of [[Hypergraph#Cycles|tight cycles]] of length at least <math>2k+1</math>. 
+Then <math>K_n^{(k)}</math> is decomposable into copies of <math>F</math>.}} 
+More precisely, for sufficiently large <math>n</math> satisfying trivial necessary divisibility conditions, they conjectured that, given a collection of vertex-disjoint [[Hypergraph#Cycles|tight cycles]] <math>F</math> covering <math>n</math> vertices in total, the complete <math>k</math>-uniform hypergraph <math>K_n^{(k)}</math> can be decomposed into copies of <math>F</math>. 
+This problem is equivalent to ask for a seating chart as in the original formulation, but where every set of <math>k</math> people sit consecutively exactly once throughout the dinners. 
+Even the case where <math>F</math> concists in only one cycle is [[Hamiltonian decomposition#Uniform Hypergraphs|still open]]. 
+
+[[Kirkman's schoolgirl problem]], of grouping fifteen schoolgirls into rows of three in seven different ways so that each pair of girls appears once in each triple, is a special case of the Oberwolfach problem, <math>OP(3^5)</math>. The problem of [[Hamiltonian decomposition]] of a complete graph <math>K_n</math> is another special case, <math>OP(n)</math>.{{r|bd}}
+
+[[Alspach's conjecture]], on the decomposition of a complete graph into cycles of given sizes, is related to the Oberwolfach problem, but neither is a special case of the other.
+If <math>G</math> is a {{nowrap|2-regular}} graph with <math>n</math> vertices, formed from a disjoint union of cycles of certain lengths, then a solution to the Oberwolfach problem for <math>G</math> would also provide a decomposition of the complete graph into <math>(n-1)/2</math> copies of each of the cycles of <math>G</math>. However, not every decomposition of <math>K_n</math> into this many cycles of each size can be grouped into disjoint cycles that form copies of <math>G</math>, and on the other hand not every instance of Alspach's conjecture involves sets of cycles that have <math>(n-1)/2</math> copies of each cycle.
+
+==References==
+{{reflist|30em|refs=
+
+<ref name=abhms>{{citation
+ | last1 = Alspach | first1 = Brian | author1-link = Brian Alspach
+ | last2 = Bryant | first2 = Darryn
+ | last3 = Horsley | first3 = Daniel
+ | last4 = Maenhaut | first4 = Barbara
+ | last5 = Scharaschkin | first5 = Victor
+ | issue = 1
+ | journal = [[Ars Mathematica Contemporanea]]
+ | mr = 3546656
+ | pages = 157–173
+ | title = On factorisations of complete graphs into circulant graphs and the Oberwolfach problem
+ | url = https://amc-journal.eu/index.php/amc/article/view/770
+ | volume = 11
+ | year = 2016| doi = 10.26493/1855-3974.770.150 | arxiv = 1411.6047
+ }}</ref>
+
+<ref name=ah>{{citation
+ | last1 = Alspach | first1 = Brian | author1-link = Brian Alspach
+ | last2 = Häggkvist | first2 = Roland
+ | doi = 10.1002/jgt.3190090114
+ | issue = 1
+ | journal = [[Journal of Graph Theory]]
+ | mr = 785659
+ | pages = 177–187
+ | title = Some observations on the Oberwolfach problem
+ | volume = 9
+ | year = 1985}}</ref>
+
+<ref name=assw>{{citation
+ | last1 = Alspach | first1 = Brian | author1-link = Brian Alspach
+ | last2 = Schellenberg | first2 = P. J.
+ | last3 = Stinson | first3 = D. R. | author3-link = Doug Stinson
+ | last4 = Wagner | first4 = David
+ | doi = 10.1016/0097-3165(89)90059-9
+ | issue = 1
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 1008157
+ | pages = 20–43
+ | series = Series A
+ | title = The Oberwolfach problem and factors of uniform odd length cycles
+ | volume = 52
+ | year = 1989| doi-access = 
+ }}</ref>
+
+<ref name=bd>{{citation
+ | last1 = Bryant | first1 = Darryn
+ | last2 = Danziger | first2 = Peter
+ | doi = 10.1002/jgt.20538
+ | issue = 1
+ | journal = [[Journal of Graph Theory]]
+ | mr = 2833961
+ | pages = 22–37
+ | title = On bipartite 2-factorizations of <math>K_n-I</math> and the Oberwolfach problem
+ | url = https://people.smp.uq.edu.au/DarrynBryant/Preprints/BryDanBipartiteOberwolfach.pdf
+ | volume = 68
+ | year = 2011}}</ref>
+
+<ref name=bs>{{citation
+ | last1 = Bryant | first1 = Darryn
+ | last2 = Scharaschkin | first2 = Victor
+ | doi = 10.1016/j.jctb.2009.03.003
+ | issue = 6
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 2558441
+ | pages = 904–918
+ | series = Series B
+ | title = Complete solutions to the Oberwolfach problem for an infinite set of orders
+ | volume = 99
+ | year = 2009| doi-access = 
+ }}</ref>
+
+<ref name=dfhmr>{{citation
+ | last1 = Deza | first1 = A.
+ | last2 = Franek | first2 = F.
+ | last3 = Hua | first3 = W.
+ | last4 = Meszka | first4 = M.
+ | last5 = Rosa | first5 = A.
+ | journal = Journal of Combinatorial Mathematics and Combinatorial Computing
+ | mr = 2675892
+ | pages = 95–102
+ | title = Solutions to the Oberwolfach problem for orders 18 to 40
+ | url = http://www.cas.mcmaster.ca/~deza/jcmcc2010.pdf
+ | volume = 74
+ | year = 2010}}</ref>
+
+<ref name=gjkko>{{citation
+ | last1 = Glock | first1 = Stefan
+ | last2 = Joos | first2 = Felix
+ | last3 = Kim | first3 = Jaehoon
+ | last4 = Kühn | first4 = Daniela | author4-link = Daniela Kühn
+ | last5 = Osthus | first5 = Deryk
+ | arxiv = 1806.04644
+ | doi = 10.4171/jems/1060
+ | issue = 8
+ | journal = [[Journal of the European Mathematical Society]]
+ | mr = 4269420
+ | pages = 2511–2547
+ | title = Resolution of the Oberwolfach problem
+ | volume = 23
+ | year = 2021}}</ref>
+
+<ref name=h>{{citation
+ | last = Häggkvist | first = Roland
+ | contribution = A lemma on cycle decompositions
+ | doi = 10.1016/S0304-0208(08)73015-9
+ | mr = 821524
+ | pages = 227–232
+ | publisher = North-Holland | location = Amsterdam
+ | series = North-Holland Math. Stud.
+ | title = Cycles in graphs (Burnaby, B.C., 1982)
+ | volume = 115
+ | year = 1985| isbn = 978-0-444-87803-8
+ }}</ref>
+
+<ref name=hkr>{{citation
+ | last1 = Huang | first1 = Charlotte
+ | last2 = Kotzig | first2 = Anton | author2-link = Anton Kotzig
+ | last3 = Rosa | first3 = Alexander
+ | doi = 10.1016/0012-365X(79)90162-6
+ | issue = 3
+ | journal = Discrete Mathematics
+ | mr = 541472
+ | pages = 261–277
+ | title = On a variation of the Oberwolfach problem
+ | volume = 27
+ | year = 1979| doi-access = free
+ }}</ref>
+
+<ref name=hs>{{citation
+ | last1 = Hoffman | first1 = D. G.
+ | last2 = Schellenberg | first2 = P. J.
+ | doi = 10.1016/0012-365X(91)90440-D
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1140806
+ | pages = 243–250
+ | title = The existence of <math>C_k</math>-factorizations of <math>K_{2n}-F</math>
+ | volume = 97
+ | year = 1991| doi-access = free
+ }}</ref>
+
+<ref name=gko>{{citation
+| last1 = Kühn
+| first1 = D.
+| author1-link = Daniela Kühn
+| last2 = Osthus
+| first2 = D.
+| author2-link = Deryk Osthus
+| contribution = Extremal aspects of graph and hypergraph decomposition problems
+| editor1-last = Lo
+| editor1-first = A.
+| editor2-last = Mycroft
+| editor2-first = R.
+| editor3-last = Perarnau
+| editor3-first = G.
+| editor4-last = Treglown
+| editor4-first = A.
+| title = Surveys in Combinatorics 2021
+| series = [[London Mathematical Society Lecture Note Series]]
+| volume = 470
+| publisher = [[Cambridge University Press]]
+| location = Cambridge
+| year = 2021
+| pages = 279–315
+| isbn = 9781009036214
+| doi = 10.1017/9781108999737.009
+| doi-broken-date = 31 January 2026
+| url = https://www.cambridge.org/core/books/surveys-in-combinatorics-2021/extremal-aspects-of-graph-and-hypergraph-decomposition-problems/27BC6001E57EF56DCEF02AE4AC895FEA
+}}</ref>
+
+<ref name=lr>{{citation
+ | last1 = Lenz | first1 = Hanfried | author1-link = Hanfried Lenz
+ | last2 = Ringel | first2 = Gerhard | author2-link = Gerhard Ringel
+ | doi = 10.1016/0012-365X(91)90416-Y
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1140782
+ | pages = 3–16
+ | title = A brief review on Egmont Köhler's mathematical work
+ | volume = 97
+ | year = 1991| doi-access = free
+ }}</ref>
+
+<ref name=t>{{citation
+ | last = Traetta | first = Tommaso
+ | issue = 5
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 3033656
+ | pages = 984–997
+ | series = Series A
+ | title = A complete solution to the two-table Oberwolfach problems
+ | doi = 10.1016/j.jcta.2013.01.003
+ | volume = 120
+ | year = 2013| doi-access = free
+ }}</ref>
+
+<ref name=opsd>{{citation
+ | last1 = Salassa | first1 = F.
+ | last2 = Dragotto | first2 = G.
+ | last3 = Traetta | first3 = T.
+ | last4 = Buratti | first4 = M.
+ | last5 = Della Croce | first5 = F.
+ | title = Merging Combinatorial Design and Optimization: the Oberwolfach Problem
+ | year = 2019| arxiv = 1903.12112
+ | bibcode = 2019arXiv190312112S
+ }}</ref>
+
+}}
+
+[[Category:Mathematical problems]]
+[[Category:Unsolved problems in graph theory]]

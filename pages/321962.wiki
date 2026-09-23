@@ -1,0 +1,71 @@
+{{Short description|Number of the form (n * 2^n) - 1}}
+{{pp-semi-indef|small=yes}}
+In [[number theory]], a '''Woodall number''' (''W''<sub>''n''</sub>) is any [[natural number]] of the form
+
+:<math>W_n = n \cdot 2^n - 1</math>
+
+for some natural number ''n''. The first few Woodall numbers are:
+
+:1, 7, 23, 63, 159, 383, 895, … {{OEIS|id=A003261}}.
+
+==History==
+Woodall numbers were first studied by [[Allan J. C. Cunningham]] and [[H. J. Woodall]] in 1917,<ref>{{citation
+ | last1 = Cunningham | first1 = A. J. C | author1-link = Allan Joseph Champneys Cunningham
+ | last2 = Woodall | first2 = H. J. | author2-link = H. J. Woodall
+ | journal = [[Messenger of Mathematics]]
+ | pages = 1–38
+ | title = Factorisation of <math>Q = (2^q \mp q)</math> and <math>(q \cdot {2^q} \mp 1)</math>
+ | url = https://babel.hathitrust.org/cgi/pt?id=uc1.$b416783&seq=13
+ | volume = 47
+ | year = 1917}}.</ref> inspired by [[James Cullen (mathematician)|James Cullen]]'s earlier study of the similarly defined [[Cullen number]]s.
+
+==Woodall primes==
+
+{{unsolved|mathematics|Are there infinitely many Woodall primes?}}
+
+Woodall numbers that are also [[prime number]]s are called '''Woodall primes'''; the first few exponents ''n'' for which the corresponding Woodall numbers ''W''<sub>''n''</sub> are prime are 2, 3, 6, 30, 75, 81, 115, 123, 249, 362, 384, ... {{OEIS|id=A002234}}; the Woodall primes themselves begin with 7, 23, 383, 32212254719, ... {{OEIS|id=A050918}}.
+
+In 1976 [[Christopher Hooley]] showed that [[almost all]] Cullen numbers are [[composite number|composite]].<ref name="EPSW94">{{cite book|last1=Everest|first1=Graham|title=Recurrence sequences|last2=van der Poorten|first2=Alf|last3=Shparlinski|first3=Igor|last4=Ward|first4=Thomas|publisher=[[American Mathematical Society]]|year=2003|isbn=0-8218-3387-1|series=Mathematical Surveys and Monographs|volume=104|location=[[Providence, RI]]|page=94|zbl=1033.11006|author2-link=Alfred van der Poorten}}</ref> In October 1995, Wilfred Keller published a paper discussing several new Cullen primes and the efforts made to [[Prime factorisation|factorise]] other Cullen and Woodall numbers. Included in that paper is a personal communication to Keller from [[Hiromi Suyama]], asserting that Hooley's method can be reformulated to show that it works for any sequence of numbers {{math|''n'' · 2<sup>''n'' + ''a''</sup> + ''b''}}, where ''a'' and ''b'' are [[integer]]s, and in particular, that almost all Woodall numbers are composite.<ref>{{Cite journal|last1=Keller|first1=Wilfrid|date=January 1995|title=New Cullen primes|journal=[[Mathematics of Computation]]|volume=64|issue=212|pages=1739|language=en|doi=10.1090/S0025-5718-1995-1308456-3|issn=0025-5718|doi-access=free}} {{Cite web|last1=Keller|first1=Wilfrid|date=December 2013|title=Wilfrid Keller|website=www.fermatsearch.org|location=Hamburg|language=en|url=http://www.fermatsearch.org/history/WKeller.html|access-date=October 1, 2020|url-status=live|archive-url=https://web.archive.org/web/20200228175855/http://www.fermatsearch.org/history/WKeller.html|archive-date=February 28, 2020}}</ref> It is an [[List of unsolved problems in mathematics#Prime numbers|open problem]] whether there are infinitely many Woodall primes. {{As of|2018|10}}, thirty-four Woodall primes are known, and the largest known Woodall prime is 17016602&nbsp;×&nbsp;2<sup>17016602</sup>&nbsp;−&thinsp;1.<ref>{{Citation|title=The Prime Database: 8508301*2^17016603-1|url=http://primes.utm.edu/primes/page.php?id=124539|work=Chris Caldwell's The Largest Known Primes Database|access-date=March 24, 2018}}</ref> It has 5,122,515 digits and was found by Diego Bertolotti in March 2018 in the [[distributed computing]] project [[PrimeGrid]].<ref>{{Citation|author=PrimeGrid|author-link=PrimeGrid|title=Announcement of 17016602*2^17016602&nbsp;-&nbsp;1|url=http://www.primegrid.com/download/WOO-17016602.pdf|access-date=April 1, 2018}}</ref>
+
+==Restrictions==
+Starting with ''W''<sub>4</sub> = 63 and ''W''<sub>5</sub> = 159, every sixth Woodall number is [[divisible]] by 3; thus, in order for ''W''<sub>''n''</sub> to be prime, the index ''n'' cannot be [[modular arithmetic|congruent]] to 4 or 5 (modulo 6). Also, for a positive integer ''m'', the Woodall number ''W''<sub>2<sup>''m''</sup></sub> may be prime only if 2<sup>''m''</sup> + ''m'' is prime. As of January 2019, the only known primes that are both Woodall primes and [[Mersenne primes]] are ''W''<sub>2</sub> = ''M''<sub>3</sub> = 7, and ''W''<sub>512</sub> = ''M''<sub>521</sub>.
+
+==Divisibility properties==
+Like Cullen numbers, Woodall numbers have many divisibility properties. For example, if ''p'' is a prime number, then ''p'' divides
+
+:''W''<sub>(''p''&nbsp;+&thinsp;1)&thinsp;/&thinsp;2</sub> if the [[Jacobi symbol]] <math>\left(\frac{2}{p}\right)</math> is +1 and
+
+:''W''<sub>(3''p''&nbsp;−&thinsp;1)&thinsp;/&thinsp;2</sub> if the Jacobi symbol <math>\left(\frac{2}{p}\right)</math> is −1.{{sfnp|Cunningham|Woodall|1917|p=[https://babel.hathitrust.org/cgi/pt?id=uc1.$b416783&seq=35 23]}}
+
+==Generalization==
+A '''generalized Woodall number base ''b''''' is defined to be a number of the form ''n'' × ''b''<sup>''n''</sup>&nbsp;−&nbsp;1, where ''n''&nbsp;+&nbsp;2&nbsp;>&nbsp;''b''; if a prime can be written in this form, it is then called a '''generalized Woodall prime'''.
+
+The smallest value of ''n'' such that ''n'' × ''b''<sup>''n''</sup> − 1 is prime for ''b'' = 1, 2, 3, ... are<ref name="tripod">[http://harvey563.tripod.com/GWlist.txt List of generalized Woodall primes base 3 to 10000]</ref>
+:3, 2, 1, 1, 8, 1, 2, 1, 10, 2, 2, 1, 2, 1, 2, 167, 2, 1, 12, 1, 2, 2, 29028, 1, 2, 3, 10, 2, 26850, 1, 8, 1, 42, 2, 6, 2, 24, 1, 2, 3, 2, 1, 2, 1, 2, 2, 140, 1, 2, 2, 22, 2, 8, 1, 2064, 2, 468, 6, 2, 1, 362, 1, 2, 2, 6, 3, 26, 1, 2, 3, 20, 1, 2, 1, 28, 2, 38, 5, 3024, 1, 2, 81, 858, 1, 2, 3, 2, 8, 60, 1, 2, 2, 10, 5, 2, 7, 182, 1, 17782, 3, ... {{OEIS|id=A240235}}
+
+{{As of|2021|11}}, the largest known generalized Woodall prime with base greater than 2 is 2740879&nbsp;&times;&nbsp;32<sup>2740879</sup>&nbsp;−&nbsp;1.<ref>{{cite web |title=The Top Twenty: Generalized Woodall |url=https://primes.utm.edu/top20/page.php?id=45 |website=primes.utm.edu |access-date=20 November 2021}}</ref>
+
+==See also==
+* [[Mersenne prime]] - Prime numbers of the form 2<sup>''n''</sup>&nbsp;−&nbsp;1.
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* {{Citation |first=Richard K. |last=Guy |author-link=Richard K. Guy |title=Unsolved Problems in Number Theory |edition=3rd |publisher=[[Springer Verlag]] |location=New York |year=2004 |isbn=0-387-20860-7 |pages=section B20 }}.
+* {{Citation |first=Wilfrid |last=Keller |title=New Cullen Primes |journal=[[Mathematics of Computation]] |volume=64 |issue=212 |year=1995 |pages=1733–1741 |url=http://www.ams.org/mcom/1995-64-212/S0025-5718-1995-1308456-3/S0025-5718-1995-1308456-3.pdf |doi=10.2307/2153382|jstor=2153382 |doi-access=free }}.
+* {{Citation |first=Chris |last=Caldwell |url=http://primes.utm.edu/top20/page.php?id=7 |title=The Top Twenty: Woodall Primes |work=The [[Prime Pages]] |access-date=December 29, 2007 }}.
+
+==External links==
+* Chris Caldwell, [http://primes.utm.edu/glossary/page.php?sort=WoodallNumber The Prime Glossary: Woodall number], and [http://primes.utm.edu/top20/page.php?id=7 The Top Twenty: Woodall], and [http://primes.utm.edu/top20/page.php?id=45 The Top Twenty: Generalized Woodall], at The [[Prime Pages]].
+* {{MathWorld|urlname=WoodallNumber|title=Woodall number}}
+* Steven Harvey, [http://harvey563.tripod.com/GeneralizedWoodallPrimes.txt List of Generalized Woodall primes].
+* Paul Leyland, [https://web.archive.org/web/20120204131629/http://www.leyland.vispa.com/numth/factorization/cullen_woodall/gcw.htm Generalized Cullen and Woodall Numbers]
+
+{{Prime number classes|state=collapsed}}
+{{Classes of natural numbers}}
+
+{{DEFAULTSORT:Woodall Number}}
+[[Category:Integer sequences]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Classes of prime numbers]]

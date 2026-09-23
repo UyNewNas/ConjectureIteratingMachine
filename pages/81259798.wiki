@@ -1,0 +1,88 @@
+{{Short description|Open problem in graph theory}}
+{{unsolved|mathematics|'''Conjecture:''' If for all edges <math>e \in E(G)</math> we have <math>\text{imb}(e) > 0</math>, then <math>M_G</math> is graphic.}}
+[[File:Imbalance conjecture.svg|thumb|upright=0.75|Two graphs laid on top of one another, one gray, one blue. The vertices are labeled by their [[degree (graph theory)|degree]], and the degree of the vertices in the blue graph are exactly the '''imbalance''' of the edge of the gray graph they lie on (the difference between the degrees of the vertices [[incidence (graph)|incident]] to it).]]
+The '''imbalance conjecture''' is an open problem in [[graph theory]] concerning whether edge imbalance sequences are graphic, first formally stated by Kozerenko and Skochko in 2014.<ref name="koz">{{cite journal |last1=Kozerenko |first1=Sergiy |last2=Skochko |first2=Volodymyr |title=On graphs with graphic imbalance sequences |journal=Algebra and Discrete Mathematics |date=2014 |volume=18 |issue=1 |pages=97–108 |url=https://www.researchgate.net/publication/289776294_On_graphs_with_graphic_imbalance_sequences}}</ref>
+
+== Definitions ==
+For a [[simple graph|simple]] [[undirected graph]] <math>G</math>, the ''imbalance'' of an edge <math>e = uv</math> is defined as:
+: <math>\text{imb}(e) = |\deg(u) - \deg(v)|</math>
+
+where <math>\deg(u)</math> and <math>\deg(v)</math> denote the [[degree (graph theory)|degrees]] of vertices <math>u</math> and <math>v</math> respectively.
+
+The imbalance sequence <math>M_G</math> is the [[multiset]] of all edge imbalances in <math>G</math>.
+
+A sequence of non-negative integers is called ''graphic'' if it is the [[degree sequence]] of some graph. Note that the term sometimes allows a [[multigraph]], but here it is defined as the degree sequence of a [[simple graph]].
+
+A graph <math>G</math> is called imbalance graphic if its imbalance sequence <math>M_G</math> is graphic.<ref name="ks2023">{{cite journal |last1=Kozerenko |first1=Sergiy |last2=Serdiuk |first2=Andrii |title=New results on imbalance graphic graphs |journal=Opuscula Mathematica |date=2023 |volume=43 |issue=1 |pages=81–100 |doi=10.7494/OpMath.2023.43.1.81|doi-access=free }}</ref>
+
+== Statement of the conjecture ==
+
+Imbalance Conjecture: If for all edges <math>e \in E(G)</math> we have <math>\text{imb}(e) > 0</math>, then <math>M_G</math> is graphic.
+
+In other words, if no edge in a graph connects vertices of equal degree, then the multiset of edge imbalances forms a valid degree sequence for some simple graph.
+
+== Background ==
+
+The concept of edge imbalance was introduced by Albertson in 1997 as a measure of graph irregularity.<ref>{{cite journal |last1=Albertson |first1=M. O. |title=The irregularity of a graph |journal=Ars Combinatoria |date=1997 |volume=46 |pages=219–225 |url=https://combinatorialpress.com/article/ars/Volume%20046/volume-46-paper-16.pdf}}</ref> The irregularity of a graph <math>G</math> is defined as:
+
+: <math>I(G) = \sum_{uv \in E(G)} |\deg(u) - \deg(v)|</math>
+
+This is sometimes called the [[Albertson index]] and denoted as <math>\operatorname{Alb}(G)</math> in the literature. While considerable research has focused on bounds for graph irregularity, Kozerenko and Skochko were the first to systematically study imbalance sequences as objects of interest in their own right.
+
+== Known results ==
+
+The imbalance conjecture has been computationally verified for all graphs with at most 9 vertices satisfying the condition that all edges have positive imbalance.<ref name="koz"/> This was further improved to graphs with at most 12 vertices.<ref name="ks2023"/>
+
+Several classes of graphs have been proven to have graphic imbalance sequences. The following classes were proven imbalance graphic by Kozerenko and Skochko:<ref name="koz"/>
+*All [[tree (graph theory)|tree]]s
+*Graphs in which all non-leaf vertices form a [[clique (graph theory)|clique]] (cl-graphs)
+*Complete extensions of [[path graph|path]]s
+*Complete extensions of [[cycle (graph theory)|cycle]]s
+*Complete extensions of [[complete graph]]s
+*Graphs with constant edge imbalance
+
+Kozerenko and Serdiuk established additional classes of imbalance graphic graphs:<ref name="ks2023">{{cite journal |last1=Kozerenko |first1=Sergiy |last2=Serdiuk |first2=Andrii |title=New results on imbalance graphic graphs |journal=Opuscula Mathematica |date=2023 |volume=43 |issue=1 |pages=81–100 |doi=10.7494/OpMath.2023.43.1.81|doi-access=free }}</ref>
+*All [[unicyclic graph]]s (graphs with exactly one cycle)
+*Antiregular graphs (graphs with exactly one pair of vertices having the same degree)
+*Three special classes of [[block graph]]s:
+**Block graphs having all cut vertices in a single block
+**Block graphs in which cut vertices induce a [[star (graph theory)|star]]
+**Block graphs in which cut vertices induce a path
+
+[[Stepwise irregular graph]]s (graphs in which the imbalance of every edge is 1) are also known to have graphic imbalance sequences; these are all in the form of some number of disjoint 2-paths.
+
+Various graph operations have been shown to preserve the property of being imbalance graphic:<ref name="ks2023"/>
+
+*If <math>G_1</math> and <math>G_2</math> are imbalance graphic, then their [[disjoint union of graphs|disjoint union]] is also imbalance graphic
+*The [[join (graph theory)|join]] of graphs with sufficiently large empty graphs is imbalance graphic
+*If <math>G</math> is imbalance graphic, then so is <math>G + K_1</math> (the join with a single vertex)
+*The [[double graph]] of an imbalance graphic graph is also imbalance graphic
+
+The problem would be trivial if <math>M_G</math> was allowed to be the degree sequence for a [[pseudograph]], because the Albertson index is always an even number, and any non-increasing sequence of positive integers with an even sum is the degree sequence of a pseudograph.
+
+== Related conjectures ==
+
+One related conjecture concerns the ''mean imbalance'' of a nonempty graph <math>G</math>, defined as:
+
+: <math>m(G) = \frac{I(G)}{|E(G)|}</math>
+
+'''Mean Imbalance Conjecture:''' If <math>m(G) \geq 2</math>, then <math>M_G</math> is graphic.<ref name="koz"/>
+
+This conjecture was disproved by Kozerenko and Serdiuk in 2023, who showed that for every real number <math>c > 0</math>, there exists an imbalance non-graphic graph <math>G</math> with <math>I(G) \geq c \cdot |E(G)|</math>.<ref name="ks2023"/>
+
+'''Bicyclic Graph Conjecture:''' There is exactly one connected imbalance non-graphic bicyclic graph (shown to exist among graphs with at most 21 vertices).<ref name="ks2023"/>
+
+'''Block Graph Conjecture:''' All block graphs are imbalance graphic.<ref name="ks2023"/>
+
+This conjecture has been verified for all block graphs with at most 13 vertices. A weaker version conjectures that all line graphs of trees (which are exactly claw-free block graphs) are imbalance graphic.
+
+== See also ==
+*[[Degree sequence]]
+*[[Erdős–Gallai theorem]]
+
+== References ==
+{{reflist}}
+
+[[Category:Graph theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

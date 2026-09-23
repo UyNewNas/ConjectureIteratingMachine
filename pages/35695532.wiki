@@ -1,0 +1,97 @@
+{{unsolved|mathematics|For how many points is it always possible to projectively transform the points into convex position?}}
+The '''McMullen problem''' is an open problem in [[discrete geometry]] named after [[Peter McMullen]].
+
+==Statement==
+In 1972, David G. Larman wrote about the following problem:{{R|L}}
+{{block indent|left=1.6|1=Determine the largest number <math>\nu(d)</math> such that for any given <math>\nu(d)</math> points in [[general position]] in the <math>d</math>-dimensional affine space <math>\mathbb{R}^d</math> there is a [[projective transformation]] mapping these points into [[convex position]] (so they form the vertices of a [[convex polytope]]).}}
+Larman credited the problem to a private communication by Peter McMullen.
+
+==Equivalent formulations==
+
+===Gale transform===
+Using the [[Gale transform]], this problem can be reformulated as:
+{{block indent|left=1.6|1=Determine the smallest number <math>\mu(d)</math> such that for every set of <math>\mu(d)</math> points 
+<math>X=\{x_1,x_2,\dots,x_{\mu(d)}\}</math> in linearly general position on the sphere <math>S^{d-1}</math> it is possible to choose a set <math>Y=\{\varepsilon_1x_1,\varepsilon_2x_2,\dots,\varepsilon_{\mu(d)}x_{\mu(d)}\}</math> where <math>\varepsilon_i=\pm 1</math> for <math>i=1,2,\dots,\mu(d)</math>, such that every open hemisphere of <math>S^{d-1}</math> contains at least two members of <math>Y</math>.}}
+
+The numbers <math>\nu</math> of the original formulation of the McMullen problem and <math>\mu</math> of the Gale transform formulation are connected by the relationships
+<math display=block>
+\begin{align}
+\mu(k)&=\min\{w \mid w\leq\nu(w-k-1)\} \\
+\nu(d)&=\max\{w \mid w\geq\mu(w-d-1)\} 
+\end{align}
+</math>
+
+===Partition into nearly-disjoint hulls===
+Also, by simple geometric observation, it can be reformulated as:
+{{block indent|left=1.6|1=Determine the smallest number <math>\lambda(d)</math> such that for every set <math>X</math> of <math>\lambda(d)</math> points in <math>\mathbb{R}^d</math> there exists a [[Partition of a set|partition]] of <math>X</math> into two sets <math>A</math> and <math>B</math> with
+<math display=block>\operatorname{conv}(A\backslash \{x\})\cap \operatorname{conv}(B\backslash \{x\})\not=\varnothing,\forall x\in X. \, </math>}}
+
+The relation between <math>\mu</math> and <math>\lambda</math> is
+<math display=block>\mu(d+1)=\lambda(d),\qquad  d\geq1 \, </math>
+
+===Projective duality===
+[[File:Pentagon dual arrangement.svg|thumb|300px|An [[arrangement of lines]] dual to the regular pentagon. Every five-line projective arrangement, like this one, has a cell touched by all five lines. However, adding the [[line at infinity]] produces a six-line arrangement with six pentagon faces and ten triangle faces; no face is touched by all of the lines. Therefore, the solution to the McMullen problem for ''d''&nbsp;=&nbsp;2 is ''&nu;''&nbsp;=&nbsp;5.]]
+The equivalent [[projective dual]] statement to the McMullen problem is to determine the largest number <math>\nu(d)</math> such that every set of <math>\nu(d)</math> [[hyperplane]]s in general position in ''d''-dimensional [[real projective space]] form an [[arrangement of hyperplanes]] in which one of the cells is bounded by all of the hyperplanes.
+
+==Results==
+This problem is still open. However, the bounds of <math>\nu(d)</math> are in the following results:
+*David Larman proved in 1972 that{{r|L}} <math display=block>2d+1\leq\nu(d)\leq(d+1)^2.</math>
+*[[Michel Las Vergnas]] proved in 1986 that{{r|LV}} <math display=block>\nu(d)\leq\frac{(d+1)(d+2)}{2}.</math>
+*Jorge Luis Ramírez Alfonsín proved in 2001 that{{R|A}} <math display=block>\nu(d)\leq2d+\left\lceil\frac{d+1}{2}\right\rceil.</math>
+The conjecture of this problem is that <math>\nu(d)=2d+1</math>. This has been proven for <math>d=2,3,4</math>.{{r|L|F}}
+
+==References==
+<references>
+
+<ref name=A>{{citation
+ | last = Ramírez Alfonsín | first = J. L.
+ | doi = 10.1006/eujc.2000.0492
+ | issue = 5
+ | journal = [[European Journal of Combinatorics]]
+ | mr = 1845496
+ | pages = 723–731
+ | title = Lawrence oriented matroids and a problem of McMullen on projective equivalences of polytopes
+ | volume = 22
+ | year = 2001| doi-access = free
+ }}</ref>
+
+<ref name=F>{{citation
+ | last1 = Forge | first1 = David
+ | last2 = Las Vergnas | first2 = Michel | author2-link = Michel Las Vergnas
+ | last3 = Schuchert | first3 = Peter
+ | department = Combinatorial geometries (Luminy, 1999)
+ | doi = 10.1006/eujc.2000.0490
+ | issue = 5
+ | journal = [[European Journal of Combinatorics]]
+ | mr = 1845494
+ | pages = 705–708
+ | title = 10 points in dimension 4 not projectively equivalent to the vertices of a convex polytope
+ | volume = 22
+ | year = 2001| doi-access = free
+ }}</ref>
+
+<ref name=L>{{citation
+ | last = Larman | first = D. G.
+ | doi = 10.1112/blms/4.1.6
+ | journal = [[The Bulletin of the London Mathematical Society]]
+ | mr = 307040
+ | pages = 6–12
+ | title = On sets projectively equivalent to the vertices of a convex polytope
+ | volume = 4
+ | year = 1972}}</ref>
+
+<ref name=LV>{{citation
+ | last = Las Vergnas | first = Michel | author-link = Michel Las Vergnas
+ | doi = 10.1112/blms/18.6.571
+ | issue = 6
+ | journal = [[The Bulletin of the London Mathematical Society]]
+ | mr = 859948
+ | pages = 571–572
+ | title = Hamilton paths in tournaments and a problem of McMullen on projective transformations in <math>\R^d</math>
+ | volume = 18
+ | year = 1986}}</ref>
+
+</references>
+
+[[Category:Discrete geometry]]
+[[Category:Unsolved problems in geometry]]

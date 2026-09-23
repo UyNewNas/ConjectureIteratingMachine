@@ -1,0 +1,263 @@
+{{Short description|Mathematical problem}}
+'''Hadamard's maximal determinant problem''', named after [[Jacques Hadamard]], asks for the largest [[determinant]] of a [[matrix (mathematics)|matrix]] with elements equal to 1 or −1.  The analogous question for matrices with elements equal to 0 or 1 is equivalent since, as will be shown below, the maximal determinant of a {1,−1} matrix of size ''n'' is 2<sup>''n''−1</sup> times the maximal determinant of a {0,1} matrix of size ''n''−1.  The problem was posed by Hadamard in the 1893 paper<ref>{{citation
+ |last = Hadamard | first = J.
+ |title = Résolution d'une question relative aux déterminants 
+ |journal = Bulletin des Sciences Mathématiques
+ |volume = 17
+ |pages=240–246
+ |year =1893}}</ref> in which he presented his famous [[Hadamard's inequality|determinant bound]] and remains unsolved for matrices of general size.  Hadamard's bound implies that {1,&nbsp;−1}-matrices of size ''n'' have determinant at most ''n''<sup>''n''/2</sup>.  Hadamard observed that a construction of [[James Joseph Sylvester|Sylvester]]<ref>{{citation
+ |last = Sylvester|first = J. J.
+ |title = Thoughts on inverse orthogonal matrices, simultaneous sign successions, and tessellated pavements in two or more colours, with applications to Newton's rule, ornamental tile-work, and the theory of numbers
+ |journal = London Edinburgh Dublin Phil. Mag. J. Sci. 
+ |volume = 34
+ |year = 1867
+ |issue = 232
+ |pages = 461–475
+|doi = 10.1080/14786446708639914
+ }}</ref>
+produces examples of matrices that attain the bound when ''n'' is a power of 2, and produced examples of his own of sizes 12 and 20.  He also showed that the bound is only attainable when ''n'' is equal to 1, 2, or a multiple of 4.  Additional examples were later constructed by Scarpis and Paley and subsequently by many other authors.  Such matrices are now known as [[Hadamard matrices]].  They have received intensive study.
+
+Matrix sizes ''n'' for which ''n''&nbsp;≡&nbsp;1,&nbsp;2,&nbsp;or&nbsp;3&nbsp;(mod&nbsp;4) have received less attention. The earliest results are due to Barba, who tightened Hadamard's bound for ''n'' odd, and Williamson, who found the largest determinants for ''n''=3, 5, 6, and 7.  Some important results include
+* tighter bounds, due to Barba, Ehlich, and Wojtas, for ''n''&nbsp;≡&nbsp;1,&nbsp;2,&nbsp;or&nbsp;3&nbsp;(mod&nbsp;4), which, however, are known not to be always attainable,
+* a few infinite sequences of matrices attaining the bounds for ''n''&nbsp;≡&nbsp;1&nbsp;or&nbsp;2&nbsp;(mod&nbsp;4),
+* a number of matrices attaining the bounds for specific ''n''&nbsp;≡&nbsp;1&nbsp;or&nbsp;2&nbsp;(mod&nbsp;4),
+* a number of matrices not attaining the bounds for specific ''n''&nbsp;≡&nbsp;1&nbsp;or&nbsp;3&nbsp;(mod&nbsp;4), but that have been proved by exhaustive computation to have maximal determinant.
+
+The [[design of experiments]] in [[statistics]] makes use of {1,&nbsp;−1} matrices ''X'' (not necessarily square) for which the [[information matrix]] ''X''<sup>T</sup>''X'' has maximal determinant.  (The notation ''X''<sup>T</sup> denotes the [[transpose]] of ''X''.)  Such matrices are known as [[optimal design|D-optimal designs]].<ref>{{citation
+ | title = ''D''-optimum weighing designs
+ | last1 = Galil | first1 = Z.
+ | last2 = Kiefer | first2 = J.
+ | journal = Ann. Stat.
+ | volume = 8
+ | pages = 1293–1306
+ | year = 1980
+ | issue = 6 | doi = 10.1214/aos/1176345202
+| doi-access = free
+ }}</ref>  If ''X'' is a [[square matrix]], it is known as a saturated D-optimal design.
+
+==Hadamard matrices==
+Any two rows of an ''n''×''n'' Hadamard matrix are [[orthogonal]]. For a {1,&nbsp;−1} matrix, it means any two rows differ in exactly half of the entries, which is impossible when ''n'' is an [[odd number]].  When ''n''&nbsp;≡&nbsp;2&nbsp;(mod&nbsp;4), two rows that are both orthogonal to a third row cannot be orthogonal to each other.  Together, these statements imply that an ''n''×''n'' Hadamard matrix can exist only if ''n''&nbsp;=&nbsp;1,&nbsp;2, or a multiple of&nbsp;4.  Hadamard matrices have been well studied, but it is not known whether an ''n''×''n'' Hadamard matrix exists for every ''n'' that is a positive multiple of 4.
+
+==Equivalence and normalization of {1,&nbsp;−1} matrices==
+Any of the following operations, when performed on a {1,&nbsp;−1} matrix ''R'', changes the determinant of ''R'' only by a minus sign: 
+* Negation of a row.
+* Negation of a column.
+* Interchange of two rows.
+* Interchange of two columns.
+Two {1,−1} matrices, ''R''<sub>1</sub> and ''R''<sub>2</sub>, are considered '''equivalent''' if ''R''<sub>1</sub> can be converted to ''R''<sub>2</sub> by some sequence of the above operations.  The determinants of equivalent matrices are equal, except possibly for a sign change, and it is often convenient to standardize ''R'' by means of negations and permutations of rows and columns.  A {1,&nbsp;−1} matrix is '''normalized''' if all elements in its first row and column equal 1.  When the size of a matrix is odd, it is sometimes useful to use a different normalization in which every row and column contains an even number of elements 1 and an odd number of elements −1.  Either of these normalizations can be accomplished using the first two operations.
+
+==Connection of the maximal determinant problems for {1,&nbsp;−1} and {0,&nbsp;1} matrices==
+There is a one-to-one map from the set of normalized ''n''×''n'' {1,&nbsp;−1} matrices to the set of (''n''−1)×(''n''−1) {0,&nbsp;1} matrices under which the magnitude of the determinant is reduced by a factor of 2<sup>1−''n''</sup>.  This map consists of the following steps.
+# Subtract row 1 of the {1,&nbsp;−1} matrix from rows 2 through ''n''.  (This does not change the determinant.)
+# Extract the (''n''−1)×(''n''−1) submatrix consisting of rows 2 through ''n'' and columns 2 through ''n''.  This matrix has elements 0 and −2.  (The determinant of this submatrix is the same as that of the original matrix, as can be seen by performing a [[cofactor expansion]] on column 1 of the matrix obtained in Step 1.)
+# Divide the submatrix by −2 to obtain a {0,&nbsp;1} matrix.  (This multiplies the determinant by (−2)<sup>1−''n''</sup>.)
+'''Example:'''
+:<math>\begin{bmatrix}1 & 1 & 1 & 1\\1 & -1 & -1 & 1\\1 & 1 & -1 & -1\\1 & -1 & 1 & -1\end{bmatrix}\rightarrow\left[\begin{array}{c|ccc}1 & 1 & 1 & 1\\\hline0 & -2 & -2 & 0\\0 & 0 & -2 & -2\\0 & -2 & 0 & -2\end{array}\right]\rightarrow\begin{bmatrix}-2 & -2 & 0\\0 & -2 & -2\\-2 & 0 & -2\end{bmatrix}\rightarrow\begin{bmatrix}1 & 1 & 0\\0 & 1 & 1\\1 & 0 & 1\end{bmatrix}</math>
+In this example, the original matrix has determinant −16 and its image has determinant 2&nbsp;=&nbsp;−16·(−2)<sup>−3</sup>.
+
+Since the determinant of a {0,&nbsp;1} matrix is an integer, the determinant of an ''n''×''n'' {1,&nbsp;−1} matrix is an integer multiple of 2<sup>''n''−1</sup>.
+
+==Upper bounds on the maximal determinant==
+
+===Gram matrix===
+Let ''R'' be an ''n'' by ''n'' {1,&nbsp;−1} matrix. The '''Gram matrix''' of ''R'' is defined to be the matrix ''G''&nbsp;=&nbsp;''RR''<sup>T</sup>.  From this definition it follows that ''G''
+# is an [[integer matrix]],
+# is [[symmetric matrix|symmetric]],
+# is [[positive-definite matrix|positive-semidefinite]],
+# has constant diagonal whose value equals ''n''.
+Negating rows of ''R'' or applying a permutation to them results in the same negations and permutation being applied both to the rows, and to the corresponding columns, of ''G''.  We may also define the matrix ''G''′=''R''<sup>T</sup>''R''.  The matrix ''G'' is the usual [[Gram matrix]] of a set of vectors, derived from the set of rows of ''R'', while ''G''′ is the Gram matrix derived from the set of columns of ''R''.  A matrix ''R'' for which ''G''&nbsp;=&nbsp;''G''′ is a [[normal matrix]].  Every known maximal-determinant matrix is equivalent to a normal matrix, but it is not known whether this is always the case.
+
+===Hadamard's bound (for all ''n'')===
+Hadamard's bound can be derived by noting that |det&nbsp;''R''|&nbsp;=&nbsp;(det&nbsp;''G'')<sup>1/2</sup>&nbsp;≤&nbsp;(det&nbsp;''nI'')<sup>1/2</sup>&nbsp;=&nbsp;''n''<sup>''n''/2</sup>, which is a consequence of the observation that ''nI'', where ''I'' is the ''n'' by ''n'' [[identity matrix]], is the unique matrix of maximal determinant among matrices satisfying properties 1–4.  That det&nbsp;''R'' must be an integer multiple of 2<sup>''n''−1</sup> can be used to provide another demonstration that Hadamard's bound is not always attainable.  When ''n'' is odd, the bound ''n''<sup>''n''/2</sup> is either non-integer or odd, and is therefore unattainable except when ''n''&nbsp;=&nbsp;1.  When ''n''&nbsp;=&nbsp;2''k'' with ''k'' odd, the highest power of 2 dividing Hadamard's bound is 2<sup>''k''</sup> which is less than 2<sup>''n''−1</sup> unless ''n''&nbsp;=&nbsp;2.  Therefore, Hadamard's bound is unattainable unless ''n''&nbsp;=&nbsp;1, 2, or a multiple of 4.
+
+===Barba's bound for ''n'' odd===
+When ''n'' is odd, property 1 for Gram matrices can be strengthened to
+# ''G'' is an odd-integer matrix.
+This allows a sharper upper bound<ref>{{citation
+ |last = Barba |first = Guido
+ |title = Intorno al teorema di Hadamard sui determinanti a valore massimo
+ |journal = Giorn. Mat. Battaglini 
+ |volume = 71
+ |year = 1933
+ |pages = 70–86
+}}.</ref> to be derived: |det&nbsp;''R''|&nbsp;=&nbsp;(det&nbsp;''G'')<sup>1/2</sup>&nbsp;≤&nbsp;(det&nbsp;(''n''−1)''I''+''J'')<sup>1/2</sup>&nbsp;=&nbsp;(2''n''−1)<sup>1/2</sup>(''n''−1)<sup>(''n''−1)/2</sup>, where ''J'' is the all-one matrix. Here (''n''−1)''I''+''J'' is the maximal-determinant matrix satisfying the modified property 1 and properties 2–4.  It is unique up to multiplication of any set of rows and the corresponding set of columns by −1.  The bound is not attainable unless 2''n''−1 is a perfect square, and is therefore never attainable when ''n''&nbsp;≡&nbsp;3 (mod 4).
+
+===The Ehlich–Wojtas bound for ''n''&nbsp;≡&nbsp;2 (mod 4)===
+When ''n'' is even, the set of rows of ''R'' can be partitioned into two subsets.
+* Rows of '''even type''' contain an even number of elements 1 and an even number of elements −1.
+* Rows of '''odd type''' contain an odd number of elements 1 and an odd number of elements −1.
+The [[dot product]] of two rows of the same type  is congruent to ''n'' (mod 4); the dot product of two rows of opposite type is congruent to ''n''+2 (mod 4).  When ''n''&nbsp;≡&nbsp;2 (mod 4), this implies that, by permuting rows of ''R'', we may assume the '''standard form''',
+:<math>G=\begin{bmatrix}A & B\\B^\mathrm{T} & D\end{bmatrix},</math>
+where ''A'' and ''D'' are symmetric integer matrices whose elements are congruent to 2 (mod 4) and ''B'' is a matrix whose elements are congruent to 0 (mod 4).  In 1964, Ehlich<ref>{{citation
+ |last = Ehlich |first = Hartmut
+ |title = Determinantenabschätzungen für binäre Matrizen
+ |journal = Math. Z.
+ |volume = 83
+ |year = 1964
+ |issue = 2
+ |pages = 123–132
+ |doi = 10.1007/BF01111249
+|s2cid = 120916607
+ }}.</ref> and Wojtas<ref>{{citation
+ |last = Wojtas |first = M.
+ |title = On Hadamard's inequality for the determinants of order non-divisible by 4
+ |journal = Colloq. Math.
+ |volume = 12
+ |year = 1964
+ |pages = 73–83 
+|doi = 10.4064/cm-12-1-73-83
+ |doi-access = free
+ }}.</ref> independently showed that in the maximal determinant matrix of this form, ''A'' and ''D'' are both of size ''n''/2 and equal to (''n''−2)''I''+2''J'' while ''B'' is the [[zero matrix]].  This optimal form is unique up to multiplication of any set of rows and the corresponding set of columns by −1 and to simultaneous application of a permutation to rows and columns.  This implies the bound det&nbsp;''R''&nbsp;≤&nbsp;(2''n''−2)(''n''−2)<sup>(''n''−2)/2</sup>.  Ehlich showed that if ''R'' attains the bound, and if the rows and columns of ''R'' are permuted so that both ''G''&nbsp;=&nbsp;''RR''<sup>T</sup> and ''G''′&nbsp;=&nbsp;''R''<sup>T</sup>''R'' have the standard form and are suitably normalized, then we may write
+:<math>R=\begin{bmatrix}W & X\\Y & Z\end{bmatrix}</math>
+where ''W'', ''X'', ''Y'', and ''Z'' are (''n''/2)×(''n''/2) matrices with constant row and column sums ''w'', ''x'', ''y'', and ''z'' that satisfy ''z''&nbsp;=&nbsp;−''w'', ''y''&nbsp;=&nbsp;''x'', and ''w''<sup>2</sup>+''x''<sup>2</sup>&nbsp;=&nbsp;2''n''−2.  Hence the Ehlich–Wojtas bound is not attainable unless 2''n''−2 is expressible as the sum of two squares.
+
+===Ehlich's bound for ''n''&nbsp;≡&nbsp;3 (mod 4)===
+When ''n'' is odd, then by using the freedom to multiply rows by −1, one may impose the condition that each row of ''R'' contain an even number of elements 1 and an odd number of elements −1.  It can be shown that, if this normalization is assumed, then property 1 of ''G'' may be strengthened to
+# ''G'' is a matrix with integer elements congruent to ''n'' (mod 4).
+When ''n''&nbsp;≡&nbsp;1 (mod 4), the optimal form of Barba satisfies this stronger property, but when ''n''&nbsp;≡&nbsp;3 (mod 4), it does not.  This means that the bound can be sharpened in the latter case.  Ehlich<ref>{{citation
+ |last = Ehlich |first = Hartmut
+ |title = Determinantenabschätzungen für binäre Matrizen mit ''n''&nbsp;≡&nbsp;3 mod 4
+ |journal = Math. Z.
+ |volume = 84
+ |year = 1964
+ |pages = 438–447
+ |doi = 10.1007/BF01109911
+|s2cid = 116683967
+ }}.</ref> showed that when ''n''&nbsp;≡&nbsp;3 (mod 4), the strengthened property 1 implies that the maximal-determinant form of ''G'' can be written as ''B''−''J'' where ''J'' is the all-one matrix and ''B'' is a [[block-diagonal matrix]] whose diagonal blocks are of the form (''n''−3)''I''+4''J''.  Moreover, he showed that in the optimal form, the number of blocks, ''s'', depends on ''n'' as shown in the table below, and that each block either has size ''r'' or size ''r+1'' where <math>r=\lfloor n/s\rfloor.</math>
+{| class="wikitable"
+|-
+! ''n'' !! ''s''
+|-
+| 3 || 3
+|-
+| 7 || 5
+|-
+| 11 || 5 or 6
+|-
+| 15 − 59 || 6
+|-
+| ≥ 63 || 7
+|}
+Except for ''n''=11 where there are two possibilities, the optimal form is unique up to multiplication of any set of rows and the corresponding set of columns by −1 and to simultaneous application of a permutation to rows and columns.  This optimal form leads to the bound
+:<math>\det R\le(n-3)^{(n-s)/2} (n-3+4r)^{u/2} (n+1+4r)^{v/2} \left[1 - \frac{ur}{n-3+4r} - \frac{v(r+1)}{n+1+4r}\right]^{1/2},</math>
+where ''v''&nbsp;=&nbsp;''n''−''rs'' is the number of blocks of size ''r''+1 and ''u''&nbsp;=''s''−''v'' is the number of blocks of size ''r''.  
+Cohn<ref>{{citation
+ |last = Cohn | first = J. H. E.
+ |title = Almost D-optimal designs
+ |journal = Utilitas Math.
+ |volume = 57
+ |year = 2000
+ |pages = 121–128
+}}.</ref> analyzed the bound and determined that, apart from ''n''&nbsp;=&nbsp;3, it is an integer only for ''n''&nbsp;=&nbsp;112''t''<sup>2</sup>±28''t''+7 for some positive integer ''t''.  Tamura<ref>{{citation
+ |last = Tamura |first = Hiroki
+ |title = D-optimal designs and group divisible designs
+ |journal = Journal of Combinatorial Designs
+ |volume = 14
+ |year = 2006
+ |issue = 6
+ |pages = 451–462
+ |doi = 10.1002/jcd.20103
+}}.</ref> derived additional restrictions on the attainability of the bound using the [[Hasse–Minkowski theorem]] on the rational equivalence of quadratic forms, and showed that the smallest ''n''&nbsp;>&nbsp;3 for which Ehlich's bound is conceivably attainable is 511.
+
+==Maximal determinants up to size 22==
+The maximal determinants of {1,&nbsp;−1} matrices up to size ''n''&nbsp;=&nbsp;22 are given in the following table.<ref>{{Cite OEIS|sequencenumber=A003432|name=Hadamard maximal determinant problem: largest determinant of a (real) {0,1}-matrix of order n.}}</ref>  Size 23 is the smallest open case.  In the table, ''D''(''n'') represents the maximal determinant divided by 2<sup>''n''−1</sup>.  Equivalently, ''D''(''n'') represents the maximal determinant of a {0,&nbsp;1} matrix of size ''n''−1.
+{| class="wikitable"
+|-
+! ''n'' !! ''D''(''n'') !! Notes
+|-
+| 1 || 1 || Hadamard matrix
+|-
+| 2 || 1 || Hadamard matrix
+|-
+| 3 || 1 || Attains Ehlich bound
+|-
+| 4 || 2 || Hadamard matrix
+|-
+| 5 || 3 || Attains Barba bound; circulant matrix
+|-
+| 6 || 5 || Attains Ehlich–Wojtas bound
+|-
+| 7 || 9 || 98.20% of Ehlich bound
+|-
+| 8 || 32 || Hadamard matrix
+|-
+| 9 || 56 || 84.89% of Barba bound
+|-
+| 10 || 144 || Attains Ehlich–Wojtas bound
+|-
+| 11 || 320 || 94.49% of Ehlich bound; three non-equivalent matrices
+|-
+| 12 || 1458 || Hadamard matrix
+|-
+| 13 || 3645 || Attains Barba bound; maximal-determinant matrix is {1,−1} incidence matrix of [[projective plane]] of order 3
+|-
+| 14 || 9477 || Attains Ehlich–Wojtas bound
+|-
+| 15 || 25515 || 97.07% of Ehlich bound
+|-
+| 16 || 131072 || Hadamard matrix; five non-equivalent matrices
+|-
+| 17 || 327680 || 87.04% of Barba bound; three non-equivalent matrices
+|-
+| 18 || 1114112 || Attains Ehlich–Wojtas bound; three non-equivalent matrices
+|-
+| 19 || 3411968 || Attains 97.50% of Ehlich bound; three non-equivalent matrices
+|-
+| 20 || 19531250 || Hadamard matrix; three non-equivalent matrices
+|-
+| 21 || 56640625 || 90.58% of Barba bound; seven non-equivalent matrices
+|-
+| 22 || 195312500 || 95.24% of Ehlich–Wojtas bound; two non-equivalent matrices
+|-
+|}
+
+==Extension to other sets of entries==
+The maximal determinant problem has been extended to matrices with entries in the fourth roots of unity<ref>{{cite journal |last1=Cohn |first1=J. H. E. |title=Complex D-optimal designs |journal=Discrete Mathematics |date=1996 |volume=156 |issue=1–3 |pages=237–241 |doi=10.1016/0012-365X(96)00035-0|doi-access=free }}</ref> and more generally to roots of unity of a fixed order.<ref name="Ponasso">{{cite journal |last1=Nuñez Ponasso |first1=Guillermo |title=Maximal determinants of matrices over the roots of unity|journal=Linear Algebra and Its Applications |date=2025 |volume=723 |pages=201–243 |doi=10.1016/j.laa.2025.05.024|doi-access=free }}</ref>
+===Maximal determinants of matrices with third-root entries===
+The maximal determinant problem over the third roots of unity <math>\{1,\omega,\omega^2\}</math>, where <math>\omega^2+\omega+1=0</math>, shares many similarities to the problem over <math>\{+1,-1\}</math>. The Hadamard bound holds true for all <math>n</math>, and <math>|\det(R)|=n^{n/2}</math> for a matrix <math>R</math> with entries in the third roots if and only if <math>R</math> is a [[Butson-type Hadamard matrix ]] <math>H(3,n)</math>. Therefore the Hadamard bound is sharp at order <math>n</math> only if <math>n</math> is a multiple 3.
+There is a generalization of the Barba bound for matrices <math>R</math> with entries in <math>\{1,\omega,\omega^2\}</math> of order <math>n\equiv 1,2\pmod{3}</math> stating:<ref name=Ponasso/>
+
+<math>|\det R|\leq \sqrt{2n-1}(n-1)^{(n-1)}</math>.
+
+Equality above is achieved if and only if <math>R</math> can be transformed, via row/column permutations and multiplication of rows and columns by a third root, to a matrix <math>B</math> satisfying <math>BB^* =(n-1)I_n+J_n</math>, where <math>B^*</math> is the conjugate-transpose of <math>B</math>. The generalized Barba bound is sharp only if <math>n\equiv 1\pmod{3}</math>.
+
+Size 14 is the smallest open case. In the table, ''D(n,3)'' represents the maximal [[absolute value]] squared of determinant divided by <math> 3^{n-1}</math>.
+
+{| class="wikitable"
+|-
+! ''n'' !! ''D''(''n'',3) !! Notes
+|-
+| 1 || 1 || [[Butson-type Hadamard matrix]] ''H(3,1)''
+|-
+| 2 || 1 || Attains generalized Barba bound
+|-
+| 3 || 3 || [[Butson-type Hadamard matrix]] ''H(3,3)''
+|-
+| 4 || 7 || Attains generalized Barba bound; circulant matrix <math>\omega I_3+J_3</math> where <math>I_3</math> and <math>J_3</math> are the identity and the all-ones matrix of order 3, respectively
+|-
+| 5 || 21 || Attains 85.92% of generalized Barba bound; obtained from generalized Paley core
+|-
+| 6 || 192 || [[Butson-type Hadamard matrix]] ''H(3,6)''
+|-
+| 7 || 832 || Attains generalized Barba bound; it is <math>\{ 1,\omega\}</math> incidence matrix of the [[Fano plane]]
+|-
+| 8 || 4096 || Attains 85.16% of generalized Barba bound
+|-
+| 9 || 59049 || [[Butson-type Hadamard matrix]] ''H(3,9)''
+|-
+| 10 || 373977 || Attains generalized Barba bound; obtained as <math>I_{10}+\omega A+\omega^2(J_{10}-A-I_{10})</math>, where <math>A</math> is the incidence matrix of the [[Petersen graph]]
+|-
+| 11 || 2617839 || Attains 85.80% of generalized Barba bound
+|-
+| 12 || 50331648 || [[Butson-type Hadamard matrix]] ''H(3,12)''
+|-
+| 13 || 419430400 || Attains generalized Barba bound; obtained as <math>I_{13}+\omega A+\omega^2(J_{13}-A-I_{13})</math>, where <math>A</math> is the incidence matrix of the [[Paley graph]] on 13 vertices
+|}
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Hadamard's Maximal Determinant Problem}}
+[[Category:Combinatorial design]]
+[[Category:Matrices (mathematics)]]
+[[Category:Unsolved problems in mathematics]]

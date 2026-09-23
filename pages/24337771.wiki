@@ -1,0 +1,4 @@
+#REDIRECT [[Co-NP]] {{R with possibilities}}
+
+{{DEFAULTSORT:NP  co-NP problem}}
+[[Category:Unsolved problems in computer science]]

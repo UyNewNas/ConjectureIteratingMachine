@@ -1,0 +1,92 @@
+{{short description|Four basic unsolved problems about prime numbers}}
+[[File:Edmund Landau.jpg|thumb|[[Edmund Landau]], German mathematician]]
+
+At the 1912 [[International Congress of Mathematicians]], [[Edmund Landau]] listed four basic problems about [[prime number]]s. These problems were characterised in his speech as "unattackable at the present state of mathematics" and are now known as '''Landau's problems'''. They are as follows:
+# [[Goldbach's conjecture]]: Can every even [[integer]] greater than 2 be written as the sum of two primes?
+# [[Twin prime conjecture]]: Are there infinitely many primes ''p'' such that ''p''&thinsp;+&thinsp;2 is prime?
+# [[Legendre's conjecture]]: Does there always exist at least one prime between consecutive [[Square number|perfect squares]]?
+# Are there infinitely many primes ''p'' such that ''p''&thinsp;−&thinsp;1 is a perfect square? In other words: Are there infinitely many primes of the form ''n''<sup>2</sup>&thinsp;+&thinsp;1?
+
+<!-- We really don't need a month on this. -->{{As of|2026}}, all four problems are unresolved.
+
+==Progress toward solutions==
+===Goldbach's conjecture===
+{{Main|Goldbach's conjecture}}
+[[Goldbach's weak conjecture]], every odd number greater than 5 can be expressed as the sum of three primes, is a consequence of [[Goldbach's conjecture]]. [[Ivan Vinogradov]] proved it for large enough ''n'' ([[Vinogradov's theorem]]) in 1937,<ref>{{Cite book |last=Vinogradow |first=I. M. |title=The Goldbach Conjecture |chapter=Representation of an odd number as a sum of three primes |series=Series in Pure Mathematics |date=November 2002 |publisher=[[World Scientific]] |isbn=978-981-238-159-0 |volume=4 |pages=61–64 |language=en |doi=10.1142/9789812776600_0003}}</ref> and [[Harald Helfgott]] extended this to a full proof of Goldbach's weak conjecture in 2013.<ref>{{cite arXiv |eprint=1305.2897 |title = Major arcs for Goldbach's theorem|last = Helfgott|first = H.A. |class=math.NT |year=2013}}</ref><ref>{{cite arXiv |eprint=1205.5252 |title = Minor arcs for Goldbach's problem |last = Helfgott|first = H.A.|class=math.NT |year=2012}}</ref><ref>{{cite arXiv |eprint=1312.7748 |title = The ternary Goldbach conjecture is true|last = Helfgott|first = H.A. |class=math.NT |year=2013}}</ref>
+
+[[Chen's theorem]], another weakening of Goldbach's conjecture, proves that for all sufficiently large ''n'', <math>2n=p+q</math> where ''p'' is prime and ''q'' is either prime or [[semiprime]].<ref group=note>A semiprime is a natural number that is the product of two prime factors.</ref> Bordignon, Johnston, and Starichkova,<ref>{{Cite arXiv |eprint=2207.09452 |first1=Matteo |last1=Bordignon |first2=Daniel R. |last2=Johnston |title=An explicit version of Chen's theorem |first3=Valeriia |last3=Starichkova|date=2022 |class=math.NT }}</ref> correcting and improving on Yamada,<ref>{{cite arXiv|last=Yamada |first=Tomohiro |eprint=1511.03409 |title=Explicit Chen's theorem |class=math.NT |date=2015-11-11}}</ref> proved an explicit version of Chen's theorem: every even number greater than <math>e^{e^{32.7}} \approx 1.4\cdot10^{69057979807814}</math> is the sum of a prime and a product of at most two primes. Bordignon and Starichkova<ref>{{Cite arXiv |eprint=2211.08844 |first1=Matteo |last1=Bordignon |first2=Valeriia |last2=Starichkova |title=An explicit version of Chen's theorem assuming the Generalized Riemann Hypothesis|date=2022 |class=math.NT }}</ref> reduce this to <math>e^{e^{15.85}} \approx 3.6\cdot10^{3321634}</math> assuming the [[Generalized Riemann hypothesis]] (GRH) for [[Dirichlet L-function]]s. Johnston and Starichkova give a version working for all ''n'' &ge; 4 at the cost of using a number which is the product of at most 395 primes rather than a prime or semiprime; under GRH they improve 395 to 31.<ref>{{Cite arXiv |eprint=2208.01229 |first1=Daniel R. |last1=Johnston |first2=Valeriia V. |last2=Starichkova |title=Some explicit results on the sum of a prime and an almost prime|date=2022 |class=math.NT }}</ref>
+
+[[Hugh Montgomery (mathematician)|Montgomery]] and [[Robert Charles Vaughan (mathematician)|Vaughan]] showed that the exceptional set of even numbers not expressible as the sum of two primes has a [[Natural density|density]] zero, although the set is not proven to be finite.<ref>{{cite journal |first1=H. L. |last1=Montgomery |last2=Vaughan |first2=R. C. |url=http://matwbn.icm.edu.pl/ksiazki/aa/aa27/aa27126.pdf |title=The exceptional set in Goldbach's problem |journal=Acta Arithmetica |volume=27 |year=1975 |pages=353–370 |doi= 10.4064/aa-27-1-353-370|doi-access=free }}</ref> The best current bounds on the exceptional set is <math>E(x) < x^{0.72}</math> (for large enough ''x'') due to [[János Pintz|Pintz]],<ref>{{Cite arXiv |eprint=1804.09084 |first=Janos |last=Pintz |title=A new explicit formula in the additive theory of primes with applications II. The exceptional set in Goldbach's problem|date=2018 |class=math.NT }}</ref><ref>{{Cite web |last=Pintz |first=János |title=An Approximate Formula for Goldbach's Problem with Applications |url=https://real.mtak.hu/124681/1/Cikk2020Rivista.pdf |website=mtak.hu}}</ref> and <math>E(x) \ll x^{0.5}\log^3 x</math> under [[Riemann hypothesis|RH]], due to [[Daniel Goldston|Goldston]].<ref>{{Cite conference |last=Goldston |first=D.A. |date=1992 |title=On Hardy and Littlewood's contribution to the Goldbach conjecture |conference=Proceedings of the Amalfi Conference on Analytic Number Theory (Maiori, 1989) |location=Università di Salerno |pages=115–155}}</ref>
+
+[[Yuri Linnik|Linnik]] proved that large enough even numbers could be expressed as the sum of two primes and some ([[Effective results in number theory|ineffective]]) constant ''K'' of powers of 2.<ref>Yu V Linnik, Prime numbers and powers of two, ''Trudy Matematicheskogo Instituta imeni VA Steklova'' '''38''' (1951), pp. 152-169.</ref> Following many advances (see Pintz<ref>János Pintz, Approximations to the Goldbach and twin prime problem and gaps between consecutive primes, Probability and Number Theory (Kanazawa, 2005), Advanced Studies in Pure Mathematics 49, pp. 323–365. Math. Soc. Japan, Tokyo, 2007.</ref> for an overview), [[János Pintz|Pintz]] and [[Imre Z. Ruzsa|Ruzsa]]<ref>{{cite journal
+| last1=Pintz | first1=J. | authorlink1=János Pintz
+| last2=Ruzsa | first2=I. Z. | authorlink2=Imre Ruzsa
+| title=On Linnik's approximation to Goldbach's problem. II
+| journal=[[Acta Mathematica Hungarica]]
+| volume=161
+| date=July 2020
+| issue=2 | pages=569–582
+| doi=10.1007/s10474-020-01077-8| s2cid=225457520 | url=http://real.mtak.hu/124682/1/PintzRuzsa200219.pdf }}</ref> improved this to ''K'' = 8. Assuming the GRH, this can be improved to ''K'' = 7.<ref>{{Cite arXiv |eprint=math/0201299 |first1=D.R. |last1=Heath-Brown |first2=J.-C. |last2=Puchta |title=Integers Represented as a Sum of Primes and Powers of Two|date=2002 }}</ref>
+
+===Twin prime conjecture===
+{{Main|Twin prime conjecture}}
+In 2013 [[Yitang Zhang]] showed<ref>{{Cite journal |last=Zhang |first=Yitang |date=May 2014 |title=Bounded gaps between primes |journal=Annals of Mathematics |language=en |volume=179 |issue=3 |pages=1121–1174 |doi=10.4007/annals.2014.179.3.7 |issn=0003-486X}}</ref> that there are infinitely many prime pairs with gap bounded by 70 million, and this result has been improved to gaps of length 246 by a collaborative effort of the [[Polymath Project]].<ref>{{cite journal | author=D.H.J. Polymath | title=Variants of the Selberg sieve, and bounded intervals containing many primes | journal=Research in the Mathematical Sciences | volume=1 | number=12 | doi=10.1186/s40687-014-0012-7 | doi-access=free | arxiv=1407.4897 | year=2014 | mr=3373710 | article-number=12| s2cid=119699189 }}</ref> Under the generalized [[Elliott–Halberstam conjecture]] this was improved to 6, extending earlier work by [[James Maynard (mathematician)|Maynard]]<ref>{{Cite arXiv |eprint=1311.4600 |first=Maynard |last=James |title=Small gaps between primes|date=2013 |class=math.NT }}</ref> and [[Daniel Goldston|Goldston]], [[János Pintz|Pintz]] and [[Cem Yıldırım|Yıldırım]].<ref>{{cite journal | last1 = Alan Goldston | first1 = Daniel | last2 = Motohashi | first2 = Yoichi | last3 = Pintz | first3 = János | last4 = Yalçın Yıldırım | first4 = Cem | year = 2006 | title = Small Gaps between Primes Exist | url = http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.pja/1146576181 | journal = Proceedings of the Japan Academy, Series A | volume = 82 | issue = 4| pages = 61–65 | doi=10.3792/pjaa.82.61| arxiv = math/0505300 | s2cid = 18847478 }}</ref>
+
+In 1966 [[Chen Jingrun|Chen]] showed that there are infinitely many primes ''p'' (later called [[Chen prime]]s) such that ''p''&thinsp;+&thinsp;2 is either a prime or a semiprime.
+
+===Legendre's conjecture===
+{{Main|Legendre's conjecture}}
+It suffices to check that each prime gap starting at ''p'' is smaller than <math>2 \sqrt p</math>. A table of maximal prime gaps shows that the [[conjecture]] holds to 2<sup>64</sup> ≈ 1.8{{e|19}}.<ref>{{Cite web |last=Nicely |first=Thomas R. |title=First occurrence prime gaps |url=https://faculty.lynchburg.edu/~nicely/gaps/gaplist.html |access-date=2024-09-11 |website=[[University of Lynchburg]]}}</ref> A [[counterexample]] near that size would require a prime gap a hundred million times the size of the average gap.
+
+Järviniemi,<ref>{{Cite arXiv |eprint=2212.10965 |first=Olli |last=Järviniemi |title=On large differences between consecutive primes|date=2022 |class=math.NT }}</ref> improving on work by Heath-Brown<ref>{{cite journal | url=https://ieeexplore.ieee.org/document/9687402 | doi=10.1093/imrn/rnz295 | title=The Differences Between Consecutive Primes, V | journal=International Mathematics Research Notices | date=October 2020 | volume=2021 | issue=22 | pages=17514–17562 | last1=Heath-Brown | first1=Roger | doi-access=free | arxiv=1906.09555 }}</ref> and by Matomäki,<ref>{{Cite journal |last=Matomaki |first=K. |year=2007 |title=Large differences between consecutive primes |journal=The Quarterly Journal of Mathematics |language=en |volume=58 |issue=4 |pages=489–518 |doi=10.1093/qmath/ham021 |issn=0033-5606}}.</ref> shows that there are at most <math>x^{7/100+\varepsilon}</math> exceptional primes followed by gaps larger than <math>\sqrt{2p}</math>; in particular,
+:<math>\sum_{\stackrel{p_{n+1}-p_n > \sqrt{p_n}^{1/2}}{p_n \leq x}}p_{n+1}-p_n\ll x^{0.57+\varepsilon}.</math>
+
+A result due to [[Albert Ingham|Ingham]] shows that there is a prime between <math>n^3</math> and <math>(n+1)^3</math> for every large enough ''n''.<ref>{{cite journal |first=A. E. |last=Ingham |title=On the difference between consecutive primes |journal=Quarterly Journal of Mathematics |volume=8 |year=1937 |issue=1 |pages=255–266 |doi=10.1093/qmath/os-8.1.255 |bibcode=1937QJMat...8..255I }}</ref>
+
+===Near-square primes===
+Landau's fourth problem asked whether there are infinitely many primes which are of the form <math>p=n^2+1</math> for integer ''n''. (The list of known primes of this form is {{OEIS link|A002496}}.) The existence of infinitely many such primes would follow as a consequence of other number-theoretic conjectures such as the [[Bunyakovsky conjecture]] and [[Bateman–Horn conjecture]].
+
+One example of near-square primes are [[Fermat primes]]. [[Henryk Iwaniec]] showed that there are infinitely many numbers of the form <math>n^2+1</math> with at most two prime factors.<ref>{{Cite journal |last=Iwaniec |first=Henryk |year=1978 |title=Almost-primes represented by quadratic polynomials |journal=Inventiones Mathematicae |language=en |volume=47 |issue=2 |pages=171–188 |bibcode=1978InMat..47..171I |doi=10.1007/BF01578070 |issn=0020-9910 |s2cid=122656097}}</ref><ref>{{Cite journal |last=Lemke Oliver |first=Robert J. |year=2012 |title=Almost-primes represented by quadratic polynomials |url=https://scholar.archive.org/work/msbgoarmjjdwvc3rsepdatc7ee |journal=Acta Arithmetica |language=en |volume=151 |issue=3 |pages=241–261 |doi=10.4064/aa151-3-2 |issn=0065-1036 }}</ref> [[Nesmith Ankeny|Ankeny]]<ref>{{Cite journal |last=Ankeny |first=N. C. |author-link=Nesmith Ankeny |date=October 1952 |title=Representations of Primes by Quadratic Forms |journal=[[American Journal of Mathematics]] |volume=74 |issue=4 |pages=913–919 |doi=10.2307/2372233|jstor=2372233 }}</ref> and [[Jonas Kubilius|Kubilius]]<ref>{{Cite journal |last=Kubilius |first=J.P. |author-link=Jonas Kubilius |date=1955 |title=On a problem in the n-dimensional analytic theory of numbers |journal=Viliniaus Valst. Univ. Mokslo dardai Chem. Moksly, Ser |volume=4 |pages=5–43}}</ref> proved that, assuming the [[extended Riemann hypothesis]] for [[L-function|''L''-function]]s on [[Hecke character]]s, there are infinitely many primes of the form <math>p=x^2+y^2</math> with <math>y=O(\log p)</math>. Landau's conjecture is for the stronger <math>y=1</math>. The best unconditional result is due to Harman and Lewis<ref>{{cite journal
+| last1=Harman | first1=G.
+| last2=Lewis | first2=P.
+| title=Gaussian primes in narrow sectors
+| journal=[[Mathematika]]
+| volume=48
+| issue=1–2
+| pages=119–135
+| date=2001
+| doi=10.1112/S0025579300014388| s2cid=119730332
+}}</ref> and it gives <math>y=O(p^{0.119})</math>. In 2024, [[Ben Green (mathematician)|Ben Green]] and Mehtaab Sawhney proved that infinitely many primes are of the form <math>p^2+nq^2</math> for any given <math>n\equiv0</math> or <math>n\equiv4}\pmod{6</math>, noting that "the argument could surely be modified in a straightforward manner to handle arbitrary positive definite [[binary quadratic form]]s over <math>\mathbb{Z}</math>".<ref>{{cite arXiv | last1=Green | first1=Ben | last2=Sawhney | first2=Mehtaab | title=Primes of the form $p^2 + nq^2$ | date=2024 | class=math.NT | eprint=2410.04189 }}</ref>
+
+Grimmelt & Merikoski,<ref>{{cite arXiv | eprint=2505.00493 | last1=Grimmelt | first1=Lasse | last2=Merikoski | first2=Jori | title=On the greatest prime factor and uniform equidistribution of quadratic polynomials | date=2025 | class=math.NT }}</ref> improving on previous works,<ref>{{Cite journal |last=Merikoski |first=Jori |date=2022 |title=Largest prime factor of <math>n^2+1</math> |journal=Journal of the European Mathematical Society |volume=25 |issue=4 |pages=1253–1284 |arxiv=1908.08816 |doi=10.4171/jems/1216 |issn=1435-9855 |doi-access=free}}</ref><ref>{{Cite journal |last1=de la Bretèche |first1=Régis |last2=Drappeau |first2=Sary |year=2020 |title=Niveau de répartition des polynômes quadratiques et crible majorant pour les entiers friables |journal=[[Journal of the European Mathematical Society]] |volume=22 |issue=5 |pages=1577–1624 |arxiv=1703.03197 |doi=10.4171/jems/951 |issn=1435-9855 |s2cid=146808221}}</ref><ref>Jean-Marc Deshouillers and Henryk Iwaniec, [https://eudml.org/doc/74560 On the greatest prime factor of <math>n^2+1</math>], ''Annales de l'Institut Fourier'' '''32''':4 (1982), pp. 1–11.</ref><ref>{{cite journal
+| last=Hooley | first=Christopher
+| title=On the greatest prime factor of a quadratic polynomial
+| journal=Acta Mathematica
+| volume=117
+| date=July 1967
+| pages=281–299
+| doi=10.1007/BF02395047 | doi-access=free}}</ref><ref>{{Cite journal |last=Todd |first=John |year=1949 |title=A Problem on Arc Tangent Relations |journal=The American Mathematical Monthly |volume=56 |issue=8 |pages=517–528 |doi=10.2307/2305526 |jstor=2305526}}</ref><ref>J. Ivanov, Uber die Primteiler der Zahlen vonder Form A+x^2, Bull. Acad. Sci. St. Petersburg 3 (1895), 361–367.</ref> showed that there are infinitely many numbers of the form <math>n^2+1</math> with greatest prime factor at least <math>n^{1.312}</math>. Replacing the exponent with 2 would yield Landau's conjecture.
+
+The [[Friedlander–Iwaniec theorem]] shows that infinitely many primes are of the form <math>x^2+y^4</math>.<ref>{{Cite journal |last1=Friedlander |first1=John |last2=Iwaniec |first2=Henryk |year=1997 |title=Using a parity-sensitive sieve to count prime values of a polynomial |journal=Proceedings of the National Academy of Sciences |language=en |volume=94 |issue=4 |pages=1054–1058 |bibcode=1997PNAS...94.1054F |doi=10.1073/pnas.94.4.1054 |issn=0027-8424 |pmc=19742 |pmid=11038598 |doi-access=free}}.</ref>
+
+Baier and Zhao<ref>{{Cite journal |last1=Baier |first1=Stephan |last2=Zhao |first2=Liangyi |date=2006 |title=Bombieri–Vinogradov type theorems for sparse sets of moduli |journal=Acta Arithmetica |language=en |volume=125 |issue=2 |pages=187–201 |arxiv=math/0602116 |doi=10.4064/aa125-2-5 |bibcode=2006AcAri.125..187B |issn=0065-1036}}</ref> prove that there are infinitely many primes of the form <math>p=an^2+1</math> with <math>a < p^{5/9+\varepsilon}</math>; the exponent can be improved to <math>1/2+\varepsilon</math> under the Generalized Riemann Hypothesis for L-functions and to <math>\varepsilon</math> under a certain [[Elliott–Halberstam conjecture|Elliott-Halberstam]] type hypothesis.
+
+The [[Brun sieve]] establishes an upper bound on the density of primes having the form <math>p=n^2+1</math>: there are <math>O(\sqrt x/\log x)</math> such primes up to <math>x</math>. Hence [[Asymptotically almost surely|almost all]] numbers of the form <math>n^2+1</math> are composite.
+
+==See also==
+*[[List of unsolved problems in mathematics]]
+*[[Hilbert's problems]]
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==External links==
+*{{MathWorld|urlname=LandausProblems|title=Landau's Problems}}
+
+{{Prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

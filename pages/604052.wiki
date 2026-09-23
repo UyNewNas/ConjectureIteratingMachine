@@ -1,0 +1,161 @@
+{{Short description|Number theory conjecture}}
+In [[mathematics]], '''Schinzel's hypothesis H''' is one of the most famous open problems in the topic of number theory. It is a very broad generalization of widely open [[conjectures]] such as the [[twin prime conjecture]]. The hypothesis is named after [[Andrzej Schinzel]]. 
+ 
+==Statement==
+The hypothesis claims that for every finite collection <math>\{f_1,f_2,\ldots,f_k\}</math> of nonconstant [[irreducible polynomial|irreducible]] polynomials over the integers with positive leading coefficients, one of the following conditions holds:
+
+# There are infinitely many positive integers <math>n</math> such that all of <math>f_1(n),f_2(n),\ldots,f_k(n)</math> are simultaneously [[prime numbers]], or
+# There is an integer <math>m>1</math> (called a "fixed divisor"), which depends on the polynomials, which always divides the product <math>f_1(n)f_2(n)\cdots f_k(n)</math>. (Or, equivalently: There exists a prime <math>p</math> such that for every <math>n</math> there is an <math>i</math> such that <math>p</math> divides <math>f_i(n)</math>.)
+
+The second condition is satisfied by sets such as <math>f_1(x)=x+4, f_2(x)=x+7</math>, since <math>(x+4)(x+7)</math> is always divisible by 2. It is easy to see that this condition prevents the first condition from being true. Schinzel's hypothesis essentially claims that condition 2 is the only way condition 1 can fail to hold.
+
+No effective technique is known for determining whether the first condition holds for a given set of polynomials, but the second one is straightforward to check: letting <math>Q(x)=f_1(x)f_2(x)\cdots f_k(x)</math>, compute the [[greatest common divisor]] of <math>\deg(Q)+1</math> successive values of <math>Q(n)</math>. One can see by extrapolating with [[finite difference]]s that this divisor will also divide all other values of <math>Q(n)</math> too.
+
+Schinzel's hypothesis builds on the earlier [[Bunyakovsky conjecture]], for a single polynomial, and on the [[Hardy–Littlewood conjecture]]s and [[Dickson's conjecture]] for multiple linear polynomials.  It is in turn extended by the [[Bateman–Horn conjecture]].
+
+===Examples===
+As a simple example with <math>k=1</math>,
+
+:<math> x^2 + 1 </math>
+
+has no fixed [[prime divisor]]. We therefore expect that there are infinitely many primes
+
+:<math> n^2 + 1 </math>.
+
+This has not been proved, though. It was one of [[Landau's conjectures]] and goes back to Euler, who observed in a letter to Goldbach in 1752 that <math> n^2 + 1 </math> is often prime for <math> n </math> up to 1500.
+
+As another example, take <math>k=2</math> with <math>f_1(x)=x</math> and <math>f_2(x)=x+2 </math>. The hypothesis then implies the existence of infinitely many [[twin prime]]s, a famous open problem.
+
+===Variants===
+As proved by Schinzel and Sierpiński,<ref>
+{{cite journal
+  | last1=Schinzel | first1 = A. | last2 = Sierpiński | first2 = W. | author1-link = Andrzej Schinzel | author2-link = Wacław Sierpiński 
+  | title = Sur certaines hypothèses concernant les nombres premiers
+  | journal = [[Acta Arithmetica]]
+  | volume = 4
+  | year = 1958
+  | issue = 3
+  | pages = 185–208
+  | mr = 106202
+  | doi=10.4064/aa-4-3-185-208}} Page 188.
+</ref> 
+the hypothesis is equivalent to the following: if condition 2 does not hold, then there exists at least one positive integer <math> n </math> such that all <math> f_i(n) </math> will be simultaneously prime, for any choice of irreducible [[integral polynomial]]s <math> f_i(x) </math> with positive leading coefficients.
+
+If the leading coefficients were negative, we could expect negative prime values; this is a harmless restriction.
+
+There is probably no real reason to restrict polynomials with integer coefficients, rather than [[integer-valued polynomial]]s (such as <math>\tfrac{1}{2}x^2+\tfrac{1}{2}x+1</math>, which takes integer values for all integers <math>x</math> even though the coefficients are not integers).{{Citation needed|date=April 2026}}
+
+==Previous results==
+The special case of a single linear
+polynomial is [[Dirichlet's theorem on arithmetic progressions]], one of the most important results of
+number theory. In fact, this special case is the only known instance of Schinzel's Hypothesis H. We do not
+know the hypothesis to hold for any given polynomial of degree greater than <math> 1 </math>, nor for any system of
+more than one polynomial.
+
+[[Almost prime]] approximations to Schinzel's Hypothesis have been attempted by many mathematicians; among them, most notably,
+[[Chen's theorem]] states that there exist infinitely many prime numbers <math>n</math> such that <math>n+2</math> is either a prime or a [[semiprime]]<ref>
+{{cite journal
+  | last1=Chen | first1 = J. R. | author1-link = Chen Jingrun 
+  | title = On the representation of a larger even integer as the sum of a prime and the product of at most two primes
+  | journal = Scientia Sinica
+  | volume = 16
+  | year = 1973 
+  | pages = 157–176
+  | mr = 434997}}   
+</ref> 
+and [[Henryk Iwaniec|Iwaniec]] proved that there exist infinitely many integers <math>n</math> for which <math>n^2+1</math> is either a prime or a [[semiprime]].<ref>
+{{cite journal
+  | last = Iwaniec | first = Henryk | authorlink = Henryk Iwaniec 
+  | title = Almost-primes represented by quadratic polynomials
+  | year = 1978
+  | journal = [[Inventiones Mathematicae]]
+  | volume = 47
+  | issue = 2
+  | pages = 171–188
+  | mr = 485740
+  | doi=10.1007/BF01578070}}   
+</ref> [[Alexei Skorobogatov|Skorobogatov]]  and Sofos have proved that [[almost all]] polynomials of any fixed degree satisfy Schinzel's hypothesis H.<ref>
+{{cite journal
+  | last1 = Skorobogatov | first1 = Alexei N. | last2 = Sofos | first2 = Efthymios | author1-link = Alexei Skorobogatov
+  | title = Schinzel Hypothesis on average and rational points
+  | journal = [[Inventiones Mathematicae]]
+  | year = 2022
+  | volume = 231
+  | issue = 2
+  | pages = 673–739
+  | mr = 4542704
+  | doi=10.1007/s00222-022-01153-6
+  | arxiv = 2005.02998
+  }}  
+</ref>
+
+==Prospects and applications==
+
+The hypothesis is probably not accessible with current methods in [[analytic number theory]], but is now quite often used to prove [[conditional result]]s, for example in [[Diophantine geometry]]. This connection is due to [[Jean-Louis Colliot-Thélène]] and Jean-Jacques Sansuc.<ref>
+{{cite journal
+  | last1= Colliot-Thélène | first1 = Jean-Louis | last2 = Sansuc | first2 = Jean-Jacques | author1-link = Jean-Louis Colliot-Thélène 
+  | title = Sur le principe de Hasse et l'approximation faible, et sur une hypothese de Schinzel
+  | journal = [[Acta Arithmetica]]
+  | volume = 41
+  | year = 1982
+  | issue = 1
+  | pages = 33–53
+  | mr = 667708
+  | doi=10.4064/aa-41-1-33-53}}   
+</ref> For further explanations and references on this connection
+see the notes of [[Peter Swinnerton-Dyer|Swinnerton-Dyer]].<ref>{{cite book
+ | last= Swinnerton-Dyer | first = Peter | author-link = Peter Swinnerton-Dyer
+ | title=Arithmetic Geometry | publisher=[[Springer-Verlag|Springer]] 
+ | series=[[Lecture Notes in Mathematics]] | volume=2009
+ | chapter = Topics in Diophantine equations 
+ | year = 2011
+ | pages = 45–110
+ | mr = 2757628 
+ | isbn = 978-3-642-15944-2
+ | editor-last=Colliot-Thélène |editor-first=Jean-Louis |editor-link=Jean-Louis Colliot-Thélène |editor2-last=Swinnerton-Dyer |editor2-first=Peter |editor2-link=Peter Swinnerton-Dyer |editor3-last=Vojta |editor3-first=Paul |editor3-link=Paul Vojta}}
+</ref> 
+The conjectural result being so strong in nature, it is possible that it could be shown to be too much to expect.
+
+==Extension to include the Goldbach conjecture==
+
+The hypothesis does not cover [[Goldbach's conjecture]], but a closely related version ('''hypothesis H<sub>N</sub>''') does. That requires an extra polynomial <math> F(x) </math>, which in the Goldbach problem would just be <math> x </math>, for which
+
+:''N'' &minus; ''F''(''n'')
+
+is required to be a prime number, also. This is cited in Halberstam and Richert, ''Sieve Methods''. The conjecture here takes the form of a statement ''when N is sufficiently large'', and subject to the condition that 
+
+:<math>f_1(n)f_2(n)\cdots f_k(n)(N - F(n))</math>
+
+has no fixed divisor >&nbsp;1. Then we should be able to require the existence of ''n'' such that ''N'' &minus; ''F''(''n'') is both positive and a prime number; and with all the ''f<sub>i</sub>''(''n'') prime numbers.
+
+Not many cases of these conjectures are known; but there is a detailed quantitative theory (see [[Bateman–Horn conjecture]]).
+
+==Local analysis==
+
+The condition of having no fixed prime divisor is purely local (depending just on primes, that is).  In other words, a finite set of irreducible integer-valued polynomials 
+with no local obstruction to taking infinitely many prime values is conjectured to take infinitely many prime values.
+
+==An analogue that fails==
+
+The analogous conjecture with the integers replaced by the one-variable polynomial ring over a finite field is false.  For example, Swan noted in 1962 (for reasons unrelated to Hypothesis H) that the polynomial
+
+:<math>x^8 + u^3\,</math>
+
+over the ring ''F''<sub>2</sub>[''u''] is irreducible and has no fixed prime polynomial divisor (after all, its values at ''x'' = 0 and ''x'' = 1 are relatively prime polynomials) but all of its values as ''x'' runs over ''F''<sub>2</sub>[''u''] are composite.  Similar examples can be found with ''F''<sub>2</sub> replaced by any finite field; the obstructions in a proper formulation of Hypothesis H over ''F''[''u''], where ''F'' is a [[finite field]], are no longer just local but a new global obstruction occurs with no classical parallel, assuming hypothesis H is in fact correct.
+
+==Notes==
+{{reflist|2}}
+
+==References==
+{{refbegin}}
+* {{cite book | title=Prime Numbers: A Computational Perspective | edition=Second | first1=Richard | last1=Crandall | author1-link=Richard Crandall | first2=Carl B. | last2=Pomerance | author2-link=Carl Pomerance | publisher=[[Springer-Verlag]] | location=New York | year=2005 | isbn=0-387-25282-7 | zbl=1088.11001 | mr=2156291 | doi=10.1007/0-387-28979-8}}
+* {{cite book |last=Guy | first=Richard K. | author-link=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=Third | year=2004 |isbn=978-0-387-20860-2 | zbl=1058.11001 }}
+* {{cite book | last=Pollack | first=Paul | chapter=An explicit approach to hypothesis H for polynomials over a finite field | pages=259–273 | editor1-last=De Koninck | editor1-first=Jean-Marie | editor1-link=Jean-Marie De Koninck | editor2-last=Granville | editor2-first=Andrew | editor2-link=Andrew Granville | editor3-last=Luca | editor3-first=Florian | title=Anatomy of integers. Based on the CRM workshop, Montreal, Canada, March 13–17, 2006 | location=Providence, RI | publisher=[[American Mathematical Society]] | series=CRM Proceedings and Lecture Notes | volume=46 | year=2008 | isbn=978-0-8218-4406-9 | zbl=1187.11046 }}
+* {{cite journal |last1=Swan |first1=R. G. |title=Factorization of Polynomials over Finite Fields |journal=[[Pacific Journal of Mathematics]] |volume=12 |issue=3 |year=1962 |pages=1099–1106 |doi=10.2140/pjm.1962.12.1099 |url=https://projecteuclid.org/euclid.pjm/1103036322 |doi-access=free }}
+{{refend}}
+
+{{Prime number conjectures}}
+
+[[Category:Analytic number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

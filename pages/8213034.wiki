@@ -1,0 +1,16 @@
+{{Distinguish|Whitehead theorem|Whitehead problem}}
+The '''Whitehead conjecture''' (also known as the '''Whitehead asphericity conjecture''') is a claim in [[algebraic topology]]. It was formulated by [[J. H. C. Whitehead]] in 1941. It states that every [[Connectedness|connected]] subcomplex of a two-dimensional [[Aspherical space|aspherical]] [[CW complex]] is aspherical.
+
+A [[Presentation of a group|group presentation]] <math>G=(S\mid R)</math> is called ''aspherical'' if the two-dimensional CW complex <math>K(S\mid R)</math> associated with this presentation is aspherical or, equivalently, if <math>\pi_2(K(S\mid R))=0</math>. The Whitehead conjecture is equivalent to the conjecture that every sub-presentation of an aspherical presentation is aspherical.
+
+In 1997, [[Mladen Bestvina]] and Noel Brady constructed a group ''G'' so that either ''G'' is a counterexample to the [[Eilenberg–Ganea conjecture]], or there must be a counterexample to the Whitehead conjecture; in other words, it is not possible for both conjectures to be true. 
+
+==References==
+* {{Cite journal| last=Whitehead|first=J. H. C.|authorlink= J. H. C. Whitehead| title=On adding relations to homotopy groups|journal=[[Annals of Mathematics]]|series=2nd Ser. | volume=42|year=1941|issue=2|pages=409–428|doi=10.2307/1968907|jstor=1968907|mr=0004123}}
+* {{Cite journal| last1= Bestvina|first1=Mladen|authorlink1=Mladen Bestvina|last2=Brady|first2=Noel|title=Morse theory and finiteness properties of groups|journal= [[Inventiones Mathematicae]]|volume= 129 |year=1997|issue=3|pages=445–470|doi=10.1007/s002220050168|bibcode=1997InMat.129..445B|mr=1465330|s2cid=120422255}}
+
+[[Category:Algebraic topology]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]
+
+{{topology-stub}}

@@ -1,0 +1,227 @@
+{{Short description|Open conjecture in multiplicative Diophantine approximation}}
+{{About|the conjecture in Diophantine approximation|polynomials with coefficients ±1|Littlewood polynomial}}
+{{unsolved|mathematics|Is <math>\liminf_{n\to\infty}n\|n\alpha\|\|n\beta\|=0</math> for every pair of real numbers <math>\alpha,\beta</math>?}}
+
+In [[Diophantine approximation]], the '''Littlewood conjecture''' is an open problem concerning the simultaneous approximation of two real numbers by rational numbers with the same denominator. It states that, for every pair of real numbers <math>\alpha</math> and <math>\beta</math>,
+<math display="block">
+\liminf_{n\to\infty} n\,\|n\alpha\|\,\|n\beta\|=0,
+</math>
+where
+<math display="block">
+\|x\|=\min_{m\in\mathbb Z}|x-m|
+</math>
+is the distance from <math>x</math> to the nearest integer.
+
+The conjecture was proposed by [[J. E. Littlewood]] around 1930 and remains unresolved.<ref name="Venkatesh2008">{{cite journal |last=Venkatesh |first=Akshay |title=The work of Einsiedler, Katok and Lindenstrauss on the Littlewood conjecture |journal=Bulletin of the American Mathematical Society |volume=45 |issue=1 |year=2008 |pages=117–134 |doi=10.1090/S0273-0979-07-01194-9 |doi-access=free}}</ref><ref name="Robertson2026">{{cite journal |last=Robertson |first=Steven |title=Combinatorics on number walls and the P(t)-adic Littlewood conjecture |journal=[[Mathematika]] |volume=72 |issue=1 |year=2026 |at=e70064 |doi=10.1112/mtk.70064 |doi-access=free}}</ref> It holds immediately if either number is rational or, more generally, is not [[badly approximable number|badly approximable]]. Thus any counterexample would have to consist of two badly approximable numbers such that <math>1,\alpha,\beta</math> are linearly independent over <math>\mathbb Q</math>.<ref name="Bugeaud2014">{{cite journal |last=Bugeaud |first=Yann |title=Around the Littlewood conjecture in Diophantine approximation |journal=Publications mathématiques de Besançon. Algèbre et théorie des nombres |issue=1 |year=2014 |pages=5–18 |doi=10.5802/pmb.1 |doi-access=free}}</ref>
+
+For [[Lebesgue measure|almost every]] pair, a stronger assertion was proved by Patrick Gallagher in 1962. In 2006, [[Manfred Einsiedler]], [[Anatole Katok]] and [[Elon Lindenstrauss]] proved that the set of counterexamples has [[Hausdorff dimension]] zero, using rigidity of invariant measures for higher-rank diagonal actions on homogeneous spaces.<ref name="Gallagher1962">{{cite journal |last=Gallagher |first=Patrick X. |title=Metric simultaneous Diophantine approximation |journal=Journal of the London Mathematical Society |volume=s1-37 |issue=1 |year=1962 |pages=387–390 |doi=10.1112/jlms/s1-37.1.387}}</ref><ref name="EKL2006">{{cite journal |last1=Einsiedler |first1=Manfred |last2=Katok |first2=Anatole |last3=Lindenstrauss |first3=Elon |title=Invariant measures and the set of exceptions to Littlewood's conjecture |journal=Annals of Mathematics |volume=164 |issue=2 |year=2006 |pages=513–560 |doi=10.4007/annals.2006.164.513 |doi-access=free}}</ref>
+
+== Statement and elementary cases ==
+The limit-inferior formulation is equivalent to saying that, for every <math>\varepsilon>0</math>, there are infinitely many positive integers <math>n</math> such that
+<math display="block">
+n\,\|n\alpha\|\,\|n\beta\|<\varepsilon.
+</math>
+Geometrically, consider the orbit
+<math display="block">
+n(\alpha,\beta)\pmod{\mathbb Z^2}
+\qquad(n=1,2,\ldots)
+</math>
+on the two-dimensional [[torus]]. The two factors <math>\|n\alpha\|</math> and <math>\|n\beta\|</math> are the coordinate distances of this point from the integer lattice. The conjecture says that their product is <math>o(1/n)</math> along a subsequence; it does not require either coordinate distance separately to be <math>o(1/n)</math>.
+
+If <math>p</math> and <math>q</math> are nearest integers to <math>n\alpha</math> and <math>n\beta</math>, respectively, then the same inequality can be written
+<math display="block">
+\left|\alpha-\frac pn\right|
+\left|\beta-\frac qn\right|
+<\frac{\varepsilon}{n^3}.
+</math>
+Thus the conjecture asks for unusually good simultaneous rational approximations with a common denominator, measured multiplicatively rather than by the maximum of the two errors.
+
+A real number <math>\alpha</math> is badly approximable if
+<math display="block">
+\inf_{n\geq1}n\|n\alpha\|>0.
+</math>
+For an [[irrational number]], this is equivalent to its [[continued fraction]] having bounded partial quotients. If <math>\alpha</math> is not badly approximable, then
+<math display="block">
+0\leq n\|n\alpha\|\|n\beta\|
+\leq \tfrac12 n\|n\alpha\|,
+</math>
+so the conjecture follows immediately; the same argument applies with <math>\alpha</math> and <math>\beta</math> interchanged. The conjecture also holds when <math>1,\alpha,\beta</math> are linearly dependent over <math>\mathbb Q</math>.<ref name="Bugeaud2014" />
+
+== Reformulations ==
+
+=== Product of three linear forms ===
+Define the cubic form
+<math display="block">
+L_{\alpha,\beta}(x,y,z)
+=x(\alpha x-y)(\beta x-z).
+</math>
+Since <math>\|n\alpha\|</math> and <math>\|n\beta\|</math> are obtained by choosing the nearest integers <math>y</math> and <math>z</math>, Littlewood's conjecture is equivalent to
+<math display="block">
+\inf_{(x,y,z)\in\mathbb Z^3,\,x\ne0}
+|L_{\alpha,\beta}(x,y,z)|=0.
+</math>
+This formulation places the problem in the [[geometry of numbers]] and in the study of products of linear forms.<ref name="CasselsSwinnertonDyer1955">{{cite journal |last1=Cassels |first1=J. W. S. |last2=Swinnerton-Dyer |first2=H. P. F. |title=On the product of three homogeneous linear forms and the indefinite ternary quadratic forms |journal=Philosophical Transactions of the Royal Society A |volume=248 |issue=940 |year=1955 |pages=73–96 |doi=10.1098/rsta.1955.0010 |jstor=91633}}</ref>
+
+=== Diagonal actions on lattices ===
+The dynamical formulation uses the space
+<math display="block">
+X_3=\operatorname{SL}(3,\mathbb R)/\operatorname{SL}(3,\mathbb Z)
+</math>
+of unimodular lattices in <math>\mathbb R^3</math>. Associate to <math>(\alpha,\beta)</math> the lattice
+<math display="block">
+x_{\alpha,\beta}=
+\begin{pmatrix}
+1&0&0\\
+\alpha&1&0\\
+\beta&0&1
+\end{pmatrix}\mathbb Z^3.
+</math>
+The integer vector <math>(n,-p,-q)</math> becomes
+<math display="block">
+(n,\;n\alpha-p,\;n\beta-q).
+</math>
+The product of these three coordinates is invariant under determinant-one diagonal transformations. By [[Mahler's compactness theorem]], failure of Littlewood's conjecture corresponds to relative compactness of the orbit of <math>x_{\alpha,\beta}</math> under an appropriate positive semigroup in the diagonal group. This connection permits the use of [[ergodic theory]] and homogeneous dynamics.<ref name="Venkatesh2008" />
+
+== Related conjectures ==
+
+=== Cassels–Swinnerton-Dyer conjecture ===
+Work of Cassels and Swinnerton-Dyer led to a broader conjecture about products of linear forms. Let
+<math display="block">
+L(\mathbf x)=L_1(\mathbf x)L_2(\mathbf x)\cdots L_d(\mathbf x)
+</math>
+be a product of <math>d\geq3</math> linearly independent real linear forms in <math>d</math> variables. If <math>L</math> is not a nonzero constant multiple of a form with integer coefficients, the conjecture asserts that
+<math display="block">
+\inf_{\mathbf x\in\mathbb Z^d\setminus\{\mathbf{0}\}}
+|L(\mathbf x)|=0.
+</math>
+Cassels and Swinnerton-Dyer showed that the case <math>d=3</math> of this conjecture would imply Littlewood's conjecture.<ref name="CasselsSwinnertonDyer1955" /><ref name="AnWeiss2013">{{cite journal |last1=An |first1=Jinpeng |last2=Weiss |first2=Barak |title=Remarks on minimal sets and conjectures of Cassels, Swinnerton-Dyer, and Margulis |journal=Moscow Journal of Combinatorics and Number Theory |volume=3 |issue=3–4 |year=2013 |pages=260–279 |arxiv=1212.0216}}</ref>
+
+=== Compact diagonal orbits ===
+Let <math>D_d</math> be the group of positive diagonal matrices of determinant one acting on
+<math display="block">
+X_d=\operatorname{SL}(d,\mathbb R)/\operatorname{SL}(d,\mathbb Z).
+</math>
+The compact-orbit conjecture states that every relatively compact <math>D_d</math>-orbit in <math>X_d</math> is closed. This is the standard dynamical reformulation of the Cassels–Swinnerton-Dyer conjecture; the case <math>d=3</math> would imply Littlewood's conjecture.<ref name="Margulis2000">{{cite book |last=Margulis |first=G. A. |year=2000 |chapter=Problems and conjectures in rigidity theory |editor1-last=Arnold |editor1-first=V. I. |editor1-link=Vladimir Arnold |editor2-last=Atiyah |editor2-first=M. F. |editor2-link=Michael Atiyah |editor3-last=Lax |editor3-first=P. D. |editor3-link=Peter Lax |editor4-last=Mazur |editor4-first=B. |editor4-link=Barry Mazur |title=Mathematics: Frontiers and Perspectives |location=Providence, Rhode Island |publisher=American Mathematical Society |pages=161–174}}</ref><ref name="AnWeiss2013" />
+
+=== Disproved broader orbit-closure conjecture ===
+Margulis also proposed a substantially broader description of orbit closures for actions of connected subgroups generated by real-split elements. In that formulation, an orbit closure was expected either to be homogeneous or to arise through a factor on which the acting group becomes a one-parameter non-unipotent group.
+
+This general conjecture is false. In 2010, François Maucourant constructed, for <math>G=\operatorname{SL}(d,\mathbb R)</math> with <math>d\geq6</math>, lattices <math>\Gamma\subset G</math>, subgroups <math>A</math> of the diagonal group, and points <math>x\in G/\Gamma</math> for which <math>\overline{Ax}</math> is not homogeneous and the action does not factor through a one-parameter non-unipotent group.<ref name="Maucourant2010">{{cite journal |last=Maucourant |first=François |title=A nonhomogeneous orbit closure of a diagonal subgroup |journal=Annals of Mathematics |volume=171 |issue=1 |year=2010 |pages=557–570 |doi=10.4007/annals.2010.171.557 |doi-access=free}}</ref> These counterexamples concern subgroups of diagonal groups in dimensions at least six. They do not disprove the compact-orbit conjecture for the full diagonal group in dimension three and therefore do not settle Littlewood's conjecture.
+
+== Partial results ==
+
+=== Metric and dimension results ===
+Gallagher proved that, for almost every pair <math>(\alpha,\beta)</math>,
+<math display="block">
+\liminf_{n\to\infty}
+n(\log n)^2\|n\alpha\|\|n\beta\|=0.
+</math>
+This strengthens Littlewood's conjecture by two logarithmic factors for a full-measure set of pairs.<ref name="Gallagher1962" />
+
+Einsiedler, Katok and Lindenstrauss proved that the exceptional set
+<math display="block">
+\mathcal E=
+\left\{(\alpha,\beta)\in\mathbb R^2:
+\liminf_{n\to\infty}n\|n\alpha\|\|n\beta\|>0
+\right\}
+</math>
+has Hausdorff dimension zero.<ref name="EKL2006" /> Their proof combines entropy and measure rigidity for higher-rank diagonal actions. It does not show that <math>\mathcal E</math> is empty.
+
+Metric results have also been proved on lower-dimensional subsets. In 2024, Sam Chow and Lei Yang established a two-logarithm strengthening for almost every point on any line in the plane, using effective equidistribution of one-parameter unipotent orbits in <math>X_3</math>.<ref name="ChowYang2024">{{cite journal |last1=Chow |first1=Sam |last2=Yang |first2=Lei |title=Effective equidistribution for multiplicative Diophantine approximation on lines |journal=Inventiones Mathematicae |volume=235 |issue=3 |year=2024 |pages=973–1007 |doi=10.1007/s00222-023-01233-1}}</ref>
+
+=== Algebraic and explicit pairs ===
+Cassels and Swinnerton-Dyer proved the conjecture when <math>1,\alpha,\beta</math> span a totally real cubic number field.<ref name="CasselsSwinnertonDyer1955" /> Uri Shapira later proved a stronger, fully inhomogeneous statement for the same class of pairs.<ref name="Shapira2011">{{cite journal |last=Shapira |first=Uri |title=A solution to a problem of Cassels and Diophantine properties of cubic numbers |journal=Annals of Mathematics |volume=173 |issue=1 |year=2011 |pages=543–557 |doi=10.4007/annals.2011.173.1.11 |doi-access=free}}</ref>
+
+Several results construct large or explicit families inside
+<math>\operatorname{Bad}\times\operatorname{Bad}</math>, where
+<math>\operatorname{Bad}</math> denotes the badly approximable numbers. For every fixed <math>\alpha\in\operatorname{Bad}</math>, Andrew Pollington and Sanju Velani constructed a subset of <math>\beta\in\operatorname{Bad}</math> of Hausdorff dimension 1 such that
+<math display="block">
+n\|n\alpha\|\|n\beta\|\leq\frac1{\log n}
+</math>
+for infinitely many <math>n</math>.<ref name="PollingtonVelani2000">{{cite journal |last1=Pollington |first1=Andrew |last2=Velani |first2=Sanju |title=On a problem in simultaneous Diophantine approximation: Littlewood's conjecture |journal=Acta Mathematica |volume=185 |issue=2 |year=2000 |pages=287–306 |doi=10.1007/BF02392812}}</ref>
+
+Bernard de Mathan gave effective constructions of linearly independent pairs with bounded partial quotients satisfying the conjecture.<ref name="deMathan2003">{{cite journal |last=de Mathan |first=Bernard |title=Conjecture de Littlewood et récurrences linéaires |journal=Journal de théorie des nombres de Bordeaux |volume=15 |issue=1 |year=2003 |pages=249–266 |doi=10.5802/jtnb.401 |doi-access=free}}</ref> Boris Adamczewski and Yann Bugeaud proved that, for every fixed real <math>\alpha</math> with bounded partial quotients, one can explicitly construct continuum many <math>\beta</math> with bounded partial quotients for which a strong form of Littlewood's conjecture holds.<ref name="AdamczewskiBugeaud2006">{{cite journal |last1=Adamczewski |first1=Boris |last2=Bugeaud |first2=Yann |title=On the Littlewood conjecture in simultaneous Diophantine approximation |journal=Journal of the London Mathematical Society |volume=73 |issue=2 |year=2006 |pages=355–366 |doi=10.1112/S0024610706022617}}</ref>
+
+=== Limits of quantitative strengthening ===
+Gallagher's theorem is an almost-everywhere result and cannot be promoted to a comparable assertion for every pair. Bugeaud and Nikolay Moshchevitin proved that the set of pairs satisfying
+<math display="block">
+\liminf_{n\to\infty}
+n(\log n)^2\|n\alpha\|\|n\beta\|>0
+</math>
+has full Hausdorff dimension in <math>\mathbb R^2</math>.<ref name="BugeaudMoshchevitin2011">{{cite journal |last1=Bugeaud |first1=Yann |last2=Moshchevitin |first2=Nikolay |title=Badly approximable numbers and Littlewood-type problems |journal=[[Mathematical Proceedings of the Cambridge Philosophical Society]] |volume=150 |issue=2 |year=2011 |pages=215–226 |doi=10.1017/S0305004110000605}}</ref> Dzmitry Badziahin strengthened this by showing that the set of pairs for which
+<math display="block">
+\liminf_{n\to\infty}
+n\log n\log\log n\,
+\|n\alpha\|\|n\beta\|>0
+</math>
+has full Hausdorff dimension.<ref name="Badziahin2013">{{cite journal |last=Badziahin |first=Dzmitry |title=On multiplicatively badly approximable numbers |journal=[[Mathematika]] |volume=59 |issue=1 |year=2013 |pages=31–55 |doi=10.1112/S0025579312000095|arxiv=1101.1855 }}</ref> These full-dimensional sets have Lebesgue measure zero, so the results are compatible with Gallagher's theorem.
+
+In 2026, Reynold Fregoli and Dmitry Kleinbock generalized Badziahin's logarithmic obstruction to vectors in <math>\mathbb R^d</math>, replacing <math>\log n\log\log n</math> by <math>(\log n)^{d-1}\log\log n</math>.<ref name="FregoliKleinbock2026">{{cite journal |last1=Fregoli |first1=Reynold |last2=Kleinbock |first2=Dmitry |title=On multiplicatively badly approximable vectors |journal=Journal of Number Theory |volume=278 |year=2026 |pages=570–621 |doi=10.1016/j.jnt.2025.05.001}}</ref>
+
+== Inhomogeneous and fibre versions ==
+An inhomogeneous version introduces fixed shifts <math>\gamma,\delta\in\mathbb R</math> and asks about
+<math display="block">
+\liminf_{|n|\to\infty}
+|n|\,\|n\alpha-\gamma\|\,\|n\beta-\delta\|.
+</math>
+Shapira proved that almost every pair <math>(\alpha,\beta)</math> satisfies
+<math display="block">
+\forall\gamma,\delta\in\mathbb R,\qquad
+\liminf_{|n|\to\infty}
+|n|\,\|n\alpha-\gamma\|\,\|n\beta-\delta\|=0.
+</math>
+He also proved this uniform inhomogeneous statement whenever <math>1,\alpha,\beta</math> span a totally real cubic number field.<ref name="Shapira2011" />
+
+Strong inhomogeneous results have also been obtained along fibres. Chow and Agamemnon Zafeiropoulos proved such a result on a full-dimensional set of pairs of badly approximable numbers on a vertical line.<ref name="ChowZafeiropoulos2021">{{cite journal |last1=Chow |first1=Sam |last2=Zafeiropoulos |first2=Agamemnon |title=Fully inhomogeneous multiplicative Diophantine approximation of badly approximable numbers |journal=[[Mathematika]] |volume=67 |issue=3 |year=2021 |pages=639–646 |doi=10.1112/mtk.12095 |doi-access=}}</ref>
+
+In 2024, Chow and Niclas Technau constructed an explicit full-measure set of <math>\alpha</math> such that, for every <math>\gamma</math>, for almost every <math>\beta</math>, and for every <math>\delta</math>, there are infinitely many <math>n</math> satisfying
+<math display="block">
+n\|n\alpha-\gamma\|\|n\beta-\delta\|
+<\frac{(\log\log n)^{3+\varepsilon}}{\log n}
+</math>
+for every fixed <math>\varepsilon>0</math>.<ref name="ChowTechnau2024">{{cite journal |last1=Chow |first1=Sam |last2=Technau |first2=Niclas |title=Dispersion and Littlewood's conjecture |journal=[[Advances in Mathematics]] |volume=447 |year=2024 |at=Article 109697 |doi=10.1016/j.aim.2024.109697 |doi-access=free}}</ref> Eduard Stefanescu subsequently sharpened dispersion estimates for dilated lacunary sequences and obtained corresponding improvements in inhomogeneous multiplicative approximation.<ref name="Stefanescu2025">{{cite journal |last=Stefanescu |first=Eduard |title=The dispersion of dilated lacunary sequences, with applications in multiplicative Diophantine approximation |journal=[[Advances in Mathematics]] |volume=461 |year=2025 |at=Article 110062 |doi=10.1016/j.aim.2024.110062 |doi-access=free}}</ref>
+
+== Numerical investigations ==
+For a pair <math>(\alpha,\beta)</math>, define
+<math display="block">
+m(\alpha,\beta)
+=\inf_{n\geq1}n\|n\alpha\|\|n\beta\|,
+\qquad
+m_{\mathrm{LC}}
+=\sup_{\alpha,\beta\in\mathbb R}m(\alpha,\beta).
+</math>
+Littlewood's conjecture is equivalent to <math>m_{\mathrm{LC}}=0</math>. Numerical work seeks rigorous universal upper bounds for <math>m_{\mathrm{LC}}</math>; a positive upper bound does not by itself prove the conjecture.
+
+In 2016, Badziahin gave an algorithm for certifying inequalities of the form <math>m_{\mathrm{LC}}<\varepsilon</math> and used it to prove
+<math display="block">
+m_{\mathrm{LC}}<\frac1{19}.
+</math>
+<ref name="Badziahin2016">{{cite journal |last=Badziahin |first=Dzmitry |title=Computation of the infimum in the Littlewood conjecture |journal=[[Experimental Mathematics (journal)|Experimental Mathematics]] |volume=25 |issue=1 |year=2016 |pages=100–105 |doi=10.1080/10586458.2015.1031356}}</ref> In 2026, Tapani Matala-Aho, Topi Törmä and Matti Vapa introduced another algorithm, based on the simple continued-fraction expansions of <math>\alpha</math> and <math>\beta</math>, for checking proposed universal upper bounds and used it to obtain a further universal estimate.<ref name="MatalaAhoTormaVapa2026">{{cite journal |last1=Matala-Aho |first1=Tapani |last2=Törmä |first2=Topi |last3=Vapa |first3=Matti |title=Numerical upper bounds in the Littlewood conjecture |journal=[[Experimental Mathematics (journal)|Experimental Mathematics]] |year=2026 |doi=10.1080/10586458.2026.2615945}}</ref>
+
+== Variants ==
+
+=== The <math>p</math>-adic Littlewood conjecture ===
+In 2004, de Mathan and Olivier Teulié proposed a mixed real and <math>p</math>-adic analogue. For a prime <math>p</math>, it asks whether
+<math display="block">
+\inf_{n\geq1}n\,|n|_p\,\|n\alpha\|=0
+</math>
+for every real number <math>\alpha</math>, where <math>|n|_p=p^{-v_p(n)}</math> is the <math>p</math>-adic absolute value. They proved the assertion for quadratic irrational numbers.<ref name="deMathanTeulie2004">{{cite journal |last1=de Mathan |first1=Bernard |last2=Teulié |first2=Olivier |title=Problèmes diophantiens simultanés |journal=Monatshefte für Mathematik |volume=143 |issue=3 |year=2004 |pages=229–245 |doi=10.1007/s00605-003-0199-y}}</ref> The conjecture remains open in general. Einsiedler and Dmitry Kleinbock proved that exceptional sets for several <math>p</math>-adic Littlewood-type problems have Hausdorff dimension zero.<ref name="EinsiedlerKleinbock2007">{{cite journal |last1=Einsiedler |first1=Manfred |last2=Kleinbock |first2=Dmitry |title=Measure rigidity and p-adic Littlewood-type problems |journal=Compositio Mathematica |volume=143 |issue=3 |year=2007 |pages=689–702 |doi=10.1112/S0010437X07002801 |doi-access=free}}</ref>
+
+=== Function-field analogues ===
+Analogues over fields of formal Laurent series behave differently from the classical real conjecture. Faustin Adiceam, Erez Nesharim and Fred Lunnon constructed an explicit counterexample to the <math>t</math>-adic analogue over finite fields of characteristic 3.<ref name="AdiceamNesharimLunnon2021">{{cite journal |last1=Adiceam |first1=Faustin |last2=Nesharim |first2=Erez |last3=Lunnon |first3=Fred |title=On the t-adic Littlewood conjecture |journal=Duke Mathematical Journal |volume=170 |issue=10 |year=2021 |pages=2371–2419 |doi=10.1215/00127094-2020-0077|arxiv=1806.04478 }}</ref> Samuel Garrett and Steven Robertson later produced counterexamples to the <math>P(t)</math>-adic analogue in characteristic 5 and proved that the characteristic-3 construction also works in characteristics 7 and 11.<ref name="GarrettRobertson2026">{{cite journal |last1=Garrett |first1=Samuel |last2=Robertson |first2=Steven |title=Counterexamples to the p(t)-adic Littlewood conjecture over small finite fields |journal=Mathematics of Computation |volume=95 |issue=360 |year=2026 |pages=1961–1986 |doi=10.1090/mcom/4104 |doi-access=free}}</ref>
+
+Robertson subsequently proved a transference principle from the <math>t</math>-adic problem to analogues associated with arbitrary irreducible polynomials <math>P(t)</math> and developed a general framework using ''number walls'', infinite arrays of Toeplitz determinants that translate approximation questions into combinatorial ones.<ref name="Robertson2026" /> These counterexamples do not affect the classical conjecture over the real numbers.
+
+== See also ==
+* [[Badly approximable number]]
+* [[Homogeneous dynamics]]
+* [[Oppenheim conjecture]]
+* [[Schmidt's game]]
+
+== References ==
+{{reflist}}
+
+{{DEFAULTSORT:Littlewood Conjecture}}
+[[Category:Diophantine approximation]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

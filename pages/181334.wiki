@@ -1,0 +1,137 @@
+{{Short description|Problem of inverting exponentiation in groups}}
+{{Use dmy dates|date=August 2023|cs1-dates=y}}
+[[File:Discrete logarithm mod 5.svg|thumb|Discrete logarithms modulo 5 to base 2. Each arrow represents multiplication by 2 modulo 5. Starting at 1, the discrete logarithm of a nonzero residue is the number of arrows needed to reach it, modulo 4.]]
+In [[mathematics]], for given [[real number]]s <math>a</math> and <math>b</math>, the [[logarithm]] <math>\log_b(a)</math> is a number <math>x</math> such that <math>b^x = a</math>. The discrete logarithm is an analogous concept in [[group theory]]. In any [[Group (mathematics)|group]] <math>G</math>, powers <math>b^k</math> can be defined for all [[integer]]s <math>k</math>, and the '''discrete logarithm''' <math>\log_b(a)</math> is an integer <math>k</math> such that <math>b^k = a</math>. In the special case of [[modular arithmetic|arithmetic modulo]] an integer <math>m</math>, the more commonly used term is '''index''': One can write <math>k = \operatorname{ind}_b a \!\!\!\! \pmod{m}</math> when <math>b^k \equiv a \!\!\!\! \pmod{m}</math>.
+
+Discrete logarithms are quickly computable in a few special cases, but no efficient method is known for computing them in general. Several [[Cryptography|cryptographic]] systems, including [[Diffie–Hellman problem|Diffie–Hellman]] and [[ElGamal cryptosystem|ElGamal]], base their security on the [[computational hardness assumption|hardness assumption]] that the discrete logarithm problem over carefully chosen groups has no efficient solution.<ref>{{Cite book |last1=Menezes |first1=Alfred J. |url=https://www.taylorfrancis.com/books/9780429881329 |title=Handbook of Applied Cryptography |last2=van Oorschot |first2=Paul C. |last3=Vanstone |first3=Scott A. |publisher=CRC Press |year=1996 |isbn=978-0-429-46633-5 |edition=1 |pages=294 |language=en |chapter=Public-Key Encryption |doi=10.1201/9780429466335 |chapter-url=https://cacr.uwaterloo.ca/hac/about/chap8.pdf}}</ref> In general, there is no [[subexponential time]] solution for [[black box]] groups.<ref>{{cite book |last=Shoup |first=Victor |chapter=Lower Bounds for Discrete Logarithms and Related Problems |title=Advances in Cryptology — EUROCRYPT '97 |series=Lecture Notes in Computer Science |volume=1233 |publisher=Springer |year=1997 |pages=256–266 |doi=10.1007/3-540-69053-0_18}}</ref>
+
+== Definition ==
+Let <math>G</math> be any group. Denote its [[group operation]] by multiplication and its [[identity element]] by <math>1</math>. Let <math>b</math> be any element of <math>G</math>. For any positive integer <math>k</math>, the expression <math>b^k</math> denotes the product of <math>b</math> with itself <math>k</math> times:<ref name=":0">{{Cite book |url=https://link.springer.com/10.1007/978-3-0348-8295-8 |title=Cryptography and Computational Number Theory |date=2001 |publisher=Birkhäuser Basel |isbn=978-3-0348-9507-1 |editor-last=Lam |editor-first=Kwok-Yan |location=Basel |pages=54–56 |language=en |doi=10.1007/978-3-0348-8295-8 |eissn=2297-0584 |issn=2297-0576 |editor-last2=Shparlinski |editor-first2=Igor |editor-last3=Wang |editor-first3=Huaxiong |editor-last4=Xing |editor-first4=Chaoping}}</ref>
+<math display="block">b^k = \underbrace{b \cdot b \cdot \ldots \cdot b}_{k \; \text{factors}}.</math>
+Similarly, let <math>b^{-k}</math> denote the product of <math>b^{-1}</math> with itself <math>k</math> times. For <math>k=0</math>, the <math>k</math><sup>th</sup> power is the identity: <math>b^0=1</math>.
+
+Let <math>a</math> also be an element of <math>G</math>. An integer <math>k</math> that solves the equation <math>b^k=a</math> is termed a '''discrete logarithm''' (or simply '''logarithm''', in this context) of <math>a</math> to the base <math>b</math>. One writes <math>k=\log_b a</math>.
+
+==Examples==
+=== Powers of 10 ===
+The [[power of 10|powers of 10]] are
+<math display="block">\ldots, 0.001, 0.01, 0.1, 1, 10, 100, 1000, \ldots.</math>
+For any number <math>a</math> in this list, one can compute <math>\log_{10}a</math>. For example, <math>\log_{10}{10000}=4</math>, and <math>\log_{10}{0.001}=-3</math>. These are instances of the discrete logarithm problem.
+
+Other base-10 logarithms in the real numbers are not instances of the discrete logarithm problem, because they involve non-integer exponents. For example, the equation <math>\log_{10}{53}=1.724276\ldots</math> means that <math>10^{1.724276\ldots}=53</math>. While integer exponents can be defined in any group using products and inverses, arbitrary real exponents, such as this 1.724276…, require other concepts such as the [[exponential function]].
+
+In [[group-theoretic]] terms, the powers of 10 form a [[cyclic group]] <math>G</math> under multiplication, and 10 is a [[cyclic group|generator]] for this group. The discrete logarithm <math>\log_{10}a</math> is defined for any <math>a</math> in <math>G</math>.
+
+=== Powers of a fixed real number ===
+A similar example holds for any non-zero real number <math>b</math>. The powers form a multiplicative [[subgroup]] <math>G = \{\ldots , b^{-2}, b^{-1}, 1, b^{1}, b^{2}, \ldots \}</math> of the non-zero real numbers. For any element <math>a</math> of <math>G</math>, one can compute <math>\log_b a</math>.
+
+=== Modular arithmetic ===
+Let <math>p</math> be a [[prime number]], and let {{math|'''Z'''<sub>''p''</sub><sup>×</sup>}} be the group [[multiplicative group of integers modulo n|multiplicative group of integers modulo <math>p</math>]]. Its elements are non-zero [[Modular arithmetic#Congruence class|congruence classes]] modulo <math>p</math>, which can be written <math>1, 2, 3, \ldots, p - 1</math>. The group product of two elements is obtained by ordinary integer multiplication followed by reduction modulo&nbsp;<math>p</math>.
+
+The <math>k</math><sup>th</sup> [[exponentiation|power]] of one of the numbers in this group may be computed by finding its <math>k</math><sup>th</sup> power as an integer and then finding the remainder after division by <math>p</math>. When the numbers involved are large, it is more efficient to reduce modulo <math>p</math> multiple times during the computation. Regardless of the specific algorithm used, this operation is called [[modular exponentiation]]. For example, consider {{math|'''Z'''<sub>17</sub><sup>×</sup>}}. To compute <math>3^4</math> in this group, compute <math>3^4=81</math>, and then divide <math>81</math> by <math>17</math>, obtaining a remainder of <math>13</math>. Thus <math>3^4=13</math> in the group {{math|'''Z'''<sub>17</sub><sup>×</sup>}}.
+
+The discrete logarithm is just the inverse operation. For example, consider the equation
+<math display="block">3^k \equiv 13 \pmod{17}.</math>
+From the example above, one solution is <math>k=4</math>, and therefore <math>\log_3 13 = 4</math> in {{math|'''Z'''<sub>17</sub><sup>×</sup>}}. However, <math>4</math> is not the only solution. Because 
+<math display="block">3^{16}\equiv 1 \pmod{17},</math> 
+it follows that if <math>n</math> is any integer then 
+<math display="block">3^{4+16n}\equiv 3^4\cdot (3^{16})^n \equiv 3^4 \cdot 1^n \equiv 3^4 \equiv 13 \pmod{17}.</math>
+Hence the equation has infinitely many solutions of the form <math>4+16n</math>. Moreover, because <math>16</math> is the smallest positive integer <math>m</math> satisfying <math>3^m\equiv 1 \pmod{17}</math>, these are the only solutions. Equivalently, the set of all possible solutions can be expressed by the constraint that <math>k \equiv 4 \pmod{16}</math>.
+
+=== Powers of the identity ===
+In the special case where <math>b</math> is the identity element <math>1</math> of the group <math>G</math>, the discrete logarithm <math>\log_ba</math> is undefined for <math>a</math> other than <math>1</math>, and every integer <math>k</math> is a discrete logarithm for <math>a=1</math>.
+
+=== Elliptic curve ===
+
+Let {{mvar|C}} be a [[Cubic plane curve#Weierstrass normal form|Weierstrass normal form]] [[elliptic curve]] in the [[projective plane]] over a [[Field (mathematics)|field]] {{mvar|F}}. Let {{mvar|O}} be the point at infinity on {{mvar|C}}. For any points {{mvar|P}} and {{mvar|Q}} of {{mvar|C}}, let {{math|''P'' # ''Q''}} denote the unique third point of {{mvar|C}}, where the line through {{mvar|P}} and {{mvar|Q}} intersects {{mvar|C}}. (If {{math|1=''P'' = ''Q''}}, then the line in question is the line tangent to {{mvar|C}} at {{mvar|P}}. If {{math|1=''P'' = ''Q'' = ''O''}}, then {{math|1=''P'' # ''Q'' = ''O''}}.) Define an &quot;addition&quot; operation on {{mvar|C}} by 
+<math display=block>P + Q = (P \; \# \; Q) \; \# \; O.</math>
+This addition operation makes {{mvar|C}} a commutative group with identity element {{mvar|O}}. For any point {{mvar|P}} of {{mvar|C}}, let 
+<math display=block>k P = P + P + \cdots + P</math> 
+denote the sum of {{mvar|k}} copies of {{mvar|P}}. In this context, the discrete logarithm problem is: Given points {{mvar|P}} and {{mvar|Q}}, find {{mvar|k}} such that <math>Q = k P</math>. When the underlying field {{mvar|F}} is a [[finite field]], this problem has cryptographic applications.<ref name="koblitz1994">{{cite book|title=A Course in Number Theory and Cryptography|author=Neil Koblitz|edition=Second|publisher=Springer|year=1994|p=180-185}}</ref>
+
+== Properties ==
+Powers obey the usual algebraic identity <math>b^{k+l}=b^k\cdot b^l</math>.<ref name=":0" /> In other words, the [[function (mathematics)|function]]
+<math display="block">f \colon \mathbf{Z} \to G</math>
+defined by <math>f(k)=b^k</math> is a [[group homomorphism]] from the group of integers <math>\mathbf{Z}</math> under addition [[Surjection|onto]] the [[subgroup]] <math>H</math> of <math>G</math> [[generating set of a group|generated]] by <math>b</math>. For all <math>a</math> in <math>H</math>, <math>\log_b a</math> exists. [[Converse (logic)|Converse]]ly, <math>\log_b a</math> does not exist for <math>a</math> that are not in <math>H</math>.
+
+If <math>H</math> is [[infinite group|infinite]], then <math>\log_b a</math> is also unique, and the discrete logarithm amounts to a [[group isomorphism]]
+<math display="block">\log_b \colon H \to \mathbf{Z}.</math>
+
+On the other hand, if <math>H</math> is [[finite group|finite]] of [[order of a group|order]] <math>n</math>, then <math>\log_b a</math> is unique only up to [[modular arithmetic|congruence modulo]] <math>n</math>, and the discrete logarithm amounts to a group isomorphism
+<math display="block">\log_b\colon H \to \mathbf{Z}_n,</math>
+where <math>\mathbf{Z}_n</math> denotes the additive group of integers modulo <math>n</math>.
+
+The familiar base change formula for ordinary logarithms remains valid: If <math>c</math> is another generator of <math>H</math>, then
+<math display="block">\log_c a = \log_c b \cdot \log_b a.</math>
+
+== Algorithms ==
+{{See also|Discrete logarithm records|Time complexity}}
+{{unsolved|computer science|Can the discrete logarithm be computed in polynomial time on a classical computer?}}
+The discrete logarithm problem is considered to be computationally intractable. For a classical (e.g., non-[[Quantum computing|quantum]]) computer, no efficient ([[P (complexity)|polynomial]]-time) algorithm is yet known for computing discrete logarithms in general.
+
+A general algorithm for computing <math>\log_b a</math> in finite groups <math>G</math> is to raise <math>b</math> to larger and larger powers <math>k</math> until the desired <math>a</math> is found. This algorithm is sometimes called ''trial multiplication''. It requires [[running time]] [[linear time|linear]] in the size of the group <math>G</math> and thus [[exponential time|exponential]] in the number of digits in the size of the group. Therefore, it is an exponential-time algorithm, practical only for small groups <math>G</math>.
+
+More sophisticated algorithms exist, usually inspired by similar algorithms for [[integer factorization]]. These algorithms run faster than the naïve algorithm, some of them proportional to the [[square root]] of the size of the group, and thus exponential in half the number of digits in the size of the group. However, none of them runs in [[polynomial time]] (in the number of digits in the size of the group).
+
+* [[Baby-step giant-step]]
+* [[Function field sieve]]
+* [[Index calculus algorithm]]
+* [[General number field sieve|Number field sieve]]
+* [[Pohlig–Hellman algorithm]]
+* [[Pollard's rho algorithm for logarithms]]
+* [[Pollard's kangaroo algorithm]] (aka Pollard's lambda algorithm)
+
+There is an efficient [[Shor's algorithm|quantum algorithm]] due to [[Peter Shor]].<ref>{{cite journal |last=Shor |first=Peter |date=1997 |title=Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer |journal=SIAM Journal on Computing |volume=26 |issue=5 |pages=1484–1509 |arxiv=quant-ph/9508027 |doi=10.1137/s0097539795293172 |mr=1471990 |s2cid=2337707}}</ref>
+
+Efficient classical algorithms also exist in certain special cases. For example, in the group of the integers modulo <math>p</math> under addition, the power <math>b^k</math> becomes a product <math>b \cdot k</math>, and equality means congruence modulo <math>p</math> in the integers. The [[extended Euclidean algorithm]] finds <math>k</math> quickly.
+
+With [[Diffie–Hellman_key_exchange|Diffie–Hellman]], a cyclic group modulo a prime <math>p</math> is used, allowing an efficient computation of the discrete logarithm with Pohlig–Hellman if the order of the group (being <math>p-1</math>) is sufficiently [[smooth number|smooth]], i.e. has no large [[prime factor]]s.
+
+== Comparison with integer factorization ==
+While computing discrete logarithms and integer factorization are distinct problems, they share some properties:
+* both are special cases of the [[hidden subgroup problem]] for [[finite abelian group]]s,
+* both problems seem to be difficult (no efficient algorithms are known for non-[[quantum computer]]s),
+* for both problems efficient algorithms on quantum computers are known,
+* algorithms from one problem are often adapted to the other, and
+* the difficulty of both problems has been used to construct various [[cryptographic]] systems.
+
+== Cryptography ==
+There exist groups for which computing discrete logarithms is apparently difficult.  In some cases (e.g. large prime order subgroups of  groups <math>\mathbf{Z}_p^\times</math>) there is not only no efficient algorithm known for the worst case, but the [[average-case complexity]] can be shown to be about as hard as the worst case using [[random self-reducibility]].<ref>{{Cite journal |last1=Blake |first1=Ian F. |last2=Garefalakis |first2=Theo |date=2004-04-01 |title=On the complexity of the discrete logarithm and Diffie–Hellman problems |journal=Journal of Complexity |series=Festschrift for Harald Niederreiter, Special Issue on Coding and Cryptography |language=en |volume=20 |issue=2 |pages=148–170 |doi=10.1016/j.jco.2004.01.002 |issn=0885-064X |doi-access=free}}</ref>
+
+At the same time, the inverse problem of discrete exponentiation is not difficult (it can be computed efficiently using [[exponentiation by squaring]], for example).  This asymmetry is analogous to the one between integer factorization and integer multiplication. Both asymmetries (and other possibly [[one-way function]]s) have been exploited in the construction of cryptographic systems.
+
+Popular choices for the group <math>G</math> in discrete logarithm cryptography (DLC) are the cyclic groups <math>\mathbf{Z}_p^\times</math> (e.g. [[ElGamal encryption]], [[Diffie–Hellman key exchange]], and the [[Digital Signature Algorithm]]) and cyclic subgroups of [[elliptic curve]]s over [[finite field]]s (''see'' [[Elliptic curve cryptography]]).
+
+While there is no publicly known algorithm for solving the discrete logarithm problem in general, the first three steps of the [[General number field sieve|number field sieve]] algorithm only depend on the group <math>G</math>, not on the specific elements of <math>G</math> whose finite <math>\log</math> is desired. By [[precomputing]] these three steps for a specific group, one need only carry out the last step, which is much less computationally expensive than the first three, to obtain a specific logarithm in that group.<ref name=imperfectfs/>
+
+It turns out that much [[internet]] traffic uses one of a handful of groups that are of order 1024 bits or less, e.g. cyclic groups with order of the Oakley primes specified in <nowiki>RFC 2409</nowiki>.<ref>{{Cite report |url=https://www.rfc-editor.org/info/rfc2409 |title=The Internet Key Exchange (IKE) |last1=Harkins |first1=D. |last2=Carrel |first2=D. |date=November 1998 |publisher=RFC Editor |issue=RFC2409 |doi=10.17487/rfc2409 |language=en|url-access=subscription }}</ref> The [[Logjam (computer security)|Logjam]] attack used this vulnerability to compromise a variety of internet services that allowed the use of groups whose order was a 512-bit prime number, so called [[export of cryptography|export grade]].<ref name=imperfectfs/>
+
+The authors of the Logjam attack estimate that the much more difficult precomputation needed to solve the discrete log problem for a 1024-bit prime would be within the budget of a large national [[intelligence agency]] such as the U.S. [[National Security Agency]] (NSA). The Logjam authors speculate that precomputation against widely reused 1024 DH primes is behind claims in [[Global surveillance disclosures (2013–present)|leaked NSA documents]] that NSA is able to break much of current cryptography.<ref name="imperfectfs">{{Cite book |last1=Adrian |first1=David |last2=Bhargavan |first2=Karthikeyan |last3=Durumeric |first3=Zakir |last4=Gaudry |first4=Pierrick |last5=Green |first5=Matthew |last6=Halderman |first6=J. Alex |last7=Heninger |first7=Nadia |author-link7=Nadia Heninger |last8=Springall |first8=Drew |last9=Thomé |first9=Emmanuel |last10=Valenta |first10=Luke |last11=VanderSloot |first11=Benjamin |last12=Wustrow |first12=Eric |last13=Zanella-Béguelin |first13=Santiago |last14=Zimmermann |first14=Paul |chapter=Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice |date=2015-10-12 |title=Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security |chapter-url=https://dl.acm.org/doi/10.1145/2810103.2813707 |language=en |publisher=ACM |pages=5–17 |doi=10.1145/2810103.2813707 |isbn=978-1-4503-3832-5}}</ref>
+
+== See also ==
+* [[A. W. Faber Model 366]]
+* [[Percy Ludgate]] and [[Irish logarithm]]
+
+== References ==
+{{Reflist}}
+{{Refbegin}}
+* {{cite book |author-last1=Rosen |author-first1=Kenneth H. |title=Elementary Number Theory and Its Application |date=2011 |publisher=Pearson |isbn=978-0321500311 |page=368 |edition=6}}
+* {{cite web |author-last=Weisstein |author-first=Eric W. |title=Discrete Logarithm |url=http://mathworld.wolfram.com/DiscreteLogarithm.html |website=MathWorld |publisher=Wolfram Web |access-date=1 January 2019}}
+{{Refend}}
+
+== Further reading ==
+* [[Richard Crandall]]; [[Carl Pomerance]]. Chapter 5, ''Prime Numbers: A computational perspective'', 2nd ed., Springer.
+* {{Cite book |author-last1=Stinson |author-first1=Douglas Robert |title=Cryptography: Theory and Practice |publisher=[[CRC Press]] |location=London, UK |edition=3 |isbn=978-1-58488-508-5 |date=2006}}
+
+{{Number theoretic algorithms}}
+{{Cryptography public-key}}
+{{Computational hardness assumptions}}
+
+{{DEFAULTSORT:Discrete Logarithm}}
+[[Category:Modular arithmetic]]
+[[Category:Group theory]]
+[[Category:Cryptography]]
+[[Category:Logarithms]]
+[[Category:Finite fields]]
+[[Category:Computational hardness assumptions]]
+[[Category:Unsolved problems in computer science]]

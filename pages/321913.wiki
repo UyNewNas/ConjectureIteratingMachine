@@ -1,0 +1,104 @@
+{{Short description|Numbers whose sum of divisors is twice the number plus 1}}
+{{unsolved|mathematics|Do quasiperfect numbers exist?}}
+In [[mathematics]], a '''quasiperfect number''' is a [[natural number]] {{mvar|n}} for which the sum of all its [[divisor]]s (the [[sum-of-divisors function]] <math>\sigma(n)</math>) is equal to <math>2n + 1</math>. Equivalently, {{mvar|n}} is the sum of its non-trivial divisors (that is, its divisors excluding 1 and {{mvar|n}}). No quasiperfect numbers have been found so far.
+
+The quasiperfect numbers are the [[abundant number]]s of minimal abundance (which is 1).
+
+== Theorems ==
+If a quasiperfect number exists, it must be an [[parity (mathematics)|odd]] [[square number]] greater than 10<sup>35</sup> and have at least seven distinct [[prime factor]]s.<ref>{{cite journal|last1=Hagis|first1=Peter |last2=Cohen|first2=Graeme L.|title=Some results concerning quasiperfect numbers|journal=J. Austral. Math. Soc. Ser. A|volume=33|year=1982|pages=275–286|doi=10.1017/S1446788700018401|issue=2|mr=0668448|doi-access=free}}</ref>
+
+== Related ==
+For a [[perfect number]] {{mvar|n}} the sum of all its divisors is equal to <math>2n</math>. For an [[almost perfect number]] {{mvar|n}} the sum of all its divisors is equal to <math>2n - 1</math>.
+
+Numbers {{mvar|n}} whose sum of factors equals <math>2n + 2</math> are known to exist. They are of form <math>2^{n - 1} \times (2^n - 3)</math> where <math>2^n - 3</math> is a prime. The only exception known so far is <math>650 = 2 \times 5^2 \times 13</math>. They are 20, 104, 464, 650, 1952, 130304, 522752, ... {{OEIS|A088831}}. Numbers {{mvar|n}} whose sum of factors equals <math>2n - 2</math> are also known to exist. They are of form <math>2^{n - 1} \times (2^n + 1)</math> where <math>2^n + 1</math> is prime. No exceptions are found so far. Because of the five known [[Fermat prime]]s, there are five such numbers known: 3, 10, 136, 32896 and 2147516416 {{OEIS|A191363}}
+
+[[Betrothed numbers]] relate to quasiperfect numbers like [[amicable numbers]] relate to perfect numbers.
+
+==Notes==
+<references/>
+
+== References ==
+* {{cite journal|first1=E. |last1=Brown
+|first2=H. |last2=Abbott
+|first3=C. |last3=Aull
+|first4=D. |last4=Suryanarayana
+|title=Quasiperfect numbers
+|journal=Acta Arith.
+|year=1973
+|volume=22
+|issue=4
+|pages=439–447
+|mr=0316368
+|url=http://matwbn.icm.edu.pl/ksiazki/aa/aa22/aa2245.pdf |doi=10.4064/aa-22-4-439-447
+|doi-access=free
+}}
+* {{cite journal 
+| last=Kishore 
+| first=Masao 
+| title=Odd integers ''N'' with five distinct prime factors for which 2−10<sup>−12</sup> < σ(''N'')/''N'' < 2+10<sup>−12</sup> 
+| journal=[[Mathematics of Computation]] 
+| volume=32 
+| issue=141 
+| pages=303–309 
+| year=1978 
+| issn=0025-5718 
+| zbl=0376.10005 
+| mr=0485658
+| url=https://www.ams.org/journals/mcom/1978-32-141/S0025-5718-1978-0485658-X/S0025-5718-1978-0485658-X.pdf 
+| doi=10.2307/2006281
+| jstor=2006281 
+}}
+* {{cite journal|first1=Graeme L.
+|last1=Cohen|title= On odd perfect numbers (ii), multiperfect numbers and quasiperfect numbers 
+|year=1980
+|journal=J. Austral. Math. Soc. Ser. A 
+|volume=29 
+|issue=3|pages=369–384 
+|doi=10.1017/S1446788700021376 
+| mr=0569525 
+| zbl=0425.10005 
+|s2cid=120459203| issn=0263-6115
+ }}
+* {{cite book 
+| author=James J. Tattersall 
+| title=Elementary number theory in nine chapters 
+| url=https://archive.org/details/elementarynumber00tatt_470
+| url-access=limited
+| publisher=[[Cambridge University Press]] 
+| isbn=0-521-58531-7 
+| year=1999 
+| pages=[https://archive.org/details/elementarynumber00tatt_470/page/n156 147]
+| zbl=0958.11001 }}
+* {{cite book
+ | last = Guy
+ | first = Richard
+ | author-link = Richard K. Guy
+ | year = 2004
+ | title = Unsolved Problems in Number Theory, third edition
+ |page=74
+ | publisher = [[Springer-Verlag]]
+ | isbn=0-387-20860-7
+}}
+* {{cite book
+ | editor1-last=Sándor 
+| editor1-first=József 
+| editor2-last=Mitrinović 
+| editor2-first=Dragoslav S. 
+| editor3-last=Crstici 
+|editor3-first=Borislav 
+| title=Handbook of number theory I 
+| location=Dordrecht 
+| publisher=[[Springer-Verlag]] 
+| year=2006 
+| isbn=1-4020-4215-9 
+| zbl=1151.11300 
+| pages=109–110
+}}
+
+{{Divisor classes}}
+{{Classes of natural numbers}}
+
+[[Category:Arithmetic dynamics]]
+[[Category:Divisor function]]
+[[Category:Integer sequences]]
+[[Category:Unsolved problems in number theory]]

@@ -1,0 +1,28 @@
+{{Short description|Conjecture in topology}}
+In [[mathematics]], the '''Hilbert–Smith conjecture''' is concerned with the possible [[transformation group]]s of [[manifold]]s. The conjecture says that if a [[locally compact]] [[topological group]] ''G'' [[Group action (mathematics)|act]] faithfully and continuous on a [[connected space|connected]] manifold ''M'', then ''G'' must be a [[Lie group]].
+
+The naming of the conjecture is for [[David Hilbert]], and  [[Paul A. Smith]].<ref name=Smith1941>{{cite book | last = Smith | first = Paul A. | author-link = Paul A. Smith | chapter = Periodic and nearly periodic transformations | title = Lectures in Topology | editor1-first = R. | editor1-last = Wilder | editor2-first = W | editor2-last = Ayres | publisher = [[University of Michigan Press]] | place = Ann Arbor, MI | year = 1941 | pages = 159–190 }}</ref> It is considered by some to be a better formulation of [[Hilbert's fifth problem]], than the characterisation of topological groups being also a topological manifolds as [[Lie group]]s often cited as a solution.
+
+== Results ==
+Because of known structural results on ''G'', it is enough to deal with the case where ''G'' is the additive group <math>\Z_p</math> of [[p-adic integer]]s, for some [[prime number]] ''p''. An equivalent form of the conjecture is that <math>\Z_p</math> has no faithful group action on a topological manifold.
+
+In 1997, [[Dušan Repovš]] and Evgenij Ščepin proved the Hilbert–Smith conjecture for groups acting by Lipschitz maps on a [[Riemannian manifold]] using [[Lebesgue covering dimension|covering]], [[Fractal dimension|fractal]], and [[Cohomological dimension|cohomological dimension theory]].<ref name=Repovs1997>{{cite journal | first1 = Dušan | last1 = Repovš | author-link1 = Dušan Repovš |first2 = Evgenij V. | last2 = Ščepin | title = A proof of the Hilbert-Smith conjecture for actions by Lipschitz maps | periodical = [[Mathematische Annalen]] | volume = 308 | issue = 2 |date=June 1997 | pages = 361–364 | doi=10.1007/s002080050080}}</ref>
+
+In 1999, [[Gaven Martin]] extended their dimension-theoretic argument to quasiconformal actions on a Riemannian manifold and gave applications concerning unique analytic continuation for Beltrami systems.<ref name=Gaven1999>
+{{cite journal | first = Gaven | last = Martin |title = The Hilbert-Smith conjecture for quasiconformal actions | periodical = [[Electronic Research Announcements of the American Mathematical Society]]| volume = 5 | issue = 9 |date= 1999| pages = 66–70 }}</ref>
+
+In 2013, [[John Pardon]] proved the three-dimensional case of the Hilbert–Smith conjecture.<ref name=pardon2013>
+{{cite journal  | first = John | last = Pardon | author-link = John Pardon | title = The Hilbert–Smith conjecture for three-manifolds | periodical = [[Journal of the American Mathematical Society]] | volume = 26 | issue = 3 |date= 2013 | pages = 879–899 | doi=10.1090/s0894-0347-2013-00766-3| arxiv = 1112.2324 | s2cid = 96422853 }}</ref>
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*{{cite web | last = Tao | first = Terence | author-link = Terence Tao|year = 2011 | title = The Hilbert-Smith conjecture | url=https://terrytao.wordpress.com/2011/08/13/the-hilbert-smith-conjecture/}}
+
+{{DEFAULTSORT:Hilbert-Smith conjecture}}
+[[Category:Topological groups]]
+[[Category:Group actions]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Structures on manifolds]]

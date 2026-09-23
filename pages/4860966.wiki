@@ -1,0 +1,8 @@
+#REDIRECT [[Perfect number#Odd perfect numbers]]
+
+{{Redirect category shell|
+{{R with possibilities}}
+{{R to section}}
+}}
+
+[[Category:Unsolved problems in number theory]]

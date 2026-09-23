@@ -1,0 +1,152 @@
+{{short description|24 mathematical problems stated in 1982}}
+[[File:William Thurston.jpg|thumb|right|American mathematician [[William Thurston]]]]
+'''Thurston's 24 questions''' are a set of [[list of unsolved problems in mathematics|mathematical problems]] in [[differential geometry]] posed by [[Americans|American]] [[mathematician]] [[William Thurston]] in his influential 1982 paper ''Three-dimensional manifolds, [[Kleinian group]]s and [[hyperbolic geometry]]'' published in the ''[[Bulletin of the American Mathematical Society]]''.<ref name="Thurston-1982">{{citation|last=Thurston|first=William P.|title=Three-dimensional manifolds, Kleinian groups and hyperbolic geometry|year=1982|journal=[[Bulletin of the American Mathematical Society]]|volume=6 |issue=3 |pages=357–379|doi=10.1090/S0273-0979-1982-15003-0 |doi-access=free}}</ref> These questions significantly influenced the development of [[geometric topology]] and related fields over the following decades.
+
+== History ==
+The questions appeared following Thurston's announcement of the [[geometrization conjecture]], which proposed that all [[compact space|compact]] [[3-manifold]]s could be decomposed into geometric pieces.<ref name="Thurston-1982"/> This [[conjecture]], later [[Mathematical proof|proven]] by [[Grigori Perelman]] in 2003, represented a complete [[classification theorem|classification]] of 3-manifolds and included the famous [[Poincaré conjecture]] as a special case.<ref name="Thurston-2014"/>
+
+By 2012, 22 of Thurston's 24 questions had been resolved.<ref name="Thurston-2014">{{citation|last=Thurston|first=William P.|title=Three-dimensional manifolds, Kleinian groups and hyperbolic geometry|year=2014|journal=Jahresbericht der Deutschen Mathematiker|pages=3–20|volume=116|doi=10.1365/s13291-014-0079-5 }}</ref>
+
+== Table of problems ==
+Thurston's 24 questions are:<ref name="Thurston-1982"/>
+{| class="wikitable sortable"
+|-
+! Problem
+! Brief description
+! Status
+! Year solved
+|-
+|style="text-align:center"| 1st
+| [[Thurston's geometrization conjecture]]: every [[3-manifold]] can be decomposed into prime manifolds of eight  canonical geometries.
+| {{yes|align=left|Solved by [[Grigori Perelman]] using [[Ricci flow]] with surgery.}}
+|style="text-align:center"| 2003
+|-
+|style="text-align:center"| 2nd
+| Is every [[finite group|finite]] [[group action]] on 3-manifold equivalent to isometric action?
+| {{yes|align=left|Solved by [[William Hamilton Meeks, III|Meeks]], [[G. Peter Scott|Scott]], Dinkelbach, and Leeb.}}
+|style="text-align:center"| 2009
+|-
+|style="text-align:center"| 3rd
+| The [[geometrization conjecture]] for 3-dimensional [[orbifold]]s: if such orbifold have no with no 2-dimesional suborbifolds, can it be geometrically decomposed?
+| {{yes|align=left|Solved by Boileau, Leeb, and Porti.}}
+|style="text-align:center"| 2005
+|-
+|style="text-align:center"| 4th
+| Global theory of [[hyperbolic Dehn surgery]]: give upper bound for nonhyperbolic surgeries and find description of geometry that is created when hyperbolic surgery breaks down.
+| {{yes|align=left|Resolved through work of [[Ian Agol|Agol]], Lackenby, and others.}}
+|style="text-align:center"| 2000–2013
+|-
+|style="text-align:center"| 5th
+| Are all [[Kleinian group]]s [[tame manifold|geometrically tame]]?
+| {{yes|align=left|Solved through work of Bonahon and Canary.}}
+|style="text-align:center"| 1986–1993
+|-
+|style="text-align:center"| 6th
+| Can every Kleinian group be obtained as a limit of geometrically finite groups?
+| {{yes|align=left|Solved by Namazi-Souto and Ohshika}}
+|style="text-align:center"| 2012
+|-
+|style="text-align:center"| 7th
+| Develop theory of [[Schottky group]]s and their limits, that will be analogous to quasi-Fuchsian groups theory.
+| {{yes|align=left|Resolved through work of Brock, [[Richard Canary|Canary]], and [[Yair Minsky|Minsky]].}}
+|style="text-align:center"| 2012
+|-
+|style="text-align:center"| 8th
+| Analysis of limits of [[quasi-Fuchsian group]]s with accidental parabolics.
+| {{yes|align=left|Solved by Anderson and Canary.}}
+|style="text-align:center"| 2000
+|-
+|style="text-align:center"| 9th
+| Are all Kleinian groups [[tame manifold|topologically tame]]?
+| {{yes|align=left|Solved independently by Agol and by Calegari-Gabai.}}
+|style="text-align:center"| 2004
+|-
+|style="text-align:center"| 10th
+| The [[Ahlfors measure conjecture|Ahlfors measure zero problem]]: group obtained as a limit set of finitely-generated Kleinian group have either full measure or measure 0. In case of full measure, does it act [[ergodicity|ergodically]]?
+| {{yes|align=left|Solved as consequence of geometric tameness.}}
+|style="text-align:center"| 2004
+|-
+|style="text-align:center"| 11th
+| [[Ending lamination theorem|Ending lamination conjecture]]: can geometrically tame representations of given group be parametrized by their ending laminations and their parabolics?
+| {{yes|align=left|Solved by Brock, Canary, and Minsky.}}
+|style="text-align:center"| 2012
+|-
+|style="text-align:center"| 12th
+| Describe quasi-isometry type of Kleinian groups
+| {{yes|align=left|Solved with ending lamination theorem.}}
+|style="text-align:center"| 2012
+|-
+|style="text-align:center"| 13th
+| Is the limit set of Kleinian groups with [[Hausdorff dimension]] less than 2 [[geometric finiteness|geometrically finite]]?
+| {{yes|align=left|Solved by Bishop and Jones.}}
+|style="text-align:center"| 1997
+|-
+|style="text-align:center"| 14th
+| Existence of [[Cannon–Thurston map]]s for hyperbolic spaces.
+| {{yes|align=left|Solved by Mahan Mj.}}
+|style="text-align:center"| 2009–2012
+|-
+|style="text-align:center"| 15th
+| Is it possible to [[Residually finite group#Profinite topology|residually separate]] finitely-generated subgroups in a finitely-generated Kleinian group?
+| {{yes|align=left|Solved by [[Ian Agol]], building on work of [[Daniel Wise (mathematician)|Wise]].}}
+|style="text-align:center"| 2013
+|-
+|style="text-align:center"| 16th
+| [[Virtually Haken conjecture]]: does every aspherical or hyperbolic 3-manifold have a finite Haken cover?
+| {{yes|align=left|Solved by Ian Agol.}}
+|style="text-align:center"| 2012
+|-
+|style="text-align:center"| 17th
+| Having 3-manifold that is aspherical, does it have finite cover with positive first [[Betti number]]?
+| {{yes|align=left|Solved by Ian Agol.}}
+|style="text-align:center"| 2013
+|-
+|style="text-align:center"| 18th
+| [[Virtually fibered conjecture]]: every hyperbolic 3-manifold have a finite cover which is a [[surface bundle over the circle]].
+| {{yes|align=left|Solved by Ian Agol.}}
+|style="text-align:center"| 2013
+|-
+|style="text-align:center"| 19th
+| Describe topology and geometry of manifolds constructed as quotient spaces of [[projective linear group|PSL(2,C)]] by [[arithmetic group|arithmetic subgroups]].
+| {{no|align=left|Unresolved.}}
+|style="text-align:center"| —
+|-
+|style="text-align:center"| 20th
+| Develop software for calculation of canonical form of surface diffeomorphisms and group action of diffeomorphisms of projectivized lamination spaces.  
+| {{yes|align=left|Addressed through development of [[SnapPea]] and other software.}}
+|style="text-align:center"| 1990s–2000s
+|-
+|style="text-align:center"| 21st
+| Develop software to compute hyperbolic structures on 3-manifold. 
+| {{yes|align=left|Addressed through development of [[SnapPea]] and other software.}}
+|style="text-align:center"| 1990s–2000s
+|-
+|style="text-align:center"| 22nd
+| Develop software for tabulation of basics informations about 3-manifolds, ie: their volumes, Chern-Simon invariants or knots.
+| {{yes|align=left|Addressed through development of [[SnapPea]] and other software.}}
+|style="text-align:center"| 1990s–2000s
+|-
+|style="text-align:center"| 23rd
+| Are hyperbolic volumes of 3-manifold [[rational dependence|rationally independent]]?
+| {{no|align=left|Unresolved.}}
+|style="text-align:center"| —
+|-
+|style="text-align:center"| 24th
+| Existence of hyperbolic structures on 3-manifolds with given Heegaard genus.
+| {{yes|align=left|Solved by Namazi and Souto.}}
+|style="text-align:center"| 2009
+|}
+
+== See also ==
+* [[Geometrization conjecture]]
+* [[Hilbert's problems]]
+* [[Taniyama's problems]]
+* [[List of unsolved problems in mathematics]]
+* [[Poincaré conjecture]]
+* [[Smale's problems]]
+
+== References ==
+{{reflist}}
+
+[[Category:Geometric topology]]
+[[Category:Unsolved problems in mathematics]]

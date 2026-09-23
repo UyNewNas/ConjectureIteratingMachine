@@ -1,0 +1,147 @@
+In [[computer science]], the '''matrix mortality problem''' (or '''mortal matrix problem''') is a [[decision problem]] that asks, given a set of size ''m'' of ''n''×''n'' matrices with integer coefficients, whether the [[zero matrix]] can be expressed as a finite product of matrices from this set.
+
+The matrix mortality problem is known to be [[undecidable problem|undecidable]] when ''n'' ≥ 3.{{r|paterson}} In fact, it is already undecidable for sets of 6
+matrices (or more) when ''n'' = 3, for 4 matrices when ''n'' = 5, for 3 matrices when ''n'' = 9, and for 2 matrices when ''n'' = 15.{{r|cassaigne-halava-harju-nicolas}}
+
+In the case ''n'' = 2, it is an open problem whether matrix mortality is decidable, but several special cases have been solved: the problem is decidable for sets of 2 matrices,{{r|bournez-branicky}} and for sets of matrices which contain at most one invertible matrix.{{r|heckman}}
+{| class="wikitable"
+|+The current frontier of knowledge
+!''n''\''m''
+!1
+!2
+!3
+!4
+!5
+!6
+|-
+|2
+|✅
+|✅
+|
+|
+|
+|
+|-
+|3
+|✅
+|
+|
+|
+|
+|✖️
+|-
+|4
+|✅
+|
+|
+|
+|
+|✖️
+|-
+|5
+|✅
+|
+|
+|✖️
+|✖️
+|✖️
+|-
+|...
+|✅
+|
+|
+|✖️
+|✖️
+|✖️
+|-
+|9
+|✅
+|
+|✖️
+|✖️
+|✖️
+|✖️
+|-
+|...
+|✅
+|
+|✖️
+|✖️
+|✖️
+|✖️
+|-
+|15
+|✅
+|✖️
+|✖️
+|✖️
+|✖️
+|✖️
+|}
+
+==References==
+
+<references>
+  <ref name=paterson>{{cite journal
+ | last = Paterson | first = Michael S. | author-link = Mike Paterson
+ | doi = 10.1002/sapm1970491105
+ | journal = Studies in Applied Mathematics
+ | mr = 255400
+ | pages = 105–107
+ | title = Unsolvability in {{math|3 &times; 3}} matrices
+ | volume = 49
+ | year = 1970}}
+</ref>
+  <ref name=cassaigne-halava-harju-nicolas>
+    {{ cite arXiv
+      | eprint = 1404.0644
+      | last1 = Cassaigne
+      | first1 = Julien
+      | last2 = Halava
+      | first2 = Vesa
+      | last3 = Harju
+      | first3 = Tero
+      | last4 = Nicolas
+      | first4 = Francois
+      | title = Tighter Undecidability Bounds for Matrix Mortality, Zero-in-the-Corner Problems, and More
+      | class = cs.DM
+      | year = 2014
+    }}
+</ref>
+  <ref name=bournez-branicky>
+    {{ cite journal
+      | last1 = Bournez
+      | first1 = Olivier
+      | last2 = Branicky
+      | first2 = Michael
+      | title = The Mortality Problem for Matrices of Low Dimensions
+      | journal = Theory of Computing Systems
+      | volume = 35
+      | date = 2002
+      | issue = 4
+ | pages = 433–448
+      | doi = 10.1007/s00224-002-1010-5
+      | url = https://www.lix.polytechnique.fr/~bournez/load/Papier-TOCS-2002.pdf
+    }}
+</ref>
+  <ref name=heckman>
+    {{ cite arXiv
+      | eprint = 1912.09991
+      | last = Heckman
+      | first = Christopher Carl
+      | title = The 2×2 Matrix Mortality Problem and Invertible Matrices
+      | class = math.RA
+      | year = 2019
+    }}
+</ref>
+</references>
+
+* {{Cite journal |last1=Bell |first1=Paul |last2=Potapov |first2=Igor |date=2008-02-04 |title=On undecidability bounds for matrix decision problems |url=https://www.sciencedirect.com/science/article/pii/S0304397507007840 |journal=Theoretical Computer Science |series=Combinatorics, Automata and Number Theory |volume=391 |issue=1 |pages=3–13 |doi=10.1016/j.tcs.2007.10.025 |issn=0304-3975|url-access=subscription }}
+* {{Cite report |url=https://dl.acm.org/doi/10.5555/893250 |title=Decidable and Undecidable Problems in Matrix Theory |last=Halava |first=Vesa |date=August 1997 |publisher=Turku Centre for Computer Science }}>
+
+[[Category:Undecidable problems]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Matrix theory]]
+
+{{comp-sci-stub}}

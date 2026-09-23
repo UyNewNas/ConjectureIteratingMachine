@@ -1,0 +1,605 @@
+{{Short description|none}}
+This is a '''list of notable mathematical [[conjecture]]s'''.
+
+==Open problems==
+The following conjectures remain open.  The (incomplete) column "cites" lists the number of results for a [[Google Scholar]] search for the term, in double quotes {{as of|lc=y|September 2022}}.
+{| class="wikitable sortable" style="text-align:center; border:none;"
+|-
+!Conjecture
+!Field
+!Comments
+!Eponym(s)
+!Cites
+|-
+|[[1/3–2/3 conjecture]]||order theory|| ||n/a || 70
+|-
+|[[abc conjecture]]||number theory||⇔Granville–Langevin conjecture,  [[Vojta's conjecture]] in dimension 1<br>⇒[[Erdős–Woods conjecture]], [[Fermat–Catalan conjecture]]<br>Formulated by [[David Masser]] and [[Joseph Oesterlé]].<ref>{{cite book |last1=Weisstein |first1=Eric W. |title=CRC Concise Encyclopedia of Mathematics |date=2002 |publisher=CRC Press |isbn=9781420035223 |page=13 |url=https://books.google.com/books?id=D_XKBQAAQBAJ&pg=PA13 |language=en}}</ref><br>Proof claimed in 2012 by [[Shinichi Mochizuki]]||[[Joseph Oesterlé]] and [[David Masser]] under the name "Oesterlé–Masser conjecture"|| 2440
+|-
+|[[Agoh–Giuga conjecture]]||number theory|| ||Takashi Agoh and Giuseppe Giuga ||8
+|-
+|[[Agrawal's conjecture]]||number theory|| ||[[Manindra Agrawal]] || 10
+|-
+|[[Andrews–Curtis conjecture]]||combinatorial group theory|| ||[[James J. Andrews (mathematician)|James J. Andrews]] and [[Morton L. Curtis]] || 358
+|-
+|[[Andrica's conjecture]]||number theory|| || Dorin Andrica || 45
+|-
+|[[Artin conjecture (L-functions)]]||number theory|| || [[Emil Artin]] || 650
+|-
+|[[Artin's conjecture on primitive roots]]||number theory||⇐[[generalized Riemann hypothesis]]<ref>{{cite book |last1=Frei |first1=Günther |author-link=Günther Frei |last2=Lemmermeyer |first2=Franz |last3=Roquette |first3=Peter J. |author-link3=Peter Roquette  |title=Emil Artin and Helmut Hasse: The Correspondence 1923-1958 |date=2014 |publisher=Springer Science & Business Media |isbn=9783034807159 |page=215 |url=https://books.google.com/books?id=6rDBBAAAQBAJ&pg=PA215 |language=en}}</ref><br>⇐[[Selberg conjecture B]]<ref>{{cite book |last1=Steuding |first1=Jörn |last2=Morel |first2=J.-M. |last3=Steuding |first3=Jr̲n |title=Value-Distribution of L-Functions |date=2007 |publisher=Springer Science & Business Media |isbn=9783540265269 |page=118 |url=https://books.google.com/books?id=gzUxpU-PXVoC&pg=PA118 |language=en}}</ref>|| [[Emil Artin]] || 325
+|-
+|[[Bateman–Horn conjecture]]||number theory|| ||[[Paul T. Bateman]] and [[Roger Horn]] || 245
+|-
+|[[Baum–Connes conjecture]]||operator K-theory||⇒[[Gromov-Lawson-Rosenberg conjecture]]<ref name="Valette">{{cite book |last1=Valette |first1=Alain |title=Introduction to the Baum-Connes Conjecture |date=2002 |publisher=Springer Science & Business Media |isbn=9783764367060 |page=viii |url=https://books.google.com/books?id=fRWjukxro3oC&pg=PR8 |language=en}}</ref><br>⇒[[Kaplansky-Kadison conjecture]]<ref name="Valette"/><br>⇒[[Novikov conjecture]]<ref name="Valette"/>||[[Paul Baum (mathematician)|Paul Baum]] and [[Alain Connes]] || 2670
+|-
+|[[Beal's conjecture]]||number theory|| ||[[Andrew Beal]] || 142
+|-
+|[[Beilinson conjecture]]||number theory|| ||[[Alexander Beilinson]] || 461
+|-
+|[[Quantum chaos#Berry–Tabor conjecture|Berry–Tabor conjecture]]||geodesic flow|| ||[[Michael Berry (physicist)|Michael Berry]] and Michael Tabor || 239
+|-
+|[[Big-line-big-clique conjecture]]||discrete geometry|| || ||
+|-
+|[[Birch and Swinnerton-Dyer conjecture]]||number theory|| ||[[Bryan John Birch]] and [[Peter Swinnerton-Dyer]] || 2830
+|-
+|[[Birch–Tate conjecture]]||number theory|| ||[[Bryan John Birch]] and [[John Tate (mathematician)|John Tate]] || 149
+|-
+|[[Birkhoff conjecture]]||integrable systems|| || [[George David Birkhoff]] || 345
+|-
+|[[Bloch–Beilinson conjectures]]||number theory|| ||[[Spencer Bloch]] and [[Alexander Beilinson]] || 152
+|-
+|[[Bloch–Kato conjecture]]||algebraic K-theory|| ||[[Spencer Bloch]] and [[Kazuya Kato]] || 1620
+|-
+|[[Bochner–Riesz conjecture]]||harmonic analysis|| ⇒restriction conjecture⇒[[Kakeya maximal function conjecture]]⇒[[Kakeya dimension conjecture]]<ref>{{cite book |last1=Simon |first1=Barry |title=Harmonic Analysis |date=2015 |publisher=American Mathematical Soc. |isbn=9781470411022 |page=685 |url=https://books.google.com/books?id=YkUACwAAQBAJ&pg=PA685 |language=en}}</ref>||[[Salomon Bochner]] and [[Marcel Riesz]] || 236
+|-
+|[[Bombieri–Lang conjecture]]||diophantine geometry|| ||[[Enrico Bombieri]] and [[Serge Lang]] || 181
+|-
+|[[Borel conjecture]]||geometric topology|| ||[[Armand Borel]] || 981
+|-
+|[[Farrell-Jones conjecture#Bost conjecture|Bost conjecture]]||geometric topology|| || [[Jean-Benoît Bost]] || 65
+|-
+|[[Brennan conjecture]]||complex analysis|| || James E. Brennan || 110
+|-
+|[[Brocard's conjecture]]||number theory|| || [[Henri Brocard]] || 16
+|-
+|[[Brumer–Stark conjecture]]||number theory|| || Armand Brumer and [[Harold Stark]] || 208
+|-
+|[[Bunyakovsky conjecture]]||number theory|| || [[Viktor Bunyakovsky]] || 43
+|-
+|[[Carmichael totient conjecture]]||number theory|| || [[Robert Daniel Carmichael]] ||
+|-
+|[[Casas-Alvero conjecture]]||polynomials|| || Eduardo Casas-Alvero || 56
+|-
+|[[Aliquot sequence|Catalan–Dickson conjecture on aliquot sequences]]||number theory|| || [[Eugène Charles Catalan]] and [[Leonard Eugene Dickson]] || 46
+|-
+|[[Catalan's Mersenne conjecture]]||number theory|| || [[Eugène Charles Catalan]]|| 
+|-
+|[[Cherlin–Zilber conjecture]]||group theory|| || Gregory Cherlin and [[Boris Zilber]] || 86
+|-
+|[[Chowla conjecture]]||Möbius function||⇒[[Sarnak conjecture]]<ref>{{cite web |last1=Tao |first1=Terence |title=The Chowla conjecture and the Sarnak conjecture |url=https://terrytao.wordpress.com/2012/10/14/the-chowla-conjecture-and-the-sarnak-conjecture/ |website=What's new |language=en |date=15 October 2012}}</ref><ref>{{cite book |last1=Ferenczi |first1=Sébastien |last2=Kułaga-Przymus |first2=Joanna |last3=Lemańczyk |first3=Mariusz |title=Ergodic Theory and Dynamical Systems in their Interactions with Arithmetics and Combinatorics: CIRM Jean-Morlet Chair, Fall 2016 |date=2018 |publisher=Springer |isbn=9783319749082 |page=185 |url=https://books.google.com/books?id=wSpgDwAAQBAJ&pg=PA185 |language=en}}</ref> ||[[Sarvadaman Chowla]] ||
+|-
+|[[Collatz conjecture]]||number theory|| ||[[Lothar Collatz]] || 1440
+|-
+|[[Cramér's conjecture]]||number theory|| ||[[Harald Cramér]] || 32
+|-
+|[[Conway's thrackle conjecture]]||graph theory|| ||[[John Horton Conway]] || 150
+|-
+|[[Deligne conjecture]]||monodromy|| ||[[Pierre Deligne]] || 788
+|-
+|[[Dittert conjecture]]||combinatorics|| || Eric Dittert || 11
+|-
+|[[Eilenberg−Ganea conjecture]]||algebraic topology|| || [[Samuel Eilenberg]] and [[Tudor Ganea]] || 96
+|-
+|[[Elliott–Halberstam conjecture]]||number theory|| ||[[Peter D. T. A. Elliott]] and [[Heini Halberstam]] || 300
+|-
+|[[Erdős–Faber–Lovász conjecture]]||graph theory|| || [[Paul Erdős]], [[Vance Faber]], and [[László Lovász]] || 172
+|-
+|[[Erdős–Gyárfás conjecture]]||graph theory|| || [[Paul Erdős]] and [[András Gyárfás]] || 37
+|-
+|[[Erdős–Straus conjecture]]||number theory|| || [[Paul Erdős]] and [[Ernst G. Straus]] || 103
+|-
+|[[Farrell–Jones conjecture]]||geometric topology|| || [[F. Thomas Farrell]] and [[Lowell E. Jones]] || 545
+|-
+|[[Filling area conjecture]]||differential geometry|| ||n/a || 60
+|-
+|[[Firoozbakht's conjecture]]||number theory|| || [[Farideh Firoozbakht]] || 33
+|-
+|[[Fortune's conjecture]]||number theory|| || [[Reo Fortune]] || 16
+|-
+|[[Four exponentials conjecture]]||number theory|| ||n/a || 110
+|-
+|[[Frankl conjecture]]||combinatorics|| || [[Péter Frankl]] || 83
+|-
+|[[Gauss circle problem]]||number theory|| || [[Carl Friedrich Gauss]] || 553
+|-
+|[[Gilbert–Pollack conjecture on the Steiner ratio of the Euclidean plane]]||metric geometry|| || [[Edgar Gilbert]] and [[Henry O. Pollak]] || 
+|-
+|[[Gilbreath conjecture]]||number theory|| || [[Norman Laurence Gilbreath]] || 34
+|-
+|[[Goldbach's conjecture]]||number theory||⇒The [[ternary Goldbach conjecture]], which was the original formulation.<ref>{{cite book |last1=Weisstein |first1=Eric W. |title=CRC Concise Encyclopedia of Mathematics |date=2002 |publisher=CRC Press |isbn=9781420035223 |page=1203 |url=https://books.google.com/books?id=D_XKBQAAQBAJ&pg=PA1203 |language=en}}</ref> ||[[Christian Goldbach]] || 5880
+|-
+|[[1/3–2/3 conjecture#Generalizations and related results|Gold partition conjecture]]<ref>M. Peczarski, The gold partition conjecture, it Order 23(2006): 89–95.</ref>||order theory|| ||n/a || 25
+|-
+|[[Goldberg–Seymour conjecture]]||graph theory|| || Mark K. Goldberg and [[Paul Seymour (mathematician)|Paul Seymour]] || 57
+|-
+|[[Goormaghtigh conjecture]]||number theory|| || [[René Goormaghtigh]] || 14
+|-
+|[[Green's conjecture]]||algebraic curves|| || [[Mark Lee Green]] || 150
+|-
+|[[Grimm's conjecture]]||number theory|| || Carl Albert Grimm || 46
+|-
+|[[Grothendieck–Katz p-curvature conjecture]]||differential equations|| ||[[Alexander Grothendieck]] and [[Nick Katz]] || 98
+|-
+|[[Hadamard conjecture]]||combinatorics|| || [[Jacques Hadamard]] || 858
+|-
+|[[Herzog–Schönheim conjecture]]||group theory|| || Marcel Herzog and Jochanan Schönheim || 44
+|-
+|[[Hilbert–Smith conjecture]]||geometric topology|| || [[David Hilbert]] and [[Paul Althaus Smith]] || 219
+|-
+|[[Homological conjectures in commutative algebra]]||commutative algebra|| ||n/a ||
+|- 
+| [[Ibragimov–Iosifescu conjecture for φ-mixing sequences]]||probability theory|| ||[[Ildar Ibragimov]], [[:ro:Marius Iosifescu]] ||
+|-
+|[[Invariant subspace problem]]||functional analysis|| ||n/a || 2120
+|-
+|[[Jacobson's conjecture]]||ring theory|| ||[[Nathan Jacobson]] || 127
+|-
+|[[Kaplansky conjecture]]s||ring theory|| ||[[Irving Kaplansky]] || 466
+|-
+|[[Keating–Snaith conjecture]]||number theory|| || [[Jonathan Keating]] and [[Nina Snaith]] || 48
+|-
+|[[Köthe conjecture]]||ring theory|| || [[Gottfried Köthe]] || 167
+|-
+|[[Kung–Traub conjecture]]||iterative methods|| || [[H. T. Kung]] and [[Joseph F. Traub]] || 332
+|-
+|[[Legendre's conjecture]]||number theory|| || [[Adrien-Marie Legendre]] || 110
+|-
+|[[Lemoine's conjecture]]||number theory|| || [[Émile Lemoine]] || 13
+|-
+|[[Lenstra–Pomerance–Wagstaff conjecture]]||number theory|| || [[Hendrik Lenstra]], [[Carl Pomerance]], and [[Samuel S. Wagstaff Jr.]] || 32
+|-
+|[[Leopoldt's conjecture]]||number theory|| || [[Heinrich-Wolfgang Leopoldt]] || 773 <!-- match without 's -->
+|-
+|[[List coloring conjecture]]||graph theory|| ||n/a || 300 <!-- including colour -->
+|-
+|[[Littlewood conjecture]]||diophantine approximation||⇐[[Margulis conjecture]]<ref>{{cite book |last1=Burger |first1=Marc |last2=Iozzi |first2=Alessandra|author2-link=Alessandra Iozzi |title=Rigidity in Dynamics and Geometry: Contributions from the Programme Ergodic Theory, Geometric Rigidity and Number Theory, Isaac Newton Institute for the Mathematical Sciences Cambridge, United Kingdom, 5 January – 7 July 2000 |date=2013 |publisher=Springer Science & Business Media |isbn=9783662047439 |page=408 |url=https://books.google.com/books?id=hJ7zCAAAQBAJ&pg=PA408 |language=en}}</ref> ||[[John Edensor Littlewood]] || 1230
+|-
+|[[Lovász conjecture]]||graph theory|| || [[László Lovász]] || 560
+|-
+|[[MNOP conjecture]]||algebraic geometry|| ||n/a || 63
+|-
+|[[Manin conjecture]]||diophantine geometry|| ||[[Yuri Manin]] || 338
+|-
+|[[Marshall Hall's conjecture]]||number theory|| ||[[Marshall Hall, Jr.]] || 44 <!-- results ("Hall's conjecture" cube) -->
+|-
+|[[Mazur's conjectures]]||diophantine geometry|| || [[Barry Mazur]] || 97
+|-
+|[[Montgomery's pair correlation conjecture]]||number theory|| ||[[Hugh Lowell Montgomery]] || 77
+|-
+|[[n conjecture]]||number theory|| ||n/a || 126 <!-- results for ("n conjecture" coprime) -->
+|-
+|[[New Mersenne conjecture]]||number theory|| || [[Marin Mersenne]] || 47
+|-
+|[[Novikov conjecture]]||algebraic topology|| ||[[Sergei Novikov (mathematician)|Sergei Novikov]] || 3090
+|-
+|[[Oppermann's conjecture]]||number theory|| || [[Ludvig Oppermann]] || 12
+|-
+|[[Petersen graph#Petersen coloring conjecture|Petersen coloring conjecture]]||graph theory|| || [[Julius Petersen]] || 52
+|-
+|[[Pierce–Birkhoff conjecture]]||real algebraic geometry|| || Richard S. Pierce and [[Garrett Birkhoff]] || 96
+|-
+|[[Pillai's conjecture]]||number theory|| || [[Subbayya Sivasankaranarayana Pillai]] || 33
+|-
+|[[De Polignac's conjecture]]||number theory|| || [[Alphonse de Polignac]] || 46
+|-
+|[[Quantum PCP conjecture]]||computational complexity|| || ||
+|-
+|[[quantum unique ergodicity conjecture]]||dynamical systems|| 2004, [[Elon Lindenstrauss]], for arithmetic [[hyperbolic surface]]s,<ref>{{cite web|url=http://www.math.kth.se/4ecm/prizes.ecm.html|title=EMS Prizes|website=www.math.kth.se}}</ref> 2008, [[Kannan Soundararajan]] & [[Roman Holowinsky]], for [[holomorphic form]]s of increasing weight for [[Hecke eigenform]]s on noncompact [[arithmetic surface]]s<ref>{{cite web |url=http://matematikkforeningen.no/INFOMAT/08/0810.pdf |title=Archived copy |accessdate=2008-12-12 |url-status=dead |archiveurl=https://web.archive.org/web/20110724181506/http://matematikkforeningen.no/INFOMAT/08/0810.pdf |archivedate=2011-07-24 }}</ref>||n/a || 281
+|-
+|[[Reconstruction conjecture]]||graph theory|| ||n/a || 1040
+|-
+|[[Riemann hypothesis]]||number theory||⇐[[Generalized Riemann hypothesis]]⇐[[Grand Riemann hypothesis]]<br>⇔[[De Bruijn–Newman constant]]=0<br>⇒[[density hypothesis]], [[Lindelöf hypothesis]]<br>See [[Hilbert–Pólya conjecture]]. For other ''Riemann hypotheses'', see the [[Weil conjectures]] (now theorems).||[[Bernhard Riemann]]||24900
+|-
+|[[Ringel–Kotzig conjecture]]||graph theory|| || [[Gerhard Ringel]] and [[Anton Kotzig]] || 187
+|-
+|[[Rudin's conjecture]]||additive combinatorics|| ||[[Walter Rudin]] || 16
+|-
+|[[Sarnak conjecture]]||topological entropy|| ||[[Peter Sarnak]] || 295
+|-
+|[[Sato–Tate conjecture]]||number theory|| || [[Mikio Sato]] and [[John Tate (mathematician)|John Tate]] || 1080
+|-
+|[[Schanuel's conjecture]]||number theory|| || [[Stephen Schanuel]] || 329
+|-
+|[[Schinzel's hypothesis H]]||number theory|| ||[[Andrzej Schinzel]] || 49
+|-
+|[[Scholz conjecture]]||addition chains|| || [[Arnold Scholz]] || 41
+|-
+|[[Second Hardy–Littlewood conjecture]]||number theory|| ||[[G. H. Hardy]] and [[John Edensor Littlewood]] || 30
+|-
+|[[Selfridge's conjecture]]||number theory|| || [[John Selfridge]] || 6
+|-
+|[[Singmaster's conjecture]]||binomial coefficients|| ||[[David Singmaster]] || 8
+|-
+|[[Spectral gap conjecture]]||ergodic theory|| || ||
+|-
+|[[Standard conjectures on algebraic cycles]]||algebraic geometry|| ||n/a || 234 <!-- most citations of a book of that name -->
+|-
+|[[Tate conjecture]]||algebraic geometry|| || [[John Tate (mathematician)|John Tate]] ||
+|-
+|[[Toeplitz' conjecture]]||Jordan curves|| || [[Otto Toeplitz]] ||
+|-
+|[[Tuza's conjecture]]||graph theory|| ||Zsolt Tuza||
+|-
+|[[Twin prime]] conjecture||number theory|| ||n/a ||1700
+|-
+|[[Ulam's packing conjecture]]||packing|| || [[Stanislaw Ulam]] ||
+|-
+|Unicity conjecture for [[Markov number]]s||number theory|| || [[Andrey Markov]] (by way of [[Markov number]]s) ||
+|-
+|[[Uniformity conjecture]]||diophantine geometry|| ||n/a ||
+|-
+|[[Unique games conjecture]]||computational complexity|| ||n/a ||
+|-
+|[[Kummer–Vandiver conjecture]]||number theory|| || [[Ernst Kummer]] and [[Harry Vandiver]] ||
+|-
+|[[Virasoro conjecture]]||algebraic geometry|| || [[Miguel Ángel Virasoro (physicist)|Miguel Ángel Virasoro]] ||
+|-
+|[[Vizing's conjecture]]||graph theory|| || [[Vadim G. Vizing]] ||
+|-
+|[[Vojta's conjecture]]||number theory||⇒[[abc conjecture]] ||[[Paul Vojta]] ||
+|-
+|[[Waring's conjecture]]||number theory|| || [[Edward Waring]] ||
+|-
+|[[Weight monodromy conjecture]]||algebraic geometry|| ||n/a ||
+|-
+|[[Whitehead conjecture]]||algebraic topology|| || [[J. H. C. Whitehead]] ||
+|-
+|[[Zauner's conjecture]]||operator theory|| || Gerhard Zauner ||
+|}
+
+==Conjectures with resolved and unresolved cases==
+The following conjectures are treated in reliable sources as having distinct recognized cases, settings, or parameter regimes with different resolution statuses. At least one such case must have been completely resolved, either affirmatively or negatively, while at least one other remains open. Results concerning only isolated special cases, individual instances, or weaker or conditional forms do not by themselves qualify.
+The column "cites" lists the number of results for a [[Google Scholar]] search for the term, in double quotes {{as of|lc=y|August 2026}}.
+{| class="wikitable sortable" style="text-align:center; border:none;"
+|-
+!Conjecture
+!Field
+!Comments
+!Eponym(s)
+!Cites
+|-
+| [[Carathéodory conjecture]]
+| [[Differential geometry]]
+| Disproved for <math>C^\infty</math> convex surfaces; whether the real-analytic case has been proved remains disputed
+| [[Constantin Carathéodory]]
+| 185
+|-
+
+
+| [[Cartan–Hadamard conjecture]]
+| [[Riemannian geometry]]
+| Proved in dimensions 2, 3, and 4; open in higher dimensions
+| [[Élie Cartan]] and [[Jacques Hadamard]]
+| 103
+|-
+| [[Dixmier conjecture]]
+| [[Abstract algebra]]
+| The generalized conjecture is false for <math>A_n</math> with <math>n\geq 3</math>; the cases <math>A_1</math> and <math>A_2</math> remain open
+| [[Jacques Dixmier]]
+| 267
+|-
+| [[Fuglede's conjecture]]
+| [[Harmonic analysis]]
+| False in dimensions 3 and higher; open in dimensions 1 and 2
+| [[Bent Fuglede]]
+| 152
+|-
+| [[Generalized Poincaré conjecture]]
+| [[Topology]]
+| True in the topological category in all dimensions; in the PL and smooth categories some cases are resolved while others remain open
+| [[Henri Poincaré]]
+| 787
+|-
+| [[Hodge conjecture]]
+| [[Algebraic geometry]]
+| Proved for projective complex manifolds of dimension at most 3 and for various other classes; open in general
+| [[W. V. D. Hodge]]
+| 4020
+|-
+| [[Hopf conjecture]]
+| [[Differential geometry]]
+| The curvature-sign conjecture is proved in dimensions 2 and 4; open in even dimensions 6 and higher
+| [[Heinz Hopf]]
+| 581
+|-
+| [[Jacobian conjecture]]
+| [[Algebraic geometry]]
+| True for <math>n=1</math>; open for <math>n=2</math>; false for <math>n>2</math>
+| [[Carl Gustav Jacob Jacobi]] (by way of the [[Jacobian determinant]])
+| 3450
+|-
+| [[Kakeya conjecture]]
+| [[Geometric measure theory]]
+| Proved in dimensions at most 3; open in dimensions 4 and higher
+| [[Sōichi Kakeya]]
+| 776
+|-
+| [[Lonely runner conjecture]]
+| [[Diophantine approximation]]
+| Proved for 13 runners or fewer; open in general
+| —
+| 253
+|-
+| [[Mahler conjecture]]
+| [[Convex geometry]]
+| Proved in dimensions 2 and 3; open in higher dimensions
+| [[Kurt Mahler]]
+| 580
+|-
+| [[Serre's conjecture II]]
+| [[Number theory]]
+| Proved over perfect fields; over imperfect fields, cases involving anisotropic groups of types <math>E_6</math>, <math>E_7</math>, <math>E_8</math>, and trialitarian <math>D_4</math> remain open
+| [[Jean-Pierre Serre]]
+| 52
+|-
+| [[Serre's multiplicity conjectures]]
+| [[Commutative algebra]]
+| The dimension inequality, non-negativity, and vanishing conjectures are proved; the positivity conjecture remains open in general
+| [[Jean-Pierre Serre]]
+| 7
+|-
+| [[Torsion conjecture]]
+| [[Arithmetic geometry]]
+| Proved for elliptic curves over number fields; the higher-dimensional abelian-variety case remains largely open
+| —
+| 219
+|-
+| [[Weinstein conjecture]]
+| [[Symplectic geometry]]
+| Proved for all closed 3-manifolds and several broader classes; open in general
+| [[Alan Weinstein]]
+| 1320
+|}
+
+==Conjectures now proved (theorems)==
+{{further|List of unsolved problems in mathematics#Problems solved since 1995}}
+The conjecture terminology may persist: theorems often enough may still be referred to as conjectures, using the anachronistic names.
+{| class="wikitable" style="text-align:center; border:none;"
+|-
+!Priority date<ref>In the terms normally used for [[scientific priority]], priority claims are typically understood to be settled by publication date. That approach is certainly flawed in contemporary mathematics, because lead times for publication in mathematical journals can run to several years. The understanding in intellectual property is that the [[priority claim]] is established by a filing date. Practice in mathematics adheres more closely to that idea, with an early manuscript submission to a journal, or circulation of a preprint, establishing a "filing date" that would be generally accepted.</ref>
+!Proved by
+!Former name
+!Field
+!Comments
+|-
+|1962||[[Walter Feit]] and [[John G. Thompson]]||Burnside conjecture that, apart from [[cyclic group]]s, finite simple groups have even order||finite simple groups||[[Feit–Thompson theorem]]⇔trivially the "odd order theorem" that finite groups of odd order are [[solvable group]]s
+|-
+|1968||[[Gerhard Ringel]] and [[John William Theodore Youngs]]||[[Heawood conjecture]]||graph theory||Ringel-Youngs theorem
+|-
+|1971||[[Daniel Quillen]]||[[Adams conjecture]]||algebraic topology||On the J-homomorphism, proposed 1963 by [[Frank Adams]]
+|-
+|1973||[[Pierre Deligne]]||[[Weil conjectures]]||algebraic geometry||⇒[[Ramanujan–Petersson conjecture]]<br>Proposed by [[André Weil]]. Deligne's theorems completed around 15 years of work on the general case.
+|-
+|1975||Henryk Hecht and [[Wilfried Schmid]]||[[Blattner's conjecture]]||representation theory for semisimple groups||
+|-
+|1975||[[William Haboush]]||Mumford conjecture||geometric invariant theory||[[Haboush's theorem]]
+|-
+|1976||[[Kenneth Appel]] and [[Wolfgang Haken]]||[[Four color theorem]]||graph colouring||Traditionally called a "theorem", long before the proof.
+|-
+|1976||[[Daniel Quillen]]; and independently by [[Andrei Suslin]]||Serre's conjecture on projective modules||polynomial rings||[[Quillen–Suslin theorem]]
+|-
+|1977||[[Alberto Calderón]]||Denjoy's conjecture||rectifiable curves||A result claimed in 1909 by [[Arnaud Denjoy]], proved by Calderón as a by-product of work on [[Cauchy singular operator]]s<ref>{{cite book |last1=Dudziak |first1=James |title=Vitushkin's Conjecture for Removable Sets |date=2011 |publisher=Springer Science & Business Media |isbn=9781441967091 |page=39 |url=https://books.google.com/books?id=89A3gdCfPFUC&pg=PA39 |language=en}}</ref>
+|-
+|1978||[[Roger Heath-Brown]] and [[Samuel James Patterson]]||[[Kummer's conjecture on cubic Gauss sums]]||equidistribution|| 
+|-
+|1983||[[Gerd Faltings]]||[[Mordell conjecture]]||number theory||⇐[[Faltings' theorem]], the Shafarevich conjecture on finiteness of isomorphism classes of [[abelian varieties]]. The reduction step was by [[Alexey Parshin]].
+|-
+|1983 onwards||[[Neil Robertson (mathematician)|Neil Robertson]] and [[Paul Seymour (mathematician)|Paul D. Seymour]]||[[Wagner's conjecture]]||graph theory||Now generally known as the [[graph minor theorem]].
+|-
+|1983||[[Michel Raynaud]]||[[Manin–Mumford conjecture]]||diophantine geometry||The [[Tate–Voloch conjecture]] is a quantitative (diophantine approximation) derived conjecture for p-adic varieties.
+|-
+|c.1984||Collective work||[[Smith conjecture]]||knot theory||Based on work of [[William Thurston]] on [[hyperbolic 3-manifold|hyperbolic structures]] on 3-manifolds, with results by [[William Hamilton Meeks, III|William Meeks]] and [[Shing-Tung Yau]] on [[minimal surface]]s in 3-manifolds, also with [[Hyman Bass]], [[Cameron Gordon (mathematician)|Cameron Gordon]], [[Peter Shalen]], and Rick Litherland, written up by Bass and [[John Morgan (mathematician)|John Morgan]].
+|-
+|1984||[[Louis de Branges de Bourcia]]||[[Bieberbach conjecture]], 1916||complex analysis||⇐[[Robertson conjecture]]⇐[[Milin conjecture]]⇐[[de Branges's theorem]]<ref>{{cite book |last1=Weisstein |first1=Eric W. |title=CRC Concise Encyclopedia of Mathematics |date=2002 |publisher=CRC Press |isbn=9781420035223 |page=218 |url=https://books.google.com/books?id=D_XKBQAAQBAJ&pg=PA218 |language=en}}</ref>
+|-
+|1984||[[Gunnar Carlsson]]||[[Segal's conjecture]]||homotopy theory||
+|-
+|1984||[[Haynes Miller]]||[[Sullivan conjecture]]||classifying spaces||Miller proved the version on mapping BG to a finite complex.
+|-
+|1987||[[Grigory Margulis]]||[[Oppenheim conjecture]]||diophantine approximation||Margulis proved the conjecture with [[ergodic theory]] methods.
+|-
+|1989||Vladimir I. Chernousov||[[Weil's conjecture on Tamagawa numbers]]||algebraic groups||The problem, based on Siegel's theory for quadratic forms, submitted to a long series of case analysis steps.
+|-
+|1990||[[Ken Ribet]]||[[epsilon conjecture]]||modular forms||
+|-
+|1992||[[Richard Borcherds]]||[[Conway–Norton conjecture]]||sporadic groups||Usually called [[monstrous moonshine]]
+|-
+|1994||[[David Harbater]] and [[Michel Raynaud]]||[[Abhyankar's conjecture]]||algebraic geometry||
+|-
+|1994||[[Andrew Wiles]]||[[Fermat's Last Theorem]]||number theory||⇔The [[modularity theorem]] for semistable elliptic curves.<br>Proof completed with [[Richard Taylor (mathematician)|Richard Taylor]].
+|-
+|1994||[[Fred Galvin]]||[[Dinitz conjecture]]||combinatorics||
+|-
+|1995||[[Doron Zeilberger]]<ref>{{cite book |last1=Weisstein |first1=Eric W. |title=CRC Concise Encyclopedia of Mathematics |date=2002 |publisher=CRC Press |isbn=9781420035223 |page=65 |url=https://books.google.com/books?id=D_XKBQAAQBAJ&pg=PA65 |language=en}}</ref>||[[Alternating sign matrix conjecture]],||enumerative combinatorics||
+|-
+|1996||[[Vladimir Voevodsky]]||[[Milnor conjecture (K-theory)|Milnor conjecture]]||algebraic K-theory||Voevodsky's theorem, ⇐[[norm residue isomorphism theorem]]⇔[[Beilinson–Lichtenbaum conjecture]], [[Quillen–Lichtenbaum conjecture]].<br> The ambiguous term "Bloch-Kato conjecture" may refer to what is now the norm residue isomorphism theorem.
+|-
+|1998||[[Thomas Callister Hales]]||[[Kepler conjecture]]||sphere packing||
+|-
+|1998||[[Thomas Callister Hales]] and Sean McLaughlin||[[dodecahedral conjecture]]||Voronoi decompositions||
+|-
+|2000||Krzysztof Kurdyka, Tadeusz Mostowski, and Adam Parusiński ||[[Gradient conjecture]]||gradient vector fields||Attributed to [[René Thom]], c.1970.
+|-
+|2001||[[Christophe Breuil]], [[Brian Conrad]], [[Fred Diamond]] and [[Richard Taylor (mathematician)|Richard Taylor]]||[[Taniyama–Shimura conjecture]]||elliptic curves||Now the [[modularity theorem]] for elliptic curves. Once known as the "Weil conjecture".
+|-
+|2001||[[Mark Haiman]]||[[n! conjecture]]||representation theory||
+|-
+|2001||Daniel Frohardt and Kay Magaard<ref>Daniel Frohardt and Kay Magaard, ''Composition Factors of Monodromy Groups'', Annals of Mathematics Second Series, Vol. 154, No. 2 (Sep., 2001), pp. 327–345. Published by: Mathematics Department, Princeton University DOI: 10.2307/3062099 {{JSTOR|3062099}}</ref>||[[Guralnick–Thompson conjecture]]||monodromy groups||
+|-
+|2002||[[Preda Mihăilescu]]||[[Catalan's conjecture]], 1844||exponential diophantine equations||⇐[[Pillai's conjecture]]⇐[[abc conjecture]]<br>Mihăilescu's theorem
+|-
+|-
+|2002||[[Maria Chudnovsky]], [[Neil Robertson (mathematician)|Neil Robertson]], [[Paul Seymour (mathematician)|Paul D. Seymour]], and [[Robin Thomas (mathematician)|Robin Thomas]]||[[strong perfect graph conjecture]]||[[perfect graph]]s||Chudnovsky–Robertson–Seymour–Thomas theorem
+|-
+|2002||[[Grigori Perelman]]||[[Poincaré conjecture]], 1904||3-manifolds||
+|-
+|2003||[[Grigori Perelman]]||[[geometrization conjecture]] of Thurston||3-manifolds||⇒[[spherical space form conjecture]]
+|-
+|2003||[[Ben Green (mathematician)|Ben Green]]; and independently by Alexander Sapozhenko||[[Cameron–Erdős conjecture]]||sum-free sets||
+|-
+|2003||[[Nils Dencker]]||[[Nirenberg–Treves conjecture]]||pseudo-differential operators||
+|-
+|2004 (see comment)||Nobuo Iiyori and Hiroshi Yamaki||[[Frobenius conjecture]]||group theory||A consequence of the [[classification of finite simple groups]], completed in 2004 by the usual standards of pure mathematics.
+|-
+|2004||[[Adam Marcus (mathematician)|Adam Marcus]] and [[Gábor Tardos]]||[[Stanley–Wilf conjecture]]||[[permutation class]]es|||Marcus–Tardos theorem
+|-
+|2004||Ualbai U. Umirbaev and Ivan P. Shestakov||[[Nagata's conjecture on automorphisms]]||polynomial rings||
+|-
+|2004||[[Ian Agol]]; and independently by [[Danny Calegari]]–[[David Gabai]]||tameness conjecture||geometric topology||⇒[[Ahlfors measure conjecture]]
+|-
+|2008||[[Avraham Trahtman]]||[[Road coloring conjecture]]||graph theory||
+|-
+|2008||[[Chandrashekhar Khare]] and [[Jean-Pierre Wintenberger]]||[[Serre's modularity conjecture]]||modular forms||
+|-
+|2009||[[Jeremy Kahn]] and [[Vladimir Markovic]]||[[surface subgroup conjecture]]||3-manifolds||⇒[[Ehrenpreis conjecture]] on quasiconformality
+|-
+|2009||Jeremie Chalopin and Daniel Gonçalves||[[Scheinerman's conjecture]]||intersection graphs||
+|-
+|2010||[[Terence Tao]] and [[Van H. Vu]]||[[circular law]]||random matrix theory||
+|-
+|2011||Joel Friedman; and independently by Igor Mineyev||[[Hanna Neumann conjecture]]||group theory||
+|-
+|2012||[[Simon Brendle]]||[[Hsiang–Lawson's conjecture]]||differential geometry||
+|-
+|2012||[[Fernando Codá Marques]] and [[André Neves]]||[[Willmore conjecture]]||differential geometry||
+|-
+|2013||[[Yitang Zhang]]||bounded gap conjecture||number theory||The sequence of gaps between consecutive prime numbers has a finite [[lim inf]]. See [[Polymath Project#Polymath8]] for quantitative results.
+|-
+|2013||[[Adam Marcus (mathematician)|Adam Marcus]], [[Daniel Spielman]] and [[Nikhil Srivastava]]||[[Kadison–Singer problem]]||functional analysis||The original problem posed by Kadison and Singer was not a conjecture: its authors believed it false. As reformulated, it became the "paving conjecture" for Euclidean spaces, and then a question on random polynomials, in which latter form it was solved affirmatively.
+|-
+|2013||[[Harald Helfgott]]||[[Goldbach's weak conjecture]]||number theory||
+|-
+|2015||[[Jean Bourgain]], Ciprian Demeter, and [[Larry Guth]]||[[Vinogradov's mean-value theorem#The conjectured form|Main conjecture in Vinogradov's mean-value theorem]]||analytic number theory||Bourgain–Demeter–Guth theorem, ⇐ decoupling theorem<ref>{{cite web |title=Decoupling and the Bourgain-Demeter-Guth proof of the Vinogradov main conjecture |url=https://terrytao.wordpress.com/2015/12/10/decoupling-and-the-bourgain-demeter-guth-proof-of-the-vinogradov-main-conjecture/ |website=What's new |language=en |date=10 December 2015}}</ref>
+|-
+|2018||[[Karim Adiprasito]]||[[g-conjecture]]||combinatorics||
+|-
+|2019||[[Dimitris Koukoulopoulos]] and [[James Maynard (mathematician)|James Maynard]]||[[Duffin–Schaeffer conjecture]]||number theory||Rational approximation of irrational numbers
+|-
+|2019||[[Hao Huang (mathematician)|Hao Huang]]||[[Sensitivity theorem|Sensitivity conjecture]]||computational complexity||
+|-
+|2026||Lech Mazur|| [[Sendov's conjecture]]||complex analysis|| With assitance of [[GPT-5.6]] Pro.
+|}
+* [[Deligne's conjecture on 1-motives]]<ref>{{cite book |last1=Holden |first1=Helge |last2=Piene |first2=Ragni |title=The Abel Prize 2013-2017 |date=2018 |publisher=Springer |isbn=9783319990286 |page=51 |url=https://books.google.com/books?id=1NKJDwAAQBAJ&pg=PA51 |language=en}}</ref>
+
+==Disproved (no longer conjectures)==
+The conjectures in the following list were not necessarily generally accepted as true before being disproved.
+* [[Aharoni-Korman conjecture]] also known as the fishbone conjecture 
+* [[Atiyah conjecture]] (not a conjecture to start with)
+* [[Borsuk's conjecture]]
+* [[Bunkbed conjecture]]
+* [[Chinese hypothesis]] (not a conjecture to start with)
+* [[Comon's conjecture]]<ref>{{Cite journal |last=Shitov |first=Yaroslav |date=January 2018 |title=A Counterexample to Comon's Conjecture |url=https://epubs.siam.org/doi/10.1137/17M1131970 |journal=SIAM Journal on Applied Algebra and Geometry |language=en |volume=2 |issue=3 |pages=428–443 |doi=10.1137/17M1131970 |issn=2470-6566|arxiv=1705.08740 }}</ref>
+* [[Doomsday conjecture]]
+* [[Euler's sum of powers conjecture]]
+* [[Ganea conjecture]]
+* [[Generalized Smith conjecture]]
+* [[Hauptvermutung]]
+* [[Hedetniemi's conjecture]], counterexample announced 2019<ref>{{cite web |last1=Kalai |first1=Gil |title=A sensation in the morning news – Yaroslav Shitov: Counterexamples to Hedetniemi's conjecture. |url=https://gilkalai.wordpress.com/2019/05/10/sansation-in-the-morning-news-yaroslav-shitov-counterexamples-to-hedetniemis-conjecture/ |website=Combinatorics and more |language=en |date=10 May 2019}}</ref>
+* [[Hirsch conjecture]] (disproved 2010)
+* [[Kaplansky unit conjecture]]<ref>{{cite journal |last1=Gardam |first1=Giles |title=A counterexample to the unit conjecture for group rings |journal=Annals of Mathematics |date=1 November 2021 |volume=194 |issue=3 |doi=10.4007/annals.2021.194.3.9|arxiv=2102.11818 }}</ref>
+* [[Intersection graph conjecture]]
+* [[Kelvin's conjecture]]
+* [[Kouchnirenko's conjecture]]
+* [[Mertens conjecture]]
+* [[Pólya conjecture]], 1919 (1958)
+* [[Ragsdale conjecture]]
+* [[Schoenflies conjecture]] (disproved 1910)<ref>{{SpringerEOM|title=Schoenflies conjecture|id=Schoenflies_conjecture}}</ref> 
+* [[Tait's conjecture]]
+* [[Von Neumann conjecture]]
+* [[Weyl–Berry conjecture]]
+* [[Williamson conjecture]]
+
+==Refutations of conventional wisdom==
+In contemporary mathematics, ideas are supposedly not accepted absent [[rigorous proof]]. Historically, some statements that were generally accepted were then shown to be false.
+
+*The idea of the [[Pythagoreanism|Pythagoreans]] that all numbers can be expressed as a ratio of two [[integer|whole number]]s. This was disproved by one of [[Pythagoras]]' own disciples, [[Hippasus]], who showed that the square root of two is what we today call an [[irrational number]]. One story claims that he was thrown off the ship in which he and some other Pythagoreans were sailing because his discovery was too heretical.<ref>{{cite book 
+ | last = Farlow | first = Stanley J.
+ | title = Paradoxes in Mathematics
+ | year = 2014
+ | url = https://books.google.com/books?id=d4YUAwAAQBAJ&pg=PA57
+ | publisher = [[Courier Corporation]]
+ | page = 57
+ | isbn = 978-0-486-49716-7
+}}</ref>
+*[[Euclid]]'s [[parallel postulate]] stated that if two lines cross a third in a [[plane (mathematics)|plane]] in such a way that the sum of the "interior angles" is not 180° then the two lines meet. Furthermore, he implicitly assumed that two separate intersecting lines meet at only one point. These assumptions were believed to be true for more than 2000 years, but in light of [[General Relativity]] at least the second can no longer be considered true. In fact the very notion of a straight line in four-dimensional curved [[space-time]] has to be redefined, which one can do as a [[geodesic]]. (But the notion of a plane does not carry over.) It is now recognized that [[Euclidean geometry]] can be studied as a mathematical abstraction, but that the [[universe]] is [[non-Euclidean]].
+*[[Fermat]] conjectured that all numbers of the form <math>2^{2^m}+1</math> (known as [[Fermat number]]s) were prime. However, this conjecture was disproved by [[Euler]], who found that <math>2^{2^5}+1=4,294,967,297 = 641 \times 6,700,417.</math><ref>{{cite book
+ | last1 = Krizek | first1 = Michal 
+ | last2 = Luca | first2 = Florian
+ | last3 = Somer | first3 = Lawrence
+ | title = 17 Lectures on Fermat Numbers: From Number Theory to Geometry
+ | year = 2001
+ | publisher = [[Springer (publisher)|Springer]]
+ | url = https://books.google.com/books?id=6JCBqZ0CMqgC&pg=PA1
+ | page = 1
+ | isbn = 0-387-95332-9
+ | doi = 10.1007/978-0-387-21850-2
+}}</ref>
+*The idea that [[transcendental number]]s were unusual. Disproved by [[Georg Cantor]] who [[Cantor's first uncountability proof|showed]] that there are so many transcendental numbers that it is impossible to make a one-to-one mapping between them and the [[algebraic number]]s. In other words, the [[cardinality]] of the set of transcendentals (denoted <math>\beth_1</math>) is greater than that of the set of algebraic numbers (<math>\aleph_0</math>).<ref>{{cite book
+ | last = McQuarrie | first = Donald Allan
+ | title = Mathematical Methods for Scientists and Engineers
+ | year = 2003
+ | url = https://books.google.com/books?id=FmAAwE8MSwoC&pg=PA711
+ | page = 711
+ | publisher = University Science Books
+| isbn = 978-1-891389-24-5
+ }}</ref>
+*[[Bernhard Riemann]], at the end of his famous 1859 paper "[[On the Number of Primes Less Than a Given Magnitude]]", stated (based on his results) that the [[logarithmic integral function|logarithmic integral]] gives a somewhat too high estimate of the [[prime-counting function]]. The evidence also seemed to indicate this. However, in 1914 [[J. E. Littlewood]] proved that this was not always the case, and in fact it is now known that the first ''x'' for which <math>\pi(x) > \mathrm{li}(x)</math> occurs somewhere before 10<sup>317</sup>. See [[Skewes' number]] for more detail.
+*Naïvely it might be expected that a continuous function must have a derivative or else that the set of points where it is not differentiable should be "small" in some sense. This was disproved in 1872 by [[Karl Weierstrass]], and in fact examples had been found earlier of functions that were nowhere differentiable (see [[Weierstrass function]]). According to Weierstrass in his paper, earlier mathematicians including [[Gauss]] had often assumed that such functions did not exist.
+*It was conjectured in 1919 by [[George Pólya]], based on the evidence, that most numbers less than any particular limit have an odd number of [[prime factor]]s. However, this [[Pólya conjecture]] was disproved in 1958. It turns out that for some values of the limit (such as values a bit more than 906 million),<ref>{{cite journal
+ | last = Lehman | first = R. S.
+ | year =1960
+ | title = On Liouville's function
+ | journal = [[Mathematics of Computation]]
+ | doi = 10.1090/S0025-5718-1960-0120198-5 | doi-access=free
+ | mr = 0120198
+ | jstor = 2003890
+ | volume = 14
+ | issue = 72
+ | pages = 311–320
+}}</ref><ref>{{cite journal
+ |last=Tanaka |first=M. 
+ |date=1980 
+ |title=A Numerical Investigation on Cumulative Sum of the Liouville Function
+ |journal=[[Tokyo Journal of Mathematics]]
+ |doi=10.3836/tjm/1270216093
+ |mr=0584557
+ |volume=3 |issue=1 |pages=187–189
+|doi-access=free}}</ref> most numbers less than the limit have an even number of prime factors.
+
+==See also==
+* [[Erdős conjecture]]s
+* [[Fuglede's conjecture]]
+* [[Millennium Prize Problems]]
+* [[Painlevé conjecture]]
+* [[Mathematical fallacy]]
+* [[Superseded theories in science]]
+* [[List of incomplete proofs]]
+* [[List of unsolved problems in mathematics]]
+* [[List of disproved mathematical ideas]]
+* [[List of unsolved problems]]
+* [[List of lemmas]]
+* [[List of theorems]]
+* [[List of statements undecidable in ZFC]]
+
+==References==
+{{reflist}}
+
+== Further reading ==
+* {{cite book | last1=Nash | first1=J.F. | last2=Rassias | first2=M.T. | title=Open Problems in Mathematics | publisher=Springer International Publishing | year=2016 | isbn=978-3-319-32162-2 | url=https://books.google.com/books?id=Fj2lDAAAQBAJ | access-date=2024-07-20}}
+* {{cite book | last=Guy | first=R. | title=Unsolved Problems in Number Theory | publisher=Springer New York | series=Problem Books in Mathematics | year=2013 | isbn=978-0-387-26677-0 | url=https://books.google.com/books?id=1BnoBwAAQBAJ | access-date=2024-07-20}}
+
+==External links==
+*[http://garden.irmacs.sfu.ca/ Open Problem Garden]
+
+[[Category:Mathematics-related lists|Conjectures|Disproved mathematical ideas]]
+[[Category:Conjectures| ]]
+[[Category:Unsolved problems in mathematics|*List of conjectures]]

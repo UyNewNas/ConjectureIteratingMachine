@@ -1,0 +1,46 @@
+{{Short description|Property of large sets}}
+{{distinguish|Erdős–Turán conjecture on additive bases|}}'''Erdős' conjecture on arithmetic progressions''', often referred to as the '''Erdős–Turán conjecture''', is a [[conjecture]] in [[arithmetic combinatorics]]. It states that if the sum of the reciprocals of the members of a set ''A'' of positive integers diverges, then ''A'' contains arbitrarily long [[arithmetic progression]]s.
+
+Formally, the conjecture states that if ''A'' is a [[Large set (combinatorics)|large set]] in the sense that
+
+<math display="block"> \sum_{n\in A} \frac{1}{n} \ =\ \infty, </math>
+
+then ''A'' contains arithmetic progressions of any given length, meaning that for every positive integer ''k'' there are an integer ''a'' and a non-zero integer ''c'' such that <math>\{a,a{+}c,a{+}2c,\ldots,a{+}kc\}\subset A</math>.
+
+==History==
+
+In 1936,  [[Paul Erdős]] and [[Pál Turán]] made the weaker conjecture that any set of integers with positive [[natural density]] contains infinitely many three-term arithmetic progressions.<ref name="erdos turan">{{citation|authorlink1=Paul Erdős|first1=Paul|last1=Erdős|authorlink2=Pál Turán|first2=Paul|last2=Turán|title=On some sequences of integers|journal=[[Journal of the London Mathematical Society]]|volume=11|issue=4|year=1936|pages=261–264|url=http://www.renyi.hu/~p_erdos/1936-05.pdf|doi=10.1112/jlms/s1-11.4.261}}.</ref> This was proven by [[Klaus Roth]] in 1952, and generalized to arbitrarily long arithmetic progressions by [[Szemerédi]] in 1975 in what is now known as [[Szemerédi's theorem]]. 
+
+In a 1976 talk titled "To the memory of my lifelong friend and collaborator Paul Turán," Erdős offered a prize of US$3000 for a proof of this conjecture.<ref>''Problems in number theory and Combinatorics'', in Proceedings of the Sixth Manitoba Conference on Numerical Mathematics (Univ. Manitoba, Winnipeg, Man., 1976), ''Congress. Numer.'' XVIII, 35–58, Utilitas Math., Winnipeg, Man., 1977</ref> In 1996 he raised the prize to US$5000.<ref>p. 354, Soifer, Alexander (2008); ''[[The Mathematical Coloring Book|The Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of its Creators]]''; New York: Springer. {{isbn|978-0-387-74640-1}}</ref>
+
+==Progress and related results==
+{{See also|Szemerédi's theorem#Quantitative bounds|Roth's theorem on arithmetic progressions#Improving bounds|Salem–Spencer set#Size}}{{unsolved|mathematics|Does every large set of natural numbers contain arbitrarily long arithmetic progressions?}}
+
+Erdős' conjecture on arithmetic progressions can be viewed as a stronger version of Szemerédi's theorem.  Because the sum of the reciprocals of the primes diverges, the [[Green&ndash;Tao theorem]] on arithmetic progressions is a special case of the conjecture.
+
+The [[Szemerédi's theorem#Quantitative bounds|weaker claim]] that ''A'' must contain infinitely many arithmetic progressions of length 3 is a consequence of an improved bound in [[Roth's theorem on arithmetic progressions|Roth's theorem]]. A 2016 paper by [[Thomas Bloom|Bloom]]<ref>{{cite journal |last=Bloom |first=Thomas F. |year=2016 |title=A quantitative improvement for Roth's theorem on arithmetic progressions |journal=Journal of the London Mathematical Society |series=Second Series |volume=93 |issue=3 |pages=643–663 |arxiv=1405.5800 |doi=10.1112/jlms/jdw010 |mr=3509957 |s2cid=27536138}}</ref> proved that if <math>A\subset \{1,...,N\}</math> contains no non-trivial three-term arithmetic progressions then <math>|A|\ll N(\log{\log{N}})/\log{N}</math>.
+
+In 2020 a preprint by Bloom and Sisask<ref>{{cite arXiv |last1=Bloom |first1=Thomas F. |last2=Sisask |first2=Olof |year=2020 |title=Breaking the logarithmic barrier in Roth's theorem on arithmetic progressions |class=math.NT |eprint=2007.03528}}</ref> improved the bound to <math>|A|\ll N/(\log{N})^{1+c}</math> for some absolute constant <math>c>0</math> .
+
+In 2023 a new bound of <math>\exp(-c(\log N)^{1/12})N</math><ref>{{Cite book |last1=Kelley |first1=Zander |last2=Meka |first2=Raghu |chapter=Strong Bounds for 3-Progressions |date=2023-11-06 |title=2023 IEEE 64th Annual Symposium on Foundations of Computer Science (FOCS) |publisher=IEEE |pages=933–973 |doi=10.1109/FOCS57990.2023.00059 |isbn=979-8-3503-1894-4|arxiv=2302.05537 }}</ref><ref>{{Cite arXiv |eprint=2302.05537 |class=math.NT |first1=Zander |last1=Kelley |first2=Raghu |last2=Meka |title=Strong Bounds for 3-Progressions |date=2023-02-10}}</ref><ref>{{Cite web |last=Sloman |first=Leila |date=2023-03-21 |title=Surprise Computer Science Proof Stuns Mathematicians |url=https://www.quantamagazine.org/surprise-computer-science-proof-stuns-mathematicians-20230321/ |access-date= |website=Quanta Magazine |language=en}}</ref> was found by computer scientists Kelley and Meka, with an exposition given in more familiar mathematical language by [[Thomas Bloom|Bloom]] and Sisask,<ref>{{Cite journal |last1=Bloom |first1=Thomas F. |last2=Sisask |first2=Olof |date=2023-12-31 |title=The Kelley–Meka bounds for sets free of three-term arithmetic progressions |url=https://msp.org/ent/2023/2-1/p02.xhtml |journal=Essential Number Theory |language=en |volume=2 |issue=1 |pages=15–44 |doi=10.2140/ent.2023.2.15 |issn=2834-4634|arxiv=2302.07211 }}</ref><ref>{{Cite journal |arxiv=2302.07211 |first1=Thomas F. |last1=Bloom |first2=Olof |last2=Sisask |title=The Kelley–Meka bounds for sets free of three-term arithmetic progressions |journal=Essential Number Theory |date=2023-02-14|volume=2 |pages=15–44 |doi=10.2140/ent.2023.2.15 }}</ref> who have since improved the exponent of the Kelly-Meka bound to <math>\beta=1/9</math>, and conjectured <math>\beta=5/41</math>, in a preprint.<ref>{{Cite arXiv |eprint=2309.02353 |class=math.NT |first1=Thomas F. |last1=Bloom |first2=Olof |last2=Sisask |title=An improvement to the Kelley-Meka bounds on three-term arithmetic progressions |date=2023-09-05}}</ref>
+
+==See also==
+* [[Problems involving arithmetic progressions]]
+* [[List of sums of reciprocals]]
+* [[List of conjectures by Paul Erdős]]
+* [[Müntz–Szász theorem]]
+
+==References==
+{{reflist}}
+*P. Erdős: [http://www.renyi.hu/~p_erdos/1973-24.pdf Résultats et problèmes en théorie de nombres], ''Séminaire Delange-Pisot-Poitou (14e année: 1972/1973), Théorie des nombres'', Fasc 2., Exp. No. 24, pp.&nbsp;7, 
+*P. Erdős and P. Turán, On some sequences of integers, ''J. London Math. Soc.'' 11 (1936), 261–264.
+*P. Erdős: Problems in number theory and combinatorics, Proc. Sixth Manitoba Conf. on Num. Math., ''Congress Numer.'' '''XVIII'''(1977), 35&ndash;58.
+*P. Erdős: On the combinatorial problems which I would most like to see solved, ''Combinatorica'', '''1'''(1981), 28. {{doi|10.1007/BF02579174}}
+
+==External links==
+*[https://mathoverflow.net/q/132648 The Erdős–Turán conjecture or the Erdős conjecture?] on MathOverflow
+
+{{DEFAULTSORT:Erdos conjecture on arithmetic progressions}}
+[[Category:Combinatorics]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

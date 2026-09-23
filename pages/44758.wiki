@@ -1,0 +1,181 @@
+{{Short description|Even integers as sums of two primes}}
+{{Infobox mathematical statement
+| name = Goldbach's conjecture
+| image = File:Letter Goldbach-Euler.jpg
+| image_class = skin-invert-image
+| caption = Letter from Goldbach to Euler dated 7&nbsp;June 1742 ([[Latin]]–[[German language|German]])<ref name="Fuss">{{cite book | type=letter to [[Leonhard Euler]] |first=Christian|last=Goldbach |author-link=Christian Goldbach |chapter=Lettre XLIII |title=Correspondance mathématique et physique de quelques célèbres géomètres du XVIIIème siècle |language=de<!--Letter itself is in German--> |volume=1 |editor-first=Fuss |editor-last=P. H. |location=St. Petersburg |publisher=[[Russian Academy of Sciences|Imperial Academy of Sciences]] |year=1843 |chapter-url=https://books.google.com/books?id=OGMSAAAAIAAJ&pg=PA125 |pages=125–129}}</ref>
+| field = [[Number theory]]
+| conjectured by = [[Christian Goldbach]]
+| conjecture date = 1742
+| open problem = Yes
+| first proof by = 
+| first proof date = 
+| implied by = 
+| consequences = [[Goldbach's weak conjecture]]
+}}
+
+'''Goldbach's conjecture''' is one of the oldest and best-known [[list of unsolved problems in mathematics|unsolved problem]]s in [[number theory]] and all of [[mathematics]]. It states that every [[even and odd numbers|even]] [[natural number]] greater than 2 is the sum of two [[prime number]]s.
+
+The conjecture has been shown to hold for all natural numbers less than {{val|4e18}}, but remains [[mathematical proof|unproven]] despite considerable effort.
+
+==History==
+
+=== Origins ===
+On 7 June 1742, the [[Prussia]]n mathematician [[Christian Goldbach]] wrote a letter to [[Leonhard Euler]] (letter XLIII),<ref>{{cite web|url=http://eulerarchive.maa.org/correspondence/letters/OO0765|title=Letter XLIII, Goldbach to Euler|work=Correspondence of Leonhard Euler|publisher=Mathematical Association of America|date=7 June 1742|access-date=2025-01-19|archive-date=2025-01-20|archive-url=https://web.archive.org/web/20250120135755/http://eulerarchive.maa.org/correspondence/letters/OO0765|url-status=live}}</ref> in which he proposed the following conjecture:
+
+{{quote|Every integer that can be written as the sum of two primes can also be written as the sum of as many primes (including unity) as one wishes, until all terms are units.{{efn|In {{langx|de|...&nbsp;dass jede Zahl, welche aus zweyen numeris primis zusammengesetzt ist, ein aggregatum so vieler numerorum primorum sey, als man will (die unitatem mit dazu gerechnet), bis auf die congeriem omnium unitatum}}}}}}
+
+Goldbach was following the now-abandoned convention of [[Prime number#Primality of one|considering 1]] to be a [[prime number]],<ref name=MathWorldConj>{{MathWorld|title=Goldbach Conjecture|urlname=GoldbachConjecture}}</ref> so that a sum of units would be a sum of primes. He then proposed a second conjecture in the margin of his letter, which implies the first:{{efn|In the printed version published by P.&nbsp;H. Fuss<ref name="Fuss"/> 2 is misprinted as 1 in the marginal conjecture.}}
+
+{{quote|It seems at least, that every integer greater than 2 can be written as the sum of three primes.{{efn|In {{langx|de|Es scheinet wenigstens, dass eine jede Zahl, die grösser ist als 2, ein aggregatum trium numerorum primorum sey.}}}}}}
+
+Euler replied in a letter dated 30 June 1742<ref>{{cite web|url=http://eulerarchive.maa.org/correspondence/letters/OO0766.pdf|title=Letter XLIV, Euler to Goldbach|work=Correspondence of Leonhard Euler|publisher=Mathematical Association of America|date=30 June 1742|access-date=2025-01-19|archive-date=2024-09-17|archive-url=https://web.archive.org/web/20240917121157/http://eulerarchive.maa.org//correspondence/letters/OO0766.pdf|url-status=live}}</ref> and reminded Goldbach of an earlier conversation they had had ({{lang|de|"...&nbsp;so Ew. vormals mit mir communicirt haben&nbsp;..."}}), in which Goldbach had remarked that the first of those two conjectures would follow from the statement
+
+{{block indent|Every positive even integer can be written as the sum of two primes.}}
+
+This is in fact equivalent to his second, marginal conjecture. In the letter dated 30 June 1742, Euler stated:<ref name="theorema">{{cite web
+ |last       = Ingham
+ |first      = A. E.
+ |title      = Popular Lectures
+ |url        = http://www.claymath.org/Popular_Lectures/U_Texas/Riemann_1.pdf
+ |archive-url = https://web.archive.org/web/20030616020619/http://claymath.org/Popular_Lectures/U_Texas/Riemann_1.pdf
+ |archive-date = 2003-06-16
+ |access-date = 2009-09-23
+}}</ref><ref name="PrimeGlossary">{{cite web
+ | last = Caldwell
+ | first = Chris
+ | title = Goldbach's conjecture
+ | year = 2008
+ | url = https://primes.utm.edu/glossary/page.php?sort=goldbachconjecture
+ | access-date = 2008-08-13
+ | archive-date = 2008-09-18
+ | archive-url = https://web.archive.org/web/20080918221738/http://primes.utm.edu/glossary/page.php?sort=GoldbachConjecture
+ | url-status = live
+ }}</ref>
+
+{{quote|That&nbsp;... every even integer is a sum of two primes, I regard as a completely certain theorem, although I cannot prove it.{{efn|In {{langx|de|Dass&nbsp;... ein jeder numerus par eine summa duorum primorum sey, halte ich für ein ganz gewisses theorema, ungeachtet ich dasselbe nicht demonstriren kann.}}}}}}
+
+===Weaker Descartes' conjecture===
+[[René Descartes]] wrote, "Every even number can be expressed as the sum of at most three primes."<ref>Pintz, János. [https://real.mtak.hu/164172/1/PJ_DESCARTES_Conjecture1109.pdf "On a conjecture of Descartes"]. ELKH Rényi Mathematical Institute of the Hungarian Academy of Sciences. Retrieved 20 June 2025.</ref> This proposition is similar to, but weaker than, Goldbach's conjecture. [[Paul Erdős]] said, "Descartes actually discovered this before Goldbach ... but it is better that the conjecture was named for Goldbach because, mathematically speaking, Descartes was infinitely rich and Goldbach was very poor."<ref>{{cite book |last=Hoffman |first=Paul |date=1998 |title=The Man Who Loved Only Numbers |location= United States|publisher=Hyperion Books |page=36 |isbn=978-0-7868-6362-4}}</ref>
+
+=== Partial results ===
+Goldbach's conjecture involving the sum of two primes is much more difficult than the [[weak Goldbach conjecture]], which says that every odd integer greater than 5 is the sum of three primes. Using [[Ivan Vinogradov#Mathematical contributions|Vinogradov's method]], [[Nikolai Chudakov]],<ref>{{Cite journal |last=Chudakov |first=Nikolai G. |year=1937 |script-title=ru:О проблеме Гольдбаха |trans-title=On the Goldbach problem |journal=[[Doklady Akademii Nauk SSSR]] |volume=17 |pages=335–338}}</ref> [[Johannes van der Corput]],<ref>{{cite journal |last=Van der Corput |first=J. G. |year=1938 |title=Sur l'hypothèse de Goldbach |url=http://www.dwc.knaw.nl/DL/publications/PU00016746.pdf |journal=Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen Amsterdam |language=fr |volume=41 |pages=76–80 |archive-date=2013-10-20 |access-date=2013-07-30 |archive-url=https://web.archive.org/web/20131020200916/http://www.dwc.knaw.nl/DL/publications/PU00016746.pdf |url-status=live }}</ref> and [[Theodor Estermann]]<ref>{{cite journal |last=Estermann |first=T. |year=1938 |title=On Goldbach's problem: proof that almost all even positive integers are sums of two primes |journal=Proceedings of the London Mathematical Society |series=2 |volume=44 |pages=307–314 |doi=10.1112/plms/s2-44.4.307}}</ref> showed (1937–1938) that [[almost all]] even numbers can be written as the sum of two primes (in the sense that the fraction of even numbers up to some {{mvar|N}} which can be so written tends towards 1 as {{mvar|N}} increases). In 1930, [[Lev Schnirelmann]] proved that any [[natural number]] greater than 1 can be written as the sum of not more than {{mvar|C}} prime numbers, where {{mvar|C}} is an effectively computable constant; see [[Schnirelmann density]].<ref>Schnirelmann, L. G. (1930). [http://mi.mathnet.ru/eng/umn/y1939/i6/p9 'On the additive properties of numbers"]. First published in ''Proceedings of the Don Polytechnic Institute in Novocherkassk'' (in Russian), vol '''14''' (1930), pp. 3–27, and reprinted in ''Uspekhi Matematicheskikh Nauk'' (in Russian), 1939, no. 6, 9–25.</ref><ref>Schnirelmann, L. G. (1933). First published as [https://link.springer.com/article/10.1007/BF01448914 "Über additive Eigenschaften von Zahlen"] {{Webarchive|url=https://web.archive.org/web/20171027025950/https://link.springer.com/article/10.1007/BF01448914 |date=2017-10-27 }}. In ''[[Mathematische Annalen]]'' (in German), vol. '''107''' (1933), 649–690, and reprinted as [http://mi.mathnet.ru/eng/umn/y1940/i7/p7 "On the additive properties of numbers"] in ''Uspekhi Matematicheskikh Nauk'' (in Russian), 1940, no. 7, 7–46.</ref> Schnirelmann's constant is the lowest number {{mvar|C}} with this property. Schnirelmann himself obtained {{math|''C'' < {{val|800,000}}}}. This result was subsequently enhanced by many authors, such as [[Olivier Ramaré]], who in 1995 showed that every even number {{math|''n'' ≥ 4}} is in fact the sum of at most 6 primes. The best known result stems from the proof of the weak Goldbach conjecture by [[Harald Helfgott]],<ref>{{cite arXiv |eprint=1312.7748 |class=math.NT |first=H. A. |last=Helfgott |title=The ternary Goldbach conjecture is true |date=2013}}</ref> which directly implies that every even number {{math|''n'' ≥ 4}} is the sum of at most 4 primes.<ref>{{Cite journal |last=Sinisalo |first=Matti K. |date=October 1993 |title=Checking the Goldbach Conjecture up to 4 ⋅ 10<sup>11</sup> |url=https://www.ams.org/journals/mcom/1993-61-204/S0025-5718-1993-1185250-6/S0025-5718-1993-1185250-6.pdf |publisher=American Mathematical Society |volume=61 |issue=204 |pages=931–934 |doi=10.2307/2153264 |jstor=2153264 |periodical=Mathematics of Computation |archive-date=2021-04-17 |access-date=2021-04-28 |archive-url=https://web.archive.org/web/20210417005438/https://www.ams.org/journals/mcom/1993-61-204/S0025-5718-1993-1185250-6/S0025-5718-1993-1185250-6.pdf |url-status=live }}</ref><ref>{{cite book |last=Rassias |first=M. Th. |title=Goldbach's Problem: Selected Topics |publisher=Springer |year=2017}}</ref>
+
+In 1924, [[G. H. Hardy|Hardy]] and [[John Edensor Littlewood|Littlewood]] showed<ref name="Partitio Numerorum(V)">{{cite journal | last1=Hardy | first1=G. H. | last2=Littlewood | first2=J. E. | title=Some Problems of "Partitio Numerorum"(V): A Further Contribution to the Study of Goldbach's Problem | journal=Proceedings of the London Mathematical Society | volume=s2-22 | issue=1 | date=1924 | doi=10.1112/plms/s2-22.1.46 | pages=46–56 | url=http://doi.wiley.com/10.1112/plms/s2-22.1.46 | access-date=2026-03-19| url-access=subscription }}</ref> under the assumption of the [[generalized Riemann hypothesis]] that the number of even numbers up to {{mvar|X}} violating the Goldbach conjecture is [[Inequality (mathematics)|much less than]] {{math|''X''<sup>{{1/2}} + ''c''</sup>}} for small {{mvar|c}}.<ref>{{cite arXiv| last=Pintz | first=Janos | title=A new explicit formula in the additive theory of primes with applications I. The explicit formula for the Goldbach and Generalized Twin Prime Problems | date=2018 | eprint=1804.05561 | page= | class=math.NT }}</ref>
+
+In 1948, using [[sieve theory]] methods, [[Alfréd Rényi]] showed that every sufficiently large even number can be written as the sum of a prime and an [[almost prime]] with at most {{mvar|K}} factors.<ref name="Alfréd Rényi 1948">{{cite journal |last=Rényi |first=A. A. |year=1948 |title=On the representation of an even number as the sum of a prime and an almost prime |journal=Izvestiya Akademii Nauk SSSR. Seriya Matematicheskaya |language=ru |volume=12 |pages=57–78}}</ref> [[Chen Jingrun]] showed in 1973 using sieve theory that every [[sufficiently large]] even number can be written as the sum of either two primes, or a prime and a [[semiprime]] (the product of two primes).<ref>{{cite journal |last=Chen |first=J. R. |year=1973 |title=On the representation of a larger even integer as the sum of a prime and the product of at most two primes |journal=Scientia Sinica |volume=16 |pages=157–176}}</ref> See [[Chen's theorem]] for further information.
+
+In 1975, [[Hugh Lowell Montgomery]] and [[Bob Vaughan]] showed that "most" even numbers are expressible as the sum of two primes. More precisely, they showed that there exist positive constants {{mvar|c}} and {{mvar|C}} such that for all sufficiently large numbers {{mvar|N}}, every even number less than {{mvar|N}} is the sum of two primes, with at most {{math|''CN''<sup>1 − ''c''</sup>}} exceptions. In particular, the set of even integers that are not the sum of two primes has [[natural density|density]] zero.
+
+In 1951, [[Yuri Linnik]] proved the existence of a constant {{mvar|K}} such that every sufficiently large even number is the sum of two primes and at most {{mvar|K}} powers of 2. [[János Pintz]] and [[Imre Z. Ruzsa|Imre Ruzsa]] found in 2020 that {{math|1=''K'' = 8}} works.<ref>{{Cite journal |last1=Pintz |first1=J. |last2=Ruzsa |first2=I. Z. |date=2020-08-01 |title=On Linnik's approximation to Goldbach's problem. II |journal=[[Acta Mathematica Hungarica]] |language=en |volume=161 |issue=2 |pages=569–582 |doi=10.1007/s10474-020-01077-8 |s2cid=54613256 |issn=1588-2632 |author-link1=János Pintz}}</ref> Assuming the [[generalized Riemann hypothesis]], {{math|1=''K'' = 7}} also works, as shown by [[Roger Heath-Brown]] and [[Jan-Christoph Schlage-Puchta]] in 2002.<ref>{{cite journal |last1=Heath-Brown |first1=D. R. |last2=Puchta |first2=J. C. |year=2002 |title=Integers represented as a sum of primes and powers of two |journal=[[Asian Journal of Mathematics]] |volume=6 |issue=3 |pages=535–565 |arxiv=math.NT/0201299 |bibcode=2002math......1299H |doi=10.4310/AJM.2002.v6.n3.a7 |s2cid=2843509}}</ref>
+
+In 2013, [[Harald Helfgott]] submitted a proof of the weak conjecture to the ''[[Annals of Mathematics Studies]]'' book series. The article was accepted, but Helfgott decided to undertake major modifications suggested by the referee.<ref name="Helfgott 2013">{{cite arXiv |eprint=1305.2897 |class=math.NT |first=H. A. |last=Helfgott |title=Major arcs for Goldbach's theorem |year=2013}}</ref><ref name="Helfgott 2012">{{cite arXiv |eprint=1205.5252 |class=math.NT |first=H. A. |last=Helfgott |title=Minor arcs for Goldbach's problem |year=2012}}</ref><ref>{{Cite web |title=Harald Andrés Helfgott |url=https://webusers.imj-prg.fr/~harald.helfgott/anglais/book.html |access-date=2021-04-06 |publisher=Institut de Mathématiques de Jussieu-Paris Rive Gauche |archive-date=2021-04-14 |archive-url=https://web.archive.org/web/20210414045306/https://webusers.imj-prg.fr/~harald.helfgott/anglais/book.html |url-status=live }}</ref> The weak conjecture is implied by the Goldbach conjecture, as if {{math|''n'' − 3}} is a sum of two primes, then {{mvar|n}} is a sum of three primes. But the converse implication and thus the Goldbach conjecture remain unproven even if Helfgott's proof is correct.
+
+=== Computational results ===
+For small values of {{mvar|n}}, the Goldbach conjecture (and hence the weak Goldbach conjecture) can be verified directly. For instance, in 1938, [[Nils Pipping]] laboriously verified the conjecture up to {{math|''n'' {{=}} {{val|100,000}}}}.<ref>Pipping, Nils (1890–1982). "Die Goldbachsche Vermutung und der Goldbach-Vinogradowsche Satz". ''Acta Academiae Aboensis, Mathematica et physica'' 11, 4–25, 1938.</ref> With the advent of computers, many more values of {{mvar|n}} have been checked; [[Tomás Oliveira e Silva]] ran a distributed computer search that has verified the conjecture for {{math|''n'' ≤ {{val|4e18}}}} (and double-checked up to {{val|4e17}}) as of 2013. One record from this search is that {{val|3,325,581,707,333,960,528}} is the smallest number that cannot be written as a sum of two primes where one is smaller than 9781.<ref>{{cite journal |last1=Oliviera e Silva |first1=Tomas |last2=Herzog |first2=Siegfried |last3=Pardi |first3=Silvio |title=Empirical Verification of the Even Goldbach Conjecture and Computation of up to 4 · 10<sup>18</sup> |journal=Mathematics of Computation |date=July 2014 |volume=83 |issue=288 |pages=2033–2068 |url=https://www.ams.org/journals/mcom/2014-83-288/S0025-5718-2013-02787-1/S0025-5718-2013-02787-1.pdf |access-date=16 July 2025 |publisher=[[American Mathematical Society]] |archive-date=15 June 2025 |archive-url=https://web.archive.org/web/20250615124608/https://www.ams.org/journals/mcom/2014-83-288/S0025-5718-2013-02787-1/S0025-5718-2013-02787-1.pdf |url-status=live }}</ref>
+
+== Formal statement ==
+Each of the three conjectures has a natural analog in terms of the modern definition of a prime, under which 1 is excluded. A modern version of the first conjecture is:
+{{block indent|Every integer that can be written as the sum of two primes can also be written as the sum of as many primes as one wishes, until either all terms are two (if the integer is even) or one term is three and all other terms are two (if the integer is odd).}}
+A modern version of the marginal conjecture is:
+
+{{block indent|Every integer greater than 5 can be written as the sum of three primes.}}
+
+And a modern version of Goldbach's older conjecture of which Euler reminded him is:
+
+{{block indent| Every even integer greater than 2 can be written as the sum of two primes.}}
+
+These modern versions might not be entirely equivalent to the corresponding original statements. For example, if there were an even integer {{math|''N'' {{=}} ''p'' + 1}} larger than 4, for {{mvar|p}} a prime, that could not be expressed as the sum of two primes in the modern sense, then it would be a counterexample to the modern version of the third conjecture (without being a counterexample to the original version). The modern version is thus probably stronger (but in order to confirm that, one would have to prove that the first version, freely applied to any positive even integer {{mvar|n}}, could not possibly rule out the existence of such a specific counterexample {{mvar|N}}). In any case, the modern statements have the same relationships with each other as the older statements did. That is, the second and third modern statements are equivalent, and either implies the first modern statement.
+
+The third modern statement (equivalent to the second) is the form in which the conjecture is usually expressed today. It is also known as the "[[Mathematical jargon#strong|strong]]", "even", or "binary" Goldbach conjecture. A weaker form of the second modern statement, known as "[[Goldbach's weak conjecture]]", the "odd Goldbach conjecture", or the "ternary Goldbach conjecture", asserts that 
+
+{{block indent|Every odd integer greater than 7 can be written as the sum of three odd primes.}}
+==Heuristic justification==
+[[File:Goldbach partitions of the even integers from 4 to 28 300px.png|class=skin-invert-image|right|thumb|upright=1.2|Sums of two primes at the intersections of three lines]]
+Statistical considerations that focus on the [[prime number theorem|probabilistic distribution of prime numbers]] present informal evidence in favour of the conjecture (in both the weak and strong forms) for [[sufficiently large]] integers: the greater the integer, the more ways there are available for that number to be represented as the sum of two or three other numbers and the more "likely" it becomes that at least one of these representations consists entirely of primes.
+
+[[File:Goldbach-1000000.png|thumb|right|upright=1.2|class=skin-invert-image|Number of ways to write an even number {{mvar|n}} as the sum of two primes {{OEIS|A002375}}]]
+
+A very crude version of the [[heuristic]] probabilistic argument (for the strong form of the Goldbach conjecture) is as follows. The [[prime number theorem]] asserts that an integer {{mvar|m}} selected at random has roughly a {{math|{{sfrac|1|ln ''m''}}}} chance of being prime. Thus if {{mvar|n}} is a large even integer and {{mvar|m}} is a number between 3 and {{math|{{sfrac|''n''|2}}}}, then one might expect the probability of {{mvar|m}} and {{math|''n'' − ''m''}} simultaneously being prime to be {{math|{{sfrac|1|ln ''m'' ln(''n'' − ''m'')}}}}. If one pursues this heuristic, one might expect the total number of ways to write a large even integer {{mvar|n}} as the sum of two odd primes to be roughly
+
+<math display="block">\sum_{m=3}^\frac{n}{2} \frac{1}{\ln m} \frac{1}{\ln(n - m)} \approx \frac{n}{2 (\ln n)^2}.</math>
+
+Since <math>\ln n\ll\sqrt{n}</math>, this quantity goes to infinity as {{mvar|n}} increases, and one would expect that every large even integer has not just one representation as the sum of two primes, but in fact very many such representations.
+
+This heuristic argument is actually somewhat inaccurate because it assumes that the events of {{mvar|m}} and {{math|''n'' − ''m''}} being prime are [[statistical independence|statistically independent]] of each other. For instance, if {{mvar|m}} is odd, then {{math|''n'' − ''m''}} is also odd, and if {{mvar|m}} is even, then {{math|''n'' − ''m''}} is even, a non-trivial relation because, besides the number 2, only odd numbers can be prime. Similarly, if {{mvar|n}} is divisible by 3, and {{mvar|m}} was already a prime other than 3, then {{math|''n'' − ''m''}} would also be [[coprime]] to 3 and thus be slightly more likely to be prime than a general number. Pursuing this type of analysis more carefully, [[G. H. Hardy]] and [[John Edensor Littlewood]] in 1923 conjectured (as part of their ''[[Twin prime#First Hardy–Littlewood conjecture|Hardy–Littlewood prime tuple conjecture]]'') that for any fixed {{math|''c'' ≥ 2}}, the number of representations of a large integer {{mvar|n}} as the sum of {{mvar|c}} primes {{math|''n'' {{=}} ''p''<sub>1</sub> + ⋯ + ''p<sub>c</sub>''}} with {{math|''p''<sub>1</sub> ≤ ⋯ ≤ ''p<sub>c</sub>''}} should be [[asymptotic analysis|asymptotically]] equal to
+
+<math display="block">\left(\prod_p \frac{p \gamma_{c,p}(n)}{(p - 1)^c}\right)
+ \int_{2 \leq x_1 \leq \cdots \leq x_c: x_1 + \cdots + x_c = n} \frac{dx_1 \cdots dx_{c-1}}{\ln x_1 \cdots \ln x_c},</math>
+
+where the product is over all primes {{mvar|p}}, and {{math|''γ''<sub>''c'',''p''</sub>(''n'')}} is the number of solutions to the equation {{math|''n'' {{=}} ''q''<sub>1</sub> + ⋯ + ''q<sub>c</sub>'' mod ''p''}} in [[modular arithmetic]], subject to the [[Constraint (mathematics)|constraints]] {{math|''q''<sub>1</sub>, ..., ''q<sub>c</sub>'' ≠ 0 mod ''p''}}. This formula has been rigorously proven to be asymptotically valid for {{math|''c'' ≥ 3}} from the work of [[Ivan Matveevich Vinogradov]], but is still only a conjecture when {{math|''c'' {{=}} 2}}.{{Citation needed|date=January 2016}} In the latter case, the above formula simplifies to 0 when {{mvar|n}} is odd, and to
+
+<math display="block">
+ 2 \Pi_2 \left(\prod_{p \mid n; p \geq 3} \frac{p - 1}{p - 2}\right) \int_2^n \frac{dx}{(\ln x)^2}
+ \approx 2 \Pi_2 \left(\prod_{p \mid n; p \geq 3} \frac{p - 1}{p - 2}\right) \frac{n}{(\ln n)^2}
+</math>
+
+when {{mvar|n}} is even, where {{math|Π<sub>2</sub>}} is [[Twin prime#First Hardy–Littlewood conjecture|Hardy–Littlewood's twin prime constant]]
+
+<math display="block">\Pi_2 := \prod_{p\;{\rm prime} \ge 3} \left(1 - \frac{1}{(p-1)^2}\right) \approx 0.66016\,18158\,46869\,57392\,78121\,10014\dots</math>
+
+This is sometimes known as the ''extended Goldbach conjecture''. The Goldbach conjecture is in fact very similar to the [[twin prime]] conjecture, and the two conjectures are believed to be of roughly comparable difficulty.
+
+== Goldbach partition function ==
+[[File:goldbachs comet.gif|thumb|upright=1.2|class=skin-invert-image|Goldbach's comet; red, blue and green points correspond respectively the values 0, 1 and 2 modulo 3 of the number.]]
+
+The ''{{vanchor|Goldbach partition}} function'' associates to each even integer the number of ways it can be decomposed into a sum of two primes. Its graph looks like a [[comet]] and is therefore called [[Goldbach's comet]].<ref>{{cite journal | last1 = Fliegel | first1 = Henry F. | last2 = Robertson | first2 = Douglas S. | year = 1989 | title = Goldbach's Comet: the numbers related to Goldbach's Conjecture | journal = Journal of Recreational Mathematics | volume = 21 | issue = 1| pages = 1–7 }}</ref>
+
+Goldbach's comet suggests tight upper and lower bounds on the number of representations of an even number as the sum of two primes, and also that the number of these representations depends strongly on the value modulo 3 of the number.
+
+== Related problems ==
+Although Goldbach's conjecture implies that every positive integer greater than one can be written as a sum of at most three primes, it is not always possible to find such a sum using a [[greedy algorithm]] that uses the largest possible prime at each step. The [[Pillai sequence]] tracks the numbers requiring the largest number of primes in their greedy representations.<ref>{{Cite OEIS|A066352|name=Pillai sequence}}</ref>
+
+Similar problems to Goldbach's conjecture exist in which primes are replaced by other particular sets of numbers, such as the squares:
+* [[Joseph-Louis Lagrange|Lagrange]] proved that [[Lagrange's four-square theorem|every positive integer is the sum of four squares]]. See [[Waring's problem]] and the related [[Waring–Goldbach problem]] on sums of powers of primes.
+* Hardy and Littlewood listed as their Conjecture I: "Every large odd number ({{math|''n'' > 5}}) is the sum of a prime and the double of a prime".<ref>''[[Mathematics Magazine]]'', 66:1 (1993): 45–47.</ref> This conjecture is known as [[Lemoine's conjecture]] and is also called ''Levy's conjecture''.
+* The Goldbach conjecture for [[practical number]]s, a prime-like sequence of integers, was stated by Margenstern in 1984,<ref>{{cite journal |first=M. |last=Margenstern |title=Results and conjectures about practical numbers |journal= [[Comptes rendus de l'Académie des Sciences]]|volume=299 |year=1984 |pages=895–898 }}</ref> and proved by [[Giuseppe Melfi|Melfi]] in 1996:<ref>{{cite journal |first=G. |last=Melfi |title=On two conjectures about practical numbers |journal= [[Journal of Number Theory]] |volume=56|year=1996 | pages=205–210 |doi=10.1006/jnth.1996.0012|doi-access=free }}</ref> every even number is a sum of two practical numbers.
+* [[Harvey Dubner]] proposed a strengthening of the Goldbach conjecture: that every even integer greater than 4208 is the sum of two [[twin prime]]s (not necessarily belonging to the same pair).<ref>{{Cite web|url=https://oeis.org/A007534/a007534.pdf|title=TWIN PRIME CONJECTURES|website=oeis.org|access-date=2021-08-06|archive-date=2021-08-06|archive-url=https://web.archive.org/web/20210806115957/https://oeis.org/A007534/a007534.pdf|url-status=live}}</ref>{{better source|reason= This is raw html, although it seems to have been published in Recreational Mathematics|date=September 2023}} Only 34 even integers less than 4208 are not the sum of two twin primes; Dubner has verified computationally that this list is complete up to <math>2\cdot 10^{10}.</math><ref>{{Cite OEIS|A007534|name=Even numbers that are not the sum of a pair of twin primes}}</ref>{{check|reason=This source states 10^9, and the other source is unclear on the limit|date=September 2023}} A proof of this stronger conjecture would imply not only Goldbach's conjecture but also the [[twin prime conjecture]].
+
+Goldbach's conjecture is used to study computational complexity.<ref name="quanta">{{cite web |url=https://www.quantamagazine.org/how-the-slowest-computer-programs-illuminate-maths-fundamental-limits-20201210/ |title=How the Slowest Computer Programs Illuminate Math's Fundamental Limits |date=10 December 2020 |access-date=24 July 2024 |archive-date=24 July 2024 |archive-url=https://web.archive.org/web/20240724172741/https://www.quantamagazine.org/how-the-slowest-computer-programs-illuminate-maths-fundamental-limits-20201210/ |url-status=live }}</ref>  The connection is made through the [[Busy Beaver]] function, where BB(''n'') is the maximum number of steps taken by any ''n'' state [[Turing machine]] that halts. There is a 27-state Turing machine that halts if and only if Goldbach's conjecture is false.<ref name="quanta"/> Hence if BB(27) was known, and the Turing machine did not stop in that number of steps, it would be known to run forever and hence no counterexamples would exist (proving the conjecture). This is a completely impractical way to settle the conjecture; instead it is used to suggest that BB(27) will be very hard to compute, at least as difficult as settling the Goldbach conjecture.
+{{clear}}
+
+== In popular culture ==
+''Goldbach's Conjecture'' ({{zh|t=哥德巴赫猜想}}) is the title of [[Xu Chi]]'s biography of Chinese mathematician and number theorist [[Chen Jingrun]].
+
+The conjecture is a central point in the plot of [[Apostolos Doxiadis]]'s 1992 novel ''[[Uncle Petros and Goldbach's Conjecture]]'', in [[Isaac Asimov]]'s short story "[[Sixty Million Trillion Combinations]]", and in [[Michelle Richmond]]'s 2008 mystery novel ''No One You Know''.<ref>{{Cite web |title=MathFiction: No One You Know (Michelle Richmond) |type=book review |url=http://kasmana.people.cofc.edu/MATHFICT/mfview.php?callnumber=mf711 |website=Mathematical Fiction |last=Kasman |first=Alex |publisher=College of Charleston |access-date=2019-11-01 |archive-date=2019-11-15 |archive-url=https://web.archive.org/web/20191115144909/http://kasmana.people.cofc.edu/MATHFICT/mfview.php?callnumber=mf711 |url-status=live }}</ref>
+
+Goldbach's conjecture is part of the plot of the 2007 Spanish film ''[[Fermat's Room]]''.
+
+Goldbach's conjecture is featured as the main topic of research of the eponymous character Marguerite in the 2023 French-Swiss film ''[[Marguerite's Theorem]]''.<ref>Morain, Odile. [https://www.francetvinfo.fr/culture/cinema/sorties-de-films/le-theoreme-de-marguerite-jean-pierre-darroussin-et-ella-rumpf-dans-la-folie-creatrice-des-maths_6147984.html ''Le Théorème de Marguerite''] {{Webarchive|url=https://web.archive.org/web/20231106063821/https://www.francetvinfo.fr/culture/cinema/sorties-de-films/le-theoreme-de-marguerite-jean-pierre-darroussin-et-ella-rumpf-dans-la-folie-creatrice-des-maths_6147984.html |date=2023-11-06 }}.
+[[France Télévisions|franceinfo:culture]]</ref>
+
+Goldbach's conjecture is a plot device in the [[Frederik Pohl]] novella "[[The Gold at the Starbow's End]]."<ref>[[Frederik Pohl]], "[[The Gold at the Starbow's End]]," ''[[Analog Science Fiction/Science Fact]]'', Vol. 89, No. 1 (March 1972), ed. Ben Bova (New York: [[Condé Nast]]).</ref>
+
+==Notes==
+{{Notelist}}
+
+==References==
+{{Reflist}}
+
+== Further reading ==
+* {{Cite journal |doi=10.1090/S1079-6762-97-00031-0 |last1=Deshouillers |first1=J.-M. |last2=Effinger |first2=G. |last3=te Riele |first3=H. |last4=Zinoviev |first4=D. |year=1997 |title=A complete Vinogradov 3-primes theorem under the Riemann hypothesis |journal=[[Electronic Research Announcements of the American Mathematical Society]] |volume=3 |issue=15 |pages=99–104 |url=https://www.ams.org/era/1997-03-15/S1079-6762-97-00031-0/S1079-6762-97-00031-0.pdf |doi-access=free |archive-date=2008-07-25 |access-date=2021-04-28 |archive-url=https://web.archive.org/web/20080725093829/http://www.ams.org/era/1997-03-15/S1079-6762-97-00031-0/S1079-6762-97-00031-0.pdf |url-status=live }}
+* {{Cite journal |last1=Montgomery |first1=H. L. |last2=Vaughan |first2=R. C. |year=1975 |title=The exceptional set in Goldbach's problem |url=http://matwbn.icm.edu.pl/ksiazki/aa/aa27/aa27126.pdf |journal=[[Acta Arithmetica]] |volume=27 |pages=353–370 |doi=10.4064/aa-27-1-353-370 |doi-access=free |archive-date=2024-09-17 |access-date=2018-09-05 |archive-url=https://web.archive.org/web/20240917195520/http://matwbn.icm.edu.pl/ksiazki/aa/aa27/aa27126.pdf |url-status=live }}
+* [http://www.i-programmer.info/news/112-theory/4211-goldbach-conjecture-closer-to-solved.html Terence Tao proved that all odd numbers are at most the sum of five primes] {{Webarchive|url=https://web.archive.org/web/20130214081220/http://www.i-programmer.info/news/112-theory/4211-goldbach-conjecture-closer-to-solved.html |date=2013-02-14 }}.
+* [http://mathworld.wolfram.com/GoldbachConjecture.html Goldbach Conjecture] {{Webarchive|url=https://web.archive.org/web/20190728161215/http://mathworld.wolfram.com/GoldbachConjecture.html |date=2019-07-28 }} at [[MathWorld]].
+
+== External links ==
+*{{Commons category-inline}}
+* {{springer|title=Goldbach problem|id=p/g044550}}
+* [http://www.math.dartmouth.edu/~euler/correspondence/letters/OO0765.pdf Goldbach's original letter to Euler &mdash; PDF format (in German and Latin)] {{Webarchive|url=https://web.archive.org/web/20090916213213/http://www.math.dartmouth.edu/~euler/correspondence/letters/OO0765.pdf |date=2009-09-16 }}
+*[http://primes.utm.edu/glossary/page.php?sort=GoldbachConjecture ''Goldbach's conjecture''] {{Webarchive|url=https://web.archive.org/web/20080918221738/http://primes.utm.edu/glossary/page.php?sort=GoldbachConjecture |date=2008-09-18 }}, part of Chris Caldwell's [[Prime Pages]].
+*[https://sweet.ua.pt/tos/goldbach.html ''Goldbach conjecture verification''], Tomás Oliveira e Silva's distributed computer search.
+
+{{Prime number conjectures}}
+{{Authority control}}
+
+{{DEFAULTSORT:Goldbach's Conjecture}}
+[[Category:Additive number theory]]
+[[Category:Analytic number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Hilbert's problems]]

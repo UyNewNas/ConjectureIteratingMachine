@@ -1,0 +1,108 @@
+{{short description|Conjecture on the existence of a cycle in a graph which passes through specified edges}}
+
+[[File:Lovász–Woodall conjecture.svg|thumb|An illustration of the Lovász–Woodall conjecture in the [[Petersen graph]]: the graph is 3-connected, and 3 edges lie on a common cycle.]]
+In [[graph theory]], the '''Lovász–Woodall conjecture''' is a long-standing problem on cycles in graphs. It says:
+
+: If {{mvar|G}} is a [[K-vertex-connected graph|{{mvar|k}}-connected]] graph and {{mvar|L}} is a set of {{mvar|k}} [[Matching (graph theory)|independent edges]] in {{mvar|G}}, then {{mvar|G}} has a [[Cycle (graph theory)|cycle]] containing {{mvar|L}}, unless {{mvar|k}} is odd and {{mvar|L}} is an [[edge cut]].
+
+It was proposed independently by [[László Lovász]]<ref>{{citation | last = Lovász | first = László | author-link = László Lovász  | title = Problem 5 | journal = Period. Math. Hungar. | volume = 4 | pages = 82 | year = 1974}}</ref> in 1974 and by [[Douglas Woodall|D. R. Woodall]]<ref name=woodall>{{citation | last = Woodall | first = D. R. | title = Circuits containing specified edges | journal = J. Combin. Theory Ser. B | volume = 22 | issue = 3 | pages = 274–278 | year = 1977 | doi = 10.1016/0095-8956(77)90072-7 | language = en}}</ref> in 1977.
+
+==Background and motivation==
+
+Many results in graph theory, starting with [[Menger's theorem]], guarantee the existence of paths or cycles in a {{mvar|k}}-connected graph. For 2-connected graphs, Menger's theorem is equivalent to the statement that any two vertices lie on a common cycle. A theorem of [[Gabriel Andrew Dirac|G. A. Dirac]] generalizes this claim: if a graph is {{mvar|k}}-connected for {{math|''k'' ≥ 2}}, then for every set of {{mvar|k}} vertices in the graph there is a cycle that passes through all the vertices in the set.<ref>{{Cite journal | last = Dirac | first = Gabriel Andrew | author-link = Gabriel Andrew Dirac | journal = [[Mathematische Nachrichten]] | pages = 61–85 | title = In abstrakten Graphen vorhandene vollständige 4-Graphen und ihre Unterteilungen | volume = 22 | issue = 1–2 | year = 1960 | mr = 0121311 | doi = 10.1002/mana.19600220107}}.</ref>
+
+Another corollary of Menger's theorem is that in 2-connected graphs, any two edges lie on a common cycle. The proof, however, does not generalize to the corresponding statement for {{mvar|k}} edges in a {{mvar|k}}-connected graph; rather, Menger's theorem can be used to show that in a {{mvar|k}}-connected graph, given any 2 edges and {{math|1=''k'' − 2}} vertices, there is a cycle passing through all of them.<ref>{{Cite book | title = Graphs and Hypergraphs | first = Claude | last = Berge | author-link = Claude Berge | publisher = North-Holland Publishing Company | year = 1973 | isbn = 0-444-10399-6 | pages = 169–170}}</ref>
+
+There is one obstacle to the stronger claim that in a {{mvar|k}}-connected graph {{mvar|G}}, given any set {{mvar|L}} of {{mvar|k}} edges, there should be a cycle containing {{mvar|L}}. Suppose that the edges in {{mvar|L}} form an edge cut: the vertices of {{mvar|G}} can be separated into two sets {{mvar|A}} and {{mvar|B}} such that the edges in {{mvar|L}} all join a vertex in {{mvar|A}} to a vertex in {{mvar|B}}, and are the only edges to do so. Then any cycle in {{mvar|G}} can only use an even number of edges of {{mvar|L}}: it must cross from {{mvar|A}} to {{mvar|B}} and from {{mvar|B}} back to {{mvar|A}} an equal number of times. If {{mvar|k}} is odd, this means that no cycle can contain all of {{mvar|L}}.
+
+The Lovász–Woodall conjecture states that this is the only obstacle: given any set {{mvar|L}} of {{mvar|k}} edges, there is a cycle containing {{mvar|L}}, except in the case that {{mvar|k}} is odd and {{mvar|L}} is an edge cut.
+
+Woodall proposed the conjecture as one of several possible statements<ref name=woodall/> that would imply a conjecture made by [[Claude Berge]]: given a {{mvar|k}}-connected graph {{mvar|G}} with [[independence number]] {{math|1=α(''G'')}}, and any [[glossary of graph theory#subgraph|subgraph]] {{mvar|F}} of {{mvar|G}} with at most {{math|1=''k'' − α(''G'')}} edges whose [[component (graph theory)|components]] are all paths, {{mvar|G}} has a [[Hamiltonian cycle]] containing {{mvar|F}}.<ref>Berge, p. 214</ref> In 1982, Roland Häggkvist and [[Carsten Thomassen (mathematician)|Carsten Thomassen]] proved Berge's conjecture by proving one of the weaker statements proposed by Woodall.<ref name="ht">{{citation
+ | last1 = Häggkvist | first1 = Roland
+ | last2 = Thomassen | first2 = Carsten | author-link2 = Carsten Thomassen (mathematician)
+ | title = Circuits through specified edges
+ | doi = 10.1016/0012-365X(82)90078-4
+ | journal = Discrete Mathematics
+ | volume = 41 | issue = 1 | year = 1982 | pages = 29–34| doi-access = free}}</ref>
+
+==Partial results==
+
+As mentioned above, the {{math|1=''k'' = 2}} case of the Lovász–Woodall conjecture follows from Menger's theorem. The {{math|1=''k'' = 3}} case was given as an exercise by Lovász.<ref name=kk/> After the conjecture was made, it was proven for {{math|1=''k'' = 4}} by Péter L. Erdős and E. Győri<ref>{{citation
+ | last1 = Erdős | first1 = Péter L.
+ | last2 = Győri | first2 = E.
+ | doi = 10.1007/BF01955745
+ | issue = 3–4
+ | journal = Acta Mathematica Hungarica
+ | mr = 832725
+ | pages = 311–313
+ | title = Any four independent edges of a 4-connected graph are contained in a circuit
+ | volume = 46
+ | year = 1985| s2cid = 122211600
+ }}</ref> and independently by Michael V. Lomonosov.,<ref>{{citation
+ | last = Lomonosov | first = Michael V.
+ | editor1-last = Korte | editor1-first = Bernhard
+ | editor2-last = Lovász | editor2-first = László
+ | editor3-last = Prömel | editor3-first = Hans Jürgen
+ | editor4-last = Schrijver | editor4-first = Alexander
+ | contribution = Cycles through prescribed elements in a graph
+ | isbn = 3-540-52685-4
+ | mr = 1083381
+ | pages = 215–234
+ | publisher = Springer-Verlag | location = Berlin
+ | series = Algorithms and Combinatorics
+ | title = Paths, flows, and VLSI-layout: Papers from the meeting held at the University of Bonn, Bonn, June 20–July 1, 1988
+ | volume = 9
+ | year = 1990}}</ref> and for {{math|1=''k'' = 5}} by Daniel P. Sanders.<ref>{{citation
+ | last = Sanders | first = Daniel P.
+ | doi = 10.1016/0012-365X(95)00079-C
+ | issue = 1–3
+ | journal = Discrete Mathematics
+ | mr = 1415294
+ | pages = 199–215
+ | title = On circuits through five edges
+ | volume = 159
+ | year = 1996| doi-access = free
+ }}</ref>
+
+Other partial progress toward the conjecture has included versions of the result with a stronger assumption on connectivity. Woodall's paper<ref name=woodall/> included a proof that the conclusion of the conjecture holds if {{mvar|G}} is {{math|1=(2''k'' − 2)}}-connected, and in 1977, Thomassen proved that the conjecture holds if {{mvar|G}} is {{math|1=(3''k'' − 1)/2}}-connected.<ref>{{citation
+ | last = Thomassen | first = Carsten | author-link = Carsten Thomassen (mathematician)
+ | title = Note on circuits containing specified edges
+ | doi = 10.1016/0095-8956(77)90073-9
+ | journal = Journal of Combinatorial Theory, Series B
+ | volume = 22 | issue = 3 | year = 1977 | pages = 279–280}}</ref> In 1982, Häggkvist and Thomassen proved that the conjecture holds if {{mvar|G}} is {{math|1=(''k'' + 1)}}-connected.<ref name=ht/>
+
+In 2002, [[Ken-ichi Kawarabayashi]] proved that under the hypotheses of the conjecture, {{mvar|L}} is either contained in a cycle of {{mvar|G}} or in two disjoint cycles.<ref name=kk>{{citation
+ | last = Kawarabayashi | first = Ken-ichi | author-link = Ken-ichi Kawarabayashi
+ | doi = 10.1006/jctb.2001.2059
+ | issue = 1
+ | journal = Journal of Combinatorial Theory, Series B
+ | mr = 1877899
+ | pages = 1–44
+ | title = One or two disjoint circuits cover independent edges. Lovász-Woodall conjecture
+ | volume = 84
+ | year = 2002| doi-access = free
+ }}</ref>
+
+==Current status==
+
+In two publications in 2002<ref name=kk/> and 2008,<ref>{{citation
+ | last = Kawarabayashi | first = Ken-ichi | author-link = Ken-ichi Kawarabayashi
+ | editor1-last = Lodi | editor1-first = Andrea
+ | editor2-last = Panconesi | editor2-first = Alessandro
+ | editor3-last = Rinaldi | editor3-first = Giovanni
+ | contribution = An improved algorithm for finding cycles through elements
+ | doi = 10.1007/978-3-540-68891-4_26
+ | pages = 374–384
+ | publisher = Springer
+ | series = Lecture Notes in Computer Science
+ | title = Integer Programming and Combinatorial Optimization, 13th International Conference, IPCO 2008, Bertinoro, Italy, May 26-28, 2008, Proceedings
+ | volume = 5035
+ | year = 2008| isbn = 978-3-540-68886-0 }}</ref> Kawarabayashi claimed to have a proof on the conjecture, giving an outline for the proof and leaving several steps to future publications, but the full proof has not been published since.
+
+== References ==
+
+{{Reflist}}
+
+{{DEFAULTSORT:Lovasz-Woodall conjecture}}
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

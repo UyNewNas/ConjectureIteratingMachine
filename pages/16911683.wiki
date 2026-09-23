@@ -1,0 +1,127 @@
+{{short description|Number whose divisors summed twice over equal twice itself}}
+
+In [[number theory]], a '''superperfect number''' is a positive [[integer]] {{mvar|n}} that satisfies
+
+:<math>\sigma^2(n)=\sigma(\sigma(n))=2n\, ,</math>
+
+where {{mvar|σ}} is the [[divisor function|sum-of-divisors function]]. Superperfect numbers are not a generalization of [[perfect number]]s but have a common generalization. The term was coined by D. Suryanarayana (1969).<ref name=Guy99 />
+
+The first few superperfect numbers are:
+
+:[[2 (number)|2]], [[4 (number)|4]], [[16 (number)|16]], [[64 (number)|64]], [[4096 (number)|4096]], [[65536 (number)|65536]], 262144, 1073741824, ... {{OEIS|id=A019279}}.
+
+To illustrate: it can be seen that 16 is a superperfect number as {{nowrap|1=σ(16) = 1 + 2 + 4 + 8 + 16 = 31}}, and {{nowrap|1=σ(31) = 1 + 31 = 32}}, thus {{nowrap|1=σ(σ(16)) = 32 = 2 × 16}}.
+
+If {{mvar|n}} is an ''[[Parity (mathematics)|even]]'' superperfect number, then {{mvar|n}} must be a [[power of 2]], {{math|2<sup>''k''</sup>}}, such that {{math|2<sup>''k''+1</sup> − 1}} is a [[Mersenne prime]].<ref name="Guy99" /><ref name="mathworld">{{MathWorld|urlname=SuperperfectNumber |title=Superperfect Number }}</ref>
+
+It is not known whether there are any [[Odd number|odd]] superperfect numbers. An odd superperfect number {{mvar|n}} would have to be a [[square number]] such that either {{mvar|n}} or {{math|''σ''(''n'')}} is divisible by at least three distinct primes.<ref name=mathworld /> There are no odd superperfect numbers below 7{{e|24}}.<ref name=Guy99>Guy (2004) p. 99.</ref>
+
+== Generalizations ==
+Perfect and superperfect numbers are examples of the wider class of ''m''-superperfect numbers, which satisfy
+
+:<math> \sigma^m(n) = 2n , </math>
+
+corresponding to ''m'' = 1 and 2 respectively.  For ''m'' ≥ 3 there are no even ''m''-superperfect numbers.<ref name=Guy99 />
+
+The ''m''-superperfect numbers are in turn examples of (''m'',''k'')-perfect numbers which satisfy<ref>Cohen & te Riele (1996)</ref>
+
+:<math>\sigma^m(n)=kn\, .</math>
+
+With this notation, perfect numbers are (1,2)-perfect, [[multiperfect number]]s are (1,''k'')-perfect,  superperfect numbers are (2,2)-perfect and ''m''-superperfect numbers are (''m'',2)-perfect.<ref>Guy (2007) p.79</ref>  Examples of classes of (''m'',''k'')-perfect numbers are:
+
+:{| class="wikitable"
+|-
+! ''m''
+! ''k''
+! (''m'',''k'')-perfect numbers
+! [[OEIS]] sequence
+|-
+| 2
+| 2
+| 2, 4, 16, 64, 4096, 65536, 262144, 1073741824, 1152921504606846976
+| {{OEIS link|A019279}}
+|-
+| 2
+| 3
+| 8, 21, 512
+| {{OEIS link|A019281}}
+|-
+| 2
+| 4
+| 15, 1023, 29127, 355744082763
+| {{OEIS link|A019282}}
+|-
+| 2
+| 6
+| 42, 84, 160, 336, 1344, 86016, 550095, 1376256, 5505024, 22548578304
+| {{OEIS link|A019283}}
+|-
+| 2
+| 7
+| 24, 1536, 47360, 343976, 572941926400
+| {{OEIS link|A019284}}
+|-
+| 2
+| 8
+| 60, 240, 960, 4092, 16368, 58254, 61440, 65472, 116508, 466032, 710400, 983040, 1864128, 3932160, 4190208, 67043328, 119304192, 268173312, 1908867072, 7635468288, 16106127360, 711488165526, 1098437885952, 1422976331052
+| {{OEIS link|A019285}}
+|-
+| 2
+| 9
+| 168, 10752, 331520, 691200, 1556480, 1612800, 106151936, 5099962368, 4010593484800
+| {{OEIS link|A019286}}
+|-
+| 2
+| 10
+| 480, 504, 13824, 32256, 32736, 1980342, 1396617984, 3258775296, 14763499520, 38385098752
+| {{OEIS link|A019287}}
+|-
+| 2
+| 11
+| 4404480, 57669920, 238608384
+| {{OEIS link|A019288}}
+|-
+| 2
+| 12
+| 2200380, 8801520, 14913024, 35206080, 140896000, 459818240, 775898880, 2253189120, 16785793024, 22648550400, 36051025920, 51001180160, 144204103680
+| {{OEIS link|A019289}}
+|-
+| 2
+| 13
+| 57120, 932064, 3932040, 251650560
+| {{OEIS link|A019290}}
+|-
+| 2
+| 14
+| 217728, 1278720, 2983680, 5621760, 14008320, 298721280, 955367424, 1874780160, 4874428416, 1957928934528
+| {{OEIS link|A019291}}
+|-
+| 3
+| any
+| 12, 14, 24, 52, 98, 156, 294, 684, 910, 1368, 1440, 4480, 4788, 5460, 5840, ...
+| {{OEIS link|A019292}}
+|-
+| 4
+| any
+| 2, 3, 4, 6, 8, 10, 12, 15, 18, 21, 24, 26, 32, 39, 42, 60, 65, 72, 84, 96, 160, 182, ...
+| {{OEIS link|A019293}}
+|}
+
+== Notes ==
+{{reflist}}
+
+== References ==
+{{refbegin}}
+* {{PlanetMath |urlname=SuperperfectNumber |title=Superperfect Number}}
+* {{cite journal |first1=G. L. |last1=Cohen |first2=H. J. J. |last2=te Riele |title=Iterating the sum-of-divisors function |journal=[[Experimental Mathematics (journal)|Experimental Mathematics]] | volume=5 |issue=2 |year=1996 |pages=93–100 |zbl=0866.11003 |doi=10.1080/10586458.1996.10504580|s2cid=28197771 |url=https://ir.cwi.nl/pub/10355 }}
+* {{cite book |last=Guy |first=Richard K. |author-link=Richard K. Guy |title=Unsolved problems in number theory |publisher=[[Springer-Verlag]] | edition=3rd | year=2004 |isbn=978-0-387-20860-2 |zbl=1058.11001 |at=B9}}
+* {{cite book | editor1-last=Sándor | editor1-first=József | editor2-last=Mitrinović | editor2-first=Dragoslav S. | editor3-last=Crstici |editor3-first=Borislav | title=Handbook of number theory I | location=Dordrecht | publisher=[[Springer-Verlag]] | year=2006 | isbn=1-4020-4215-9 | zbl=1151.11300 }}
+* {{cite journal |zbl=0165.36001 |last=Suryanarayana |first=D. |title=Super perfect numbers |journal=[[Elem. Math.]] |volume=24 |pages=16–17 |year=1969}}
+{{refend}}
+
+{{Divisor classes}}
+{{Classes of natural numbers}}
+
+[[Category:Divisor function]]
+[[Category:Integer sequences]]
+[[Category:Unsolved problems in number theory]]

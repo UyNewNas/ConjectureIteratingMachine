@@ -1,0 +1,29 @@
+{{Short description|Conjectures in additive number theory}}
+'''Pollock's conjectures''' are a set of closely related [[conjecture]]s in [[additive number theory]].<ref name="Dickson">{{cite book |author=Dickson, Leonard Eugene |title=[[History of the Theory of Numbers|History of the Theory of Numbers, Volume II: Diophantine Analysis]] |year=2005 |publisher=[[Dover Publications|Dover]] |isbn=978-0-486-44233-4 |pages=22–23 |author-link=Leonard Eugene Dickson |location=[[Mineola, New York|Mineola, NY]] |orig-year=1921 |edition=reprint}}</ref> They were first stated in 1850 by [[Sir Frederick Pollock, 1st Baronet|Frederick Pollock]],<ref name="Dickson" /><ref name=Pollock>{{cite abstract |first=Frederick |last=Pollock |author-link = Sir Frederick Pollock, 1st Baronet |title = On the extension of the principle of Fermat's theorem on the polygonal numbers to the higher order of series whose ultimate differences are constant. With a new theorem proposed, applicable to all the orders |journal = Abstracts of the Papers Communicated to the Royal Society of London |volume = 5 |year = 1850 |pages = 922–924 |jstor = 111069 }}</ref> a lawyer and politician who contributed many papers on mathematics to the [[Royal Society]]. These conjectures are a partial extension of the [[Fermat polygonal number theorem]] to three-dimensional [[figurate numbers]], also called polyhedral numbers.
+
+== Statement of the conjectures ==
+*'''Pollock tetrahedral numbers conjecture''': Every [[positive integer]] is the sum of at most 5 [[tetrahedral number]]s.
+The numbers that are not the sum of at most 4 tetrahedral numbers are given by the sequence 17, 27, 33, 52, 73, ..., {{OEIS|id=A000797}} of 241 terms, with 343,867 conjectured to be the last such number.<ref name="mathworld">{{Mathworld|title=Pollock's Conjecture|id=PollocksConjecture}}</ref>
+
+*'''Pollock octahedral numbers conjecture''': Every positive integer is the sum of at most 7 [[octahedral number]]s. 
+This conjecture has been proven for all sufficiently large numbers. Namely, every number greater than <math>e^{10^7}\approx6.59\cdot10^{4342944}</math> is sufficiently large.<ref>{{cite journal|last=Elessar Brady|first=Zarathustra|arxiv=1509.04316|doi=10.1112/jlms/jdv061|issue=1|journal=Journal of the London Mathematical Society|mr=3455791|pages=244–272|series=Second Series|title=Sums of seven octahedral numbers|volume=93|year=2016|s2cid=206364502 }}</ref>
+*'''Pollock cube numbers conjecture''': Every positive integer is the sum of at most 9 [[cube numbers]].
+The cube numbers case was established from 1909 to 1912 by [[Arthur Wieferich|Wieferich]]<ref>{{cite journal |last=Wieferich |first=Arthur |author-link=Arthur Wieferich |year=1909 |title=Beweis des Satzes, daß sich eine jede ganze Zahl als Summe von höchstens neun positiven Kuben darstellen läßt |url=http://dz-srv1.sub.uni-goettingen.de/sub/digbib/loader?did=D38240 |journal=Mathematische Annalen |language=de |volume=66 |issue=1 |pages=95–101 |doi=10.1007/BF01450913 |s2cid=121386035}}</ref> and [[Aubrey J. Kempner|A. J. Kempner]].<ref>{{cite journal |last=Kempner |first=Aubrey |year=1912 |title=Bemerkungen zum Waringschen Problem |url=http://dz-srv1.sub.uni-goettingen.de/sub/digbib/loader?did=D28751 |journal=Mathematische Annalen |language=de |volume=72 |issue=3 |pages=387–399 |doi=10.1007/BF01456723 |s2cid=120101223}}</ref>
+*'''Pollock icosahedral and dodecahedral numbers conjectures''': Every positive integer is the sum of at most 13 [[icosahedral number]]s. Every positive integer is the sum of at most 21 [[dodecahedral number]]s.
+These two conjectures are corrected and confirmed true in 2025.<ref>{{cite journal |last1=Basak |first1=Debmalya |last2=Dong|first2=Anji|last3=Saettone|first3=Katerina|last4=Zaharescu|first4=Alexandru|year=2025 |title=Representations as Sums of Icosahedral and Dodecahedral Numbers: Proof of Pollock’s Conjectures|journal=International Mathematics Research Notices |language=en |volume=2025 |issue=13 |doi=10.1093/imrn/rnaf180}}</ref> 
+*'''Pollock centered nonagonal numbers conjecture''': Every positive integer is the sum of at most 11 [[Centered nonagonal number|centered nonagonal numbers]].
+This conjecture was confirmed as true in 2023.<ref>{{Cite journal |last=Kureš |first=Miroslav |date=2023-10-27 |title=A Proof of Pollock's Conjecture on Centered Nonagonal Numbers |url=https://link.springer.com/10.1007/s00283-023-10307-0 |journal=The Mathematical Intelligencer |volume=46 |issue=3 |pages=234–235 |language=en |doi=10.1007/s00283-023-10307-0 |issn=0343-6993|url-access=subscription }}</ref>
+
+==See also==
+*[[Centered polygonal number theorem]]
+
+==References==
+{{reflist}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Figurate numbers]]
+[[Category:Additive number theory]]
+
+
+{{numtheory-stub}}

@@ -1,0 +1,66 @@
+{{unsolved|mathematics|Are there only two solutions to Goormaghtigh's problem?}}
+In [[mathematics]], the '''Goormaghtigh conjecture''' is a [[conjecture]] in [[number theory]] named for the [[Belgium|Belgian]] mathematician [[René Goormaghtigh]] about the solutions of the [[exponential Diophantine equation]]
+
+:<math>\frac{x^m - 1}{x-1} = \frac{y^n - 1}{y-1}</math>
+
+with distinct [[integer]]s <math>x, y</math> larger than one and exponents larger than two. 
+One convention is <math>x > y > 1</math> and in turn <math>n > m > 2</math>.
+
+The conjecture states that the only such solutions are
+
+:<math>\frac{5^3-1}{5-1} = \frac{2^5-1}{2-1} = 31</math>
+
+and
+
+:<math>\frac{90^3-1}{90-1} = \frac{2^{13}-1}{2-1} = 8191.</math>
+
+==Representation==
+The fraction of either side of the conjecture exactly represents a finite [[geometric series]]. Indeed, <math>\textstyle\frac{x^m - 1}{x - 1} = \sum_{k=1}^m x^{k-1}</math> and so, for example, <math>31 = 1 + 5 + 25 = 5^0 + 5^1 + 5^2</math>.
+As such, the exponential Diophantine equation equates two univariate polynomials, with <math>m</math> terms and highest order <math>x^{m-1}</math> on the left hand side, and <math>n>m</math> on the right.
+
+Alternatively, by cross-multiplication of the fraction's denominators, the equation is equivalently expressed as
+:<math>x^m + x\cdot y^n + y = y^n + y\cdot x^m + x,</math>
+or similar forms.
+
+Taking logs, 
+:<math>\frac{m}{n} = \frac{\ln y}{\ln x}  + O(\tfrac{1}{n})</math>
+where the remainder term is a <math>\log_x</math> of a ratio of polynomial expressions.
+Given <math>x,y,n</math>, one has <math>m = n\cdot\log_x y + O(1)</math> with the remainder in the range <math>(-1, 1)</math>.
+
+===In terms of repunits===
+Equating two expressions of the form <math>\textstyle\sum_{k=1}^m \textit{1}\cdot x^{k-1}</math>, the Goormaghtigh conjecture may also be expressed as saying that there are only two numbers that are [[repunit]]s with at least three digits in two different [[radix|bases]]. The number 31 may be represented as ''111'' in base 5 or as ''11111'' in base 2, while 8191 is ''111'' in base 90 or ''1111111111111'' in base 2.
+
+==Partial results==
+The conjecture has been subject to extensive computer supported solution search, especially in small cases (investigating it with <math>x</math> in the thousands, or alternatively with <math>x^m</math> below around a dozen digits) or when the fraction is prime (having hundreds of digits). The latter are referred to as "Goormaghtigh primes".
+Such search is aided by various necessary [[Modular arithmetic|congruence relations]] implied by the equation as well as analytical bounding results, some of which are noted below.
+
+The list also contains known results concerning the finiteness of solution sets under further conditions. Regarding results with asymmetric variable use, again beware that the alternative convention <math>y > x</math> is also used in the literature.
+
+* For fixed <math>x</math> and <math>y</math>, loose upper bounds for <math>n</math> can be computed from <math>x</math> and, as noted, <math>m</math> then equals an integer close to <math>n\cdot\log_x y</math>. {{harvtxt|He|Togbé|2008}} showed that, for each fixed <math>x</math> and <math>y</math>, the equation has at most one solution. For fixed <math>x</math> (or <math>y</math>), equation has at most 15 solutions, and at most two unless <math>y</math> is either odd [[prime power]] times a [[power of two]], or in a finite set,<ref>The set ''{15, 21, 30, 33, 35, 39, 45, 51, 65, 85, 143, 154, 713}''.</ref> in which case there are at most three solutions. Furthermore, there is at most one solution if the odd part of <math>y</math> is squareful unless <math>y</math> has at most two distinct odd [[Integer factorization|prime factors]] or <math>y</math> is in another finite set.<ref>The set ''{315, 495, 525, 585, 630, 693, 735, 765, 855, 945, 1035, 1050, 1170, 1260, 1386, 1530, 1890, 1925, 1950, 1953, 2115, 2175, 2223, 2325, 2535, 2565, 2898, 2907, 3105, 3150, 3325, 3465, 3663, 3675, 4235, 5525, 5661, 6273, 8109, 17575, 39151}''.</ref> If <math>y</math> is a [[power of two]], there is at most one solution except for <math>y=2</math>, in which case there are two known solutions. In fact, here <math>\max(m,n)<4^y</math> and <math>x<2^{2^y}</math>. 
+* For [[prime number|prime]] divisors of <math>x</math> and <math>y</math> lying in a given finite set, [[Ramachandran Balasubramanian|Balasubramanian]] and Shorey proved in 1980 that there are only finitely many possible solutions and that these can in principle be effectively computed.
+* {{harvtxt|Davenport|Lewis|Schinzel|1961}} showed that, for fixed <math>m</math> and <math>n</math>, the equation has only finitely many solutions. The proof of this, however, depends on [[Siegel's theorem on integral points|Siegel's finiteness theorem]], which is ineffective. 
+* {{harvtxt|Nesterenko|Shorey|1998}} showed that in the simplifying situation where the exponents are composed from positive integers as in <math>m-1=d\,r</math> and <math>n-1=d\,s</math> with <math>d > 1</math>, the value <math>\max(x,y,m,n)</math> is bounded by an [[Effective results in number theory|effectively computable]] constant depending only on <math>r</math> and <math>s</math>.
+* {{harvtxt|Yuan|2005}} showed that for <math>m=3</math> and odd <math>n</math>, the equation has no solution other than the two known ones at all.
+
+==See also==
+* [[Feit–Thompson conjecture]]
+* [[Nagell–Ljunggren equation]]
+* [[Mersenne prime]]
+* [[Repdigit]]
+* [[Repunit]]
+
+==References==
+{{Reflist}}
+* Goormaghtigh, Rene. L’Intermédiaire des Mathématiciens 24 (1917), 88
+* {{cite journal | first1=Y. | last1=Bugeaud | first2=T.N. | last2=Shorey | title=On the diophantine equation <math>\tfrac{x^m-1}{x-1}=\tfrac{y^n-1}{y-1}</math> | journal=Pacific Journal of Mathematics | volume=207 |issue=1 | year=2002 | pages=61–75 | doi=10.2140/pjm.2002.207.61 | url=http://msp.org/pjm/2002/207-1/pjm-v207-n1-p04-s.pdf | doi-access=free }}
+* {{cite journal | first1=R. | last1=Balasubramanian | author1-link=Ramachandran Balasubramanian | first2=T.N. | last2=Shorey | title=On the equation <math>a(x^{m}-1)/(x-1)=b(y^{n}-1)/(y-1)</math> | journal=Mathematica Scandinavica | volume=46 | year=1980 | pages=177–182 | zbl=0434.10013 | doi=10.7146/math.scand.a-11861|mr=0591599| doi-access=free }}
+* {{cite journal | first1=H. | last1=Davenport |author-link=Harold Davenport | first2=D. J. | last2=Lewis | first3=A. | last3=Schinzel | title=Equations of the form <math>f(x)=g(y)</math> | journal=Quad. J. Math. Oxford | volume=2 | year=1961 | pages=304&ndash;312 | doi=10.1093/qmath/12.1.304 | mr=0137703 }}
+* {{cite book|first=Richard K. |last=Guy|author-link=Richard K. Guy|title=Unsolved Problems in Number Theory  | edition=3rd | publisher=[[Springer-Verlag]]|date=2004|page=242|isbn=0-387-20860-7 | zbl=1058.11001}}
+* {{cite journal | first1=Bo | last1=He | first2=Alan | last2=Togbé | title=On the number of solutions of Goormaghtigh equation for given <math>x</math> and <math>y</math> | journal=Indag. Math. |series=New Series | volume=19 | year=2008 | pages=65&ndash;72 | doi=10.1016/S0019-3577(08)80015-8 | mr=2466394 | doi-access=free }}
+* {{cite journal | first1=Yu. V. | last1=Nesterenko | author-link=Yuri Valentinovich Nesterenko |first2=T. N. | last2=Shorey | title=On an equation of Goormaghtigh | journal=Acta Arithmetica | volume=LXXXIII | issue=4 | year=1998 | pages=381–389 | url=http://matwbn.icm.edu.pl/ksiazki/aa/aa83/aa8345.pdf | zbl=0896.11010 | doi=10.4064/aa-83-4-381-389 | mr=1610565| doi-access=free }}
+* {{cite book | last1=Shorey | first1=T.N. | last2=Tijdeman | first2=R. | author2-link=Robert Tijdeman | title=Exponential Diophantine equations | series=Cambridge Tracts in Mathematics | volume=87 | publisher=[[Cambridge University Press]] | year=1986 | isbn=0-521-26826-5 | zbl=0606.10011 | pages=203–204}}
+* {{cite journal | first=Pingzhi | last=Yuan | title=On the diophantine equation <math>\tfrac{x^3-1}{x-1}=\tfrac{y^n-1}{y-1}</math> | journal=J. Number Theory | volume=112 | year=2005 | pages=20&ndash;25 | doi=10.1016/j.jnt.2004.12.002 | mr=2131139 | doi-access=free }}
+
+[[Category:Diophantine equations]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

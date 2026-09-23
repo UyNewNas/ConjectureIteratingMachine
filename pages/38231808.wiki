@@ -1,0 +1,30 @@
+In [[mathematics]], the '''finite lattice representation problem''', or '''finite congruence lattice problem''', asks whether every finite [[Lattice (order)|lattice]] is [[isomorphic]] to the [[congruence lattice]] of some finite [[Universal algebra|algebra]].
+
+== Background ==
+A [[Lattice (order)|lattice]] is called [[Algebraic lattice|algebraic]] if it is [[Complete lattice|complete]] and [[Compact element|compactly generated]].  In 1963, Grätzer and Schmidt proved that every algebraic lattice is isomorphic to the [[congruence lattice]] of some [[universal algebra|algebra]].<ref>G. Grätzer and E. T. Schmidt, ''Characterizations of congruence lattices of abstract algebras'', Acta Sci. Math. (Szeged) '''24''' (1963), 34–59.</ref>  Thus there is essentially no restriction on the shape of a congruence lattice of an algebra. The finite lattice representation problem asks whether the same is true for finite lattices and finite algebras. That is, does every finite lattice occur as the congruence lattice of a ''finite'' algebra?
+
+In 1980, Pálfy and Pudlák proved that this problem is equivalent to the problem of deciding whether every finite lattice occurs as an interval in the [[subgroup lattice]] of a finite [[group (mathematics)|group]].<ref>Pálfy and Pudlák. ''Congruence lattices of finite algebras and intervals in subgroup lattices of finite groups.'' Algebra Universalis 11(1), 22–27 (1980). [https://dx.doi.org/10.1007/BF02483080 DOI]</ref>  For an overview of the group theoretic approach to the problem, see Pálfy (1993)<ref>Péter Pál Pálfy. ''Intervals in subgroup lattices of finite groups.'' In Groups ’93 Galway/St. Andrews, Vol. 2, volume 212 of London Math. Soc. Lecture Note Ser., pages 482–494. Cambridge Univ. Press, Cambridge, 1995.</ref> and Pálfy (2001).<ref>Péter Pál Pálfy. ''Groups and lattices.'' In Groups St. Andrews 2001 in Oxford. Vol. II, volume 305 of London Math. Soc. Lecture Note Ser., pages 428–454, Cambridge, 2003. Cambridge Univ. Press.</ref>
+
+This problem should not be confused with the [[congruence lattice problem]].
+
+== Significance ==
+This is among the oldest unsolved problems in [[universal algebra]].<ref>Joel Berman. ''Congruence lattices of finite universal algebras.'' PhD thesis, University of Washington, 1970, {{ProQuest|302550051}}.</ref><ref>Bjarni Jónsson. ''[https://books.google.com/books?id=2S57CwAAQBAJ&q=%22Finite+lattice+representation+problem%22&pg=PA1 Topics in universal algebra].'' Lecture Notes in Mathematics, Vol. 250. Springer Verlag, Berlin, 1972.</ref><ref>Ralph McKenzie. ''Finite forbidden lattices.'' In: Universal algebra and lattice theory
+(Puebla, 1982), Lecture Notes in Math., vol. 1004, pp. 176–205. Springer, Berlin
+(1983). [https://dx.doi.org/10.1007/BFb0063438 DOI]</ref> Until it is answered, the theory of finite algebras is incomplete since, given a finite algebra, it is unknown whether there are, ''a priori'', any restrictions on the shape of its congruence lattice.
+
+==References==
+{{reflist}}
+
+==Further reading==
+*{{cite arXiv |last1=DeMeo |first1=William J |title=Congruence lattices of finite algebras |year=2012 |class=math.GR |eprint=1204.4305}}
+*{{cite journal |last1=Dowling |first1=T A |title=A class of geometric lattices based on finite groups |journal=Journal of Combinatorial Theory, Series B |date=February 1973 |volume=14 |issue=1 |pages=61–86 |doi=10.1016/S0095-8956(73)80007-3|doi-access=free }}
+
+==External links==
+* [http://garden.irmacs.sfu.ca/?q=op/finite_congruence_lattice_problem Finite Congruence Lattice Problem]
+
+<!-- This will add a notice to the bottom of the page and won't blank it! The new template which says that your draft is waiting for a review will appear at the bottom; simply ignore the old (grey) drafted templates and the old (red) decline templates. A bot will update your article submission. Until then, please don't change anything in this text box and press "Save page". -->
+
+[[Category:Algebraic structures]]
+[[Category:Lattice theory]]
+[[Category:Mathematical problems]]
+[[Category:Unsolved problems in mathematics]]

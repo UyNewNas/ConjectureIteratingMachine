@@ -1,0 +1,120 @@
+{{short description|Number of form 2^(2^p-1)-1 with prime exponent}}
+In [[mathematics]], a '''double Mersenne number''' is a [[Mersenne prime|Mersenne number]] of the form <math>M_{M_p} = 2^{2^p-1}-1</math> where <math>p</math> is [[prime number|prime]]. 
+
+== Examples ==
+The first four terms of the [[integer sequence|sequence]] of double Mersenne numbers are<ref name="Caldwell">Chris Caldwell, [http://primes.utm.edu/mersenne/index.html#unknown ''Mersenne Primes: History, Theorems and Lists''] at the [[Prime Pages]].</ref> {{OEIS|id=A077586}}:
+:<math>M_{M_2} = M_3 = 7 </math>
+:<math>M_{M_3} = M_7 = 127 </math>
+:<math>M_{M_5} = M_{31} = 2147483647 </math>
+:<math>M_{M_7} = M_{127} = 170141183460469231731687303715884105727 </math>
+
+== <span class="anchor" id="Double Mersenne primes"></span>Double Mersenne primes ==
+{{Infobox integer sequence
+| name = Double Mersenne primes
+| terms_number       = 4
+| con_number         = 4
+| first_terms        = 7, 127, 2147483647
+| largest_known_term = 170141183460469231731687303715884105727
+| OEIS               = A077586
+| OEIS_name          = a(''n'') = 2^(2^prime(''n'') − 1) − 1
+}}
+
+A double Mersenne number that is [[prime number|prime]] is called a '''double Mersenne prime'''. Since a Mersenne number ''M''<sub>''p''</sub> can be prime only if ''p'' is prime, (see [[Mersenne prime]] for a proof), a double Mersenne number <math>M_{M_p}</math> can be prime only if ''M''<sub>''p''</sub> is itself a Mersenne prime. For the first values of ''p'' for which ''M''<sub>''p''</sub> is prime, <math>M_{M_{p}}</math> is known to be prime for ''p'' = 2, 3, 5, and 7 while explicit factors of <math>M_{M_{p}}</math> have been found for ''p'' = 13, 17, 19, and 31.
+
+{| class="wikitable"
+|-
+! <math>p</math> !! <math>M_{p} = 2^p-1</math> !! <math>M_{M_{p}} = 2^{2^p-1}-1</math> !! factorization of <math>M_{M_{p}}</math>
+|-
+| 2 || [[3 (number)|3]] || prime || 7
+|-
+| 3 || [[7 (number)|7]] || prime (triple) || 127
+|-
+| 5 || [[31 (number)|31]] || prime || 2147483647
+|-
+| 7 || [[127 (number)|127]] || prime (quadruple) || 170141183460469231731687303715884105727
+|-
+| 11 || not prime || not prime || 47 × 131009 × 178481 × 724639 × 2529391927 × 70676429054711 × 618970019642690137449562111 × ...
+|-
+| 13 || [[8191 (number)|8191]] || not prime || 338193759479 × 210206826754181103207028761697008013415622289 × ...
+|-
+| 17 || [[131071 (number)|131071]] || not prime || 231733529 × 64296354767 × ...
+|-
+| 19 || [[524287 (number)|524287]] || not prime || 62914441 × 5746991873407 × 2106734551102073202633922471 × 824271579602877114508714150039 × 65997004087015989956123720407169 × 4565880376922810768406683467841114102689 × ...
+|-
+| 23 || not prime || not prime || 2351 × 4513 × 13264529 × 285212639 × 76899609737 × ...
+|-
+| 29 || not prime || not prime || 1399 × 2207 × 135607 × 622577 × 16673027617 × 52006801325877583 × 4126110275598714647074087 × ...
+|-
+| 31 || [[2147483647 (number)|2147483647]] || not prime (triple mersenne number) || 295257526626031 × 87054709261955177 × 242557615644693265201 × 178021379228511215367151 × ...
+|-
+| 37 || not prime || not prime ||
+|-
+| 41 || not prime || not prime ||
+|-
+| 43 || not prime || not prime ||
+|-
+| 47 || not prime || not prime ||
+|-
+| 53 || not prime || not prime ||
+|-
+| 59 || not prime || not prime ||
+|-
+| 61 || [[2305843009213693951 (number)|2305843009213693951]] || unknown || 
+|}
+
+Thus, the smallest candidate for the next double Mersenne prime is <math>M_{M_{61}}</math>, or 2<sup>2305843009213693951</sup> − 1.
+Being approximately 1.695{{e|694127911065419641}},
+this number is far too large for any currently known [[primality test]]. It has no prime factor below 1 × 10<sup>36</sup>.<ref>{{cite web |title=Double Mersenne 61 factoring status |url=http://www.doublemersennes.org/mm61.php |website=www.doublemersennes.org |access-date=31 March 2022}}</ref>
+There are probably no other double Mersenne primes than the four known.<ref name="Caldwell"/><ref>[https://www.ams.org/journals/mcom/1955-09-051/S0025-5718-1955-0071444-6/S0025-5718-1955-0071444-6.pdf I. J. Good. Conjectures concerning the Mersenne numbers. Mathematics of Computation vol. 9 (1955) p.&nbsp;120-121] [retrieved 2012-10-19]</ref>
+
+Smallest prime factor of <math>M_{M_{p}}</math> (where ''p'' is the ''n''th prime) are
+
+:7, 127, 2147483647, 170141183460469231731687303715884105727, 47, 338193759479, 231733529, 62914441, 2351, 1399, 295257526626031, 18287, 106937, 863, 4703, 138863, 22590223644617, ... (next term is > 1 × 10<sup>36</sup>) {{OEIS|id=A309130}}
+
+==Catalan–Mersenne number conjecture==
+
+The [[recursion|recursively]] defined sequence
+: <math>c_0 = 2</math>
+: <math>c_{n+1} = 2^{c_n}-1 = M_{c_n}</math>
+is called the sequence of '''Catalan–Mersenne numbers'''.<ref>{{MathWorld|urlname=Catalan-MersenneNumber|title=Catalan-Mersenne Number}}</ref> The first terms of the sequence {{OEIS|id=A007013}} are: 
+:<math>c_0 = 2 </math>
+:<math>c_1 = 2^2-1 = 3 </math>
+:<math>c_2 = 2^3-1 = 7 </math>
+:<math>c_3 = 2^7-1 = 127 </math>
+:<math>c_4 = 2^{127}-1 = 170141183460469231731687303715884105727 </math>
+:<math>c_5 = 2^{170141183460469231731687303715884105727}-1 \approx 5.45431 \times 10^{51217599719369681875006054625051616349} \approx 10^{10^{37.70942}}</math>
+[[Eugène Charles Catalan|Catalan]] discovered this sequence after the discovery of the primality of <math>M_{127}=c_4</math> by [[Édouard Lucas|Lucas]] in 1876.<ref name="Caldwell"/><ref>{{cite journal|title=Questions proposées |journal=Nouvelle correspondance mathématique |volume=2 |year=1876 |pages=94–96 |url=https://archive.org/stream/nouvellecorresp01mansgoog#page/n353/mode/2up}} (probably collected by the editor). Almost all of the questions are signed by Édouard Lucas as is number 92: {{quote|Prouver que 2<sup>61</sup>&nbsp;&minus;&nbsp;1 et 2<sup>127</sup>&nbsp;&minus;&nbsp;1 sont des nombres premiers. (É. L.) (*).}} The footnote (indicated by the star) written by the editor Eugène Catalan, is as follows: {{quote|(*) Si l'on admet ces deux propositions, et si l'on observe que 2<sup>2</sup>&nbsp;&minus;&nbsp;1, 2<sup>3</sup>&nbsp;&minus;&nbsp;1, 2<sup>7</sup>&nbsp;&minus;&nbsp;1 sont aussi des nombres premiers, on a ce ''théorème empirique: Jusqu'à une certaine limite, si'' 2<sup>''n''</sup>&nbsp;&minus;&nbsp;1 ''est un nombre premier'' ''p'', 2<sup>''p''</sup>&nbsp;&minus;&nbsp;1 ''est un nombre premier'' ''p''<nowiki>'</nowiki>, 2<sup>''p''<nowiki>'</nowiki></sup>&nbsp;&minus;&nbsp;1 ''est un nombre premier'' p", etc. Cette proposition a quelque analogie avec le théorème suivant, énoncé par Fermat, et dont Euler a montré l'inexactitude: ''Si n est une puissance de 2, 2<sup>n</sup> + 1 est un nombre premier.'' (E. C.)}}</ref><ref>L. E. Dickson, ''[https://archive.org/details/historyoftheoryo01dick/ History of the theory of numbers. Volume 1: Divisibility and primality]'' (1919). Published by Washington, Carnegie Institution of Washington.</ref><sup>p. 22</sup> Catalan [[conjecture]]d that they are prime "up to a certain limit". Although the first five terms are prime, no known methods can prove that any further terms are prime (in any reasonable time) simply because they are too huge. However, if <math>c_5</math> is not prime, there is a chance to discover this by computing <math>c_5</math> [[Modular arithmetic|modulo]] some small prime <math>p</math> (using recursive [[modular exponentiation]]). If the resulting residue is zero, <math>p</math> represents a factor of <math>c_5</math> and thus would disprove its primality. Since <math>c_5</math> is a [[Mersenne number]], such a prime factor <math>p</math> would have to be of the form <math>2kc_4 +1</math>. Additionally, because <math>2^n-1</math> is [[composite number|composite]] when <math>n</math> is composite, the discovery of a composite term in the sequence would preclude the possibility of any further primes in the sequence.
+
+If <math>c_5</math> were prime, it would also contradict the [[New Mersenne conjecture]]. It is known that <math>\frac{2^{c_4} + 1}{3}</math> is composite, with factor <math> 886407410000361345663448535540258622490179142922169401 = 5209834514912200c_4 + 1</math>.<ref name="Hoegge">[http://www.hoegge.dk/mersenne/NMC.html#unknown ''New Mersenne Conjecture'']</ref>
+
+==In popular culture==
+In the ''[[Futurama]]'' movie [[Futurama: The Beast with a Billion Backs|''The Beast with a Billion Backs'']], the double Mersenne number <math>M_{M_7}</math> is briefly seen in "an [[Elementary proof|elementary proof]] of the [[Goldbach conjecture]]". In the movie, this number is known as a "Martian prime".
+
+==See also==
+* [[Cunningham chain]]
+* [[Double exponential function]]
+* [[Fermat number]]
+* [[Perfect number]]
+* [[Wieferich prime]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+*{{Citation |author-link=L. E. Dickson |last=Dickson |first=L. E. |title=[[History of the Theory of Numbers]] |orig-year=1919 |publisher=Chelsea Publishing |location=New York |year=1971 }}.
+
+== External links ==
+* {{MathWorld|urlname=DoubleMersenneNumber|title=Double Mersenne Number}}
+* Tony Forbes, [http://anthony.d.forbes.googlepages.com/mm61.htm A search for a factor of MM61] {{Webarchive|url=https://web.archive.org/web/20090208194031/http://anthony.d.forbes.googlepages.com/mm61.htm |date=2009-02-08 }}.
+* [https://web.archive.org/web/20141015012140/http://www.garlic.com/~wedgingt/MMPstats.txt Status of the factorization of double Mersenne numbers]
+* [http://www.doublemersennes.org Double Mersennes Prime Search]
+* [http://www.mersenneforum.org/forumdisplay.php?f=99 Operazione Doppi Mersennes]
+
+{{Prime number classes|state=collapsed}}
+{{Classes of natural numbers}}
+{{Mersenne}}
+
+[[Category:Integer sequences]]
+[[Category:Large integers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Mersenne primes]]

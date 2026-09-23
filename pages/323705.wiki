@@ -1,0 +1,30 @@
+{{distinguish|Williams prime}}
+In [[mathematics]], a '''Newman–Shanks–Williams prime''' ('''NSW prime''') is a [[prime number]] which can be written in the form
+
+:<math>S_{2m+1}=\frac{\left(1 + \sqrt{2}\right)^{2m+1} + \left(1 - \sqrt{2}\right)^{2m+1}}{2}</math>.
+
+NSW primes were first described by [[Morris Newman]], [[Daniel Shanks]] and [[Hugh C. Williams]] in 1981 during their study of [[finite group|finite]] [[simple group]]s with [[square number|square]] [[order of a group|order]].{{sfnp|Newman|Shanks|Williams|1980}}
+
+The first few NSW primes are [[7 (number)|7]], [[41 (number)|41]], [[239 (number)|239]], 9369319, 63018038201, . . . {{OEIS|id=A088165}}, corresponding to the indices 3, 5, 7, 19, 29, . . . {{OEIS|id=A005850}}.
+
+The sequence <math>S</math> alluded to in the formula can be described by the following [[recurrence relation]]:
+:<math>S_0=1 \, </math>
+:<math>S_1=1 \, </math>
+:<math>S_n=2S_{n-1}+S_{n-2}\qquad\text{for all }n\geq 2.</math>
+The first few terms of the sequence are 1, 1, 3, 7, 17, 41, 99, . . . {{OEIS|id=A001333}}. Each term in this sequence is half the corresponding term in the sequence of [[Pell number|companion Pell numbers]]. These numbers also appear in the [[continued fraction]] convergents to [[Square root of 2|{{radic|2}}]].
+
+== References ==
+{{refbegin}}
+
+* {{cite journal |last1=Newman |first1=Morris |last2=Shanks |first2=Daniel |author2-link=Daniel Shanks |last3=Williams |first3=H. C. |author3-link=Hugh C. Williams |title=Simple groups of square order and an interesting sequence of primes |journal=[[Acta Arithmetica]] |volume=38 |issue=2 |year=1980 |pages=129–140 |doi=10.4064/aa-38-2-129-140}}
+
+{{refend}}
+
+== External links ==
+* [http://primes.utm.edu/glossary/page.php?sort=NSWNumber The Prime Glossary: NSW number]
+
+{{Prime number classes}}
+
+{{DEFAULTSORT:Newman-Shanks-Williams prime}}
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

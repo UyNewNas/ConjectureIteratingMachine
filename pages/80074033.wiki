@@ -1,0 +1,16 @@
+{{unsolved|mathematics|Prove or disprove: Any closed exact [[Lagrangian submanifold]] of the [[cotangent bundle]] of a [[closed manifold]] is [[Symplectomorphism#Flows|Hamiltonian isotopic]] to the [[Vector_bundle#Sections_and_locally_free_sheaves|zero section]].}}
+In [[mathematics]], more specifically [[symplectic topology]], the '''nearby Lagrangian conjecture''', is an [[List of unsolved problems in mathematics|open]]<ref>https://celebratio.org/Eliashberg_Y/article/1188/</ref> [[mathematical problem]] often attributed to [[Vladimir Arnold]]. It states that every closed exact [[Symplectic manifold|Lagrangian submanifold]] of a [[cotangent bundle]] '''''T∗M''''' (with symplectic structure) is [[Symplectomorphism#Flows|Hamiltonian isotopic]] to the [[Vector_bundle#Sections_and_locally_free_sheaves|zero section]].<ref>Cieliebak, K., [[Yakov Eliashberg|Eliashberg, Y.]] "New Applications of Symplectic Topology in Several Complex Variables". ''J Geom Anal'' 31, 3252–3271 (2021). https://doi.org/10.1007/s12220-020-00395-1</ref><ref>Ekholm, Tobias, Thomas Kragh, and Ivan Smith. "Lagrangian exotic spheres." ''Journal of Topology and Analysis'' 8.03 (2016): 375-397. https://doi.org/10.1142/S1793525316500199</ref><ref>{{cite web | url=https://www.math.princeton.edu/events/nearby-lagrangian-conjecture-2020-03-05t173000 | title=The nearby Lagrangian conjecture {{pipe}} Math }}</ref>
+
+It is closely related to the theory of [[generating function]]s.<ref>[[Mohammed Abouzaid|Abouzaid, M.]], Courte, S., Guillermou, S., & Kragh, T. (2025). "Twisted generating functions and the nearby Lagrangian conjecture". ''[[Duke Mathematical Journal]]'', 174(5). https://doi.org/10.1215/00127094-2024-0052 https://arxiv.org/abs/2011.13178</ref>
+
+== References ==
+
+{{reflist}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Symplectic topology]]
+[[Category:Generating functions]]
+
+{{differential-geometry-stub}}
+{{topology-stub}}

@@ -1,0 +1,360 @@
+{{Short description|Prime differing from another prime by two}}
+{{log(x)}}
+A '''twin prime''' is a [[prime number]] that is either 2 less or 2 more than another prime number—for example, either member of the twin prime pair {{nobr|{{math| (17, 19)}} }} or {{nobr|{{math|(41, 43)}}.}} In other words, a twin prime is a prime that has a [[prime gap]] of two. Sometimes the term ''twin prime'' is used for a pair of twin primes; an alternative name for this is '''prime twin''' or '''prime pair'''.<ref>
+{{cite periodical
+ | author=Glaisher, J. W. L.
+ | date=March 1878
+ | title=On Long Successions of Composite Numbers
+ | journal=The Messenger of Mathematics
+ | volume=7 | page = 176
+ | publisher=[[Macmillan Publishers]]
+ | url=https://babel.hathitrust.org/cgi/pt?id=uc1.$b416748&seq=192
+}}
+</ref><ref>
+{{cite periodical
+ | author=Glaisher, J. W. L.
+ | date=April 1878
+ | title=An Enumeration of Prime-Pairs
+ | journal=The Messenger of Mathematics
+ | volume=8 | page = 32
+ | publisher=[[Macmillan Publishers]]
+ | url=https://babel.hathitrust.org/cgi/pt?id=hvd.32044102936945&seq=50
+}}
+</ref><ref>
+{{cite periodical
+ | author=Dunham, William
+ | date=July 2013
+ | title=A Note on the Origin of the Twin Prime Conjecture
+ | journal=Notices of the ICCM
+ | volume=1 | number=1 | pages = 63–65
+ | publisher=International Press of Boston
+ | url=https://intlpress.com/site/pub/files/_fulltext/journals/iccm/2013/0001/0001/ICCM-2013-0001-0001-a013.pdf
+}}
+</ref>
+
+Twin primes become increasingly rare as one examines larger ranges, in keeping with the general tendency of gaps between adjacent primes to become larger as the numbers themselves get larger. However, it is unknown whether there are infinitely many twin primes (the so-called '''twin prime conjecture''') or if there is a largest pair. The breakthrough<ref>
+{{cite periodical
+ |author=Thomas, Kelly Devine
+ |date=Summer 2014
+ |title=Yitang Zhang's spectacular mathematical journey
+ |periodical=The Institute Letter
+ |via=ias.edu
+ |place=Princeton, NJ
+ |publisher=[[Institute for Advanced Study]]
+ |url=https://www.ias.edu/ideas/2014/zhang-breakthrough
+}}
+</ref>
+work of [[Yitang Zhang]] in 2013, as well as work by [[James Maynard (mathematician)|James Maynard]], [[Terence Tao]] and others, has made substantial progress towards [[mathematical proof|proving]] that there are infinitely many twin primes, but at present this remains unsolved.<ref>
+{{cite AV media
+ |people=Tao, Terry, Ph.D. (presenter)
+ |date=7 October 2014
+ |title=Small and large gaps between the primes
+ |medium=video lecture
+ |publisher=[[University of California, Los Angeles|UCLA]] Department of Mathematics
+ |url=https://www.youtube.com/watch?v=pp06oGD4m00&t=425
+ |via=YouTube
+}}
+</ref>
+{{unsolved|mathematics|Are there infinitely many twin primes?}}
+
+==Properties==
+Usually the pair {{math|(2, 3)}} is not considered to be a pair of twin primes.<ref>
+{{cite web
+ |title=The first 100,000&nbsp;twin primes (only first member of pair)
+ |department=Lists
+ |format=plain text
+ |website=The Prime Pages (primes.utm.edu)
+ |publisher=[[University of Tennessee, Martin|U.T. Martin]]
+ |place=Martin, TN
+ |url=https://primes.utm.edu/lists/small/100ktwins.txt
+}}
+</ref>
+Since 2 is the only [[parity (mathematics)|even]] prime, this pair is the only pair of prime numbers that differ by one; thus twin primes are as closely spaced as possible for any other two primes.
+
+The first several twin prime pairs are
+:{{math| (3, 5), (5, 7), (11, 13),}} {{math| (17, 19), (29, 31), (41, 43),}} {{math| (59, 61), (71, 73), (101, 103),}} {{math| (107, 109), (137, 139), ...}} {{OEIS2C|id=A077800}}.
+
+Five is the only prime that belongs to two pairs, as every twin prime pair greater than {{math| (3, 5) }} is of the form <math>(6n-1, 6n+1)</math> for some [[natural number]] {{mvar|n}}; that is, the number that falls between the two primes is a multiple of 6.<ref>
+{{cite web
+ |last=Caldwell |first=Chris K.
+ |title=Are all primes (past 2 and 3) of the forms {{math|6''n''+1}} and {{math|6''n''−1}}?
+ |website=The Prime Pages (primes.utm.edu)
+ |publisher=[[University of Tennessee, Martin|U.T. Martin]]
+ |place=Martin, TN
+ | url=https://primes.utm.edu/notes/faq/six.html
+ |access-date=2018-09-27
+}}
+</ref>
+As a result, the sum of any pair of twin primes (other than 3 and 5) is divisible by 12.
+
+===Brun's theorem===
+{{Main|Brun's theorem}}
+In 1915, [[Viggo Brun]] showed that the sum of [[multiplicative inverse|reciprocals]] of the twin primes was [[convergent series|convergent]].<ref name=Brun-1915>
+{{cite journal
+ |last=Brun |first=V. |author-link=Viggo Brun
+ |year=1915
+ |title=Über das Goldbachsche Gesetz und die Anzahl der Primzahlpaare |lang=de
+ |trans-title=On Goldbach's rule and the number of prime number pairs
+ |journal=Archiv for Mathematik og Naturvidenskab
+ |volume=34 |number=8 |pages=3–19
+ |jfm=45.0330.16 |issn=0365-4524
+}}
+</ref>
+This famous result, called [[Brun's theorem]], was the first use of the [[Brun sieve]] and helped initiate the development of modern [[sieve theory]]. The modern version of Brun's argument can be used to show that the number of twin primes less than {{mvar|N}} does not exceed
+:<math>\frac{CN}{(\log N)^2}</math>
+
+for some absolute constant {{nobr|{{mvar|C}} > 0.}}<ref name="Bateman-Diamond-2004">
+{{cite book |last1=Bateman |first1=Paul T. |title=Analytic Number Theory |last2=Diamond |first2=Harold G. |publisher=World Scientific |year=2004 |isbn=981-256-080-7 |pages=313 and 334–335 |zbl=1074.11001 |author1-link=Paul T. Bateman}}
+</ref>
+In fact, it is bounded above by 
+<math display=block>\frac{8 C_2 N}{(\log N)^2} \left[ 1 + \operatorname{\mathcal O}\left(\frac{\log \log N}{\log N} \right) \right],</math>
+where <math>C_2</math> is the ''twin prime constant'' (slightly less than 2/3), [[#First Hardy–Littlewood conjecture|given below]].<ref>
+{{cite book
+ |author1=Halberstam, Heini
+ |author2=Richert, Hans-Egon
+ |year=2010
+ |title=Sieve Methods
+ |page=117
+ |publisher=Dover Publications
+}}
+</ref>
+
+==Twin prime conjecture==
+The question of whether there exist infinitely many twin primes has been one of the great [[open problem|open questions]] in [[number theory]] for many years. This is the content of the ''twin prime conjecture'', which states that there are infinitely many primes {{mvar|p}} such that {{nobr| {{math|''p'' + 2}} }} is also prime. In 1849, [[Alphonse de Polignac|de Polignac]] made the more general conjecture that for every natural number {{mvar|k}}, there are infinitely many primes {{mvar|p}} such that {{nobr| {{math|''p'' + 2''k''}} }} is also prime.<ref name=dePolignac-1849>
+{{cite journal
+ |last=de Polignac |first=A.
+ |year=1849
+ |title=Recherches nouvelles sur les nombres premiers |lang=fr
+ |trans-title=New research on prime numbers
+ |journal=[[Comptes rendus]]
+ |volume=29 |pages=397–401
+ |url=https://babel.hathitrust.org/cgi/pt?id=mdp.39015035450967&view=1up&seq=411
+ |quote={{grey|[From p.&nbsp;400]}} ''"1{{sup|er}} ''Théorème.'' Tout nombre pair est égal à la différence de deux nombres premiers consécutifs d'une infinité de manières ..."'' (1st Theorem. Every even number is equal to the difference of two consecutive prime numbers in an infinite number of ways ...)
+}}
+</ref>
+The {{nobr|case {{mvar|k}} {{=}} 1}} of [[de Polignac's conjecture]] is the twin prime conjecture.
+ 
+A stronger form of the twin prime conjecture, the [[First Hardy–Littlewood conjecture|Hardy–Littlewood conjecture]], postulates a distribution law for twin primes akin to the [[prime number theorem]].
+
+On 17&nbsp;April 2013, [[Yitang Zhang]] announced a proof that there exists an [[integer]] {{mvar|N}} that is less than 70&nbsp;million, where there are infinitely many pairs of primes that differ by&nbsp;{{mvar|N}}.<ref>
+{{cite news
+ |last=McKee |first=Maggie
+ |date=14 May 2013
+ |title=First proof that infinitely many prime numbers come in pairs
+ |journal=[[Nature (journal)|Nature]]
+ |issn=0028-0836 |doi=10.1038/nature.2013.12989
+ |url=http://www.nature.com/news/first-proof-that-infinitely-many-prime-numbers-come-in-pairs-1.12989
+}}
+</ref> Zhang's paper was accepted in early May&nbsp;2013.<ref>
+{{cite journal
+ | first = Yitang | last = Zhang | author-link = Yitang Zhang
+ | year=2014
+ | title = Bounded gaps between primes
+ | journal = [[Annals of Mathematics]]
+ | volume=179 | issue=3 | pages=1121–1174
+ | mr=3171761
+ | doi=10.4007/annals.2014.179.3.7 | doi-access=free
+}}
+</ref> [[Terence Tao]] subsequently proposed a [[Polymath Project]] collaborative effort to improve Zhang's bound.<ref>
+{{cite web
+ |last=Tao |first=Terence |author-link=Terence Tao
+ |date=4 June 2013
+ |title=Polymath proposal: Bounded gaps between primes
+ |url=http://polymathprojects.org/2013/06/04/polymath-proposal-bounded-gaps-between-primes/
+}}
+</ref>
+
+One year after Zhang's announcement, the bound had been reduced to 246.<ref name=nielsen-bd-gaps>
+{{cite web
+ |title=Bounded gaps between primes
+ |website=Polymath (michaelnielsen.org)
+ |url=http://michaelnielsen.org/polymath1/index.php?title=Bounded_gaps_between_primes
+ |access-date=2014-03-27
+}}
+</ref>
+These improved bounds were discovered independently by [[James Maynard (mathematician)|James Maynard]] and Terence Tao, using a different approach that was simpler than Zhang's. This second approach also gave bounds for the smallest {{nobr| {{math|''f'' (''m'')}} }} needed to guarantee that infinitely many intervals of width {{math|''f'' (''m'')}} contain at least {{mvar|m}} primes. Moreover (see also the next section) assuming the [[Elliott–Halberstam conjecture]] and its generalized form, the Polymath Project wiki states that the bound is 12 and 6, respectively.<ref name=nielsen-bd-gaps/>
+
+==Other theorems weaker than the twin prime conjecture==
+In 1940, [[Paul Erdős]] showed that there is a [[Mathematical constant|constant]] {{math|''c'' < 1}} and infinitely many primes {{mvar|p}} such that {{math|''p''′ − ''p'' < ''c'' ln ''p''}} where {{mvar|p′}} denotes the next prime after {{mvar|p}}. What this means is that we can find infinitely many intervals that contain two primes {{math|(''p'', ''p''′)}} as long as we let these intervals grow slowly in size as we move to bigger and bigger primes. Here, "grow slowly" means that the length of these intervals can grow [[logarithm]]ically. This result was successively improved; in 1986 [[Helmut Maier]] showed that a constant {{math|''c'' < 0.25}} can be used. In 2004 [[Daniel Goldston]] and [[Cem Yıldırım]] showed that the constant could be improved further to {{nobr|{{math|''c'' {{=}} 0.085786... }}.}} In 2005, [[Daniel Goldston|Goldston]], [[János Pintz|Pintz]], and [[Cem Yıldırım|Yıldırım]] established that {{mvar|c}} can be chosen to be arbitrarily small,<ref>
+{{cite journal
+ | last1 = Goldston | first1 = Daniel Alan | author1-link = Daniel Goldston
+ | last2 = Motohashi | first2 = Yoichi
+ | last3 = Pintz | first3 = János | author3-link = János Pintz
+ | last4 = Yıldırım | first4 = Cem Yalçın | author4-link = Cem Yıldırım
+ | year = 2006
+ | title = Small gaps between primes exist
+ | journal = Japan Academy. Proceedings
+ | series = Series A. Mathematical Sciences
+ | volume = 82 | issue = 4 | pages = 61–65
+ | arxiv = math.NT/0505300 | mr = 2222213 | doi=10.3792/pjaa.82.61
+ | s2cid = 18847478 | url = http://projecteuclid.org/getRecord?id=euclid.pja/1146576181
+}}
+</ref><ref>
+{{cite journal
+ | last1 = Goldston | first1 = D.A. | author1-link = Daniel Goldston
+ | last2 = Graham | first2 = S.W.
+ | last3 = Pintz | first3 = J. | author3-link = János Pintz
+ | last4 = Yıldırım | first4 = C.Y. | author4-link = Cem Yıldırım
+ | year = 2009
+ | title = Small gaps between primes or almost primes
+ | journal = [[Transactions of the American Mathematical Society]]
+ | volume = 361 | issue = 10 | pages = 5285–5330
+ | arxiv = math.NT/0506067 | mr = 2515812
+ | doi = 10.1090/S0002-9947-09-04788-6
+| s2cid = 12127823 }}
+</ref>
+i.e.
+:<math>\liminf_{n\to\infty} \left( \frac{ p_{n+1} - p_n }{\log p_n} \right) = 0 ~.</math>
+
+On the other hand, this result does not rule out that there may not be infinitely many intervals that contain two primes if we only allow the intervals to grow in size as, for example, {{nobr|{{math|''c'' ln ln ''p'' }}.}}
+
+By assuming the [[Elliott–Halberstam conjecture]] or a slightly weaker version, they were able to show that there are infinitely many {{mvar|n}} such that at least two of {{mvar|n}}, {{math|''n'' + 2}}, {{math|''n'' + 6}}, {{math|''n'' + 8}}, {{math|''n'' + 12}}, {{math|''n'' + 18}}, or {{math|''n'' + 20}} are prime. Under a stronger hypothesis they showed that for infinitely many {{mvar|n}}, at least two of {{mvar|n}}, {{math|''n'' + 2}}, {{math|''n'' + 4}}, and {{math|''n'' + 6}} are prime.
+
+The result of [[Yitang Zhang]],
+
+:<math> \liminf_{n\to\infty} (p_{n+1} - p_n) < N ~ \mathrm{ with } ~ N=7 \times 10^7,</math>
+
+is a major improvement on the Goldston–Graham–Pintz–Yıldırım result. The Polymath Project improvement of Zhang's bound and the work of Maynard have reduced the bound: the [[limit inferior]] is at most 246.<ref>
+{{cite journal
+ | last = Maynard | first = James
+ | year = 2015
+ | title = Small gaps between primes
+ | journal = Annals of Mathematics
+ | series = Second Series
+ | volume = 181 | issue = 1 | pages = 383–413
+ | arxiv = 1311.4600 | mr = 3272929 | doi = 10.4007/annals.2015.181.1.7
+| s2cid = 55175056
+ }}
+</ref><ref>
+{{cite journal
+ | last = Polymath | first = D.H.J.
+ | year = 2014
+ | title = Variants of the Selberg sieve, and bounded intervals containing many primes
+ | journal = Research in the Mathematical Sciences
+ | volume = 1 
+ | article-number = 12
+ | mr = 3373710 | arxiv = 1407.4897
+ | doi = 10.1186/s40687-014-0012-7
+| doi-access = free
+ }}
+</ref> This means that there is an infinite set of primes where the next prime is larger by no more than 246. Improving the bound to 2 would be a proof of the twin prime conjecture.
+
+==Conjectures==
+
+===First Hardy–Littlewood conjecture===
+
+The [[first Hardy–Littlewood conjecture]] (named after [[G. H. Hardy]] and [[John Edensor Littlewood|John Littlewood]]) is a generalization of the twin prime conjecture. It is concerned with the distribution of [[prime constellation]]s, including twin primes, in analogy to the [[prime number theorem]]. Let {{tmath|\pi_2(x)}} denote the number of primes {{math|''p'' ≤ ''x''}} such that {{math|''p'' + 2}} is also prime. Define the ''twin prime constant'' {{math|''C''{{sub|2}}}} as<ref>{{cite OEIS |1=A005597 |2=Decimal expansion of the twin prime constant |access-date = 2019-11-01}}</ref>
+<math display="block">
+C_2 = \prod_{\textstyle{p \; \mathrm{prime,}\atop p \ge 3}} \left(1 - \frac{1}{(p-1)^2} \right) \approx 0.66016 18158 46869 57392 78121 10014 \ldots .
+</math>
+(Here the product extends over all prime numbers {{math|''p'' ≥ 3}}.) Then a special case of the first Hardy–Littlewood conjecture is that
+<math display="block">
+\pi_2(x) \sim 2 C_2 \frac{x}{(\ln x)^2} \sim 2 C_2 \int_2^x {\mathrm{d} t \over (\ln t)^2}
+</math>
+in the sense that the quotient of the two expressions [[limit of a function|tends to]] 1 as {{mvar|x}} approaches infinity.<ref name=Bateman-Diamond-2004/> (The second ~ is not part of the conjecture and is proven by [[integration by parts]].)
+
+The conjecture can be justified (but not proven) by assuming that {{tmath|\tfrac{1}{\ln t} }} describes the [[density function]] of the prime distribution. This assumption, which is suggested by the prime number theorem, implies the twin prime conjecture, as shown in the formula for {{tmath|\pi_2(x)}} above.
+
+The fully general first Hardy–Littlewood conjecture on [[prime k-tuple|prime {{mvar|k}}-tuple]]s (not given here) implies that the [[second Hardy–Littlewood conjecture|''second'' Hardy–Littlewood conjecture]] is false.
+
+This conjecture has been extended by [[Dickson's conjecture]].
+
+===Polignac's conjecture===
+{{more citations needed|section|date=August 2020}}
+[[Polignac's conjecture]] from 1849 states that for every positive even integer {{mvar|k}}, there are infinitely many consecutive prime pairs {{mvar|p}} and {{mvar|p′}} such that {{math|''p''′ − ''p'' {{=}} ''k''}} (i.e. there are infinitely many [[prime gap]]s of size {{mvar|k}}). The case {{math|''k'' {{=}} 2}} is the '''twin prime conjecture'''. The conjecture has not yet been proven or disproven for any specific value of {{mvar|k}}, but Zhang's result proves that it is true for at least one (currently unknown) value of {{mvar|k}}. Indeed, if such a {{mvar|k}} did not exist, then for any positive even natural number {{mvar|N}} there are at most finitely many {{mvar|n}} such that <math>p_{n+1} - p_n = m</math> for all {{math|''m'' < ''N''}} and so for {{mvar|n}} large enough we have <math>p_{n+1} - p_n > N,</math> which would contradict Zhang's result.<ref name=dePolignac-1849/>
+
+==Large twin primes==
+Beginning in 2007, two [[distributed computing]] projects, [[Twin Prime Search]] and [[PrimeGrid]], have produced several record-largest twin primes. {{As of|2025|1}}, the current largest twin prime pair known is{{nobr| 2996863034895 × 2{{sup|1290000}} ± 1 ,}}<ref>
+{{cite web
+ |first=Chris K. |last=Caldwell
+ |title={{nobr| 2996863034895 × 2{{sup|1290000}} − 1 }}
+ |website=The Prime Database 
+ |place=Martin, TN
+ |publisher=[[University of Tennessee, Martin|UT Martin]]
+ |url=http://primes.utm.edu/primes/page.php?id=122213
+}}
+</ref> with 388,342&nbsp;decimal digits. It was discovered in September&nbsp;2016.<ref>
+{{cite news
+ |title=World record twin primes found!
+ |date= 20 September 2016
+ |website=primegrid.com
+ |url=http://www.primegrid.com/forum_thread.php?id=7021
+}}
+</ref>
+
+There are 808,675,888,577,436&nbsp;twin prime pairs below {{10^|18}}.<ref>
+{{cite OEIS
+ |1=A007508
+ |2=Number of twin prime pairs below {{10^|{{mvar|n}}}}
+ | access-date = 2019-11-01
+}}
+</ref><ref>
+{{cite web
+ | author = Oliveira e Silva, Tomás 
+ | date = 7 April 2008
+ | title = Tables of values of {{math|''&pi;''(''x'')}} and of {{math|''&pi;''{{sub|2}}(''x'')}}
+ | publisher = [[Aveiro University]]
+ | url = http://www.ieeta.pt/~tos/primes.html
+ | access-date = 7 January 2011
+}}
+</ref>
+
+An empirical analysis of all prime pairs up to 4.35 × {{10^|15}} shows that if the number of such pairs less than {{mvar|x}} is {{math|''f''&hairsp;(''x'')&hairsp;·''x''&hairsp;/(log ''x''){{sup|2}} }} then {{math|''f''&hairsp;(''x'')}} is about 1.7 for small {{mvar|x}} and decreases towards about 1.3 as {{mvar|x}} tends to infinity. The limiting value of {{math|''f''&hairsp;(''x'')}} is conjectured to equal twice the twin prime constant ({{OEIS2C|id=A114907}}) (not to be confused with [[Brun's constant]]), according to the Hardy–Littlewood conjecture.
+
+==Other elementary properties==
+Every third [[parity (mathematics)|odd]] number is divisible by 3, and therefore no three successive odd numbers can be prime unless one of them is 3. Therefore, 5 is the only prime that is part of two twin prime pairs. The lower member of a pair is by definition a [[Chen prime]].
+
+If ''m''&nbsp;−&nbsp;4 or ''m''&nbsp;+&nbsp;6 is also prime, then the three primes are called a [[prime triplet]].
+
+It has been proven<ref>{{cite journal
+ |author=P. A. Clement
+ |date=January 1949
+ |title=Congruences for sets of primes
+ |journal=[[American Mathematical Monthly]]
+ |volume=56 |issue=1 |pages=23–25
+ |doi=10.2307/2305816
+ |jstor=2305816
+ |url=http://www.math.stonybrook.edu/~moira/mat331-spr10/papers/1949%20ClementCongruences%20for%20Sets%20of%20Primes.pdf
+}}</ref> that the pair (''m'',&nbsp;''m''&nbsp;+&nbsp;2) is a twin prime if and only if
+
+:<math>4((m-1)! + 1) \equiv -m \pmod {m(m+2)}.</math>
+
+For a twin prime pair of the form (6''n'' − 1, 6''n'' + 1) for some natural number ''n'' > 1, ''n'' must end in the digit 0, 2, 3, 5, 7, or 8 ({{OEIS2C|id=A002822}}). If ''n'' were to end in 1 or 6, 6''n'' would end in 6, and 6''n''&thinsp;−1 would be a multiple of 5. This is not prime unless ''n''&nbsp;=&nbsp;1. Likewise, if ''n'' were to end in 4 or 9, 6''n'' would end in 4, and 6''n''&thinsp;+1 would be a multiple of 5. The same rule applies modulo any prime ''p'' ≥ 5: If ''n'' ≡ ±6<sup>−1</sup> (mod ''p''), then one of the pair will be divisible by ''p'' and will not be a twin prime pair unless 6''n'' = ''p''&thinsp;±1. ''p'' = 5 just happens to produce particularly simple patterns in base 10.
+
+==<span class="anchor" id="Isolated prime"></span>Isolated prime==
+An '''isolated prime''' (also known as a '''single prime''' or '''non-twin prime''') is a prime number ''p'' such that neither ''p''&nbsp;−&nbsp;2 nor ''p''&nbsp;+&nbsp;2 is prime. In other words, ''p'' is not part of a twin prime pair. For example, 23 is an isolated prime, since 21 and 25 are both [[composite number|composite]].
+
+The first few isolated primes are
+
+:[[2 (number)|2]], [[23 (number)|23]], [[37 (number)|37]], [[47 (number)|47]], [[53 (number)|53]], [[67 (number)|67]], [[79 (number)|79]], [[83 (number)|83]], [[89 (number)|89]], [[97 (number)|97]], ... {{OEIS2C|id=A007510}}.
+
+It follows from [[Brun's theorem]] that [[Almost all#Meaning in number theory|almost all]] primes are isolated in the sense that the ratio of the number of isolated primes less than a given threshold ''n'' and the number of all primes less than ''n'' tends to 1 as ''n'' tends to infinity.
+
+==See also==
+* [[Cousin prime]]
+* [[Prime gap]]
+* [[Prime k-tuple|Prime ''k''-tuple]]
+* [[Prime quadruplet]]
+* [[Prime triplet]]
+* [[Sexy prime]]
+
+==References==
+{{Reflist|25em}}
+
+==Further reading==
+* {{cite book |author-link=Neil Sloane |first1=Neil |last1=Sloane |author-link2=Simon Plouffe |first2=Simon |last2=Plouffe |title=The Encyclopedia of Integer Sequences |publisher=Academic Press |location=San Diego, CA |year=1995 |isbn=0-12-558630-2 }}
+
+==External links==
+* {{springer|title=Twins|id=p/t094470}}
+* [http://primes.utm.edu/top20/page.php?id=1 Top-20 Twin Primes] at Chris Caldwell's [[Prime Pages]]
+* Xavier Gourdon, Pascal Sebah: [http://numbers.computation.free.fr/Constants/Primes/twin.html ''Introduction to Twin Primes and Brun's Constant'']
+* [http://mersenneforum.org/showpost.php?p=96237&postcount=51 "Official press release"] of 58711-digit twin prime record
+* {{MathWorld | urlname=TwinPrimes | title=Twin Primes}}
+* [http://arnflo.se/~site_files/Other/twinprimes The 20 000 first twin primes]
+* [http://michaelnielsen.org/polymath1/index.php?title=Bounded_gaps_between_primes#World_records Polymath: Bounded gaps between primes]
+* [https://www.wired.com/wiredscience/2013/11/prime/ Sudden Progress on Prime Number Problem Has Mathematicians Buzzing]
+{{Prime number classes}}
+{{Prime number conjectures}}
+
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

@@ -1,0 +1,196 @@
+{{Short description|Unsolved problem in graph theory}}
+[[File:Barnette's conjecture.svg|thumb|400px|The left and right are the same graph, displayed in different ways. The graph is [[planar graph|planar]], because it can be arranged so that no edges overlap, and is [[bipartite graph|bipartite]], because the vertices can be colored so that there is no edge connecting 2 vertices of the same color (red and blue here). It is also [[cubic graph|cubic]], because every vertex has 3 edges connected to it (every vertex has [[degree (graph theory)|degree]] 3), and [[polyhedral graph|polyhedral]], because the graph stays [[connectivity (graph theory)|connected]] when removing any 2 points (also known as [[k-vertex-connected graph|3-vertex-connected]]).
+
+The conjecture states that every graph which meets all these criteria is also [[Hamiltonian cycle|Hamiltonian]], meaning there is a [[cycle (graph theory)|cycle]] that goes through all vertices of the graph (one such is drawn green here).]]
+{{unsolved|mathematics|Is every cubic bipartite polyhedral graph Hamiltonian?}}
+'''Barnette's conjecture''' is an [[conjecture|unsolved problem]] in [[graph theory]], a branch of [[mathematics]], concerning [[Hamiltonian cycle]]s in graphs. It is named after [[David W. Barnette]], a [[professor emeritus]] at the [[University of California, Davis]]; it states that every [[bipartite graph|bipartite]] [[polyhedral graph]] with [[cubic graph|three edges per vertex]] has a Hamiltonian cycle.
+
+==Definitions==
+A [[planar graph]] is an [[undirected graph]] that can be [[graph embedding|embedded]] into the [[Euclidean plane]] without any [[crossing number (graph theory)|crossings]]. A planar graph is called [[polyhedral graph|polyhedral]] if and only if it is [[k-vertex-connected graph|3-vertex-connected]], that is, if there do not exist two vertices the removal of which would disconnect the rest of the graph. A graph is [[bipartite graph|bipartite]] if its vertices can be [[graph coloring|colored]] with two different colors such that each edge has one endpoint of each color. A graph is [[cubic graph|cubic]] (or [[regular graph|3-regular]]) if each vertex is the endpoint of exactly three edges. Finally, a graph is [[Hamiltonian cycle|Hamiltonian]] if there exists a cycle that passes through each of its vertices exactly once. Barnette's conjecture states that every cubic bipartite polyhedral graph is Hamiltonian.
+
+By [[Steinitz's theorem]], a planar graph represents the edges and vertices of a [[convex polyhedron]] if and only if it is polyhedral. A three-dimensional polyhedron has a cubic graph if and only if it is a [[simple polyhedron]].
+And, a planar graph is bipartite if and only if, in a planar embedding of the graph, all face cycles have even length. Therefore, Barnette's conjecture may be stated in an equivalent form: suppose that a three-dimensional simple [[convex polyhedron]] has an even number of edges on each of its faces. Then, according to the conjecture, the graph of the polyhedron has a Hamiltonian cycle.
+
+==History==
+{{harvs|first=P. G.|last=Tait|year=1884|authorlink=Peter Tait (physicist)|txt}} conjectured that every cubic polyhedral graph is Hamiltonian; this came to be known as [[Tait's conjecture]]. It was disproven by {{harvs|first=W. T.|last=Tutte|authorlink=W. T. Tutte|year=1946|txt}}, who constructed a [[counterexample]] with 46 vertices; other researchers later found even smaller counterexamples. However, none of these known counterexamples is bipartite. Tutte himself conjectured that every cubic 3-connected bipartite graph is Hamiltonian, but this was shown to be false by the discovery of a counterexample, the [[Horton graph]].<ref>{{harvtxt|Tutte|1971}}; {{harvtxt|Horton|1982}}.</ref> {{harvs|first=David W.|last=Barnette|year=1969|txt}} proposed a weakened combination of Tait's and Tutte's conjectures, stating that every bipartite cubic polyhedron is Hamiltonian, or, equivalently, that every counterexample to Tait's conjecture is non-bipartite.{{sfnp|Barnette|1969}}
+
+==Equivalent forms==
+{{harvtxt|Kelmans|1994}} showed that Barnette's conjecture is equivalent to a superficially stronger statement, that for every two edges ''e'' and ''f'' on the same face of a bipartite cubic polyhedron, there exists a Hamiltonian cycle that contains ''e'' but does not contain ''f''. Clearly, if this statement is true, then every bipartite cubic polyhedron contains a Hamiltonian cycle: just choose ''e'' and ''f'' arbitrarily. In the other directions, Kelmans showed that a counterexample could be transformed into a counterexample to the original Barnette conjecture.<ref>{{harvtxt|Kelmans|1994}}. See {{harvtxt|Alt|Payne|Schmidt|Wood|2016}} for proofs</ref>
+
+Barnette's conjecture is also equivalent to the statement that the vertices of the dual of every cubic bipartite polyhedral graph can be partitioned into two subsets whose [[induced subgraph]]s are trees. The cut induced by such a partition in the dual graph corresponds to a Hamiltonian cycle in the primal graph.{{sfnp|Florek|2010}}
+
+==Partial results==
+Although the truth of Barnette's conjecture remains unknown, computational experiments have shown that there is no counterexample with fewer than 86 vertices.<ref>{{harvtxt|Holton|Manvel|McKay|1985}}; {{harvtxt|Hertel|2005}}.</ref>
+
+If Barnette's conjecture turns out to be false, then it can be shown to be [[NP-complete]] to test whether a bipartite cubic polyhedron is Hamiltonian.<ref>{{harvtxt|Feder|Subi|2006}}.</ref> If a planar graph is bipartite and cubic but only of connectivity 2, then it may be non-Hamiltonian, and it is NP-complete to test Hamiltonicity for these graphs.<ref>{{harvtxt|Akiyama|Nishizeki|Saito|1980}}.</ref> Another result was obtained by {{harvtxt|Alt|Payne|Schmidt|Wood|2016}}: if the dual graph can be vertex-colored with colors blue, red and green such that every red-green cycle contains a vertex of degree 4, then the primal graph is Hamiltonian.
+
+==Related problems==
+A related conjecture of Barnette states that every cubic polyhedral graph in which all faces have six or fewer edges is Hamiltonian. Computational experiments have shown that, if a counterexample exists, it would have to have more than 177 vertices.<ref>{{harvtxt|Aldred|Bau|Holton|McKay|2000}}.</ref> The conjecture was proven by {{harvtxt|Kardoš|2020}}.{{sfnp|Kardoš|2020}}
+
+The intersection of these two conjectures would be that every bipartite cubic polyhedral graph in which all faces have four or six edges is Hamiltonian. This was proved to be true by {{harvtxt|Goodey|1975}}.{{sfnp|Goodey|1975}}
+
+==Notes==
+{{reflist}}
+
+==References==
+*{{citation
+ | last1 = Akiyama | first1 = Takanori
+ | last2 = Nishizeki | first2 = Takao | author2-link = Takao Nishizeki
+ | last3 = Saito | first3 = Nobuji
+ | issue = 2
+ | journal = [[Journal of Information Processing]]
+ | mr = 0596313
+ | pages = 73–76
+ | title = NP-completeness of the Hamiltonian cycle problem for bipartite graphs
+ | url = https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_action_common_download&item_id=59994&item_no=1&attribute_id=1&file_no=1&page_id=13&block_id=8
+ | volume = 3
+ | year = 1980}}
+*{{citation
+ | last1 = Alt| first1 = Helmut | author1-link = Helmut Alt
+ | last2 = Payne| first2 = Michael S.
+ | last3 = Schmidt| first3 = Jens M.
+ | last4 = Wood| first4 = David R. | author4-link = David Wood (mathematician)
+ | issue = 2
+ | journal = [[Australasian Journal of Combinatorics]]
+ | mr = 3442496
+ | pages = 354–365
+ | title = Thoughts on Barnette's conjecture
+ | url = http://ajc.maths.uq.edu.au/pdf/64/ajc_v64_p354.pdf
+ | volume = 64
+ | year = 2016}}
+*{{citation
+ | last1 = Aldred | first1 = R. E. L.
+ | last2 = Bau | first2 = S.
+ | last3 = Holton | first3 = D. A.
+ | last4 = McKay | first4 = Brendan D. | author4-link = Brendan McKay (mathematician)
+ | doi = 10.1137/S0895480198348665
+ | doi-access = free
+ | issue = 1
+ | journal = [[SIAM Journal on Discrete Mathematics]]
+ | mr = 1737931
+ | pages = 25–32
+ | title = Nonhamiltonian 3-connected cubic planar graphs
+ | volume = 13
+ | year = 2000}}
+*{{citation
+ | last = Barnette | first = David W.
+ | contribution = Conjecture 5
+ | editor-last = Tutte | editor-first = W. T. | editor-link = W. T. Tutte
+ | mr = 0250896
+ | location = New York
+ | publisher = Academic Press
+ | title = Recent Progress in Combinatorics: Proceedings of the Third Waterloo Conference on Combinatorics, May 1968
+ | year = 1969}}
+*{{citation
+ | last1 = Feder | first1 = Tomas
+ | last2 = Subi | first2 = Carlos
+ | id = {{ECCC|2006|06|015}}
+ | title = On Barnette's conjecture
+ | year = 2006}}
+*{{citation
+ | last = Florek | first = Jan
+ | doi = 10.1016/j.disc.2010.01.018
+ | issue = 10–11
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 2601261
+ | pages = 1531–1535
+ | title = On Barnette's conjecture
+ | volume = 310
+ | year = 2010| doi-access = free
+ }}
+*{{citation
+ | last = Goodey
+ | first = P. R.
+ | title = Hamiltonian circuits in polytopes with even sided faces
+ | journal = [[Israel Journal of Mathematics]]
+ | year = 1975
+ | volume = 22
+ | issue = 1
+ | pages = 52–56
+ | doi = 10.1007/BF02757273 | doi-access=free
+ | mr = 410565}}
+*{{citation
+ | last = Hertel | first = Alexander
+ | title = A survey & strengthening of Barnette's conjecture
+ | url = http://www.cs.toronto.edu/~ahertel/WebPageFiles/Papers/StrengtheningBarnette'sConjecture10.pdf
+ | year = 2005}}
+*{{citation
+ | last1 = Holton | first1 = D. A.
+ | last2 = Manvel | first2 = B.
+ | last3 = McKay | first3 = B. D. | author3-link = Brendan McKay (mathematician)
+ | doi = 10.1016/0095-8956(85)90072-3
+ | issue = 3
+ | journal = Journal of Combinatorial Theory, Series B
+ | mr = 0796604
+ | pages = 279–297
+ | title = Hamiltonian cycles in cubic 3-connected bipartite planar graphs
+ | volume = 38
+ | year = 1985| doi-access = free
+ }}
+*{{citation
+ | last = Horton | first = J. D.
+ | doi = 10.1016/0012-365X(82)90079-6
+ | issue = 1
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 0676860
+ | pages = 35–41
+ | title = On two-factors of bipartite regular graphs
+ | volume = 41
+ | year = 1982| doi-access = free
+ }}
+*{{citation
+ | last = Kardoš | first = F.
+ | doi = 10.1137/140984737
+ | issue = 1
+ | journal = [[SIAM Journal on Discrete Mathematics]]
+ | pages = 62–100
+ | title = A computer-assisted proof of the Barnette-Goodey Conjecture: not only fullerene graphs are hamiltonian
+ | volume = 34
+ | year = 2020| arxiv = 1409.2440
+ | s2cid = 119660011
+ }}
+*{{citation
+ | last = Kelmans | first = A. K.
+ | editor-last = Kelmans | editor-first = A. K.
+ | contribution = Constructions of cubic bipartite 3-connected graphs without Hamiltonian cycles
+ | pages = 127–140
+ | series = American Mathematical Society Translations, Series 2
+ | title = Selected Topics in Discrete Mathematics: Proceedings of the Moscow Discrete Mathematics Seminar 1972–1990
+ | volume = 158
+ | year = 1994}}
+*{{citation
+ | last = Tait | first = P. G. | author-link = Peter Tait (physicist)
+ | journal = [[Philosophical Magazine]] |series=5th Series
+ | pages = 30–46
+ | title = Listing's ''Topologie''
+ | volume = 17
+ | year = 1884}}; Reprinted in ''Scientific Papers'', Vol. II, pp.&nbsp;85–98
+*{{citation
+ | last = Tutte | first = W. T. | author-link = W. T. Tutte
+ | issue = 2
+ | journal = [[Journal of the London Mathematical Society]]
+ | pages = 98–101
+ | title = On Hamiltonian circuits
+ | doi = 10.1112/jlms/s1-21.2.98
+ | volume = 21
+ | year = 1946}}
+*{{citation
+ | last = Tutte | first = W. T. | author-link = W. T. Tutte
+ | doi = 10.1016/0012-365X(71)90027-6
+ | issue = 2
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 0291010
+ | pages = 203–208
+ | title = On the 2-factors of bicubic graphs
+ | volume = 1
+ | year = 1971| doi-access = free
+ }}
+
+==External links==
+*{{mathworld|title=Barnette's Conjecture|urlname=BarnettesConjecture|mode=cs2}}
+*[http://garden.irmacs.sfu.ca/?q=op/barnettes_conjecture Barnette's Conjecture] in the Open Problem Garden, Robert Samal, 2007.
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Statements about planar graphs]]
+[[Category:Hamiltonian paths and cycles]]

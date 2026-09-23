@@ -1,0 +1,35 @@
+{{Short description|Unsolved problem in formal language theory}}
+{{unsolved|computer science|Can all [[regular language]]s be expressed using generalized regular expressions with a limited nesting depth of [[Kleene star]]s?}}
+
+In [[formal language theory]], the '''generalized star-height problem''' is the open question whether all [[regular language]]s can be expressed using generalized regular expressions with a limited nesting depth of [[Kleene star]]s.  Here, generalized regular expressions are defined like [[Regular_expression#Formal_language_theory|regular expressions]], but with a built-in complement operator. For a regular language, its [[Star height|generalized star height]] is defined as the minimum nesting depth of Kleene stars needed in order to describe the language by means of a generalized regular expression.
+
+More specifically, it is an open question whether a nesting depth of more than 1 is required, and if so, whether there is an [[algorithm]] to determine the minimum required star height.{{sfnp|Sakarovitch|2009|p=171}}
+
+[[Regular language]]s of generalized star-height 0 are also known as [[star-free language]]s. A theorem of [[Marcel-Paul Schützenberger|Schützenberger]] provides an algebraic characterization of star-free languages by means of aperiodic [[syntactic monoid]]s.{{sfnp|Schützenberger|1965}} In particular, star-free languages are a proper decidable subclass of regular languages.
+
+== See also ==
+* [[star height#Eggan's theorem|Eggan's theorem]] and [[star height#Generalized star height|Generalized star height]] sections of the [[Star height]] article
+* [[Star height problem]]
+
+==References==
+{{reflist}}
+{{refbegin}}
+
+* {{cite book |last=Brzozowski |first=Janusz A. |authorlink=Janusz Brzozowski (computer scientist) |chapter=Open problems about regular languages |editor-last=Book |editor-first=Ronald V. |title=Formal Language Theory: Perspectives and Open Problems |pages=[https://archive.org/details/formallanguageth0000unse/page/23 23–47] |publisher=[[Academic Press]] |location=[[New York City|New York]] |year=1980 |isbn=978-0-12-115350-2}}
+
+* {{cite journal |last=Thomas |first=Wolfgang |year=1981 |title=Remark on the star-height-problem |journal=[[Theoretical Computer Science (journal)|Theoretical Computer Science]] |volume=13 |issue=2 |pages=231–237 |doi=10.1016/0304-3975(81)90041-4 |mr=0594062 }}
+
+* {{cite journal |last1=Pin |first1=J. E. |last2=Straubing |first2=H. |last3=Thérien |first3=D. |year=1992 |title=Some results on the generalized star-height problem |url=https://www.irif.fr/~jep//PDF/StarHeight.pdf |journal=[[Information and Computation]] |volume=101 |issue=2 |pages=219–250 |doi=10.1016/0890-5401(92)90063-L}}
+
+* {{cite book | last=Sakarovitch | first=Jacques | title=Elements of Automata Theory | translator-last=Thomas |translator-first=Reuben | publisher=[[Cambridge University Press]] | year=2009 | isbn=978-0-521-84425-3 | zbl=1188.68177 }}
+
+* {{cite journal |last=Schützenberger |first=M. P.  |authorlink=Marcel-Paul Schützenberger |year=1965 |title=On finite monoids having only trivial subgroups |journal=[[Information and Control]] |volume=8 |issue=2 |pages=190–194 |doi=10.1016/S0019-9958(65)90108-7 |zbl=0131.02001}}
+
+{{refend}}
+
+[[Category:Formal languages]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Automata (computation)]]
+
+
+{{comp-sci-theory-stub}}

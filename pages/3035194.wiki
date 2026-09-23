@@ -1,0 +1,50 @@
+{{Short description|Unsolved problem in topology}}
+{{about|mathematician Sergei Novikov's topology conjecture|astrophysicist Igor Novikov's conjecture regarding time travel|Novikov self-consistency principle}}
+
+The '''Novikov conjecture''' is one of the most important [[open problem|unsolved problems]] in [[topology]].  It is named for [[Sergei Novikov (mathematician)|Sergei Novikov]] who originally posed the [[conjecture]] in 1965.
+
+The Novikov conjecture concerns the [[homotopy]] invariance of certain [[polynomial]]s in the [[Pontryagin class]]es of a [[manifold]], arising from the [[fundamental group]]. According to the Novikov conjecture, the ''higher signatures'', which are certain numerical invariants of [[smooth manifold]]s, are homotopy invariants.
+
+The conjecture has been [[mathematical proof|proved]] for [[finitely generated abelian group]]s. It is not yet known whether the Novikov conjecture holds true for all [[group (mathematics)|group]]s.  There are no known [[counterexample]]s to the conjecture.
+
+==Precise formulation of the conjecture==
+
+Let <math>G</math> be a [[discrete group]] and <math>BG</math> its [[classifying space]], which is an [[Eilenberg–MacLane space]] of type <math>K(G,1)</math>, and therefore unique up to [[homotopy equivalence]] as a [[CW complex]]. Let
+
+:<math>f\colon M\rightarrow BG</math>
+
+be a continuous map from a closed oriented <math>n</math>-dimensional manifold <math>M</math> to <math>BG</math>, and
+
+:<math>x \in H^{n-4i} (BG;\mathbb{Q} ).</math>
+
+Novikov considered the numerical expression, found by evaluating the cohomology class in top dimension against the [[fundamental class]] <math>[M]</math>, and known as a '''higher signature''':
+
+:<math>\left\langle f^*(x) \cup L_i(M),[M] \right\rangle \in \mathbb{Q}</math>
+
+where <math>L_i</math> is the <math>i^{\rm th}</math> [[Hirzebruch polynomial]], or sometimes (less descriptively) as the <math>i^{\rm th}</math> <math>L</math>-polynomial. For each <math>i</math>, this polynomial can be expressed in the Pontryagin classes of the manifold's [[tangent bundle]]. The '''Novikov conjecture''' states that the higher signature is an invariant of the oriented homotopy type of <math>M</math> for every such map <math>f</math> and every such class <math>x</math>, in other words, if <math>h\colon M' \rightarrow M</math> is an orientation preserving homotopy equivalence, the higher signature associated to <math>f \circ h</math> is equal to that associated to <math>f</math>.
+
+==Connection with the Borel conjecture==
+
+The Novikov conjecture is equivalent to the rational injectivity of the [[assembly map]] in [[L-theory]]. The 
+[[Borel conjecture]] on the rigidity of aspherical manifolds is equivalent to the assembly map being an [[isomorphism]].
+
+==References==
+
+*{{Citation |last1=Davis |first1=James F. |editor1-last=Cappell |editor1-first=Sylvain |editor1-link=Sylvain Cappell |editor2-last=Ranicki |editor2-first=Andrew |editor2-link=Andrew Ranicki |editor3-last=Rosenberg |editor3-first=Jonathan |editor3-link=Jonathan Rosenberg (mathematician) |title=Surveys on surgery theory. Vol. 1 |chapter-url=https://jfdmath.sitehost.iu.edu/papers/d_manc.pdf |publisher=[[Princeton University Press]] |series=[[Annals of Mathematics Studies]] |isbn=978-0-691-04937-3 |mr=1747536 |year=2000 |chapter=Manifold aspects of the Novikov conjecture |pages=195–224}}
+*{{cite book |last1=Milnor |first1=John W. |author1-link=John Milnor |title=[[Characteristic Classes]] |last2=Stasheff |first2=James D. |author2-link=Jim Stasheff |publisher=Princeton University Press; University of Tokyo Press |year=1974 |isbn=978-0-691-08122-9 |series=Annals of Mathematics Studies |volume=76 |mr=0440554}}
+*[[Sergei Novikov (mathematician)|Sergei P. Novikov]], ''Algebraic construction and properties of Hermitian analogs of k-theory over rings with involution from the point of view of Hamiltonian formalism. Some applications to differential topology and to the theory of characteristic classes''. Izv.Akad.Nauk SSSR, v. 34, 1970 I N2, pp.&nbsp;253–288; II: N3, pp.&nbsp;475–500. English summary in Actes Congr. Intern. Math., v. 2, 1970, pp.&nbsp;39–45.
+
+==External links==
+*[https://mathshistory.st-andrews.ac.uk/Biographies/Novikov_Sergi/ Biography of Sergei Novikov]
+*[https://www.math.umd.edu/~jmr/NC.html Novikov Conjecture Bibliography]
+*[http://www.maths.ed.ac.uk/~aar/books/novikov1.pdf Novikov Conjecture 1993 Oberwolfach Conference Proceedings, Volume 1]
+*[http://www.maths.ed.ac.uk/~aar/books/novikov2.pdf Novikov Conjecture 1993 Oberwolfach Conference Proceedings, Volume 2]
+*[http://www.math.uni-muenster.de/u/lueck/publ/lueck/owsemfinalextract.pdf 2004 Oberwolfach Seminar notes on the Novikov Conjecture] (pdf)
+*[http://www.scholarpedia.org/article/Novikov_conjecture Scholarpedia article by S.P. Novikov] (2010)
+*[http://www.map.him.uni-bonn.de/Novikov_Conjecture The Novikov Conjecture] at the Manifold Atlas
+
+[[Category:Geometric topology]]
+[[Category:Homotopy theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Surgery theory]]

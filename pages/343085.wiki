@@ -1,0 +1,45 @@
+{{Short description|Prime numbers which differ by 4}}
+
+In [[number theory]], '''cousin primes''' are [[prime numbers]] that differ by four.<ref>{{MathWorld|urlname=CousinPrimes|title=Cousin Primes}}</ref>  Compare this with [[twin prime]]s, pairs of prime numbers that differ by two, and [[sexy prime]]s, pairs of prime numbers that differ by six.
+
+The cousin primes (sequences {{OEIS2C|id=A023200}} and {{OEIS2C|id=A046132}} in [[OEIS]]) below 1000 are:
+
+:(3, 7), (7, 11), (13, 17), (19, 23), (37, 41), (43, 47), (67, 71), (79, 83), (97, 101), (103, 107), (109, 113), (127, 131), (163, 167), (193, 197), (223, 227), (229, 233), (277, 281), (307, 311), (313, 317), (349, 353), (379, 383), (397, 401), (439, 443), (457, 461), (463,467), (487, 491), (499, 503), (613, 617), (643, 647), (673, 677), (739, 743), (757, 761), (769, 773), (823, 827), (853, 857), (859, 863), (877, 881), (883, 887), (907, 911), (937, 941), (967, 971)
+
+== Properties ==
+
+The only prime belonging to two pairs of cousin primes is 7. One of the numbers {{math|''n'', ''n'' + 4, ''n'' + 8}} will always be divisible by 3, so {{math|1=''n'' = 3}} is the only case where all three are primes.
+
+An example of a large [[provable prime|proven]] cousin prime pair is {{math|(''p'', ''p'' + 4)}} for
+:<math>p = 4111286921397 \times 2^{66420} + 1</math>
+which has 20008 digits. In fact, this is part of a [[prime triple]] since {{mvar|p}} is also a [[twin prime]] (because {{math|''p'' − 2}} is also a proven prime).
+
+{{As of|2024|December}}, the largest-known pair of cousin primes was found by S.&nbsp;Batalov and has 86,138&nbsp;digits. The primes are:
+:<math>p = (29571282950 \times (2^{190738} - 1) + 4) \times 2^{95369} - 1</math>
+:<math>p+4 = (29571282950 \times (2^{190738} - 1) + 4) \times 2^{95369} + 3</math><ref>{{cite web |first=S. |last=Batalov |url=https://www.mersenneforum.org/showthread.php?p=605196#post605196 |title=Let's find some large sexy prime pair[s] |website=mersenneforum.org |access-date=2022-09-17}}</ref>
+
+If the first [[Hardy–Littlewood conjecture]] holds, then cousin primes have the same asymptotic density as [[twin prime]]s. An analogue of [[Brun's constant]] for twin primes can be defined for cousin primes, called '''Brun's constant for cousin primes''', with the initial term (3, 7) omitted, by the convergent sum:<ref>{{cite journal | last=Segal | first=B. | title=Generalisation du théorème de Brun | language=Russian | jfm=57.1363.06 | journal=C. R. Acad. Sci. URSS | volume=1930 | pages=501–507 | year=1930 }}</ref>
+
+:<math>B_4 = \left(\frac{1}{7} + \frac{1}{11}\right) + \left(\frac{1}{13} + \frac{1}{17}\right) + \left(\frac{1}{19} + \frac{1}{23}\right) + \cdots.</math>
+
+Using cousin primes up to 2<sup>42</sup>, the value of {{math|''B''<sub>4</sub>}} was estimated by Marek Wolf in 1996 as
+
+:<math>B_4 \approx 1.1970449</math><ref>Marek Wolf (1996), [http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.1864 ''On the Twin and Cousin Primes''].</ref>
+
+This constant should not be confused with Brun's constant for [[prime quadruplet]]s, which is also denoted {{math|''B''<sub>4</sub>}}.
+
+The [[Skewes's number#Equivalent for prime k-tuples|Skewes number]] for cousin primes is 5206837 ({{harvtxt|Tóth|2019}}).
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* {{cite book | title=Prime Numbers: The Most Mysterious Figures in Math | first=David | last=Wells | publisher=John Wiley & Sons | year=2011 | isbn=978-1118045718 | page=33 }}
+* {{cite book | title=Number theory: an introduction via the distribution of primes | url=https://archive.org/details/numbertheoryintr00fine_621 | url-access=limited | first1=Benjamin | last1=Fine | first2=Gerhard | last2=Rosenberger | publisher=Birkhäuser | year=2007 | isbn=978-0817644727 | pages=[https://archive.org/details/numbertheoryintr00fine_621/page/n214 206] }}
+*{{citation|first=László|last=Tóth|title=On The Asymptotic Density Of Prime k-tuples and a Conjecture of Hardy and Littlewood|journal=Computational Methods in Science and Technology|volume=25|year=2019|issue=3|url=http://cmst.eu/wp-content/uploads/files/10.12921_cmst.2019.0000033_TOTH.pdf|doi=10.12921/cmst.2019.0000033|arxiv=1910.02636|doi-access=free}}.
+* {{cite journal|last1=Wolf|first1=Marek|title=Random walk on the prime numbers|journal=Physica A: Statistical Mechanics and Its Applications|date=February 1998|volume=250|issue=1–4|pages=335–344|doi=10.1016/s0378-4371(97)00661-4|bibcode=1998PhyA..250..335W}}
+
+{{Prime number classes}}
+
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

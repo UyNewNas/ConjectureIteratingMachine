@@ -1,0 +1,29 @@
+{{Short description|Generalization of the game Tic-tac-toe to higher dimensions}}
+{{Use dmy dates|date=December 2021}}
+{{DISPLAYTITLE:''n<sup>d</sup>'' game}}
+A '''''n''<sup>''d''</sup> game''' (or '''''n''<sup>''k''</sup> game''') is a [[generalization]] of the combinatorial game [[tic-tac-toe]] to higher dimensions.<ref name=":0">{{Cite web |title=Mathllaneous |url=http://www.austms.org.au/Gazette/2005/Jul05/mathellaneous.pdf |access-date=16 December 2016 |archive-date=1 February 2012 |archive-url=https://web.archive.org/web/20120201040301/http://www.austms.org.au/Gazette/2005/Jul05/mathellaneous.pdf |url-status=dead }}</ref><ref name=":1">{{Cite book |last=Beck |first=József |title=Combinatorial Games: Tic-Tac-Toe Theory |title-link=Combinatorial Games: Tic-Tac-Toe Theory |date=20 March 2008 |publisher=Cambridge University Press |isbn=9780521461009 |language=en}}</ref><ref>{{Cite book |last1=Tichy |first1=Robert F. |url=https://books.google.com/books?id=7MeJRUdAwZUC&pg=PA46 |title=Diophantine Approximation: Festschrift for Wolfgang Schmidt |last2=Schlickewei |first2=Hans Peter |last3=Schmidt |first3=Klaus D. |date=10 July 2008 |publisher=Springer |isbn=9783211742808 |language=en}}</ref> It is a game played on a ''n''<sup>''d''</sup> [[hypercube]] with 2 players.<ref name=":0" /><ref name=":1" /><ref name=":2">{{Cite web |last1=Golomb |first1=Solomon |last2=Hales |first2=Alfred |title=Hypercube Tic-Tac-Toe |url=http://library.msri.org/books/Book42/files/golomb.pdf |url-status=dead |archive-url=https://web.archive.org/web/20160429190326/http://library.msri.org/books/Book42/files/golomb.pdf |archive-date=29 April 2016 |access-date=16 December 2016}}</ref><ref name=":3">{{Cite web |last=Shih |first=Davis |title=A Scientific Study: k-dimensional Tic-Tac-Toe |url=https://www.math.ucdavis.edu/~linear/student_creations/TicTacToe.pdf |access-date=16 December 2016}}</ref> If one player creates a line of length ''n'' of their symbol (X or O) they win the game. However, if all ''n''<sup>''d''</sup> spaces are filled then the game is a draw.<ref name=":2" /> Tic-tac-toe is the game where ''n'' equals 3 and ''d'' equals 2 (3, 2).<ref name=":2" /> [[3D tic-tac-toe|Qubic]] is the {{nowrap|(4, 3)}} game.<ref name=":2" /> The {{nowrap|(''n'' > 0, 0)}} or {{nowrap|(1, 1)}} games are trivially won by the first player as there is only one space ({{nowrap|1=''n''<sup>0</sup> = 1}} and {{nowrap|1=1<sup>1</sup> = 1}}). A game with {{nowrap|1=''d'' = 1}} and {{nowrap|''n'' > 1}} cannot be won if both players are playing well as an opponent's piece will block the one-dimensional line.<ref name=":3" />
+
+== Game theory ==
+{{unsolved|mathematics|Given a width of tic-tac-toe board, what is the smallest dimension such that X is guaranteed a winning strategy?}}
+
+An ''n<sup>d</sup>'' game is a [[Symmetric game | symmetric]] [[Combinatorial game theory | combinatorial game]].
+
+There are a total of <math>\frac{\left(n+2\right)^d-n^d}{2}</math> winning lines in a ''n''<sup>''d''</sup> game.<ref name=":1" /><ref>{{Cite book |last=Epstein |first=Richard A. |url=https://books.google.com/books?id=g5YWIpHTTW8C&dq=nd+tic+tac+toe+winning+lines&pg=PA341 |title=The Theory of Gambling and Statistical Logic |date=28 December 2012 |publisher=Academic Press |isbn=9780123978707 |language=en}}</ref>
+
+For any width ''n'', at some dimension ''d'' (thanks to the [[Hales-Jewett theorem]]), there will always be a winning strategy for player X. There will never be a winning strategy for player O because of the [[Strategy-stealing argument]] since an n<sup>d</sup> game is [[Symmetric game | symmetric]].
+
+==See also==
+* {{annotated link|Treblecross}}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://www.youtube.com/watch?v=FwJZa-helig Higher-Dimensional Tic-Tac-Toe] from the [[PBS Digital Studios | PBS Infinite Series]] on [[YouTube]]
+
+{{Tic-Tac-Toe}}
+
+[[Category:Tic-tac-toe]]
+[[Category:Unsolved problems in mathematics]]
+
+{{game-stub}}

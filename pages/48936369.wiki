@@ -1,0 +1,73 @@
+{{Short description|Problem in theoretical computer science}}
+{{unsolved|computer science|How many states are needed in a [[deterministic finite automaton]] that behaves differently on two given [[string (computer science)|strings]] of length {{mvar|n}}?}}
+In [[theoretical computer science]], the '''separating words problem''' is the problem of finding the smallest [[deterministic finite automaton]] that behaves differently on two given [[string (computer science)|strings]], meaning that it accepts one of the two strings and rejects the other string. It is an [[open problem]] how large such an automaton must be, in the worst case, as a function of the length of the input strings.
+
+==Example==
+The two strings 0010 and 1000 may be distinguished from each other by a three-state automaton in which the transitions from the start state go to two different states, both of which are terminal in the sense that subsequent transitions from these two states always return to the same state. The state of this automaton records the first symbol of the input string. If one of the two terminal states is accepting and the other is rejecting, then the automaton will accept only one of the strings 0010 and 1000. However, these two strings cannot be distinguished by any automaton with fewer than three states.<ref name="desw"/>
+
+==Simplifying assumptions==
+For proving bounds on this problem, it may be assumed without loss of generality that the inputs are strings over a two-letter alphabet. For, if two strings over a larger alphabet differ then there exists a [[String operations|string homomorphism]] that maps them to binary strings of the same length that also differ. Any automaton that distinguishes the binary strings can be translated into an automaton that distinguishes the original strings, without any increase in the number of states.<ref name="desw">{{citation
+ | last1 = Demaine | first1 = Erik D. | author1-link = Erik Demaine
+ | last2 = Eisenstat | first2 = Sarah
+ | last3 = Shallit | first3 = Jeffrey | author3-link = Jeffrey Shallit
+ | last4 = Wilson | first4 = David A.
+ | arxiv = 1103.4513
+ | contribution = Remarks on separating words
+ | doi = 10.1007/978-3-642-22600-7_12
+ | location = Heidelberg
+ | mr = 2910373
+ | pages = 147–157
+ | publisher = Springer-Verlag
+ | series = Lecture Notes in Computer Science
+ | title = Descriptional Complexity of Formal Systems: 13th International Workshop, DCFS 2011, Gießen/Limburg, Germany, July 25-27, 2011, Proceedings
+ | volume = 6808
+ | year = 2011| isbn = 978-3-642-22599-4 | s2cid = 6959459 }}.</ref>
+
+It may also be assumed that the two strings have equal length. For strings of unequal length, there always exists a [[prime number]] {{mvar|p}} whose value is logarithmic in the smaller of the two input lengths, such that the two lengths are different [[Modular arithmetic|modulo]] {{mvar|p}}. An automaton that counts the length of its input modulo {{mvar|p}} can be used to distinguish the two strings from each other in this case. Therefore, strings of unequal lengths can always be distinguished from each other by automata with few states.<ref name="desw"/>
+
+==History and bounds==
+The problem of bounding the size of an automaton that distinguishes two given strings was first formulated by {{harvtxt|Goralčík|Koubek|1986}}, who showed that the automaton size is always sublinear.<ref>{{citation
+ | last1 = Goralčík | first1 = P.
+ | last2 = Koubek | first2 = V.
+ | contribution = On discerning words by automata
+ | doi = 10.1007/3-540-16761-7_61
+ | location = Berlin
+ | mr = 864674
+ | pages = 116–122
+ | publisher = Springer-Verlag
+ | series = Lecture Notes in Computer Science
+ | title = Automata, Languages and Programming: 13th International Colloquium, Rennes, France, July 15–19, 1986, Proceedings
+ | volume = 226
+ | year = 1986| isbn = 978-3-540-16761-7
+ }}.</ref> Later, {{harvtxt|Robson|1989}} proved the upper bound {{math|''O''(''n''<sup>2/5</sup>(log&nbsp;''n'')<sup>3/5</sup>)}} on the automaton size that may be required.<ref>{{citation
+ | last = Robson | first = J. M.
+ | doi = 10.1016/0020-0190(89)90215-9
+ | issue = 4
+ | journal = Information Processing Letters
+ | mr = 986823
+ | pages = 209–214
+ | title = Separating strings with small automata
+ | volume = 30
+ | year = 1989}}.</ref> This was improved by {{harvtxt|Chase|2020}} to {{math|''O''(''n''<sup>1/3</sup>(log&nbsp;''n'')<sup>7</sup>)}}.<ref>{{cite arXiv
+ | last = Chase | first = Z.
+ | mode = cs2
+ | title = A New Upper Bound for Separating Words
+ | year = 2020
+ | class = math.CO
+ | eprint = 2007.12097
+}}.</ref><ref>{{Cite book |last=Chase |first=Zachary |chapter=Separating words and trace reconstruction |date=2021-06-15 |title=Proceedings of the 53rd Annual ACM SIGACT Symposium on Theory of Computing |chapter-url=https://doi.org/10.1145/3406325.3451118 |series=STOC 2021 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=21–31 |doi=10.1145/3406325.3451118 |isbn=978-1-4503-8053-9}}</ref> 
+
+There exist pairs of inputs that are both binary strings of length {{mvar|''n''}} for which any automaton that distinguishes the inputs must have size {{math|Ω(log ''n'')}}. Closing the gap between this lower bound and Chase's upper bound remains an open problem. [[Jeffrey Shallit]] has offered a prize of 100 British pounds for any improvement to Robson's upper bound.<ref>{{citation|contribution= Open Problems in Automata Theory: An Idiosyncratic View|first=Jeffrey|last=Shallit|authorlink=Jeffrey Shallit|url=https://cs.uwaterloo.ca/~shallit/Talks/bc4.pdf|title=British Colloquium for Theoretical Computer Science (BCTCS 2014), Loughborough University|year=2014}}.</ref>
+
+==Special cases==
+Several special cases of the separating words problem are known to be solvable using few states:
+*If two binary words have differing numbers of zeros or ones, then they can be distinguished from each other by counting their [[Hamming weight]]s modulo a prime of logarithmic size, using a logarithmic number of states. More generally, if a pattern of length {{mvar|k}} appears a different number of times in the two words, they can be distinguished from each other using {{math|''O''(''k'' log ''n'')}} states.<ref name="desw"/>
+*If two binary words differ from each other within their first or last {{mvar|k}} positions, they can be distinguished from each other using {{math|''k'' + ''O''(1)}} states. This implies that [[almost all]] pairs of binary words can be distinguished from each other with a logarithmic number of states, because only a polynomially small fraction of pairs have no difference in their initial {{math|''O''(log ''n'')}} positions.<ref name="desw"/>
+*If two binary words have [[Hamming distance]] {{mvar|d}}, then there exists a prime {{mvar|p}} with {{math|1=''p'' = ''O''(''d'' log ''n'')}} and a position {{mvar|i}} at which the two strings differ, such that {{mvar|i}} is not equal modulo {{mvar|p}} to the position of any other difference. By computing the [[Parity (mathematics)|parity]] of the input symbols at positions congruent to {{mvar|i}} modulo {{mvar|p}}, it is possible to distinguish the words using an automaton with {{math|''O''(''d'' log ''n'')}} states.<ref name="desw"/>
+
+==References==
+{{reflist}}
+
+[[Category:Finite-state machines]]
+[[Category:Problems on strings]]
+[[Category:Unsolved problems in computer science]]

@@ -1,0 +1,3 @@
+#redirect [[Uniformly bounded representation#Dixmier problem]]
+
+[[Category:Unsolved problems in mathematics]]

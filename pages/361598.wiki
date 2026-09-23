@@ -1,0 +1,40 @@
+{{Short description|Unanswered conjecture in number theory}}
+{{Infobox mathematical statement
+| name = Second Hardy–Littlewood conjecture
+| image = File:Second Hardy–Littlewood conjecture.svg
+| caption = Plot of <math>\pi(x) + \pi(y) - \pi(x+y)</math> for <math>x, y \leq 200</math>
+| field = [[Number theory]]
+| conjectured by = [[G. H. Hardy]]<br>[[John Edensor Littlewood]]
+| conjecture date = 1923
+| open problem = yes
+| first proof by = 
+| first proof date = 
+| implied by = 
+}}
+In [[number theory]], the '''second Hardy–Littlewood conjecture''' concerns the number of [[prime number|primes]] in [[Interval (mathematics)|intervals]]. Along with the [[first Hardy–Littlewood conjecture]], the second Hardy–Littlewood conjecture was proposed by [[G. H. Hardy]] and [[John Edensor Littlewood]] in 1923.<ref name="original">{{cite journal |last1=Hardy |first1=G. H. |author-link1=G. H. Hardy |last2=Littlewood |first2=J. E. |author-link2=John Edensor Littlewood |title=Some Problems of 'Partitio Numerorum.' III. On the Expression of a Number as a Sum of Primes. |journal=[[Acta Mathematica|Acta Math.]] |issue=44 |pages=1–70 |year=1923 |volume=44|doi=10.1007/BF02403921|doi-access=free }}.</ref>
+
+==Statement==
+The conjecture states that
+
+<math>\pi(x+y) \leq \pi(x) + \pi(y)</math>
+
+for integers {{Math|''x'', ''y'' &geq; 2}}, where {{Math|''&pi;''(''z'')}} denotes the [[prime-counting function]], giving the number of prime numbers up to and including {{Mvar|z}}.
+
+==Connection to the first Hardy–Littlewood conjecture==
+The statement of the second Hardy–Littlewood conjecture is equivalent to the statement that the number of primes from {{Math|''x'' + 1}} to {{Math|''x'' + ''y''}} is always less than or equal to the number of primes from 1 to {{Mvar|y}}. This was proved to be inconsistent with the first Hardy–Littlewood conjecture on prime {{Mvar|k}}-tuples, and the first violation is expected to likely occur for very large values of {{Mvar|x}}.<ref>{{cite journal | first1=Douglas | last1=Hensley | first2=Ian | last2=Richards | title=Primes in intervals | journal=Acta Arith. | date=1974 | volume=25 | issue=1973/74 | pages=375–391 | mr=396440 | doi=10.4064/aa-25-4-375-391 | doi-access=free }}</ref><ref>{{cite journal | first=Ian | last=Richards | title=On the Incompatibility of Two Conjectures Concerning Primes | journal=Bull. Amer. Math. Soc. | volume=80 | pages=419–438 | year=1974 | doi=10.1090/S0002-9904-1974-13434-8 | doi-access=free }}</ref>  For example, an [[prime k-tuple#Admissibility|admissible ''k''-tuple]] (or [[prime constellation]]) of 447 primes can be found in an interval of {{Math|1=''y'' = 3159}} integers, while {{Math|''&pi;''(3159) {{=}} 446}}.  If the first Hardy–Littlewood conjecture holds, then the first such {{Mvar|k}}-tuple is expected for ''{{Mvar|x}}'' greater than {{Math|1.5 × 10<sup>174</sup>}} but less than {{Math|2.2 × 10<sup>1198</sup>}}.<ref>{{cite web | title=447-tuple calculations | url=http://www.opertech.com/primes/residues.html | accessdate=2008-08-12 |archive-url=https://web.archive.org/web/20080509093850/http://www.opertech.com/primes/residues.html |archive-date=2008-05-09}}</ref>
+
+== References ==
+<references/>
+
+==External links==
+* {{cite web | first=Thomas J. | last=Engelsma | title=k-tuple Permissible Patterns | url=http://www.opertech.com/primes/k-tuples.html | accessdate=2008-08-12 }}
+* {{cite web | first=Tomás | last=Oliveira e Silva | title=Admissible prime constellations | url=https://sweet.ua.pt/tos/apc.html | accessdate=2023-09-28 }}
+
+{{Prime number conjectures}}
+
+{{DEFAULTSORT:Second Hardy-Littlewood Conjecture}}
+[[Category:Analytic number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]
+
+{{numtheory-stub}}

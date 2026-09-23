@@ -1,0 +1,180 @@
+{{Short description|In mathematics, when is n!+1 a square}}
+{{distinguish|Brocard's conjecture}}
+{{unsolved|mathematics|2=Does <math>n!+1=m^2</math> have integer solutions other than <math>n=4,5,7</math>?}}
+'''Brocard's problem''' is a problem in [[mathematics]] that seeks [[integer]] values of <math>n</math> such that <math>n!+1</math> is a perfect square, where <math>n!</math> is the [[factorial]]. Only three values of <math>n</math> are known &mdash; 4, 5, 7 &mdash; and it is not known whether there are any more. Though research has extended far beyond n > 7, no additional solutions to the equation n! + 1 = m<sup>2</sup> are known.
+
+
+
+More formally, it seeks pairs of integers <math>n</math> and <math>m</math> such that<math display="block">n!+1 = m^2.</math>The problem was posed by [[Henri Brocard]] in a pair of articles in 1876 and 1885,{{r|broc1|broc2}} and independently in 1913 by [[Srinivasa Ramanujan]].{{r|ramanujan}}
+
+==Brown numbers==
+Pairs of the numbers <math>(n,m)</math> that solve Brocard's problem were named '''Brown numbers''' by [[Clifford A. Pickover]] in his 1995 book ''Keys to Infinity'', after learning of the problem from Kevin S. Brown.{{r|pickover}} As of October 2022, there are only three known pairs of Brown numbers:
+{{bi|left=1.6|(4,5), (5,11), and (7,71),}}
+based on the equalities
+{{bi|left=1.6|4! + 1 {{=}} 5<sup>2</sup> {{=}} 25,}}
+{{bi|left=1.6|5! + 1 {{=}} 11<sup>2</sup> {{=}} 121, and}}
+{{bi|left=1.6|7! + 1 {{=}} 71<sup>2</sup> {{=}} 5041.}}
+[[Paul Erdős]] conjectured that no other solutions exist.{{r|erdos}} Computational searches have found no further solutions with <math>n \leq 10^{15}</math>.{{r|bergal|matson|epsgli}}
+
+==Connection to the abc conjecture==
+It would follow from the [[abc conjecture]] that there are only finitely many Brown numbers.{{r|overholt}}
+More generally, it would also follow from the abc conjecture that
+<math display=block>n!+A = k^2</math>
+has only finitely many solutions, for any given integer <math>A</math>,{{r|dabrowski}} and that
+<math display=block>n! = P(x)</math>
+has only finitely many integer solutions, for any given polynomial <math>P(x)</math> of degree at least 2 with integer coefficients.{{r|luca}}
+
+==See also==
+
+* [[Ramanujan–Nagell equation]]
+
+==References==
+<references>
+
+<ref name=bergal>{{citation
+ | last1 = Berndt | first1 = Bruce C.
+ | last2 = Galway | first2 = William F.
+ | doi = 10.1023/A:1009873805276
+ | issue = 1
+ | journal = Ramanujan Journal
+ | mr = 1754629
+ | pages = 41–42
+ | title = On the Brocard–Ramanujan Diophantine equation {{math|''n''! + 1 {{=}} ''m''<sup>2</sup>}}
+ | url = https://www.math.uiuc.edu/~berndt/articles/galway.pdf
+ |url-status=dead
+ | archive-url = https://web.archive.org/web/20170703115126/https://www.math.uiuc.edu/~berndt/articles/galway.pdf
+ | archive-date = 2017-07-03
+ | volume = 4
+ | year = 2000| s2cid = 119711158
+ }}</ref>
+
+<ref name=broc1>{{citation
+ | last = Brocard | first = H.
+ | title = Question 166
+ | journal = Nouv. Corres. Math. | volume = 2 | pages = 287 | year = 1876}}</ref>
+
+<ref name=broc2>{{citation
+ | last = Brocard | first = H.
+ | title = Question 1532
+ | journal = Nouv. Ann. Math. | volume = 4 | pages = 391 | year = 1885}}</ref>
+
+<ref name=dabrowski>{{citation
+ | last = Dąbrowski | first = Andrzej
+ | issue = 3
+ | journal = Nieuw Archief voor Wiskunde
+ | mr = 1430045
+ | pages = 321–324
+ | title = On the Diophantine equation {{math|''x''! + A {{=}} ''y''<sup>2</sup>}}
+ | volume = 14
+ | year = 1996}}</ref>
+
+<ref name=epsgli>{{citation
+ | last1 = Epstein | first1 = Andrew
+ | last2 = Glickman | first2 = Jacob
+ | title = C++ Brocard GitHub Repository
+ | url = https://github.com/jhg023/brocard
+ | year = 2020}}</ref>
+
+<ref name=erdos>{{citation
+ | last = Erdős | first = Paul | author-link = Paul Erdős
+ | editor1-last = Chabauty | editor1-first = C.
+ | editor2-last = Chatelet | editor2-first = A.
+ | editor3-last = Chatelet | editor3-first = F.
+ | editor4-last = Descombes | editor4-first = R.
+ | editor5-last = Pisot | editor5-first = C.
+ | editor6-last = Poitou | editor6-first = G.
+ | contribution = Quelques problèmes de la théorie des nombres
+ | contribution-url = https://users.renyi.hu/~p_erdos/1963-14.pdf
+ | language = fr
+ | pages = 81–135
+ | publisher = University of Geneva
+ | series = Monographies de l'Enseignement Mathématique
+ | title = Introduction à la théorie des nombres
+ | volume = 6
+ | year = 1963}}; see problème 67, p. 129</ref>
+
+<ref name=luca>{{citation
+ | last = Luca | first = Florian
+ | issue = 2
+ | journal = Glasnik Matematički
+ | mr = 1951531
+ | pages = 269–273
+ | title = The Diophantine equation {{math|''P''(''x'') {{=}} ''n''!}} and a result of M. Overholt
+ | url = https://web.math.hr/glasnik/37.2/37(2)-04.pdf
+ | volume = 37(57)
+ | year = 2002}}</ref>
+<ref name=matson>{{citation
+ | last = Matson | first = Robert
+ | title = Brocard's Problem 4th Solution Search Utilizing Quadratic Residues
+ | url = http://unsolvedproblems.org/S99.pdf
+ | journal = Unsolved Problems in Number Theory, Logic and Cryptography
+ | year = 2017
+ | access-date = 2017-05-07
+ | archive-date = 2018-10-06
+ | archive-url = https://web.archive.org/web/20181006100943/http://unsolvedproblems.org/S99.pdf
+ | url-status = dead}}</ref>
+
+<ref name=overholt>{{citation
+ | last = Overholt | first = Marius
+ | doi = 10.1112/blms/25.2.104
+ | issue = 2
+ | journal = The Bulletin of the London Mathematical Society
+ | mr = 1204060
+ | page = 104
+ | title = The Diophantine equation {{math|''n''! + 1 {{=}} m<sup>2</sup>}}
+ | volume = 25
+ | year = 1993}}</ref>
+
+<ref name=pickover>{{citation
+ | last = Pickover | first = Clifford A. | author-link = Clifford A. Pickover
+ | page = 170
+ | publisher = John Wiley & Sons
+ | title = Keys to Infinity
+ | year = 1995}}</ref>
+
+<ref name=ramanujan>{{citation
+ | last = Ramanujan | first = Srinivasa
+ | editor1-last = Hardy | editor1-first = G. H. |editor1-link=G. H. Hardy
+ | editor2-last = Aiyar | editor2-first = P. V. Seshu
+ | editor3-last = Wilson | editor3-first = B. M.
+ | contribution = Question 469
+ | contribution-url = https://books.google.com/books?id=h1G2CgAAQBAJ&pg=PA327
+ | isbn = 0-8218-2076-1
+ | location = Providence, Rhode Island
+ | mr = 2280843
+ | page = 327
+ | publisher = AMS Chelsea Publishing
+ | title = Collected papers of Srinivasa Ramanujan
+ | year = 2000}}</ref>
+
+</references>
+
+==Further reading==
+*{{citation
+ | last = Guy | first = R. K. | authorlink = Richard K. Guy
+ | contribution = D25: Equations involving factorial <math>n</math>
+ | title = Unsolved Problems in Number Theory
+ | edition = 3rd
+ | location = New York | publisher = Springer-Verlag
+ | pages = 301–302
+ | year = 2004}}
+*{{citation
+ | last = Makki Naciri | first = Abderrahim
+ | url = https://doi.org/10.1007/s11139-024-00960-0
+ | issue = 2
+ | journal = Ramanujan Journal
+ | pages =  1791–1798
+ | title = On the variant Q(n!)=P(x) of the Brocard-Ramanujan Diophantine equation.
+ | volume = 65
+ | year = 2024| doi = 10.1007/s11139-024-00960-0
+ | url-access = subscription
+ }}
+==External links==
+* {{mathworld2|title=Brocard's Problem|urlname=BrocardsProblem|title2=Brown Numbers|urlname2=BrownNumbers}}
+* {{citation|last=Copeland|first=Ed|title=Brown Numbers|url=http://www.numberphile.com/videos/brown_numbers.html|work=Numberphile|publisher=[[Brady Haran]]|access-date=2013-04-06|archive-url=https://web.archive.org/web/20141109235028/http://www.numberphile.com/videos/brown_numbers.html|archive-date=2014-11-09|url-status=dead}}
+
+[[Category:Diophantine equations]]
+[[Category:Srinivasa Ramanujan]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Factorial and binomial topics]]
+[[Category:Abc conjecture]]

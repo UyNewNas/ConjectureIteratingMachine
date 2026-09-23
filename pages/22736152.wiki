@@ -1,0 +1,83 @@
+{{Short description|Generalization of Fermat's Last Theorem and of Catalan's conjecture,}}
+{{Use dmy dates|date=March 2024}}
+In [[number theory]], the '''Fermat–Catalan conjecture''' is a generalization of [[Fermat's Last Theorem]] and of [[Catalan's conjecture]]. The [[conjecture]] states that the [[equation]]
+{{NumBlk|::|<math>a^m + b^n = c^k\quad</math>|{{EquationRef|1}}}}
+has only [[finite]]ly many solutions (''a'', ''b'', ''c'', ''m'', ''n'', ''k'') with distinct triplets of values (''a''<sup>''m''</sup>, ''b''<sup>''n''</sup>, ''c''<sup>''k''</sup>) where ''a'', ''b'', ''c'' are positive [[coprime integers]] and ''m'', ''n'', ''k'' are positive integers satisfying
+{{NumBlk|::|<math>\frac{1}{m} + \frac{1}{n} + \frac{1}{k} < 1.</math>|{{EquationRef|2}}}}
+The inequality on ''m'', ''n'', and ''k'' is a necessary part of the conjecture. Without the inequality there would be infinitely many solutions, for instance with ''k'' = 1 (for any ''a'', ''b'', ''m'', and ''n'' and with ''c'' = ''a''<sup>''m''</sup> + ''b''<sup>''n''</sup>), with ''m''=''n''=''k''=2 (for the infinitely many [[Pythagorean triple]]s), and e.g. <math>7^5 + 393^3 = 7792^2</math>.
+
+==Known solutions==
+As of 2024, the following ten solutions to equation (1) which meet the criteria of equation (2) are known:<ref name="Sikora.2024">{{cite report | arxiv=2410.21552 | author=Adam S. Sikora | title=Fermat-Catalan and Tijdeman-Zagier Conjectures for Products | institution=ArXiv | type=Technical Report | number=2410.21552 | pages= | date=Oct 2024 }}</ref><ref name=pcm>{{citation|first=Carl|last=Pomerance|authorlink=Carl Pomerance|contribution=Computational Number Theory|pages=361–362|title=[[The Princeton Companion to Mathematics]]|editor1-first=Timothy|editor1-last=Gowers|editor1-link=Timothy Gowers|editor2-first=June|editor2-last=Barrow-Green|editor3-first=Imre|editor3-last=Leader|editor3-link=Imre Leader|year=2008|publisher=Princeton University Press|isbn=978-0-691-11880-2}}.</ref><ref>{{cite journal | doi=10.1215/S0012-7094-98-09105-0 | author=Frits Beukers | author-link=Frits Beukers |title=The Diophantine equation ''Ax<sup>p</sup>''+''By<sup>q</sup>''=''Cz<sup>r</sup>'' | journal=[[Duke Math. J.]] | volume=91 | number=1 | pages=61&ndash;88 | date=Jan 1998 }} Here: p.61: "the larger [solutions] were found by a computer search performed on Fermat day at Utrecht in November 1993 ... Notice that in each solution an exponent 2 occurs."</ref> 
+
+:<math>1^m + 2^3 = 3^2\;</math> (for <math>m>6</math> to satisfy Eq. 2)
+:<math>2^5 + 7^2 = 3^4\;</math>
+:<math>7^3 + 13^2 = 2^9\;</math>
+:<math>2^7 + 17^3 = 71^2\;</math>
+:<math>3^5 + 11^4 = 122^2\;</math>
+:<math>33^8 + 1549034^2 = 15613^3\;</math>
+:<math>1414^3 + 2213459^2 = 65^7\;</math>
+:<math>9262^3 + 15312283^2 = 113^7\;</math>
+:<math>17^7 + 76271^3 = 21063928^2\;</math>
+:<math>43^8 + 96222^3 = 30042907^2\;</math>
+The first of these (1<sup>''m''</sup> + 2<sup>3</sup> = 3<sup>2</sup>) is the only solution where one of ''a'', ''b'' or ''c'' is 1, according to the [[Catalan conjecture]], [[mathematical proof|proven]] in 2002 by [[Preda Mihăilescu]]. While this case leads to infinitely many solutions of (1) (since one can pick any ''m'' for ''m'' > 6), these solutions only give a single triplet of values (''a''<sup>''m''</sup>, ''b''<sup>''n''</sup>, ''c''<sup>''k''</sup>).
+
+==Partial results==
+It is known by the Darmon–Granville theorem, which uses [[Faltings' theorem]], that for any fixed choice of positive integers ''m'', ''n'' and ''k'' satisfying (2), only finitely many coprime triples (''a'',&nbsp;''b'',&nbsp;''c'') solving (1) exist.<ref>{{cite journal |first1=H. |last1=Darmon |first2=A. |last2=Granville |title=On the equations ''z''<sup>''m''</sup> = ''F''(''x'', ''y'') and ''Ax''<sup>''p''</sup> + ''By''<sup>''q''</sup> = ''Cz''<sup>''r''</sup> |journal=Bulletin of the London Mathematical Society |volume=27 |pages=513–43 |year=1995 |issue=6 |doi=10.1112/blms/27.6.513 |doi-access=free }}</ref><ref name=Elkies>{{cite journal|last=Elkies| first = Noam D. | title=The ABC's of Number Theory | journal = The Harvard College Mathematics Review | year=2007 | volume=1 | issue = 1 | url=http://dash.harvard.edu/bitstream/handle/1/2793857/Elkies%20-%20ABCs%20of%20Number%20Theory.pdf?sequence=2}}</ref>{{rp|p. 64}} However,  the full Fermat–Catalan conjecture is stronger as it allows for the exponents ''m'', ''n'' and ''k'' to vary.
+
+The [[abc conjecture]] implies the Fermat–Catalan conjecture.<ref>{{cite book
+ | last = Waldschmidt | first = Michel | authorlink = Michel Waldschmidt
+ | contribution = Lecture on the <math>abc</math> conjecture and some of its consequences
+ | doi = 10.1007/978-3-0348-0859-0_13
+ | mr = 3298238
+ | pages = 211–230
+ | publisher = Springer | location = Basel
+ | series = Springer Proc. Math. Stat.
+ | title = Mathematics in the 21st century
+ | url = http://www.imj-prg.fr/~michel.waldschmidt/articles/pdf/abcLahoreProceedings.pdf
+ | volume = 98
+ | year = 2015| isbn = 978-3-0348-0858-3 }}</ref>
+
+For a list of results for impossible combinations of exponents, see [[Beal conjecture#Partial results]]. Beal's conjecture is true [[if and only if]] all Fermat–Catalan solutions have ''m'' = 2, ''n'' = 2, or ''k'' = 2.
+
+Poonen et al.<ref>{{cite report | arxiv=math/0508174 | first1=Bjorn | last1=Poonen | first2=Edward F. | last2=Schaefer | first3=Michael | last3=Stoll | title=Twists of ''X''(7) and primitive solutions to ''x''<sup>2</sup> + ''y''<sup>3</sup> = ''z''<sup>7</sup> | date=Aug 2005 }} Here: p.3, table 1.</ref><ref name="Poonen.Schaefer.Stoll.2007">{{cite journal | first1=Bjorn | last1=Poonen | first2=Edward F. | last2=Schaefer | first3=Michael | last3=Stoll | title=Twists of ''X''(7) and primitive solutions to ''x''<sup>2</sup> + ''y''<sup>3</sup> = ''z''<sup>7</sup> | journal=Duke Math. J. | volume=137 | pages=103&ndash;158 | year=2007 }}</ref> list exponent triples where the solutions have been determined:<ref group=note>The notation "{''p'',''q'',''r''}" means that the solutions have been determined for every permutation of (''p'',''q'',''r'').</ref>
+&nbsp; {2,3,7},<ref name="Poonen.Schaefer.Stoll.2007"/> 
+&nbsp; {2,3,8},<ref name="Bruin.1999">{{cite journal | mr=1711307 | url=https://www.cambridge.org/core/journals/compositio-mathematica/article/diophantine-equations-x2-y4z6-and-x2y8-z3/A1F11FEADBCFE720756819531A5E9CAE | author=Nils Bruin | title=The Diophantine Equations ''x''<sup>2</sup> ± ''y''<sup>4</sup> = ± ''z''<sup>6</sup> and ''x''<sup>2</sup> + ''y''<sup>8</sup> = ''z''<sup>3</sup> | journal=Compositio Mathematica | volume=118 | number= | pages=305&ndash;321 | year=1999 }}</ref><ref name="Bruin.2003">{{cite journal | mr=2011330 | url=https://www.cecm.sfu.ca/~nbruin/bruin_crelle.pdf | author=Nils Bruin | title=Chabauty methods using elliptic curves | journal=J. Reine Angew. Math. | volume=562 | number= | pages=27&ndash;49 | year=2003 }}</ref>
+&nbsp; {2,3,9},<ref>{{cite journal | mr=2047096 | url=https://www.ams.org/journals/mcom/2004-73-247/S0025-5718-04-01633-3/S0025-5718-04-01633-3.pdf | author=Nils Bruin | title=Visualising ''Sha[2]'' in abelian surfaces | journal=Math. Comp. (electronic) | volume=73 | number= | pages=1459&ndash;1476 | year=2004 }}</ref>
+&nbsp; {2,2''q'',3} for [[prime number|prime]] 7<''q''<1000 with ''q''≠31,<ref>{{cite journal | url= | author=Imin Chen | title=On the equation ''s''<sup>2</sup> + ''y''<sup>2''p''</sup> = ''α''<sup>3</sup> | journal=Math. Comp. | volume=77 | number=262 | pages=1223&ndash;1227 | year=2007 }}</ref>
+&nbsp; {2,4,5},<ref name="Bruin.2003"/>
+&nbsp; {2,4,6},<ref name="Bruin.1999"/>
+&nbsp; (2,4,7),
+&nbsp; (2,4,''q'') for prime ''q''≥211,<ref>{{cite journal | mr=2075481 | jstor=40067960 | url=https://people.math.wisc.edu/~ellenberg/A4B2Cp.pdf | author=Jordan S. Ellenberg | title=Galois representations attached to ''Q''-curves  and the generalized Fermat equation ''A''<sup>4</sup> + ''B''<sup>2</sup> = ''C''<sup>''p''</sup> | journal=Amer. J. Math. | volume=126 | number= | pages=763&ndash;787 | year=2004 }}</ref>
+&nbsp; (2,''n'',4),<ref>"follows easily from" {{cite journal | mr=2031121 | url=https://personal.math.ubc.ca/~bennett/BS.pdf | author=Michael A. Bennett and Chris M. Skinner | title=Ternary Diophantine equations  via Galois representations and modular forms | journal=Canad. J. Math. | volume=56 | number=1 | pages=23&ndash;54 | year=2004 }}</ref><ref>the special case (4,''n'',4) was done earlier in {{cite journal | mr=1260076 | url=https://www.math.mcgill.ca/darmon/pub/Articles/Research/10.Fermat-44p/paper.pdf | author=Henri Darmon | title=The equation ''x''<sup>4</sup> - ''y''<sup>4</sup> = ''z''<sup>p</sup> | journal=C. R. Math. Rep. Acad. Sci. Canada | volume=15 | number= | pages=286&ndash;290 | year=1993 }}</ref>
+&nbsp; {2,''n'',''n''},<ref name="Darmon.Merel.1997">{{cite journal | mr=1468926 | url=https://eudml.org/doc/153941 | author=Henri Darmon and Loc Merel | title=Winding quotients and some variants of Fermats last theorem | journal=J. Reine Angew. Math. | volume=490 | number= | pages=81&ndash;100 | year=1997 }}</ref>
+&nbsp; {3,3,4},<ref name="Bruin.2000">{{cite book | mr=1850605 | url=https://www.cecm.sfu.ca/~nbruin/eq33p.ps.gz | author=Nils Bruin | contribution=On powers as sums of two cubes | pages=169&ndash;184  |editor=Wieb Bosma | title=Algorithmic Number Theory &ndash; 4th Intnl. Symp. ANTS | location=Leiden | publisher=Springer | series=LNCS | volume=1838 |  year=2000 }}</ref>
+&nbsp; {3,3,5},<ref name="Bruin.2000"/>
+&nbsp; {3,3,''q''} for 17≤''q''≤10000,<ref>{{cite journal | mr=1618290 | url = https://projecteuclid.org/journals/experimental-mathematics/volume-7/issue-1/Sur-l%C3%A9quation-asp-3bsp-3csp-p/em/1047674269.pdf | author=Alain Kraus | title=Sur l'équation ''a''<sup>3</sup> + ''b''<sup>3</sup> = ''c''<sup>''p''</sup> | journal=Experiment. Math. | volume=7 | number= | pages=1&ndash;13 | year=1998 }}</ref>
+&nbsp; {3,''n'',''n''},<ref name="Darmon.Merel.1997"/>
+&nbsp; {2''n'',2''n'',5},<ref>{{cite journal | url=https://personal.math.ubc.ca/~bennett/bennetjtnb.pdf | author=Michael A. Bennett | title=The equation ''x''<sup>2''n''</sup> + ''y''<sup>2''n''</sup> = ''z''<sup>5</sup> | journal=Journal de Théorie des Nombres de Bordeaux | volume=18 | number= | pages=315&ndash;321 | year=2006 }}</ref>
+&nbsp; {''n'',''n'',''n''}.<ref>{{cite journal | author=Andrew Wiles | title=Modular Elliptic Curves and Fermat's Last Theorem | journal=Annals of Mathematics | volume=142 | pages=443&ndash;551 | year=1995 }}</ref><ref>{{cite journal | mr=1333036 | url=https://staff.fnwi.uva.nl/a.l.kret/Galoistheorie/taylor-wiles.pdf | author=Richard Taylor and Andrew Wiles | title=Ring-theoretic properties of certain Hecke algebras | journal=Ann. of Math. (2) | volume=141 | pages=553&ndash;572 | year=1995 }}</ref>
+&nbsp; For each of these exponent triples, if there is some solution at all, it is listed among those in section {{section link|#Known solutions}}.
+
+Sikora partially used the [[cluster computer]]s at the Center for Computational Research at [[University at Buffalo]] to test all tuples (''a'',''b'',''c'',''m'',''n'',''k'') such that min(''m'',''n'',''k'') ≤ 113 and ''a''<sup>''m''</sup>,  ''b''<sup>''n''</sup>, ''c''<sup>''k''</sup> < ''M''<sub>min(''m'',''n'',''k'')</sub>, where ''M''<sub>2</sub> = 2<sup>71</sup>, ''M''<sub>3</sub> = 2<sup>80</sup>, ''M''<sub>4</sub> = 2<sup>100</sup>, and ''M''<sub>5</sub> = ... = ''M''<sub>113</sub> = 2<sup>113</sup>. He did not find any other solution than those above.<ref group=note>For example, the five known large solutions were all reproduced during the test for min(''m'',''n'',''k'') = 2, where ''a''<sup>''m''</sup>, ''b''<sup>''n''</sup>, and ''c''<sup>''k''</sup> were considered up to 2<sup>71</sup>.</ref><ref name="Sikora.2024"/>
+
+==See also==
+
+*[[Sums of powers]], a list of related conjectures and theorems
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==External links==
+
+* [http://webusers.imj-prg.fr/~michel.waldschmidt/articles/pdf/PerfectPowers.pdf ''Perfect Powers: Pillai's works and their developments''. Waldschmidt,  M. ]
+* {{Cite OEIS|A214618|Perfect powers z^r that can be written in the form x^p + y^q, where x, y, z are positive coprime integers and p, q, r are positive integers satisfying 1/p + 1/q + 1/r < 1}}
+
+{{DEFAULTSORT:Fermat-Catalan conjecture}}
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Diophantine equations]]
+[[Category:Abc conjecture]]
+[[Category:Pierre de Fermat]]

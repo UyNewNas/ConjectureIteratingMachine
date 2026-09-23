@@ -1,0 +1,403 @@
+{{good article}}
+{{Short description|On point sets with no small-area triangles}}
+{{unsolved|mathematics|What is the asymptotic growth rate of the area of the smallest triangle determined by three out of <math>n</math> points in a square, when the points are chosen to maximize this area?}}
+[[File:Heilbronn square n=6.svg|thumb|300px|Six points in the unit square, with the smallest triangles (red) having area 1/8, the optimal area for this number of points. Other larger triangles are colored blue. These points are an [[affine transformation]] of a [[regular hexagon]], but for larger numbers of points the optimal solution does not form a convex polygon.]]
+In [[discrete geometry]] and [[discrepancy theory]], the '''Heilbronn triangle problem''' asks how to place <math>n</math> points in a region of the plane, such as a square, so that the smallest of the triangles formed by triples of the points is as large as possible. It is named after [[Hans Heilbronn]], who [[conjecture]]d that this largest achievable area shrinks at least as quickly as the inverse square of the number of points. Komlós, Pintz, and Szemerédi disproved the conjecture in 1982, finding placements whose smallest triangle is larger by a logarithmic factor, but the [[Asymptotic analysis|asymptotic growth rate]] of the area remains unknown.
+==Definition==
+The Heilbronn triangle problem concerns the placement of <math>n</math> points within a shape in the plane, such as the [[unit square]] or the [[unit disk]]. Each triple of the placed points forms a [[triangle]], and different placements make the smallest of these triangles larger or smaller. The problem asks: how should the <math>n</math> points be placed to maximize the area of the smallest {{nowrap|triangle?{{r|roth}}}}
+
+More formally, the shape may be assumed to be a [[compact set]] <math>D</math> in the plane, meaning that it stays within a bounded distance from the origin and that points are allowed to be placed on its boundary. In most work on this problem, <math>D</math> is additionally a [[convex set]] of nonzero area. When three of the placed points [[collinear|lie on a line]], they are considered as forming a [[degeneracy (mathematics)|degenerate]] triangle whose area is defined to be zero, so placements that maximize the smallest triangle will not have collinear triples of points. The assumption that the shape is compact implies that there exists an optimal placement of <math>n</math> points, rather than only a sequence of placements approaching optimality. The number <math>\Delta_D(n)</math> may be defined as the area of the smallest triangle in such an optimal placement, that is, the largest area that the smallest triangle can be made to {{nowrap|have.{{r|roth}}{{efn|Roth's definition uses slightly different notation, and [[Normalization (statistics)|normalizes]] the area of the triangle by dividing it by the area of <math>D</math>.}}}}
+
+An example is shown in the figure, with six points in a unit square. These six points form <math>\tbinom63=20</math> different triangles, four of which are shaded in the figure. Six of these 20 triangles, with two of the shaded shapes, have area 1/8, and the remaining 14 triangles have larger areas. This is the optimal placement of six points in a unit square: all other placements form at least one triangle with area 1/8 or smaller. Therefore, writing <math>\Delta_\square(n)</math> for the case in which <math>D</math> is the unit square, {{nowrap|<math>\Delta_\square(6)=\tfrac18</math>.{{r|goldberg}}}}
+
+Although researchers have studied the value of <math>\Delta_D(n)</math> for specific shapes and specific small numbers of points,{{r|goldberg|comyeb|zenche}} Heilbronn was concerned instead about its [[asymptotic behavior]]: if the shape <math>D</math> is held fixed, but <math>n</math> varies, how does the area of the smallest triangle vary {{nowrap|with <math>n</math>?}} That is, Heilbronn's question concerns the growth rate {{nowrap|of <math>\Delta_D(n)</math>,}} as a function {{nowrap|of <math>n</math>.}} For any two convex shapes <math>D</math> and <math>D'</math> of nonzero area, the numbers <math>\Delta_D(n)</math> and <math>\Delta_{D'}(n)</math> differ by at most a constant factor, depending on the two shapes but not {{nowrap|on <math>n</math>:}} some [[affine transformation|affine image]] of <math>D'</math> is contained {{nowrap|in <math>D</math>,}} and carrying a placement through it multiplies every triangle area by the same factor. Therefore, in bounds on the growth rate of <math>\Delta_D(n)</math> that omit the [[constant of proportionality]] of that growth, the choice of <math>D</math> is irrelevant and the subscript may be {{nowrap|omitted.{{r|roth}}}}
+
+This independence applies only to growth rates. For a fixed number of points, the exact value of <math>\Delta_D(n)</math> depends on the shape, and three choices have been studied in detail. In the classical case <math>D</math> is the unit {{nowrap|square, <math>\Delta_\square(n)</math>.}} A second line of work takes <math>D</math> to be a triangle of unit area, written <math>\Delta_\triangle(n)</math>. Because any two triangles are related by an affine transformation, which scales all areas by the same factor, the particular triangle chosen does not affect the value. In a third variant the shape is not fixed in advance: among all convex shapes of unit area, one asks which admits the largest value {{nowrap|of <math>\Delta_D(n)</math>.}} These three problems have different answers, and are treated separately below.
+
+==Heilbronn's conjecture and its disproof==
+Heilbronn conjectured prior to 1951 that <math>\Delta(n)</math> always shrinks rapidly as a function {{nowrap|of <math>n</math>,}} at a rate inversely proportional to the square {{nowrap|of <math>n</math>.{{r|roth}}{{efn|The conjecture is credited to Heilbronn in {{harvtxt|Roth|1951}}, but without citation to any specific publication.}}}} In terms of [[big O notation]], this can be expressed as the bound
+<math display=block>\Delta(n)=O\left(\frac{1}{n^2}\right).</math>
+[[File:No-three-in-line.svg|thumb|upright=0.8|Solutions to the [[no-three-in-line problem]], large sets of grid points with no three collinear points, can be scaled into a unit square with minimum triangle area {{nowrap|<math>\Omega(1/n^2)</math>.}}]]
+In the other direction, [[Paul Erdős]] found examples of point sets with minimum triangle area proportional {{nowrap|to <math>1/n^2</math>,}} demonstrating that, if true, Heilbronn's conjectured bound could not be strengthened. These examples are also solutions to the [[no-three-in-line problem]], which asks for large sets of grid points with no three in a line. As Erdős observed, when <math>n</math> is a [[prime number]], the set of <math>n</math> points <math>(i,i^2\bmod n)</math> on an <math>n\times n</math> [[integer lattice|integer grid]] (for {{nowrap|<math>0\le i<n</math>)}} has no three collinear points, and therefore by [[Pick's theorem]] each of the triangles formed by these points has area at {{nowrap|least <math>\tfrac12</math>.}} When these grid points are scaled to fit within a unit square, their smallest triangle area is proportional {{nowrap|to <math>1/n^2</math>,}} matching Heilbronn's conjectured upper bound. If <math>n</math> is not prime, then a similar construction using a prime number close to <math>n</math> achieves the same asymptotic lower {{nowrap|bound.{{r|roth}}{{efn|Erdős's construction was published in {{harvtxt|Roth|1951}}, credited to Erdős.}}}}
+
+{{harvtxt|Komlós|Pintz|Szemerédi|1982}} eventually disproved Heilbronn's conjecture by using the [[probabilistic method]] to find sets of points whose smallest triangle area is larger than in the sets found by Erdős. Their construction involves the following steps:
+*Randomly place <math>n^{1+\varepsilon}</math> points in the unit square, for {{nowrap|some <math>\varepsilon>0</math>.}}
+*Remove all pairs of points that are unexpectedly close together.
+*Prove that there are few remaining low-area triangles and therefore only a sublinear number of cycles formed by two, three, or four low-area triangles. Remove all points belonging to these cycles.
+*Apply a [[triangle removal lemma]] for 3-uniform [[hypergraph]]s of high [[girth (graph theory)|girth]] to show that, with high probability, the remaining points include a subset of <math>n</math> points that do not form any small-area triangles.
+Their construction shows that{{r|kps82}}
+<math display=block>\Delta(n)=\Omega\left(\frac{\log n}{n^2}\right).</math>
+The proof can be [[Derandomization|derandomized]], leading to a [[polynomial time|polynomial-time]] algorithm for constructing placements with this triangle area.{{r|bkhl}}
+
+==Upper bounds==
+Every set of <math>n</math> points in the unit square contains three points forming a triangle of area at most proportional {{nowrap|to <math>1/n</math>.}} One way to see this is to [[Point set triangulation|triangulate]] the [[convex hull]] of the points, and choose the smallest of the triangles in the triangulation. Another is to sort the points by their {{nowrap|<math>x</math>-coordinates,}} and to choose the three consecutive points in this ordering whose {{nowrap|<math>x</math>-coordinates}} are the closest together. In the first paper published on the Heilbronn triangle problem, in 1951, [[Klaus Roth]] proved a stronger upper bound {{nowrap|on <math>\Delta(n)</math>,}} of the form{{r|roth}}
+<math display=block>\Delta(n)=O\left(\frac{1}{n\sqrt{\log\log n}}\right).</math>
+A considerably stronger bound,
+<math display=block>\Delta(n)\leq\frac{\exp{\left(c\sqrt{\log n}\right)}}{n^{8/7}},</math>
+for some {{nowrap|constant <math>c</math>,}} was proven by {{harvtxt|Komlós|Pintz|Szemerédi|1981}} and stood for more than four {{nowrap|decades.{{r|kps81}}}}
+
+{{harvtxt|Cohen|Pohoata|Zakharov|2023}} gave the first improvement, an upper bound equal to {{nowrap|<math>n^{-\frac{8}{7}-\frac{1}{2000}}</math>.{{r|cpz23|sloman}}}} The same authors subsequently obtained the strongest bound known to date, as a consequence of a lower bound on the number of incidences between points and tubes:{{r|cpz25}}
+<math display=block>\Delta(n)\leq n^{-7/6+o(1)}.</math>
+
+==Specific shapes and numbers==
+
+===Unit square===
+{{harvtxt|Goldberg|1972}} has investigated the optimal arrangements of <math>n</math> points in a square, for <math>n</math> up to 16.{{r|goldberg}} Goldberg's constructions for up to six points lie on the boundary of the square, and are placed to form an [[affine transformation]] of the vertices of a [[regular polygon]]. For larger values {{nowrap|of <math>n</math>,}} {{harvtxt|Comellas|Yebra|2002}} improved Goldberg's bounds, and for these values the solutions include points interior to the square.{{r|comyeb}}
+
+These constructions have been proven optimal for up to eight points. For seven points, the proof used a computer search to subdivide the [[Configuration space (mathematics)|configuration space]] of possible arrangements of the points into 226 different subproblems, and used [[nonlinear programming]] techniques to show that in 225 of those cases, the best arrangement was not as good as the known bound. In the remaining case, including the eventual optimal solution, its optimality was proven using [[symbolic computation]] techniques.{{r|zenche}} For eight points, {{harvtxt|Dehbi|Zeng|2022}} combined numerical search with symbolic computation to show {{nowrap|that <math>\Delta_\square(8)=\tfrac{\sqrt{13}-1}{36}</math>.{{r|dehbizeng}}}} For nine points, {{harvtxt|Chen|Xu|Zeng|2017}} obtained sharp bounds by an extensive branch-and-bound computation on CPU and GPU clusters.{{r|chenxuzeng}} Subsequently, configurations that are globally optimal to within a certified numerical tolerance were computed for <math>n\le9</math> using [[Nonlinear programming|mixed-integer nonlinear optimization]] by {{harvtxt|Monji|Modir|Kocuk|2025}},{{r|monji}} and refined analytically by {{harvtxt|Sudermann-Merx|2026}} into exact coordinates, recovering the configurations found by Comellas and Yebra.{{r|smsquare}}
+
+The following are the best known solutions for 7–12 points in a unit square, found through [[simulated annealing]].{{r|comyeb}} Those for seven and eight points are known to be optimal.{{r|zenche|dehbizeng}}
+
+<gallery>
+Heilbronn triangles, 7 points in square.svg|7 points in a square, all 8 minimal triangles shaded {{nowrap|(<math>A\approx 0.0839</math>)}}
+Heilbronn triangles, 8 points in square.svg|8 points in a square, 5 of 12 minimal triangles shaded{{efn|name=mofn|Where several minimal-area triangles can be shown without calculation to be equal in area, only one of them is shaded.}} {{nowrap|(<math>A\approx 0.0724</math>)}}
+Heilbronn triangles, 9 points in square.svg|9 points in a square, 6 of 11 minimal triangles shaded{{efn|name=mofn}} {{nowrap|(<math>A\approx 0.0549</math>)}}
+Heilbronn triangles, 10 points in square.svg|10 points in a square, 3 of 16 minimal triangles shaded{{efn|name=mofn}} {{nowrap|(<math>A\approx 0.0465</math>)}}
+Heilbronn triangles, 11 points in square.svg|11 points in a square, 8 of 28 minimal triangles shaded{{efn|name=mofn}} {{nowrap|(<math>A\approx 0.0370</math>)}}
+Heilbronn triangles, 12 points in square.svg|12 points in a square, 3 of 20 minimal triangles shaded{{efn|name=mofn}} {{nowrap|(<math>A\approx 0.0326</math>)}}
+</gallery>
+
+===Triangle===
+When the container is a triangle of unit area, exact values of <math>\Delta_\triangle(n)</math> are known for small numbers of points. Here <math>\Delta_\triangle(4)=\tfrac13</math>, and <math>\Delta_\triangle(5)=3-2\sqrt2</math>, proven by Royce Peng in 1989.{{r|soifer}} {{harvtxt|Yang|Zhang|Zeng|1994}} proved {{nowrap|that <math>\Delta_\triangle(6)=\tfrac18</math>.{{r|yzztri}}}} For seven points, {{harvtxt|Zeng|Chen|2019}} proved {{nowrap|that <math>\Delta_\triangle(7)=\tfrac{7}{72}</math>,}} and that the optimal configuration is unique, by a symbolic analysis of eight cases.{{r|zengchentri}} For eight points, {{harvtxt|Chen|Zeng|Zhou|2014}} established an upper bound by a branch-and-bound search over octuples of subtriangles.{{r|czz14}}
+
+===Convex shapes===
+Instead of looking for optimal placements for a given shape, one may look for an optimal shape for a given number of points. Among convex shapes <math>D</math> with area one, the [[regular hexagon]] is the one that {{nowrap|maximizes <math>\Delta_D(6)</math>,}} with {{nowrap|<math>\Delta_D(6)=\tfrac16</math>}} attained by placing the six points at the hexagon vertices.{{r|dyz}} The convex shapes of unit area that maximize <math>\Delta_D(7)</math> have {{nowrap|<math>\Delta_D(7)=\tfrac19</math>.{{r|yanzen}}}} These are the only two numbers of points for which this variant has been settled. For larger numbers of points, configurations found numerically, without proofs of optimality, have been collected by Erich Friedman.{{r|friedman}}
+
+==Variations==
+There have been many variations of this problem 
+including the case of a uniformly random set of points, for which arguments based on either [[Kolmogorov complexity]] or [[Poisson approximation]] show that the [[expected value]] of the minimum area is inversely proportional to the cube of the number of points.{{r|jlv|grimmett}} Variations involving the volume of higher-dimensional [[simplex|simplices]] have also been studied.{{r|brass|lefmann|barnao}}
+
+Rather than considering simplices, another higher-dimensional version adds another {{nowrap|parameter <math>k</math>,}} and asks for placements of <math>n</math> points in the unit [[hypercube]] that maximize the minimum volume of the [[convex hull]] of any subset of <math>k</math> points. For <math>k=d+1</math> these subsets form simplices but for larger values {{nowrap|of <math>k</math>,}} relative {{nowrap|to <math>d</math>,}} they can form more complicated shapes. When <math>k</math> is sufficiently large relative {{nowrap|to <math>\log n</math>,}} randomly placed point sets have minimum {{nowrap|<math>k</math>-point}} convex hull {{nowrap|volume <math>\Omega(k/n)</math>.}} No better bound is possible; any placement has <math>k</math> points with {{nowrap|volume <math>O(k/n)</math>,}} obtained by choosing some <math>k</math> consecutive points in coordinate order. This result has applications in [[range searching]] data structures.{{r|chazelle}}
+
+==See also==
+*[[Danzer set]], a set of points that avoids empty triangles of large area
+
+==Notes==
+{{notelist}}
+
+==References==
+<references>
+
+<ref name=barnao>{{citation
+ | last1 = Barequet | first1 = Gill
+ | last2 = Naor | first2 = Jonathan
+ | issue = 3
+ | journal = Far East Journal of Applied Mathematics
+ | mr = 2283483
+ | pages = 343–354
+ | title = Large <math>k</math>-D simplices in the <math>d</math>-dimensional unit cube
+ | volume = 24
+ | year = 2006}}</ref>
+
+<ref name=bkhl>{{citation
+ | last1 = Bertram-Kretzberg | first1 = Claudia
+ | last2 = Hofmeister | first2 = Thomas
+ | last3 = Lefmann | first3 = Hanno
+ | doi = 10.1137/S0097539798348870
+ | issue = 2
+ | journal = [[SIAM Journal on Computing]]
+ | mr = 1769363
+ | pages = 383–390
+ | title = An algorithm for Heilbronn's problem
+ | volume = 30
+ | year = 2000| hdl = 2003/5313
+ | hdl-access = free
+ }}</ref>
+
+<ref name=brass>{{citation
+ | last = Brass | first = Peter
+ | doi = 10.1137/S0895480103435810
+ | issue = 1
+ | journal = [[SIAM Journal on Discrete Mathematics]]
+ | mr = 2178353
+ | pages = 192–195
+ | title = An upper bound for the <math>d</math>-dimensional analogue of Heilbronn's triangle problem
+ | volume = 19
+ | year = 2005}}</ref>
+
+<ref name=chazelle>{{citation
+ | last = Chazelle | first = Bernard | author-link = Bernard Chazelle
+ | isbn = 978-0-521-00357-5
+ | page = 266
+ | publisher = Cambridge University Press
+ | title = The Discrepancy Method: Randomness and Complexity
+ | url = https://books.google.com/books?id=dmOPmEh6LdYC&pg=PA266
+ | year = 2001}}</ref>
+
+<ref name=chenxuzeng>{{citation
+ | last1 = Chen | first1 = Liangyu
+ | last2 = Xu | first2 = Yaochen
+ | last3 = Zeng | first3 = Zhenbing
+ | doi = 10.1007/s10898-016-0453-1
+ | issue = 1
+ | journal = [[Journal of Global Optimization]]
+ | pages = 147–167
+ | title = Searching approximate global optimal Heilbronn configurations of nine points in the unit square via GPGPU computing
+ | volume = 68
+ | year = 2017}}</ref>
+
+<ref name=comyeb>{{citation
+ | last1 = Comellas | first1 = Francesc
+ | last2 = Yebra | first2 = J. Luis A.
+ | doi = 10.37236/1623 | doi-access = free
+ | issue = 1
+ | journal = [[Electronic Journal of Combinatorics]]
+ | mr = 1887087
+ | page = R6
+ | title = New lower bounds for Heilbronn numbers
+ | volume = 9
+ | year = 2002}}</ref>
+
+<ref name=cpz23>{{cite arXiv |mode=cs2
+ | last1 = Cohen | first1 = Alex
+ | last2 = Pohoata | first2 = Cosmin
+ | last3 = Zakharov | first3 = Dmitrii
+ | eprint = 2305.18253
+ | title = A new upper bound for the Heilbronn triangle problem
+ | year = 2023| class = math.CO }}</ref>
+
+<ref name=cpz25>{{citation
+ | last1 = Cohen | first1 = Alex
+ | last2 = Pohoata | first2 = Cosmin
+ | last3 = Zakharov | first3 = Dmitrii
+ | doi = 10.1007/s00222-025-01331-2
+ | issue = 3
+ | journal = [[Inventiones Mathematicae]]
+ | pages = 1045–1118
+ | title = Lower bounds for incidences
+ | volume = 240
+ | year = 2025| doi-access = free
+ }}</ref>
+
+<ref name=czz14>{{citation
+ | last1 = Chen | first1 = Liangyu
+ | last2 = Zeng | first2 = Zhenbing
+ | last3 = Zhou | first3 = Wenju
+ | doi = 10.1007/s10878-012-9585-5
+ | issue = 4
+ | journal = [[Journal of Combinatorial Optimization]]
+ | pages = 854–874
+ | title = An upper bound of Heilbronn number for eight points in triangles
+ | volume = 28
+ | year = 2014}}</ref>
+
+<ref name=dehbizeng>{{citation
+ | last1 = Dehbi | first1 = Lydia
+ | last2 = Zeng | first2 = Zhenbing
+ | doi = 10.1007/s11424-022-1220-7
+ | issue = 6
+ | journal = Journal of Systems Science and Complexity
+ | pages = 2452–2480
+ | title = Heilbronn's problem of eight points in the square
+ | volume = 35
+ | year = 2022}}</ref>
+
+<ref name=dyz>{{citation
+ | last1 = Dress | first1 = Andreas W. M. | author1-link = Andreas Dress
+ | last2 = Yang | first2 = Lu
+ | last3 = Zeng | first3 = Zhenbing
+ | editor1-last = Du | editor1-first = Ding-Zhu
+ | editor2-last = Pardalos | editor2-first = Panos M.
+ | contribution = Heilbronn problem for six points in a planar convex body
+ | doi = 10.1007/978-1-4613-3557-3_13
+ | mr = 1376828
+ | pages = 173–190
+ | publisher = Kluwer Acad. Publ., Dordrecht
+ | series = Nonconvex Optim. Appl.
+ | title = Minimax and Applications
+ | volume = 4
+ | year = 1995| isbn = 978-1-4613-3559-7 }}</ref>
+
+<ref name=friedman>{{citation
+ | last = Friedman | first = Erich
+ | title = Heilbronn problem for convex regions
+ | work = Erich's Packing Center
+ | url = https://erich-friedman.github.io/packing/heilconvex/
+ | access-date = 28 July 2026}}</ref>
+
+<ref name=goldberg>{{citation
+ | last = Goldberg | first = Michael
+ | journal = [[Mathematics Magazine]]
+ | doi = 10.2307/2687869
+ | issue = 3
+ | jstor = 2687869
+ | mr = 0296816
+ | pages = 135–144
+ | title = Maximizing the smallest triangle made by <math>n</math> points in a square
+ | volume = 45
+ | year = 1972}}</ref>
+
+<ref name=grimmett>{{citation
+ | last1 = Grimmett | first1 = G. | author1-link = Geoffrey Grimmett
+ | last2 = Janson | first2 = S. | author2-link = Svante Janson
+ | doi = 10.1002/rsa.10092
+ | issue = 2
+ | journal = Random Structures & Algorithms
+ | pages = 206–223
+ | s2cid = 12272636
+ | title = On smallest triangles
+ | volume = 23
+ | year = 2003}}</ref>
+
+<ref name=jlv>{{citation
+ | last1 = Jiang | first1 = Tao
+ | last2 = Li | first2 = Ming | author2-link = Ming Li
+ | last3 = Vitányi | first3 = Paul | author3-link = Paul Vitányi
+ | arxiv = math/9902043
+ | doi = 10.1002/rsa.10024
+ | issue = 2
+ | journal = Random Structures & Algorithms
+ | mr = 1884433
+ | pages = 206–219
+ | s2cid = 2079746
+ | title = The average-case area of Heilbronn-type triangles
+ | volume = 20
+ | year = 2002}}</ref>
+
+<ref name=kps81>{{citation
+ | last1 = Komlós | first1 = J. | author1-link = János Komlós (mathematician)
+ | last2 = Pintz | first2 = J. | author2-link = János Pintz
+ | last3 = Szemerédi | first3 = E. | author3-link = Endre Szemerédi
+ | doi = 10.1112/jlms/s2-24.3.385
+ | issue = 3
+ | journal = [[Journal of the London Mathematical Society]]
+ | mr = 0635870
+ | pages = 385–396
+ | title = On Heilbronn's triangle problem
+ | volume = 24
+ | year = 1981}}</ref>
+
+<ref name=kps82>{{citation
+ | last1 = Komlós | first1 = J. | author1-link = János Komlós (mathematician)
+ | last2 = Pintz | first2 = J. | author2-link = János Pintz
+ | last3 = Szemerédi | first3 = E. | author3-link = Endre Szemerédi
+ | doi = 10.1112/jlms/s2-25.1.13
+ | issue = 1
+ | journal = [[Journal of the London Mathematical Society]]
+ | mr = 0645860
+ | pages = 13–24
+ | title = A lower bound for Heilbronn's problem
+ | volume = 25
+ | year = 1982}}</ref>
+
+<ref name=lefmann>{{citation
+ | last = Lefmann | first = Hanno
+ | doi = 10.1007/s00454-007-9041-y | doi-access = free
+ | issue = 3
+ | journal = [[Discrete & Computational Geometry]]
+ | mr = 2443292
+ | pages = 401–413
+ | title = Distributions of points in <math>d</math> dimensions and large <math>k</math>-point simplices
+ | volume = 40
+ | year = 2008}}</ref>
+
+<ref name=monji>{{cite arXiv |mode=cs2
+ | last1 = Monji | first1 = Amirhossein
+ | last2 = Modir | first2 = Amirali
+ | last3 = Kocuk | first3 = Burak
+ | eprint = 2512.14505
+ | title = Solving the Heilbronn triangle problem using global optimization methods
+ | year = 2025| class = cs.CG }}</ref>
+
+<ref name=roth>{{citation
+ | last = Roth | first = K. F. | author-link = Klaus Roth
+ | doi = 10.1112/jlms/s1-26.3.198
+ | issue = 3
+ | journal = [[Journal of the London Mathematical Society]]
+ | pages = 198–204
+ | title = On a problem of Heilbronn
+ | volume = 26
+ | year = 1951}}</ref>
+
+<ref name=sloman>{{citation 
+ | first = Leila | last = Sloman 
+ | date = September 8, 2023 
+ | title = The Biggest Smallest Triangle Just Got Smaller 
+ | url = https://www.quantamagazine.org/the-biggest-smallest-triangle-just-got-smaller-20230908 
+ | access-date = September 9, 2023 
+ | magazine = Quanta }}</ref>
+
+<ref name=smsquare>{{cite arXiv |mode=cs2
+ | last = Sudermann-Merx | first = Nathan
+ | eprint = 2603.11107
+ | title = From computational certification to exact coordinates: Heilbronn's triangle problem on the unit square using mixed-integer optimization
+ | year = 2026| class = math.OC }}</ref>
+
+<ref name=soifer>{{citation
+ | last = Soifer | first = Alexander | author-link = Alexander Soifer
+ | edition = 2nd
+ | isbn = 978-0-387-74650-0
+ | location = New York
+ | publisher = Springer
+ | title = How Does One Cut a Triangle?
+ | year = 2009}}</ref>
+
+<ref name=yanzen>{{citation
+ | last1 = Yang | first1 = Lu
+ | last2 = Zeng | first2 = Zhenbing
+ | editor1-last = Du | editor1-first = Ding-Zhu
+ | editor2-last = Pardalos | editor2-first = Panos M.
+ | contribution = Heilbronn problem for seven points in a planar convex body
+ | doi = 10.1007/978-1-4613-3557-3_14
+ | mr = 1376829
+ | pages = 191–218
+ | publisher = Kluwer Acad. Publ., Dordrecht
+ | series = Nonconvex Optim. Appl.
+ | title = Minimax and Applications
+ | volume = 4
+ | year = 1995| isbn = 978-1-4613-3559-7
+ }}</ref>
+
+<ref name=yzztri>{{citation
+ | last1 = Yang | first1 = Lu
+ | last2 = Zhang | first2 = Jing-Zhong
+ | last3 = Zeng | first3 = Zhen-Bing
+ | issue = 5
+ | journal = Acta Mathematica Sinica (Chinese Series A)
+ | language = zh
+ | pages = 678–689
+ | title = On the Heilbronn numbers of triangular regions
+ | volume = 37
+ | year = 1994}}</ref>
+
+<ref name=zenche>{{citation
+ | last1 = Zeng | first1 = Zhenbing
+ | last2 = Chen | first2 = Liangyu
+ | editor1-last = Sturm | editor1-first = Thomas
+ | editor2-last = Zengler | editor2-first = Christoph
+ | contribution = On the Heilbronn optimal configuration of seven points in the square
+ | doi = 10.1007/978-3-642-21046-4_11
+ | location = Heidelberg
+ | mr = 2805061
+ | pages = 196–224
+ | publisher = Springer
+ | series = Lecture Notes in Computer Science
+ | title = Automated Deduction in Geometry: 7th International Workshop, ADG 2008, Shanghai, China, September 22-24, 2008, Revised Papers
+ | volume = 6301
+ | year = 2011| isbn = 978-3-642-21045-7
+ }}</ref>
+
+<ref name=zengchentri>{{citation
+ | last1 = Zeng | first1 = Zhenbing
+ | last2 = Chen | first2 = Liangyu
+ | contribution = Determining the Heilbronn configuration of seven points in triangles via symbolic computation
+ | doi = 10.1007/978-3-030-26831-2_30
+ | editor-last = England | editor-first = Matthew
+ | pages = 458–477
+ | publisher = Springer
+ | series = Lecture Notes in Computer Science
+ | title = Computer Algebra in Scientific Computing: CASC 2019
+ | volume = 11661
+ | year = 2019}}</ref>
+
+</references>
+
+==External links==
+*{{mathworld|id=HeilbronnTriangleProblem|title=Heilbronn Triangle Problem|mode=cs2}}
+*[https://erich-friedman.github.io/packing/index.html Erich's Packing Center], by Erich Friedman, including the best known solutions to the Heilbronn problem for small values of <math>n</math> for squares, circles, equilateral triangles, and convex regions of variable shape but fixed area
+
+[[Category:Discrete geometry]]
+[[Category:Triangle problems]]
+[[Category:Area]]
+[[Category:Discrepancy theory]]
+[[Category:Unsolved problems in mathematics]]

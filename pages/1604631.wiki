@@ -1,0 +1,44 @@
+{{Short description|French mathematician (born 1954)}}
+{{Infobox scientist
+| name              = Joseph Oesterlé
+| image             = Oesterle Joseph.jpg
+| image_size        =
+| caption           =
+| birth_date        = {{birth year and age|1954}}
+| birth_place       = [[Alsace]], France
+| death_date        =
+| death_place       =
+| fields            = [[Mathematics]]
+| workplaces        = [[Pierre and Marie Curie University]]
+| education         = [[Paris-Sud 11 University]]<ref name="MathGenRef">{{MathGenealogy|id=96552}}</ref>
+| doctoral_students = [[Loïc Merel]]
+| known_for         = [[abc conjecture|''abc'' conjecture]]
+| awards            =
+}}
+'''Joseph Oesterlé''' (born 1954) is a French mathematician who, along with [[David Masser]], formulated the [[Abc conjecture|''abc'' conjecture]] which has been called "the most important unsolved problem in [[diophantine analysis]]".<ref>[http://www.numdam.org/numdam-bin/fitem?id=SB_1994-1995__37__333_0 Oesterlé „Travaux de Wiles II“, Seminar Bourbaki 1994/5] {{webarchive|url=https://web.archive.org/web/20160303172537/http://www.numdam.org/numdam-bin/fitem?id=SB_1994-1995__37__333_0 |date=2016-03-03 }}</ref><ref>[http://www.numdam.org/numdam-bin/fitem?id=SB_1987-1988__30__165_0 Oesterlé „Nouvelles approches de Theoreme de Fermat“, Seminar Bourbaki 1987/8, abc Conjecture] {{webarchive|url=https://web.archive.org/web/20151227073649/http://www.numdam.org/numdam-bin/fitem?id=SB_1987-1988__30__165_0 |date=2015-12-27 }}</ref>
+
+He is a member of [[Nicolas Bourbaki|Bourbaki]].<ref>{{cite book|author=Maurice Mashaal|title=Bourbaki: A Secret Society of Mathematicians|publisher=AMS|year=2006|page=17|url=https://www.ams.org/bookstore-getitem/item=bourbaki}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+*{{MathGenealogy |id=96552}}
+*[https://web.archive.org/web/20000819203144/http://www.math.unicaen.fr/~nitaj/abc.html The ABC conjecture]
+*[https://web.archive.org/web/20160304070245/http://www.rekenmeemetabc.nl/files/Oesterle.txt Oesterlé on the origin of the abc Conjecture]
+
+{{Authority control}}
+
+{{DEFAULTSORT:Oesterle, Joseph}}
+[[Category:1954 births]]
+[[Category:Living people]]
+[[Category:People from Alsace]]
+[[Category:École normale supérieure (Paris) alumni]]
+[[Category:20th-century French mathematicians]]
+[[Category:University of Paris alumni]]
+[[Category:French number theorists]]
+[[Category:Nicolas Bourbaki]]
+[[Category:Abc conjecture]]
+
+
+{{france-mathematician-stub}}

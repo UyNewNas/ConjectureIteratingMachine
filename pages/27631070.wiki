@@ -1,0 +1,86 @@
+{{Short description|Unsolved problem about inscribing a square in a Jordan curve}}
+{{CS1 config|mode=cs2}}
+{{unsolved|mathematics|Does every [[Jordan curve]] have an inscribed square?}}
+[[Image:Inscribed square.svg|thumb|right|Example: The black dashed curve goes through all corners of several blue squares.]]
+The '''inscribed square problem''', also known as the '''square peg problem''' or the '''Toeplitz conjecture''', is an [[open problem|unsolved question]] in [[geometry]]: ''Does every [[Jordan curve|plane simple closed curve]] contain all four vertices of some [[square]]?'' This is true if the curve is [[convex set|convex]] or [[piecewise smooth]] and in other special cases. The problem was proposed by [[Otto Toeplitz]] in 1911.<ref>{{citation | last= Toeplitz | first = O. | authorlink = Otto Toeplitz | title = Über einige Aufgaben der Analysis situs | journal = Verhandlungen der Schweizerischen Naturforschenden Gesellschaft | volume = 94 | date = 1911 | page = 197 | language = de }}</ref> Some early positive results were obtained by [[Arnold Emch]]<ref name="Emch">{{citation |last=Emch |first=Arnold | authorlink=Arnold Emch |year=1916 |title=On some properties of the medians of closed continuous curves formed by analytic arcs |journal=American Journal of Mathematics |doi=10.2307/2370541 |mr=1506274 |volume=38 |issue=1 |pages=6–18|jstor=2370541 }}</ref> and [[Lev Schnirelmann]].<ref name="Schnirelmann 1944">{{citation |last=Šnirel'man |first=L. G. |author-link=Lev Schnirelmann |year=1944 |title=On certain geometrical properties of closed curves |journal=Akademiya Nauk SSSR I Moskovskoe Matematicheskoe Obshchestvo. Uspekhi Matematicheskikh Nauk |mr=0012531 |volume=10 |pages=34–44}}</ref> The general case remains open.<ref name=hartnett/>
+
+== Problem statement ==
+Let <math>C</math> be a [[Jordan curve]]. A [[polygon]] <math>P</math> is [[Inscribed figure|inscribed]] in '''<math>C</math> ''' if all vertices of <math>P</math> belong to <math>C</math>. The inscribed square problem asks:
+
+: ''Does every Jordan curve admit an inscribed square?''
+
+It is ''not'' required that the vertices of the square appear along the curve in any particular order.
+
+==Examples==
+Some figures, such as [[circle]]s and squares, admit infinitely many [[inscribed]] squares. There is one [[inscribed square in a triangle]] for any [[obtuse triangle]], two squares for any [[right triangle]], and three squares for any [[acute triangle]].<ref>{{citation | last1 = Bailey | first1 = Herbert | last2 = DeTemple | first2 = Duane | title = Squares inscribed in angles and triangles | journal = [[Mathematics Magazine]] | volume = 71 | issue = 4 | date = 1998 | pages = 278–284 | doi=10.2307/2690699| jstor = 2690699 }}</ref>
+
+== Resolved cases ==
+It is tempting to attempt to solve the inscribed square problem by [[mathematical proof|proving]] that a special class of well-behaved curves always contains an inscribed square, and then to approximate an arbitrary curve by a sequence of well-behaved curves and infer that there still exists an inscribed square as a [[limit (mathematics)|limit]] of squares inscribed in the curves of the sequence. One reason this argument has not been carried out to completion is that the limit of a sequence of squares may be a single point rather than itself being a square. Nevertheless, many special cases of curves are now known to have an inscribed square.<ref name="matschke">{{citation |last=Matschke |first=Benjamin |year=2014 |title=A survey on the square peg problem |journal=[[Notices of the American Mathematical Society]] |doi=10.1090/noti1100 |volume=61 |issue=4 |pages=346–352|doi-access=free |hdl=21.11116/0000-0004-15B8-5 |hdl-access=free }}</ref>
+
+===Piecewise analytic curves===
+{{harvs|first=Arnold|last=Emch|authorlink=Arnold Emch|year=1916|txt}} showed that [[piecewise]] [[analytic curve]]s always have inscribed squares. In particular this is true for polygons. Emch's proof considers the curves traced out by the [[midpoint]]s of [[Secant line|secant]] [[line segments]] to the curve, [[parallel (geometry)|parallel]] to a given line. He shows that, when these curves are intersected with the curves generated in the same way for a [[perpendicular]] family of secants, there are an [[parity (mathematics)|odd]] number of crossings. Therefore, there always exists at least one crossing, which forms the center of a [[rhombus]] inscribed in the given curve. By rotating the two perpendicular lines [[continuous (mathematics)|continuous]]ly through a [[right angle]], and applying the [[intermediate value theorem]], he shows that at least one of these rhombi is a square.<ref name="matschke"/>
+
+=== Locally monotone curves ===
+[[Walter Stromquist|Stromquist]] has proved that every ''local monotone'' plane simple curve admits an inscribed square.<ref name="stromquist">{{citation |last=Stromquist |first=Walter |year=1989 |title=Inscribed squares and square-like quadrilaterals in closed curves |journal = [[Mathematika]]|mr=1045781|doi=10.1112/S0025579300013061|volume=36 |issue=2|pages= 187–197}}</ref> The condition for the admission to happen is that for any point {{mvar|p}}, the curve {{mvar|C}} should be locally represented as a [[graph of a function]] <math>y=f(x)</math>.
+
+In more precise terms, for any given point <math>p</math> on <math>C</math>, there is a [[neighborhood (mathematics)|neighborhood]] <math>U(p)</math> and a fixed direction <math>n(p)</math> (the direction of the “<math>y</math>-axis”) such that no [[Chord (geometry)|chord]] of <math>C</math> -in this neighborhood- is parallel to <math>n(p)</math>.
+
+Locally monotone curves include all types of polygons, all closed convex curves, and all piecewise 
+[[Smooth function#Differentiability classes|<math>C^1</math>]] curves without any [[cusp (singularity)|cusp]]s.
+
+===Curves without special trapezoids===
+An even weaker condition on the curve than local monotonicity is that, for some <math>\varepsilon>0</math>, the curve does not have any inscribed special [[trapezoid]]s of size <math>\varepsilon</math>. A special trapezoid is an [[isosceles trapezoid]] with three equal sides, each longer than the fourth side, inscribed in the curve with a vertex ordering consistent with the clockwise ordering of the curve itself. Its size is the length of the part of the curve that extends around the three equal sides. Here, this length is measured in the domain of a fixed [[Parametrization_(geometry)|parametrization]] of <math>C</math>, as <math>C</math> may not be [[rectifiable curve|rectifiable]]. Instead of a limit argument, the proof is based on relative [[obstruction theory]]. This condition is [[open set|open]] and [[dense set|dense]] in the [[topological space|space]] of all Jordan curves with respect to the [[compact-open topology]]. In this sense, the inscribed square problem is solved for [[Generic property#In topology|generic]] curves.<ref name="matschke"/>
+
+===Curves in annuli===
+If a Jordan curve is inscribed in an [[annulus (mathematics)|annulus]] whose outer [[radius]] is at most <math>1+\sqrt{2}</math> times its inner radius, and it is drawn in such a way that it separates the inner circle of the annulus from the outer circle, then it contains an inscribed square. In this case, if the given curve is approximated by some well-behaved curve, then any large squares that contain the center of the annulus and are inscribed in the approximation are topologically separated from smaller inscribed squares that do not contain the center. The limit of a sequence of large squares must again be a large square, rather than a degenerate point, so the limiting argument may be used.<ref name="matschke"/>
+
+===Symmetric curves===
+The affirmative answer is also known for centrally symmetric curves, even [[Fractal|fractals]] such as the [[Koch snowflake]], and curves with reflective symmetry across a line.<ref name="nielsen-wright">{{citation |last1=Nielsen |first1=Mark J. |last2=Wright |first2=S. E. |year=1995 |title=Rectangles inscribed in symmetric continua |journal=[[Geometriae Dedicata]] |mr=1340790 |doi=10.1007/BF01263570 | doi-access=free|volume=56 |issue=3 |pages=285–297}}</ref>
+
+===Lipschitz graphs===
+In 2017, [[Terence Tao]] published a proof of the existence of a square in curves formed by the [[union (set theory)|union]] of the graphs of two functions, both of which have the same value at the endpoints of the curves and both of which obey a [[Lipschitz continuity]] condition with Lipschitz constant less than one. Tao also formulated several related [[conjecture]]s.<ref>{{citation
+ | last = Tao | first = Terence
+ | doi = 10.1017/fms.2017.23
+ | journal = Forum of Mathematics
+ | mr = 3731730
+ | article-number = e30
+ | title = An integration approach to the Toeplitz square peg problem
+ | volume = 5
+ | year = 2017| doi-access = free
+ }}; see also [https://terrytao.wordpress.com/2016/11/22/an-integration-approach-to-the-toeplitz-square-peg-problem/ Tao's blog post on the same set of results]</ref>
+In 2024, Joshua Greene and Andrew Lobb published a preprint improving this result to curves with Lipschitz constant less than <math>1 + \sqrt{2}</math>. <ref>{{cite arXiv
+| last1 = Greene
+| first1 = Joshua
+| last2 = Lobb
+| first2 = Andrew
+| date = 2024
+| title = Square pegs between two graphs
+| class = math.SG
+| eprint = 2407.07798
+}}
+</ref>
+
+=== Jordan curves close to a {{math|C<sup>2</sup>}} Jordan curve ===
+In March 2022, Gregory R. Chambers showed that if <math>\gamma</math> is a Jordan curve which is close to a <math>C^2</math> Jordan curve <math>\beta</math> in <math>\mathbb{R}^2</math>, then <math>\gamma</math> contains an inscribed square. He showed that, if <math>\kappa>0</math> is the maximum unsigned [[curvature]] of <math>\beta</math> and there is a map <math>f</math> from the image of <math>\gamma</math> to the image of <math>\beta</math> with <math>\|f(x)-x\|<1/10\kappa</math> and <math>f\circ\gamma</math> having [[winding number]] <math>1</math>, then <math>\gamma</math> has an inscribed square of positive sidelength.<ref>{{Cite arXiv |last=Chambers |first=Gregory |date=March 2022 |title=On the square peg problem |class=math.GT |eprint=2203.02613 }}</ref>
+
+== Variants and generalizations ==
+One may ask whether other shapes can be inscribed into an arbitrary Jordan curve. It is known that for any triangle <math>T</math> and Jordan curve <math>C</math>, there is a triangle [[similarity (geometry)|similar]] to <math>T</math> and inscribed in <math>C</math>.<ref name="meyerson">{{citation |last=Meyerson |first=Mark D. |year=1980 |title=Equilateral triangles and continuous curves |journal=Fundamenta Mathematicae |mr=600575 |volume=110 |issue=1 |pages=1–9 |doi=10.4064/fm-110-1-1-9|doi-access=free }}</ref><ref>{{citation |last1=Kronheimer |first1=E. H. |last2=Kronheimer |first2=P. B. |author2-link=Peter B. Kronheimer |year=1981 |title=The tripos problem |journal=Journal of the London Mathematical Society |series=Second Series |mr=623685 |doi=10.1112/jlms/s2-24.1.182 |volume=24 |issue=1 |pages=182–192}}</ref> Moreover, the set of the vertices of such triangles is dense in <math>C</math>.<ref>{{citation |last=Nielsen |first=Mark J. |year=1992 |title=Triangles inscribed in simple closed curves |journal=[[Geometriae Dedicata]] |mr=1181760 |doi=10.1007/BF00151519 | doi-access=free |volume=43 |issue=3 |pages=291–297}}</ref> In particular, there is always an inscribed [[equilateral triangle]].
+
+It is also known that any Jordan curve admits an inscribed [[rectangle]]. This was proved by Vaughan by reducing the problem to the non-embeddability of the [[projective plane]] in <math>\mathbb{R}^3</math>; his proof from around 1977 is published in Meyerson.<ref>{{citation |last=Meyerson |first=Mark D. |year=1981 |title=Balancing acts |journal=Topology Proceedings |volume=6 |issue=1 |pages=71 |url=http://topology.nipissingu.ca/tp/reprints/v06/tp06107.pdf |access-date=2023-10-06 }}</ref>
+In 2020, Morales and Villanueva characterized locally connected plane [[continuum (topology)|continua]] that admit at least one inscribed rectangle.<ref name="morales-villanueva">{{citation |last1=Morales-Fuentes |first1=Ulises |last2=Villanueva-Segovia |first2=Cristina |title=Rectangles Inscribed in Locally Connected Plane Continua |journal=Topology Proceedings |date=2021 |volume=58 |pages=37–43}}</ref> In 2020, Joshua Evan Greene and Andrew Lobb proved that for every smooth Jordan curve <math>C</math> and rectangle <math>R</math> in the Euclidean plane there exists a rectangle similar to <math>R</math> whose vertices lie on <math>C</math>.<ref name=hartnett>{{citation|last=Hartnett|first=Kevin|title=New geometric perspective cracks old problem about rectangles|url=https://www.quantamagazine.org/new-geometric-perspective-cracks-old-problem-about-rectangles-20200625/|access-date=2020-06-26|magazine=Quanta Magazine|date=June 25, 2020}}</ref><ref>{{citation |last1=Greene |first1=Joshua Evan |last2=Lobb |first2=Andrew |title=The rectangular peg problem |journal=Annals of Mathematics |date=September 2021 |volume=194 |issue=2 |pages=509–517 |doi=10.4007/annals.2021.194.2.4|arxiv=2005.09193|s2cid=218684701 }}</ref><ref>{{Cite journal|last=Schwartz|first=Richard Evan|date=2021-09-13|title=Rectangles, curves, and Klein bottles|url=https://www.ams.org/bull/2022-59-01/S0273-0979-2021-01755-1/|journal=Bulletin of the American Mathematical Society|language=en|volume=59|issue=1|pages=1–17|doi=10.1090/bull/1755|issn=0273-0979|doi-access=free}}</ref> This generalizes both the existence of rectangles (of arbitrary shape) and the existence of squares on smooth curves, which has been known since the work of {{harvtxt|Šnirel'man|1944}}.<ref name="Schnirelmann 1944"/> In 2021, Greene and Lobb extended their 2020 result and proved that every smooth Jordan curve inscribes every [[cyclic quadrilateral]] (modulo an orientation-preserving similarity).<ref>{{Cite journal |last1=Greene |first1=Joshua Evan |last2=Lobb |first2=Andrew |date=2023 |title=Cyclic quadrilaterals and smooth Jordan curves |url=https://link.springer.com/10.1007/s00222-023-01212-6 |journal=Inventiones Mathematicae |language=en |volume=234 |issue=3 |pages=931–935 |doi=10.1007/s00222-023-01212-6 |arxiv=2011.05216 |bibcode=2023InMat.234..931G |issn=0020-9910}}</ref>
+
+Some generalizations of the inscribed square problem consider inscribed polygons for curves and even more general continua in higher dimensional [[Euclidean space]]s. For example, Stromquist proved that every continuous closed curve <math>C</math> in <math>\mathbb{R}^n</math> satisfying "Condition A", that no two chords of <math>C</math> in a suitable neighborhood of any point are perpendicular, admits an inscribed quadrilateral with equal sides and equal diagonals.<ref name="stromquist"/> This class of curves includes all <math>C^2</math> curves. Nielsen and Wright proved that any symmetric continuum <math>K</math> in <math>\mathbb{R}^n</math> contains many inscribed rectangles.<ref name="nielsen-wright"/>
+
+== References ==
+{{reflist|colwidth=30em}}
+
+== Further reading ==
+*{{citation|last1=Klee|first1=Victor|author1-link=Victor Klee|last2=Wagon|first2=Stan|author2-link=Stan Wagon|contribution=Inscribed squares|isbn=978-0-88385-315-3|pages=58–65, 137–144|publisher=Cambridge University Press|series=The Dolciani Mathematical Expositions|title=Old and New Unsolved Problems in Plane Geometry and Number Theory|volume=11|year=1991}}
+
+== External links ==
+* Mark J. Nielsen, [http://www.webpages.uidaho.edu/~markn/squares/  Figures Inscribed in Curves. A short tour of an old problem]
+* [http://quomodocumque.wordpress.com/2007/08/31/inscribed-squares-denne-speaks/ Inscribed squares: Denne speaks] at Jordan Ellenberg's blog
+* Grant Sanderson, [https://www.youtube.com/watch?v=IQqtsm-bBRU This open problem taught me what topology is], [[3Blue1Brown]], YouTube – a video showing a topological solution to a simplified version of the problem.
+
+[[Category:Curves]]
+[[Category:Unsolved problems in geometry]]

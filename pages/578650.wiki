@@ -1,0 +1,48 @@
+{{Short description|Conjecture}}
+In [[mathematics]], the '''Scholz conjecture''' is a [[conjecture]] on the length of certain [[addition chain]]s.
+It is sometimes also called the '''Scholz–Brauer conjecture''' or the '''Brauer–Scholz conjecture''', after [[Arnold Scholz]], who formulated it in 1937,<ref>{{Citation | last1=Scholz | first1=Arnold | title=Aufgaben und Lösungen, 253 | url=http://resolver.sub.uni-goettingen.de/purl?GDZPPN002132214 | year=1937 | journal=Jahresbericht der Deutschen Mathematiker-Vereinigung | issn=0012-0456 | volume=47 | pages=41–42}}</ref> and [[Alfred Brauer]], who studied it soon afterward and [[mathematical proof|proved]] a weaker bound.<ref>{{Citation | last1=Brauer | first1=Alfred | title=On addition chains | doi=10.1090/S0002-9904-1939-07068-7  |mr=0000245 | year=1939 | journal=[[Bulletin of the American Mathematical Society]] | issn=0002-9904 | volume=45 | issue=10 | pages=736–739 | zbl=0022.11106 | doi-access=free }}</ref>
+
+Neill Clift has announced an example showing that the bound of the conjecture is not always tight.
+
+==Statement==
+The conjecture states that
+:{{math|''l''(2<sup>''n''</sup>&nbsp;&minus;&nbsp;1)&nbsp;≤&nbsp;''n''&nbsp;&minus;&nbsp;1&nbsp;+&nbsp;''l''(''n'')}},
+where {{math|''l''(''n'')}} is the length of the shortest [[addition chain]] producing ''n''.<ref>{{cite book |last=Guy | first=Richard K. | authorlink=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=3rd | year=2004 |isbn=978-0-387-20860-2 | zbl=1058.11001 | pages=169–171 }}</ref>
+
+Here, an addition chain is defined as a sequence of numbers, starting with 1, such that every number after the first can be expressed as a sum of two earlier numbers (which are allowed to both be equal). Its length is the number of sums needed to express all its numbers, which is one less than the length of the sequence of numbers (since there is no sum of previous numbers for the first number in the sequence, 1). Computing the length of the shortest addition chain that contains a given number {{mvar|x}} can be done by [[dynamic programming]] for small numbers, but it is not known whether it can be done in [[polynomial time]] measured as a function of the length of the [[binary representation]] of {{mvar|x}}. Scholz's conjecture, if true, would provide short addition chains for numbers {{mvar|x}} of a special form, the [[Mersenne number]]s.
+
+==Example==
+As an example, {{math|1=''l''(5)&nbsp;=&nbsp;3}}: it has a shortest addition chain
+:1, 2, 4, 5
+of length three, determined by the three sums
+:1 + 1 = 2,
+:2 + 2 = 4,
+:4 + 1 = 5.
+Also, {{math|1=''l''(31)&nbsp;=&nbsp;7}}: it has a shortest addition chain
+:1, 2, 3, 6, 12, 24, 30, 31
+of length seven, determined by the seven sums
+:1 + 1 = 2,
+:2 + 1 = 3,
+:3 + 3 = 6,
+:6 + 6 = 12,
+:12 + 12 = 24,
+:24 + 6 = 30,
+:30 + 1 = 31.
+Both {{math|1=''l''(31)}} and {{math|5 &minus; 1 + ''l''(5)}} equal 7.
+Therefore, these values obey the inequality (which in this case is an equality) and the Scholz conjecture is true for the case {{math|1=''n'' = 5}}.
+
+==Partial results==
+By using a combination of computer search techniques and mathematical characterizations of optimal addition chains, {{harvtxt|Clift|2011}} showed that the conjecture is true for all {{math|1=''n'' < 5784689}}. Additionally, he verified that for all {{math|''n'' ≤ 64}}, the inequality of the conjecture is actually an equality.<ref name=Clift>{{cite journal |first=Neill Michael |last=Clift |year=2011 |title=Calculating optimal addition chains |journal=Computing |volume=91 |issue=3 |pages=265–284 |doi=10.1007/s00607-010-0118-8 |doi-access=free }}</ref>
+
+The bound of the conjecture is not always an exact equality. For instance, for <math>n=9307543</math>, <math>l(2^n-1)\le 9307570< 9307571=n-1+l(n)</math>, with <math>l(n)=29</math>.<ref>{{cite web|first=Neill|last=Clift|url=http://www.additionchains.com/ExactScholz1.html|title=Exact Equality in the Scholz-Brauer Conjecture|date=July 2024|access-date=2024-07-20}}</ref><ref>{{cite web|url=https://wwwhomes.uni-bielefeld.de/achim/Counter_Example__Exact_Scholz_Brauer.html|title=A Counter-Example that the Scholz-Brauer Conjecture holds with Equality for all n|first=Achim|last=Flammenkamp|date=July 2024|access-date=2024-07-20}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://wwwhomes.uni-bielefeld.de/achim/addition_chain.html Shortest addition chains]
+*[[oeis:A003313|OEIS sequence A003313]]
+
+[[Category:Addition chains]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

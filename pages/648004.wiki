@@ -1,0 +1,70 @@
+{{Short description|Mathematical conjecture about the Riemann zeta function}}
+In [[mathematics]], the '''Hilbert–Pólya conjecture''' states that the non-trivial [[Zero of a function|zeros]] of the [[Riemann zeta function]] correspond to [[eigenvalues]] of a [[self-adjoint operator]]. It is a possible approach to the [[Riemann hypothesis]], by means of [[spectral theory]].
+
+==History==
+In a letter to [[Andrew Odlyzko]], dated January 3, 1982, [[George Pólya]]
+said that while he was in [[Göttingen]] around 1912 to 1914 he was asked by [[Edmund Landau]] for a physical reason that the Riemann hypothesis should be true, and suggested that this would be the case if the imaginary parts ''t'' of the zeros
+:<math> \tfrac12 + it </math>
+of the [[Riemann zeta function]] corresponded to [[eigenvalues]] of a [[self-adjoint operator]].<ref name="odlyzko">{{citation|url=http://www.dtc.umn.edu/~odlyzko/polya/index.html|last=Odlyzko|first=Andrew|author-link=Andrew Odlyzko|title=Correspondence about the origins of the Hilbert&ndash;Polya Conjecture}}.</ref> The earliest published statement of the conjecture seems to be in {{harvtxt|Montgomery|1973}}.<ref name="odlyzko"/><ref name="montgomery">{{Citation | last1=Montgomery | first1=Hugh L. | title=Analytic number theory |series=Proc. Sympos. Pure Math.|volume= XXIV | publisher=[[American Mathematical Society]] | location=Providence, R.I. | mr = 0337821 | year=1973 | chapter=The pair correlation of zeros of the zeta function | pages=181–193}}.</ref>
+
+[[David Hilbert]] did not work in the central areas of [[analytic number theory]], but his name has become known for the Hilbert–Pólya conjecture due to a story told by [[Ernst Hellinger]], a student of Hilbert, to [[André Weil]]. Hellinger said that Hilbert announced in his seminar in the early 1900s that he expected the Riemann Hypothesis would be a consequence of Fredholm's work on integral equations with a symmetric kernel.<ref name="broughan">{{citation |first=K. |last=Broughan | title=Equivalents of the Riemann Hypothesis Volume 2: Analytic Equivalents | year=2017 | page=192 |publisher=Cambridge University Press | isbn=978-1-107-19712-1}}</ref><ref name="dieudonne">{{citation |first=J. |last=Dieudonné | title=History of Functional Analysis | year=1981 | page=106 |publisher=Instituto de Matemática Pura e Aplicada do Conselho Nacional de Pesquisas | isbn=978-0-444-86148-1}}</ref><ref>{{citation|first1=S. |last1=Endres|first2=F.|last2=Steiner|year=2009|title=The Berry–Keating operator on <math>L^2({\mathbb R}_>,{\rm d}x)</math> and on compact quantum graphs with general self-adjoint realizations|journal=Journal of Physics A: Mathematical and Theoretical|volume=43|issue=9| page = 37|doi=10.1088/1751-8113/43/9/095204|arxiv=0912.3183v5|s2cid=115162684}}</ref><ref name="simon">{{citation |first=B. |last=Simon | title=Operator Theory: A Comprehensive Course in Analysis, Part 4 | year=2015 | page=42 |publisher=American Mathematical Soc. | isbn=978-1-4704-1103-9}}</ref>
+
+===1950s and the Selberg trace formula===
+
+At the time of Pólya's conversation with Landau, there was little basis for such speculation. However [[Atle Selberg|Selberg]] in the early 1950s proved a duality between the length [[Spectrum (functional analysis)|spectrum]] of a [[Riemann surface]] and the [[eigenvalue]]s of its [[Laplacian]]. This so-called [[Selberg trace formula]] bore a striking resemblance to the [[explicit formulae (L-function)|explicit formulae]], which gave credibility to the Hilbert–Pólya conjecture.
+
+===1970s and random matrices===
+
+[[Hugh Montgomery (mathematician)|Hugh Montgomery]] investigated and found that the statistical distribution of the zeros on the critical line has a certain property, now called [[Montgomery's pair correlation conjecture]]. The zeros tend not to cluster too closely together, but to repel.<ref name="montgomery"/> Visiting at the [[Institute for Advanced Study]] in 1972, he showed this result to [[Freeman Dyson]], one of the founders of the theory of [[random matrices]].
+
+Dyson saw that the statistical distribution found by Montgomery appeared to be the same as the pair correlation distribution for the eigenvalues of a random [[Hermitian matrix]]. These distributions are of importance in physics &mdash; the [[eigenstate]]s of a [[Hamiltonian (quantum mechanics)|Hamiltonian]], for example the [[energy level]]s of an [[atomic nucleus]], satisfy such statistics. Subsequent work has strongly borne out the connection between the distribution of the zeros of the Riemann zeta function and the eigenvalues of a random Hermitian matrix drawn from the [[Gaussian unitary ensemble]], and both are now believed to obey the same statistics. Thus the Hilbert–Pólya conjecture now has a more solid basis, though it has not yet led to a proof of the Riemann hypothesis.<ref>{{citation|first1=Zeev|last1=Rudnick|first2=Peter|last2=Sarnak|author2-link=Peter Sarnak|year=1996|url=http://www.math.tau.ac.il/~rudnick/papers/zeta.dvi.gz|title=Zeros of Principal L-functions and Random Matrix Theory|journal= Duke Mathematical Journal|volume=81|issue=2|pages=269–322|doi=10.1215/s0012-7094-96-08115-6}}.</ref>
+
+===Later developments===
+
+In 1998, [[Alain Connes]] formulated a trace formula that is actually equivalent to the [[Riemann hypothesis]]. This strengthened the analogy with the [[Selberg trace formula]] to the point where it gives precise statements. He gives a geometric interpretation of the [[Explicit formulae (L-function)|explicit formula]] of number theory as a trace formula on [[noncommutative geometry]] of [[adele ring|Adele]] classes.<ref>{{cite journal|arxiv=math/9811068|last=Connes|first=Alain|author-link=Alain Connes|title=Trace formula in noncommutative geometry and the zeros of the Riemann zeta function|year=1999|journal=Selecta Mathematica|volume=5|pages=29–106|doi=10.1007/s000290050042|s2cid=55820659}}.</ref>
+
+==Possible connection with quantum mechanics==
+<!-- Linked to from [[Marcus du Sautoy]] -->
+A possible connection of Hilbert–Pólya operator with [[quantum mechanics]] was given by Pólya. The Hilbert–Pólya conjecture operator is of the form <math>\tfrac{1}{2}+iH</math> where <math>H</math> is the [[Hamiltonian (quantum mechanics)|Hamiltonian]] of a particle of mass <math>m</math> that is moving under the influence of a potential <math>V(x)</math>. The Riemann conjecture is equivalent to the assertion that the Hamiltonian is [[Hermitian operator|Hermitian]], or equivalently that <math>V</math> is real.
+
+Using [[Perturbation theory (quantum mechanics)|perturbation theory]] to first order, the energy of the ''n''th eigenstate is related to the [[expectation value]] of the potential:
+
+:<math> E_{n}=E_{n}^{0}+ \left. \left \langle \varphi^{0}_n \right | V \left | \varphi^{0}_n \right. \right \rangle </math>
+
+where <math>E^{0}_n</math> and <math>\varphi^{0}_n</math> are the eigenvalues and eigenstates of the free particle Hamiltonian. This equation can be taken to be a [[Fredholm integral equation of first kind]], with the energies <math>E_n</math>. Such integral equations may be solved by means of the [[resolvent kernel]], so that the potential may be written as
+
+:<math> V(x)=A\int_{-\infty}^{\infty} \left (g(k)+\overline{g(k)}-E_{k}^{0} \right )\,R(x,k)\,dk </math>
+
+where <math>R(x,k)</math> is the resolvent kernel, <math>A</math> is a real constant and
+
+:<math> g(k)=i \sum_{n=0}^{\infty} \left(\frac{1}{2}-\rho_n \right)\delta(k-n) </math>
+
+where <math>\delta(k-n)</math> is the [[Dirac delta function]], and the <math>\rho_n</math> are the "non-trivial" roots of the zeta function <math>\zeta (\rho_n)=0 </math>.
+
+[[Michael Berry (physicist)|Michael Berry]] and [[Jonathan Keating]] have speculated that the Hamiltonian ''H'' is actually some [[Quantization (physics)|quantization]] of the classical Hamiltonian ''xp'', where ''p'' is the [[canonical momentum]] associated with ''x''<ref name="bk99a">{{Citation | last1=Berry | first1=Michael V. | author1-link=Michael Berry (physicist) | last2=Keating | first2=Jonathan P. | editor1-last=Keating | editor1-first=Jonathan P. | editor2-last=Khmelnitski | editor2-first=David E. | editor3-last=Lerner | editor3-first=Igor V. | title=Supersymmetry and Trace Formulae: Chaos and Disorder | chapter-url=https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/berry-keating2.pdf | publisher=Plenum | location=New York | isbn=978-0-306-45933-7 | year=1999a | chapter=H = xp and the Riemann zeros | pages=355–367 }}{{Dead link|date=January 2026 |bot=InternetArchiveBot }}.</ref> The simplest Hermitian operator corresponding to ''xp'' is
+:<math>\hat{H} = \tfrac1{2} (\hat{x}\hat{p}+\hat{p}\hat{x}) = - i \left( x \frac{\mathrm{d}}{\mathrm{d} x} + \frac1{2} \right).</math>
+This refinement of the Hilbert–Pólya conjecture is known as the ''Berry conjecture'' (or the ''Berry–Keating conjecture''). As of 2008, it is still quite far from being concrete, as it is not clear on which space this operator should act in order to get the correct dynamics, nor how to regularize it in order to get the expected logarithmic corrections. Berry and Keating have conjectured that since this operator is invariant under [[Dilation (operator theory)|dilation]]s perhaps the boundary condition ''f''(''nx'')&nbsp;=&nbsp;''f''(''x'') for integer ''n'' may help to get the correct asymptotic results valid for large ''n''
+:<math> \frac{1}{2} + i \frac{ 2\pi n}{\log n}. </math><ref>{{citation | last1=Berry | first1=Michael V. | author1-link=Michael Berry (physicist) | last2=Keating | first2=Jonathan P. | year=1999b | url=https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/berry-keating1.pdf | title=The Riemann zeros and eigenvalue asymptotics | journal=SIAM Review | volume=41 | issue=2 | pages=236–266 | doi=10.1137/s0036144598347497 | bibcode=1999SIAMR..41..236B }}{{Dead link|date=January 2026 |bot=InternetArchiveBot }}.</ref>
+
+A paper was published in March 2017, written by [[Carl M. Bender]], [[Dorje C. Brody]], and [[Markus P. Müller]],<ref>{{citation| last1=Bender |first1=Carl M.| last2=Brody | first2=Dorje C. | last3=Müller | first3=Markus P. | arxiv=1608.03679| year=2017 | title = Hamiltonian for the Zeros of the Riemann Zeta Function|journal=Physical Review Letters| volume=118| issue=13| bibcode=2017PhRvL.118m0201B | doi=10.1103/PhysRevLett.118.130201 | pmid=28409977 | article-number=130201|s2cid=46816531}}.</ref> which builds on Berry's approach to the problem. There the operator
+
+:<math>\hat{H} = \frac{1}{1-e^{-i\hat{p}}} \left (\hat{x}\hat{p}+\hat{p}\hat{x} \right ) \left (1-e^{-i\hat{p}} \right )</math>
+
+was introduced, which they claim satisfies a certain modified versions of the conditions of the Hilbert–Pólya conjecture. [[Jean Bellissard]] has criticized this paper,<ref>{{cite arXiv|last=Belissard|first=Jean|eprint=1704.02644 | year=2017 | title = Comment on "Hamiltonian for the Zeros of the Riemann Zeta Function"|mode=cs2|class=quant-ph}}</ref> and the authors have responded with clarifications.<ref>{{cite arXiv|last1=Bender|first1=Carl M.| last2=Brody | first2=Dorje C.|author-link2=Dorje C. Brody | last3=Müller | first3=Markus P. | eprint=1705.06767| year=2017 | title = Comment on 'Comment on "Hamiltonian for the zeros of the Riemann zeta function"'|mode=cs2|class=quant-ph}}.</ref>
+
+== See also ==
+
+* {{slink|Riemann hypothesis#Operator theory}}
+* [[Wu–Sprung potential]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{citation|last=Aneva|first=B.|url=https://arxiv.org/pdf/0804.1618|title=Symmetry of the Riemann operator|year=1999|journal=Physics Letters B|volume=450|issue=4|pages= 388–396|doi=10.1016/s0370-2693(99)00172-0|arxiv=0804.1618|bibcode=1999PhLB..450..388A|s2cid=222175681}}.
+*{{citation|last=Wolf|first=M.|url=https://iopscience.iop.org/article/10.1088/1361-6633/ab3de7|title=Will a physicist prove the Riemann hypothesis?|year=2020|journal=Reports on Progress in Physics|volume=83|issue=4|page= 036001|doi=10.1088/1361-6633/ab3de7|pmid=31437818 |arxiv=1410.1214|bibcode=2020RPPh...83c6001W|s2cid=85450819}}.
+*{{citation|last=Elizalde|first=Emilio|title=Zeta regularization techniques with applications|isbn=978-981-02-1441-8|publisher=World Scientific|year=1994|bibcode=1994zrta.book.....E}}. Here the author explains in what sense the problem of Hilbert–Polya is related with the problem of the Gutzwiller trace formula and what would be the value of the sum <math> \exp(i\gamma) </math> taken over the imaginary parts of the zeros.
+{{DEFAULTSORT:Hilbert-Polya conjecture}}
+[[Category:Zeta and L-functions]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in mathematics]]

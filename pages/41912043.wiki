@@ -1,0 +1,69 @@
+{{short description|Unsolved problem in number theory}}
+[[File:Rational points of bounded height outside the 27 lines on Clebsch's diagonal cubic surface.png|thumb|Rational points of bounded height outside the 27 lines on [[Clebsch surface|Clebsch's]] diagonal [[cubic surface]].]]
+
+In [[mathematics]], the '''Manin conjecture''' describes the conjectural distribution of rational points on an [[algebraic variety]] relative to a suitable [[height function]]. It was proposed by [[Yuri I. Manin]] and his collaborators<ref>
+{{cite journal
+  | last1=Franke | first1 = J. | last2 = Manin | first2 = Y. I. | author2-link = Yuri I. Manin | last3 = Tschinkel | first3 = Y.
+  | title = Rational points of bounded height on Fano varieties
+  | journal = [[Inventiones Mathematicae]]
+  | volume = 95
+  | year = 1989
+  | issue = 2
+  | pages = 421–435
+  | mr = 974910
+  | zbl = 0674.14012 | doi=10.1007/bf01393904| bibcode = 1989InMat..95..421F }}
+</ref> in 1989 when they initiated a program with the aim of describing the distribution of rational points  on suitable algebraic varieties.
+
+==Conjecture==
+Their main conjecture is as follows.
+Let <math>V</math> 
+be a [[Fano variety]] defined
+over a [[number field]] <math>K</math>,
+let <math>H</math>
+be a height function relative to the [[Canonical bundle|anticanonical divisor]]
+and assume that 
+<math>V(K)</math>
+is [[Zariski topology|Zariski dense]] in <math>V</math>. 
+Then there exists
+a non-empty [[Zariski topology|Zariski open subset]] 
+<math>U \subset V</math>
+such that the counting function
+of <math>K</math>-rational points of bounded height, defined by
+:<math>N_{U,H}(B)=\#\{x \in U(K):H(x)\leq B\}</math>
+for <math>B \geq 1</math>, 
+satisfies
+:<math>N_{U,H}(B) \sim c B (\log B)^{\rho-1},</math>
+as <math>B \to \infty.</math>
+Here
+<math>\rho</math>
+is the rank of the [[Picard group]] of <math>V</math>
+and <math>c</math>
+is a positive constant which
+later received a conjectural interpretation by Peyre.<ref>{{cite journal
+  | last = Peyre | first = E.
+  | title = Hauteurs et mesures de Tamagawa sur les variétés de Fano
+  | journal = [[Duke Mathematical Journal]]
+  | volume = 79
+  | year = 1995
+  | issue = 1
+  | pages = 101–218
+  | mr = 1340296
+  | doi = 10.1215/S0012-7094-95-07904-6
+  | zbl = 0901.14025}}</ref>
+
+Manin's conjecture has been proved  for special families of varieties,<ref>
+{{cite book | editor1-last=Duke | editor1-first=William | title=Analytic number theory. A tribute to Gauss and Dirichlet. Proceedings of the Gauss-Dirichlet conference, Göttingen, Germany, June 20–24, 2005 | location=Providence, RI | publisher=[[American Mathematical Society]] | isbn=978-0-8218-4307-9 | series=Clay Mathematics Proceedings | volume=7
+  | last = Browning | first = T. D.
+  | chapter = An overview of Manin's conjecture for del Pezzo surfaces
+  | year = 2007
+  | pages = 39–55
+  | mr = 2362193
+  | zbl = 1134.14017}}
+</ref> but is still open in general.
+
+== References ==
+{{reflist}}
+
+[[Category:Conjectures]]
+[[Category:Diophantine geometry]]
+[[Category:Unsolved problems in number theory]]

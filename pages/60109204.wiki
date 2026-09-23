@@ -1,0 +1,20 @@
+In [[mathematics]], '''Yau's conjecture on the first eigenvalue''' is, as of 2018, an unsolved [[conjecture]] proposed by [[Shing-Tung Yau]] in 1982. It asks:
+
+<blockquote>Is it true that the first [[eigenvalue]] for the [[Laplace–Beltrami operator]] on an embedded closed [[minimal surface|minimal]] [[hypersurface]] of <math>S^{n+1}</math> is <math>n</math>?</blockquote>
+
+If true, it will imply that the area of embedded minimal hypersurfaces in <math>S^3</math> will have an upper bound depending only on the [[genus (mathematics)|genus]]. The Yau's conjecture is verified for several special cases, but still [[open problem|open]] in general.
+
+[[Chern's conjecture for hypersurfaces in spheres|Shiing-Shen Chern conjectured]] that a closed, minimally immersed hypersurface in <math>S^{n+1}</math>(1), whose [[second fundamental form]] has constant length, is isoparametric. If true, it would have established the Yau's conjecture for the minimal hypersurface whose second fundamental form has constant length.
+
+A possible generalization of the Yau's conjecture:
+
+<blockquote>Let <math>M^d</math> be a closed minimal submanifold in the unit sphere <math>S^{N+1}</math>(1) with dimension <math>d</math> of <math>M^d</math> satisfying <math>d \ge 2n/3 + 1</math>. Is it true that the first eigenvalue of <math>M^d</math> is <math>d</math>?</blockquote>
+
+==Further reading==
+* {{cite book |first=S. T. |last=Yau |title=Seminar on Differential Geometry |series=Annals of Mathematics Studies |volume=102 |publisher=[[Princeton University Press]] |year=1982 |pages=669–706 |isbn=0-691-08268-5 }} (Problem 100)
+* {{cite book |first=J. |last=Ge |first2=Z. |last2=Tang |chapter=Chern Conjecture and Isoparametric Hypersurfaces |title=Differential Geometry: Under the influence of S.S. Chern |year=2012 |publisher=[[Higher Education Press]] |location=Beijing |isbn=978-1-57146-249-7 }}
+* {{cite journal |first=Z. |last=Tang |first2=W. |last2=Yan |title=Isoparametric Foliation and Yau Conjecture on the First Eigenvalue |journal=[[Journal of Differential Geometry]] |volume=94 |issue=3 |year=2013 |pages=521–540 |doi=10.4310/jdg/1370979337 |arxiv=1201.0666 }}
+
+[[Category:Differential geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

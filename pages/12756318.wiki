@@ -1,0 +1,76 @@
+{{Short description|Conjecture in number theory mathematics}}
+In [[mathematics]], the '''Feit–Thompson conjecture''' is a  [[conjecture]] in [[number theory]], suggested by  {{harvs|txt=yes|first=Walter|last= Feit|authorlink=Walter Feit| first2=John G. |last2=Thompson|author2-link=John G. Thompson|year=1962}}. The conjecture states that there are no distinct [[prime number]]s ''p'' and ''q'' such that
+:<math>\frac{p^{q} - 1}{p - 1}</math> divides <math>\frac{q^{p} - 1}{q - 1}</math>.
+
+If the conjecture were true, it would greatly simplify the final chapter of the [[mathematical proof|proof]] {{harv|Feit|Thompson|1963}} of the [[Feit–Thompson theorem]] that every [[finite group]] of odd [[order (group theory)|order]] is [[solvable group|solvable]].  A stronger conjecture that the two numbers are always [[coprime integers|coprime]] was disproved  by {{harvtxt|Stephens|1971}} with the [[counterexample]] ''p''&nbsp;=&nbsp;17 and ''q''&nbsp;=&nbsp;3313 with common [[divisor|factor]] 2''pq''&nbsp;+&thinsp;1&nbsp;=&nbsp;112643.
+
+It is known that the conjecture is true for ''q''&nbsp;=&nbsp;2&nbsp;{{harv|Stephens|1971}} and ''q''&nbsp;=&nbsp;3&nbsp;{{harv|Le|2012}}.
+
+Informal [[probability]] arguments suggest that the "expected" number of counterexamples to the Feit–Thompson conjecture is very close to 0, suggesting that the Feit–Thompson conjecture is likely to be true.
+
+==See also==
+*[[Cyclotomic polynomials]]
+*[[Goormaghtigh conjecture]]
+
+==References==
+{{reflist}}
+* {{citation
+|   last1=  Feit|first1=Walter|last2=Thompson|first2= John G.
+|    title = A solvability criterion for finite groups and some consequences
+|  journal = Proc. Natl. Acad. Sci. U.S.A.
+|   volume = 48
+|     year = 1962
+|    pages = 968&ndash;970
+|   issue=  6
+|   doi=  10.1073/pnas.48.6.968
+| jstor=71265
+|pmc=220889
+| pmid=16590960
+|bibcode=1962PNAS...48..968F|doi-access=free}} {{MathSciNet|id=0143802}}
+* {{citation
+|   last1=  Feit|first1=Walter|last2=Thompson|first2= John G.
+|    title = Solvability of groups of odd order
+|  journal = Pacific J. Math.
+|   volume = 13
+|     year = 1963
+|    pages = 775&ndash;1029
+|     issn = 0030-8730
+|      doi = 10.2140/pjm.1963.13.775
+|       mr = 0166261
+|url = http://msp.org/pjm/1963/13-3/pjm-v13-n3-p01-s.pdf
+|doi-access = free
+}}
+* {{citation
+|   last=  Le|first=Mao Hua
+|    title = A divisibility problem concerning group theory
+|  journal = Pure Appl. Math. Q.
+|   volume = 8
+|     year = 2012
+|issue=3
+|    pages = 689&ndash;691
+|     issn = 1558-8599
+|      doi = 10.4310/PAMQ.2012.v8.n3.a5
+|       mr = 2900154
+|doi-access = free
+}}
+* {{citation
+|     last = Stephens
+|    first = Nelson M.
+|    title = On the Feit–Thompson conjecture
+|  journal = Math. Comp.
+|   volume = 25
+|     year = 1971
+| issue = 115
+|    pages = 625
+|     doi = 10.2307/2005226
+| jstor=2005226
+| mr = 0297686
+|doi-access = free
+}}
+
+==External links==
+* {{MathWorld|urlname=Feit-ThompsonConjecture|title=Feit–Thompson Conjecture}} (This article confuses the Feit–Thompson conjecture with the stronger disproved conjecture mentioned above.)
+
+{{DEFAULTSORT:Feit-Thompson conjecture}}
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

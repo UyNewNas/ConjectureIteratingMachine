@@ -1,0 +1,758 @@
+{{Short description|Unsolved problem in computational complexity theory}}
+{{Use American English|date=January 2019}}
+[[File:Graph isomorphisms.svg|thumb|upright=1.35|Two isomorphic graphs]]
+{{unsolved|computer science|Can the graph isomorphism problem be solved in polynomial time?}}
+
+The '''graph isomorphism problem''' is the [[computational problem]] of determining whether two finite [[graph (discrete mathematics)|graph]]s are [[graph isomorphism|isomorphic]].<ref>{{Cite book|last1=Kobler|first1=Johannes|last2=Schöning|first2=Uwe|last3=Torán|first3=Jacobo|year=2012|title=The graph isomorphism problem: its structural complexity|publisher=Springer Science & Business Media|pages=1}}</ref>
+
+The problem is not known to be solvable in [[polynomial time]] nor to be [[NP-complete]], and therefore may be in the computational [[complexity class]] [[NP-intermediate]].  It is known that the graph isomorphism problem is in the [[low hierarchy]] of [[class NP]], which implies that it is not NP-complete unless the [[polynomial time hierarchy]] collapses to its second level.{{sfnp|Schöning|1987}}  At the same time, isomorphism for many special classes of graphs can be solved in polynomial time, and in practice graph isomorphism can often be solved efficiently.<ref>{{Cite journal|last1=Babai|first1=László|last2=Erdős|first2=Paul|last3=Selkow|first3=Stanley M.|date=1980-08-01|title=Random Graph Isomorphism|url=https://epubs.siam.org/doi/10.1137/0209047|journal=SIAM Journal on Computing|volume=9|issue=3|pages=628–635|doi=10.1137/0209047|issn=0097-5397|url-access=subscription}}</ref>{{sfnp|McKay|1981}}
+
+This problem is a special case of the [[subgraph isomorphism problem]],{{sfnp|Ullman|1976}} which asks whether a given graph ''G'' contains a subgraph that is isomorphic to another given graph ''H''; this problem is known to be NP-complete. It is also known to be a special case of the [[Abelian group|non-abelian]] [[hidden subgroup problem]] over the [[symmetric group]].{{sfnp|Moore|Russell|Schulman|2008}}
+
+In the area of [[image recognition]] it is known as the '''exact graph matching problem'''.<ref name=endikaCh2>Endika Bengoetxea, [http://www.sc.ehu.es/acwbecae/ikerkuntza/these/ "Inexact Graph Matching Using Estimation of Distribution Algorithms"], Ph.
+ D., 2002, [http://www.sc.ehu.es/acwbecae/ikerkuntza/these/Ch2.pdf Chapter 2:The graph matching problem] (retrieved June 28, 2017)</ref>
+
+==State of the art==
+In November 2015, [[László Babai]] announced a [[quasi-polynomial time]] algorithm for all graphs, that is, one with running time <math>2^{O((\log n)^c)}</math> for some fixed <math>c > 0</math>.<ref>{{cite news|title=Mathematician claims breakthrough in complexity theory|url=https://www.science.org/content/article/mathematician-claims-breakthrough-complexity-theory|work=Science|date=November 10, 2015}}</ref><ref>{{harvtxt|Babai|2015}}</ref><ref>[http://people.cs.uchicago.edu/~laci/  Video of first 2015 lecture linked from Babai's home page]</ref><ref>{{cite web |title=The Graph Isomorphism Problem |url=https://cacm.acm.org/magazines/2020/11/248220-the-graph-isomorphism-problem/fulltext?mobile=false |website=Communications of the ACM | date=November 2020 |access-date=4 May 2021}}</ref> On January 4, 2017, Babai retracted the quasi-polynomial claim and stated a [[sub-exponential time]] bound instead after [[Harald Helfgott]] discovered a flaw in the proof. On January 9, 2017, Babai announced a correction (published in full on January 19) and restored the quasi-polynomial claim, with Helfgott confirming the fix.<ref>{{citation|last=Babai|first= László|url=http://people.cs.uchicago.edu/~laci/update.html|title=Graph isomorphism update|date=January 9, 2017}}</ref><ref>{{cite journal|author=[[Erica Klarreich]] |title=Graph Isomorphism Vanquished — Again |journal=Quanta Magazine |date=January 14, 2017 |url=https://www.quantamagazine.org/20170114-graph-isomorphism-babai-fix/}}</ref>  Helfgott further claims that one can take {{math|1=''c'' = 3}}, so the running time is {{math|2<sup>O((log ''n'')<sup>3</sup>)</sup>}}.<ref>{{citation|last=Helfgott|first=Harald|arxiv=1701.04372|title=Isomorphismes de graphes en temps quasi-polynomial (d'après Babai et Luks, Weisfeiler-Leman...)|date=January 16, 2017|bibcode=2017arXiv170104372A}}</ref><ref>{{cite arXiv|last1=Dona|first1=Daniele|last2=Bajpai|first2=Jitendra|last3=Helfgott|first3=Harald Andrés|date=2017-10-12|title=Graph isomorphisms in quasi-polynomial time|class=math.GR|language=en|eprint=1710.04574|df=mdy-all}}</ref> Babai published a "preliminary report" on related work at the 2019 [[Symposium on Theory of Computing]], describing a quasipolynomial algorithm for [[graph canonization]],<ref>{{citation
+ | last = Babai | first = László
+ | editor1-last = Charikar | editor1-first = Moses
+ | editor2-last = Cohen | editor2-first = Edith
+ | contribution = Canonical form for graphs in quasipolynomial time: preliminary report
+ | doi = 10.1145/3313276.3316356
+ | pages = 1237–1246
+ | publisher = Association for computing machinery
+ | title = Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing, STOC 2019, Phoenix, AZ, USA, June 23-26, 2019
+ | year = 2019| isbn = 978-1-4503-6705-9
+ }}</ref> but {{as of|2025|lc=y}} the full version of these algorithms remains unpublished.
+
+Prior to this, the best accepted theoretical algorithm was due to {{harvtxt|Babai|Luks|1983}}, and was based on the earlier work by {{harvtxt|Luks|1982}} combined with a ''subfactorial'' algorithm of V. N. Zemlyachenko {{harv|Zemlyachenko|Korneenko|Tyshkevich|1985}}.  The algorithm has run time 2<sup>O({{sqrt|''n''&nbsp;log&nbsp;''n''}})</sup> for graphs with ''n'' vertices and relies on the [[classification of finite simple groups]]. Without this [[classification theorem]], a slightly weaker bound 
+{{math|2<sup>O({{sqrt|''n''}}&nbsp;log<sup>2</sup>&nbsp;''n'')</sup>|size=100%}} was obtained first for [[strongly regular graph]]s by {{harvs|authorlink=László Babai|first=László|last=Babai|year=1980|txt}}, and then extended to general graphs by {{harvtxt|Babai|Luks|1983}}.  Improvement of the exponent {{sqrt|''n''}} for strongly regular graphs was done by {{Harvtxt|Spielman|1996}}.  For [[hypergraph]]s of bounded rank, a [[Sub-exponential time|subexponential]] upper bound matching the case of graphs was obtained by {{Harvtxt|Babai|Codenotti|2008}}.
+
+There are several competing practical algorithms for graph isomorphism, such as those due to {{harvtxt|McKay|1981}}, {{harvtxt|Schmidt|Druffel|1976}}, {{harvtxt|Ullman|1976}}, and {{harvtxt|Stoichev|2019}}.  While they seem to perform well on [[random graphs]], a major drawback of these algorithms is their exponential time performance in the [[Best, worst and average case|worst case]].{{sfnp|Foggia|Sansone|Vento|2001}}
+
+The graph isomorphism problem is computationally equivalent to the problem of computing the [[automorphism group]] of a graph,{{sfnp|Mathon|1979}}<ref name="Luks pp. 139–175">{{cite book | last=Luks | first=Eugene | title=DIMACS Series in Discrete Mathematics and Theoretical Computer Science | chapter=Permutation groups and polynomial-time computation | publisher=American Mathematical Society | location=Providence, Rhode Island | date=1993-09-01 | volume=11 | isbn=978-0-8218-6599-6 | issn=1052-1798 | doi=10.1090/dimacs/011/11 | pages=139–175}}</ref><ref>Algeboy (https://cs.stackexchange.com/users/90177/algeboy), Graph isomorphism and the automorphism group, URL (version: 2018-09-20): https://cs.stackexchange.com/q/97575</ref> and is weaker than the [[permutation group]] isomorphism problem and the permutation group intersection problem.  For the latter two problems, {{harvtxt|Babai|Kantor|Luks|1983}} obtained complexity bounds similar to that for graph isomorphism.
+
+==Solved special cases==
+A number of important special cases of the graph isomorphism problem have efficient, polynomial-time solutions:
+* [[Tree (graph theory)|Tree]]s{{sfnp|Kelly|1957}}{{sfnp|Aho|Hopcroft|Ullman|1974|p=84-86}}
+* [[Planar graph]]s{{sfnp|Hopcroft|Wong|1974}} (In fact, planar graph isomorphism is in [[L (complexity)|log space]],{{sfnp|Datta|Limaye|Nimbhorkar|Thierauf|2009}} a class contained in [[P (complexity)|P]])
+* [[Interval graph]]s{{sfnp|Booth|Lueker|1979}}
+* [[Permutation graph]]s{{sfnp|Colbourn|1981}}
+* [[Circulant graph]]s{{sfnp|Muzychuk|2004}}
+*Bounded-parameter graphs
+** Graphs of bounded [[treewidth]]{{sfnp|Bodlaender|1990}}
+** Graphs of bounded [[genus (mathematics)|genus]]<ref>{{harvnb|Miller|1980}}; {{harvnb|Filotti|Mayer|1980}}.</ref> (Planar graphs are graphs of genus 0.)
+** Graphs of bounded [[degree (graph theory)|degree]]{{sfnp|Luks|1982}}
+** Graphs with bounded [[eigenvalue]] multiplicity{{sfnp|Babai|Grigoryev|Mount|1982}}
+** ''k''-Contractible graphs (a generalization of bounded degree and bounded genus){{sfnp|Miller|1983}}
+**Color-preserving isomorphism of [[colored graph]]s with bounded color multiplicity (i.e., at most ''k'' vertices have the same color for a fixed ''k'') is in class [[NC (complexity)|NC]], which is a subclass of [[P (complexity)|P]].{{sfnp|Luks|1986}}
+
+== Complexity class GI ==<!-- [[GI]] links and [[GI (complexity)]] redirects to this section -->
+Since the graph isomorphism problem is neither known to be NP-complete nor known to be tractable, researchers have sought to gain insight into the problem by defining a new class '''GI''', the set of problems with a [[polynomial-time Turing reduction]] to the graph isomorphism problem.<ref>{{harvnb|Booth|Colbourn|1977}}; {{harvnb|Köbler|Schöning|Torán|1993}}.</ref> If in fact the graph isomorphism problem is solvable in polynomial time, '''GI''' would equal '''[[P (complexity)|P]]'''. On the other hand, if the problem is NP-complete, '''GI''' would equal '''[[NP (complexity)|NP]]''' and all problems in '''NP''' would be solvable in quasi-polynomial time.
+
+As is common for [[complexity class]]es within the [[polynomial time hierarchy]], a problem is called '''GI-hard''' if there is a [[polynomial-time Turing reduction]] from any problem in '''GI''' to that problem, i.e.,  a polynomial-time solution to a GI-hard problem would yield a polynomial-time solution to the graph isomorphism problem (and so all problems in '''GI''').  A problem <math>X</math> is called [[complete (complexity)|complete]] for '''GI''', or '''GI-complete''', if it is both GI-hard and a polynomial-time solution to the GI problem would yield a polynomial-time solution to <math>X</math>.
+
+The graph isomorphism problem is contained in both '''NP''' and co-'''[[AM (complexity)|AM]]'''. GI is contained in and [[low (complexity)|low]] for [[Parity P]], as well as contained in the potentially much smaller class '''SPP'''.<ref>{{harvnb|Köbler|Schöning|Torán|1992}}; {{harvnb|Arvind|Kurur|2006}}</ref> That it lies in Parity P means that the graph isomorphism problem is no harder than determining whether a polynomial-time [[nondeterministic Turing machine]] has an even or odd number of accepting paths. GI is also contained in and low for [[ZPP (complexity)|ZPP]]<sup>NP</sup>.{{sfnp|Arvind|Köbler|2000}} This essentially means that an efficient [[Las Vegas algorithm]] with access to an NP [[oracle machine|oracle]] can solve graph isomorphism so easily that it gains no power from being given the ability to do so in constant time.
+
+===GI-complete and GI-hard problems===
+
+====Isomorphism of other objects====
+There are a number of classes of mathematical objects for which the problem of isomorphism is a GI-complete problem. A number of them are graphs endowed with additional properties or restrictions:<ref name=zkt>{{harvtxt|Zemlyachenko|Korneenko|Tyshkevich|1985}}</ref>
+*[[Directed graph|digraphs]]<ref name=zkt/>
+*[[labelled graph]]s, with the proviso that an isomorphism is not required to preserve the labels,<ref name=zkt/> but only the [[equivalence relation]] consisting of pairs of vertices with the same label
+*"polarized graphs" (made of a [[complete graph]] K<sub>m</sub> and an [[empty graph]] K<sub>n</sub> plus some edges connecting the two; their isomorphism must preserve the partition)<ref name=zkt/>
+*2-[[colored graph]]s<ref name=zkt/>
+*explicitly given finite [[structure (mathematical logic)|structure]]s<ref name=zkt/>
+*[[multigraph]]s<ref name=zkt/>
+*[[hypergraph]]s<ref name=zkt/>
+*[[finite automata]]<ref name=zkt/>
+*[[Markov decision process|Markov Decision Processes]]{{sfnp|Narayanamurthy|Ravindran|2008}}
+*[[commutative]] class 3 [[nilpotent]] (i.e., ''xyz'' = 0 for every elements ''x'', ''y'', ''z'') [[semigroup]]s<ref name=zkt/>
+*finite rank [[associative]] [[Algebra over a field|algebras]] over a fixed algebraically closed field with zero squared radical and commutative factor over the radical.<!-- whoah --><ref name=zkt/>{{sfnp|Grigor'ev|1981}}
+*[[context-free grammar]]s<ref name=zkt/>
+*[[normal-form game]]s<ref>{{cite journal
+| last1 = Gabarró
+| first1 = Joaquim
+| last2 = García
+| first2 = Alina
+| last3 = Serna
+| first3 = Maria
+| title = The complexity of game isomorphism
+| journal = Theoretical Computer Science
+| volume = 412
+| issue = 48
+| pages = 6675–6695
+| year = 2011
+| doi = 10.1016/j.tcs.2011.07.022
+| hdl = 2117/91166
+| hdl-access = free
+}}</ref>
+*[[balanced incomplete block design]]s<ref name=zkt/>
+*Recognizing [[combinatorial isomorphism]] of [[convex polytope]]s represented by vertex-facet incidences.<ref>{{harvtxt|Johnson|2005}}; {{harvtxt|Kaibel|Schwartz|2003}}.</ref>
+
+====GI-complete classes of graphs====
+A class of graphs is called GI-complete if recognition of isomorphism for graphs from this subclass is a GI-complete problem. The following classes are GI-complete:<ref name=zkt/>
+*[[connected graph]]s<ref name=zkt/><!-- better to be replaced by original ref-->
+*graphs of [[diameter (graph theory)|diameter]] 2 and [[radius (graph theory)|radius]] 1<ref name=zkt/>
+*[[directed acyclic graph]]s<ref name=zkt/><!-- better to be replaced by original ref-->
+*[[regular graph]]s<ref name=zkt/><!-- better to be replaced by original ref-->
+*[[bipartite graph]]s without non-trivial [[strongly regular graph|strongly regular subgraphs]]<ref name=zkt/><!-- better to be replaced by original ref-->
+*bipartite [[Eulerian graph]]s<ref name=zkt/><!-- better to be replaced by original ref-->
+*bipartite regular graphs<ref name=zkt/><!-- better to be replaced by original ref-->
+*[[line graph]]s<ref name=zkt/><!-- better to be replaced by original ref-->
+*[[split graph]]s{{sfnp|Booth|Lueker|1979}}
+*[[chordal graph]]s<ref name=zkt/><!-- better to be replaced by original ref-->
+*regular [[self-complementary graph]]s<ref name=zkt/><!-- better to be replaced by original ref-->
+*[[polytopal graph]]s of general, [[simple polytope|simple]], and [[simplicial polytope|simplicial]] [[convex polytope]]s in arbitrary dimensions.{{sfnp|Kaibel|Schwartz|2003}}
+Many classes of digraphs are also GI-complete.
+
+====Other GI-complete problems====
+There are other nontrivial GI-complete problems in addition to isomorphism problems.
+* Finding a [[graph automorphism|graph's automorphism group]].{{sfnp|Mathon|1979}}
+* Counting [[graph automorphism|automorphisms]] of a graph.{{sfnp|Mathon|1979}}
+*The recognition of self-complementarity of a graph or digraph.{{sfnp|Colbourn|Colbourn|1978}}
+*A [[clique problem]] for a class of so-called ''M''-graphs. It is shown that finding an isomorphism for ''n''-vertex graphs is equivalent to finding an ''n''-clique in an ''M''-graph of size ''n''<sup>2</sup>. This fact is interesting because the problem of finding a clique of order (1&nbsp;&minus;&nbsp;''ε'')''n'' in a ''M''-graph of size ''n''<sup>2</sup> is NP-complete for arbitrarily small positive ε.{{sfnp|Kozen|1978}}
+*The problem of homeomorphism of 2-complexes.{{sfnp|Shawe-Taylor|Pisanski|1994}}
+*The [[first-order logic definability problem|definability problem for first-order logic]]. The input of this problem is a relational database instance ''I'' and a relation ''R'', and the question to answer is whether there exists a [[first-order logic|first-order query]] ''Q'' (without constants) such that ''Q'' evaluated on ''I'' gives R as the answer.{{sfnp|Arenas|Diaz|2016}}
+
+====GI-hard problems====
+*The problem of counting the number of isomorphisms between two graphs is polynomial-time equivalent to the problem of telling whether even one exists.<ref>{{harvtxt|Mathon|1979}}; {{harvnb|Johnson|2005}}.</ref>
+*The problem of deciding whether two [[convex polytope]]s given by either the [[V-description]] or [[H-description]] are projectively or affinely isomorphic. The latter means existence of a projective or affine map between the spaces that contain the two polytopes (not necessarily of the same dimension) which induces a bijection between the polytopes.{{sfnp|Kaibel|Schwartz|2003}}
+
+==Program checking==
+
+{{harvs|first1=Manuel|last1=Blum|author1-link=Manuel Blum|first2=Sampath|last2=Kannan|year=1995|txt}} have shown a probabilistic checker for programs for graph isomorphism. Suppose ''P'' is a claimed polynomial-time procedure that checks if two graphs are isomorphic, but it is not trusted. To check if graphs ''G'' and ''H'' are isomorphic:
+
+* Ask ''P'' whether ''G'' and ''H'' are isomorphic.
+** If the answer is "yes":
+*** Attempt to construct an isomorphism using ''P'' as subroutine. Mark a vertex ''u'' in ''G'' and ''v'' in ''H'', and modify the graphs to make them distinctive (with a small local change). Ask ''P'' if the modified graphs are isomorphic. If no, change ''v'' to a different vertex. Continue searching.
+*** Either the isomorphism will be found (and can be verified), or ''P'' will contradict itself.
+** If the answer is "no":
+*** Perform the following 100 times. Choose randomly ''G'' or ''H'', and randomly permute its vertices. Ask ''P'' if the graph is isomorphic to ''G'' and ''H''. (As in [[AM (complexity)|AM]] protocol for graph nonisomorphism).
+*** If any of the tests are failed, judge ''P'' as invalid program. Otherwise, answer "no".
+
+This procedure is polynomial-time and gives the correct answer if ''P'' is a correct program for graph isomorphism. If ''P'' is not a correct program, but answers correctly on ''G'' and ''H'', the checker will either give the correct answer, or detect invalid behaviour of ''P''.
+If ''P'' is not a correct program, and answers incorrectly on ''G'' and ''H'', the checker will detect invalid behaviour of ''P'' with high probability, or answer wrong with probability 2<sup>−100</sup>.
+
+Notably, ''P'' is used only as a blackbox.
+
+== Applications ==
+
+Graphs are commonly used to encode structural information in many fields, including [[computer vision]] and [[pattern recognition]], and [[graph matching]], i.e., identification of similarities between graphs, is an important tools in these areas. In these areas graph isomorphism problem is known as the exact graph matching.<ref name=endikaAbstract>Endika Bengoetxea, Ph.D., [http://www.sc.ehu.es/acwbecae/ikerkuntza/these/ Abstract]</ref>
+
+In [[cheminformatics]] and in [[mathematical chemistry]], graph isomorphism testing is used to identify a [[chemical compound]] within a [[chemical database]].{{sfnp|Irniger|2005}} Also, in organic mathematical chemistry graph isomorphism testing is useful for generation of [[molecular graph]]s and for [[Combinatorial chemistry|computer synthesis]].
+
+Chemical database search is an example of graphical [[data mining]], where the [[graph canonization]] approach is often used.{{sfnp|Cook|Holder|2007}} In particular, a number of [[identifier]]s for [[chemical substance]]s,  such as [[SMILES]] and [[InChI]], designed to provide a standard and human-readable way to encode molecular information and to facilitate the search for such information in databases and on the web, use canonization step in their computation, which is essentially the canonization of the graph which represents the molecule.<ref>{{Cite journal |last1=Heller |first1=Stephen R. |last2=McNaught |first2=Alan |last3=Pletnev |first3=Igor |last4=Stein |first4=Stephen |last5=Tchekhovskoi |first5=Dmitrii |date=2015-05-30 |title=InChI, the IUPAC International Chemical Identifier |journal=Journal of Cheminformatics |language=en |volume=7 |issue=1 |pages=23 |doi=10.1186/s13321-015-0068-4 |doi-access=free |issn=1758-2946 |pmc=4486400 |pmid=26136848}}</ref>
+
+In [[electronic design automation]] graph isomorphism is the basis of the [[Layout Versus Schematic]] (LVS) circuit design step, which is a verification whether the [[electric circuit]]s represented by a [[circuit diagram|circuit schematic]] and an [[integrated circuit layout]] are the same.{{sfnp|Baird|Cho|1975}}
+
+==See also==
+*[[Graph automorphism problem]]
+*[[Graph canonization]]
+
+==Notes==
+{{Reflist|30em}}
+
+==References==
+{{Refbegin|30em}}
+*{{citation
+ | last1 = Aho | first1 = Alfred V. | author1-link = Alfred Aho
+ | last2 = Hopcroft | first2 = John | author2-link = John Hopcroft
+ | last3 = Ullman | first3 = Jeffrey D. | author3-link = Jeffrey Ullman
+ | location = Reading, MA
+ | publisher = Addison-Wesley
+ | title = The Design and Analysis of Computer Algorithms
+ | year = 1974| bibcode = 1974daca.book.....A }}.
+*{{citation
+ | last1 = Arvind
+ | first1 = Vikraman
+ | last2 = Köbler
+ | first2 = Johannes
+ | contribution = Graph isomorphism is low for ZPP(NP) and other lowness results.
+ | doi = 10.1007/3-540-46541-3_36
+ | isbn = 3-540-67141-2
+ | mr = 1781752
+ | pages = [https://archive.org/details/stacs200017thann0000annu/page/431 431–442]
+ | publisher = Springer-Verlag
+ | series = [[Lecture Notes in Computer Science]]
+ | title = Proceedings of the 17th Annual Symposium on Theoretical Aspects of Computer Science
+ | volume = 1770
+ | year = 2000
+ | url = https://archive.org/details/stacs200017thann0000annu/page/431
+ }}.
+*{{citation
+ | last1 = Arvind | first1 = Vikraman
+ | last2 = Kurur | first2 = Piyush P.
+ | doi = 10.1016/j.ic.2006.02.002
+ | issue = 5
+ | journal = [[Information and Computation]]
+ | mr = 2226371
+ | pages = 835–852
+ | title = Graph isomorphism is in SPP
+ | volume = 204
+ | year = 2006| doi-access = free
+ }}.
+*{{citation
+ | last1 = Arenas | first1 = Marcelo
+ | last2 = Diaz | first2 = Gonzalo I.
+ | doi = 10.1145/2886095
+ | issue = 2
+ | journal = [[ACM Transactions on Database Systems]]
+ | pages = 13:1–13:14
+ | title = The Exact Complexity of the First-Order Logic Definability Problem
+ | volume = 41
+ | year = 2016
+ }}.
+*{{citation
+ | last = Babai | first = László | author-link = László Babai
+ | doi = 10.1137/0209018
+ | issue = 1
+ | journal = [[SIAM Journal on Computing]]
+ | mr = 557839
+ | pages = 212–216
+ | title = On the complexity of canonical labeling of strongly regular graphs
+ | volume = 9
+ | year = 1980}}.
+*{{citation
+ | last1 = Babai
+ | first1 = László
+ | author1-link = László Babai
+ | last2 = Codenotti
+ | first2 = Paolo
+ | contribution = Isomorphism of hypergraphs of low rank in moderately exponential time
+ | contribution-url = https://www.cs.uchicago.edu/~laci/papers/hypergraphiso.pdf
+ | doi = 10.1109/FOCS.2008.80
+ | isbn = 978-0-7695-3436-7
+ | pages = 667–676
+ | publisher = IEEE Computer Society
+ | title = Proceedings of the 49th Annual IEEE Symposium on Foundations of Computer Science (FOCS 2008)
+ | year = 2008
+ | s2cid = 14025744
+ }}.
+*{{citation
+ | last1 = Babai | first1 = László | author1-link = László Babai
+ | last2 = Grigoryev | first2 = D. Yu. | author2-link = Dima Grigoriev
+ | last3 = Mount | first3 = David M. | author3-link = David Mount
+ | contribution = Isomorphism of graphs with bounded eigenvalue multiplicity
+ | doi = 10.1145/800070.802206
+ | isbn = 0-89791-070-2
+ | pages = 310–324
+ | title = Proceedings of the 14th Annual ACM Symposium on Theory of Computing
+ | year = 1982| s2cid = 12837287 }}.
+*{{citation
+ | last1 = Babai | first1 = László | author1-link = László Babai
+ | last2 = Kantor | first2 = William |author2-link= William Kantor
+ | last3 = Luks | first3 = Eugene | author3-link = Eugene M. Luks
+ | contribution = Computational complexity and the classification of finite simple groups
+ | doi = 10.1109/SFCS.1983.10
+ | pages = 162–171
+ | title = Proceedings of the 24th Annual Symposium on Foundations of Computer Science (FOCS)
+ | year = 1983| isbn = 0-8186-0508-1 | s2cid = 6670135 }}.
+*{{citation
+ | last1 = Babai | first1 = László | author1-link = László Babai
+ | last2 = Luks | first2 = Eugene M. | author2-link = Eugene M. Luks
+ | contribution = Canonical labeling of graphs
+ | doi = 10.1145/800061.808746
+ | isbn = 0-89791-099-0
+ | pages = 171–183
+ | title = Proceedings of the Fifteenth Annual ACM Symposium on Theory of Computing (STOC '83)
+ | year = 1983| s2cid = 12572142 | doi-access = free
+ }}.
+*{{citation |last1=Babai|first1=László|title=Graph Isomorphism in Quasipolynomial Time|arxiv=1512.03547 | year=2015 |bibcode=2015arXiv151203547B}}
+*{{citation
+ | last1 = Baird
+ | first1 = H. S.
+ | last2 = Cho
+ | first2 = Y. E.
+ | contribution = An artwork design verification system
+ | contribution-url = http://dl.acm.org/citation.cfm?id=800261.809095
+ | location = Piscataway, NJ, USA
+ | pages = 414–420
+ | publisher = IEEE Press
+ | title = Proceedings of the 12th Design Automation Conference (DAC '75)
+ | year = 1975
+ }}.
+*{{citation
+ | last1 = Blum
+ | first1 = Manuel
+ | author1-link = Manuel Blum
+ | last2 = Kannan
+ | first2 = Sampath
+ | doi = 10.1145/200836.200880
+ | issue = 1
+ | journal = [[Journal of the ACM]]
+ | pages = 269–291
+ | title = Designing programs that check their work
+ | url = ftp://ftp.cis.upenn.edu/pub/kannan/jacm.ps.gz
+ | volume = 42
+ | year = 1995
+ | citeseerx = 10.1.1.38.2537
+ | archive-url = https://web.archive.org/web/20170705055537/ftp://ftp.cis.upenn.edu/pub/kannan/jacm.ps.gz
+ | archive-date = 2017-07-05
+ | url-status = dead
+ | s2cid = 52151779
+ }}.
+*{{citation
+ | last = Bodlaender | first = Hans | author-link = Hans L. Bodlaender
+ | doi = 10.1016/0196-6774(90)90013-5
+ | issue = 4
+ | journal = Journal of Algorithms
+ | mr = 1079454
+ | pages = 631–643
+ | title = Polynomial algorithms for graph isomorphism and chromatic index on partial ''k''-trees
+ | volume = 11
+ | year = 1990}}.
+*{{citation
+ | last1 = Booth | first1 = Kellogg S.
+ | last2 = Colbourn | first2 = C. J. | author2-link = Charles Colbourn
+ | publisher = Computer Science Department, University of Waterloo
+ | series = Technical Report
+ | title = Problems polynomially equivalent to graph isomorphism
+ | volume = CS-77-04
+ | year = 1977}}.
+*{{citation
+ | last1 = Booth
+ | first1 = Kellogg S.
+ | last2 = Lueker
+ | first2 = George S.
+ | doi = 10.1145/322123.322125
+ | issue = 2
+ | journal = [[Journal of the ACM]]
+ | mr = 0528025
+ | pages = 183–195
+ | title = A linear time algorithm for deciding interval graph isomorphism
+ | volume = 26
+ | year = 1979
+ | s2cid = 18859101
+ | url = https://escholarship.org/uc/item/8ss2q7bp
+ | doi-access = free
+ }}.
+*{{citation
+ | last1 = Boucher
+ | first1 = C.
+ | last2 = Loker
+ | first2 = D.
+ | publisher = Computer Science Department, University of Waterloo
+ | series = Technical Report
+ | title = Graph isomorphism completeness for perfect graphs and subclasses of perfect graphs
+ | url = http://www.cs.uwaterloo.ca/research/tr/2006/CS-2006-32.pdf
+ | volume = CS-2006-32
+ | year = 2006
+ }}.
+*{{citation
+ | last = Chung | first = Fan R. K. | author-link = Fan Chung
+ | doi = 10.1137/0606026
+ | issue = 2
+ | journal = SIAM Journal on Algebraic and Discrete Methods
+ | mr = 778007
+ | pages = 268–277
+ | title = On the cutwidth and the topological bandwidth of a tree
+ | volume = 6
+ | year = 1985}}.
+*{{citation
+ | last = Colbourn | first = C. J. | author-link = Charles Colbourn
+ | doi = 10.1002/net.3230110103
+ | journal = Networks
+ | mr = 0608916
+ | pages = 13–21
+ | title = On testing isomorphism of permutation graphs
+ | volume = 11
+ | year = 1981}}.
+*{{citation
+ | last1 = Colbourn | first1 = Marlene Jones
+ | last2 = Colbourn | first2 = Charles J. | author2-link = Charles Colbourn
+ | doi = 10.1145/1008605.1008608
+ | issue = 1
+ | journal = [[ACM SIGACT News]]
+ | pages = 25–29
+ | title = Graph isomorphism and self-complementary graphs
+ | volume = 10
+ | year = 1978| s2cid = 35157300
+ }}.
+*{{citation
+ | last1 = Cook
+ | first1 = Diane J.
+ | author2-link = Diane J. Cook
+ | last2 = Holder
+ | first2 = Lawrence B.
+ | contribution = Section 6.2.1: Canonical Labeling
+ | contribution-url = https://books.google.com/books?id=bHGy0_H0g8QC&pg=PA120
+ | isbn = 978-0-470-07303-2
+ | pages = 120–122
+ | publisher = Wiley
+ | title = Mining Graph Data
+ | year = 2007
+ }}.
+*{{citation
+ | last1 = Datta | first1 = S.
+ | last2 = Limaye | first2 = N.
+ | last3 = Nimbhorkar | first3 = P.
+ | last4 = Thierauf | first4 = T.
+ | last5 = Wagner | first5 = F.
+ | contribution = Planar graph isomorphism is in log-space
+ | doi = 10.1109/CCC.2009.16
+ | isbn = 978-0-7695-3717-7
+ | page = 203
+ | title = 2009 24th Annual IEEE Conference on Computational Complexity
+ | year = 2009| arxiv = 0809.2319| s2cid = 14836820
+ }}.
+*{{citation
+ | last1 = Filotti
+ | first1 = I. S.
+ | last2 = Mayer
+ | first2 = Jack N.
+ | contribution = A polynomial-time algorithm for determining the isomorphism of graphs of fixed genus
+ | doi = 10.1145/800141.804671
+ | isbn = 0-89791-017-6
+ | pages = 236–243
+ | title = Proceedings of the 12th Annual ACM Symposium on Theory of Computing
+ | url = https://hal.inria.fr/inria-00076553/document
+ | year = 1980
+ | s2cid = 16345164
+ }}.
+*{{citation
+ | last1 = Foggia
+ | first1 = P.
+ | last2 = Sansone
+ | first2 = C.
+ | last3 = Vento
+ | first3 = M.
+ | contribution = A performance comparison of five algorithms for graph isomorphism
+ | contribution-url = http://www.engr.uconn.edu/~vkk06001/GraphIsomorphism/Papers/VF_SD_NAUTY_Ullman_Experiments.pdf
+ | pages = 188–199
+ | title = Proc. 3rd IAPR-TC15 Workshop Graph-Based Representations in Pattern Recognition
+ | year = 2001
+ | access-date = 2009-12-18
+ | archive-date = 2015-09-24
+ | archive-url = https://web.archive.org/web/20150924000927/http://www.engr.uconn.edu/~vkk06001/GraphIsomorphism/Papers/VF_SD_NAUTY_Ullman_Experiments.pdf
+ | url-status = dead
+ }}.
+*{{citation
+ | last1 = Garey | first1 = Michael R. | author1-link = Michael Garey
+ | last2 = Johnson | first2 = David S. | author2-link = David S. Johnson
+ | isbn = 978-0-7167-1045-5
+ | publisher = W. H. Freeman
+ | title = [[Computers and Intractability: A Guide to the Theory of NP-Completeness]]
+ | year = 1979}}.
+*{{citation
+ | last = Grigor'ev | first = D. Ju.
+ | journal = Zapiski Nauchnykh Seminarov Leningradskogo Otdeleniya Matematicheskogo Instituta imeni V. A. Steklova Akademii Nauk SSSR (LOMI)
+ | language = Russian
+ | mr = 628981
+ | pages = 10–17, 198
+ | title = Complexity of 'wild' matrix problems and of the isomorphism of algebras and graphs
+ | volume = 105
+ | year = 1981}}. English translation in ''Journal of Mathematical Sciences'' '''22''' (3): 1285–1289, 1983.
+*{{citation
+ | last1 = Hopcroft | first1 = John | author1-link = John Hopcroft
+ | last2 = Wong | first2 = J.
+ | contribution = Linear time algorithm for isomorphism of planar graphs
+ | doi = 10.1145/800119.803896
+ | pages = 172–184
+ | title = Proceedings of the Sixth Annual ACM Symposium on Theory of Computing
+ | year = 1974| s2cid = 15561884 }}.
+*{{citation
+ | last = Irniger | first = Christophe-André Mario
+ | isbn = 1-58603-557-6
+ | publisher = AKA
+ | series = Dissertationen zur künstlichen Intelligenz
+ | title = Graph Matching: Filtering Databases of Graphs Using Machine Learning
+ | volume = 293
+ | year = 2005}}.
+*{{citation
+ |last1        = Kaibel
+ |first1       = Volker
+ |last2        = Schwartz
+ |first2       = Alexander
+ |issue        = 2
+ |journal      = [[Graphs and Combinatorics]]
+ |mr           = 1996205
+ |pages        = 215–230
+ |title        = On the complexity of polytope isomorphism problems
+ |url          = http://eprintweb.org/S/authors/All/ka/Kaibel/16
+ |volume       = 19
+ |year         = 2003
+ |url-status   = usurped
+ |archive-url  = https://web.archive.org/web/20150721175904/http://eprintweb.org/S/authors/All/ka/Kaibel/16
+ |archive-date = 2015-07-21
+ |doi          = 10.1007/s00373-002-0503-y
+ |arxiv        = math/0106093
+ |s2cid        = 179936
+}}.
+*{{citation
+ | last = Kelly | first = Paul J. | author-link = Paul Kelly (mathematician)
+ | journal = [[Pacific Journal of Mathematics]]
+ | mr = 0087949
+ | pages = 961–968
+ | title = A congruence theorem for trees
+ | volume = 7
+ | year = 1957
+ | doi=10.2140/pjm.1957.7.961| doi-access = free
+ }}.
+*{{citation
+ | last1 = Köbler | first1 = Johannes
+ | last2 = Schöning | first2 = Uwe | author2-link = Uwe Schöning
+ | last3 = Torán | first3 = Jacobo
+ | doi = 10.1007/BF01200427
+ | issue = 4
+ | journal = Computational Complexity
+ | mr = 1215315
+ | pages = 301–330
+ | title = Graph isomorphism is low for PP
+ | volume = 2
+ | year = 1992| s2cid = 8542603
+ }}.
+*{{citation
+ | last = Kozen | first = Dexter | author-link = Dexter Kozen
+ | doi = 10.1145/990524.990529
+ | issue = 2
+ | journal = [[ACM SIGACT News]]
+ | pages = 50–52
+ | title = A clique problem equivalent to graph isomorphism
+ | volume = 10
+ | year = 1978| s2cid = 52835766 | doi-access = free
+ }}.
+*{{citation
+ | last = Luks | first = Eugene M. | author-link = Eugene M. Luks
+ | doi = 10.1016/0022-0000(82)90009-5
+ | journal = [[Journal of Computer and System Sciences]]
+ | mr = 0685360
+ | pages = 42–65
+ | title = Isomorphism of graphs of bounded valence can be tested in polynomial time
+ | volume = 25
+ | year = 1982| s2cid = 2572728 | doi-access = free
+ }}.
+*{{citation
+ | last = Luks | first = Eugene M. | author-link = Eugene M. Luks
+ | contribution = Parallel algorithms for permutation groups and graph isomorphism
+ | pages = 292–302
+ | title = Proc. IEEE Symp. Foundations of Computer Science
+ | year = 1986}}.
+*{{citation
+ | last = Mathon | first = Rudolf
+ | doi = 10.1016/0020-0190(79)90004-8
+ | issue = 3
+ | journal = [[Information Processing Letters]]
+ | mr = 526453
+ | pages = 131–132
+ | title = A note on the graph isomorphism counting problem
+ | volume = 8
+ | year = 1979}}.
+*{{citation
+ | last = McKay
+ | first = Brendan D.
+ | author-link = Brendan McKay (mathematician)
+ | contribution = Practical graph isomorphism
+ | contribution-url = http://cs.anu.edu.au/~bdm/nauty/PGI/
+ | mr = 0635936
+ | pages = 45–87
+ | series = Congressus Numerantium
+ | title = 10th. Manitoba Conference on Numerical Mathematics and Computing (Winnipeg, 1980)
+ | volume = 30
+ | year = 1981
+ }}.
+*{{citation
+ | last = Miller | first = Gary | author-link = Gary Miller (computer scientist)
+ | contribution = Isomorphism testing for graphs of bounded genus
+ | doi = 10.1145/800141.804670
+ | isbn = 0-89791-017-6
+ | pages = 225–235
+ | title = Proceedings of the 12th Annual ACM Symposium on Theory of Computing
+ | year = 1980| s2cid = 13647304 | doi-access = free
+ }}.
+*{{citation
+ | last = Miller | first = Gary L. | author-link = Gary Miller (computer scientist)
+ | contribution = Isomorphism testing and canonical forms for ''k''-contractable graphs (a generalization of bounded valence and bounded genus)
+ | doi = 10.1007/3-540-12689-9_114
+ | pages = 310–327
+ | series = [[Lecture Notes in Computer Science]]
+ | title = Proc. Int. Conf. on Foundations of Computer Theory
+ | volume = 158
+ | year = 1983| isbn = 978-3-540-12689-8 }}. Full paper in ''[[Information and Control]]'' '''56''' (1–2): 1–20, 1983.
+*{{citation
+ | last1 = Moore | first1 = Cristopher | author1-link = Cristopher Moore
+ | last2 = Russell | first2 = Alexander
+ | last3 = Schulman | first3 = Leonard J. | author3-link = Leonard Schulman
+ | arxiv = quant-ph/0501056
+ | doi = 10.1137/050644896
+ | issue = 6
+ | journal = [[SIAM Journal on Computing]]
+ | mr = 2386215
+ | pages = 1842–1864
+ | title = The symmetric group defies strong Fourier sampling
+ | volume = 37
+ | year = 2008| s2cid = 9550284 }}.
+*{{citation
+ | last1 = Muzychuk | first1 = Mikhail 
+ | journal = Proc. London Math. Soc.
+ | mr = 2018956
+ | pages = 1–41
+ | title = A Solution of the Isomorphism Problem for Circulant Graphs
+ | volume = 88
+ | year = 2004
+ | doi=10.1112/s0024611503014412| s2cid = 16704931 
+ }}.
+*{{citation
+ | last1 = Narayanamurthy
+ | first1 = S. M.
+ | last2 = Ravindran
+ | first2 = B.
+ | contribution = On the hardness of finding symmetries in Markov decision processes
+ | contribution-url = http://www.cse.iitm.ac.in/~ravi/papers/Shravan-ICML08.pdf
+ | pages = 688–696
+ | title = Proceedings of the Twenty-Fifth International Conference on Machine Learning (ICML 2008)
+ | year = 2008
+ }}.
+*{{citation
+ | last1 = Schmidt | first1 = Douglas C.
+ | last2 = Druffel | first2 = Larry E.
+ | doi = 10.1145/321958.321963
+ | issue = 3
+ | journal = [[Journal of the ACM]]
+ | mr = 0411230
+ | pages = 433–445
+ | title = A fast backtracking algorithm to test directed graphs for isomorphism using distance matrices
+ | volume = 23
+ | year = 1976| s2cid = 6163956
+ | doi-access = free
+ }}.
+*{{citation
+ | last = Schöning | first = Uwe | author-link = Uwe Schöning
+ | contribution = Graph isomorphism is in the low hierarchy
+ | pages = 114–124
+ | title = [[Symposium on Theoretical Aspects of Computer Science|Proceedings of the 4th Annual Symposium on Theoretical Aspects of Computer Science]]
+ | year = 1987}}; also ''Journal of Computer and System Sciences'' '''37''': 312–323, 1988.
+*{{citation
+ | last1 = Shawe-Taylor | first1 = John
+ | last2 = Pisanski | first2 = Tomaž | author2-link = Tomaž Pisanski
+ | doi = 10.1137/S0097539791198900
+ | issue = 1
+ | journal = [[SIAM Journal on Computing]]
+ | mr = 1258998
+ | pages = 120–132
+ | title = Homeomorphism of 2-complexes is graph isomorphism complete
+ | volume = 23
+ | year = 1994}}.
+*{{citation
+ | last = Spielman | first = Daniel A. | author-link = Daniel Spielman
+ | contribution = Faster isomorphism testing of strongly regular graphs
+ | isbn = 978-0-89791-785-8
+ | pages = 576–584
+ | publisher = ACM
+ | title = Proceedings of the Twenty-Eighth Annual ACM Symposium on Theory of Computing (STOC '96)
+ | year = 1996}}.
+*{{citation
+ | last = Ullman
+ | first = Julian R.
+ | doi = 10.1145/321921.321925
+ | journal = [[Journal of the ACM]]
+ | mr = 0495173
+ | pages = 31–42
+ | title = An algorithm for subgraph isomorphism
+ | volume = 23
+ | year = 1976
+ | citeseerx = 10.1.1.361.7741
+ | s2cid = 17268751
+ | url = http://www.cs.bgu.ac.il/~dinitz/Course/SS-12/Ullman_Algorithm.pdf
+ }}.
+
+===Surveys and monographs===
+*{{citation
+ | last1 = Read | first1 = Ronald C.
+ | last2 = Corneil | first2 = Derek G. | author2-link = Derek Corneil
+ | doi = 10.1002/jgt.3190010410
+ | issue = 4
+ | journal = Journal of Graph Theory
+ | mr = 0485586
+ | pages = 339–363
+ | title = The graph isomorphism disease
+ | volume = 1
+ | year = 1977| s2cid = 26589776
+ }}.
+*{{citation
+ | last = Gati | first = G.
+ | journal = Journal of Graph Theory
+ | pages = 95–109
+ | title = Further annotated bibliography on the isomorphism disease
+ | volume = 3
+ | year = 1979
+ | issue = 2
+ | doi=10.1002/jgt.3190030202}}.
+*{{citation
+ | last1 = Zemlyachenko | first1 = V. N.
+ | last2 = Korneenko | first2 = N. M.
+ | last3 = Tyshkevich | first3 = R. I. | author3-link = Regina Tyshkevich
+ | doi = 10.1007/BF02104746
+ | issue = 4
+ | journal = Journal of Mathematical Sciences
+ | pages = 1426–1481
+ | title = Graph isomorphism problem
+ | volume = 29
+ | year = 1985| s2cid = 121818465
+ | doi-access = free
+ }}. (Translated from ''Zapiski Nauchnykh Seminarov Leningradskogo Otdeleniya Matematicheskogo Instituta im. V. A. Steklova AN SSSR'' (Records of Seminars of the [[Leningrad Department of Steklov Institute of Mathematics of the USSR Academy of Sciences]]), Vol. 118, pp.&nbsp;83–158, 1982.)
+*{{citation
+ | last1 = Arvind
+ | first1 = V.
+ | last2 = Torán
+ | first2 = Jacobo
+ | journal = Bulletin of the European Association for Theoretical Computer Science
+ | pages = 66–84
+ | title = Isomorphism testing: Perspectives and open problems
+ | url = https://www.uni-ulm.de/fileadmin/website_uni_ulm/iui.inst.190/Mitarbeiter/toran/beatcs/column86.pdf
+ | volume = 86
+ | year = 2005
+ }}. (A brief survey of open questions related to the isomorphism problem for graphs, rings and groups.)
+*{{citation
+ | last1 = Köbler | first1 = Johannes
+ | last2 = Schöning | first2 = Uwe | author2-link = Uwe Schöning
+ | last3 = Torán | first3 = Jacobo
+ | isbn = 978-0-8176-3680-7
+ | publisher = Birkhäuser
+ | title = The Graph Isomorphism Problem: Its Structural Complexity
+ | year = 1993}}. (''From the book cover'': The books focuses on the issue of the computational complexity of the problem and presents several recent results that provide a better understanding of the relative position of the problem in the class NP as well as in other complexity classes.)
+*{{citation
+ | last = Johnson | first = David S. | author-link = David S. Johnson
+ | doi = 10.1145/1077464.1077476
+ | issue = 1
+ | journal = [[ACM Transactions on Algorithms]]
+ | pages = 160–176
+ | title = The NP-Completeness Column
+ | volume = 1
+ | year = 2005| s2cid = 12604799 }}. (This 24th edition of the Column discusses the state of the art for the open problems from the book ''[[Computers and Intractability]]'' and previous columns, in particular, for Graph Isomorphism.)
+*{{citation
+ | last1 = Torán
+ | first1 = Jacobo
+ | last2 = Wagner
+ | first2 = Fabian
+ | journal = Bulletin of the European Association for Theoretical Computer Science
+ | title = The complexity of planar graph isomorphism
+ | url = http://theorie.informatik.uni-ulm.de/Personen/toran/beatcs/column97.pdf
+ | volume = 97
+ | year = 2009
+ | access-date = 2010-06-03
+ | archive-url = https://web.archive.org/web/20100920154742/http://theorie.informatik.uni-ulm.de/Personen/toran/beatcs/column97.pdf
+ | archive-date = 2010-09-20
+ | url-status = dead
+ }}.
+*{{citation
+ | last = Stoichev| first = Stoicho D.
+ | journal = Journal of Experimental Algorithmics
+ | pages = 1–27
+ | title = New Exact and Heuristic Algorithms for Graph Automorphism Group and Graph Isomorphism
+ | doi = 10.1145/3333250
+ | volume = 24
+ | year = 2019| s2cid = 202676274
+ }}.
+
+===Software===
+* [http://www.cs.sunysb.edu/~algorith/files/graph-isomorphism.shtml Graph Isomorphism], review of implementations, [http://www.cs.sunysb.edu/~algorith The Stony Brook Algorithm Repository].
+{{Refend}}
+{{Authority control}}
+
+[[Category:Graph algorithms]]
+[[Category:Morphisms]]
+[[Category:Computational problems in graph theory]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Computational complexity theory]]
+[[Category:Quasi-polynomial time algorithms]]

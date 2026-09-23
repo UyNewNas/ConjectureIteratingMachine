@@ -1,0 +1,102 @@
+{{unsolved|mathematics|Does forbidding both a tree and a clique as induced subgraphs produce graphs of bounded chromatic number?}}
+In [[graph theory]], the '''Gyárfás–Sumner conjecture''' says that for any fixed [[Tree (graph theory)|tree]] <math>T</math>, the class of all  <math>T</math>-free graphs is [[χ-bounded|<math>\chi</math>-bounded]]{{r|s97}}; that is, every graph that contains neither <math>T</math> nor <math>K_t</math> as an [[induced subgraph]] can be [[graph coloring|properly colored]] using a constant number of colors, depending only on <math>T</math> and <math>t</math>.
+Equivalently, it says that every <math>K_t</math>-free graph <math>G</math> contains any arbitrarily chosen tree <math>T</math> (as an induced subgraph), as long as <math>\chi(G)</math> is large enough.
+It is named after [[András Gyárfás]] and [[David Sumner]], who formulated it independently in 1975 and 1981 respectively.{{r|g75|s81}} It remains unproven.{{r|cs14}}
+
+In this conjecture, it is not possible to replace <math>T</math> by a graph with cycles. As [[Paul Erdős]] and [[András Hajnal]] have shown, there exist graphs with arbitrarily large chromatic number and, at the same time, arbitrarily large [[girth (graph theory)|girth]].{{r|eh66}} Using these graphs, one can obtain graphs that avoid any fixed choice of a cyclic graph and clique (of more than two vertices) as induced subgraphs, and exceed any fixed bound on the chromatic number.{{r|s97}}
+
+The conjecture is known to be true for certain special choices of <math>T</math>, including [[path graph|paths]],{{r|g87}} [[star (graph theory)|stars]], and trees of radius two.{{r|kp94}}
+It is also known that, for any tree <math>T</math>, the graphs that do not contain any [[Homeomorphism (graph theory)|subdivision]] of <math>T</math> are <math>\chi</math>-bounded.{{r|s97}}
+
+==References==
+<references>
+
+<ref name=cs14>{{citation
+ | last1 = Chudnovsky | first1 = Maria | author1-link = Maria Chudnovsky
+ | last2 = Seymour | first2 = Paul | author2-link = Paul Seymour (mathematician)
+ | doi = 10.1016/j.jctb.2013.11.002
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 3171779
+ | pages = 11–16
+ | series = Series B
+ | title = Extending the Gyárfás-Sumner conjecture
+ | volume = 105
+ | year = 2014| doi-access = free
+ }}</ref>
+
+<ref name=eh66>{{citation
+ | last1 = Erdős | first1 = P. | author1-link = Paul Erdős
+ | last2 = Hajnal | first2 = A. | author2-link = András Hajnal
+ | doi = 10.1007/BF02020444 | doi-access = free
+ | journal = [[Acta Mathematica Hungarica|Acta Mathematica Academiae Scientiarum Hungaricae]]
+ | mr = 0193025
+ | pages = 61–99
+ | title = On chromatic number of graphs and set-systems
+ | url = https://users.renyi.hu/~p_erdos/1966-07.pdf
+ | volume = 17
+ | year = 1966| issue = 1–2 }}</ref>
+
+<ref name=g75>{{citation
+ | last = Gyárfás | first = A. | author-link = András Gyárfás
+ | contribution = On Ramsey covering-numbers
+ | location = Amsterdam
+ | mr = 0382051
+ | pages = 801–816
+ | publisher = North-Holland
+ | series = Colloq. Math. Soc. János Bolyai
+ | title = Infinite and finite sets (Colloq., Keszthely, 1973; dedicated to P. Erdős on his 60th birthday), Vol. II
+ | volume = 10
+ | year = 1975}}</ref>
+
+<ref name=g87>{{citation
+ | last = Gyárfás | first = A. | author-link = András Gyárfás
+ | department = Proceedings of the International Conference on Combinatorial Analysis and its Applications (Pokrzywna, 1985)
+ | issue = 3–4
+ | journal = Zastosowania Matematyki
+ | mr = 951359
+ | pages = 413–441 (1988)
+ | title = Problems from the world surrounding perfect graphs
+ | volume = 19
+ | year = 1987}}</ref>
+
+<ref name=kp94>{{citation
+ | last1 = Kierstead | first1 = H. A.
+ | last2 = Penrice | first2 = S. G.
+ | issue = 2
+ | journal = [[Journal of Graph Theory]]
+ | mr = 1258244
+ | pages = 119–129
+ | title = Radius two trees specify χ-bounded classes
+ | doi = 10.1002/jgt.3190180203
+ | volume = 18
+ | year = 1994}}</ref>
+
+<ref name=s81>{{citation
+ | last = Sumner | first = D. P.
+ | contribution = Subtrees of a graph and the chromatic number
+ | mr = 634555
+ | pages = 557–576
+ | publisher = Wiley, New York
+ | title = The theory and applications of graphs (Kalamazoo, Mich., 1980)
+ | year = 1981}}</ref>
+
+<ref name=s97>{{citation
+ | last = Scott | first = A. D.
+ | issue = 4
+ | journal = [[Journal of Graph Theory]]
+ | mr = 1437291
+ | pages = 297–311
+ | title = Induced trees in graphs of large chromatic number
+ | doi = 10.1002/(SICI)1097-0118(199704)24:4<297::AID-JGT2>3.3.CO;2-X
+ | volume = 24
+ | year = 1997}}</ref>
+
+</references>
+
+==External links==
+*[http://www.openproblemgarden.org/op/graphs_with_a_forbidden_induced_tree_are_chi_bounded Graphs with a forbidden induced tree are chi-bounded], Open Problem Garden
+
+{{DEFAULTSORT:Gyarfas-Sumner conjecture}}
+[[Category:Graph coloring]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

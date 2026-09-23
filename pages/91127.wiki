@@ -1,0 +1,889 @@
+{{Short description|Positive integer of the form (2^(2^n))+1}}
+{{Infobox integer sequence
+| name = Fermat prime
+| named_after        = [[Pierre de Fermat]]
+| terms_number       = 5
+| con_number         = 5
+| first_terms        = [[3 (number)|3]], [[5 (number)|5]], [[17 (number)|17]], [[257 (number)|257]], [[65537 (number)|65537]]
+| largest_known_term = 65537
+| OEIS               = A019434
+| parentsequence     = Fermat numbers
+}}
+
+In [[mathematics]], a '''Fermat number''', named after [[Pierre de Fermat]] (1601–1665),<!--- lifespan relevant to timing of rebuttal on Fermat primes by [[Leonhard Euler]], mentioned below ---> the first known to have studied them, is a [[natural number|positive integer]] of the form: <math>F_{n} = 2^{2^n} + 1,</math> where ''n'' is a [[non-negative]] integer. The first few Fermat numbers are: [[3 (number)|3]], [[5 (number)|5]], [[17 (number)|17]], [[257 (number)|257]], [[65537 (number)|65537]], 4294967297, 18446744073709551617, 340282366920938463463374607431768211457, ... {{OEIS|id=A000215}}.
+
+If 2<sup>''k''</sup> + 1 is [[Prime number|prime]] and {{nowrap|''k'' > 0}}, then ''k'' itself must be a power of 2,<ref>For any positive odd number <math>m</math>, <math>2^{2^km} + 1 = (a + 1)(a^{m-1} - a^{m-2} + \ldots - a + 1)</math> where <math>a = 2^{2^k}</math>.</ref> so {{nowrap|2<sup>''k''</sup> + 1}} is a Fermat number; such primes are called '''Fermat primes'''. {{As of|2026}}, the only known Fermat primes are {{nowrap|1=''F''<sub>0</sub> = 3}}, {{nowrap|1=''F''<sub>1</sub> = 5}}, {{nowrap|1=''F''<sub>2</sub> = 17}}, {{nowrap|1=''F''<sub>3</sub> = 257}}, and {{nowrap|1=''F''<sub>4</sub> = 65537}} {{OEIS|id=A019434}}.
+
+==Basic properties==
+The Fermat numbers satisfy the following [[recurrence relation]]s:
+
+:<math>
+F_{n} = (F_{n-1}-1)^{2}+1</math>
+
+:<math>
+F_{n} = F_{0} F_{1} \cdots F_{n-1} + 2</math>
+
+for ''n'' ≥ 1,
+
+:<math>
+F_{n} = F_{n-1} + 2^{2^{n-1}}F_{0} F_{1} \cdots F_{n-2}</math>
+
+:<math>
+F_{n} = (F_{n-1} - 2F_{n-2} + 1)^2 + (2(F_{n-2} - 2)(F_{n-3} - 1))^2 + (2F_{n-2} - 3)^2</math>
+
+:<math>
+F_{n} = F_{n-1}^2 - 2(F_{n-2}-1)^2</math>
+
+for {{nowrap|''n'' ≥ 2}}. Each of these relations can be proved by [[mathematical induction]]. From the second equation, we can deduce '''Goldbach's theorem''' (named after [[Christian Goldbach]]): no two Fermat numbers [[coprime|share a common integer factor greater than 1]]. To see this, suppose that {{nowrap|0 ≤ ''i'' < ''j''}} and ''F''<sub>''i''</sub> and ''F''<sub>''j''</sub> have a common factor {{nowrap|''a'' > 1}}. Then ''a'' divides both
+
+:<math>F_{0} F_{1} \cdots F_{j-1}</math>
+
+and ''F''<sub>''j''</sub>; hence ''a'' divides their difference, 2. Since {{nowrap|''a'' > 1}}, this forces {{nowrap|1=''a'' = 2}}. This is a [[contradiction]], because each Fermat number is clearly odd. As a [[corollary]], we obtain another proof of the [[infinitude of the prime numbers]]: for each ''F''<sub>''n''</sub>, choose a prime factor ''p''<sub>''n''</sub>; then the sequence {{mset|''p''<sub>''n''</sub>}} is an infinite sequence of distinct primes.
+
+===Further properties===
+* No Fermat prime can be expressed as the difference of two ''p''th powers, where ''p'' is an odd prime.
+* With the exception of ''F''<sub>0</sub> and ''F''<sub>1</sub>, the last decimal digit of a Fermat number is 7.
+* The [[sums of reciprocals|sum of the reciprocals]] of all the Fermat numbers {{OEIS|id=A051158}} is [[irrational number|irrational]]. ([[Solomon W. Golomb]], 1963)
+
+==Primality==
+Fermat numbers and Fermat primes were first studied by Pierre de Fermat, who [[conjecture]]d that all Fermat numbers are prime. Indeed, the first five Fermat numbers ''F''<sub>0</sub>, ..., ''F''<sub>4</sub> are easily shown to be prime. Fermat's conjecture was refuted by [[Leonhard Euler]] in 1732 when he showed, by dividing by 641 that
+
+:<math> F_{5} = 2^{2^5} + 1 = 2^{32} + 1 = 4294967297 = 641 \times 6700417. </math>
+
+Euler proved that every factor of ''F''<sub>''n''</sub> must have the form {{nowrap|''k''{{space|hair}}2<sup>''n''+1</sup> + 1}} (later improved to {{nowrap|''k''{{space|hair}}2<sup>''n''+2</sup> + 1}} by [[Édouard Lucas|Lucas]]) for {{nowrap|''n'' ≥ 2}}.
+
+That 641 is a factor of ''F''<sub>5</sub> can be deduced, in hindsight, as follows: From the equalities 641&nbsp;=&nbsp;2<sup>7</sup>&nbsp;×&nbsp;5&nbsp;+&nbsp;1 and 641&nbsp;=&nbsp;2<sup>4</sup>&nbsp;+&nbsp;5<sup>4</sup>. It follows from the first equality that 2<sup>7</sup>&nbsp;×&nbsp;5&nbsp;≡&nbsp;−1&nbsp;(mod&nbsp;641) and therefore (raising to the fourth power) that 2<sup>28</sup>&nbsp;×&nbsp;5<sup>4</sup>&nbsp;≡&nbsp;1&nbsp;(mod&nbsp;641). On the other hand, the second equality implies that 5<sup>4</sup>&nbsp;≡&nbsp;−2<sup>4</sup>&nbsp;(mod&nbsp;641). These [[Modular arithmetic|congruences]] imply that 2<sup>32</sup>&nbsp;≡&nbsp;−1&nbsp;(mod&nbsp;641).
+
+Fermat was probably aware of the form of the factors later proved by Euler, so it seems curious that he failed to follow through on the straightforward calculation to find the factor.<ref>{{Harvnb|Křížek|Luca|Somer|2001|p=38, Remark 4.15}}</ref> One common explanation is that Fermat made a computational mistake.
+
+There are no other known Fermat primes ''F''<sub>''n''</sub> with {{nowrap|''n'' > 4}}, but little is known about Fermat numbers for large ''n''.<ref>Chris Caldwell, [http://primes.utm.edu/links/theory/special_forms/ "Prime Links++: special forms"] {{webarchive|url=https://web.archive.org/web/20131224224552/http://primes.utm.edu/links/theory/special_forms/ |date=2013-12-24 }} at The [[Prime Pages]].</ref> In fact, each of the following is an open problem:
+* Is ''F''<sub>''n''</sub> [[composite number|composite]] [[for all]] {{nowrap|''n'' > 4}}?
+* Are there infinitely many Fermat primes? ([[Gotthold Eisenstein|Eisenstein]] 1844<ref>{{Harvnb|Ribenboim|1996|p=88}}.</ref>)
+* Are there infinitely many composite Fermat numbers?
+* Does a Fermat number exist that is not [[square-free number|square-free]]?
+
+{{As of|2025|12}}, it is known that ''F''<sub>''n''</sub> is composite for {{nowrap|5 ≤ ''n'' ≤ 32}}, although of these, complete factorizations of ''F''<sub>''n''</sub> are known only for {{nowrap|0 ≤ ''n'' ≤ 11}}, and there are no known prime factors for {{nowrap|1=''n'' = 20}} and {{nowrap|1=''n'' = 24}}.<ref name="Keller"/> The largest Fermat number known to be composite is ''F''<sub>18233954</sub>, and its prime factor {{nowrap|7 × 2<sup>18233956</sup> + 1}} was discovered in October 2020.
+
+===Heuristic arguments===
+Heuristics suggest that ''F''<sub>4</sub> is the last Fermat prime.
+
+The [[prime number theorem]] implies that a random integer in a suitable interval around ''N'' is prime with probability 1{{space|hair}}/{{space|hair}}ln ''N''. If one uses the heuristic that a Fermat number is prime with the same probability as a random integer of its size, and that ''F''<sub>5</sub>, ..., ''F''<sub>32</sub> are composite, then the expected number of Fermat primes beyond ''F''<sub>4</sub> (or equivalently, beyond ''F''<sub>32</sub>) should be 
+:<math> \sum_{n \ge 33} \frac{1}{\ln F_{n}} < \frac{1}{\ln 2} \sum_{n \ge 33} \frac{1}{\log_2(2^{2^n})} = \frac{1}{\ln 2} 2^{-32} < 3.36 \times 10^{-10}.</math>
+One may interpret this number as an upper bound for the probability that a Fermat prime beyond ''F''<sub>4</sub> exists.
+
+This argument is not a rigorous proof. For one thing, it assumes that Fermat numbers behave "randomly", but the factors of Fermat numbers have special properties. Boklan and [[John H. Conway|Conway]] published a more precise analysis suggesting that the probability that there is another Fermat prime is less than one in a billion.<ref>{{Cite journal |last1=Boklan |first1=Kent D. |last2=Conway |first2=John H. |date=2017 |title=Expect at most one billionth of a new Fermat Prime! |journal=The Mathematical Intelligencer |volume=39 |issue=1 |pages=3–5 |arxiv=1605.01371 |doi=10.1007/s00283-016-9644-3|s2cid=119165671 }}</ref>
+
+Anders Bjorn and [[Hans Riesel]] estimated the number of square factors of Fermat numbers from ''F''<sub>5</sub> onward as
+:<math>
+\sum_{n \ge 5} \sum_{k \ge 1} \frac{1}{k (k 2^n + 1) \ln(k 2^n)} < \frac{\pi^2}{6 \ln 2} \sum_{n \ge 5} \frac{1}{n 2^n} \approx 0.02576;
+</math>
+in other words, there are unlikely to be any non-squarefree Fermat numbers, and in general square factors of <math>a^{2^n} + b^{2^n}</math> are very rare for large ''n''.<ref name="bjorn">{{cite journal |last1=Björn |first1=Anders |last2=Riesel |first2=Hans |title=Factors of generalized Fermat numbers |journal=Mathematics of Computation |date=1998 |volume=67 |issue=221 |pages=441–446 |doi=10.1090/S0025-5718-98-00891-6 |url=https://www.ams.org/journals/mcom/1998-67-221/S0025-5718-98-00891-6/ |language=en |issn=0025-5718|doi-access=free }}</ref>
+
+===Equivalent conditions===
+{{Main|Pépin's test}}
+
+Let <math>F_n=2^{2^n}+1</math> be the ''n''th Fermat number. Pépin's test states that for {{nowrap|''n'' > 0}},
+
+:<math>F_n</math> is prime if and only if <math>3^{(F_n-1)/2}\equiv-1\pmod{F_n}.</math>
+
+The expression <math>3^{(F_n-1)/2}</math> can be evaluated modulo <math>F_n</math> by [[exponentiation by squaring|repeated squaring]]. This makes the test a fast [[polynomial-time]] algorithm. But Fermat numbers grow so rapidly that only a handful of them can be tested in a reasonable amount of time and space.
+
+There are some tests for numbers of the form {{nowrap|''k''{{space|hair}}2<sup>''m''</sup> + 1}}, such as factors of Fermat numbers, for primality.
+
+:'''[[Proth's theorem]]''' (1878). Let {{nowrap|1=''N'' = ''k''{{space|hair}}2<sup>''m''</sup> + 1}} with odd {{nowrap|''k'' < 2<sup>''m''</sup>}}. If there is an integer ''a'' such that
+:: <math>a^{(N-1)/2} \equiv -1\pmod{N}</math>
+:then <math>N</math> is prime. Conversely, if the above congruence does not hold, and in addition
+:: <math>\left(\frac{a}{N}\right)=-1</math> (See [[Jacobi symbol]])
+:then <math>N</math> is composite.
+
+If {{nowrap|1=''N'' = ''F''<sub>''n''</sub> > 3}}, then the above Jacobi symbol is always equal to −1 for {{nowrap|1=''a'' = 3}}, and this special case of Proth's theorem is known as [[Pépin's test]]. Although Pépin's test and Proth's theorem have been implemented on computers to prove the compositeness of some Fermat numbers, neither test gives a specific nontrivial factor. In fact, no specific prime factors are known for {{nowrap|1=''n'' = 20}} and&nbsp;24.
+
+==Factorization==
+Because of Fermat numbers' size,  it is difficult to factorize or even to check primality. [[Pépin's test]] gives a necessary and sufficient condition for primality of Fermat numbers, and can be implemented by modern computers. The [[elliptic curve method]] is a fast method for finding small prime divisors of numbers. Distributed computing project ''Fermatsearch'' has found some factors of Fermat numbers. Yves Gallot's {{code|proth.exe}} has been used to find factors of large Fermat numbers. [[Édouard Lucas]], improving Euler's above-mentioned result, proved in 1878 that every factor of the Fermat number <math>F_n</math>, with ''n'' at least 2, is of the form <math>k\times2^{n+2}+1</math> (see [[Proth number]]), where ''k'' is a positive integer. By itself, this makes it easy to prove the primality of the known Fermat primes.
+
+Factorizations of the first 12 Fermat numbers are:
+
+:{|
+|- valign="top"
+|''F''<sub>0</sub> ||=|| 2<sup>1</sup>||+||1 ||=||[[3 (number)|3]] is prime||
+|- valign="top"
+|''F''<sub>1</sub> ||=|| 2<sup>2</sup>||+||1 ||=||[[5 (number)|5]] is prime||
+|- valign="top"
+|''F''<sub>2</sub> ||=|| 2<sup>4</sup>||+||1 ||=||[[17 (number)|17]] is prime||
+|- valign="top"
+|''F''<sub>3</sub> ||=|| 2<sup>8</sup>||+||1 ||=||[[257 (number)|257]] is prime||
+|- valign="top"
+|''F''<sub>4</sub> ||=|| 2<sup>16</sup>||+||1 ||=||[[65537 (number)|65,537]] is the largest known Fermat prime||
+|- valign="top"
+|''F''<sub>5</sub> ||=|| 2<sup>32</sup>||+||1 ||=||4,294,967,297||
+|- style="background:transparent; color:#B00000"
+| || || || || ||=||641 × 6,700,417 (fully factored 1732<ref>{{cite web |last1=Sandifer |first1=Ed |title=How Euler Did it |url=http://eulerarchive.maa.org/hedi/HEDI-2007-03.pdf |archive-url=https://ghostarchive.org/archive/20221009/http://eulerarchive.maa.org/hedi/HEDI-2007-03.pdf |archive-date=2022-10-09 |url-status=live |website=MAA Online |publisher=Mathematical Association of America |access-date=2020-06-13}}</ref>)
+|- valign="top"
+|''F''<sub>6</sub> ||=|| 2<sup>64</sup>||+||1 ||=||18,446,744,073,709,551,617 (20 digits) ||
+|- style="background:transparent; color:#B00000"
+| || || || || ||=||274,177 × 67,280,421,310,721 (14 digits) (fully factored 1855)
+|- valign="top"
+|''F''<sub>7</sub> ||=|| 2<sup>128</sup>||+||1 ||=||340,282,366,920,938,463,463,374,607,431,768,211,457 (39 digits)||
+|- style="background:transparent; color:#B00000"
+| || || || || ||=||59,649,589,127,497,217 (17 digits) × 5,704,689,200,685,129,054,721 (22 digits) (fully factored 1970)
+|- valign="top"
+|''F''<sub>8</sub> ||=|| 2<sup>256</sup>||+||1 ||=||115,792,089,237,316,195,423,570,985,008,687,907,853,269,984,665,640,564,039,457,584,007,913,129,<br>639,937 (78 digits)||
+|- style="background:transparent; color:#B00000; vertical-align:top"
+| || || || || ||=||1,238,926,361,552,897 (16 digits) × <br>93,461,639,715,357,977,769,163,558,199,606,896,584,051,237,541,638,188,580,280,321 (62 digits) (fully factored 1980)
+|- valign="top"
+|''F''<sub>9</sub> ||=|| 2<sup>512</sup>||+||1 ||=||13,407,807,929,942,597,099,574,024,998,205,846,127,479,365,820,592,393,377,723,561,443,721,764,0<br>30,073,546,976,801,874,298,166,903,427,690,031,858,186,486,050,853,753,882,811,946,569,946,433,6<br>49,006,084,097 (155 digits)||
+|- style="background:transparent; color:#B00000; vertical-align:top"
+| || || || || ||=|| 2,424,833 × 7,455,602,825,647,884,208,337,395,736,200,454,918,783,366,342,657 (49 digits) × <br>741,640,062,627,530,801,524,787,141,901,937,474,059,940,781,097,519,023,905,821,316,144,415,759,<br>504,705,008,092,818,711,693,940,737 (99 digits) (fully factored 1990)
+|- valign="top"
+|''F''<sub>10</sub> ||=|| 2<sup>1024</sup>||+||1
+||=||179,769,313,486,231,590,772,930...304,835,356,329,624,224,137,217 (309 digits)||
+|- style="background:transparent; color:#B00000; vertical-align:top"
+| || || || || ||=||45,592,577 × 6,487,031,809 × 4,659,775,785,220,018,543,264,560,743,076,778,192,897 (40 digits) × <br>130,439,874,405,488,189,727,484...806,217,820,753,127,014,424,577 (252 digits) (fully factored 1995)
+|- valign="top"
+|''F''<sub>11</sub> ||=|| 2<sup>2048</sup>||+||1
+||=||32,317,006,071,311,007,300,714,8...193,555,853,611,059,596,230,657 (617 digits)||
+|- style="background:transparent; color:#B00000; vertical-align:top"
+| || || || || ||=|| 319,489 × 974,849 × 167,988,556,341,760,475,137 (21 digits) × 3,560,841,906,445,833,920,513 (22 digits) × <br>173,462,447,179,147,555,430,258...491,382,441,723,306,598,834,177 (564 digits) (fully factored 1988)
+|-
+|}
+
+{{As of|2025|1}}, only ''F''<sub>0</sub> to ''F''<sub>11</sub> have been completely [[integer factorization|factored]].<ref name="Keller"/> The [[distributed computing]] project Fermat Search is searching for new factors of Fermat numbers.<ref>{{cite web|url=http://www.fermatsearch.org/|title= FERMATSEARCH.ORG :: Home page |website=www.fermatsearch.org|access-date=7 April 2018}}</ref> The set of all Fermat factors is [[OEIS:A050922|A050922]] (or, sorted, [[OEIS:A023394|A023394]]) in [[On-Line Encyclopedia of Integer Sequences|OEIS]].
+
+The following factors of Fermat numbers were known before 1950 (since then, digital computers have helped find more factors):
+
+{| class="wikitable"
+|-
+! Year
+! Finder
+! Fermat number
+! Factor
+|-
+| 1732
+| [[Euler]]
+| <math>F_5</math>
+| <math>5 \cdot 2^7 + 1</math>
+|-
+| 1732
+| Euler
+| <math>F_5</math> (fully factored)
+| <math>52347 \cdot 2^7 + 1</math>
+|-
+| 1855
+| [[Thomas Clausen (mathematician)|Clausen]]
+| <math>F_6</math>
+| <math>1071 \cdot 2^8 + 1</math>
+|-
+| 1855
+| Clausen
+| <math>F_6</math> (fully factored)
+| <math>262814145745 \cdot 2^8 + 1</math>
+|-
+| 1877
+| [[Ivan Pervushin|Pervushin]]
+| <math>F_{12}</math>
+| <math>7 \cdot 2^{14} + 1</math>
+|-
+| 1878
+| Pervushin
+| <math>F_{23}</math>
+| <math>5 \cdot 2^{25} + 1</math>
+|-
+| 1886
+| [[Paul Peter Heinrich Seelhoff|Seelhoff]]
+| <math>F_{36}</math>
+| <math>5 \cdot 2^{39} + 1</math>
+|-
+| 1899
+| [[Allan Joseph Champneys Cunningham|Cunningham]]
+| <math>F_{11}</math>
+| <math>39 \cdot 2^{13} + 1</math>
+|-
+| 1899
+| Cunningham
+| <math>F_{11}</math>
+| <math>119 \cdot 2^{13} + 1</math>
+|-
+| 1903
+| [[Alfred Western|Western]]
+| <math>F_9</math>
+| <math>37 \cdot 2^{16} + 1</math>
+|-
+| 1903
+| Western
+| <math>F_{12}</math>
+| <math>397 \cdot 2^{16} + 1</math>
+|-
+| 1903
+| Western
+| <math>F_{12}</math>
+| <math>973 \cdot 2^{16} + 1</math>
+|-
+| 1903
+| Western
+| <math>F_{18}</math>
+| <math>13 \cdot 2^{20} + 1</math>
+|-
+| 1903
+| [[James Cullen (mathematician)|Cullen]]
+| <math>F_{38}</math>
+| <math>3 \cdot 2^{41} + 1</math>
+|-
+| 1906
+| [[James C. Morehead|Morehead]]
+| <math>F_{73}</math>
+| <math>5 \cdot 2^{75} + 1</math>
+|-
+| 1925
+| [[Maurice Kraitchik|Kraitchik]]
+| <math>F_{15}</math>
+| <math>579 \cdot 2^{21} + 1</math>
+|-
+|}
+
+{{As of|2025|12}}, 375 prime factors of Fermat numbers are known, and 330 Fermat numbers are known to be composite.<ref name="Keller">{{Citation |first=Wilfrid |last=Keller |url=http://www.prothsearch.com/fermat.html#Summary |title=Prime Factors of Fermat Numbers |work=ProthSearch.com |date=December 5, 2025|access-date=January 8, 2026}}</ref> Several new Fermat factors are found each year.<ref>{{cite web |url=http://www.fermatsearch.org/news.html |title=::FERMATSEARCH.ORG:: News |website=www.fermatsearch.org |access-date=7 April 2018 }}</ref>
+
+==Pseudoprimes and Fermat numbers==
+Like [[composite number]]s of the form 2<sup>''p''</sup> − 1, every composite Fermat number is a [[strong pseudoprime]] to base 2. This is because all strong pseudoprimes to base 2 are also [[Fermat pseudoprime]]s – i.e.,
+
+:<math>2^{F_n-1} \equiv 1 \pmod{F_n}</math>
+
+for all Fermat numbers.<ref>{{Cite book |last=Schroeder |first=M. R. |url=https://www.worldcat.org/title/ocm61430240 |title=Number theory in science and communication: with applications in cryptography, physics, digital information, computing, and self-similarity |date=2006 |publisher=Springer |isbn=978-3-540-26596-2 |edition=4th |series=Springer series in information sciences |location=Berlin; New York |pages=216 |oclc=ocm61430240}}</ref>
+
+In 1904, Cipolla showed that the product of at least two distinct prime or composite Fermat numbers <math>F_{a} F_{b} \dots F_{s},</math> <math>a > b > \dots > s > 1</math> will be a Fermat pseudoprime to base 2 if and only if <math>2^s > a </math>.<ref>{{cite book|url=https://books.google.com/books?id=hgfSBwAAQBAJ&q=cipolla+fermat+1904&pg=PA132|title=17 Lectures on Fermat Numbers: From Number Theory to Geometry|first1=Michal|last1=Krizek|first2=Florian|last2=Luca|first3=Lawrence|last3=Somer|date=14 March 2013|publisher=Springer Science & Business Media|access-date=7 April 2018|via=Google Books|isbn=9780387218502}}</ref>
+
+==Other theorems about Fermat numbers==
+A Fermat number cannot be a perfect number or part of a pair of [[amicable numbers]]. {{harv|Luca|2000}}
+
+The series of reciprocals of all prime divisors of Fermat numbers is [[Convergent series|convergent]]. {{harv|Křížek|Luca|Somer|2002}}
+
+If {{nowrap|''n''<sup>''n''</sup> + 1}} is prime and <math>n \ge 2</math>, there exists an integer ''m'' such that {{nowrap|1=''n'' = 2<sup>2<sup>''m''</sup></sup>}}. The equation
+{{nowrap|1=''n''<sup>''n''</sup> + 1 = ''F''<sub>(2<sup>''m''</sup>+''m'')</sub>}}
+holds in that case.<ref>Jeppe Stig Nielsen, [http://jeppesn.dk/nton.html "S(n) = n^n + 1"].</ref><ref>{{MathWorld|urlname=SierpinskiNumberoftheFirstKind|title=Sierpiński Number of the First Kind}}</ref>
+
+Let the largest prime factor of the Fermat number ''F''<sub>''n''</sub> be ''P''(''F''<sub>''n''</sub>). Then,
+:<math>P(F_n) \ge 2^{n+2}(4n+9) + 1.</math> {{harv|Grytczuk|Luca|Wójtowicz|2001}}
+
+==Relationship to constructible polygons==
+[[File:Constructible polygon set.svg|thumb|300px|Number of sides of known constructible polygons having up to 1000 sides (bold) or odd side count (red)]]
+{{Main|Constructible polygon}}
+
+[[Carl Friedrich Gauss]] developed the theory of [[Gaussian period]]s in his ''[[Disquisitiones Arithmeticae]]'' and formulated a [[sufficient condition]] for the constructibility of regular polygons. Gauss stated that this condition was also [[necessary condition|necessary]],<ref>{{cite book |last1=Gauss |first1=Carl Friedrich |title=Disquisitiones arithmeticae |date=1966 |publisher=Yale University Press |location=New Haven and London |pages=458–460 |url=https://archive.org/details/disquisitionesar0000carl/ |access-date=25 January 2023}}</ref> but never published a proof. [[Pierre Wantzel]] gave a full proof of necessity in 1837. The result is known as the '''Gauss–Wantzel theorem''':
+
+: An ''n''-sided regular polygon can be constructed with [[compass and straightedge]] if and only if ''n'' is the product of a power of 2 and distinct<!-- Define "distinct" --> Fermat primes: in other words, if and only if ''n'' is of the form {{nowrap|1=''n'' = 2<sup>''k''</sup>''p''<sub>1</sub>''p''<sub>2</sub>...''p''<sub>''s''</sub>}}, where ''k'', ''s'' are nonnegative integers and the ''p''<sub>''i''</sub> are distinct Fermat primes.
+
+A positive integer ''n'' is of the above form if and only if its [[Euler's totient function|totient]] ''φ''(''n'') is a power of 2.
+
+==Applications of Fermat numbers==
+===Pseudorandom number generation===
+Fermat primes are particularly useful in generating pseudo-random sequences of numbers in the range 1, ..., ''N'', where ''N'' is a power of 2. The most common method used is to take any seed value between 1 and {{nowrap|''P'' − 1}}, where ''P'' is a Fermat prime. Now multiply this by a number ''A'', which is greater than the [[square root]] of ''P'' and is a [[Primitive root modulo n|primitive root]] modulo ''P'' (i.e., it is not a [[quadratic residue]]). Then take the result modulo ''P''. The result is the new value for the RNG.
+: <math>V_{j+1} = (A \times V_j) \bmod P</math> (see [[linear congruential generator]])
+This is useful in computer science, since most data structures have members with 2<sup>''X''</sup> possible values. For example, a byte has 256 (2<sup>8</sup>) possible values (0–255). Therefore, to fill a byte or bytes with random values, a random number generator that produces values 1–256 can be used, the byte taking the output value −1. Very large Fermat primes are of particular interest in data encryption for this reason. This method produces only [[pseudorandom]] values, as after {{nowrap|''P'' − 1}} repetitions, the sequence repeats. A poorly chosen multiplier can result in the sequence repeating sooner than {{nowrap|''P'' − 1}}.
+
+==Generalized Fermat numbers==
+Numbers of the form <math>\frac{a^{2^n}+b^{2^n}}{gcd(a+b,2)}</math> with ''a'', ''b'' any [[coprime]] integers, {{nowrap|''a'' > ''b'' > 0}}, are called '''generalized Fermat numbers'''. An odd prime ''p'' is a generalized Fermat number if and only if ''p'' is congruent to [[Pythagorean prime|1 (mod 4)]]. (Here we consider only the case {{nowrap|''n'' > 0}}, so {{nowrap|1=3 = <math>2^{2^{0}} \!+ 1</math>}} is not a counterexample.)
+
+An example of a [[probable prime]] of this form is 200<sup>262144</sup> + 119<sup>262144</sup> (found by Kellen Shenton).<ref>[http://www.primenumbers.net/prptop/searchform.php?form=x%5E262144%2By%5E262144&action=Search PRP Top Records, search for x^262144+y^262144], by  Henri &amp; Renaud Lifchitz.</ref>
+
+By analogy with the ordinary Fermat numbers, it is common to write generalized Fermat numbers of the form <math>a^{2^{ \overset{n} {}}} \!\!+ 1</math> as ''F''<sub>''n''</sub>(''a''). In this notation, for instance, the number 100,000,001 would be written as ''F''<sub>3</sub>(10). In the following we shall restrict ourselves to primes of this form, <math>a^{2^{ \overset{n} {}}} \!\!+ 1</math>, such primes are called "Fermat primes base ''a''". Of course, these primes exist only if ''a'' is [[Parity (mathematics)|even]].
+
+===Generalized Fermat primes of the form F<sub>''n''</sub>(''a'')===
+Because of the ease of proving their primality, generalized Fermat primes have become in recent years a topic for research within the field of number theory. Many of the largest known primes today are generalized Fermat primes.
+
+Generalized Fermat numbers can be prime only for [[even number|even]] {{mvar|a}}, because if {{mvar|a}} is [[odd number|odd]] then every generalized Fermat number will be divisible by 2.  The smallest prime number <math>F_n(a)</math> with <math>n>4</math> is <math>F_5(30)</math>, or 30<sup>32</sup> + 1. Besides, we can define "half generalized Fermat numbers" for an odd base, a half generalized Fermat number to base ''a'' (for odd ''a'') is <math>\frac{a^{2^n} \!+ 1}{2}</math>, and it is also to be expected that there will be only finitely many half generalized Fermat primes for each odd base.
+
+In this list, the generalized Fermat numbers (<math>F_n(a)</math>) to an even {{mvar|a}} are <math>a^{2^n} \!+ 1</math>, for odd {{mvar|a}}, they are <math>\frac{a^{2^n} \!\!+ 1}{2}</math>. If {{mvar|a}} is a [[perfect power]] with an odd exponent {{OEIS|id=A070265}}, then all generalized Fermat numbers can be  factored algebraically, so they cannot be prime.
+
+See<ref>{{cite web|url=http://jeppesn.dk/generalized-fermat.html|title=Generalized Fermat Primes|website=jeppesn.dk|access-date=7 April 2018}}</ref><ref>{{cite web|url=http://www.noprimeleftbehind.net/crus/GFN-primes.htm|title=Generalized Fermat primes for bases up to 1030|website=noprimeleftbehind.net|access-date=7 April 2018}}</ref> for even bases up to 1000, and<ref>{{cite web|url=http://www.fermatquotient.com/PrimSerien/GenFermOdd.txt|title=Generalized Fermat primes in odd bases|website=fermatquotient.com|access-date=7 April 2018}}</ref> for odd bases. For the smallest number <math>n</math> such that <math>F_n(a)</math> is prime, see {{oeis|id=A253242}}.
+
+{|class="wikitable"
+!<math>a</math>
+!numbers <math>n</math><br/>such that<br/><math>F_n(a)</math> is prime
+!<math>a</math>
+!numbers <math>n</math><br/>such that<br/><math>F_n(a)</math> is prime
+!<math>a</math>
+!numbers <math>n</math><br/>such that<br/><math>F_n(a)</math> is prime
+!<math>a</math>
+!numbers <math>n</math><br/>such that<br/><math>F_n(a)</math> is prime
+|-
+|2
+|0, 1, 2, 3, 4, ...
+|18
+|0, ...
+|34
+|2, ...
+|50
+|...
+|-
+|3
+|0, 1, 2, 4, 5, 6, ...
+|19
+|1, ...
+|35
+|1, 2, 6, ...
+|51
+|1, 3, 6, ...
+|-
+|4
+|0, 1, 2, 3, ...
+|20
+|1, 2, ...
+|36
+|0, 1, ...
+|52
+|0, ...
+|-
+|5
+|0, 1, 2, ...
+|21
+|0, 2, 5, ...
+|37
+|0, ...
+|53
+|3, ...
+|-
+|6
+|0, 1, 2, ...
+|22
+|0, ...
+|38
+|...
+|54
+|1, 2, 5, ...
+|-
+|7
+|2, ...
+|23
+|2, ...
+|39
+|1, 2, ...
+|55
+|...
+|-
+|8
+| {{CNone|(none)}}
+|24
+|1, 2, ...
+|40
+|0, 1, ...
+|56
+|1, 2, ...
+|-
+|9
+|0, 1, 3, 4, 5, ...
+|25
+|0, 1, ...
+|41
+|4, ...
+|57
+|0, 2, ...
+|-
+|10
+|0, 1, ...
+|26
+|1, ...
+|42
+|0, ...
+|58
+|0, ...
+|-
+|11
+|1, 2, ...
+|27
+| {{CNone|(none)}}
+|43
+|3, ...
+|59
+|1, ...
+|-
+|12
+|0, ...
+|28
+|0, 2, ...
+|44
+|4, ...
+|60
+|0, ...
+|-
+|13
+|0, 2, 3, ...
+|29
+|1, 2, 4, ...
+|45
+|0, 1, ...
+|61
+|0, 1, 2, ...
+|-
+|14
+|1, ...
+|30
+|0, 5, ...
+|46
+|0, 2, 9, ...
+|62
+|...
+|-
+|15
+|1, ...
+|31
+|...
+|47
+|3, ...
+|63
+|...
+|-
+|16
+|0, 1, 2, ...
+|32
+| {{CNone|(none)}}
+|48
+|2, ...
+|64
+| {{CNone|(none)}}
+|-
+|17
+|2, ...
+|33
+|0, 3, ...
+|49
+|1, ...
+|65
+|1, 2, 5, ...
+|}
+
+For the smallest even base {{mvar|a}} such that <math>F_n(a)</math> is prime, see {{oeis|id=A056993}}.
+
+The generalized Fermat prime ''F''<sub>14</sub>(71) is the largest known generalized Fermat prime in bases ''b'' ≤ 1000, it is proven prime by [[elliptic curve primality proving]].<ref>[https://factordb.com/index.php?id=1100000000213085670 The entry of the generalized Fermat prime ''F''<sub>14</sub>(71) in the online factor database]</ref>
+
+{|class="wikitable"
+!<math>n</math>
+!bases {{mvar|a}} such that <math>F_n(a)</math> is prime (only consider even {{mvar|a}})
+![[OEIS]] sequence
+|-
+|0
+|2, 4, 6, 10, 12, 16, 18, 22, 28, 30, 36, 40, 42, 46, 52, 58, 60, 66, 70, 72, 78, 82, 88, 96, 100, 102, 106, 108, 112, 126, 130, 136, 138, 148, 150, ...
+|{{OEIS link|id=A006093}}
+|-
+|1
+|2, 4, 6, 10, 14, 16, 20, 24, 26, 36, 40, 54, 56, 66, 74, 84, 90, 94, 110, 116, 120, 124, 126, 130, 134, 146, 150, 156, 160, 170, 176, 180, 184, ...
+|{{OEIS link|id=A005574}}
+|-
+|2
+|2, 4, 6, 16, 20, 24, 28, 34, 46, 48, 54, 56, 74, 80, 82, 88, 90, 106, 118, 132, 140, 142, 154, 160, 164, 174, 180, 194, 198, 204, 210, 220, 228, ...
+|{{OEIS link|id=A000068}}
+|-
+|3
+|2, 4, 118, 132, 140, 152, 208, 240, 242, 288, 290, 306, 378, 392, 426, 434, 442, 508, 510, 540, 542, 562, 596, 610, 664, 680, 682, 732, 782, ...
+|{{OEIS link|id=A006314}}
+|-
+|4
+|2, 44, 74, 76, 94, 156, 158, 176, 188, 198, 248, 288, 306, 318, 330, 348, 370, 382, 396, 452, 456, 470, 474, 476, 478, 560, 568, 598, 642, ...
+|{{OEIS link|id=A006313}}
+|-
+|5
+|30, 54, 96, 112, 114, 132, 156, 332, 342, 360, 376, 428, 430, 432, 448, 562, 588, 726, 738, 804, 850, 884, 1068, 1142, 1198, 1306, 1540, 1568, ...
+|{{OEIS link|id=A006315}}
+|-
+|6
+|102, 162, 274, 300, 412, 562, 592, 728, 1084, 1094, 1108, 1120, 1200, 1558, 1566, 1630, 1804, 1876, 2094, 2162, 2164, 2238, 2336, 2388, ...
+|{{OEIS link|id=A006316}}
+|-
+|7
+|120, 190, 234, 506, 532, 548, 960, 1738, 1786, 2884, 3000, 3420, 3476, 3658, 4258, 5788, 6080, 6562, 6750, 7692, 8296, 9108, 9356, 9582, ...
+|{{OEIS link|id=A056994}}
+|-
+|8
+|278, 614, 892, 898, 1348, 1494, 1574, 1938, 2116, 2122, 2278, 2762, 3434, 4094, 4204, 4728, 5712, 5744, 6066, 6508, 6930, 7022, 7332, ...
+|{{OEIS link|id=A056995}}
+|-
+|9
+|46, 1036, 1318, 1342, 2472, 2926, 3154, 3878, 4386, 4464, 4474, 4482, 4616, 4688, 5374, 5698, 5716, 5770, 6268, 6386, 6682, 7388, 7992, ...
+|{{OEIS link|id=A057465}}
+|-
+|10
+|824, 1476, 1632, 2462, 2484, 2520, 3064, 3402, 3820, 4026, 6640, 7026, 7158, 9070, 12202, 12548, 12994, 13042, 15358, 17646, 17670, ...
+|{{OEIS link|id=A057002}}
+|-
+|11
+|150, 2558, 4650, 4772, 11272, 13236, 15048, 23302, 26946, 29504, 31614, 33308, 35054, 36702, 37062, 39020, 39056, 43738, 44174, 45654, ...
+|{{OEIS link|id=A088361}}
+|-
+|12
+|1534, 7316, 17582, 18224, 28234, 34954, 41336, 48824, 51558, 51914, 57394, 61686, 62060, 89762, 96632, 98242, 100540, 101578, 109696, ...
+|{{OEIS link|id=A088362}}
+|-
+|13
+|30406, 71852, 85654, 111850, 126308, 134492, 144642, 147942, 150152, 165894, 176206, 180924, 201170, 212724, 222764, 225174, 241600, ...
+|{{OEIS link|id=A226528}}
+|-
+|14
+|67234, 101830, 114024, 133858, 162192, 165306, 210714, 216968, 229310, 232798, 422666, 426690, 449732, 462470, 468144, 498904, 506664, ...
+|{{OEIS link|id=A226529}}
+|-
+|15
+|70906, 167176, 204462, 249830, 321164, 330716, 332554, 429370, 499310, 524552, 553602, 743788, 825324, 831648, 855124, 999236, 1041870, 1074542, 1096382, 1113768, 1161054, 1167528, 1169486, 1171824, 1210354, 1217284, 1277444, 1519380, 1755378, 1909372, 1922592, 1986700, ...
+|{{OEIS link|id=A226530}}
+|-
+|16
+|48594, 108368, 141146, 189590, 255694, 291726, 292550, 357868, 440846, 544118, 549868, 671600, 843832, 857678, 1024390, 1057476, 1087540, 1266062, 1361846, 1374038, 1478036, 1483076, 1540550, 1828502, 1874512, 1927034, 1966374, ...
+|{{OEIS link|id=A251597}}
+|-
+|17
+|62722, 130816, 228188, 386892, 572186, 689186, 909548, 1063730, 1176694, 1361244, 1372930, 1560730, 1660830, 1717162, 1722230, 1766192, 1955556, 2194180, 2280466, 2639850, 3450080, 3615210, 3814944, 4085818, 4329134, 4893072, 4974408, ...
+|{{OEIS link|id=A253854}}
+|-
+|18
+|24518, 40734, 145310, 361658, 525094, 676754, 773620, 1415198, 1488256, 1615588, 1828858, 2042774, 2514168, 2611294, 2676404, 3060772, 3547726, 3596074, 3673932, 3853792, 3933508, 4246258, 4489246, ...
+|{{OEIS link|id=A244150}}
+|-
+|19
+|75898, 341112, 356926, 475856, 1880370, 2061748, 2312092, 2733014, 2788032, 2877652, 2985036, 3214654, 3638450, 4896418, 5897794, 6339004, 8630170, 9332124, 10913140, 11937916, 12693488, 12900356, ...
+|{{OEIS link|id=A243959}}
+|-
+|20
+|919444, 1059094, 1951734, 1963736, 3843236, 5336284, ...
+|{{OEIS link|id=A321323}}
+|-
+|21
+|2524190, ...
+|
+|}
+
+The smallest even base ''b'' such that ''F''<sub>''n''</sub>(''b'') = ''b''<sup>2<sup>''n''</sup></sup> + 1 (for given ''n'' = 0, 1, 2, ...) is prime are
+
+:2, 2, 2, 2, 2, 30, 102, 120, 278, 46, 824, 150, 1534, 30406, 67234, 70906, 48594, 62722, 24518, 75898, 919444, 2524190, ... {{OEIS|id=A056993}}
+
+The smallest odd base ''b'' such that ''F''<sub>''n''</sub>(''b'') = (''b''<sup>2<sup>''n''</sup></sup> + 1)/2 (for given ''n'' = 0, 1, 2, ...) is prime (or [[probable prime]]) are
+
+:3, 3, 3, 9, 3, 3, 3, 113, 331, 513, 827, 799, 3291, 5041, 71, 220221, 23891, 11559, 187503, 35963, ... {{OEIS|id=A275530}}
+
+Conversely, the smallest ''k'' such that (2''n'')<sup>''k''</sup> + 1 (for given ''n'') is prime are
+
+:1, 1, 1, 0, 1, 1, 2, 1, 1, 2, 1, 2, 2, 1, 1, 0, 4, 1, ... (The next term is unknown) {{OEIS|id=A079706}} (also see {{oeis|id=A228101}} and {{oeis|id=A084712}})
+
+A more elaborate theory can be used to predict the number of bases for which <math>F_n(a)</math> will be prime for fixed <math>n</math>. The number of generalized Fermat primes can be roughly expected to halve as <math>n</math> is increased by 1.
+
+===Generalized Fermat primes of the form F<sub>n</sub>(''a'', ''b'')===
+It is also possible to construct generalized Fermat primes of the form <math>a^{2^n} + b^{2^n}</math>. As in the case where ''b''=1, numbers of this form will always be divisible by 2 if ''a+b'' is even, but it is still possible to define generalized half-Fermat primes of this type. For the smallest prime of the form <math>F_n(a,b)</math> (for odd <math>a+b</math>), see also {{oeis|id=A111635}}.
+
+{|class="wikitable"
+!<math>a</math>
+!<math>b</math>
+!numbers <math>n</math> such that<br/><math>F_n(a,b) = \frac{a^{2^n}+b^{2^n}}{\gcd(a+b, 2)}</math><br/>is prime<ref>{{cite web |title=GFN numbers for small indices |url=http://www.prothsearch.com/GFNsmall.html |website=www.prothsearch.com}}</ref>
+|-
+| 2
+| 1
+| 0, 1, 2, 3, 4, ...
+|-
+| 3
+| 1
+| 0, 1, 2, 4, 5, 6, ...
+|-
+| 3
+| 2
+| 0, 1, 2, ...
+|-
+| 4
+| 1
+| 0, 1, 2, 3, ... (equivalent to <math>F_n(2, 1)</math>)
+|-
+| 4
+| 3
+| 0, 2, 4, ...
+|-
+| 5
+| 1
+| 0, 1, 2, ...
+|-
+| 5
+| 2
+| 0, 1, 2, ...
+|-
+| 5
+| 3
+| 1, 2, 3, ...
+|-
+| 5
+| 4
+| 1, 2, ...
+|-
+| 6
+| 1
+| 0, 1, 2, ...
+|-
+| 6
+| 5
+| 0, 1, 3, 4, ...
+|-
+| 7
+| 1
+| 2, ...
+|-
+| 7
+| 2
+| 1, 2, ...
+|-
+| 7
+| 3
+| 0, 1, 8, ...
+|-
+| 7
+| 4
+| 0, 2, ...
+|-
+| 7
+| 5
+| 1, 4,
+|-
+| 7
+| 6
+| 0, 2, 4, ...
+|-
+| 8
+| 1
+| {{CNone|(none)}}
+|-
+| 8
+| 3
+| 0, 1, 2, ...
+|-
+| 8
+| 5
+| 0, 1, 2, ...
+|-
+| 8
+| 7
+| 1, 4, ...
+|-
+| 9
+| 1
+| 0, 1, 3, 4, 5, ... (equivalent to <math>F_n(3, 1)</math>)
+|-
+| 9
+| 2
+| 0, 2, ...
+|-
+| 9
+| 4
+| 0, 1, ... (equivalent to <math>F_n(3, 2)</math>)
+|-
+| 9
+| 5
+| 0, 1, 2, ...
+|-
+| 9
+| 7
+| 2, ...
+|-
+| 9
+| 8
+| 0, 2, 5, ...
+|-
+| 10
+| 1
+| 0, 1, ...
+|-
+| 10
+| 3
+| 0, 1, 3, ...
+|-
+| 10
+| 7
+| 0, 1, 2, ...
+|-
+| 10
+| 9
+| 0, 1, 2, ...
+|-
+| 11
+| 1
+| 1, 2, ...
+|-
+| 11
+| 2
+| 0, 2, ...
+|-
+| 11
+| 3
+| 0, 3, ...
+|-
+| 11
+| 4
+| 1, 2, ...
+|-
+| 11
+| 5
+| 1, ...
+|-
+| 11
+| 6
+| 0, 1, 2, ...
+|-
+| 11
+| 7
+| 2, 4, 5, ...
+|-
+| 11
+| 8
+| 0, 6, ...
+|-
+| 11
+| 9
+| 1, 2, ...
+|-
+| 11
+| 10
+| 5, ...
+|-
+| 12
+| 1
+| 0, ...
+|-
+| 12
+| 5
+| 0, 4, ...
+|-
+| 12
+| 7
+| 0, 1, 3, ...
+|-
+| 12
+| 11
+| 0, ...
+|-
+|}
+
+===Largest known generalized Fermat primes===
+The following is a list of the ten largest known generalized Fermat primes.<ref name="Top Twenty's Generalized Fermat Primes">{{cite web|title=The Top Twenty: Generalized Fermat|url=http://primes.utm.edu/top20/page.php?id=12|work=The Prime Pages|first=Chris K.|last=Caldwell|access-date=5 October 2024}}</ref> The whole top-10 is discovered by participants in the [[PrimeGrid]] project.
+
+{| class="wikitable" style="text-align:right"
+|-
+! Rank
+! Prime number
+! Generalized Fermat notation
+! Number of digits
+! Discovery date
+! {{Reference column heading}}
+|-
+| 1
+| 2524190<sup>2097152</sup>&nbsp;+&nbsp;1
+| ''F''<sub>21</sub>(2524190)
+| 13,426,224
+| style="text-align:left" | Oct 2025
+|<ref>[https://t5k.org/primes/page.php?id=141162 2524190<sup>2097152</sup>&nbsp;+&nbsp;1]</ref>
+|-
+| 2
+| 4×5<sup>11786358</sup>&nbsp;+&nbsp;1
+| ''F''<sub>1</sub>(2×5<sup>5893179</sup>)
+| 8,238,312
+| style="text-align:left" | Oct 2024
+|<ref>[https://t5k.org/primes/page.php?id=138596 4×5<sup>11786358</sup>&nbsp;+&nbsp;1]</ref>
+|-
+|3
+|7172162<sup>1048576</sup>+1
+|''F''<sub>20</sub>(7172162)
+|7,188,671
+| style="text-align: left;" |Aug 2026
+|<ref>[https://t5k.org/primes/page.php?id=142412 7172162<sup>1048576</sup>+1]</ref>
+|-
+| 4
+| 5336284<sup>1048576</sup>&nbsp;+&nbsp;1
+| ''F''<sub>20</sub>(5336284)
+| 7,054,022
+| style="text-align:left" | Nov 2025
+|<ref>[https://t5k.org/primes/page.php?id=141212 5336284<sup>1048576</sup>&nbsp;+&nbsp;1]</ref>
+|-
+| 5
+| 3843236<sup>1048576</sup>&nbsp;+&nbsp;1
+| ''F''<sub>20</sub>(3843236)
+| 6,904,556
+| style="text-align:left" | Dec 2024
+|<ref>[https://t5k.org/primes/page.php?id=138830 3843236<sup>1048576</sup>&nbsp;+&nbsp;1]</ref>
+|-
+| 6
+| 1963736<sup>1048576</sup>&nbsp;+&nbsp;1
+| ''F''<sub>20</sub>(1963736)
+| 6,598,776
+| style="text-align:left" | Sep 2022
+|<ref>[https://t5k.org/primes/page.php?id=134423 1963736<sup>1048576</sup>&nbsp;+&nbsp;1]</ref>
+|-
+| 7
+| 1951734<sup>1048576</sup>&nbsp;+&nbsp;1
+| ''F''<sub>20</sub>(1951734)
+| 6,595,985
+| style="text-align:left" | Aug 2022
+|<ref>[https://t5k.org/primes/page.php?id=134298 1951734<sup>1048576</sup>&nbsp;+&nbsp;1]</ref>
+|-
+| 8
+| 1059094<sup>1048576</sup>&nbsp;+&nbsp;1
+| ''F''<sub>20</sub>(1059094)
+| 6,317,602
+| style="text-align:left" | Nov 2018
+|<ref>[https://t5k.org/primes/page.php?id=125753 1059094<sup>1048576</sup>&nbsp;+&nbsp;1]</ref>
+|-
+| 9
+| 919444<sup>1048576</sup>&nbsp;+&nbsp;1
+| ''F''<sub>20</sub>(919444)
+| 6,253,210
+| style="text-align:left" | Sep 2017
+|<ref>[https://t5k.org/primes/page.php?id=123875 919444<sup>1048576</sup>&nbsp;+&nbsp;1]</ref>
+|-
+| 10
+| 81×2<sup>20498148</sup>&nbsp;+&nbsp;1
+| ''F''<sub>2</sub>(3×2<sup>5124537</sup>)
+| 6,170,560
+| style="text-align:left" | Jun 2023
+|<ref>[https://t5k.org/primes/page.php?id=136165 81×2<sup>20498148</sup>&nbsp;+&nbsp;1]</ref>
+|}
+
+On the [[Prime Pages]] one can find the [https://t5k.org/top20/page.php?id=12 current top 20 generalized Fermat primes] and the [https://t5k.org/primes/search.php?Comment=Generalized+Fermat&OnList=all&Number=100&Style=HTML current top 100 generalized Fermat primes].
+
+==See also==
+* [[Constructible polygon]]: which regular polygons are constructible partially depends on Fermat primes.
+* [[Double exponential function]]
+* [[Lucas' theorem]]
+* [[Mersenne prime]]
+* [[Pierpont prime]]
+* [[Primality test]]
+* [[Proth's theorem]]
+* [[Pseudoprime]]
+* [[Sierpiński number]]
+* [[Sylvester's sequence]]
+
+==Notes==
+{{Reflist}}
+
+==References==
+*{{Citation |last=Golomb |first=S. W. |date=January 1, 1963 |title=On the sum of the reciprocals of the Fermat numbers and related irrationalities |journal=Canadian Journal of Mathematics |volume=15 |pages=475–478 |doi=10.4153/CJM-1963-051-0 |s2cid=123138118 |doi-access=free }}
+*{{Citation |last1=Grytczuk |first1=A. |last2=Luca |first2=F. |last3=Wójtowicz |first3=M. |name-list-style=amp |year=2001 |title=Another note on the greatest prime factors of Fermat numbers |journal=Southeast Asian Bulletin of Mathematics |volume=25 |issue=1 |pages=111–115 |doi=10.1007/s10012-001-0111-4 |s2cid=122332537 }}
+*{{citation |last=Guy |first=Richard K. |author-link=Richard K. Guy |title=Unsolved Problems in Number Theory |year=2004 |edition=3rd |publisher=[[Springer Verlag]] |series=Problem Books in Mathematics |volume=1 |location=New York |isbn=978-0-387-20860-2 |pages=A3, A12, B21 |url=https://www.springer.com/mathematics/numbers/book/978-0-387-20860-2?otherVersion=978-0-387-26677-0 }}
+*{{citation |last1=Křížek |first1=Michal |last2=Luca |first2=Florian |last3=Somer |first3=Lawrence |name-list-style=amp |title=17 Lectures on Fermat Numbers: From Number Theory to Geometry |year=2001 |series=CMS books in mathematics |volume=10 |publisher=Springer |location=New York |isbn=978-0-387-95332-8 |url=https://www.springer.com/mathematics/numbers/book/978-0-387-95332-8 }} - This book contains an extensive list of references.
+*{{Citation |last1=Křížek |first1=Michal |last2=Luca |first2=Florian |last3=Somer |first3=Lawrence |name-list-style=amp |year=2002 |title=On the convergence of series of reciprocals of primes related to the Fermat numbers |journal=Journal of Number Theory |volume=97 |issue=1 |pages=95–112 |doi=10.1006/jnth.2002.2782 |doi-access=free }}
+*{{Citation |last=Luca |first=Florian |year=2000 |title=The anti-social Fermat number |journal=American Mathematical Monthly |volume=107 |issue=2 |pages=171–173 |doi=10.2307/2589441 |url=http://www.maa.org/publications/periodicals/american-mathematical-monthly/american-mathematical-monthly-february-2000 |jstor=2589441 }}
+*{{Citation |last=Ribenboim |first=Paulo |author-link=Paulo Ribenboim |year=1996 |title=The New Book of Prime Number Records |publisher=Springer |location=New York |edition=3rd |isbn=978-0-387-94457-9 |url=https://www.springer.com/mathematics/numbers/book/978-0-387-94457-9 }}
+*{{Citation |last=Robinson |first=Raphael M. |title=Mersenne and Fermat Numbers |journal=Proceedings of the American Mathematical Society |volume=5 |issue=5 |year=1954 |pages=842–846 |doi=10.2307/2031878 |jstor=2031878 |doi-access=free }}
+*{{citation |last=Yabuta |first=M. |journal=Fibonacci Quarterly |pages=439–443 |title=A simple proof of Carmichael's theorem on primitive divisors |url=http://www.fq.math.ca/Scanned/39-5/yabuta.pdf |archive-url=https://ghostarchive.org/archive/20221009/http://www.fq.math.ca/Scanned/39-5/yabuta.pdf |archive-date=2022-10-09 |url-status=live |volume=39 |year=2001 |issue=5 |doi=10.1080/00150517.2001.12428701 }}
+
+==External links==
+* Chris Caldwell, [http://primes.utm.edu/glossary/page.php?sort=FermatNumber The Prime Glossary: Fermat number] at The [[Prime Pages]].
+* Luigi Morelli, [http://www.fermatsearch.org/history.html History of Fermat Numbers]
+* John Cosgrave, [http://johnbcosgrave.com/archive/fermat6.htm Unification of Mersenne and Fermat Numbers]
+* Wilfrid Keller, [http://www.prothsearch.com/fermat.html Prime Factors of Fermat Numbers]
+* {{MathWorld|title=Fermat Number|urlname=FermatNumber}}
+* {{MathWorld|title=Fermat Prime|urlname=FermatPrime}}
+* {{MathWorld|title=Generalized Fermat Number|urlname=GeneralizedFermatNumber}}
+* Yves Gallot, [http://pagesperso-orange.fr/yves.gallot/primes/index.html Generalized Fermat Prime Search]
+* Mark S. Manasse, [https://groups.google.com/forum/#!topic/sci.math/7usZOcN2_zc Complete factorization of the ninth Fermat number] (original announcement)
+* Peyton Hayslette, [http://www.primegrid.com/download/GFN-341112_524288.pdf Largest Known Generalized Fermat Prime Announcement]
+
+{{Prime number classes|state=collapsed}}
+{{Classes of natural numbers}}
+{{Pierre de Fermat}}
+{{Authority control}}
+
+[[Category:Constructible polygons]]
+[[Category:Articles containing proofs]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Large integers]]
+[[Category:Classes of prime numbers]]
+[[Category:Integer sequences]]
+[[Category:Pierre de Fermat]]

@@ -1,0 +1,103 @@
+{{Short description|On topology of algebraic curves and surfaces}}
+'''Hilbert's 16th problem''' was posed by [[David Hilbert]] at the [[Paris]] conference of the [[International Congress of Mathematicians]] in 1900, as part of [[Hilbert's problems|his list of 23 problems in mathematics]].<ref name="ParisConf1">
+{{cite web
+ |url=http://aleph0.clarku.edu/~djoyce/hilbert/problems.html
+ |title=Mathematical Problems
+ |author=David Hilbert (translated by Maby Winton Newson)
+}}</ref>
+
+The original problem was posed as the ''Problem of the topology of algebraic curves and surfaces'' (''Problem der Topologie algebraischer Kurven und Flächen'').
+
+Actually the problem consists of two similar problems in different branches of mathematics:
+* An investigation of the relative positions of the branches of real [[algebraic curve]]s of degree ''n'' (and similarly for [[algebraic surface]]s).
+* The determination of the upper bound for the number of [[limit cycle]]s in two-dimensional [[polynomial vector field]]s of degree ''n'' and an investigation of their relative positions.
+
+The first problem is yet unsolved for ''n''&nbsp;=&nbsp;8. Therefore, this problem is what usually is meant when talking about Hilbert's sixteenth problem in [[real algebraic geometry]]. The second problem also remains unsolved: no upper bound for the number of limit cycles is known for any ''n''&nbsp;>&nbsp;1, and this is what usually is meant by Hilbert's sixteenth problem in the field of [[dynamical system]]s.
+
+The Spanish Royal Society for Mathematics published an explanation of Hilbert's sixteenth problem.<ref>{{Cite web|title=Sobre el problema 16 de Hilbert|url=https://gaceta.rsme.es/abrir.php?id=1289}}</ref>
+
+== The first part of Hilbert's 16th problem ==
+In 1876, [[Carl Gustav Axel Harnack|Harnack]] investigated [[algebraic curve]]s in the [[real projective plane]] and found that curves of degree ''n'' could have no more than
+
+:<math> {n^2-3n+4 \over 2} </math>
+
+separate [[Locally connected space|connected components]]. Furthermore, he showed how to construct curves that attained that upper bound, and thus that it was the best possible bound. Curves with that number of components are called [[Harnack's curve theorem|M-curve]]s.
+
+Hilbert had investigated the M-curves of degree 6, and found that the 11 components always were grouped in a certain way. His challenge to the mathematical community now was to completely investigate the possible configurations of the components of the M-curves.
+
+Furthermore, he requested a generalization of [[Harnack's curve theorem]] to [[algebraic surface]]s and a similar investigation of surfaces with the maximum number of components.
+
+== The second part of Hilbert's 16th problem ==
+
+Here we are going to consider [[polynomial vector field]]s in the [[real number|real]] plane, that is a system of differential equations of the form:
+
+:<math> {dx \over dt}=P(x,y), \qquad {dy \over dt}=Q(x,y) </math>
+
+where both ''P'' and ''Q'' are real polynomials of degree ''n''.
+
+These polynomial vector fields were studied by [[Henri Poincaré|Poincaré]], who had the idea of abandoning the search for finding exact solutions to the system, and instead attempted to study the qualitative features of the collection of all possible solutions.
+
+Among many important discoveries, he found that the limit sets of such solutions need not be a [[stationary point]], but could rather be a periodic solution. Such solutions are called [[limit cycle]]s.
+
+The second part of Hilbert's 16th problem is to decide an upper bound for the number of limit cycles in polynomial vector fields of degree ''n'' and, similar to the first part, investigate their relative positions.
+
+===Results===
+It was shown in 1991/1992 by [[Yulii Ilyashenko]] and [[Jean Écalle]] that every polynomial vector field in the plane has only finitely many limit cycles (a 1923 article by [[Henri Dulac]] claiming a proof of this statement had been shown to contain a gap in 1981). This statement is not obvious, since it is easy to construct smooth (C<sup>&infin;</sup>) vector fields in the plane with infinitely many concentric limit cycles.<ref name=ilu>{{cite journal|author=Yu. Ilyashenko|title=Centennial History of Hilbert's 16th problem|journal=Bulletin of the AMS|year=2002|volume=39|number=3|pages=301–354|url=https://www.ams.org/journals/bull/2002-39-03/S0273-0979-02-00946-1/S0273-0979-02-00946-1.pdf|doi=10.1090/s0273-0979-02-00946-1|doi-access=free}}</ref>
+
+The question whether there exists a finite upper bound ''H''(''n'') for the number of limit cycles of planar polynomial vector fields of degree ''n'' remains unsolved for any ''n''&nbsp;>&nbsp;1. (''H''(1)&nbsp;=&nbsp;0 since linear vector fields do not have limit cycles.) [[Evgenii Landis]] and [[Ivan Petrovsky]] claimed a solution in the 1950s, but it was shown wrong in the early 1960s. Quadratic plane vector fields with four limit cycles are known.<ref name=ilu/> An example of numerical visualization of four limit cycles in a quadratic plane vector field can be found in.<ref>{{cite journal | 
+  author1=Kuznetsov N.V.|author2=Kuznetsova O.A. | author3=Leonov G.A. | 
+  year = 2011| 
+  title = Visualization of four normal size limit cycles in two-dimensional polynomial quadratic system| 
+ journal = Differential Equations and Dynamical Systems| 
+ volume = 21| number = 1–2|pages = 29&ndash;33| 
+ doi = 10.1007/s12591-012-0118-6|s2cid=122896664 }}</ref><ref name=2013-IJBC-LeonovK>{{cite journal |
+author1=Leonov G.A. |author2=Kuznetsov N.V. | 
+year = 2013 | 
+title = Hidden attractors in dynamical systems. From hidden oscillations in Hilbert-Kolmogorov, Aizerman, and Kalman problems to hidden chaotic attractor in Chua circuits | 
+journal = International Journal of Bifurcation and Chaos in Applied Sciences and Engineering| 
+volume = 23 | issue = 1 | pages = 1330002–219|
+doi = 10.1142/S0218127413300024|bibcode=2013IJBC...2330002L |doi-access = free }}
+</ref> In general, the difficulties in estimating the number of limit cycles by numerical integration are due to the nested limit cycles with very narrow regions of attraction, which are [[hidden attractor]]s, and semi-stable limit cycles.
+
+== The original formulation of the problems ==
+
+In his speech, Hilbert presented the problems as:<ref name="ParisConf1"></ref>
+
+{{quote|The upper bound of closed and separate branches of an algebraic curve of degree ''n'' was decided by Harnack (Mathematische Annalen, 10); from this arises the further question as of the relative positions of the branches in the plane.
+As of the curves of degree 6, I have – admittedly in a rather elaborate way – convinced myself that the 11 branches, that they can have according to Harnack, never all can be separate, rather there must exist one branch, which have another branch running in its interior and nine branches running in its exterior, or opposite. It seems to me that a thorough investigation of the relative positions of the upper bound for separate branches is of great interest, and similarly the corresponding investigation of the number, shape and position of the sheets of an algebraic surface in space – it is not yet even known, how many sheets a surface of degree 4 in three-dimensional space can maximally have. (cf. Rohn, Flächen vierter Ordnung, Preissschriften der Fürstlich Jablonowskischen Gesellschaft, Leipzig 1886)}}
+
+Hilbert continues:<ref name="ParisConf1"/>
+
+{{quote|
+Following this purely algebraic problem I would like to raise a question that, it seems to me, can be attacked by the same method of continuous coefficient changing, and whose answer is of similar importance to the topology of the families of curves defined by differential equations – that is the question of the upper bound and position of the Poincaré boundary cycles (cycles limites) for a differential equation of first order of the form:
+
+:<math> {dy \over dx} = {Y \over X} </math>
+
+where ''X'', ''Y'' are integer, rational functions of ''n''th degree in resp. ''x'', ''y'', or written homogeneously:
+
+:<math>
+X \left( y {dz \over dt} - z {dy \over dt} \right)
+ + Y\left(z {dx \over dt} - x {dz \over dt} \right)
+ + Z\left(x {dy \over dt} - y {dx \over dt} \right) 
+ = 0
+</math>
+
+where ''X'', ''Y'', ''Z'' means integral, rational, homogenic functions of ''n''th degree in ''x'', ''y'', ''z'' and the latter are to be considered function of the parameter&nbsp;''t''.}}
+
+== See also ==
+*[[Hilbert–Arnold problem]]
+*[[Hilbert's problems]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+*[http://www.math.spbu.ru/user/nk/PDF/Limit_cycles_Focus_values.pdf 16th Hilbert problem: computation of Lyapunov quantities and limit cycles in two-dimensional dynamical systems] {{Webarchive|url=https://web.archive.org/web/20131203052309/http://www.math.spbu.ru/user/nk/PDF/Limit_cycles_Focus_values.pdf |date=2013-12-03 }}
+{{Hilbert's problems}}
+{{Authority control}}
+
+[[Category:Hilbert's problems|#16]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Real algebraic geometry]]
+[[Category:Dynamical systems]]
+[[Category:Hidden oscillation]]

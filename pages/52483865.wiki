@@ -1,0 +1,76 @@
+{{Short description|Does the plane contains a dense set of points whose distances are all rational}}
+{{unsolved|mathematics|Is there a [[dense set]] of points in the plane at rational distances from each other?}}
+In [[mathematics]], the '''Erdős–Ulam problem''' asks whether the plane contains a [[dense set]] of points whose [[Euclidean distance]]s are all [[rational number]]s. It is named after [[Paul Erdős]] and [[Stanislaw Ulam]].
+
+==Large point sets with rational distances==
+The [[Erdős–Anning theorem]] states that a set of points with [[integer]] distances must either be [[finite set|finite]] or lie on a single line.<ref>{{citation
+ | first1 = Norman H.
+ | last1 = Anning
+ | first2 = Paul
+ | last2 = Erdős
+ | author-link2 = Paul Erdős
+ | title = Integral distances
+ | journal = [[Bulletin of the American Mathematical Society]]
+ | volume = 51
+ | pages = 598–600
+ | year = 1945
+ | url = https://www.ams.org/bull/1945-51-08/S0002-9904-1945-08407-9/
+ | doi = 10.1090/S0002-9904-1945-08407-9
+ | issue = 8| doi-access = free
+ }}.</ref> However, there are other infinite sets of points with rational distances. For instance, on the [[unit circle]], let ''S'' be the set of points
+:<math>(\cos\theta,\sin\theta)</math>
+where <math>\theta</math> is restricted to values that cause <math>\tan\tfrac{\theta}{4}</math> to be a rational number. For each such point, both <math>\sin\tfrac{\theta}{2}</math> and <math>\cos\tfrac\theta 2</math> are themselves both rational, and if <math>\theta</math> and <math>\varphi</math> define two points in ''S'', then their distance is the rational number
+
+: <math>\left| 2\sin\frac \theta 2 \cos\frac \varphi 2 -2\sin\frac \varphi 2 \cos\frac \theta 2 \right|.</math>
+
+More generally, a circle with [[radius]] <math>\rho</math> contains a dense set of points at rational distances to each other [[if and only if]] <math>\rho^2</math> is rational.<ref name="kw">{{citation
+ | last1 = Klee | first1 = Victor | author1-link = Victor Klee
+ | last2 = Wagon | first2 = Stan | author2-link = Stan Wagon
+ | contribution = Problem 10 Does the plane contain a dense rational set?
+ | isbn = 978-0-88385-315-3
+ | pages = 132–135
+ | publisher= Cambridge University Press
+ | series = Dolciani mathematical expositions
+ | title = Old and New Unsolved Problems in Plane Geometry and Number Theory
+ | url = https://books.google.com/books?id=tRdoIhHh3moC&pg=PA132
+ | volume= 11
+ | year = 1991}}.</ref> However, these sets are only dense on their circle, not dense on the whole plane.
+
+==History and partial results==
+In 1946, [[Stanislaw Ulam]] asked whether there exists a set of points at rational distances from each other that forms a [[dense set|dense subset]] of the [[Euclidean plane]].<ref name="kw" /> While the answer to this question is still [[open problem|open]], [[József Solymosi]] and Frank de Zeeuw showed that the only irreducible [[algebraic curve]]s that contain infinitely many points at rational distances are lines and circles.<ref>{{citation
+ | last1 = Solymosi | first1 = József | author1-link = József Solymosi
+ | last2 = de Zeeuw | first2 = Frank
+ | arxiv = 0806.3095
+ | doi = 10.1007/s00454-009-9179-x
+ | issue = 2
+ | journal = [[Discrete & Computational Geometry]]
+ | mr = 2579704
+ | pages = 393–401
+ | title = On a question of Erdős and Ulam
+ | volume = 43
+ | year = 2010| doi-broken-date = 30 January 2026 | s2cid = 15288690 }}</ref> [[Terence Tao]] and Jafar Shaffaf independently observed that, if the [[Bombieri–Lang conjecture]] is true, the same methods would show that there is no infinite dense set of points at rational distances in the plane.<ref name=tao>{{citation|url=https://terrytao.wordpress.com/2014/12/20/the-erdos-ulam-problem-varieties-of-general-type-and-the-bombieri-lang-conjecture/|title=The Erdos-Ulam problem, varieties of general type, and the Bombieri-Lang conjecture|last=Tao|first=Terence|author-link=Terence Tao|date=2014-12-20|website=What's new|access-date=2016-12-05}}</ref><ref name=shaffaf>{{citation |last1=Shaffaf |first1=Jafar |title=A solution of the Erdős–Ulam problem on rational distance sets assuming the Bombieri–Lang conjecture |journal=[[Discrete & Computational Geometry]] |date=May 2018 |volume=60 |issue=8 |pages=283–293 |doi=10.1007/s00454-018-0003-3|doi-broken-date=30 January 2026 |arxiv=1501.00159 |s2cid=51907500 }}</ref> Using different methods, [[Hector Pasten]] [[mathematical proof|proved]] that the [[abc conjecture]] also implies a negative solution to the Erdős–Ulam problem.<ref name=pasten>
+{{citation
+ | last1 = Pasten | first1 = Hector
+ | doi = 10.1007/s00605-016-0973-2
+ | issue = 1
+ | journal = [[Monatshefte für Mathematik]]
+ | mr = 3592123
+ | pages = 99–126
+ | title = Definability of Frobenius orbits and a result on rational distance sets
+ | volume = 182
+ | year = 2017| doi-broken-date = 30 January 2026
+ | s2cid = 7805117
+ }}
+</ref>
+
+==Consequences==
+If the Erdős–Ulam problem has a positive solution, it would provide a [[counterexample]] to the Bombieri–Lang<ref name=tao/><ref name=shaffaf/> conjecture and to the abc conjecture.<ref name=pasten/> It would also solve [[Harborth's conjecture]], on the existence of drawings of [[planar graph]]s in which all distances are integers. If a dense rational-distance set exists, any straight-line drawing of a planar graph could be perturbed by a small amount (without introducing crossings) to use points from this set as its vertices, and then scaled to make the distances integers. However, like the Erdős–Ulam problem, Harborth's conjecture remains unproven.
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Erdos-Ulam problem}}
+[[Category:Arithmetic problems of plane geometry]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Paul Erdős|Ulam problem]]
+[[Category:Abc conjecture]]

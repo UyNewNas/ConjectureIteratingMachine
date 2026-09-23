@@ -1,0 +1,26 @@
+In [[mathematics]], the '''Bing–Borsuk conjecture''' states that every <math>n</math>-dimensional [[homogeneous space|homogeneous]] [[absolute neighborhood retract]] space is a [[topological manifold]]. The conjecture has been proved for dimensions 1 and 2, and it is known that the 3-dimensional version of the conjecture implies the [[Poincaré conjecture]].
+
+==Definitions==
+
+A [[topological space]]  is ''homogeneous'' if, for any two points <math>m_1, m_2 \in M</math>, there is a [[homeomorphism]] of <math>M</math> which takes <math>m_1</math> to <math>m_2</math>.
+
+A [[metric space]] <math>M</math> is an [[absolute neighborhood retract]] (ANR) if, for every closed embedding <math>f: M \rightarrow N</math> (where <math>N</math> is a metric space), there exists an [[open neighbourhood]] <math>U</math> of the image <math>f(M)</math> which [[retraction (topology)|retracts]] to <math>f(M)</math>.<ref>{{cite arXiv | last1=Halverson | first1=Denise M. | last2=Repovš | first2=Dušan | title=The Bing-Borsuk and the Busemann Conjectures | date=2008 | class = math.GT | eprint = 0811.0886 }}</ref>
+
+There is an alternate statement of the Bing–Borsuk conjecture: suppose <math>M</math> is [[embedding|embedded]] in <math>\mathbb{R}^{m+n}</math> for some <math>m \geq 3</math> and this embedding can be extended to an embedding of <math>M \times (-\varepsilon, \varepsilon)</math>. If <math>M</math> has a mapping cylinder neighbourhood <math>N=C_\varphi</math> of some map <math>\varphi: \partial N \rightarrow M</math> with mapping cylinder projection <math>\pi: N \rightarrow M</math>, then <math>\pi</math> is an [[approximate fibration]].<ref>{{cite journal|author1-link=Robert Daverman|last1=Daverman|first1=R. J.|last2=Husch|first2=L. S.|title=Decompositions and approximate fibrations.|journal=The Michigan Mathematical Journal|date=1984|volume=31|issue=2|pages=197–214|doi=10.1307/mmj/1029003024|url=https://projecteuclid.org/euclid.mmj/1029003024|language=en|issn=0026-2285|doi-access=free}}</ref>
+
+==History==
+
+The conjecture was first made in a paper by [[R. H. Bing]] and [[Karol Borsuk]] in 1965, who proved it for <math>n=1</math> and 2.<ref>{{cite book|last1=Bing|first1=R. H.|last2=Armentrout|first2=Steve|title=The Collected Papers of R. H. Bing|date=1998|publisher=American Mathematical Soc.|isbn=9780821810477|pages=167|url=https://books.google.com/books?id=NnBQ0xp_rUcC&pg=PA167|language=en}}</ref><ref name="BingBorsuk">{{cite journal | last1=Bing | first1=R. H. | last2=Borsuk | first2=K. | title=Some Remarks Concerning Topologically Homogeneous Spaces | journal=The Annals of Mathematics | volume=81 | issue=1 | date=1965 | doi=10.2307/1970385 | page=100 | jstor=1970385 | url=https://www.jstor.org/stable/1970385 | access-date=2025-06-01| url-access=subscription }}</ref>
+
+Włodzimierz Jakobsche showed in 1978 that, if the Bing–Borsuk conjecture is true in dimension 3, then the Poincaré conjecture must also be true.<ref>{{cite journal|last1=Jakobsche|first1=W.|title=The Bing–Borsuk conjecture is stronger than the Poincaré conjecture|journal=Fundamenta Mathematicae|date=1980 |volume=106|issue=2|pages=127–134 |doi=10.4064/fm-106-2-127-134 |url=https://eudml.org/doc/211089|language=en|issn=0016-2736}}</ref>
+
+The [[Busemann conjecture]] states that every [[Busemann G-space|Busemann <math>G</math>-space]] is a topological manifold. It is a special case of the Bing–Borsuk conjecture. The Busemann conjecture is known to be true for dimensions 1 to&nbsp;4.
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Bing-Borsuk conjecture}}
+[[Category:Topology]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Manifolds]]

@@ -1,0 +1,34 @@
+{{Short description|On heights of points on algebraic varieties over number fields}}
+In [[mathematics]], '''Vojta's conjecture''' is a conjecture introduced by [[Paul Vojta]]{{sfnp|Vojta|1987}} about heights of points on [[algebraic varieties]] over [[number field]]s. The conjecture was motivated by an analogy between [[diophantine approximation]] and [[Nevanlinna theory]] (value distribution theory) in [[complex analysis]]. It implies many other conjectures in [[Diophantine approximation]], [[Diophantine equation]]s, [[arithmetic geometry]], and [[mathematical logic]].
+
+==Statement of the conjecture==
+Let <math>F</math> be a number field, let <math>X/F</math> be a non-singular algebraic variety, let <math>D</math> be an effective [[divisor (algebraic geometry)|divisor]] on <math>X</math> with at worst normal crossings, let <math>H</math> be an ample divisor on <math>X</math>, and let <math>K_X</math> be a canonical divisor on <math>X</math>. Choose Weil [[height function]]s <math>h_H</math> and <math>h_{K_X}</math> and, for each [[absolute value (algebra)|absolute value]] <math>v</math> on <math>F</math>, a local height function <math>\lambda_{D,v}</math>. Fix a finite set of absolute values <math>S</math> of <math>F</math>, and let <math>\varepsilon>0</math>. Then there is a constant <math>C</math> and a non-empty Zariski open set <math>U\subseteq X</math>, depending on all of the above choices, such that
+:<math> \sum_{v\in S} \lambda_{D,v}(P) + h_{K_X}(P) \leq \varepsilon h_H(P) + C</math>
+for all <math>P\in U(F)</math>.
+
+===Examples=== 
+* Let <math>X=\mathbb{P}^N</math>. Then <math>K_X\sim -(N+1)H</math>, so Vojta's conjecture reads
+::<math> \sum_{v\in S} \lambda_{D,v}(P) \le (N+1+\epsilon) h_H(P) + C</math>
+:for all <math>P\in U(F)</math>.
+
+* Let <math>X</math> be a variety with trivial canonical bundle, for example, an [[abelian variety]], a [[K3 surface]] or a [[Calabi-Yau variety]]. Vojta's conjecture predicts that if <math>D</math> is an effective ample normal crossings divisor, then the <math>S</math>-integral points on the affine variety <math>X\setminus D</math> are not Zariski dense. For abelian varieties, this was conjectured by [[Serge Lang|Lang]] and proven by [[Gerd Faltings|Faltings]].{{sfnp|Faltings|1991}}
+
+* Let <math>X</math> be a variety of [[general type]], i.e., <math>K_X</math> is ample on some non-empty Zariski open subset of <math>X</math>. Then taking <math>S=\emptyset</math>, Vojta's conjecture predicts that <math>X(F)</math> is not Zariski dense in <math>X</math>. This last statement for varieties of general type is the [[Bombieri–Lang conjecture]].
+
+==Generalizations==
+There are generalizations in which <math>P</math> is allowed to vary over <math>X(\overline{F})</math>, and there is an additional term in the upper bound that depends on the discriminant of the field extension <math>F(P)/F</math>.
+
+There are generalizations in which the non-archimedean local heights <math>\lambda_{D,v}</math> are replaced by truncated local heights, which are local heights in which multiplicities are ignored. These versions of Vojta's conjecture provide natural higher-dimensional analogues of the [[ABC conjecture]].
+
+==References==
+{{refbegin}}
+
+* {{cite book | last1=Vojta | first1=Paul | author1-link=Paul Vojta | title=Diophantine Approximations and Value Distribution Theory | publisher=[[Springer-Verlag|Springer]] | location=[[Berlin]], [[Heidelberg]] | series=[[Lecture Notes in Mathematics]] | isbn=978-3-540-17551-3 | zbl=0609.14011 | mr=883451 | year=1987 | volume=1239 }}
+
+* {{cite journal |last1=Faltings | first1=Gerd | author1-link=Gerd Faltings | title=Diophantine approximation on abelian varieties | journal=[[Annals of Mathematics]] | mr=1109353| year=1991 | volume=133 | pages=549–576 | doi=10.2307/2944319 | issue=3 | zbl=0734.14007}}
+
+{{refend}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Abc conjecture]]

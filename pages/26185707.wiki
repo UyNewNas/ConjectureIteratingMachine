@@ -1,0 +1,214 @@
+{{Short description|Concept in the mathematics of paper folding}}
+In the [[mathematics of paper folding]], '''map folding''' and '''stamp folding''' are two problems of counting the number of ways that a piece of paper can be folded. In the stamp folding problem, the paper is a strip of stamps with creases between them, and the folds must lie on the creases. In the map folding problem, the paper is a map, divided by creases into rectangles, and the folds must again lie only along these creases.
+
+{{harvtxt|Lucas|1891}} credits the invention of the stamp folding problem to [[Émile Lemoine]].<ref>{{citation
+ | last = Lucas | first = Édouard | author-link = Édouard Lucas
+ | language = French
+ | location = Paris
+ | page = 120
+ | publisher = Gauthier-Villars
+ | title = Théorie des nombres
+ | url = https://archive.org/stream/thoriedesnombre00lucagoog#page/n149/mode/2up
+ | volume = I
+ | year = 1891}}.</ref> {{harvtxt|Touchard|1950}} provides several other early references.<ref>{{citation
+ | last = Touchard | first = Jacques | authorlink = Jacques Touchard
+ | doi = 10.4153/CJM-1950-035-6
+ | journal = [[Canadian Journal of Mathematics]]
+ | language = French
+ | mr = 0037815
+ | pages = 385–398
+ | title = Contribution à l'étude du problème des timbres poste
+ | volume = 2
+ | year = 1950| s2cid = 124708270 | doi-access = free
+ }}.</ref>
+
+==Labeled stamps==
+In the stamp folding problem, the paper to be folded is a strip of square or rectangular stamps, separated by creases, and the stamps can only be folded along those creases.
+In one commonly considered version of the problem, each stamp is considered to be distinguishable from each other stamp, so two foldings of a strip of stamps are considered equivalent only when they have the same vertical sequence of stamps.<ref name="legendre"/>
+For example, there are six ways to fold a strip of three different stamps:
+
+[[Image:Stampfoldings1x3.png]]
+
+These include all six permutations of the stamps, but for more than three stamps not all permutations are possible. If, for a permutation {{mvar|p}}, there are two numbers {{mvar|i}} and {{mvar|j}} with the same [[parity (mathematics)|parity]] such that the four numbers {{mvar|i}}, {{mvar|j}}, {{math|''i'' + 1}}, and {{math|''j'' + 1}} appear in {{mvar|p}} in that [[cyclic order]], then {{mvar|p}} cannot be folded. The parity condition implies that the creases between stamps {{mvar|i}} and {{math|''i'' + 1}}, and between stamps {{mvar|j}} and {{math|''j'' + 1}}, appear on the same side of the stack of folded stamps, but the cyclic ordering condition implies that these two creases cross each other, a physical impossibility. For instance, the four-element permutation 1324 cannot be folded, because it has this forbidden pattern with {{math|1=''i'' = 1}} and {{math|1=''j'' = 3}}. All remaining permutations, without this pattern, can be folded.<ref name="legendre"/>
+The number of different ways to fold a strip of {{mvar|n}} stamps is given by the sequence
+:1, 2, 6, 16, 50, 144, 462, 1392, 4536, 14060, 46310, 146376, 485914, 1557892, 5202690, ... {{OEIS|A000136}}.
+These numbers are always divisible by {{math|''n''}} (because a [[cyclic permutation]] of a foldable stamp sequence is always itself foldable),<ref name="legendre">{{citation
+ | last = Legendre | first = Stéphane
+ | arxiv = 1302.2025
+ | journal = The Australasian Journal of Combinatorics
+ | mr = 3211783
+ | pages = 275–291
+ | title = Foldings and meanders
+ | volume = 58
+ | year = 2014| bibcode = 2013arXiv1302.2025L
+ }}</ref><ref>{{citation
+ | last = Sainte-Laguë | first = André | author-link = André Sainte-Laguë
+ | language = French
+ | location = Paris
+ | pages = 147–162
+ | publisher = Vuibert
+ | title = Avec des nombres et des lignes
+ | year = 1937}}. As cited by {{harvtxt|Legendre|2014}}</ref> and the quotients of this division are
+:1, 1, 2, 4, 10, 24, 66, 174, 504, 1406, 4210, 12198, 37378, 111278, 346846, 1053874,  ... {{OEIS|A000682}},
+the number of topologically distinct ways that a half-infinite curve can  make {{mvar|n}} crossings with a line, called "semimeanders". These are closely related to [[Meander (mathematics)|meanders]], ways for a closed curve to make the same number of crossings with a line. Meanders correspond to solutions of the stamp-folding problem in which the first and last stamp can be connected to each other to form a continuous loop of stamps.
+
+{{unsolved|mathematics|Is there a formula or polynomial-time algorithm for counting solutions to the stamp-folding problem?}}
+In the 1960s, John E. Koehler and W. F. Lunnon implemented [[algorithm]]s that, at that time, could calculate these numbers for up to 28 stamps.<ref name="gardner"/><ref>{{citation
+ | last = Koehler | first = John E.
+ | doi = 10.1016/S0021-9800(68)80048-1
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 0228364
+ | pages = 135–152
+ | title = Folding a strip of stamps
+ | volume = 5
+ | issue = 2
+ | year = 1968| doi-access = free
+ }}</ref><ref>{{citation
+ | last = Lunnon | first = W. F.
+ | doi = 10.2307/2004779
+ | journal = [[Mathematics of Computation]]
+ | mr = 0221957
+ | pages = 193–199
+ | title = A map-folding problem
+ | volume = 22
+ | issue = 101
+ | year = 1968| jstor = 2004779
+ | doi-access = free
+ }}</ref>
+Despite additional research, the known methods for calculating these numbers take [[exponential time]] as a function of {{mvar|n}}.<ref>{{citation
+ | last = Jensen | first = Iwan
+ | issue = 34
+ | journal = [[Journal of Physics A|Journal of Physics A: Mathematical and General]]
+ | page = 5953
+ | title = A transfer matrix approach to the enumeration of plane meanders
+ | url = http://stacks.iop.org/0305-4470/33/i=34/a=301
+ | volume = 33
+ | year = 2000| bibcode = 2000JPhA...33.5953J
+ | doi = 10.1088/0305-4470/33/34/301
+ | arxiv = cond-mat/0008178
+ | s2cid = 14259684
+ }}</ref><ref>{{citation
+ | last1 = Sawada | first1 = Joe
+ | last2 = Li | first2 = Roy
+ | issue = 2
+ | journal = [[Electronic Journal of Combinatorics]]
+ | mr = 2946101
+ | page = Paper 43, 16pp
+ | title = Stamp foldings, semi-meanders, and open meanders: fast generation algorithms
+ | url = http://www.combinatorics.org/ojs/index.php/eljc/article/view/v19i2p43
+ | volume = 19
+ | year = 2012| doi = 10.37236/2404
+ | doi-access = free
+ }}</ref>
+Thus, no closed-form formula or polynomial-time algorithm is currently known that could extend this sequence efficiently to very large values of {{mvar|n}}. Nevertheless, [[heuristic]] methods from physics can be used to predict the rate of [[exponential growth]] of this sequence.<ref>{{citation
+ | last = Di Francesco | first = P.
+ | contribution = Exact asymptotics of meander numbers
+ | doi = 10.1007/978-3-662-04166-6_1
+ | mr = 1798197
+ | pages = 3–14
+ | publisher = Springer, Berlin
+ | title = Formal power series and algebraic combinatorics (Moscow, 2000)
+ | year = 2000| isbn = 978-3-642-08662-5
+ }}</ref>
+
+The stamp folding problem usually considers only the number of possible folded states of the strip of stamps, without considering whether it is possible to physically construct the fold by a sequence of moves starting from an unfolded strip of stamps. However, according to the solution of the [[carpenter's rule problem]], every folded state can be constructed (or equivalently, can be unfolded).<ref>{{citation
+ | last1 = Connelly | first1 = Robert | author1-link = Robert Connelly
+ | last2 = Demaine | first2 = Erik D. | author2-link = Erik Demaine
+ | last3 = Rote | first3 = Günter
+ | doi = 10.1007/s00454-003-0006-7
+ | issue = 2
+ | journal = [[Discrete and Computational Geometry]]
+ | mr = 1931840
+ | pages = 205–239
+ | title = Straightening polygonal arcs and convexifying polygonal cycles
+ | url = http://page.mi.fu-berlin.de/~rote/Papers/pdf/Straightening+polygonal+arcs+and+convexifying+polygonal+cycles-DCG.pdf
+ | volume = 30
+ | year = 2003| doi-access = free
+ }}</ref>
+
+==Unlabeled stamps==
+In another variation of the stamp folding problem, the strip of stamps is considered to be blank, so that it is not possible to tell one of its ends from the other, and two foldings are considered distinct only when they have different shapes. Turning a folded strip upside-down or back-to-front is not considered to change its shape, so three stamps have only two foldings, an S-curve and a spiral.<ref name="legendre"/> More generally, the numbers of foldings with this definition are
+:1, 1, 2, 5, 14, 38, 120, 353, 1148, 3527, 11622, 36627, 121622, 389560, 1301140, 4215748, ... {{OEIS|A001011}}
+
+==Maps==
+Map folding is the question of how many ways there are to fold a rectangular map along its creases, allowing each crease to form either a mountain or a valley fold. It differs from stamp folding in that it includes both vertical and horizontal creases, rather than only creases in a single direction.<ref>{{citation
+ | last = Lunnon | first = W. F.
+ | doi = 10.1093/comjnl/14.1.75
+ | journal = The Computer Journal
+ | mr = 0285409
+ | pages = 75–80
+ | title = Multi-dimensional map-folding
+ | volume = 14
+ | year = 1971| doi-access = free
+ }}</ref>
+
+There are eight ways to fold a 2 × 2 map along its creases, counting each different vertical sequence of folded squares as a distinct way of folding the map:<ref name="gardner">{{citation
+ | last = Gardner | first = Martin | author-link = Martin Gardner
+ | contribution = The combinatorics of paper folding
+ | location = New York
+ | pages = 60–73
+ | publisher = W. H. Freeman
+ | title = [[Wheels, Life and Other Mathematical Amusements]]
+| year = 1983| bibcode = 1983wlom.book.....G }}. See in particular pp.&nbsp;60–62.</ref>
+
+[[Image:MapFoldings-2x2.png|350 px]]
+
+However, the general problem of counting the number of ways to fold a map remains unsolved. The numbers of ways of folding an {{math|''n'' × ''n''}} map are known only for {{math|''n'' ≤ 7}}. They are:
+:1, 8, 1368, 300608, 186086600, 123912532224, 129950723279272 {{OEIS|A001418}}.
+
+==Complexity==
+{{unsolved|mathematics|Given a mountain-valley assignment for the creases of a map, is it possible to test efficiently whether it can be folded flat?}}
+The map folding and stamp folding problems are related to a problem in the [[mathematics of origami]] of whether a square with a crease pattern can be folded to a flat figure.
+If a folding direction (either a [[mountain fold]] or a [[valley fold]]) is assigned to each crease of a strip of stamps, it is possible to test whether the result can be folded flat in [[polynomial time]].<ref name="abddmss"/>
+
+For the same problem on a map (divided into rectangles by creases with assigned directions) it is unknown whether a polynomial time folding algorithm exists in general,
+although a polynomial algorithm is known for {{math|2 × ''n''}} maps.<ref>{{citation|title=Map folding|first=Thomas D.|last=Morgan|series=Master's thesis|publisher=Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science|date=May 21, 2012|hdl=1721.1/77030|url=http://dspace.mit.edu/handle/1721.1/77030|type=Thesis}}</ref>
+In a restricted case where the map is to be folded by a sequence of "simple" folds, which fold the paper along a single line, the problem is polynomial.
+Some extensions of the problem, for instance to non-rectangular sheets of paper, are [[NP-complete]].<ref name="abddmss">{{citation
+ | last1 = Arkin | first1 = Esther M. | author1-link = Esther Arkin
+ | last2 = Bender | first2 = Michael A.
+ | last3 = Demaine | first3 = Erik D. | author3-link = Erik Demaine
+ | last4 = Demaine | first4 = Martin L. | author4-link = Martin Demaine
+ | last5 = Mitchell | first5 = Joseph S. B. | author5-link = Joseph S. B. Mitchell
+ | last6 = Sethia | first6 = Saurabh
+ | last7 = Skiena | first7 = Steven S. | author7-link = Steven Skiena
+ | date = September 2004
+ | doi = 10.1016/j.comgeo.2004.03.012
+ | issue = 1
+ | journal = [[Computational Geometry (journal)|Computational Geometry: Theory and Applications]]
+ | pages =23–46
+ | title = When can you fold a map?
+ | url = http://erikdemaine.org/papers/MapFolding/paper.pdf
+ | volume = 29| doi-access = free
+ }}.</ref>
+
+Even for a one-dimensional strip of stamps, with its creases already labeled as mountain or valley folds, it is [[NP-hard]] to find a way to fold it that minimizes the maximum number of stamps that lie between the two stamps of any crease.<ref>{{citation
+ | last1 = Umesato | first1 = Takuya
+ | last2 = Saitoh | first2 = Toshiki
+ | last3 = Uehara | first3 = Ryuhei
+ | last4 = Ito | first4 = Hiro
+ | last5 = Okamoto | first5 = Yoshio
+ | doi = 10.1016/j.tcs.2012.08.006
+ | journal = [[Theoretical Computer Science (journal)|Theoretical Computer Science]]
+ | mr = 3084129
+ | pages = 13–19
+ | title = The complexity of the stamp folding problem
+ | volume = 497
+ | year = 2013| doi-access = free
+ }}</ref>
+
+==See also==
+* [[Regular paperfolding sequence]], an infinite sequence of 0s and 1s that describes one way of folding strips of stamps
+
+==References==
+{{reflist|30em}}
+
+==External links==
+* {{MathWorld2 |title=Map Folding |urlname=MapFolding |title2=Stamp Folding |urlname2=StampFolding}}
+* "Folding a Strip of Labeled Stamps" from The Wolfram Demonstrations Project: http://demonstrations.wolfram.com/FoldingAStripOfLabeledStamps/
+
+{{DEFAULTSORT:Map Folding}}
+[[Category:Paper folding]]
+[[Category:Unsolved problems in mathematics]]
+
+{{Mathematics of paper folding}}

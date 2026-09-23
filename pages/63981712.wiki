@@ -1,0 +1,98 @@
+{{italic title}}
+{{short description|1998 book by Fan Chung}}{{Infobox book
+| name              = Erdős on Graphs: His Legacy of Unsolved Problems
+| image             = File:Erdős_on_Graph.jpg
+| author            = {{plainlist |
+* [[Fan Chung]]
+* [[Ronald Graham]]
+}}
+| language          = English
+| genre             = [[Mathematics]]
+| publisher         = [[A K Peters]]
+| pub_date          = 1998
+}}
+
+'''''Erdős on Graphs: His Legacy of Unsolved Problems''''' is a book on [[List of unsolved problems in mathematics|unsolved problems in mathematics]] collected by [[Paul Erdős]] in the area of [[graph theory]]. It was written by [[Fan Chung]] and [[Ronald Graham]], based on a 1997 survey paper by Chung,{{r|schelp}} and published in 1998 by [[A K Peters]]. A softcover edition with some updates and corrections followed in 1999.
+
+==Topics==
+The book has eight chapters, the first being a short introduction.
+Its main content are six chapters of unsolved problems, grouped by subtopic.
+Chapters two and three are on [[Ramsey theory]] and [[extremal graph theory]]. The fourth covers topics in [[graph coloring]], [[packing problems]], and [[covering problems]]. The fifth concerns [[graph enumeration]] and [[random graph]]s, the sixth generalizes from graphs to [[hypergraph]]s, and the seventh concerns [[infinite graph]]s. The book concludes with a chapter of stories about Erdős from one of his oldest friends, [[Andrew Vázsonyi]].{{r|schelp|faudree|beezer}}
+
+Each chapter begins with a survey of the history and major results in the subtopic of graph theory that it covers; Erdős himself figures prominently in the history of several of these subtopics.{{r|hobbs}} The individual history, motivation, known progress, and bibliographic references for each problem are included, along with (in some cases) prizes for a solution originally offered by Erdős and maintained by Chung and Graham.{{r|schelp|faudree|beezer}}
+
+==Audience and reception==
+One target audience for the book is researchers in graph theory, for whom these problems may provide material for much future research.{{r|schelp|crilly|hobbs}}
+They may also provide an inspiration for students of mathematics,{{r|crilly}}
+and reviewer [[Arthur Hobbs (mathematician)|Arthur Hobbs]] suggests that the book could even be used as the basis for a graduate course.{{r|hobbs}}
+Additionally, reviewers Robert Beezer and [[W. T. Tutte]] suggest that the book may be of interests to mathematicians in other areas, and to historians of mathematics, for the insight it provides into Erdős's life and work.{{r|beezer|tutte}} [[Ralph Faudree]] writes that the book is suitable both as reference material and for browsing.{{r|faudree}}
+
+Tutte notes, for those not familiar with the topic, that in mathematics, a well-posed and unsolved problem can itself be a significant contribution, a success rather than a failure.{{r|tutte}} In a similar vein of thought, Faudree adds that the book provides "an appropriate tribute" to Erdős and his history of both formulating and solving problems.{{r|faudree}}
+
+==References==
+<references>
+
+<ref name=faudree>{{citation
+ | last = Faudree | first = R. | author-link = Ralph Faudree
+ | journal = [[zbMATH]]
+ | title = Review of ''Erdős on Graphs''
+ | zbl = 0890.05049}}</ref>
+
+<ref name=schelp>{{citation
+ | last = Schelp | first = R. H. | author-link = Richard Schelp
+ | journal = [[Mathematical Reviews]]
+ | mr = 1601954
+ | title = Review of ''Erdős on Graphs''
+ | year = 1999}}</ref>
+
+<ref name=beezer>{{citation
+ | last = Beezer | first = Robert A.
+ | date = March 2000
+ | issue = 1
+ | journal = SIAM Review
+ | jstor = 2653387
+ | pages = 143–145
+ | title = Review of ''Erdős on Graphs''
+ | volume = 42}}</ref>
+
+<ref name=tutte>{{citation
+ | last = Tutte | first = W. T. | author-link = W. T. Tutte
+ | date = September 2000
+ | issue = 3
+ | journal = SIAM Review
+ | jstor = 2653326
+ | pages = 548–549
+ | title = Review of ''Erdős on Graphs''
+ | volume = 42}}</ref>
+
+<ref name=hobbs>{{citation
+ | last = Hobbs | first = Arthur M. | author-link = Arthur Hobbs (mathematician)
+ | date = April 2001
+ | doi = 10.2307/2695262
+ | issue = 4
+ | journal = [[American Mathematical Monthly]]
+ | jstor = 2695262
+ | pages = 379–381
+ | title = Review of ''Graph Theory as I Have Known It'' and ''Erdős on Graphs''
+ | volume = 108}}</ref>
+
+<ref name=crilly>{{citation
+ | last = Crilly | first = Tony
+ | date = July 2001
+ | doi = 10.2307/3622075
+ | issue = 503
+ | journal = The Mathematical Gazette
+ | jstor = 3622075
+ | pages = 375–377
+ | title = Review of ''Erdős on Graphs''
+ | volume = 85}}</ref>
+
+</references>
+
+==External links==
+*[https://www.math.ucsd.edu/~erdosproblems/ Erdős' Problems on Graphs], web site by students of Fan Chung based on the book
+
+[[Category:Unsolved problems in graph theory]]
+[[Category:Paul Erdős]]
+[[Category:Problem books in mathematics]]
+[[Category:1998 non-fiction books]]

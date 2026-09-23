@@ -1,0 +1,231 @@
+{{Short description|Unsolved problem in mathematics}}
+
+{{unsolved|field=mathematics|explanation=Is it possible to construct a three-by-three magic square from nine distinct integer squares?}}
+The '''magic square of squares''' is an [[unsolved problem in mathematics]] which asks whether it is possible to construct a three-by-three [[magic square]], the elements of which are all [[square number]]s. The problem was first posed by Martin LaBar in the January 1984 College Mathematics Journal, before being included in [[Richard Guy]]'s ''Unsolved problems in number theory (2nd edition)'' in 1994.<ref>{{Cite journal |last=LaBar |first=Martin |date=January 1984 |title=Problems |url=https://www.jstor.org/stable/3027440 |journal=The College Mathematics Journal |volume=15 |issue=1 |pages=68–74 |doi=10.2307/3027440 |issn=0746-8342 |via=JSTOR|url-access=subscription }}</ref><ref name = Robertson>{{Cite journal |last=Robertson |first=John P. |date=1996-10-01 |title=Magic Squares of Squares |journal=Mathematics Magazine |volume=69 |issue=4 |pages=289–293 |doi=10.1080/0025570X.1996.11996457 |issn=0025-570X}}</ref>
+
+The problem has been a popular choice for [[recreational mathematics|recreational mathematicians]] following two articles [[Martin Gardner]] published in ''[[Quantum Magazine]]'' on the problem, offering a prize of {{currency|100|US}} in 1996.<ref>{{cite journal |last1=Gardner |first1=Martin |title=The magic of 3x3 |journal=Quantum |date=January 1996 |volume=6 |issue=3 |pages=24–26 |url=https://static.nsta.org/pdfs/QuantumV6N3.pdf |access-date=6 January 2024 |issn=1048-8820}}</ref><ref>{{cite journal |last1=Gardner |first1=Martin |title=The latest magic |journal=Quantum |date=March 1996 |volume=6 |issue=4 |page=60 |url=https://static.nsta.org/pdfs/QuantumV6N4.pdf |access-date=6 January 2024 |issn=1048-8820}}</ref> Other prizes have subsequently been offered for the first solution.<ref>{{cite magazine|author = <!-- not stated -->|date = October 2014|title = Can You Solve a Puzzle Unsolved Since 1996?|url = https://www.scientificamerican.com/article/can-you-solve-a-puzzle-unsolved-since-1996/|magazine = [[Scientific American]]}}</ref>
+
+==Background==
+{{main|Magic square}}
+[[Image:Magicsquareexample.svg|thumb|The smallest (and unique [[up to]] rotation and reflection) non-trivial case of a magic square, order 3]]
+A [[magic square]] is a square array of [[integer]] numbers in which each row, column, and diagonal sums to the same number.<ref>{{cite book |first = Steven |last = Schwartzman |url = {{google books |id=iuoZSkSOBQsC |page=130 |plainurl=yes}} |title = The Words of Mathematics: An Etymological Dictionary of Mathematical Terms Used in English |page = 130 |publisher = MAA |date = 1994 }}</ref> The order of the square refers to the number of integers along each side.<ref>[https://mathworld.wolfram.com/MagicSquare.html Wolfram MathWorld: Magic Square] Weisstein, Eric W.</ref> A '''[[Triviality (mathematics) | trivial ]] magic square''' is a magic square which has at least one repeated element, and a '''semimagic square''' is a magic square in which the rows and columns, but not both diagonals, sum to the same number.
+
+==Problem==
+The problem asks whether it is possible to construct a third-order magic square such that every element is itself a square number. A square which solves the problem would thus be of the form
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;width:6em;height:6em;table-layout:fixed;"
+|-
+| <math>x_1^2</math> || <math>x_2^2</math> || <math>x_3^2</math>
+|-
+| <math>x_4^2</math> || <math>x_5^2</math> || <math>x_6^2</math>
+|-
+| <math>x_7^2</math> || <math>x_8^2</math> || <math>x_9^2</math>
+|}
+and satisfy the following equations<ref name = Alvarado>{{cite AV media|last = Várilly-Alvarado|first=Anthony|title = Magic Squares of Squares (are PROBABLY impossible) - Numberphile|url = https://www.youtube.com/watch?v=Kdsj84UdeYg|via=YouTube|collaboration=[[Numberphile]]}}</ref>
+
+<math>\begin{align}
+x^2_1+x^2_2+x^2_3&=x^2_4+x^2_5+x^2_6\\
+&=x^2_7+x^2_8+x^2_9\\
+&=x^2_1+x^2_5+x^2_9\\
+&=x^2_3+x^2_5+x^2_7\\
+&=x^2_1+x^2_4+x^2_7\\
+&=x^2_2+x^2_5+x^2_8\\
+&=x^2_3+x^2_6+x^2_9
+\end{align}</math>
+
+==Current research==
+It has been shown that the problem is equivalent to several other problems.<ref name = Robertson/>
+# Do there exist three [[arithmetic progression]]s such that each has three terms, each has the same difference between terms as the other two, the terms are all [[square number|perfect square]]s, and the middle terms of the three arithmetic progressions themselves form an arithmetic progression?
+# Do there exist three [[rational number|rational]] [[right triangle]]s with the same [[area]], such that the squares of the [[hypotenuse]]s are in arithmetic progression?
+# Does there exist an [[elliptic curve]], <math>y^2=x^3-n^2x</math>, where <math>n</math> is a [[congruent number]], with three rational points on the curve, <math>(x_1,y_1)</math>, <math>(x_2,y_2)</math>, <math>(x_3,y_3)</math>, such that each point is "double" another rational point on the curve ("double" in the sense of [[Elliptic curve#The structure of rational points|the group structure]] for points on an elliptic curve), and <math>x_1</math>, <math>x_2</math> and <math>x_3</math> are in arithmetic progression?
+
+=== Properties of a magic square of squares ===
+Let <math>S
+</math> denote the sum of each row, column or main diagonals of a ''primitive'' (the [[greatest common divisor]] of all entries is 1) third-order magic square of squares. If such a magic square of squares exists, it must satisfy the following properties.
+
+* All elements must be odd.<ref name=":0">{{Cite journal |last=Rabern |first=Landon |date=2017-01-15 |title=Properties of Magic Squares of Squares |url=https://scholar.rose-hulman.edu/rhumj/vol4/iss1/3 |journal=Rose-Hulman Undergraduate Mathematics Journal |volume=4 |issue=1}}</ref> 
+* More specifically, they must be of the form <math>24k+1</math>.<ref name=":1">{{cite web |last=Zimmermann |first=Paul |date=2015 |title=Magic Squares of Squares |url=https://members.loria.fr/PZimmermann/papers/squares.pdf |access-date=April 30, 2026 |publisher=[[Inria]] / [[Laboratoire lorrain de recherche en informatique et ses applications|LORIA]] |format=PDF}}</ref>
+* <math>S = 3a^2</math> where <math>a^2</math>is the middle element.<ref>{{Cite book |last=Gardner |first=Martin |url=https://doi.org/10.5948/upo9780883859476 |title=Riddles of the Sphinx |date=1987 |publisher=American Mathematical Society |isbn=978-0-88385-632-1 |series=Anneli Lax New Mathematical Library |location=Providence, Rhode Island |pages=136-137}}</ref>
+* <math>S
+</math> must thus be of the form <math>S = 72 k+3</math>.<ref name=":1" />
+* No element can have a prime divisor <math>p</math> of the form <math>p = 8k+3</math>.<ref name=":0" />
+* All prime divisors <math>p</math> of the middle element must be of the form <math>p = 4k+1</math>.<ref name=":0" />
+* A prime <math>p</math> of the form <math>p = 8k+5</math> cannot divide a non-corner edge element.<ref name=":0" />
+* If a prime <math>p</math> of the form <math>p = 4k+3</math> divides a corner element then it must also divide the two non-corner edge elements that are not adjacent to that corner.<ref name=":0" />
+* If a prime <math>p</math> of the form <math>p = 8k+5</math> divides a corner element then it must also divide the center element and the opposite corner element.<ref>{{cite web |last=Morgenstern |first=Maurice |date=2007 |title=Properties of a 3x3 Magic Square of Squares |url=http://www.multimagie.com/MorgensternMssProperties.pdf |access-date=April 30, 2026 |website=Multimagie.com |publisher=Christian Boyer |format=PDF}}</ref>
+
+[[Brute-force search|Brute force]] searches for solutions have been unsuccessful, and suggest that if a solution exists, it would consist of numbers greater than at least <math>10^{14}</math>.<ref name="latest">{{cite web |last1=Boyer |first1=Christian |title=Latest research on the "3x3 magic square of squares" problem |url=http://www.multimagie.com/English/SquaresOfSquaresSearch.htm |website=Multimagie.com |access-date=19 June 2025}}</ref>
+
+[[Rice University]] professor of mathematics Anthony Várilly-Alvarado has expressed his doubt as to the existence of the magic square of squares.<ref name= Alvarado/>
+
+==Notable attempts==
+There have been a number of attempts to construct a magic square of squares by [[recreational mathematics | recreational mathematicians]].
+
+===Sallows' Square===
+Following Gardner's prize offer for anyone who could find a magic square of squares in 1996, [[Lee Sallows]] published his attempt in ''[[The Mathematical Intelligencer]]''. His attempt is unique in that all of the rows and columns, and one of the diagonals, all sum to the same square number.<ref name = Sallows>{{cite journal|last=Sallows|first=Lee|journal=[[The Mathematical Intelligencer]]|title=The Lost Theorem|year=1997|url=http://www.multimagie.com/Sallows.pdf}}</ref><ref name = Alvarado/>
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;width:19em;height:8em;border-style:none;"
+|+Sallows' Square<ref name = Sallows/>
+|-
+| style="background-color: white; border-style: none;" | || 127{{sup|2}}||  46{{sup|2}}|| 58{{sup|2}} || '''147{{sup|2}}'''
+|-
+| style="background-color: white; border-style: none;" | || 2{{sup|2}}  || 113{{sup|2}}|| 94{{sup|2}} || '''147{{sup|2}}'''
+|-
+| style="background-color: white; border-style: none;" | || 74{{sup|2}} ||  82{{sup|2}}|| 97{{sup|2}} || '''147{{sup|2}}'''
+|-
+|           '''147{{sup|2}}'''                  ||    '''147{{sup|2}}'''    ||    '''147{{sup|2}}'''    ||    '''147{{sup|2}}'''    || '''38307''' 
+|}
+
+===Bremner Square===
+In 1999, Andrew Bremner published his attempt at the problem, and further research surrounding magic squares of squares.<ref name = Bremner>{{cite journal|last=Bremner|first=Andrew|journal=[[Acta Arithmetica]]|title=On squares of squares|year=1999|url=https://pdfs.semanticscholar.org/1b0d/bd7d764ece84e9b22b462927979c6e635676.pdf}}</ref> Bremner's attempt differs from others in that not all elements of the square are square numbers, while all the rows, columns and diagonals sum to the same number.<ref name=Alvarado/>
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;width:20em;height:8em;border-style:none;"
+|+Bremner Square<ref name = Bremner/> 
+|-
+| style="background-color: white; border-style: none;" | || 373{{sup|2}}||  289{{sup|2}}|| 565{{sup|2}} || '''541875'''
+|-
+| style="background-color: white; border-style: none;" | || 360721  || 425{{sup|2}}|| 23{{sup|2}} || '''541875'''
+|-
+| style="background-color: white; border-style: none;" | || 205{{sup|2}} ||  527{{sup|2}}|| 222121 || '''541875'''
+|-
+|           '''541875'''                   ||    '''541875'''||    '''541875'''||    '''541875'''|| '''541875'''
+|}
+
+===Parker square===
+The '''Parker square'''<ref>{{cite arXiv|eprint=1908.03236|quote=Some ’near misses’ have been found such as the Parker Square [2] |last1=Cain |first1=Onno |title=Gaussian Integers, Rings, Finite Fields, and the Magic Square of Squares |date=2019 |class=math.RA }}</ref> is an attempt by [[Matt Parker]] to solve the problem. His solution is a trivial, semimagic square of squares, as <math>41^2</math>, <math>29^2</math> and <math>1^2</math> all appear twice, and the diagonal <math>23^2+37^2+47^2</math> sums to 4107 instead of 3051.<ref>{{Cite AV media |url=https://www.youtube.com/watch?v=aOT_bG-vWyg|title=The Parker Square - Numberphile |date=April 18, 2016|author=[[Matt Parker]]|collaboration=[[Numberphile]]|access-date=June 6, 2025|via=YouTube}}</ref><ref name = latest/>
+
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;width:19em;height:8em;border-style:none;"
+|+The Parker Square, with sums shown in bold. 
+|-
+| style="background-color: white; border-style: none;" | || 29{{sup|2}}||  1{{sup|2}}|| 47{{sup|2}} || '''3051'''
+|-
+| style="background-color: white; border-style: none;" | || 41{{sup|2}}  || 37{{sup|2}}|| 1{{sup|2}} || '''3051'''
+|-
+| style="background-color: white; border-style: none;" | || 23{{sup|2}} ||  41{{sup|2}}|| 29{{sup|2}} || '''3051'''
+|-
+|           '''4107'''                   ||    '''3051'''||    '''3051'''||    '''3051'''|| '''3051'''
+|}
+==Non third-order magic squares of squares==
+Magic squares of squares of orders greater than 3 have been known since as early as 1770, when [[Leonhard Euler]] sent a letter to [[Joseph-Louis Lagrange]] detailing a fourth-order magic square.<ref name = Boyer1>{{cite journal |last1=Boyer |first1=Christian |title=Some Notes on the Magic Squares of Squares Problem |journal=The Mathematical Intelligencer |date=12 November 2008 |volume=27 |issue=2 |pages=52–64 |doi=10.1007/BF02985794}}</ref>
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;width:16em;height:8em;border-style:none;"
+|+ Euler's magic square of squares
+|-
+| 68{{sup|2}}|| 29{{sup|2}}|| 41{{sup|2}}|| 37{{sup|2}}
+|-
+| 17{{sup|2}}|| 31{{sup|2}}|| 79{{sup|2}}|| 32{{sup|2}}
+|-
+| 59{{sup|2}}|| 28{{sup|2}}|| 23{{sup|2}}|| 61{{sup|2}}
+|-
+| 11{{sup|2}}|| 77{{sup|2}}|| 8{{sup|2}}|| 49{{sup|2}}
+|}
+
+'''Multimagic squares''' are magic squares which remain magic after raising every element to some [[power (mathematics)|power]]. In 1890, Georges Pfeffermann published a solution to a problem he posed involving the construction of an eighth-order 2-multimagic square.<ref>{{cite web |last1=Boyer |first1=Christian |title=Bimagic squares |url=http://www.multimagie.com/English/Bimagic.htm |website=Multimagie.com |access-date=6 June 2025}}</ref>
+
+{| class="wikitable" style="margin-left:auto;margin-right:auto;text-align:center;table-layout:fixed;width:24em;height:4em;border-style:none;"
+|+Pfeffermann's eighth order 2-multimagic square<ref>{{cite web |last1=Boyer |first1=Christian |title=Solution of the first bimagic square, 8th-order, of Pfeffermann |url=http://www.multimagie.com/English/Pfeffermann8.htm |website=Multimagie.com |access-date=6 June 2025}}</ref>
+|-
+| style="background-color: white; border-style: none;" | 
+||56
+||34
+||8
+||57
+||18
+||47
+||9
+||31
+||'''260'''
+|-
+| style="background-color: white; border-style: none;"  |
+||33
+||20
+||54
+||48
+||7
+||29
+||59
+||10
+||'''260'''
+|-
+| style="background-color: white; border-style: none;"  |
+||26
+||43
+||13
+||23
+||64
+||38
+||4
+||49
+||'''260'''
+|-
+| style="background-color: white; border-style: none;" |
+||19
+||5
+||35
+||30
+||53
+||12
+||46
+||60
+||'''260'''
+|-
+| style="background-color: white; border-style: none;" |
+||15
+||25
+||63
+||2
+||41
+||24
+||50
+||40
+||'''260'''
+|-
+| style="background-color: white; border-style: none;" |
+||6
+||55
+||17
+||11
+||36
+||58
+||32
+||45
+||'''260'''
+|-
+| style="background-color: white; border-style: none;" |
+||61
+||16
+||42
+||52
+||27
+||1
+||39
+||22
+||'''260'''
+|-
+| style="background-color: white; border-style: none;" |
+||44
+||62
+||28
+||37
+||14
+||51
+||21
+||3
+||'''260'''
+|-
+||'''260'''
+||'''260'''
+||'''260'''
+||'''260'''
+||'''260'''
+||'''260'''
+||'''260'''
+||'''260'''
+||'''260'''
+||'''260'''
+|}
+
+==References==
+{{reflist}}
+
+[[Category:Recreational mathematics]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Discrete mathematics]]
+[[Category:Number theory]]
+[[Category:Unsolved problems in number theory]]

@@ -1,0 +1,105 @@
+In [[mathematics]], the theory of [[Latin squares]] is an active research area with many [[open problems]]. As in other areas of mathematics, such problems are often made public at professional conferences and meetings. Problems posed here appeared in, for instance, the ''Loops (Prague)'' conferences and the ''Milehigh (Denver)'' conferences.
+
+== Open problems ==
+
+=== Bounds on maximal number of transversals in a Latin square ===
+<blockquote>
+A ''transversal'' in a [[Latin square]] of order ''n'' is a [[Set (mathematics)|set]] ''S'' of ''n'' cells such that every row and every column contains exactly one cell of ''S'', and such that the symbols in ''S'' form {1, ..., ''n''}. Let ''T''(''n'') be the maximum number of transversals in a Latin square of order ''n''. Estimate ''T''(''n'').
+</blockquote>
+
+*''Proposed:'' by Ian Wanless at Loops '03, Prague 2003
+*''Comments:'' Wanless, McKay and McLeod have bounds of the form ''c''<sup>''n''</sup> < ''T''(''n'') < ''d''<sup>{{space|hair}}''n''</sup>&thinsp;''n''!, where ''c'' > 1 and ''d'' is about 0.6. A conjecture by Rivin, Vardi and Zimmermann (Rivin et al., 1994) says that you can place at least exp(''c'' ''n'' log ''n'') [[Queen (chess)|queens]] in non-attacking positions on a [[toroid]]al [[chessboard]] (for some constant ''c''). If true this would imply that ''T''(''n'') > exp(''c'' ''n'' log ''n''). A related question is to estimate the number of transversals in the [[Cayley table]]s of [[cyclic group]]s of [[Parity (mathematics)|odd]] [[Order (group theory)|order]]. In other words, how many orthomorphisms do these [[Group (mathematics)|groups]] have?
+
+:The minimum number of transversals of a Latin square is also an open problem. [[H. J. Ryser]] conjectured (Oberwolfach, 1967) that every Latin square of odd order has one. Closely related is the conjecture, attributed to Richard Brualdi, that every Latin square of order ''n'' has a partial transversal of order at least ''n''&thinsp;−&thinsp;1.
+
+=== Characterization of Latin subsquares in multiplication tables of Moufang loops ===
+<blockquote>
+Describe how all Latin subsquares in multiplication tables of [[Moufang loop]]s arise.
+</blockquote>
+
+*''Proposed:'' by Aleš Drápal at Loops '03, Prague 2003
+*''Comments:'' It is well known that every Latin subsquare in a [[multiplication table]] of a group ''G'' is of the form ''aH'' x ''Hb'', where ''H'' is a [[subgroup]] of ''G'' and ''a'', ''b'' are elements of ''G''.
+
+=== Densest partial Latin squares with Blackburn property ===
+<blockquote>
+A partial Latin square has ''Blackburn property'' if whenever the cells (''i'', ''j'') and (''k'', ''l'') are occupied by the same symbol, the opposite corners (''i'', ''l'') and (''k'', ''j'') are empty. What is the highest achievable density of filled cells in a partial Latin square with the Blackburn property? In particular, is there some constant ''c'' > 0 such that we can always fill at least ''c''&thinsp;''n''<sup>2</sup> cells?
+</blockquote>
+
+*''Proposed:'' by Ian Wanless at Loops '03, Prague 2003
+*''Comments:'' In a paper to appear, Wanless has shown that if ''c'' exists then ''c'' < 0.463. He also constructed a family of partial Latin squares with the Blackburn property and asymptotic density of at least exp(-''d''(log ''n'')<sup>1/2</sup>) for constant ''d'' > 0.
+
+=== Largest power of 2 dividing the number of Latin squares ===
+<blockquote>
+Let <math>L_n</math> be the number of Latin squares of order ''n''. What is the [[2-order|largest integer]] <math>p(n)</math> such that <math>2^{p(n)}</math> [[Divisor|divides]] <math>L_n</math>? Does <math>p(n)</math> grow quadratically in ''n''?
+</blockquote>
+* ''Proposed:'' by Ian Wanless at Loops '03, Prague 2003
+* ''Comments:'' Of course, <math>L_n=n!(n-1)!R_n</math> where <math>R_n</math> is the number of reduced Latin squares of order ''n''. This immediately gives a linear number of factors of 2. However, here are the [[prime factorization]]s of <math>R_n</math> for ''n''&thinsp;=&thinsp;2,&thinsp;...,11:
+<div style="margin-left:1em;overflow:auto">
+{| class="wikitable"
+|-
+! 2 
+! 3 
+! 4 
+! 5 
+! 6 
+! 7 
+! 8 
+! 9 
+! 10 
+! 11
+|-
+| 1 
+| 1 
+| 2<sup>2</sup> 
+| 2<sup>3</sup>7 
+| 2<sup>6</sup>*3*7<sup>2</sup>
+| 2<sup>10</sup>*3*5*1103 
+| 2<sup>17</sup>*3*1361291
+| 2<sup>21</sup>*3<sup>2</sup>*5231*3824477
+| 2<sup>28</sup>*3<sup>2</sup>*5*31*37*547135293937
+| 2<sup>35</sup>*3<sup>4</sup>*5*2801*2206499*62368028479
+|}</div>
+:This table suggests that the power of 2 is growing superlinearly. The best current result is that <math>R_n</math> is always divisible by ''f''!, where ''f'' is about ''n''/2. See (McKay and Wanless, 2003). Two authors noticed the suspiciously high power of 2 (without being able to shed much light on it): (Alter, 1975), (Mullen, 1978).
+
+==See also==
+*[[Problems in loop theory and quasigroup theory]]
+*[[Rainbow matching]]
+
+==References==
+*{{ Citation
+ | last=Alter | first=Ronald | title=How many latin squares are there? | journal=Amer. Math. Monthly 
+ | volume=82 | year=1975 | issue=6 | pages=632–634
+ | doi=10.2307/2319697
+ | publisher=Mathematical Association of America
+ | jstor=2319697
+}}.
+*{{ Citation
+ | last1=McKay | first1=Brendan | first2=Ian | last2=Wanless | title=On the number of latin squares
+| journal=Ann. Comb. | volume=9 | year=2005 | pages=335–344
+ | doi=10.1007/s00026-005-0261-7
+ | issue=3
+| s2cid=7289396 }}.
+*{{ Citation
+ | last=Mullen | first=Garry | title=How many i-j reduced latin squares are there?
+ | journal=Amer. Math. Monthly | volume=85 | year=1978 | issue=9 | pages=751–752
+ | doi=10.2307/2321684
+ | publisher=Mathematical Association of America
+ | jstor=2321684
+}}.
+*{{ Citation
+ | last1=Rivin | first1=Igor | first2=Ilan | last2=Vardi | first3=Paul | last3=Zimmerman
+ | title=The n-queens problem | journal=Amer. Math. Monthly | volume=101 | year=1994 | issue=7 | pages=629–639
+ | doi=10.2307/2974691
+ | publisher=Mathematical Association of America
+ | jstor=2974691
+}}.
+
+==External links==
+*[https://web.archive.org/web/20070609134310/http://www.karlin.mff.cuni.cz/~loops99/ Loops '99 conference]
+*[https://web.archive.org/web/20070609134324/http://www.karlin.mff.cuni.cz/~loops03/ Loops '03 conference]
+*[http://www.karlin.mff.cuni.cz/~loops07 Loops '07 conference]
+*[http://www.math.du.edu/milehigh Milehigh conference on quasigroups, loops, and nonassociative systems]
+*[https://cs.du.edu/~petr/loops/ LOOPS package for GAP]
+
+[[Category:Unsolved problems in mathematics]]
+[[Category:Latin squares]]

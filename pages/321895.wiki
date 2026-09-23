@@ -1,0 +1,130 @@
+{{Short description|Mathematical concept}}
+{{pp-semi-indef|small=yes}}
+In [[mathematics]], a '''Cullen number''' is a member of the [[integer sequence]] <math>C_n = n \cdot 2^n + 1</math> (where <math>n</math> is a [[natural number]]). Cullen numbers were first studied by Irish mathematician [[James Cullen (mathematician)|James Cullen]] in 1905. The numbers are special cases of [[Proth number]]s.
+
+== Properties ==
+In 1976 [[Christopher Hooley]] showed that the [[natural density]] of positive [[integer]]s <math>n \leq x</math> for which ''C''<sub>''n''</sub> is a [[prime number|prime]] is of the [[Big O notation#Little-o notation|order]] ''o''(''x'') for <math>x \to \infty</math>. In that sense, [[almost all]] Cullen numbers are [[composite number|composite]].<ref name=EPSW94>{{cite book | last1=Everest | first1=Graham | last2=van der Poorten | first2=Alf | author2-link=Alfred van der Poorten | last3=Shparlinski | first3=Igor | last4=Ward | first4=Thomas | title=Recurrence sequences | series=Mathematical Surveys and Monographs | volume=104 | location=[[Providence, RI]] | publisher=[[American Mathematical Society]] | year=2003 | isbn=0-8218-3387-1 | zbl=1033.11006 | page=94 }}</ref>  Hooley's proof was reworked by Hiromi Suyama to show that it works for any sequence of numbers ''n''·2<sup>''n'' + ''a''</sup> + ''b'' where ''a'' and ''b'' are integers, and in particular also for [[Woodall number]]s. The only known '''Cullen primes''', sixteen in all, are those for ''n'' equal to:
+: 1, 141, 4713, 5795, 6611, 18496, 32292, 32469, 59656, 90825, 262419, 361275, 481899, 1354828, 6328548, 6679881 {{OEIS|id=A005849}}.
+
+Still, it is [[conjecture]]d that there are infinitely many Cullen primes.
+
+A Cullen number ''C''<sub>''n''</sub> is [[divisibility|divisible]] by ''p''&nbsp;=&nbsp;2''n''&nbsp;−&nbsp;1 if ''p'' is a [[prime number]] of the form 8''k''&nbsp;−&nbsp;3; furthermore, it follows from [[Fermat's little theorem]] that if ''p'' is an [[parity (mathematics)|odd]] prime, then ''p'' divides ''C''<sub>''m''(''k'')</sub> for each ''m''(''k'')&nbsp;=&nbsp;(2<sup>''k''</sup>&nbsp;−&nbsp;''k'')&nbsp;
+&nbsp;(''p''&nbsp;−&nbsp;1)&nbsp;−&nbsp;''k'' (for ''k''&nbsp;>&nbsp;0). It has also been shown that the prime number ''p'' divides ''C''<sub>(''p''&nbsp;+ 1)/2</sub> when the [[Jacobi symbol]] (2&nbsp;|&nbsp;''p'') is −1, and that ''p'' divides ''C''<sub>(3''p''&nbsp;− 1)/2</sub> when the Jacobi symbol (2&nbsp;|&nbsp;''p'') is + 1.
+
+It is unknown whether there exists a prime number ''p'' such that ''C''<sub>''p''</sub> is also prime.
+
+''C<sub>n</sub>'' follows the [[recurrence relation]]
+:<math>C_n=4(C_{n-1}-C_{n-2})+1</math>.
+
+== Generalizations ==
+
+Sometimes, a '''generalized Cullen number base ''b''''' is defined to be a number of the form ''n''·''b''<sup>''n''</sup> + 1, where ''n''&nbsp;+&nbsp;2&nbsp;>&nbsp;''b''; if a prime can be written in this form, it is then called a '''generalized Cullen prime'''. [[Woodall number]]s are sometimes called '''Cullen numbers of the second kind'''.<ref>{{Cite journal|last=Marques|first=Diego|year=2014|title=On Generalized Cullen and Woodall Numbers That are Also Fibonacci Numbers|url=https://cs.uwaterloo.ca/journals/JIS/VOL17/Marques/marques5r2.pdf|journal=Journal of Integer Sequences|volume=17}}</ref>
+
+As of April 2025, the largest known generalized Cullen prime is 4052186·69<sup>4052186</sup>&nbsp;+ 1. It has 7,451,366 digits and was discovered by a [[PrimeGrid]] participant.<ref>{{Cite web|url=https://www.primegrid.com/download/GC69-4052186.pdf|title=PrimeGrid Official Announcement|date=26 April 2025|website=Primegrid|access-date=26 April 2025}}</ref><ref>{{cite web|title=PrimePage Primes: 4052186 · 69^4052186 + 1|url=https://t5k.org/primes/page.php?id=140607|access-date=26 April 2025|website=t5k.org}}</ref>
+
+According to [[Fermat's little theorem]], if there is a prime ''p'' such that ''n'' is divisible by ''p'' − 1 and ''n'' + 1 is divisible by ''p'' (especially, when ''n'' = ''p'' − 1) and ''p'' does not divide ''b'', then ''b''<sup>''n''</sup> must be [[modular arithmetic|congruent]] to 1 mod ''p'' (since ''b''<sup>''n''</sup> is a power of ''b''<sup>''p'' − 1</sup> and ''b''<sup>''p'' − 1</sup> is congruent to 1 mod ''p''). Thus, ''n''·''b''<sup>''n''</sup> + 1 is divisible by ''p'', so it is not prime. For example, if some ''n'' congruent to 2 mod 6 (i.e. 2, 8, 14, 20, 26, 32, ...), ''n''·''b''<sup>''n''</sup> + 1 is prime, then ''b'' must be divisible by 3 (except ''b'' = 1).
+
+The least ''n'' such that ''n''·''b''<sup>''n''</sup> + 1 is prime (with question marks if this term is currently unknown) are<ref name="loeh">{{cite web|url=http://guenter.loeh.name/gc/status.html |title=Generalized Cullen primes |date=6 May 2017 |last=Löh |first=Günter }}</ref><ref>{{cite web|url=http://harvey563.tripod.com/GClist.txt |title=List of generalized Cullen primes base 101 to 10000 |date=6 May 2017 |last=Harvey |first=Steven }}</ref>
+:1, 1, 2, 1, 1242, 1, 34, 5, 2, 1, 10, 1, ?, 3, 8, 1, 19650, 1, 6460, 3, 2, 1, 4330, 2, 2805222, 117, 2, 1, ?, 1, 82960, 5, 2, 25, 304, 1, 36, 3, 368, 1, 1806676, 1, 390, 53, 2, 1, ?, 3, ?, 9665, 62, 1, 1341174, 3, ?, 1072, 234, 1, 220, 1, 142, 1295, 8, 3, 16990, 1, 474, 129897, 4052186, 1, 13948, 1, 2525532, 3, 2, 1161, 12198, 1, 682156, 5, 350, 1, 1242, 26, 186, 3, 2, 1, 298, 14, 101670, 9, 2, 775, 202, 1, 1374, 63, 2, 1, ... {{OEIS|id=A240234}}
+
+{|class="wikitable"
+!''b''
+!Numbers ''n'' such that ''n'' × ''b''<sup>''n''</sup> + 1  is prime<ref name="loeh"/>
+![[OEIS]] sequence
+|-
+|3
+|2, 8, 32, 54, 114, 414, 1400, 1850, 2848, 4874, 7268, 19290, 337590, 1183414, ...
+|{{OEIS link|id=A006552}}
+|-
+|4
+|1, 3, 7, 33, 67, 223, 663, 912, 1383, 3777, 3972, 10669, 48375, 1740349, ...
+|{{OEIS link|id=A007646}}
+|-
+|5
+|1242, 18390, ...
+|
+|-
+|6
+|1, 2, 91, 185, 387, 488, 747, 800, 9901, 10115, 12043, 13118, 30981, 51496, 515516, ..., 4582770
+|{{OEIS link|id=A242176}}
+|-
+|7
+|34, 1980, 9898, 474280, ...
+|{{OEIS link|id=A242177}}
+|-
+|8
+|5, 17, 23, 1911, 20855, 35945, 42816, ..., 749130, ...
+|{{OEIS link|id=A242178}}
+|-
+|9
+|2, 12382, 27608, 31330, 117852, ...
+|{{OEIS link|id=A265013}}
+|-
+|10
+|1, 3, 9, 21, 363, 2161, 4839, 49521, 105994, 207777, ...
+|{{OEIS link|id=A007647}}
+|-
+|11
+|10, ...
+|
+|-
+|12
+|1, 8, 247, 3610, 4775, 19789, 187895, 345951, ...
+|{{OEIS link|id=A242196}}
+|-
+|13
+|...
+|
+|-
+|14
+|3, 5, 6, 9, 33, 45, 243, 252, 1798, 2429, 5686, 12509, 42545, 1198433, 1486287, 1909683, ...
+|{{OEIS link|id=A242197}}
+|-
+|15
+|8, 14, 44, 154, 274, 694, 17426, 59430, ...
+|{{OEIS link|id=A242198}}
+|-
+|16
+|1, 3, 55, 81, 223, 1227, 3012, 3301, ...
+|{{OEIS link|id=A242199}}
+|-
+|17
+|19650, 236418, ...
+|
+|-
+|18
+|1, 3, 21, 23, 842, 1683, 3401, 16839, 49963, 60239, 150940, 155928, 612497, ...
+|{{OEIS link|id=A007648}}
+|-
+|19
+|6460, ...
+|
+|-
+|20
+|3, 6207, 8076, 22356, 151456, 793181, 993149, ...
+|{{OEIS link|id=A338412}}
+|}
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+* {{Citation |last=Cullen |first=James |title=Question 15897 |journal=Educ. Times |date=December 1905 |page=534}}.
+* {{Citation |first=Richard K. |last=Guy |author-link=Richard K. Guy |title=Unsolved Problems in Number Theory |edition=3rd |publisher=[[Springer Verlag]] |location=New York |year=2004 |isbn=0-387-20860-7 | zbl=1058.11001 | at=Section B20 }}.
+* {{Citation |last=Hooley |first=Christopher |author-link=Christopher Hooley |title=Applications of sieve methods |publisher=[[Cambridge University Press]] |year=1976 |isbn=0-521-20915-3 |pages=115–119 | zbl=0327.10044 | series=Cambridge Tracts in Mathematics | volume=70 }}.
+* {{Citation |first=Wilfrid |last=Keller |title=New Cullen Primes |journal=[[Mathematics of Computation]] |volume=64 |issue=212 |year=1995 |pages=1733–1741, S39–S46 |url=https://www.ams.org/mcom/1995-64-212/S0025-5718-1995-1308456-3/S0025-5718-1995-1308456-3.pdf | zbl=0851.11003 | issn=0025-5718 |doi=10.2307/2153382|jstor=2153382 |doi-access=free }}.
+
+== External links ==
+* Chris Caldwell, [http://primes.utm.edu/top20/page.php?id=6 The Top Twenty: Cullen primes] at The [[Prime Pages]].
+* [http://primes.utm.edu/glossary/page.php?sort=Cullens The Prime Glossary: Cullen number] at The Prime Pages.
+* Chris Caldwell, [https://primes.utm.edu/top20/page.php?id=42 The Top Twenty: Generalized Cullen] at The Prime Pages.
+* {{MathWorld | urlname=CullenNumber | title=Cullen number}}
+* [https://web.archive.org/web/20220318135759/http://www.prothsearch.com/cullen.html Cullen prime: definition and status] (outdated), Cullen Prime Search is now hosted at [[PrimeGrid]]
+* Paul Leyland, [https://web.archive.org/web/20131219031355/http://www.leyland.vispa.com/numth/factorization/cullen_woodall/cw.html (Generalized) Cullen and Woodall Numbers]
+
+{{Prime number classes|state=collapsed}}
+{{Classes of natural numbers}}
+
+[[Category:Integer sequences]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Classes of prime numbers]]

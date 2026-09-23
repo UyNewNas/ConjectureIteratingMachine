@@ -1,0 +1,79 @@
+{{short description|Generalization of the abc conjecture to more than three integers}}
+{{Multiple issues|
+{{technical|date=July 2015}}
+{{No footnotes|date=November 2020}}
+}}
+
+In [[number theory]], the '''''n'' conjecture''' is a [[conjecture]] stated by {{Harvtxt|Browkin|Brzeziński|1994}} as a generalization of the [[abc conjecture|''abc'' conjecture]] to more than three [[integer]]s.
+
+== Formulations ==
+
+Given <math>n \ge 3</math>, let <math>a_1,a_2,...,a_n \in \mathbb{Z}</math> satisfy three conditions:
+: (i) <math>\gcd(a_1,a_2,...,a_n)=1</math>
+: (ii) <math>a_1 + a_2 + ... + a_n = 0</math>
+: (iii) no proper subsum of <math>a_1,a_2,...,a_n</math> equals <math>0</math>
+
+'''First formulation'''
+
+The ''n'' conjecture states that for every <math>\varepsilon>0</math>, there is a constant <math>C</math> depending on <math>n</math> and <math>\varepsilon</math>, such that:
+<blockquote> <math>\operatorname{max}(|a_1|,|a_2|,...,|a_n|)< C_{n,\varepsilon}\operatorname{rad}(|a_1| \cdot |a_2| \cdot \ldots \cdot |a_n|)^{2n - 5 + \varepsilon}</math> </blockquote>
+where <math>\operatorname{rad}(m)</math> denotes the [[radical of an integer|radical]] of an integer <math>m</math>, defined as the product of the distinct [[prime factor]]s of <math>m</math>.
+
+'''Second formulation'''
+
+Define the ''quality'' of <math>a_1,a_2,...,a_n</math> as
+: <math>q(a_1,a_2,...,a_n) = \frac{\log(\operatorname{max}(|a_1|,|a_2|,...,|a_n|))}{\log(\operatorname{rad}(|a_1| \cdot |a_2| \cdot ... \cdot |a_n|))}</math>
+The ''n'' conjecture states that <math>\limsup q(a_1,a_2,...,a_n)= 2n-5 </math>.
+
+== Stronger form ==
+{{Harvtxt|Vojta|1998}} proposed a stronger variant of the ''n'' conjecture, where setwise [[coprime]]ness of <math>a_1,a_2,...,a_n</math> is replaced by pairwise coprimeness of <math>a_1,a_2,...,a_n</math>.
+
+There are two different formulations of this '''''strong n'' conjecture'''.
+
+Given <math>n \ge 3</math>, let <math>a_1,a_2,...,a_n \in \mathbb{Z}</math> satisfy three conditions:
+: (i) <math>a_1,a_2,...,a_n</math> are pairwise coprime
+: (ii) <math>a_1 + a_2 + ... + a_n = 0</math>
+: (iii) no proper subsum of <math>a_1,a_2,...,a_n</math> equals <math>0</math>
+
+'''First formulation'''
+
+The ''strong n'' conjecture states that for every <math>\varepsilon>0</math>, there is a constant <math>C</math> depending on <math>n</math> and <math>\varepsilon</math>, such that:
+<blockquote> <math>\operatorname{max}(|a_1|,|a_2|,...,|a_n|)< C_{n,\varepsilon}\operatorname{rad}(|a_1| \cdot |a_2| \cdot \ldots \cdot |a_n|)^{1 + \varepsilon}</math> </blockquote>
+
+'''Second formulation'''
+
+Define the ''quality'' of <math>a_1,a_2,...,a_n</math> as
+: <math>q(a_1,a_2,...,a_n) = \frac{\log(\operatorname{max}(|a_1|,|a_2|,...,|a_n|))}{\log(\operatorname{rad}(|a_1| \cdot |a_2| \cdot ... \cdot |a_n|))}</math>
+The ''strong n'' conjecture states that <math>\limsup q(a_1,a_2,...,a_n) = 1</math>.
+
+{{Harvtxt| Hölzl, Kleine and Stephan | 2025}} have shown that for <math>n \geq 5</math> the above limit superior is for odd <math>n</math> at least <math>5/3</math> and for even <math>n</math> is at least <math>5/4</math>. For the cases <math>n=3</math> (abc-conjecture) and <math>n=4</math>, they did not find any nontrivial lower bounds. It is also open whether there is a common constant upper bound above the limit superiors for all <math>n \geq 3</math>. For the exact status of the case <math>n=3</math> see the article on the [[abc conjecture]].
+
+== References ==
+*{{Cite journal |authorlink=Jerzy Browkin |first1=Jerzy |last1=Browkin |first2=Juliusz |last2=Brzeziński | title=Some remarks on the ''abc''-conjecture | journal=Math. Comp. | volume=62 | pages=931–939 | year=1994 | doi=10.2307/2153551 | jstor=2153551 | issue=206|bibcode=1994MaCom..62..931B }}
+*{{Cite journal
+ | first1=Rupert | last1=Hölzl
+ | first2=Sören | last2=Kleine
+ | first3=Frank | last3=Stephan
+ | title = Improved lower bounds for strong n-conjectures
+ | journal = Journal of the Australian Mathematical Society 
+ | volume = 119 | pages = 61–81 
+ | year = 2025 | doi = 10.1017/S1446788725000084 | doi-access=free
+| arxiv=2409.13439}}
+
+*{{cite journal
+ | last = Vojta | first = Paul
+ | arxiv = math/9806171
+ | doi = 10.1155/S1073792898000658 |doi-access=free
+ | issue = 21
+ | journal = International Mathematics Research Notices
+ | mr = 1663215
+ | pages = 1103–1116
+ | title = A more general {{mvar|abc}} conjecture
+ | year = 1998| volume = 1998
+ }}
+
+{{DISPLAYTITLE:''n'' conjecture}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Abc conjecture]]

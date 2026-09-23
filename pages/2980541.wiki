@@ -1,0 +1,44 @@
+In [[mathematics]], '''Clifford's theorem on special divisors''' is a result of {{harvs|txt|authorlink=William Kingdon Clifford|first=William K. |last=Clifford|year=1878}} on [[algebraic curve]]s, showing the constraints on [[special linear system]]s on a curve ''C''.
+
+== Statement ==
+A [[divisor on an algebraic curve|divisor]] on a [[Riemann surface]] ''C'' is a [[formal sum]] <math>\textstyle D = \sum_P m_P P</math> of points ''P'' on ''C'' with integer coefficients. One considers a divisor as a set of constraints on [[meromorphic function]]s in the [[function field of an algebraic variety|function field]] of ''C,'' defining <math>L(D)</math> as the vector space of functions having poles only at points of ''D'' with positive coefficient, ''at most as bad'' as the coefficient indicates, and having zeros at points of ''D'' with negative coefficient, with ''at least'' that multiplicity. The dimension of <math>L(D)</math> is finite, and denoted <math>\ell(D)</math>. The [[linear system of divisors]] attached to ''D'' is the corresponding [[projective space]] of dimension <math>\ell(D)-1</math>. 
+
+The other significant invariant of ''D'' is its degree ''d'', which is the sum of all its coefficients.
+
+A divisor is called ''[[special divisor|special]]'' if ''ℓ''(''K''&nbsp;&minus;&nbsp;''D'') &gt; 0, where ''K'' is the [[canonical divisor]].<ref>Hartshorne p.296</ref>
+
+'''Clifford's theorem''' states that for an effective [[special divisor]] ''D'', one has:
+
+:<math>2(\ell(D)- 1) \le d</math>,
+
+and that equality holds only if ''D'' is zero or a canonical divisor, or if ''C'' is a [[hyperelliptic curve]] and ''D'' linearly equivalent to an integral multiple of a hyperelliptic divisor.
+
+The '''Clifford index''' of ''C'' is then defined as the minimum  of <math>d - 2(\ell(D) - 1)</math>  taken over all special divisors (except canonical and trivial), and Clifford's theorem states this is non-negative. It can be shown that the Clifford index for a ''generic'' curve of [[genus (mathematics)|genus]] ''g'' is equal to the [[floor function]] <math>\lfloor\tfrac{g-1}{2}\rfloor.</math>
+
+The Clifford index measures how far the curve is from being hyperelliptic. It may be thought of as a refinement of the [[gonality]]: in many cases the Clifford index is equal to the gonality minus 2.<ref name=Eis178>Eisenbud (2005) p.178</ref>
+
+==Green's conjecture==
+
+A conjecture of [[Mark Lee Green|Mark Green]] states that the Clifford index for a curve over the complex numbers that is not hyperelliptic should be determined by the extent to which ''C'' as [[canonical curve]] has linear syzygies. In detail, one defines the invariant ''a''(''C'') in terms of the minimal [[free resolution]] of the [[homogeneous coordinate ring]] of ''C'' in its canonical embedding, as the largest index ''i'' for which the [[graded Betti number]] β<sub>''i'', ''i'' + 2</sub> is zero. Green and [[Robert Lazarsfeld]] showed that ''a''(''C'') + 1 is a lower bound for the Clifford index, and '''Green's conjecture''' states that equality always holds. There are numerous partial results.<ref name=Eis1834>Eisenbud (2005) pp. 183-4.</ref>
+
+[[Claire Voisin]] was awarded the [[Ruth Lyttle Satter Prize in Mathematics]] for her solution of the generic case of Green's conjecture in two papers.<ref>[http://www.math.polytechnique.fr/~voisin/Articlesweb/syzod.pdf Green's canonical syzygy conjecture for generic curves of odd genus - Claire Voisin]</ref><ref>[http://www.math.polytechnique.fr/~voisin/Articlesweb/syzy.pdf Green’s generic syzygy conjecture for curves of even genus lying on a K3 surface - Claire Voisin]</ref>  The case of Green's conjecture for ''generic'' curves had attracted a huge amount of effort by algebraic geometers over twenty years before finally being laid to rest by Voisin.<ref>[http://www.agnesscott.edu/lriddle/women/prizes.htm#satter Satter Prize]</ref> The conjecture for ''arbitrary'' curves remains open.
+
+==Notes==
+{{Reflist}}
+
+==References==
+*{{cite book |first1=Enrico|last1= Arbarello |author1-link=Enrico Arbarello |first2=Maurizio |last2=Cornalba |first3=Phillip A.|last3= Griffiths |author3-link=Phillip Griffiths |first4=Joe|last4= Harris |author4-link=Joe Harris (mathematician)| title=Geometry of Algebraic Curves Volume I|series=Grundlehren de mathematischen Wisenschaften 267 | year =1985 | isbn=0-387-90997-4}}
+*{{Citation | last1=Clifford | first1=William K. | author-link=William Kingdon Clifford | title=On the Classification of Loci | jstor=109316 | publisher=The Royal Society | year=1878 | journal=[[Philosophical Transactions of the Royal Society of London]] | issn=0080-4614 | volume=169 | pages= 663–681 | doi=10.1098/rstl.1878.0020}}
+*{{cite book |authorlink=David Eisenbud |first=David |last=Eisenbud |title=The Geometry of Syzygies. A second course in commutative algebra and algebraic geometry | series=[[Graduate Texts in Mathematics]] | volume=229 | year=2005 |location=New York, NY |publisher=[[Springer-Verlag]] | isbn=0-387-22215-4 | zbl=1066.14001 }}
+*{{cite book | first=William |last=Fulton | authorlink=William Fulton (mathematician) | title=Algebraic Curves | series=Mathematics Lecture Note Series | publisher=W.A. Benjamin | year=1974 | isbn=0-8053-3080-1 | page=212 }}
+* {{cite book | first1=Phillip A.|last1= Griffiths  | authorlink=Phillip Griffiths |first2=Joe|last2= Harris  |authorlink2=Joe Harris (mathematician)  | title=Principles of Algebraic Geometry | series=Wiley Classics Library | publisher=Wiley Interscience | year=1994 | isbn=0-471-05059-8 | page=251 }}
+* {{cite book | first=Robin|last= Hartshorne | authorlink=Robin Hartshorne | title=Algebraic Geometry | series=[[Graduate Texts in Mathematics]] | volume=52 | year=1977 | isbn=0-387-90244-9 }}
+
+==External links==
+*{{eom|id=C/c022490|title=Clifford theorem|first=V.A.|last= Iskovskikh}}
+
+{{Algebraic curves navbox}}
+
+[[Category:Algebraic curves]]
+[[Category:Theorems in algebraic geometry]]
+[[Category:Unsolved problems in geometry]]

@@ -1,0 +1,29 @@
+In algebraic geometry, the '''abundance conjecture''' is a conjecture in 
+[[birational geometry]], more precisely in the [[minimal model program]],
+stating that for every [[projective variety]] <math>X</math> with [[Kawamata log terminal singularity|Kawamata log terminal singularities]] over a field <math>k</math> if the [[canonical bundle]] <math>K_X</math> is [[Nef line bundle|nef]], then <math>K_X</math> is [[Ample_line_bundle|semi-ample]], i.e. <math>mK_X</math> is base-point free for some <math>m>0</math>. In particular, if abundance holds, then one is able to define a model <math>X\rightarrow Y=\mathrm{Proj}\bigoplus_{l\geqslant 0} H^0(X, lK_X).</math>
+
+Important cases of the abundance conjecture have been proven by [[Caucher Birkar]].<ref>{{Cite journal | doi=10.1007/s10240-012-0039-5|title = Existence of log canonical flips and a special LMMP| journal=Publications Mathématiques de l'IHÉS| volume=115| pages=325–368|year = 2012|last1 = Birkar|first1 = Caucher| arxiv=1104.4981}}</ref>
+
+== References ==
+{{reflist}}
+*{{Citation | last1=Kollár | first1=János | author1-link = János Kollár | last2=Mori | first2=Shigefumi | author2-link = Shigefumi Mori | title=Birational geometry of algebraic varieties | publisher=[[Cambridge University Press]] | series=Cambridge Tracts in Mathematics | isbn=978-0-521-63277-5 |mr=1658959 | year=1998 | volume=134 | at = Conjecture 3.12, p. 81 | url=https://books.google.com/books?id=YrysxvPbBLwC&pg=PA81 }}
+*{{citation
+ | last = Lehmann | first = Brian
+ | editor1-first = Izzet | editor1-last = Coskun
+ | editor2-first = Tommaso | editor2-last = de Fernex
+ | editor3-first = Angela | editor3-last = Gibney
+ | contribution = A snapshot of the minimal model program
+ | contribution-url = https://sites.bc.edu/lehmann/wp-content/uploads/sites/36/2019/12/snapshot.pdf
+ | mr = 3727495
+ | pages = 1–32
+ | publisher = American Mathematical Society | location = Providence, RI
+ | series = Proceedings of Symposia in Pure Mathematics
+ | title = Surveys on recent developments in algebraic geometry: Papers from the Bootcamp for the 2015 Summer Research Institute on Algebraic Geometry held at the University of Utah, Salt Lake City, UT, July 6–10, 2015
+ | volume = 95
+ | year = 2017}}
+
+[[Category:Algebraic geometry]]
+[[Category:Birational geometry]]
+[[Category:Unsolved problems in geometry]]
+
+{{algebraic-geometry-stub}}

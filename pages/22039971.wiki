@@ -1,0 +1,201 @@
+{{short description|On minimizing crossings in bicliques}}
+{{good article}}
+{{unsolved|mathematics|Can any complete bipartite graph be drawn with fewer crossings than the number given by Zarankiewicz?}}
+[[File:Zarankiewicz K4 7.svg|thumb|An optimal drawing of {{math|''K''<sub>4,7</sub>}}, with 18 crossings (red dots)]]
+In the [[mathematics]] of [[graph drawing]], '''Turán's brick factory problem''' asks for the [[Crossing number (graph theory)|minimum number of crossings]] in a drawing of a [[complete bipartite graph]]. The problem is named after [[Pál Turán]], who formulated it while being forced to work in a brick factory during World War II.{{r|turan}}
+
+A drawing method found by [[Kazimierz Zarankiewicz]] has been conjectured to give the correct answer for every complete bipartite graph, and the statement that this is true has come to be known as the '''Zarankiewicz crossing number conjecture'''. The conjecture remains open, with only some special cases solved.{{r|ps}}
+
+==Origin and formulation==
+During [[World War II]], Hungarian mathematician [[Pál Turán]] was forced to work in a brick factory, pushing wagon loads of bricks from [[kiln]]s to storage sites. The factory had tracks from each kiln to each storage site, and the wagons were harder to push at the points where tracks crossed each other. Turán was inspired by this situation to ask how the factory might be redesigned to minimize the number of crossings between these tracks.{{r|turan}}
+
+Mathematically, this problem can be formalized as asking for a [[graph drawing]] of a [[complete bipartite graph]], whose vertices represent kilns and storage sites, and whose edges represent the tracks from each kiln to each storage site.
+The graph should be drawn in the plane with each vertex as a point, each edge as a curve connecting its two endpoints, and no vertex placed on an edge that it is not incident to. A crossing is counted whenever two edges that are disjoint in the graph have a nonempty intersection in the plane. The question is then, what is the minimum number of crossings in such a drawing?{{r|ps|early}}
+
+Turán's formulation of this problem is often recognized as one of the first studies of the [[crossing number (graph theory)|crossing numbers of graphs]].{{r|foulds}}
+(Another independent formulation of the same concept occurred in sociology, in methods for drawing [[sociogram]]s,{{r|bron}} and a much older puzzle, the [[three utilities problem]], can be seen as a special case of the brick factory problem with three kilns and three storage facilities.{{r|bona}})
+Crossing numbers have since gained greater importance, as a central object of study in [[graph drawing]]{{r|variants}}
+and as an important tool in [[VLSI]] design{{r|leighton}}
+and [[discrete geometry]].{{r|szekely}}
+
+==Upper bound==
+Both Zarankiewicz and [[Kazimierz Urbanik]] saw Turán speak about the brick factory problem in different talks in Poland in 1952,{{r|early}}
+and independently published attempted solutions of the problem, with equivalent formulas for the number of crossings.{{r|z|urbanik}}
+As both of them showed, it is always possible to draw the complete bipartite graph {{mvar|K<sub>m,n</sub>}} (a graph with {{mvar|m}} vertices on one side, {{mvar|n}} vertices on the other side, and {{mvar|mn}} edges connecting the two sides) with a number of crossings equal to
+:<math>\operatorname{cr}(K_{m,n}) \le \biggl\lfloor\frac{n}{2}\biggr\rfloor\biggl\lfloor\frac{n-1}{2}\biggr\rfloor\biggl\lfloor\frac{m}{2}\biggr\rfloor\biggl\lfloor\frac{m-1}{2}\biggr\rfloor.</math>
+The construction is simple: place {{mvar|m}} vertices on the {{mvar|x}}-axis of the plane, avoiding the [[origin (mathematics)|origin]], with equal or nearly-equal numbers of points to the left and right of the {{mvar|y}}-axis.
+Similarly, place {{mvar|n}} vertices on the {{mvar|y}}-axis of the plane, avoiding the origin, with equal or nearly-equal numbers of points above and below the {{mvar|x}}-axis.
+Then, connect every point on the {{mvar|x}}-axis by a straight line segment to every point on the {{mvar|y}}-axis.{{r|early}}
+
+However, their proofs that this formula is optimal, that is, that there can be no drawings with fewer crossings, were erroneous. The gap was not discovered until eleven years after publication, nearly simultaneously by [[Gerhard Ringel]] and [[Paul Chester Kainen|Paul Kainen]].{{r|fall}}
+Nevertheless, it is conjectured that Zarankiewicz's and Urbanik's formula is optimal. This has come to be known as the Zarankiewicz crossing number conjecture. Although some special cases of it are known to be true, the general case remains open.{{r|ps}}
+
+==Lower bounds==
+Since ''{{math|K<sub>m,n</sub>}}'' and ''{{math|K<sub>n,m</sub>}}'' are isomorphic, it is enough to consider the case where ''{{math|m ≤ n}}''. In addition, for {{math|''m'' ≤ 2}} Zarankiewicz's construction gives no crossings, which of course cannot be bested. So the only nontrivial cases are those for which {{mvar|m}} and {{mvar|n}} are both {{math|≥ 3}}.
+
+Zarankiewicz's attempted proof of the conjecture, although invalid for the general case of {{math|''K''<sub>''m'',''n''</sub>}}, works for the case {{math|1=''m'' = 3}}.
+It has since been extended to other small values of {{mvar|m}}, and
+the Zarankiewicz conjecture is known to be true for the complete bipartite graphs {{mvar|K<sub>m,n</sub>}} with {{math|''m'' ≤ 6}}.{{r|kleitman}}
+The conjecture is also known to be true for {{math|''K''<sub>7,7</sub>}}, {{math|''K''<sub>7,8</sub>}}, and {{math|''K''<sub>7,9</sub>}}.{{r|woodall}}
+If a counterexample exists, that is, a graph {{mvar|K<sub>m,n</sub>}} requiring fewer crossings than the Zarankiewicz bound, then in the smallest counterexample both {{mvar|m}} and {{mvar|n}} must be odd.{{r|kleitman}}
+
+For each fixed choice of {{mvar|m}}, the truth of the conjecture for all {{mvar|K<sub>m,n</sub>}} can be verified by testing only a finite number of choices of {{mvar|n}}.{{r|crs}}
+More generally, it has been proven that every complete bipartite graph requires a number of crossings that is (for sufficiently large graphs) at least 83% of the number given by the Zarankiewicz bound. Closing the gap between this [[Upper and lower bounds|lower bound]] and the upper bound remains an open problem.{{r|kmprs}}
+
+==Rectilinear crossing numbers==
+If edges are required to be drawn as straight line segments, rather than arbitrary curves, then some graphs need more crossings than they would when drawn with curved edges.
+However, the upper bound established by Zarankiewicz for the crossing numbers of complete bipartite graphs can be achieved using only straight edges. Therefore, if the Zarankiewicz conjecture is correct, then the complete bipartite graphs have rectilinear crossing numbers equal to their crossing numbers.{{r|jct}}
+
+==References==
+{{reflist|30em|refs=
+
+<ref name=early>{{citation
+ | last1 = Beineke | first1 = Lowell | author1-link = L. W. Beineke
+ | last2 = Wilson | first2 = Robin | author2-link = Robin Wilson (mathematician)
+ | doi = 10.1007/s00283-009-9120-4
+ | issue = 2
+ | journal = [[The Mathematical Intelligencer]]
+ | mr = 2657999
+ | pages = 41–48
+ | title = The early history of the brick factory problem
+ | volume = 32
+ | year = 2010| s2cid = 122588849 }}.</ref>
+
+<ref name=bona>{{citation|title=A Walk Through Combinatorics: An Introduction to Enumeration and Graph Theory|first=Miklós|last=Bóna|publisher=World Scientific|year=2011|isbn=978-981-4335-23-2|pages=275–277}}. Bóna introduces the puzzle (in the form of three houses to be connected to three wells) on p.&nbsp;275, and writes on p.&nbsp;277 that it "is equivalent to the problem of drawing {{math|''K''<sub>3,3</sub>}} on a plane surface without crossings".</ref>
+
+<ref name=bron>{{citation|title=The graphic presentation of sociometric data| first=Urie| last=Bronfenbrenner| author-link=Urie Bronfenbrenner| journal=Sociometry| volume=7|issue=3|year=1944|pages=283–289|jstor=2785096|doi=10.2307/2785096|quote=The arrangement of subjects on the diagram, while haphazard in part, is determined largely by trial and error with the aim of minimizing the number of intersecting lines.}}</ref>
+
+<ref name=crs>{{citation
+ | last1 = Christian | first1 = Robin
+ | last2 = Richter | first2 = R. Bruce
+ | last3 = Salazar | first3 = Gelasio
+ | doi = 10.1016/j.jctb.2012.11.001
+ | issue = 2
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 3018068
+ | pages = 237–247
+ | series = Series B
+ | title = Zarankiewicz's conjecture is finite for each fixed {{mvar|m}}
+ | volume = 103
+ | year = 2013| doi-access = free
+ }}.</ref>
+
+<ref name=foulds>{{citation|title=Graph Theory Applications|first=L. R.|last=Foulds|publisher=Springer|series=Universitext|year=1992|isbn=978-1-4612-0933-1|url=https://books.google.com/books?id=5G4QBwAAQBAJ&pg=PA71|page=71}}.</ref>
+
+<ref name=fall>{{citation
+ | last = Guy | first = Richard K. | author-link = Richard K. Guy
+ | contribution = The decline and fall of Zarankiewicz's theorem
+ | mr = 0253931
+ | pages = 63–69
+ | publisher = Academic Press, New York
+ | title = Proof Techniques in Graph Theory (Proc. Second Ann Arbor Graph Theory Conf., Ann Arbor, Mich., 1968)
+ | year = 1969}}.</ref>
+
+<ref name=jct>{{citation
+ | last = Kainen | first = Paul C. | author-link = Paul Chester Kainen
+ | doi = 10.1016/s0021-9800(68)80013-4
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 0231744
+ | pages = 374–377
+ | title = On a problem of P. Erdős
+ | volume = 5
+ | year = 1968| issue = 4 | doi-access = free
+ }}</ref>
+
+<ref name=kleitman>{{citation
+ | last = Kleitman | first = Daniel J. | author-link = Daniel Kleitman
+ | journal = [[Journal of Combinatorial Theory]]
+ | mr = 0280403
+ | pages = 315–323
+ | title = The crossing number of {{math|''K''<sub>5,''n''</sub>}}
+ | volume = 9
+ | year = 1970
+ | issue = 4 | doi=10.1016/s0021-9800(70)80087-4| doi-access = free
+ }}.</ref>
+
+<ref name=kmprs>{{citation
+ | last1 = de Klerk | first1 = E.
+ | last2 = Maharry | first2 = J.
+ | last3 = Pasechnik | first3 = D. V.
+ | last4 = Richter | first4 = R. B.
+ | last5 = Salazar | first5 = G.
+ | doi = 10.1137/S0895480104442741
+ | issue = 1
+ | journal = [[SIAM Journal on Discrete Mathematics]]
+ | mr = 2257255
+ | pages = 189–202
+ | title = Improved bounds for the crossing numbers of {{mvar|K<sub>m,n</sub>}} and {{mvar|K<sub>n</sub>}}
+ | volume = 20
+ | year = 2006| arxiv = math/0404142| s2cid = 1509054
+ }}.</ref>
+
+<ref name=leighton>{{citation |author=[[F. Thomson Leighton|Leighton, T.]] |title=Complexity Issues in VLSI |series=Foundations of Computing Series |publisher=MIT Press |location=Cambridge, MA |year=1983}}</ref>
+
+<ref name=ps>{{citation
+ | last1 = Pach | first1 = János | author1-link = János Pach
+ | last2 = Sharir | first2 = Micha | author2-link = Micha Sharir
+ | contribution = 5.1 Crossings—the Brick Factory Problem
+ | pages = 126–127
+ | publisher = [[American Mathematical Society]]
+ | series = Mathematical Surveys and Monographs
+ | title = Combinatorial Geometry and Its Algorithmic Applications: The Alcalá Lectures
+ | volume = 152
+ | year = 2009}}.</ref>
+
+<ref name=variants>{{citation
+ | last1 = Schaefer | first1 = Marcus 
+ | journal = [[The Electronic Journal of Combinatorics]]
+ | pages = #DS21
+ | title = The graph crossing number and its variants: a survey
+ | year = 2014
+ }}</ref>
+
+<ref name=szekely>{{citation |author=Székely, L. A. |title=Crossing numbers and hard Erdős problems in discrete geometry |journal=[[Combinatorics, Probability and Computing]] |volume=6 |year=1997 |pages=353–358 |mr=1464571 | doi=10.1017/S0963548397002976 |issue=3|s2cid=36602807 }}</ref>
+
+<ref name=turan>{{citation
+ | last = Turán | first = P. | author-link = Pál Turán
+ | doi = 10.1002/jgt.3190010105
+ | journal = [[Journal of Graph Theory]]
+ | pages = 7–9
+ | title = A note of welcome
+ | volume = 1
+ | year = 1977}}.</ref>
+
+<ref name=urbanik>{{citation
+ | last = Urbaník | first = K. | author-link = Kazimierz Urbanik
+ | journal = Colloq. Math.
+ | pages = 200–201
+ | title = Solution du problème posé par P. Turán
+ | volume = 3
+ | year = 1955}}. As cited by {{SpringerEOM|title=Zarankiewicz crossing number conjecture|id=Zarankiewicz_crossing_number_conjecture&oldid=18710|first=László A.|last=Székely}}</ref>
+
+<ref name=woodall>{{citation
+ | last = Woodall | first = D. R.
+ | doi = 10.1002/jgt.3190170602
+ | issue = 6
+ | journal = [[Journal of Graph Theory]]
+ | mr = 1244681
+ | pages = 657–671
+ | title = Cyclic-order graphs and Zarankiewicz's crossing-number conjecture
+ | volume = 17
+ | year = 1993}}.</ref>
+
+<ref name=z>{{citation
+ | last = Zarankiewicz | first = K. | author-link = Kazimierz Zarankiewicz| journal = [[Fundamenta Mathematicae]]
+ | mr = 0063641
+ | pages = 137–145
+ | title = On a problem of P. Turan concerning graphs
+ | volume = 41
+ | year = 1954| doi = 10.4064/fm-41-1-137-145 | doi-access = free}}.</ref>
+
+}}
+
+==External links==
+*{{mathworld|urlname=ZarankiewiczsConjecture|title=Zarankiewicz's Conjecture|mode=cs2}}
+
+{{DEFAULTSORT:Turan's brick factory problem}}
+[[Category:Topological graph theory]]
+[[Category:Graph drawing]]
+[[Category:Mathematical problems]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]

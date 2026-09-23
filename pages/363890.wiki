@@ -1,0 +1,98 @@
+{{Short description|Function used in computer cryptography}}
+{{unsolved|computer science|Do one-way functions exist?}}
+
+In [[computer science]], a '''one-way function''' is a [[function (mathematics)|function]] that is easy to compute on every input, but hard to [[Inverse function|invert]] given the [[image (mathematics)|image]] of a random input.  Here, "easy" and "hard" are to be understood in the sense of [[computational complexity theory]], specifically the theory of [[polynomial time]] problems. This has nothing to do with whether the function is [[One-to-one function|one-to-one]]; finding any one input with the desired image is considered a successful inversion.  (See {{section link||Theoretical definition}}, below.)
+
+The existence of such one-way functions is still an open [[conjecture]]. Their existence would prove that the [[complexity classes]] [[P = NP problem|P and NP are not equal]], thus resolving the foremost unsolved question of theoretical computer science.<ref name=Goldreich>[[Oded Goldreich]] (2001). Foundations of Cryptography: Volume 1, Basic Tools ([http://www.wisdom.weizmann.ac.il/~oded/PSBookFrag/part2N.ps draft available] from author's site). Cambridge University Press. {{isbn|0-521-79172-3}}. See also [http://www.wisdom.weizmann.ac.il/~oded/foc-book.html wisdom.weizmann.ac.il].</ref>{{rp|ex. 2.2, page 70}} The converse is not known to be true, i.e. the existence of a proof that P&nbsp;≠&nbsp;NP would not directly imply the existence of one-way functions.<ref>[[Shafi Goldwasser|Goldwasser, S.]] and [[Mihir Bellare|Bellare, M.]] [http://cseweb.ucsd.edu/~mihir/papers/gb.html "Lecture Notes on Cryptography"] {{Webarchive|url=https://web.archive.org/web/20120421084751/http://cseweb.ucsd.edu/~mihir/papers/gb.html |date=2012-04-21 }}. Summer course on cryptography, MIT, 1996–2001.</ref>
+
+In applied contexts, the terms "easy" and "hard" are usually interpreted relative to some specific computing entity; typically "cheap enough for the legitimate users" and "prohibitively expensive for any [[Black hat hacking|malicious agents]]".{{citation needed|date=September 2023}} One-way functions, in this sense, are fundamental tools for [[cryptography]], [[personal identification]], [[authentication]], and other [[data security]] applications. While the existence of one-way functions in this sense is also an open conjecture, there are several candidates that have withstood decades of intense scrutiny. Some of them are essential ingredients of most [[telecommunications]], [[e-commerce]], and [[Online banking|e-banking]] systems around the world.
+
+==Theoretical definition==
+A function ''f'' : {0,&nbsp;1}<sup>*</sup> → {0,&nbsp;1}<sup>*</sup> is '''one-way''' if ''f'' can be computed by a polynomial-time algorithm, but any polynomial-time [[randomized algorithm]] <math>F</math> that attempts to compute a pseudo-inverse for ''f'' succeeds with [[Negligible function|negligible]] probability. (The * superscript means any number of repetitions, see [[Kleene star]].) That is, for all randomized algorithms <math>F</math>, all positive integers ''c'' and all sufficiently large ''n'' = length(''x''),
+
+: <math>\Pr[f(F(f(x))) = f(x)] < n^{-c},</math>
+
+where the probability is over the choice of ''x'' from the [[Uniform distribution (discrete)|discrete uniform distribution]] on {0,&nbsp;1}&nbsp;<sup>''n''</sup>, and the randomness of <math>F</math>.<ref>Many authors view this definition as strong one-way function. A weak one-way function can be defined similarly except that the probability that every adversarial <math>F</math> fails to invert ''f'' is noticeable. However, one may construct strong one-way functions based on weak ones. Loosely speaking, strong and weak versions of one-way function are equivalent theoretically. See Goldreich's Foundations of Cryptography, vol.&nbsp;1, ch.&nbsp;2.1–2.3.</ref>
+
+Note that, by this definition, the function must be "hard to invert" in the [[best, worst and average case|average-case, rather than worst-case]] sense. This is different from much of complexity theory (e.g., [[NP-hard]]ness), where the term "hard" is meant in the worst-case. That is why even if some candidates for one-way functions (described below) are known to be [[NP-complete]], it does not imply their one-wayness. The latter property is only based on the lack of known algorithms to solve the problem.
+
+It is not sufficient to make a function "lossy" (not one-to-one) to have a one-way function. In particular, the function that outputs the string of ''n'' zeros on any input of length ''n'' is ''not'' a one-way function because it is easy to come up with an input that will result in the same output. More precisely: For such a function that simply outputs a string of zeroes, an algorithm ''F'' that just outputs any string of length ''n'' on input ''f''(''x'') will "find" a proper preimage of the output, even if it is not the input which was originally used to find the output string.
+
+==Related concepts==
+A '''one-way permutation''' is a one-way function that is also a permutation—that is, a one-way function that is [[bijective]].  One-way permutations are an important [[cryptographic primitive]], and it is not known if their existence is implied by the existence of one-way functions.
+
+A [[trapdoor one-way function]] or trapdoor permutation is a special kind of one-way function. Such a function is hard to invert unless some secret information, called the ''trapdoor'', is known.
+
+A '''collision-free hash function''' ''f'' is a one-way function that is also ''collision-resistant''; that is, no [[randomized polynomial time]] algorithm can find a [[hash collision|collision]]—distinct values ''x'', ''y'' such that ''f''(''x'') = ''f''(''y'')—with non-negligible probability.<ref>{{cite journal |last=Russell |first=A. |title=Necessary and Sufficient Conditions for Collision-Free Hashing |journal=[[Journal of Cryptology]] |volume=8 |issue=2 |pages=87–99 |year=1995 |doi=10.1007/BF00190757 |s2cid=26046704 }}</ref>
+
+A [[hard-core predicate]] of a one-way function ''f'' is a predicate (i.e. single bit) ''b'' such that ''b(x)'' is easy to compute given ''x'' but hard to compute given only ''f(x)''.
+
+==Theoretical implications of one-way functions==
+If ''f'' is a one-way function, then the inversion of ''f'' would be a problem whose output is hard to compute (by definition) but easy to check (just by computing ''f'' on it). Thus, the existence of a one-way function implies that [[FP (complexity)|FP]]&nbsp;≠&nbsp;[[FNP (complexity)|FNP]], which in turn implies that P&nbsp;≠&nbsp;NP. However, P&nbsp;≠&nbsp;NP does not imply the existence of one-way functions.
+
+The existence of a one-way function implies the existence of many other useful concepts, including:
+* [[Pseudorandom generator]]s
+* [[Pseudorandom function]] families
+* [[Commitment scheme|Bit commitment schemes]]
+* Private-key encryption schemes secure against [[adaptive chosen-ciphertext attack]]
+* [[Message authentication code]]s
+* [[Digital signature scheme]]s (secure against adaptive chosen-message attack)
+
+==Candidates for one-way functions==
+The following are several candidates for one-way functions (as of April 2009). Clearly, it is not known whether
+these functions are indeed one-way; but extensive research has so far failed to produce an efficient inverting algorithm for any of them.{{Citation needed|reason=No sources are listed|date=March 2018}}
+
+===Multiplication and factoring===
+The function ''f'' takes as inputs two prime numbers ''p'' and ''q'' in binary notation and returns their product.  This function can be "easily" computed in [[big O notation|''O''(''b''<sup>2</sup>)]] time, where ''b'' is the total number of bits of the inputs.  Inverting this function requires finding the [[integer factorization|factors of a given integer]] ''N''.  The best factoring algorithms known run in <math>O\left(\exp\sqrt[3]{\frac{64}{9} b (\log b)^2}\right)</math>time, where b is the number of bits needed to represent ''N''.
+
+This function can be generalized by allowing ''p'' and ''q'' to range over a  suitable set of [[semiprimes]].  Note that ''f'' is not one-way for randomly selected integers {{nowrap|''p'', ''q'' &gt; 1}}, since the product will have 2 as a factor with probability 3/4 (because the probability that an arbitrary ''p'' is odd is 1/2, and likewise for ''q'', so if they're chosen independently, the probability that both are odd is therefore 1/4; hence the probability that ''p'' or ''q'' is even, is {{nowrap|1=1 − 1/4 = 3/4}}).
+
+===The Rabin function (modular squaring)===
+The '''Rabin function''',<ref name=Goldreich />{{rp|57}} or squaring [[modular arithmetic|modulo]] <math>N=pq</math>, where {{mvar|p}} and {{mvar|q}} are primes is believed to be a collection of one-way functions. We write
+:<math>\operatorname{Rabin}_N(x)\triangleq x^2\bmod N</math>
+to denote squaring modulo {{mvar|N}}: a specific member of the '''Rabin collection'''. It can be shown that extracting square roots, i.e. inverting the Rabin function, is computationally equivalent to factoring {{mvar|N}} (in the sense of [[polynomial-time reduction]]). Hence it can be proven that the Rabin collection is one-way if and only if factoring is hard. This also holds for the special case in which {{mvar|p}} and {{mvar|q}} are of the same bit length. The [[Rabin signature algorithm]] is based on the assumption that this Rabin function is one-way.
+
+===Discrete exponential and logarithm===
+[[Modular exponentiation]] can be done in polynomial time. Inverting this function requires computing the [[discrete logarithm]]. Currently there are several popular groups for which no algorithm to calculate the underlying discrete logarithm in polynomial time is known. These groups are all [[finite abelian group]]s and the general discrete logarithm problem can be described as thus.
+
+Let ''G'' be a finite abelian group of [[cardinality]] ''n''. Denote its [[group operation]] by multiplication. Consider a [[Primitive element (finite field)|primitive element]] {{nowrap|''&alpha;'' &isin; ''G''}} and another element {{nowrap|''&beta;'' &isin; ''G''}}. The discrete logarithm problem is to find the positive integer ''k'', where {{nowrap|1 ≤ ''k'' ≤ n}}, such that:
+
+:<math>\alpha^k = \underbrace{\alpha \cdot \alpha \cdot \ldots \cdot \alpha}_{k \; \mathrm{times}} = \beta</math>
+
+The integer ''k'' that solves the equation {{nowrap|1=''&alpha;<sup>k</sup>'' = ''&beta;''}} is termed the '''discrete logarithm''' of ''&beta;'' to the base ''&alpha;''. One writes {{nowrap|1=''k'' = log<sub>''&alpha;''</sub> ''&beta;''}}.
+
+Popular choices for the group ''G'' in discrete logarithm [[cryptography]] are the cyclic groups [[multiplicative group of integers modulo n|('''Z'''<sub>''p''</sub>)<sup>''×''</sup>]] (e.g. [[ElGamal encryption]], [[Diffie–Hellman key exchange]], and the [[Digital Signature Algorithm]]) and cyclic subgroups of [[elliptic curve]]s over [[finite field]]s (''see'' [[elliptic curve cryptography]]).
+
+An elliptic curve is a set of pairs of elements of a [[Field (mathematics)|field]] satisfying {{nowrap|1=''y''<sup>2</sup> = ''x''<sup>3</sup> + ''ax'' + ''b''}}. The elements of the curve form a group under an operation called "point addition" (which is not the same as the addition operation of the field). Multiplication ''kP'' of a point ''P'' by an integer ''k'' (''i.e.'', a [[Group action (mathematics)|group action]] of the additive group of the integers) is defined as repeated addition of the point to itself. If ''k'' and ''P'' are known, it is easy to compute {{nowrap|1=''R'' = ''kP''}}, but if only ''R'' and ''P'' are known, it is assumed to be hard to compute ''k''.
+
+===Cryptographically secure hash functions===
+There are a number of [[cryptographic hash function]]s that are fast to compute, such as [[SHA-256]]. Some of the simpler versions have fallen to sophisticated analysis, but the strongest versions continue to offer fast, practical solutions for one-way computation. Most of the theoretical support for the functions are more techniques for thwarting some of the previously successful attacks.
+
+===Other candidates===
+Other candidates for one-way functions include the hardness of the decoding of random [[linear code]]s, the hardness of certain [[lattice problems]], and the [[subset sum problem]] ([[Naccache–Stern knapsack cryptosystem]]).
+
+==Universal one-way function==
+There is an explicit function ''f'' that has been proved to be one-way, if and only if one-way functions exist.<ref name="HCPred">{{Cite journal |first=Leonid A. |last=Levin |author-link=Leonid Levin |title=The Tale of One-Way Functions |journal=Problems of Information Transmission |issue=39 |date=January 2003 |volume=39 |pages=92–103 |arxiv=cs.CR/0012023 |doi=10.1023/A:1023634616182}}</ref> In other words, if any function is one-way, then so is ''f''.  Since this function was the first combinatorial complete one-way function to be demonstrated, it is known as the "universal one-way function". The problem of finding a one-way function is thus reduced to proving{{emdash}}perhaps non-constructively{{emdash}}that one such function exists.
+
+There also exists a function that is one-way if polynomial-time bounded [[Kolmogorov complexity#Time-bounded complexity|Kolmogorov complexity]] is mildly hard on average. Since the existence of one-way functions implies that polynomial-time bounded Kolmogorov complexity is mildly hard on average, the function is a universal one-way function.<ref>{{cite arXiv |last1=Liu |first1=Yanyi |title=On One-way Functions and Kolmogorov Complexity |date=2020-09-24 |eprint=2009.11514 |class=cs.CC |last2=Pass |first2=Rafael}}</ref>
+
+== Quantum one-way functions ==
+[https://www.nist.gov/pqc '''Post-quantum one-way functions''']  are classical functions whose inversion is assumed to remain computationally hard  even for [[Quantum computing|quantum computers]].<ref>{{Cite journal |last=Bernstein |first=Daniel J. |last2=Lange |first2=T. |date=2017 |title=Post-quantum cryptography |url=https://doi.org/10.1038/nature23461 |journal=Nature |volume=549 |pages=188–194}}</ref>'''Quantum one-way functions (QOWFs)''', and related quantum cryptographic primitives, instead produce quantum states as outputs.<ref>{{Cite journal |last=Nikolopoulos |first=Georgios M. |title=Quantum One-Way Functions and Related Cryptographic Primitives |url=https://iopscience.iop.org/article/10.1088/1367-2630/ae958e |journal=New Journal of Physics}}</ref> A typical  QOWF efficiently maps of a classical input to a quantum state. As in the classical setting, the mapping is easy to compute but intended to be difficult to invert. Depending on the construction, this hardness may arise from computational assumptions or directly from the laws of quantum mechanics, such as the Holevo bound, the no-cloning theorem, and the impossibility of perfectly distinguishing non-orthogonal quantum states. Consequently, some QOWFs provide information-theoretic security, provided that only a bounded number of copies of the output state are available.  QOWFs have been proposed as building blocks for quantum public-key cryptography, quantum digital signatures, quantum money, and other quantum cryptographic protocols.
+
+==See also==
+* [[One-way compression function]]
+* [[Cryptographic hash function]]
+* [[Geometric cryptography]]
+* [[Trapdoor function]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* Jonathan Katz and Yehuda Lindell (2007). ''Introduction to Modern Cryptography''. CRC Press. {{isbn|1-58488-551-3}}.
+* {{Cite book | author = Michael Sipser | author-link = Michael Sipser | year = 1997 | title = Introduction to the Theory of Computation | publisher = PWS Publishing | isbn = 978-0-534-94728-6 | url-access = registration | url = https://archive.org/details/introductiontoth00sips }} Section 10.6.3: One-way functions, pp.&nbsp;374&ndash;376.
+* {{Cite book|author = Christos Papadimitriou|author-link = Christos Papadimitriou| year = 1993 | title = Computational Complexity | publisher = Addison Wesley | edition = 1st | isbn = 978-0-201-53082-7}} Section 12.1: One-way functions, pp.&nbsp;279&ndash;298.
+
+{{DEFAULTSORT:One-Way Function}}
+[[Category:Cryptographic primitives]]
+[[Category:Unsolved problems in computer science]]

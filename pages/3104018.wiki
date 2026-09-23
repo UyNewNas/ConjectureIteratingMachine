@@ -1,0 +1,3703 @@
+{{Short description|Arrangement of points on a sphere}}
+
+The objective of the '''Thomson problem''' is to determine the minimum [[electrostatic potential energy]] configuration of {{mvar|N}} [[electron]]s constrained to the surface of a [[unit sphere]] that repel each other with a force given by [[Coulomb's law]]. The physicist [[J. J. Thomson]] posed the problem in 1904<ref>{{cite journal|last=Thomson| first=Joseph John|author-link=Joseph John Thomson| title=On the Structure of the Atom: an Investigation of the Stability and Periods of Oscillation of a number of Corpuscles arranged at equal intervals around the Circumference of a Circle; with Application of the Results to the Theory of Atomic Structure|journal=[[Philosophical Magazine]] | doi=10.1080/14786440409463107 | series=Series 6 | volume=7 |number=39|pages=237–265|date= March 1904|url=http://www.cond-mat.physik.uni-mainz.de/~oettel/ws10/thomson_PhilMag_7_237_1904.pdf|archive-url=https://web.archive.org/web/20131213172104/http://www.cond-mat.physik.uni-mainz.de/~oettel/ws10/thomson_PhilMag_7_237_1904.pdf|archive-date=13 December 2013}}</ref> after proposing an [[atomic model]], later called the [[plum pudding model]], based on his knowledge of the existence of negatively charged electrons within neutrally-charged atoms.
+
+Related problems include the study of the geometry of the minimum energy configuration and the study of the large {{mvar|N}} behavior of the minimum energy.
+
+== Mathematical statement ==
+The electrostatic interaction energy occurring between each pair of electrons of equal charges (<math>e_i = e_j = e</math>, with <math>e</math> the [[elementary charge]] of an electron) is given by [[Coulomb's law]],
+: <math>U_{ij}(N)={e_i e_j \over 4\pi\epsilon_0 r_{ij}},</math>
+where <math>\epsilon_0</math> is the [[electric constant]] and <math>r_{ij}=|\mathbf{r}_i - \mathbf{r}_j|</math> is the distance between each pair of electrons located at points on the sphere defined by vectors <math>\mathbf{r}_i</math> and <math>\mathbf{r}_j</math>, respectively.
+
+Simplified units of <math>e=1</math> and <math>k_e=1/4\pi\epsilon_0=1</math> (the [[Coulomb's_law#Coulomb_constant|Coulomb constant]]) are used without loss of generality. Then,
+: <math>U_{ij}(N) = {1 \over r_{ij}}.</math>
+The total electrostatic potential energy of each ''N''-electron configuration may then be expressed as the sum of all pair-wise interaction energies
+: <math>U(N) = \sum_{i < j} \frac{1}{r_{ij}}.</math>
+
+The global minimization of <math>U(N)</math> over all possible configurations of ''N'' distinct points is typically found by numerical minimization algorithms.
+
+Thomson's problem is related to the 7th of the [[Smale's problems|eighteen unsolved mathematics problems]] proposed by the mathematician [[Stephen Smale|Steve Smale]] — "Distribution of points on the 2-sphere".<ref>
+{{cite journal 
+ | first = S. | last = Smale
+ |title = Mathematical Problems for the Next Century
+ |journal = Mathematical Intelligencer
+ |date =1998
+ |volume=20
+ |number=2
+ |pages=7–15
+ |doi=10.1007/bf03025291
+ | s2cid = 1331144
+}}</ref> 
+The main difference is that in Smale's problem the function to minimise is not the electrostatic potential <math>1 \over r_{ij}</math> but a logarithmic potential given by <math>-\log r_{ij}.</math> A second difference is that Smale's question is about the asymptotic behaviour of the total potential when the number ''N'' of points goes to infinity, not for concrete values of ''N''.
+
+=== Example ===
+The solution of the Thomson problem for two electrons is obtained when both electrons are as far apart as possible on opposite sides of the origin, <math>r_{ij} = 2r = 2</math>, or
+: <math>U(2) = {1 \over 2}.</math>
+
+== Known exact solutions ==
+[[File:N 2 to 5 ThomsonSolutions.png|thumb|Schematic geometric solutions of the mathematical Thomson Problem for up to ''N''&nbsp;=&nbsp;5 electrons.]]
+
+Mathematically exact minimum energy configurations have been rigorously identified in only a handful of cases.
+
+* For ''N''&nbsp;=&nbsp;1, the solution is trivial. The single electron may reside at any point on the surface of the unit sphere. The total energy of the configuration is defined as zero because the charge of the electron is subject to no electric field due to other sources of charge.
+
+* For ''N''&nbsp;=&nbsp;2, the optimal configuration consists of electrons at [[antipodal point]]s.
+
+* For ''N''&nbsp;=&nbsp;3, electrons reside at the vertices of an equilateral triangle about any [[great circle]].<ref>{{cite journal|first1=L.|last1=Föppl |title=Stabile Anordnungen von Elektronen im Atom | journal = J. Reine Angew. Math. |number=141 |year=1912 |volume=141 |pages=251–301|doi=10.1515/crll.1912.141.251 |s2cid=120309200 |url=http://eudml.org/doc/149380|url-access=subscription }}.</ref> The great circle is often considered to define an [[equator]] about the sphere and the two points perpendicular to the plane are often considered poles to aid in discussions about the electrostatic configurations of many-''N'' electron solutions.
+
+* For ''N''&nbsp;=&nbsp;4, electrons reside at the vertices of a regular [[tetrahedron]].
+
+* For ''N''&nbsp;=&nbsp;5, electrons reside at the vertices of a [[triangular bipyramid]].<ref>{{cite journal|last=Schwartz|first=Richard|author-link=Richard Schwartz (mathematician)|journal=[[Experimental Mathematics (journal)|Experimental Mathematics]]|title=The five-electron case of Thomson's problem|volume=22|issue=2|year=2013|pages=157–186|arxiv=1001.3702}}</ref>
+
+* For ''N''&nbsp;=&nbsp;6, electrons reside at vertices of a regular [[octahedron]].<ref>{{cite journal|first=V.A. |last=Yudin |title=The minimum of potential energy of a system of point charges |journal=Discretnaya Matematika |volume=4 |number=2|year=1992|pages= 115–121 (in Russian)}}; {{cite journal|first=V. A. |last=Yudin|journal= Discrete Math. Appl.|volume= 3 |number=1| year=1993|pages=75–81 |doi=10.1515/dma.1993.3.1.75 |title=The minimum of potential energy of a system of point charges|s2cid=117117450}}</ref> The configuration may also be described as four electrons residing at the corners of a square about the equator and the remaining two residing at the poles. 
+
+* For ''N''&nbsp;=&nbsp;12, electrons reside at the vertices of a regular [[icosahedron]].<ref>{{cite journal|first=N.N. |last= Andreev|title=An extremal property of the icosahedron| journal=East J. Approximation|volume=2 |number=4 |year=1996|pages=459–462}} {{MR|1426716}}, {{Zbl|0877.51021}}</ref>
+
+The solutions of the Thomson problem for ''N''&nbsp;=&nbsp;4, 6, and 12 electrons are [[Platonic solid]]s whose faces are all congruent equilateral triangles. Numerical solutions for ''N''&nbsp;=&nbsp;8 and 20 are not the regular convex polyhedral configurations of the remaining two Platonic solids (the [[cube]] and [[dodecahedron]], respectively).<ref>{{cite arXiv |title=Polyhedra in physics, chemistry and geometry |date=2003 |eprint=math-ph/0303071 |last1=Atiyah |first1=Michael |author-link=Michael Atiyah |last2=Sutcliffe |first2=Paul }}</ref>
+
+== Generalizations ==
+One can also ask for ground states of particles interacting with arbitrary potentials.
+To be mathematically precise, let ''f'' be a decreasing real-valued function, and define the energy functional 
+
+<math display="block">\sum_{i < j} f(|x_i-x_j|).</math>
+
+Traditionally, one considers <math> f(x)=x^{-\alpha} </math> also known as Riesz <math>\alpha</math>-kernels. For integrable Riesz kernels see the 1972 work of Landkof.<ref>Landkof, N. S. Foundations of modern potential theory. Translated from the Russian by A. P. Doohovskoy. Die Grundlehren der mathematischen Wissenschaften, Band 180. Springer-Verlag, New York-Heidelberg, 1972. x+424 pp.</ref> For non-integrable Riesz kernels, the [[poppy-seed bagel theorem]] holds, see the 2004 work of Hardin and Saff.<ref>Hardin, D. P.; Saff, E. B. Discretizing manifolds via minimum energy points. Notices Amer. Math. Soc. 51 (2004), no. 10, 1186–1194</ref> Notable cases include:<ref name="bpopt">{{cite news |last1=Batagelj |first1=Vladimir |last2=Plestenjak |first2=Bor |title=Optimal arrangements of n points on a sphere and in a circle |url=https://www.fmf.uni-lj.si/~plestenjak/Talks/preddvor.pdf |archive-date=25 June 2018 |archive-url=https://web.archive.org/web/20180625050324/https://www.fmf.uni-lj.si/~plestenjak/Talks/preddvor.pdf |publisher=IMFM/TCS}}</ref>
+* ''α''&nbsp;=&nbsp;∞, the [[Tammes problem]] (packing);
+* ''α''&nbsp;=&nbsp;1, the Thomson problem;
+* ''α''&nbsp;=&nbsp;0, to maximize the product of distances, latterly known as [[Whyte's problem]];
+* ''α''&nbsp;=&nbsp;−1 : maximum average distance problem.
+
+One may also consider configurations of ''N'' points on a [[n-sphere|sphere of higher dimension]]. See [[spherical design]].
+
+==Solution algorithms==
+Several [[algorithms]] have been applied to this problem. The focus since the millennium has been on [[Local_search_(optimization)|local optimization]] methods applied to the energy function, although [[random walks]] have made their appearance:<ref name="bpopt"/>
+* constrained global optimization (Altschuler et al. 1994),
+* steepest descent (Claxton and Benson 1966, Erber and Hockney 1991),
+* random walk (Weinrach et al. 1990),
+* genetic algorithm (Morris et al. 1996)
+
+While the objective is to minimize the global electrostatic potential energy of each ''N''-electron case, several algorithmic starting cases are of interest. 
+===Continuous spherical shell charge===
+[[File:ThomsonProblem Related Energies LaFave.png|thumb|The extreme upper energy limit of the Thomson Problem is given by <math>N^2/2</math> for a continuous shell charge followed by N(N − 1)/2, the energy associated with a random distribution of ''N'' electrons. Significantly lower energy of a given ''N''-electron solution of the Thomson Problem with one charge at its origin is readily obtained by <math>U(N) + N</math>, where <math>U(N)</math> are solutions of the Thomson Problem.]]
+The energy of a continuous spherical shell of charge distributed across its surface is given by 
+:<math>U_{\text{shell}}(N)=\frac{N^2}{2}</math>
+and is, in general, greater than the energy of every Thomson problem solution. Note: Here ''N'' is used as a continuous variable that represents the infinitely divisible charge, ''Q'', distributed across the spherical shell. For example, a spherical shell of <math>N=1</math> represents the uniform distribution of a single electron's charge, <math>-e</math>, across the entire shell.
+
+===Randomly distributed point charges===
+The expected global energy of a system of electrons distributed in a purely random manner across the surface of the sphere is given by 
+:<math>U_{\text{rand}}(N)=\frac{N(N-1)}{2}</math>
+and is, in general, greater than the energy of every Thomson problem solution. 
+
+Here, ''N'' is a discrete variable that counts the number of electrons in the system. As well, <math>U_{\text{rand}}(N) < U_{\text{shell}}(N)</math>.
+
+===Charge-centered distribution===
+For every ''N''th solution of the Thomson problem there is an <math>(N+1)</math>th configuration that includes an electron at the origin of the sphere whose energy is simply the addition of ''N'' to the energy of the ''N''th solution. That is,<ref>{{cite journal|last=LaFave Jr| first=Tim| title=Discrete transformations in the Thomson Problem|journal=Journal of Electrostatics | doi=10.1016/j.elstat.2013.11.007| volume=72 |number=1|pages=39–43|date= February 2014| arxiv=1403.2592| s2cid=119309183|url=https://www.sciencedirect.com/science/article/abs/pii/S0304388613001460}}</ref>
+:<math>U_0(N+1)=U_{\text{Thom}}(N)+N.</math>
+Thus, if <math>U_{\text{Thom}}(N)</math> is known exactly, then <math>U_0(N+1)</math> is known exactly. 
+
+In general, <math>U_0(N+1)</math> is greater than <math>U_{\text{Thom}}(N+1)</math>, but is remarkably closer to each <math>(N+1)</math>th Thomson solution than <math>U_{\text{shell}}(N+1)</math> and <math>U_{\text{rand}}(N+1)</math>. Therefore, the charge-centered distribution represents a smaller "energy gap" to cross to arrive at a solution of each Thomson problem than algorithms that begin with the other two charge configurations.
+
+== Relations to other scientific problems ==
+The Thomson problem is a natural consequence of J. J. Thomson's [[plum pudding model]] in the absence of its uniform positive background charge.<ref>{{cite journal|first1=Y.|last1=Levin|first2=J. J. |last2= Arenzon |title=Why charges go to the Surface: A generalized Thomson Problem|journal=Europhys. Lett.|volume=63|issue=3|page=415|year=2003|arxiv=cond-mat/0302524 |doi=10.1209/epl/i2003-00546-1 |bibcode=2003EL.....63..415L|s2cid=18929981}}</ref>
+
+{{quote box|width=23em|"No fact discovered about the atom can be trivial, nor fail to accelerate the progress of physical science, for the greater part of natural philosophy is the outcome of the structure and mechanism of the atom."|—Sir J. J. Thomson<ref>Sir J.J. Thomson, The Romanes Lecture, 1914 (The Atomic Theory)</ref>}}
+
+Though experimental evidence led to the abandonment of Thomson's plum pudding model as a complete atomic model, irregularities observed in numerical energy solutions of the Thomson problem have been found to correspond with electron shell-filling in naturally occurring atoms throughout the [[periodic table]] of elements.<ref>{{cite journal|last=LaFave Jr|first=Tim|title=Correspondences between the classical electrostatic Thomson problem and atomic electronic structure|journal=Journal of Electrostatics|volume=71|issue=6|pages=1029–1035|year=2013|doi=10.1016/j.elstat.2013.10.001|arxiv=1403.2591|s2cid=118480104}}</ref>
+
+The Thomson problem also plays a role in the study of other physical models including [[electron bubble|multi-electron bubbles]] and the surface ordering of liquid metal drops confined in [[Paul trap]]s.
+
+The generalized Thomson problem arises, for example, in determining arrangements of protein subunits that comprise the shells of spherical [[virus]]es. The "particles" in this application are clusters of protein subunits arranged on a shell. Other realizations include regular arrangements of [[colloid]] particles in ''colloidosomes'', proposed for encapsulation of active ingredients such as drugs, nutrients or living cells, [[fullerene]] patterns of carbon atoms, and [[VSEPR theory]]. An example with long-range logarithmic interactions is provided by [[Abrikosov vortices]] that form at low temperatures in a [[superconductivity|superconducting]] metal shell with a large monopole at its center.
+
+== Configurations of smallest known energy ==
+In the following table{{cn|date=April 2024}} <math>N</math> is the number of points (charges) in a configuration, <math>U_{\textrm{Thom}}</math> is the energy, the symmetry type is given in [[Schönflies notation]] (see [[Point groups in three dimensions]]), and <math>r_i</math> are the positions of the charges. Most symmetry types require the vector sum of the positions (and thus the [[electric dipole moment]]) to be zero.
+
+It is customary to also consider the polyhedron formed by the [[convex hull]] of the points. Thus, <math>v_i</math> is the number of vertices where the given number of edges meet, <math>e</math> is the total number of edges, <math>f_3</math> is the number of triangular faces, <math>f_4</math> is the number of quadrilateral faces, and <math>\theta_1</math> is the smallest angle subtended by vectors associated with the nearest charge pair.  The edge lengths are generally not equal. Thus, except in the cases ''N''&nbsp;=&nbsp;2, 3, 4, 6, 12, and the [[geodesic polyhedron|geodesic polyhedra]], the convex hull is only [[topology|topologically]] equivalent to the figure listed in the last column.<ref>Kevin Brown. [http://mathpages.com/home/kmath005/kmath005.htm "Min-Energy Configurations of Electrons On A Sphere"]. Retrieved 2014-05-01.</ref>
+
+{| class="wikitable"
+|-
+! ''N''
+! <math>U_{\textrm{Thom}}</math>
+! [[Point groups in three dimensions|Symmetry]]
+! <math>\left| \sum \mathbf{r}_i \right| </math>
+! <math>v_3</math>
+! <math>v_4</math>
+! <math>v_5</math>
+! <math>v_6</math>
+! <math>v_7</math>
+! <math>v_8</math>
+! <math>e</math>
+! <math>f_3</math>
+! <math>f_4</math>
+! <math>\theta_1</math>
+! Equivalent polyhedron
+|-
+| align=right | 2
+| align=right | 0.500000000
+| align=center | <math>D_{\infty h}</math>
+| align=center | 0
+| align=center | –
+| align=center | –
+| align=center | –
+| align=center | –
+| align=center | –
+| align=center | –
+| align=right | 1
+| align=center | –
+| align=center | –
+| align=right | 180.000°
+| [[digon]]
+|-
+| align=right | 3
+| align=right | 1.732050808
+| align=center | <math>D_{3h}</math>
+| align=center | 0
+| align=center | –
+| align=center | –
+| align=center | –
+| align=center | –
+| align=center | –
+| align=center | –
+| align=right | 3
+| align=right | 2
+| align=center | –
+| align=right | 120.000°
+| [[triangle]]
+|-
+| align=right | 4
+| align=right | 3.674234614
+| align=center | <math>T_d</math>
+| align=center | 0
+| align=right | 4
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 6
+| align=right | 4
+| align=right | 0
+| align=right | 109.471°
+| [[tetrahedron]]
+|-
+| align=right | 5
+| align=right | 6.474691495
+| align=center | <math>D_{3h}</math>
+| align=center | 0
+| align=right | 2
+| align=right | 3
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 9
+| align=right | 6
+| align=right | 0
+| align=right | 90.000°
+| [[triangular dipyramid]]
+|-
+| align=right | 6
+| align=right | 9.985281374
+| align=center | <math>O_h</math>
+| align=center | 0
+| align=right | 0
+| align=right | 6
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 8
+| align=right | 0
+| align=right | 90.000°
+| [[octahedron]]
+|-
+| align=right | 7
+| align=right | 14.452977414
+| align=center | <math>D_{5h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 5
+| align=right | 2
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 15
+| align=right | 10
+| align=right | 0
+| align=right | 72.000°
+| [[pentagonal dipyramid]]
+|-
+| align=right | 8
+| align=right | 19.675287861
+| align=center | <math>D_{4d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 8
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 16
+| align=right | 8
+| align=right | 2
+| align=right | 71.694°
+| [[square antiprism]]
+|-
+| align=right | 9
+| align=right | 25.759986531
+| align=center | <math>D_{3h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 3
+| align=right | 6
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 21
+| align=right | 14
+| align=right | 0
+| align=right | 69.190°
+| [[triaugmented triangular prism]]
+|-
+| align=right | 10
+| align=right | 32.716949460
+| align=center | <math>D_{4d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 2
+| align=right | 8
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 16
+| align=right | 0
+| align=right | 64.996°
+| [[gyroelongated square dipyramid]]
+|-
+| align=right | 11
+| align=right | 40.596450510
+| align=center | <math>C_{2v}</math>
+| align=center | 0.013219635
+| align=right | 0
+| align=right | 2
+| align=right | 8
+| align=right | 1
+| align=right | 0
+| align=right | 0
+| align=right | 27
+| align=right | 18
+| align=right | 0
+| align=right | 58.540°
+| [[edge-contracted icosahedron]]
+|-
+| align=right | 12
+| align=right | 49.165253058
+| align=center | <math>I_h</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 30
+| align=right | 20
+| align=right | 0
+| align=right | 63.435°
+| [[icosahedron]]<br />([[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>1,0</sub>)
+|-
+| align=right | 13
+| align=right | 58.853230612
+| align=center | <math>C_{2v}</math>
+| align=center | 0.008820367
+| align=right | 0
+| align=right | 1
+| align=right | 10
+| align=right | 2
+| align=right | 0
+| align=right | 0
+| align=right | 33
+| align=right | 22
+| align=right | 0
+| align=right | 52.317°
+|-
+| align=right | 14
+| align=right | 69.306363297
+| align=center | <math>D_{6d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 2
+| align=right | 0
+| align=right | 0
+| align=right | 36
+| align=right | 24
+| align=right | 0
+| align=right | 52.866°
+| [[gyroelongated hexagonal dipyramid]]
+|-
+| align=right | 15
+| align=right | 80.670244114
+| align=center | <math>D_3</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 3
+| align=right | 0
+| align=right | 0
+| align=right | 39
+| align=right | 26
+| align=right | 0
+| align=right | 49.225°
+|-
+| align=right | 16
+| align=right | 92.911655302
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 4
+| align=right | 0
+| align=right | 0
+| align=right | 42
+| align=right | 28
+| align=right | 0
+| align=right | 48.936°
+| tetrahedrally diminished dodecahedron
+|-
+| align=right | 17
+| align=right | 106.050404829
+| align=center | <math>D_{5h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 5
+| align=right | 0
+| align=right | 0
+| align=right | 45
+| align=right | 30
+| align=right | 0
+| align=right | 50.108°
+| double-gyroelongated pentagonal dipyramid
+|-
+| align=right | 18
+| align=right | 120.084467447
+| align=center | <math>D_{4d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 2
+| align=right | 8
+| align=right | 8
+| align=right | 0
+| align=right | 0
+| align=right | 48
+| align=right | 32
+| align=right | 0
+| align=right | 47.534°
+|-
+| align=right | 19
+| align=right | 135.089467557
+| align=center | <math>C_{2v}</math>
+| align=center | 0.000135163
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 5
+| align=right | 0
+| align=right | 0
+| align=right | 50
+| align=right | 32
+| align=right | 1
+| align=right | 44.910°
+|-
+| align=right | 20
+| align=right | 150.881568334
+| align=center | <math>D_{3h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 8
+| align=right | 0
+| align=right | 0
+| align=right | 54
+| align=right | 36
+| align=right | 0
+| align=right | 46.093°
+|-
+| align=right | 21
+| align=right | 167.641622399
+| align=center | <math>C_{2v}</math>
+| align=center | 0.001406124
+| align=right | 0
+| align=right | 1
+| align=right | 10
+| align=right | 10
+| align=right | 0
+| align=right | 0
+| align=right | 57
+| align=right | 38
+| align=right | 0
+| align=right | 44.321°
+|-
+| align=right | 22
+| align=right | 185.287536149
+| align=center | <math>T_d</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 10
+| align=right | 0
+| align=right | 0
+| align=right | 60
+| align=right | 40
+| align=right | 0
+| align=right | 43.302°
+|-
+| align=right | 23
+| align=right | 203.930190663
+| align=center | <math>D_3</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 11
+| align=right | 0
+| align=right | 0
+| align=right | 63
+| align=right | 42
+| align=right | 0
+| align=right | 41.481°
+|-
+| align=right | 24
+| align=right | 223.347074052
+| align=center | <math>O</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 0
+| align=right | 0
+| align=right | 0
+| align=right | 60
+| align=right | 32
+| align=right | 6
+| align=right | 42.065°
+| [[snub cube]]
+|-
+| align=right | 25
+| align=right | 243.812760299
+| align=center | <math>C_s</math>
+| align=center | 0.001021305
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 11
+| align=right | 0
+| align=right | 0
+| align=right | 68
+| align=right | 44
+| align=right | 1
+| align=right | 39.610°
+|-
+| align=right | 26
+| align=right | 265.133326317
+| align=center | <math>C_2</math>
+| align=center | 0.001919065
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 14
+| align=right | 0
+| align=right | 0
+| align=right | 72
+| align=right | 48
+| align=right | 0
+| align=right | 38.842°
+|-
+| align=right | 27
+| align=right | 287.302615033
+| align=center | <math>D_{5h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 15
+| align=right | 0
+| align=right | 0
+| align=right | 75
+| align=right | 50
+| align=right | 0
+| align=right | 39.940°
+|-
+| align=right | 28
+| align=right | 310.491542358
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 16
+| align=right | 0
+| align=right | 0
+| align=right | 78
+| align=right | 52
+| align=right | 0
+| align=right | 37.824°
+|-
+| align=right | 29
+| align=right | 334.634439920
+| align=center | <math>D_3</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 17
+| align=right | 0
+| align=right | 0
+| align=right | 81
+| align=right | 54
+| align=right | 0
+| align=right | 36.391°
+|-
+| align=right | 30
+| align=right | 359.603945904
+| align=center | <math>D_2</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 18
+| align=right | 0
+| align=right | 0
+| align=right | 84
+| align=right | 56
+| align=right | 0
+| align=right | 36.942°
+|-
+| align=right | 31
+| align=right | 385.530838063
+| align=center | <math>C_{3v}</math>
+| align=center | 0.003204712
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 19
+| align=right | 0
+| align=right | 0
+| align=right | 87
+| align=right | 58
+| align=right | 0
+| align=right | 36.373°
+|-
+| align=right | 32
+| align=right | 412.261274651
+| align=center | <math>I_h</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 20
+| align=right | 0
+| align=right | 0
+| align=right | 90
+| align=right | 60
+| align=right | 0
+| align=right | 37.377°
+| [[pentakis dodecahedron]]<br />([[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>1,1</sub>)
+|-
+| align=right | 33
+| align=right | 440.204057448
+| align=center | <math>C_s</math>
+| align=center | 0.004356481
+| align=right | 0
+| align=right | 0
+| align=right | 15
+| align=right | 17
+| align=right | 1
+| align=right | 0
+| align=right | 92
+| align=right | 60
+| align=right | 1
+| align=right | 33.700°
+|-
+| align=right | 34
+| align=right | 468.904853281
+| align=center | <math>D_2</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 22
+| align=right | 0
+| align=right | 0
+| align=right | 96
+| align=right | 64
+| align=right | 0
+| align=right | 33.273°
+|-
+| align=right | 35
+| align=right | 498.569872491
+| align=center | <math>C_2</math>
+| align=center | 0.000419208
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 23
+| align=right | 0
+| align=right | 0
+| align=right | 99
+| align=right | 66
+| align=right | 0
+| align=right | 33.100°
+|-
+| align=right | 36
+| align=right | 529.122408375
+| align=center | <math>D_2</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 24
+| align=right | 0
+| align=right | 0
+| align=right | 102
+| align=right | 68
+| align=right | 0
+| align=right | 33.229°
+|-
+| align=right | 37
+| align=right | 560.618887731
+| align=center | <math>D_{5h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 25
+| align=right | 0
+| align=right | 0
+| align=right | 105
+| align=right | 70
+| align=right | 0
+| align=right | 32.332°
+|-
+| align=right | 38
+| align=right | 593.038503566
+| align=center | <math>D_{6d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 26
+| align=right | 0
+| align=right | 0
+| align=right | 108
+| align=right | 72
+| align=right | 0
+| align=right | 33.236°
+|-
+| align=right | 39
+| align=right | 626.389009017
+| align=center | <math>D_{3h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 27
+| align=right | 0
+| align=right | 0
+| align=right | 111
+| align=right | 74
+| align=right | 0
+| align=right | 32.053°
+|-
+| align=right | 40
+| align=right | 660.675278835
+| align=center | <math>T_d</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 28
+| align=right | 0
+| align=right | 0
+| align=right | 114
+| align=right | 76
+| align=right | 0
+| align=right | 31.916°
+|-
+| align=right | 41
+| align=right | 695.916744342
+| align=center | <math>D_{3h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 29
+| align=right | 0
+| align=right | 0
+| align=right | 117
+| align=right | 78
+| align=right | 0
+| align=right | 31.528°
+|-
+| align=right | 42
+| align=right | 732.078107544
+| align=center | <math>D_{5h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 30
+| align=right | 0
+| align=right | 0
+| align=right | 120
+| align=right | 80
+| align=right | 0
+| align=right | 31.245°
+|-
+| align=right | 43
+| align=right | 769.190846459
+| align=center | <math>C_{2v}</math>
+| align=center | 0.000399668
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 31
+| align=right | 0
+| align=right | 0
+| align=right | 123
+| align=right | 82
+| align=right | 0
+| align=right | 30.867°
+|-
+| align=right | 44
+| align=right | 807.174263085
+| align=center | <math>O_h</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 20
+| align=right | 0
+| align=right | 0
+| align=right | 120
+| align=right | 72
+| align=right | 6
+| align=right | 31.258°
+|-
+| align=right | 45
+| align=right | 846.188401061
+| align=center | <math>D_3</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 33
+| align=right | 0
+| align=right | 0
+| align=right | 129
+| align=right | 86
+| align=right | 0
+| align=right | 30.207°
+|-
+| align=right | 46
+| align=right | 886.167113639
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 34
+| align=right | 0
+| align=right | 0
+| align=right | 132
+| align=right | 88
+| align=right | 0
+| align=right | 29.790°
+|-
+| align=right | 47
+| align=right | 927.059270680
+| align=center | <math>C_s</math>
+| align=center | 0.002482914
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 33
+| align=right | 0
+| align=right | 0
+| align=right | 134
+| align=right | 88
+| align=right | 1
+| align=right | 28.787°
+|-
+| align=right | 48
+| align=right | 968.713455344
+| align=center | <math>O</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 24
+| align=right | 0
+| align=right | 0
+| align=right | 132
+| align=right | 80
+| align=right | 6
+| align=right | 29.690°
+|-
+| align=right | 49
+| align=right | 1011.557182654
+| align=center | <math>C_3</math>
+| align=center | 0.001529341
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 37
+| align=right | 0
+| align=right | 0
+| align=right | 141
+| align=right | 94
+| align=right | 0
+| align=right | 28.387°
+|-
+| align=right | 50
+| align=right | 1055.182314726
+| align=center | <math>D_{6d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 38
+| align=right | 0
+| align=right | 0
+| align=right | 144
+| align=right | 96
+| align=right | 0
+| align=right | 29.231°
+|-
+| align=right | 51
+| align=right | 1099.819290319
+| align=center | <math>D_3</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 39
+| align=right | 0
+| align=right | 0
+| align=right | 147
+| align=right | 98
+| align=right | 0
+| align=right | 28.165°
+|-
+| align=right | 52
+| align=right | 1145.418964319
+| align=center | <math>C_3</math>
+| align=center | 0.000457327
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 40
+| align=right | 0
+| align=right | 0
+| align=right | 150
+| align=right | 100
+| align=right | 0
+| align=right | 27.670°
+|-
+| align=right | 53
+| align=right | 1191.922290416
+| align=center | <math>C_{2v}</math>
+| align=center | 0.000278469
+| align=right | 0
+| align=right | 0
+| align=right | 18
+| align=right | 35
+| align=right | 0
+| align=right | 0
+| align=right | 150
+| align=right | 96
+| align=right | 3
+| align=right | 27.137°
+|-
+| align=right | 54
+| align=right | 1239.361474729
+| align=center | <math>C_2</math>
+| align=center | 0.000137870
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 42
+| align=right | 0
+| align=right | 0
+| align=right | 156
+| align=right | 104
+| align=right | 0
+| align=right | 27.030°
+|-
+| align=right | 55
+| align=right | 1287.772720783
+| align=center | <math>C_2</math>
+| align=center | 0.000391696
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 43
+| align=right | 0
+| align=right | 0
+| align=right | 159
+| align=right | 106
+| align=right | 0
+| align=right | 26.615°
+|-
+| align=right | 56
+| align=right | 1337.094945276
+| align=center | <math>D_2</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 44
+| align=right | 0
+| align=right | 0
+| align=right | 162
+| align=right | 108
+| align=right | 0
+| align=right | 26.683°
+|-
+| align=right | 57
+| align=right | 1387.383229253
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 45
+| align=right | 0
+| align=right | 0
+| align=right | 165
+| align=right | 110
+| align=right | 0
+| align=right | 26.702°
+|-
+| align=right | 58
+| align=right | 1438.618250640
+| align=center | <math>D_2</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 46
+| align=right | 0
+| align=right | 0
+| align=right | 168
+| align=right | 112
+| align=right | 0
+| align=right | 26.155°
+|-
+| align=right | 59
+| align=right | 1490.773335279
+| align=center | <math>C_2</math>
+| align=center | 0.000154286
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 43
+| align=right | 2
+| align=right | 0
+| align=right | 171
+| align=right | 114
+| align=right | 0
+| align=right | 26.170°
+|-
+| align=right | 60
+| align=right | 1543.830400976
+| align=center | <math>D_3</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 48
+| align=right | 0
+| align=right | 0
+| align=right | 174
+| align=right | 116
+| align=right | 0
+| align=right | 25.958°
+|-
+| align=right | 61
+| align=right | 1597.941830199
+| align=center | <math>C_1</math>
+| align=center | 0.001091717
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 49
+| align=right | 0
+| align=right | 0
+| align=right | 177
+| align=right | 118
+| align=right | 0
+| align=right | 25.392°
+|-
+| align=right | 62
+| align=right | 1652.909409898
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 50
+| align=right | 0
+| align=right | 0
+| align=right | 180
+| align=right | 120
+| align=right | 0
+| align=right | 25.880°
+|-
+| align=right | 63
+| align=right | 1708.879681503
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 51
+| align=right | 0
+| align=right | 0
+| align=right | 183
+| align=right | 122
+| align=right | 0
+| align=right | 25.257°
+|-
+| align=right | 64
+| align=right | 1765.802577927
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 52
+| align=right | 0
+| align=right | 0
+| align=right | 186
+| align=right | 124
+| align=right | 0
+| align=right | 24.920°
+|-
+| align=right | 65
+| align=right | 1823.667960264
+| align=center | <math>C_{2}</math>
+| align=center | 0.000399515
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 53
+| align=right | 0
+| align=right | 0
+| align=right | 189
+| align=right | 126
+| align=right | 0
+| align=right | 24.527°
+|-
+| align=right | 66
+| align=right | 1882.441525304
+| align=center | <math>C_{2}</math>
+| align=center | 0.000776245
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 54
+| align=right | 0
+| align=right | 0
+| align=right | 192
+| align=right | 128
+| align=right | 0
+| align=right | 24.765°
+|-
+| align=right | 67
+| align=right | 1942.122700406
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 55
+| align=right | 0
+| align=right | 0
+| align=right | 195
+| align=right | 130
+| align=right | 0
+| align=right | 24.727°
+|-
+| align=right | 68
+| align=right | 2002.874701749
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 56
+| align=right | 0
+| align=right | 0
+| align=right | 198
+| align=right | 132
+| align=right | 0
+| align=right | 24.433°
+|-
+| align=right | 69
+| align=right | 2064.533483235
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 57
+| align=right | 0
+| align=right | 0
+| align=right | 201
+| align=right | 134
+| align=right | 0
+| align=right | 24.137°
+|-
+| align=right | 70
+| align=right | 2127.100901551
+| align=center | <math>D_{2d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 50
+| align=right | 0
+| align=right | 0
+| align=right | 200
+| align=right | 128
+| align=right | 4
+| align=right | 24.291°
+|-
+| align=right | 71
+| align=right | 2190.649906425
+| align=center | <math>C_{2}</math>
+| align=center | 0.001256769
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 55
+| align=right | 2
+| align=right | 0
+| align=right | 207
+| align=right | 138
+| align=right | 0
+| align=right | 23.803°
+|-
+| align=right | 72
+| align=right | 2255.001190975
+| align=center | <math>I</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 60
+| align=right | 0
+| align=right | 0
+| align=right | 210
+| align=right | 140
+| align=right | 0
+| align=right | 24.492°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>2,1</sub>
+|-
+| align=right | 73
+| align=right | 2320.633883745
+| align=center | <math>C_{2}</math>
+| align=center | 0.001572959
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 61
+| align=right | 0
+| align=right | 0
+| align=right | 213
+| align=right | 142
+| align=right | 0
+| align=right | 22.810°
+|-
+| align=right | 74
+| align=right | 2387.072981838
+| align=center | <math>C_{2}</math>
+| align=center | 0.000641539
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 62
+| align=right | 0
+| align=right | 0
+| align=right | 216
+| align=right | 144
+| align=right | 0
+| align=right | 22.966°
+|-
+| align=right | 75
+| align=right | 2454.369689040
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 63
+| align=right | 0
+| align=right | 0
+| align=right | 219
+| align=right | 146
+| align=right | 0
+| align=right | 22.736°
+|-
+| align=right | 76
+| align=right | 2522.674871841
+| align=center | <math>C_{2}</math>
+| align=center | 0.000943474
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 64
+| align=right | 0
+| align=right | 0
+| align=right | 222
+| align=right | 148
+| align=right | 0
+| align=right | 22.886°
+|-
+| align=right | 77
+| align=right | 2591.850152354
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 65
+| align=right | 0
+| align=right | 0
+| align=right | 225
+| align=right | 150
+| align=right | 0
+| align=right | 23.286°
+|-
+| align=right | 78
+| align=right | 2662.046474566
+| align=center | <math>T_{h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 66
+| align=right | 0
+| align=right | 0
+| align=right | 228
+| align=right | 152
+| align=right | 0
+| align=right | 23.426°
+|-
+| align=right | 79
+| align=right | 2733.248357479
+| align=center | <math>C_{1}</math>
+| align=center | 0.000702921
+| align=right | 0
+| align=right | 0
+| align=right | 13
+| align=right | 65
+| align=right | 1
+| align=right | 0
+| align=right | 230
+| align=right | 152
+| align=right | 1
+| align=right | 22.636°
+|-
+| align=right | 80
+| align=right | 2805.355875981
+| align=center | <math>D_{4d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 16
+| align=right | 64
+| align=right | 0
+| align=right | 0
+| align=right | 232
+| align=right | 152
+| align=right | 2
+| align=right | 22.778°
+|-
+| align=right | 81
+| align=right | 2878.522829664
+| align=center | <math>C_{2}</math>
+| align=center | 0.000194289
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 69
+| align=right | 0
+| align=right | 0
+| align=right | 237
+| align=right | 158
+| align=right | 0
+| align=right | 21.892°
+|-
+| align=right | 82
+| align=right | 2952.569675286
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 70
+| align=right | 0
+| align=right | 0
+| align=right | 240
+| align=right | 160
+| align=right | 0
+| align=right | 22.206°
+|-
+| align=right | 83
+| align=right | 3027.528488921
+| align=center | <math>C_{2}</math>
+| align=center | 0.000339815
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 67
+| align=right | 2
+| align=right | 0
+| align=right | 243
+| align=right | 162
+| align=right | 0
+| align=right | 21.646°
+|-
+| align=right | 84
+| align=right | 3103.465124431
+| align=center | <math>C_{2}</math>
+| align=center | 0.000401973
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 72
+| align=right | 0
+| align=right | 0
+| align=right | 246
+| align=right | 164
+| align=right | 0
+| align=right | 21.513°
+|-
+| align=right | 85
+| align=right | 3180.361442939
+| align=center | <math>C_{2}</math>
+| align=center | 0.000416581
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 73
+| align=right | 0
+| align=right | 0
+| align=right | 249
+| align=right | 166
+| align=right | 0
+| align=right | 21.498°
+|-
+| align=right | 86
+| align=right | 3258.211605713
+| align=center | <math>C_{2}</math>
+| align=center | 0.001378932
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 74
+| align=right | 0
+| align=right | 0
+| align=right | 252
+| align=right | 168
+| align=right | 0
+| align=right | 21.522°
+|-
+| align=right | 87
+| align=right | 3337.000750014
+| align=center | <math>C_{2}</math>
+| align=center | 0.000754863
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 75
+| align=right | 0
+| align=right | 0
+| align=right | 255
+| align=right | 170
+| align=right | 0
+| align=right | 21.456°
+|-
+| align=right | 88
+| align=right | 3416.720196758
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 76
+| align=right | 0
+| align=right | 0
+| align=right | 258
+| align=right | 172
+| align=right | 0
+| align=right | 21.486°
+|-
+| align=right | 89
+| align=right | 3497.439018625
+| align=center | <math>C_{2}</math>
+| align=center | 0.000070891
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 77
+| align=right | 0
+| align=right | 0
+| align=right | 261
+| align=right | 174
+| align=right | 0
+| align=right | 21.182°
+|-
+| align=right | 90
+| align=right | 3579.091222723
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 78
+| align=right | 0
+| align=right | 0
+| align=right | 264
+| align=right | 176
+| align=right | 0
+| align=right | 21.230°
+|-
+| align=right | 91
+| align=right | 3661.713699320
+| align=center | <math>C_{2}</math>
+| align=center | 0.000033221
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 79
+| align=right | 0
+| align=right | 0
+| align=right | 267
+| align=right | 178
+| align=right | 0
+| align=right | 21.105°
+|-
+| align=right | 92
+| align=right | 3745.291636241
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 80
+| align=right | 0
+| align=right | 0
+| align=right | 270
+| align=right | 180
+| align=right | 0
+| align=right | 21.026°
+|-
+| align=right | 93
+| align=right | 3829.844338421
+| align=center | <math>C_{2}</math>
+| align=center | 0.000213246
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 81
+| align=right | 0
+| align=right | 0
+| align=right | 273
+| align=right | 182
+| align=right | 0
+| align=right | 20.751°
+|-
+| align=right | 94
+| align=right | 3915.309269620
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 82
+| align=right | 0
+| align=right | 0
+| align=right | 276
+| align=right | 184
+| align=right | 0
+| align=right | 20.952°
+|-
+| align=right | 95
+| align=right | 4001.771675565
+| align=center | <math>C_{2}</math>
+| align=center | 0.000116638
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 83
+| align=right | 0
+| align=right | 0
+| align=right | 279
+| align=right | 186
+| align=right | 0
+| align=right | 20.711°
+|-
+| align=right | 96
+| align=right | 4089.154010060
+| align=center | <math>C_{2}</math>
+| align=center | 0.000036310
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 84
+| align=right | 0
+| align=right | 0
+| align=right | 282
+| align=right | 188
+| align=right | 0
+| align=right | 20.687°
+|-
+| align=right | 97
+| align=right | 4177.533599622
+| align=center | <math>C_{2}</math>
+| align=center | 0.000096437
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 85
+| align=right | 0
+| align=right | 0
+| align=right | 285
+| align=right | 190
+| align=right | 0
+| align=right | 20.450°
+|-
+| align=right | 98
+| align=right | 4266.822464156
+| align=center | <math>C_{2}</math>
+| align=center | 0.000112916
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 86
+| align=right | 0
+| align=right | 0
+| align=right | 288
+| align=right | 192
+| align=right | 0
+| align=right | 20.422°
+|-
+| align=right | 99
+| align=right | 4357.139163132
+| align=center | <math>C_{2}</math>
+| align=center | 0.000156508
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 87
+| align=right | 0
+| align=right | 0
+| align=right | 291
+| align=right | 194
+| align=right | 0
+| align=right | 20.284°
+|-
+| align=right | 100
+| align=right | 4448.350634331
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 88
+| align=right | 0
+| align=right | 0
+| align=right | 294
+| align=right | 196
+| align=right | 0
+| align=right | 20.297°
+|-
+| align=right | 101
+| align=right | 4540.590051694
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 89
+| align=right | 0
+| align=right | 0
+| align=right | 297
+| align=right | 198
+| align=right | 0
+| align=right | 20.011°
+|-
+| align=right | 102
+| align=right | 4633.736565899
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 90
+| align=right | 0
+| align=right | 0
+| align=right | 300
+| align=right | 200
+| align=right | 0
+| align=right | 20.040°
+|-
+| align=right | 103
+| align=right | 4727.836616833
+| align=center | <math>C_{2}</math>
+| align=center | 0.000201245
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 91
+| align=right | 0
+| align=right | 0
+| align=right | 303
+| align=right | 202
+| align=right | 0
+| align=right | 19.907°
+|-
+| align=right | 104
+| align=right | 4822.876522746
+| align=center | <math>D_{6}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 92
+| align=right | 0
+| align=right | 0
+| align=right | 306
+| align=right | 204
+| align=right | 0
+| align=right | 19.957°
+|-
+| align=right | 105
+| align=right | 4919.000637616
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 93
+| align=right | 0
+| align=right | 0
+| align=right | 309
+| align=right | 206
+| align=right | 0
+| align=right | 19.842°
+|-
+| align=right | 106
+| align=right | 5015.984595705
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 94
+| align=right | 0
+| align=right | 0
+| align=right | 312
+| align=right | 208
+| align=right | 0
+| align=right | 19.658°
+|-
+| align=right | 107
+| align=right | 5113.953547724
+| align=center | <math>C_{2}</math>
+| align=center | 0.000064137
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 95
+| align=right | 0
+| align=right | 0
+| align=right | 315
+| align=right | 210
+| align=right | 0
+| align=right | 19.327°
+|-
+| align=right | 108
+| align=right | 5212.813507831
+| align=center | <math>C_{2}</math>
+| align=center | 0.000432525
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 96
+| align=right | 0
+| align=right | 0
+| align=right | 318
+| align=right | 212
+| align=right | 0
+| align=right | 19.327°
+|-
+| align=right | 109
+| align=right | 5312.735079920
+| align=center | <math>C_{2}</math>
+| align=center | 0.000647299
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 93
+| align=right | 2
+| align=right | 0
+| align=right | 321
+| align=right | 214
+| align=right | 0
+| align=right | 19.103°
+|-
+| align=right | 110
+| align=right | 5413.549294192
+| align=center | <math>D_{6}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 98
+| align=right | 0
+| align=right | 0
+| align=right | 324
+| align=right | 216
+| align=right | 0
+| align=right | 19.476°
+|-
+| align=right | 111
+| align=right | 5515.293214587
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 99
+| align=right | 0
+| align=right | 0
+| align=right | 327
+| align=right | 218
+| align=right | 0
+| align=right | 19.255°
+|-
+| align=right | 112
+| align=right | 5618.044882327
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 100
+| align=right | 0
+| align=right | 0
+| align=right | 330
+| align=right | 220
+| align=right | 0
+| align=right | 19.351°
+|-
+| align=right | 113
+| align=right | 5721.824978027
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 101
+| align=right | 0
+| align=right | 0
+| align=right | 333
+| align=right | 222
+| align=right | 0
+| align=right | 18.978°
+|-
+| align=right | 114
+| align=right | 5826.521572163
+| align=center | <math>C_{2}</math>
+| align=center | 0.000149772
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 102
+| align=right | 0
+| align=right | 0
+| align=right | 336
+| align=right | 224
+| align=right | 0
+| align=right | 18.836°
+|-
+| align=right | 115
+| align=right | 5932.181285777
+| align=center | <math>C_{3}</math>
+| align=center | 0.000049972
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 103
+| align=right | 0
+| align=right | 0
+| align=right | 339
+| align=right | 226
+| align=right | 0
+| align=right | 18.458°
+|-
+| align=right | 116
+| align=right | 6038.815593579
+| align=center | <math>C_{2}</math>
+| align=center | 0.000259726
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 104
+| align=right | 0
+| align=right | 0
+| align=right | 342
+| align=right | 228
+| align=right | 0
+| align=right | 18.386°
+|-
+| align=right | 117
+| align=right | 6146.342446579
+| align=center | <math>C_{2}</math>
+| align=center | 0.000127609
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 105
+| align=right | 0
+| align=right | 0
+| align=right | 345
+| align=right | 230
+| align=right | 0
+| align=right | 18.566°
+|-
+| align=right | 118
+| align=right | 6254.877027790
+| align=center | <math>C_{2}</math>
+| align=center | 0.000332475
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 106
+| align=right | 0
+| align=right | 0
+| align=right | 348
+| align=right | 232
+| align=right | 0
+| align=right | 18.455°
+|-
+| align=right | 119
+| align=right | 6364.347317479
+| align=center | <math>C_{2}</math>
+| align=center | 0.000685590
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 107
+| align=right | 0
+| align=right | 0
+| align=right | 351
+| align=right | 234
+| align=right | 0
+| align=right | 18.336°
+|-
+| align=right | 120
+| align=right | 6474.756324980
+| align=center | <math>C_{s}</math>
+| align=center | 0.001373062
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 108
+| align=right | 0
+| align=right | 0
+| align=right | 354
+| align=right | 236
+| align=right | 0
+| align=right | 18.418°
+|-
+| align=right | 121
+| align=right | 6586.121949584
+| align=center | <math>C_{3}</math>
+| align=center | 0.000838863
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 109
+| align=right | 0
+| align=right | 0
+| align=right | 357
+| align=right | 238
+| align=right | 0
+| align=right | 18.199°
+|-
+| align=right | 122
+| align=right | 6698.374499261
+| align=center | <math>I_{h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 110
+| align=right | 0
+| align=right | 0
+| align=right | 360
+| align=right | 240
+| align=right | 0
+| align=right | 18.612°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>2,2</sub>
+|-
+| align=right | 123
+| align=right | 6811.827228174
+| align=center | <math>C_{2v}</math>
+| align=center | 0.001939754
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 107
+| align=right | 2
+| align=right | 0
+| align=right | 363
+| align=right | 242
+| align=right | 0
+| align=right | 17.840°
+|-
+| align=right | 124
+| align=right | 6926.169974193
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 112
+| align=right | 0
+| align=right | 0
+| align=right | 366
+| align=right | 244
+| align=right | 0
+| align=right | 18.111°
+|-
+| align=right | 125
+| align=right | 7041.473264023
+| align=center | <math>C_{2}</math>
+| align=center | 0.000088274
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 113
+| align=right | 0
+| align=right | 0
+| align=right | 369
+| align=right | 246
+| align=right | 0
+| align=right | 17.867°
+|-
+| align=right | 126
+| align=right | 7157.669224867
+| align=center | <math>D_{4}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 2
+| align=right | 16
+| align=right | 100
+| align=right | 8
+| align=right | 0
+| align=right | 372
+| align=right | 248
+| align=right | 0
+| align=right | 17.920°
+|-
+| align=right | 127
+| align=right | 7274.819504675
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 115
+| align=right | 0
+| align=right | 0
+| align=right | 375
+| align=right | 250
+| align=right | 0
+| align=right | 17.877°
+|-
+| align=right | 128
+| align=right | 7393.007443068
+| align=center | <math>C_{2}</math>
+| align=center | 0.000054132
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 116
+| align=right | 0
+| align=right | 0
+| align=right | 378
+| align=right | 252
+| align=right | 0
+| align=right | 17.814°
+|-
+| align=right | 129
+| align=right | 7512.107319268
+| align=center | <math>C_{2}</math>
+| align=center | 0.000030099
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 117
+| align=right | 0
+| align=right | 0
+| align=right | 381
+| align=right | 254
+| align=right | 0
+| align=right | 17.743°
+|-
+| align=right | 130
+| align=right | 7632.167378912
+| align=center | <math>C_{2}</math>
+| align=center | 0.000025622
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 118
+| align=right | 0
+| align=right | 0
+| align=right | 384
+| align=right | 256
+| align=right | 0
+| align=right | 17.683°
+|-
+| align=right | 131
+| align=right | 7753.205166941
+| align=center | <math>C_{2}</math>
+| align=center | 0.000305133
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 119
+| align=right | 0
+| align=right | 0
+| align=right | 387
+| align=right | 258
+| align=right | 0
+| align=right | 17.511°
+|-
+| align=right | 132
+| align=right | 7875.045342797
+| align=center | <math>I</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 120
+| align=right | 0
+| align=right | 0
+| align=right | 390
+| align=right | 260
+| align=right | 0
+| align=right | 17.958°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>3,1</sub>
+|-
+| align=right | 133
+| align=right | 7998.179212898
+| align=center | <math>C_{3}</math>
+| align=center | 0.000591438
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 121
+| align=right | 0
+| align=right | 0
+| align=right | 393
+| align=right | 262
+| align=right | 0
+| align=right | 17.133°
+|-
+| align=right | 134
+| align=right | 8122.089721194
+| align=center | <math>C_{2}</math>
+| align=center | 0.000470268
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 122
+| align=right | 0
+| align=right | 0
+| align=right | 396
+| align=right | 264
+| align=right | 0
+| align=right | 17.214°
+|-
+| align=right | 135
+| align=right | 8246.909486992
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 123
+| align=right | 0
+| align=right | 0
+| align=right | 399
+| align=right | 266
+| align=right | 0
+| align=right | 17.431°
+|-
+| align=right | 136
+| align=right | 8372.743302539
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 124
+| align=right | 0
+| align=right | 0
+| align=right | 402
+| align=right | 268
+| align=right | 0
+| align=right | 17.485°
+|-
+| align=right | 137
+| align=right | 8499.534494782
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 125
+| align=right | 0
+| align=right | 0
+| align=right | 405
+| align=right | 270
+| align=right | 0
+| align=right | 17.560°
+|-
+| align=right | 138
+| align=right | 8627.406389880
+| align=center | <math>C_{2}</math>
+| align=center | 0.000473576
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 126
+| align=right | 0
+| align=right | 0
+| align=right | 408
+| align=right | 272
+| align=right | 0
+| align=right | 16.924°
+|-
+| align=right | 139
+| align=right | 8756.227056057
+| align=center | <math>C_{2}</math>
+| align=center | 0.000404228
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 127
+| align=right | 0
+| align=right | 0
+| align=right | 411
+| align=right | 274
+| align=right | 0
+| align=right | 16.673°
+|-
+| align=right | 140
+| align=right | 8885.980609041
+| align=center | <math>C_{1}</math>
+| align=center | 0.000630351
+| align=right | 0
+| align=right | 0
+| align=right | 13
+| align=right | 126
+| align=right | 1
+| align=right | 0
+| align=right | 414
+| align=right | 276
+| align=right | 0
+| align=right | 16.773°
+|-
+| align=right | 141
+| align=right | 9016.615349190
+| align=center | <math>C_{2v}</math>
+| align=center | 0.000376365
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 126
+| align=right | 0
+| align=right | 1
+| align=right | 417
+| align=right | 278
+| align=right | 0
+| align=right | 16.962°
+|-
+| align=right | 142
+| align=right | 9148.271579993
+| align=center | <math>C_{2}</math>
+| align=center | 0.000550138
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 130
+| align=right | 0
+| align=right | 0
+| align=right | 420
+| align=right | 280
+| align=right | 0
+| align=right | 16.840°
+|-
+| align=right | 143
+| align=right | 9280.839851192
+| align=center | <math>C_{2}</math>
+| align=center | 0.000255449
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 131
+| align=right | 0
+| align=right | 0
+| align=right | 423
+| align=right | 282
+| align=right | 0
+| align=right | 16.782°
+|-
+| align=right | 144
+| align=right | 9414.371794460
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 132
+| align=right | 0
+| align=right | 0
+| align=right | 426
+| align=right | 284
+| align=right | 0
+| align=right | 16.953°
+|-
+| align=right | 145
+| align=right | 9548.928837232
+| align=center | <math>C_{s}</math>
+| align=center | 0.000094938
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 133
+| align=right | 0
+| align=right | 0
+| align=right | 429
+| align=right | 286
+| align=right | 0
+| align=right | 16.841°
+|-
+| align=right | 146
+| align=right | 9684.381825575
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 134
+| align=right | 0
+| align=right | 0
+| align=right | 432
+| align=right | 288
+| align=right | 0
+| align=right | 16.905°
+|-
+| align=right | 147
+| align=right | 9820.932378373
+| align=center | <math>C_{2}</math>
+| align=center | 0.000636651
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 135
+| align=right | 0
+| align=right | 0
+| align=right | 435
+| align=right | 290
+| align=right | 0
+| align=right | 16.458°
+|-
+| align=right | 148
+| align=right | 9958.406004270
+| align=center | <math>C_{2}</math>
+| align=center | 0.000203701
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 136
+| align=right | 0
+| align=right | 0
+| align=right | 438
+| align=right | 292
+| align=right | 0
+| align=right | 16.627°
+|-
+| align=right | 149
+| align=right | 10096.859907397
+| align=center | <math>C_{1}</math>
+| align=center | 0.000638186
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 133
+| align=right | 2
+| align=right | 0
+| align=right | 441
+| align=right | 294
+| align=right | 0
+| align=right | 16.344°
+|-
+| align=right | 150
+| align=right | 10236.196436701
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 138
+| align=right | 0
+| align=right | 0
+| align=right | 444
+| align=right | 296
+| align=right | 0
+| align=right | 16.405°
+|-
+| align=right | 151
+| align=right | 10376.571469275
+| align=center | <math>C_{2}</math>
+| align=center | 0.000153836
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 139
+| align=right | 0
+| align=right | 0
+| align=right | 447
+| align=right | 298
+| align=right | 0
+| align=right | 16.163°
+|-
+| align=right | 152
+| align=right | 10517.867592878
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 140
+| align=right | 0
+| align=right | 0
+| align=right | 450
+| align=right | 300
+| align=right | 0
+| align=right | 16.117°
+|-
+| align=right | 153
+| align=right | 10660.082748237
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 141
+| align=right | 0
+| align=right | 0
+| align=right | 453
+| align=right | 302
+| align=right | 0
+| align=right | 16.390°
+|-
+| align=right | 154
+| align=right | 10803.372421141
+| align=center | <math>C_{2}</math>
+| align=center | 0.000735800
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 142
+| align=right | 0
+| align=right | 0
+| align=right | 456
+| align=right | 304
+| align=right | 0
+| align=right | 16.078°
+|-
+| align=right | 155
+| align=right | 10947.574692279
+| align=center | <math>C_{2}</math>
+| align=center | 0.000603670
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 143
+| align=right | 0
+| align=right | 0
+| align=right | 459
+| align=right | 306
+| align=right | 0
+| align=right | 15.990°
+|-
+| align=right | 156
+| align=right | 11092.798311456
+| align=center | <math>C_{2}</math>
+| align=center | 0.000508534
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 144
+| align=right | 0
+| align=right | 0
+| align=right | 462
+| align=right | 308
+| align=right | 0
+| align=right | 15.822°
+|-
+| align=right | 157
+| align=right | 11238.903041156
+| align=center | <math>C_{2}</math>
+| align=center | 0.000357679
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 145
+| align=right | 0
+| align=right | 0
+| align=right | 465
+| align=right | 310
+| align=right | 0
+| align=right | 15.948°
+|-
+| align=right | 158
+| align=right | 11385.990186197
+| align=center | <math>C_{2}</math>
+| align=center | 0.000921918
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 146
+| align=right | 0
+| align=right | 0
+| align=right | 468
+| align=right | 312
+| align=right | 0
+| align=right | 15.987°
+|-
+| align=right | 159
+| align=right | 11534.023960956
+| align=center | <math>C_{2}</math>
+| align=center | 0.000381457
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 147
+| align=right | 0
+| align=right | 0
+| align=right | 471
+| align=right | 314
+| align=right | 0
+| align=right | 15.960°
+|-
+| align=right | 160
+| align=right | 11683.054805549
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 148
+| align=right | 0
+| align=right | 0
+| align=right | 474
+| align=right | 316
+| align=right | 0
+| align=right | 15.961°
+|-
+| align=right | 161
+| align=right | 11833.084739465
+| align=center | <math>C_{2}</math>
+| align=center | 0.000056447
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 149
+| align=right | 0
+| align=right | 0
+| align=right | 477
+| align=right | 318
+| align=right | 0
+| align=right | 15.810°
+|-
+| align=right | 162
+| align=right | 11984.050335814
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 150
+| align=right | 0
+| align=right | 0
+| align=right | 480
+| align=right | 320
+| align=right | 0
+| align=right | 15.813°
+|-
+| align=right | 163
+| align=right | 12136.013053220
+| align=center | <math>C_{2}</math>
+| align=center | 0.000120798
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 151
+| align=right | 0
+| align=right | 0
+| align=right | 483
+| align=right | 322
+| align=right | 0
+| align=right | 15.675°
+|-
+| align=right | 164
+| align=right | 12288.930105320
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 152
+| align=right | 0
+| align=right | 0
+| align=right | 486
+| align=right | 324
+| align=right | 0
+| align=right | 15.655°
+|-
+| align=right | 165
+| align=right | 12442.804451373
+| align=center | <math>C_{2}</math>
+| align=center | 0.000091119
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 153
+| align=right | 0
+| align=right | 0
+| align=right | 489
+| align=right | 326
+| align=right | 0
+| align=right | 15.651°
+|-
+| align=right | 166
+| align=right | 12597.649071323
+| align=center | <math>D_{2d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 16
+| align=right | 146
+| align=right | 4
+| align=right | 0
+| align=right | 492
+| align=right | 328
+| align=right | 0
+| align=right | 15.607°
+|-
+| align=right | 167
+| align=right | 12753.469429750
+| align=center | <math>C_{2}</math>
+| align=center | 0.000097382
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 155
+| align=right | 0
+| align=right | 0
+| align=right | 495
+| align=right | 330
+| align=right | 0
+| align=right | 15.600°
+|-
+| align=right | 168
+| align=right | 12910.212672268
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 156
+| align=right | 0
+| align=right | 0
+| align=right | 498
+| align=right | 332
+| align=right | 0
+| align=right | 15.655°
+|-
+| align=right | 169
+| align=right | 13068.006451127
+| align=center | <math>C_{s}</math>
+| align=center | 0.000068102
+| align=right | 0
+| align=right | 0
+| align=right | 13
+| align=right | 155
+| align=right | 1
+| align=right | 0
+| align=right | 501
+| align=right | 334
+| align=right | 0
+| align=right | 15.537°
+|-
+| align=right | 170
+| align=right | 13226.681078541
+| align=center | <math>D_{2d}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 158
+| align=right | 0
+| align=right | 0
+| align=right | 504
+| align=right | 336
+| align=right | 0
+| align=right | 15.569°
+|-
+| align=right | 171
+| align=right | 13386.355930717
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 159
+| align=right | 0
+| align=right | 0
+| align=right | 507
+| align=right | 338
+| align=right | 0
+| align=right | 15.497°
+|-
+| align=right | 172
+| align=right | 13547.018108787
+| align=center | <math>C_{2v}</math>
+| align=center | 0.000547291
+| align=right | 0
+| align=right | 0
+| align=right | 14
+| align=right | 156
+| align=right | 2
+| align=right | 0
+| align=right | 510
+| align=right | 340
+| align=right | 0
+| align=right | 15.292°
+|-
+| align=right | 173
+| align=right | 13708.635243034
+| align=center | <math>C_{s}</math>
+| align=center | 0.000286544
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 161
+| align=right | 0
+| align=right | 0
+| align=right | 513
+| align=right | 342
+| align=right | 0
+| align=right | 15.225°
+|-
+| align=right | 174
+| align=right | 13871.187092292
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 162
+| align=right | 0
+| align=right | 0
+| align=right | 516
+| align=right | 344
+| align=right | 0
+| align=right | 15.366°
+|-
+| align=right | 175
+| align=right | 14034.781306929
+| align=center | <math>C_{2}</math>
+| align=center | 0.000026686
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 163
+| align=right | 0
+| align=right | 0
+| align=right | 519
+| align=right | 346
+| align=right | 0
+| align=right | 15.252°
+|-
+| align=right | 176
+| align=right | 14199.354775632
+| align=center | <math>C_{1}</math>
+| align=center | 0.000283978
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 164
+| align=right | 0
+| align=right | 0
+| align=right | 522
+| align=right | 348
+| align=right | 0
+| align=right | 15.101°
+|-
+| align=right | 177
+| align=right | 14364.837545298
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 165
+| align=right | 0
+| align=right | 0
+| align=right | 525
+| align=right | 350
+| align=right | 0
+| align=right | 15.269°
+|-
+| align=right | 178
+| align=right | 14531.309552587
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 166
+| align=right | 0
+| align=right | 0
+| align=right | 528
+| align=right | 352
+| align=right | 0
+| align=right | 15.145°
+|-
+| align=right | 179
+| align=right | 14698.754594220
+| align=center | <math>C_{1}</math>
+| align=center | 0.000125113
+| align=right | 0
+| align=right | 0
+| align=right | 13
+| align=right | 165
+| align=right | 1
+| align=right | 0
+| align=right | 531
+| align=right | 354
+| align=right | 0
+| align=right | 14.968°
+|-
+| align=right | 180
+| align=right | 14867.099927525
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 168
+| align=right | 0
+| align=right | 0
+| align=right | 534
+| align=right | 356
+| align=right | 0
+| align=right | 15.067°
+|-
+| align=right | 181
+| align=right | 15036.467239769
+| align=center | <math>C_{2}</math>
+| align=center | 0.000304193
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 169
+| align=right | 0
+| align=right | 0
+| align=right | 537
+| align=right | 358
+| align=right | 0
+| align=right | 15.002°
+|-
+| align=right | 182
+| align=right | 15206.730610906
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 170
+| align=right | 0
+| align=right | 0
+| align=right | 540
+| align=right | 360
+| align=right | 0
+| align=right | 15.155°
+|-
+| align=right | 183
+| align=right | 15378.166571028
+| align=center | <math>C_{1}</math>
+| align=center | 0.000467899
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 171
+| align=right | 0
+| align=right | 0
+| align=right | 543
+| align=right | 362
+| align=right | 0
+| align=right | 14.747°
+|-
+| align=right | 184
+| align=right | 15550.421450311
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 172
+| align=right | 0
+| align=right | 0
+| align=right | 546
+| align=right | 364
+| align=right | 0
+| align=right | 14.932°
+|-
+| align=right | 185
+| align=right | 15723.720074072
+| align=center | <math>C_{2}</math>
+| align=center | 0.000389762
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 173
+| align=right | 0
+| align=right | 0
+| align=right | 549
+| align=right | 366
+| align=right | 0
+| align=right | 14.775°
+|-
+| align=right | 186
+| align=right | 15897.897437048
+| align=center | <math>C_{1}</math>
+| align=center | 0.000389762
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 174
+| align=right | 0
+| align=right | 0
+| align=right | 552
+| align=right | 368
+| align=right | 0
+| align=right | 14.739°
+|-
+| align=right | 187
+| align=right | 16072.975186320
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 175
+| align=right | 0
+| align=right | 0
+| align=right | 555
+| align=right | 370
+| align=right | 0
+| align=right | 14.848°
+|-
+| align=right | 188
+| align=right | 16249.222678879
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 176
+| align=right | 0
+| align=right | 0
+| align=right | 558
+| align=right | 372
+| align=right | 0
+| align=right | 14.740°
+|-
+| align=right | 189
+| align=right | 16426.371938862
+| align=center | <math>C_{2}</math>
+| align=center | 0.000020732
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 177
+| align=right | 0
+| align=right | 0
+| align=right | 561
+| align=right | 374
+| align=right | 0
+| align=right | 14.671°
+|-
+| align=right | 190
+| align=right | 16604.428338501
+| align=center | <math>C_{3}</math>
+| align=center | 0.000586804
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 178
+| align=right | 0
+| align=right | 0
+| align=right | 564
+| align=right | 376
+| align=right | 0
+| align=right | 14.501°
+|-
+| align=right | 191
+| align=right | 16783.452219362
+| align=center | <math>C_{1}</math>
+| align=center | 0.001129202
+| align=right | 0
+| align=right | 0
+| align=right | 13
+| align=right | 177
+| align=right | 1
+| align=right | 0
+| align=right | 567
+| align=right | 378
+| align=right | 0
+| align=right | 14.195°
+|-
+| align=right | 192
+| align=right | 16963.338386460
+| align=center | <math>I</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 180
+| align=right | 0
+| align=right | 0
+| align=right | 570
+| align=right | 380
+| align=right | 0
+| align=right | 14.819°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>3,2</sub>
+|-
+| align=right | 193
+| align=right | 17144.564740880
+| align=center | <math>C_{2}</math>
+| align=center | 0.000985192
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 181
+| align=right | 0
+| align=right | 0
+| align=right | 573
+| align=right | 382
+| align=right | 0
+| align=right | 14.144°
+|-
+| align=right | 194
+| align=right | 17326.616136471
+| align=center | <math>C_{1}</math>
+| align=center | 0.000322358
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 182
+| align=right | 0
+| align=right | 0
+| align=right | 576
+| align=right | 384
+| align=right | 0
+| align=right | 14.350°
+|-
+| align=right | 195
+| align=right | 17509.489303930
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 183
+| align=right | 0
+| align=right | 0
+| align=right | 579
+| align=right | 386
+| align=right | 0
+| align=right | 14.375°
+|-
+| align=right | 196
+| align=right | 17693.460548082
+| align=center | <math>C_{2}</math>
+| align=center | 0.000315907
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 184
+| align=right | 0
+| align=right | 0
+| align=right | 582
+| align=right | 388
+| align=right | 0
+| align=right | 14.251°
+|-
+| align=right | 197
+| align=right | 17878.340162571
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 185
+| align=right | 0
+| align=right | 0
+| align=right | 585
+| align=right | 390
+| align=right | 0
+| align=right | 14.147°
+|-
+| align=right | 198
+| align=right | 18064.262177195
+| align=center | <math>C_{2}</math>
+| align=center | 0.000011149
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 186
+| align=right | 0
+| align=right | 0
+| align=right | 588
+| align=right | 392
+| align=right | 0
+| align=right | 14.237°
+|-
+| align=right | 199
+| align=right | 18251.082495640
+| align=center | <math>C_{1}</math>
+| align=center | 0.000534779
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 187
+| align=right | 0
+| align=right | 0
+| align=right | 591
+| align=right | 394
+| align=right | 0
+| align=right | 14.153°
+|-
+| align=right | 200
+| align=right | 18438.842717530
+| align=center | <math>D_{2}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 188
+| align=right | 0
+| align=right | 0
+| align=right | 594
+| align=right | 396
+| align=right | 0
+| align=right | 14.222°
+|-
+| align=right | 201
+| align=right | 18627.591226244
+| align=center | <math>C_{1}</math>
+| align=center | 0.001048859
+| align=right | 0
+| align=right | 0
+| align=right | 13
+| align=right | 187
+| align=right | 1
+| align=right | 0
+| align=right | 597
+| align=right | 398
+| align=right | 0
+| align=right | 13.830°
+|-
+| align=right | 202
+| align=right | 18817.204718262
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 190
+| align=right | 0
+| align=right | 0
+| align=right | 600
+| align=right | 400
+| align=right | 0
+| align=right | 14.189°
+|-
+| align=right | 203
+| align=right | 19007.981204580
+| align=center | <math>C_{s}</math>
+| align=center | 0.000600343
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 191
+| align=right | 0
+| align=right | 0
+| align=right | 603
+| align=right | 402
+| align=right | 0
+| align=right | 13.977°
+|-
+| align=right | 204
+| align=right | 19199.540775603
+| align=center | <math>T_{h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 192
+| align=right | 0
+| align=right | 0
+| align=right | 606
+| align=right | 404
+| align=right | 0
+| align=right | 14.291°
+|-
+| align=right | 212
+| align=right | 20768.053085964
+| align=center | <math>I</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 200
+| align=right | 0
+| align=right | 0
+| align=right | 630
+| align=right | 420
+| align=right | 0
+| align=right | 14.118°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>4,1</sub>
+|-
+| align=right | 214
+| align=right | 21169.910410375
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 202
+| align=right | 0
+| align=right | 0
+| align=right | 636
+| align=right | 424
+| align=right | 0
+| align=right | 13.771°
+|-
+| align=right | 216
+| align=right | 21575.596377869
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 204
+| align=right | 0
+| align=right | 0
+| align=right | 642
+| align=right | 428
+| align=right | 0
+| align=right | 13.735°
+|-
+| align=right | 217
+| align=right | 21779.856080418
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 205
+| align=right | 0
+| align=right | 0
+| align=right | 645
+| align=right | 430
+| align=right | 0
+| align=right | 13.902°
+|-
+| align=right | 232
+| align=right | 24961.252318934
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 220
+| align=right | 0
+| align=right | 0
+| align=right | 690
+| align=right | 460
+| align=right | 0
+| align=right | 13.260°
+|-
+| align=right | 255
+| align=right | 30264.424251281
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 243
+| align=right | 0
+| align=right | 0
+| align=right | 759
+| align=right | 506
+| align=right | 0
+| align=right | 12.565°
+|-
+| align=right | 256
+| align=right | 30506.687515847
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 244
+| align=right | 0
+| align=right | 0
+| align=right | 762
+| align=right | 508
+| align=right | 0
+| align=right | 12.572°
+|-
+| align=right | 257
+| align=right | 30749.941417346
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 245
+| align=right | 0
+| align=right | 0
+| align=right | 765
+| align=right | 510
+| align=right | 0
+| align=right | 12.672°
+|-
+| align=right | 272
+| align=right | 34515.193292681
+| align=center | <math>I_{h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 260
+| align=right | 0
+| align=right | 0
+| align=right | 810
+| align=right | 540
+| align=right | 0
+| align=right | 12.335°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>3,3</sub>
+|-
+| align=right | 282
+| align=right | 37147.294418462
+| align=center | <math>I</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 270
+| align=right | 0
+| align=right | 0
+| align=right | 840
+| align=right | 560
+| align=right | 0
+| align=right | 12.166°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>4,2</sub>
+|-
+| align=right | 292
+| align=right | 39877.008012909
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 280
+| align=right | 0
+| align=right | 0
+| align=right | 870
+| align=right | 580
+| align=right | 0
+| align=right | 11.857°
+|-
+| align=right | 306
+| align=right | 43862.569780797
+| align=center | <math>T_{h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 294
+| align=right | 0
+| align=right | 0
+| align=right | 912
+| align=right | 608
+| align=right | 0
+| align=right | 11.628°
+|-
+| align=right | 312
+| align=right | 45629.313804002
+| align=center | <math>C_{2}</math>
+| align=center | 0.000306163
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 300
+| align=right | 0
+| align=right | 0
+| align=right | 930
+| align=right | 620
+| align=right | 0
+| align=right | 11.299°
+|-
+| align=right | 315
+| align=right | 46525.825643432
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 303
+| align=right | 0
+| align=right | 0
+| align=right | 939
+| align=right | 626
+| align=right | 0
+| align=right | 11.337°
+|-
+| align=right | 317
+| align=right | 47128.310344520
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 305
+| align=right | 0
+| align=right | 0
+| align=right | 945
+| align=right | 630
+| align=right | 0
+| align=right | 11.423°
+|-
+| align=right | 318
+| align=right | 47431.056020043
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 306
+| align=right | 0
+| align=right | 0
+| align=right | 948
+| align=right | 632
+| align=right | 0
+| align=right | 11.219°
+|-
+| align=right | 334
+| align=right | 52407.728127822
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 322
+| align=right | 0
+| align=right | 0
+| align=right | 996
+| align=right | 664
+| align=right | 0
+| align=right | 11.058°
+|-
+| align=right | 348
+| align=right | 56967.472454334
+| align=center | <math>T_{h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 336
+| align=right | 0
+| align=right | 0
+| align=right | 1038
+| align=right | 692
+| align=right | 0
+| align=right | 10.721°
+|-
+| align=right | 357
+| align=right | 59999.922939598
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 345
+| align=right | 0
+| align=right | 0
+| align=right | 1065
+| align=right | 710
+| align=right | 0
+| align=right | 10.728°
+|-
+| align=right | 358
+| align=right | 60341.830924588
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 346
+| align=right | 0
+| align=right | 0
+| align=right | 1068
+| align=right | 712
+| align=right | 0
+| align=right | 10.647°
+|-
+| align=right | 372
+| align=right | 65230.027122557
+| align=center | <math>I</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 360
+| align=right | 0
+| align=right | 0
+| align=right | 1110
+| align=right | 740
+| align=right | 0
+| align=right | 10.531°
+| [[List of geodesic polyhedra and Goldberg polyhedra|geodesic sphere]] {3,5+}<sub>4,3</sub>
+|-
+| align=right | 382
+| align=right | 68839.426839215
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 370
+| align=right | 0
+| align=right | 0
+| align=right | 1140
+| align=right | 760
+| align=right | 0
+| align=right | 10.379°
+|-
+| align=right | 390
+| align=right | 71797.035335953
+| align=center | <math>T_{h}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 378
+| align=right | 0
+| align=right | 0
+| align=right | 1164
+| align=right | 776
+| align=right | 0
+| align=right | 10.222°
+|-
+| align=right | 392
+| align=right | 72546.258370889
+| align=center | <math>C_{1}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 380
+| align=right | 0
+| align=right | 0
+| align=right | 1170
+| align=right | 780
+| align=right | 0
+| align=right | 10.278°
+|-
+| align=right | 400
+| align=right | 75582.448512213
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 388
+| align=right | 0
+| align=right | 0
+| align=right | 1194
+| align=right | 796
+| align=right | 0
+| align=right | 10.068°
+|-
+| align=right | 402
+| align=right | 76351.192432673
+| align=center | <math>D_{5}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 12
+| align=right | 390
+| align=right | 0
+| align=right | 0
+| align=right | 1200
+| align=right | 800
+| align=right | 0
+| align=right | 10.099°
+|-
+| align=right | 432
+| align=right | 88353.709681956
+| align=center | <math>D_{3}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 396
+| align=right | 12
+| align=right | 0
+| align=right | 1290
+| align=right | 860
+| align=right | 0
+| align=right | 9.556°
+|-
+| align=right | 448
+| align=right | 95115.546986209
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 412
+| align=right | 12
+| align=right | 0
+| align=right | 1338
+| align=right | 892
+| align=right | 0
+| align=right | 9.322°
+|-
+| align=right | 460
+| align=right | 100351.763108673
+| align=center | <math>T</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 424
+| align=right | 12
+| align=right | 0
+| align=right | 1374
+| align=right | 916
+| align=right | 0
+| align=right | 9.297°
+|-
+| align=right | 468
+| align=right | 103920.871715127
+| align=center | <math>S_{6}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 432
+| align=right | 12
+| align=right | 0
+| align=right | 1398
+| align=right | 932
+| align=right | 0
+| align=right | 9.120°
+|-
+| align=right | 470
+| align=right | 104822.886324279
+| align=center | <math>S_{6}</math>
+| align=center | 0
+| align=right | 0
+| align=right | 0
+| align=right | 24
+| align=right | 434
+| align=right | 12
+| align=right | 0
+| align=right | 1404
+| align=right | 936
+| align=right | 0
+| align=right | 9.059°
+|}
+
+According to a conjecture, if <math>P</math> is the polyhedron formed by the convex hull of the solution configuration to the Thomson Problem for <math>m</math> electrons and <math>q</math> is the number of quadrilateral faces of <math>P</math>, then <math>P</math> has <math>f(m) = \delta_{0,m-2} + 3(m-2) - q</math> edges.<ref name="geom_sol">{{Cite web|url=https://oeis.org/A008486|title=Sloane's A008486 (see the comment from Feb 03 2017)|last=|first=|date=|website=The On-Line Encyclopedia of Integer Sequences|publisher=OEIS Foundation|access-date=2017-02-08}}</ref>{{clarify|date=October 2021}}
+
+== See also ==
+
+* [[Molecular geometry]]
+* [[Tammes problem]] – Arrangement of points on the surface of a sphere so as to maximize the minimum distance between them
+
+== References ==
+
+<references/>
+
+==Notes==
+* {{cite journal|first1=L.L. |last1=Whyte|title=Unique arrangements of points on a sphere | journal = Amer. Math. Monthly |year=1952 |volume=59 | number=9 | pages=606–611|doi=10.2307/2306764|jstor=2306764}}
+* {{cite journal|first1=Harvey |last1=Cohn|year=1956|title= Stability configurations of electrons on a sphere|journal=Math. Comput. |volume=10|issue=55| pages=117–120 | doi=10.1090/S0025-5718-1956-0081133-0 |doi-access=free}}
+* {{cite journal|first1=Michael | last1=Goldberg | title=Stability configurations of electrons on a sphere|journal=Math. Comp. | year=1969 | volume=23 | issue=108 | pages=785–786 | doi=10.1090/S0025-5718-69-99642-2 | doi-access=free }}
+* {{cite journal|first1=T. |last1=Erber|first2=G. M. |last2=Hockney | title= equilibrium configurations of N equal charges on a sphere|year=1991|journal=J. Phys. A: Math. Gen. |volume=24 | pages=L1369|doi=10.1088/0305-4470/24/23/008|number=23|bibcode=1991JPhA...24L1369E|s2cid=122561279 }}
+* {{cite journal|first1=J. R. |last1=Morris|first2=D. M. |last2=Deaven|first3=K. M. | last3=Ho|title=Genetic-algorithm energy minimization for point charges on a sphere | journal = Phys. Rev. B |volume=53 |issue=4| year=1996|pages=R1740–R1743 |doi=10.1103/PhysRevB.53.R1740|pmid=9983695|bibcode=1996PhRvB..53.1740M}}
+* {{cite book|first1=T.|last1= Erber |first2= G. M.|last2= Hockney|chapter=Complex Systems: Equilibrium Configurations of <math>N</math> Equal Charges on a Sphere <math>(2\leq N\leq 112)</math>|title= Advances in Chemical Physics|volume= 98|pages=495–594|year= 1997 |doi=10.1002/9780470141571.ch5|isbn= 978-0-470-14157-1 }}.
+* {{cite journal|first1=E. L. |last1=Altschuler | first2=T. J. |last2=Williams|first3=E. R. |last3=Ratner |first4=R. |last4=Tipton |first5=R. |last5=Stong |first6=F. |last6=Dowla | first7=F. | last7=Wooten|title=Possible global minimum lattice configurations for Thomson's problem of charges on a sphere|year=1997|journal = Phys. Rev. Lett. |volume=78 |issue=14 | pages=2681–2685 |doi=10.1103/PhysRevLett.78.2681|bibcode=1997PhRvL..78.2681A|url=https://www.mcs.anl.gov/~zippy/publications/thomson/thomsonPRL.html |url-access=subscription }}
+* {{cite journal|first1=M. |last1=Bowick|first2=A. | last2=Cacciuto|first3=D. R. | last3=Nelson|first4=A. | last4=Travesset |title=Crystalline order on a sphere and the generalized Thomson Problem|journal=Phys. Rev. Lett. | volume= 89 |year=2002 |page=249902 | doi=10.1103/PhysRevLett.89.185502|pmid=12398614| issue=18|arxiv=cond-mat/0206144|bibcode=2002PhRvL..89r5502B|s2cid=20362989}}
+* {{cite journal|first1=P. D.|last1= Dragnev|first2= D. A.|last2= Legg|first3= D. W. |last3= Townsend |title=Discrete logarithmic energy on the sphere|journal=Pacific J. Math. |volume=207 |year=2002|number=2|pages= 345–358|doi=10.2140/pjm.2002.207.345|doi-access=free}}.
+* {{cite journal|first1=A. | last1=Katanforoush |first2=M. |last2=Shahshahani | title=Distributing points on the sphere. I|year=2003 | journal=Exper. Math. |volume=12|number=2| pages=199–209 |doi=10.1080/10586458.2003.10504492| s2cid=7306812 | url=http://projecteuclid.org/euclid.em/1067634731 }}
+* {{cite journal|first1=David J. | last1=Wales |first2=Sidika|last2=Ulker| title=Structure and dynamics of spherical crystals characterized for the Thomson problem | journal=Phys. Rev. B | volume=74 | year=2006|number=21|article-number=212101 |doi=10.1103/PhysRevB.74.212101|bibcode=2006PhRvB..74u2101W| s2cid=119932997 }} Configurations reprinted in {{cite web | first1=D. J. | last1=Wales | first2=S. | last2=Ulker | url=http://www-wales.ch.cam.ac.uk/~wales/CCD/Thomson/table.html|title=The Cambridge cluster database}}
+* {{cite journal|first1=A. |last1=Slosar|first2=R. | last2=Podgornik|title= On the connected-charges Thomson problem|journal=Europhys. Lett.|year=2006|volume=75|number=4|page=631|doi=10.1209/epl/i2006-10146-1|arxiv=cond-mat/0606765|bibcode=2006EL.....75..631S|s2cid=119005054}}
+* {{cite journal|first1=Henry |last1= Cohn |first2= Abhinav|last2= Kumar |title=Universally optimal distribution of points on spheres|journal=J. Amer. Math. Soc. |volume= 20 |year=2007|number= 1|pages=99–148 |doi=10.1090/S0894-0347-06-00546-7|arxiv=math/0607446|bibcode=2007JAMS...20...99C|s2cid= 26614691 }}
+* {{cite journal|first1=D. J. | last1=Wales|first2=H. | last2=McKay | first3=E. L. | last3=Altschuler| title=Defect motifs for spherical topologies| journal=Phys. Rev. B|year=2009 | volume=79 | article-number=224115 | issue=22 | doi=10.1103/PhysRevB.79.224115| bibcode=2009PhRvB..79v4115W}}. Configurations reproduced in {{cite web|first1=D. J. | last1=Wales | first2=S. | last2=Ulker | url=http://www-wales.ch.cam.ac.uk/~wales/CCD/Thomson2/table.html|title=The Cambridge cluster database}}
+* {{cite journal|first1=W. J. M. |last1=Ridgway |first2=A. F. | last2=Cheviakov|doi=10.1016/j.cpc.2018.03.029| year=2018|journal=Comput. Phys. Commun. | title=An iterative procedure for finding locally and globally optimal arrangements of particles on the unit sphere|volume=233|pages=84–109|bibcode=2018CoPhC.233...84R |s2cid=52097788 }}
+* {{cite web|first1= Cris|last1= Cecka|first2= Mark J.|last2= Bowick|first3= Alan A.|last3= Middleton|url= http://thomson.phy.syr.edu/|title= Thomson Problem @ S.U.|access-date= 2009-11-24|archive-date= 2018-04-09|archive-url= https://web.archive.org/web/20180409064239/http://thomson.phy.syr.edu/}}
+* This webpage contains many more electron configurations with the lowest known energy: https://www.hars.us.
+
+{{DEFAULTSORT:Thomson Problem}}
+[[Category:Electrostatics]]
+[[Category:Electron]]
+[[Category:Circle packing]]
+[[Category:Unsolved problems in mathematics]]

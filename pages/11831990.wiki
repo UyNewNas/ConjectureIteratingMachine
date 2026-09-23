@@ -1,0 +1,84 @@
+{{Short description|Mathematical theorem}}
+{{for|the quantum physics theorem|Bloch's theorem}}
+In [[complex analysis]], a branch of [[mathematics]], '''Bloch's theorem''' describes the behaviour of [[holomorphic function]]s defined on the [[unit disk]]. It gives a lower bound on the size of a disk in which an inverse to a holomorphic function exists. It is named after [[André Bloch (mathematician)|André Bloch]].
+
+==Statement==
+Let ''f'' be a holomorphic function in the unit disk |''z''|&nbsp;≤&nbsp;1 for which
+:<math>|f'(0)|=1</math>
+
+Bloch's theorem states that there is a disk S ⊂ D on which f is [[Biholomorphism|biholomorphic]] and f(S) contains a disk with radius 1/72.
+
+==Landau's theorem==
+If ''f'' is a holomorphic function in the unit disk with the property |''f′''(0)| = 1, then let ''L<sub>f</sub>'' be the radius of the largest disk contained in the image of ''f''.
+
+Landau's theorem states that there is a constant ''L'' defined as the infimum of ''L<sub>f</sub>'' over all such functions ''f'', and that ''L'' is greater than Bloch's constant ''L'' ≥ ''B''.
+
+This theorem is named after [[Edmund Landau]].
+
+==Valiron's theorem==
+Bloch's theorem was inspired by the following theorem of [[Georges Valiron]]:
+
+'''Theorem.''' If ''f'' is a non-constant entire function then there exist disks ''D'' of arbitrarily large radius and analytic functions φ in ''D'' such that ''f''(φ(''z''))&nbsp;=&nbsp;''z'' for ''z'' in ''D''.
+
+Bloch's theorem corresponds to Valiron's theorem via the [[Bloch's principle]].
+
+==Proof==
+
+===Landau's theorem===
+We first prove the case when ''f''(0) = 0, ''f′''(0) = 1, and |''f′''(''z'')| ≤ 2 in the unit disk. 
+
+By [[Cauchy's integral formula]], we have a bound
+:::<math>|f''(z)|=\left|\frac{1}{2\pi i}\oint_\gamma\frac{f'(w)}{(w-z)^2}\,\mathrm{d}w\right|\le\frac{1}{2\pi}\cdot2\pi r\sup_{w=\gamma(t)}\frac{|f'(w)|}{|w-z|^2}\le\frac{2}{r},</math>
+where γ is the counterclockwise circle of radius ''r'' around ''z'', and 0 &lt; ''r'' &lt; 1 − |''z''|.
+
+By [[Taylor's theorem]], for each ''z'' in the unit disk, there exists 0 ≤ ''t'' ≤ 1 such that ''f''(''z'') = ''z'' + ''z''<sup>2</sup>''f″''(''tz'') / 2. 
+
+Thus, if |''z''| = 1/3 and |''w''| &lt; 1/6, we have
+:::<math>|(f(z)-w)-(z-w)|=\frac12|z|^2|f''(tz)|\le\frac{|z|^2}{1-t|z|}\le\frac{|z|^2}{1-|z|}=\frac16<|z|-|w|\le|z-w|.</math>
+By [[Rouché's theorem]], the range of ''f'' contains the disk of radius 1/6 around 0.
+
+Let ''D''(''z''<sub>0</sub>, ''r'') denote the open disk of radius ''r'' around ''z''<sub>0</sub>. For an analytic function ''g'' : ''D''(''z''<sub>0</sub>, ''r'') → '''C''' such that ''g''(''z''<sub>0</sub>) ≠ 0, the case above applied to (''g''(''z''<sub>0</sub> + ''rz'') − ''g''(''z''<sub>0</sub>)) / (''rg′''(0)) implies that the range of ''g'' contains ''D''(''g''(''z''<sub>0</sub>), |''g′''(0)|''r'' / 6).  
+
+For the general case, let ''f'' be an analytic function in the unit disk such that |''f′''(0)| = 1, and ''z''<sub>0</sub> = 0. 
+* If |''f′''(''z'')| ≤ 2|''f′''(''z''<sub>0</sub>)| for |''z'' − ''z''<sub>0</sub>| &lt; 1/4, then by the first case, the range of ''f'' contains a disk of radius |''f′''(z<sub>0</sub>)| / 24 = 1/24.
+* Otherwise, there exists ''z''<sub>1</sub> such that |''z''<sub>1</sub> − ''z''<sub>0</sub>| < 1/4 and |''f′''(''z''<sub>1</sub>)| &gt; 2|''f′''(''z''<sub>0</sub>)|. 
+* If |''f′''(''z'')| ≤ 2|''f′''(''z''<sub>1</sub>)| for |''z'' − ''z''<sub>1</sub>| &lt; 1/8, then by the first case, the range of ''f'' contains a disk of radius |''f′''(''z''<sub>1</sub>)| / 48 &gt; |''f′''(z<sub>0</sub>)| / 24 = 1/24.
+* Otherwise, there exists ''z''<sub>2</sub> such that |''z''<sub>2</sub> − ''z''<sub>1</sub>| &lt; 1/8 and |''f′''(''z''<sub>2</sub>)| &gt; 2|''f′''(''z''<sub>1</sub>)|.
+Repeating this argument, we either find a disk of radius at least 1/24 in the range of ''f'', proving the theorem, or find an infinite sequence (''z<sub>n</sub>'') such that |''z<sub>n</sub>'' − ''z''<sub>''n''−1</sub>| &lt; 1/2<sup>''n''+1</sup> and |''f′''(''z<sub>n</sub>'')| &gt; 2|''f′''(''z''<sub>''n''−1</sub>)|.
+
+In the latter case the sequence is in ''D''(0, 1/2), so ''f′'' is unbounded in ''D''(0, 1/2), a contradiction. 
+
+===Bloch's theorem===
+In the proof of Landau's Theorem above, Rouché's theorem implies that not only can we find a disk ''D'' of radius at least 1/24 in the range of ''f'', but there is also a small disk ''D''<sub>0</sub> inside the unit disk such that for every ''w'' ∈ ''D'' there is a unique ''z'' ∈ ''D''<sub>0</sub> with ''f''(''z'') = ''w''. Thus, ''f'' is a [[bijective]] analytic function from ''D''<sub>0</sub> ∩ ''f''<sup>−1</sup>(''D'') to ''D'', so its inverse φ is also analytic by the [[inverse function theorem]].
+
+== Bloch's and Landau's constants ==
+The number ''B'' is called '''Bloch's constant'''.  The lower bound 1/72 in Bloch's theorem is not the best possible. Bloch's theorem tells us ''B''&nbsp;≥&nbsp;1/72, but the exact value of ''B'' is still unknown. 
+
+The best known bounds for ''B'' at present are
+:<math>0.4332\approx\frac{\sqrt{3}}{4}+2\times10^{-4}\leq B\leq \sqrt{\frac{\sqrt{3}-1}{2}} \cdot \frac{\Gamma(\frac{1}{3})\Gamma(\frac{11}{12})}{\Gamma(\frac{1}{4})}\approx 0.47186,</math>
+where Γ is the [[Gamma function]].  The lower bound was proved by Chen and Gauthier, and the upper bound dates back to [[Lars Ahlfors|Ahlfors]] and Grunsky.
+
+The similarly defined optimal constant ''L'' in Landau's theorem is called '''Landau's constant'''. Its exact value is also unknown, but it is known that
+:<math>0.5 < L \le \frac{\Gamma(\frac{1}{3})\Gamma(\frac{5}{6})}{\Gamma(\frac{1}{6})} = 0.543258965342... \,\!</math> {{OEIS|id=A081760}}
+
+In their paper, Ahlfors and Grunsky conjectured that their upper bounds are actually the true values of ''B'' and ''L''.
+
+For [[injective]] holomorphic functions on the unit disk, a constant ''A'' can similarly be defined. It is known that
+:<math>0.5 < A \le 0.7853</math>
+
+== See also ==
+* [[Mathematical constant#Table of selected mathematical constants|Table of selected mathematical constants]]
+
+== References ==
+* {{cite journal|first1=Lars Valerian|last1=Ahlfors|author-link=Lars Ahlfors|last2=Grunsky|first2=Helmut|author2-link=Helmut Grunsky|title=Über die Blochsche Konstante|journal=[[Mathematische Zeitschrift]]|year=1937|volume=42|number=1|pages=671&ndash;673|doi=10.1007/BF01160101|s2cid=122925005}}
+* {{cite conference|first=Albert II|last=Baernstein|author2=Vinson, Jade P.|title=Local minimality results related to the Bloch and Landau constants|book-title=Quasiconformal mappings and analysis|place=Ann Arbor|publisher=Springer, New York|year=1998|pages=55&ndash;89}}
+* {{cite journal|first=André|last=Bloch|title=Les théorèmes de M.Valiron sur les fonctions entières et la théorie de l'uniformisation|journal=Annales de la Faculté des Sciences de Toulouse|number=3|volume=17|year=1925|pages=1&ndash;22|doi=10.5802/afst.335|issn=0240-2963|url=http://www.numdam.org/item/AFST_1925_3_17__1_0.pdf}}
+* {{ cite journal | first=Huaihui | last=Chen |author2=Gauthier, Paul M. | title=On Bloch's constant|journal=[[Journal d'Analyse Mathématique]]|year=1996|volume=69|number=1|pages=275&ndash;291|doi=10.1007/BF02787110|doi-access=| s2cid=123739239 }}
+*{{Citation | last1=Landau | first1=Edmund | title=Über die Blochsche Konstante und zwei verwandte Weltkonstanten | doi=10.1007/BF01187791 | year=1929 | journal=   Mathematische Zeitschrift | volume=30 | issue=1| pages=608–634 | s2cid=120877278 }}
+
+== External links ==
+* {{MathWorld | urlname=BlochConstant| title=Bloch Constant}}
+* {{MathWorld | urlname=LandauConstant| title=Landau Constant}}
+
+[[Category:Unsolved problems in mathematics]]
+[[Category:Theorems in complex analysis]]

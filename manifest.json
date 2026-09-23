@@ -1,0 +1,19 @@
+{
+  "source": "https://en.wikipedia.org/w/api.php",
+  "seed_category": "Category:Unsolved problems in mathematics",
+  "excluded_subcategories": [
+    "Category:Conjectures"
+  ],
+  "retrieved_at_utc": "2026-09-23T06:53:28.252180+00:00",
+  "category_count": 7,
+  "page_count": 333,
+  "categories": [
+    "Category:Abc conjecture",
+    "Category:Millennium Prize Problems",
+    "Category:Unsolved problems in computer science",
+    "Category:Unsolved problems in geometry",
+    "Category:Unsolved problems in graph theory",
+    "Category:Unsolved problems in mathematics",
+    "Category:Unsolved problems in number theory"
+  ]
+}

@@ -1,0 +1,146 @@
+{{Short description|Type of prime number conjectured to exist}}
+{{pp-semi-indef|small=yes}}
+{{Infobox integer sequence
+| named_after        = [[Donald Dines Wall]], [[Zhi Hong Sun]] and [[Zhi Wei Sun]]
+| publication_year   = 1992
+| terms_number       = 0
+| con_number = Infinite
+| first_terms        =
+| largest_known_term =
+| OEIS = 
+| OEIS_name = 
+}}
+
+In [[number theory]], a '''Wall–Sun–Sun prime''' or '''Fibonacci–Wieferich prime''' is a certain kind of [[prime number]] which is conjectured to exist, although none are known.
+
+== Definition ==
+Let <math>p</math> be a prime number.  When each term in the sequence of [[Fibonacci numbers]] <math>F_n</math> is reduced [[modulo operation|modulo]] <math>p</math> ([[i.e.]] subtracted by the largest multiple of <math>p</math> less than it), the result is a [[periodic sequence]].
+The (minimal) period length of this sequence is called the [[Pisano period]] and denoted <math>\pi(p)</math>. 
+Since <math>F_0 = 0</math>, it follows that ''p'' [[divides]] <math>F_{\pi(p)}</math>. A prime ''p'' such that ''p''<sup>2</sup> divides <math>F_{\pi(p)}</math> is called a '''Wall–Sun–Sun prime'''.
+
+{|class=wikitable
+|+ Non-Wall–Sun–Sun primes
+! {{tooltip|''p''|Prime number}}
+! Periodic sequence
+! {{tooltip|<math>\pi(p)</math>|Pisano period}}
+! <math>F_{\pi(p)}</math>
+! Quotient of {{sfrac|<math>F_{\pi(p)}</math>|''p''<sup>2</sup>}}
+|-
+| 2
+| 0, 1, 1
+| 3
+| 2
+| 0.5
+|-
+| 3
+| 0, 1, 1, 2, 0, 2, 2, 1
+| 8
+| 21
+| 2.{{overline|3}}
+|-
+| 5
+| 0, 1, 1, 2, 3, 0, 3, 3, 1, 4, 0, 4, 4, 3, 2, 0, 2, 2, 4, 1
+| 20
+| 6,765
+| 270.6
+|-
+| 7
+| 0, 1, 1, 2, 3, 5, 1, 6, 0, 6, 6, 5, 4, 2, 6, 1
+| 16
+| 987
+| 20.{{overline|142857}}
+|-
+| 11
+| 0, 1, 1, 2, 3, 5, 8, 2, 10, 1
+| 10
+| 55
+| 0.{{overline|45}}
+|}
+
+A prime <math>p</math> is a Wall–Sun–Sun prime if and only if the [[quotient]] of <math>F_{\pi(p)}</math> divided by ''p''<sup>2</sup> is a [[natural number]].
+
+=== Equivalent definitions ===
+
+If <math>\alpha(m)</math> denotes the rank of apparition modulo <math>m</math> (i.e., <math>\alpha(m)</math> is the smallest positive index such that <math>m</math> divides <math>F_{\alpha(m)}</math>), then a Wall–Sun–Sun prime can be equivalently defined as a prime <math>p</math> such that <math>p^2</math> divides <math>F_{\alpha(p)}</math>.
+
+For a prime ''p'' ≠ 2, 5, the rank of apparition <math>\alpha(p)</math> is known to divide <math>p - \left(\tfrac{p}{5}\right)</math>, where the [[Legendre symbol]] <math>\textstyle\left(\frac{p}{5}\right)</math> has the values
+:<math>\left(\frac{p}{5}\right) = \begin{cases} 1 &\text{if }p \equiv \pm1 \pmod 5;\\ -1 &\text{if }p \equiv \pm2 \pmod 5.\end{cases}</math>
+This observation gives rise to an equivalent characterization of Wall–Sun–Sun primes as primes <math>p</math> such that <math>p^2</math> divides the Fibonacci number <math>F_{p - \left(\frac{p}{5}\right)}</math>.<ref name=Elsenhans2010>{{cite arXiv |author=A.-S. Elsenhans, J. Jahnel |title=The Fibonacci sequence modulo ''p''<sup>2</sup> -- An investigation by computer for ''p'' < 10<sup>14</sup> |eprint=1006.0824 |year=2010|class=math.NT }}</ref>
+
+A prime <math>p</math> is a Wall–Sun–Sun prime if and only if <math>\pi(p^2) = \pi(p)</math>.
+
+A prime <math>p</math> is a Wall–Sun–Sun prime if and only if <math>L_p \equiv 1 \pmod{p^2}</math>, where <math>L_p</math> is the <math>p</math>-th [[Lucas number]].<ref>{{cite journal | last = Andrejić | first = V. | title = On Fibonacci powers | journal = Univ. Beograd Publ. Elektrotehn. Fak. Ser. Mat. | volume = 17 | issue = 17 | pages = 38–44 | year = 2006 | url = http://www.doiserbia.nb.rs/img/doi/0353-8893/2006/0353-88930617038A.pdf | doi = 10.2298/PETF0617038A| s2cid = 41226139 }}</ref>{{rp|42}}
+
+McIntosh and Roettger establish several equivalent characterizations of [[Lucas–Wieferich prime]]s.<ref name="McIntosh Roettger"/> In particular, let <math>\epsilon = \left(\tfrac{p}{5}\right)</math>; then the following are equivalent:
+* <math>F_{p - \epsilon} \equiv 0 \pmod{p^2}</math>
+* <math>L_{p - \epsilon} \equiv 2\epsilon \pmod{p^4}</math>
+* <math>L_{p - \epsilon} \equiv 2\epsilon \pmod{p^3}</math>
+* <math>F_p \equiv \epsilon \pmod{p^2}</math>
+* <math>L_p \equiv 1 \pmod{p^2}</math>
+
+== Existence ==
+{{unsolved|mathematics|Are there any Wall–Sun–Sun primes? If yes, are there an infinite number of them?}}
+
+In a study of the Pisano period <math>k(p)</math>, [[Donald Dines Wall]] determined that there are no Wall–Sun–Sun primes less than <math>10000</math>. In 1960, he wrote:<ref name=Wall1960/>
+{{Quote|text=The most perplexing problem we have met in this study concerns the hypothesis <math>k(p^2) \neq k(p)</math>.  We have run a test on digital computer which shows that <math>k(p^2) \neq k(p)</math> for all <math>p</math> up to <math>10000</math>; however, we cannot prove that <math>k(p^2) = k(p)</math> is impossible.  The question is closely related to another one, "can a number <math>x</math> have the same order mod <math>p</math> and mod <math>p^2</math>?", for which rare cases give an affirmative answer (e.g., <math>x=3, p=11</math>; <math>x=2, p=1093</math>); hence, one might conjecture that equality may hold for some exceptional <math>p</math>.}}
+It has since been conjectured that there are infinitely many Wall–Sun–Sun primes.<ref>{{Citation |last=Klaška |first=Jiří |year=2007 |title=Short remark on Fibonacci−Wieferich primes |journal=Acta Mathematica Universitatis Ostraviensis |volume=15 |issue=1 |pages=21–25 |url=http://dml.cz/dmlcz/137492 }}.</ref>
+
+In 2007, Richard J. McIntosh and Eric L. Roettger showed that if any exist, they must be &gt; 2{{e|14}}.<ref name="McIntosh Roettger">{{cite journal |first1=R. J. |last1=McIntosh |first2=E. L. |last2=Roettger |title=A search for Fibonacci−Wieferich and Wolstenholme primes |journal=[[Mathematics of Computation]] |volume=76 |issue=260 |year=2007 |pages=2087–2094 |url=http://www.ams.org/journals/mcom/2007-76-260/S0025-5718-07-01955-2/S0025-5718-07-01955-2.pdf |doi=10.1090/S0025-5718-07-01955-2|bibcode=2007MaCom..76.2087M |doi-access=free }}</ref>
+Dorais and Klyve extended this range to 9.7{{e|14}} without finding such a prime.<ref>{{Cite web |last1=Dorais |first1=F. G. |last2=Klyve |first2=D. W. |url=http://www-personal.umich.edu/~dorais/docs/wieferich.pdf |title=Near Wieferich primes up to 6.7&nbsp;×&nbsp;10<sup>15</sup> |year=2010 |access-date=2010-10-29 |archive-date=2011-08-06 |archive-url=https://web.archive.org/web/20110806041844/http://www-personal.umich.edu/~dorais/docs/wieferich.pdf |url-status=dead }}</ref>
+
+In December 2011, another search was started by the [[PrimeGrid]] project;<ref>[http://www.primegrid.com/forum_thread.php?id=3008&nowrap=true#45946 Wall–Sun–Sun Prime Search project] at PrimeGrid</ref> however, it was suspended in May 2017.<ref>[http://www.primegrid.com/forum_thread.php?id=7436&nowrap=true#107809] at PrimeGrid</ref> In November 2020, PrimeGrid started another project that searches for [[Wieferich prime|Wieferich]] and Wall–Sun–Sun primes simultaneously.<ref>[https://www.primegrid.com/forum_forum.php?id=127 Message boards : Wieferich and Wall-Sun-Sun Prime Search] at PrimeGrid</ref> The project ended in December 2022, proving that any Wall–Sun–Sun prime must exceed <math>2^{64}</math> (about <math>1.8\cdot 10^{19}</math>).<ref>[https://www.primegrid.com/server_status_subprojects.php Subproject status] at PrimeGrid</ref>
+
+== History ==
+Wall–Sun–Sun primes are named after [[Donald Dines Wall]],<ref name=Wall1960>{{Citation |first=D. D. |last=Wall |title=Fibonacci Series Modulo m |journal=[[American Mathematical Monthly]] |volume=67 |issue=6 |year=1960 |pages=525–532 |doi=10.2307/2309169 |jstor=2309169 }}</ref><ref>{{Cite journal |last1=Crandall|first1=R. |last2=Dilcher |first2=k. |last3=Pomerance|first3=C. |pages=447 |title=A search for Wieferich and Wilson primes |journal=Mathematics of Computation |volume=66 |year=1997 |issue=217 |doi=10.1090/S0025-5718-97-00791-6 |bibcode=1997MaCom..66..433C }}</ref> [[Zhi Hong Sun]] and [[Zhi Wei Sun]]; Z. H. Sun and Z. W. Sun showed in 1992 that if the first case of [[Fermat's Last Theorem]] was false for a certain prime ''p'', then ''p'' would have to be a Wall–Sun–Sun prime.<ref>{{Citation |first1=Zhi-Hong |last1=Sun |first2=Zhi-Wei |last2=Sun |year=1992 |title=Fibonacci numbers and Fermat's last theorem |journal=[[Acta Arithmetica]] |volume=60 |issue=4 |pages=371–388 |url=http://matwbn.icm.edu.pl/ksiazki/aa/aa60/aa6046.pdf |doi=10.4064/aa-60-4-371-388 |doi-access=free }}</ref> As a result, prior to [[Wiles's proof of Fermat's Last Theorem]], the search for Wall–Sun–Sun primes was also the search for a potential [[counterexample]] to this centuries-old [[conjecture]].
+
+== Generalizations ==
+
+A '''tribonacci–Wieferich prime''' is a prime ''p'' satisfying {{nowrap|''h''(''p'') {{=}} ''h''(''p''<sup>2</sup>)}}, where ''h''(''m'') is the least positive integer ''k'' satisfying [''T''<sub>''k''</sub>,''T''<sub>''k''+1</sub>,''T''<sub>''k''+2</sub>] ≡ [''T''<sub>0</sub>, ''T''<sub>1</sub>, ''T''<sub>2</sub>] (mod ''m'') and ''T''<sub>''n''</sub> denotes the ''n''-th [[tribonacci number]]. No tribonacci–Wieferich prime exists below 10<sup>11</sup>.<ref>{{cite journal | last = Klaška | first = Jiří | title = A search for Tribonacci–Wieferich primes | journal = Acta Mathematica Universitatis Ostraviensis | volume = 16 | issue = 1 | pages = 15–20 | year = 2008 | url = http://dml.cz/dmlcz/137497}}</ref>
+
+A '''Pell–Wieferich prime''' is a prime ''p'' satisfying ''p''<sup>2</sup> divides ''P''<sub>''p''−1</sub>, when ''p'' congruent to 1 or 7 (mod 8), or ''p''<sup>2</sup> divides ''P''<sub>''p''+1</sub>, when ''p'' congruent to 3 or 5 (mod 8), where ''P''<sub>''n''</sub> denotes the ''n''-th [[Pell number]]. For example, 13, 31, and 1546463 are Pell–Wieferich primes, and no others below 10<sup>9</sup> {{OEIS|id=A238736}}. In fact, Pell–Wieferich primes are 2-Wall–Sun–Sun primes.
+
+=== Near-Wall–Sun–Sun primes ===
+A prime ''p'' such that <math>F_{p - \left(\frac{p}{5}\right)} \equiv Ap \pmod{p^2}</math> with small |''A''| is called '''near-Wall–Sun–Sun prime'''.<ref name="McIntosh Roettger"/> Near-Wall–Sun–Sun primes with ''A'' = 0 would be Wall–Sun–Sun primes. PrimeGrid recorded cases with |''A''| ≤ 1000.<ref>Reginald McLean and [[PrimeGrid]], [https://www.primegrid.com/stats_ww.php WW Statistics]</ref> A dozen cases are known where ''A'' = ±1 {{OEIS|id=A347565}}.
+
+=== Wall–Sun–Sun primes with discriminant ''D'' ===
+Wall–Sun–Sun primes can be considered for the [[field (mathematics)|field]] <math>Q_{\sqrt{D}}</math> with [[Discriminant of an algebraic number field|discriminant]] ''D''.
+For the conventional Wall–Sun–Sun primes, ''D'' = 5. In the general case, a [[Lucas–Wieferich prime]] ''p'' associated with (''P'', ''Q'') is a Wieferich prime to base ''Q'' and a Wall–Sun–Sun prime with discriminant ''D'' = ''P''<sup>2</sup> − 4''Q''.<ref name=Elsenhans2010/> In this definition, the prime ''p'' should be odd and not divide ''D''.
+
+It is conjectured that for every [[Discriminant#Fundamental discriminants|fundamental discriminant]] ''D'' not equal to 1, there are infinitely many Wall–Sun–Sun primes with discriminant ''D''.
+
+The case of <math>(P,Q) = (k,-1)</math> corresponds to the '''''k''-Wall–Sun–Sun primes''', for which Wall–Sun–Sun primes represent the special case ''k'' = 1. The ''k''-Wall–Sun–Sun primes can be explicitly defined as primes ''p'' such that ''p''<sup>2</sup> divides the ''k''-Fibonacci number <math>F_k(\pi_k(p))</math>, where ''F<sub>k</sub>''(''n'') = ''U<sub>n</sub>''(''k'', −1) is a [[Lucas sequence]] [[Lucas sequence#Recurrence relations|of the first kind]] with discriminant ''D'' = ''k''<sup>2</sup> + 4 and <math>\pi_k(p)</math> is the Pisano period of ''k''-Fibonacci numbers modulo ''p''.<ref>{{cite journal |author=S. Falcon, A. Plaza |title=''k''-Fibonacci sequence modulo ''m'' |journal=Chaos, Solitons & Fractals |volume=41 |issue=1 |year=2009 |pages=497–504 |doi=10.1016/j.chaos.2008.02.014|bibcode=2009CSF....41..497F |hdl=10553/49156 |hdl-access=free }}</ref> For a prime ''p'' ≠ 2 and not dividing ''D'', this condition is equivalent to either of the following.
+* ''p''<sup>2</sup> divides <math>F_k\left(p - \left(\tfrac{D}{p}\right)\right)</math>, where <math>\left(\tfrac{D}{p}\right)</math> is the [[Legendre symbol]];
+* ''V<sub>p</sub>''(''k'', −1) ≡ ''k'' (mod ''p''<sup>2</sup>), where ''V<sub>n</sub>''(''k'', −1) is a Lucas sequence of the second kind.
+
+The smallest ''k''-Wall–Sun–Sun primes for ''k'' = 2, 3, ... are
+:13, 241, 2, 3, 191, 5, 2, 3, 2683, ... {{OEIS|id=A271782}}
+
+== See also ==
+* [[Wieferich prime]]
+* [[Wolstenholme prime]]
+* [[Wilson prime]]
+* [[PrimeGrid]]
+* [[Fibonacci prime]]
+* [[Pisano period]]
+* [[Table of congruences]]
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+*{{Cite book |title=Prime Numbers: A Computational Perspective |url=https://archive.org/details/primenumberscomp00cran_805 |url-access=limited |first1=Richard E. |last1=Crandall |first2=Carl |last2=Pomerance |publisher=Springer |year=2001 |page=[https://archive.org/details/primenumberscomp00cran_805/page/n41 29] |isbn=0-387-94777-9 }}
+*{{cite arXiv |last1=Saha |first1=Arpan |last2=Karthik |first2=C. S. |title=A Few Equivalences of Wall–Sun–Sun Prime Conjecture |year=2011 |eprint=1102.1636 |class=math.NT }}
+
+== External links ==
+* Chris Caldwell, [http://primes.utm.edu/glossary/page.php?sort=WallSunSunPrime The Prime Glossary: Wall–Sun–Sun prime] at the [[Prime Pages]].
+* {{MathWorld|urlname=Wall-Sun-SunPrime|title=Wall–Sun–Sun prime}}
+* Richard McIntosh, [http://www.loria.fr/~zimmerma/records/Wieferich.status Status of the search for Wall–Sun–Sun primes (October 2003)]
+* {{OEIS el|1=A000129|2=Primes p that divide their Pell quotients, where the Pell quotient of p is A000129(p - (2/p))/p and (2/p) is a Jacobi symbol}}
+
+{{Prime number classes}}
+{{Classes of natural numbers}}
+
+{{DEFAULTSORT:Wall-Sun-Sun prime}}
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Fibonacci numbers]]

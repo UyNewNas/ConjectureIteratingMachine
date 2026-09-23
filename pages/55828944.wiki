@@ -1,0 +1,25 @@
+{{Short description|Unsolved geometric problem}}
+{{unsolved|mathematics|What is the optimal path to take when lost in a forest?}}
+[[File:Bellman_lost_in_a_forest_problem.svg|thumb|Solutions for several shapes:<ref name=finch-wetzel/>
+{|
+|valign="top"|{{nowrap|1&ndash;4.}}||Straight path of length equal to the shape's diameter ''w'' (dotted black), circles of radius ''w'' centred on each vertex show that every point on the shape is within ''w'' of it
+|-
+|valign="top" align="right"|5.||"Broadworm" for an infinitely wide strip
+|} ]]
+'''Bellman's lost-in-a-forest problem''' is an unsolved minimization problem in [[geometry]], originating in 1955 by the American applied mathematician [[Richard E. Bellman]].<ref>{{Cite journal | last1 = Bellman | first1 = R. | authorlink = Richard E. Bellman | title =  Minimization problem | volume = 62 | issue = 3 | year = 1956 | journal = [[Bulletin of the American Mathematical Society]] | pages = 270 | department = Research problems | doi = 10.1090/S0002-9904-1956-10021-9 | doi-access = free }}</ref>  The problem is often stated as follows: ''"A hiker is lost in a forest whose shape and dimensions are precisely known to him. What is the best path for him to follow to escape from the forest?"''<ref name=finch-wetzel>{{Cite journal|author1-link=Steven R. Finch | last1 = Finch | first1 = S. R.| last2 = Wetzel | first2 = J. E.| title =  Lost in a forest | volume = 11 | year = 2004 | journal = [[American Mathematical Monthly]] | issue = 8| pages = 645–654 | mr = 2091541 | doi = 10.2307/4145038 | jstor = 4145038| url=https://old.maa.org/sites/default/files/pdf/upload_library/22/Ford/Finch645-654.pdf}}</ref> It is usually assumed that the hiker does not know the starting point or direction he is facing. The best path is taken to be the one that minimizes the worst-case distance to travel before reaching the edge of the forest. Other variations of the problem have been studied. 
+
+Although non-contrived real-world applications are not apparent, the problem falls into a class of geometric optimization problems, including search strategies that are of practical importance. A bigger motivation for study has been the connection to [[Moser's worm problem]]. It was included in a list of 12 problems described by the mathematician [[Scott W. Williams]] as "million buck problems" because he believed that the techniques involved in their resolution will be worth at least a million dollars to mathematics.<ref>{{Cite journal | last1 = Williams | first1 = S. W.| title =  Million buck problems | volume = 31 | issue = 2 | year = 2000 | journal = National Association of Mathematicians Newsletter | pages = 1–3 | url = http://www.math.buffalo.edu/~sww/0papers/million.buck.problems.mi.pdf}}</ref>
+
+==Known cases==
+Although it is not known how to find an optimal solution for an arbitrary shape, the optimal solution is known for some special shapes and special classes of shapes:
+*If the forest contains a 60° rhombus whose long diagonal is a [[diameter of a set|diameter]] of the forest, then the optimal escape path length is the diameter, and walking in a straight line for this distance will provide an optimal escape. This case includes, for instance, a circular forest.<ref name=finch-wetzel/>
+*The optimal escape path for a semicircular forest, or more generally a forest in the shape of a [[circular sector]] with angle at least 60°, is also the diameter of the forest, as is the optimal escape path for a [[regular polygon]] with more than three sides.<ref name=finch-wetzel/>
+*The optimal escape path for an infinite strip of width <math>w</math> is a V-shaped path formed from four straight line segments and two shallow circular arcs, of length approximately <math>2.2783w</math>. This same path is also optimal for rectangles of height <math>w</math> whose diameter is greater than or equal to the length of this path. For rectangles with a shorter diameter, the optimal escape path length is the diameter. A rectangle whose diameter equals the length of the escape path for a strip of the same height provides an example of a shape with two very different optimal escape paths, the path for the strip and a single line segment of the same length as the diameter.<ref name=finch-wetzel/>
+
+==References==
+<references />
+
+[[Category:Metric geometry]]
+[[Category:Discrete geometry]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Recreational mathematics]]

@@ -1,0 +1,339 @@
+{{short description|Type of prime number}}
+{{Infobox integer sequence
+| named_after           = [[John Wilson (Mathematician)|John Wilson]]
+| publication_year      = 
+| author                = 
+| terms_number          = 3
+| first_terms           = [[5 (number)|5]], [[13 (number)|13]], [[563 (number)|563]]
+| largest_known_term    = 
+| OEIS                  = A007540
+| OEIS_name             = Wilson primes: primes <math>p</math> such that <math>(p-1)!\equiv -1\ (\operatorname{mod}{p^2})</math>
+}}
+In [[number theory]], a '''Wilson prime''' is a [[prime number]] <math>p</math> such that <math>p^2</math> [[divisor|divides]] {{nowrap|<math>(p-1)!+1</math>,}} where "<math>!</math>" denotes the [[factorial function]]; compare this with [[Wilson's theorem]], which states that every prime <math>p</math> divides <math>(p-1)!+1</math>. Both are named for 18th-century [[English people|English]] mathematician [[John Wilson (mathematician and judge)|John Wilson]]; in 1770, [[Edward Waring]] credited the theorem to Wilson,<ref>Edward Waring, ''Meditationes Algebraicae'' (Cambridge, England:  1770), page 218 (in Latin).  In the third (1782) edition of Waring's ''Meditationes Algebraicae'', Wilson's theorem appears as problem 5 on [https://books.google.com/books?id=1MNbAAAAQAAJ&pg=PA380 page 380].  On that page, Waring states:  "Hanc maxime elegantem primorum numerorum proprietatem invenit vir clarissimus, rerumque mathematicarum peritissimus Joannes Wilson Armiger."  (A man most illustrious and most skilled in mathematics, Squire John Wilson, found this most elegant property of prime numbers.)</ref> although it had been stated centuries earlier by [[Ibn al-Haytham]].<ref>{{MacTutor Biography|id=Al-Haytham|title=Abu Ali al-Hasan ibn al-Haytham|mode=cs1}}</ref>
+
+The only known Wilson primes are [[5 (number)|5]], [[13 (number)|13]], and [[563 (number)|563]] {{OEIS|id=A007540}}. Costa et al. write that "the case <math>p=5</math> is trivial", and credit the observation that 13 is a Wilson prime to {{harvtxt|Mathews|1892}}.<ref name="Search"/><ref>{{cite book|contribution=Example 15|page=318|url=https://archive.org/details/theoryofnumbersp00math/page/318|title=Theory of Numbers, Part 1|last=Mathews|first=George Ballard|author-link=George Ballard Mathews|year=1892|publisher=Deighton & Bell}}</ref> Early work on these numbers included searches by [[N. G. W. H. Beeger]] and [[Emma Lehmer]],<ref name=lehmer>{{Cite journal | doi = 10.2307/1968791 | last = Lehmer | first = Emma | author-link = Emma Lehmer | title = On congruences involving Bernoulli numbers and the quotients of Fermat and Wilson | journal = [[Annals of Mathematics]] | volume = 39 | issue = 2 | pages = 350–360 | date = April 1938 | url = http://gradelle.educanet2.ch/christian.aebi/.ws_gen/14/Emma_Lehmer_1938.pdf | access-date = 8 March 2011| jstor = 1968791 }}</ref><ref name="Search"/><ref>{{cite journal | first = N. G. W. H. | last = Beeger |author-link = N. G. W. H. Beeger | title=Quelques remarques sur les congruences <math>r^{p-1}\equiv 1\ (\operatorname{mod}{p^2})</math> et <math>(p-1)!\equiv -1\ (\operatorname{mod}{p^2})</math> | journal=[[Messenger of Mathematics|The Messenger of Mathematics]] | volume=43 | pages=72–84 | year=1913–1914}}</ref> but 563 was not discovered until the early 1950s, when computer searches could be applied to the problem.<ref name="Search"/><ref>{{cite journal
+ | last = Wall | first = D. D. | author-link = Donald Dines Wall
+ | date = October 1952
+ | doi = 10.2307/2002270
+ | issue = 40
+ | journal = Mathematical Tables and Other Aids to Computation
+ | jstor = 2002270
+ | page = 238
+ | title = Unpublished mathematical tables
+ | url = https://www.ams.org/journals/mcom/1952-06-040/S0025-5718-52-99384-8/S0025-5718-52-99384-8.pdf
+ | volume = 6}}</ref><ref>{{cite journal | first = Karl | last = Goldberg | title=A table of Wilson quotients and the third Wilson prime | journal=[[J. London Math. Soc.]]| volume=28 | issue=2 | pages=252–256 | year=1953 | doi=10.1112/jlms/s1-28.2.252 }}</ref> If any others exist, they must be greater than 2 × 10<sup>13</sup>.<ref name="Search">{{cite journal
+ | last1 = Costa | first1 = Edgar
+ | last2 = Gerbicz | first2 = Robert
+ | last3 = Harvey | first3 = David
+ | arxiv = 1209.3436
+ | doi = 10.1090/S0025-5718-2014-02800-7
+ | issue = 290
+ | journal = Mathematics of Computation
+ | mr = 3246824
+ | pages = 3071–3091
+ | title = A search for Wilson primes
+ | volume = 83
+ | year = 2014| s2cid = 6738476
+ }}</ref> It has been [[conjecture]]d that infinitely many Wilson primes exist, and that the number of Wilson primes in an interval <math>[x,y]</math> is about <math>\log\log_x y</math>.<ref>[http://primes.utm.edu/glossary/page.php?sort=WilsonPrime The Prime Glossary: Wilson prime]</ref>
+
+Several computer searches have been done in the hope of finding new Wilson primes.<ref>{{Cite web | last = McIntosh | first = R. | author-link = Richard McIntosh | title = WILSON STATUS (Feb. 1999) | work = E-Mail to [[Paul Zimmermann (mathematician)|Paul Zimmermann]] | date = 9 March 2004 | url = http://www.loria.fr/~zimmerma/records/Wieferich.status | access-date = 6 June 2011}}</ref><ref>{{cite journal | first1 = Richard E. | last1 = Crandall | first2 = Karl | last2 = Dilcher | first3 = Carl | last3 = Pomerance | title=A search for Wieferich and Wilson primes | journal=Math. Comput. | volume=66 | issue=217 | pages=433–449 | year=1997 | doi=10.1090/S0025-5718-97-00791-6 | bibcode = 1997MaCom..66..433C | doi-access=free }} See p. 443.</ref><ref>{{Cite book | last1 = Ribenboim | first1 = P. | author-link = Paulo Ribenboim | last2 = Keller | first2 = W. | title = Die Welt der Primzahlen: Geheimnisse und Rekorde | publisher = Springer | year = 2006 | location = Berlin Heidelberg New York | page = 241 | language = de | url = https://books.google.com/books?id=-nEM9ZVr4CsC&q=die+welt+der+primzahlen+rodenkirch&pg=PA248 | isbn = 978-3-540-34283-0}}</ref>
+The [[Ibercivis]] [[distributed computing]] project includes a search for Wilson primes.<ref>{{Cite web |url=http://www.ibercivis.net/index.php?module=public&section=channels&action=view&id_channel=2&id_subchannel=138 |title=Ibercivis site |access-date=2011-03-10 |archive-date=2012-06-20 |archive-url=https://web.archive.org/web/20120620210249/http://www.ibercivis.net/index.php?module=public&section=channels&action=view&id_channel=2&id_subchannel=138 |url-status=dead }}</ref> Another search was coordinated at the [[Great Internet Mersenne Prime Search]] forum.<ref>[http://www.mersenneforum.org/showthread.php?t=16028 Distributed search for Wilson primes] {{Webarchive|url=https://web.archive.org/web/20200318161652/http://www.mersenneforum.org/showthread.php?t=16028 |date=2020-03-18 }} (at mersenneforum.org)</ref>
+
+==Generalizations==
+
+===Wilson primes of order {{mvar|n}} ===
+Wilson's theorem can be expressed in general as <math>(n-1)!(p-n)!\equiv(-1)^n\ \bmod p</math> for every [[integer]] <math>n \ge 1</math> and prime <math>p \ge n</math>. Generalized Wilson primes of order {{mvar|n}} are the primes {{mvar|p}} such that <math>p^2</math> divides <math>(n-1)!(p-n)! - (-1)^n</math>.
+
+It was conjectured that for every [[natural number]] {{mvar|n}}, there are infinitely many Wilson primes of order {{mvar|n}}.
+
+The smallest generalized Wilson primes of order <math>n</math> are:
+{{bi|left=1.6|1=5, 2, 7,&thinsp;10429, 5,&thinsp;11,&thinsp;17, ... (The next term > 1.4 × 10<sup>7</sup>) {{OEIS|id=A128666}}}}
+
+===Near-Wilson primes===
+{| class="wikitable collapsible collapsed" style="border:0px;text-align:right;" align="right"
+|-
+! {{mvar|p}} !! {{mvar|B}}
+|-
+| 1282279 || +20
+|-
+| 1306817 || −30
+|-
+| 1308491 || −55
+|-
+| 1433813 || −32
+|-
+| 1638347 || −45
+|-
+| 1640147 || −88
+|-
+| 1647931 || +14
+|-
+| 1666403 || +99
+|-
+| 1750901 || +34
+|-
+| 1851953 || −50
+|-
+| 2031053 || −18
+|-
+| 2278343 || +21
+|-
+| 2313083 || +15
+|-
+| 2695933 || −73
+|-
+| 3640753 || +69
+|-
+| 3677071 || −32
+|-
+| 3764437 || −99
+|-
+| 3958621 || +75
+|-
+| 5062469 || +39
+|-
+| 5063803 || +40
+|-
+| 6331519 || +91
+|-
+| 6706067 || +45
+|-
+| 7392257 || +40
+|-
+| 8315831 || +3
+|-
+| 8871167 || −85
+|-
+| 9278443 || −75
+|-
+| 9615329 || +27
+|-
+| 9756727 || +23
+|-
+| 10746881 || −7
+|-
+| 11465149 || −62
+|-
+| 11512541 || −26
+|-
+| 11892977 || −7
+|-
+| 12632117 || −27
+|-
+| 12893203 || −53
+|-
+| 14296621 || +2
+|-
+| 16711069 || +95
+|-
+| 16738091 || +58
+|-
+| 17879887 || +63
+|-
+| 19344553 || −93
+|-
+| 19365641 || +75
+|-
+| 20951477 || +25
+|-
+| 20972977 || +58
+|-
+| 21561013 || −90
+|-
+| 23818681 || +23
+|-
+| 27783521 || −51
+|-
+| 27812887 || +21
+|-
+| 29085907 || +9
+|-
+| 29327513 || +13
+|-
+| 30959321 || +24
+|-
+| 33187157 || +60
+|-
+| 33968041 || +12
+|-
+| 39198017 || −7
+|-
+| 45920923 || −63
+|-
+| 51802061 || +4
+|-
+| 53188379 || −54
+|-
+| 56151923 || −1
+|-
+| 57526411 || −66
+|-
+| 64197799 || +13
+|-
+| 72818227 || −27
+|-
+| 87467099 || −2
+|-
+| 91926437 || −32
+|-
+| 92191909 || +94
+|-
+| 93445061 || −30
+|-
+| 93559087 || −3
+|-
+| 94510219 || −69
+|-
+| 101710369 || −70
+|-
+| 111310567 || +22
+|-
+| 117385529 || −43
+|-
+| 176779259 || +56
+|-
+| 212911781 || −92
+|-
+| 216331463 || −36
+|-
+| 253512533 || +25
+|-
+| 282361201 || +24
+|-
+| 327357841 || −62
+|-
+| 411237857 || −84
+|-
+| 479163953 || −50
+|-
+| 757362197 || −28
+|-
+| 824846833 || +60
+|-
+| 866006431 || −81
+|-
+| 1227886151 || −51
+|-
+| 1527857939 || −19
+|-
+| 1636804231 || +64
+|-
+| 1686290297 || +18
+|-
+| 1767839071 || +8
+|-
+| 1913042311 || −65
+|-
+| 1987272877 || +5
+|-
+| 2100839597 || −34
+|-
+| 2312420701 || −78
+|-
+| 2476913683 || +94
+|-
+| 3542985241 || −74
+|-
+| 4036677373 || −5
+|-
+| 4271431471 || +83
+|-
+| 4296847931 || +41
+|-
+| 5087988391 || +51
+|-
+| 5127702389 || +50
+|-
+| 7973760941 || +76
+|-
+| 9965682053 || −18
+|-
+| 10242692519 || −97
+|-
+| 11355061259 || −45
+|-
+| 11774118061 || −1
+|-
+| 12896325149 || +86
+|-
+| 13286279999 || +52
+|-
+| 20042556601 || +27
+|-
+| 21950810731 || +93
+|-
+| 23607097193 || +97
+|-
+| 24664241321 || +46
+|-
+| 28737804211 || −58
+|-
+| 35525054743 || +26
+|-
+| 41659815553 || +55
+|-
+| 42647052491 || +10
+|-
+| 44034466379 || +39
+|-
+| 60373446719 || −48
+|-
+| 64643245189 || −21
+|-
+| 66966581777 || +91
+|-
+| 67133912011 || +9
+|-
+| 80248324571 || +46
+|-
+| 80908082573 || −20
+|-
+| 100660783343 || +87
+|-
+| 112825721339 || +70
+|-
+| 231939720421 || +41
+|-
+| 258818504023 || +4
+|-
+| 260584487287 || −52
+|-
+| 265784418461 || −78
+|-
+| 298114694431 || +82
+|-
+|}
+A prime <math>p</math> satisfying the [[modular arithmetic|congruence]] <math>(p-1)!\equiv -1+Bp\ (\operatorname{mod}{p^2})</math> with small <math>|B|</math> can be called a '''near-Wilson prime'''. Near-Wilson primes with <math>B=0</math> are bona fide Wilson primes. The table on the right lists all such primes with <math>|B|\le 100</math> from {{10^|6}} up to 4{{e|11}}.<ref name="Search"/>
+
+===Wilson numbers===
+A '''Wilson number''' is a natural number <math>n</math> such that <math>W(n)\equiv 0\ (\operatorname{mod}{n^2})</math>, where <math display=block>W(n) = \pm1+\prod_\stackrel{1 \le k \le n}{\gcd(k,n)=1}{k},</math>and where the <math>\pm1</math> term is positive [[if and only if]] <math>n</math> has a [[primitive root modulo n|primitive root]] and negative otherwise.<ref>see [[Wilson's theorem#Gauss.27s generalization|Gauss's generalization of Wilson's theorem]]</ref> For every natural number <math>n</math>, <math>W(n)</math> is divisible by <math>n</math>, and the quotients (called generalized [[Wilson quotient]]s) are listed in {{oeis|id=A157249}}. The Wilson numbers are
+{{bi|left=1.6|1, 5, 13, 563, 5971, 558771, 1964215, 8121909, 12326713, 23025711, 26921605, 341569806, 399292158, ... {{OEIS|id=A157250}}}}
+
+If a Wilson number <math>n</math> is prime, then <math>n</math> is a Wilson prime. There are 13 Wilson numbers up to 5{{e|8}}.<ref>{{cite journal | doi=10.1090/S0025-5718-98-00951-X |  first1 = Takashi | last1 = Agoh | first2 = Karl | last2 = Dilcher | first3 = Ladislav | last3 = Skula | author-link3 = Ladislav Skula| title=Wilson quotients for composite moduli | journal=Math. Comput. | volume=67 | issue=222 | pages=843–861 | year=1998 | bibcode = 1998MaCom..67..843A | url=http://www.ams.org/journals/mcom/1998-67-222/S0025-5718-98-00951-X/S0025-5718-98-00951-X.pdf| doi-access=free }}</ref>
+
+== See also ==
+* [[PrimeGrid]]
+* [[Table of congruences]]
+* [[Wall–Sun–Sun prime]]
+* [[Wieferich prime]]
+* [[Wolstenholme prime]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{cite book | title=Prime Numbers: A Computational Perspective | first1 = Richard E. | last1 = Crandall | first2 = Carl | last2 = Pomerance | publisher=Springer-Verlag | year=2001 | page=29 | isbn=978-0-387-94777-8 }}
+* {{cite journal | first = Erna H. | last = Pearson | title=On the Congruences (''p''&nbsp;−&nbsp;1)! ≡&nbsp;−1 and 2<sup>''p''−1</sup>&nbsp;≡&nbsp;1&nbsp;(mod&nbsp;''p''<sup>2</sup>) | journal=Math. Comput. | volume=17 | pages=194–195 | year=1963 | url=http://www.ams.org/journals/mcom/1963-17-082/S0025-5718-1963-0159780-0/S0025-5718-1963-0159780-0.pdf}}
+
+== External links ==
+* [http://primes.utm.edu/glossary/page.php?sort=WilsonPrime The Prime Glossary: Wilson prime]
+* {{MathWorld|urlname=WilsonPrime|title=Wilson prime}}
+* [http://www.loria.fr/~zimmerma/records/Wieferich.status Status of the search for Wilson primes]
+
+{{Classes of natural numbers}}
+{{Factorial and binomial topics}}
+{{Prime number classes|state=collapsed}}
+
+[[Category:Classes of prime numbers]]
+[[Category:Factorial and binomial topics]]
+[[Category:Unsolved problems in number theory]]

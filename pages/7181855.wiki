@@ -1,0 +1,51 @@
+{{About|Armand Borel's conjecture in geometric topology|Émile Borel's conjecture in analysis/measure theory|Strong measure zero set}}
+{{Use dmy dates|date=May 2026}}
+In [[geometric topology]], the '''Borel conjecture''' (named for [[Armand Borel]]) asserts that an [[Aspherical space|aspherical]] [[closed manifold]] is determined by its [[fundamental group]], up to [[homeomorphism]].  It is a [[Rigidity (mathematics)|rigidity]] conjecture, asserting that a weak, algebraic notion of equivalence (namely, [[homotopy|homotopy equivalence]]) should imply a stronger, topological notion (namely, homeomorphism).
+
+==Precise formulation of the conjecture==
+Let <math>M</math> and <math>N</math> be [[closed manifold|closed]] and [[Aspherical space|aspherical]] topological [[manifold]]s, and let
+
+:<math>f \colon M \to N</math>
+
+be a [[homotopy|homotopy equivalence]].  The '''Borel conjecture''' states that the map <math>f</math> is homotopic to a [[homeomorphism]].  Since aspherical manifolds with isomorphic fundamental groups are homotopy equivalent, the Borel conjecture implies that aspherical closed manifolds are determined, up to homeomorphism, by their fundamental groups.
+
+This conjecture is false if [[topological manifold]]s and homeomorphisms are replaced by [[smooth manifold]]s and [[diffeomorphism]]s; counterexamples can be constructed by taking a [[connected sum]] with an [[exotic sphere]].
+
+==The origin of the conjecture==
+In a May 1953 letter to [[Jean-Pierre Serre]],<ref>{{cite web|url=http://www.maths.ed.ac.uk/~aar/surgery/borel.pdf|title= The birth of the Borel conjecture|author= Extract from a letter from [[Armand Borel]] to [[Jean-Pierre Serre]] | date= 2 May 1953}}</ref> [[Armand Borel]] raised the question whether two aspherical manifolds with isomorphic fundamental groups are homeomorphic. A positive answer to the question "'''Is every homotopy equivalence between closed aspherical manifolds homotopic to a homeomorphism?'''" is referred to as the "so-called Borel Conjecture" in a 1986 paper of [[Jonathan Rosenberg (mathematician)|Jonathan Rosenberg]].<ref>
+{{cite journal | last=Rosenberg | first=Jonathan | authorlink=Jonathan Rosenberg (mathematician)|title=C<sup>∗</sup>-algebras, positive scalar curvature, and the Novikov conjecture. III | journal=[[Topology (journal)|Topology]] | volume=25 | issue=3 | year=1986 | doi=10.1016/0040-9383(86)90047-9 | pages=319–336 | mr=0842428| doi-access=free }}</ref>
+
+==Motivation for the conjecture==
+A basic question is the following: if two closed manifolds are homotopy equivalent, are they homeomorphic?  This is not true in general: there are homotopy equivalent [[lens space]]s which are not homeomorphic.
+
+Nevertheless, there are classes of manifolds for which homotopy equivalences between them can be homotoped to homeomorphisms.  For instance, the [[Mostow rigidity theorem]] states that a homotopy equivalence between closed [[hyperbolic manifold]]s is homotopic to an [[isometry]]—in particular, to a homeomorphism.  The Borel conjecture is a topological reformulation of Mostow rigidity, weakening the hypothesis from hyperbolic manifolds to aspherical manifolds, and similarly weakening the conclusion from an isometry to a homeomorphism.
+
+==Relationship to other conjectures==
+* The Borel conjecture implies the [[Novikov conjecture]] for the special case in which the reference map <math>f \colon M \to BG</math> is a homotopy equivalence.
+* The [[Poincaré conjecture]] asserts that a closed manifold homotopy equivalent to <math>S^3</math>, the [[3-sphere]], is homeomorphic to <math>S^3</math>.  This is not a special case of the Borel conjecture, because <math>S^3</math> is not aspherical.  Nevertheless, the Borel conjecture for the [[Torus|3-torus]] <math>T^3 = S^1 \times S^1 \times S^1</math> implies the Poincaré conjecture for <math>S^3</math>.<ref>{{cite conference
+ | last = Farrell | first = F. T. | author-link = F. Thomas Farrell
+ | editor1-last = Farrell | editor1-first = F.T.
+ | editor2-last = Goettshe | editor2-first = L.
+ | editor3-last = Lueck | editor3-first = W.
+ | contribution = The Borel conjecture
+ | isbn = 92-95003-12-8
+ | mr = 1937017
+ | pages = 225–298
+ | publisher = [[International Centre for Theoretical Physics|Abdus Salam International Centre for Theoretical Physics]] | location = Trieste
+ | series = ICTP Lecture Notes
+ | title = Topology of high-dimensional manifolds, No. 1, 2 (Trieste, 2001)
+ | url = https://inis.iaea.org/collection/NCLCollectionStore/_Public/38/063/38063744.pdf
+ | volume = 9
+ | year = 2002}} See remark, pp. 233–234.</ref>
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* [[Matthias Kreck]], and [[Wolfgang Lück]], ''The Novikov conjecture.'' Geometry and algebra. Oberwolfach Seminars, 33. Birkhäuser Verlag, Basel, 2005.
+
+[[Category:Geometric topology]]
+[[Category:Homeomorphisms]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Surgery theory]]

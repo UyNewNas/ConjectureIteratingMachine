@@ -1,0 +1,50 @@
+{{Short description|Product of the prime factors of an integer}}
+[[File:Radical of an Integer Plot.svg|thumb|The first thousand values of ''rad''(''n''). ''rad(n) = n'' when ''n'' is [[Square-free integer|square-free]].]]
+In [[number theory]], the '''radical''' of a [[positive number|positive]] [[integer]] ''n'' is defined as the product of the distinct [[prime number]]s dividing ''n''. Each prime factor of ''n'' occurs exactly once as a factor of this product:
+
+<math display=block>\displaystyle\mathrm{rad}(n)=\prod_{\scriptstyle p\mid n\atop p\text{ prime}}p</math>
+
+The radical plays a central role in the statement of the [[abc conjecture]].<ref name=abc>{{cite book |contribution=V.1 The ABC Conjecture |title=The Princeton Companion to Mathematics |page=681 |first=Timothy |last=Gowers|author-link=Timothy Gowers |publisher=Princeton University Press |year=2008|contribution-url=https://books.google.com/books?id=ZOfUsvemJDMC&pg=PA681|title-link=The Princeton Companion to Mathematics }}</ref>
+
+== Examples ==
+
+Radical numbers for the first few positive integers are
+: 1, 2, 3, 2, 5, 6, 7, 2, 3, 10, 11, 6, 13, 14, 15, 2, 17, 6, 19, 10, 21, 22, 23, 6, 5, 26, 3, 14, 29, 30, 31, 2, 33, 34, 35, 6, 37, 38, 39, 10, 41, 42, 43, 22, 15, 46, 47, 6, 7, 10, ... {{OEIS|id=A007947}}.
+
+For example,
+<math display=block>504 = 2^3 \cdot 3^2 \cdot 7</math>
+
+and therefore
+<math display=block>\operatorname{rad}(504) = 2 \cdot 3 \cdot 7 = 42</math>
+
+== Properties ==
+
+The function <math>\mathrm{rad}</math> is [[multiplicative function|multiplicative]] (but not [[Completely multiplicative function|completely multiplicative]]).
+
+The radical of any integer <math>n</math> is the largest [[square-free integer|square-free]] divisor of <math>n</math> and so also described as the '''square-free kernel''' of <math>n</math>.<ref>{{cite OEIS|A007947}}</ref> There is no known polynomial-time algorithm for computing the square-free part of an integer.<ref>{{Cite book|last1=Adleman|first1=Leonard M.|author1-link= Leonard Adleman |last2=McCurley|first2=Kevin S.|author2-link=Kevin McCurley (cryptographer)|contribution=Open Problems in Number Theoretic Complexity, II|title=Algorithmic Number Theory: First International Symposium, ANTS-I Ithaca, NY, USA, May 6–9, 1994, Proceedings|series=Lecture Notes in Computer Science|date=1994 |volume=877|publisher=Springer|mr=1322733|pages=291–322|doi=10.1007/3-540-58691-1_70|isbn=978-3-540-58691-3 |citeseerx=10.1.1.48.4877}}</ref>
+
+The definition is generalized to the largest <math>t</math>-free divisor of <math>n</math>, <math>\mathrm{rad}_t</math>, which are multiplicative functions which act on prime powers as
+
+<math display=block>\mathrm{rad}_t(p^e) = p^{\mathrm{min}(e, t - 1)}</math>
+
+The cases <math>t=3</math> and <math>t=4</math> are tabulated in {{OEIS2C|A007948}} and {{OEIS2C|A058035}}.
+
+The notion of the radical occurs in the [[abc conjecture]], which states that, for any <math>\varepsilon > 0</math>, there exists a finite <math>K_\varepsilon</math> such that, for all triples of [[coprime]] positive integers <math>a</math>, <math>b</math>, and <math>c</math> satisfying <math>a+b=c</math>,<ref name=abc/>
+
+<math display=block>c < K_\varepsilon\, \operatorname{rad}(abc)^{1 + \varepsilon}</math>
+
+For any integer <math>n</math>, the [[nilpotent]] elements of the [[finite ring]] <math>\mathbb{Z}/n\mathbb{Z}</math> are all of the multiples of <math>\operatorname{rad}(n)</math>.
+
+The [[Dirichlet series]] is
+
+:<math>\prod_p \left(1+\frac{p^{1-s}}{1-p^{-s}}\right) = \sum_{n=1}^{\infty} \frac{\operatorname{rad}(n)}{n^s}</math>
+
+==Notation and name==
+The notation for the function was likely introduced by [[Joseph Oesterlé]], in the same paper where the [[abc conjecture]] was published.<ref>{{Citation | last1=Oesterlé | first1=Joseph | author-link=Joseph Oesterlé | title=Nouvelles approches du "théorème" de Fermat | url= http://www.numdam.org/item?id=SB_1987-1988__30__165_0 | series=Séminaire Bourbaki exp 694 |mr=992208 | year=1988 | journal=Astérisque | issn=0303-1179 | issue=161 | pages=165–186}}</ref> The name is related to the [[radical of an ideal]], as radical of <math>I = \langle p_1^{\alpha_1}\cdots p_k^{\alpha_k}\rangle</math> in the ring <math>\mathbb Z</math> of integers is precisely <math> \sqrt{I} = \langle p_1\cdots p_k\rangle</math>.
+
+==References==
+{{reflist}}
+
+[[Category:Multiplicative functions]]
+[[Category:Abc conjecture]]
+[[de:Zahlentheoretische Funktion#Multiplikative Funktionen]]

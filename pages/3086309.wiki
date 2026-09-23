@@ -1,0 +1,84 @@
+In [[mathematics]], '''Fujita's conjecture''' is a problem in the theories of [[algebraic geometry]] and [[complex manifold]]s. It is named after Takao Fujita, who formulated it in 1985.
+
+==Statement==
+In complex geometry, the conjecture states that for a [[Positive_form#Positive_line_bundles|positive]] [[holomorphic line bundle]] <math>L</math>  on a [[compact space|compact]] complex manifold <math>M</math>, the line bundle <math>K_M \otimes L^{\otimes m}</math> (where <math>K_M</math> is a [[Canonical bundle|canonical line bundle]] of <math>M</math>) is 
+* [[spanned by sections]] when  <math>m\geq n+1</math>;
+* [[very ample]] when <math>m\geq n+2</math>,
+
+where <math>n</math> is the [[complex dimension]] of <math>M</math>.
+
+Note that for large <math>m</math> the line bundle <math>K_M \otimes L^{\otimes m}</math> is very ample by the standard [[Serre's vanishing theorem]] (and its complex analytic variant). The Fujita conjecture provides an explicit bound on <math>m</math>, which is optimal for [[projective space]]s.
+
+==Known cases==
+For surfaces the Fujita conjecture follows from [[Reider's theorem]]. For three-dimensional algebraic varieties, Ein and Lazarsfeld in 1993 proved the first part of the Fujita conjecture, i.e. that <math>m\geq 4</math> implies global generation.
+
+== See also ==
+*[[Ohsawa–Takegoshi L2 extension theorem|Ohsawa–Takegoshi ''L''<sup>2</sup> extension theorem]]
+
+==References==
+*{{citation
+ | last1 = Ein | first1 = Lawrence
+ | last2 = Lazarsfeld | first2 = Robert
+ | author2-link = Robert Lazarsfeld
+ | title = Global generation of pluricanonical and adjoint linear series on smooth projective threefolds. 
+ | mr = 1207013
+ | pages = 875–903
+ | volume = 6
+ | year = 1993
+ | journal=J. Amer. Math. Soc.| issue = 4
+ | doi = 10.1090/S0894-0347-1993-1207013-5
+ | doi-access = free
+ }}.
+
+*{{citation
+ | last = Fujita | first = Takao
+ | contribution = On polarized manifolds whose adjoint bundles are not semipositive
+ | mr = 946238
+ |doi = 10.2969/aspm/01010167
+ | pages = 167–178
+ | publisher = North-Holland, Amsterdam
+ | series = Adv. Stud. Pure Math.
+ | title = Algebraic geometry, Sendai, 1985
+ | volume = 10
+ | year = 1987| isbn = 978-4-86497-068-6
+ | url = https://projecteuclid.org/euclid.aspm/1525310270
+ | url-access = subscription
+ }}.
+*{{citation
+ | last = Helmke | first = Stefan
+ | doi = 10.1215/S0012-7094-97-08807-4
+ | issue = 2
+ | journal = Duke Mathematical Journal
+ | mr = 1455517
+ | pages = 201–216
+ | title = On Fujita's conjecture
+ | volume = 88
+ | year = 1997}}.
+*{{citation
+ | last = Siu | first = Yum-Tong
+ | contribution = The Fujita conjecture and the extension theorem of Ohsawa-Takegoshi
+ | mr = 1453639
+ | zbl = 0941.32021
+ | pages = 577–592
+ | publisher = World Sci. Publ., River Edge, NJ
+ | title = Geometric complex analysis (Hayama, 1995)
+ | year = 1996}}.
+*{{citation
+ | last = Smith | first = Karen E.
+ | doi = 10.1007/s002080000094
+ | issue = 2
+ | journal = Mathematische Annalen
+ | mr = 1764238
+ | pages = 285–293
+ | title = A tight closure proof of Fujita's freeness conjecture for very ample line bundles
+ | volume = 317
+ | year = 2000| url = https://deepblue.lib.umich.edu/bitstream/2027.42/41935/1/208-317-2-285_03170285.pdf
+ | hdl = 2027.42/41935
+ | s2cid = 55051810
+ | hdl-access = free
+ }}.
+
+[[Category:Algebraic geometry]]
+[[Category:Complex manifolds]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]

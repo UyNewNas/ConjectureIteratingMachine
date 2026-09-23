@@ -1,0 +1,293 @@
+{{Short description|Unsolved problem on partial orders}}
+[[File:Aigner poset.svg|thumb|A partial order formed by the [[Series-parallel partial order|series composition]] of one-element and three-element partial orders. Among its 27 linear extensions, the bottom left element occurs prior to the bottom right element in 9 out of 27. Partial orders with this structure are the only known extreme cases for the 1/3–2/3 conjecture.]]
+In [[order theory]], a branch of mathematics, the '''1/3–2/3 conjecture''' states that, if one is [[comparison sort]]ing a set of items then, no matter what comparisons may have already been performed, it is always possible to choose the next comparison in such a way that it will reduce the number of possible sorted orders by a factor of 2/3 or better. Equivalently, in every finite [[partially ordered set]] that is not [[total order|totally ordered]], there exists a pair of elements ''x'' and ''y'' with the property that at least 1/3 and at most 2/3 of the [[linear extension]]s of the partial order place ''x'' earlier than ''y''.
+
+==Example==
+The partial order formed by three elements ''a'', ''b'', and ''c'' with a single comparability relationship, {{nowrap|''a'' ≤ ''b'',}} has three linear extensions, {{nowrap|''a'' ≤ ''b'' ≤ ''c'',}} {{nowrap|''a'' ≤ ''c'' ≤ ''b'',}} and {{nowrap|''c'' ≤ ''a'' ≤ ''b''.}} In all three of these extensions, ''a'' is earlier than ''b''. However, ''a'' is earlier than ''c'' in only two of them, and later than ''c'' in the third. Therefore, the pair of ''a'' and ''c'' have the desired property, showing that this partial order obeys the 1/3–2/3 conjecture.
+
+This example shows that the constants 1/3 and 2/3 in the conjecture are tight; if ''q'' is any fraction strictly between 1/3 and 2/3, then there would not exist a pair ''x'', ''y'' in which ''x'' is earlier than ''y'' in a number of partial orderings that is between ''q'' and {{nowrap|1 &minus; ''q''}} times the total number of partial orderings.<ref>{{harvtxt|Kahn|Saks|1984}}; {{harvtxt|Brightwell|Felsner|Trotter|1995}}.</ref>
+
+More generally, let ''P'' be any [[Series-parallel partial order|series composition]] of three-element partial orders and of one-element partial orders, such as the one in the figure. Then ''P'' forms an extreme case for the 1/3–2/3 conjecture in the sense that, for each pair ''x'', ''y'' of elements, one of the two elements occurs earlier than the other in at most 1/3 of the linear extensions of ''P''. Partial orders with this structure are necessarily [[Series-parallel partial order|series-parallel]] [[semiorder]]s; they are the only known extreme cases for the conjecture and can be proven to be the only extreme cases with width two.{{sfnp|Aigner|1985}}
+
+==Definitions==
+A partially ordered set is a set ''X'' together with a [[binary relation]] ≤ that is [[Reflexive relation|reflexive]], [[Antisymmetric relation|antisymmetric]], and [[Transitive relation|transitive]]. A total order is a partial order in which every pair of elements is comparable. A linear extension of a finite partial order is a sequential ordering of the elements of ''X'', with the property that if ''x'' ≤ ''y'' in the partial order, then ''x'' must come before ''y'' in the linear extension. In other words, it is a total order compatible with the partial order. If a finite partially ordered set is totally ordered, then it has only one linear extension, but otherwise it will have more than one. The 1/3–2/3 conjecture states that one can choose two elements ''x'' and ''y'' such that, among this set of possible linear extensions, between 1/3 and 2/3 of them place ''x'' earlier than ''y'', and symmetrically between 1/3 and 2/3 of them place ''y'' earlier {{nowrap|than ''x''.{{sfnp|Brightwell|Felsner|Trotter|1995}}}}
+
+There is an alternative and equivalent statement of the 1/3–2/3 conjecture in the language of [[probability theory]].
+One may define a [[Uniform distribution (discrete)|uniform probability distribution]] on the linear extensions in which each possible linear extension is equally likely to be chosen. The 1/3–2/3 conjecture states that, under this probability distribution, there exists a pair of elements ''x'' and ''y'' such that the probability that ''x'' is earlier than ''y'' in a random linear extension is between 1/3 and 2/3.{{sfnp|Brightwell|Felsner|Trotter|1995}}
+
+In 1984, [[Jeff Kahn (mathematician)|Jeff Kahn]] and [[Michael Saks (mathematician)|Michael Saks]] defined δ(''P''), for any partially ordered set ''P'', to be the largest [[real number]] δ such that ''P'' has a pair ''x'', ''y'' with ''x'' earlier than ''y'' in a number of linear extensions that is between δ and {{nowrap|1 &minus; δ}} of the total number of linear extensions. In this notation, the 1/3–2/3 conjecture states that every finite partial order that is not total has {{nowrap|δ(''P'') ≥ 1/3}}.<ref name="Kahn 1984">{{harvtxt|Kahn|Saks|1984}}</ref>
+
+==History==
+The 1/3–2/3 conjecture was formulated by [[Sergey Kislitsyn]] in 1968,<ref>{{harvtxt|Kislitsyn|1968}}</ref> and later made independently by [[Michael Fredman]]<ref>However, despite the close connection of {{harvtxt|Fredman|1976}} to the problem of sorting partially ordered data and hence to the 1/3–2/3 conjecture, it is not mentioned in that paper.</ref> and by [[Nati Linial]] in 1984.{{sfnp|Brightwell|Felsner|Trotter|1995}} It was listed as a featured unsolved problem at the founding of the journal ''[[Order (journal)|Order]]'', and remains unsolved; being called "one of the most intriguing problems in the combinatorial theory of posets."{{sfnp|Brightwell|Felsner|Trotter|1995}}
+
+A survey of the conjecture was produced in 1999.<ref>{{harvtxt|Brightwell|1999}}</ref>
+
+==Partial results==
+The 1/3–2/3 conjecture is known to be true for certain special classes of partial orders, including partial orders of [[Antichain|width]] two,<ref>{{harvtxt|Linial|1984}}, Theorem 2; {{harvtxt|Sah|2021}}.</ref> partial orders of height two,{{sfnp|Trotter|Gehrlein|Fishburn|1992}} partial orders with at most 13 elements,<ref>{{harvtxt|De Loof|De Baets|De Meyer|2010}},
+  §4.2.2 and Fig. 2; the exhaustive computation identifies the extremal cases through 13
+  elements.</ref> partial orders in which each element is incomparable to at most six others,<ref name="p08">{{harvtxt|Peczarski|2008}}.</ref> [[series-parallel partial order]]s, partial orders whose [[Hasse diagram]] is ''N''-free,{{sfnp|Zaguia|2012}} [[semiorder]]s,{{sfnp|Brightwell|1989}} and [[polytree]]s.{{sfnp|Zaguia|2019}} A 2026 preprint reports verification through 14 elements.{{sfnp|Gupta|2026}} In the limit as ''n'' goes to infinity, the proportion of ''n''-element partial orders that obey the 1/3–2/3 conjecture approaches 100%.<ref name="p06">{{harvtxt|Peczarski|2006}}.</ref>
+
+In 1995, Graham Brightwell, Stefan Felsner, and William Trotter proved that, for any finite partial order ''P'' that is not total, <math display="inline">\delta(P) \ge 1 / 2 - \sqrt{5} / 10 \approx 0.276</math>. Their results improve previous weaker bounds of the same type.<ref>{{harvtxt|Brightwell|Felsner|Trotter|1995}}; {{harvtxt|Kahn|Saks|1984}}; {{harvtxt|Khachiyan|1989}}; {{harvtxt|Kahn|Linial|1991}}; {{harvtxt|Felsner|Trotter|1993}}.</ref> They use the probabilistic interpretation of <math>\delta(P)</math> to extend its definition to certain infinite partial orders; in that context, they show that their bounds are optimal, in that there exist infinite partial orders with <math display="inline">\delta(P) = 1 / 2 - \sqrt{5} / 10</math>.
+
+==Applications==
+In 1984 [[Jeff Kahn (mathematician)|Jeff Kahn]] and Saks proposed the following application for the problem:
+suppose one wishes to [[comparison sort]] a totally ordered set ''X'', for which some partial order information is already known in the form of a partial order on ''X''. In the worst case, each additional comparison between a pair ''x'' and ''y'' of elements may yield as little information as possible, by resolving the comparison in a way that leaves as many linear extensions as possible compatible with the comparison result. The 1/3–2/3 conjecture states that, at each step, one may choose a comparison to perform that reduces the remaining number of linear extensions by a factor of 2/3; therefore, if there are ''E'' linear extensions of the partial order given by the initial information, the sorting problem can be completed in at most <math>\log_{3/2} E</math> additional comparisons.<ref name="Kahn 1984"/>
+
+However, this analysis neglects the complexity of selecting the optimal pair ''x'' and ''y'' to compare. Additionally, it may be possible to sort a partial order using a number of comparisons that is better than this analysis would suggest, because it may not be possible for this worst-case behavior to occur at each step of a [[sorting algorithm]]. In this direction, it has been conjectured that <math>\log_{\phi} E</math> comparisons may suffice, where <math>\phi</math> denotes the [[golden ratio]].<ref name="p06"/>
+
+A closely related class of comparison sorting problems was considered by Fredman in 1976, among them the problem of comparison sorting a set ''X'' when the sorted order of ''X'' is known to lie in some set ''S'' of permutations of ''X''. Here ''S'' is not necessarily generated as the set of linear extensions of a partial order. Despite this added generality, Fredman showed that ''X'' can be sorted using <math>\log_2 |S| + O(|X|)</math> comparisons, expressed in [[big O notation]]. This same bound applies as well to the case of partial orders and shows that <math>\log_2 E + O(n)</math> comparisons suffice.<ref>{{harvtxt|Fredman|1976}}</ref>
+
+==Generalizations and related results==
+In 1984, Kahn and Saks conjectured that, in the limit as <math>w</math> tends to infinity, the value of <math>\delta(P)</math> for partially ordered sets of width <math>w</math> should tend to <math>1/2</math>. In particular, they expect that only partially ordered sets of width two can achieve the worst case value <math>\delta(P) = 1/3</math>{{sfnp|Kahn|Saks|1984}} and in 1985 [[Martin Aigner]] stated this explicitly as a conjecture.{{sfnp|Aigner|1985}} The smallest known value of <math>\delta(P)</math> for posets of width three is <math>14/39</math>,{{sfnp|Saks|1985}} and computer searches have shown that no smaller value is possible for width-3 posets with nine or fewer elements.{{sfnp|Trotter|Gehrlein|Fishburn|1992}} Another related conjecture, again based on computer searches, states that there is a gap between <math>1/3</math> and the other possible values of <math>\delta(P)</math>: whenever a partial order does not have <math>\delta(P)</math> exactly <math>1/3</math>, it has <math>\delta(P) \ge 0.348843</math>.{{sfnp|Peczarski|2019}}
+
+Marcin Peczarski<ref name="p06"/><ref name="p08"/> has formulated a "gold partition conjecture" stating that in each partial order that is not a total order one can find two consecutive comparisons such that, if <math>t_i</math> denotes the number of linear extensions remaining after <math>i</math> of the comparisons have been made, then (in each of the four possible outcomes of the comparisons) <math>t_0 \ge t_1 + t_2</math>. If this conjecture is true, it would imply the 1/3–2/3 conjecture: the first of the two comparisons must be between a pair that splits the remaining comparisons by at worst a 1/3–2/3 ratio. The gold partition conjecture would also imply that a partial order with <math>E</math> linear extensions can be sorted in at most <math>\log_\phi E</math> comparisons; the name of the conjecture is derived from this connection with the golden ratio.
+
+It is [[Sharp-P-complete|#P-complete]], given a finite partial order <math>P</math> and a pair of elements <math>x</math> and <math>y</math>, to calculate the proportion of the linear extensions of <math>P</math> that place <math>x</math> earlier than <math>y</math>.<ref>{{harvtxt|Brightwell|Winkler|1991}}.</ref>
+
+==Notes==
+{{reflist|35em}}
+
+==References==
+*{{citation
+ | last = Aigner | first = Martin | authorlink = Martin Aigner
+ | doi = 10.1007/BF00333131
+ | url= https://link.springer.com/article/10.1007/BF00333131
+ | issue = 3
+ | journal = [[Order (journal)|Order]]
+ | pages = 257–264
+ | title = A note on merging
+ | volume = 2
+ | year = 1985| s2cid = 118877843 | url-access = subscription
+ }}.
+*{{citation
+ | last = Brightwell | first = Graham R.
+ | doi = 10.1007/BF00353656
+ | issue = 4
+ | journal = [[Order (journal)|Order]]
+ | pages = 369–380
+ | title = Semiorders and the 1/3–2/3 conjecture
+ | volume = 5
+ | year = 1989| s2cid = 86860160
+ }}.
+*{{citation
+ | last = Brightwell | first = Graham R.
+ | doi = 10.1016/S0012-365X(98)00311-2
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | pages = 25–52
+ | title = Balanced pairs in partial orders
+ | volume = 201
+ | year = 1999| doi-access = 
+ }}.
+*{{citation
+ | last1 = Brightwell | first1 = Graham R.
+ | last2 = Felsner | first2 = Stefan
+ | last3 = Trotter | first3 = William T.
+ | doi = 10.1007/BF01110378
+ | mr = 1368815
+ | issue = 4
+ | journal = [[Order (journal)|Order]]
+ | pages = 327–349
+ | title = Balancing pairs and the cross product conjecture
+ | volume = 12
+ | year = 1995
+ | s2cid = 14793475
+ }}.
+*{{citation
+ | last1 = Brightwell | first1 = Graham R.
+ | last2 = Winkler | first2 = Peter | author2-link = Peter Winkler
+ | doi = 10.1007/BF00383444
+ | issue = 3
+ | journal = [[Order (journal)|Order]]
+ | pages = 225–242
+ | title = Counting linear extensions
+ | volume = 8
+ | year = 1991| s2cid = 119697949
+ }}.
+*{{citation
+ | last1 = De Loof | first1 = Karel
+ | last2 = De Baets | first2 = Bernard
+ | last3 = De Meyer | first3 = Hans
+ | doi = 10.1016/j.camwa.2009.12.021
+ | issue = 4
+ | journal = [[Computers & Mathematics with Applications]]
+ | pages = 1541–1547
+ | title = Counting linear extension majority cycles in partially ordered sets on up to 13 elements
+ | volume = 59
+ | year = 2010
+ }}.
+*{{citation
+ | last1 = Felsner | first1 = Stefan
+ | last2 = Trotter | first2 = William T.
+ | contribution = Balancing pairs in partially ordered sets
+ | mr = 1249709
+ | location = Budapest
+ | pages = 145–157
+ | publisher = [[János Bolyai Mathematical Society]]
+ | series = Bolyai Society Mathematical Studies
+ | title = Combinatorics, Paul Erdős is eighty
+ | volume = 1
+ | year = 1993}}.
+*{{citation
+ | last = Fredman | first = M. L. | authorlink = Michael Fredman
+ | doi = 10.1016/0304-3975(76)90078-5
+ | issue = 4
+ | journal = Theoretical Computer Science
+ | pages = 355–361
+ | title = How good is the information theory bound in sorting?
+ | volume = 1
+ | year = 1976| doi-access = 
+ }}
+*{{citation
+ | last = Gupta | first = Anish
+ | arxiv = 2607.23926
+ | title = Balance Constants, Majority Cycles, and the Gold Partition Conjecture through Fourteen Elements
+ | year = 2026
+ }}.
+*{{citation
+ | last1 = Kahn | first1 = Jeff |author1-link = Jeff Kahn (mathematician)
+ | last2 = Linial | first2 = Nati | author2-link = Nati Linial
+ | doi = 10.1007/BF01275670
+ | issue = 4
+ | journal = [[Combinatorica]]
+ | pages = 363–368
+ | title = Balancing extensions via Brunn-Minkowski
+ | volume = 11
+ | year = 1991| s2cid = 206793172
+ }}.
+*{{citation
+ | last1 = Kahn | first1 = Jeff |author1-link = Jeff Kahn (mathematician)
+ | last2 = Saks | first2 = Michael | author2-link = Michael Saks (mathematician)
+ | doi = 10.1007/BF00565647
+ | issue = 2
+ | journal = [[Order (journal)|Order]]
+ | pages = 113–126
+ | title = Balancing poset extensions
+ | volume = 1
+ | year = 1984| s2cid = 123370506
+ }}.
+*{{citation
+ | last = Khachiyan | first = Leonid | authorlink = Leonid Khachiyan
+ | contribution = Optimal algorithms in convex programming decomposition and sorting
+ | editor-last = Jaravlev | editor-first = J.
+ | language = Russian
+ | location = Moscow
+ | pages = 161–205
+ | publisher = Nauka
+ | title = Computers and Decision Problems
+ | year = 1989}}. As cited by {{harvtxt|Brightwell|Felsner|Trotter|1995}}.
+*{{citation
+ | last = Kislitsyn | first = S. S.
+ |author-link=Sergey Kislitsyn
+ | doi = 10.1007/BF01111312
+ | issue = 5
+ | journal = [[Mathematical Notes]]
+ | pages = 798–801
+ | title = A finite partially ordered set and its corresponding set of permutations
+ | volume = 4
+ | year = 1968| s2cid = 120228193
+ }}. 
+*{{citation
+ | last = Linial | first = Nati | s2cid = 5149351 | authorlink = Nati Linial
+ | doi = 10.1137/0213049
+ | issue = 4
+ | journal = [[SIAM Journal on Computing]]
+ | pages = 795–801
+ | title = The information-theoretic bound is good for merging
+ | volume = 13
+ | year = 1984}}.
+*{{citation
+ | last = Peczarski | first = Marcin
+ | doi = 10.1007/s11083-006-9033-1
+ | issue = 1
+ | journal = [[Order (journal)|Order]]
+ | pages = 89–95
+ | title = The gold partition conjecture
+ | volume = 23
+ | year = 2006| s2cid = 42415160
+ }}.
+*{{citation
+ | last = Peczarski | first = Marcin
+ | doi = 10.1007/s11083-008-9081-9
+ | issue = 2
+ | journal = [[Order (journal)|Order]]
+ | pages = 91–103
+ | title = The gold partition conjecture for 6-thin posets
+ | volume = 25
+ | year = 2008| s2cid = 42034095
+ }}.
+*{{citation
+ | last = Peczarski | first = Marcin
+ | doi = 10.1080/10586458.2017.1368050
+ | issue = 2
+ | journal = Experimental Mathematics
+ | mr = 3955809
+ | pages = 181–184
+ | title = The worst balanced partially ordered sets—ladders with broken rungs
+ | volume = 28
+ | year = 2019| s2cid = 125593629
+ }}.
+*{{citation
+ | last = Sah | first = Ashwin
+ | doi = 10.1007/s00493-020-4091-3
+ | issue = 1
+ | journal = Combinatorica
+ | mr = 4235316
+ | pages = 99–126
+ | title = Improving the <math>\tfrac13</math>–<math>\tfrac23</math> conjecture for width two posets
+ | volume = 41
+ | year = 2021| arxiv = 1811.01500
+ | s2cid = 119604901
+ }}
+*{{citation
+ | last = Saks | first = Michael | authorlink = Michael Saks (mathematician)
+ | title = Balancing linear extensions of ordered sets 
+ | department = Unsolved problems
+ | url=https://link.springer.com/article/10.1007/BF00333138
+ | doi = 10.1007/BF00333138
+ | journal = [[Order (journal)|Order]]
+ | pages = 327–330
+ | volume = 2
+ | year = 1985| s2cid = 189901558 | url-access = subscription
+ }}
+*{{citation
+ | last1 = Trotter | first1 = William T.
+ | last2 = Gehrlein | first2 = William V.
+ | last3 = Fishburn | first3 = Peter C. | author3-link = Peter C. Fishburn
+ | doi = 10.1007/BF00419038
+ | issue = 1
+ | journal = [[Order (journal)|Order]]
+ | pages = 43–53
+ | title = Balance theorems for height-2 posets
+ | volume = 9
+ | year = 1992| s2cid = 16157076
+ }}.
+*{{citation
+ | last1 = Zaguia| first1 = Imed
+ | issue = 2
+ | journal = [[Electronic Journal of Combinatorics]]
+ | article-number = P29
+ | title = The 1/3-2/3 Conjecture for ''N''-free ordered sets
+ | volume = 19
+ | year = 2012
+ | arxiv = 1107.5626
+ | doi = 10.37236/2345
+ | s2cid = 1979845
+ }}.
+*{{citation
+ | last = Zaguia | first = Imed
+ | doi = 10.1007/s11083-018-9469-0
+ | issue = 2
+ | journal = Order
+ | mr = 3983482
+ | pages = 335–347
+ | title = The 1/3–2/3 conjecture for ordered sets whose cover graph is a forest
+ | volume = 36
+ | year = 2019| arxiv = 1610.00809
+ | s2cid = 119631612
+ }}.
+
+{{DEFAULTSORT:1 3-2 3 conjecture}}
+[[Category:Order theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

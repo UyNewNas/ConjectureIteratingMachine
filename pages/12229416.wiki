@@ -1,0 +1,105 @@
+{{short description|Edge-matching puzzle}}
+{{Redirect|E II|other uses|EII (disambiguation)}}
+{{Use dmy dates|date=October 2023}}
+[[File:Eternity II 1.jpg|thumb|The Eternity II puzzle]]
+
+The '''Eternity II puzzle''' ('''E2''' or '''E II''') is an [[edge-matching puzzle]] launched on 28 July 2007.<ref>{{Cite web|agency=PR Newswire|date=26 July 2007|title=Investegate {{!}}TOMY Announcements {{!}} TOMY: Eternity II Global Launch at Hamleys With US$2 ...|url=https://www.investegate.co.uk/tomy/prn/eternity-ii-global-launch-at-hamleys-with-us-2----/20070726165000NN175/|access-date=2020-10-05|website=investegate.co.uk}}</ref><ref>{{Cite web|date=26 July 2007|title=Television interview with Christopher Monckton and Brendan Owen|url=https://www.youtube.com/watch?v=wkImE4lAPn4 |archive-url=https://ghostarchive.org/varchive/youtube/20211221/wkImE4lAPn4 |archive-date=2021-12-21 |url-status=live|website=Mornings with Kerri-Anne, Brendan Owen's channel, YouTube}}{{cbignore}}</ref> It was developed by [[Christopher Monckton, 3rd Viscount Monckton of Brenchley|Christopher Monckton]] and marketed and copyrighted by [[TOMY]] UK Ltd as a successor to the original [[Eternity puzzle]]. The puzzle was part of a [[puzzle contest|competition]] in which a $2 million prize was offered for the first complete solution. The competition ended at noon on 31 December 2010, with no solution being found.
+
+==Description==
+The Eternity II puzzle is an [[edge-matching puzzle]] which involves placing 256 square puzzle pieces into a 16 × 16 grid, constrained by the requirement to match adjacent edges. It has been designed to be difficult to solve by brute-force computer search.
+
+Each puzzle piece has its edges on one side marked with different shape/colour combinations (collectively called "colours" here), each of which must match precisely with its neighbouring side on each adjacent piece when the puzzle is complete. The other side of each piece is blank apart from an identifying number, and is not used in the puzzle. Thus, each piece can be used in only 4 orientations. There are 22 colours, not including the grey edges. (Grey edges must face the outside of the puzzle, forming a sort of grey frame.) Five of the colours are found exclusively in the 60 edge-pairs ("diamonds") in the outermost ring, i.e. between the border and corner pieces, while the other 17 are used in the remaining 420 "interior" edge-pairs. The colours are used evenly, with each of the 5 border colours used in exactly 12 edge-pairs, and each of the 17 inner colours used for either 24 edge-pairs (5 colours) or 25 edge-pairs (12 colours). The total number of edge-pairs is 480. One of the five border colours is not found on any corner piece, while all of the 17 inner colours are used at least once on a border piece.
+
+There are 4 corner pieces (with two grey sides), 56 border pieces (with one grey side) and 14<sup>2</sup> = 196 inner pieces (with four coloured sides). Each piece has a unique arrangement of colours, and none of the pieces are rotationally symmetric, so each of the 256 × 4 = 1024 choices of piece and orientation results in a different pattern of edge colours.
+
+The puzzle differs from the first Eternity puzzle in that there is a non-optional starter piece (a mandatory hint) which must be placed in a specified position and orientation near the centre of the board.<ref name=":0">[https://web.archive.org/web/20071006033127/http://uk.eternityii.com/Download.ashx?id=19934 Instruction booklet (PDF, archived)], published on the official website</ref>
+
+Two clue puzzles were available with the launch of the product, which, if solved, each give a piece position (hint) on the main 256-piece puzzle. Clue Puzzle 1 is a 36-piece square (6 × 6) puzzle and Clue Puzzle 2 is a 72-piece rectangular (12 × 6) puzzle. Two additional clue puzzles of the same dimensions were made available in 2008: the 36-piece Clue Puzzle 3 and the 72-piece Clue Puzzle 4. The rule book states that the puzzle can be solved without using the hints.<ref name=":0" /> The total number of known hints is 5.
+
+[[File:Eternity II solved 4x4 sample puzzle.png|thumb|alt=The official Eternity II sample 4x4 Flash game, in a solved state.|The official Eternity II sample 4x4 Flash game, in a solved state.]]
+
+A sample 16-piece (4 × 4) puzzle was available on the official Eternity II website as a [[Flash game]]<ref>{{Cite web |title=Try Eternity II Online - Eternity II |url=http://uk.eternityii.com/try-eternity2-online/ |archive-url=https://web.archive.org/web/20070624073258/http://uk.eternityii.com/try-eternity2-online/ |archive-date=2007-06-24 |access-date=2026-05-20 |website=uk.eternityii.com |language=en-gb}}</ref>
+
+== Complexity ==
+The number of possible configurations for the Eternity II puzzle, assuming all the pieces are distinct, and ignoring the fixed pieces with pre-determined positions, is 256! × 4<sup>256</sup>, roughly 1.15 × 10<sup>661</sup>. A tighter upper bound to the possible number of configurations can be achieved by taking into account the fixed piece in the center and the restrictions set on the pieces on the edge: 1 × 4! × 56! × 195! × 4<sup>195</sup>, roughly 1.12 × 10<sup>557</sup>. A further upper bound can be obtained by considering the position and orientation of the hint pieces obtained through the clue puzzles. In this case the position and orientation of five pieces is known, giving an upper bound of 4! × 56! × 191! × 4<sup>191</sup> = 3.11 × 10<sup>545</sup>, yielding a search space 3.70 × 10<sup>115</sup> times smaller than the first approximation.
+
+To first approximation, the edge-matching constraint reduces the number of valid configurations by a factor of (1/5) for every border edge-pair and (1/17) for every inner edge-pair. The number of valid configurations is then approximated by 4! × 56! × 196! × 4<sup>196</sup> × (1/5)<sup>60</sup> × (1/17)<sup>420</sup> ≈ 16.4, which is very close to unity. This indicates the puzzle has likely been designed to have only one or a few solutions,<ref name=":2" /><ref>{{Cite journal|last1=Ansótegui|first1=Carlos|last2=Béjar|first2=Ramon|last3=Fernández|first3=Cèsar|last4=Mateu|first4=Carles|date=2008-07-03|title=How Hard is a Commercial Puzzle: the Eternity II Challenge|url=https://dl.acm.org/doi/10.5555/1566899.1566916|journal=Proceedings of the 2008 Conference on Artificial Intelligence Research and Development: Proceedings of the 11th International Conference of the Catalan Association for Artificial Intelligence|location=NLD|publisher=IOS Press|pages=99–108|doi=10.3233/978-1-58603-925-7-99|isbn=978-1-58603-925-7|hdl=10459.1/46645|hdl-access=free|url-access=subscription}}</ref> which maximises the difficulty: more solutions (looser constraints, e.g. fewer colours) would make it easier to find a solution (one of many), while tighter constraints decrease the search space, making it easier to locate the (unique) solution. Optimisation of the number of colours has been investigated empirically for smaller puzzles, bearing out this observation.<ref>{{Cite web|last=Willems|first=Daysel|date=24 June 2016|title=On the Hardness of Framed Edge-Matching Puzzles|url=https://staff.fnwi.uva.nl/b.bredeweg/pdf/BSc/20152016/Willems.pdf|website=Bachelor Thesis, Faculty of Science, University of Amsterdam}}</ref>
+
+==Competition and solution==
+After the first scrutiny date on 31 December 2008 it was announced that no complete solution had been found. A prize of $10,000 was awarded to Louis Verhaard from Lund in Sweden for a partial solution<ref name=":1">{{Cite web|last=Verhaard|first=Louis|title=EII Solver – Best results|url=http://www.shortestpath.se/eii/results.html|access-date=2020-10-09|website=shortestpath.se}}</ref> with 467 matching edges out of 480.<ref>{{Cite web |last=Thunell |first=Christel ThunellTextChristel |date=2009-01-20 |title=Lundafamilj bäst i världen på svårknäckt pussel |url=https://www.sydsvenskan.se/lund/lundafamilj-bast-i-varlden-pa-svarknackt-pussel/ |access-date=2026-05-20 |website=Sydsvenskan |language=sv}}</ref> Verhaard published three more partial solutions with the same number of matching edges.<ref name=":1" />
+
+As of 30 January 2011, the official Eternity II site announces that "The final date for the correct solution of the Eternity II puzzle passes without a winner, and the $2m Prize for a correct solution to the Eternity II puzzle goes unclaimed."<ref name=officialsite>{{cite web|title=Eternity II |format=official website |url=http://www.eternityii.com/ |access-date=2011-01-30 |url-status=dead |archive-url=https://web.archive.org/web/20100208224320/http://www.eternityii.com/ |archive-date=8 February 2010 }}</ref>
+
+No verified complete solution to the Eternity 2 puzzle has ever been published. This includes Christopher Monckton's intended solution, which remains unpublished. Several fake solutions are known to have been circulated online.
+
+== History and design ==
+The original [[Eternity puzzle]] was a [[tiling puzzle]] with a million-pound prize, created by [[Christopher Monckton, 3rd Viscount Monckton of Brenchley|Monckton]].
+Launched in June 1999, it was solved by a computer [[search algorithm]] designed by [[Alex Selby]] and [[Oliver Riordan]], which exploited combinatorial weaknesses of the original puzzle design.<ref name=archduke061607>{{cite web
+|url=http://www.archduke.org/eternity/method/desc.html
+|title=Description of Selby and Riordan's Eternity I solver method
+|work=Alex Selby (and Oliver Riordan)
+|date=16 June 2007
+|access-date=2007-06-16
+}}</ref> The prize money was paid out in full to Selby and Riordan.
+
+A puzzle with striking similarities to both eternity puzzles, the [[Diamond Dilemma]], with a deadline in 1990, 10 years before the deadline of the original eternity puzzle, has fewer puzzle pieces, 160 compared with 209 and 256 for the first two eternity puzzles respectively, and yet Diamond Dilemma has not yet been solved in over 25 years.
+
+The Eternity II puzzle was designed by Monckton in 2005, this time in collaboration with Selby and Riordan, who designed a [[computer program]] that generated the final Eternity II design.<ref name="times2005">{{cite news |date=4 April 2023 |title=£1m says this really is the hardest jigsaw |publisher=Wood Trick |location=USA |url=https://woodtrick.com/blogs/news/eternity-ii-puzzle-the-hardest-puzzle-in-the-world |access-date=4 April 2023}}</ref> According to the [[mathematical game]] enthusiast Brendan Owen, the Eternity II puzzle appears to have been designed to avoid the combinatorial flaws of the previous puzzle, with design parameters which appear to have been chosen to make the puzzle as difficult as possible to solve. In particular, unlike the original Eternity puzzle, there are likely only to be a very small number of possible solutions to the problem.<ref name=":2">
+{{cite web|last=Owen|first=Brendan|date=2007|title=Eternity II – Design|url=http://eternityii.mrowen.net/design.html|url-status=dead|archive-url=https://web.archive.org/web/20071210212026/http://eternityii.mrowen.net/design.html|archive-date=10 December 2007|access-date=2007-11-09|website=Brendan Owen's Eternity II website}}
+</ref>
+Owen estimates that a brute-force [[backtracking]] search might take around 2{{e|47}} steps to complete.<ref>
+{{cite web
+|url = http://eternityii.mrowen.net/solving.html
+|title = "Solving" page on Brendan Owen's Eternity II website
+|access-date = 2007-11-09
+|archive-url = https://web.archive.org/web/20071210212031/http://eternityii.mrowen.net/solving.html
+|archive-date = 10 December 2007
+|url-status = dead
+}}
+</ref>
+
+Monckton was quoted by ''The Times'' in 2005 as saying:
+
+:"Our calculations are that if you used the world's most powerful computer and let it run from now until the projected end of the universe, it might not stumble across one of the solutions."<ref name="times2005"/>
+
+Although it has been demonstrated that the class of [[edge-matching puzzle]]s, of which Eternity II is a special case, is in general [[NP-complete]],<ref name="Demaine">{{cite web
+| url=http://theory.lcs.mit.edu/~edemaine/papers/Jigsaw_GC/paper.pdf
+| title=Jigsaw Puzzles, Edge Matching, and Polyomino Packing: Connections and Complexity
+| author=[[Erik Demaine|Erik D. Demaine]], [[Martin Demaine|Martin L. Demaine]]
+| access-date = 2007-08-12}}</ref>
+the same can be said of the general class of polygon [[packing problems]], of which the original Eternity puzzle was a special case.
+
+Like the original Eternity puzzle, it is easy to find large numbers of ways to place substantial numbers of pieces on the board whose edges all match, making it seem that the puzzle is easy. However, given the low expected number of possible solutions, it is presumably astronomically unlikely that any given partial solution will lead to a complete solution.
+
+== See also ==
+*[[TetraVex]], a similar simpler (no piece rotation or border pieces) edge-matching puzzle game from the [[Microsoft Entertainment Pack]],<ref>{{Cite web|date=5 February 2016|title=LGR – TetraVex and the Unsolvable Puzzle|url=https://www.youtube.com/watch?v=HRxfAJqoSgk |archive-url=https://ghostarchive.org/varchive/youtube/20211221/HRxfAJqoSgk |archive-date=2021-12-21 |url-status=live|via=YouTube}}{{cbignore}}</ref> shown to be [[NP-completeness|NP-complete]].<ref>{{Cite journal|last1=Takenaga|first1=Yasuhiko|last2=Walsh|first2=Toby|date=2006-09-15|title=Tetravex is NP-complete|url=http://www.sciencedirect.com/science/article/pii/S002001900600130X|journal=Information Processing Letters|language=en|volume=99|issue=5|pages=171–174|doi=10.1016/j.ipl.2006.04.010| s2cid=7228681 |issn=0020-0190|url-access=subscription}}</ref>
+* [[Wang tiles]]
+
+== References ==
+{{reflist}}
+
+==External links==
+{{Commons category|Eternity II}}
+* [https://web.archive.org/web/20070712101514/http://www.eternityii.com/ Official website (archived)]
+* [http://www.playzgame.com/online-flash-games/Eternity-II.php Flash demo of a 4x4 puzzle from the original (now defunct) website] [https://web.archive.org/web/20080110223647/http://www.playzgame.com/online-flash-games/Eternity-II.php (archived)]
+* [https://e2.bucas.name/ Online solution visualizer]
+* [https://groups.io/g/eternity2 Eternity II discussion forum (Groups.io)]
+* [http://grokcode.com/10/e2-the-np-complete-kids-game-with-the-2-million-prize/ Description of Eternity II and discussion of solvers]
+* [http://www.shortestpath.se/eii/eii_details.html Description of Louis Verhaard's Eternity II solver used by Anna Karlsson]
+* [https://www.jaapsch.net/puzzles/diamdil.htm Description of the similar puzzle Diamond Dilemma]
+
+Software:
+
+* [http://www.mathworks.com/matlabcentral/fileexchange/44504-eternity2 Open Source Matlab Eternity II Solver]
+*[https://sourceforge.net/projects/eternityii/ Open Source Eternity II Editor/Solver software]
+*[https://sourceforge.net/projects/e2manual/ Open Source Eternity II puzzle software]
+*[http://eternityii.free.fr/ E2Lab : Free Eternity II Editor/Solver software]
+*[http://code.google.com/p/e2solver/ E2Solver : Open Source Eternity II puzzle solver]
+*[https://play.google.com/store/apps/details?id=be.kahosl.cs.demo Android app for Eternity II type edge matching puzzles.]
+*[https://web.archive.org/web/20160121061731/https://itunes.apple.com/us/app/acuity-games-edge-match-lite/id538115022?mt=8 iPhone and iPad app for Eternity II type edge matching puzzles.]
+
+{{DEFAULTSORT:Eternity Ii Puzzle}}
+[[Category:Tiling puzzles]]
+[[Category:Puzzle competitions]]
+[[Category:Products introduced in 2007]]
+[[Category:Unsolved problems in mathematics]]

@@ -1,0 +1,45 @@
+{{more citations needed|date=February 2019}}
+The '''spherical Bernstein's problem''' is a possible generalization of the original [[Bernstein's problem]] in the field of global [[differential geometry]], first proposed by [[Shiing-Shen Chern]] in 1969, and then later in 1970, during his plenary address at the [[International Congress of Mathematicians]] in [[Nice]].
+
+==The problem==
+Are the equators in <math>\mathbb{S}^{n+1}</math> the only smooth embedded minimal hypersurfaces which are topological <math>n</math>-dimensional spheres?
+
+Additionally, the '''spherical Bernstein's problem''', while itself a generalization of the original Bernstein's problem, can also be generalized further by replacing the ambient space <math>\mathbb{S}^{n+1}</math> with a simply connected, compact symmetric space. Some results in this direction are due to [[Wu-Yi Hsiang]], [[Wu-Teh Hsiang]], and [[P. Tomter]].
+
+==Alternative formulations==
+Below are two alternative ways to express the problem:
+
+===The second formulation===
+Let the [[N-sphere|(''n''&nbsp;−&nbsp;1) sphere]] be embedded as a minimal hypersurface in <math>S^n</math>(1). Is it necessarily an equator?
+
+By the [[Frederick J. Almgren Jr.|Almgren]]–[[Eugenio Calabi|Calabi]] theorem, it's true when ''n'' = 3 (or ''n'' = 2 for the 1st formulation).
+
+[[Wu-Yi Hsiang]] proved it for ''n'' ∈  {4, 5, 6, 7, 8, 10, 12, 14} (or ''n'' ∈ {3, 4, 5, 6, 7, 9, 11, 13}, respectively)
+
+In 1987, [[Per Tomter]] proved it for all even ''n'' (or all odd ''n'', respectively).
+
+Thus, it only remains unknown for all odd ''n'' ≥ 9 (or all even ''n'' ≥ 8, respectively)
+
+===The third formulation===
+Is it true that an embedded, minimal hypersphere inside the Euclidean <math>n</math>-sphere is
+necessarily an equator?
+
+Geometrically, the problem is analogous to the following problem:
+
+Is the local topology at an isolated singular point of a minimal hypersurface necessarily different from that of a disc?
+
+For example, the affirmative answer for spherical Bernstein problem when ''n'' = 3 is equivalent to the fact that the local topology at an isolated singular point of any minimal hypersurface in an arbitrary Riemannian 4-manifold must be different from that of a disc.
+
+==Further reading==
+*F.J. Almgren, Jr., Some interior regularity theorems for minimal surfaces and an extension of the Bernstein's theorem, [[Annals of Mathematics]], volume 85, number 1 (1966), pp. 277–292
+*E. Calabi, Minimal immersions of surfaces in euclidean spaces, [[Journal of Differential Geometry]], volume 1 (1967), pp. 111–125
+*P. Tomter, The spherical Bernstein problem in even dimensions and related problems, [[Acta Mathematica]], volume 158 (1987), pp. 189–212
+*S.-S. Chern, Brief survey of minimal submanifolds, Tagungsbericht (1969), [[Mathematisches Forschungsinstitut Oberwolfach]]
+*S.-S. Chern, Differential geometry, its past and its future, Actes du Congrès international des mathématiciens (Nice, 1970), volume 1, pp. 41–53, [[Gauthier-Villars]], (1971)
+*W.-Y. Hsiang, Minimal cones and the spherical Bernstein problem. I, [[Annals of Mathematics]], volume 118 (1983), number 1, pp. 61–73.
+*W.-Y. Hsiang, Minimal cones and the spherical Bernstein problem. II, [[Inventiones mathematicae]], volume 74 (1983), number 3, pp. 351–369. 
+*W.-Y. Hsiang, W.-T. Hsiang, P. Tomter, On the existence of minimal hyperspheres in compact symmetric spaces, [[Annales Scientifiques de l'École Normale Supérieure]], volume 21 (1988), pp. 287–305
+
+[[Category:Mathematical problems]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Differential geometry]]

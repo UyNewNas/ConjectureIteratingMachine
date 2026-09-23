@@ -1,0 +1,29 @@
+{{short description|Conjecture about prime numbers}}
+In [[number theory]], '''Dickson's conjecture''' is the statement that for a finite set of linear [[Homogeneous polynomial|forms]] <math>a_1+b_1n, a_2+b_2n, \dots, a_k+b_kn</math> with each {{tmath|b_i\geq 1}}, there are infinitely many positive integers <math>n</math> for which they are all [[prime number|prime]], unless there is a [[Modular arithmetic|congruence]] condition preventing this.<ref>{{Cite book |last=Ribenboim |first=Paulo |title=The New Book of Prime Number Records |publisher=Springer New York |year=1996 |isbn=978-0-387-94457-9 |edition=3rd |chapter=6. I |mr=1377060 |orig-year=1988}}</ref> The conjecture is named after [[Leonard Eugene Dickson|Leonard Dickson]], who first proposed it in 1904.<ref>{{Cite journal |last=Dickson |first=L. E. |date=1904 |title=A new extension of Dirichlet's theorem on prime numbers |url=https://oeis.org/w/images/2/22/A_new_extension_of_Dirichlet%27s_theorem_on_prime_numbers.pdf |journal=Messenger of Mathematics |volume=33 |pages=155–161}}</ref>
+
+The case <math>k=1</math> is [[Dirichlet's theorem on arithmetic progressions|Dirichlet's theorem]]. Two other special cases are well-known conjectures: that there are infinitely many [[twin prime]]s ({{tmath|n}} and <math>n+2</math> are primes), and that there are infinitely many [[Sophie Germain prime]]s ({{tmath|n}} and <math>2n+1</math> are primes).
+
+== Generalized Dickson's conjecture ==
+{{main|Schinzel's hypothesis H}}
+
+Given <math>n</math> polynomials with positive degrees and integer coefficients ({{tmath|n}} can be any natural number) that each satisfy all three conditions in the [[Bunyakovsky conjecture]], and for any prime <math>p</math> there is an integer <math>x</math> such that the values of all <math>n</math> polynomials at <math>x</math> are not divisible by {{tmath|p}}, then there are infinitely many positive integers <math>x</math> such that all values of these <math>n</math> polynomials at <math>x</math> are prime. For example, if the conjecture is true then there are infinitely many positive integers <math>x</math> such that {{tmath|x^2+1}}, {{tmath|3x-1}}, and <math>x^2+x+41</math> are all prime. When all the polynomials have degree 1, this is the original Dickson's conjecture.
+This generalization is equivalent to the [[Bunyakovsky conjecture#Generalized Bunyakovsky conjecture|generalized Bunyakovsky conjecture]] and [[Schinzel's hypothesis H]].
+
+== See also ==
+* [[Prime triplet]]
+* [[Green–Tao theorem]]
+* [[First Hardy–Littlewood conjecture]]
+* [[Prime constellation]]
+* [[Primes in arithmetic progression]]
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* {{citation |last=Dickson |first= L. E. |authorlink=Leonard Eugene Dickson |title=A new extension of Dirichlet's theorem on prime numbers |url=https://oeis.org/w/images/2/22/A_new_extension_of_Dirichlet%27s_theorem_on_prime_numbers.pdf |journal=Messenger of Mathematics |year=1904 |pages=155–161| volume=33}}
+* {{citation |last1=Ribenboim |first1=Paulo |authorlink=Paulo Ribenboim |title=The New Book of Prime Number Records |publisher=Springer New York |year=1996 |isbn=978-0-387-94457-9 |edition=3rd |mr=1377060 |orig-year=1988}}
+
+{{prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

@@ -1,0 +1,92 @@
+{{expert-subject|1=Mathematics|date=January 2014|reason=Needs to be checked by editor with advanced mathematics knowledge}}
+
+In [[number theory]], '''Gillies' conjecture''' is a [[conjecture]] about the distribution of [[prime number|prime]] [[divisor|factors]] of [[Mersenne number]]s. It was made by [[Donald B. Gillies]] in a 1964 paper<ref>{{cite journal
+| last = Gillies
+| first = Donald B.
+| authorlink = Donald B. Gillies
+| title = Three new Mersenne primes and a statistical theory
+| year = 1964
+| journal = [[Mathematics of Computation]]
+| volume = 18
+| issue = 85
+| pages = 93–97
+| doi = 10.1090/S0025-5718-1964-0159774-6
+}}</ref> in which he also announced the discovery of three new [[Mersenne prime]]s. The conjecture is a specialization of the [[prime number theorem]] and is a refinement of conjectures due to [[I. J. Good]]<ref>{{cite journal
+| last = Good
+| first = I. J.
+| authorlink = I. J. Good
+| title = Conjectures concerning the Mersenne numbers
+| year = 1955
+| journal = [[Mathematics of Computation]]
+| volume = 9
+| issue = 51
+| pages = 120–121
+| doi = 10.1090/S0025-5718-1955-0071444-6
+}}</ref> and [[Daniel Shanks]].<ref>{{cite book
+| last = Shanks
+| first = Daniel
+| authorlink = Daniel Shanks
+| title = Solved and Unsolved Problems in Number Theory
+| year = 1962
+| publisher = Spartan Books
+| location = [[Washington, D. C.|Washington]]
+| pages = 198
+}}</ref>
+
+Several papers have given empirical support to the conjecture, but it disagrees with the widely accepted (but also open) [[Lenstra–Pomerance–Wagstaff conjecture]].
+
+==The conjecture==
+Let <math>p</math> be a [[prime number]] and <math>M_p=2^p-1</math> the corresponding [[Mersenne prime]]. If <math>A < B < \sqrt{M_p}</math>, as <math>B/A</math> and <math>M_p \rightarrow \infty</math>, the number of prime divisors of <math>M</math> in the interval <math>[A, B]</math> is [[Poisson distribution|Poisson distributed]] with [[expected value]]
+:<math>
+\begin{cases}
+\log(\log B /\log A) & \text{ if }A \geq 2p, \\[1pt]
+\log(\log B/\log 2p) & \text{ if } A < 2p.
+\end{cases}
+</math>
+
+The conjecture implies that
+# The number of Mersenne primes less than <math>x</math> is asymptotically <math>\textstyle\frac{2\log\log x}{\log 2}</math>.
+# The expected number of Mersenne primes <math>M_p</math> with <math>x \le p \le 2x</math> is <math>2</math>.
+# The probability that <math>M_p</math> is prime is <math>\textstyle\frac{2 \log 2p }{p\log 2}</math>.
+
+==Incompatibility with Lenstra–Pomerance–Wagstaff conjecture==
+
+The [[Lenstra–Pomerance–Wagstaff conjecture]] gives different values:<ref>{{cite journal
+| last = Wagstaff
+| first = Samuel S.
+| authorlink = Samuel S. Wagstaff Jr.
+| title = Divisors of Mersenne numbers
+| year = 1983
+| journal = [[Mathematics of Computation]]
+| volume = 40
+| issue = 161
+| pages = 385–397
+| doi = 10.1090/S0025-5718-1983-0679454-X
+}}</ref><ref name=heur>Chris Caldwell, [http://primes.utm.edu/mersenne/heuristic.html Heuristics: Deriving the Wagstaff Mersenne Conjecture]. Retrieved on 2017-07-26.</ref>
+# The number of Mersenne primes less than <math>x</math> is asymptotically <math>\textstyle\frac{e^\gamma}{\log 2} \log\log x</math>.
+# The expected number of Mersenne primes <math>M_p</math> with <math>x \le p \le 2x</math> is <math>e^\gamma</math>.
+# The probability that <math>M_p</math> is prime is <math>\textstyle\frac{e^\gamma\log ap}{p\log 2}</math>, where <math>a=2</math> if <math>p=3 \!\!\pmod{4}</math> and <math>a=6</math> otherwise.
+
+Asymptotically, these values are about 11% smaller.
+
+==Results==
+While Gillie's conjecture remains open, several papers have added empirical support to its validity.<ref>{{cite journal
+| last = Ehrman
+| first = John R.
+| title = The number of prime divisors of certain Mersenne numbers
+| year = 1967
+| journal = [[Mathematics of Computation]]
+| volume = 21
+| issue = 100
+| pages = 700–704
+| doi = 10.1090/S0025-5718-1967-0223320-1
+}}</ref>
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Gillies Conjecture}}
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Hypotheses]]
+[[Category:Mersenne primes]]

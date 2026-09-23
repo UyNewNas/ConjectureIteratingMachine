@@ -1,0 +1,21 @@
+{{Short description|Conjecture in algebraic topology}}
+{{about|the conjecture|the theorem|Eilenberg–Ganea theorem}}
+
+The '''Eilenberg–Ganea conjecture''' is a claim in [[algebraic topology]].  It was formulated by [[Samuel Eilenberg]] and [[Tudor Ganea]] in 1957, in a short but influential paper.  It states that if a group ''G'' has [[cohomological dimension]]&nbsp;2, then it has a 2-dimensional [[Eilenberg–MacLane space]] <math>K(G,1)</math>.  For ''n'' different from 2, a group ''G'' of [[cohomological dimension]] ''n'' has an ''n''-dimensional Eilenberg–MacLane space. It is also known that a group of cohomological dimension 2 has a 3-dimensional Eilenberg−MacLane space.{{r|st}}
+
+In 1997,  [[Mladen Bestvina]] and Noel Brady constructed a group ''G'' so that either ''G'' is a counterexample to the Eilenberg–Ganea conjecture, or there must be a counterexample to the [[Whitehead conjecture]]; in other words, it is not possible for both conjectures to be true.{{r|mn}}
+
+==References==
+<references>
+
+<ref name=st>{{Cite journal |first1=Samuel |last1=Eilenberg |authorlink1=Samuel Eilenberg|first2=Tudor |last2=Ganea |authorlink2=Tudor Ganea| title=On the Lusternik–Schnirelmann category of abstract groups |journal=[[Annals of Mathematics]] |series=2nd Ser. |volume=65 |year=1957 |issue=3 |pages=517–518 |doi=10.2307/1970062 |jstor=1970062 |mr=0085510 }}</ref>
+<ref name=mn>{{Cite journal |first1=Mladen |last1=Bestvina |authorlink1=Mladen Bestvina|first2=Noel |last2=Brady |title=Morse theory and finiteness properties of groups |journal=[[Inventiones Mathematicae]] |volume=129 |year=1997 |issue=3 |pages=445–470 |doi=10.1007/s002220050168 |bibcode=1997InMat.129..445B |mr=1465330 |s2cid=120422255 }}</ref>
+
+</references>
+
+[[Category:Conjectures]]
+[[Category:Theorems in algebraic topology]]
+[[Category:Unsolved problems in mathematics]]
+
+
+{{topology-stub}}

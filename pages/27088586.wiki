@@ -1,0 +1,6 @@
+#REDIRECT [[Pure type system]] {{R with possibilities}}
+<!-- If this present page becomes an article rather than a redirect, then [[Barendregt-Geuvers-Klop conjecture]] (with hyphens rather than en-dashes) should redirect to this page. -->
+
+{{DEFAULTSORT:Barendregt-Geuvers-Klop conjecture}}
+[[Category:Unsolved problems in computer science]]
+[[Category:Conjectures]]

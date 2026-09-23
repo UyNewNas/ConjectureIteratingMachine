@@ -1,0 +1,39 @@
+{{Short description|Non-profit BOINC based volunteer computing project}}
+
+{{Infobox software
+| screenshot = ABC@Home.png
+| developer = [[University of Leiden]]
+| latest release version = 2.10
+| latest release date = {{start date and age|2010|08|22}}<ref>{{cite web |url=http://abcathome.com/apps.php |title=Applications |publisher=ABC@Home |accessdate=2010-10-03 |archiveurl=https://web.archive.org/web/20100917032533/http://abcathome.com/apps.php |archivedate=17 September 2010 |url-status=dead }}</ref>
+| operating system = [[Cross-platform]]
+| platform = [[BOINC]]
+| language = English
+| genre = [[Volunteer computing]]
+| license = Proprietary
+| website = [https://www.math.leidenuniv.nl/~desmit/abc/index.php?set=1 ABC@Home]
+}}
+
+'''ABC@Home''' was an educational and non-profit [[computer network|network computing]] project finding abc-triples related to the [[abc conjecture]] in [[number theory]] using the [[Berkeley Open Infrastructure for Network Computing]] (BOINC) [[volunteer computing]] platform.
+
+In March 2011, there were more than 7,300 active participants from 114 countries with a total [[BOINC Credit System|BOINC credit]] of more than 2.9 billion, reporting about 10 [[FLOPS|teraflops]] (10 trillion operations per second) of processing power.<ref>{{citation |url=http://boincstats.com/stats/project_graph.php?pr=abc_main |title=Detailed user, host, team and country statistics with graphs for BOINC |accessdate=2011-03-11 |work=boincstats.com |url-status=dead |archiveurl=https://web.archive.org/web/20101120150315/http://boincstats.com/stats/project_graph.php?pr=abc_main |archivedate=2010-11-20 }}</ref>
+
+In 2011, the project met its goal of finding all abc-triples of at most 18 digits. By 2015, the project had found 23.8 million triples in total, and ceased operations soon after.<ref>{{cite web |url=https://www.math.leidenuniv.nl/~desmit/abc/index.php?set=1 |title=ABC Triples |last=de Smit |first=Bart |accessdate=2017-03-09 |archive-date=2016-12-04 |archive-url=https://web.archive.org/web/20161204235137/http://www.math.leidenuniv.nl/~desmit/abc/index.php?set=1 |url-status=live }}</ref>
+
+== See also ==
+* [[List of volunteer computing projects]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://web.archive.org/web/20090918054031/http://www.math.leidenuniv.nl/en/home The Mathematical Institute of Leiden University]
+
+{{BOINC topics}}
+
+{{DEFAULTSORT:Abc at Home}}
+[[Category: Science in society]]
+[[Category:Computational number theory]]
+[[Category:Volunteer computing projects]]
+[[Category:Abc conjecture]]
+
+{{Science-software-stub}}

@@ -1,0 +1,109 @@
+{{short description|Proposed lower bound on the Mahler measure for polynomials with integer coefficients}}
+{{about||Lehmer's conjecture about the non-vanishing of τ(''n'')|Ramanujan's tau function|Lehmer's conjecture about Euler's totient function|Lehmer's totient problem}}
+
+'''Lehmer's conjecture''', also known as the '''Lehmer's Mahler measure problem,''' is a problem in [[number theory]] raised by [[Derrick Henry Lehmer]].<ref name=lmr>{{cite journal | zbl=0007.19904 | last=Lehmer | first=D.H. | author-link=Derrick Henry Lehmer | title=Factorization of certain cyclotomic functions | journal=Ann. Math. |series=2 | volume=34 | issue=3 | pages=461–479 | year=1933 | issn=0003-486X | doi=10.2307/1968172| jstor=1968172 | hdl=10338.dmlcz/128119 | hdl-access=free }}</ref>  The conjecture asserts that there is an absolute constant <math>\mu>1</math> such that every [[polynomial]] with integer coefficients <math>P(x)\in\mathbb{Z}[x]</math> satisfies one of the following properties:
+
+* The [[Mahler measure]]<ref>{{Cite book|last=Smyth|first=Chris|title=Number Theory and Polynomials|publisher=[[Cambridge University Press]]|year=2008|isbn=978-0-521-71467-9|editor-last=McKee|editor-first=James|pages=322–349|language=English|chapter=The Mahler measure of algebraic numbers: a survey|editor-last2=Smyth|editor-first2=Chris}}</ref> <math>\mathcal{M}(P(x))</math> of <math>P(x)</math> is greater than or equal to <math>\mu</math>.
+* <math>P(x)</math> is an integral multiple of a product of cyclotomic polynomials or the monomial <math>x</math>, in which case <math>\mathcal{M}(P(x))=1</math>. (Equivalently, every complex root of <math>P(x)</math> is a root of unity or zero.)
+
+There are a number of definitions of the Mahler measure, one of which is to factor <math>P(x)</math> over <math>\mathbb{C}</math> as
+
+:<math>P(x)=a_0 (x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_D),</math>
+
+and then set
+
+:<math>\mathcal{M}(P(x)) = |a_0| \prod_{i=1}^{D} \max(1,|\alpha_i|).</math>
+
+The smallest known Mahler measure (greater than 1) is for "Lehmer's polynomial"
+
+:<math>P(x)= x^{10}+x^9-x^7-x^6-x^5-x^4-x^3+x+1 \,,</math>
+
+for which the Mahler measure is the [[Salem number]]<ref>{{cite book | last=Borwein | first=Peter | author-link=Peter Borwein | title=Computational Excursions in Analysis and Number Theory | url=https://archive.org/details/computationalexc00borw | url-access=limited | series=CMS Books in Mathematics | publisher=[[Springer-Verlag]] | year=2002 | isbn=0-387-95444-9 | zbl=1020.12001 | page=[https://archive.org/details/computationalexc00borw/page/n19 16] }}</ref>
+
+:<math>\mathcal{M}(P(x))=1.176280818\dots \ .</math>
+
+It is widely believed that this example represents the true minimal value: that is, <math>\mu=1.176280818\dots</math> in Lehmer's conjecture.<ref name=S234>Smyth (2008) p.324</ref><ref name=EPSW30>{{cite book | last1=Everest | first1=Graham | author1-link=Graham Everest | last2=van der Poorten | first2=Alf | author2-link=Alfred van der Poorten | last3=Shparlinski | first3=Igor | last4=Ward | first4=Thomas | author4-link=Thomas Ward (mathematician) | title=Recurrence sequences | series=Mathematical Surveys and Monographs | volume=104 | location=[[Providence, RI]] | publisher=[[American Mathematical Society]] | year=2003 | isbn=0-8218-3387-1 | zbl=1033.11006 | page=30 }}</ref>
+
+== Motivation ==
+Consider Mahler measure for one variable and [[Jensen's formula]] shows that if <math>P(x)=a_0 (x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_D)</math> then  
+:<math>\mathcal{M}(P(x)) = |a_0| \prod_{i=1}^{D} \max(1,|\alpha_i|).</math>
+In this paragraph denote　<math>m(P)=\log(\mathcal{M}(P(x))</math> , which is also called [[Mahler measure]].
+
+If <math>P</math> has integer coefficients, this shows that <math>\mathcal{M}(P)</math> is an [[algebraic number]] so <math>m(P)</math> is the logarithm of an [[algebraic integer]]. It also shows that <math>m(P)\ge 0</math> and that if <math>m(P)=0</math> then <math>P</math> is a product of [[cyclotomic polynomial]]s i.e. monic polynomials whose all roots are roots of unity, or a monomial polynomial of <math>x</math> i.e. a power <math>x^n</math> for some <math>n</math> .
+
+Lehmer noticed<ref name=lmr /><ref>{{cite journal
+| first1=David | last1=Boyd
+| date=1981
+| title=Speculations concerning the range of Mahler's measure
+| journal=[[Canad. Math. Bull.]]
+| volume=24
+| issue=4
+| pages=453–469
+| doi=10.4153/CMB-1981-069-5 | doi-access=free}}</ref> that <math>m(P)=0</math> is an important value in the study of the integer sequences <math>\Delta_n=\text{Res}(P(x), x^n-1)=\prod^D_{i=1}(\alpha_i^n-1)</math> for monic <math>P</math> . If <math>P</math> does not vanish on the circle then <math>\lim|\Delta_n|^{1/n}=\mathcal{M}(P)</math>. If  <math>P</math> does vanish on the circle but not at any root of unity, then the same convergence holds by [[Baker's theorem]] (in fact an earlier result of [[Alexander Gelfond|Gelfond]] is sufficient for this, as pointed out by Lind in connection with his study of quasihyperbolic toral automorphisms<ref>{{Cite journal|last=Lind|first=D. A.|date=1982|title=Dynamical properties of quasihyperbolic toral automorphisms|journal=[[Ergodic Theory and Dynamical Systems]]|volume=2|pages=49–68| doi=10.1017/s0143385700009573 | s2cid=120859454 |doi-access=free}}</ref>).<ref>{{Cite book|last1=Everest|first1=Graham|url=https://doi.org/10.1007/978-1-4471-3898-3|title=Heights of polynomials and entropy in algebraic dynamics|last2=Ward|first2=Thomas|publisher=[[Springer Publishing|Springer]]|year=1999|isbn=1-85233-125-9|location=London| doi=10.1007/978-1-4471-3898-3 |language=English}}</ref> As a result, Lehmer was led to ask
+:whether there is a constant <math>c>0</math> such that <math>m(P)>c</math> provided <math>P</math> is not cyclotomic?,
+or
+:given <math>c>0</math>, are there <math>P</math> with integer coefficients for which <math> 0<m(P)<c </math>?
+Some positive answers have been provided as follows, but Lehmer's conjecture is not yet completely proved and is still a question of much interest.
+
+==Partial results==
+
+Let <math>P(x)\in\mathbb{Z}[x]</math> be an irreducible [[monic polynomial]] of degree <math>D</math>.
+
+Smyth<ref>{{cite journal | first=C. J. | last=Smyth | title=On the product of the conjugates outside the unit circle of an algebraic integer | journal=Bulletin of the London Mathematical Society | volume=3 | issue=2 | year=1971 | pages=169–175 | zbl=1139.11002 | doi=10.1112/blms/3.2.169}}</ref> proved that Lehmer's conjecture is true for all polynomials that are not [[Reciprocal polynomial|reciprocal]], i.e., all polynomials satisfying <math>x^DP(x^{-1})\ne P(x)</math>.
+
+Blanksby and [[Hugh Montgomery (mathematician)|Montgomery]]<ref>{{cite journal | first1=P. E. | last1=Blanksby | first2=H. L. | last2=Montgomery | author2-link=Hugh Montgomery (mathematician) | title=Algebraic integers near the unit circle | journal=Acta Arith. | volume=18 | year=1971 | pages=355–369 | zbl=0221.12003 | doi=10.4064/aa-18-1-355-369 | doi-access=free }}</ref> and Stewart<ref>{{cite journal | first=C. L. | last=Stewart | title=Algebraic integers whose conjugates lie near the unit circle | journal=Bull. Soc. Math. France | volume=106 | year=1978 | pages=169–176 | doi=10.24033/bsmf.1868 | doi-access=free }}</ref> independently proved that there is an absolute constant <math>C>1</math> such that either <math>\mathcal{M}(P(x))=1</math> or<ref name=S235>Smyth (2008) p.325</ref>
+
+:<math>\log\mathcal{M}(P(x))\ge \frac{C}{D\log D}. </math>
+
+Dobrowolski<ref>{{cite journal | first=E. | last=Dobrowolski | title=On a question of Lehmer and the number of irreducible factors of a polynomial | journal=Acta Arith. | volume=34 | issue=4 | year=1979 | pages=391–401 | doi=10.4064/aa-34-4-391-401 | doi-access=free }}</ref> improved this to
+
+:<math>\log\mathcal{M}(P(x))\ge C\left(\frac{\log\log D}{\log D}\right)^3.</math>
+
+Dobrowolski obtained the value ''C'' ≥ 1/1200 and asymptotically C > 1-ε for all sufficiently large ''D''.  Voutier in 1996 obtained ''C'' ≥ 1/4 for ''D'' ≥ 2.<ref>P. Voutier, [https://arxiv.org/abs/1211.3110 An effective lower bound for the height of algebraic numbers], Acta Arith. 74 (1996), 81–95.</ref>
+
+==Elliptic analogues==
+
+Let <math>E/K</math> be an [[elliptic curve]] defined over a number field <math>K</math>, and let <math>\hat{h}_E:E(\bar{K})\to\mathbb{R}</math> be the [[canonical height]] function. The canonical height is the analogue for elliptic curves of the function <math>(\deg P)^{-1}\log\mathcal{M}(P(x))</math>. It has the property that <math>\hat{h}_E(Q)=0</math> if and only if <math>Q</math> is a [[torsion point]] in <math>E(\bar{K})</math>. The '''elliptic Lehmer conjecture''' asserts that there is a constant <math>C(E/K)>0</math> such that
+
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D}</math> for all non-torsion points <math>Q\in E(\bar{K})</math>,
+
+where <math>D=[K(Q):K]</math>. If the elliptic curve ''E'' has [[complex multiplication]], then the analogue of Dobrowolski's result holds:
+
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D} \left(\frac{\log\log D}{\log D}\right)^3 ,</math>
+
+due to Laurent.<ref name=S327>Smyth (2008) p.327</ref> For arbitrary elliptic curves, the best known result is
+
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D^3(\log D)^2},</math>
+
+due to [[David Masser|Masser]].<ref>{{cite journal | zbl=0723.14026 | last=Masser | first=D.W. | author-link=David Masser | title=Counting points of small height on elliptic curves | journal=Bull. Soc. Math. Fr. | volume=117 | number=2 | pages=247–265 | year=1989 | doi=10.24033/bsmf.2120 | doi-access=free }}</ref> For elliptic curves with non-integral [[j-invariant]], this has been improved to
+
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D^2(\log D)^2},</math>
+
+by Hindry and [[Joseph H. Silverman|Silverman]].<ref>{{cite book | zbl=0741.14013 | last1=Hindry | first1=Marc | last2=Silverman | first2=Joseph H. | author2-link=Joseph H. Silverman | chapter=On Lehmer's conjecture for elliptic curves | title=Sémin. Théor. Nombres, Paris/Fr. 1988-89 | series=Prog. Math. | volume=91 | pages=103–116 | year=1990 | editor-last=Goldstein | editor-first=Catherine|editor-link=Catherine Goldstein | isbn=0-8176-3493-2 }}</ref>
+
+==Restricted results==
+Stronger results are known for restricted classes of polynomials or algebraic numbers.
+
+If ''P''(''x'') is not reciprocal then
+
+:<math>M(P) \ge M(x^3 - x - 1) \approx 1.3247 </math>
+
+and this is clearly best possible.<ref name=S328>Smyth (2008) p.328</ref>  If further all the coefficients of ''P'' are odd then<ref name=S329/>
+
+:<math>M(P) \ge M(x^2 -x - 1) \approx 1.618 . </math>
+
+For any algebraic number ''α'', let <math>M(\alpha)</math> be the Mahler measure of the minimal polynomial <math>P_\alpha</math> of ''α''. If the field '''Q'''(''α'') is a [[Galois extension]] of '''Q''', then Lehmer's conjecture holds for <math>P_\alpha</math>.<ref name=S329>Smyth (2008) p.329</ref>
+
+== Relation to structure of compact group automorphisms ==
+The [[measure-theoretic entropy]] of an ergodic [[automorphism]] of a compact metrizable [[abelian group]] is known to be given by the [[Mahler measure|logarithmic Mahler measure]] of a polynomial with integer coefficients if it is finite.<ref>{{Cite journal|last1=Lind|first1=Douglas|last2=Schmidt|first2=Klaus|last3=Ward|first3=Tom|date=1990|title=Mahler measure and entropy for commuting automorphisms of compact groups|url=https://doi.org/10.1007/BF01231517|journal=[[Inventiones Mathematicae]]|volume=101|pages=593–629|doi=10.1007/BF01231517| bibcode=1990InMat.101..593L | s2cid=17077751 }}</ref> As pointed out by Lind, this means that the set of possible values of the entropy of such actions is either all of <math>(0,\infty]</math> or a countable set depending on the solution to Lehmer's problem.<ref>{{Cite journal|last=Lind|first=Douglas|date=1977|title=The structure of skew products with ergodic group automorphisms|url=https://doi.org/10.1007/BF02759810|journal=[[Israel Journal of Mathematics]]|volume=28| issue=3 |pages=205–248|doi=10.1007/BF02759810| s2cid=120160631 |url-access=subscription}}</ref> Lind also showed that the infinite-dimensional torus either has [[Ergodic theory|ergodic]] automorphisms of finite positive entropy or only has automorphisms of infinite entropy depending on the solution to Lehmer's problem. Since an ergodic compact group automorphism is [[Measurable|measurably isomorphic]] to a [[Bernoulli shift]], and the Bernoulli shifts are classified up to measurable isomorphism by their entropy by [[Ornstein's theorem]], this means that the moduli space of all ergodic compact group automorphisms up to measurable isomorphism is either countable or uncountable depending on the solution to Lehmer's problem.
+
+==References==
+{{Reflist}}
+==External links==
+*http://wayback.cecm.sfu.ca/~mjm/Lehmer/ is a nice reference about the problem.
+*{{MathWorld|urlname=LehmersMahlerMeasureProblem|title=Lehmer's Mahler Measure Problem}}
+
+[[Category:Polynomials]]
+[[Category:Theorems in number theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

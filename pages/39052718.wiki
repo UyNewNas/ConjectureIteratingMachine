@@ -1,0 +1,42 @@
+{{Short description|Unsolved problem in mathematics}}
+{{for|Lehmer's Mahler measure problem|Lehmer's conjecture}}
+{{unsolved|mathematics|Can the totient function of a composite number <math>n</math> divide <math>n-1</math>?}}
+In mathematics, '''Lehmer's totient problem''' asks whether there is any [[composite number]] {{Mvar|n}} such that [[Euler's totient function]] {{Math|''&phi;''(''n'')}} divides {{Math|''n'' &minus; 1}}.  This is an unsolved problem.
+
+It is known that {{Math|1=''&phi;''(''n'') = ''n'' &minus; 1}} if and only if {{Mvar|n}} is prime. So for every [[prime number]] {{Mvar|n}}, we have {{Math|1=''&phi;''(''n'') = ''n'' &minus; 1}} and thus in particular {{Math|''&phi;''(''n'')}} divides {{Math|''n'' &minus; 1}}.  [[D. H. Lehmer]] asked in 1932 whether there exist composite numbers with this property.<ref name="Lehmer1932"/>
+
+==History==
+* Lehmer showed that if any composite solution ''{{Mvar|n}}'' exists, it must be odd, [[Square-free integer|square-free]], and divisible by at least seven [[Prime omega function|distinct primes]] (i.e. {{Math|''&omega;''(''n'') &geq; 7}}). Such a number must also be a [[Carmichael number]].
+* In 1980, Cohen and Hagis proved that, for any solution ''{{Mvar|n}}'' to the problem, {{Math|''n'' > 10<sup>20</sup>}} and {{Math|''&omega;''(''n'') &geq; 14}}.<ref name="HBI23"/>
+* In 1988, Hagis showed that if 3 divides any solution ''{{Mvar|n}}'', then {{Math|''n'' > 10<sup>1{{px2}}937{{px2}}042</sup>}} and {{Math|''&omega;''(''n'') &geq; 298848}}.<ref name="Guy142"/> This was subsequently improved by Burcsi, Czirbusz, and Farkas, who showed that if 3 divides any solution ''{{Mvar|n}}'', then {{Math|''n'' > 10<sup>360{{px2}}000{{px2}}000</sup>}} and {{Math|''&omega;''(''n'') &geq; 40{{px2}}000{{px2}}000}}.<ref name="Burcsi2011"/>
+* A 2011 result of Luca and Pomerance states that the number of solutions to the problem less than {{Mvar|X}} is at most {{Math|''X''<sup>1/2</sup> / (log ''X'')<sup>1/2 + o(1)</sup>}}.<ref name="LP2011"/>
+* In 2019 Burek and Żmija proved that any solution ''{{Mvar|n}}'' satisfies {{Math|''n'' < 2<sup>2<sup>''&omega;''(''n'')</sup></sup> - 2<sup>2<sup>''&omega;''(''n'')-1</sup></sup>}}.<ref name="BZ2019"/>
+
+==References==
+* <ref name="Cohen1980"/><ref name="Hagis1988"/><ref name="Ribenboim1996"/>
+{{reflist
+|refs=
+<ref name="Lehmer1932">{{cite journal | last=Lehmer | first=D. H. | authorlink=Derrick Henry Lehmer | title=On Euler's totient function | journal=[[Bulletin of the American Mathematical Society]] | volume=38 | pages=745–751 | year=1932 | issue=10 | issn=0002-9904 | zbl=0005.34302 | doi=10.1090/s0002-9904-1932-05521-5| doi-access=free }}</ref>
+
+<ref name="Guy142">{{cite book |last=Guy |first=Richard K. |title=Unsolved problems in number theory |publisher=[[Springer-Verlag]] |year=2004 |isbn=0-387-20860-7 |edition=3rd |at=B37, page 142 |zbl=1058.11001 |authorlink=Richard K. Guy}}</ref>
+
+<ref name="LP2011">{{cite journal | last1=Luca | first1=Florian | last2=Pomerance | first2=Carl | title=On composite integers ''n'' for which <math>\varphi(n)\mid n-1</math> | journal=Bol. Soc. Mat. Mexicana | volume=17 | number=3 | pages=13–21 | year=2011 | issn=1405-213X | mr=2978700 | url=https://www.researchgate.net/publication/265577414 }}</ref>
+
+<ref name="HBI23">{{cite book |title=Handbook of number theory I |publisher=[[Springer-Verlag]] |year=2006 |isbn=1-4020-4215-9 |editor1-last=Sándor |editor1-first=József |location=Dordrecht |pages=23 |zbl=1151.11300 |editor2-last=Mitrinović |editor2-first=Dragoslav S. |editor3-last=Crstici |editor3-first=Borislav}}</ref>
+
+<ref name="Burcsi2011">{{cite journal |last1=Burcsi |first1=Péter |last2=Czirbusz |first2=Sándor |last3=Farkas |first3=Gábor |year=2011 |title=Computational investigation of Lehmer's totient problem |url=http://ac.inf.elte.hu/Vol_035_2011/043.pdf |url-status=dead |journal=Ann. Univ. Sci. Budap. Rolando Eötvös, Sect. Comput. |volume=35 |pages=43–49 |issn=0138-9491 |mr=2894552 |zbl=1240.11005 |archive-url=https://web.archive.org/web/20200727103126/https://ac.inf.elte.hu/Vol_035_2011/043.pdf |archive-date=2020-07-27}}
+</ref>
+
+<ref name="Cohen1980">{{cite journal |last1=Cohen |first1=Graeme L. |last2=Hagis |first2=Peter jun. |year=1980 |title=On the number of prime factors of ''n'' if φ(''n'') divides ''n''−1 |journal=Nieuw Arch. Wiskd. |series=III Series |volume=28 |pages=177–185 |issn=0028-9825 |zbl=0436.10002}}</ref>
+
+<ref name="Hagis1988">{{cite journal |last=Hagis |first=Peter jun. |year=1988 |title=On the equation ''M''⋅φ(''n'')=''n''−1 |journal=Nieuw Arch. Wiskd. |series=IV Series |volume=6 |pages=255–261 |issn=0028-9825 |zbl=0668.10006 |number=3}}</ref>
+
+<ref name="Ribenboim1996">{{cite book | last1=Ribenboim  | first1=Paulo | authorlink=Paulo Ribenboim | edition=3rd | title=The New Book of Prime Number Records | publisher=[[Springer-Verlag]] | location=New York | year=1996 | isbn=0-387-94457-5 | zbl=0856.11001 }}</ref>
+
+<ref name="BZ2019">{{cite journal |last1=Burek |first1=Dominik |last2=Żmija |first2=Błażej |year=2019 |title=A new upper bound for numbers with the Lehmer property and its application to repunit numbers
+|journal=International Journal of Number Theory |volume=15 |number=7|pages=1463-1468 |issn=1793-0421 |zbl=1473.11003}}</ref>
+}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Multiplicative functions]]

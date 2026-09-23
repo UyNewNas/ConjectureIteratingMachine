@@ -1,0 +1,270 @@
+{{short description|Mathematical problem}}
+{{unsolved|mathematics|How many colors are needed to color the plane so that no two points at unit distance are the same color?}}
+[[File:Hadwiger-Nelson.svg|thumb|240px|A seven-coloring of the plane, and a four-chromatic unit distance graph in the plane (the [[Moser spindle]]), proving that the chromatic number of a plane is bounded above by 7 and below by 4]]
+[[File:GolombGraphProperties.svg|thumb|The [[Golomb graph]], [[Solomon W. Golomb]]'s ten-vertex four-chromatic [[unit distance graph]]]]
+In [[geometric graph theory]], the '''Hadwiger–Nelson problem''', named after [[Hugo Hadwiger]] and [[Edward Nelson]], asks for the minimum number of colors required to color the [[Plane (mathematics)|plane]] such that no two [[Point (geometry)|points]] at distance 1 from each other have the same color. The answer is unknown, but has been narrowed down to one of the numbers 5, 6 or 7. The correct value may depend on the choice of axioms for [[set theory]].<ref>{{harvtxt|Soifer|2008}}, pp. 557–563; {{harvtxt|Shelah|Soifer|2003}}.</ref>
+
+==Relation to finite graphs==
+The question can be phrased in [[Graph theory|graph theoretic]] terms as follows. Let ''G'' be the [[unit distance graph]] of the plane: an infinite graph with all points of the plane as [[vertex (graph theory)|vertices]] and with an edge between two vertices [[if and only if]] the distance between the two points is 1. The Hadwiger–Nelson problem is to find the [[chromatic number]] of ''G''. As a consequence, the problem is often called "finding the chromatic number of the plane". By the [[De Bruijn–Erdős theorem (graph theory)|de Bruijn–Erdős theorem]], a result of {{harvtxt|de Bruijn|Erdős|1951}}, the problem is equivalent (under the assumption of the [[axiom of choice]]) to that of finding the largest possible chromatic number of a finite unit distance graph.
+
+==History==
+According to {{harvtxt|Jensen|Toft|1995}}, the problem was first formulated by Nelson in 1950, and first published by {{harvtxt|Gardner|1960}}. {{harvtxt|Hadwiger|1945}} had earlier published a related result, showing that any cover of the plane by five congruent closed sets contains a unit distance in one of the sets, and he also mentioned the problem in a later paper {{harv|Hadwiger|1961}}. {{harvtxt|Soifer|2008}} discusses the problem and its history extensively.
+
+One application of the problem connects it to the [[Beckman–Quarles theorem]], according to which any mapping of the Euclidean plane (or any higher dimensional space) to itself that preserves unit distances must be an [[isometry]], preserving all distances.{{sfnp|Beckman|Quarles|1953}} Finite colorings of these spaces can be used to construct mappings from them to higher-dimensional spaces that preserve unit distances but are not isometries. For instance, the Euclidean plane can be mapped to a [[six-dimensional space]] by coloring it with seven colors so that no two points at distance one have the same color, and then mapping the points by their colors to the seven vertices of a six-dimensional [[regular simplex]] with unit-length edges. This maps any two points at unit distance to distinct colors, and from there to distinct vertices of the simplex, at unit distance apart from each other. However, it maps all other distances to zero or one, so it is not an isometry. If the number of colors needed to color the plane could be reduced from seven to a lower number, the same reduction would apply to the dimension of the target space in this construction.{{sfnp|Rassias|2001}}
+
+==Lower and upper bounds==
+The fact that the chromatic number of the plane must be at least four follows from the existence of a seven-vertex unit distance graph with chromatic number four, named the [[Moser spindle]] after its discovery in 1961 by the brothers William and [[Leo Moser]]. This graph consists of two unit [[equilateral triangle]]s joined at a common vertex, ''x''. Each of these triangles is joined along another edge to another equilateral triangle; the vertices ''y'' and ''z'' of these joined triangles are at unit distance from each other. If the plane could be three-colored, the coloring within the triangles would force ''y'' and ''z'' to both have the same color as ''x'', but then, since ''y'' and ''z'' are at unit distance from each other, we would not have a proper coloring of the unit distance graph of the plane. Therefore, at least four colors are needed to color this graph and the plane containing it. An alternative lower bound in the form of a ten-vertex four-chromatic unit distance graph, the [[Golomb graph]], was discovered at around the same time by [[Solomon W. Golomb]].{{sfnp|Soifer|2008|p=19}}
+
+The lower bound was raised to five in 2018, when [[computer scientist]] and [[biogerontologist]] [[Aubrey de Grey]] found a 1581-vertex, non-4-colourable unit-distance graph. The proof is computer assisted.{{sfnp|de Grey|2018}} Mathematician [[Gil Kalai]] and computer scientist [[Scott Aaronson]] posted discussion of de Grey's finding, with Aaronson reporting independent verifications of de Grey's result using [[SAT solver]]s. Kalai linked additional posts by [[Jordan Ellenberg]] and [[Noam Elkies]], with Elkies and (separately) de Grey proposing a [[Polymath project]] to find non-4-colorable unit distance graphs with fewer vertices than the one in de Grey's construction.<ref>{{harvtxt|Kalai|2018}}; {{harvtxt|Aaronson|2018}}</ref> As of 2021, the smallest known unit distance graph with chromatic number 5 has 509 vertices.{{sfnp|Mixon|2021}} The page of the Polymath project, {{harvtxt|Polymath|2018}}, contains further research, media citations and verification data.
+
+The upper bound of seven on the chromatic number follows from the existence of a [[tessellation]] of the plane by regular hexagons, with diameter slightly less than one, that can be assigned seven colors in a repeating pattern to form a 7-coloring of the plane. According to {{harvtxt|Soifer|2008}}, this upper bound was first observed by [[John R. Isbell]].
+
+==Variations==
+The problem can be extended to higher dimensions. For example, as with the version on the plane, while the chromatic number of 3-space is not known, it has been shown to be at least 6 and at most 15.<ref>{{harvtxt|Coulson|2002}}; {{harvtxt|Radoičić|Tóth|2003}}.</ref>
+
+In the ''n''-dimensional case of the problem, an easy upper bound on the number of required colorings found from tiling ''n''-dimensional cubes is <math>\lfloor2+\sqrt{n}\rfloor^n</math>. A lower bound from simplexes is <math>n+1</math>. For <math>n>1</math>, a lower bound of <math>n+2</math> is available using a generalization of the Moser spindle: a pair of the objects (each two simplexes glued together on a facet) which are joined on one side by a point and the other side by a line. An exponential lower bound was proved by Frankl and Wilson in 1981.{{sfnp|Frankl|Wilson|1981}}
+
+One can also consider colorings of the plane in which the sets of points of each color are restricted to sets of some particular type.<ref>See, e.g., {{harvtxt|Croft|Falconer|Guy|1991}}.</ref> Such restrictions may cause the required number of colors to increase, as they prevent certain colorings from being considered acceptable. For instance, if a coloring of the plane consists of regions bounded by [[Jordan curve]]s, then at least six colors are required.<ref>{{harvtxt|Woodall|1973}}; see also {{harvtxt|Coulson|2004}} for a different proof of a similar result.</ref>
+
+==See also==
+* [[Four color theorem]]
+* [[Hadwiger conjecture (graph theory)|Hadwiger conjecture]]
+
+==Notes==
+{{Reflist|30em}}
+
+==References==
+{{Refbegin|30em}}
+*{{citation|last=Aaronson|first=Scott|author-link=Scott Aaronson
+ |title=Amazing progress on longstanding open problems
+ |url=https://www.scottaaronson.com/blog/?p=3697
+ |date=April 11, 2018}}
+*{{citation
+ | last1 = Beckman | first1 = F. S.
+ | last2 = Quarles | first2 = D. A. Jr.
+ | doi = 10.2307/2032415 | doi-access = free
+ | journal = [[Proceedings of the American Mathematical Society]]
+ | mr = 0058193
+ | pages = 810–815
+ | title = On isometries of Euclidean spaces
+ | volume = 4
+ | year = 1953| issue = 5
+ | jstor = 2032415
+ }}
+*{{citation
+ | last1 = de Bruijn | first1 = N. G. | author-link1 = Nicolaas Govert de Bruijn
+ | last2 = Erdős | first2 = P. | author-link2 = Paul Erdős
+ | title = A colour problem for infinite graphs and a problem in the theory of relations
+ | journal = Nederl. Akad. Wetensch. Proc. Ser. A
+ | volume = 54
+ | pages = 371–373
+ | year = 1951| doi = 10.1016/S1385-7258(51)50053-7 | url = https://research.tue.nl/nl/publications/a-colour-problem-for-infinite-graphs-and-a-problem-in-the-theory-of-relations(8bb2b225-bd1a-4924-97ee-0eefca35f01b).html }}
+*{{citation
+ | last = Chilakamarri | first = K. B.
+ | title = The unit-distance graph problem: a brief survey and some new results
+ | journal = Bull Inst. Combin. Appl.
+ | year = 1993
+ | volume = 8
+ | pages = 39–60}}
+*{{citation
+ | last1 = Chilakamarri | first1 = Kiran B.
+ | last2 = Mahoney | first2 = Carolyn R. | author2-link = Carolyn Mahoney
+ | doi = 10.1007/BF01831139
+ | issue = 1–2
+ | journal = [[Aequationes Mathematicae]]
+ | mr = 1372782
+ | pages = 48–67
+ | title = Unit-distance graphs, graphs on the integer lattice and a Ramsey type result
+ | volume = 51
+ | year = 1996| s2cid = 189831504
+ }}
+*{{cite journal
+ | last=Coulson
+ | first=D.
+ | title=On the chromatic number of plane tilings
+ | journal=Journal of the Australian Mathematical Society
+ | publisher=Cambridge University Press (CUP)
+ | volume=77
+ | issue=2
+ | year=2004
+ | issn=1446-7887
+ | doi=10.1017/s1446788700013574| doi-access = free
+ | pages=191–196}}
+*{{citation
+ | last = Coulson | first = D.
+ | title = A 15-colouring of 3-space omitting distance one
+ | journal = Discrete Math.
+ | volume = 256
+ | issue = 1–2
+ | year = 2002
+ | pages = 83–90
+ | doi = 10.1016/S0012-365X(01)00183-2| doi-access = 
+ }}
+*{{citation
+ | last1 = Croft | first1 = Hallard T. |author-link1=Hallard Croft
+ | last2 = Falconer | first2 = Kenneth J. | author-link2 = Kenneth Falconer (mathematician)
+ | last3 = Guy | first3 = Richard K. | author-link3 = Richard K. Guy
+ | title = Unsolved Problems in Geometry
+ | publisher = Springer-Verlag
+ | year = 1991
+ | isbn=978-0-387-97506-1
+ | at = Problem G10}}
+*{{citation
+ | last1 = Frankl| first1 = P.
+ | last2 = Wilson | first2 = R.M.
+ | title =  Intersection theorems with geometric consequences 
+ | journal = Combinatorica 
+ | volume = 1
+ | pages = 357–368 
+ | year = 1981 
+ | issue = 4
+ | doi = 10.1007/BF02579457
+| s2cid = 6768348
+ }}
+*{{citation
+ | last = Gardner | first = Martin | author-link = Martin Gardner
+ | department = Mathematical Games
+ | title = A new collection of 'brain-teasers'
+ | journal = [[Scientific American]]
+ | jstor = 24940666
+ | date = October 1960
+ | volume = 203 | issue = 4
+ | page = 180| doi = 10.1038/scientificamerican1060-218 | doi-broken-date = 6 July 2025 }}
+*{{citation
+| last1 = de Grey | first1 = Aubrey D.N.J.
+| title = The Chromatic Number of the Plane Is at least 5
+| arxiv = 1804.02385
+| journal = Geombinatorics
+| volume = 28
+| pages = 5–18
+| year = 2018| bibcode = 2016arXiv160407134W | mr = 3820926}}
+*{{citation
+ | last = Hadwiger | first = Hugo | author-link = Hugo Hadwiger
+ | title = Überdeckung des euklidischen Raumes durch kongruente Mengen
+ | journal = Portugal. Math.
+ | volume = 4
+ | pages = 238–242
+ | year = 1945}}
+*{{citation
+ | last = Hadwiger | first = Hugo | author-link = Hugo Hadwiger
+ | title = Ungelöste Probleme No. 40
+ | journal = [[Elem. Math.]]
+ | volume = 16
+ | pages = 103–104
+ | year = 1961}}
+*{{citation
+ |last= Heule|first=Marijn J.H.
+ |author-link=Marijn Heule
+ |title=Computing Small Unit-Distance Graphs with Chromatic Number 5
+ |date=2018|arxiv= 1805.12181
+ |bibcode=2018arXiv180512181H}}
+*{{citation
+ | last1 = Jensen | first1 = Tommy R.
+ | last2 = Toft | first2 = Bjarne
+ | title = Graph Coloring Problems
+ | publisher = Wiley-Interscience Series in Discrete Mathematics and Optimization
+ | year = 1995
+ | isbn=978-0-471-02865-9
+ | pages = 150–152}}
+*{{citation|last=Kalai|first=Gil|author-link=Gil Kalai
+ |title=Aubrey de Grey: The chromatic number of the plane is at least 5
+ |url=https://gilkalai.wordpress.com/2018/04/10/aubrey-de-grey-the-chromatic-number-of-the-plane-is-at-least-5/
+ |date=April 10, 2018}}
+*{{citation |last1=Mixon |first1=Dustin |title=Polymath16, seventeenth thread: Declaring victory |url=https://dustingmixon.wordpress.com/2021/02/01/polymath16-seventeenth-thread-declaring-victory/ |date=February 1, 2021 |access-date=16 August 2021}}
+*{{citation
+ |url=http://michaelnielsen.org/polymath1/index.php?title=Hadwiger-Nelson_problem
+ |title=Hadwiger-Nelson problem (Polymath project page)
+ |last=Polymath|first=D. H. J.|author-link=D. H. J. Polymath
+ |date=April 2018
+ |archive-url=https://web.archive.org/web/20220216001534/https://asone.ai/polymath/index.php?title=Hadwiger-Nelson_problem
+ |archive-date=2022-02-16
+ }}
+*{{citation
+ | last1 = Radoičić | first1 = Radoš
+ | last2 = Tóth | first2 = Géza
+ | editor-last = Aronov 
+ | editor-first = Boris 
+ | editor-last2 = Basu 
+ | editor-first2 = Saugata 
+ | editor-last3 = Pach 
+ | editor-first3 = Janos 
+ | editor-last4 = Sharir 
+ | editor-first4 = Micha 
+ | contribution = Note on the chromatic number of the space
+ | doi = 10.1007/978-3-642-55566-4_32
+ | location = Berlin
+ | mr = 2038498
+ | pages = 695–698
+ | publisher = Springer
+ | series = Algorithms and Combinatorics
+ | title = Discrete and Computational Geometry: The Goodman–Pollack Festschrift
+ | url = https://www.cs.bme.hu/~geza/chromatic.pdf
+ | volume = 25
+ | isbn=978-3-540-00371-7
+ | year = 2003}}
+*{{citation
+ | last = Rassias | first = Themistocles M.
+ | editor1-last = Florian | editor1-first = H.
+ | editor2-last = Ortner | editor2-first = N.
+ | editor3-last = Schnitzer | editor3-first = F. J.
+ | editor4-last = Tutschke | editor4-first = W.
+ | contribution = Isometric mappings and the problem of A. D. Aleksandrov for conservative distances
+ | doi = 10.1142/4822
+ | location = River Edge, New Jersey
+ | mr = 1893253
+ | pages = 118–125
+ | publisher = World Scientific Publishing Co., Inc.
+ | title = Functional-Analytic and Complex Methods, their Interactions, and Applications to Partial Differential Equations: Proceedings of the International Workshop held at Graz University Of Technology, Graz, February 12–16, 2001
+ | year = 2001| isbn = 978-981-02-4764-5
+ }}
+*{{citation | last1 = Shelah | first1 = Saharon | author-link1 = Saharon Shelah | last2 = Soifer | first2 = Alexander | author-link2 = Alexander Soifer | title = Axiom of choice and chromatic number of the plane | journal = Journal of Combinatorial Theory, Series A | volume = 103 | issue = 2 | year = 2003 | pages = 387–391 | doi = 10.1016/S0097-3165(03)00102-X | doi-access =  }}
+*{{Citation
+ |last=Soifer | first = Alexander
+ |year=2008
+ |title=The Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of its Creators
+ |title-link=The Mathematical Coloring Book
+ |isbn=978-0-387-74640-1
+ |location=New York
+ |publisher=Springer}}
+*{{citation
+ | last = Woodall | first = D. R.
+ | title = Distances realized by sets covering the plane
+ | doi = 10.1016/0097-3165(73)90020-4
+ | journal = [[Journal of Combinatorial Theory]] | series = Series A
+ | mr = 0310770
+ | volume = 14 
+ | issue = 2
+ | year = 1973 
+ | pages = 187–200| doi-access = free
+ }}
+{{Refend}}
+
+== External links ==
+* {{citation
+ |last      = O'Rourke | first= Joseph
+ |author-link  = Joseph O'Rourke (professor)
+ |title       = Problem 57: Chromatic Number of the Plane
+ |work        = The Open Problems Project
+ |url         = https://topp.openproblem.net/p57
+}}
+* {{citation
+  | last = Mohar | first= Bojan
+  | author-link = Bojan Mohar
+  | year = 2001
+  | url = http://www.fmf.uni-lj.si/~mohar/Problems/P8UnitDistanceGraph.html
+  | title = The chromatic number of the Unit Distance Graph}}
+* {{citation
+  | last = Kalai | first= Gil
+  | author-link = Gil Kalai
+  | year = 2018
+  | url = https://gilkalai.wordpress.com/2018/04/13/coloring-problems-for-arrangements-of-circles-and-pseudocircles/
+  | title = Coloring Problems for Arrangements of Circles (and Pseudocircles)
+  | ref = none}}
+* {{citation|last=Grime|first=James|url=https://www.youtube.com/watch?v=niaeV_NHh-o&t=12s |archive-url=https://ghostarchive.org/varchive/youtube/20211221/niaeV_NHh-o |archive-date=2021-12-21 |url-status=live|work=Numberphile|title=A Colorful Unsolved Problem|date=February 27, 2019}}{{cbignore}}
+
+{{DEFAULTSORT:Hadwiger-Nelson problem}}
+[[Category:Unsolved problems in graph theory]]
+[[Category:Geometric graph theory]]
+[[Category:Graph coloring]]
+[[Category:Infinite graphs]]
+[[Category:Mathematical problems]]

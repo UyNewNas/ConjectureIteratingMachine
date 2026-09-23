@@ -1,0 +1,187 @@
+{{Short description|Prime number of the form 2^u × 3^v + 1}}
+{{Infobox integer sequence
+| named_after        = [[James Pierpont (mathematician)|James Pierpont]]
+| terms_number       = Thousands
+| con_number         = Infinite
+| parentsequence     = Pierpont number
+| first_terms        = 2, 3, 5, 7, 13, 17, 19, 37, 73, 97, 109, 163, 193, 257, 433, 487, 577, 769, 1153, 1297, 1459, 2593, 2917, 3457, 3889
+| largest_known_term = {{nowrap|81 × 2<sup>20,498,148</sup> + 1}}
+| OEIS               = A005109
+}}
+
+In [[number theory]], a '''Pierpont prime''' is a [[prime number]] of the form
+<math display=block>2^u\cdot 3^v + 1\,</math>
+for some nonnegative [[integer]]s {{mvar|u}} and {{mvar|v}}.  That is, they are the prime numbers {{mvar|p}} for which {{math|''p'' − 1}} is [[Smooth number|3-smooth]]. They are named after the mathematician [[James Pierpont (mathematician)|James Pierpont]], who used them to characterize the [[regular polygon]]s that can be constructed using [[conic section]]s. The same characterization applies to polygons that can be constructed using ruler, compass, and [[angle trisection|angle trisector]], or using [[Mathematics of paper folding|paper folding]].
+
+Except for 2 and the [[Fermat prime]]s, every Pierpont prime must be 1 modulo 6. The first few Pierpont primes are:
+{{Block indent|left=1.6|[[2 (number)|2]], [[3 (number)|3]], [[5 (number)|5]], [[7 (number)|7]], [[13 (number)|13]], [[17 (number)|17]], [[19 (number)|19]], [[37 (number)|37]], [[73 (number)|73]], [[97 (number)|97]], [[109 (number)|109]], [[163 (number)|163]], [[193 (number)|193]], [[257 (number)|257]], [[433 (number)|433]], 487, 577, 769,  1153, 1297, 1459, 2593, 2917, 3457, 3889, 10369, 12289, 17497, 18433, 39367, 52489, 65537, 139969, 147457, 209953, 331777, 472393, 629857, 746497, 786433, 839809, 995329, ... {{OEIS|id=A005109}}}}
+It has been conjectured that there are infinitely many Pierpont primes, but this remains unproven.
+
+== Distribution ==
+{{unsolved|mathematics|Are there infinitely many Pierpont primes?}}
+A Pierpont prime with {{math|1=''v'' = 0}} is of the form <math>2^u+1</math>, and is therefore a [[Fermat prime]] (unless {{math|1=''u'' = 0}}). If {{mvar|v}} is [[Positive number|positive]] then {{mvar|u}} must also be positive (because <math>3^v+1</math> would be an [[even number]] greater than 2 and therefore not prime), and therefore the non-Fermat Pierpont primes all have the form {{math|6''k''&nbsp;+&nbsp;1}}, when {{mvar|k}} is a positive integer (except for 2, when {{math|1=''u'' = ''v'' = 0}}).
+
+[[File:Pierpont exponent distribution.png|thumb|Distribution of the exponents for the smaller Pierpont primes]]
+Empirically, the Pierpont primes do not seem to be particularly rare or sparsely distributed; there are 42 Pierpont primes less than 10<sup>6</sup>, 65 less than 10<sup>9</sup>, 157 less than 10<sup>20</sup>, and 795 less than 10<sup>100</sup>. There are few restrictions from algebraic factorisations on the Pierpont primes, so there are no requirements like the [[Mersenne prime]] condition that the exponent must be prime. Thus, it is expected that among {{mvar|n}}-digit numbers of the correct form <math>2^u\cdot3^v+1</math>, the fraction of these that are prime should be proportional to {{math|1/''n''}}, a similar proportion as the proportion of prime numbers among all {{mvar|n}}-digit numbers.
+As there are <math>\Theta(n^{2})</math> numbers of the correct form in this range, there should be <math>\Theta(n)</math> Pierpont primes.
+
+[[Andrew M. Gleason]] made this reasoning explicit, [[conjecture|conjecturing]] there are infinitely many Pierpont primes, and more specifically that there should be approximately {{math|9''n''}} Pierpont primes up to {{math|10<sup>''n''</sup>}}.<ref name="g98">{{citation
+ | last = Gleason | first = Andrew M. | author-link = Andrew M. Gleason
+ | doi = 10.2307/2323624
+ | issue = 3
+ | journal = [[American Mathematical Monthly]]
+ | mr = 935432
+ | pages = 185–194
+ | title = Angle trisection, the heptagon, and the triskaidecagon
+ | volume = 95
+ | year = 1988| jstor = 2323624 }}. Footnote 8, p.&nbsp;191.</ref> According to Gleason's conjecture there are <math>\Theta(\log N)</math> Pierpont primes smaller than ''N'', as opposed to the smaller conjectural number <math>O(\log \log N)</math> of Mersenne primes in that range.
+
+==Primality testing==
+When <math>2^u > 3^v</math>, <math>2^u\cdot 3^v + 1</math> is a [[Proth number]] and thus its primality can be tested by [[Proth's theorem]]. On the other hand, when <math>2^u < 3^v</math> alternative primality tests for <math>M=2^u\cdot 3^v + 1</math> are possible based on the factorization of <math>M-1</math> as a small even number multiplied by a large [[power of 3]].<ref>{{citation
+ | last1 = Kirfel | first1 = Christoph
+ | last2 = Rødseth | first2 = Øystein J.
+ | doi = 10.1016/S0012-365X(01)00125-X
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1861431
+ | pages = 395–406
+ | title = On the primality of <math>2h\cdot 3^n+1</math>
+ | volume = 241
+ | year = 2001| doi-access = 
+ }}.</ref>
+
+== Pierpont primes found as factors of Fermat numbers ==
+
+As part of the ongoing worldwide search for factors of [[Fermat number]]s, some Pierpont primes have been announced as factors. The following table<ref>{{Cite web |title=Fermat factoring status |url=http://www.prothsearch.com/fermat.html |access-date=2026-06-29 |website=www.prothsearch.com}}</ref> gives values of ''m'', ''k'', and ''n'' such that
+
+{{Block indent|left=1.6|<math>2^{2^m} + 1</math> is divisible by <math>3^{k} \cdot 2^{n} + 1.</math>}}
+
+The left-hand side is a Fermat number; the right-hand side is a Pierpont prime.
+
+{| class="wikitable"
+|+
+!''m''   !!''k''!! ''n''  !! Year !! Discoverer
+|-
+|38      || 1 || 41      || 1903 || [[James Cullen (mathematician)|Cullen]], [[Allan Joseph Champneys Cunningham|Cunningham]] & Western
+|-
+|63      || 2 || 67      || 1956 || [[Raphael M. Robinson|Robinson]]
+|-
+|207     || 1 || 209     || 1956 || Robinson
+|-
+|452     || 3 || 455     || 1956 || Robinson
+|-
+|9428    || 2 || 9431    || 1983 || Keller
+|-
+|12185   || 4 || 12189   || 1993 || [[Harvey Dubner|Dubner]]
+|-
+|28281   || 4 || 28285   || 1996 || Taura
+|-
+|157167  || 1 || 157169  || 1995 || Young
+|-
+|213319  || 1 || 213321  || 1996 || Young
+|-
+|303088  || 1 || 303093  || 1998 || Young
+|-
+|382447  || 1 || 382449  || 1999 || [[John B. Cosgrave|Cosgrave]] & Gallot
+|-
+|461076  || 2 || 461081  || 2003 || Nohara, Jobling, [[George Woltman|Woltman]] & Gallot
+|-
+|495728  || 5 || 495732  || 2007 || Keiser, Jobling, Penné & Fougeron
+|-
+|672005  || 3 || 672007  || 2005 || [[Curtis Cooper (mathematician)|Cooper]], Jobling, Woltman & Gallot
+|-
+|2145351 || 1 || 2145353 || 2003 || Cosgrave, Jobling, Woltman & Gallot
+|-
+|2478782 || 1 || 2478785 || 2003 || Cosgrave, Jobling, Woltman & Gallot
+|-
+|2543548 || 2 || 2543551 || 2011 || Brown, Reynolds, Penné & Fougeron 
+|-
+|7963245 || 3 || 7963247 || 2021 || Greer, Reynolds, Penné & Fougeron 
+|}
+
+{{As of|2023}}, the largest known Pierpont prime is 81 × 2<sup>20498148</sup> + 1 (6,170,560 decimal digits), whose primality was discovered in June 2023.<ref>{{citation|url=http://primes.utm.edu/primes/lists/short.txt|title=The largest known primes|first=Chris|last=Caldwell|website=The [[Prime Pages]]|access-date=17 June 2023|archive-date=9 November 2013|archive-url=https://web.archive.org/web/20131109191109/http://primes.utm.edu/primes/lists/short.txt|url-status=dead}}; {{citation|url=https://primes.utm.edu/primes/page.php?id=136165|title=The Prime Database: 81*2^20498148+1|website=The [[Prime Pages]]|access-date=17 June 2023}}</ref>
+
+==Polygon construction==
+In the [[mathematics of paper folding]], the [[Huzita–Hatori axioms|Huzita axioms]] define six of the seven types of fold possible. It has been shown that these folds are sufficient to allow the construction of the points that solve any [[cubic equation]].<ref>{{citation
+ | last = Hull | first = Thomas C. | author-link = Tom Hull (mathematician)
+ | doi = 10.4169/amer.math.monthly.118.04.307
+ | issue = 4
+ | journal = [[American Mathematical Monthly]]
+ | mr = 2800341
+ | pages = 307–315
+ | title = Solving cubics with creases: the work of Beloch and Lill
+ | volume = 118
+ | year = 2011}}.</ref>
+It follows that they allow any [[regular polygon]] of {{mvar|N}} sides to be formed, as long as {{math|''N'' ≥ 3}} and is of the form {{math|2<sup>''m''</sup>3<sup>''n''</sup>''ρ''}}, where {{mvar|ρ}} is a product of distinct Pierpont primes.  This is the same class of regular polygons as those that can be constructed with a [[compass]], [[straightedge]], and [[Angle trisection|angle trisector]].<ref name="g98"/> Regular polygons which can be constructed with only compass and straightedge ([[constructible polygon]]s) are the special case where {{math|1=''n''&nbsp;=&nbsp;0}} and {{mvar|ρ}} is a product of distinct [[Fermat prime]]s, themselves a subset of Pierpont primes.
+
+In 1895, [[James Pierpont (mathematician)|James Pierpont]] studied the same class of regular polygons; his work is what gives the name to the Pierpont primes. Pierpont generalized compass and straightedge constructions in a different way, by adding the ability to draw [[conic section]]s whose coefficients come from previously constructed points. As he showed, the regular {{mvar|N}}-gons that can be constructed with these operations are the ones such that the [[Euler's totient function|totient]] of {{mvar|N}} is 3-smooth. Since the totient of a prime is formed by subtracting one from it, the primes {{mvar|N}} for which Pierpont's construction works are exactly the Pierpont primes. However, Pierpont did not describe the form of the composite numbers with 3-smooth totients.<ref>{{citation
+ | last = Pierpont | first = James | author-link = James Pierpont (mathematician)
+ | doi = 10.1090/S0002-9904-1895-00317-1
+ | issue = 3
+ | journal = [[Bulletin of the American Mathematical Society]]
+ | mr = 1557414
+ | pages = 77–83
+ | title = On an undemonstrated theorem of the Disquisitiones Arithmeticæ
+ | volume = 2
+ | year = 1895| doi-access = free
+ }}.</ref> As Gleason later showed, these numbers are exactly the ones of the form {{math|2<sup>''m''</sup>3<sup>''n''</sup>''ρ''}} given above.<ref name="g98"/>
+
+The smallest prime that is not a Pierpont (or Fermat) prime is 11; therefore, the [[hendecagon]] is the first regular polygon that cannot be constructed with compass, straightedge and angle trisector (or origami, or conic sections). However, Benjamin and Snyder showed in 2014 that the regular 11-gon is [[Neusis construction|neusis-constructible]].<ref name="ElliotConstruction">{{cite journal |last1=Benjamin |first1=Elliot |last2=Snyder |first2=C |title=On the construction of the regular hendecagon by marked ruler and compass |journal=[[Mathematical Proceedings of the Cambridge Philosophical Society]] |date=May 2014 |volume=156 |issue=3 |pages=409–424 |doi=10.1017/S0305004113000753 |bibcode=2014MPCPS.156..409B |s2cid=129791392 |url=https://www.researchgate.net/publication/262991453 |access-date=26 September 2020|url-status=live|archive-url=https://archive.today/20200926183156/https://www.researchgate.net/profile/Elliot_Benjamin3/publication/262991453_On_the_construction_of_the_regular_hendecagon_by_marked_ruler_and_compass/links/55897ab508ae2affe7151091/On-the-construction-of-the-regular-hendecagon-by-marked-ruler-and-compass.pdf|archive-date=September 26, 2020}}</ref> All other regular {{nowrap|{{mvar|N}}-gons}} with {{math|3 ≤ ''N'' ≤ 21}} can be constructed with compass, straightedge and trisector.<ref name="g98"/>
+
+== Generalization ==
+
+A '''Pierpont prime of the second kind''' is a prime number of the form 2<sup>''u''</sup>3<sup>''v''</sup> − 1. These numbers are
+{{Block indent|left=1.4|2, 3, 5, 7, 11, 17, 23, 31, 47, 53, 71, 107, 127, 191, 383, 431, 647, 863, 971, 1151, 2591, 4373, 6143, 6911, 8191, 8747, 13121, 15551, 23327, 27647, 62207, 73727, 131071, 139967, 165887, 294911, 314927, 442367, 472391, 497663, 524287, 786431, 995327, ... {{OEIS|id=A005105}}}}
+
+The largest known primes of this type are [[Mersenne prime]]s; currently the largest known is <math>2^{136279841}-1</math> (41,024,320 decimal digits). The largest known Pierpont prime of the second kind that is not a Mersenne prime is <math>3\cdot 2^{22103376}-1</math>, found by [[PrimeGrid]].<ref>[https://primes.utm.edu/primes/page.php?id=138599 3*2^22103376 - 1] (6,653,780 Decimal Digits), from The [[Prime Pages]].</ref>
+
+A '''generalized Pierpont prime''' is a prime of the form <math>p_1^{n_1} \!\cdot p_2^{n_2} \!\cdot p_3^{n_3} \!\cdot \ldots \cdot p_k^{n_k} + 1</math> with ''k'' fixed primes ''p''<sub>1</sub> < ''p''<sub>2</sub> < ''p''<sub>3</sub> < ... < ''p''<sub>''k''</sub>. A '''generalized Pierpont prime of the second kind''' is a prime of the form <math>p_1^{n_1} \!\cdot p_2^{n_2} \!\cdot p_3^{n_3} \!\cdot \ldots \cdot p_k^{n_k} - 1</math> with ''k'' fixed primes ''p''<sub>1</sub> < ''p''<sub>2</sub> < ''p''<sub>3</sub> < ... < ''p''<sub>''k''</sub>. Since all primes greater than 2 are [[parity (mathematics)|odd]], in both kinds ''p''<sub>1</sub> must be 2. The sequences of such primes in the [[OEIS]] are:
+
+{|class="wikitable"
+|{''p''<sub>1</sub>, ''p''<sub>2</sub>, ''p''<sub>3</sub>, ..., ''p''<sub>''k''</sub>}
+| + 1
+| − 1
+|-
+|{2}
+|{{oeis|id=A092506}}
+|{{oeis|id=A000668}}
+|-
+|{2, 3}
+|{{oeis|id=A005109}}
+|{{oeis|id=A005105}}
+|-
+|{2, 5}
+|{{oeis|id=A077497}}
+|{{oeis|id=A077313}}
+|-
+|{2, 3, 5}
+|{{oeis|id=A002200}}
+|{{oeis|id=A293194}}
+|-
+|{2, 7}
+|{{oeis|id=A077498}}
+|{{oeis|id=A077314}}
+|-
+|{2, 3, 5, 7}
+|{{oeis|id=A174144}}
+|{{oeis|id=A347977}}
+|-
+|{2, 11}
+|{{oeis|id=A077499}}
+|{{oeis|id=A077315}}
+|-
+|{2, 13}
+|{{oeis|id=A173236}}
+|{{oeis|id=A173062}}
+|}
+
+==See also==
+*[[Proth prime]], the primes of the form <math>N = k \cdot 2^n + 1</math> where ''k'' and ''n'' are positive integers, <math>k</math> is odd and <math>2^n > k.</math>
+
+==References==
+{{Reflist}}
+
+{{Prime number classes|state=collapsed}}
+
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

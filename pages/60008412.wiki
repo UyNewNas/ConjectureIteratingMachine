@@ -1,0 +1,43 @@
+{{short description|Two unsolved conjectures in algebraic number theory}}{{Multiple issues|
+{{Tone|date=April 2026}}
+{{No footnotes|date=April 2026}}
+{{refimprove|date=February 2019}}
+}}
+
+'''Greenberg's conjecture''' is either of two conjectures in [[algebraic number theory]] proposed by [[Ralph Greenberg]]. Both are still unsolved as of 2021.
+
+==Invariants conjecture==
+The first conjecture was proposed in 1976 and concerns [[Iwasawa algebra|Iwasawa]] invariants. This conjecture is related to [[Vandiver's conjecture]], [[Leopoldt's conjecture]], [[Birch–Tate conjecture]], all of which are also unsolved.
+
+The conjecture, also referred to as '''Greenberg's invariants conjecture''', firstly appeared in Greenberg's [[Princeton University]] [[thesis]] of 1971 and originally stated that, assuming that <math>F</math> is a [[totally real number field]] and that <math>F_\infty/F</math> is the cyclotomic <math>\mathbb{Z}_p</math>-extension, <math>\lambda(F_\infty/F) = \mu(F_\infty/F) = 0</math>, i.e. the power of <math>p</math> dividing the class number of <math>F_n</math> is bounded as <math>n \rightarrow \infty</math>. Note that if [[Leopoldt's conjecture]] holds for <math>F</math> and <math>p</math>, the only <math>\mathbb{Z}_p</math>-extension of <math>F</math> is the cyclotomic one (since it is totally real).
+
+In 1976, Greenberg expanded the conjecture by providing more examples for it and slightly reformulated it as follows: given that <math>k</math> is a finite extension of <math>\mathbf{Q}</math> and that <math>\ell</math> is a fixed prime, with consideration of subfields of cyclotomic extensions of <math>k</math>, one can define a tower of number fields
+<math>k = k_0 \subset k_1 \subset k_2 \subset \cdots \subset k_n \subset \cdots</math> such that <math>k_n</math> is a cyclic extension of <math>k</math> of degree <math>\ell^n</math>. If <math>k</math> is totally real, is the power of <math>l</math> dividing the class number of <math>k_n</math> bounded as  <math>n \rightarrow \infty</math>? Now, if <math>k</math> is an arbitrary number field, then there exist integers <math>\lambda</math>, <math>\mu</math> and <math>\nu</math> such that the power of <math>\ell</math> dividing the class number of <math>k_n</math> is <math>\ell^{e_n}</math>, where <math>e_n = {\lambda}n + \mu^{\ell_n} + \nu</math> for all sufficiently large <math>n</math>. The integers <math>\lambda</math>, <math>\mu</math>, <math>\nu</math> depend only on <math>k</math> and <math>\ell</math>. Then, we ask: is <math>\lambda = \mu = 0</math> for <math>k</math> totally real?
+
+Simply speaking, the conjecture asks whether we have <math>\mu_\ell(k) = \lambda_\ell(k) = 0</math> for any totally real number field <math>k</math> and any prime number <math>\ell</math>, or the conjecture can also be reformulated as asking whether both invariants ''λ'' and ''μ'' associated to the cyclotomic <math>Z_p</math>-extension of a totally real number field vanish.
+
+In 2001, Greenberg generalized the conjecture (thus making it known as '''Greenberg's pseudo-null conjecture''' or, sometimes, as '''Greenberg's generalized conjecture'''):
+
+Supposing that <math>F</math> is a totally real number field and that <math>p</math> is a prime, let <math>\tilde{F}</math> denote the compositum of all <math>\mathbb{Z}_p</math>-extensions of <math>F</math>. (Recall that if [[Leopoldt's conjecture]] holds for <math>F</math> and <math>p</math>, then <math>\tilde F=F_\infty</math>.) Let <math>\tilde{L}</math> denote the pro-<math>p</math> [[Hilbert class field]] of <math>\tilde{F}</math> and let <math>\tilde{X} = \operatorname{Gal}(\tilde{L}/\tilde{F})</math>, regarded as a module over the ring <math>\tilde{\Lambda} = {\mathbb{Z}_p}[[\operatorname{Gal}(\tilde{F}/F)]]</math>. Then <math>\tilde{X}</math> is a pseudo-null <math>\tilde{\Lambda}</math>-module.
+
+A possible reformulation: Let <math>\tilde{k}</math> be the compositum of all the <math>\mathbb{Z}_p</math>-extensions of <math>k</math> and let <math>\operatorname{Gal}(\tilde{k}/k) \simeq \mathbb{Z}^n_p</math>, then <math>Y_\tilde{k}</math> is a pseudo-null <math>\Lambda_n</math>-module.
+ 
+Another related conjecture (also unsolved as of yet) exists:
+
+We have <math>\mu_\ell(k) = 0</math> for any number field <math>k</math> and any prime number <math>\ell</math>.
+
+This related conjecture was justified by Bruce Ferrero and [[Larry Washington]], both of whom proved (see: [[Ferrero–Washington theorem]]) that <math>\mu_\ell(k) = 0</math> for any abelian extension <math>k</math> of the [[rational number]] field <math>\mathbb{Q}</math> and any prime number <math>\ell</math>.
+
+==''p''-rationality conjecture==
+Another conjecture, which can be referred to as '''Greenberg's conjecture''', was proposed by Greenberg in 2016, and is known as '''Greenberg's <math>p</math>-rationality conjecture'''. It states that for any odd prime <math>p</math> and for any <math>t</math>, there exists a <math>p</math>-rational field <math>K</math> such that <math>\operatorname{Gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/\mathbb{2Z})^t</math>. This conjecture is related to the [[Inverse Galois problem]].
+
+==Further reading==
+*R. Greenberg, ''On some questions concerning the Iwasawa invariants'', Princeton University thesis (1971)
+*R. Greenberg, "On the Iwasawa invariants of totally real number fields", ''[[American Journal of Mathematics]]'', issue 98 (1976), pp. 263–284
+*R. Greenberg, "Iwasawa Theory — Past and Present", ''Advanced Studies in Pure Mathematics'', issue 30 (2001), pp. 335–385
+*R. Greenberg, "Galois representations with open image", ''Annales mathématiques du Québec'', volume 40, number 1 (2016), pp. 83–119
+*B. Ferrero and L. C. Washington, "The Iwasawa Invariant <math>\mu_p</math> Vanishes for Abelian Number Fields", ''[[Annals of Mathematics]]'' (Second Series), volume 109, number 2 (May, 1979), pp. 377–395
+
+[[Category:Algebraic number theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

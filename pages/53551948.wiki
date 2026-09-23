@@ -1,0 +1,357 @@
+{{Short description|Unsolved problem in number theory}}
+{{unsolved|mathematics|2=Does the Erdős–Moser equation have solutions other than {{math|1=1<sup>1</sup>+2<sup>1</sup>=3<sup>1</sup>}}?}}
+In [[number theory]], the '''Erdős–Moser equation''' is
+:<math>1^k+2^k+\cdots+(m-1)^k=m^k,</math>
+where {{mvar|m}} and {{mvar|k}} are restricted to the positive [[integers]]—that is, it is considered as a [[Diophantine equation]].  The only known solution is {{math|1=1<sup>1</sup> + 2<sup>1</sup> = 3<sup>1</sup>}}, and [[Paul Erdős]] conjectured that no further solutions exist. Any further solutions must have {{math|1=''m'' > 10<sup>10<sup>9</sup></sup>}}.<ref name="gallot2010"/>
+
+Throughout this article, {{mvar|p}} refers exclusively to [[prime number]]s.
+
+== Constraints on solutions ==
+
+In 1953, [[Leo Moser]] proved that, in any further solutions,<ref name="moser1953"/>
+# {{mvar|k}} is even,
+# {{math|1=''p'' &vert; (''m'' &minus; 1)}} implies {{math|1=(''p'' &minus; 1) &vert; ''k''}},
+# {{math|1=''p'' &vert; (''m'' + 1)}} implies {{math|1=(''p'' &minus; 1) &vert; ''k''}},
+# {{math|1=''p'' &vert; (2''m'' + 1)}} implies {{math|1=(''p'' &minus; 1) &vert; ''k''}},
+# {{math|1=''m'' &minus; 1}} is [[square-free integer|squarefree]],
+# {{math|1=''m'' + 1}} is either squarefree or 4 times an odd squarefree number,
+# {{math|1=2''m'' &minus; 1}} is squarefree,
+# {{math|1=2''m'' + 1}} is squarefree,
+# <math> \sum_{p|(m-1)} \frac{m-1}{p} \equiv -1 \pmod{m-1}, </math>
+# <math> \sum_{p|(m+1)} \frac{m+1}{p} \equiv -2 \pmod{m+1} \quad \text{(if }m+1\text{ is even)}, </math>
+# <math> \sum_{p|(2m-1)} \frac{2m-1}{p} \equiv -2 \pmod{2m-1}, </math>
+# <math> \sum_{p|(2m+1)} \frac{2m+1}{p} \equiv -4 \pmod{2m+1}, </math> and
+# {{math|''m'' > 10<sup>10<sup>6</sup></sup>}}.
+
+In 1966, it was additionally shown that<ref name="krzysztofek1966"/>
+# {{math|1=6 &leq; ''k'' + 2 < ''m'' < 3 (''k'' + 1) / 2}}, and
+# {{math|1=''m'' − 1}} cannot be prime.
+<!--
+In 1988, it was shown that, for every {{mvar|t}}, there is an explicitly-given number {{math|1=''k''<sub>0</sub>}} such that there are no solutions with {{math|''m'' &geq; 2}} for all {{math|1=''k'' &geq; ''k''<sub>0</sub>}} for which the denominator of the {{mvar|k}}<sup>th</sup> [[Bernoulli number]] has at most {{mvar|t}} distinct prime factors.<ref name="urbanowicz1988"/> TODO
+
+Let {{Math|''B''<sub>''k''</sub>}} denote the {{Mvar|k}}<sup>th</sup> Bernoulli number, and let {{Mvar|''S''<sub>''k''</sub>}} and {{Math|''T''<sub>''k''</sub>}} be the numerator and denominator, respectively, of {{Math|&vert;''B''<sub>''k''</sub>&vert;}} when written in lowest terms.  Then by the [[von Staudt–Clausen theorem]], {{Math|''T''<sub>''k''</sub>}} is the squarefree product of all primes {{Mvar|p}} such that {{Math|(''p'' − 1) &vert; ''k''}}.
+
+Let {{Math|''T'' &geq; 1}} be a natural number, and set <math>\psi(T) = \sqrt{\frac{5 + \sqrt{9 + 192T}}{8}}.</math>  Then the Erdős–Moser equation has no solutions {{Math|''m'' &geq; 2}} for all <math>k \geq \left( \log_{2} \frac{\psi(T)}{\psi(T) - 1} \right)^{-1}.</math>
+-->
+In 1994, it was shown that<ref name="moree1994"/>
+# [[Least common multiple|{{math|1=lcm(1,2,&mldr;,200)}}]] divides {{mvar|k}},
+# {{math|1=''m'' &equiv; 3 (mod 2<sup>ord<sub>2</sub>(''k'') + 3</sup>)}}, where {{math|1=ord<sub>2</sub>(''n'')}} is the [[p-adic valuation|2-adic valuation]] of {{mvar|n}}; equivalently, {{math|1=ord<sub>2</sub>(''m'' &minus; 3) = ord<sub>2</sub>(''k'') + 3}},
+# for any odd prime {{Mvar|p}} dividing {{Mvar|m}}, we have {{Math|''k'' &nequiv; 0, 2 (mod ''p'' &minus; 1)}},
+# any prime factor of {{mvar|m}} must be [[regular prime|irregular]] and > 10000.
+
+In 1999, Moser's method was refined to show that {{math|1=''m'' > 1.485 &times; 10<sup>9,321,155</sup>}}.<ref name="butske1999"/>
+
+In 2002, it was shown{{r|kellner2002|at=&sect;4}} that {{mvar|k}} must be a multiple of {{math|1=2<sup>3</sup> &centerdot; 3# &centerdot; 5# &centerdot; 7# &centerdot; 19# &centerdot; 1000#}}, where the symbol {{mvar|#}} indicates the [[primorial]]; that is, {{math|1=''n''#}} is the product of all prime numbers {{math|&leq; ''n''}}.  This number exceeds {{math|1=5.7462 &times; 10<sup>427</sup>}}.
+
+In 2009, it was shown that {{math|1=2''k'' / (2''m'' − 3)}} must be a [[convergent (continued fraction)|convergent]] of [[Natural logarithm of 2|{{math|1=ln(2)}}]]; in what the authors of that paper call "one of very few instances where a large scale computation of a numerical constant has an application", it was then determined that {{math|1=''m'' > 2.7139 &times; 10<sup>1,667,658,416</sup>}}.<ref name="gallot2010"/>
+
+In 2010, it was shown that<ref name="moree2013"/>
+# {{math|1=''m'' ≡ 3 (mod 8)}} and {{math|1=''m'' ≡ ±1 (mod 3)}}, and
+# {{math|1=(''m''<sup>2</sup> − 1) (4''m''<sup>2</sup> − 1) / 12}} has at least 4,990,906 prime factors, none of which are repeated.
+The number 4,990,906 arises from the fact that {{math|1={{resize|150%|&sum;}}{{su|p=4990905|b=''n''=1}} {{sfrac|''p''{{sub|''n''}}}} < {{sfrac|19|6}} < {{resize|150%|&sum;}}{{su|p=4990906|b=''n''=1}} {{sfrac|''p''{{sub|''n''}}}},}} where {{math|1=''p''<sub>''n''</sub>}} is the {{mvar|n}}<sup>th</sup> prime number.
+
+== Moser's method ==
+
+First, let {{mvar|p}} be a prime factor of {{math|1=''m'' &minus; 1}}.  [[Leo Moser]] showed<ref name="moser1953"/> that this implies that {{math|1=''p'' &minus; 1}} divides {{mvar|k}} and that
+{{NumBlk|:| <math> 1 + \frac{m - 1}{p} \equiv 0 \pmod{p}, </math> | {{EquationRef|1}} | LnSty=0.37ex dotted Gainsboro}}
+which upon multiplying by {{mvar|p}} yields
+: <math> p + m - 1 \equiv 0 \pmod{p^2}. </math>
+This in turn implies that {{math|''m'' &minus; 1}} must be [[square-free integer|squarefree]].  Furthermore, since [[Triviality (mathematics)|nontrivial]] solutions have {{math|1=''m'' &minus; 1 > 2}} and since all squarefree numbers in this range must have at least one odd prime factor, the assumption that {{math|1=''p'' &minus; 1}} divides {{mvar|k}} implies that {{mvar|k}} must be even.
+
+One congruence of the form ({{EquationNote|1}}) exists for each prime factor {{mvar|p}} of {{math|1=''m'' &minus; 1}}.  Multiplying all of them together yields
+: <math> \prod_{p|(m-1)} \left( 1 + \frac{m-1}{p} \right) \equiv 0 \pmod{m-1}. </math>
+Expanding out the product yields
+: <math> 1 + \sum_{p|(m-1)} \frac{m-1}{p} + (\text{higher-order terms}) \equiv 0 \pmod{m-1}, </math>
+where the higher-order terms are products of multiple factors of the form {{math|1=(''m'' &minus; 1) / ''p''}}, with different values of {{mvar|p}} in each factor.  These terms are all divisible by {{math|1=''m'' &minus; 1}}, so they all drop out of the congruence, yielding
+: <math> 1 + \sum_{p|(m-1)} \frac{m-1}{p} \equiv 0 \pmod{m-1}. </math>
+Dividing out the modulus yields
+{{NumBlk|:| <math> \frac{1}{m-1} + \sum_{p|(m-1)} \frac{1}{p} \equiv 0 \pmod{1}. </math> | {{EquationRef|2}} | LnSty=0.37ex dotted Gainsboro}}
+Similar reasoning yields the congruences
+{{NumBlk|:| <math> \frac{2}{m+1} + \sum_{p|(m+1)} \frac{1}{p} \equiv 0 \pmod{1} \quad \text{(if }m+1\text{ is even)}, </math> | {{EquationRef|3}} | LnSty=0.37ex dotted Gainsboro}}
+{{NumBlk|:| <math> \frac{2}{2m-1} + \sum_{p|(2m-1)} \frac{1}{p} \equiv 0 \pmod{1}, \quad \text{and} </math> | {{EquationRef|4}} | LnSty=0.37ex dotted Gainsboro}}
+{{NumBlk|:| <math> \frac{4}{2m+1} + \sum_{p|(2m+1)} \frac{1}{p} \equiv 0 \pmod{1}. </math> | {{EquationRef|5}} | LnSty=0.37ex dotted Gainsboro}}
+
+The congruences ({{EquationNote|2}}), ({{EquationNote|3}}), ({{EquationNote|4}}), and ({{EquationNote|5}}) are quite restrictive; for example, the only values of {{math|1=''m'' < 1000}} which satisfy ({{EquationNote|2}}) are 3, 7, and 43, and these are ruled out by ({{EquationNote|4}}).
+
+We now split into two cases: either {{math|1=''m'' + 1}} is even, or it is odd.
+
+In the case that {{math|1=''m'' + 1}} is even, adding the left-hand sides of the congruences ({{EquationNote|2}}), ({{EquationNote|3}}), ({{EquationNote|4}}), and ({{EquationNote|5}}) must yield an integer, and this integer must be at least 4.  Furthermore, the [[Euclidean algorithm]] shows that no prime {{math|1=''p'' > 3}} can divide more than one of the numbers in the set {{math|1={{mset|''m'' &minus; 1, ''m'' + 1, 2''m'' &minus; 1, 2''m'' + 1}}}}, and that 2 and 3 can divide at most two of these numbers.  Letting {{math|1=''M'' = (''m'' &minus; 1) (''m'' + 1) (2''m'' &minus; 1) (2''m'' + 1)}}, we then have
+{{NumBlk|:| <math> \frac{1}{m-1} + \frac{2}{m+1} + \frac{2}{2m-1} + \frac{4}{2m+1} + \sum_{p|M} \frac{1}{p} \geq 4 - \frac{1}{2} - \frac{1}{3} = 3.1666.... </math> | {{EquationRef|6}} | LnSty=0.37ex dotted Gainsboro}}
+Since there are no nontrivial solutions with {{math|1=''m'' < 1000}}, the part of the LHS of ({{EquationNote|6}}) outside the sigma cannot exceed {{math|1=0.006}}; we therefore have
+: <math> \sum_{p|M} \frac{1}{p} > 3.16. </math>
+Therefore, if <math> \sum_{p \leq x} \frac{1}{p} < 3.16 </math>, then <math> M > \prod_{p \leq x} p </math>.  In Moser's original paper,<ref name="moser1953"/> bounds on the [[prime-counting function]] are used to observe that
+: <math> \sum_{p \leq 10^7} \frac{1}{p} < 3.16. </math>
+Therefore, {{mvar|M}} must exceed the product of the first 10,000,000 primes.  This in turn implies that {{math|1=''m'' > 10<sup>10<sup>6</sup></sup>}} in this case.
+
+In the case that {{math|1=''m'' + 1}} is odd, we cannot use ({{EquationNote|3}}), so instead of ({{EquationNote|6}}) we obtain
+: <math> \frac{1}{m-1} + \frac{2}{2m-1} + \frac{4}{2m+1} + \sum_{p|N} \frac{1}{p} \geq 3 - \frac{1}{3} = 2.666..., </math>
+where {{math|1=''N'' = (''m'' &minus; 1) (2''m'' &minus; 1) (2''m'' + 1)}}.  On the surface, this appears to be a weaker condition than ({{EquationNote|6}}), but since {{math|1=''m'' + 1}} is odd, the prime 2 cannot appear on the greater side of this inequality, and it turns out to be a stronger restriction on {{mvar|m}} than the other case.
+
+Therefore, any nontrivial solutions have {{math|1=''m'' > 10<sup>10<sup>6</sup></sup>}}.
+
+In 1999, this method was refined by using computers to replace the prime-counting estimates with exact computations; this yielded the bound {{math|1=''m'' > 1.485 &times; 10<sup>9,321,155</sup>}}.{{r|butske1999|at=Thm 2}}
+
+== Bounding the ratio {{math|1=''m'' / (''k'' + 1)}} ==
+
+Let {{math|1=''S''<sub>''k''</sub>(''m'') = 1<sup>''k''</sup> + 2<sup>''k''</sup> + &ctdot; + (''m'' − 1)<sup>''k''</sup>}}.  Then the Erdős–Moser equation becomes {{math|1=''S''<sub>''k''</sub>(''m'') = ''m''<sup>''k''</sup>}}.
+
+=== Method 1: Integral comparisons ===
+
+By comparing the sum {{math|1=''S''<sub>''k''</sub>(''m'')}} to definite integrals of the function {{math|1=''x''<sup>''k''</sup>}}, one can obtain the bounds {{math|1=1 < ''m'' / (''k'' + 1) < 3}}.{{r|gallot2010|at=&sect;1&para;2}}
+
+The sum {{math|1=''S''<sub>''k''</sub>(''m'') = 1<sup>''k''</sup> + 2<sup>''k''</sup> + &ctdot; + (''m'' − 1)<sup>''k''</sup>}} is the [[upper Riemann sum]] corresponding to the integral <math display="inline">\int_0^{m-1} x^k \, \mathrm{d}x</math> in which the interval has been partitioned on the integer values of {{mvar|x}}, so we have
+: <math> S_k(m) > \int_0^{m-1} x^k \; \mathrm{d}x. </math>
+By hypothesis, {{math|1=''S''<sub>''k''</sub>(''m'') = ''m''<sup>''k''</sup>}}, so
+: <math> m^k > \frac{(m-1)^{k+1}}{k+1}, </math>
+which leads to
+{{NumBlk|:|<math> \frac{m}{k+1} < \left( 1 + \frac{1}{m-1} \right)^{k+1}. </math>|{{EquationRef|7}}|LnSty=0.37ex dotted Gainsboro}}
+Similarly, {{math|1=''S''<sub>''k''</sub>(''m'')}} is the lower Riemann sum corresponding to the integral <math display="inline">\int_1^m x^k \, \mathrm{d}x</math> in which the interval has been partitioned on the integer values of {{mvar|x}}, so we have
+: <math> S_k(m) \leq \int_1^m x^k \; \mathrm{d}x. </math>
+By hypothesis, {{math|1=''S''<sub>''k''</sub>(''m'') = ''m''<sup>''k''</sup>}}, so
+: <math> m^k \leq \frac{m^{k+1} - 1}{k+1} < \frac{m^{k+1}}{k+1}, </math>
+and so
+{{NumBlk|:|<math> k+1 < m. </math>|{{EquationRef|8}}|LnSty=0.37ex dotted Gainsboro}}
+Applying this to ({{EquationNote|7}}) yields
+: <math> \frac{m}{k+1} < \left(1 + \frac{1}{m-1}\right)^m = \left(1 + \frac{1}{m-1}\right)^{m-1} \cdot \left(\frac{m}{m-1}\right) < e \cdot \frac{m}{m-1}. </math>
+Computation shows that there are no nontrivial solutions with {{math|1=''m'' &leq; 10}}, so we have
+: <math> \frac{m}{k+1} < e \cdot \frac{11}{11-1} < 3. </math>
+Combining this with ({{EquationNote|8}}) yields {{math|1=1 < ''m'' / (''k'' + 1) < 3}}, as desired.
+
+=== Method 2: Algebraic manipulations ===
+
+The upper bound {{math|1=''m'' / (''k'' + 1) < 3}} can be reduced to {{math|1=''m'' / (''k'' + 1) < 3/2}} using an algebraic method:{{r|krzysztofek1966|at=Lemat 4}}
+
+Let {{mvar|r}} be a positive integer.  Then the [[binomial theorem]] yields
+: <math> (\ell + 1)^{r+1} = \sum_{i=0}^{r+1} \binom{r+1}{i} \ell^{r+1-i}. </math>
+Summing over {{mvar|&ell;}} yields
+: <math> \sum_{\ell=1}^{m-1} (\ell + 1)^{r+1} = \sum_{\ell=1}^{m-1} \left( \sum_{i=0}^{r+1} \binom{r+1}{i} \ell^{r+1-i} \right). </math>
+Reindexing on the left and rearranging on the right yields
+: <math> \sum_{\ell=2}^{m} \ell^{r+1} = \sum_{i=0}^{r+1} \binom{r+1}{i} \sum_{\ell=1}^{m-1} \ell^{r+1-i} </math>
+<!--: <math> 1^{r+1} + \sum_{\ell=2}^{m} \ell^{r+1} = 1^{r+1} + \sum_{i=0}^{r+1} \binom{r+1}{i} \sum_{\ell=1}^{m-1} \ell^{r+1-i} </math>-->
+: <math> \sum_{\ell=1}^{m} \ell^{r+1} = 1 + \sum_{i=0}^{r+1} \binom{r+1}{i} S_{r+1-i}(m) </math>
+<!--: <math> \sum_{\ell=1}^{m} \ell^{r+1} = 1 + \binom{r+1}{0} S_{r+1-0}(m) + \binom{r+1}{1} S_{r+1-1}(m) + \sum_{i=2}^{r+1} \binom{r+1}{i} S_{r+1-i}(m) </math>
+: <math> \sum_{\ell=1}^{m} \ell^{r+1} = 1 + S_{r+1}(m) + (r+1) S_{r}(m) + \sum_{i=2}^{r+1} \binom{r+1}{i} S_{r+1-i}(m) </math>-->
+<!--: <math> S_{r+1}(m+1) = 1 + S_{r+1}(m) + (r+1) S_{r}(m) + \sum_{i=2}^{r+1} \binom{r+1}{i} S_{r+1-i}(m) </math>-->
+: <math> S_{r+1}(m+1) - S_{r+1}(m) = 1 + (r+1) S_{r}(m) + \sum_{i=2}^{r+1} \binom{r+1}{i} S_{r+1-i}(m) </math>
+{{NumBlk|:| <math> m^{r+1} = 1 + (r+1) S_{r}(m) + \sum_{i=2}^{r+1} \binom{r+1}{i} S_{r+1-i}(m). </math> | {{EquationRef|9}} | LnSty=0.37ex dotted Gainsboro}}
+Taking {{math|1=''r'' = ''k''}} yields
+: <math> m^{k+1} = 1 + (k+1) S_{k}(m) + \sum_{i=2}^{k+1} \binom{k+1}{i} S_{k+1-i}(m). </math>
+By hypothesis, {{math|1=''S''<sub>''k''</sub> = ''m''<sup>''k''</sup>}}, so
+: <math> m^{k+1} = 1 + (k+1) m^k + \sum_{i=2}^{k+1} \binom{k+1}{i} S_{k+1-i}(m) </math>
+<!--: <math> m^{k+1} - (k+1) m^k = 1 + \sum_{i=2}^{k+1} \binom{k+1}{i} S_{k+1-i}(m) </math>-->
+{{NumBlk|:| <math> m^k ( m - (k+1) ) = 1 + \sum_{i=2}^{k+1} \binom{k+1}{i} S_{k+1-i}(m). </math> | {{EquationRef|10}} | LnSty=0.37ex dotted Gainsboro}}
+Since the RHS is positive, we must therefore have
+{{NumBlk|:| <math> k + 1 < m. </math> | {{EquationRef|11}} | LnSty=0.37ex dotted Gainsboro}}
+Returning to ({{EquationNote|9}}) and taking {{math|1=''r'' = ''k'' − 1}} yields
+<!--: <math> m^{k-1+1} = 1 + (k-1+1) S_{k-1}(m) + \sum_{i=2}^{k-1+1} \binom{k-1+1}{i} S_{k-1+1-i}(m) </math>-->
+: <math> m^k = 1 + k \cdot S_{k-1}(m) + \sum_{i=2}^k \binom{k}{i} S_{k-i}(m)  </math>
+: <math> m^k = 1 + \sum_{s=1}^k \binom{k}{s} S_{k-s}(m). </math>
+Substituting this into ({{EquationNote|10}}) to eliminate {{math|1=''m''<sup>''k''</sup>}} yields
+: <math> \left( 1 + \sum_{s=1}^k \binom{k}{s} S_{k-s}(m) \right) ( m - (k+1) ) = 1 + \sum_{i=2}^{k+1} \binom{k+1}{i} S_{k+1-i}(m). </math>
+Reindexing the sum on the right with the substitution {{math|1=''i'' = ''s'' + 1}} yields
+: <math> \left( 1 + \sum_{s=1}^k \binom{k}{s} S_{k-s}(m) \right) ( m - (k+1) ) = 1 + \sum_{s=1}^k \binom{k+1}{s+1} S_{k-s}(m) </math>
+: <math> m - (k+1) + ( m - (k+1) ) \sum_{s=1}^k \binom{k}{s} S_{k-s}(m) = 1 + \sum_{s=1}^k \frac{k+1}{s+1} \binom{k}{s} S_{k-s}(m) </math>
+{{NumBlk|:| <math> m - k - 2 = \sum_{s=1}^k \left( \frac{k+1}{s+1} - m + (k+1) \right) \binom{k}{s} S_{k-s}(m). </math> | {{EquationRef|12}} | LnSty=0.37ex dotted Gainsboro}}
+We already know from ({{EquationNote|11}}) that {{math|1=''k'' + 1 < ''m''}}.  This leaves open the possibility that {{math|1=''m'' = ''k'' + 2}}; however, substituting this into ({{EquationNote|12}}) yields
+: <math> 0 = \sum_{s=1}^k \left( \frac{k+1}{s+1} - 1 \right) \binom{k}{s} S_{k-s}(k+2) </math>
+: <math> 0 = \sum_{s=1}^k \frac{k-s}{s+1} \binom{k}{s} S_{k-s}(k+2) </math>
+: <math> 0 = \frac{k-k}{k+1} \binom{k}{k} S_{k-k}(k+2) + \sum_{s=1}^{k-1} \frac{k-s}{s+1} \binom{k}{s} S_{k-s}(k+2) </math>
+: <math> 0 = 0 + \sum_{s=1}^{k-1} \frac{k-s}{s+1} \binom{k}{s} S_{k-s}(k+2), </math>
+<!--: <math> 0 = \sum_{s=1}^{k-1} \frac{k-s}{s+1} \binom{k}{s} S_{k-s}(k+2), </math>-->
+which is impossible for {{math|1=''k'' > 1}}, since the sum contains only positive terms.  Therefore, any nontrivial solutions must have {{math|''m'' &ne; ''k'' + 2}}; combining this with ({{EquationNote|11}}) yields
+: <math> k + 2 < m. </math>
+We therefore observe that the left-hand side of ({{EquationNote|12}}) is positive, so
+{{NumBlk|:| <math> 0 < \sum_{s=1}^k \left( \frac{k+1}{s+1} - m + (k+1) \right) \binom{k}{s} S_{k-s}(m). </math> | {{EquationRef|13}} | LnSty=0.37ex dotted Gainsboro}}
+Since {{math|1=''k'' > 1}}, the sequence <math> \left\{ (k+1)/(s+1) - m + (k+1) \right\}_{s=1}^\infty </math> is decreasing.  This and ({{EquationNote|13}}) together imply that its first term (the term with {{math|1=''s'' = 1}}) must be positive: if it were not, then every term in the sum would be nonpositive, and therefore so would the sum itself.  Thus,
+: <math> 0 < \frac{k+1}{1+1} - m + (k+1), </math>
+which yields
+: <math> m < \frac{3}{2} \cdot (k+1) </math>
+and therefore
+: <math> \frac{m}{k+1} < \frac{3}{2}, </math>
+as desired.
+
+== Continued fractions ==
+
+Any potential solutions to the equation must arise from the [[continued fraction]] of the [[natural logarithm of 2]]: specifically, {{math|1=2''k'' / (2''m'' − 3)}} must be a [[Convergent (continued fraction)|convergent]] of that number.<ref name="gallot2010"/>
+
+By expanding the [[Taylor series]] of {{math|1=(1 − ''y'')<sup>''k''</sup> ''e''<sup>''ky''</sup>}} about {{math|1=''y'' = 0}}, one finds
+: <math> (1 - y)^k = e^{-ky} \left( 1 - \frac{k}{2} y^2 - \frac{k}{3} y^3 + \frac{k(k-2)}{8} y^4 + \frac{k(5k-6)}{30} y^5 + O(y^6) \right) \quad \text{as } y \rightarrow 0. </math>
+More elaborate analysis sharpens this to
+{{NumBlk|:|<math> \begin{align} e^{-ky} \left( 1 - \frac{k}{2} y^2 - \frac{k}{3} y^3 + \frac{k(k-2)}{8} y^4 + \frac{k(5k-6)}{30} y^5 - \frac{k^3}{6} y^6 \right) \\ < (1 - y)^k < e^{-ky} \left( 1 - \frac{k}{2} y^2 - \frac{k}{3} y^3 + \frac{k(k-2)}{8} y^4 + \frac{k^2}{2} y^5 \right) \end{align} </math>|{{EquationRef|14}}|LnSty=0.37ex dotted Gainsboro}}
+for {{math|1=''k'' > 8}} and {{math|1=0 < ''y'' < 1}}.
+
+The Erdős–Moser equation is equivalent to
+: <math> 1 = \sum_{j=1}^{m-1} \left( 1 - \frac{j}{m} \right)^k. </math>
+Applying ({{EquationNote|14}}) to each term in this sum yields
+: <math> \begin{align}
+T_0 - \frac{k}{2m^2} T_2 - \frac{k}{3m^3} T_3 + \frac{k(k-2)}{8m^4} T_4 + \frac{k(5k-6)}{30m^5} T_5 - \frac{k^3}{6m^6} T_6 \qquad \qquad \\
+< \sum_{j=1}^{m-1} \left(1 - \frac{j}{m} \right)^k < T_0 - \frac{k}{2m^2} T_2 - \frac{k}{3m^3} T_3 + \frac{k(k-2)}{8m^4} T_4 + \frac{k^2}{2m^5} T_5,
+\end{align} </math>
+where <math> T_n = \sum_{j=1}^{m-1} j^n z^j </math> and {{math|1=''z'' = ''e''<sup>−''k''/''m''</sup>}}.  Further manipulation eventually yields
+{{NumBlk|:|<math> \left\vert 1 - \frac{z}{1-z} + \frac{k}{2m^2}\frac{z^2+z}{(1-z)^3} + \frac{k}{3m^3}\frac{z^3+4z^2+z}{(1-z)^4} - \frac{k(k-2)}{8m^4}\frac{z^4+11z^3+11z^2+z}{(1-z)^5} \right\vert < \frac{110000}{m^3}. </math>|{{EquationRef|15}}|LnSty=0.37ex dotted Gainsboro}}
+We already know that {{math|1=''k''/''m''}} is bounded as {{math|1=''m'' &rarr; &infin;}}; making the [[ansatz]] {{math|1=''k''/''m'' = ''c'' + ''O''(1/''m'')}}, and therefore {{math|1=''z'' = ''e''<sup>−''c''</sup> + ''O''(1/''m'')}}, and substituting it into ({{EquationNote|15}}) yields
+: <math> 1 - \frac{1}{e^c - 1} = O\left(\frac{1}{m}\right) \quad \text{as } m \rightarrow \infty; </math>
+therefore {{math|1=''c'' = ln(2)}}.  We therefore have
+{{NumBlk|:|<math> \frac{k}{m} = \ln(2) + \frac{a}{m} + \frac{b}{m^2} + O\left(\frac{1}{m^3}\right) \quad \text{as } m \rightarrow \infty, </math>|{{EquationRef|16}}|LnSty=0.37ex dotted Gainsboro}}
+and so
+: <math> \frac{1}{z} = e^{k/m} = 2 + \frac{2a}{m} + \frac{a^2+2b}{m^2} + O\left(\frac{1}{m^3}\right) \quad \text{as } m \rightarrow \infty. </math>
+Substituting these formulas into ({{EquationNote|15}}) yields {{math|1=''a'' = −3 ln(2) / 2}} and {{math|1=''b'' = (3 ln(2) − 25/12) ln(2)}}.  Putting these into ({{EquationNote|16}}) yields
+: <math> \frac{k}{m} = \ln(2) \left(1 - \frac{3}{2m} - \frac{\frac{25}{12} - 3\ln(2)}{m^2} + O\left(\frac{1}{m^3}\right) \right) \quad \text{as } m \rightarrow \infty. </math>
+The term {{Math|''O''(1/''m''<sup>3</sup>)}} must be bounded [[Effective results in number theory|effectively]].  To that end, we define the function
+: <math> F(x,\lambda) = \left.\left( 1 - \frac{1}{t-1} + \frac{x\lambda}{2} \frac{t+t^2}{(t-1)^3}
++ \frac{x^2\lambda}{3} \frac{t+4t^2+t^3}{(t-1)^4}
+- \frac{x^2\lambda(\lambda-2x)}{8} \frac{t+11t^2+11t^3+t^4}{(t-1)^5}
+\right) \right\vert_{t=e^\lambda}. </math>
+The inequality ({{EquationNote|15}}) then takes the form
+{{NumBlk|:|<math> \left\vert F \left( \frac{1}{m} , \frac{k}{m} \right) \right\vert < \frac{110000}{m^3}, </math>|{{EquationRef|17}}|LnSty=0.37ex dotted Gainsboro}}
+and we further have
+: <math> \begin{align}
+F(x, \ln(2) (1 - \tfrac{3}{2}x \, \phantom{- \; 0.004x^2})) &> \phantom{-}0.005\phantom{15}x^2 - 100x^3 \quad \text{and} \\
+F(x, \ln(2) (1 - \tfrac{3}{2}x - 0.004x^2)) &< -0.00015x^2 + 100x^3
+\end{align}</math> <!-- For reasons that I do not understand, the first phantom squeezes its contents horizontally a little bit; putting in those manual spaces seems to fix it. -->
+for {{Math|''x'' &leq; 0.01}}.  Therefore
+: <math> \begin{align}
+F \left( \frac{1}{m} , \ln(2) \left( 1 - \frac{3}{2m} \, \phantom{ \; - \frac{0.004}{m^2} } \right) \right) &> \phantom{-}\frac{110000}{m^3} \quad \text{for } m > 2202 \cdot 10^4 \quad \text{and} \\
+F \left( \frac{1}{m} , \ln(2) \left( 1 - \frac{3}{2m} - \frac{0.004}{m^2} \right) \right) &< - \frac{110000}{m^3} \quad \text{for } m > \phantom{0}734 \cdot 10^6.
+\end{align} </math> <!-- The same phantom comment applies here as above. -->
+Comparing these with ({{EquationNote|17}}) then shows that, for {{math|1=''m'' > 10<sup>9</sup>}}, we have
+: <math> \ln(2) \left( 1 - \frac{3}{2m} - \frac{0.004}{m^2} \right) < \frac{k}{m} < \ln(2) \left( 1 - \frac{3}{2m} \right), </math>
+and therefore
+: <math> 0 < \ln(2) - \frac{2k}{2m-3} < \frac{0.0111}{(2m-3)^2}. </math>
+Recalling that Moser showed<ref name="moser1953"/> that indeed {{math|1=''m'' > 10<sup>9</sup>}}, and then invoking [[Legendre's theorem on continued fractions]], finally proves that {{math|1=2''k'' / (2''m'' − 3)}} must be a [[Convergent (continued fraction)|convergent]] to {{math|1=[[Natural logarithm of 2|ln(2)]]}}. Leveraging this result, 31 billion decimal digits of {{math|1=ln(2)}} can be used to exclude any nontrivial solutions below {{math|1=10<sup>10<sup>9</sup></sup>}}.<ref name="gallot2010"/>
+
+==See also==
+{{Portal|Mathematics}}
+*[[List of conjectures by Paul Erdős]]
+*[[List of things named after Paul Erdős]]
+*[[List of unsolved problems in mathematics]]
+*[[Sums of powers]]
+*{{annotated link|Faulhaber's formula}}
+
+== References ==
+<references>
+
+<ref name="butske1999">{{cite journal
+    | last1        = Butske
+    | first1       = William
+    | last2        = Jaje
+    | first2       = Lynda M.
+    | last3        = Mayernik
+    | first3       = Daniel R.
+    | year         = 1999
+    | title        = The Equation {{math|1=&Sigma;<sub>''p''&#124;''N''</sub> 1/''p'' + 1/''N'' = 1}}, Pseudoperfect Numbers, and Partially Weighted Graphs
+    | journal      = [[Mathematics of Computation]]
+    | volume       = 69
+    | pages        = 407–420
+    | language     = English
+    | url          = https://www.ams.org/journals/mcom/2000-69-229/S0025-5718-99-01088-1/
+    | access-date  = 2017-03-20
+    | doi          = 10.1090/s0025-5718-99-01088-1
+    | doi-access   = free
+    | archive-url  = https://web.archive.org/web/20240508231130/https://www.ams.org/journals/mcom/2000-69-229/S0025-5718-99-01088-1/S0025-5718-99-01088-1.pdf
+    | archive-date = 2024-05-08
+| url-access= subscription
+    }}</ref>
+<ref name="gallot2010">{{cite journal
+    | last1        = Gallot
+    | first1       = Yves
+    | last2        = Moree
+    | first2       = Pieter
+    | last3        = Zudilin
+    | first3       = Wadim
+    | author-link3 = Wadim Zudilin
+    | year         = 2010
+    | title        = The Erdős–Moser Equation {{math|1=1<sup>''k''</sup> + 2<sup>''k''</sup> + &ctdot; + (''m'' – 1)<sup>''k''</sup> = ''m''<sup>''k''</sup>}} Revisited Using Continued Fractions
+    | url          = https://www.ams.org/journals/mcom/2011-80-274/S0025-5718-2010-02439-1
+    | access-date  = 2017-03-20
+    | journal      = [[Mathematics of Computation]]
+    | language     = English
+    | volume       = 80
+    | pages        = 1221–1237
+    | arxiv        = 0907.1356
+    | doi          = 10.1090/S0025-5718-2010-02439-1
+    | doi-access   = free
+    | s2cid        = 16305654
+    | archive-url  = https://web.archive.org/web/20240508231224/https://www.ams.org/journals/mcom/2011-80-274/S0025-5718-2010-02439-1/S0025-5718-2010-02439-1.pdf
+    | archive-date = 2024-05-08
+}}</ref>
+<ref name="kellner2002">{{cite thesis
+    | last         = Kellner
+    | first        = Bernd Christian
+    | year         = 2002
+    | title        = Über irreguläre Paare höherer Ordnungen
+    | url          = https://www.bernoulli.org/~bk/irrpairord.pdf
+    | access-date  = 2024-03-12
+    | institution  = [[University of Göttingen]]
+    | archive-url  = https://web.archive.org/web/20240312180631/https://www.bernoulli.org/~bk/irrpairord.pdf
+    | archive-date = 2024-03-12
+    | language     = German
+}}</ref>
+<ref name="krzysztofek1966">{{cite journal
+    | last         = Krzysztofek
+    | first        = Bronisław
+    | year         = 1966
+    | title        = O Rówaniu {{math|1=1<sup>''n''</sup> + ... + ''m''<sup>''n''</sup> = (''m'' + 1)<sup>''n''</sup>&middot;''k''}}
+    | journal      = Zeszyty Naukowe Wyżsej Szkoły Pedagogicznej w Katowicach—Sekcja Matematyki
+    | volume       = 5
+    | pages        = 47–54
+    | language     = Polish
+    | url          = https://sbc.org.pl/Content/217013/zeszyty_naukowe-sekcja_matematyki_5.pdf
+    | access-date  = 2024-05-13
+    | archive-url  = https://web.archive.org/web/20240513063411/https://sbc.org.pl/Content/217013/zeszyty_naukowe-sekcja_matematyki_5.pdf
+    | archive-date = 2024-05-13
+}}</ref>
+<ref name="moree1994">{{cite journal
+    | last1        = Moree
+    | first1       = Pieter
+    | last2        = te Riele
+    | first2       = Herman
+    | author-link2 = Herman te Riele
+    | last3        = Urbanowicz
+    | first3       = Jerzy
+    | year         = 1994
+    | title        = Divisibility Properties of Integers {{mvar|x}}, {{mvar|k}} Satisfying {{math|1=1<sup>''k''</sup> + 2<sup>''k''</sup> + &ctdot; + (''x'' – 1)<sup>''k''</sup> = ''x''<sup>''k''</sup>}}
+    | url          = https://www.ams.org/journals/mcom/1994-63-208/S0025-5718-1994-1257577-1/
+    | access-date  = 2017-03-20
+    | journal      = [[Mathematics of Computation]]
+    | language     = English
+    | volume       = 63
+    | pages        = 799–815
+    | doi          = 10.1090/s0025-5718-1994-1257577-1
+    | doi-access   = free
+    | archive-url  = https://web.archive.org/web/20240508230935/https://www.ams.org/journals/mcom/1994-63-208/S0025-5718-1994-1257577-1/S0025-5718-1994-1257577-1.pdf
+    | archive-date = 2024-05-08
+}}</ref>
+<ref name="moree2013">{{cite journal
+    | last         = Moree
+    | first        = Pieter
+    | date         = 2013-10-01
+    | title        = Moser's mathemagical work on the equation {{math|1=1<sup>''k''</sup> + 2<sup>''k''</sup> + &ctdot; + (''m'' – 1)<sup>''k''</sup> = ''m''<sup>''k''</sup>}}
+    | journal      = [[Rocky Mountain Journal of Mathematics]]
+    | volume       = 43
+    | issue        = 5
+    | pages        = 1707–1737
+    | language     = English
+    | arxiv        = 1011.2940
+    | doi          = 10.1216/RMJ-2013-43-5-1707
+    | doi-access   = free
+    | issn         = 0035-7596
+    }}</ref>
+<ref name="moser1953">{{cite journal
+    | last         = Moser
+    | first        = Leo
+    | author-link  = Leo Moser
+    | year         = 1953
+    | title        = On the Diophantine Equation {{math|1=1<sup>''k''</sup> + 2<sup>''k''</sup> + ... + (''m'' – 1)<sup>''k''</sup> = ''m''<sup>''k''</sup>}}
+    | journal      = [[Scripta Mathematica]]
+    | volume       = 19
+    | pages        = 84–88
+    | language     = English
+}}</ref>
+
+</references>
+
+{{DEFAULTSORT:Erdos-Moser equation}}
+[[Category:Diophantine equations]]
+[[Category:Paul Erdős|Moser equation]]
+[[Category:Unsolved problems in number theory]]

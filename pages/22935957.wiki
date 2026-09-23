@@ -1,0 +1,305 @@
+{{Short description|Data abstraction problem in programming languages}}
+The '''expression problem''' is a problem in [[programming language]]s that concerns the extensibility and modularity of statically typed data abstractions. The goal is to define a [[Abstraction (computer science)|data abstraction]] that is extensible both in its representations and its behaviors, where one can add new representations and new behaviors to the data abstraction, without recompiling existing code, and while retaining static [[type safety]] (e.g., no casts). The statement of the problem exposes deficiencies in [[programming paradigm]]s and [[programming language]]s. Philip Wadler, one of the co-authors of Haskell, has originated the term.
+
+== History ==
+[[Philip Wadler]] formulated the challenge and named it "The Expression Problem"<ref name="WadlerPost">{{cite web 
+| title=The Expression Problem
+| url=http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt
+}}</ref> in response to a discussion with Rice University's [[Racket (programming language)#Development|''Programming Languages Team'' (PLT)]].
+He also cited three sources that defined the context for his challenge:
+
+The problem was first observed by [[John C. Reynolds|John Reynolds]] in 1975.<ref name="Reynolds">
+{{cite book 
+| chapter= User-defined Types and Procedural Data Structures as complementary approaches to Data Abstraction.
+| title= New Directions in Algorithmic Languages
+| year= 1975
+| last1= Reynolds
+| first1= John C.
+| publisher= IFIP Working Group 2.1 on Algol
+| pages= 157–168
+| url= https://www.cs.tufts.edu/~nr/cs257/archive/john-reynolds/procedural-data-structures.pdf
+}}
+</ref> Reynolds discussed two forms of Data Abstraction: User-defined Types, which are now known as [[abstract data types|Abstract Data Types]] (ADTs) (not to be confused with [[algebraic data types|Algebraic Data Types]]), and Procedural Data Structures, which are now understood as a primitive form of Objects with only one method. He argued that they are complementary, in that User-defined Types could be extended with new behaviors, and Procedural Data Structures could be extended with new representations. He also discussed related work going back to 1967. 
+Fifteen years later in 1990, [[William Cook (computer scientist)|William Cook]]<ref name="CookOOPvsADT">
+{{cite book 
+| last= Cook |first= William 
+| author-link= William Cook (computer scientist)
+| date= 1990 
+| editor-last1= Bakker | editor-first1= J.W. de
+| editor-last2= Roever | editor-first2= W.P. de 
+| editor-last3= Rozenberg | editor-first3= G.
+| title= Foundations of Object-Oriented Languages (FOOL), REX School/Workshop
+| location= Noordwijkerhout, The Netherlands
+| publisher= Springer Berlin Heidelberg |pages=151–178 
+| chapter= Object-Oriented Programming versus Abstract Data Types 
+|series= Lecture Notes in Computer Science 
+|volume= 489 
+|doi= 10.1007/BFb0019443 
+| chapter-url= https://link.springer.com/chapter/10.1007/BFb0019443
+| isbn= 978-3-540-46450-1}}
+</ref> 
+applied Reynold's idea in the context of Objects and Abstract Data Types, which had both grown extensively. Cook identified the matrix of representations and behaviors that are implicit in a Data Abstraction, and discussed how ADTs are based on the behavioral axis, while Objects are based on the representation axis. He provides extensive discussion of work on ADTs and Objects that are relevant to the problem. He also reviewed implementations in both styles, discussed extensibility in both directions, and also identified the importance of static typing.
+Most importantly, he discussed situations in which there was more flexibility than
+Reynolds considered, including internalization and optimization of methods.
+
+At ECOOP '98, [[Shriram Krishnamurthi]] et al.<ref name="Synth">
+{{cite web 
+| title=Synthesizing Object-Oriented and Functional Design to Promote Re-Use
+| url=https://cs.brown.edu/~sk/Publications/Papers/Published/kff-synth-fp-oo/
+}}</ref> presented a design pattern solution to the problem of simultaneously extending an [[expression-oriented programming language]] and its tool-set.  They dubbed it the "expressivity problem" because they thought programming language designers could use the problem to demonstrate the expressive power of their creations. For PLT, the problem had shown up in the construction of DrScheme, now [[Racket (programming language)#DrRacket IDE|DrRacket]], and they solved it<ref name="FF">
+{{cite journal 
+| title= Modular object-oriented programming with units and mixins
+| date=1999 | doi=10.1145/291251.289432 | last1=Findler | first1=Robert Bruce | last2=Flatt | first2=Matthew | journal=ACM SIGPLAN Notices | volume=34 | pages=94–104 | doi-access=free }}</ref> via a rediscovery of [[mixin]]s.<ref name="Mixins">{{cite thesis |type= PhD 
+| last= Cook | first= William | date= 1989 
+| title= A Denotational Semantics of Inheritance | publisher= Brown University
+| url= https://www.cs.utexas.edu/~wcook/papers/thesis/cook89.pdf }}</ref><ref name="FKF">
+{{cite book 
+| chapter= Classes and Mixins
+| doi= 10.1145/268946.268961
+| title= Proceedings of the 25th ACM SIGPLAN-SIGACT symposium on Principles of programming languages - POPL '98
+| pages= 171–183
+| year= 1998
+| last1= Flatt
+| first1= Matthew
+| last2= Krishnamurthi
+| first2= Shriram
+| last3= Felleisen
+| first3= Matthias
+| isbn= 978-0897919791
+| s2cid= 5815257
+}}</ref> To avoid using a programming language problem in a paper about programming languages, Krishnamurthi et al. used an old geometry programming problem to explain their pattern-oriented solution. In conversations with Felleisen and Krishnamurthi after the ECOOP presentation, Wadler understood the PL-centric nature of the problem and he pointed out that Krishnamurthi's solution used a cast to circumvent Java's type system. The discussion continued on the types mailing list, where Corky Cartwright (Rice) and [[Kim Bruce]] (Williams) showed how type systems for OO languages might eliminate this cast. In response Wadler formulated his essay and stated the challenge, "whether a language can solve the expression problem is a salient indicator of its capacity for expression." The label "expression problem" puns on expression = "how much can your language express" and expression = "the terms you are trying to represent are language expressions".
+
+Others co-discovered variants of the expression problem around the same time as Rice University's PLT, in particular Thomas Kühne<ref name="K">
+{{cite book|last=Kühne|first=Thomas|title=A Functional Pattern System for Object-Oriented Design|year=1999|publisher=Verlag Dr. Kovac|location=Darmstadt|isbn=978-3-86064-770-7}}</ref> in his dissertation, and Smaragdakis and Batory<ref name=SB>
+{{cite book|last=Smaragdakis|first=Yannis|author2=Don Batory|title=Implementing Reusable Object-Oriented Components|series=Lecture Notes in Computer Science |year=1998|volume=1445}}</ref> in a parallel ECOOP 98 article.
+
+Some follow-up work used the expression problem to showcase the power of programming language designs.<ref name="Scala0">
+{{cite book
+| chapter=Extensible Algebraic Datatypes with Defaults 
+| first1=Matthias | last1=Zenger
+| first2=Martin | last2=Odersky
+| title=Proceedings of the sixth ACM SIGPLAN international conference on Functional programming | pages=241–252 
+| citeseerx=10.1.1.28.6778 
+| year=2001 
+| doi=10.1145/507635.507665
+| isbn=1-58113-415-0 }}</ref><ref name="Scala">
+{{cite book
+| chapter=Independently extensible solutions to the expression problem
+| chapter-url=https://homepages.inf.ed.ac.uk/wadler/fool/program/final/10/10_Paper.pdf 
+| first1=Matthias | last1=Zenger
+| first2=Martin | last2=Odersky
+| title=FOOL 2005
+| publisher=ACM
+| citeseerx=10.1.1.107.4449 
+| year=2005 
+}}</ref>
+
+The expression problem is also a fundamental problem in multi-dimensional Software Product Line design and in particular as an application or special case of [[FOSD program cubes#Applications|FOSD Program Cubes]].{{Citation needed|date=January 2016}}
+
+== Solutions ==
+There are various solutions to the expression problem. Each solution varies in the amount of code a user must write to implement them, and the language features they require.
+
+* [[Multiple dispatch]]<ref name="Chambers & Leavens, Multi-Methods">{{cite journal|last1=Chambers|first1=Craig|last2=Leavens|first2=Gary T.|title=Type Checking and Modules for Multi-Methods|journal= ACM Transactions on Programming Languages and Systems|date=November 1995|volume=17 |issue=6|pages=805–843|doi=10.1145/218570.218571 |url=http://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=1036&context=cs_techreports|doi-access=free}}</ref>
+* {{section link|Ruby syntax|Open classes}}<ref name="Clifton et al., MultiJava Open Classes">{{cite book|last1=Clifton|first1=Curtis|last2=Leavens|first2=Gary T.|last3=Chambers|first3=Craig|last4=Millstein|first4=Todd |title=Proceedings of the 15th ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications |chapter=MultiJava: Modular open classes and symmetric multiple dispatch for Java |date=2000|pages=130–145 |doi=10.1145/353171.353181 |isbn=978-1-58113-200-7 |s2cid=7879645 |url=http://people.csail.mit.edu/dnj/teaching/6898/papers/multijava.pdf}}</ref>
+* [[Coproduct]]s of [[functor]]s<ref>{{cite journal
+|author = Wouter Swierstra
+|title = Data Types à La Carte
+|journal = [[Journal of Functional Programming]]
+|volume = 18
+|number = 4
+|year = 2008
+|issn = 0956-7968
+|pages = 423&ndash;436
+|publisher = Cambridge University Press
+|doi = 10.1017/S0956796808006758
+|s2cid = 21038598
+|doi-access = free
+}}</ref>
+* [[JavaGI type class]]es<ref name="Wehr & Thiemann, JavaGI Type Classes">{{cite journal|last1=Wehr|first1=Stefan|last2=Thiemann|first2=Peter|title= JavaGI: The Interaction of Type Classes with Interfaces and Inheritance|journal= ACM Transactions on Programming Languages and Systems|date=July 2011|volume=33 |issue=4|pages= 1–83|doi=10.1145/1985342.1985343 |s2cid=13174506 |url=http://www.stefanwehr.de/publications/WehrThiemann2011TOPLAS.html|doi-access=free}}</ref>
+* Tagless-final<ref name="Carette et al., 
+Finally tagless, partially evaluated: Tagless staged interpreters for simpler typed languages">{{cite journal|last1=Carette|first1=Jacques|last2=Kiselyov|first2=Oleg|last3=Chung-chieh|first3=Shan|title=Finally Tagless, Partially Evaluated: Tagless Staged Interpreters for Simpler Typed Languages|journal=J. Funct. Program.|date=2009|volume=19 |issue=5 |pages=509–543 |doi=10.1017/S0956796809007205 |s2cid=6054319 |url=http://okmij.org/ftp/tagless-final/JFP.pdf}}</ref> / Object algebras<ref name="Oliveira & Cook, Object Algebras">{{cite journal|last1=Oliveira|first1=Bruno C. d. S.|last2=Cook|first2=William R.|title=Extensibility for the Masses: Practical Extensibility with Object Algebras|journal=Ecoop '12|date=2012|url=http://www.cs.utexas.edu/~wcook/Drafts/2012/ecoop2012.pdf}}</ref>
+* Polymorphic Variants<ref name="Code Reuse Through Polymorphic Variants">{{cite book|last1=Garrigue|first1=Jacques|chapter=Code Reuse Through Polymorphic Variants|chapter-url=https://www.math.nagoya-u.ac.jp/~garrigue/papers/variant-reuse.pdf|title=Workshop on Foundations of Software Engineering. Sasaguri, Japan, November 2000 |citeseerx=10.1.1.128.7169|year=2000}}</ref>
+
+== Example ==
+
+=== Problem description ===
+We can imagine we do not have the [[source code]] for the following library, written in [[C Sharp (programming language)|C#]], which we wish to extend:
+
+<syntaxhighlight lang="c#" line="1">
+interface IEvalExp
+{
+    int Eval();
+}
+
+class Lit : IEvalExp
+{
+    internal Lit(int n)
+    {
+        N = n;
+    }
+
+    internal int N { get; }
+
+    public int Eval()
+    {
+        return N;
+    }
+}
+
+class Add : IEvalExp
+{
+    internal Add(IEvalExp left, IEvalExp right)
+    {
+        Left = left;
+        Right = right;
+    }
+
+    internal IEvalExp Left { get; }
+
+    internal IEvalExp Right { get; }
+
+    public int Eval()
+    {
+        return Left.Eval() + Right.Eval();
+    }
+}
+
+static class ExampleOne
+{
+    static IEvalExp AddOneAndTwo() => new Add(new Lit(1), new Lit(2));
+    static int EvaluateTheSumOfOneAndTwo() => AddOneAndTwo().Eval();
+}
+</syntaxhighlight>
+
+Using this library we can express the arithmetic expression {{code|1 + 2}} as we did in {{code|ExampleOne.AddOneAndTwo()}} and can evaluate the expression by calling {{code|.Eval()}}.  Now imagine that we wish to extend this library, adding a new type is easy because we are working with an [[Object-oriented programming|Object-oriented programming language]].  For example, we might create the following class:
+
+<syntaxhighlight lang="c#" line="1">
+class Mult : IEvalExp
+{
+    internal Mult(IEvalExp left, IEvalExp right)
+    {
+        Left = left;
+        Right = right;
+    }
+
+    internal IEvalExp Left { get; }
+
+    internal IEvalExp Right { get; }
+
+    public int Eval()
+    {
+        return Left.Eval() * Right.Eval();
+    }
+}
+</syntaxhighlight>
+
+However, if we wish to add a new function over the type (a new method in C# terminology), for example to pretty print an expression, we have to change the {{code|IEvalExp}} interface and then modify all the classes that implement the interface.  Another possibility is to create a new interface that extends the {{code|IEvalExp}} interface and then create sub-types for {{code|Lit}}, {{code|Add}} and {{code|Mult}} classes, but the expression returned in {{code|ExampleOne.AddOneAndTwo()}} has already been compiled so we will not be able to use the new function over the old type.  The problem is reversed in functional programming languages like [[F Sharp (programming language)|F#]] where it is easy to add a function over a given type, but extending or adding types is difficult.
+
+=== Problem solution using object algebra ===
+Let us redesign the original library with extensibility in mind using the ideas from the paper ''Extensibility for the Masses.''<ref name="Oliveira & Cook, Object Algebras" />
+
+<syntaxhighlight lang="c#" line="1">
+interface ExpAlgebra<T>
+{
+    T Lit(int n);
+    T Add(T left, T right);
+}
+
+class ExpFactory : ExpAlgebra<IEvalExp>
+{
+    public IEvalExp Lit(int n)
+    {
+        return new Lit(n);
+    }
+
+    public IEvalExp Add(IEvalExp left, IEvalExp right)
+    {
+        return new Add(left, right);
+    }
+}
+
+static class ExampleTwo<T>
+{
+    public static T AddOneToTwo(ExpAlgebra<T> ae) => ae.Add(ae.Lit(1), ae.Lit(2));
+}
+</syntaxhighlight>
+
+We use the same implementation as in the first code example but now add a new interface containing the functions over the type as well as a factory for the algebra.  Notice that we now generate the expression in {{code|ExampleTwo.AddOneToTwo()}} using the {{code|ExpAlgebra<T>}} interface instead of directly from the types.  We can now add a function by extending the {{code|ExpAlgebra<T>}} interface, we will add functionality to print the expression:
+
+<syntaxhighlight lang="c#" line="1">
+interface IPrintExp : IEvalExp
+{
+    string Print();
+}
+
+class PrintableLit : Lit, IPrintExp
+{
+    internal PrintableLit(int n) : base(n)
+    {
+        N = n;
+    }
+
+    internal int N { get; }
+
+    public string Print()
+    {
+        return N.ToString();
+    }
+}
+
+class PrintableAdd : Add, IPrintExp
+{
+    internal PrintableAdd(IPrintExp left, IPrintExp right) : base(left, right)
+    {
+        Left = left;
+        Right = right;
+    }
+
+    internal new IPrintExp Left { get; }
+
+    internal new IPrintExp Right { get; }
+
+    public string Print()
+    {
+        return Left.Print() + " + " + Right.Print();
+    }
+}
+
+class PrintFactory : ExpFactory, ExpAlgebra<IPrintExp>
+{
+    public IPrintExp Add(IPrintExp left, IPrintExp right)
+    {
+        return new PrintableAdd(left, right);
+    }
+
+    public new IPrintExp Lit(int n)
+    {
+        return new PrintableLit(n);
+    }
+}
+
+static class ExampleThree
+{
+    internal static int Evaluate() => ExampleTwo<IPrintExp>.AddOneToTwo(new PrintFactory()).Eval();
+    internal static string Print() => ExampleTwo<IPrintExp>.AddOneToTwo(new PrintFactory()).Print();
+}
+</syntaxhighlight>
+
+Notice that in {{code|ExampleThree.Print()}} we are printing an expression that was already compiled in {{code|ExampleTwo}}, we did not need to modify any existing code.  Notice also that this is still strongly typed, we do not need reflection or casting.  If we would replace the {{code|PrintFactory()}} with the {{code|ExpFactory()}} in the {{code|ExampleThree.Print()}} we would get a [[compilation error]] since the {{code|.Print()}} method does not exist in that context.
+
+== See also ==
+* [[FOSD program cubes#Applications|Applications of FOSD program cubes]]
+* [[Generic programming]]
+* [[POPLmark challenge]]
+
+== References ==
+{{Reflist|2}}
+
+== External links ==
+*[http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt The Expression Problem] by [[Philip Wadler]].
+*[http://www.uni-koblenz.de/~laemmel/paradigms1011/resources/xproblem.html Lecture: The Expression Problem] by [[Ralf Lämmell]].
+*[http://channel9.msdn.com/Shows/Going+Deep/C9-Lectures-Dr-Ralf-Laemmel-Advanced-Functional-Programming-The-Expression-Problem C9 Lectures: Dr. Ralf Lämmel - Advanced Functional Programming - The Expression Problem] at [[Channel 9 (discussion forum)|Channel 9]].{{dead link|date=September 2022}}
+*[http://lampwww.epfl.ch/~odersky/papers/ExpressionProblem.html Independently Extensible Solutions to the Expression Problem, Matthias Zenger and Martin Odersky, EPFL Lausanne].
+
+[[Category:Programming language design]]
+[[Category:Unsolved problems in computer science]]

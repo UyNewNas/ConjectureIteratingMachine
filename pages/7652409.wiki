@@ -1,0 +1,131 @@
+{{Short description|Toroidal polyhedron with 7 faces}}
+{{Infobox polyhedron 
+|image=Szilassi polyhedron.svg
+|type=[[Toroidal polyhedron]]
+|faces=7 [[hexagon]]s
+|edges=21
+|vertices=14
+|rotation_group = axis of 180-degree symmetry
+|euler=0 (Genus 1)
+|dual=[[Császár polyhedron]]
+|properties=[[Convex polyhedron|non-convex]]
+}}
+
+In [[geometry]], the '''Szilassi polyhedron''' is a nonconvex [[polyhedron]], topologically a [[Toroidal polyhedron|torus]], with seven [[hexagon|hexagonal]] faces. The [[tetrahedron]] and the Szilassi polyhedron are the only two known polyhedra in which each face shares one edge with each other face. 
+
+== Properties ==
+=== Coloring and symmetry ===
+[[File:Szilassi_polyhedron.stl|thumb|link=https://3dviewer.net/#model=https://upload.wikimedia.org/wikipedia/commons/f/fb/Szilassi_polyhedron.stl|[[STL (file format)|STL 3D model]] of a Szilassi polyhedron]]
+The 14 vertices and 21 edges of the Szilassi polyhedron form an [[Graph embedding|embedding]] of the [[Heawood graph]] onto the surface of a torus.{{r|szilassi}}
+Each face of this polyhedron shares an edge with each other face. As a result, it requires seven colours to colour all adjacent faces. This example shows that, on surfaces topologically equivalent to a [[torus]], some subdivisions require seven colors, providing the lower bound for the [[seven colour theorem]]. The other half of the theorem states that all toroidal subdivisions can be colored with seven or fewer colors.
+
+The Szilassi polyhedron has an [[Rotational symmetry|axis of 180-degree symmetry]]. This symmetry swaps three pairs of congruent faces, leaving one unpaired hexagon that has the same rotational symmetry as the polyhedron.
+
+=== Complete face adjacency ===
+{{unsolved|mathematics|Is there a non-convex polyhedron without self-intersections with more than seven faces, all of which share an edge with each other?}}
+The tetrahedron and the Szilassi polyhedron are the only two known polyhedra in which each face shares one edge with each other face.{{r|akk}}
+
+If a polyhedron with <math> f </math> faces is embedded onto a surface with <math> h </math> holes, in such a way that each face shares one edge with each other face, it follows by some manipulation of the [[Euler characteristic]] that
+<math display="block"> h = \frac{(f - 4)(f - 3)}{12}. </math>
+This equation is satisfied for the tetrahedron with <math> h = 0 </math> and <math> f = 4 </math>, and for the Szilassi polyhedron with <math> h = 1 </math> and <math> f = 7 </math>.{{r|junrin|gruszi}}
+
+The next possible solution, <math> h = 6 </math> and <math> f = 12 </math>, would correspond to a polyhedron with 44 vertices and 66 edges. However, it is not known whether such a polyhedron can be realized geometrically without self-crossings (rather than as an [[abstract polytope]]). More generally, this equation can be satisfied precisely when <math> f </math> is congruent to 0, 3, 4, or 7 modulo 12.{{r|junrin|gruszi}}
+
+==History==
+The Szilassi polyhedron is named after Hungarian mathematician [[Lajos Szilassi]], who discovered it in 1977.{{r|gardner|szilassi}} The [[dual polyhedron|dual]] to the Szilassi polyhedron, the [[Császár polyhedron]], was discovered earlier by {{harvs|first=Ákos|last=Császár|authorlink=Ákos Császár|year=1949|txt}}; it has seven vertices, 21 edges connecting every pair of vertices, and 14 triangular faces. Like the Szilassi polyhedron, the Császár polyhedron has the topology of a torus.{{r|csaszar}}
+
+==References==
+<references>
+
+<ref name=akk>{{citation
+ | last1 = Arseneva | first1 = Elena
+ | last2 = Kleist | first2 = Linda
+ | last3 = Klemz | first3 = Boris
+ | last4 = Löffler | first4 = Maarten
+ | last5 = Schulz | first5 = André
+ | last6 = Vogtenhuber | first6 = Birgit
+ | last7 = Wolff | first7 = Alexander
+ | doi = 10.1007/S00454-023-00537-6
+ | issue = 4
+ | journal = Discrete & Computational Geometry
+ | pages = 1429–1455
+ | title = Adjacency Graphs of Polyhedral Surfaces
+ | volume = 71
+ | year = 2024}}</ref>
+
+<ref name=csaszar>{{citation
+ | last = Császár | first = Ákos | author-link = Ákos Császár
+ | journal = Acta Sci. Math. Szeged
+ | pages = 140–142
+ | title = A polyhedron without diagonals
+ | volume = 13
+ | year = 1949}}</ref>
+
+<ref name=gruszi>{{citation
+| last1=Grünbaum | first1=Branko | authorlink1=Branko Grünbaum
+| last2=Szilassi | first2=Lajos
+| title=Geometric realizations of special toroidal complexes
+| journal=Contributions to Discrete Mathematics
+| volume=4
+| issue=1
+| pages=21–39
+| year = 2009
+| doi=10.11575/cdm.v4i1.61986 | doi-access=free
+| mr = 2541986}}</ref>
+
+<ref name=gardner>{{citation
+ | doi = 10.1038/scientificamerican1178-22
+ | last = Gardner | first = Martin | author-link = Martin Gardner
+ | title = In which a mathematical aesthetic is applied to modern minimal art
+ | journal = [[Scientific American]]
+ | pages = 22–32
+ | department = Mathematical Games
+ | issue = 5
+ | volume = 239
+ | year = 1978
+ | jstor = 24955839}}</ref>
+
+<ref name=junrin>{{citation
+ | last1 = Jungerman | first1 = M.
+ | last2 = Ringel | first2 = Gerhard | author2-link = Gerhard Ringel
+ | doi = 10.1007/BF02414187
+ | issue = 1–2
+ | journal = Acta Mathematica
+ | pages = 121–154
+ | title = Minimal triangulations on orientable surfaces
+ | volume = 145
+ | year = 1980| doi-access = free
+ }}</ref>
+
+<ref name=szilassi>{{citation
+ |last    = Szilassi
+ |first   = Lajos
+ |journal = Structural Topology
+ |pages   = 69–80
+ |title   = Regular toroids
+ |url     = http://www-iri.upc.es/people/ros/StructuralTopology/ST13/st13-06-a3-ocr.pdf
+ |volume  = 13
+ |year    = 1986
+}}</ref>
+
+</references>
+
+==External links==
+*{{citation
+ | last = Ace | first = Tom
+ | title = The Szilassi polyhedron
+ | url = http://www.minortriad.com/szilassi.html}}.
+*{{citation
+ | last = Peterson | first = Ivars | author-link = Ivars Peterson
+ | publisher = [[Mathematical Association of America]]
+ | contribution = A polyhedron with a hole
+ | title = MathTrek
+ | url = http://mtarchive.blogspot.com/2011/08/lighting-up-polyhedron-with-hole.html
+ | year = 2007}}.
+*{{MathWorld | urlname=SzilassiPolyhedron | title=Szilassi Polyhedron | mode=cs2}}
+* [http://cutoutfoldup.com/patterns/0927_a4.pdf Szilassi Polyhedron] – Papercraft model at [http://cutoutfoldup.com CutOutFoldUp.com]
+* [https://github.com/HackerPoet/NeighborlyPolyhedra Github repo containing an attempted solution]
+
+[[Category:Nonconvex polyhedra]]
+[[Category:Toroidal polyhedra]]
+[[Category:Unsolved problems in mathematics]]

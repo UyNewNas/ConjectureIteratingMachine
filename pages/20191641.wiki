@@ -1,0 +1,177 @@
+{{Short description|Concept in quantum information theory}}
+{{use dmy dates |date=July 2020 }}
+[[File:MUB bases plot.svg|thumb|An example of three bases in a two-dimensional space, where bases B1 and B2 are mutually unbiased, whereas the vectors of basis B3 do not have equal overlap with the vectors of basis B1 (as well as B2) and so B3 is not mutually unbiased with B1 (and B2).]]
+
+In [[quantum information]] theory, a set of bases in [[Hilbert space]] '''C'''<sup>''d''</sup> are said to be '''mutually unbiased''' if when a system is prepared in an [[Eigenvalues and eigenvectors|eigenstate]] of one of the bases, then all outcomes of the [[measurement in quantum mechanics|measurement]] with respect to the other basis are predicted to occur with an equal probability of 1/''d''.
+
+== Overview ==
+The notion of mutually unbiased bases was first introduced by [[Julian Schwinger]] in 1960,<ref>{{cite journal | last1 = Schwinger | first1 = J. | year = 1960 | title = Unitary Operator Bases, Harvard University | journal = Proc. Natl. Acad. Sci. U.S.A.| volume =  46| issue = 4| pages =  570–9| pmc = 222876 | pmid=16590645 | doi=10.1073/pnas.46.4.570|bibcode = 1960PNAS...46..570S | doi-access = free }}</ref> and the first person to consider applications of mutually unbiased bases was I. D. Ivanovic<ref>{{cite journal | last1 = Ivanovic | first1 = I. D. | year = 1981 | title = Geometrical description of quantal state determination | journal = J. Phys. A | volume = 14 | issue = 12| pages = 3241–3245 |bibcode = 1981JPhA...14.3241I |doi = 10.1088/0305-4470/14/12/019 }}</ref> in the problem of quantum state determination.
+
+Mutually unbiased bases (MUBs) and their existence problem is now known to have several closely related problems and equivalent avatars in several other branches of [[mathematics]] and quantum sciences, such as [[SIC-POVM]]s, finite projective/affine planes, [[Complex Hadamard matrix|complex Hadamard matrices]] and more [see section: [[#Related problems|Related problems]]].
+
+MUBs are important for [[quantum key distribution]], more specifically in secure quantum key exchange.<ref name="planat1">{{cite journal|first1=M. |last1=Planat |display-authors=etal |title=A Survey of Finite Algebraic Geometrical Structures Underlying Mutually Unbiased Quantum Measurements |url=http://hal.ccsd.cnrs.fr/docs/00/07/99/18/PDF/MUB_FP.pdf |doi=10.1007/s10701-006-9079-3 |journal=Foundations of Physics |volume=36 |pages=1662–1680 |date=14 November 2006 |issue=11 |arxiv=quant-ph/0409081 |bibcode=2006FoPh...36.1662P }}</ref> MUBs are used in many protocols since the outcome is random when a measurement is made in a basis unbiased to that in which the state was prepared. When two remote parties share two non-orthogonal quantum states, attempts by an eavesdropper to distinguish between these by measurements will affect the system and this can be detected. While many quantum cryptography protocols have relied on 1-[[qubit]] technologies, employing higher-dimensional states, such as [[Qudit#Variations of the qubit|qutrits]], allows for better security against eavesdropping.<ref name="planat1"/> This motivates the study of mutually unbiased bases in higher-dimensional spaces.
+
+Other uses of mutually unbiased bases include [[Quantum tomography|quantum state reconstruction]],<ref>{{cite journal | last1 = Wootters | first1 = W. K. | last2 = Fields | first2 = B. D. | year = 1989 | title = Optimal State-Determination by Mutually Unbiased Measurements | journal = Ann. Phys. | volume = 191 | issue = 2| pages = 363–381 | doi=10.1016/0003-4916(89)90322-9|bibcode = 1989AnPhy.191..363W | hdl = 10338.dmlcz/141471 | hdl-access = free }}</ref> [[quantum error correction|quantum error correction codes]],<ref>{{cite journal | last1 = Gottesman | first1 = D. | year = 1996 | title = Class of quantum error-correcting codes saturating the quantum Hamming bound | journal = Phys. Rev. A | volume = 54 | issue = 3| pages = 1862–1868 | doi=10.1103/physreva.54.1862| pmid = 9913672 |arxiv = quant-ph/9604038 |bibcode = 1996PhRvA..54.1862G | s2cid = 16407184 }}</ref><ref>{{cite journal | last1 = Calderbank | first1 = A. R. | display-authors = etal   | year = 1997 | title = Quantum Error Correction and Orthogonal Geometry | journal = Phys. Rev. Lett. | volume = 78 | issue = 3| pages = 405–408 | doi=10.1103/physrevlett.78.405|arxiv = quant-ph/9605005 |bibcode = 1997PhRvL..78..405C | s2cid = 15326700 }}</ref> detection of [[quantum entanglement]],<ref>{{cite journal |last1=Huang |first1=Yichen |title=Entanglement criteria via concave-function uncertainty relations |journal=Physical Review A |date=29 July 2010 |volume=82 |issue=1 |article-number=012335 |doi=10.1103/PhysRevA.82.012335|bibcode=2010PhRvA..82a2335H }}</ref><ref>{{cite journal | last1 = Spengler | first1 = C. | last2 = Huber | first2 = M. | last3 = Brierley | first3 = S. | last4 = Adaktylos | first4 = T. | last5 = Hiesmayr | first5 = B. C.|author5-link=Beatrix Hiesmayr | year = 2012 | title = Entanglement detection via mutually unbiased bases | journal = Phys. Rev. A | volume = 86 | issue = 2| article-number = 022311 | doi=10.1103/physreva.86.022311|arxiv = 1202.5058 |bibcode = 2012PhRvA..86b2311S | s2cid = 34502667 }}</ref> and the so-called "mean king's problem".<ref>{{cite journal | last1 = Vaidman | first1 = L. | display-authors = etal   | year = 1987 | title = How to ascertain the values of <math>\sigma_x, \sigma_y,</math> and <math>\sigma_z</math> of a spin-1/2 particle | journal = Phys. Rev. Lett. | volume = 58 | issue = 14| pages = 1385–1387 |bibcode = 1987PhRvL..58.1385V |doi = 10.1103/PhysRevLett.58.1385 | pmid = 10034422 }}</ref><ref>{{cite journal | last1 = Englert | first1 = B.-G. | last2 = Aharonov | first2 = Y. | year = 2001 | title = The mean king's problem: prime degrees of freedom | journal = Phys. Lett. A | volume = 284 | issue = 1| pages = 1–5 | doi=10.1016/s0375-9601(01)00271-7|arxiv = quant-ph/0101134 |bibcode = 2001PhLA..284....1E | s2cid = 14848100 }}</ref>
+
+==Definition and examples==
+
+A pair of [[orthonormal basis|orthonormal bases]] <math>\{|e_1\rangle, \dots, |e_d\rangle\}</math> and <math>\{|f_1\rangle, \dots, |f_d\rangle\}</math> in [[Hilbert space]] '''C'''<sup>''d''</sup> are said to be '''mutually unbiased''', [[if and only if]] the [[square (algebra)|square]] of the [[magnitude (mathematics)|magnitude]] of the [[inner product]] between any basis states <math>|e_j\rangle</math> and <math>|f_k\rangle</math> equals the [[multiplicative inverse|inverse]] of the [[dimension]] ''d'':<ref name="bengtsson1">{{cite book |arxiv=quant-ph/0610216 |doi=10.1063/1.2713445 |chapter=Three Ways to Look at Mutually Unbiased Bases |title=AIP Conference Proceedings |year=2007 |last1=Bengtsson |first1=Ingemar |s2cid=12395501 |volume=889 |pages=40–51 }}</ref>
+
+:<math> |\langle e_j|f_k \rangle|^2 = \frac{1}{d}, \quad \forall j,k \in \{1, \dots, d\}. </math>
+
+These bases are ''unbiased'' in the following sense: if a system is prepared in a state belonging to one of the bases, then all outcomes of the [[measurement in quantum mechanics|measurement]] with respect to the other basis are predicted to occur with equal probability.
+
+=== Example for ''d'' = 2 ===
+The three bases
+:<math> M_0 =  \left\{ | 0 \rangle,| 1 \rangle \right\} </math>
+:<math> M_1 = \left\{ \frac{| 0 \rangle+| 1 \rangle}{\sqrt{2}},\frac{| 0 \rangle-| 1 \rangle}{\sqrt{2}} \right\} </math>
+:<math> M_2 = \left\{ \frac{| 0 \rangle+i | 1 \rangle}{\sqrt{2}},\frac{| 0 \rangle-i| 1 \rangle}{\sqrt{2}} \right\} </math>
+provide the simplest example of mutually unbiased bases in '''C'''<sup>2</sup>. The above bases are composed of the [[eigenvectors]] of the [[Pauli spin matrices]] <math> \sigma_z, \sigma_x </math> and their product <math>\sigma_x \sigma_z</math>, respectively.
+
+=== Example for ''d'' = 4 ===
+For ''d''&nbsp;=&nbsp;4, an example of ''d''&nbsp;+&nbsp;1&nbsp;=&nbsp;5 mutually unbiased bases where each basis is denoted by ''M''<sub>''j''</sub>, 0 ≤ ''j'' ≤ 4, is given as follows:<ref>{{cite book |arxiv=quant-ph/0309120 |last1=Klappenecker |first1=Andreas |last2=Roetteler |first2=Martin |chapter=Constructions of Mutually Unbiased Bases |title=Finite Fields and Applications |series=[[Lecture Notes in Computer Science]] |volume=2948 |publisher=Springer |pages=137–144 |year=2004 |bibcode=2003quant.ph..9120K }}</ref>
+:<math> M_0 = \left\{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\right\} </math>
+:<math> M_1 = \left\{\frac{1}{2}(1,1,1,1),\frac{1}{2}(1,1,-1,-1),\frac{1}{2}(1,-1,-1,1),\frac{1}{2}(1,-1,1,-1)\right\} </math>
+:<math> M_2 = \left\{\frac{1}{2}(1,-1,-i,-i),\frac{1}{2}(1,-1,i,i),\frac{1}{2}(1,1,i,-i),\frac{1}{2}(1,1,-i,i)\right\} </math>
+:<math> M_3 = \left\{\frac{1}{2}(1,-i,-i, -1),\frac{1}{2}(1,-i,i,1),\frac{1}{2}(1,i,i,-1),\frac{1}{2}(1,i,-i,1)\right\} </math>
+:<math> M_4 = \left\{\frac{1}{2}(1,-i,-1,-i),\frac{1}{2}(1,-i,1,i),\frac{1}{2}(1,i,-1,i),\frac{1}{2}(1,i,1,-i)\right\} </math>
+
+== Existence problem ==
+{{unsolved|mathematics| What is the maximum number of MUBs in any given non-prime-power dimension d?}}
+
+Let <math>\mathfrak{M}(d)</math> denote the maximum number of mutually unbiased bases in the ''d''-dimensional Hilbert space '''C'''<sup>''d''</sup>. It is an open question<ref name=mubreview>{{cite journal | last1 = Durt | first1 = T. | last2 = Englert | first2 = B.-G. | last3 = Bengtsson | first3 = I. | last4 = Życzkowski | first4 = K. | year = 2010 | title = On mutually unbiased bases | arxiv=1004.3348 | journal = International Journal of Quantum Information | volume = 8 | issue = 4| pages = 535–640 | doi=10.1142/s0219749910006502| s2cid = 118551747 }}</ref> how many mutually unbiased bases, <math>\mathfrak{M}(d)</math>, one can find in '''C'''<sup>''d''</sup>, for arbitrary ''d''.
+
+In general, if
+:<math> d = p_1^{n_1} p_2^{n_2} \cdots p_k^{n_k} </math>
+is the [[integer factorization|prime-power factorization]] of ''d'', where
+:<math> p_1^{n_1} < p_2^{n_2}<\cdots<p_k^{n_k} </math>
+then the maximum number of mutually unbiased bases which can be constructed satisfies<ref name="bengtsson1"/>
+:<math>p_1^{n_1}+1 \le \mathfrak{M}(d) \le d+1. </math>
+
+It follows that if the dimension of a Hilbert space ''d'' is an integer power of a prime number, then it is possible to find ''d''&nbsp;+&nbsp;1 mutually unbiased bases. This can be seen in the previous equation, as the prime number decomposition of ''d'' simply is <math> d = p^{n} </math>. Therefore,
+:<math> \mathfrak{M}(p^n) = p^n + 1. </math>
+
+Thus, the maximum number of mutually unbiased bases is known when ''d'' is an integer power of a prime number, but it is not known for arbitrary ''d''.
+
+The smallest dimension that is not an integer power of a prime is ''d''&nbsp;=&nbsp;6. This is also the smallest dimension for which the number of mutually unbiased bases is not known. The methods used to determine the number of mutually unbiased bases when ''d'' is an integer power of a prime number cannot be used in this case. Searches for a set of four mutually unbiased bases when ''d''&nbsp;=&nbsp;6, both by using Hadamard matrices<ref name="bengtsson1"/> and numerical methods<ref>{{Cite journal |last1=Butterley |first1=Paul |last2=Hall |first2=William |date=September 2007 |title=Numerical evidence for the maximum number of mutually unbiased bases in dimension six |journal=Physics Letters A |language=en |volume=369 |issue=1–2 |pages=5–8 |arxiv=quant-ph/0701122 |doi=10.1016/j.physleta.2007.04.059 |bibcode=2007PhLA..369....5B }}</ref><ref>{{cite journal | last1 = Brierley | first1 = S. | last2 = Weigert | first2 = S. | year = 2008 | title = Maximal sets of mutually unbiased quantum states in dimension six | journal = Phys. Rev. A | volume = 78 | issue = 4| article-number = 042312 | doi=10.1103/physreva.78.042312|arxiv = 0808.1614 |bibcode = 2008PhRvA..78d2312B | s2cid = 9295036 }}</ref> have been unsuccessful. The general belief is that the maximum number of mutually unbiased bases for ''d''&nbsp;=&nbsp;6 is <math>\mathfrak{M}(6) = 3 </math>.<ref name="bengtsson1"/>
+
+== Related problems ==
+{{unsolved|mathematics|Do SIC-POVMs exist in all dimensions?}}
+The MUBs problem seems similar in nature to the symmetric property of SIC-POVMs. [[William Wootters]] points out that a complete set of <math>d+1</math> unbiased bases yields a geometric structure known as a [[finite projective plane]], while a SIC-POVM (in any dimension that is a [[prime power]]) yields a [[Affine plane (incidence geometry)|finite affine plane]], a type of structure whose definition is identical to that of a finite projective plane with the roles of points and lines exchanged. In this sense, the problems of SIC-POVMs and of mutually unbiased bases are dual to one another.<ref>{{cite journal |arxiv=quant-ph/0406032 |last1= Wootters|first1= William K. |author-link=William Wootters |title= Quantum measurements and finite geometry |journal=Foundations of Physics |volume=36 |pages=112–126 |date=8 February 2006 |doi=10.1007/s10701-005-9008-x |issue=1, Festschrift for [[Asher Peres]]|bibcode= 2006FoPh...36..112W}}</ref>
+
+In dimension <math>d = 3</math>, the analogy can be taken further: a complete set of mutually unbiased bases can be directly constructed from a SIC-POVM.<ref>{{cite journal|last=Stacey|first=Blake C.|title=SIC-POVMs and Compatibility among Quantum States|journal=Mathematics|volume=4|issue=2|page=36|doi=10.3390/math4020036|arxiv=1404.3774|year=2016|doi-access=free}}</ref> The 9 vectors of the SIC-POVM, together with the 12 vectors of the mutually unbiased bases, form a set that can be used in a [[Kochen–Specker theorem|Kochen–Specker proof]].<ref>{{cite journal|first1=Ingemar |last1=Bengtsson |first2=Kate |last2=Blanchfield |first3=Adán |last3=Cabello |title=A Kochen–Specker inequality from a SIC |journal=[[Physics Letters A]] |volume=376 |issue=4 |year=2012 |pages=374&ndash;376 |doi=10.1016/j.physleta.2011.12.011 |arxiv=1109.6514|bibcode=2012PhLA..376..374B |s2cid=55755390 }}</ref> However, in 6-dimensional Hilbert space, a SIC-POVM is known, but no complete set of mutually unbiased bases has yet been discovered, and it is widely believed that no such set exists.<ref>{{cite arXiv |eprint=quant-ph/0406175|last1=Grassl|first1=Markus|title=On SIC-POVMs and MUBs in Dimension 6|year=2004 }}</ref><ref>{{Cite book|title=Geometry of quantum states: an introduction to quantum entanglement |title-link=Geometry of Quantum States |last1=Bengtsson|first1=Ingemar|last2=Życzkowski|first2=Karol|publisher=[[Cambridge University Press]]|year=2017|isbn=978-1-107-02625-4|edition=Second|location=Cambridge, United Kingdom|pages=313&ndash;354|oclc=967938939|author-link2=Karol Życzkowski}}</ref><ref>{{Cite journal |last1=Horodecki |first1=Paweł |author-link1=Paweł Horodecki |last2=Rudnicki |first2=Łukasz |last3=Życzkowski |first3=Karol |author-link3=Karol Życzkowski |date=2022-03-03 |title=Five Open Problems in Quantum Information Theory |journal=PRX Quantum |language=en |volume=3 |issue=1 |article-number=010101 |doi=10.1103/PRXQuantum.3.010101 |bibcode=2022PRXQ....3a0101H |doi-access=free }}</ref>
+
+== Search methods ==
+
+=== [[Weyl group]] method ===
+Let <math> \hat{X} </math> and <math> \hat{Z} </math> be two [[unitary operators]] in the Hilbert space '''C'''<sup>''d''</sup> such that
+:<math> \hat{Z}\hat{X} = \omega\hat{X}\hat{Z} </math>
+for some [[phase factor]] <math> \omega </math>. If <math>\omega</math> is a [[primitive root of unity]], for example <math> \omega \equiv e^{\frac{2 \pi i}{d}} </math> then the [[eigenbasis|eigenbases]] of <math> \hat{X} </math> and <math> \hat{Z} </math> are mutually unbiased.
+
+By choosing the eigenbasis of <math> \hat{Z} </math> to be the [[standard basis]], we can generate another basis unbiased to it using a Fourier matrix. The elements of the Fourier matrix are given by
+:<math>F_{ab} = \omega^{ab}, 0 \le a,b \le N-1 </math>
+Other bases which are unbiased to both the standard basis and the basis generated by the Fourier matrix can be generated using Weyl groups.<ref name="bengtsson1"/> The dimension of the Hilbert space is important when generating sets of mutually unbiased bases using Weyl groups. When ''d'' is a prime number, then the usual ''d''&nbsp;+&nbsp;1 mutually unbiased bases can be generated using Weyl groups. When ''d'' is not a prime number, then it is possible that the maximal number of mutually unbiased bases which can be generated using this method is 3.
+
+=== Unitary operators method using [[finite field]]s ===
+
+When ''d''&nbsp;=&nbsp;''p'' is [[Prime number|prime]], we define the [[unitary operator]]s <math>\hat{X}</math> and <math>\hat{Z}</math> by
+:<math> \hat{X} = \sum_{k=0}^{d-1} |k+1 \rangle \langle k| </math>
+:<math> \hat{Z} = \sum_{k=0}^{d-1} \omega^k |k \rangle \langle k| </math>
+where <math>\{ |k \rangle | 0 \le k \le d-1 \} </math> is the standard basis and <math>\omega = e^{\frac{2\pi i}{d}}</math> is a [[root of unity]].
+
+Then the [[eigenbasis|eigenbases]] of the following ''d''&nbsp;+&nbsp;1 operators are mutually unbiased:<ref name="bandy1"/>
+:<math> \hat{X}, \hat{Z}, \hat{X} \hat{Z}, \hat{X} \hat{Z}^2, \ldots, \hat{X} \hat{Z}^{d-1}. </math>
+For odd ''d'', the ''t''-th eigenvector of the operator <math>\hat{X}\hat{Z}^{k}</math> is given explicitly by<ref name=mubreview/>
+:<math> |\psi^k_t \rangle = \frac{1}{\sqrt d}\sum_{j=0}^{d-1}\omega^{tj + kj^2}|j\rangle . </math>
+
+When <math>d=p^r</math> is a power of a prime, we make use of the [[finite field]] <math>\mathbb{F}_d</math> to construct a maximal set of ''d''&nbsp;+&nbsp;1 mutually unbiased bases. We label the elements of the computational basis of '''C'''<sup>''d''</sup> using the finite field:
+<math>\{ |a \rangle | a \in \mathbb{F}_d \}</math>.
+
+We define the operators <math> \hat{X_a} </math> and <math> \hat{Z_b} </math> in the following way
+:<math>\hat{X_a} = \sum_{c \in \mathbb{F}_d} |c + a \rangle \langle c| </math>
+:<math>\hat{Z_b} = \sum_{c \in \mathbb{F}_d} \chi (bc)|c \rangle \langle c| </math>
+where
+:<math>\chi(\theta) = \exp \left [ \frac{2\pi i }{p} \left ( \theta+ \theta^p + \theta^{p^2}+ \cdots + \theta^{p^{r-1}} \right ) \right ],</math>
+is an additive character over the field and the addition and multiplication in the kets and <math>\chi(\cdot)</math> is that of <math>\mathbb{F}_d</math>.
+
+Then we form ''d''&nbsp;+&nbsp;1 sets of [[commutativity|commuting]] unitary operators:
+:<math>\{ \hat{Z_s} | s \in \mathbb{F}_d \} </math> and <math>  \{ \hat{X_s}\hat{Z_{sr}} | s \in \mathbb{F}_d \} </math> for each <math> r \in \mathbb{F}_d </math>
+
+The joint eigenbases of the operators in one set are mutually unbiased to that of any other set.<ref name="bandy1">{{cite journal |arxiv=quant-ph/0103162 |last1=Bandyopadhyay |first1=Somshubhro |last2=Oscar Boykin |first2=P. |last3=Roychowdhury |first3=Vwani |last4=Vatan |first4=Farrokh |title=A new proof for the existence of mutually unbiased bases |year=2002 | journal =  Algorithmica| volume = 32 |issue=4 |pages=512–528 | doi = 10.1007/s00453-002-0980-7 |bibcode=2001quant.ph..3162B |s2cid=1280557 }}</ref> We thus have ''d''&nbsp;+&nbsp;1 mutually unbiased bases.
+
+=== Hadamard matrix method ===
+Given that one basis in a Hilbert space is the standard basis, then all bases which are unbiased with respect to this basis can be represented by the columns of a [[complex Hadamard matrix]] multiplied by a normalization factor. For ''d''&nbsp;=&nbsp;3 these matrices would have the form
+:<math> U = \frac{1}{\sqrt{d}}
+\begin{bmatrix}
+  1 & 1 & 1 \\
+  e^{i \phi_{10}} & e^{i \phi_{11}} & e^{i \phi_{12}} \\
+  e^{i \phi_{20}} & e^{i \phi_{21}} & e^{i \phi_{22}}
+\end{bmatrix}
+</math>
+The problem of finding a set of ''k''+1 mutually unbiased bases therefore corresponds to finding ''k'' mutually unbiased complex Hadamard matrices.<ref name="bengtsson1"/>
+
+An example of a one parameter family of Hadamard matrices in a 4-dimensional Hilbert space is
+:<math> H_4(\phi) = \frac{1}{2}
+\begin{bmatrix}
+  1 & 1 & 1 & 1 \\
+  1 & e^{i\phi} & -1 & -e^{i \phi} \\
+  1 & -1 & 1 & -1 \\
+  1 & -e^{i\phi} & -1 & e^{i\phi}
+\end{bmatrix}
+</math>
+
+== Entropic uncertainty relations ==
+There is an alternative characterization of mutually unbiased bases that considers them in terms of [[uncertainty principle|uncertainty relations]].<ref>{{cite journal | last1 = Hirschman | first1 = I. I. Jr. | year = 1957| title = A note on entropy | journal = American Journal of Mathematics | volume = 1957 | issue = 1| pages = 152–156 | doi=10.2307/2372390| jstor = 2372390 }}</ref>
+
+[[Uncertainty principle#Quantum entropic uncertainty principle|Entropic uncertainty relations]] are analogous to the Heisenberg uncertainty principle, and [[Hans Maassen]] and J. B. M. Uffink<ref>{{Cite journal |last1=Maassen |first1=Hans |author-link1=Hans Maassen |last2=Uffink |first2=J. B. M. |date=1988-03-21 |title=Generalized entropic uncertainty relations |journal=Physical Review Letters |language=en |volume=60 |issue=12 |pages=1103–1106 |doi=10.1103/PhysRevLett.60.1103 |bibcode=1988PhRvL..60.1103M }}</ref> found that for any two bases <math>B_1 = \{ |a_{i}\rangle_{i=1}^d \} </math> and <math>B_2 = \{ | b_{j} \rangle _{j=1}^{d} \}</math>:
+:<math> H_{B_1} + H_{B_2} \geq -2\log c.</math>
+where <math>c = \max | \langle a_j | b_k \rangle |</math> and <math> H_{B_1}</math> and <math>H_{B_2}</math> is the respective [[Entropy (information theory)#Definition|entropy]] of the bases <math>B_1</math> and <math>B_2</math>, when measuring a given state.
+
+Entropic uncertainty relations are often preferable<ref>{{Cite book |last1=Damgård |first1=Ivan B. |title=Advances in Cryptology - CRYPTO 2007 |last2=Fehr |first2=Serge |last3=Renner |first3=Renato |last4=Salvail |first4=Louis |last5=Schaffner |first5=Christian |publisher=Springer |year=2007 |isbn=978-3-540-74143-5 |editor-last=Menezes |editor-first=A. |series=[[Lecture Notes in Computer Science]] |volume=4622 |chapter=A Tight High-Order Entropic Quantum Uncertainty Relation with Applications |doi=10.1007/978-3-540-74143-5_20 |arxiv=quant-ph/0612014}}</ref> to the [[uncertainty principle|Heisenberg uncertainty principle]], as they are not phrased in terms of the state to be measured, but in terms of ''c''.
+
+In scenarios such as [[Quantum cryptography#Quantum key exchange|quantum key distribution]], we aim for measurement bases such that full knowledge of a state with respect to one basis implies minimal knowledge of the state with respect to the other bases. This implies a high entropy of measurement outcomes, and thus we call these ''strong'' entropic uncertainty relations.
+
+For two bases, the lower bound of the uncertainty relation is maximized when the measurement bases are mutually unbiased, since mutually unbiased bases are ''maximally incompatible'': the outcome of a measurement made in a basis unbiased to that in which the state is prepared in is completely random. In fact, for a ''d''-dimensional space, we have:<ref>{{cite journal | last1 = Deutsch | first1 = D. | year = 1982 | title = Uncertainty in Quantum Measurements | journal = Physical Review Letters | volume = 50 | issue = 9| pages = 631–633 | doi=10.1103/physrevlett.50.631|bibcode = 1983PhRvL..50..631D }}</ref>
+:<math> H_{B_1} + H_{B_2} \geq \log (d) </math>
+for any pair of mutually unbiased bases <math>B_1</math> and <math>B_2</math>. This bound is ''optimal'':<ref>{{Cite journal |last=Ambainis |first=Andris |date=2010-09-01 |title=Limits on entropic uncertainty relations for 3 and more MUBs |url=https://dl.acm.org/doi/abs/10.5555/2011464.2011474 |journal=Quantum Info. Comput. |volume=10 |issue=9 |pages=848–858 |arxiv=0909.3720}}</ref> If we measure a state from one of the bases then the outcome has entropy 0 in that basis and an entropy of <math>\log(d)</math> in the other.
+
+If the dimension of the space is a prime power, we can construct ''d''&nbsp;+&nbsp;1 MUBs, and then it has been found that<ref name="wehner1">{{Cite journal |last1=Wehner |first1=Stephanie |last2=Winter |first2=Andreas |date=2010-02-26 |title=Entropic uncertainty relations—a survey |journal=New Journal of Physics |volume=12 |issue=2 |doi=10.1088/1367-2630/12/2/025009 |article-number=025009|arxiv=0907.3704 |bibcode=2010NJPh...12b5009W }}</ref>
+:<math> \sum_{k=1}^{d+1} H_{B_k} \geq (d+1) \log\left(\frac{d+1}{2} \right)</math>
+which is stronger than the relation we would get from pairing up the sets and then using the Maassen and Uffink equation. Thus we have a characterization of ''d''&nbsp;+&nbsp;1 mutually unbiased bases as those for which the uncertainty relations are strongest.
+
+Although the case for two bases, and for ''d''&nbsp;+&nbsp;1 bases is well studied, very little is known about uncertainty relations for mutually unbiased bases in other circumstances.<ref name="wehner1"/>
+<ref name="yu1">{{cite journal | last1 = Wu | first1 = S. | last2 = Yu | first2 = S. | last3 = Mølmer | first3 = K. | year = 2009 | title = Entropic uncertainty relation for mutually unbiased bases | arxiv=0811.2298 | journal = Phys. Rev. A | volume = 79 | issue = 2| article-number = 022104 | doi=10.1103/physreva.79.022104|bibcode = 2009PhRvA..79b2104W | s2cid = 119222014 }}</ref>
+
+When considering more than two, and less than <math>d+1</math> bases it is known that large sets of mutually unbiased bases exist which exhibit very little uncertainty.<ref name="ballester">{{cite journal|last=Ballester|first=M.|author2=S. Wehner|s2cid=41654752|title = Entropic uncertainty relations and locking: tight bounds for mutually unbiased bases |journal=Physical Review A| volume=75|issue=1| page=022319|year=2007|arxiv=quant-ph/0606244|bibcode = 2007PhRvA..75a2319C |doi = 10.1103/PhysRevA.75.012319 |url=http://ddd.uab.cat/pub/artpub/2007/115650/phyreva_a2007m1v75n1p012319.pdf}}</ref> This means merely being mutually unbiased does not lead to high uncertainty, except when considering measurements in only two bases. Yet there do exist other measurements that are very uncertain.<ref name="wehner1"/><ref>{{cite journal|last=Wehner|first=S.|author2=A. Winter|s2cid=118268095|title=Higher entropic uncertainty relations for anti-commuting observables|journal=Journal of Mathematical Physics|volume=49|issue=6|page=062105|year=2008|doi=10.1063/1.2943685|arxiv = 0710.1185 |bibcode = 2008JMP....49f2105W }}</ref>
+
+== Infinite dimension Hilbert spaces ==
+While there has been investigation into mutually unbiased bases in infinite dimension Hilbert space, their existence remains an open question. It is conjectured that in a continuous Hilbert space, two [[orthonormal basis|orthonormal bases]] <math> |\psi_s^b \rangle </math> and <math> |\psi_{s'}^{b'} \rangle </math> are said to be mutually unbiased if<ref name="weigert1">{{cite journal |arxiv=0802.0394 |doi=10.1103/PhysRevA.78.020303 |title=Mutually unbiased bases for continuous variables |year=2008 |last1=Weigert |first1=Stefan |last2=Wilkinson |first2=Michael |s2cid=67784632 |journal=Physical Review A |volume=78 |issue=2 |article-number=020303 |bibcode=2008PhRvA..78b0303W }}</ref>
+:<math> |\langle \psi_s^b | \psi_{s'}^{b'}  \rangle|^2 = k>0, s,s'\in \mathbb{R} </math>
+For the generalized position and momentum eigenstates <math> | q  \rangle, q\in \mathbb{R} </math> and <math> | p  \rangle,p\in \mathbb{R} </math>, the value of ''k'' is
+:<math> |\langle q | p  \rangle|^2 = \frac{1}{2 \pi \hbar} </math>
+
+The existence of mutually unbiased bases in a continuous Hilbert space remains open for debate, as further research in their existence is required before any conclusions can be reached.
+
+Position states <math> | q \rangle </math> and momentum states <math> | p \rangle </math> are eigenvectors of Hermitian operators <math> \hat{x} </math> and <math> -i \frac{\partial}{\partial x} </math>, respectively. Weigert and Wilkinson<ref name="weigert1"/> were first to notice that also a [[linear combination]] of these operators have eigenbases, which have some features typical for the mutually unbiased bases. An operator <math> \alpha \hat{x}-i\beta\frac{\partial}{\partial x}</math> has eigenfunctions proportional to <math> \exp(i(ax^2+bx)) \,</math> with <math> \alpha+2\beta a=0 </math> and the corresponding eigenvalues <math> b\beta </math>. If we parametrize <math> \alpha </math> and <math> \beta </math> as <math> \cos \theta </math> and <math> \sin \theta </math>, the overlap between any eigenstate of the linear combination and any eigenstate of the [[position operator]] (both states normalized to the Dirac delta) is constant, but dependent on <math> \beta </math>:
+:<math> |\langle x_\theta|x \rangle |^2=\frac{1}{2\pi|\sin\theta|}, </math>
+where <math> |x\rangle </math> and <math> |x_\theta\rangle </math> stand for eigenfunctions of <math> \hat{x}</math> and <math> \cos\theta\hat{x}-i \sin \theta \frac{\partial}{\partial x}</math>.
+
+==See also==
+* [[Measurement in quantum mechanics]]
+* [[POVM]]
+* [[SIC-POVM]]
+* [[Quantum Bayesianism|QBism]]
+
+== References ==
+{{reflist}}
+
+[[Category:Quantum measurement]]
+[[Category:Unsolved problems in physics]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Hilbert spaces]]
+[[Category:Operator theory]]
+[[Category:Incidence geometry]]
+[[Category:Euclidean plane geometry]]
+[[Category:Algebraic geometry]]
+[[Category:Hypergraphs]]
+[[Category:Computer-assisted proofs]]

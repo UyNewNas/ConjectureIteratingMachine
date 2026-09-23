@@ -1,0 +1,41 @@
+{{Short description|Number theory conjecture about odd integers}}
+In [[number theory]], '''Lemoine's conjecture''', also sometimes known as '''Levy's conjecture''', states that all [[odd integer]]s greater than 5 can be represented as the sum of an odd [[prime number]] and an even [[semiprime]]. 
+
+The conjecture was first proposed by [[Émile Lemoine]] in 1895, but was erroneously attributed by [[MathWorld]] to [[Hyman Levy]] who pondered it in the 1960s.<ref name="MathWorld">{{MathWorld|title=Levy's Conjecture|urlname=LevysConjecture}}</ref> 
+
+==Formal definition==
+Algebraically, the conjecture states that <math>2n + 1 = p + 2q</math>  always has a solution in primes <math>p</math> and <math>q</math> (not necessarily distinct) for <math>n > 2</math>. The Lemoine conjecture implies [[Goldbach's weak conjecture]].
+
+In 2008, [[Zhi-Wei Sun]] similarly conjectured that all odd integers greater than 3 can be represented as the sum of a prime number and the product of two consecutive positive integers; that is, <math>2n + 1 = p + m(m+1)</math> for all <math>n > 1</math>.<ref>Sun, Zhi-Wei. "On sums of primes and triangular numbers." [https://arxiv.org/abs/0803.3737 arXiv preprint arXiv:0803.3737] (2008).</ref>
+
+==Example==
+For example, the odd integer <math>47</math> can be expressed as the sum of a prime and an even semiprime in four different ways:
+: <math>47 = 13 + 2\cdot 17 = 37 + 2\cdot5 = 41 + 2\cdot3 = 43 + 2\cdot2</math>
+The number of ways this can be done is given by {{OEIS|A046927}}. Lemoine's conjecture is that this sequence contains no zeros after the first three.
+
+==Evidence==
+According to [[MathWorld]], the conjecture has been verified by Corbitt up to 10<sup>9</sup>.<ref name="MathWorld"/> A blog post in June of 2019 additionally claimed to have verified the conjecture up to 10<sup>10</sup>.<ref>{{cite web|url=https://www.makethebrainhappy.com/2019/06/lemoines-conjecture-verified-to-1010.html|title=Lemoine's Conjecture Verified to 10^10|date=19 June 2019|access-date=19 June 2019}}</ref>
+
+A proof was claimed in 2017 by Agama and Gensel, but this was later found to be flawed.<ref>{{cite arXiv |eprint=1709.05335v6 |class=math.NT |title=A Proof of Lemoine's Conjecture by Circles of Partition |first1=Theophilus |last1=Agama |first2=Berndt |last2=Gensel |date=21 March 2021}}</ref>
+
+==See also==
+* [[Émile Lemoine#Lemoine's conjecture and extensions|Lemoine's conjecture and extensions]]
+
+==Notes==
+{{reflist}}
+
+==References==
+* Emile Lemoine, ''L'intermédiaire des mathématiciens'', '''1''' (1894), 179; ibid '''3''' (1896), 151.
+* H. Levy, "On Goldbach's Conjecture", ''Math. Gaz.'' '''47''' (1963): 274
+* L. Hodges, "A lesser-known Goldbach conjecture", ''Math. Mag.'', '''66''' (1993): 45–47. {{doi|10.2307/2690477}}. {{JSTOR|2690477}}
+* John O. Kiltinen and Peter B. Young, "Goldbach, Lemoine, and a Know/Don't Know Problem", ''Mathematics Magazine'', '''58'''(4) (Sep., 1985), pp. 195–203. {{doi|10.2307/2689513}}. {{JSTOR|2689513}}
+* [[Richard K. Guy]], ''Unsolved Problems in Number Theory'' New York: Springer-Verlag 2004: C1
+
+== External links ==
+* [http://demonstrations.wolfram.com/LevysConjecture/ Levy's Conjecture] by  Jay Warendorff, [[Wolfram Demonstrations Project]].
+
+{{Prime number conjectures}}
+
+[[Category:Additive number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

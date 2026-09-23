@@ -1,0 +1,68 @@
+{{Short description|Type of number in mathematics}}
+{{Infobox integer sequence
+| con_number         = Infinite
+| first_terms        = [[2 (number)|2]], [[3 (number)|3]], [[5 (number)|5]], [[7 (number)|7]], [[11 (number)|11]], [[101 (number)|101]], [[131 (number)|131]], [[151 (number)|151]]
+| largest_known_term = {{math|10<sup>1888529</sup> − 10<sup>944264</sup> − 1}} (proven)
+ <math>\tfrac{10^{8177207}-1}{9}</math> (probable)
+| OEIS               = A002385
+| OEIS_name          = Palindromic primes: prime number whose decimal expansion is a palindrome
+}}
+
+In mathematics, a '''palindromic prime''' (sometimes called a '''palprime'''<ref>{{cite web |title=World of Palindromic Primes |last=De Geest |first=Patrick |url=https://www.worldofnumbers.com/palpri.htm |website=World!Of Numbers |access-date=1 April 2023}}</ref>) is a [[prime number]] that is also a [[palindromic number]]. Palindromicity depends on the [[Radix|base]] of the number system and its notational conventions, while primality is independent of such concerns. The first few [[decimal]] palindromic primes are:
+:[[2 (number)|2]], [[3 (number)|3]], [[5 (number)|5]], [[7 (number)|7]], [[11 (number)|11]], [[101 (number)|101]], [[131 (number)|131]], [[151 (number)|151]], 181, 191, 313, 353, 373, 383, 727, 757, 787, 797, 919, 929, … {{OEIS|id=A002385}}
+
+Except for 11, all palindromic primes have an [[parity (mathematics)|odd]] number of digits, because the [[divisibility test]] for 11 tells us that every palindromic number with an [[parity (mathematics)|even]] number of digits is a multiple of 11.  It is not known if there are infinitely many palindromic primes in base 10. For any base, [[almost all]] palindromic numbers are [[composite number|composite]],<ref name="banks">{{cite journal
+ | last1 = Banks | first1 = William D.
+ | last2 = Hart | first2 = Derrick N.
+ | last3 = Sakata | first3 = Mayumi
+ | arxiv = math/0405056
+ | doi = 10.4310/MRL.2004.v11.n6.a10
+ | issue = 5–6
+ | journal = Mathematical Research Letters
+ | mr = 2106245
+ | pages = 853–868
+ | title = Almost all palindromes are composite
+ | volume = 11
+ | year = 2004}}</ref> i.e. the ratio between palindromic composites and all palindromes less than ''n'' tends to 1.
+
+A few decorative examples do however exist; in base 10 the following are primes:<BR>
+&nbsp; &nbsp; &nbsp; 11, &nbsp; &nbsp; 122333221, &nbsp; &nbsp; and &nbsp; 1223334444555554444333221.
+
+So are: 13331, and  12233355555333221.
+
+For a large example, consider:<BR>
+:{{math|10<sup>1888529</sup> − 10<sup>944264</sup> − 1}},
+which has 1,888,529 digits. It was found on 18 October 2021 by Ryan Propper and Serge Batalov.<ref>Chris Caldwell, [http://primes.utm.edu/top20/page.php?id=53 ''The Top Twenty: Palindrome'']</ref>
+
+All decimal [[Repunit|repunits]] are palindromic numbers, some of which are prime. Among them, the largest currently known candidate for primality is the probable prime <math>\tfrac{10^{8177207}-1}{9}</math>, which has 8,177,207 digits.
+
+==Other bases==
+
+In [[binary numeral system|binary]], the palindromic primes include the [[Mersenne prime]]s and the [[Fermat prime]]s. All binary palindromic primes except binary 11 (decimal 3) have an odd number of digits; those palindromes with an even number of digits are [[divisibility|divisible]] by 3. The [[integer sequence|sequence]] of binary palindromic primes begins (in binary):
+:11, 101, 111, 10001, 11111, 1001001, 1101011, 1111111, 100000001, 100111001, 110111011, ... {{OEIS|id=A117697}}
+
+Any number that can be expressed as a repetition of just one digit '''''d''''' in some base must trivially be palindromic in that base and must be a multiple of '''''d''''' in every base. Accordingly, no number that consists only of a string of repetitions of the same digit in at least one base, can be a prime unless it is a string of 1s in that base. Furthermore, the string must be of prime length, otherwise, if the string is of length '''''m'''''X'''''n''''', it is divisible by strings of lengths '''''m''''' and '''''n''''' in that base. For example 111111111111111 (15 digits) is divisible by 111 and 11111 in that base. If a number '''''m''''' can be expressed as a string of prime length to some base, such a number may or may not be prime, but commonly is not; for example, to base 10, there are only three such numbers of length less than 100 (1 is by definition, not prime). The three are:<BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 11 (length 2), &nbsp; &nbsp; 1111111111111111111 (length 19), &nbsp; &nbsp; and &nbsp; &nbsp; 11111111111111111111111 (length 23)
+
+==Property==
+
+Due to the [[superstition|superstitious]] significance of the numbers it contains, the palindromic prime 1000000000000066600000000000001 is known as [[Belphegor's Prime]], named after [[Belphegor]], one of the seven princes of [[Hell]]. Belphegor's Prime consists of the number [[666 (number)#Number of the beast|666]], on either side enclosed by [[13 (number)#Unlucky 13|thirteen]] zeroes and a one. Belphegor's Prime is an example of a '''beastly palindromic prime''' in which a prime ''p'' is palindromic with 666 in the center. Another beastly palindromic prime is 700666007.<ref>See Caldwell, ''Prime Curios!'' (CreateSpace, 2009) p. 251, quoted in {{cite news | last =Wilkinson | first =Alec | title =The Pursuit of Beauty | newspaper =The New Yorker | date =February 2, 2015 | url =http://www.newyorker.com/magazine/2015/02/02/pursuit-beauty | access-date = January 29, 2015}}</ref>
+
+Ribenboim defines a '''triply palindromic prime''' as a prime ''p'' for which: ''p'' is a palindromic prime with ''q'' digits, where ''q'' is a palindromic prime with ''r'' digits, where ''r'' is also a palindromic prime.<ref>[[Paulo Ribenboim]], ''The New Book of Prime Number Records''</ref> For example, ''p'' = 10<sup>11310</sup> + 4661664{{e|5652}} +&thinsp;1, which has ''q'' = 11311 digits, and 11311 has ''r'' = 5 digits. The first (base-10) triply palindromic prime is the 11-digit number 10000500001. It is possible for a triply palindromic prime in base 10 to also be palindromic in another base, such as base 2, but it would be incredibly remarkable if it were also a triply palindromic prime in that base as well.
+
+==Bounds==
+
+Let <math>\mathcal P(x)</math> be the set of all palindromic numbers less than ''x''. Banks, Hart, and Sakata (2004) have shown that, using [[big-O notation]], the number of palindromic primes less than ''x'' is <math>O\left(\#\mathcal P(x)\frac{\log\log x}{\log x}\right)</math>.<ref name="banks"/> Col (2006) further improved this bound to <math>O\left(\frac{\#\mathcal P(x)}{\log x}\right)</math>.<ref>{{cite web |last=Col |first=Sylvain |title=Palindromes dans les progressions arithmétiques |year=2006 |url=https://hal.science/hal-00143708 |language=fr}}</ref>
+
+== See also ==
+* [[666 (number)]]
+* [[Emirp]]
+
+== References ==
+{{Reflist}}
+
+{{Prime number classes}}
+
+[[Category:Base-dependent integer sequences]]
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Palindromes]]

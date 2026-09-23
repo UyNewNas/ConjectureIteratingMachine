@@ -1,0 +1,44 @@
+{{Short description|Book published in 2016}}
+{{For|a list of currently unsolved problems in mathematics|List of unsolved problems in mathematics}}{{Infobox book
+| image             = Open Problems in Mathematics.jpg
+| isbn              = 978-3-319-32160-8
+| pub_date          = 2016
+| editor            = [[John Forbes Nash Jr.]] and Michael Th. Rassias
+| publisher         = Springer
+| language          = English
+| genre             = Mathematics
+}}
+{{Italic title}}
+'''''Open Problems in Mathematics''''' is a book, edited by [[John Forbes Nash Jr.]] and Michael Th. Rassias, published in 2016 by Springer ({{isbn|978-3-319-32160-8}}). The book consists of seventeen expository articles, written by outstanding researchers, on some of the central [[open problem]]s in the field of [[mathematics]]. The book also features an Introduction on ''John Nash: Theorems and Ideas'', by [[Mikhail Leonidovich Gromov]]. According to the editors’ Preface, each article is devoted to one open problem or a “constellation of related problems”.<ref>https://www.ams.org/journals/notices/201605/201605FULLISSUE.pdf Open Problems in Mathematics, Notices of the AMS, v.63 No. 5 p. 506, May 2016.</ref><ref>[https://www.ias.edu/2016/rassias-nash Open Problems in Mathematics with John Nash], Institute for Advanced Study, Princeton, 2016.</ref><ref>{{cite book |last1=Nash | first1=J. F. | authorlink= John Forbes Nash Jr. | last2=Rassias | first2=M. Th. | title=Open Problems in Mathematics | publisher=Springer, New York | year=2016 }}</ref><ref>{{cite news|url=http://www.maa.org/press/maa-reviews/open-problems-in-mathematics|title=Open Problems in Mathematics (review)|last=Zaldiva|first=Felipe|date=November 7, 2016|work=[[Mathematical Association of America]]|accessdate=23 January 2017}}</ref><ref>{{cite web|url=http://www.euro-math-soc.eu/review/open-problems-mathematics|title=Review: Open Problems in Mathematics|last=Bultheel|first=Adhemar|authorlink= Adhemar Bultheel |date=August 8, 2016|publisher=[[European Mathematical Society]]|accessdate=23 January 2017}}</ref>
+
+==Choice of problems ==
+Nash and Rassias write in the preface of the book that the open problems presented “were chosen for a variety of reasons. Some were chosen for their undoubtedly importance and applicability, others because they constitute intriguing curiosities which remain unexplained mysteries on the basis of current knowledge and techniques, and some for more emotional reasons. Additionally, the attribute of a problem having a somewhat ''vintage flavor'' was also influential” in their decision process.<ref name="Nash2015">{{cite book |last1=Nash | first1=J. F. | authorlink= John Forbes Nash Jr. | last2=Rassias | first2=M. Th. | title=Preface: Open Problems in Mathematics | publisher=Springer, New York | year=2016 | pages=v-vi }}</ref>
+
+==Table of contents==
+* ''Preface'', by [[John F. Nash Jr.]] and Michael Th. Rassias 
+* ''A Farewell to “A Beautiful Mind and a Beautiful Person”'', by Michael Th. Rassias
+* ''Introduction, John Nash: Theorems and Ideas'', by [[Mikhail Leonidovich Gromov]]
+* ''[[P versus NP problem|P =? NP]]'', by [[Scott Aaronson]]
+* ''From Quantum Systems to [[L-function|L-Functions]]: [[Montgomery's pair correlation conjecture|Pair Correlation Statistics]] and Beyond'', by Owen Barrett, Frank W. K. Firk, [[Steven J. Miller]], and Caroline Turnage-Butterbaugh 
+* ''The [[Beal conjecture|Generalized Fermat Equation]]'', by Michael Bennett, [[Preda Mihăilescu]], and Samir Siksek 
+* ''The [[Birch and Swinnerton-Dyer conjecture|Conjecture of Birch and Swinnerton-Dyer]]'', by [[John H. Coates]] 
+* ''An Essay on the [[Riemann hypothesis|Riemann Hypothesis]]'', by [[Alain Connes]] 
+* ''[[Navier–Stokes equations|Navier–Stokes Equations]]: A Quick Reminder and a Few Remarks'', by [[Peter Constantin]] 
+* ''[[Plateau's problem|Plateau’s Problem]]'', by [[Jenny Harrison]] and Harrison Pugh 
+* ''[[Unknotting problem |The Unknotting Problem]]'', by [[Louis Kauffman]] 
+* ''How Can [[Cooperative game theory|Cooperative Game Theory]] Be Made More Relevant to Economics?: An Open Problem'', by [[Eric Maskin]] 
+* ''The [[Happy ending problem|Erdős–Szekeres Problem]]'', by Walter Morris and Valeriu Soltan 
+* ''[[Novikov conjecture|Novikov’s Conjecture]]'', by [[Jonathan Rosenberg (mathematician)|Jonathan Rosenberg]] 
+* ''The [[Discrete Logarithm Problem]]'', by [[René Schoof]]
+* ''[[Hadwiger conjecture (graph theory)|Hadwiger’s Conjecture]]'', by [[Paul Seymour (mathematician)|Paul Seymour]] 
+* ''The [[Hadwiger–Nelson problem|Hadwiger–Nelson Problem]]'', by [[Alexander Soifer]] 
+* ''[[Unit distance graph|Erdős’s Unit Distance Problem]]'', by [[Endre Szemerédi]] 
+* ''[[Goldbach's conjecture|Goldbach’s Conjectures]]: A Historical Perspective'', by [[Bob Vaughan|Robert Charles Vaughan]]
+* ''[[Hodge conjecture | The Hodge Conjecture]]'', by [[Claire Voisin]]
+
+== References ==
+{{reflist}}
+
+[[Category:2016 non-fiction books]]
+[[Category:Books about mathematics]]
+[[Category:Unsolved problems in mathematics]]

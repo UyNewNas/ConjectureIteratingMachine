@@ -1,0 +1,167 @@
+{{More citations needed|date=November 2025}}
+{{Short description|Unsolved problem in geometry}}
+{{Millennium Problems}}
+[[File:Hodge conjecture.png|thumb|420x420px|Topological features of a space <math>X</math>, such as a hole (labelled by <math>A</math>) are usually detected using [[Singular homology|singular (co)homology]], where the presence of a non-zero class <math>[\alpha]\in H_\text{sing}^k(X)</math> indicates the space <math>X</math> has a (dimension <math>k</math>) hole. Such a class is represented by a '''(co)chain''' of [[Simplex|simplices]], depicted by the red polygon built out of 1-simplices (line segments) on the left. This class detects the hole <math>A</math> by looping around it. In this case, there is in fact a '''polynomial equation''' whose zero set, depicted in green on the right, also detects the hole by looping around it. The '''Hodge conjecture''' generalises this statement to higher dimensions. ]]
+In [[mathematics]], the '''Hodge conjecture''' is a major unsolved problem in [[algebraic geometry]] and [[complex geometry]] that relates the [[algebraic topology]] of a [[Singular point of an algebraic variety|non-singular]] [[complex number|complex]] [[algebraic variety]] to its subvarieties.
+
+In simple terms, the Hodge conjecture asserts that the basic topological information like the number of holes in certain [[space (mathematics)|geometric spaces]], [[complex algebraic varieties]], can be understood by studying the possible nice shapes sitting inside those spaces, which look like [[zero of a function|zero sets]] of [[polynomial equation]]s. The latter objects can be studied using [[algebra]] and the [[calculus]] of [[analytic functions]], and this allows one to indirectly understand the broad shape and structure of often higher-dimensional spaces which cannot be otherwise easily visualized.
+
+More specifically, the conjecture states that certain [[de Rham cohomology]] classes are algebraic; that is, they are sums of [[Poincaré duality|Poincaré duals]] of the [[homology class]]es of subvarieties. It was formulated by the Scottish mathematician [[William Vallance Douglas Hodge]] as a result of work in between 1930 and 1940 to enrich the description of de Rham cohomology to include extra structure that is present in the case of complex algebraic varieties. It received little attention before Hodge presented it in an address during the 1950 [[International Congress of Mathematicians]], held in [[Cambridge, Massachusetts]]. The Hodge conjecture is one of the [[Clay Mathematics Institute]]'s [[Millennium Prize Problems]], with a prize of $1,000,000 US for whoever can prove or disprove the Hodge conjecture.
+
+== Motivation ==
+{{Main|Hodge theory#Hodge theory for complex projective varieties}}
+
+Let ''X'' be a [[compact space|compact]] [[complex manifold]] of complex dimension ''n''. Then ''X'' is an [[orientable]] [[smooth manifold]] of real dimension <math>2n</math>, so its [[cohomology]] groups lie in degrees zero through <math>2n</math>.  Assume ''X'' is a [[Kähler manifold]], so that there is a decomposition on its cohomology with complex [[coefficients]]
+
+:<math>H^n(X, \Complex) = \bigoplus_{p+q=n} H^{p,q}(X),</math>
+
+where <math>H^{p,q}(X)</math> is the subgroup of cohomology classes which are represented by [[harmonic form]]s of type <math>(p,q)</math>. That is, these are the cohomology classes represented by [[differential form]]s which, in some choice of local coordinates <math>z_1, \ldots, z_n</math>, can be written as a [[harmonic function]] times
+:<math>dz_{i_1} \wedge \cdots \wedge dz_{i_p} \wedge d\bar z_{j_1} \wedge \cdots \wedge d\bar z_{j_q}.</math>
+
+Since ''X'' is a compact oriented manifold, ''X'' has a [[fundamental class]], and so ''X'' can be integrated over.
+
+Let ''Z'' be a complex submanifold of ''X'' of dimension ''k'', and let <math>i\colon Z\to X</math> be the [[inclusion map]].  Choose a differential form <math>\alpha</math> of type <math>(p,q)</math>.  We can integrate <math>\alpha</math> over ''Z'' using the [[Pullback (differential geometry)#Pullback of differential forms|pullback]] function <math>i^*\colon X\to Z</math>,
+
+:<math>\int_Z i^*\alpha</math>
+
+To evaluate this integral, choose a point of ''Z'' and call it <math>z=(z_1, \ldots, z_k)</math>.  The inclusion of ''Z'' in ''X'' means that we can choose a local [[basis (linear algebra)|basis]] on ''X'' and have <math>z_{k+1} = \cdots = z_n = 0</math> ([[rank-nullity theorem]]).  If <math>p>k</math>, then <math>\alpha</math> must contain some <math>dz_i</math> where <math>z_i</math> pulls back to zero on ''Z''.  The same is true for <math>d\bar z_j</math> if <math>q > k</math>. Consequently, <math>k\ge p, k\ge q</math> implies <math>2k\ge p+q=2n</math>, this integral is zero if <math>(p,q) \ne (k,k)</math>.
+
+The Hodge conjecture then (loosely) asks:
+
+:Which cohomology classes in <math>H^{k,k}(X)</math> come from complex subvarieties ''Z''?
+
+== Statement ==
+Let
+
+:<math>\operatorname{Hdg}^k(X) = H^{2k}(X, \Q) \cap H^{k,k}(X).</math>
+
+We call this the group of ''Hodge classes'' of degree 2''k'' on ''X''.
+
+The modern statement of the Hodge conjecture is
+
+::'''Hodge conjecture.'''  Let ''X'' be a non-singular complex projective manifold.  Then every Hodge class on ''X'' is a linear combination with rational coefficients of the cohomology classes of complex subvarieties of ''X''.
+
+A projective complex manifold is a complex manifold which can be embedded in [[complex projective space]].  Because projective space carries a Kähler metric, the [[Fubini–Study metric]], such a manifold is always a Kähler manifold.  By [[Algebraic geometry and analytic geometry#Chow.27s theorem|Chow's theorem]], a projective complex manifold is also a smooth projective algebraic variety, that is, it is the zero set of a collection of homogeneous polynomials.
+
+=== Reformulation in terms of algebraic cycles ===
+Another way of phrasing the Hodge conjecture involves the idea of an algebraic cycle.  An ''[[algebraic cycle]]'' on ''X'' is a formal combination of subvarieties of ''X''; that is, it is something of the form
+
+: <math>\sum_i c_iZ_i.</math>
+
+The coefficients are usually taken to be integral or rational.  We define the cohomology class of an algebraic cycle to be the sum of the cohomology classes of its components. This is an example of the cycle class map of de Rham cohomology, see [[Weil cohomology]].  For example, the cohomology class of the above cycle would be
+
+:<math>\sum_i c_i[Z_i].</math>
+
+Such a cohomology class is called ''algebraic''.  With this notation, the Hodge conjecture becomes
+
+::Let ''X'' be a projective complex manifold.  Then every Hodge class on ''X'' is algebraic.
+
+The assumption in the Hodge conjecture that ''X'' be algebraic (projective complex manifold) cannot be weakened. In 1977, [[Steven Zucker]] showed that it is possible to construct a counterexample to the Hodge conjecture as complex tori with analytic rational cohomology of type <math>(p,p)</math>, which is not projective algebraic. (see appendix B of {{Harvtxt|Zucker|1977}})
+
+== Known cases ==
+=== Low dimension and codimension ===
+The first result on the Hodge conjecture is due to {{Harvtxt|Lefschetz|1924}}.  In fact, it predates the conjecture and provided some of Hodge's motivation.
+
+::'''Theorem''' ([[Lefschetz theorem on (1,1)-classes]])  Any element of <math>H^2(X,\Z)\cap H^{1,1}(X)</math> is the cohomology class of a [[divisor (algebraic geometry)|divisor]] on <math>X</math>.  In particular, the Hodge conjecture is true for <math>H^2</math>.
+
+A very quick proof can be given using [[sheaf cohomology]] and the [[exponential exact sequence]].  (The cohomology class of a divisor turns out to be equal to its first [[Chern class]].)  Lefschetz's original proof proceeded by [[Lefschetz_theorem_on_(1,1)-classes#Proof_using_normal_functions|normal function]]s, which were introduced by [[Henri Poincaré]].  However, the [[Griffiths transversality|Griffiths transversality theorem]] shows that this approach cannot prove the Hodge conjecture for higher codimensional subvarieties.
+
+By the [[hard Lefschetz theorem]], one can prove:<ref name="Shioda">{{cite conference |url=https://projecteuclid.org/proceedings/advanced-studies-in-pure-mathematics/algebraic-varieties-and-analytic-varieties/toc/10.2969/aspm/00110000 |title=What is known about the Hodge Conjecture? |last=Shioda |first=Tetsuji |date=July 13–24, 1981 |conference=Algebraic Varieties and Analytic Varieties |editor=S. Iitaka |volume=1 |book-title=Advanced Studies in Pure Mathematics |publisher=Mathematical Society of Japan |location=Tokyo, Japan |isbn=9784864970594  |doi=10.2969/aspm/00110000 |page=58|url-access=subscription }}</ref>
+
+::'''Theorem.'''  If for some <math>p < \frac{n}{2}</math> the Hodge conjecture holds for Hodge classes of degree <math>p</math>, then the Hodge conjecture holds for Hodge classes of degree <math>2n-p</math>.
+
+Combining the above two theorems implies that Hodge conjecture is true for Hodge classes of degree <math>2n-2</math>.  This proves the Hodge conjecture when <math>X</math> has dimension at most three.
+
+The Lefschetz theorem on (1,1)-classes also implies that if all Hodge classes are generated by the Hodge classes of divisors, then the Hodge conjecture is true:
+
+::'''Corollary.'''  If the algebra <math>\operatorname{Hdg}^*(X) = \bigoplus\nolimits_k \operatorname{Hdg}^k(X)</math> is generated by <math>\operatorname{Hdg}^1(X)</math>, then the Hodge conjecture holds for <math>X</math>.
+
+=== Hypersurfaces ===
+By the strong and weak [[Lefschetz theorem]], the only non-trivial part of the Hodge conjecture for [[hypersurface]]s is the degree ''m'' part (i.e., the middle cohomology) of a 2''m''-dimensional hypersurface <math>X \subset \mathbf P^{2m+1}</math>. If the degree ''d'' is 2, i.e., ''X'' is a [[quadric]], the Hodge conjecture holds for all ''m''. For <math>m = 2</math>, i.e., [[4-manifold|fourfold]]s, the Hodge conjecture is known for <math>d \le 5</math>.<ref>James Lewis: ''A Survey of the Hodge Conjecture'', 1991, Example 7.21</ref>
+
+=== Abelian varieties ===
+For most [[abelian variety|abelian varieties]], the algebra Hdg*(''X'') is generated in degree one, so the Hodge conjecture holds.  In particular, the Hodge conjecture holds for sufficiently general abelian varieties, for products of elliptic curves, and for simple abelian varieties of prime dimension.<ref>{{Cite journal|title = Cycles on abelian varieties|jstor = 2033404|journal = [[Proceedings of the American Mathematical Society]]|year = 1958|pages = 88–98|volume = 9|issue = 1|first = Arthur|last = Mattuck|author-link=Arthur Mattuck | doi=10.1090/S0002-9939-1958-0098752-1 }}</ref><ref>{{Cite book |last=Tate |first=John T. |author-link=John Tate (mathematician) |chapter=Algebraic cycles and poles of zeta functions |year=1965 |title=Arithmetical Algebraic Geometry (Proc. Conf. Purdue Univ., 1963) |pages=93–110 |publisher=Harper & Row |location=New York |url = https://www.researchgate.net/publication/244452499|via = ResearchGate|access-date = 2015-10-23}}</ref><ref>{{Cite journal|title =Cycles on simple abelian varieties of prime dimension over number fields |journal = Mathematics of the USSR-Izvestiya|volume = 31|issue = 3|pages = 527–540|date = 1988-01-01|doi = 10.1070/im1988v031n03abeh001088 |first = Sergei G|last = Tankeev|bibcode = 1988IzMat..31..527T}}</ref>  However, {{Harvtxt|Mumford|1969}} constructed an example of an abelian variety where Hdg<sup>2</sup>(''X'') is not generated by products of divisor classes.  {{Harvtxt|Weil|1977}} generalized this example by showing that whenever the variety has [[complex multiplication]] by an [[imaginary quadratic field]], then Hdg<sup>2</sup>(''X'') is not generated by products of divisor classes.  {{Harvtxt|Moonen|Zarhin|1999}} proved that in dimension less than 5, either Hdg*(''X'') is generated in degree one, or the variety has complex multiplication by an imaginary quadratic field.  In the latter case, the Hodge conjecture is only known in special cases.
+
+== Generalizations ==
+
+=== Integral Hodge conjecture ===
+Hodge's original conjecture was:
+
+::'''Integral Hodge conjecture.'''  Let {{mvar|''X''}} be a projective complex manifold.  Then every cohomology class in <math>H^{2k}(X, \Z) \cap H^{k,k}(X)</math> is the cohomology class of an algebraic cycle with integral coefficients on {{mvar|''X''.}}
+
+This is now known to be false.  The first counterexample was constructed by {{Harvtxt|Atiyah|Hirzebruch|1961}}.  Using [[K-theory]], they constructed an example of a torsion cohomology class—that is, a cohomology class {{mvar|''α''}} such that {{math|''nα''&nbsp;{{=}}&nbsp;0}} for some positive integer {{mvar|''n''}}—which is not the class of an algebraic cycle.  Such a class is necessarily a Hodge class.  {{Harvtxt|Totaro|1997}} reinterpreted their result in the framework of [[cobordism]] and found many examples of such classes.
+
+The simplest adjustment of the integral Hodge conjecture is:
+
+::'''Integral Hodge conjecture modulo torsion.'''  Let {{mvar|''X''}} be a projective complex manifold.  Then every cohomology class in <math>H^{2k}(X, \Z) \cap H^{k,k}(X)</math>  is the sum of a torsion class and the cohomology class of an algebraic cycle with integral coefficients on {{mvar|''X''.}}
+
+Equivalently, after dividing <math>H^{2k}(X, \Z) \cap H^{k,k}(X)</math> by torsion classes, every class is the image of the cohomology class of an integral algebraic cycle.  This is also false.  {{Harvtxt|Kollár|1992}} found an example of a Hodge class {{mvar|''α''}} which is not algebraic, but which has an integral multiple which is algebraic.
+
+{{harvtxt|Rosenschon|Srinivas|2016}} have shown that in order to obtain a correct integral Hodge conjecture, one needs to replace Chow groups, which can also be expressed as [[motivic cohomology]] groups, by a variant known as ''étale'' (or ''Lichtenbaum'') ''motivic cohomology''. They show that the rational Hodge conjecture is equivalent to an integral Hodge conjecture for this modified motivic cohomology.
+
+=== Hodge conjecture for Kähler varieties ===
+A natural generalization of the Hodge conjecture would ask:
+
+::'''Hodge conjecture for Kähler varieties, naive version.'''  Let ''X'' be a complex Kähler manifold.  Then every Hodge class on ''X'' is a linear combination with rational coefficients of the cohomology classes of complex subvarieties of ''X''.
+
+This is too optimistic, because there are not enough subvarieties to make this work.  A possible substitute is to ask instead one of the two following questions:
+
+::'''Hodge conjecture for Kähler varieties, vector bundle version.'''  Let ''X'' be a complex Kähler manifold.  Then every Hodge class on ''X'' is a linear combination with rational coefficients of Chern classes of vector bundles on ''X''.
+::'''Hodge conjecture for Kähler varieties, coherent sheaf version.'''  Let ''X'' be a complex Kähler manifold.  Then every Hodge class on ''X'' is a linear combination with rational coefficients of Chern classes of coherent sheaves on ''X''.
+
+{{Harvtxt|Voisin|2002}} proved that the Chern classes of coherent sheaves give strictly more Hodge classes than the Chern classes of vector bundles and that the Chern classes of coherent sheaves are insufficient to generate all the Hodge classes.  Consequently, the only known formulations of the Hodge conjecture for Kähler varieties are false.
+
+=== Generalized Hodge conjecture ===
+Hodge made an additional, stronger conjecture than the integral Hodge conjecture.  Say that a cohomology class on ''X'' is of ''co-level c'' (coniveau c) if it is the pushforward of a cohomology class on a ''c''-codimensional subvariety of ''X''.  The cohomology classes of co-level at least ''c'' filter the cohomology of ''X'', and it is easy to see that the ''c''th step of the filtration ''N''{{i sup|''c''}}''H''{{i sup|''k''}}(''X'', '''Z''') satisfies
+
+:<math>N^cH^k(X, \mathbf{Z}) \subseteq H^k(X, \mathbf{Z}) \cap (H^{k-c,c}(X) \oplus\cdots\oplus H^{c,k-c}(X)).</math>
+
+Hodge's original statement was:
+
+::'''Generalized Hodge conjecture, Hodge's version.'''  <math>N^cH^k(X, \mathbf{Z}) = H^k(X, \mathbf{Z}) \cap (H^{k-c,c}(X) \oplus\cdots\oplus H^{c,k-c}(X)).</math>
+{{harvtxt|Grothendieck|1969}} observed that this cannot be true, even with rational coefficients, because the right-hand side is not always a Hodge structure.  His corrected form of the Hodge conjecture is:
+
+::'''Generalized Hodge conjecture.'''  ''N''{{i sup|''c''}}''H''{{i sup|''k''}}(''X'', '''Q''') is the largest sub-Hodge structure of ''H''{{i sup|''k''}}(''X'', '''Q''') contained in <math>H^{k-c,c}(X) \oplus\cdots\oplus H^{c,k-c}(X).</math>
+This version is open.
+
+== Algebraicity of Hodge loci ==
+The strongest evidence in favor of the Hodge conjecture is the algebraicity result of {{Harvtxt|Cattani|Deligne|Kaplan|1995}}.  Suppose that we vary the complex structure of ''X'' over a simply connected base.  Then the topological cohomology of ''X'' does not change, but the Hodge decomposition does change.  It is known that if the Hodge conjecture is true, then the locus of all points on the base where the cohomology of a fiber is a Hodge class is in fact an algebraic subset, that is, it is cut out by polynomial equations.  Cattani, Deligne & Kaplan (1995) proved that this is always true, without assuming the Hodge conjecture.
+
+== See also ==
+*[[Tate conjecture]]
+*[[Hodge theory]]
+*[[Hodge structure]]
+*[[Period mapping]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+*{{citation |last1=Atiyah |first1=M. F. |author1-link=Michael Atiyah |last2=Hirzebruch |first2=F. |author2-link=Friedrich Hirzebruch |year=1961 |title=Analytic cycles on complex manifolds |journal=Topology |volume=1 |pages=25–45 |doi= 10.1016/0040-9383(62)90094-0|doi-access= }} Available from the [http://hirzebruch.mpim-bonn.mpg.de/151/1/29_Analytic%20cycles%20on%20complex%20manifolds.pdf Hirzebruch collection] (pdf).
+*{{Citation | last1=Cattani | first1=Eduardo |author1-link=Eduardo Cattani | last2=Deligne | first2=Pierre | author2-link=Pierre Deligne | last3=Kaplan | first3=Aroldo |author3-link=Aroldo Kaplan | title=On the locus of Hodge classes | mr=1273413 | year=1995 | journal=[[Journal of the American Mathematical Society]] | volume=8 | issue=2 | pages=483–506 | doi=10.1090/S0894-0347-1995-1273413-2 | jstor=2152824 | arxiv=alg-geom/9402009 }}.
+*{{citation|last=Grothendieck|first=A.|author-link=Alexander Grothendieck|title=Hodge's general conjecture is false for trivial reasons|journal=[[Topology (journal)|Topology]]|volume=8|year=1969|pages=299–303|doi=10.1016/0040-9383(69)90016-0|issue=3|doi-access=free}}.
+*{{citation|last=Hodge|first=W. V. D.|author-link=W. V. D. Hodge|title=The topological invariants of algebraic varieties|journal=Proceedings of the International Congress of Mathematicians|location=Cambridge, MA|year=1950|volume=1|pages=181–192}}.
+*{{Citation |last=Kollár |first=János |author-link=János Kollár |chapter=Trento examples |title=Classification of irregular varieties |page=134 |editor1-last=Ballico |editor1-first=E. |editor2-first=F. |editor2-last=Catanese |editor3-first=C. |editor3-last=Ciliberto |series=Lecture Notes in Math. |volume=1515 |publisher=Springer |year=1992 |isbn=978-3-540-55295-6 }}.
+*{{Citation | last1=Lefschetz | first1=Solomon |author-link=Solomon Lefschetz | title=L'Analysis situs et la géométrie algébrique | publisher=Gauthier-Villars | language=fr | series=Collection de Monographies publiée sous la Direction de M. Émile Borel | location=Paris | year=1924}}
+** Reprinted in {{Citation | last1=Lefschetz | first1=Solomon | title=Selected papers | publisher=Chelsea Publishing Co. | location=New York | isbn=978-0-8284-0234-7 | mr=0299447 | year=1971}}.
+*{{citation |last1=Moonen |first1=Ben J. J. |author1-link=Ben Moonen |last2=Zarhin |first2=Yuri G. |author2-link=Yuri Zarhin |year=1999 |title=Hodge classes on abelian varieties of low dimension |journal=[[Mathematische Annalen]] |volume=315 |issue=4 |pages=711–733 |doi=10.1007/s002080050333 |arxiv=math/9901113|mr=1731466 |s2cid=119180172 }}.
+*{{citation |last=Mumford |first=David |author-link=David Mumford |title=A Note of Shimura's paper "Discontinuous groups and abelian varieties" |journal=[[Mathematische Annalen]] |volume=181 |issue=4 |year=1969 |pages=345–351 |doi=10.1007/BF01350672 |s2cid=122062924 |url=http://nrs.harvard.edu/urn-3:HUL.InstRepos:3612771 |url-access=subscription }}.
+*{{citation|first1=Andreas|last1=Rosenschon|first2=V.|last2=Srinivas|title=Étale motivic cohomology and algebraic cycles|journal=Journal of the Institute of Mathematics of Jussieu|volume=15|issue=3|pages=511–537|year=2016|doi=10.1017/S1474748014000401|zbl=1346.19004|url=https://www.mathematik.uni-muenchen.de/~axr/Lchow.pdf|mr=3505657|s2cid=55560040 }}
+*{{citation |last=Totaro |first=Burt |author-link=Burt Totaro |title=Torsion algebraic cycles and complex cobordism |journal=[[Journal of the American Mathematical Society]] |volume=10 |issue=2 |pages=467–493 |year=1997 |jstor=2152859 |arxiv=alg-geom/9609016 |doi=10.1090/S0894-0347-97-00232-4 |s2cid=16965164 }}.
+*{{citation |last=Voisin |first=Claire |author-link=Claire Voisin |year=2002 |title=A counterexample to the Hodge conjecture extended to Kähler varieties |journal=[[International Mathematics Research Notices]] |volume=2002 |issue=20 |pages=1057–1075 |doi=10.1155/S1073792802111135|mr=1902630|s2cid=55572794 |doi-access= <!-- not free-->}}.
+*{{citation |last=Weil |first=André |author-link=André Weil |title=Abelian varieties and the Hodge ring |work=Collected papers |year=1977 |pages=421–429 |volume=III }}
+*{{citation |last=Zucker |first=Steven |author-link=Steven Zucker |title=The Hodge conjecture for cubic fourfolds |journal=[[Compositio Mathematica]] |volume=34 |issue=2|pages=199–209 |year=1977|url=http://www.numdam.org/item?id=CM_1977__34_2_199_0 | mr=0453741}}
+
+==External links ==
+{{Sister project links | wikt=no | commons=no | b=no | n=no | q=Hodge conjecture | s=no | v=no | voy=no | species=no | d=no}}
+* {{cite web |first=Pierre |last=Deligne |author-link=Pierre Deligne |url=https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf |title=The Hodge Conjecture |type=The Clay Math Institute official problem description}}
+* Popular lecture on Hodge Conjecture by [[Dan Freed]] (University of Texas) [http://claymath.msri.org/hodgeconjecture.mov (Real Video)] {{Webarchive |url=https://web.archive.org/web/20151222081547/http://claymath.msri.org/hodgeconjecture.mov |date=2015-12-22 }} [http://www.ma.utexas.edu/users/dafr/HodgeConjecture/netscape_noframes.html (Slides)]
+* {{citation |first1=Indranil |last1=Biswas |author-link1=Indranil Biswas |first2=Kapil Hari |last2=Paranjape |author-link2=Kapil Hari Paranjape |title=The Hodge Conjecture for general Prym varieties |journal=Journal of Algebraic Geometry | volume=11 |year=2002 |issue=1 |pages=33–39 | arxiv=math/0007192 |doi=10.1090/S1056-3911-01-00303-4 |mr=1865912 |s2cid=119139470 }}
+* [[Burt Totaro]], [http://burttotaro.wordpress.com/2012/03/18/why-believe-the-hodge-conjecture/ Why believe the Hodge Conjecture?]
+* [[Claire Voisin]], [http://www.math.polytechnique.fr/~voisin/Articlesweb/hodgeloci.pdf Hodge loci]
+
+[[Category:Algebraic geometry]]
+[[Category:Partially resolved conjectures]]
+[[Category:Hodge theory]]
+[[Category:Homology theory]]
+[[Category:Millennium Prize Problems]]

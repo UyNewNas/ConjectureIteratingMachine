@@ -1,0 +1,26 @@
+In [[mathematics]], especially [[algebraic geometry]], the '''Bass conjecture''' says that certain [[algebraic K-theory|algebraic ''K''-groups]] are supposed to be finitely generated. The conjecture was proposed by [[Hyman Bass]].
+
+==Statement of the conjecture==
+Any of the following equivalent statements is referred to as the Bass conjecture.
+* For any [[finitely generated algebra|finitely generated]] '''Z'''-algebra ''A'', the groups ''K<nowiki>'</nowiki>''<sub>''n''</sub>(''A'') are [[finitely generated abelian group|finitely generated]] (''K''-theory of finitely generated ''A''-modules, also known as G-theory of ''A'') for all ''n'' ≥ 0.
+* For any finitely generated '''Z'''-algebra ''A'', that is a [[regular ring]], the groups ''K''<sub>''n''</sub>(''A'') are finitely generated (''K''-theory of finitely generated locally free ''A''-modules).
+* For any [[scheme (mathematics)|scheme]] ''X'' of [[morphism of finite type|finite type]] over [[spectrum of a ring|Spec]]('''Z'''), ''K<nowiki>'</nowiki>''<sub>''n''</sub>(''X'') is finitely generated.
+* For any regular scheme ''X'' of finite type over '''Z''', ''K''<sub>''n''</sub>(''X'') is finitely generated.
+
+The equivalence of these statements follows from the agreement of ''K''- and ''K<nowiki>'</nowiki>''-theory for regular rings and the localization sequence for ''K<nowiki>'</nowiki>''-theory.
+
+==Known cases==
+[[Daniel Quillen]] showed that the Bass conjecture holds for all (regular, depending on the version of the conjecture) rings or schemes of dimension ≤ 1, i.e., [[algebraic curves]] over [[finite field]]s and the spectrum of the [[ring of integers]] in a [[number field]].
+
+The (non-regular) ring ''A'' = '''Z'''[x, y]/x<sup>2</sup> has an infinitely generated ''K''<sub>1</sub>(''A'').
+
+==Implications==
+The Bass conjecture is known to imply the [[Beilinson&ndash;Soulé vanishing conjecture]].<ref>{{Citation | last1=Kahn | first1=Bruno | editor1-last=Friedlander | editor1-first=Eric | editor2-last=Grayson | editor2-first=Daniel | title=Handbook of Algebraic K-theory | publisher=[[Springer-Verlag]] | location=Berlin, New York | doi=10.1007/3-540-27855-9_9 | year=2005 | chapter=Algebraic ''K''-theory, algebraic cycles and arithmetic geometry | pages=351–428| isbn=978-3-540-23019-9 }}, Theorem 39</ref>
+
+==References==
+<references />
+* {{Citation | last1=Friedlander | first1=Eric M. |author-link1=Eric Friedlander | last2=Weibel | first2=Charles W. |author-link2=Charles Weibel | title=An overview of algebraic ''K''-theory | publisher=World Sci. Publ., River Edge, NJ | mr=1715873 | year=1999 | pages=1–119}}, p.&nbsp;53
+
+[[Category:Algebraic geometry]]
+[[Category:Algebraic K-theory]]
+[[Category:Unsolved problems in geometry]]

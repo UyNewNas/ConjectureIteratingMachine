@@ -1,0 +1,124 @@
+{{Short description|Conjecture in graph theory}}
+{{unsolved|mathematics|Do the graphs with a fixed forbidden induced subgraph necessarily have large cliques or large independent sets?}}
+[[File:Claw-free graph with sets highlighted.svg|thumb|upright=0.75|A [[claw-free graph]] with maximum [[clique (graph theory)|clique]] highlighted red and maximum [[independent set (graph theory)|independent set]] highlighted blue]]
+In [[graph theory]], a branch of mathematics, the '''Erdős–Hajnal conjecture''' states that families of graphs defined by [[forbidden graph characterization|forbidden induced subgraph]]s have either large [[Clique (graph theory)|cliques]] or large [[Independent set (graph theory)|independent sets]]. It is named for [[Paul Erdős]] and [[András Hajnal]], who first posed it as an open problem in a paper from 1977.<ref name="eh77">{{citation
+ | last1 = Erdős | first1 = P. | author1-link = Paul Erdős
+ | last2 = Hajnal | first2 = A. | author2-link = András Hajnal
+ | title = Contributions to graph theory and its applications (Internat. Colloq., Oberhof, 1977) (German)
+ | mr = 0599767
+ | pages = 80–96
+ | contribution = On spanned subgraphs of graphs
+ | publisher = Tech. Hochschule Ilmenau, Ilmenau
+ | year = 1977
+ | contribution-url = https://old.renyi.hu/~p_erdos/1977-19.pdf
+ }}.</ref>
+
+More precisely, for an arbitrary [[undirected graph]] <math>H</math>, let <math>\mathcal{F}_H</math> be the family of graphs that do not have <math>H</math> as an [[induced subgraph]]. Then, according to the conjecture, there exists a constant <math>\delta_H > 0</math> such that the <math>n</math>-vertex graphs in <math>\mathcal{F}_H</math> have either a clique or an independent set of size <math>\Omega(n^{\delta_H})</math>. In other words, for any [[hereditary property|hereditary]] family <math>\mathcal{F}</math> of graphs that is not the family of all graphs, there exists a constant <math>\delta_{\mathcal{F}}>0</math> such that the <math>n</math>-vertex graphs in <math>\mathcal{F}</math> have either a clique or an independent set of size <math>\Omega(n^{\delta_{\mathcal{F}}})</math>.
+
+A convenient and symmetric reformulation of the Erdős–Hajnal conjecture is that for every graph <math>H</math>, the <math>H</math>-free graphs necessarily contain a [[perfect graph|perfect]] induced subgraph of polynomial size. This is because every perfect graph necessarily has either a clique or independent set of size proportional to the square root of their number of vertices, and conversely every clique or independent set is itself perfect.
+
+Background on the conjecture can be found in two surveys, one of [[András Gyárfás]] and the other of [[Maria Chudnovsky]].<ref name="reflections">{{citation
+ | last = Gyárfás | first = András | authorlink = András Gyárfás
+ | contribution = Reflections on a problem of Erdős and Hajnal
+ | doi = 10.1007/978-3-642-60406-5_10
+ | mr = 1425208
+ | pages = 93–98
+ | publisher = Springer, Berlin
+ | series = Algorithms Combin.
+ | title = The mathematics of Paul Erdős, II
+ | volume = 14
+ | year = 1997| isbn = 978-3-642-64393-4 }}.</ref><ref name="c14">{{citation
+ | last = Chudnovsky | first = Maria | authorlink = Maria Chudnovsky
+ | arxiv = 1606.08827
+ | doi = 10.1002/jgt.21730
+ | issue = 2
+ | journal = Journal of Graph Theory
+ | mr = 3150572 | zbl=1280.05086
+ | pages = 178–190
+ | title = The Erdös–Hajnal conjecture—a survey
+ | url = http://www.columbia.edu/~mc2775/EHsurvey.pdf
+ | volume = 75
+ | year = 2014| s2cid = 985458 }}.</ref>
+
+==Graphs without large cliques or independent sets==
+In contrast, for [[random graph]]s in the [[Erdős–Rényi model]] with edge probability 1/2, both the [[maximum clique]] and the [[maximum independent set]] are much smaller: their size is proportional to the [[logarithm]] of <math>n</math>, rather than growing polynomially. [[Ramsey's theorem]] proves that no graph has both its maximum clique size and maximum independent set size smaller than logarithmic. Ramsey's theorem also implies the special case of the Erdős–Hajnal conjecture when <math>H</math> itself is a clique or independent set.
+
+==Partial results==
+This conjecture is due to [[Paul Erdős]] and [[András Hajnal]], who proved it to be true when <math>H</math> is a [[cograph]].<ref name="eh89">{{citation
+ | last1 = Erdős | first1 = P. | author1-link = Paul Erdős
+ | last2 = Hajnal | first2 = A. | author2-link = András Hajnal
+ | doi = 10.1016/0166-218X(89)90045-0
+ | issue = 1–2
+ | journal = Discrete Applied Mathematics
+ | mr = 1031262 | zbl=0715.05052
+ | pages = 37–52
+ | title = Ramsey-type theorems
+ | volume = 25
+ | year = 1989| doi-access = free
+ }}.</ref> They also showed, for arbitrary <math>H</math>, that the size of the largest clique or independent set grows superlogarithmically. More precisely, for every <math>H</math> there is a constant <math>c</math> such that the <math>n</math>-vertex <math>H</math>-free graphs have cliques or independent sets containing at least <math>\exp c\sqrt{\log n}</math> vertices.<ref name="eh77"/><ref name="eh89"/> The graphs <math>H</math> for which the conjecture is true also include those with four verticies or less, all five-vertex graphs,<ref>Nguyen, T., Scott, A. and Seymour, P., 2023. Induced subgraph density. VII. The five-vertex path. arXiv preprint arXiv:2312.15333.</ref><ref>{{Cite web|last=Nadis|first=Steve|title=New Proof Reveals That Graphs With No Pentagons Are Fundamentally Different|url=https://www.quantamagazine.org/new-proof-reveals-that-graphs-with-no-pentagons-are-fundamentally-different-20210426/|access-date=2021-04-26|website=Quanta Magazine|date=26 April 2021 |language=en}}</ref><ref name="csss23"/><ref>{{citation
+ | last1 = Chudnovsky | first1 = Maria | author1-link = Maria Chudnovsky
+ | last2 = Safra | first2 = Shmuel | author2-link = Shmuel Safra
+ | doi = 10.1016/j.jctb.2008.02.005
+ | issue = 6
+ | journal = Journal of Combinatorial Theory
+ | mr = 2462320
+ | pages = 1301–1310
+ | series = Series B
+ | title = The Erdős–Hajnal conjecture for bull-free graphs
+ | volume = 98
+ | year = 2008| doi-access = free
+ }}.</ref> and any graph that can be obtained from these and the cographs by [[modular decomposition]].<ref name="aps">{{citation
+ | last1 = Alon | first1 = Noga | author1-link = Noga Alon
+ | last2 = Pach | first2 = János | author2-link = János Pach
+ | last3 = Solymosi | first3 = József
+ | doi = 10.1007/s004930100016
+ | issue = 2
+ | journal = [[Combinatorica]]
+ | mr = 1832443 | zbl=0989.05124
+ | pages = 155–170
+ | title = Ramsey-type theorems with forbidden subgraphs
+ | volume = 21
+ | year = 2001| s2cid = 7590638 }}.</ref>
+As of 2024, however, the full conjecture has not been proven, and remains an open problem.
+
+An earlier formulation of the conjecture, also by Erdős and Hajnal, concerns the special case when <math>H</math> is a 5-vertex [[cycle graph]].<ref name="reflections"/> This case has been resolved by [[Maria Chudnovsky]], Alex Scott, [[Paul Seymour (mathematician) | Paul Seymour]], and Sophie Spirkl.<ref name="csss23">{{cite journal | last1=Chudnovsky | first1=Maria | last2=Scott | first2=Alex | last3=Seymour | first3=Paul | last4=Spirkl | first4=Sophie | title=Erdős–Hajnal for graphs with no 5-hole | journal=Proceedings of the London Mathematical Society | publisher=Wiley | volume=126 | issue=3 | date=2023-01-31 | issn=0024-6115 | doi=10.1112/plms.12504 | pages=997–1014| doi-access=free | arxiv=2102.04994 }}</ref> 
+
+== Relation to the chromatic number of tournaments == 
+Alon et al. <ref name="aps"/> showed that the following statement concerning [[Tournament (graph theory)|tournaments]] is equivalent to the Erdős–Hajnal conjecture.
+
+:'''Conjecture.''' For every tournament <math>T</math>, there exists <math>\varepsilon(T) > 0</math> and <math>c >0</math> such that for every <math>T</math>-free tournament <math>G</math> with <math>n</math> vertices <math>\chi(G) \leq c \cdot n^{1-\varepsilon}</math>.
+
+Here <math>\chi(G)</math> denotes the chromatic number of <math>G</math>, which is the smallest <math>k \in \mathbb{N}</math> such that there is a <math>k</math>-coloring for <math>G</math>. A coloring of a tournament <math>G</math> is a mapping <math>\phi:V(G) \rightarrow \{1, \ldots ,k \}</math> such that the color classes <math>\{v \in V(T): \phi(v) = i \}</math> are [[Tournament (graph theory) #Transitivity|transitive]] for all <math>i = 1, \ldots , k</math>.
+
+The class of tournaments <math>H</math> with the property that every <math>H</math>-free tournament <math>G</math> has <math>\chi(G) \leq c(H)</math> for some constant <math>c(H)</math> satisfies this equivalent Erdős–Hajnal conjecture (with <math>\varepsilon = 1</math>). Such tournaments <math>H</math>, called heroes, were considered by Berger et al.<ref>{{citation
+ | last1 = Berger | first1 = E. 
+ | last2 = Choromanski | first2 = K.
+ | last3 = Chudnovsky | first3 = M. | authorlink3 = Maria Chudnovsky
+ | last4 = Fox | first4 = J. | authorlink4 = Jacob Fox
+ | last5 = Loebl | first5 = M.
+ | last6 = Scott | first6 = A.
+ | last7 = Seymour | first7 = P. | authorlink7 = Paul Seymour (mathematician)
+ | last8 = Thomasse | first8 = S.
+ | doi = 10.1016/j.jctb.2012.08.003
+ | issue = 1
+ | journal = Journal of Combinatorial Theory, Series B
+ | pages = 1–20
+ | title = Tournaments and coloring
+ | volume = 103
+ | year = 2013| doi-access = free| hdl = 1721.1/99446| hdl-access = free}}.</ref> There it is proven that a hero has a special structure which is as follows:
+
+:'''Theorem.''' A tournament is a hero if and only if all its strong components are heroes. A strong tournament with more than one vertex is a hero if and only if it equals <math>\Delta(H,k,1)</math> or <math>\Delta(H,1,k)</math> for some hero <math>H</math> and some integer <math>k \geq 0</math>. 
+
+Here <math>\Delta(H,k,1)</math> denotes the tournament with the three components <math>H</math>, the transitive tournament of size <math>k</math> and a single node <math>q</math>. The arcs between the three components are defined as follows: <math>A = \{(v,w) : (v \in H \wedge w \in T_k)\vee (v \in T_k \wedge w = q) \vee (v = q \wedge w \in H) \}</math>. The tournament <math>\Delta(H,1,k)</math> is defined analogously. 
+
+== References ==
+{{reflist|30em}}
+
+==External links==
+*[http://www.openproblemgarden.org/op/the_erdos_hajnal_conjecture The Erdös-Hajnal Conjecture], The Open Problem Garden
+
+{{DEFAULTSORT:Erdos-Hajnal conjecture}}
+[[Category:Ramsey theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Paul Erdős|Hajnal conjecture]]

@@ -1,0 +1,231 @@
+{{Short description|Problem in number theory on equal totients}}
+
+In mathematics, '''Carmichael's totient function conjecture''' concerns the [[Multiplicity (mathematics)|multiplicity]] of values of [[Euler's totient function]] <math>\varphi(n)</math>,  which counts the number of integers less than and [[coprime]] to <math>n</math>. It states that, for every <math>n</math> there is at least one other integer <math>m\ne n</math> such that <math>\varphi(m)=\varphi(n)</math>.
+[[Robert Daniel Carmichael|Robert Carmichael]] first stated this [[Conjecture (mathematics)|conjecture]] in 1907, but as a [[theorem]] rather than as a conjecture. However, his proof was faulty, and in 1922, he retracted his claim and stated the conjecture as an [[open problem]].
+
+==Examples==
+The totient function <math>\varphi(n)</math> is equal to 2 when <math>n</math> is one of the three values 3, 4, and 6. Thus, if we take any one of these three values as <math>n</math>, then either of the other two values can be used as the <math>m</math> for which <math>\varphi(m)=\varphi(n)</math>.
+
+Similarly, the totient is equal to 4 when <math>n</math> is one of the four values 5, 8, 10, and 12, and it is equal to 6 when <math>n</math> is one of the four values 7, 9, 14, and 18. In each case, there is more than one value of <math>n</math> having the same value of <math>\varphi(n)</math>.
+
+The conjecture states that this phenomenon of repeated values holds for {{nowrap|every <math>n</math>.}}
+
+{|class="wikitable"
+|<math>k</math>
+|values <math>n</math> such that <math>\varphi(n)=k</math> {{OEIS|id=A032447}}
+|number of such values {{OEIS|id=A014197}}
+|-
+|1
+|1, 2
+|2
+|-
+|2
+|3, 4, 6
+|3
+|-
+|4
+|5, 8, 10, 12
+|4
+|-
+|6
+|7, 9, 14, 18
+|4
+|-
+|8
+|15, 16, 20, 24, 30
+|5
+|-
+|10
+|11, 22
+|2
+|-
+|12
+|13, 21, 26, 28, 36, 42
+|6
+|-
+|16
+|17, 32, 34, 40, 48, 60
+|6
+|-
+|18
+|19, 27, 38, 54
+|4
+|-
+|20
+|25, 33, 44, 50, 66
+|5
+|-
+|22
+|23, 46
+|2
+|-
+|24
+|35, 39, 45, 52, 56, 70, 72, 78, 84, 90
+|10
+|-
+|28
+|29, 58
+|2
+|-
+|30
+|31, 62
+|2
+|-
+|32
+|51, 64, 68, 80, 96, 102, 120
+|7
+|-
+|36
+|37, 57, 63, 74, 76, 108, 114, 126
+|8
+|-
+|40
+|41, 55, 75, 82, 88, 100, 110, 132, 150
+|9
+|-
+|42
+|43, 49, 86, 98
+|4
+|-
+|44
+|69, 92, 138
+|3
+|-
+|46
+|47, 94
+|2
+|-
+|48
+|65, 104, 105, 112, 130, 140, 144, 156, 168, 180, 210
+|11
+|-
+|52
+|53, 106
+|2
+|-
+|54
+|81, 162
+|2
+|-
+|56
+|87, 116, 174
+|3
+|-
+|58
+|59, 118
+|2
+|-
+|60
+|61, 77, 93, 99, 122, 124, 154, 186, 198
+|9
+|-
+|64
+|85, 128, 136, 160, 170, 192, 204, 240
+|8
+|-
+|66
+|67, 134
+|2
+|-
+|70
+|71, 142
+|2
+|-
+|72
+|73, 91, 95, 111, 117, 135, 146, 148, 152, 182, 190, 216, 222, 228, 234, 252, 270
+|17
+|}
+
+==Lower bounds==
+There are very high [[lower bound]]s for Carmichael's conjecture that are relatively easy to determine. Carmichael himself proved that any counterexample to his conjecture (that is, a value <math>n</math> such that <math>\varphi(n)</math> is different from the totients of all other numbers) must be at least 10<sup>37</sup>, and [[Victor Klee]] extended this result to 10<sup>400</sup>. A lower bound of <math>10^{10^7}</math>was given by Schlafly and [[Stan Wagon|Wagon]], and a lower bound of <math>10^{10^{10}}</math> was determined by [[Kevin Ford (mathematician)|Kevin Ford]] in 1998.{{sfnp|Sándor|Crstici|2004|p=228}}
+
+The computational technique underlying these lower bounds depends on some key results of Klee that make it possible to show that the smallest counterexample must be divisible by squares of the primes dividing its totient value. Klee's results imply that 8 and [[Fermat number#Primality|Fermat primes]] (primes of the form <math>2^{2^k}+1</math>) excluding 3 do not divide the smallest counterexample. Consequently, proving the conjecture is equivalent to proving that the conjecture holds for all integers congruent to&nbsp;4&nbsp;(mod&nbsp;8).
+
+==Other results==
+Ford also proved that if there exists a counterexample to the conjecture, then a positive proportion (in the sense of asymptotic density) of the integers are likewise counterexamples.{{sfnp|Sándor|Crstici|2004|p=228}}
+
+Although the conjecture is widely believed, [[Carl Pomerance]] gave a sufficient condition for an integer <math>n</math> to be a counterexample to the conjecture {{harv|Pomerance|1974}}. According to this condition, <math>n</math> is a counterexample if for every prime <math>p</math> such that <math>p-1</math> divides <math>\varphi(n)</math>, <math>p^2</math> {{nowrap|divides <math>n</math>.}} However Pomerance showed that the existence of such an integer is highly improbable. Essentially, one can show that if the first <math>k</math> primes <math>p</math> congruent to&nbsp;1&nbsp;(mod&nbsp;<math>q</math>) (where <math>q</math> is a prime) are all less than <math>q^{k+1}</math>, then such an integer will be divisible by every prime and thus cannot exist. In any case, proving that Pomerance's counterexample does not exist is far from proving Carmichael's conjecture. However if it exists then infinitely many counterexamples exist as asserted by Ford.
+
+Another way of stating Carmichael's conjecture is that, if
+<math>A(f)</math> denotes the number of positive integers <math>n</math> for which <math>\varphi(n)=f</math>, then <math>A(f)</math> can never equal&nbsp;1. Relatedly, [[Wacław Sierpiński]] conjectured that every positive integer other than 1 occurs as a value of <math>A(f)</math>, a conjecture that was proven in 1999 by Kevin Ford.{{sfnp|Sándor|Crstici|2004|p=229}}
+
+==Notes==
+{{reflist}}
+
+==References==
+*{{citation
+ | last = Carmichael | first = R. D. | author-link = Robert Daniel Carmichael
+ | doi = 10.1090/S0002-9904-1907-01453-2
+ | issue = 5
+ | journal = [[Bulletin of the American Mathematical Society]]
+ | pages = 241–243
+ | title = On Euler's <math>\varphi</math>-function
+ | volume = 13
+ | year = 1907
+ | mr = 1558451| doi-access = free
+ }}.
+*{{citation
+ | last = Carmichael | first = R. D. | author-link = Robert Daniel Carmichael
+ | doi = 10.1090/S0002-9904-1922-03504-5
+ | issue = 3
+ | journal = [[Bulletin of the American Mathematical Society]]
+ | pages = 109–110
+ | title = Note on Euler's <math>\varphi</math>-function
+ | volume = 28
+ | year = 1922
+ | mr = 1560520| doi-access = free
+ }}.
+*{{citation
+ | last = Ford | first = K. | author-link = Kevin Ford (mathematician)
+ | doi = 10.2307/121103
+ | issue = 1
+ | journal = [[Annals of Mathematics]]
+ | pages = 283–311
+ | title = The number of solutions of <math>\varphi(x)=m</math>
+ | volume = 150
+ | year = 1999
+ | mr = 1715326 | zbl=0978.11053 
+ | jstor = 121103}}.
+* {{citation |last=Guy | first=Richard K. | authorlink=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=3rd | year=2004 |isbn=978-0-387-20860-2 | zbl=1058.11001 | at=B39 }}.
+*{{citation
+ | last = Klee | first = V. L. Jr. | author-link = Victor Klee
+ | doi = 10.1090/S0002-9904-1947-08940-0
+ | journal = [[Bulletin of the American Mathematical Society]]
+ | pages = 1183–1186
+ | title = On a conjecture of Carmichael
+ | volume = 53
+ | year = 1947
+ | mr = 0022855 | zbl=0035.02601 
+ | issue = 12| doi-access = free
+ }}.
+*{{citation
+ | last1 = Pomerance | first1 = Carl | author-link = Carl Pomerance
+ | issue = 2
+ | journal = [[Proceedings of the American Mathematical Society]]
+ | pages = 297–298
+ | title = On Carmichael's conjecture
+ | volume = 43
+ | year = 1974
+ | zbl=0254.10009 
+ | url = http://www.math.dartmouth.edu/~carlp/PDF/carmichaelconjecture.pdf
+ | doi=10.2307/2038881| jstor = 2038881 }}.
+* {{citation | last1=Sándor | first1=Jozsef | last2=Crstici | first2=Borislav | title=Handbook of number theory II | location=Dordrecht | publisher=Kluwer Academic | year=2004 | isbn=978-1-4020-2546-4 | zbl=1079.11001 | pages=228–229 }}.
+*{{citation
+ | last1 = Schlafly | first1 = A.
+ | last2 = Wagon | first2 = S.
+ | doi = 10.2307/2153585
+ | issue = 207
+ | journal = [[Mathematics of Computation]]
+ | pages = 415–419
+ | title = Carmichael's conjecture on the Euler function is valid below 10<sup>10,000,000</sup>
+ | volume = 63
+ | year = 1994
+ | mr = 1226815 | zbl=0801.11001 
+ | jstor = 2153585}}.
+
+==External links==
+*{{mathworld|title=Carmichael's Totient Function Conjecture|urlname=CarmichaelsTotientFunctionConjecture|mode=cs2}}
+
+[[Category:Multiplicative functions]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

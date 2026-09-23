@@ -1,0 +1,59 @@
+{{Short description|On graph drawing with integer edge lengths}}
+{{unsolved|mathematics|Does every planar graph have an integral Fáry embedding?}}
+In [[mathematics]], '''Harborth's conjecture''' states that every [[planar graph]] has a planar [[graph drawing|drawing]] in which every edge is a straight [[line segment|segment]] of [[integer]] length.<ref>{{citation|title=Pearls in Graph Theory: A Comprehensive Introduction|series=Dover Books on Mathematics| last1 = Hartsfield | first1 = Nora | last2 = Ringel | first2 = Gerhard | author2-link = Gerhard Ringel |publisher=Courier Dover Publications|year=2013|isbn=978-0-486-31552-2|at=[https://books.google.com/books?id=VMjDAgAAQBAJ&pg=PA247 p. 247]|mr=2047103|title-link= Pearls in Graph Theory}}. Reprint of 1994 Academic Press edition; the same name is given to the conjecture in the original 1990 edition.</ref><ref>{{citation|last1=Kemnitz|first1=Arnfried|last2=Harborth|first2=Heiko|author2-link=Heiko Harborth|title=Plane integral drawings of planar graphs|series=Graph theory (Kazimierz Dolny, 1997)|journal=[[Discrete Mathematics (journal)|Discrete Mathematics]]|volume=236|year=2001|issue=1–3|pages=191–195|mr=1830610|doi=10.1016/S0012-365X(00)00442-8|doi-access=free}}. Kemnitz and Harborth credit the original publication of this conjecture to {{harvtxt|Harborth|Kemnitz|Möller|Süssenbach|1987}}.</ref><ref name="hkms">{{citation
+ | last1 = Harborth | first1 = Heiko
+ | last2 = Kemnitz | first2 = Arnfried
+ | last3 = Möller | first3 = Meinhard
+ | last4 = Süssenbach | first4 = Andreas
+ | issue = 5
+ | journal = [[Elemente der Mathematik]]
+ | mr = 905393
+ | pages = 118–122
+ | title = Ganzzahlige planare Darstellungen der platonischen Körper
+ | volume = 42
+ | year = 1987}}.</ref> This [[conjecture]] is named after [[Heiko Harborth]], and (if true) would strengthen [[Fáry's theorem]] on the existence of straight-line drawings for every planar graph. For this reason, a drawing with integer edge lengths is also known as an '''integral Fáry embedding'''.<ref name="Sun13">{{citation|last=Sun|first=Timothy|contribution=Drawing some 4-regular planar graphs with integer edge lengths|title=Proc. Canadian Conference on Computational Geometry (CCCG 2013)|year=2013|url=http://www.cccg.ca/proceedings/2013/papers/paper_47.pdf}}.</ref> Despite much subsequent research, Harborth's conjecture remains [[open problem|unsolved]].<ref>{{citation|title=Research Problems in Discrete Geometry|first1=Peter|last1=Brass|first2=William O. J.|last2=Moser|first3=János|last3=Pach|author3-link=János Pach|publisher=Springer|year=2005|isbn=978-0-387-29929-7|url=https://books.google.com/books?id=cT7TB20y3A8C&pg=PA250|page=250|mr=2163782}}.</ref>
+
+[[File:Integer octahedral graph.svg|thumb|300px|Integral Fáry embedding of the [[octahedron|octahedral graph]] ''K''<sub>2,2,2</sub>]]
+
+==Special classes of graphs==
+Although Harborth's conjecture is not known to be true for all planar graphs, it has been [[mathematical proof|proven]] for several special kinds of planar graph.
+
+One class of graphs that have integral Fáry embeddings are the graphs that can be reduced to the [[empty graph]] by a sequence of operations of two types:
+*Removing a vertex of [[degree (graph theory)|degree]] at most two.
+*Replacing a vertex of degree three by an edge between two of its [[neighborhood (graph theory)|neighbors]]. (If such an edge already exists, the degree three vertex can be removed without adding another edge between its neighbors.)
+For such a graph, a [[rational number|rational]] Fáry embedding can be constructed incrementally by reversing this removal process, re-inserting the vertices that were removed. Re-inserting a degree-two vertex uses the fact that the set of points that are at a rational distance from two given points are [[dense set|dense]] in the plane. Re-inserting a degree-three vertex uses the fact that, if three points have rational distance between one pair and square-root-of-rational distance between the other two pairs, then the points at rational distances from all three are again dense in the plane.<ref>{{citation|last=Almering|first=J. H. J.|title=Rational quadrilaterals|journal=[[Indagationes Mathematicae]]|volume=25|year=1963|pages=192–199|doi=10.1016/S1385-7258(63)50020-1|mr=0147447|doi-access=free}}.</ref><ref>{{citation|last=Berry|first=T. G.|title=Points at rational distance from the vertices of a triangle|journal=[[Acta Arithmetica]]|volume=62|year=1992|issue=4|pages=391–398|doi=10.4064/aa-62-4-391-398|mr=1199630|url=https://eudml.org/doc/206501|doi-access=free}}.</ref> The distances in such an embedding can be made into integers by scaling the embedding by an appropriate factor. Based on this construction, the graphs known to have integral Fáry embeddings include the [[Bipartite graph|bipartite]] planar graphs, [[Dense graph#Sparse and tight graphs|(2,1)-sparse]] planar graphs, planar graphs of [[treewidth]] at most&nbsp;3, and graphs of degree at most four that either contain a [[Diamond graph|diamond]] subgraph or are not [[k-edge-connected graph|4-edge-connected]].<ref name="Sun13"/><ref>{{citation|last=Biedl|first=Therese|author-link=Therese Biedl|contribution=Drawing some planar graphs with integer edge-lengths|title=Proc. Canadian Conference on Computational Geometry (CCCG 2011)|year=2011|url=http://www.cccg.ca/proceedings/2011/papers/paper36.pdf}}.</ref><ref>{{citation|last=Sun|first=Timothy|contribution=Rigidity-Theoretic Constructions of Integral Fary Embeddings|title=Proc. Canadian Conference on Computational Geometry (CCCG 2011)|year=2011|url=http://www.cccg.ca/proceedings/2011/papers/paper20.pdf}}.</ref>
+
+In particular, the graphs that can be reduced to the empty graph by the removal only of vertices of degree at most two (the [[degeneracy (graph theory)|2-degenerate]] planar graphs) include both the [[outerplanar graph]]s and the [[series–parallel graph]]s. However, for the outerplanar graphs a more direct construction of integral Fáry embeddings is possible, based on the existence of infinite subsets of the [[unit circle]] in which all distances are rational.<ref>{{citation
+ | last1 = Klee | first1 = Victor | author1-link = Victor Klee
+ | last2 = Wagon | first2 = Stan | author2-link = Stan Wagon
+ | contribution = Problem 10: Does the plane contain a dense rational set?
+ | isbn = 978-0-88385-315-3
+ | pages = 132–135
+ | publisher= Cambridge University Press
+ | series = Dolciani mathematical expositions
+ | title = Old and New Unsolved Problems in Plane Geometry and Number Theory
+ | url = https://books.google.com/books?id=tRdoIhHh3moC&pg=PA132
+ | volume= 11
+ | year = 1991|mr=1133201}}.</ref>
+
+Additionally, integral Fáry embeddings are known for each of the five [[Platonic solid]]s.<ref name="hkms"/>
+
+==Related conjectures==
+A stronger version of Harborth's conjecture, posed by {{harvtxt|Kleber|2008}}, asks whether every planar graph has a planar drawing in which the vertex coordinates as well as the edge lengths are all integers.<ref>{{citation|first=Michael|last=Kleber|title=Encounter at far point|journal=Mathematical Intelligencer|volume=1|year=2008|pages=50–53|doi=10.1007/BF02985756|s2cid=120522596 }}.</ref> It is known to be true for [[cubic graph|3-regular graphs]],<ref>{{citation|last1=Geelen|first1=Jim|last2=Guo|first2=Anjie|last3=McKinnon|first3=David|title=Straight line embeddings of cubic planar graphs with integer edge lengths|journal=Journal of Graph Theory|volume=58|year=2008|issue=3|pages=270–274|mr=2419522|doi=10.1002/jgt.20304|s2cid=1856482 }}.</ref> for graphs that have maximum degree&nbsp;4 but are not 4-regular,<ref name="Benediktovich">{{citation|last=Benediktovich|first=Vladimir I.|title=On rational approximation of a geometric graph|journal=[[Discrete Mathematics (journal)|Discrete Mathematics]]|volume=313|year=2013|issue=20|pages=2061–2064|mr=3084247|doi=10.1016/j.disc.2013.06.018|doi-access=free}}.</ref> and for [[Apollonian network|planar 3-trees]].<ref name="Benediktovich"/>
+
+Another unsolved problem in [[geometry]], the [[Erdős–Ulam problem]], concerns the existence of dense subsets of the plane in which all distances are rational numbers. If such a subset existed, it would form a [[universal point set]] that could be used to draw all planar graphs with rational edge lengths (and therefore, after scaling them appropriately, with integer edge lengths). However, Ulam conjectured that dense rational-distance sets do not exist.<ref>{{citation|journal=[[Discrete and Computational Geometry]]|year=2010|volume=43|issue=2|pages=393–401|title=On a question of Erdős and Ulam|first1=Jozsef|last1=Solymosi|author1-link= József Solymosi |first2=Frank|last2=de Zeeuw|arxiv=0806.3095|mr=2579704|doi=10.1007/s00454-009-9179-x|s2cid=15288690 }}.</ref>
+According to the [[Erdős–Anning theorem]], infinite non-collinear point sets with all distances being integers cannot exist. This does not rule out the existence of sets with all distances rational, but it does imply that in any such set the denominators of the rational distances must grow arbitrarily large.
+
+==See also==
+*[[Integer triangle]], an integral Fáry embedding of the [[triangle graph]]
+*[[Matchstick graph]], a graph that can be drawn planarly with all edge lengths equal to&nbsp;1
+*[[Erdős–Diophantine graph]], a complete graph with integer distances that cannot be extended to a larger complete graph with the same property
+*[[Euler brick]], an integer-distance realization problem in three dimensions
+
+==References==
+{{reflist|30em}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Statements about planar graphs]]
+[[Category:Arithmetic problems of plane geometry]]

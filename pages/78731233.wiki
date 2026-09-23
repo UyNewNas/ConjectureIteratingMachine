@@ -1,0 +1,45 @@
+{{short description|36 mathematical problems stated in 1955}}
+
+'''Taniyama's problems''' are a set of 36 [[list of unsolved problems in mathematics|mathematical problems]] posed by [[Japanese people|Japanese]] [[mathematician]] [[Yutaka Taniyama]] in 1955. The problems primarily focused on [[algebraic geometry]], [[number theory]], and the connections between [[modular form]]s and [[elliptic curve]]s. Taniyama's twelfth and thirteenth problems were the precursor to the [[Taniyama–Shimura conjecture]], also known as the [[modularity theorem]], which would be used in [[Andrew Wiles]]' [[Wiles's proof of Fermat's Last Theorem|proof]] of [[Fermat's Last Theorem]] in 1995.
+
+== History ==
+{{See also|Modularity theorem#History}}
+[[File:Jean-Pierre Serre 2003.jpg|right|thumb|French mathematician [[Jean-Pierre Serre]], a participant in the 1955 international symposium, brought attention to Taniyama's problems in the early 1970s.]]
+In the 1950s [[post-World War II]] period of mathematics, there was renewed interest in the theory of [[modular curves]] due to the work of Taniyama and [[Goro Shimura]].<ref name="Lang">{{cite journal|last=Lang|first=Serge|author-link=Serge Lang|title=Some History of the Shimura-Taniyama Conjecture|journal=Notices of the AMS|pages=1301–1307|year=1995|volume=42|number=11|url=https://www.ams.org/notices/199511/forum.pdf}}</ref> During the 1955 international symposium on [[algebraic number theory]] at [[Tokyo]] and [[Nikkō]],{{efn|the first symposium of its kind to be held in [[Japan]] that was attended by international mathematicians including [[Jean-Pierre Serre]], [[Emil Artin]], [[Andre Weil]], [[Richard Brauer]], [[K. G. Ramanathan]], and [[Daniel Zelinsky (mathematician)|Daniel Zelinsky]]<ref>{{citation|title=Proceedings of the International Symposium on Algebraic Number Theory|publisher=The Organizing Committee International Symposium on Algebraic Number Theory|year=1955|doi=10.1126/science.126.3284.1185.b}}</ref>}} Taniyama compiled his 36 problems in a document titled ''"Problems of Number Theory"'' and distributed [[mimeograph]]s of his collection to the symposium's participants.<ref name="Mazur">{{cite journal|last=Mazur|first=B.|author-link=Barry Mazur|title=Number Theory as Gadfly|journal=[[The American Mathematical Monthly]]|volume=98|number=7|pages=593–610|year=1991 |doi=10.1080/00029890.1991.11995762 |jstor=2324924 |s2cid=119527105}}</ref><ref name="Wolfram Mathworld">{{cite web|url=https://mathworld.wolfram.com/Taniyama-ShimuraConjecture.html|title=Taniyama-Shimura Conjecture|website=Wolfram MathWorld|access-date=December 27, 2024}}</ref> Serre later brought attention to these problems in the early 1970s.<ref name="Lang"/>
+
+The most famous of Taniyama's problems are his twelfth and thirteenth problems.<ref name="Lang"/><ref name="Mazur"/> These problems led to the formulation of the [[Taniyama–Shimura conjecture]] (now known as the [[modularity theorem]]), which states that every elliptic curve over the rational numbers is [[Modular elliptic curve|modular]]. This conjecture played a major role in [[Andrew Wiles]]' [[Wiles's proof of Fermat's Last Theorem|proof]] of [[Fermat's Last Theorem]] in 1995.<ref name="Mazur"/><ref name="Wolfram Mathworld"/>
+
+Taniyama's problems influenced the development of the [[Langlands program]], the theory of [[modular form]]s, and the study of [[elliptic curve]]s.<ref name="Mazur"/>
+
+== The problems ==
+Taniyama's tenth problem addressed [[Dedekind zeta functions]] and [[Hecke L-series]], and while distributed in English at the 1955 [[Tokyo]]-[[Nikkō]] conference attended by both [[Jean-Pierre Serre|Serre]] and [[André Weil]], it was only formally published in Japanese in Taniyama's collected works.<ref name="Lang"/>
+
+{{Math proof|title=Taniyama's tenth problem (translated)|proof=Let <math>k</math> be a totally real [[number field]], and <math>F(\tau)</math> be a [[Hilbert modular form]] to the field <math>k</math>. Then, choosing <math>F(\tau)</math> in a suitable manner, we can obtain a system of [[Erich Hecke]]'s ''L''-series with [[Größencharakter]] <math>\lambda</math>, which [[one-to-one correspondence|corresponds one-to-one]] to this <math>F(\tau)</math> by the process of [[Mellin transformation]]. This can be proved by a generalization of the theory of operator <math>T</math> of [[Hecke operator|Hecke]] to [[Hilbert modular functions]] (cf. [[Hermann Weyl]]).<ref name="Lang"/>}}
+
+According to [[Serge Lang]], Taniyama's eleventh problem deals with [[elliptic curves]] with complex multiplication, but is unrelated to Taniyama's twelfth and thirteenth problems.<ref name="Lang"/>
+
+{{Math proof|title=Taniyama's twelfth problem (translated)|proof=Let <math>C</math> be an [[elliptic curve]] defined over an [[algebraic number field]] <math>k</math>, and <math>L_C(s)</math> the [[L-function|''L''-function]] of <math>C</math> over <math>k</math> in the sense that <math>\zeta_C(s) = \zeta_k(s) \zeta_k(s-1) /L_C(s)</math> is the zeta function of <math>C</math> over <math>k</math>. If the [[Hasse–Weil conjecture]] is true for <math>\zeta_C(s)</math>, then the [[Fourier series]] obtained from <math>L_C(s)</math> by the inverse [[Mellin transformation]] must be an [[automorphic form]] of dimension −2 of a special type (see [[Erich Hecke|Hecke]]{{efn|The reference to [[Erich Hecke|Hecke]] in Problem 12 was to his paper, "fiber die Bestimmung Dirichletscher Reihen durch ihre Funktionalgleichung", which involves not only congruence subgroups of <math>\text{SL}_2(\mathbb Z)</math> but also some [[Fuchsian group]]s not [[commensurability (mathematics)|commensurable]] with it.}}). If so, it is very plausible that this form is an elliptic [[Differential (mathematics)|differential]] of the field of associated automorphic functions. Now, going through these observations backward, is it possible to prove the Hasse–Weil conjecture by finding a suitable automorphic form from which <math>L_C(s)</math> can be obtained?<ref>{{cite journal|last=Taniyama|first=Yutaka|author-link=Yutaka Taniyama|journal=[[:jp:数学_(雑誌)|Sugaku]]|volume=7|page=269|year=1956|title=Problem 12|language=ja}}</ref><ref name="Lang"/>}}
+
+Taniyama's twelfth problem's significance lies in its suggestion of a deep connection between [[elliptic curves]] and [[modular forms]]. While Taniyama's original formulation was somewhat imprecise, it captured a profound insight that would later be refined into the [[modularity theorem]].<ref name="Shimura">{{cite journal|last=Shimura|first=Goro|author-link=Goro Shimura|title=Yutaka Taniyama and his time. Very personal recollections | doi=10.1112/blms/21.2.186 | year=1989 | journal=[[The Bulletin of the London Mathematical Society]]|issn=0024-6093|volume=21|issue=2|pages=186–196|mr=976064|doi-access=free }}</ref><ref name="Mazur"/> The problem specifically proposed that the ''L''-functions of elliptic curves could be identified with those of certain modular forms, a connection that seemed surprising at the time.
+
+Fellow Japanese mathematician [[Goro Shimura]] noted that Taniyama's formulation in his twelfth problem was unclear: the proposed [[Mellin transform]] method would only work for elliptic curves over [[rational numbers]].<ref name="Shimura"/> For curves over [[number field]], the situation is substantially more complex and remains unclear even at a conjectural level today.<ref name="Mazur"/>
+
+{{Math proof|title=Taniyama's thirteenth problem (translated)|proof=To characterize the field of elliptic modular functions of [[Modular elliptic curve#Modularity theorem|level]] <math>N</math>, and especially to decompose the [[Jacobian variety]] <math>J</math> of this [[function field of an algebraic variety|function field]] into simple factors up to [[isogeny]]. Also it is well known that if <math>N = q</math>, a [[prime number|prime]], and <math>q \equiv 3 \pmod 4</math>, then <math>J</math> contains elliptic curves with complex multiplication. What can one say for general <math>N</math>?<ref name="Shimura"/>}}
+
+== See also ==
+* [[Hilbert's problems]]
+* [[Thurston's 24 questions]]
+* [[List of unsolved problems in mathematics]]
+* [[Wiles's proof of Fermat's Last Theorem]]
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+[[Category:Algebraic geometry]]
+[[Category:Conjectures]]
+[[Category:Mathematical problems]]
+[[Category:Number theory]]
+[[Category:Unsolved problems in mathematics]]

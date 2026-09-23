@@ -1,0 +1,44 @@
+{{short description|Japanese mathematician}}
+{{nihongo|'''Nobushige Kurokawa'''|黒川 信重|Kurokawa Nobushige|extra=born 1952}} is a Japanese [[mathematician]] working in [[number theory]], especially [[analytic number theory]], multiple trigonometric function theory, [[zeta functions]] and [[automorphic forms]]. He is currently a professor emeritus at [[Tokyo Institute of Technology]].<ref>{{cite news|url = http://www.asahi.com/ajw/articles/AJ201712160034.html|title = Mathematician in KyotoJapan cracks formidable brainteaser|accessdate=15 June 2018|last = Ishikura|first = Tetsuya| newspaper=The Asahi Shimbun }}</ref>
+{{Infobox scientist
+| name              = Nobushige Kurokawa
+| birth_date        = 1952
+| birth_place       = [[Tochigi Prefecture]], Japan
+| death_date        = 
+| death_place       = 
+| fields            = [[Mathematics]]
+| workplaces        = [[Tokyo Institute of Technology]]
+| education         = [[Tokyo Institute of Technology]] <small>(Ph.D., 1982)</small><ref>{{cite web|url=http://t2r2.star.titech.ac.jp/cgi-bin/researcherinfo.cgi?lv=en&q_researcher_content_number=73ca154e6acab3c83086830580e7183a|title=T2R2 Tokyo Tech Research Repository}}</ref>
+| doctoral_advisor  = 
+| doctoral_students =
+| known_for         = [[Ramanujan–Petersson conjecture|Generalized Ramanujan conjecture]]<ref>{{cite web|url=http://wwwf.imperial.ac.uk/~buzzard/maths/research/notes/siegel_modular_forms_notes.pdf|title=Notes on Siegel Modular Forms|last=Buzzard|first=Kevin}}</ref><br>[[Saito-Kurokawa conjecture]]<br>[[Absolute mathematics]]
+| awards            = 
+}}
+
+==Books==
+* with [[Shin-ya Koyama]], ''多重三角関数論講義'' (Lectures on multiple sine functions), 2010. Lectures notes originally from April–July 1991 at University of Tokyo.
+* with [[Shinya Koyama]], ''Absolute Mathematics'', 2010. (Japanese)
+* ''Pursuit of the Riemann Hypothesis: ABC to Z'', 2012. (Japanese)
+* ''Beyond the Riemann Hypothesis: Deep Riemann Hypothesis (DRH)'', 2013. (Japanese)
+* ''Modern trigonometric function theory'', 2013. (Japanese)
+* ''Principles of Absolute Mathematics'', 2016. (Japanese)
+* ''The World of Absolute Mathematics: Riemann Hypothesis, Langlands conjecture, Sato conjecture'', 2017. (Japanese)
+* with [[Shinya Koyama]], ''Introduction to the ABC conjecture'', 2018. (Japanese)
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.youtube.com/watch?v=BCJg8xptDBI Journey to the world of absolute mathematics] at Tokyo Institute of Technology, March 28, 2017 (video)
+
+{{authority control}}
+
+{{DEFAULTSORT:Kurokawa, Nobushige}}
+[[Category:20th-century Japanese mathematicians]]
+[[Category:21st-century Japanese mathematicians]]
+[[Category:1952 births]]
+[[Category:Living people]]
+[[Category:Abc conjecture]]
+[[Category:Scientists from Tochigi Prefecture]]
+
+{{Japan-mathematician-stub}}

@@ -1,0 +1,82 @@
+{{Short description|Conjecture in number theory}}
+{{Infobox mathematical statement
+| name = Modified Szpiro conjecture
+| image = 
+| caption = 
+| field = [[Number theory]]
+| conjectured by = [[Lucien Szpiro]]
+| conjecture date = 1981
+| first proof by = 
+| first proof date = 
+| open problem = 
+| known cases =
+| implied by =
+| equivalent to = [[abc conjecture]]
+| generalizations =
+| consequences = {{plainlist|
+*[[Beal conjecture]]
+*[[Faltings' theorem]]
+*[[Fermat's Last Theorem]]
+*[[Fermat–Catalan conjecture]]
+*[[Roth's theorem]]
+*[[Tijdeman's theorem]]}}
+}}
+
+In [[number theory]], '''Szpiro's conjecture''' relates the [[conductor of an elliptic curve|conductor]] of an [[elliptic curve]] to its discriminant. In a slightly modified form, it is equivalent to the well-known [[abc conjecture|''abc'' conjecture]]. It is named for [[Lucien Szpiro]], who formulated it in the 1980s. 
+
+Szpiro's conjecture and its equivalent forms have been described as "the most important unsolved problem in [[Diophantine analysis]]",<ref name="Goldfeld-1996">{{cite journal |last=Goldfeld |first=Dorian |author-link=Dorian M. Goldfeld |year=1996 |title=Beyond the last theorem |journal=[[Math Horizons]] |volume=4 |issue=1 |pages=26–34 |jstor=25678079 |doi=10.1080/10724117.1996.11974985 }}</ref> in part due to its large number of consequences in number theory including [[Roth's theorem]], [[Faltings' theorem]],<ref>{{cite journal |last=Elkies |first=Noam D. |author-link=Noam Elkies |title=ABC implies Mordell |journal=[[International Mathematics Research Notices]] |volume=1991 |year=1991 |pages=99–109 |doi=10.1155/S1073792891000144 |issue=7}}</ref> the [[Fermat–Catalan conjecture]], and [[Brocard's problem]].<ref>{{cite journal | first1=Enrico | last1=Bombieri|author-link=Enrico Bombieri | title=Roth's theorem and the abc-conjecture | journal=Preprint | year=1994 | publisher=ETH Zürich }}</ref><ref>{{Cite book |last=Pomerance |first=Carl |author-link=Carl Pomerance |chapter=Computational Number Theory |title=The Princeton Companion to Mathematics |publisher=[[Princeton University Press]] |year=2008 |pages=361–362 }}</ref><ref>{{Cite journal |first=Andrzej |last=Dąbrowski |title=On the diophantine equation ''x''! + ''A'' = ''y''<sup>2</sup> | journal=Nieuw Archief voor Wiskunde, IV. |volume=14 |pages=321–324 |year=1996 | zbl=0876.11015 }}</ref>
+
+==Original statement==
+The conjecture states that given <math>\varepsilon > 0</math>, there exists a constant <math>C(\varepsilon)</math> such that for any elliptic curve <math>E</math> defined over <math>\Q</math> with minimal discriminant <math>\Delta</math> and conductor <math>f</math>,
+
+:<math>\vert\Delta\vert \leq C(\varepsilon ) \cdot f^{6+\varepsilon}. </math>
+
+==Modified Szpiro conjecture==
+The '''modified Szpiro conjecture''' states that: given <math>\varepsilon > 0</math>, there exists a constant  <math>C(\varepsilon)</math> such that for any elliptic curve <math>E</math> defined over <math>\Q</math> with invariants <math>c_4</math>, <math>c_6</math> and conductor <math>f</math> (using [[Tate's algorithm#Notation|notation from Tate's algorithm]]),
+
+:<math> \max\{|c_4|^3, |c_6|^2\} \leq C(\varepsilon) \cdot f^{6+\varepsilon}.</math>
+
+===''abc'' conjecture===
+The [[Abc conjecture|''abc'' conjecture]] originated as the outcome of attempts by [[Joseph Oesterlé]] and [[David Masser]] to understand Szpiro's conjecture,<ref>{{citation|title=Arithmetic deformation theory via arithmetic fundamental groups and nonarchimedean theta functions, notes on the work of Shinichi Mochizuki|journal= European Journal of Mathematics|first=Ivan|last=Fesenko|volume=1 |issue=3| pages=405–440 | year=2015 |url=https://www.maths.nottingham.ac.uk/personal/ibf/notesoniut.pdf |doi=10.1007/s40879-015-0066-0|doi-access=free}}.</ref> and was then shown to be equivalent to the modified Szpiro's conjecture.<ref>{{Citation | last1=Oesterlé | first1=Joseph | author-link=Joseph Oesterlé | title=Nouvelles approches du "théorème" de Fermat | url= http://www.numdam.org/item?id=SB_1987-1988__30__165_0 | series=Séminaire Bourbaki exp 694 |mr=992208 | year=1988 | journal=Astérisque | issn=0303-1179 | issue=161 | pages=165–186}}</ref>
+
+==Consequences==
+{{further|abc conjecture#Some consequences}}
+Szpiro's conjecture and its modified form are known to imply several important mathematical results and conjectures, including [[Roth's theorem]],<ref>{{cite book |doi=10.1007/978-3-0348-0859-0_13|chapter=Lecture on the abc Conjecture and Some of Its Consequences|title=Mathematics in the 21st Century|series=Springer Proceedings in Mathematics & Statistics|year=2015|last1=Waldschmidt|first1=Michel|volume=98|pages=211–230|isbn=978-3-0348-0858-3|chapter-url=https://webusers.imj-prg.fr/~michel.waldschmidt/articles/pdf/abcLahoreProceedings.pdf}}</ref> [[Faltings' theorem]],<ref>{{Cite journal |last=Elkies |first=N. D. |author-link=Noam Elkies |title=ABC implies Mordell |journal=  International Mathematics Research Notices|volume=1991 |year=1991 |pages=99–109 |doi=10.1155/S1073792891000144 |issue=7}}</ref> the [[Fermat–Catalan conjecture]],<ref>{{Cite book |last=Pomerance |first=Carl |author-link=Carl Pomerance |chapter=Computational Number Theory |title=The Princeton Companion to Mathematics |publisher=Princeton University Press |year=2008 |pages=361–362 }}</ref> and a negative solution to the [[Erdős–Ulam problem]].<ref>
+{{citation
+ | last1 = Pasten | first1 = Hector
+ | doi = 10.1007/s00605-016-0973-2
+ | issue = 1
+ | journal = [[Monatshefte für Mathematik]]
+ | mr = 3592123
+ | pages = 99–126
+ | title = Definability of Frobenius orbits and a result on rational distance sets
+ | volume = 182
+ | year = 2017| s2cid = 7805117
+ }}
+</ref>
+
+==Claimed proofs==
+{{Main|abc conjecture#Claimed proofs}}
+
+In August 2012, [[Shinichi Mochizuki]] claimed a proof of Szpiro's conjecture by developing a new theory called [[inter-universal Teichmüller theory]] (IUTT).<ref>{{cite journal |last1=Ball |first1=Peter |date= 10 September 2012|title=Proof claimed for deep connection between primes |url=https://www.nature.com/news/proof-claimed-for-deep-connection-between-primes-1.11378 |journal=Nature |doi=10.1038/nature.2012.11378 |access-date=19 April 2020|url-access=subscription }}</ref> However, the papers have not been accepted by the mathematical community as providing a proof of the conjecture,<ref>{{cite magazine|magazine=[[New Scientist]]|title=Baffling ABC maths proof now has impenetrable 300-page 'summary'|url=https://www.newscientist.com/article/2146647-baffling-abc-maths-proof-now-has-impenetrable-300-page-summary/|first=Timothy|last=Revell|date=September 7, 2017}}</ref><ref>{{cite web | url=https://mathbabe.org/2015/12/15/notes-on-the-oxford-iut-workshop-by-brian-conrad/ |first = Brian |last=Conrad |author-link=Brian Conrad| date=December 15, 2015 | title=Notes on the Oxford IUT workshop by Brian Conrad |work = mathbabe | access-date=March 18, 2018}}</ref><ref>{{cite journal |last1=Castelvecchi |first1=Davide |date=8 October 2015 |title=The biggest mystery in mathematics: Shinichi Mochizuki and the impenetrable proof |journal=Nature |volume=526 |issue= 7572|pages=178–181 |doi=10.1038/526178a |bibcode=2015Natur.526..178C |pmid=26450038}}</ref> with [[Peter Scholze]] and [[Jakob Stix]] concluding in March 2018 that they had issues "so severe that … small modifications will not rescue the proof strategy".<ref>
+{{ cite web | url=http://www.kurims.kyoto-u.ac.jp/~motizuki/SS2018-08.pd | title=Why abc is still a conjecture
+ |first1= Peter |last1= Scholze |author-link1= Peter Scholze
+ |first2= Jakob |last2= Stix    |author-link2= Jakob Stix
+ |archive-url=https://web.archive.org/web/20200208075321/http://www.kurims.kyoto-u.ac.jp/~motizuki/SS2018-08.pdf|archive-date=February 8, 2020|url-status=dead}} (updated version of their [http://www.kurims.kyoto-u.ac.jp/~motizuki/SS2018-05.pdf May report]|)</ref><ref>{{cite magazine|url=https://www.quantamagazine.org/titans-of-mathematics-clash-over-epic-proof-of-abc-conjecture-20180920/ |title=Titans of Mathematics Clash Over Epic Proof of ABC Conjecture |magazine= [[Quanta Magazine]] |date=September 20, 2018 |first= Erica |last= Klarreich |author-link= Erica Klarreich }}</ref><ref>{{ cite web | url=http://www.kurims.kyoto-u.ac.jp/~motizuki/IUTch-discussions-2018-03.html | title=March 2018 Discussions on IUTeich | access-date=October 2, 2018 }} Web-page by Mochizuki describing discussions and linking consequent publications and supplementary material</ref>
+
+==See also==
+* [[Arakelov theory]]
+
+==References==
+{{Reflist}}
+
+==Bibliography==
+* {{citation |first=S. |last=Lang |author-link=Serge Lang |title=Survey of Diophantine geometry |publisher=[[Springer-Verlag]] |location=Berlin |year=1997 |isbn=3-540-61223-8 | zbl=0869.11051 | page=51| url={{Google books|title=Encyclopedia of Mathematical Science vol.60|b9RqCQAAQBAJ|page=51|plainurl=yes}}}}
+* {{Cite book|first=L. |last=Szpiro |title=Seminaire sur les pinceaux des courbes de genre au moins deux|chapter=Propriétés numériques du faisceau dualisant rélatif|series=Astérisque |volume=86 |year=1981 | zbl=0517.14006 | pages=44–78|url=http://www.numdam.org/item/AST_1981__86__R1_0.pdf }}
+* {{citation |first=L. |last=Szpiro |chapter=Présentation de la théorie d'Arakelov |title=Contemp. Math. |series=Contemporary Mathematics |volume=67 |year=1987 | zbl=0634.14012 | pages=279–293 |doi=10.1090/conm/067/902599|isbn=9780821850749 }}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Abc conjecture]]
+
+{{numtheory-stub}}

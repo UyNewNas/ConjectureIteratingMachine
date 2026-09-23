@@ -1,0 +1,326 @@
+{{Short description|23 mathematical problems stated in 1900}}
+{{CS1 config|mode=cs1}}
+[[File:Hilbert.jpg|thumb|David Hilbert]]
+'''Hilbert's problems''' are 23 problems in [[mathematics]] published by German mathematician [[David Hilbert]] in 1900. He intended to rival the master of French mathematics, [[Henri Poincaré]],{{efn|At the first [[International Congress of Mathematicians]], held in [[Zurich]] in 1897, [[Henri Poincaré]] had been the star of the event with his lecture "On the relations between pure analysis and mathematical physics." This success had propelled him to the presidency of the organizing committee. Ref. Carlos M. Madrid Casado and Anne Postel (Trans.), In Search of Universal Axioms: Hilbert, p. 50.}} and to prove that he was cut from the same cloth.<ref>{{Cite book |last=Madrid Casado |first=Carlos M. |title=Hilbert. Las bases de la matemática: En el principio fue el axioma |publisher=RBA |year=2013 |isbn= |location=[[Barcelona]] |publication-date=2013 |pages=50 |language=es |trans-title=Hilbert. The foundations of mathematics: In the beginning was the axiom}}</ref> They were all unsolved at the time, and several proved to be very influential for 20th-century mathematics. Hilbert presented ten of the problems (1, 2, 6, 7, 8, 13, 16, 19, 21, and 22) at the [[Paris]] conference of the [[International Congress of Mathematicians]], speaking on August&nbsp;8 at the [[University of Paris|Sorbonne]]. The complete list of 23&nbsp;problems was published later, and translated into English in 1902 by [[Mary Frances Winston Newson]] in the ''[[Bulletin of the American Mathematical Society]]''.<ref name="Hilbert_1902">{{cite journal |last=Hilbert |first=David |title=Mathematical Problems |url=https://www.ams.org/journals/bull/1902-08-10/home.html |journal=[[Bulletin of the American Mathematical Society]] |volume=8 |issue=10 |year=1902 |pages=437–479|doi=10.1090/S0002-9904-1902-00923-3 |doi-access=free }}
+</ref> Earlier publications (in the original German) appeared in ''Archiv der Mathematik und Physik''.<ref name="Hilbert_1901">{{cite journal |last=Hilbert |first=David |title=Mathematische Probleme |url=https://www.digizeitschriften.de/id/252457811_1900%7Clog37?tify=%7B%22pages%22%3A%5B269%5D%2C%22pan%22%3A%7B%22x%22%3A0.427%2C%22y%22%3A0.819%7D%2C%22view%22%3A%22info%22%2C%22zoom%22%3A0.525%7D#navi |journal=Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse (News of the Society of Sciences at Göttingen, Mathematical-Physical Class) |year=1900 |pages=253–297 |language=de |archive-date=2025-07-29 |access-date=2025-03-02 |archive-url=https://web.archive.org/web/20250729182424/https://www.digizeitschriften.de/id/252457811_1900%7Clog37?tify=%7B%22pages%22%3A%5B269%5D%2C%22pan%22%3A%7B%22x%22%3A0.427%2C%22y%22%3A0.819%7D%2C%22view%22%3A%22info%22%2C%22zoom%22%3A0.525%7D#navi |url-status=live }} and {{cite journal |last=Hilbert |first=David |title=Mathematische Probleme |journal=Archiv der Mathematik und Physik |series=3rd series |volume=1 |year=1901 |pages=44–63, 213–237 |url=https://babel.hathitrust.org/cgi/pt?id=mdp.39015049309860&seq=62 |language=de |archive-date=2025-07-12 |access-date=2025-03-02 |archive-url=https://web.archive.org/web/20250712112726/https://babel.hathitrust.org/cgi/pt?id=mdp.39015049309860&seq=62 |url-status=live }}</ref>
+
+Of the cleanly formulated Hilbert problems: 3, 6a{{refn|group=lower-alpha|Some problems are rather lists of related elementary problems, but this subdivision is specific to this website and not official.}}, 7, 10, 11, 14, 17, 18, 19, and 21 have resolutions that are accepted by consensus of the mathematical community. The status of problems 1, 2, 5, 6b, 8c, 13, and 15 is controversial: there are some results, but there exists some controversy as to whether they resolve the problems. Problems 8a, 8b, 9, 12, 16, 20 and 22 are unresolved or widely agreed as unresolved despite some partial results. Problems 4 and 23 are considered as too vague to ever be described as solved; the withdrawn 24 would also be in this class.
+
+== List of Hilbert's problems ==
+The following are the headers for Hilbert's 23&nbsp;problems as they appeared in the 1902 translation of Hilbert's presentation, published in the ''[[Bulletin of the American Mathematical Society]]''.<ref name=Hilbert_1902/>
+
+# [[Continuum hypothesis|Cantor's problem]] of the cardinal number of the continuum.
+# The compatibility of the arithmetical axioms.
+# [[Hilbert's third problem|Scissor congruence of polyhedra of equal volumes]].
+# Problem of the straight line as the shortest distance between two points.
+# Lie's concept of a continuous group of transformations without the assumption of the differentiability of the functions defining the group.
+# Mathematical treatment of the axioms of physics.
+# Irrationality and transcendence of certain numbers.
+# Problems of prime numbers.
+# Proof of the most general law of reciprocity in any number field.
+# Determination of the solvability of a [[Diophantine equation]].
+# [[Quadratic form]]s with any algebraic numerical coefficients.
+# Extensions of the [[Kronecker-Weber theorem]] on Abelian fields to any algebraic realm of rationality.
+# [[Hilbert's thirteenth problem|Impossibility of the solution of the general equation of 7th&nbsp;degree by means of functions of only two arguments]].
+# [[Hilbert's fourteenth problem|Proof of the finiteness of certain complete systems of functions]].
+# Rigorous foundation of [[Schubert calculus|Schubert's enumerative calculus]].
+# Problem of the topology of [[Hilbert's sixteenth problem|algebraic curves and surfaces.]]
+# Expression of [[definite quadratic form|definite forms]] by squares.
+# Building up of space from congruent polyhedra.
+# Are the solutions of regular problems in the [[calculus of variations]] always necessarily analytic?
+# The general problem of [[boundary value problem|boundary values]].
+# Proof of the existence of linear differential equations having a prescribed [[monodromy]] group.
+# Uniformization of analytic relations by means of [[automorphic function]]s.
+# Further development of the methods of the [[calculus of variations]].
+
+=== The 24th problem ===
+{{Main|Hilbert's twenty-fourth problem}}
+
+Hilbert originally had 24 problems on his list, but decided against including one of them in the published list. The "24th problem" (in [[proof theory]], on a criterion for [[simplicity]] and general methods) was rediscovered in Hilbert's original manuscript notes by German historian [[Rüdiger Thiele]] in 2000.<ref name="Thiele">{{cite journal |last=Thiele |first=Rüdiger |date=January 2003 |title=Hilbert's twenty-fourth problem |url=http://www.maa.org/news/Thiele.pdf |journal=American Mathematical Monthly |volume=110 |pages=1–24 |doi=10.1080/00029890.2003.11919933 |s2cid=123061382 |archive-date=2009-03-04 |access-date=2008-09-09 |archive-url=https://wayback.archive-it.org/all/20090304064816/http://www.maa.org/news/Thiele.pdf |url-status=live }}</ref>
+
+==Table of problems==
+Hilbert's 23 problems, and the unpublished 24th problem, are listed below. For details on the solutions and references, see the articles that are linked to in the first column.
+{| class="wikitable sortable"
+|-
+!style="width:1%" | Problem
+!class="unsortable"| Brief explanation
+!style="width:40%" | Status
+! Year solved
+|-
+|style="text-align:center"| [[Hilbert's first problem|1st]]
+| The [[continuum hypothesis]]: there is no [[Set (mathematics)|set]] whose [[cardinality]] is strictly between that of the [[integer]]s and that of the [[real number]]s.
+|{{partial|align=left|{{sort|2|}} The results of [[Kurt Gödel]] and [[Paul Cohen]]<ref name=Cohen1963>
+{{Cite journal
+ |last=Cohen  |first=Paul J.
+ |date=15 December 1963
+ |title=The independence of the Continuum Hypothesis, [part&nbsp;I]
+ |journal=Proceedings of the National Academy of Sciences of the United States of America
+ |volume=50  |issue=6  |pages=1143–1148
+ |doi=10.1073/pnas.50.6.1143  |pmid=16578557
+ |pmc=221287  |jstor=71858  |bibcode=1963PNAS...50.1143C
+|doi-access=free
+ }}
+</ref><ref name=Cohen1964>
+{{Cite journal
+ |last=Cohen |first=Paul J.
+ |date=15 January 1964
+ |title=The independence of the Continuum Hypothesis, [part]&nbsp;II
+ |journal=Proceedings of the National Academy of Sciences of the United States of America
+ |volume=51 |issue=1 |pages=105–110
+ |doi=10.1073/pnas.51.1.105 |pmid=16591132
+ |pmc=300611 |jstor=72252 |bibcode=1964PNAS...51..105C
+|doi-access=free
+ }}
+</ref> demonstrated that the hypothesis is impossible to prove or disprove within [[Zermelo–Fraenkel set theory]] (with or without the [[axiom of choice]] and provided Zermelo–Fraenkel theory itself is [[consistency|consistent]]), which is commonly accepted as a foundation of modern mathematics. 
+There is no consensus on whether this is a solution to the problem. There exist extensions of Zermelo-Fraenkel axiomatics where the continuum hypothesis is true as well as extensions where it is false.}}
+|style="text-align:center" data-sort-value="1940" | 1940, 1963?
+|-
+|style="text-align:center"| [[Hilbert's second problem|2nd]]
+| Prove that the [[axiom]]s of [[arithmetic]] are [[consistency|consistent]].
+|{{partial|align=left|{{sort|2|}} There is no consensus on whether the results of [[Kurt Gödel|Gödel]] and [[Gerhard Gentzen|Gentzen]] give a solution to the problem as stated by Hilbert. 
+
+Gödel's [[Gödel's incompleteness theorems#Second incompleteness theorem|second incompleteness theorem]], proven in 1931, shows that no such proof can be carried out within arithmetic itself. Moreover, any other theory that is strong enough to prove the consistency of arithmetic cannot prove its own consistency.
+
+Gentzen proved in 1936 that the consistency of arithmetic in Zermelo-Frankel set theory follows from the [[well-founded relation|well-foundedness]] of the [[epsilon numbers (mathematics)|ordinal&nbsp;''ε''<sub>0</sub>]].}}
+|style="text-align:center" data-sort-value="1931" | 1931, 1936?
+|-
+|style="text-align:center"| [[Hilbert's third problem|3rd]]
+| Given any two [[polyhedron|polyhedra]] of equal volume, is it always possible to cut the first into finitely many polyhedral pieces that can be reassembled to yield the second?
+|{{yes|align=left|{{sort|1|}} Resolved. Result: No, proven by [[Max Dehn]] using [[Dehn invariant]]s. Even different [[Platonic solids]] of equal volume cannot be obtained this way from each other.}}
+|style="text-align:center" data-sort-value="1900"| 1900
+|-
+|style="text-align:center"| [[Hilbert's fourth problem|4th]]
+| Construction of geometries satisfying axioms of classical geometry, where lines are [[geodesic]]s.
+|{{unknown|align=left|style=font-size:inherit|{{sort|4|}} Too vague to be stated resolved or not.{{refn|According to Gray, most of the problems have been solved. Some were not defined completely, but enough progress has been made to consider them "solved"; Gray lists the fourth problem as too vague to say whether it has been solved.|group=lower-alpha}} }}
+| {{n/a}}
+|-
+|style="text-align:center"| [[Hilbert's fifth problem|5th]]
+| Are continuous [[group (mathematics)|groups]] automatically [[Lie group|differential groups]]?
+|{{partial|align=left|{{sort|2|}} Depends on the interpretation of "continuous group".
+
+If the term is understood as a [[topological group]] that is also a [[topological manifold]]: yes, proven by [[Andrew Gleason]].<ref name="palais-h5p">{{citation|first=Richard|last=Palais|author-link=Richard Palais|title=Gleason's contribution to the solution of Hilbert's Fifth Problem|department=Andrew M. Gleason 1921–2008|editor-first=Ethan D.|editor-last=Bolker|journal=Notices of the American Mathematical Society|volume=56|issue=10|date=November 2009|pages=1243–1248|url=https://www.ams.org/notices/200910/rtx091001236p.pdf|access-date=2025-11-07|archive-date=2018-12-08|archive-url=https://web.archive.org/web/20181208204654/http://www.ams.org/notices/200910/rtx091001236p.pdf|url-status=live}}</ref>
+
+If "continuous group" is understood as a topological group [[Group action|acting]] on a manifold, the problem becomes the [[Hilbert–Smith conjecture]], which is still unresolved.}}
+|style="text-align:center"| 1953?
+|-
+|style="text-align:center" rowspan=2| [[Hilbert's sixth problem|6th]]
+|rowspan=2| Mathematical treatment of the [[axiom]]s of [[physics]]. In a later explanation given by Hilbert:<ref name=Hilbert_1902/> 
+
+(a) axiomatic treatment of probability with limit theorems for foundation of [[statistical physics]]
+
+(b) the rigorous theory of limiting processes "which lead from the atomistic view to the laws of motion of continua"
+|{{yes|align=left|{{sort|2|}}}}
+(a) Resolved. The [[probability axioms|Kolmogorov axioms]] are accepted as the foundation of probability theory. 
+|style="text-align:center"| 1933
+|-
+|{{partial|align=left|{{sort|2|}}}}
+(b) Depends on the interpretation of the problem.
+
+If treated as a physical problem: since the publication of Hilbert's list, new discoveries challenged [[classical mechanics]] and led to the formulation of [[quantum field theory]], which holds an "atomistic view" of physical laws; and [[general relativity]], which describes "motion of continua" at large scales. Despite many attempts to unify them into a [[theory of everything]], it is still not obvious how to make clear link between them.
+
+Some authors tried to solve this as a mathematical problem in a classical mechanics framework, which was the dominant physical theory during the publication of the list. In March 2025, [[Yu Deng|Deng]], Hani, and Ma published a paper claiming to have solved this problem by deriving continuous fluid equations and [[Boltzmann equation]]s from Newton's laws applied for particles.<ref>{{cite arXiv |eprint=2503.01800 |last1=Deng |first1=Yu |last2=Hani |first2=Zaher |last3=Ma |first3=Xiao |title=Hilbert's sixth problem: Derivation of fluid equations via Boltzmann's kinetic theory |date=2025 |class=math.AP }}</ref> The paper is currently in peer review.<ref>{{cite web |last=Murtagh |first=Jack |date=14 April 2025 |title=Mathematicians Crack 125-Year-Old Problem, Unite Three Physics Theories |url=https://www.scientificamerican.com/article/lofty-math-problem-called-hilberts-sixth-closer-to-being-solved/ |website=Scientific American |location= |publisher= |access-date=9 January 2026 |archive-date=26 April 2025 |archive-url=https://web.archive.org/web/20250426022659/https://www.scientificamerican.com/article/lofty-math-problem-called-hilberts-sixth-closer-to-being-solved/ |url-status=live }}</ref>
+
+|style="text-align:center"| 2025?
+|-
+|style="text-align:center"| [[Hilbert's seventh problem|7th]]
+| Is ''a<sup>b</sup>'' [[transcendental number|transcendental]], for [[algebraic number|algebraic]] ''a'' ≠ 0,1 and [[irrational number|irrational]] algebraic ''b'' ?
+|{{yes|align=left|{{sort|1|}} Resolved. Result: Yes, illustrated by the [[Gelfond–Schneider theorem]].}}
+|style="text-align:center"| 1934
+|-
+|rowspan=3 style="text-align:center"| [[Hilbert's eighth problem|8th]]
+| (a) The [[Riemann hypothesis]]: the real part of any non-[[Triviality (mathematics)|trivial]] [[Zero of a function|zero]] of the [[Riemann zeta function]] is {{frac|1|2}}.
+| {{no|align=left|{{sort|3|}} Unresolved. Partial results include much weaker estimations that almost all nontrivial zeroes have real part arbitrarily close to {{frac|1|2}}, and at least {{frac|5|12}} of non-trivial zeros have real part equal to {{frac|1|2}}.}}
+| {{n/a}}
+|-
+| (b) For pairwise coprime integers: <math>a, b,c</math> determine solvability of diophantine equation: <math>ax+by+c=0</math> for ''x'' and ''y'' being prime numbers. [[Goldbach's conjecture]] and the [[twin prime conjecture]] are special cases of this problem.
+| {{no|align=left|{{sort|3|}} Unresolved, even the special cases of this equation are hard open problems. Partial results include [[Yitang Zhang]]'s proof of bounded gaps between primes, later improved by the [[Polymath Project]].}}
+| {{n/a}}
+|-
+| (c) Generalize results using Riemann zeta function for distribution of prime numbers in integers, to apply them to [[Dedekind zeta function]]s for distribution of prime ideals in [[ring of integers]] for any number field.
+| {{partial|align=left|{{sort|3|}} Depends on the interpretation of expected results. In 1917, [[Erich Hecke]] constructed an analytic continuation for Dedekind zeta functions and proved functional equation, which allowed for obtaining results similar to that currently accessible using Riemann zeta function. However, if understood as proving an [[Generalized Riemann Hypothesis#Extended Riemann hypothesis (ERH)|extended Riemann hypothesis]], then the problem is still unresolved.}}
+|style="text-align:center"| 1917?
+|-
+|style="text-align:center"| [[Hilbert's ninth problem|9th]]
+| Find the most general [[reciprocity law]] in any [[number field]].
+|{{no|align=left|{{sort|2|}} Unresolved. Partial results include the [[Artin reciprocity law]] for abelian extensions of number fields, key result in [[class field theory]]. Development of [[non-abelian class field theory]] that would work for the general case of number fields is still a largely conjectural area.|group=lower-alpha}}
+| {{n/a}}
+|-
+|style="text-align:center"| [[Hilbert's tenth problem|10th]]
+| Find an algorithm to determine whether a given polynomial [[Diophantine equation]] with integer coefficients has an integer solution.
+|{{yes|align=left|{{sort|1|}} Resolved. Result: Impossible; [[Matiyasevich's theorem]] implies that there is no such algorithm.}}
+|style="text-align:center"| 1970
+|-
+|style="text-align:center"| [[Hilbert's eleventh problem|11th]]
+| Develop the theory of [[quadratic form]]s with any number of variables and coefficients over any number field, especially resolving quadratic equations by elements of this field and its ring of integers.
+|{{yes|align=left|{{sort|1|}} Resolved. [[Helmut Hasse]] in 1924 created a general theory of classification and deciding solvability of quadratic forms over number fields using the [[local-global principle]]. His theory was later extended and simplified in 1937 by [[Ernst Witt]] using [[Witt group#Ring structure|Witt ring]]s.<ref name="Hazewinkel">{{cite book |first=Michiel |last=Hazewinkel |author-link=Michiel Hazewinkel |date=2009 |title=Handbook of Algebra |publisher=Elsevier |page=69 |isbn=978-0080932811 |volume=6}}</ref>}}
+|style="text-align:center"| 1924, 1937
+|-
+|style="text-align:center"| [[Hilbert's twelfth problem|12th]]
+| Extend the [[Kronecker–Weber theorem]] on abelian extensions of the [[rational number]]s to abelian extensions of any base number field.
+|{{no|align=left|{{sort|2|}} Unresolved. Partial results include construction using Hilbert modular forms for [[CM-field]]s by [[Goro Shimura]] and special cases of totally real fields using Brumer-Stark units by Dasgupta and Kadke.<ref>{{cite arXiv|last1=Dasgupta|first1=Samit|last2=Kakde|first2=Mahesh|date=2021-03-03|title=Brumer-Stark Units and Hilbert's 12th Problem|class=math.NT|eprint=2103.02516}}</ref><ref>{{cite web |url=https://www.quantamagazine.org/mathematicians-find-polynomial-building-blocks-hilbert-sought-20210525/ |first=Kelsey |last=Houston-Edwards |title=Mathematicians Find Long-Sought Building Blocks for Special Polynomials |date=25 May 2021 }}</ref>}}
+| {{n/a}}
+|-
+|style="text-align:center"| [[Hilbert's thirteenth problem|13th]]
+| Prove that the general case of [[septic equation]] cannot be solved using finite composition of [[continuous function]]s (variant: [[algebraic function]]s) of two [[parameter]]s. For continuous variant: at least construct [[analytic function]] of three variables that cannot be represented as such composition.
+|{{partial|align=left|{{sort|3|}} Depends on the variant of the problem.
+For the continuous variant: No; the [[Kolmogorov–Arnold representation theorem]] shows that every multivariate continuous function can be obtained through such composition.
+
+Some authors argue that Hilbert intended for a solution within the space of algebraic functions and possible extension of the [[Galois theory]], thus continuing their own work on the algebraic case.<ref name="Abyankar">{{cite book |url=http://www.emis.de/journals/SC/1997/2/pdf/smf_sem-cong_2_1-11.pdf |first=Shreeram S. |last=Abhyankar |author-link=Shreeram Shankar Abhyankar |title=Hilbert's Thirteenth Problem |series=Séminaires et Congrès |volume=2 |publisher=Société Mathématique de France |date=1997}}</ref><ref>{{cite journal |last1=Vitushkin |first1=Anatoliy G. |title=On Hilbert's thirteenth problem and related questions |journal=Russian Mathematical Surveys |date=2004 |volume=59 |issue=1 |pages=11–25 |doi=10.1070/RM2004v059n01ABEH000698 |publisher=Russian Academy of Sciences|bibcode=2004RuMaS..59...11V |s2cid=250837749 }}</ref><ref>{{cite journal |last1=Morozov |first1=Vladimir V. |title=О некоторых вопросах проблемы резольвент |journal=Proceedings of Kazan University |date=1954 |volume=114 |issue=2 |pages=173–187 |url=http://www.mathnet.ru/php/getFT.phtml?jrnid=uzku&paperid=406&what=fullt&option_lang=eng |publisher=Kazan University |language=ru |trans-title=On certain questions of the problem of resolvents}}</ref> It appears from one of later Hilbert's papers that this was his original intention for the problem.<ref>{{cite journal |first=David |last=Hilbert |title=Über die Gleichung neunten Grades |journal=Math. Ann. |volume=97 |year=1927 |pages=243–250 |doi=10.1007/BF01447867 |s2cid=179178089 }}</ref>
+For the algebraic variant, the problem is unresolved.}}
+|style="text-align:center"| 1957?
+|-
+|style="text-align:center"| [[Hilbert's fourteenth problem|14th]]
+| If <math>k</math> is a field and <math>K</math> is a subfield of <math>k(x_1,\ldots,x_n)</math> containing <math>k</math>, is <math>K\cap k[x_1,\ldots,x_n]</math> always finitely generated over <math>k</math>?
+|{{yes|align=left|{{sort|1|}} Resolved. Result: No, the conjecture is false for <math>n, r\geq 3</math> where <math>r</math> denotes [[transcendence degree]]  of <math>K</math> over <math>k</math>.
+
+For <math>r \leq2</math> and consequently <math>n \leq2</math> [[Oscar Zariski]] proved affirmative answer in 1954.<ref name="Zariski1954">{{cite journal |last=Zariski |first=Oscar |author-link=Oscar Zariski |title=Interprétations algébro-géométriques du quatorzième problème de Hilbert |journal=Bulletin des Sciences Mathématiques |volume=78 |pages=155–168 |year=1954|ref=none}}</ref>
+
+[[Masayoshi Nagata]] constructed the first counterexamples for <math>n=32</math> and <math>r=19, 4</math> in 1958.<ref>{{Citation | last1=Nagata | first1=Masayoshi | author1-link=Masayoshi Nagata | title=Proc. Internat. Congress Math. 1958 | chapter-url=http://mathunion.org/ICM/ICM1958/ | publisher=[[Cambridge University Press]] | mr=0116056 | year=1960 | orig-year=1958 | chapter=On the fourteenth problem of Hilbert | pages=459–462 | url-status=dead | archiveurl=https://web.archive.org/web/20110717144634/http://mathunion.org/ICM/ICM1958/ | archivedate=2011-07-17 }}</ref> Following Nagata work different authors constructed counterexamples to lower both number of variables as well as transcendence degree. In 2005 Shigeru Kuroda constructed a counterexample with <math>n=r=3</math>, showing that both bounds are sharp.<ref name="Kuroda2005">{{cite journal |last=Kuroda |first=Shigeru |title=A counterexample to the fourteenth problem of Hilbert in dimension three |journal=Michigan Mathematical Journal |volume=53 |issue=1 |pages=123–132 |year=2005 |doi=10.1307/mmj/1114021089|doi-access=free}}</ref>}}
+
+|style="text-align:center"| 1954, 1958-2005
+|-
+|style="text-align:center"| [[Hilbert's fifteenth problem|15th]]
+| Rigorous foundation of [[Schubert's enumerative calculus]].
+|{{partial|align=left|{{sort|2|}} Significant developments for resolving this problem have been made since the publication of the list:
+* Major enumerative examples of Schubert<ref name="Sc1">[https://archive.org/details/kalklderabzh00schuuoft/page/n5/mode/2up H. Schubert, Kalkül der abzählenden Geometrie], 1879, Leipzig: B.G. Teubner</ref><ref name="Sc2">[https://zbmath.org/?q=an%3A18.0631.01 H. Schubert, Lösung des Charakteristiken-Problems für lineare Räume beliebiger Dimension] {{Webarchive|url=https://web.archive.org/web/20231103140505/https://zbmath.org/?q=an:18.0631.01 |date=2023-11-03 }}, Mitteilungen der Mathematische Gesellschaft in Hamburg 1 (1886), 134-155.</ref> have been verified by Aluffi, Harris, Kleiman, Xambó, et al.<ref name="K2">S. Kleiman, Intersection theory and enumerative geometry: A decade in review, Proc. Symp. Pure Math., 46:2, Amer. Math. Soc. (1987), 321-370. https://www.ams.org/books/pspum/046.2/ {{Webarchive|url=https://web.archive.org/web/20250613215037/http://www.ams.org/books/pspum/046.2/ |date=2025-06-13 }} {{doi|10.1090/pspum/046.2}}</ref><ref name="DZ"/>
+* Special presentations of the Chow rings of flag manifolds have been worked out by Borel, Marlin, Billey-Haiman and Duan-Zhao, et al.;<ref name="DZ"/>
+* Schubert's characteristic problem has been solved by Haibao Duan and Xuezhi Zhao.<ref name="DZ">{{cite book | chapter= On Schubert's Problem of Characteristic | title= Schubert Calculus and Its Applications in Combinatorics and Representation Theory | editor1= J. Hu | display-editors= etal | author1= H. Duan | author2= X. Zhao | series= Springer Proceedings in Mathematics & Statistics | volume= 332 | year= 2020 | pages= 43–71 | chapter-url= https://link.springer.com/chapter/10.1007/978-981-15-7451-1_4 | doi= 10.1007/978-981-15-7451-1_4 | arxiv= 1912.10745 | isbn= 978-981-15-7450-4 | s2cid= 209444479 | archive-date= 2023-09-28 | access-date= 2026-01-03 | archive-url= https://web.archive.org/web/20230928165535/https://link.springer.com/chapter/10.1007/978-981-15-7451-1_4 | url-status= live }}</ref>
+Duan and Zhao claimed that their result actually resolved this problem. Currently there is no consensus whether the problem is resolved completely or partially.}}
+|style="text-align:center"| 1987–2020?
+|-
+|style="text-align:center"| [[Hilbert's sixteenth problem|16th]]
+| Describe relative positions of ovals originating from a [[real number|real]] [[algebraic curve]] and as [[limit cycle]]s of a polynomial [[vector field]] on the plane.
+|{{no|align=left|{{sort|3|}} Unresolved.  Exact description of position of components for real algebraic curves is an open problem, even for small degrees like&nbsp;8. For polynomial vector fields, partial results include proof that they have finitely many limit cycles, but no effective bound is known.}}
+| {{n/a}}
+|-
+|style="text-align:center"| [[Hilbert's seventeenth problem|17th]]
+| Express a nonnegative [[rational function]] as [[quotient]] of sums of [[Square (algebra)|squares]].
+|{{yes|align=left|{{sort|1|}} Resolved. Result: Yes, due to [[Emil Artin]]. Moreover, an upper limit was established for the number of square terms necessary.}}
+|style="text-align:center"| 1927
+|-
+|rowspan=3 style="text-align:center"| [[Hilbert's eighteenth problem|18th]]
+| (a) Are there only finitely many essentially different [[space group]]s in ''n''-dimensional Euclidean space?
+|{{yes|align=left|{{sort|1|}} Resolved. Result: Yes (by [[Ludwig Bieberbach]])}}
+|style="text-align:center"| 1910
+|-
+| (b) Is there a polyhedron that admits only an [[anisohedral tiling]] in three dimensions?
+|{{yes|align=left|{{sort|1|}} Resolved. Result: Yes (by [[Karl Reinhardt (mathematician)|Karl Reinhardt]]).}}
+|style="text-align:center"| 1928
+|-
+| (c) What is the densest [[sphere packing]]?
+|{{yes|align=left|{{sort|1|}} Resolved, by [[computer-assisted proof]] (by [[Thomas Callister Hales]]) and later with a machine-verified proof in project flyspeck. Result: Highest density achieved by [[Close-packing of equal spheres|close packings]], each with density approximately 74%, such as [[face-centered cubic close packing]] and [[hexagonal close packing]].}}
+|style="text-align:center"| 1998
+|-
+|style="text-align:center"| [[Hilbert's nineteenth problem|19th]]
+| Are the solutions of regular problems in the [[calculus of variations]] always necessarily [[Analytic function|analytic]]?
+|{{yes|align=left|{{sort|1|}} Resolved. Result: Yes, proven by [[Ennio De Giorgi]] and, independently and using different methods, by [[John Forbes Nash]].}}
+|style="text-align:center"| 1957
+|-
+|style="text-align:center"| [[Hilbert's twentieth problem|20th]]
+| Do all [[calculus of variations|variational problems]] with certain [[boundary condition]]s have solutions?
+|{{no|align=left|{{sort|2|}} Unresolved. A significant topic of research throughout the 20th century, resulting in solutions for some cases.<ref name="Gilbarg Trudinger 2001 Elliptic PDEs">{{cite book | last1=Gilbarg | first1=David | last2=Trudinger | first2=Neil S. | title=Elliptic Partial Differential Equations of Second Order | publisher=Springer Science & Business Media | publication-place=Berlin New York | date=2001-01-12 | isbn=978-3-540-41160-4 | page=}}</ref><ref name="Serrin 1969 Dirichlet">{{cite journal | last= Serrin | first=James | title=The problem of Dirichlet for quasilinear elliptic differential equations with many independent variables | journal=Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences | volume=264 | issue=1153 | date=1969-05-08 | issn=0080-4614 | doi=10.1098/rsta.1969.0033 | pages=413–496| bibcode=1969RSPTA.264..413S }}</ref><ref name="Mawhin 1999 pp. 195–228">{{cite journal | last=Mawhin | first=Jean | title=Leray-Schauder degree: a half century of extensions and applications | journal=Topological Methods in Nonlinear Analysis | publisher=Nicolaus Copernicus University in Toruń, Juliusz Schauder Center for Nonlinear Studies | volume=14 | issue=2 | date=1 January 1999 | issn=1230-3429 | doi=10.12775/TMNA.1999.029 | pages=195–228 | doi-broken-date=26 July 2026 | url=https://projecteuclid.org/journals/topological-methods-in-nonlinear-analysis/volume-14/issue-2/Leray-Schauder-degree--a-half-century-of-extensions-and/tmna/1475179840.full | access-date=8 April 2024 | archive-date=8 April 2024 | archive-url=https://web.archive.org/web/20240408021904/https://projecteuclid.org/journals/topological-methods-in-nonlinear-analysis/volume-14/issue-2/Leray-Schauder-degree--a-half-century-of-extensions-and/tmna/1475179840.full | url-status=live }}</ref>}}
+| {{n/a}}
+|-
+|style="text-align:center"| [[Hilbert's twenty-first problem|21st]]
+| Proof of the existence of [[Fuchsian theory|Fuchsian]] [[linear differential equation]]s with given singular points and a prescribed [[monodromy group]]
+|{{Yes|{{sort|1|}} Resolved; the answer depends on the formulation. For systems with [[regular singular point|regular singularities]], the answer is yes, as proved by [[Josip Plemelj]] in 1908.<ref name="Plemelj1908">{{cite journal |last=Plemelj |first=Josip |title=Riemannsche Funktionenscharen mit gegebener Monodromiegruppe |journal=Monatshefte für Mathematik und Physik
+ |volume=19 |year=1908 |pages=211–245 |doi=10.1007/BF01736697
+ |language=de}}</ref>
+For the stricter formulation requiring a [[Fuchsian system]], the answer is no in general; [[Andrei Bolibrukh]] gave a counterexample in 1989.<ref name ="Anasov_Bolibruch">{{Citation | last1=Anosov | first1=D. V. | last2=Bolibruch | first2=A. A. | authorlink2=Andrei Bolibrukh | title=The Riemann-Hilbert problem | publisher=Friedr. Vieweg & Sohn | location=Braunschweig | series=Aspects of Mathematics, E22 | isbn=978-3-528-06496-9 | mr=1276272 | year=1994 | doi=10.1007/978-3-322-92909-9}}</ref><ref name ="Bolibruch1">{{Citation |last1=Bolibrukh |first1=A. A. |year=1989 |title=The Riemann–Hilbert problem on the complex projective line |url=https://www.mathnet.ru/eng/mzm3613|journal=Matematicheskie Zametki |volume=46 |issue=3 |pages=118–120 }}</ref>|align=left}}
+|style="text-align:center"| 1908, 1989
+|-
+|style="text-align:center"| [[Hilbert's twenty-second problem|22nd]]
+| Uniformization of analytic relations by means of [[automorphic function]]s
+|{{no|align=left|{{sort|2|}} Unresolved. Partial results include the [[uniformization theorem]] for [[Riemann surface]]s.}}
+| {{n/a}}
+|-
+|style="text-align:center"| [[Hilbert's twenty-third problem|23rd]]
+| Further development of the [[calculus of variations]]
+|{{unknown|align=left|style=font-size:inherit|{{sort|4|}} Too vague to be stated resolved or not. Since the list was proposed, Hilbert and many other mathematicians have made numerous contributions to the calculus of variations.<ref name="brunt">{{cite book |last=van Brunt |first=Bruce |title=The Calculus of Variations |publisher=Springer |year=2004 |isbn=978-0-387-40247-5}}</ref> The [[dynamic programming]] of [[Richard Bellman]] is considered an alternative to the calculus of variations.<ref>[[Dimitri Bertsekas]]. Dynamic programming and optimal control. Athena Scientific, 2005.</ref><ref name="bellman">{{cite journal |last=Bellman |first=Richard E. |title= Dynamic Programming and a new formalism in the calculus of variations |year=1954 |journal= Proc. Natl. Acad. Sci. | issue=4 | pages=231–235|pmc=527981 |pmid=16589462 |volume=40 |doi=10.1073/pnas.40.4.231|bibcode=1954PNAS...40..231B |doi-access=free }}</ref><ref>{{cite web |title=Richard E. Bellman Control Heritage Award |year=2004 |url=http://a2c2.org/awards/richard-e-bellman-control-heritage-award |work=American Automatic Control Council |access-date=2013-07-28 |archive-date=2018-10-01 |archive-url=https://web.archive.org/web/20181001032837/http://a2c2.org/awards/richard-e-bellman-control-heritage-award |url-status=dead }}</ref>{{efn|See '''[[Harold J. Kushner]] (2004)''': regarding Dynamic Programming, "The calculus of variations had related ideas (e.g., the work of Caratheodory, the Hamilton-Jacobi equation). This led to conflicts with the calculus of variations community."}}}}
+| {{n/a}}
+|-
+| colspan="4" style="text-align: center;" |Unpublished 24th problem
+|-
+|style="text-align:center"| [[Hilbert's twenty-fourth problem|24th]]
+| Development of a theory of proof simplicity
+|{{unknown|align=left|style=font-size:inherit|{{sort|4|}} Recovered from Hilbert's unpublished notes. Too vague to be stated resolved or not.{{citation needed|date=September 2026}}}}
+| {{n/a}}
+|}
+
+== Nature and influence of the problems ==
+Hilbert's problems ranged greatly in topic and precision. Some of them, like the 3rd problem, which was the first to be solved, or the 8th problem ([[Riemann hypothesis|the Riemann hypothesis]]), which still remains unresolved, were presented precisely enough to enable a clear affirmative or negative answer. For other problems, such as the 5th, experts have traditionally agreed on a single interpretation, and a solution to the accepted interpretation has been given, but closely related unsolved problems exist. Some of Hilbert's statements were not precise enough to specify a particular problem, but were suggestive enough that certain problems of contemporary nature seem to apply; for example, most modern [[number theorists]] would probably see the 9th problem as referring to the [[Conjecture|conjectural]] [[Langlands program|Langlands correspondence]] on representations of the absolute [[Galois group]] of a [[number field]].<ref name="Weinstein">{{cite journal | last=Weinstein | first=Jared | title=Reciprocity laws and Galois representations: recent breakthroughs | journal=Bulletin of the American Mathematical Society | publisher=American Mathematical Society (AMS) | volume=53 | issue=1 | date=2015-08-25 | issn=0273-0979 | doi=10.1090/bull/1515 | pages=1–39| doi-access=free }}</ref>  Still other problems, such as the 11th and the 16th, concern flourishing mathematical subdisciplines, like the theories of [[quadratic form]]s and [[real algebraic curve]]s.
+
+There are two problems that are not only unresolved but may in fact be unresolvable by modern standards. The 6th problem concerns the [[Axiomatic system|axiomatization]] of [[physics]], a goal that 20th-century developments seem to render both more remote and less important than in Hilbert's time. Also, the 4th problem concerns the [[foundations of geometry]], in a manner that is generally judged to be too vague to enable a definitive answer.
+
+The 23rd problem was purposefully set as a general indication by Hilbert to highlight the calculus of variations as an underappreciated and understudied field. In the lecture introducing these problems, Hilbert made the following introductory remark to the 23rd problem:
+
+{{Blockquote
+|text="So far, I have generally mentioned problems as definite and special as possible, in the opinion that it is just such definite and special problems that attract us the most and from which the most lasting influence is often exerted upon science. Nevertheless, I should like to close with a general problem, namely with the indication of a branch of mathematics repeatedly mentioned in this lecture—which, in spite of the considerable advancement lately given it by Weierstrass, does not receive the general appreciation which, in my opinion, is its due—I mean the calculus of variations."
+}}
+
+The other 20 problems have all received significant attention, and late into the 20th century work on these problems was still considered to be of the greatest importance. [[Paul Cohen]] received the [[Fields Medal]] in 1966 for his work on the first problem, and the negative solution of the tenth problem in 1970 by [[Yuri Matiyasevich]] (completing work by [[Julia Robinson]], [[Hilary Putnam]], and [[Martin Davis (mathematician)|Martin Davis]]) generated similar acclaim. Aspects of these problems remain of great interest.
+
+==Knowability==
+Following [[Gottlob Frege]] and [[Bertrand Russell]], Hilbert sought to define mathematics logically using the method of [[formal system]]s, i.e., [[finitism|finitistic]] [[Mathematical proof|proofs]] from an agreed-upon set of [[axiom]]s.<ref name="Frege_Gödel">{{cite book |pages=464ff |editor-first=Jean |editor-last=van Heijenoort |year=1976 |orig-year=1966 |title=From Frege to Gödel: A source book in mathematical logic, 1879–1931 |publisher=Harvard University Press |location=Cambridge MA |isbn=978-0-674-32449-7 |edition=(pbk.) |quote=A reliable source of Hilbert's axiomatic system, his comments on them and on the foundational 'crisis' that was on-going at the time (translated into English), appears as Hilbert's 'The Foundations of Mathematics' (1927).}}</ref> One of the main goals of [[Hilbert's program]] was a finitistic proof of the consistency of the axioms of arithmetic: that is his second problem.{{refn|group=lower-alpha|See Nagel and Newman revised by Hofstadter (2001, p.&nbsp;107),<ref name="Hofstadter_2001">{{Cite book |last1=Nagel |first1=Ernest |title=Gödel's proof |last2=Newman |first2=James R. |last3=Hofstadter |first3=Douglas R. |date=2001 |publisher=New York University Press |isbn=978-0-8147-5816-8 |editor-last=Hofstadter |editor-first=Douglas R. |editor-link=Douglas Hofstadter |edition=Rev. |location=New York}}</ref> footnote&nbsp;37: "Moreover, although most specialists in mathematical logic do not question the cogency of [Gentzen's] proof, it is not finitistic in the sense of Hilbert's original stipulations for an absolute proof of consistency." Also see next page: "But these proofs [Gentzen's et al.] cannot be mirrored inside the systems that they concern, and, since they are not finitistic, they do not achieve the proclaimed objectives of Hilbert's original program." Hofstadter rewrote the original (1958) footnote slightly, changing the word "students" to "specialists in mathematical logic". And this point is discussed again on page&nbsp;109<ref name=Hofstadter_2001/> and was not modified there by Hofstadter (p.&nbsp;108).<ref name=Hofstadter_2001/>}}
+
+However, [[Gödel's second incompleteness theorem]] gives a precise sense in which such a finitistic proof of the consistency of arithmetic is provably impossible. Hilbert lived for 12&nbsp;years after [[Kurt Gödel]] published his theorem, but does not seem to have written any formal response to Gödel's work.{{refn|group=lower-alpha|Reid reports that upon hearing about "Gödel's work from Bernays, he was 'somewhat angry'. ... At first he was only angry and frustrated, but then he began to try to deal constructively with the problem. ... It was not yet clear just what influence Gödel's work would ultimately have" (p.&nbsp;198–199).<ref name="Reid_1996">{{cite book |first=Constance |last=Reid |year=1996 |title=Hilbert |publisher=Springer-Verlag |location=New York, NY |isbn=978-0387946740 |url-access=registration |url=https://archive.org/details/hilbert0000reid }}</ref> Reid notes that in two papers in 1931 Hilbert proposed a different form of induction called "unendliche Induktion" (p.&nbsp;199).<ref name="Reid_1996"/>}}{{refn|group=lower-alpha|Reid's biography of Hilbert, written during the 1960s from interviews and letters, reports that "Godel (who never had any correspondence with Hilbert) feels that Hilbert's scheme for the foundations of mathematics 'remains highly interesting and important in spite of my negative results' (p.&nbsp;217). Observe the use of present tense – she reports that Gödel and Bernays among others "answered my questions about Hilbert's work in logic and foundations" (p.&nbsp;vii).<ref name=Reid_1996/>}}
+
+Hilbert's tenth problem does not ask whether there exists an [[algorithm]] for deciding the solvability of [[Diophantine equations]], but rather asks for the ''construction'' of such an algorithm: "to devise a process according to which it can be determined in a finite number of operations whether the equation is solvable in [[rational integer]]s". That this problem was solved by showing that there cannot be any such algorithm contradicted Hilbert's philosophy of mathematics.
+
+In discussing his opinion that every mathematical problem should have a solution, Hilbert allows for the possibility that the solution could be a proof that the original problem is impossible.<ref group=lower-alpha>This issue that finds its beginnings in the "foundational crisis" of the early 20th&nbsp;century, in particular the controversy about under what circumstances could the [[Law of Excluded Middle]] be employed in proofs. See much more at [[Brouwer–Hilbert controversy]].</ref> He stated that the point is to know one way or the other what the solution is, and he believed that we always can know this, that in mathematics there is not any "[[Ignoramus et ignorabimus|ignorabimus]]" (statement whose truth can never be known).<ref group=lower-alpha>"This conviction of the solvability of every mathematical problem is a powerful incentive to the worker. We hear within us the perpetual call: There is the problem. Seek its solution. You can find it by pure reason, for in mathematics there is no ''ignorabimus''." (Hilbert, 1902, p.&nbsp;445)</ref>  It seems unclear whether he would have regarded the solution of the tenth problem as an instance of ignorabimus.
+
+On the other hand, the status of the first and second problems is even more complicated: there is no clear mathematical consensus as to whether the results of Gödel (in the case of the second problem), or Gödel and Cohen (in the case of the first problem) give definitive negative solutions or not, since these solutions apply to a certain formalization of the problems, which is not necessarily the only possible one.{{refn|group=lower-alpha|Nagel, Newman and Hofstadter discuss this issue: "The possibility of constructing a finitistic absolute proof of consistency for a formal system such as ''Principia Mathematica'' is not excluded by Gödel's results. ... His argument does not eliminate the possibility ... But no one today appears to have a clear idea of what a finitistic proof would be like that is ''not'' capable of being mirrored inside ''Principia Mathematica'' (footnote&nbsp;39, page&nbsp;109). The authors conclude that the prospect "is most unlikely".<ref name=Hofstadter_2001/>}}
+
+==Follow-ups==
+Mathematicians and mathematical organizations have announced numerous problem lists which have, with few exceptions, failed to generate nearly as much influence or work as Hilbert's problems. Notable examples include the [[Weil conjectures]], [[Paul Erdős]]'s [[Paul Erdős#Erdős's problems|problems]], [[Thurston's 24 questions]], and [[Smale's problems]].
+
+The four Weil Conjectures, made by [[André Weil]] in the late 1940s, are important to the fields of [[algebraic geometry]] and number theory.<ref>{{Cite journal| last1=Weil | first1=André | author1-link=André Weil | title=Numbers of solutions of equations in finite fields | url=http://www.ams.org/bull/1949-55-05/S0002-9904-1949-09219-4/home.html | doi=10.1090/S0002-9904-1949-09219-4  | mr=0029393 | year=1949 | journal=[[Bulletin of the American Mathematical Society]] | issn=0002-9904 | volume=55 | pages=497–508 | issue=5| doi-access=free }}</ref><ref name="Browder American Mathematical Society">{{cite book | last=Browder | first=Felix E. | title=Mathematical developments arising from Hilbert problems. | publisher=American Mathematical Society | publication-place=Providence | date=1976 | isbn=0-8218-1428-1 | oclc=2331329 | page=}}</ref> The first conjecture was proven by [[Bernard Dwork]]; a different proof of the first two, via [[Étale cohomology|ℓ-adic cohomology]], was given by [[Alexander Grothendieck]]. The last and deepest of the Weil conjectures, an analogue of the Riemann hypothesis, was proven by [[Pierre Deligne]]. Both Grothendieck and Deligne were awarded the [[Fields Medal]]. However, the Weil conjectures were more like a single Hilbert problem in scope, and Weil never intended them as a programme for all mathematics.
+
+Erdős posed hundreds, possibly thousands, of problems, often offering monetary rewards; the size of the reward depended on the perceived difficulty of the problem.<ref name="Chung Graham 1999 Erdös">{{cite book | last1=Chung | first1=Fan R. K. | last2=Graham | first2=Ronald L. |author-link2=Ronald Graham | title=Erdös on Graphs: his legacy of unsolved problems | publisher=A K Peters/CRC Press | publication-place=Natick, Mass | date=1999-06-01 | isbn=978-1-56881-111-6| oclc=42809520 | page=}}</ref>
+
+[[William Thurston]] published a list of 24 mathematical problems in a 1982 paper, but Thurston's list was focused on problems from [[geometric topology]] of [[3-manifold|3-dimensional manifolds]], unlike Hilbert's list that covered many different branches of mathematics,  Also unlike Hilbert's problems, many of which took decades to resolve or are still open, 22 of 24 Thurston's problems were resolved in 30 years after publication.
+
+Several mathematicians proposed problem lists at the turn of the millennium, such as Fields Medalist [[Steve Smale]] who responded to a request by [[Vladimir Arnold]] to propose a list of 18 problems.
+
+At least in the mainstream media, the ''de facto'' 21st&nbsp;century analogue of Hilbert's problems is the list of seven [[Millennium Prize Problems]] chosen during 2000 by the [[Clay Mathematics Institute]]. Unlike the Hilbert problems, where the primary award was the admiration of Hilbert in particular and mathematicians in general, each prize problem includes a million-dollar bounty. While most of Hilbert's problems were not recognised widely in mathematical community before publication of his list, all of Millennium Prize Problem was well-known from decades and earned many attempted proofs. As with the Hilbert problems, one of the prize problems (the [[Poincaré conjecture]]) was solved relatively soon after the problems were announced.
+
+The Riemann hypothesis is noteworthy for its appearance on the list of Hilbert problems, Smale's list, the list of Millennium Prize Problems, and even the Weil conjectures, in its geometric guise. Although it has been attacked by major mathematicians of our day, many experts believe that it will still be part of unsolved problems lists for many centuries. Hilbert himself declared: "If I were to awaken after having slept for a thousand years, my first question would be: Has the Riemann hypothesis been proved?"<ref name="Clawson">{{cite book |title=Mathematical Mysteries: The beauty and magic of numbers |first=Calvin C. |last=Clawson |date=8 December 1999 |page=258 |isbn=9780738202594 |lccn=99-066854 |publisher=Basic Books}}</ref>
+
+In 2008, [[DARPA]] announced its own list of 23&nbsp;problems that it hoped could lead to major mathematical breakthroughs, "thereby strengthening the scientific and technological capabilities of the [[United States Department of Defense|DoD]]".<ref name="Cooney 2008 DARPA 23 questions">{{cite web | last=Cooney | first=Michael | title=The world's 23 toughest math questions | website=Network World | date=30 September 2008 | url=https://www.networkworld.com/article/905224/security-the-world-s-23-toughest-math-questions.html | access-date=7 April 2024 | archive-date=7 April 2024 | archive-url=https://web.archive.org/web/20240407213717/https://www.networkworld.com/article/905224/security-the-world-s-23-toughest-math-questions.html | url-status=live }}</ref><ref name="DARPA_math_2019">{{Cite web |date=2008-09-26 |title=DARPA Mathematical Challenges |url=https://www.fbo.gov/?s=opportunity&mode=form&id=c120bc7171c203aa5f4b3903aa08e558&tab=core&_cview=0 |url-status=dead |archive-url=https://web.archive.org/web/20190112150040/https://www.fbo.gov/?s=opportunity&mode=form&id=c120bc7171c203aa5f4b3903aa08e558&tab=core&_cview=0 |archive-date=2019-01-12 |access-date=2021-03-31}}</ref> The DARPA list also includes a few problems from Hilbert's list, e.g. the Riemann hypothesis.
+
+==See also==
+* [[Landau's problems]]
+* [[Millennium Prize Problems]]
+* [[Smale's problems]]
+* [[Taniyama's problems]]
+* [[Thurston's 24 questions]]
+
+==Notes==
+{{notelist|30em}}
+
+==References==
+{{Reflist|30em}}
+
+== Further reading ==
+{{refbegin|30em}}
+* {{Cite book |last=Gray |first=Jeremy |author-link=Jeremy Gray (mathematician) |url=https://www.worldcat.org/title/ocm44153228 |title=The Hilbert challenge |publisher=Oxford University Press |year=2000 |isbn=978-0-19-850651-5 |location=Oxford; New York |oclc=ocm44153228}}
+* {{Cite book |last=Yandell |first=Ben |author-link=Benjamin Yandell |url=https://archive.org/details/honorsclasshilbe0000yand |title=The honors class: Hilbert's problems and their solvers |publisher=A.K. Peters |year=2002 |isbn=978-1-56881-141-3 |location=Natick, Mass |url-access=registration}}
+* {{Cite book |last=Thiele |first=Rüdiger |title=Mathematics and the historian's craft: the Kenneth O. May lectures; [presented at CSHPM meetings since 1990] |title-link=Kenneth May |publisher=Springer |year=2005 |isbn=978-0-387-25284-1 |editor-last=Brummelen |editor-first=Glen Van |series=[[Canadian Mathematical Society|CMS]] Books in Mathematics |volume=21 |location=New York, NY [Heidelberg] |pages=243–295 |chapter=On Hilbert and his twenty-four problems |editor-last2=Kinyon |editor-first2=Michael |editor-last3=Van Brummelen |editor-first3=Glen |editor-last4=Canadian Society for History and Philosophy of Mathematics}}
+* {{Cite book |last1=Dawson |first1=John W. |title=Logical dilemmas: the life and work of Kurt Gödel |last2=Gödel |first2=Kurt |publisher=Peters |year=1997 |isbn=978-1-56881-256-4 |edition=Reprint |location=Wellesley, Mass}}<br />''A wealth of information relevant to Hilbert's "program" and [[Gödel]]'s impact on the Second Question, the impact of [[Arend Heyting]]'s and [[L. E. J. Brouwer|Brouwer]]'s [[Intuitionism]] on Hilbert's philosophy.''
+*  {{Cite book |last=Browder |first=Felix Earl |title=Proceedings of Symposia in Pure Mathematics XXVIII |publisher=American Mathematical Society |year=1976 |isbn=978-0-8218-1428-4 |editor-last=Browder |editor-first=Felix E. |editor-link=Felix Browder |location=Providence (R.I) |chapter=Mathematical Developments Arising from Hilbert Problems}}<br />''A collection of survey essays by experts devoted to each of the 23&nbsp;problems emphasizing current developments.''
+* {{Cite book |last1=Matijasevič |first1=Jurij V. |title=Hilbert's tenth problem |last2=Matijasevič |first2=Jurij V. |publisher=MIT Press |year=1993 |isbn=978-0-262-13295-4 |edition=3. |series=Foundations of computing |location=Cambridge, Mass.}}<br />''An account at the undergraduate level by the mathematician who completed the solution of the problem.''
+{{refend}}
+
+== External links ==
+{{Wikisource|Mathematical Problems}}
+* {{springer|title=Hilbert problems|id=p/h120080}}
+* {{cite web |url=http://www.mathematik.uni-bielefeld.de/~kersten/hilbert/rede.html |title=Original text of Hilbert's talk, in German. |access-date=2005-02-05 |archive-url=https://web.archive.org/web/20120205025851/http://www.mathematik.uni-bielefeld.de/~kersten/hilbert/rede.html |archive-date=2012-02-05 |url-status=dead }}
+* {{cite web |url=https://www.ams.org/journals/bull/2000-37-04/S0273-0979-00-00881-8/S0273-0979-00-00881-8.pdf |title=David Hilbert's "Mathematical Problems": A lecture delivered before the International Congress of Mathematicians at Paris in 1900.}}
+* {{librivox book | title=Mathematical Problems| author=Hilbert}}
+
+{{Hilbert's problems}}
+{{Authority control}}
+
+{{DEFAULTSORT:Hilbert's Problems}}
+[[Category:Hilbert's problems| ]]
+[[Category:Unsolved problems in mathematics]]

@@ -1,0 +1,227 @@
+{{Short description|Algorithmic runtime requirements for matrix multiplication}}
+{{CS1 config|mode=cs1}}
+{{unsolved|computer science|What is the fastest algorithm for matrix multiplication?}}
+In [[theoretical computer science]], the '''computational complexity of matrix multiplication''' dictates [[Analysis of algorithms|how quickly]] the operation of [[matrix multiplication]] can be performed. [[Matrix multiplication algorithm]]s are a central subroutine in theoretical and [[numerical algorithm|numerical]] algorithms for [[numerical linear algebra]] and [[optimization]], so finding the fastest algorithm for matrix multiplication is of major practical relevance.
+
+Directly applying the mathematical definition of matrix multiplication gives an algorithm that requires {{math|''n''<sup>3</sup>}} [[Field (mathematics)|field]] operations to multiply two {{math|''n'' × ''n''}} matrices over that field ({{math|Θ(''n''<sup>3</sup>)}} in [[big O notation]]). Surprisingly, algorithms exist that provide better running times than this straightforward "schoolbook algorithm". The first to be discovered was [[Strassen algorithm|Strassen's algorithm]], devised by [[Volker Strassen]] in 1969 and often referred to as "fast matrix multiplication".<ref name="strassen69">
+{{cite journal 
+ | doi=10.1007/BF02165411 
+ | url=http://www.digizeitschriften.de/dms/img/?PID=GDZPPN001168215 
+ | author=Volker Strassen 
+ | title=Gaussian elimination is not optimal 
+ | journal=Numerische Mathematik 
+ | volume=13 
+ | pages=354&ndash;356 
+ | date=Aug 1969 
+ | issue = 4
+ | bibcode=1969NuMat..13..354S | s2cid = 121656251
+| url-access=subscription 
+ }}</ref> The optimal number of field operations needed to multiply two square {{math|''n'' × ''n''}} matrices [[big O notation|up to constant factors]] is still unknown. This is a major open question in [[theoretical computer science]].
+
+{{As of|2026|08}}, the best bound on the [[Time complexity|asymptotic complexity]] of a matrix multiplication algorithm is {{math|O(''n''<sup>2.371177</sup>)}}.<ref name="dupont2026improving">{{cite arXiv |eprint=2608.16884 |class=cs.DS |title=Improving the Matrix Multiplication Exponent with Modern Optimization and AlphaEvolve |first1=Emilien |last1=Dupont |first2=Marvin |last2=Eisenberger |first3=Borislav |last3=Kozlovskii |first4=Abbas |last4=Mehrabian |first5=Francisco J. R. |last5=Ruiz |first6=Abigail |last6=See |first7=Renfei |last7=Zhou |first8=Josh |last8=Alman |first9=Virginia Vassilevska |last9=Williams |first10=Matej |last10=Balog |year=2026}}</ref> However, this and similar improvements to Strassen are not used in practice, because they are [[galactic algorithm]]s: the constant coefficient hidden by the [[big O notation]] is so large that they are only worthwhile for matrices that are too large to handle on present-day computers.<ref>{{cite journal | last = Iliopoulos | first = Costas S. | doi = 10.1137/0218045 | issue = 4 | journal = SIAM Journal on Computing | mr = 1004789 | quote = The Coppersmith–Winograd algorithm is not practical, due to the very large hidden constant in the upper bound on the number of multiplications required. | pages = 658–669 | title = Worst-case complexity bounds on algorithms for computing the canonical structure of finite abelian groups and the Hermite and Smith normal forms of an integer matrix | url = http://www.williamstein.org/home/wstein/www/home/pernet/Papers/Hermite/Iliopoulos88.pdf | volume = 18 | year = 1989 | access-date = 2015-01-16 | archive-url = https://web.archive.org/web/20140305182030/http://www.williamstein.org/home/wstein/www/home/pernet/Papers/Hermite/Iliopoulos88.pdf | archive-date = 2014-03-05 }}</ref><ref name="robinson">{{cite journal | last=Robinson | first=Sara | title=Toward an Optimal Algorithm for Matrix Multiplication | url=https://archive.siam.org/pdf/news/174.pdf | date=November 2005 | journal=SIAM News | volume=38 | issue=9 | quote=Even if someone manages to prove one of the conjectures—thereby demonstrating that {{math|1=''ω'' = 2}}—the wreath product approach is unlikely to be applicable to the large matrix problems that arise in practice. [...] the input matrices must be astronomically large for the difference in time to be apparent.}}</ref>
+
+== Simple algorithms ==
+
+If ''A'', ''B'' are two {{math|''n'' × ''n''}} matrices over a field, then their product ''AB'' is also an {{math|''n'' × ''n''}} matrix over that field, defined entrywise as
+<math display="block">
+(AB)_{ij} = \sum_{k = 1}^n A_{ik} B_{kj}.
+</math>
+
+=== Schoolbook algorithm ===
+{{For|implementation techniques (in particular parallel and distributed algorithms)|Matrix multiplication algorithm}}
+
+The simplest approach to computing the product of two {{math|''n'' × ''n''}} matrices ''A'' and ''B'' is to compute the arithmetic expressions coming from the definition of matrix multiplication. In [[pseudocode]]:
+
+ '''input''' ''A'' and ''B'', both ''n'' by ''n'' matrices
+ '''initialize''' ''C'' to be an ''n'' by ''n'' matrix of all zeros
+ '''for''' ''i'' from 1 to ''n'':
+     '''for''' ''j'' from 1 to ''n'':
+         '''for''' ''k'' from 1 to ''n'':
+             ''C''[''i''][''j''] = ''C''[''i''][''j''] + ''A''[''i''][''k'']*''B''[''k''][''j'']
+ '''output''' ''C'' (as A*B)
+
+This [[algorithm]] requires {{tmath|n^3}} multiplications and {{tmath|n^3 - n^2}} additions of scalars for computing the product of two square {{math|''n''×''n''}} matrices. Its [[computational complexity]] is therefore {{tmath|O(n^3)}}, in a [[model of computation]] where field operations (addition and multiplication) take constant time (in practice, this is the case for [[floating point]] numbers, but not necessarily for integers).
+
+=== Strassen's algorithm ===
+{{Main|Strassen algorithm}}
+Strassen's algorithm improves on naive matrix multiplication through a [[Divide-and-conquer algorithm|divide-and-conquer]] approach. The key observation is that multiplying two {{math|2 × 2}} matrices can be done with only seven multiplications, instead of the usual eight (at the expense of 11 additional addition and subtraction operations). This means that, treating the input {{math|''n''×''n''}} matrices as [[Block matrix|block]] {{math|2 × 2}} matrices, the task of multiplying two {{math|''n''×''n''}} matrices can be reduced to seven subproblems of multiplying two {{math|''n''/2×''n''/2}} matrices. Applying this recursively gives an algorithm needing <math>O( n^{\log_{2}7}) \approx O(n^{2.807})</math> field operations.
+
+Unlike algorithms with faster asymptotic complexity, Strassen's algorithm is used in practice. The [[numerical stability]] is reduced compared to the naive algorithm,<ref>{{cite journal | last1=Miller | first1=Webb | title=Computational complexity and numerical stability | year=1975 | journal=SIAM News | volume=4 | issue=2 | pages=97–107 | doi=10.1137/0204009}}</ref> but it is faster in cases where {{math|''n'' > 100}} or so<ref name="skiena">{{cite book |first=Steven |last=Skiena |date=2012 |author-link=Steven Skiena |title=The Algorithm Design Manual |url=https://archive.org/details/algorithmdesignm00skie_772 |url-access=limited |publisher=Springer |pages=[https://archive.org/details/algorithmdesignm00skie_772/page/n56 45]–46, 401–403 |doi=10.1007/978-1-84800-070-4_4|chapter=Sorting and Searching |isbn=978-1-84800-069-8 }}</ref> and appears in several libraries, such as [[Basic Linear Algebra Subprograms|BLAS]].<ref>{{cite book |last1=Press |first1=William H. |last2=Flannery |first2=Brian P. |last3=Teukolsky |first3=Saul A. |author3-link=Saul Teukolsky |last4=Vetterling |first4=William T. |title=Numerical Recipes: The Art of Scientific Computing |publisher=[[Cambridge University Press]] |edition=3rd |isbn=978-0-521-88068-8 |year=2007 |page=[https://archive.org/details/numericalrecipes00pres_033/page/n131 108]|title-link=Numerical Recipes }}</ref> Fast matrix multiplication algorithms cannot achieve ''component-wise stability'', but some can be shown to exhibit ''norm-wise stability''.<ref name="bdl16">{{cite journal | last1=Ballard | first1=Grey | last2=Benson | first2=Austin R. | last3=Druinsky | first3=Alex | last4=Lipshitz | first4=Benjamin | last5=Schwartz | first5=Oded | title=Improving the numerical stability of fast matrix multiplication | year=2016 | journal=SIAM Journal on Matrix Analysis and Applications | volume=37 | issue=4 | pages=1382–1418 | doi=10.1137/15M1032168 | arxiv=1507.00687| s2cid=2853388 }}</ref> It is very useful for large matrices over exact domains such as [[finite field]]s, where numerical stability is not an issue.
+
+== Matrix multiplication exponent ==
+[[File:MatrixMultComplexity loglog.svg|thumb|400x400px|Improvement of estimates of the exponent {{math|''ω''}} over time for the computational complexity <math>O(n^\omega)</math> of matrix multiplication, plotted with loglog {{math|''ω''}} scale]]
+{| class="wikitable floatright"
+|+ Timeline of matrix multiplication exponent
+! Year !! Bound on {{math|''ω''}} !! Authors
+|-
+| 1969 || 2.8074 || [[Volker Strassen|Strassen]]<ref name="strassen69" />
+|-
+| 1978 || 2.796 || [[Victor Pan|Pan]]<ref>{{cite book | doi=10.1109/SFCS.1978.34 | author=Victor Yakovlevich Pan | author-link= Victor Pan | contribution=Strassen's Algorithm is not Optimal: Trilinear Technique of Aggregating, Uniting and Canceling for Constructing Fast Algorithms for Matrix Operations | title=Proc. 19th FOCS | pages=166&ndash;176 | date=Oct 1978 | s2cid= 14348408 }}</ref>
+|-
+| 1979 || 2.780 || Bini, {{ill|Milvio Capovani|it|lt=Capovani}}, Romani<ref>{{cite journal | doi=10.1016/0020-0190(79)90113-3 | url=https://www.sciencedirect.com/journal/information-processing-letters/vol/8/issue/5 | author1=Dario Andrea Bini | author2= Milvio Capovani | author3= Francesco Romani | author4= Grazia Lotti | title=<math>O(n^{2.7799})</math> complexity for <math>n \times n</math> approximate matrix multiplication | journal=Information Processing Letters | volume=8 | number=5 | pages=234&ndash;235 | date=Jun 1979 | url-access=subscription }}</ref>
+|-
+| 1981 || 2.522 || [[Arnold Schönhage|Schönhage]]<ref>{{cite journal | doi=10.1137/0210032 | author=A. Schönhage | title=Partial and total matrix multiplication | journal=SIAM Journal on Computing | volume=10 | number=3 | pages=434&ndash;455 | year=1981 }}</ref>
+|-
+| 1981 || 2.517 || Romani<ref>{{cite journal | doi=10.1137/0211020 | author=Francesco Romani | title=Some properties of disjoint sums of tensors related to matrix multiplication | journal=SIAM Journal on Computing | volume=11 | number=2 | pages=263&ndash;267 | year=1982 }}</ref><!-- Note: Romani and Coppersmith-Winograd do not cite each other, so these appear to be simultaneous. -->
+|-
+| 1981 || 2.496 || [[Don Coppersmith|Coppersmith]], [[Shmuel Winograd|Winograd]]<ref name="CW.81">{{cite book | doi=10.1109/SFCS.1981.27 | author1=D. Coppersmith  | author2= S. Winograd | contribution=On the asymptotic complexity of matrix multiplication | title=Proc. 22nd Annual Symposium on Foundations of Computer Science (FOCS) | pages=82&ndash;90 | year=1981 | s2cid=206558664 }}</ref>
+|-
+| 1986 || 2.479 || [[Volker Strassen|Strassen]]<ref>{{cite book | doi=10.1109/SFCS.1986.52 | author=Volker Strassen | contribution=The asymptotic spectrum of tensors and the exponent of matrix multiplication | title=Proc. 27th Ann. Symp. on Foundation of Computer Science (FOCS) | pages=49&ndash;54 | date=Oct 1986 | isbn=0-8186-0740-8 | s2cid=15077423 }}</ref>
+|-
+| 1990 || 2.3755 || [[Don Coppersmith|Coppersmith]], [[Shmuel Winograd|Winograd]]<ref>{{cite journal | author1=D. Coppersmith  | author2= S. Winograd | title=Matrix multiplication via arithmetic progressions | journal=Journal of Symbolic Computation | volume=9 | number=3 | pages=251&ndash;280 | date=Mar 1990 | doi=10.1016/S0747-7171(08)80013-2 | doi-access=free | bibcode= 1990JSymC...9..251C }}</ref>
+|-
+| 2010 || 2.3737 || Stothers<ref>{{cite thesis | type=Ph.D. thesis | url=https://era.ed.ac.uk/handle/1842/4734 | last=Stothers | first= Andrew James | title=On the complexity of matrix multiplication | institution=University of Edinburgh | year=2010 }}</ref>
+|-
+| 2012 || 2.3729 || [[Virginia Vassilevska Williams|Williams]]<ref>{{cite book | doi=10.1145/2213977.2214056 | author=Virginia Vassilevska Williams | contribution=Multiplying Matrices Faster than Coppersmith-Winograd | editor1=Howard J. Karloff  | editor2= Toniann Pitassi | title=Proc. 44th [[Symposium on Theory of Computing]] (STOC) | publisher=ACM  | pages=887&ndash;898 | year=2012 | isbn=978-1-4503-1245-5 | s2cid=14350287 }}</ref><ref name="Williams.2014">{{cite report | last=Williams | first=Virginia Vassilevska | author-link=Virginia Vassilevska Williams | title=Multiplying matrices in <math>O(n^{2.373})</math> time | institution=Stanford University | type=Technical Report | url=http://www.cs.stanford.edu/~virgi/matrixmult-f.pdf }}</ref>
+|-
+| 2014 || 2.3728639 || Le Gall<ref name="LeGall2014">{{cite book | last1=Le Gall | first1=François | pages=296&ndash;303 | year = 2014 | arxiv=1401.7714 | title = Proceedings of the 39th International Symposium on Symbolic and Algebraic Computation - ISSAC '14 | chapter=Algebraic complexity theory and matrix multiplication | doi=10.1145/2608628.2627493 | editor=Katsusuke Nabeshima | isbn=978-1-4503-2501-1 | bibcode=2014arXiv1401.7714L | s2cid=2597483 }}</ref>
+|-
+| 2020 || 2.3728596 || Alman, [[Virginia Vassilevska Williams|Williams]]<ref name="aw20">{{cite journal | last1=Alman | first1=Josh | last2=Williams | first2=Virginia Vassilevska | year = 2024 | arxiv=2010.05846 | title = A Refined Laser Method and Faster Matrix Multiplication | journal=Theoretics | article-number=11261 | doi=10.46298/theoretics.24.21 }}</ref><ref>{{Cite web|last=Hartnett|first=Kevin|title=Matrix Multiplication Inches Closer to Mythic Goal|url=https://www.quantamagazine.org/mathematicians-inch-closer-to-matrix-multiplication-goal-20210323/|access-date=2021-04-01|website=Quanta Magazine|date=23 March 2021 |language=en}}</ref>
+|-
+| 2022 || 2.371866 || Duan, Wu, Zhou<ref name="dwz22">{{cite arXiv |eprint=2210.10173 |class=cs.DS |first1=Ran |last1=Duan |first2=Hongxun |last2=Wu |title=Faster Matrix Multiplication via Asymmetric Hashing |last3=Zhou |first3=Renfei |year=2022}}</ref>
+|-
+| 2024 || 2.371552 || [[Virginia Vassilevska Williams|Williams]], Xu, Xu, and Zhou<ref name="wxxz23">{{cite conference |last1=Vassilevska Williams |first1=Virginia |last2=Xu |first2=Yinzhan |last3=Xu |first3=Zixuan |last4=Zhou |first4=Renfei |title=New Bounds for Matrix Multiplication: from Alpha to Omega |conference=Proceedings of the 2024 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA) |pages=3792–3835 |arxiv=2307.07970 |doi=10.1137/1.9781611977912.134}}</ref>
+|-
+| 2024 || 2.371339 || Alman, Duan, [[Virginia Vassilevska Williams|Williams]], Xu, Xu, and Zhou<ref name="adwxxz24">{{cite arXiv |eprint=2404.16349 |class=cs.DS |first1=Josh |last1=Alman |first2=Ran |last2=Duan |first3=Virginia Vassilevska |last3=Williams |first4=Yinzhan| last4=Xu |first5=Zixuan |last5=Xu |first6=Renfei |last6=Zhou |title=More Asymmetry Yields Faster Matrix Multiplication |year=2024}}</ref>
+|-
+| 2026 || 2.371177 || Dupont, Eisenberger, Kozlovskii, Mehrabian,<BR>Ruiz, See, Zhou, Alman, [[Virginia Vassilevska Williams|Williams]], Balog<ref name="dupont2026improving"/>
+|}
+
+The ''matrix multiplication exponent'', usually denoted {{math|''ω''}}, is the smallest [[real number]] for which any two <math>n\times n</math> matrices over a field can be multiplied together using <math>n^{\omega + o(1)}</math> field operations. This notation is commonly used in [[algorithm]]s research, so that algorithms using matrix multiplication as a subroutine have bounds on running time that can update as bounds on {{math|''ω''}} improve.
+
+Using a naive lower bound and schoolbook matrix multiplication for the upper bound, one can straightforwardly conclude that {{math|2 ≤ ''ω'' ≤ 3}}. Whether {{math|1=''ω'' = 2}} is a major open question in [[theoretical computer science]], and there is a line of research developing matrix multiplication algorithms to get improved bounds on {{math|''ω''}}.
+
+All recent algorithms in this line of research use the ''laser method'', a generalization of the Coppersmith–Winograd algorithm, which was given by [[Don Coppersmith]] and [[Shmuel Winograd]] in 1990 and was the best matrix multiplication algorithm until 2010.<ref name="coppersmith">{{cite journal|doi=10.1016/S0747-7171(08)80013-2 |title=Matrix multiplication via arithmetic progressions |url=http://www.cs.umd.edu/~gasarch/TOPICS/ramsey/matrixmult.pdf |year=1990 |last1=Coppersmith |first1=Don |last2=Winograd |first2=Shmuel |journal=Journal of Symbolic Computation |volume=9|issue=3|page=251|doi-access=free |bibcode=1990JSymC...9..251C }}</ref> The conceptual idea of these algorithms is similar to Strassen's algorithm: a method is devised for multiplying two {{math|''k'' × ''k''}}-matrices with fewer than {{math|''k''<sup>3</sup>}} multiplications, and this technique is applied recursively. The laser method has limitations to its power: [[Andris Ambainis|Ambainis]], Filmus and François Le Gall{{efn|Not to be confused with [[Jean-François Le Gall]]}} prove that it cannot be used to show that {{math|ω < 2.3725}} by analyzing higher and higher tensor powers of a certain identity of Coppersmith and Winograd and neither {{math|ω < 2.3078}} for a wide class of variants of this approach.<ref name="afl142">{{Cite book |last1=Ambainis |first1=Andris |title=Proceedings of the forty-seventh annual ACM symposium on Theory of Computing |last2=Filmus |first2=Yuval |last3=Le Gall |first3=François |date=2015-06-14 |publisher=Association for Computing Machinery |isbn=978-1-4503-3536-2 |series=STOC '15 |location=Portland, Oregon, USA |pages=585–593 |chapter=Fast Matrix Multiplication |doi=10.1145/2746539.2746554 |arxiv=1411.5414 |s2cid=8332797}}</ref> In 2022 Duan, Wu and Zhou devised a variant breaking the first of the two barriers with {{math|ω < 2.37188}},<ref name="dwz22" /> they do so by identifying a source of potential optimization in the laser method termed ''combination loss'' for which they compensate using an asymmetric version of the hashing method in the Coppersmith–Winograd algorithm. 
+
+Nonetheless, the above are classical examples of [[Galactic algorithm#Matrix multiplication|galactic algorithms]]. On the opposite, the above Strassen's algorithm of 1969 and [[Victor Pan|Pan's]] algorithm of 1978, whose respective exponents are slightly above and below 2.8, have constant coefficients that make them feasible.<ref>{{cite journal | last1=Laderman | first1=Julian | last2=Pan | first2=Victor |last3=Sha | first3=Xuan-He | title=On practical algorithms for accelerated matrix multiplication | year=1992 | journal=Linear Algebra and Its Applications | volume=162-164 | pages=557–588 | doi=10.1016/0024-3795(92)90393-O}}</ref>
+
+=== Group theory reformulation of matrix multiplication algorithms ===
+
+[[Henry Cohn]], [[Robert Kleinberg]], [[Balázs Szegedy]] and [[Chris Umans]] put methods such as the Strassen and Coppersmith–Winograd algorithms in an entirely different [[group theory|group-theoretic]] context, by utilising triples of subsets of finite groups which satisfy a disjointness property called the [[Triple product property|triple product property (TPP)]]. They also give conjectures that, if true, would imply that there are matrix multiplication algorithms with essentially quadratic complexity. This implies that the optimal exponent of matrix multiplication is 2, which most researchers believe is indeed the case.<ref name="robinson"/> One such conjecture is that families of [[wreath product]]s of [[Abelian group]]s with symmetric groups realise families of subset triples with a simultaneous version of the TPP.<ref>{{Cite book | last1 = Cohn | first1 = H. | last2 = Kleinberg | first2 = R. | last3 = Szegedy | first3 = B. | last4 = Umans | first4 = C. | chapter = Group-theoretic Algorithms for Matrix Multiplication | doi = 10.1109/SFCS.2005.39 | title = 46th Annual IEEE Symposium on Foundations of Computer Science (FOCS'05) | page = 379 | year = 2005 | arxiv = math/0511460 | isbn = 0-7695-2468-0 | s2cid = 41278294 | url = https://authors.library.caltech.edu/23966/ }}</ref><ref>{{cite book |first1=Henry |last1=Cohn |first2=Chris |last2=Umans |chapter=A Group-theoretic Approach to Fast Matrix Multiplication |arxiv=math.GR/0307321 |title=Proceedings of the 44th Annual IEEE Symposium on Foundations of Computer Science, 11–14 October 2003 |year=2003 |publisher=IEEE Computer Society |pages=438–449 |doi=10.1109/SFCS.2003.1238217 |isbn=0-7695-2040-5 |s2cid=5890100 }}</ref> Several of their conjectures have since been disproven by Blasiak, Cohn, Church, Grochow, Naslund, Sawin, and Umans using the Slice Rank method.<ref name=":0">{{Cite book | last1 = Blasiak | first1 = J. | last2 = Cohn | first2 = H. | last3 = Church | first3 = T. | last4 = Grochow | first4 = J. | last5 = Naslund | first5= E. | last6 = Sawin | first6 = W. | last7=Umans | first7= C.| chapter= On cap sets and the group-theoretic approach to matrix multiplication | doi = 10.19086/da.1245 | title = Discrete Analysis | year = 2017 | page = 1245 | s2cid = 9687868 | url = http://discreteanalysisjournal.com/article/1245-on-cap-sets-and-the-group-theoretic-approach-to-matrix-multiplication}}</ref> Further, Alon, Shpilka and [[Chris Umans]] have recently shown that some of these conjectures implying fast matrix multiplication are incompatible with another plausible conjecture, the [[sunflower conjecture]],<ref>{{cite journal |journal=Electronic Colloquium on Computational Complexity |date=April 2011 |author1-link=Noga Alon |last1=Alon |first1=N. |last2=Shpilka |first2=A. |last3=Umans |first3=C. |url=http://eccc.hpi-web.de/report/2011/067/ |title=On Sunflowers and Matrix Multiplication |id=TR11-067 }}</ref> which in turn is related to the [[Cap set#Matrix multiplication algorithms|cap set problem.]]<ref name=":0" />
+
+=== Lower bounds for ''ω'' ===
+
+There is a trivial lower bound of {{tmath|\omega \ge 2}}. Since any algorithm for multiplying two {{math|''n'' × ''n''}}-matrices has to process all {{math|2''n''<sup>2</sup>}} entries, there is a trivial asymptotic lower bound of {{math|Ω(''n''<sup>2</sup>)}} operations for any matrix multiplication algorithm. Thus {{tmath|2\le \omega < 2.371177}}. It is unknown whether {{tmath|\omega > 2}}. The best known lower bound for matrix-multiplication complexity is {{math|Ω(''n''<sup>2</sup> log(''n''))}}, for bounded coefficient [[Arithmetic circuit complexity|arithmetic circuits]] over the real or complex numbers, and is due to [[Ran Raz]].<ref>{{cite book | last1 = Raz | first1 = Ran | title = Proceedings of the thiry-fourth annual ACM symposium on Theory of computing | chapter = On the complexity of matrix product | author-link = Ran Raz | year = 2002| pages = 144–151 | doi = 10.1145/509907.509932 | isbn = 1-58113-495-9 | s2cid = 9582328 }}</ref>
+
+It is known that, under the model of computation typically studied, there is no matrix multiplication algorithm that uses precisely {{math|''O''(''n''<sup>''ω''</sup>)}} operations; there must be an additional factor of {{math|''n''<sup>o(1)</sup>}}.<ref name="CW.81"/>
+
+=== Rectangular matrix multiplication ===
+
+Similar techniques also apply to rectangular matrix multiplication. The central object of study is <math>\omega(k)</math>, which is the smallest <math>c</math> such that one can multiply a matrix of size <math>n\times \lceil n^k\rceil</math> with a matrix of size <math>\lceil n^k\rceil \times n</math> with <math>O(n^{c + o(1)})</math> arithmetic operations. A result in algebraic complexity states that multiplying matrices of size <math>n\times \lceil n^k\rceil</math> and <math>\lceil n^k\rceil \times n</math> requires the same number of arithmetic operations as multiplying matrices of size <math>n\times \lceil n^k\rceil</math> and <math>n \times n</math> and of size <math>n \times n</math> and <math>n\times \lceil n^k\rceil</math>, so this encompasses the complexity of rectangular matrix multiplication.<ref name="gall18">{{cite conference
+ | last1 = Gall | first1 = Francois Le
+ | last2 = Urrutia | first2 = Florent
+ | editor-last = Czumaj | editor-first = Artur
+ | arxiv = 1708.05622
+ | contribution = Improved rectangular matrix multiplication using powers of the Coppersmith-Winograd tensor
+ | doi = 10.1137/1.9781611975031.67
+ | pages = 1029–1046
+ | publisher = Society for Industrial and Applied Mathematics
+ | title = Proceedings of the Twenty-Ninth Annual ACM-SIAM Symposium on Discrete Algorithms, SODA 2018, New Orleans, LA, USA, January 7–10, 2018
+ | year = 2018| isbn = 978-1-61197-503-1
+ }}</ref> This generalizes the [[square matrix]] multiplication exponent, since <math>\omega(1) = \omega</math>.
+
+Since the output of the matrix multiplication problem is size <math>n^2</math>, we have <math>\omega(k) \geq 2</math> for all values of <math>k</math>. If one can prove for some values of <math>k</math> between 0 and 1 that <math>\omega(k) \leq 2</math>, then such a result shows that <math>\omega(k) = 2</math> for those <math>k</math>. The largest ''k'' such that <math>\omega(k) = 2</math> is known as the ''dual matrix multiplication exponent'', usually denoted ''α''. ''α'' is referred to as the "[[Duality (optimization)|dual]]" because showing that <math>\alpha = 1</math> is equivalent to showing that <math>\omega = 2</math>. Like the matrix multiplication exponent, the dual matrix multiplication exponent sometimes appears in the complexity of algorithms in numerical linear algebra and optimization.<ref>{{Cite journal|last1=Cohen|first1=Michael B.|last2=Lee|first2=Yin Tat|last3=Song|first3=Zhao|date=2021-01-05|title=Solving Linear Programs in the Current Matrix Multiplication Time|journal=Journal of the ACM|volume=68|issue=1|pages=3:1–3:39|doi=10.1145/3424305|issn=0004-5411|arxiv=1810.07896|s2cid=231955576 }}</ref>
+
+The first bound on ''α'' is by [[Don Coppersmith|Coppersmith]] in 1982, who showed that <math>\alpha > 0.17227</math>.<ref>{{Cite journal|last=Coppersmith|first=D.|date=1982-08-01|title=Rapid Multiplication of Rectangular Matrices|url=https://epubs.siam.org/doi/10.1137/0211037|journal=SIAM Journal on Computing|volume=11|issue=3|pages=467–471|doi=10.1137/0211037|issn=0097-5397|url-access=subscription}}</ref> The current best [[Peer review|peer-reviewed]] bound on ''α'' is <math>\alpha \geq 0.321334</math>, given by Williams, Xu, Xu, and Zhou.<ref name="wxxz23"/>
+
+==Bit complexity of matrix multiplication==
+
+The ''algebraic model'' detailed above assumes that each field operation like addition or multiplications takes uniform cost {{tmath|O(1)}}. This is a realistic assumption for exact arithmetic in finite fields or approximate arithmetic of floating point numbers.
+
+Over different arithmetic domains such as exact arithmetic over the integers this assumption is no longer justified and one takes into account that the computational costs of arithmetic operations depend on the bit length of the arguments. This is called [[Computational_complexity#bit_complexity|bit complexity]].
+
+Harvey and van der Hoeven<ref name=HvdH>{{Cite journal | last1 = Harvey | first1 = D. | last2 = van der Hoeven | first2 = J. |date=2018|title=On the complexity of integer matrix multiplication|url=https://hal.science/hal-01071191/|journal=Journal of Symbolic Computation|volume=89|issue=1|pages=1–8|doi=10.1016/j.jsc.2017.11.001|issn=0747-7171}}</ref> record the general bound of <math>O( d^{\omega}\text{M}(n + \lg(d))</math> operations in the model of [[multitape Turing machine]] where <math>d</math> is the dimension of the two square matrices, <math>n</math> is the maximal bit size of the  integer matrix coefficients, <math>\omega</math> denotes the matrix multiplication exponent in the algebraic model introduced above, <math>\text{M}(x)=O(x\log(x))</math> denotes the [[Computational_complexity_of_mathematical_operations|complexity of multiplying two integers of x bit length]] and <math>\lg(d)=\lceil\log_2(d)\rceil</math> is a particular choice of logarithm. They also give improved bounds conditional on the matrix dimension not being too large compared to the bit length of the coefficients, e.g. if <math>\lg(d)<Cn</math> for some constant <math>C>1</math>.
+
+The example of finite fields above vs. the integers demonstrates that the bit complexity of matrix multiplication depends on the arithmetic domain of the matrix coefficient. For finite fields the bit length of the coefficients can be bounded by a constant and no intermediate ''coefficient growth'' can occur. For integers this phenomenon leads to the inclusion of the term <math>\lg(d)</math> in the factor <math>\text{M}(n+\lg(d))</math> reflecting the multiplication of integers of potentially ever larger bit length during the course of the matrix multiplication algorithm.
+
+==Related problems==
+{{further|Computational complexity of mathematical operations#Matrix algebra}}
+
+Problems that have the same asymptotic complexity as matrix multiplication include [[determinant]], [[matrix inversion]], [[Gaussian elimination]] (see next section). Problems with complexity that is expressible in terms of <math>\omega</math> include [[characteristic polynomial]], eigenvalues (but not eigenvectors), [[Hermite normal form]], and [[Smith normal form]].{{citation needed|date=March 2018}}
+
+===Matrix inversion, determinant and Gaussian elimination===
+In his 1969 paper, where he proved the complexity <math>O(n^{\log_2 7}) \approx O(n^{2.807})</math> for matrix computation, Strassen proved also that [[matrix inversion]], [[determinant]] and [[Gaussian elimination]] have, up to a multiplicative constant, the same [[computational complexity]] as matrix multiplication. The proof does not make any assumptions on matrix multiplication that is used, except that its complexity is <math>O(n^\omega)</math> for some <math>\omega \ge 2</math>.
+
+The starting point of Strassen's proof is using [[block matrix]] multiplication. Specifically, a matrix of even dimension {{math|2''n''×2''n''}} may be partitioned in four {{math|''n''×''n''}} blocks
+<math display="block">\begin{bmatrix} {A} & {B} \\{C} & {D} \end{bmatrix}.</math>
+Under this form, its inverse is 
+<math display="block">
+\begin{bmatrix} {A} & {B} \\ {C} & {D} \end{bmatrix}^{-1} = 
+\begin{bmatrix} 
+{A}^{-1}+{A}^{-1}{B}({D}-{CA}^{-1}{B})^{-1}{CA}^{-1} & -{A}^{-1}{B}({D}-{CA}^{-1}{B})^{-1} 
+\\ -({D}-{CA}^{-1}{B})^{-1}{CA}^{-1} & ({D}-{CA}^{-1}{B})^{-1} 
+\end{bmatrix},
+</math>
+provided that {{mvar|A}} and <math>{D}-{CA}^{-1}{B}</math> are invertible.
+
+Thus, the inverse of a {{math|2''n''×2''n''}} matrix may be computed with two inversions, six multiplications and four additions or additive inverses of {{math|''n''×''n''}} matrices. It follows that, denoting respectively by {{math|''I''(''n'')}}, {{math|''M''(''n'')}} and {{math|1= ''A''(''n'') = ''n''<sup>2</sup>}} the number of operations needed for inverting, multiplying and adding {{math|''n''×''n''}} matrices, one has 
+<math display="block">I(2n) \le 2I(n) + 6M(n)+ 4 A(n).</math>
+If <math>n=2^k,</math> one may apply this formula recursively:
+<math display="block">\begin{align}
+I(2^k) &\le 2I(2^{k-1}) + 6M(2^{k-1})+ 4 A(2^{k-1})\\
+&\le 2^2I(2^{k-2}) + 6(M(2^{k-1})+2M(2^{k-2})) + 4(A(2^{k-1}) + 2A(2^{k-2}))\\
+&\,\,\,\vdots
+\end{align}</math>
+If <math>M(n)\le cn^\omega,</math> and <math>\alpha=2^\omega\ge 4,</math> one gets eventually 
+<math display="block">\begin{align}
+I(2^k) &\le 2^k I(1) + 6c(\alpha^{k-1}+2\alpha^{k-2} + \cdots +2^{k-1}\alpha^0) + k 2^{k+1}\\
+&\le 2^k + 6c\frac{\alpha^k-2^k}{\alpha-2} + k 2^{k+1}\\
+&\le d(2^k)^\omega
+\end{align}</math>
+for some constant {{mvar|d}}.
+
+For matrices whose dimension is not a power of two, the same complexity is reached by increasing the dimension of the matrix to a power of two, by padding the matrix with rows and columns whose entries are 1 on the diagonal and 0 elsewhere.
+
+This proves the asserted complexity for matrices such that all submatrices that have to be inverted are indeed invertible. This complexity is thus proved for almost all matrices, as a matrix with randomly chosen entries is invertible with probability one.
+
+The same argument applies to [[LU decomposition]], as, if the matrix {{mvar|A}} is invertible, the equality
+<math display="block">\begin{bmatrix} {A} & {B} \\{C} & {D} \end{bmatrix} 
+= \begin{bmatrix}I & 0\\CA^{-1}&I\end{bmatrix}\,\begin{bmatrix}A&B\\0&D-CA^{-1}B\end{bmatrix}</math> 
+defines a block LU decomposition that may be applied recursively to <math>A</math> and <math>D-CA^{-1}B,</math> for getting eventually a true LU decomposition of the original matrix.
+
+The argument applies also for the determinant, since it results from the block LU decomposition that 
+<math display="block">\det \begin{bmatrix} {A} & {B} \\{C} & {D} \end{bmatrix} = 
+\det(A)\det(D-CA^{-1}B).</math>
+
+===Minimizing number of multiplications===
+
+Related to the problem of minimizing the number of arithmetic operations is minimizing the number of multiplications, which is typically a more costly operation than addition. A <math>O(n^\omega)</math> algorithm for matrix multiplication must necessarily only use <math>O(n^\omega)</math> multiplication operations, but these algorithms are impractical. For a fixed matrix size, one usually counts the multiplications of a ''non-commutative'' (bilinear) algorithm, which does not assume that the matrix entries commute. The minimum number of such multiplications is the [[tensor rank]] of the corresponding matrix multiplication tensor. Only non-commutative algorithms can be applied recursively to [[Block matrix|block matrices]]: an algorithm that multiplies two <math>k\times k</math> matrices with <math>r</math> multiplications yields an <math>O(n^{\log_k r})</math> algorithm for <math>n\times n</math> matrices. Algorithms that exploit commutativity of the entries may use fewer multiplications for a fixed size, but they cannot be applied recursively.
+
+For <math>2\times 2</math> matrices the problem is settled. Seven multiplications are necessary, so Strassen's algorithm is optimal.<ref name="Winograd1971">{{Cite journal |last=Winograd |first=S. |date=1971-10-01 |title=On multiplication of 2 × 2 matrices |journal=Linear Algebra and Its Applications |language=en |volume=4 |issue=4 |pages=381–388 |doi=10.1016/0024-3795(71)90009-7 |issn=0024-3795|doi-access=free }}</ref><ref>{{cite journal |last1=Hopcroft |first1=John E. |author1-link=John Hopcroft |last2=Kerr |first2=Leslie R. |title=On minimizing the number of multiplications necessary for matrix multiplication |journal=SIAM Journal on Applied Mathematics |volume=20 |issue=1 |pages=30–36 |year=1971 |doi=10.1137/0120004}}</ref>
+
+For <math>3\times 3</math> matrices, the best known non-commutative algorithm uses 23 multiplications.<ref>{{Cite journal |last=Laderman |first=Julian D. |date=1976 |title=A noncommutative algorithm for multiplying 3×3 matrices using 23 multiplications |url=https://www.ams.org/bull/1976-82-01/S0002-9904-1976-13988-2/ |journal=Bulletin of the American Mathematical Society |language=en |volume=82 |issue=1 |pages=126–128 |doi=10.1090/S0002-9904-1976-13988-2 |issn=0002-9904|doi-access=free }}</ref> Over a [[commutative ring]], 21 multiplications suffice.<ref>{{cite journal
+ | last = Rosowski | first = Andreas
+ | arxiv = 1904.07683
+ | doi = 10.1016/j.jsc.2022.05.002
+ | journal = Journal of Symbolic Computation
+ | mr = 4433063
+ | pages = 302–321
+ | title = Fast commutative matrix algorithms
+ | volume = 114
+ | year = 2023}}</ref>Bläser proved that any bilinear algorithm multiplying <math>n\times m</math> matrices with <math>m\times n</math> matrices needs at least <math>2mn+2n-m-2</math> multiplications when <math>m \ge n \ge 3</math>, which gives at least 19 multiplications for <math>n=3</math> and at least 34 for <math>n=4</math>.<ref name="Blaser2003">{{Cite journal |last=Bläser |first=Markus |date=February 2003 |title=On the complexity of the multiplication of matrices of small formats |journal=Journal of Complexity |language=en |volume=19 |issue=1 |pages=43–60 |doi=10.1016/S0885-064X(02)00007-9|doi-access=free }}</ref> Over <math>\mathbb{Z}/2\mathbb{Z}</math>, a [[computer-assisted proof]] raised the <math>3\times 3</math> lower bound to 20.<ref>{{cite arXiv |last=Wang |first=Chengu |title=Automated Lower Bounds for Tensor Rank over Finite Fields |eprint=2603.07280 |year=2026 |class=cs.CC }}</ref>
+
+For <math>4\times 4</math> matrices, two levels of Strassen's algorithm give 49 multiplications over any ring. In characteristic 2, including <math>\mathbb{Z}/2\mathbb{Z}</math>, 47 multiplications suffice.<ref>See [https://www.nature.com/articles/s41586-022-05172-4/figures/6 Extended Data Fig. 1: Algorithm for multiplying 4 × 4 matrices in modular arithmetic (<math>\mathbb{Z}_{2}</math>) with 47 multiplications] in {{Cite journal |title=Discovering faster matrix multiplication algorithms with reinforcement learning | year=2022 |language=en |doi=10.1038/s41586-022-05172-4| pmid=36198780 | last1=Fawzi | first1=A. | last2=Balog | first2=M. | last3=Huang | first3=A. | last4=Hubert | first4=T. | last5=Romera-Paredes | first5=B. | last6=Barekatain | first6=M. | last7=Novikov | first7=A. | last8=Ruiz | first8=F. J. R. | last9=Schrittwieser | first9=J. | last10=Swirszcz | first10=G. | last11=Silver | first11=D. | last12=Hassabis | first12=D. | last13=Kohli | first13=P. | journal=Nature | volume=610 | issue=7930 | pages=47–53 | pmc=9534758 | bibcode=2022Natur.610...47F }}</ref> In 2025, the evolutionary coding agent [[AlphaEvolve]] found a non-commutative algorithm with 48 multiplications and complex coefficients, the first with fewer than 49 multiplications over fields of characteristic 0.<ref>{{cite arXiv |last1=Novikov |first1=Alexander |display-authors=etal |title=AlphaEvolve: A coding agent for scientific and algorithmic discovery |eprint=2506.13131 |year=2025 |class=cs.AI }}</ref><ref name="DPS2025">{{cite arXiv |last1=Dumas |first1=Jean-Guillaume |last2=Pernet |first2=Clément |last3=Sedoglavic |first3=Alexandre |title=A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications |eprint=2506.13242 |year=2025 |class=cs.SC }}</ref> Dumas, Pernet and Sedoglavic transformed it into an equivalent algorithm with rational coefficients, valid over any ring in which 2 is invertible.<ref name="DPS2025"/> Applied recursively, it gives the exponent <math>\log_4 48 = 2 + \log_4 3 \approx 2.7925</math>, compared with <math>\log_2 7 \approx 2.8074</math> for Strassen's algorithm. Algorithms that exploit commutativity had needed fewer multiplications long before: Winograd's 1968 algorithm uses 48 over any commutative ring, and Waksman's 1970 variant uses 46 when division by 2 is allowed.<ref>{{cite journal |last=Winograd |first=Shmuel |title=A new algorithm for inner product |journal=IEEE Transactions on Computers |volume=C-17 |pages=693–694 |year=1968 |issue=7 |doi=10.1109/TC.1968.227420 |bibcode=1968ITCmp.100..693W }}</ref><ref>{{cite journal |last=Waksman |first=Abraham |title=On Winograd's algorithm for inner products |journal=IEEE Transactions on Computers |volume=C-19 |pages=360–361 |year=1970 |issue=4 |doi=10.1109/T-C.1970.222926 |bibcode=1970ITCmp.100..360W }}</ref>
+
+==See also==
+* [[Computational complexity of mathematical operations]]
+* {{slink|CYK algorithm#Valiant's algorithm}} 
+* [[Freivalds' algorithm]], a simple [[Monte Carlo algorithm]] that, given matrices {{mvar|A}}, {{mvar|B}} and {{mvar|C}}, verifies in {{math|Θ(''n''<sup>2</sup>)}} time if {{math|''AB'' {{=}} ''C''}}.
+* [[Matrix chain multiplication]]
+* [[Matrix multiplication]], for abstract definitions
+* [[Matrix multiplication algorithm]], for practical implementation details
+* [[Sparse matrix–vector multiplication]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{reflist|30em}}
+
+== External links ==
+*[https://fmm.univ-lille.fr/ Yet another catalogue of fast matrix multiplication algorithms]
+*{{cite journal |last1=Fawzi |first1=A. |last2=Balog |first2=M. |last3=Huang |first3=A. |first4=T. |last4=Hubert |first5=B. |last5=Romera-Paredes |first6=M. |last6=Barekatain |first7=A. |last7=Novikov |first8=F.J.R. |last8=Ruiz |first9=J. |last9=Schrittwieser |first10=G. |last10=Swirszcz |first11=D. |last11=Silver |first12=D. |last12=Hassabis |first13=P. |last13=Kohli |title=Discovering faster matrix multiplication algorithms with reinforcement learning |journal=Nature |volume=610 |issue= 7930|pages=47–53 |date=2022 |doi=10.1038/s41586-022-05172-4 |pmid=36198780 |pmc=9534758 |bibcode=2022Natur.610...47F |url=}}
+
+[[Category:Computer arithmetic algorithms]]
+[[Category:Computational complexity theory]]
+[[Category:Matrix theory]]
+[[Category:Unsolved problems in computer science]]

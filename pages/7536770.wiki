@@ -1,0 +1,99 @@
+{{Short description|American mathematician (born 1947)}}
+{{Use mdy dates|date=November 2011}}
+{{Infobox scientist
+| name              = Dorian M. Goldfeld
+| image             = Dorian Goldfeld.jpg
+| image_size        =
+| caption           = Dorian Goldfeld at The Analytic Theory of Automorphic Forms workshop, [[Oberwolfach]], Germany (2011)
+| birth_date        = {{birth date and age|1947|01|21}}
+| birth_place       = [[Marburg]], Germany
+| death_date        = 
+| death_place       = 
+| fields            = [[Mathematics]]
+| workplaces        = [[Columbia University]]<br />[[Massachusetts Institute of Technology]]
+| education         = Columbia University (B.S., 1967; Ph.D., 1969)
+| doctoral_advisor  = [[Patrick X. Gallagher]]
+| doctoral_students = [[M. Ram Murty]]
+| known_for         = {{ubl|Analytic number theory|Automorphic forms|Cryptography}}
+| awards            = [[Cole Prize|Frank Nelson Cole Prize in Number Theory]] (1987)<br />[[Sloan Fellowship]] (1977–1979)<br />Vaughan prize (1985)<br />Fellow of the [[American Academy of Arts and Sciences]] (April 2009) 
+}}
+'''Dorian Morris Goldfeld''' (born January 21, 1947) is an American mathematician working in [[analytic number theory]] and [[automorphic forms]] at [[Columbia University]].
+
+==Professional career==
+Goldfeld received his B.S. degree in 1967 from Columbia University. His doctoral dissertation, entitled "Some Methods of Averaging in the Analytical Theory of Numbers", was completed under the supervision of [[Patrick X. Gallagher]] in 1969, also at Columbia.  He has held positions at the [[University of California at Berkeley]] ([[Miller Fellow]], 1969–1971), [[Hebrew University]] (1971–1972), [[Tel Aviv University]] (1972–1973), [[Institute for Advanced Study]] (1973–1974), in Italy (1974–1976), at [[MIT]] (1976–1982), [[University of Texas at Austin]] (1983–1985) and [[Harvard University|Harvard]] (1982–1985). Since 1985, he has been a professor at Columbia University.<ref name="CV">{{cite web |title=Biographical Data Dorian Goldfeld |url=http://www.math.columbia.edu/~goldfeld/CurriculumVitae%282018%29.pdf |access-date=February 8, 2019}}</ref>
+
+He is a member of the editorial board of ''[[Acta Arithmetica]]'' and of ''[[The Ramanujan Journal]]''.<ref>{{cite web |title=Acta Arithmetica |publisher=Polish Academy of Sciences|url=https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica |access-date=February 8, 2019}}</ref><ref>{{cite web |title=Editorial board |publisher=Springer|url=https://www.springer.com/mathematics/numbers/journal/11139?detailsPage=editorialBoard |access-date=February 8, 2019}}</ref> On January 1, 2018 he became the Editor-in-Chief of the [[Journal of Number Theory]].<ref>{{cite web |title=Editorial board |publisher=Elsevier |url=https://www.elsevier.com/journals/journal-of-number-theory/0022-314x/editorial-board |access-date=February 8, 2019}}</ref>
+
+He is a co-founder and board member of [http://www.veridify.com Veridify Security], formerly SecureRF, a corporation that has developed the world's first linear-based security solutions.<ref>[http://www.securerf.com SecureRF Corporation, co-founded by Dorian Goldfeld]</ref>
+
+Goldfeld advised several doctoral students including [[M. Ram Murty]].<ref>{{MathGenealogy |id=37491}}</ref> In 1986, he brought [[Shou-Wu Zhang]] to the United States to study at Columbia.<ref name="amss">{{cite web |url=http://www.amss.ac.cn/xwdt/zhxw/2011/201111/t20111111_3394825.html |title=从放鸭娃到数学大师 |trans-title=From ducklings to mathematics master |publisher=Academy of Mathematics and Systems Science |date=11 November 2011 |access-date=5 May 2019 |language=zh |archive-date=May 5, 2019 |archive-url=https://web.archive.org/web/20190505113032/http://www.amss.ac.cn/xwdt/zhxw/2011/201111/t20111111_3394825.html }}</ref><ref name="dream">{{cite news |url=https://news.sina.com.tw/article/20190503/31155020.html |title=專訪張壽武：在數學殿堂里，依然懷抱小學四年級的夢想 |newspaper=新浪新聞中心 |trans-title=Interview with Zhang Shou-Wu: In the mathematics department, he still has his dream from fourth grade of elementary school |publisher=Beijing Sina Net |date=3 May 2019 |access-date=5 May 2019 |language=zh |archive-date=May 5, 2019 |archive-url=https://web.archive.org/web/20190505145650/https://news.sina.com.tw/article/20190503/31155020.html }}</ref><ref name="sina">{{cite web|url=http://edu.sina.com.cn/l/2019-05-04/doc-ihvhiqax6533865.shtml |title=专访数学家张寿武：要让别人解中国人出的数学题 |trans-title=Interview with mathematician Zhang Shouwu: Let others solve the math problems of Chinese people |publisher=Sina Education |date=4 May 2019 |access-date= 5 May 2019 |language=zh}}</ref>
+
+==Research interests==
+
+Goldfeld's research interests include various topics in [[number theory]]. In his thesis,<ref>{{cite journal
+| last1=Goldfeld | first1=Dorian
+| title=Artin's conjecture on the average
+| journal=[[Mathematika]]
+| volume=15
+| issue=2
+| date=December 1968
+| pages=223–226
+| doi=10.1112/S0025579300002606}}</ref> he proved a version of [[Artin's conjecture on primitive roots]] on the average without the use of the [[Riemann Hypothesis]].
+
+In 1976, Goldfeld provided an ingredient for the effective solution of [[Carl Friedrich Gauss|Gauss]]'s [[class number problem for imaginary quadratic fields]].<ref>Goldfeld, Dorian, The class number of quadratic fields and the conjectures of Birch and Swinnerton-Dyer. Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 3 (1976), no. 4</ref> Specifically, he proved an effective lower bound for the class number of an imaginary quadratic field assuming the existence of an [[elliptic curve]] whose [[L-function]] had a zero of order at least 3 at <math>s=1/2</math>. (Such a curve was found soon after by [[Benedict Gross|Gross]] and [[Zagier]]). This effective lower bound then allows the determination of all imaginary fields with a given [[ideal class group|class number]] after a finite number of computations.
+
+His work on the [[Birch and Swinnerton-Dyer conjecture]] includes the proof of an estimate for a partial [[Euler product]] associated to an [[elliptic curve]],<ref>Goldfeld, Dorian, Sur les produits partiels eulériens attachés aux courbes elliptiques, C. R. Acad. Sci.
+Paris Sér. I Math. 294 (1982), no. 14,</ref> bounds for the
+order of the [[Tate–Shafarevich group]].<ref>Goldfeld, Dorian; Szpiro, Lucien Bounds for the order of the Tate–Shafarevich group, [[Compositio Mathematica]] 97 (1995), no. 1-2, Goldfeld, Dorian; Lieman, Daniel 
+{{distinguish}}
+Effective bounds on the size of the Tate–Shafarevich group. Math. Res. Lett. 3 (1996), no. 3; Goldfeld, Dorian, Special values of derivatives of L-functions. Number theory (Halifax, NS, 1994), 159–173, CMS Conf. Proc., 15, Amer. Math. Soc., Providence, RI, 1995.</ref>
+
+Together with his collaborators, Dorian Goldfeld has introduced the theory of multiple [[Dirichlet series]],  objects that extend the fundamental Dirichlet series in one variable.<ref>Goldfeld, Dorian; [[Jeffrey Hoffstein|Hoffstein, Jeffrey]] Eisenstein series of 1/2-integral weight and the mean value of real Dirichlet L-series. Invent. Math. 80 (1985), no. 2; Diaconu, Adrian; Goldfeld, Dorian; Hoffstein, Jeffrey Multiple Dirichlet series and moments of zeta and L-functions. [[Compositio Mathematica]] 139 (2003), no. 3</ref>
+
+He has also made contributions to the understanding of [[Siegel zero]]es,<ref>Goldfeld, Dorian, A simple proof of Siegel's theorem Proc. Natl. Acad. Sci. U.S.A. 71 (1974);
+Goldfeld, D. M.; Schinzel, A. On Siegel's zero. Ann.
+Scuola Norm. Sup. Pisa Cl. Sci. (4) 2 (1975), no. 4</ref> to the [[ABC conjecture]],<ref>Goldfeld, Dorian Modular elliptic curves and Diophantine problems. Number theory
+(Banff, AB, 1988), 157–175, de Gruyter, Berlin, 1990.</ref> to [[modular forms]] on <math>\operatorname{GL}(n)</math>,<ref>Bump, Daniel; [[Solomon Friedberg|Friedberg, Solomon]]; Goldfeld, Dorian Poincaré series and Kloosterman sums. The Selberg trace formula and related topics (Brunswick, Maine, 1984), 39–49, Contemp. Math.,   53, Amer. Math. Soc., Providence, RI, 1986</ref> and to cryptography (Arithmetica cipher, [[Anshel–Anshel–Goldfeld key exchange]]).<ref>Anshel, Iris; Anshel, Michael; Goldfeld, Dorian An algebraic method for public-key cryptography. Math. Res. Lett. 6 (1999), no. 3–4, Anshel, Michael; Goldfeld, Dorian Zeta functions, one-way functions, and pseudorandom number generators.
+Duke Math. J. 88 (1997), no. 2</ref>
+
+Together with his wife, Dr. [[Iris Anshel]],<ref>[https://www.veridify.com/leadership/ Dr. Iris Anshel page at Veridify Corporation]</ref> and father-in-law, Dr. [[Michael Anshel]],<ref>{{Cite web |url=http://www-cs.engr.ccny.cuny.edu/~csmma |title=Michael Anshel page at City College of New York |access-date=August 22, 2008 |archive-date=August 7, 2008 |archive-url=https://web.archive.org/web/20080807130624/http://www-cs.engr.ccny.cuny.edu/~csmma }}</ref> both mathematicians, Dorian Goldfeld founded the field of [[braid group]] cryptography.<ref>Anshel, Iris; Anshel, Michael; Goldfeld, Dorian An algebraic method for public-key cryptography. Math. Res. Lett. 6 (1999), no. 3-4, Anshel, Michael</ref><ref>
+[http://www.adastral.ucl.ac.uk/~helger/crypto/link/public/braid/ Braid Group Cryptography page] {{webarchive |url=https://web.archive.org/web/20070209065452/http://www.adastral.ucl.ac.uk/~helger/crypto/link/public/braid/ |date=February 9, 2007 }}</ref>
+
+==Awards and honors==
+In 1987 he received the [[Cole Prize|Frank Nelson Cole Prize in Number Theory]], one of the prizes in [[Number Theory]], for his solution of [[Carl Friedrich Gauss|Gauss]]'s [[class number problem|class number problem for imaginary quadratic fields]]. He has also held the  [[Sloan Fellowship]] (1977–1979) and in 1985 he received the Vaughan prize. In 1986 he was an [[invited speaker at the International Congress of Mathematicians]] in Berkeley. In April 2009 he was elected a Fellow of the [[American Academy of Arts and Sciences]]. In 2012 he became a fellow of the [[American Mathematical Society]].<ref>[https://www.ams.org/profession/fellows-list List of Fellows of the American Mathematical Society], retrieved 2013-01-19.</ref>
+
+== Selected works ==
+* {{cite book|author1=Goldfeld, Dorian  |author2=Hundley, Joseph|year=2011|title=Automorphic Representations and L-Functions for the General Linear Group, Volume 1|publisher=Cambridge University Press |isbn=978-0-521-47423-8}}
+* {{cite book|author1=Goldfeld, Dorian  |author2=Hundley, Joseph|year=2011|title=Automorphic Representations and L-Functions for the General Linear Group, Volume 2|publisher=Cambridge University Press |isbn=978-1-107-00799-4}}
+* {{cite book|editor=Gerritzen|editor2=Goldfeld|editor3=Kreuzer|editor4=Rosenberger|editor5=Shpilrain|year=2006|title=Algebraic Methods in Cryptography|publisher=American Mathematical Soc. |isbn=0-8218-4037-1}}
+* {{cite book|last=Goldfeld|first=Dorian|year=2006|title=Automorphic Forms and L-Functions for the Group GL(n,R)|publisher=Cambridge University Press |isbn=0-521-83771-5}}
+* {{cite book|author1=Anshel, Iris  |author2=Goldfeld, Dorian|year=1995|title=Calculus: a Computer Algebra Approach|publisher=International Press |url=https://archive.org/details/calculuscomputer0000ansh  |url-access=registration  |isbn=1-57146-038-1}}
+
+==References==
+{{reflist|colwidth=30em}}
+
+==External links==
+*{{MathGenealogy |id=37491}}
+* [http://www.math.columbia.edu/~goldfeld Dorian Goldfeld's Home Page at Columbia University]
+
+{{Authority control}}
+
+{{DEFAULTSORT:Goldfeld, Dorian}}
+[[Category:20th-century American mathematicians]]
+[[Category:21st-century American mathematicians]]
+[[Category:Fellows of the American Academy of Arts and Sciences]]
+[[Category:Fellows of the American Mathematical Society]]
+[[Category:American number theorists]]
+[[Category:Columbia School of Engineering and Applied Science alumni]]
+[[Category:Columbia University faculty]]
+[[Category:University of California, Berkeley faculty]]
+[[Category:Academic staff of the Hebrew University of Jerusalem]]
+[[Category:Academic staff of Tel Aviv University]]
+[[Category:Institute for Advanced Study visiting scholars]]
+[[Category:University of Texas at Austin faculty]]
+[[Category:Harvard University Department of Mathematics faculty]]
+[[Category:1947 births]]
+[[Category:Living people]]
+[[Category:People from Marburg]]
+[[Category:Abc conjecture]]
+[[Category:University of California, Berkeley Miller Fellows]]

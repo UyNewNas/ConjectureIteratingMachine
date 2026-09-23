@@ -1,0 +1,60 @@
+{{Short description|Numerous conjectures by mathematician  Irving Kaplansky}}
+The mathematician [[Irving Kaplansky]] is notable for proposing numerous [[conjecture]]s in several branches of mathematics, including a list of ten conjectures on [[Hopf algebra]]s. They are usually known as '''Kaplansky's conjectures'''.
+
+==Group rings==
+Let {{mvar|K}} be a [[field (mathematics)|field]], and {{mvar|G}} a [[torsion-free group|torsion-free]] [[group (mathematics)|group]]. Kaplansky's ''zero divisor conjecture'' states:
+
+* The [[group ring]] {{math|''K''[''G'']}} does not contain nontrivial [[zero divisor]]s, that is, it is a [[domain (ring theory)|domain]].
+
+Two related conjectures are known as, respectively, Kaplansky's ''idempotent conjecture'':
+
+* {{math|''K''[''G'']}} does not contain any non-trivial [[Idempotent (ring theory)|idempotent]]s, i.e., if {{math|1=''a''<sup>2</sup> = ''a''}}, then {{math|1=''a'' = 1}} or {{math|1=''a'' = 0}}.
+
+and Kaplansky's ''unit conjecture'' (which was originally made by [[Graham Higman]] and popularized by Kaplansky):
+
+* {{math|''K''[''G'']}} does not contain any non-trivial [[unit (ring theory)|unit]]s, i.e., if {{math|1=''ab'' = 1}} in {{math|''K''[''G'']}}, then {{math|1=''a'' = ''kg''}} for some {{mvar|k}} in {{mvar|K}} and {{mvar|g}} in {{mvar|G}}.
+
+The zero-divisor conjecture implies the idempotent conjecture and is implied by the unit conjecture. As of 2021, the zero divisor and idempotent conjectures are open. The unit conjecture, however, was disproved in characteristic 2 by Giles Gardam by exhibiting an explicit counterexample in a [[crystallographic group]], namely the [[fundamental group]] of the [[Hantzsche–Wendt manifold]]; see also [[Fibonacci group]].<ref>{{cite journal|last=Gardam|first=Giles|date=2021-02-23|title=A counterexample to the unit conjecture for group rings|journal=Annals of Mathematics|volume=194|issue=3|pages=967–979|doi=10.4007/annals.2021.194.3.9|arxiv=2102.11818|s2cid=232013430}}</ref><ref name=":0">{{Cite web|access-date=2021-03-10|title=Interview with Giles Gardam|publisher=Mathematics Münster, [[University of Münster]]|url= https://www.uni-muenster.de/MathematicsMuenster/news/artikel/2021-03-04.shtml}}</ref><ref>{{Cite web|access-date=2021-04-13|author=Erica Klarreich|title=Mathematician Disproves 80-Year-Old Algebra Conjecture|magazine=[[Quanta Magazine]]|date=April 12, 2021|url= https://www.quantamagazine.org/mathematician-disproves-group-algebra-unit-conjecture-20210412/}}</ref> A later preprint by Gardam claims that essentially the same element also gives a counter-example in characteristic 0 (finding an inverse is computationally much more involved in this setting, hence the delay between the first result and the second one).<ref>{{cite arXiv| last = Gardam | first = Giles | date = December 11, 2023 | title = Non-trivial units of complex group rings| eprint = 2312.05240 | class = math.GR}}</ref>
+
+There are proofs of both the idempotent and zero-divisor conjectures for large classes of groups. For example, the zero-divisor conjecture is known for all [[elementary amenable group]]s (a class including all virtually solvable groups), since their group algebras are known to be [[Ore condition|Ore domains]].<ref>{{cite journal
+ |last1=Kropholler |first1=P. H.
+ |last2=Linnell   |first2=P. A.
+ |last3=Moody     |first3=J. A.
+ |date=1988
+ |title=Applications of a New $K$-Theoretic Theorem to Soluble Group Rings
+ |journal=Proceedings of the American Mathematical Society
+ |volume=104 |issue=3 |pages=675–684 (Theorem&nbsp;1.4)
+ |doi=10.2307/2046771
+ |url=https://www.ams.org/journals/proc/1988-104-03/S0002-9939-1988-0964842-0/S0002-9939-1988-0964842-0.pdf
+}}</ref> It follows that the conjecture holds more generally for all residually torsion-free elementary amenable groups. Note that when <math>K</math> is a field of characteristic zero, then the zero-divisor conjecture is implied by the [[Atiyah conjecture]], which has also been established for large classes of groups.
+
+The idempotent conjecture has a generalisation, the [[Richard Kadison|Kadison]] idempotent conjecture, also known as the Kadison&ndash;Kaplansky conjecture, for elements in the [[Group algebra of a locally compact group#The reduced group C*-algebra Cr*(G)|reduced group C*-algebra]]. In this setting, it is known that if the [[Farrell–Jones conjecture]] holds for {{math|''K''[''G'']}}, then so does the idempotent conjecture. The latter has been positively solved for an extremely large class of groups, including for example all [[hyperbolic group]]s.
+
+The unit conjecture is also known to hold in many groups, but its partial solutions are much less robust than the other two (as witnessed by the earlier-mentioned counter-example). This conjecture is not known to follow from any analytic statement like the other two, and so the cases where it is known to hold have all been established via a direct combinatorial approach involving the so-called unique products property. By Gardam's work mentioned above, it is now known to not be true in general.
+
+==Banach algebras==
+This conjecture states that every [[algebra homomorphism]] from the [[Banach algebra]] ''C''(''X'') (continuous complex-valued functions on ''X'', where ''X'' is a [[compact space|compact]] [[Hausdorff space]]) into any other Banach algebra, is necessarily [[continuous function|continuous]]. The conjecture is equivalent to the statement that every algebra norm on ''C''(''X'') is equivalent to the usual [[uniform norm]]. (Kaplansky himself had earlier shown that every ''complete'' algebra norm on ''C''(''X'') is equivalent to the uniform norm.)
+
+In the mid-1970s, H. Garth Dales and J. Esterle independently proved that, ''if one furthermore assumes'' the validity of the [[continuum hypothesis]], there exist compact Hausdorff spaces ''X'' and discontinuous homomorphisms from ''C''(''X'') to some Banach algebra, giving counterexamples to the conjecture.
+
+In 1976, [[Robert M. Solovay|R. M. Solovay]] (building on work of H. Woodin) exhibited a model of ZFC ([[Zermelo&ndash;Fraenkel set theory]] + [[axiom of choice]]) in which Kaplansky's conjecture is true. Kaplansky's conjecture is thus an example of a [[List of statements undecidable in ZFC|statement undecidable in ZFC]].
+
+==Quadratic forms==
+
+In 1953, Kaplansky proposed the conjecture that finite values of [[u-invariant|''u''-invariants]] can only be [[powers of 2]].<ref name="Merkuryev">{{cite journal |last1=Merkur'ev |first1=A. S. |authorlink1=Alexander Merkurjev |title=Kaplansky conjecture in the theory of quadratic forms |journal=J Math Sci |date=1991 |volume=57 |issue=6 |page=3489 |doi=10.1007/BF01100118 |s2cid=122865942 }}</ref><ref>{{cite journal |last1=Kaplansky |first1=I. |authorlink1=Irving Kaplansky |title=Quadratic forms |journal=J. Math. Soc. Jpn. |date=1951 |volume=5 |issue=2 |pages=200–207|doi=10.2969/jmsj/00520200 |doi-access=free }}</ref>
+
+In 1989, the conjecture was refuted by [[Alexander Merkurjev]] who demonstrated fields with ''u''-invariants of any even ''m''.<ref name="Merkuryev"/> In 1999, [[Oleg Izhboldin]] built a field with ''u''-invariant ''m'' = 9 that was the first example of an odd ''u''-invariant.<ref>{{cite journal | title=Fields of u-Invariant 9 | first=Oleg T. | last=Izhboldin |authorlink1=Oleg Izhboldin| journal=Annals of Mathematics |series=Second Series | volume=154 | number=3 | year=2001 | pages=529–587 | jstor=3062141 | zbl=0998.11015 | doi=10.2307/3062141 }}</ref> In 2006, [[Alexander Vishik]] demonstrated fields with ''u''-invariant <math>m=2^k+1</math> for any integer ''k'' starting from 3.<ref>{{cite book |title=Algebra, Arithmetic, and Geometry, Volume II: In Honor of Yu. I. Manin |first=Alexander|last=Vishik|chapter=Fields of u-Invariant 2 r + 1 |series=Progress in Mathematics |volume=270 |page=661 |doi=10.1007/978-0-8176-4747-6_22 |year=2009|isbn=978-0-8176-4746-9}}</ref>
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{Cite journal |last=Dales |first=H. G. |date=July 1978 |title=Automatic Continuity: a Survey |journal=Bulletin of the London Mathematical Society |language=en |volume=10 |issue=2 |pages=129–183 |doi=10.1112/blms/10.2.129}}
+* {{Cite book |last=Lück |first=Wolfgang |title=L²-invariants: theory and applications to geometry and K-theory |date=2002 |publisher=Springer |isbn=978-3-540-43566-2 |series=Ergebnisse der Mathematik und ihrer Grenzgebiete |location=Berlin; New York}}
+* {{Cite book |last=Passman |first=Donald S. |title=The algebraic structure of group rings |date=1977 |publisher=Wiley |isbn=978-0-471-02272-5 |series=Pure and applied mathematics |location=New York}}
+* {{Cite journal |last=Puschnigg |first=Michael |date=July 2002 |title=The Kadison-Kaplansky conjecture for word-hyperbolic groups |journal=Inventiones Mathematicae |language=en |volume=149 |issue=1 |pages=153–194 |doi=10.1007/s002220200216 |bibcode=2002InMat.149..153P |issn=0020-9910}}
+* {{Cite book |last1=Dales |first1=H. G. |url=https://www.cambridge.org/core/product/identifier/9780511662256/type/book |title=An Introduction to Independence for Analysts |last2=Woodin |first2=W. H. |date=1987 |publisher=Cambridge University Press |isbn=978-0-521-33996-4 |edition=1 |doi=10.1017/cbo9780511662256}}
+
+[[Category:Ring theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]

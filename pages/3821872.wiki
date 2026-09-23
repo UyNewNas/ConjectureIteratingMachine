@@ -1,0 +1,403 @@
+{{Short description|Two or more natural numbers with a common abundancy index}}
+{{Distinguish|Amicable number}}
+In [[number theory]], '''friendly numbers''' are two or more [[natural number]]s with a common '''abundancy index''', the ratio between the sum of [[divisor]]s of a number and the number itself. Two numbers with the same "abundancy" form a '''friendly pair'''; ''n'' numbers with the same abundancy form a '''friendly ''n''-tuple'''.
+
+Being mutually friendly is an [[equivalence relation]], and thus induces a [[partition (set theory)|partition]] of the positive naturals into '''clubs''' ([[equivalence class]]es) of mutually friendly numbers.
+
+A number that is not part of any friendly pair is called '''solitary'''.
+
+The abundancy index of ''n'' is the [[rational number]] σ(''n'') / ''n'', in which σ denotes the [[divisor function|sum of divisors function]]. A number ''n'' is a friendly number if there exists ''m'' ≠ ''n'' such that σ(''m'') / ''m'' = σ(''n'') / ''n''. Abundancy is not the same as [[abundant number|abundance]], which is defined as σ(''n'') − 2''n''.
+
+Abundancy may also be expressed as <math>\sigma_{-1}(n)</math> where <math>\sigma_k</math> denotes a divisor function with <math>\sigma_{k}(n)</math> equal to the sum of the ''k''-th powers of the divisors of ''n''.
+
+The numbers 1 through 5 are all solitary. The smallest friendly number is 6, forming for example, the friendly pair 6 and 28 with abundancy σ(6) / 6 = (1+2+3+6) / 6 = 2, the same as σ(28) / 28 = (1+2+4+7+14+28) / 28 = 2. The shared value 2 is an integer in this case but not in many other cases. Numbers with abundancy 2 are also known as [[perfect numbers]]. There are several unsolved problems related to the friendly numbers.
+
+In spite of the similarity in name, there is no specific relationship between the friendly numbers and the [[amicable number]]s or the [[sociable number]]s, although the definitions of the latter two also involve the divisor function.
+
+== Examples ==
+As another example, 30 and 140 form a friendly pair, because 30 and 140 have the same abundancy:<ref>{{cite web|url=https://tomrocksmaths.com/2023/05/10/numbers-with-cool-names-amicable-sociable-friendly/ |title=Numbers with Cool Names: Amicable, Sociable, Friendly|date=10 May 2023 |access-date=26 July 2023}}</ref>
+:<math> \dfrac{\sigma(30)}{30} = \dfrac{1+2+3+5+6+10+15+30}{30} =\dfrac{72}{30} = \dfrac{12}{5}</math>
+:<math> \dfrac{\sigma(140)}{140} = \dfrac{1+2+4+5+7+10+14+20+28+35+70+140}{140} = \dfrac{336}{140} = \dfrac{12}{5}.</math>
+
+The numbers 2480, 6200 and 40640 are also members of this club, as they each have an abundancy equal to 12/5.
+
+For an example of [[parity (mathematics)|odd]] numbers being friendly, consider 135 and 819 (abundancy 16/9 ([[deficient number|deficient]])). There are also cases of even numbers being friendly to odd numbers, such as 42, 3472, 56896, ... {{OEIS|A347169}} and 544635 (abundancy of 16/7). The odd friend may be less than the even one, as in 84729645 and 155315394 (abundancy of 896/351), or in 6517665, 14705145 and 2746713837618 (abundancy of 64/27).
+
+A [[square number]] can be friendly, for instance both 693479556 (the square of 26334) and 8640 have abundancy 127/36 (this example is credited to Dean Hickerson).
+
+=== Status for small ''n'' ===
+In the table below, blue numbers are ''proven'' friendly {{OEIS|id=A074902}}, red numbers are ''proven'' solitary {{OEIS|id=A095739}}, numbers ''n'' such that ''n'' and <math>\sigma(n)</math> are [[coprime]] {{OEIS|id=A014567}} are left uncolored, though they are known to be solitary. Other numbers (e.g. 10,<ref name=":2" /><ref name=":3" /><ref name=":4" /><ref name=":5" /><ref name=":6" /> 14,<ref>{{Cite journal |last=Mandal |first=Sagar |date=2025 |title=A note on solitary numbers |url=https://nntdm.net/volume-31-2025/number-3/617-623/ |journal=Notes on Number Theory and Discrete Mathematics |volume=31 |issue=3 |pages=617–623 |doi=10.7546/nntdm.2025.31.3.617-623|doi-access=free |arxiv=2503.11694 }}</ref> 15,<ref>{{Cite journal |last=Terry |first=Nico |title=Friends of 15 Live Far Away |url=https://future-in-tech.net/14.1/R-Terry.pdf |journal=International Journal of Mathematics and Computer Science |volume=14 |issue=1 |pages=177–186}}</ref> 20<ref>{{Cite journal |last=Chatterjee |first=Tapas |last2=Mandal |first2=Sagar |last3=Mandal |first3=Sourav |date=2025-01-01 |title=On characterizing potential friends of 20 |url=https://www.sciendo.com/article/10.2478/awutm-2025-0013 |journal=Annals of West University of Timisoara - Mathematics and Computer Science |language=en |volume=61 |issue=1 |pages=205–229 |doi=10.2478/awutm-2025-0013 |issn=1841-3307|doi-access=free }}</ref>) have unknown status and are yellow.
+[[File:The sum of an integer's unique factors.png|thumb|The sum of an integer's unique factors, up to n=2000.]]
+[[File:The "friendly-number" index of integers up to 2000.png|thumb|The friendly number index of integers up to 2000, computed by calculating the sum of its unique factors and dividing by n. In addition to apparent noise, distinct lines begin to appear.]]
+<div style=display:inline-table>
+{| class="wikitable"
+|-
+! <math>n</math> !! <math>\sigma(n)</math> !! <math>\frac{\sigma(n)}{n}</math>
+|-
+| 1 || 1 || 1
+|-
+| 2 || 3 || 3/2
+|-
+| 3 || 4 || 4/3
+|-
+| 4 || 7 || 7/4
+|-
+| 5 || 6 || 6/5
+|- style="background: blue; color: white;"
+| 6 || 12 || 2
+|-
+| 7 || 8 || 8/7
+|-
+| 8 || 15 || 15/8
+|-
+| 9 || 13 || 13/9
+|- style="background: yellow; color: black;"
+| 10 || 18 || 9/5
+|-
+| 11 || 12 || 12/11
+|- style="background: blue; color: white;"
+| 12 || 28 || 7/3
+|-
+| 13 || 14 || 14/13
+|- style="background: yellow; color: black;"
+| 14 || 24 || 12/7
+|- style="background: yellow; color: black;"
+| 15 || 24 || 8/5
+|-
+| 16 || 31 || 31/16
+|-
+| 17 || 18 || 18/17
+|- style="background: red; color: white;"
+| 18 || 39 || 13/6
+|-
+| 19 || 20 || 20/19
+|- style="background: yellow; color: black;"
+| 20 || 42 || 21/10
+|-
+| 21 || 32 || 32/21
+|- style="background: yellow; color: black;"
+| 22 || 36 || 18/11
+|-
+| 23 || 24 || 24/23
+|- style="background: blue; color: white;"
+| 24 || 60 || 5/2
+|-
+| 25 || 31 || 31/25
+|- style="background: yellow; color: black;"
+| 26 || 42 || 21/13
+|-
+| 27 || 40 || 40/27
+|- style="background: blue; color: white;"
+| 28 || 56 || 2
+|-
+| 29 || 30 || 30/29
+|- style="background: blue; color: white;"
+| 30 || 72 || 12/5
+|-
+| 31 || 32 || 32/31
+|-
+| 32 || 63 || 63/32
+|- style="background: yellow; color: black;"
+| 33 || 48 || 16/11
+|- style="background: yellow; color: black;"
+| 34 || 54 || 27/17
+|-
+| 35 || 48 || 48/35
+|-
+| 36 || 91 || 91/36
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|-
+! <math>n</math> !! <math>\sigma(n)</math> !! <math>\frac{\sigma(n)}{n}</math>
+|-
+| 37 || 38 || 38/37
+|- style="background: yellow; color: black;"
+| 38 || 60 || 30/19
+|-
+| 39 || 56 || 56/39
+|- style="background: blue; color: white;"
+| 40 || 90 || 9/4
+|-
+| 41 || 42 || 42/41
+|- style="background: blue; color: white;"
+| 42 || 96 || 16/7
+|-
+| 43 || 44 || 44/43
+|- style="background: yellow; color: black;"
+| 44 || 84 || 21/11
+|- style="background: red; color: white;"
+| 45 || 78 || 26/15
+|- style="background: yellow; color: black;"
+| 46 || 72 || 36/23
+|-
+| 47 || 48 || 48/47
+|- style="background: red; color: white;"
+| 48 || 124 || 31/12
+|-
+| 49 || 57 || 57/49
+|-
+| 50 || 93 || 93/50
+|- style="background: yellow; color: black;"
+| 51 || 72 || 24/17
+|- style="background: red; color: white;"
+| 52 || 98 || 49/26
+|-
+| 53 || 54 || 54/53
+|- style="background: yellow; color: black;"
+| 54 || 120 || 20/9
+|-
+| 55 || 72 || 72/55
+|- style="background: blue; color: white;"
+| 56 || 120 || 15/7
+|-
+| 57 || 80 || 80/57
+|- style="background: yellow; color: black;"
+| 58 || 90 || 45/29
+|-
+| 59 || 60 || 60/59
+|- style="background: blue; color: white;"
+| 60 || 168 || 14/5
+|-
+| 61 || 62 || 62/61
+|- style="background: yellow; color: black;"
+| 62 || 96 || 48/31
+|-
+| 63 || 104 || 104/63
+|-
+| 64 || 127 || 127/64
+|-
+| 65 || 84 || 84/65
+|- style="background: blue; color: white;"
+| 66 || 144 || 24/11
+|-
+| 67 || 68 || 68/67
+|- style="background: yellow; color: black;"
+| 68 || 126 || 63/34
+|- style="background: yellow; color: black;"
+| 69 || 96 || 32/23
+|- style="background: yellow; color: black;"
+| 70 || 144 || 72/35
+|-
+| 71 || 72 || 72/71
+|- style="background: yellow; color: black;"
+| 72 || 195 || 65/24
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|-
+! <math>n</math> !! <math>\sigma(n)</math> !! <math>\frac{\sigma(n)}{n}</math>
+|-
+| 73 || 74 || 74/73
+|- style="background: yellow; color: black;"
+| 74 || 114 || 57/37
+|-
+| 75 || 124 || 124/75
+|- style="background: yellow; color: black;"
+| 76 || 140 || 35/19
+|-
+| 77 || 96 || 96/77
+|- style="background: blue; color: white;"
+| 78 || 168 || 28/13
+|-
+| 79 || 80 || 80/79
+|- style="background: blue; color: white;"
+| 80 || 186 || 93/40
+|-
+| 81 || 121 || 121/81
+|- style="background: yellow; color: black;"
+| 82 || 126 || 63/41
+|-
+| 83 || 84 || 84/83
+|- style="background: blue; color: white;"
+| 84 || 224 || 8/3
+|-
+| 85 || 108 || 108/85
+|- style="background: yellow; color: black;"
+| 86 || 132 || 66/43
+|- style="background: yellow; color: black;"
+| 87 || 120 || 40/29
+|- style="background: yellow; color: black;"
+| 88 || 180 || 45/22
+|-
+| 89 || 90 || 90/89
+|- style="background: yellow; color: black;"
+| 90 || 234 || 13/5
+|- style="background: yellow; color: black;"
+| 91 || 112 || 16/13
+|- style="background: yellow; color: black;"
+| 92 || 168 || 42/23
+|-
+| 93 || 128 || 128/93
+|- style="background: yellow; color: black;"
+| 94 || 144 || 72/47
+|- style="background: yellow; color: black;"
+| 95 || 120 || 24/19
+|- style="background: blue; color: white;"
+| 96 || 252 || 21/8
+|-
+| 97 || 98 || 98/97
+|-
+| 98 || 171 || 171/98
+|- style="background: yellow; color: black;"
+| 99 || 156 || 52/33
+|-
+| 100 || 217 || 217/100
+|-
+| 101 || 102 || 102/101
+|- style="background: blue; color: white;"
+| 102 || 216 || 36/17
+|-
+| 103 || 104 || 104/103
+|- style="background: yellow; color: black;"
+| 104 || 210 || 105/52
+|- style="background: yellow; color: black;"
+| 105 || 192 || 64/35
+|- style="background: yellow; color: black;"
+| 106 || 162 || 81/53
+|-
+| 107 || 108 || 108/107
+|- style="background: blue; color: white;"
+| 108 || 280 || 70/27
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|-
+! <math>n</math> !! <math>\sigma(n)</math> !! <math>\frac{\sigma(n)}{n}</math>
+|-
+| 109 || 110 || 110/109
+|- style="background: yellow; color: black;"
+| 110 || 216 || 108/55
+|-
+| 111 || 152 || 152/111
+|- style="background: yellow; color: black;"
+| 112 || 248 || 31/14
+|-
+| 113 || 114 || 114/113
+|- style="background: blue; color: white;"
+| 114 || 240 || 40/19
+|-
+| 115 || 144 || 144/115
+|- style="background: yellow; color: black;"
+| 116 || 210 || 105/58
+|- style="background: yellow; color: black;"
+| 117 || 182 || 14/9
+|- style="background: yellow; color: black;"
+| 118 || 180 || 90/59
+|-
+| 119 || 144 || 144/119
+|- style="background: blue; color: white;"
+| 120 || 360 || 3
+|-
+| 121 || 133 || 133/121
+|- style="background: yellow; color: black;"
+| 122 || 186 || 93/61
+|- style="background: yellow; color: black;"
+| 123 || 168 || 56/41
+|- style="background: yellow; color: black;"
+| 124 || 224 || 56/31
+|-
+| 125 || 156 || 156/125
+|- style="background: yellow; color: black;"
+| 126 || 312 || 52/21
+|-
+| 127 || 128 || 128/127
+|-
+| 128 || 255 || 255/128
+|-
+| 129 || 176 || 176/129
+|- style="background: yellow; color: black;"
+| 130 || 252 || 126/65
+|-
+| 131 || 132 || 132/131
+|- style="background: blue; color: white;"
+| 132 || 336 || 28/11
+|-
+| 133 || 160 || 160/133
+|- style="background: yellow; color: black;"
+| 134 || 204 || 102/67
+|- style="background: blue; color: white;"
+| 135 || 240 || 16/9
+|- style="background: red; color: white;"
+| 136 || 270 || 135/68
+|-
+| 137 || 138 || 138/137
+|- style="background: blue; color: white;"
+| 138 || 288 || 48/23
+|-
+| 139 || 140 || 140/139
+|- style="background: blue; color: white;"
+| 140 || 336 || 12/5
+|- style="background: yellow; color: black;"
+| 141 || 192 || 64/47
+|- style="background: yellow; color: black;"
+| 142 || 216 || 108/71
+|-
+| 143 || 168 || 168/143
+|-
+| 144 || 403 || 403/144
+|}
+</div>
+
+== Solitary numbers ==
+
+A number that belongs to a singleton club, because no other number is friendly with it, is a solitary number. All prime numbers are known to be solitary, as are powers of prime numbers. More generally, if the numbers ''n'' and σ(''n'') are [[coprime]] – meaning that the [[greatest common divisor]] of these numbers is 1, so that σ(''n'')/''n'' is an irreducible fraction – then the number ''n'' is solitary {{OEIS|id=A014567}}. For a prime number ''p'' we have σ(''p'') = ''p'' + 1, which is co-prime with ''p''.
+
+No general method is known for determining whether a number is friendly or solitary.
+
+== Is 10 a solitary number? ==
+The smallest number whose classification is unknown is 10; it is conjectured to be solitary. If it is not, its smallest friend is at least <math>10^{30}</math>.<ref name=":0" /><ref name=":1" /> J. Ward <ref name=":2">{{Citation |last=Ward |first=Jeffrey |title=Does Ten Have a Friend? |date=2008-06-06 |work=International Journal of Mathematics and Computer Science |volume=3 |issue=3 |pages=153–158 |publisher= |arxiv=0806.1001}}</ref> proved that any positive integer <math>n</math> other than 10 with abundancy index <math>\frac{9}{5}</math> must be a square with at least six distinct prime factors, the smallest being 5. Further, at least one of the prime factors must be congruent to 1 modulo 3 and appear with an exponent congruent to 2 modulo 6 in the prime power factorization of <math>n</math>. HR (Maya) Thackeray <ref name=":3">{{Cite journal |last=Thackeray |first=Henry (Maya) Robert |date=2024-05-01 |title=Each friend of 10 has at least 10 nonidentical prime factors |url=https://pdf.sciencedirectassets.com/273071/1-s2.0-S0019357724X00038/1-s2.0-S0019357724000430/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQD6T524dFKrWTMUXr1TYKhJxNP18h%2BjkI6sWLJizzaBNgIhAIx8XqNGsrw7FUTBfAtxa6U4hRP2M2ULj02V1HIu%2FArJKrMFCDQQBRoMMDU5MDAzNTQ2ODY1IgzAlCKZPIBATzABEWAqkAX06YA4tCle9kfAtYmoyL4WmbtMF7X6D%2BE6%2FFnnC%2FAjIrKmJfF2wEyLoMUVBipv%2BsIa7tsod7eQ5Coodeo3tjYstaU92WGrXwF8cVlHScG8ieWyAJeHGw%2BuxdMubf9Qn8KbzFE%2FWTbaRxmJ%2B8LxJLi3bzASi2rJ%2Ft9Zt1cQYurMAUf7187q16ftff49bpzws1c5zftKl3ntvpqOwd4m9eWmWXRLEYOP1fNnh1YKWi73TjOFyEucL1Wuhy7vVlmfvSrRIvLog6QjYZFcUqkEUUQ9bXmrnTSrdPNqT6pgBqVRHNrH9GnriZPKT5rWEqkLpcF0%2FkOL%2B6XE6BlPTbLBsTKqHVY1cAd%2BSjBsmzkzIUV%2BqLhJjz6evhABMzFSh2dK9ekWac%2F2%2BjNIxVFPH%2FFTLc6dS8kGfhO2OFjPln64Qudd%2FrBq7MK%2FdW4uQBzl5rujHYaU7EwMCcTy1B5dl%2FPdFq%2BkOZL5AoanShjRWMFWosX1v8X8vUxeSuFjpouf7aybLhvh5Ob8c472ZpWC48%2BQdINUiHHeYV5Rx9IbL2O3XGNRJHB6mkeWGwXCn%2BjjE54pRN0EIZeZ1w37rUuRArHT3%2BljntRG3kNEklVN5itetzTZfSLVfbQw4Dg48ECx%2FwTY7HyAUOXUUyHwGUnWHwwa8hjLCNbpHjGy4ECZsFvbq22dtpGxIKNC4X52wcpS%2B6E73Y4VssbFbsU2Z4lkXsroGHM3%2FPiUwpU%2FVYjhu7nyrmCmkGB7aHkcyzOWlnAxa19IiZ0DxCLELFq7l22ndV%2Bf62CSNbOfB%2BKsVpQmhEvLsZgMCWn0AzwrzTiLwFV%2FxmhY0F2oD7icZJmGfH5WxT3w1ngXB4VuNWdZC6v5Mjz7JY6g6jDxx%2Fq%2FBjqwAaa5MSdDchaHjQzsBcHaIeTe4u9zdDvo%2BAdWSobxYD8XhKv5pAL2%2FyY5n3iMLNkS%2BWecux13gUMfGcrwpIflYOlO26o37%2F9ZBb5SkCKuF1r59YFQ2NhGTxMJJ6xVPi5iyDJsyotYjY7RX%2FfnYdvHTlYUQc320jzYYj%2Bg8lwe7kTnNwwin7%2FyGQSBYz%2FNtBMdt8DuK3l0N7N5ng64W%2BkSEvVrw05PSouwQd36GLZMMW0c&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250415T183202Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYUKT3QJIX%2F20250415%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=463aa5f209b250215e7669d278171572a4d11442bbcc80e47192632dd4fb47c1&hash=f774be43e8def6cce9901505a37bf3995a28ae6a0de422f83db74c6d70311f8b&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0019357724000430&tid=spdf-8b8b8869-340c-4896-a66e-105cc0c9255c&sid=4e8a662445e83044b648af277674fac1cd80gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1308595751075f57055256&rr=930d85f51c0879d5&cc=in&kca=eyJrZXkiOiJEVXpOYStPR0lBbmpKS1JxY1hyQVoreXQwdlJWR05aQzkyQW9nN1lYN2hBYTlCY1ZIMlZoVlp4MkU3OHFlWlIwdnJ1MFUxYVlQMWdqYlhqL2t1eWZYbmJ0QUNJSGREMlhWU2ZWZTRta2pwR1RRaDU1WlRBYk9PTDRRdmlybkdJWTRlNHlRUjU5dzZNTWhJRG94UVZiZWw5VTVpUlRhUHVNMHBPaWFvekl4ZjN5eWlqSSIsIml2IjoiMzQ5MTE1OTE0MTBmNTIxNjk3MmEyY2Y2NDAyMDc1MzIifQ==_1744741939807 |url-status= |journal=Indagationes Mathematicae |volume=35 |issue=3 |pages=595–607 |arxiv=2310.15900 |doi=10.1016/j.indag.2024.04.011 |issn=0019-3577}}</ref> applied methods from Nielsen's <ref>{{Cite journal |last=Nielsen |first=Pace P. |date=2007-10-01 |title=Odd perfect numbers have at least nine distinct prime factors |url=https://www.ams.org/journals/mcom/2007-76-260/S0025-5718-07-01990-4/S0025-5718-07-01990-4.pdf |journal=Mathematics of Computation |volume=76 |issue=260 |pages=2109–2127 |arxiv=math/0602485 |doi=10.1090/S0025-5718-07-01990-4|bibcode=2007MaCom..76.2109N }}</ref> to show that each friend of 10 has at least 10 nonidentical prime factors. S. Mandal and S. Mandal <ref name=":4">{{Cite journal |last1=Mandal |first1=Sourav |last2=Mandal |first2=Sagar |date=2025-02-01 |title=Upper Bounds for the Prime Divisors of Friends of 10 |url=https://link.springer.com/content/pdf/10.1007/s12045-025-1747-8.pdf |journal=Resonance |language=en |volume=30 |issue=2 |pages=263–275 |arxiv=2404.05771 |doi=10.1007/s12045-025-1747-8 |issn=0973-712X}}</ref> proved that if <math>n</math> is a friend of 10 and if <math>q_2,q_3, q_4</math> are the second, third, fourth smallest prime divisors of <math>n</math> respectively then
+
+<math>7\leq q_2<\left \lceil \frac{7\omega( n )}{3} \right \rceil\biggl(\log\left \lceil \frac{7\omega( n )}{3} \right \rceil+2\log \log \left \lceil \frac{7\omega(n)}{ 3 } \right \rceil\biggr),</math>
+
+<math>11\leq q_3<\left \lceil \frac{180\omega( n )}{41} \right \rceil\biggl(\log\left \lceil \frac{180\omega( n )}{41} \right \rceil+2\log \log \left \lceil \frac{180\omega(n)}{ 41 } \right \rceil\biggr),</math>
+
+<math>13\leq q_4<\left \lceil \frac{390\omega( n )}{47} \right \rceil\biggl(\log\left \lceil \frac{390\omega( n )}{47} \right \rceil+2\log \log \left \lceil \frac{390\omega(n)}{47} \right \rceil\biggr) ,</math>
+
+where <math>\omega(n)</math> is the number of distinct prime divisors of <math>n</math> and <math>\left \lceil \right \rceil</math> is the [[Floor and ceiling functions|ceiling function]]. Later, S. Mandal<ref name=":6">{{Cite journal |last=Mandal |first=Sagar |year=2026 |title=Prime Divisors of 10's Friends: A Generalization of Prior Bounds |url=https://arhiva-stiinte.uoradea.ro/en/auofm/auofm2026/Mandal_5.pdf |journal=Annals of Oradea University - Mathematics Fascicola |volume=33 |issue=1 |pages=5-12 |arxiv=2412.02701 |issn=1221-1265}}</ref> proved that for smallest <math>r
+</math>-th (<math>r\geq2
+</math>) prime divisor <math>q_r</math>, the following bound holds
+
+<math>q_r<\left \lceil \frac{\mathcal{A}\omega( n )}{\mathcal{B}} \right \rceil\biggl(\log\left \lceil \frac{\mathcal{A}\omega( n )}{\mathcal{B}} \right \rceil+2\log \log \left \lceil \frac{\mathcal{A}\omega( n )}{\mathcal{B}} \right \rceil\biggr),
+</math>
+
+where <math>\frac{\mathcal{A}}{\mathcal{B}}>\frac{1}{\dfrac{36}{25}\prod_{i=4}^{r+1}(1-1/p_i)-1},
+</math> (where <math>p_i
+</math>is the <math>i
+</math>-th prime number), <math>\mathcal{A},\mathcal{B}
+</math> are positive integers with <math>(\mathcal{A},\mathcal{B})=1
+</math> and <math>\frac{\mathcal{A}}{\mathcal{B}}\in \mathbb{Q}^+\setminus \mathbb{Z}^+
+</math> such that <math>\mathcal{A}\mathcal{B}(r-2)+2\mathcal{A}+\mathcal{B}>\mathcal{B}^2
+</math>. Further, S. Mandal <ref name=":5">{{Cite journal |last=Mandal |first=Sagar |date=2025-04-12 |title=Exploring the Relationships Between the Divisors of Friends of 10 |url=https://zenodo.org/records/15206287/files/CMS-21-32.pdf?download=1 |journal=News Bulletin of Calcutta Mathematical Society |volume=48 |issue=1–3 |pages=21–32 |arxiv=2504.08295 |doi=10.5281/zenodo.15206286 |issn=0970-8596}}</ref> proved that not all half of the exponents of the prime divisors of a friend of 10 are congruent to 1 modulo 3. Further, he proved that if <math>n= 5^{2a}\cdot Q^2</math> (<math>Q</math> is an odd positive integer coprime to 15 ) is a friend of 10, then <math>\sigma(5^{2a})+\sigma(Q^{2}) </math> is congruent to 6 modulo 8 if and only if <math>a</math> is even, and <math>\sigma(5^{2a})+\sigma(Q^{2})</math> is congruent to 2 modulo 8 if and only if <math>a</math> is odd. In addition, he established that <math>n> \frac{25}{81}\cdot \prod_{i=1}^{\omega(n)} (2a_i+1)^2</math>, in particular <math> n>625\cdot 9^{\omega(n)-3}</math> by setting <math>Q=\prod_{i=2}^{\omega(n)} p_i^{a_i}</math> and <math>a=a_1</math>, where <math>p_i</math> are prime numbers.
+
+Small numbers with a relatively large smallest friend do exist: for instance, 24 is friendly, with its smallest friend 91,963,648.<ref name=":0">{{cite web|last1=Cemra|first1=Jason|title=10 Solitary Check|url=https://github.com/CemraJC/solidarity|website=Github/CemraJC/Solidarity|date=23 July 2022 }}</ref><ref name=":1">{{cite encyclopedia |url=https://oeis.org/A074902 |title=OEIS sequence A074902 |encyclopedia=[[On-Line Encyclopedia of Integer Sequences]] |access-date=10 July 2020}}</ref>
+
+==Large clubs==
+It is an open problem whether there are infinitely large clubs of mutually friendly numbers. The [[perfect number]]s form a club, and it is conjectured that there are infinitely many [[perfect number]]s (at least as many as there are [[Mersenne prime]]s), but no proof is known. There are clubs with more known members: in particular, those formed by [[multiply perfect number]]s, which are numbers whose abundancy is an integer.  Although some are known to be quite large, clubs of multiply perfect numbers (excluding the perfect numbers themselves) are conjectured to be finite.
+
+==Asymptotic density==
+Every pair ''a'', ''b'' of friendly numbers gives rise to a positive proportion of all natural numbers being friendly (but in different clubs), by considering pairs ''na'', ''nb'' for multipliers ''n'' with [[greatest common divisor|gcd]](''n'', ''ab'') = 1. For example, the "primitive" friendly pair 6 and 28 gives rise to friendly pairs 6''n'' and 28''n'' for all ''n'' that are [[modular arithmetic|congruent]] to 1, 5, 11, 13, 17, 19, 23, 25, 29, 31, 37, or 41 modulo 42.<ref name="AndersonHickerson">{{cite journal |jstor = 2318325|last1 = Anderson|first1 = C. W.|last2 = Hickerson|first2 = Dean|last3 = Greening|first3 = M. G.|title = 6020|journal = The American Mathematical Monthly|year = 1977|volume = 84|issue = 1|pages = 65–66|doi = 10.2307/2318325}}</ref>
+
+This shows that the [[natural density]] of the friendly numbers (if it exists) is positive.
+
+Anderson and Hickerson proposed that the density should in fact be 1 (or equivalently that the density of the solitary numbers should be 0).<ref name="AndersonHickerson" /> According to the ''[[MathWorld]]'' article on ''Solitary Number'' (see References section below), this [[conjecture]] has not been resolved, although [[Carl Pomerance|Pomerance]] thought at one point he had disproved it.
+
+==Notes==
+<references/>
+
+== References ==
+*Grime, James. [https://www.numberphile.com/videos/a-video-about-the-number-10 A video about the number 10]. ''[[Numberphile]]''.
+*{{MathWorld |urlname=FriendlyNumber |title=Friendly Number}}
+*{{MathWorld |urlname=FriendlyPair |title=Friendly Pair}}
+*{{MathWorld |urlname=SolitaryNumber |title=Solitary Number}}
+*{{MathWorld |urlname=Abundancy |title=Abundancy}}
+
+{{Divisor classes}}
+{{Classes of natural numbers}}
+
+[[Category:Divisor function]]
+[[Category:Integer sequences]]
+[[Category:Unsolved problems in number theory]]

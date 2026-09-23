@@ -1,0 +1,103 @@
+{{unsolved|mathematics|Are digraphs uniquely determined by their subgraphs and some in-degree data?}}
+The [[reconstruction conjecture]] of [[Stanisław Ulam]] is one of the best-known [[open problem]]s in [[graph theory]]. Using the terminology of [[Frank Harary]]<ref>{{citation
+ | last = Harary | first = Frank | author-link = Frank Harary
+ | location = Reading, Mass.
+ | mr = 0256911
+ | publisher = Addison-Wesley
+ | title = Graph Theory
+ | year = 1969}}.</ref> it can be stated as follows: If ''G'' and ''H'' are two [[graph (discrete mathematics)|graph]]s on at least three vertices and ƒ is a [[bijection]] from ''V''(''G'') to ''V''(''H'') such that ''G''\{''v''} and ''H''\{ƒ(''v'')} are [[graph isomorphism|isomorphic]] for all vertices ''v'' in ''V''(''G''), then ''G'' and ''H'' are isomorphic.
+
+In 1964 Harary<ref>{{citation
+ | last = Harary | first = Frank | author-link = Frank Harary
+ | editor-last = Fiedler | editor-first = M. | editor-link = Miroslav Fiedler
+ | contribution = On the reconstruction of a graph from a collection of subgraphs
+ | mr = 0175111
+ | pages = 47–52
+ | publisher = Publ. House Czechoslovak Acad. Sci., Prague
+ | title = Theory of Graphs and its Applications (Proc. Sympos. Smolenice, 1963)
+ | year = 1964}}</ref> extended the reconstruction conjecture to [[directed graph]]s on at least five vertices as the so-called digraph reconstruction conjecture. Many results supporting the digraph reconstruction conjecture appeared between 1964 and 1976. However, this conjecture was [[mathematical proof|proved]] to be false when P. K. Stockmeyer discovered several infinite families of [[counterexample]] pairs of digraphs (including [[tournament (graph theory)|tournament]]s) of arbitrarily large order.<ref name="s77">{{citation
+ | last = Stockmeyer | first = Paul K.
+ | doi = 10.1002/jgt.3190010108
+ | issue = 1
+ | journal = [[Journal of Graph Theory]]
+ | mr = 0453584
+ | pages = 19–25
+ | title = The falsity of the reconstruction conjecture for tournaments
+ | volume = 1
+ | year = 1977| url = https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=2129&context=aspubs
+ | url-access = subscription
+ }}. Erratum, ''J. Graph Th.'' '''62''' (2): 199–200, 2009, {{doi|10.1002/jgt.20398}}, {{MR|2555098}}.</ref><ref>{{citation
+ | last = Stockmeyer | first = Paul K.
+ | doi = 10.1016/S0095-8956(81)80027-5
+ | issue = 2
+ | journal = [[Journal of Combinatorial Theory]] | series = Series B
+ | mr = 630985
+ | pages = 232–239
+ | title = A census of nonreconstructible digraphs. I. Six related families
+ | volume = 31
+ | year = 1981| doi-access = 
+ }}.</ref><ref>{{citation
+ | last = Stockmeyer | first = Paul K.
+ | publisher = Preprint
+ | title = A census of nonreconstructible digraphs II: A family of tournaments
+ | year = 1991}}.</ref> The falsity of the digraph reconstruction conjecture caused doubt about the reconstruction conjecture itself. Stockmeyer even observed that “perhaps the considerable effort being spent in attempts to prove the (reconstruction) conjecture should be balanced by more serious attempts to construct counterexamples.”<ref name="s77"/>
+
+In 1979, Ramachandran revived the digraph reconstruction conjecture in a slightly weaker form called the '''new digraph reconstruction conjecture'''. In a digraph, the number of arcs incident from (respectively, to) a vertex ''v'' is called the [[outdegree]] (respectively, [[indegree]]) of ''v'' and is denoted by ''od''(''v'') (respectively, ''id''(''v'')). The new digraph conjecture may be stated as follows:<ref>{{citation
+ | last = Ramachandran | first = S.
+ | issue = 4
+ | journal = Graph Theory Newsletter
+ | publisher = Western Michigan University
+ | title = A digraph reconstruction conjecture
+ | volume = 8
+ | year = 1979}}.</ref><ref>{{citation
+ | last = Ramachandran | first = S.
+ | doi = 10.1016/S0095-8956(81)80019-6
+ | issue = 2
+ | journal = [[Journal of Combinatorial Theory]] | series = Series B
+ | mr = 630977
+ | pages = 143–149
+ | title = On a new digraph reconstruction conjecture
+ | volume = 31
+ | year = 1981| doi-access = free
+ }}.</ref>
+{{blockquote|1=If ''D'' and ''E'' are any two digraphs and ''ƒ'' is a bijection from ''V''(''D'') to ''V''(''E'') such that ''D''\{''v''} and ''E''\{ƒ(''v'')} are isomorphic and (''od''(''v''),''id''(''v''))&nbsp;=&nbsp;(''od''(ƒ(''v'')),''id''(ƒ(''v''))) for all ''v'' in ''V''(''D''), then ''D'' and ''E'' are isomorphic.}}
+
+[[File:New digraph.svg|thumb|550px|Each vertex in graph 1 matches one from graph 2. In each subgraph made by removing one of the vertices from graph 1, and the matching vertex from graph 2, the outdegree of each remaining vertex in graph 1's subgraph is the same as its matching counterpart in graph 2's subgraph. <br /><br />This will always be true given graphs 1 and 2 are isomorphic, but the conjecture states that this works in reverse, where knowing ''only'' that vertices between two graphs can be paired such that the outdegrees in each subgraph constructed as described match for every vertex is enough information to determine the two graphs are isomorphic.]]
+
+The new digraph reconstruction conjecture reduces to the reconstruction conjecture in the undirected case, because if all the vertex-deleted subgraphs of two graphs are isomorphic, then the corresponding vertices must have the same degree. Thus, the new digraph reconstruction conjecture is stronger than the reconstruction conjecture, but weaker than the disproved digraph reconstruction conjecture. Several families of digraphs have been shown to satisfy the new digraph reconstruction conjecture and these include all the digraphs in the known counterexample pairs to the digraph reconstruction conjecture.
+
+== Reductions ==
+
+* All digraphs are ''N''-reconstructible if all digraphs with 2-connected underlying graphs are ''N''-reconstructible.<ref>{{citation
+ | last1 = Ramachandran | first1 = S
+ | last2 = Monikandan | first2 = S
+ | year = 2006
+ | title = All Digraphs are N-reconstructible if all Digraphs with 2-connected underlying Graphs are N-reconstructible
+ | url = https://scholar.google.com/scholar?cluster=1026774905527616239&hl=en&oi=scholarr
+ | journal = Utilitas Mathematica
+ | publisher = UTIL MATH PUBL INC
+ | volume = 71
+ | pages = 225–234
+ | mr = 2278835}}</ref>
+*All digraphs are ''N''-reconstructible if and only if either of the following two classes of digraphs are ''N''-reconstructible, where diam(''D'') and radius(''D'') are defined to be the diameter and radius of the underlying graph of ''D''.<ref>{{citation
+ | last = Ramachandran | first = S
+ | year = 2012
+ | title = Sufficient Conditions For The N-Reconstructibility Of All Digraphs
+ | url = https://scholar.google.com/scholar?cluster=16890371920589646148&hl=en&oi=scholarr
+ | journal = Utilitas Mathematica
+ | publisher = UTIL MATH PUBL INC
+ | volume = 88 
+ | pages = 183–188
+ | mr = 2975831}}</ref>
+*#Digraphs with diam(''D'') ≤ 2 or diam(''D'') = diam(''D''<sup>c</sup>) = 3
+*#Digraphs ''D'' with 2-connected underlying graphs and radius(''D'') ≤ 2
+
+== Present status ==
+As of 2026, no counterexample to the new digraph reconstruction conjecture is known. This conjecture is now also known as the '''degree associated reconstruction conjecture'''.
+
+==References==
+{{reflist}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Directed graphs]]

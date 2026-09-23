@@ -1,0 +1,128 @@
+{{Short description|Partially unsolved problem in mathematics}}
+{{about|the invariant subspace problem in functional analysis|the general linear algebra concept|Invariant subspace}}
+
+[[File:Eigenvalue equation.svg|thumb|right|250px|The vector <math>x</math> is an [[eigenvector]] of the [[matrix (mathematics)|matrix]] <math>A</math>. Every operator on a non-trivial complex [[dimension (vector space)|finite-dimensional]] [[vector space]] has an eigenvector, solving the invariant subspace problem for these spaces.]]
+
+In the field of [[mathematics]] known as [[functional analysis]], the '''invariant subspace problem''' is a partially unresolved problem asking whether every [[bounded operator]] on a [[complex number|complex]] [[Banach space]] sends some non-trivial [[closed set|closed]] [[linear subspace|subspace]] to itself. Many variants of the problem have been solved, by restricting the class of bounded operators considered or by specifying a particular class of Banach spaces. The problem is still [[open problem|open]] for [[separable space|separable]] [[Hilbert space]]s (in other words, each example, found so far, of an operator with no non-trivial invariant subspaces is an operator that acts on a Banach space that is not [[isomorphic]] to a separable Hilbert space).
+
+==History==
+The problem seems to have been stated in the mid-20th century after work by [[Arne Beurling|Beurling]] and [[John von Neumann|von Neumann]],<ref name="Yadav, page 292">{{Harvp|Yadav|2005|p=292}}.</ref> who found (but never published) a positive solution for the case of [[compact operator]]s. It was then posed by [[Paul Halmos]] for the case of operators <math>T</math> such that <math>T^2</math> is compact. This was resolved affirmatively, for the more general class of polynomially compact operators (operators <math>T</math> such that <math>p(T)</math> is a compact operator for a suitably chosen nonzero [[polynomial]] <math>p</math>), by [[Allen R. Bernstein]] and [[Abraham Robinson]] in 1966 (see {{slink|Non-standard analysis|Invariant subspace problem}} for a summary of the proof).
+
+For [[Banach space]]s, the first example of an operator without an invariant subspace was constructed by [[Per Enflo]]. He proposed a [[counterexample]] to the invariant subspace problem in 1975, publishing an outline in 1976. Enflo submitted the full article in 1981 and the article's complexity and length delayed its publication to 1987.<ref name="Beauzamy 1988; Yadav">{{Harvp|Beauzamy|1988}}; {{Harvp|Yadav|2005}}.</ref> Enflo's long "manuscript had a world-wide circulation among mathematicians"<ref name="Yadav, page 292"/> and some of its ideas were described in publications besides Enflo (1976).<ref>See, for example, {{Harvp|Radjavi|Rosenthal|1982}}.</ref> Enflo's works inspired a similar construction of an operator without an invariant subspace for example by [[Bernard Beauzamy]], who acknowledged Enflo's ideas.<ref name="Beauzamy 1988; Yadav" />
+
+In the 1990s, Enflo developed a "constructive" approach to the invariant subspace problem on Hilbert spaces.<ref>Page 401 in {{cite journal|last1=Foiaş|first1=Ciprian|last2=Jung|first2=Il Bong|last3=Ko|first3=Eungil|last4=Pearcy|first4=Carl | title=On quasinilpotent operators. III | journal=Journal of Operator Theory | volume=54|year=2005|issue=2|pages=401–414}}. Enflo's method of ("forward") "minimal vectors" is also noted in the review of this research article by Gilles Cassier in ''[[Mathematical Reviews]]'': {{MR|2186363}}</ref>
+
+In May 2023, a preprint of Enflo appeared on arXiv,<ref>{{Cite arXiv |last=Enflo |first=Per H. |date=May 26, 2023 |title=On the invariant subspace problem in Hilbert spaces |class=math.FA |eprint=2305.15442 }}</ref> which, if correct, solves the problem for Hilbert spaces and completes the picture.{{secondary source needed|date=December 2025}}
+
+In July 2023, a second and independent preprint of Neville appeared on arXiv,<ref>{{Cite arXiv |last=Neville |first=Charles W. |date=July 21, 2023 |title=a proof of the invariant subspace conjecture for separable Hilbert spaces |class=math.FA |eprint=2307.08176 }}</ref> claiming the solution of the problem for separable Hilbert spaces.{{secondary source needed|date=December 2025}}
+
+==Precise statement==
+
+Formally,  the '''invariant subspace problem''' for a complex [[Banach space]] <math>H</math> of [[dimension (vector space)|dimension]]&nbsp;>&nbsp;1 is the question whether every [[bounded operator|bounded linear operator]] <math>T: H \to H </math>  has a non-trivial [[closed set|closed]] [[invariant subspace|<math>T</math>-invariant subspace]]: a closed [[linear subspace]] <math>W</math> of <math>H</math>, which is different from <math>\{0\}</math> and from <math>H</math>, such that <math> T(W)\subset W </math>.
+
+A negative answer to the problem is closely related to properties of the [[Orbit_(dynamics)| orbits]] <math>T</math>. If <math>x</math> is an element of the Banach space <math>H</math>, the orbit of <math>x</math> under the action of <math>T</math>, denoted by <math>[x]</math>, is the subspace generated by the sequence <math>\{ T^{n}(x)\,:\, n \ge 0\}</math>. This is also called the [[cyclic subspace|<math>T</math>-cyclic subspace]] generated by <math>x</math>. From the definition it follows that <math>[x]</math> is a <math>T</math>-invariant subspace. Moreover, it is the ''minimal'' <math>T</math>-invariant subspace containing <math>x</math>: if <math>W</math> is another invariant subspace containing <math>x</math>, then necessarily <math>T^n(x) \in W</math> for all <math>n \ge 0</math> (since <math>W</math> is <math>T</math>-invariant), and so <math>[x]\subset W</math>. If <math>x</math> is non-zero, then <math>[x]</math> is not equal to <math>\{0\}</math>, so its closure is either the whole space <math>H</math> (in which case <math>x</math> is said to be a [[cyclic vector]] for <math>T</math>) or it is a non-trivial <math>T</math>-invariant subspace. Therefore, a counterexample to the invariant subspace problem would be a Banach space <math>H</math> and a bounded operator <math>T: H \to H </math> for which every non-zero vector <math>x\in H</math> is a [[cyclic vector]] for <math>T</math>. (Where a "cyclic vector" <math>x</math> for an operator <math>T</math> on a Banach space <math>H</math> means one for which the orbit <math>[x]</math> of <math>x</math> is dense in <math>H</math>.)
+
+
+===Known special cases===
+
+While the case of the invariant subspace problem for separable Hilbert spaces is still open, several other cases have been settled for [[topological vector space]]s (over the [[field (mathematics)|field]] of complex numbers):
+*For finite-dimensional complex vector spaces, every operator admits an eigenvector, so it has a 1-dimensional invariant subspace.
+* The conjecture is true if the Hilbert space <math>H</math> is not [[separable space|separable]] (i.e. if it has an [[uncountable]] [[orthonormal basis]]). In fact, if <math>x</math> is a non-zero vector in <math>H</math>, the norm closure of the linear orbit <math>[x]</math> is separable (by construction) and hence a proper subspace and also invariant.
+*von Neumann showed<ref>Von Neumann's proof was never published, as relayed in a private communication to the authors of {{harvtxt|Aronszajn|Smith|1954}}. A version of that proof, independently discovered by Aronszajn, is included at the end of that paper.</ref> that any compact operator on a Hilbert space of dimension at least 2 has a non-trivial invariant subspace.
+* The [[spectral theorem]] shows that all [[normal operator]]s admit invariant subspaces.
+* {{harvtxt|Aronszajn|Smith|1954}} proved that every [[compact operator]] on any Banach space of dimension at least 2 has an invariant subspace.
+* {{harvtxt|Bernstein|Robinson|1966}} proved using [[non-standard analysis]] that if  the operator <math>T</math> on a Hilbert space is polynomially compact (in other words <math>p(T)</math> is compact for some nonzero polynomial <math>p</math>) then <math>T</math> has an invariant subspace. Their proof uses the original idea of embedding the infinite-dimensional Hilbert space in a [[hyperfinite set|hyperfinite]]-dimensional Hilbert space (see [[Non-standard analysis#Invariant subspace problem]]).
+* {{harvtxt|Halmos|1966}}, after having seen Robinson's preprint, eliminated the non-standard analysis from it and provided a shorter proof in the same issue of the same journal.
+* {{harvtxt|Lomonosov|1973}} gave a very short proof using the [[Schauder fixed point theorem]] that if the operator <math>T</math> on a Banach space commutes with a non-zero compact operator then <math>T</math> has a non-trivial invariant subspace.  This includes the case of polynomially compact operators because an operator commutes with any polynomial in itself. More generally, he showed that if <math>S</math> commutes with a non-scalar operator <math>T</math> that commutes with a non-zero compact operator, then <math>S</math> has an invariant subspace.<ref>See {{harvtxt|Pearcy|Shields|1974}} for a review.</ref>
+*The first example of an operator on a Banach space with no non-trivial invariant subspaces was found by  {{harvs|txt|authorlink=Per Enflo|first=Per|last=Enflo|year1=1976|year2=1987}}, and his example was simplified by {{harvtxt|Beauzamy|1985}}.
+*The first counterexample on a "classical" Banach space was found by {{harvs|txt|authorlink=Charles Read (mathematician)|first=Charles|last= Read|year1=1984|year2=1985}}, who described an operator on the classical Banach space <math>l_1</math> with no invariant subspaces.
+*Later {{harvs|txt|authorlink=Charles Read (mathematician)|first=Charles|last=Read|year=1988}} constructed an operator on <math>l_1</math> without even a non-trivial closed invariant ''subset'', that is that for every vector <math>x</math> the ''set'' <math>\{ T^{n}(x)\,:\, n \ge 0\}</math> is dense, in which case the vector is called [[hypercyclic vector|hypercyclic]] (the difference with the case of cyclic vectors is that we are not taking the subspace generated by the points <math>\{ T^{n}(x)\,:\, n \ge 0\}</math> in this case).
+*{{harvtxt|Atzmon|1983}} gave an example of an operator without invariant subspaces on a [[nuclear space|nuclear]] [[Fréchet space]].
+*{{harvtxt|Śliwa|2008}} proved that any infinite-dimensional Banach space of countable type over a [[non-Archimedean field]] admits a bounded linear operator without a non-trivial closed invariant subspace. This completely solves the non-Archimedean version of this problem, posed by van Rooij and Schikhof in 1992.
+*{{harvtxt|Argyros|Haydon|2011}} gave the construction of an infinite-dimensional Banach space such that every continuous operator is the sum of a compact operator and a scalar operator, so in particular every operator has an invariant subspace.
+
+==Notes==
+{{Reflist|2}}
+
+==References==
+
+* {{Citation
+|first1=Yuri A.
+|last1=Abramovich
+|last2=Aliprantis
+|first2=Charalambos D.
+|title=An Invitation to Operator Theory
+|publisher=American Mathematical Society
+|year=2002
+|isbn=978-0-8218-2146-6
+|mr=1921782
+|series=[[Graduate Studies in Mathematics]]
+|volume=50
+|location=Providence, RI
+|doi=10.1090/gsm/050|doi-access=free
+}}
+*{{Citation | last1=Argyros | first1=Spiros A. | last2=Haydon | first2=Richard G. | title=A hereditarily indecomposable L<sub>∞</sub>-space that solves the scalar-plus-compact problem | arxiv=0903.3921 | year=2011 | pages=1–54 | journal=[[Acta Math.]] | volume=206 | issue=1 | mr=2784662 | doi=10.1007/s11511-011-0058-y| s2cid=119532059 }}
+*{{Citation | doi=10.2307/1969637 | last1=Aronszajn | first1=N. | author1-link=Nachman Aronszajn | last2=Smith | first2=K. T. | title=Invariant subspaces of completely continuous operators | mr=0065807 | year=1954 | journal=[[Annals of Mathematics]] |series=Second Series   | volume=60 | pages=345–350 | issue=2 | jstor=1969637}}
+*{{Citation | doi=10.2307/2007039 | last1=Atzmon | first1=Aharon | title=An operator without invariant subspaces on a nuclear Fréchet space | mr=701260 | year=1983 | journal=[[Annals of Mathematics]] |series=Second Series   | volume=117 | issue=3 | pages=669–694 | jstor=2007039}}
+*{{Citation | last1=Beauzamy | first1=Bernard | title=Un opérateur sans sous-espace invariant: simplification de l'exemple de P. Enflo | doi=10.1007/BF01202903 | mr=792905 | year=1985 | journal=Integral Equations and Operator Theory  | volume=8 | issue=3 | pages=314–384 | s2cid=121418247 | trans-title=An operator with no invariant subspace: simplification of the example of P. Enflo | language=fr}}
+*{{Citation | last1=Beauzamy | first1=Bernard | title=Introduction to operator theory and invariant subspaces | publisher=North-Holland | location=Amsterdam | series=North-Holland Mathematical Library | isbn=978-0-444-70521-1 | mr=967989 | year=1988 | volume=42}}
+*{{Citation | last1=Bernstein | first1=Allen R. | last2=Robinson | first2=Abraham | author2-link=Abraham Robinson | title=Solution of an invariant subspace problem of K. T. Smith and P. R. Halmos | url=http://projecteuclid.org/euclid.pjm/1102994835 | mr=0193504 | year=1966 | journal=[[Pacific Journal of Mathematics]]   | volume=16 | issue=3 | pages=421–431 | doi=10.2140/pjm.1966.16.421| doi-access=free }}
+*{{Citation
+| last1=Enflo
+| first1=Per
+| author-link=Per Enflo
+| title=Séminaire Maurey--Schwartz (1975--1976) Espaces L<sup>p</sup>, applications radonifiantes et géométrie des espaces de Banach, Exp. Nos. 14-15 | publisher=Centre Math., École Polytech., Palaiseau | mr=0473871 | year=1976 | chapter=On the invariant subspace problem in Banach spaces | pages=7
+}}
+*{{Citation
+|last1=Enflo|first1=Per| title=On the invariant subspace problem for Banach spaces | doi=10.1007/BF02392260 | mr=892591 | year=1987 | journal=[[Acta Mathematica]]   | volume=158 | issue=3 | pages=213–313
+| doi-access=free }}
+* {{Citation
+|last1=Enflo|first1=Per|author-link2=Victor Lomonosov|last2=Lomonosov|first2=Victor
+|chapter=Some aspects of the invariant subspace problem
+|title=Handbook of the geometry of Banach spaces
+|volume=I
+|pages=533–559
+|publisher=North-Holland
+|location=Amsterdam|year=2001
+|mr=1863701|doi=10.1016/S1874-5849(01)80015-2
+|isbn=9780444828422}}
+*{{Citation | last1=Halmos | first1=Paul R. | author1-link=Paul R. Halmos | title=Invariant subspaces of polynomially compact operators | url=http://projecteuclid.org/euclid.pjm/1102994836 | year=1966 | journal=[[Pacific Journal of Mathematics]]   | volume=16 | issue=3 | pages=433–437 | mr=0193505 | doi=10.2140/pjm.1966.16.433| doi-access=free }}
+*{{Citation | last1=Lomonosov | first1=V. I. | title=Invariant subspaces of the family of operators that commute with a completely continuous operator | mr=0420305 | year=1973 | journal=Funktsional'nyi Analiz i Ego Prilozheniya | volume=7 | issue=3 | pages=55–56}}
+**Translated in {{citation |last1=Lomonosov |first1=V. I. |title=Invariant subspaces for the family of operators which commute with a completely continuous operator |journal=Functional Analysis and Its Applications |date=1973 |volume=7 |issue=3 |pages=213–214 |doi=10.1007/BF01080698 |ref=none}}
+*{{Citation|last1=Pearcy|first1=Carl|last2=Shields|first2=Allen L.|chapter=A survey of the Lomonosov technique in the theory of invariant subspaces|pages=219–229|series=Mathematical Surveys|publisher=American Mathematical Society|location=Providence, R.I.|year=1974|mr=355639|editor=C. Pearcy|title=Topics in operator theory|issue=13}}
+*{{Citation | author-link=Charles Read (mathematician)|last1=Read | first1=C. J. | title=A solution to the invariant subspace problem | doi=10.1112/blms/16.4.337  | mr=749447 | year=1984 | journal=The Bulletin of the London Mathematical Society   | volume=16 | issue=4 | pages=337–401 }}
+*{{Citation | author-link=Charles Read (mathematician)|last1=Read | first1=C. J. | title=A solution to the invariant subspace problem on the space l<sub>1</sub> | doi=10.1112/blms/17.4.305  | mr=806634 | year=1985 | journal=The Bulletin of the London Mathematical Society   | volume=17 | issue=4 | pages=305–317 }}
+*{{Citation | author-link=Charles Read (mathematician)|last1=Read | first1=C. J. | title=The invariant subspace problem for a class of Banach spaces, 2: hypercyclic operators | doi=10.1007/BF02765019 | doi-access=free | mr=0959046 | year=1988 | journal=[[Israel Journal of Mathematics]] | volume=63 | issue=1 | pages=1–40 |s2cid=123651876 }}
+* {{Citation|first1=Heydar|last1=Radjavi|first2=Peter|last2=Rosenthal
+|author2-link=Peter Rosenthal
+|title=The invariant subspace problem
+|journal=[[The Mathematical Intelligencer]]
+|volume=4
+|issue=1
+|year=1982
+|doi=10.1007/BF03022994
+|pages =33–37
+|mr=0678734
+|s2cid=122811130|url=https://link.springer.com/article/10.1007/BF03022994|url-access=subscription
+}}
+* {{Citation
+|first1=Heydar|last1=Radjavi|first2=Peter|last2=Rosenthal
+|title=Invariant Subspaces
+|year=2003
+|edition=Second
+|mr=2003221
+|isbn=978-0-486-42822-2
+|publisher=Dover
+|location=Mineola, NY
+}}
+* {{Citation|last1=Radjavi|first1=Heydar|last2=Rosenthal|first2=Peter|title=Simultaneous triangularization|series=Universitext| publisher=Springer-Verlag|location=New York|year=2000|pages=xii+318 |isbn=978-0-387-98467-4 |mr=1736065 |doi=10.1007/978-1-4612-1200-3}}
+* {{Citation|last1=Śliwa|first1=Wiesław|title=The Invariant Subspace Problem for Non-Archimedean Banach Spaces| doi=10.4153/CMB-2008-060-9| year=2008|journal=[[Canadian Mathematical Bulletin]]| volume= 51| issue=4| pages=604–617|mr=2462465|url=https://repozytorium.amu.edu.pl/bitstream/10593/798/1/Sliwa%2031.pdf|hdl=10593/798|s2cid=40430187|hdl-access=free}}
+* {{Citation | last1=Yadav | first1=B. S. | title=The present state and heritages of the invariant subspace problem | doi=10.1007/s00032-005-0048-7 | mr=2175046 | year=2005 | journal=Milan Journal of Mathematics   | volume=73 | issue=1 | pages=289–316 | s2cid=121068326 }}
+
+{{Functional analysis}}
+
+[[Category:Invariant subspaces]] <!-- Specific -->
+[[Category:Operator theory]] <!-- General -->
+[[Category:Functional analysis]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Mathematical problems]]

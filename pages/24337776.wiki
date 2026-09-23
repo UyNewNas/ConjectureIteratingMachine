@@ -1,0 +1,4 @@
+#REDIRECT [[NC (complexity)]] {{R with possibilities}}
+
+{{DEFAULTSORT:NC  P problem}}
+[[Category:Unsolved problems in computer science]]

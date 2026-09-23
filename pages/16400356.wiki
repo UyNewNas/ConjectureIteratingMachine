@@ -1,0 +1,80 @@
+{{Short description|Unsolved problem about sums of powers}}
+In [[mathematics]], the '''Prouhet–Tarry–Escott problem''' asks for two [[disjoint sets|disjoint]] [[multiset]]s ''A'' and ''B'' of ''n'' [[integer]]s each, whose first ''k'' [[power sum symmetric polynomial]]s are all equal.
+That is, the two multisets should satisfy the equations
+:<math>\sum_{a\in A} a^i = \sum_{b\in B} b^i</math>
+for each integer ''i'' from 1 to a given ''k''.  It has been shown that ''n'' must be strictly greater than ''k''.  Solutions with <math>k = n - 1</math> are called ''ideal solutions''.  Ideal solutions are known for <math>3 \le n \le 10</math> and for <math>n = 12</math>.  No ideal solution is known for <math>n=11</math> or for <math>n \ge 13</math>.{{sfn|Borwein|2002|p=85}}
+
+This problem was named after [[Eugène Prouhet]], who studied it in the early 1850s, and [[Gaston Tarry]] and Edward B. Escott, who studied it in the early 1910s. The problem originates from letters of [[Christian Goldbach]] and [[Leonhard Euler]] (1750/1751).
+
+== Examples ==
+
+=== Ideal solutions ===
+
+An ideal solution for ''n''&nbsp;=&nbsp;6 is given by the two sets {&nbsp;0,&nbsp;5,&nbsp;6,&nbsp;16,&nbsp;17,&nbsp;22&nbsp;}
+and {&nbsp;1,&nbsp;2,&nbsp;10,&nbsp;12,&nbsp;20,&nbsp;21&nbsp;}, because:
+
+: 0<sup>1</sup> + 5<sup>1</sup> + 6<sup>1</sup> + 16<sup>1</sup> + 17<sup>1</sup> + 22<sup>1</sup> = 1<sup>1</sup> + 2<sup>1</sup> + 10<sup>1</sup> + 12<sup>1</sup> + 20<sup>1</sup> + 21<sup>1</sup>
+
+: 0<sup>2</sup> + 5<sup>2</sup> + 6<sup>2</sup> + 16<sup>2</sup> + 17<sup>2</sup> + 22<sup>2</sup> = 1<sup>2</sup> + 2<sup>2</sup> + 10<sup>2</sup> + 12<sup>2</sup> + 20<sup>2</sup> + 21<sup>2</sup>
+
+: 0<sup>3</sup> + 5<sup>3</sup> + 6<sup>3</sup> + 16<sup>3</sup> + 17<sup>3</sup> + 22<sup>3</sup> = 1<sup>3</sup> + 2<sup>3</sup> + 10<sup>3</sup> + 12<sup>3</sup> + 20<sup>3</sup> + 21<sup>3</sup>
+
+: 0<sup>4</sup> + 5<sup>4</sup> + 6<sup>4</sup> + 16<sup>4</sup> + 17<sup>4</sup> + 22<sup>4</sup> = 1<sup>4</sup> + 2<sup>4</sup> + 10<sup>4</sup> + 12<sup>4</sup> + 20<sup>4</sup> + 21<sup>4</sup>
+
+: 0<sup>5</sup> + 5<sup>5</sup> + 6<sup>5</sup> + 16<sup>5</sup> + 17<sup>5</sup> + 22<sup>5</sup> = 1<sup>5</sup> + 2<sup>5</sup> + 10<sup>5</sup> + 12<sup>5</sup> + 20<sup>5</sup> + 21<sup>5</sup>.
+
+For ''n''&nbsp;=&nbsp;12, an ideal solution is given by ''A'' = {±22,&nbsp;±61,&nbsp;±86,&nbsp;±127,&nbsp;±140,&nbsp;±151} and ''B''&nbsp;=&nbsp;{±35,&nbsp;±47,&nbsp;±94,&nbsp;±121,&nbsp;±146,&nbsp;±148}.<ref>[http://euler.free.fr/eslp/TarryPrb.htm#Ideal%20symmetric Solution found by Nuutti Kuosa, Jean-Charles Meyrignac and Chen Shuwen, in 1999].</ref>
+
+=== Other solutions ===
+
+Prouhet used the [[Thue–Morse sequence]] to construct a solution with <math>n=2^k</math> for any <math>k</math>. Namely, partition the numbers from 0 to <math>2^{k+1}-1</math> into a) the numbers each with an even number of ones in its binary expansion and b) the numbers each with an odd number of ones in its binary expansion; then the two sets of the partition give a solution to the problem.<ref>{{citation
+ | last = Wright | first = E. M.
+ | doi = 10.2307/2309513
+ | journal = The American Mathematical Monthly
+ | mr = 0104622
+ | pages = 199–201
+ | title = Prouhet's 1851 solution of the Tarry–Escott problem of 1910
+ | volume = 66
+ | year = 1959}}.</ref> For instance, for <math>n=8</math> and <math>k=3</math>, Prouhet's solution is:
+:0<sup>1</sup> + 3<sup>1</sup> + 5<sup>1</sup> + 6<sup>1</sup> + 9<sup>1</sup> + 10<sup>1</sup> + 12<sup>1</sup> + 15<sup>1</sup> = 1<sup>1</sup> + 2<sup>1</sup> + 4<sup>1</sup> + 7<sup>1</sup> +  8<sup>1</sup> + 11<sup>1</sup> + 13<sup>1</sup> + 14<sup>1</sup>
+:0<sup>2</sup> + 3<sup>2</sup> + 5<sup>2</sup> + 6<sup>2</sup> + 9<sup>2</sup> + 10<sup>2</sup> + 12<sup>2</sup> + 15<sup>2</sup> = 1<sup>2</sup> + 2<sup>2</sup> + 4<sup>2</sup> + 7<sup>2</sup> +  8<sup>2</sup> + 11<sup>2</sup> + 13<sup>2</sup> + 14<sup>2</sup>
+:0<sup>3</sup> + 3<sup>3</sup> + 5<sup>3</sup> + 6<sup>3</sup> + 9<sup>3</sup> + 10<sup>3</sup> + 12<sup>3</sup> + 15<sup>3</sup> = 1<sup>3</sup> + 2<sup>3</sup> + 4<sup>3</sup> + 7<sup>3</sup> +  8<sup>3</sup> + 11<sup>3</sup> + 13<sup>3</sup> + 14<sup>3</sup>.
+
+== Generalizations ==
+A higher-dimensional version of the Prouhet–Tarry–Escott problem has been introduced and studied by [[Andreas Alpers]] and [[Robert Tijdeman]] in 2007: Given parameters <math>n,k \in \mathbb{N}</math>, find two different multi-sets <math>\{(x_1,y_1),\dots,(x_n,y_n)\}</math>, <math>\{(x_1',y_1'),\dots,(x_n',y_n') \}</math> of points from <math>\mathbb{Z}^2</math>  such that
+
+:<math>\sum_{i=1}^nx_i^jy_i^{d-j}=\sum_{i=1}^n{x'}_i^j{y'}_i^{d-j} </math>
+
+for all <math>d,j \in \{0,\dots,k\}</math> with <math>j \leq d.</math> This problem is related to [[discrete tomography]] and also leads to special Prouhet-Tarry-Escott solutions over the [[Gaussian integers]] (though solutions to the Alpers-Tijdeman problem do not exhaust the Gaussian integer solutions to Prouhet-Tarry-Escott).
+
+A solution for <math>n=6</math> and <math>k=5</math> is given, for instance, by:
+
+:<math>\{(x_1,y_1),\dots,(x_6,y_6)\}=\{(2,1),(1,3),(3,6),(6,7),(7,5),(5,2)\}</math> and
+
+:<math>\{(x'_1,y'_1),\dots,(x'_6,y'_6)\}=\{(1,2),(2,5),(5,7),(7,6),(6,3),(3,1)\}</math>.
+
+No solutions for <math>n=k+1</math> with <math>k\geq6</math> are known.
+
+==See also==
+* [[Euler's sum of powers conjecture]]
+* [[Beal's conjecture]]
+* [[Jacobi–Madden equation]]
+* [[Lander, Parkin, and Selfridge conjecture]]
+* [[Taxicab number]]
+* [[Pythagorean quadruple]]
+* [[Sums of powers]], a list of related conjectures and theorems
+* [[Discrete tomography]]
+
+==Notes==
+{{reflist}}
+
+==References==
+*{{citation | last=Borwein | first=Peter B. | authorlink=Peter Borwein | title=Computational Excursions in Analysis and Number Theory | chapter=The Prouhet–Tarry–Escott problem | pages=85–96 | series=CMS Books in Mathematics | publisher=[[Springer-Verlag]] | year=2002 | isbn=0-387-95444-9 | url=https://books.google.com/books?id=A_ITwN13J6YC&pg=85#PPA85,M1 | accessdate=2009-06-16}} Chap.11.
+*{{citation | last=Alpers| first=Andreas| authorlink=Andreas Alpers| author2=Rob Tijdeman | title=The Two-Dimensional Prouhet-Tarry-Escott Problem | pages=403–412 | year=2007 | journal=Journal of Number Theory | volume=123 | issue=2 | url=https://www.math.leidenuniv.nl/~tijdeman/altijd.pdf | accessdate=2015-04-01 | doi=10.1016/j.jnt.2006.07.001| doi-access=free }}.
+
+==External links==
+*{{mathworld | title = Prouhet-Tarry-Escott problem | urlname = Prouhet-Tarry-EscottProblem |mode=cs2}}
+
+{{DEFAULTSORT:Prouhet-Tarry-Escott problem}}
+[[Category:Diophantine equations]]
+[[Category:Unsolved problems in mathematics]]

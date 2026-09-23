@@ -1,0 +1,126 @@
+{{Short description|Summatory function of the divisor-counting function}}
+[[File:Divisor-summatory.svg|thumb|right|The summatory function, with leading terms removed, for <math>x < 10^4</math>]]
+[[File:Divisor-summatory-big.svg|thumb|right|The summatory function, with leading terms removed, for <math>x < 10^7</math>]]
+[[File:Divisor-distribution.jpeg|thumb|right|The summatory function, with leading terms removed, for <math>x < 10^7</math>, graphed as a distribution or histogram. The vertical scale is not constant left to right; click on image for a detailed description.]]
+
+In [[number theory]], the '''divisor summatory function''' is a function that is a sum over the [[divisor function]]. It frequently occurs in the study of the asymptotic behaviour of the [[Riemann zeta function]]. The various studies of the behaviour of the divisor function are sometimes called '''divisor problems'''.
+
+==Definition==
+The divisor summatory function is defined as
+
+:<math>D(x)=\sum_{n\le x} d(n) = \sum_{j,k \atop jk\le x} 1</math>
+
+where
+
+:<math>d(n)=\sigma_0(n) = \sum_{j,k \atop jk=n} 1</math>
+
+is the [[divisor function]]. The divisor function counts the number of ways that the integer ''n'' can be written as a product of two integers. More generally, one defines
+
+:<math>D_k(x)=\sum_{n\le x} d_k(n)= \sum_{m\le x}\sum_{mn\le x} d_{k-1}(n)</math>
+
+where ''d''<sub>''k''</sub>(''n'') counts the number of ways that ''n'' can be written as a product of ''k'' numbers. This quantity can be visualized as the count of the number of lattice points fenced off by a hyperbolic surface in ''k'' dimensions.  Thus, for ''k'' = 2, ''D''(''x'') = ''D''<sub>2</sub>(''x'') counts the number of points on a [[square lattice]] bounded on the left by the vertical-axis, on the bottom by the horizontal-axis, and to the upper-right by the hyperbola ''jk''&nbsp;=&nbsp;''x''. Roughly, this shape may be envisioned as a hyperbolic [[simplex]]. This allows us to provide an alternative expression for ''D''(''x''), and a simple way to compute it in <math>O(\sqrt{x})</math> time:
+
+:<math>D(x)=\sum_{k=1}^x \left\lfloor\frac{x}{k}\right\rfloor = 2 \sum_{k=1}^u \left\lfloor\frac{x}{k}\right\rfloor - u^2</math>, where <math>u = \left\lfloor \sqrt{x}\right\rfloor</math>
+
+If the hyperbola in this context is replaced by a circle then determining the value of the resulting function is known as the [[Gauss circle problem]].
+
+Sequence of ''D''(''n'') {{OEIS|A006218}}:<br/>
+0, 1, 3, 5, 8, 10, 14, 16, 20, 23, 27, 29, 35, 37, 41, 45, 50, 52, 58, 60, 66, 70, 74, 76, 84, 87, 91, 95, 101, 103, 111, ...
+
+==Dirichlet's divisor problem==
+Finding a closed form for this summed expression seems to be beyond the techniques available, but it is possible to give approximations. The leading behavior of the series is given by
+
+:<math>D(x) = x\log x + x(2\gamma-1) + \Delta(x)\ </math>
+
+where <math>\gamma</math> is the [[Euler–Mascheroni constant]], and the error term is
+
+:<math>\Delta(x) = O\left(\sqrt{x}\right).</math>
+
+Here, <math>O</math> denotes [[Big-O notation]]. This estimate can be proven using the [[Dirichlet hyperbola method]], and was first established by [[Peter Gustav Lejeune Dirichlet|Dirichlet]] in 1849.<ref name="Montgomery Vaughan">{{cite book | last = Montgomery | first = Hugh |author-link=Hugh Montgomery (mathematician) |author2=R. C. Vaughan |authorlink2=Robert Charles Vaughan (mathematician)  | title = Multiplicative Number Theory I: Classical Theory | publisher = Cambridge University Press | location = Cambridge | year = 2007 | isbn = 978-0-521-84903-6 }}</ref>{{Rp|37–38,69}} The '''Dirichlet divisor problem''', precisely stated, is to improve this error bound by finding the smallest value of <math>\theta</math> for which
+
+:<math>\Delta(x) = O\left(x^{\theta+\epsilon}\right)</math>
+
+holds true for all <math>\epsilon > 0</math>.  As of today, this problem remains unsolved. Progress has been slow. Many of the same methods work for this problem and for [[Gauss's circle problem]], another lattice-point [[Counting problem (complexity)|counting problem]].  Section F1 of ''Unsolved Problems in Number Theory''
+<ref name="UPINT">
+{{cite book | last = Guy | first = Richard K. |author-link= Richard K. Guy| title = Unsolved Problems in Number Theory | edition=3rd | publisher = Springer | location = Berlin | year = 2004 | isbn = 978-0-387-20860-2 }}
+</ref>
+surveys what is known and not known about these problems.
+
+*In 1904, [[G. Voronoi]] proved that the error term can be improved to <math>O(x^{1/3}\log x).</math> <ref name="Ivic">
+{{cite book | last = Ivic | first = Aleksandar | title = The Riemann Zeta-Function | publisher = Dover Publications | location = New York | year = 2003 | isbn = 0-486-42813-3 }}
+</ref>{{Rp|381}}
+*In 1916, [[G. H. Hardy]] showed that <math>\inf \theta \ge 1/4</math>. In particular, he demonstrated that for some constant <math>K</math>, there exist arbitrarily large values of ''x'' for which <math>\Delta(x) > Kx^{1/4}</math> and arbitrarily large values of ''x'' for which <math>\Delta(x) < -Kx^{1/4}</math>.<ref name="Montgomery Vaughan" />{{Rp|69}}
+*In 1922, [[J. van der Corput]] improved Dirichlet's bound to <math>\inf \theta \le 33/100 = 0.33</math>.<ref name="Ivic" />{{Rp|381}}
+*In 1928, van der Corput proved that <math>\inf \theta \le 27/82 = 0.3\overline{29268}</math>.<ref name="Ivic" />{{Rp|381}}
+*In 1950, [[Chih Tsung-tao]] and independently in 1953 [[H. E. Richert]] proved that <math>\inf \theta \le 15/46 = 0.32608695652...</math>.<ref name="Ivic" />{{Rp|381}}
+*In 1969, [[Grigori Kolesnik (mathematician)|Grigori Kolesnik]] demonstrated that <math>\inf \theta \le 12/37 = 0.\overline{324}</math>.<ref name="Ivic" />{{Rp|381}}
+*In 1973, Kolesnik demonstrated that <math>\inf \theta \le 346/1067 = 0.32427366448...</math>.<ref name="Ivic" />{{Rp|381}}
+*In 1982, Kolesnik demonstrated that <math>\inf \theta \le 35/108 = 0.32\overline{407}</math>.<ref name="Ivic" />{{Rp|381}}
+*In 1988, [[H. Iwaniec]] and [[C. J. Mozzochi]] proved that <math>\inf \theta \leq 7/22 = 0.3\overline{18}</math>.<ref>{{cite journal | last = Iwaniec | first = H. | author-link = Henryk Iwaniec |author2=C. J. Mozzochi |author2-link=C. J. Mozzochi | year = 1988 | title = On the divisor and circle problems | journal = Journal of Number Theory | volume = 29 | pages = 60–93 | doi = 10.1016/0022-314X(88)90093-5| doi-access = free }}</ref>
+*In 2003, [[Martin Huxley|M.N. Huxley]] improved this to show that <math>\inf \theta \leq 131/416 = 0.31490384615...</math>.<ref name="Huxley">{{cite journal | last = Huxley | first = M. N. | author-link = Martin Huxley | year = 2003 | title = Exponential sums and lattice points III | journal = Proc. London Math. Soc. | volume = 87 | pages = 591–609 | doi = 10.1112/S0024611503014485 | issue = 3 | zbl=1065.11079 | issn=0024-6115 }}</ref>
+
+So, <math>\inf \theta</math> lies somewhere between 1/4 and 131/416 (approx. 0.3149); it is widely conjectured to be 1/4.  Theoretical evidence lends credence to this conjecture, since <math>\Delta(x)/x^{1/4}</math> has a (non-Gaussian) limiting distribution.<ref>{{Cite journal|last=Heath-Brown|author-link=Heath-Brown|first=D. R.|s2cid=59450869|date=1992|title=The distribution and moments of the error term in the Dirichlet divisor problem|journal=Acta Arithmetica|volume=60|issue=4|pages=389–415|doi=10.4064/aa-60-4-389-415|issn=0065-1036|quote=Theorem 1 The function has a distribution function|doi-access=free}}</ref>  The value of 1/4 would also follow from a conjecture on [[exponent pairs]].<ref name=Mon59>{{cite book | last=Montgomery | first=Hugh L. | author-link=Hugh Montgomery (mathematician) | title=Ten lectures on the interface between analytic number theory and harmonic analysis | series=Regional Conference Series in Mathematics | volume=84 | location=Providence, RI | publisher=[[American Mathematical Society]] | year=1994 | isbn=0-8218-0737-4 | zbl=0814.11001 | page=59 }}</ref>
+
+==Piltz divisor problem==
+In the generalized case, one has
+
+:<math>D_k(x) = xP_k(\log x)+\Delta_k(x) \,</math>
+
+where <math>P_k</math> is a [[Degree of a polynomial|polynomial of degree]] <math>k-1</math>. Using simple estimates, it is readily shown that
+
+:<math>\Delta_k(x)=O\left(x^{1-1/k} \log^{k-2} x\right)</math>
+
+for integer <math>k\ge 2</math>. As in the <math>k=2</math> case, the infimum of the bound is not known for any value of <math> k</math>. Computing these infima is known as the Piltz divisor problem, after the name of the German mathematician [[Adolf Piltz]] (also see his German page).  Defining the order <math>\alpha_k</math> as the smallest value for which <math>\Delta_k(x)=O\left(x^{\alpha_k+\varepsilon}\right)</math> holds, for any <math>\varepsilon>0</math>, one has the following results (note that <math>\alpha_2</math> is the <math>\theta</math> of the previous section):
+
+: <math>\alpha_2\le\frac{131}{416}\ ,</math><ref name="Huxley" />
+
+<!-- extra space between displayed "TeX" lines -->
+
+:<math>\alpha_3 \le\frac{43}{96}\ ,</math><ref>G. Kolesnik. On the estimation of multiple exponential sums, in "Recent Progress in Analytic Number Theory", Symposium Durham 1979 (Vol. 1), Academic, London, 1981, pp. 231–246.</ref> and<ref>[[Aleksandar Ivić]]. The Theory of the Riemann Zeta-function with Applications (Theorem 13.2). John Wiley and Sons 1985.</ref>
+
+<!-- extra space between displayed "TeX" lines -->
+
+:<math>
+\begin{align}
+\alpha_k & \le \frac{3k-4}{4k}\quad(4\le k\le 8) \\[6pt]
+\alpha_9 & \le\frac{35}{54}\ ,\quad \alpha_{10}\le\frac{41}{60}\ ,\quad \alpha_{11}\le\frac{7}{10} \\[6pt]
+\alpha_k & \le \frac{k-2}{k+2}\quad(12\le k\le 25) \\[6pt]
+\alpha_k & \le \frac{k-1}{k+4}\quad(26\le k\le 50) \\[6pt]
+\alpha_k & \le \frac{31k-98}{32k}\quad(51\le k\le 57) \\[6pt]
+\alpha_k & \le \frac{7k-34}{7k}\quad(k\ge 58)
+\end{align}
+</math>  
+ 
+*[[E. C. Titchmarsh]] conjectures that <math>\alpha_k =\frac{k-1}{2k}\ .</math>
+
+==Mellin transform==
+Both portions may be expressed as [[Mellin transform]]s:
+
+:<math>D(x)=\frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} 
+\zeta^2(w) \frac {x^w}{w}\, dw</math>
+
+for <math>c>1</math>. Here, <math>\zeta(s)</math> is the [[Riemann zeta function]]. Similarly, one has
+
+:<math>\Delta(x)=\frac{1}{2\pi i} \int_{c^\prime-i\infty}^{c^\prime+i\infty} 
+\zeta^2(w) \frac {x^w}{w} \,dw</math>
+
+with <math>0<c^\prime<1</math>. The leading term of <math>D(x)</math> is obtained by shifting the contour past the double pole at <math>w=1</math>: the leading term is just the [[residue (complex analysis)|residue]], by [[Cauchy's integral formula]].  In general, one has
+
+:<math>D_k(x)=\frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} 
+\zeta^k(w) \frac {x^w}{w} \,dw</math>
+
+and likewise for <math>\Delta_k(x)</math>, for <math>k\ge 2</math>.
+
+==Notes==
+{{Reflist}}
+
+==References==
+* [[Harold Edwards (mathematician)|H.M. Edwards]], ''Riemann's Zeta Function'', (1974) Dover Publications, {{ISBN|0-486-41740-9}} 
+* E. C. Titchmarsh, ''The theory of the Riemann Zeta-Function'', (1951) Oxford at the Clarendon Press, Oxford. ''(See chapter 12 for a discussion of the generalized divisor problem)''
+* {{Apostol IANT}} ''(Provides an introductory statement of the Dirichlet divisor problem.)''
+* H. E. Rose. ''A Course in Number Theory.'', Oxford, 1988.
+* [[Martin Huxley|M.N. Huxley]] (2003)  'Exponential Sums and Lattice Points III', ''Proc. London Math. Soc.'' (3)87: 591–609
+
+[[Category:Arithmetic functions]]
+[[Category:Lattice points]]
+[[Category:Unsolved problems in number theory]]

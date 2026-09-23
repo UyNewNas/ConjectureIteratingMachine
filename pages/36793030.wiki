@@ -1,0 +1,75 @@
+{{Short description|Bound on the gaps between prime numbers}}
+[[File:Wikipedia primegaps.png|thumb|450px|Prime gap function]]
+In [[number theory]], '''Firoozbakht's conjecture''' (or the Firoozbakht conjecture<ref name="Ribenboim">{{cite book|last=Ribenboim|first=Paulo|title=The Little Book of Bigger Primes |edition=Second |year=2004|url=https://archive.org/details/littlebookbigger00ribe_610|url-access=limited| publisher=Springer-Verlag| page=[https://archive.org/details/littlebookbigger00ribe_610/page/n209 185]|isbn=978-0-387-20169-6 }}</ref><ref name=ppagc30>{{cite web|last=Rivera|first=Carlos|title=Conjecture 30. The Firoozbakht Conjecture|url=http://www.primepuzzles.net/conjectures/conj_030.htm|access-date=22 August 2012}}</ref>) is a conjecture about the distribution of [[prime number]]s. It is named after the Iranian mathematician [[Farideh Firoozbakht]] who stated it in 1982.
+
+The conjecture states that <math>\sqrt[n]{p_n}</math> (where <math>p_n</math> is the <math>n</math>-th prime) is a strictly decreasing function of <math>n</math>; i.e.,
+
+:<math>\sqrt[n+1]{p_{n+1}} < \sqrt[n]{p_n}</math>
+
+for all <math>n\geq 1</math>. Equivalently, <math>p_{n+1} < p_n^{1+1/n}</math>. See {{OEIS2C|id=A182134}}, {{OEIS2C|id=A246782}}.
+
+By using a table of [[Prime gaps#Numerical results|maximal gaps]], Firoozbakht verified her conjecture up to <math>4.444\cdot 10^{12}</math>.<ref name=ppagc30/> Now with more extensive tables of maximal gaps, the conjecture has been verified for all primes below <math>2^{64}\approx 1.84\cdot 10^{19}</math>.<ref>{{cite web |first=Tomás |last=Oliveira e Silva |title=Gaps between consecutive primes |url=https://sweet.ua.pt/tos/gaps.html |date=December 30, 2015 |access-date=2024-11-01}}</ref><ref name="Kourbatov2018">{{cite web |last=Kourbatov |first=Alexei |title=Prime Gaps: Firoozbakht Conjecture |url=http://www.javascripter.net/math/primes/firoozbakhtconjecture.htm}}</ref><ref name=Visser2019>{{cite journal |title=Verifying the Firoozbakht, Nicholson, and Farhadian conjectures up to the 81st maximal prime gap |first=Matt |last=Visser |author-link=Matt Visser |arxiv=1904.00499 |doi=10.3390/math7080691 |doi-access=free |journal=Mathematics |date=August 2019 |volume=7 |issue=8 |article-number=691}}</ref>
+
+If the conjecture were true, then the [[prime gap]] function <math>g_n = p_{n+1} - p_n </math> would satisfy<ref>{{cite arXiv |last=Sinha |first=Nilotpal Kanti |title=On a new property of primes that leads to a generalization of Cramer's conjecture |year=2010 |pages= |class=math.NT |eprint=1010.1399|mode=cs2}}.</ref>
+
+:<math> g_n < (\log p_n)^2 - \log p_n</math>
+
+for all <math>n\geqslant5</math>, and<ref>{{citation |last=Kourbatov |first=Alexei |title=Upper bounds for prime gaps related to Firoozbakht's conjecture |journal=Journal of Integer Sequences |arxiv=1506.03042 |year=2015 |volume=18 |issue=Article 15.11.2 |url=http://cs.uwaterloo.ca/journals/JIS/VOL18/Kourbatov/kourb7.html|bibcode=|mr=3436186|zbl=1390.11105}}.</ref>
+
+:<math> g_n < (\log p_n)^2 - \log p_n - 1</math>
+
+for all <math>n\geqslant10</math>. See also {{OEIS2C|id=A111943}}. This is among the strongest upper bounds conjectured for prime gaps, even somewhat stronger than the [[Cramér's conjecture|Cramér and Shanks conjectures]].<ref name="Kourbatov2018" /> It implies a strong form of Cramér's conjecture and is hence inconsistent with the heuristics of [[Andrew Granville|Granville]] and [[János Pintz|Pintz]]<ref>{{citation |last=Granville |first=A. |author-link=Andrew Granville |title=Harald Cramér and the distribution of prime numbers | journal = Scandinavian Actuarial Journal |volume=1 |year=1995 |pages=12–28 |doi=10.1080/03461238.1995.10413946 |mr=1349149 |zbl=0833.01018 | url=http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf |archive-url=https://web.archive.org/web/20160502155118/http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf |archive-date=2016-05-02 }}.</ref><ref>{{citation |last=Granville |first=Andrew |author-link=Andrew Granville |chapter=Unexpected irregularities in the distribution of prime numbers |title=Proceedings of the International Congress of Mathematicians |volume=1 |year=1995 |pages=388–399 |doi=10.1007/978-3-0348-9078-6_32 |isbn=978-3-0348-9897-3 |zbl=0843.11043 |chapter-url=http://www.dms.umontreal.ca/~andrew/PDF/icm.pdf }}.</ref><ref name="Pintz07">{{citation|last=Pintz|first=János|author-link=János Pintz|title=Cramér vs. Cramér: On Cramér's probabilistic model for primes|journal=Funct. Approx. Comment. Math.| volume=37 |issue=2 |year=2007|pages=232–471|doi=10.7169/facm/1229619660 | url=http://projecteuclid.org/euclid.facm/1229619660|mr=2363833 |zbl=1226.11096 |s2cid=120236707 |doi-access=free|url-access=subscription}}</ref> and of [[Helmut Maier|Maier]],<ref>{{citation
+ | last1 = Adleman | first1 = Leonard M.
+ | last2 = McCurley | first2 = Kevin S.
+ | editor1-last = Adleman | editor1-first = Leonard M.
+ | editor2-last = Huang | editor2-first = Ming-Deh
+ | contribution = Open problems in number-theoretic complexity. II
+ | contribution-url = https://scholar.archive.org/work/vxwpkdc7ozc5ngslodt37mztdi
+ | doi = 10.1007/3-540-58691-1_70
+ | isbn = 3-540-58691-1
+ | location = Berlin
+ | mr = 1322733
+ | pages = 291–322
+ | publisher = Springer
+ | series = Lecture Notes in Computer Science
+ | title = Algorithmic Number Theory: Proceedings of the First International Symposium (ANTS-I) held at Cornell University, Ithaca, New York, May 6–9, 1994
+ | volume = 877
+ | year = 1994}}</ref><ref>{{Citation | last1=Maier | first1=Helmut | author-link=Helmut Maier | title=Primes in short intervals | url=http://projecteuclid.org/euclid.mmj/1029003189 | doi = 10.1307/mmj/1029003189 | mr=783576 | year=1985 | journal=The Michigan Mathematical Journal | issn=0026-2285 | volume=32 | issue=2 | pages=221–225 | zbl = 0569.10023 | doi-access=free }}</ref> which suggest that
+
+:<math> g_n > \frac{2-\varepsilon}{e^\gamma}(\log p_n)^2 \approx 1.1229(\log p_n)^2</math>
+
+occurs infinitely often for any <math>\varepsilon>0,</math> where <math>\gamma</math> denotes the [[Euler–Mascheroni constant]].
+
+Three related conjectures (see the comments of {{OEIS2C|id=A182514}}) are variants of Firoozbakht's.  Forgues notes that Firoozbakht's can be written
+
+:<math>\left(\frac{\log p_{n+1}}{\log p_n}\right)^n < \left(1 + \frac 1n\right)^n,</math>
+where the right hand side is the well-known expression which reaches [[Euler's number]] in the limit <math>n\to\infty</math>, suggesting the slightly weaker conjecture
+:<math>\left(\frac{\log p_{n+1}}{\log p_n}\right)^n < e.</math>
+
+Nicholson and Farhadian<ref>{{cite web |first=Carlos |last=Rivera |title=Conjecture 78: P<sub>n</sub>^(P<sub>n+1</sub>/P<sub>n</sub>)^n<=n^P<sub>n</sub> |year=2016 |website=PrimePuzzles.net |url=https://www.primepuzzles.net/conjectures/conj_078.htm |access-date=2024-11-01}}</ref><ref>{{cite journal |first=Reza |last=Farhadian |date=October 2017 |title=On a New Inequality Related to Consecutive Primes |journal=Acta Universitatis Danubius. Œconomica |volume=13 |issue=5 |pages=236–242 |url=http://journals.univ-danubius.ro/index.php/oeconomica/article/view/4223 |archive-url=https://web.archive.org/web/20180419103716/http://journals.univ-danubius.ro/index.php/oeconomica/article/view/4223 |archive-date=2018-04-19 |url-status=dead |access-date=2024-11-05 }}</ref> give two stronger versions of Firoozbakht's conjecture which can be summarized as:
+:<math>\left(\frac{p_{n+1}}{p_n}\right)^n < \frac{p_n\log n}{\log p_n} < n\log n < p_n \qquad \text{ for all } n \geqslant 6,</math>
+where the right-hand inequality is Firoozbakht's, the middle is Nicholson's (since <math>n\log n < p_n</math>; see the article on [[Prime number theorem#Non-asymptotic bounds on the prime-counting function|non-asymptotic bounds on the prime-counting function]]) and the left-hand inequality is Farhadian's (since <math>p_n/\log p_n < n</math>; see [[Prime-counting function#Inequalities|prime-counting function § inequalities]].
+
+All have been verified to 2<sup>64</sup>.<ref name=Visser2019/>
+
+==See also==
+*[[Prime number theorem]]
+*[[Andrica's conjecture]]
+*[[Legendre's conjecture]]
+*[[Oppermann's conjecture]]
+*[[Cramér's conjecture]]
+
+==Notes==
+{{Reflist|colwidth=80em}}
+
+==References==
+* {{cite book|last=Ribenboim|first=Paulo|title=The Little Book of Bigger Primes |edition=Second | publisher=Springer-Verlag | year=2004|isbn=0-387-20169-6}}
+* {{cite book|last=Riesel|first=Hans|title=Prime Numbers and Computer Methods for Factorization |edition=Second | publisher=Birkhauser|year=1985|isbn=3-7643-3291-3}}
+
+{{Mathematics in Iran}}
+{{Prime number classes}}
+{{Prime number conjectures}}
+
+{{DEFAULTSORT:Firoozbakht's conjecture}}
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

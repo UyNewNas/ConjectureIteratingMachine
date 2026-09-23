@@ -1,0 +1,162 @@
+{{Short description|Conjecture in combinatorial number theory}}
+{{unsolved|mathematics|Is there some constant ''N'' such that every entry (apart from 1) of Pascal's triangle appears fewer than ''N'' times?}}
+'''Singmaster's conjecture''' is a [[conjecture]] in [[combinatorial number theory]], named after the British mathematician [[David Singmaster]] who proposed it in 1971. It says that there is a finite [[upper bound]] on the [[multiplicity (mathematics)|multiplicities]] of entries in [[Pascal's triangle]] (other than the number 1, which appears infinitely many times).  It is clear that the only number that appears infinitely many times in [[Pascal's triangle]] is 1, because any other number ''x'' can appear only within the first ''x''&nbsp;+&nbsp;1 rows of the triangle.
+
+==Statement==
+Let ''N''(''a'') be the number of times the number ''a'' > 1 appears in Pascal's triangle.  In [[big O notation]], the conjecture is:
+
+:<math>N(a) = O(1).</math>
+
+In other words, there exists a [[natural number]] <math display="inline">M</math> such that:
+:<math>N(a) \le M\ \qquad ~ \mathsf{\ for\ all\ } ~ \quad a.</math>
+
+==Known bound==
+
+Singmaster (1971) showed that
+
+:<math>N(a) = O(\log a).</math>
+
+Abbott, [[Paul Erdős|Erdős]], and Hanson (1974) (see [[#References|References]]) refined the estimate to:
+
+:<math>N(a) = O\left(\frac{\log a}{\log \log a}\right).</math>
+
+The best currently known (unconditional) bound is
+
+:<math>N(a) = O\left(\frac{(\log a)(\log \log \log a)}{(\log \log a)^3}\right),</math>
+
+and is due to [[Daniel Kane (mathematician)|Kane]] (2007).  Abbott, Erdős, and Hanson note that, conditional on [[Cramér's conjecture]] on gaps between consecutive primes,
+
+:<math> N(a) = O\left( (\log a)^{2/3+\varepsilon}\right) </math>
+
+holds for every <math>\varepsilon > 0 </math>.
+
+Singmaster (1975) showed that the [[Diophantine equation]]
+
+:<math>{n+1 \choose k+1} = {n \choose k+2}</math>
+
+has infinitely many solutions for the two variables ''n'', ''k''.  It follows that there are infinitely many triangle entries of multiplicity at least&nbsp;6:  For any non-negative ''i'', a number ''a'' with six appearances in Pascal's triangle is given by either of the above two expressions with
+
+:<math>n = F_{2i+2} F_{2i+3} - 1,</math>
+
+:<math>k = F_{2i} F_{2i+3} - 1,</math>
+
+where ''F''<sub>''j''</sub> is the ''j''th [[Fibonacci number]] (indexed according to the convention that ''F''<sub>0</sub>&nbsp;=&nbsp;0 and ''F''<sub>1</sub>&nbsp;=&nbsp;1). The above two expressions locate two of the appearances; two others appear symmetrically in the triangle with respect to those two; and the other two appearances are at <math>{a \choose 1}</math> and <math>{a \choose a-1}.</math>
+
+== Elementary examples==
+
+* 2 appears just once; all larger positive integers appear more than once;
+* 3, 4, 5 each appear two times; infinitely many numbers appear exactly twice;
+* all odd [[Prime number|prime numbers]] appear two times;
+* 6 appears three times, as do all [[central binomial coefficient]]s except for 1 and 2;<br/> (it is in principle not excluded that such a coefficient would appear five, seven, or more times, but no such example is known)
+* all numbers of the form <math>{p \choose 2}</math> for prime <math>p>3</math> appear four times;
+* Infinitely many appear exactly six times, including each of the following:
+:: <math>120 = {120 \choose 1} ={120 \choose 119} = {16 \choose 2} ={16 \choose 14} = {10 \choose 3} ={10 \choose 7}</math>
+
+<!-- deliberately added extra space -->
+
+:: <math>210 = {210 \choose 1} ={210 \choose 209} = {21 \choose 2} ={21 \choose 19} = {10 \choose 4}={10 \choose 6}</math>
+
+<!-- deliberately added extra space -->
+
+:: <math>1540 = {1540 \choose 1} ={1540 \choose 1539} = {56 \choose 2} ={56 \choose 54} = {22 \choose 3} = {22 \choose 19}</math>
+
+<!-- deliberately added extra space -->
+
+:: <math>7140 = {7140 \choose 1} ={7140 \choose 7139} = {120 \choose 2} ={120 \choose 118} = {36 \choose 3} = {36 \choose 33}</math>
+
+<!-- deliberately added extra space -->
+
+:: <math>11628 = {11628 \choose 1} = {11628 \choose 11627} = {153 \choose 2} = {153 \choose 151} = {19 \choose 5} = {19 \choose 14}</math>
+
+<!-- deliberately added extra space -->
+
+:: <math>24310 = {24310 \choose 1} = {24310 \choose 24309} = {221 \choose 2} = {221 \choose 219} = {17 \choose 8} = {17 \choose 9}</math>
+
+: The next number in Singmaster's infinite family (given in terms of Fibonacci numbers), and the next smallest number to occur six or more times, is <math>a = 61218182743304701891431482520</math>:<ref>{{cite journal |last1=De Weger |first1=Benjamin M.M. |title=Equal binomial coefficients: some elementary considerations |journal=Econometric Institute Research Papers |date=August 1995 |page=3 |url=https://repub.eur.nl/pub/1356/1356_ps.pdf |access-date=6 September 2024}}</ref>
+
+:: <math>a = {a \choose 1} = {a \choose a-1} = {104 \choose 39} = {104 \choose 65} = {103 \choose 40} = {103 \choose 63}</math>
+
+* The smallest number to appear eight times – indeed, the only number known to appear eight times – is 3003, which is also a member of Singmaster's infinite family of numbers with multiplicity at least 6:
+
+:: <math>3003 = {3003 \choose 1} = {78 \choose 2} = {15 \choose 5} = {14 \choose 6} = {14 \choose 8} = {15 \choose 10} = {78 \choose 76} = {3003 \choose 3002} </math>
+
+: It is not known whether infinitely many numbers appear eight times, nor even whether any other numbers than 3003 appear eight times.
+
+The number of times ''n'' appears in Pascal's triangle is
+:∞, 1, 2, 2, 2, 3, 2, 2, 2, 4, 2, 2, 2, 2, 4, 2, 2, 2, 2, 3, 4, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 4, 2, 2, ... {{OEIS|id=A003016}}
+
+By Abbott, Erdős, and Hanson (1974), the number of integers no larger than ''x'' that appear more than twice in Pascal's triangle is <math>O(x^{1/2})</math>.
+
+The smallest natural number greater than&nbsp;1 that appears (at least) ''n'' times in Pascal's triangle is
+:2, 3, 6, 10, 120, 120, 3003, 3003, ... {{OEIS|id=A062527}}
+
+The numbers which appear at least five times in Pascal's triangle are
+:1, 120, 210, 1540, 3003, 7140, 11628, 24310, 61218182743304701891431482520, ... {{OEIS|id=A003015}}
+
+Of these, the ones in Singmaster's infinite family are
+:1, 3003, 61218182743304701891431482520, ... {{OEIS|id=A090162}}
+
+==Open questions==
+
+It is not known whether any number appears more than eight times, nor whether any number besides 3003 appears that many times.  The conjectured finite upper bound could be as small as 8, but Singmaster thought it might be 10 or&nbsp;12. It is also unknown whether any numbers appear exactly five or seven times.
+
+==See also==
+* [[Binomial coefficient]]
+
+==References==
+{{Reflist}}
+
+*{{citation
+ | last = Singmaster | first = D. | author-link = David Singmaster
+ | doi = 10.2307/2316907
+ | mr = 1536288
+ | issue = 4
+ | journal = [[American Mathematical Monthly]]
+ | pages = 385–386
+ | title = Research Problems: How often does an integer occur as a binomial coefficient?
+ | volume = 78
+ | year = 1971
+ | jstor = 2316907}}.
+
+*{{citation
+ | last = Singmaster | first = D. | author-link = David Singmaster
+ | mr = 0412095
+ | issue = 4
+ | journal = [[Fibonacci Quarterly]]
+ | pages = 295–298
+ | title = Repeated binomial coefficients and Fibonacci numbers
+ | url= http://www.fq.math.ca/Scanned/13-4/singmaster.pdf
+ | volume = 13
+ | year = 1975| doi = 10.1080/00150517.1975.12430610 }}.
+
+*{{citation
+ | last1 = Abbott | first1 = H. L.
+ | last2 = Erdős | first2 = P. | author2-link = Paul Erdős
+ | last3 = Hanson | first3 = D.
+ | doi = 10.2307/2319526
+ | mr = 0335283
+ | journal = [[American Mathematical Monthly]]
+ | pages = 256–261
+ | title = On the number of times an integer occurs as a binomial coefficient
+ | volume = 81
+ | year = 1974
+ | jstor = 2319526
+ | issue = 3}}.
+
+*{{citation
+ | last = Kane | first = Daniel M. | author-link = Daniel Kane (mathematician)
+ | mr = 2373115
+ | journal = [[INTEGERS: The Electronic Journal of Combinatorial Number Theory]]
+ | url = http://www.emis.de/journals/INTEGERS/papers/h53/h53.pdf
+ | pages = #A53
+ | title = Improved bounds on the number of ways of expressing ''t'' as a binomial coefficient
+ | volume = 7
+ | year = 2007}}.
+
+{{Factorial and binomial topics}}
+
+[[Category:Combinatorics]]
+[[Category:Factorial and binomial topics]]
+[[Category:Triangles of numbers]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]

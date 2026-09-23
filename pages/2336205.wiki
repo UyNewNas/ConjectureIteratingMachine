@@ -1,0 +1,82 @@
+{{Short description|On Schubert's enumerative calculus}}
+'''Hilbert's fifteenth problem''' is one of the 23 [[Hilbert problems]] set out in a  list compiled in 1900 by [[David Hilbert]].  The problem is to put [[Schubert's enumerative calculus]] on a rigorous foundation.
+
+==Introduction==
+Schubert calculus is the intersection theory of the 19th century, together with applications to enumerative geometry. Justifying this calculus was the content of Hilbert's 15th problem, and was also the major topic of the 20 century algebraic geometry.<ref name="Hilbert1900">Hilbert, David, "Mathematische Probleme" [[Göttinger Nachrichten]], (1900), pp. 253-297, and in [[Archiv der Mathematik und Physik]], (3) '''1''' (1901), 44-63 and 213-237. Published in English translation by Dr. Maby Winton Newson, [[Bulletin of the American Mathematical Society]] '''8''' (1902), 437-479 [http://aleph0.clarku.edu/~djoyce/hilbert/problems.html#prob23 Web-viewable text] [https://www.ams.org/journals/bull/1902-08-10/S0002-9904-1902-00923-3/S0002-9904-1902-00923-3.pdf PDF text] {{doi|10.1090/S0002-9904-1902-00923-3}}.</ref><ref name="Sottile">[https://encyclopediaofmath.org/wiki/Schubert_calculus F. Sottile, Schubert calculus, Springer Encyclopedia of Mathematics]</ref> In the course of securing the foundations of intersection theory, [[Bartel Leendert van der Waerden|Van der Waerden]] and [[André Weil]]<ref name="Wa30">{{cite journal | title= Topologische Begründung des Kalküls der abzählenden Geometrie| first=B. L. van der | last= Waerden | journal=Math. Ann. | volume=102 | issue=1 | year=1930 | pages=337–362 | mr=1512581 | doi=10.1007/BF01782350| s2cid=177808901 }}</ref><ref name="W">{{citation
+| last = Weil | first = A.
+| title = Foundations of algebraic geometry
+| publisher = American Mathematical Society
+| series = Student Mathematical Library
+| volume = 32
+| year = 1962
+| mr=0144898}}</ref> related the problem to the determination of the [[cohomology ring]] H*(G/P) of a [[flag manifold]] G/P, where G is a [[Lie group]] and P a
+[[Borel subgroup|parabolic subgroup]] of G.
+
+The additive structure of the ring H*(G/P) is given by the basis theorem of Schubert calculus<ref name="E">{{cite journal | title= Sur la topologie de certains espaces homogenes | first= C. | last= Ehresmann | journal= Ann. of Math. | volume=35 | issue=2 | year=1934 | pages=396–443 | doi= 10.2307/1968440 | jstor= 1968440 | url = http://www.numdam.org/issue/THESE_1934__162__391_0.pdf}}</ref><ref name="CC">{{cite book | chapter= Sur les décompositions cellulaires des espaces G/B | first= C. | last= Chevalley | title= Algebraic Groups and Their Generalizations: Classical Methods | series= Proceedings of Symposia in Pure Mathematics | volume=56 | issue=1 | year=1994 | pages=1–26 | doi= 10.1090/pspum/056.1| isbn= 9780821815403 }}</ref><ref name="BGG">{{cite journal | title= Schubert cells and cohomology of the spaces G/P | author1= I.N. Bernstein | author2= I.M. Gel'fand | author3= S.I. Gel'fand | journal= Russian Math. Surveys | volume=28 | issue=3 | year=1973 | pages=1–26 | doi= 10.1070/RM1973v028n03ABEH001557 | s2cid= 250748691 | url = https://iopscience.iop.org/article/10.1070/RM1973v028n03ABEH001557/meta| url-access= subscription }}</ref> due to [[Ehresmann]], [[Claude Chevalley|Chevalley]], and Bernstein-Gel'fand-Gel'fand, stating that the classical Schubert classes on G/P form a free basis of the cohomology ring H*(G/P). The remaining problem of expanding products of Schubert classes as linear combinations of basis elements was called ''the characteristic problem''<ref name="Sc1">[https://archive.org/details/kalklderabzh00schuuoft/page/n5/mode/2up H. Schubert, Kalkül der abzählenden Geometrie], 1879, Leipzig: B.G. Teubner</ref><ref name="Sc2">[https://zbmath.org/?q=an%3A18.0631.01 H. Schubert, Lösung des Charakteristiken-Problems für lineare Räume beliebiger Dimension], Mitteilungen der Mathematische Gesellschaft in Hamburg 1 (1886), 134-155.</ref><ref name=" Wa30" /> by Schubert, and regarded by him as "the main theoretic problem of enumerative geometry".<ref name="K1">S. Kleiman, Book review on “Intersection Theory by W. Fulton”, Bull. AMS, Vol.12, no.1(1985), 137-143. https://projecteuclid.org/euclid.bams/1183552346</ref>
+
+While enumerative geometry made no connection with physics during the first century of its development, it has since emerged as a central element of [[string theory]].<ref>{{citation
+| last = Katz | first = Sheldon |author-link=Sheldon Katz
+| title = Enumerative Geometry and String Theory 
+| publisher = American Mathematical Society
+| series = Student Mathematical Library
+| volume = 32
+| year = 2006
+| url = https://www.ams.org/bookstore-getitem/item=stml-32}}</ref>
+
+==Problem statement==
+
+The entirety of the original problem statement, in English translation, is as follows:
+<blockquote>
+The problem consists in this: To establish rigorously and with an exact determination of the limits of their validity those geometrical numbers which Schubert especially has determined on the basis of the so-called principle of special position, or conservation of number, by means of the enumerative calculus developed by him.
+
+Although the algebra of today guarantees, in principle, the possibility of carrying out the processes of elimination, yet for the proof of the theorems of enumerative geometry decidedly more is requisite, namely, the actual carrying out of the process of elimination in the case of equations of special form in such a way that the degree of the final equations and the multiplicity of their solutions may be foreseen.<ref name="Hilbert1900"/>
+</blockquote>
+
+==Schubert calculus==
+{{main|Schubert calculus}}
+Schubert calculus is a branch of [[algebraic geometry]] introduced in the nineteenth century by [[Hermann Schubert]]  to solve various counting problems of [[projective geometry]] (part of [[enumerative geometry]]). It was a precursor of several more modern theories, for example [[characteristic class]]es, and in particular its algorithmic aspects are still of interest.
+
+The objects introduced by Schubert are the '''Schubert cells''', which are [[locally closed]] sets in a [[Grassmannian]] defined by conditions of [[Incidence (geometry)|incidence]] of a linear subspace in projective space with a given [[Flag (linear algebra)|flag]]. For details see [[Schubert variety]].
+
+According to Van der Waerden,<ref name=" Wa30" /> and André Weil,<ref name=" W" /> Hilbert problem fifteen had been solved. In particular cases:
+
+* Schubert's characteristic problem has been solved by Haibao Duan and Xuezhi Zhao;<ref name="DZ">{{cite book | chapter= On Schubert's Problem of Characteristic |title=Schubert Calculus and Its Applications in Combinatorics and Representation Theory |editor1=J. Hu |display-editors=etal | author1= H. Duan | author2= X. Zhao | series= Springer Proceedings in Mathematics & Statistics | volume=332 | year=2020 | pages=43–71 | chapter-url = https://link.springer.com/chapter/10.1007/978-981-15-7451-1_4 | doi = 10.1007/978-981-15-7451-1_4 | arxiv= 1912.10745 |isbn=978-981-15-7450-4 | s2cid= 209444479 }}</ref>
+* Special presentations of the [[Chow ring]]s of flag manifolds have been worked out by [[Armand Borel|Borel]], Marlin, Billey-Haiman and Duan-Zhao, et al.;<ref name=" DZ" />
+* Major enumerative examples of Schubert<ref name=" Sc1" /> have been verified by [[Paolo Aluffi|Aluffi]], [[Joe Harris (mathematician)|Harris]], [[Steven Kleiman|Kleiman]], Xambó, et al.<ref name="K2">S. Kleiman, Intersection theory and enumerative geometry: A decade in review, Proc. Symp. Pure Math., 46:2, Amer. Math. Soc. (1987), 321-370. https://www.ams.org/books/pspum/046.2/ {{doi|10.1090/pspum/046.2}}</ref><ref name=" DZ" />
+
+==References==
+{{Reflist}}
+*{{citation
+ | last = Kleiman | first = Steven L.
+ | contribution = Problem 15: rigorous foundation of Schubert's enumerative calculus
+ | location = Providence, R. I.
+ | mr = 0429938
+ | pages = 445–482
+ | publisher = American Mathematical Society
+ | title = Mathematical developments arising from Hilbert problems (Proc. Sympos. Pure Math., Northern Illinois Univ., De Kalb, Ill., 1974)
+ | volume = XXVIII
+ | year = 1976}}.
+*{{citation
+ | last = Manin | first = Ju. I.
+ | contribution = On Hilbert's fifteenth problem
+ | mr = 0254047
+ | pages = 175–181
+ | publisher = Izdat. “Nauka”, Moscow
+ | title = Hilbert's problems (Russian)
+ | year = 1969}}.
+*{{citation
+ | last = Pragacz | first = Piotr
+ | contribution = The status of Hilbert's Fifteenth Problem in 1993
+ | location = Warsaw
+ | mr = 1632447
+ | pages = 175–184
+ | publisher = Polsk. Akad. Nauk
+ | title = Hilbert's Problems (Polish) (Międzyzdroje, 1993)
+ | year = 1997}}.
+
+{{Hilbert's problems}}
+{{Authority control}}
+
+[[Category:Hilbert's problems|#15]]
+[[Category:Algebraic geometry]]
+[[Category:Unsolved problems in geometry]]

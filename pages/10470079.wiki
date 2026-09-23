@@ -1,0 +1,106 @@
+{{Short description|Set of conjectures in algebraic geometry}}
+In [[mathematics]], the '''standard conjectures''' about algebraic cycles are several [[conjecture]]s describing the relationship of [[algebraic cycle]]s and [[Weil cohomology theory|Weil cohomology theories]]. One of the original applications of these conjectures, envisaged by [[Alexander Grothendieck]], was to prove that his construction of [[motive (algebraic geometry)|pure motives]] gave an [[abelian category]] that is [[semisimple category|semisimple]]. Moreover, as he pointed out, the standard conjectures also imply the hardest part of the [[Weil conjectures]], namely Weil's Riemann hypothesis (i.e. an analog over finite fields of the well known [[Riemann hypothesis]]) that remained open at the end of the 1960s and was proved later by [[Pierre Deligne]]; for details on the link between Weil and standard conjectures, see {{harvtxt|Kleiman|1968}}. The standard conjectures remain open problems, so that their application gives only [[conditional proof]]s of results. In quite a few cases, including that of the Weil conjectures, other methods have been found to prove such results unconditionally.
+
+The classical formulations of the standard conjectures involve a fixed Weil cohomology theory {{mvar|H}}. All of the conjectures deal with "algebraic" cohomology classes, which means a morphism on the cohomology of a smooth [[projective variety]]
+
+:{{math|''H''<sup>&thinsp;∗</sup>(''X'') → ''H''<sup>&thinsp;∗</sup>(''X'')}}
+
+induced by an algebraic cycle with rational coefficients on the product {{math|''X'' × ''X''}} via the ''[[cycle class map]],'' which is part of the structure of a Weil cohomology theory.
+
+Conjecture A is equivalent to Conjecture B (see {{harvtxt|Grothendieck|1969}}, p.&nbsp;196), and so is not listed.
+
+The situations over the field of complex numbers and over finite fields are completely different. Hodge standard conjecture is true over the field of complex numbers, but largely unknown over finite fields. On the other hand, Standard conjecture C is known over finite fields, but largely unknown over complex numbers. 
+
+== Lefschetz type Standard Conjecture (Conjecture B)==
+One of the axioms of a Weil theory is the so-called '''[[hard Lefschetz theorem]]''' (or axiom):
+
+Begin with a fixed smooth [[hyperplane section]]
+
+:{{math|''W'' {{=}} ''H'' ∩ ''X''}},
+
+where {{mvar|X}} is a given smooth projective variety in the ambient projective space {{math|'''P'''<sup>&thinsp;''N''</sup>}} and  {{mvar|H}} is a hyperplane. Then for {{math|''i'' ≤ ''n'' {{=}} dim(''X'')}}, the Lefschetz operator
+
+:{{math|''L'' : ''H<sup>&thinsp;i</sup>''(''X'') → ''H''<sup>&thinsp;''i''+2</sup>(''X'')}},
+
+which is defined by intersecting cohomology classes with {{mvar|W}}, gives an isomorphism
+
+:{{math|''L''<sup>''n''−''i''</sup> : ''H<sup>&thinsp;i</sup>''(''X'') → ''H''<sup>&thinsp;2''n''−''i''</sup>(''X'')}}.
+
+Now, for {{math|''i'' ≤ ''n''}} define:
+
+:{{math|Λ {{=}} (''L''<sup>''n''−''i''+2</sup>)<sup>−1</sup> ∘ ''L'' ∘ (''L''<sup>''n''−''i''</sup>) : ''H<sup>&thinsp;i</sup>''(''X'') → ''H''<sup>&thinsp;''i''−2</sup>(''X'')}}
+
+:{{math|Λ {{=}} (''L''<sup>''n''−''i''</sup>) ∘ ''L'' ∘ (''L''<sup>''n''−''i''+2</sup>)<sup>−1</sup> : ''H''<sup>&thinsp;2''n''−''i''+2</sup>(''X'') → ''H''<sup>&thinsp;2''n''−''i''</sup>(''X'')}}
+
+The conjecture states that the '''Lefschetz operator ({{math|Λ}})''' is induced by an algebraic cycle.
+
+== Künneth type Standard Conjecture (Conjecture C)==
+It is conjectured that the projectors
+
+:{{math|''H''<sup>&thinsp;∗</sup>(''X'') ↠ ''H<sup>i</sup>''(''X'') ↣ ''H''<sup>&thinsp;∗</sup>(''X'')}}
+
+are algebraic, i.e. induced by a cycle {{math|''π<sup>&thinsp;i</sup>'' ⊂ ''X'' × ''X''}} with rational coefficients. This implies that the motive of any smooth projective variety (and more generally, every [[motive (algebraic geometry)|pure motive]]) decomposes as
+:<math>h(X) = \bigoplus_{i=0}^{2 \mathrm{dim}(X)} h^i(X).</math>
+
+The motives <math>h^0(X)</math> and <math>h^{2 \mathrm{dim}(X)}</math> can always be split off as direct summands. The conjecture therefore immediately holds for curves. It was proved for surfaces by {{harvtxt|Murre|1990}}. 
+{{harvtxt|Katz|Messing|1974}} have used the [[Weil conjectures]] to show the conjecture for algebraic varieties defined over finite fields, in arbitrary dimension. 
+
+{{harvtxt|Šermenev|1974}} proved the Künneth decomposition for abelian varieties ''A''.
+{{harvtxt|Deninger|Murre|1991}} refined this result by exhibiting a functorial Künneth decomposition of the [[Chow motive]] of ''A'' such that the ''n''-multiplication on the abelian variety acts as <math>n^i</math> on the ''i''-th summand <math>h^i(A)</math>.
+{{harvtxt|de Cataldo|Migliorini|2002}} proved the Künneth decomposition for the [[Hilbert scheme]] of points in a smooth surface.
+
+== Conjecture D (numerical equivalence vs. homological equivalence) ==
+Conjecture D states that numerical and homological [[Adequate_equivalence_relation|equivalence]] agree. (It implies in particular the latter does not depend on the choice of the Weil cohomology theory). This conjecture implies the Lefschetz conjecture. If the Hodge standard conjecture holds, then the Lefschetz conjecture and Conjecture D are equivalent.
+
+Over the field of complex numbers, this conjecture was shown by Lieberman for varieties of dimension at most 4, and for [[abelian variety|abelian varieties]].<ref>{{citation|author=Lieberman, David I.|title=Numerical and homological equivalence of algebraic cycles on Hodge manifolds|journal=Amer. J. Math.|volume=90|year=1968|issue=2|pages=366–374|jstor=2373533|doi=10.2307/2373533}}</ref>
+
+Over finite fields, this conjecture was shown by Clozel for [[abelian variety|abelian varieties]] with etale l-adic cohomology, for an infinite set of prime numbers l (which can be stated in terms of Cebotarev density theorem). One crucial idea in the proof of Clozel is to try to reduce to a similar setting as for Abelian varieties over the field of complex numbers: construct a "Hodge decomposition" for the cohomology, using the type of CM field of the endomorphism group.  
+
+== The Hodge Standard Conjecture ==
+The Hodge standard conjecture is modelled on the [[Hodge index theorem]]. It states the definiteness (positive or negative, according to the dimension) of the cup product pairing on primitive algebraic cohomology classes. If it holds, then the Lefschetz conjecture implies Conjecture D. In characteristic zero the Hodge standard conjecture holds, being a consequence of [[Hodge theory]]. In positive characteristic the Hodge standard conjecture is known for surfaces ({{harvtxt|Grothendieck|1958}}) and for abelian varieties of dimension 4 ({{harvtxt|Ancona|2020}}).
+
+The Hodge standard conjecture is not to be confused with the ''[[Hodge conjecture]]'' which states that for smooth projective varieties over {{math|'''C'''}}, every rational {{math|(''p'', ''p'')}}-class is algebraic. The Hodge conjecture implies the Lefschetz and Künneth conjectures and conjecture D for varieties over fields of characteristic zero. The [[Tate conjecture]] implies Lefschetz, Künneth, and conjecture D for [[étale cohomology|ℓ-adic cohomology]] over all fields.
+
+==Permanence properties of the standard conjectures==
+
+For two algebraic varieties ''X'' and ''Y'', {{harvtxt|Arapura|2006}} has introduced a condition that ''Y'' is ''motivated'' by ''X''. The precise condition is that the motive of ''Y'' is (in André's category of motives) expressible starting from the motive of ''X'' by means of sums, summands, and products. For example, ''Y'' is motivated if there is a surjective morphism <math>X^n \to Y</math>.<ref>{{harvtxt|Arapura|2006|loc=Cor. 1.2}}</ref> If ''Y'' is not found in the category, it is ''unmotivated'' in that context. For smooth projective complex algebraic varieties ''X'' and ''Y'', such that ''Y'' is motivated by ''X'', the standard conjectures D (homological equivalence equals numerical), B (Lefschetz), the [[Hodge conjecture]] and also the generalized Hodge conjecture hold for ''Y'' if they hold for all powers of ''X''.<ref>{{harvtxt|Arapura|2006|loc=Lemma 4.2}}</ref> This fact can be applied to show, for example, the Lefschetz conjecture for the [[Hilbert scheme]] of points on an [[algebraic surface]].
+
+==Relation to other conjectures==
+{{harvtxt|Beilinson|2012}} has shown that the (conjectural) existence of the so-called motivic t-structure on the triangulated category of motives implies the Lefschetz and Künneth standard conjectures B and C.
+
+== Notes ==
+{{Reflist}}
+
+== References ==
+
+* {{Citation|first=Giuseppe|last=Ancona|journal=Invent. Math.|doi= 	10.1007/s00222-020-00990-7|title=Standard conjectures for abelian fourfolds|arxiv=1806.03216|year=2020|volume=223 |pages=149–212 |s2cid=119579196}}
+
+* {{Citation|last=Arapura|first=Donu|title=Motivation for Hodge cycles|journal=[[Advances in Mathematics]]|volume=207|year=2006|issue=2|pages=762–781|mr=2271985|doi=10.1016/j.aim.2006.01.005|doi-access=free|arxiv=math/0501348|s2cid=13897239}}
+
+* {{Citation|last=Beilinson|first=A.|chapter=Remarks on Grothendieck's standard conjectures|title=Regulators|series=Contemp. Math.|volume=571|pages=25–32|publisher=Amer. Math. Soc., Providence, RI|year=2012|mr=2953406|doi=10.1090/conm/571/11319|arxiv=1006.1116|isbn=9780821853221|s2cid=119687821}}
+
+* {{Citation|author1-link=Mark de Cataldo|last1=de Cataldo|first1=Mark Andrea A.|last2=Migliorini|first2=Luca|title=The Chow groups and the motive of the Hilbert scheme of points on a surface|journal=Journal of Algebra|volume=251|year=2002|issue=2|pages=824–848|mr=1919155|doi=10.1006/jabr.2001.9105|arxiv=math/0005249|s2cid=16431761}}
+
+* {{Citation|last1=Deninger|first1=Christopher|last2=Murre|first2=Jacob|author-link2=Jaap Murre|title=Motivic decomposition of abelian schemes and the Fourier transform|journal=J. Reine Angew. Math.|volume=422|year=1991|pages=201–219|mr=1133323}}
+	
+*{{citation |first=A. |last=Grothendieck |authorlink=Alexander Grothendieck |url=https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/StandardConjs.pdf |archive-url= |url-status=live |contribution=Standard Conjectures on Algebraic Cycles |title=Algebraic Geometry (Internat. Colloq., Tata Inst. Fund. Res., Bombay, 1968) |publisher=Oxford University Press |year=1969 |pages=193–199 |mr=0268189}}.
+
+*{{Citation| first =A.|last=Grothendieck|title=Sur une note de Mattuck-Tate|journal=J. Reine Angew. Math.|volume=1958|year=1958|issue=200|pages=208–215|mr=136607|doi=10.1515/crll.1958.200.208|s2cid=115548848}}
+
+*{{Citation|first1=Nicholas M.|last1=Katz|author1-link=Nicholas Katz|first2=William|last2=Messing|author2-link=William Messing|title=Some consequences of the Riemann hypothesis for varieties over finite fields|journal=Inventiones Mathematicae|volume=23|year=1974|pages=73&ndash;77|mr=0332791|doi=10.1007/BF01405203|bibcode=1974InMat..23...73K|s2cid=121989640}}
+*{{citation | last1=Kleiman | first1=Steven L. | authorlink=Steven Kleiman | title=Dix exposés sur la cohomologie des schémas | publisher=North-Holland | location=Amsterdam | mr = 0292838 | year=1968 | chapter=Algebraic cycles and the Weil conjectures | pages=359–386}}.
+
+* {{Citation|last=Murre|first=J. P.|author-link=Jaap Murre|title=On the motive of an algebraic surface|journal=J. Reine Angew. Math.|volume=1990|year=1990|issue=409|pages=190–204|mr=1061525|doi=10.1515/crll.1990.409.190|s2cid=117483201}}
+
+*{{citation | last1=Kleiman | first1=Steven L. | authorlink=Steven Kleiman | contribution=The standard conjectures | title = Motives (Seattle, WA, 1991) | year = 1994 | pages = 3–20 | series = Proceedings of Symposia in Pure Mathematics | volume = 55 | publisher = American Mathematical Society | mr = 1265519}}.
+
+*{{Citation|last=Šermenev|first=A. M.|title=Motif of an Abelian variety|journal=Funckcional. Anal. I Priložen|volume=8|year=1974|issue=1|pages=55–61|mr=0335523}}
+
+== External links ==
+*[https://mathoverflow.net/q/176122 Progress on the standard conjectures on algebraic cycles]
+* Analogues Kähleriens de certaines conjectures de Weil. J.-P Serre (extrait d'une lettre a A. Weil, 9 Nov. 1959) [https://agrothendieck.github.io/divers/serre59kahscan.pdf scan]
+ 
+
+[[Category:Algebraic geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]

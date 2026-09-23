@@ -1,0 +1,101 @@
+{{short description|Theorem about polynomials, analogous to the abc conjecture for integers}}
+The '''Mason–Stothers theorem''', or simply '''Stothers theorem''', is a mathematical [[theorem]] about [[polynomials]], analogous to the [[abc conjecture|''abc'' conjecture]] for integers. It is named after [[Walter Wilson Stothers]], who published it in 1981,<ref>{{citation
+| first1=W. W. | last1=Stothers | authorlink1=Walter Wilson Stothers
+| title=Polynomial identities and hauptmoduln
+| journal=Quarterly Journal of Mathematics
+| series=2
+| volume=32
+| year=1981
+| issue=3 | pages=349–370
+| doi=10.1093/qmath/32.3.349}}.</ref> and [[R. C. Mason]], who rediscovered it shortly thereafter.<ref>{{citation|last=Mason|first=R. C.|title=Diophantine Equations over Function Fields|location=Cambridge, England|publisher=Cambridge University Press|year=1984|series=London Mathematical Society Lecture Note Series|volume=96 |isbn=0-521-26983-0 }}.</ref>
+
+The theorem states:
+:Let {{math|''a''(''t'')}}, {{math|''b''(''t'')}}, and {{math|''c''(''t'')}} be [[relatively prime polynomials]] over a field such that {{math|1=''a'' + ''b'' = ''c''}} and such that not all of them have vanishing derivative. Then
+::<math>\max\{\deg(a),\deg(b),\deg(c)\} \le \deg(\operatorname{rad}(abc))-1.</math>
+Here {{math|rad(''f'')}} is the product of the distinct irreducible factors of {{mvar|f}}. For algebraically closed fields it is the polynomial of minimum degree that has the same [[Root of a function|root]]s as {{mvar|f}}; in this case {{math|deg(rad(''f''))}} gives the number of distinct roots of {{mvar|f}}.<ref>{{cite book | author = Lang, Serge | authorlink = Serge Lang | title = Algebra| publisher = Springer-Verlag | location =New York, Berlin, Heidelberg | year = 2002 | isbn = 0-387-95385-X|page=194}}</ref>
+
+==Examples==
+
+*Over fields of characteristic 0 the condition that {{mvar|a}}, {{mvar|b}}, and {{mvar|c}} do not all have vanishing derivative is equivalent to the condition that they are not all constant. Over fields of characteristic {{math|''p'' > 0}} it is not enough to assume that they are not all constant. For example, considered as polynomials over some field of characteristic ''p'', the identity {{math|1=''t''<sup>''p''</sup> + 1 = (''t'' + 1)<sup>''p''</sup>}} gives an example where the maximum degree of the three polynomials ({{math|1=''a'' = ''t''<sup>''p''</sup>}} and {{math|1=''b'' = 1}} as the summands on the left hand side, and {{math|1=''c'' = (''t'' + 1)<sup>p</sup>}} as the right hand side) is {{mvar|p}}, but the degree of the radical is only&nbsp;{{math|2}}.
+*Taking {{math|1=''a''(''t'') = ''t''<sup>''n''</sup>}} and {{math|1=''c''(''t'') = (''t''+1)<sup>''n''</sup>}} gives an example where equality holds in the Mason–Stothers theorem, showing that the inequality is in some sense the best possible.
+*A corollary of the Mason–Stothers theorem is the analog of [[Fermat's Last Theorem]] for function fields: if {{math|1= ''a''(''t'')<sup>''n''</sup> + ''b''(''t'')<sup>''n''</sup> = ''c''(''t'')<sup>''n''</sup>}} for {{mvar|a}}, {{mvar|b}}, {{mvar|c}} relatively prime polynomials over a field of characteristic not dividing {{mvar|n}}  and {{math|''n'' > 2}} then either at least one of {{mvar|a}}, {{mvar|b}}, or {{mvar|c}} is 0 or they are all constant.
+
+==Proof==
+{{harvtxt|Snyder|2000}} gave the following elementary proof of the Mason–Stothers theorem.<ref>{{citation|mr=1781918 |doi=10.1007/s000170050074
+|last=Snyder|first= Noah
+|title=An alternate proof of Mason's theorem
+|journal=[[Elemente der Mathematik]] |volume=55 |year=2000|issue=3|pages= 93–94|url=http://cr.yp.to/bib/2000/snyder.pdf|doi-access=free}}.</ref>
+
+Step 1. The condition {{math|1=''a'' + ''b'' + ''c'' = 0}} implies that the [[Wronskian]]s {{math|1=''W''(''a'', ''b'') = ''ab''′ − ''a''′''b''}}, {{math|''W''(''b'', ''c'')}}, and {{math|''W''(''c'', ''a'')}} are all equal. Write {{mvar|W}} for their common value.
+
+Step 2. The condition that at least one of the derivatives {{math|''a''′}}, {{math|''b''′}}, or {{math|''c''′}} is nonzero and that {{mvar|a}}, {{mvar|b}}, and {{mvar|c}} are coprime is used to show that {{mvar|W}} is nonzero.
+For example, if {{math|1=''W'' = 0}} then {{math|1=''ab''′ = ''a''′''b''}} so {{mvar|a}} divides {{math|''a''′}} (as {{mvar|a}} and {{mvar|b}} are coprime) so {{math|1=''a''′ = 0}} (as {{math|deg ''a'' > deg ''a''′}} unless {{mvar|a}} is constant).
+
+Step 3. {{mvar|W}} is divisible by each of the greatest common divisors {{math|(''a'', ''a''′)}}, {{math|(''b'', ''b''′)}}, and {{math|(''c'', ''c''′)}}. Since these are coprime it is divisible by their product, and since {{mvar|W}} is nonzero we get
+:{{math|deg (''a'', ''a''′) + deg (''b'', ''b''′) + deg (''c'', ''c''′) ≤ deg ''W''.}}
+
+Step 4. Substituting in the inequalities
+:{{math|deg (''a'', ''a''′) ≥ deg ''a''}} − (number of distinct roots of {{mvar|a}})
+:{{math|deg (''b'', ''b''′) ≥ deg ''b''}} − (number of distinct roots of {{mvar|b}})
+:{{math|deg (''c'', ''c''′) ≥ deg ''c''}} − (number of distinct roots of {{mvar|c}})
+(where the roots are taken in some algebraic closure) and
+:{{math|deg ''W'' ≤ deg ''a'' + deg ''b'' − 1 }}
+we find that
+:{{math|deg ''c'' ≤ (number of distinct roots of ''abc'')  − 1}}
+which is what we needed to prove.
+
+==Generalizations==
+There is a natural generalization in which the ring of polynomials is replaced by a one-dimensional [[Algebraic function field|function field]].
+Let {{mvar|k}} be an algebraically closed field of characteristic 0, let {{math|''C/k''}} be a [[Projective variety|smooth projective curve]]
+of [[Geometric genus|genus]] {{mvar|g}}, let
+::<math> a,b\in k(C)</math> be rational functions on {{mvar|C}} satisfying <math>a+b=1</math>,
+and let
+{{mvar|S}} be a set of points in {{math|''C''(''k'')}} containing all of the zeros and poles of {{mvar|a}} and {{mvar|b}}.
+Then
+::<math> \max\bigl\{ \deg(a),\deg(b) \bigr\} \le \max\bigl\{|S| + 2g - 2,0\bigr\}.</math>
+Here the degree of a function in {{math|''k''(''C'')}} is the degree of
+the map it induces from {{mvar|C}} to '''P'''<sup>1</sup>.
+This was proved by Mason, with an alternative short proof published the same year by [[Joseph H. Silverman|J. H. Silverman]]
+.<ref>{{citation
+| first1=J. H. | last1=Silverman |authorlink1=Joseph H. Silverman
+| title=The S-unit equation over function fields
+| journal=[[Mathematical Proceedings of the Cambridge Philosophical Society]]
+| volume=95
+| issue=1
+| year=1984
+| pages=3–4
+| doi=10.1017/S0305004100061235}}</ref>
+
+There is a further generalization, due independently to [[José Felipe Voloch|J. F. Voloch]]<ref>{{citation
+| first1=J. F. | last1=Voloch | authorlink1=José Felipe Voloch
+| title=Diagonal equations over function fields
+| journal=Boletim da Sociedade Brasileira de Matemática
+| volume=16
+| date=1985
+| issue=2 | pages=29–39
+| doi=10.1007/BF02584799}}</ref>
+and to
+[[W. Dale Brownawell|W. D. Brownawell]] and [[David Masser|D. W. Masser]],<ref>{{citation
+| first1=W. D. | last1=Brownawell | authorlink1=W. Dale Brownawell
+| first2=D. W. | last2=Masser | authorlink2=David Masser
+| title=Vanishing sums in function fields
+| journal=[[Mathematical Proceedings of the Cambridge Philosophical Society]]
+| volume=100
+| year=1986
+| issue=3 | pages=427–434
+| doi=10.1017/S0305004100066184}}</ref>
+that gives an upper bound for  {{mvar|n}}-variable {{mvar|S}}-unit
+equations {{math|1=''a''<sub>1</sub> + ''a''<sub>2</sub> + ... + ''a''<sub>''n''</sub> = 1}} provided that
+no subset of the {{math|''a''<sub>''i''</sub>}} are {{mvar|k}}-linearly dependent. Under this assumption, they prove that
+::<math> \max\bigl\{ \deg(a_1),\ldots,\deg(a_n) \bigr\} \le \frac{1}{2}n(n-1)\max\bigl\{|S| + 2g - 2,0\bigr\}.</math>
+
+==References==
+{{reflist}}
+
+==External links==
+*{{mathworld|urlname=MasonsTheorem|title=Mason's Theorem}}
+*[http://topologicalmusings.wordpress.com/2008/03/03/mason-stothers-theorem-and-the-abc-conjecture/ Mason-Stothers Theorem and the ABC Conjecture], Vishal Lama. A cleaned-up version of the proof from Lang's book.
+
+{{DEFAULTSORT:Mason-Stothers theorem}}
+[[Category:Theorems about polynomials]]
+[[Category:Abc conjecture]]

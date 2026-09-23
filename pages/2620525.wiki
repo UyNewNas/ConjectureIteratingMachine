@@ -1,0 +1,104 @@
+{{Short description|Mathematical conjecture}}
+{{Distinguish|Brocard's problem}}
+{{Unsolved|field=mathematics|explanation=Are there at least 4 [[prime numbers]] between two consecutive squared prime numbers?}}
+
+== Introduction ==
+In [[number theory]], '''Brocard's conjecture''' is the [[conjecture]] that there are at least four [[prime number]]s between (''p''<sub>''n''</sub>)<sup>2</sup> and (''p''<sub>''n''+1</sub>)<sup>2</sup>, where ''p''<sub>''n''</sub> is the ''n''<sup>th</sup> prime number, for every ''n'' ≥ 2.<ref>{{mathworld|urlname=BrocardsConjecture|title=Brocard's Conjecture}}</ref>  The conjecture is named after [[Henri Brocard]].  It is widely believed that this conjecture is true.<ref>{{Cite book |last=Guy |first=Richard K. |title=Unsolved problems in number theory |date=2004 |publisher=Springer |isbn=978-0-387-20860-2 |edition=3rd |series=Problem books in mathematics |location=New York}}</ref> However, it remains unproven as of 2025. [[Legendre's conjecture]], which states that there is a prime between consecutive integer squares, directly implies that there are at least two primes between prime squares for ''p''<sub>''n''</sub> ≥ 3 since ''p''<sub>''n''+1</sub> − ''p''<sub>''n''</sub> ≥ 2.<ref name=":0">{{Cite book |last=Ribenboim |first=Paulo |title=The little book of bigger primes |date=2004 |publisher=Springer |isbn=978-0-387-20169-6 |edition=2nd |location=New York}}</ref>
+
+== Mathematical statement ==
+
+Let <math>p_n</math> be the <math>n</math>-th prime, and let <math>\pi(x)</math> be the number of prime numbers <math>\leq x</math>. Formally, Brocard's conjecture claims:
+
+<math>\pi\big((p_{n+1})^2\big)-\pi\big((p_n)^2\big)\geq 4\quad\text{for }n\geq2</math>
+
+This is equivalent to saying that there are at least four primes between squared consecutive primes other than <math>2</math> and <math>3</math>.
+
+== Relation to other open problems in mathematics ==
+
+=== Legendre's conjecture ===
+[[Legendre's conjecture]] claims that there is a prime number between <math>(n)^2</math> and <math>(n+1)^2</math> for all natural number <math>n</math>. It is an unsolved problem in mathematics as of 2025. If Legendre's conjecture is true, it immediately implies a weak version of Brocard's conjecture:<ref>{{Cite book |last1=Hardy |first1=Godfrey H. |author-link=G. H. Hardy |title=[[An Introduction to the Theory of Numbers]] |last2=Wright |first2=Edward M. |author-link2=E. M. Wright |last3=Silverman |first3=Joseph H. |author-link3=Joseph H. Silverman |date=2008 |publisher=Oxford University Press |isbn=978-0-19-921986-5 |editor-last=Heath-Brown |editor-first=D. R. |edition=Sixth |series=Oxford mathematics |location=Oxford New York Auckland}}</ref>
+
+<math>\pi\big((p_{n+1})^2\big)-\pi\big((p_n)^2\big)\geq 2\quad\text{for }n\geq 3</math>
+
+=== Cramér's conjecture ===
+[[Cramér's conjecture]] claims that <math>p_{n+1}-p_n=O((\log p_n)^2)</math>, which gives a bound on how far apart primes can be. Cramér's conjecture implies Brocard's conjecture for sufficiently large <math>n</math>.<ref name=":0" />
+
+=== Oppermann's conjecture ===
+[[Oppermann's conjecture]] claims that there is a prime in the [[Interval (mathematics)|interval]] <math>(n^2, n(n+1))</math> and in the interval <math>(n(n+1), (n+1)^2)</math>. This unsolved problem directly implies Brocard's conjecture.
+
+{{collapse top|title=Proof that Oppermann's Conjecture implies Brocard's Conjecture}}
+We begin with the fact that <math>p_{n+1}-p_n\geq 2</math>, meaning that the minimal interval between primes is <math>(p_n, p_n+2)</math>. Then, according to Oppermann's conjecture, there is a prime in the interval <math>(p_n^2, p_n(p_n+1))</math>, a prime in the interval <math>(p_n(p_n+1), (p_n+1)^2)</math>,  a prime in the interval <math>((p_n+1)^2, (p_n+1)(p_n+2))</math>, and a prime in the interval <math>((p_n+1)(p_n+2), (p_n+2)^2)</math>. Then, we have:
+
+<math>\underbrace{\big(p_n^2, p_n(p_n+1)\big)}_{\text{At least }1\text{ prime}},\quad \underbrace{\big(p_n(p_n+1), (p_n+1)^2\big)}_{\text{At least } 1 \text{ prime}}, \quad \underbrace{\big((p_n+1)^2, (p_n+1)(p_n+2)\big)}_{\text{At least }1\text{ prime}}, \quad \underbrace{\big((p_n+1)(p_n+2), (p_n+2)^2\big)}_{\text{At least }1\text{ prime}}</math>
+
+Which implies at least <math>4</math> primes between <math>p_n^2</math> and <math>(p_n+2)^2</math>, and because <math>p_n+2\leq p_{n+1}</math>, there are at least <math>4</math> primes between any two squared consecutive primes, which is exactly what Brocard's conjecture claims. 
+{{collapse bottom}}
+
+== Examples == 
+{| class="wikitable mw-collapsible mw-collapsed" style="float:right; margin:10px;"
+|-
+! n !! <math>p_n</math> !! <math>p_n^2</math> !! Prime numbers !! <math>\Delta</math>
+|-
+| 1 || 2 || 4 || 5, 7 || '''2'''
+|-
+| 2 || 3 || 9 || 11, 13, 17, 19, 23 || 5
+|-
+| 3 || 5 || 25 || 29, 31, 37, 41, 43, 47 || 6
+|-
+| 4 || 7 || 49 || 53, 59, 61, 67, 71, ... || 15
+|-
+| 5 || 11 || 121 || 127, 131, 137, 139, 149, ... || 9
+|-
+| colspan="5" | <math>\Delta</math> stands for <math>\pi(p_{n+1}^2) - \pi(p_n^2)</math>.
+|}
+[[File:Brocard histogram animation.gif|alt=A gif of the equation of Brocard's conjecture, illustrating the threshold.|thumb|450x450px|The equation <math>\pi\big((p_{n+1})^2\big)-\pi\big((p_n)^2\big)</math> graphed up to <math>n=30</math>. The dotted line is the threshold that Brocard's conjecture claims to hold for all <math>n\geq 2</math>.]]
+It is easy to verify the conjecture for small <math>n</math>:
+
+<math>\pi\big(5^2\big)-\pi\big(3^2\big)=9-4\geq 4, \quad \pi\big(7^2\big)-\pi\big(5^2\big)=15-9\geq 4</math>
+
+The number of primes between prime squares is 2, 5, 6, 15, 9, 22, 11, 27, ... {{OEIS2C|id=A050216}}. See the table (right) for a list of primes sorted by the difference. See the animation (right) for the first 30 differences.
+
+== Current research and results ==
+
+=== Unconditional results ===
+
+==== Bertrand's postulate ====
+A trivial result from [[Bertrand's postulate]], a proven theorem, states that because there is a prime in the interval <math>(n, 2n)</math>, and the length of the interval <math>((p_n)^2, (p_{n+1})^2)</math> is much greater than <math>(p_n, 2p_n)</math>, Bertrand's postulate suggests ''many'' primes in the interval <math>((p_n)^2, (p_{n+1})^2)</math>, though not a sharp bound.
+
+==== Baker-Harman-Pintz bound ====
+Using the bound proven by Baker ''et al.'',<ref>{{Cite journal |last1=Baker |first1=R. C. |last2=Harman |first2=G. |last3=Pintz |first3=J. |date=2001 |title=The Difference Between Consecutive Primes, II |url=https://onlinelibrary.wiley.com/doi/abs/10.1112/plms/83.3.532 |journal=Proceedings of the London Mathematical Society |language=en |volume=83 |issue=3 |pages=532–562 |doi=10.1112/plms/83.3.532 |issn=1460-244X|url-access=subscription }}</ref> that  <math>p_{n+1}-p_n<p_n^{0.525}</math>, one can show that there exist infinitely many <math>p_n</math> such that there is at least one prime in the interval <math>((p_n)^2, (p_{n+1})^2)</math>, which is a much weaker result than Brocard's conjecture.
+
+=== Conditional results ===
+
+==== Legendre's Conjecture - weak version of Brocard's conjecture ====
+As shown [[#Legendre's Conjecture|above]], Legendre's conjecture implies a weak version of Brocard's conjecture but is a strictly weaker conjecture.
+
+==== Oppermann's Conjecture - full proof of Brocard's conjecture ====
+As shown [[Brocard's conjecture#Opperman's Conjecture|above]], Oppermann's conjecture directly implies Brocard's conjecture for large enough <math>n</math>, which constitutes a proof of Brocard's conjecture.
+
+==== Cramér's Conjecture - full proof of Brocard's conjecture ====
+As shown [[Brocard's problem#Cramér's Conjecture|above]], Cramér's conjecture implies Brocard's conjecture directly.
+
+==== The Riemann Hypothesis - full proof of Brocard's conjecture ====
+The Riemann Hypothesis implies the bound <math>p_{n+1}-p_n=O\big(\sqrt{p_n}\log(p_n)\big)</math>, which implies Brocard's conjecture for sufficiently large <math>n</math>, similarly to Cramér's conjecture.<ref>{{Cite book |last1=Montgomery |first1=Hugh L. |url=https://www.cambridge.org/core/books/multiplicative-number-theory-i/4E45519B26115AEEA4839C6C38206ACD |title=Multiplicative Number Theory I: Classical Theory |last2=Vaughan |first2=Robert C. |date=2006 |publisher=Cambridge University Press |isbn=978-0-521-84903-6 |series=Cambridge Studies in Advanced Mathematics |location=Cambridge |doi=10.1017/cbo9780511618314}}</ref>
+
+==See also==
+{{div col|colwidth=30em}}
+* [[Prime-counting function]]
+* [[Legendre's conjecture]]
+* [[Oppermann's conjecture]]
+* [[Cramér's conjecture]]
+* [[Riemann hypothesis]]
+* [[Henri Brocard]]
+* [[Big-O Notation]]
+* [[Bertrand's postulate]]
+{{div col end}}
+
+==Notes==
+{{reflist}}
+
+{{Prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Squares in number theory]]

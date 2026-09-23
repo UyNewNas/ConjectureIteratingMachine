@@ -1,0 +1,167 @@
+{{short description|Theorem about consecutive perfect powers}}
+
+{{for|Catalan's aliquot sequence conjecture|Aliquot sequence#Catalan–Dickson conjecture}}
+{{for|Catalan's Mersenne number conjecture|Double Mersenne number#Catalan–Mersenne number conjecture}}
+
+'''Catalan's conjecture''' (or '''Mihăilescu's theorem''') is a [[theorem]] in [[number theory]] that was [[Conjecture|conjectured]] by the mathematician [[Eugène Charles Catalan]] in 1842 and [[mathematical proof|proven]] in 2002 by [[Preda Mihăilescu]] at [[Paderborn University]].<ref>{{Citation |last=Weisstein |first=Eric W. |author-link=Eric W. Weisstein |title=Catalan's conjecture |publisher=[[MathWorld]] |url=https://mathworld.wolfram.com/CatalansConjecture.html }}</ref><ref>{{Harvnb|Mihăilescu|2004}}</ref>  The [[integer]]s 2<sup>3</sup> and 3<sup>2</sup> are two [[perfect power]]s (that is, powers of exponent higher than one) of [[natural number]]s whose values (8 and 9, respectively) are consecutive. The theorem states that this is the ''only'' case of two consecutive perfect powers.  That is to say, that {{math_theorem|Catalan's conjecture|the only [[Diophantine equation|solution in the natural numbers]] of
+:<math>x^a - y^b = 1</math>
+for {{math|''a'', ''b'' &gt; 1}}, {{math|''x'', ''y'' &gt; 0}} is {{math|''x'' {{=}} 3}}, {{math|''a'' {{=}} 2}}, {{math|''y'' {{=}} 2}}, {{math|''b'' {{=}} 3}}.}}
+
+==History==
+The history of the problem dates back at least to [[Gersonides]], who proved a special case of the conjecture in 1343 where (''x'', ''y'') was restricted to be (2, 3) or (3, 2).  The first significant progress after Catalan made his conjecture came in 1850 when [[Victor-Amédée Lebesgue]] dealt with the case ''b'' = 2.<ref>{{citation | author=Victor-Amédée Lebesgue | author-link=Victor-Amédée Lebesgue | title=Sur l'impossibilité, en nombres entiers, de l'équation ''x<sup>m</sup>''=''y''<sup>2</sup>+1 | journal=Nouvelles annales de mathématiques | series=1<sup>re</sup> série | volume=9 | year=1850 | pages=178–181 }}</ref>
+
+In 1976, [[Robert Tijdeman]] applied [[Baker's method]] in [[transcendental number theory|transcendence theory]] to establish a [[upper and lower bounds|bound]] on ''a'',''b'' and used existing results bounding ''x'',''y'' in terms of ''a'', ''b'' to give an effective upper bound for ''x'',''y'',''a'',''b''. Michel Langevin computed a value of <math>\exp \exp \exp \exp 730 \approx 10^{10^{10^{10^{317}}}}</math> for the bound,<ref>{{citation | title=13 Lectures on Fermat's Last Theorem | first=Paulo | last=Ribenboim | author-link=Paulo Ribenboim | publisher=[[Springer-Verlag]] | year=1979 | isbn=0-387-90432-8 | zbl=0456.10006 | page=236 }}</ref> resolving Catalan's conjecture for all but a finite number of cases.
+
+Catalan's conjecture was proven by [[Preda Mihăilescu]] in April 2002. The proof was published in the ''[[Journal für die reine und angewandte Mathematik]]'', 2004. It makes extensive use of the theory of [[cyclotomic field]]s and [[Galois module]]s.  An exposition of the proof was given by [[Yuri Bilu]] in the [[Séminaire Bourbaki]].<ref>{{Citation | last1=Bilu | first1=Yuri | title=Séminaire Bourbaki vol. 2003/04 Exposés 909-923 | series=Astérisque | year=2004 | volume=294 | chapter= Catalan's conjecture | pages=1–26| chapter-url=https://www.numdam.org/book-part/SB_2002-2003__45__1_0/ }}</ref>  In 2005, Mihăilescu published a simplified proof.<ref>{{Harvnb|Mihăilescu|2005}}</ref>
+
+==Pillai's conjecture==
+{{unsolved|mathematics|Does each positive integer occur only finitely many times as a difference of perfect powers?}}
+'''Pillai's conjecture''' concerns a general difference of perfect powers {{OEIS|id=A001597}}: it is an [[open problem]] initially proposed by [[S. S. Pillai]], who conjectured that the gaps in the sequence of perfect powers tend to infinity.  This is equivalent to saying that each positive integer occurs only finitely many times as a difference of perfect powers: more generally, in 1931 Pillai conjectured that for fixed positive integers ''A'', ''B'', ''C'' the equation <math>Ax^n - By^m = C</math> has only finitely many solutions (''x'',&nbsp;''y'',&nbsp;''m'',&nbsp;''n'') with (''m'',&nbsp;''n'') ≠ (2,&nbsp;2).  Pillai proved that for fixed ''A'', ''B'', ''x'', ''y'', and for any λ less than 1, we have <math>|Ax^n - By^m| \gg x^{\lambda n}</math> uniformly in ''m'' and ''n''.<ref name=rnt>{{citation | pages=[https://archive.org/details/rationalnumberth00nark/page/n261 253]–254 | title=Rational Number Theory in the 20th Century: From PNT to FLT | url=https://archive.org/details/rationalnumberth00nark | url-access=limited | series=Springer Monographs in Mathematics | first=Wladyslaw | last=Narkiewicz | publisher=[[Springer-Verlag]] | year=2011 | isbn=978-0-857-29531-6}}</ref>
+
+The general conjecture would follow from the [[ABC conjecture]].<ref name=rnt/><ref>{{citation | last=Schmidt | first=Wolfgang M. | author-link=Wolfgang M. Schmidt | title=Diophantine approximations and Diophantine equations | series=Lecture Notes in Mathematics | volume=1467 | publisher=[[Springer-Verlag]] | year=1996 | edition=2nd | isbn=3-540-54058-X | zbl=0754.11020 | page=207}}</ref>
+
+Pillai's conjecture means that for every natural number ''n'', there are only finitely many pairs of perfect powers with difference ''n''. The list below shows, for ''n''&nbsp;≤&nbsp;64, all solutions for perfect powers less than 10<sup>18</sup>, such that the exponent of both powers is greater than 1. The number of such solutions for each ''n'' is listed at {{oeis|id=A076427}}. See also {{oeis|id=A103953}} for the smallest solution (&gt;&nbsp;0).
+
+{|class="wikitable" style="border:none;text-align:right;"
+! ''n''
+! solution<br />count
+! numbers ''k'' such that ''k'' and ''k'' + ''n''<br />are both perfect powers
+|rowspan="33" style="padding:2px;background:white;border:none;"|
+! ''n''
+! solution<br />count
+! numbers ''k'' such that ''k'' and ''k'' + ''n''<br />are both perfect powers
+|-
+| 1 || 1 ||style="text-align:left"| 8
+| 33 || 2 ||style="text-align:left"| 16, 256
+|-
+| 2 || 1 ||style="text-align:left"| 25
+| 34 || 0 ||style="text-align:left"| ''none''
+|-
+| 3 || 2 ||style="text-align:left"| 1, 125
+| 35 || 3 ||style="text-align:left"| 1, 289, 1296
+|-
+| 4 || 3 ||style="text-align:left"| 4, 32, 121
+| 36 || 2 ||style="text-align:left"| 64, 1728
+|-
+| 5 || 2 ||style="text-align:left"| 4, 27
+| 37 || 3 ||style="text-align:left"| 27, 324, {{val|14348907}}
+|-
+| 6 || 0 ||style="text-align:left"| ''none''
+| 38 || 1 ||style="text-align:left"| 1331
+|-
+| 7 || 5 ||style="text-align:left"| 1, 9, 25, 121, {{val|32761}}
+| 39 || 4 ||style="text-align:left"| 25, 361, 961, {{val|10609}}
+|-
+| 8 || 3 ||style="text-align:left"| 1, 8, {{val|97336}}
+| 40 || 4 ||style="text-align:left"| 9, 81, 216, 2704
+|-
+| 9 || 4 ||style="text-align:left"| 16, 27, 216, {{val|64000}}
+| 41 || 3 ||style="text-align:left"| 8, 128, 400
+|-
+| 10 || 1 ||style="text-align:left"| 2187
+| 42 || 0 ||style="text-align:left"| ''none''
+|-
+| 11 || 4 ||style="text-align:left"| 16, 25, 3125, 3364
+| 43 || 1 ||style="text-align:left"| 441
+|-
+| 12 || 2 ||style="text-align:left"| 4, 2197
+| 44 || 3 ||style="text-align:left"| 81, 100, 125
+|-
+| 13 || 3 ||style="text-align:left"| 36, 243, 4900
+| 45 || 4 ||style="text-align:left"| 4, 36, 484, 9216
+|-
+| 14 || 0 ||style="text-align:left"| ''none''
+| 46 || 1 ||style="text-align:left"| 243
+|-
+| 15 || 3 ||style="text-align:left"| 1, 49, {{val|1295029}}
+| 47 || 6 ||style="text-align:left"| 81, 169, 196, 529, 1681, {{val|250000}}
+|-
+| 16 || 3 ||style="text-align:left"| 9, 16, 128
+| 48 || 4 ||style="text-align:left"| 1, 16, 121, 21904
+|-
+| 17 || 7 ||style="text-align:left"| 8, 32, 64, 512, {{val|79507}}, {{val|140608}}, {{val|143384152904}}
+| 49 || 3 ||style="text-align:left"| 32, 576, {{val|274576}}
+|-
+| 18 || 3 ||style="text-align:left"| 9, 225, 343
+| 50 || 0 ||style="text-align:left"| ''none''
+|-
+| 19 || 5 ||style="text-align:left"| 8, 81, 125, 324, {{val|503284356}}
+| 51 || 2 ||style="text-align:left"| 49, 625
+|-
+| 20 || 2 ||style="text-align:left"| 16, 196
+| 52 || 1 ||style="text-align:left"| 144
+|-
+| 21 || 2 ||style="text-align:left"| 4, 100
+| 53 || 2 ||style="text-align:left"| 676, {{val|24336}}
+|-
+| 22 || 2 ||style="text-align:left"| 27, 2187
+| 54 || 2 ||style="text-align:left"| 27, 289
+|-
+| 23 || 4 ||style="text-align:left"| 4, 9, 121, 2025
+| 55 || 3 ||style="text-align:left"| 9, 729, {{val|175561}}
+|-
+| 24 || 5 ||style="text-align:left"| 1, 8, 25, 1000, {{val|542939080312}}
+| 56 || 4 ||style="text-align:left"| 8, 25, 169, 5776
+|-
+| 25 || 2 ||style="text-align:left"| 100, 144
+| 57 || 3 ||style="text-align:left"| 64, 343, 784
+|-
+| 26 || 3 ||style="text-align:left"| 1, {{val|42849}}, {{val|6436343}}
+| 58 || 0 ||style="text-align:left"| ''none''
+|-
+| 27 || 3 ||style="text-align:left"| 9, 169, 216
+| 59 || 1 ||style="text-align:left"| 841
+|-
+| 28 || 7 ||style="text-align:left"| 4, 8, 36, 100, 484, {{val|50625}}, {{val|131044}}
+| 60 || 4 ||style="text-align:left"| 4, 196, {{val|2515396}}, {{val|2535525316}}
+|-
+| 29 || 1 ||style="text-align:left"| 196
+| 61 || 2 ||style="text-align:left"| 64, 900
+|-
+| 30 || 1 ||style="text-align:left"| 6859
+| 62 || 0 ||style="text-align:left"| ''none''
+|-
+| 31 || 2 ||style="text-align:left"| 1, 225
+| 63 || 4 ||style="text-align:left"| 1, 81, 961, {{val|183250369}}
+|-
+| 32 || 4 ||style="text-align:left"| 4, 32, 49, 7744
+| 64 || 4 ||style="text-align:left"| 36, 64, 225, 512
+|}
+
+==See also==
+{{Div col}}
+*[[Beal's conjecture]]
+*[[Equation x^y = y^x|Equation x<sup>y</sup> = y<sup>x</sup>]]
+*[[Fermat–Catalan conjecture]]
+*[[Mordell curve]]
+*[[Ramanujan–Nagell equation]]
+*[[Størmer's theorem]]
+*[[Tijdeman's theorem]]
+*[[Thaine's theorem]]{{Div col end}}
+
+== Notes ==
+{{reflist|2}}
+
+==References==
+* {{citation | first=Yuri | last=Bilu | title=Catalan's conjecture (after Mihăilescu) | journal=[[Astérisque]] | volume=294 | year=2004 | pages=vii, 1–26 | mr=2111637 }}
+* {{citation | last=Catalan | first=Eugene | year=1844 | title=Note extraite d'une lettre adressée à l'éditeur | language=fr | journal=[[J. Reine Angew. Math.]] | pages=192 | doi=10.1515/crll.1844.27.192 | volume=27 | mr=1578392| url=https://zenodo.org/record/1448842 }}
+* {{cite conference | last=Cohen | first=Henri | year=2005 | title=Démonstration de la conjecture de Catalan | language=fr | trans-title=A proof of the Catalan conjecture | conference=Théorie algorithmique des nombres et équations diophantiennes | publisher=Éditions de l'École Polytechnique | mr=222434 | location=Palaiseau | isbn=2-7302-1293-0 | pages=1–83}}
+* {{citation | first=Tauno | last=Metsänkylä | title=Catalan's conjecture: another old Diophantine problem solved | journal=[[Bulletin of the American Mathematical Society]] | volume=41 | year=2004 | issue=1 | pages=43–57 | doi=10.1090/S0273-0979-03-00993-5 | mr=2015449| url=https://www.ams.org/journals/bull/2004-41-01/S0273-0979-03-00993-5/S0273-0979-03-00993-5.pdf | doi-access=free }}
+* {{citation | first=Preda | last=Mihăilescu | author-link=Preda Mihăilescu | title=Primary Cyclotomic Units and a Proof of Catalan's Conjecture | journal=[[J. Reine Angew. Math.]] | volume=2004 | issue=572 | year=2004 | pages=167–195 | doi=10.1515/crll.2004.048 |mr=2076124}}
+* {{citation | first=Preda | last=Mihăilescu | title=Reflection, Bernoulli numbers and the proof of Catalan's conjecture | journal=European Congress of Mathematics | year=2005 | pages=325–340 | publisher=Eur. Math. Soc. | location=Zurich | mr=2185753 | url=https://www.uni-math.gwdg.de/preda/mihailescu-papers/catber.pdf | archive-url=https://web.archive.org/web/20220626111548/https://www.uni-math.gwdg.de/preda/mihailescu-papers/catber.pdf | archive-date=2022-06-26 | url-status=dead }}
+* {{citation | first=Paulo | last=Ribenboim | author-link=Paulo Ribenboim | title=Catalan's Conjecture | publisher=Academic Press, Inc. | location=Boston, MA | year=1994 | isbn=0-12-587170-8 | mr=1259738}}  Predates Mihăilescu's proof.
+* {{citation | first=Robert | last=Tijdeman | author-link=Robert Tijdeman | title=On the equation of Catalan | journal=[[Acta Arith.]] | volume=29 | issue=2 | year=1976 | pages=197–209 | mr=0404137 | doi=10.4064/aa-29-2-197-209| url=https://www.impan.pl/shop/publication/transaction/download/product/100989?download.pdf | doi-access=free }}
+
+==External links==
+* {{MathWorld | urlname=CatalansConjecture | title=Catalan's conjecture}}
+* [https://web.archive.org/web/20130122060110/http://www.maa.org/mathland/mathtrek_06_24_02.html Ivars Peterson's MathTrek]
+* [https://www.math.ubc.ca/~bennett/paper19.pdf On difference of perfect powers]
+* Jeanine Daems: [https://web.archive.org/web/20060221125555/http://www.math.leidenuniv.nl/~jdaems/scriptie/Catalan.pdf A Cyclotomic Proof of Catalan's Conjecture]
+
+{{Authority control}}
+
+[[Category:Conjectures]]
+[[Category:Conjectures that have been proved]]
+[[Category:Diophantine equations]]
+[[Category:Theorems in number theory]]
+[[Category:Abc conjecture]]

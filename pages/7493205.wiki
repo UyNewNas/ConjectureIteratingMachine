@@ -1,0 +1,36 @@
+{{short description|Set of 3 prime numbers whose largest and smallest differ by 6}}
+
+In [[number theory]], a '''prime triplet''' is a set of three [[prime number]]s in which the smallest and largest of the three differ by 6. In particular, the sets must have the form {{math|(''p'', ''p'' + 2, ''p'' + 6)}} or {{math|(''p'', ''p'' + 4, ''p'' + 6)}}.<ref>Chris Caldwell. [http://primes.utm.edu/glossary/page.php?sort=PrimeTriple The Prime Glossary: prime triple] from the [[Prime Pages]]. Retrieved on 2010-03-22.</ref> With the exceptions of {{nowrap|(2, 3, 5)}} and {{nowrap|(3, 5, 7)}}, this is the closest possible [[Prime k-tuple|grouping]] of three prime numbers, since one of every three sequential [[odd number]]s is a multiple of three, and hence not prime (except for 3 itself).
+
+==Examples==
+
+The first prime triplets {{OEIS|A098420}} are
+
+(5, 7, 11), (7, 11, 13), (11, 13, 17), (13, 17, 19), (17, 19, 23), (37, 41, 43), (41, 43, 47), (67, 71, 73), (97, 101, 103), (101, 103, 107), (103, 107, 109), (107, 109, 113), (191, 193, 197), (193, 197, 199), (223, 227, 229), (227, 229, 233), (277, 281, 283), (307, 311, 313), (311, 313, 317), (347, 349, 353), (457, 461, 463), (461, 463, 467), (613, 617, 619), (641, 643, 647), (821, 823, 827), (823, 827, 829), (853, 857, 859), (857, 859, 863), (877, 881, 883), (881, 883, 887)
+
+==Subpairs of primes==
+A prime triplet contains a single pair of:
+*[[Twin prime]]s: {{math|(''p'', ''p'' + 2)}} or {{math|(''p'' + 4, ''p'' + 6)}};
+*[[Cousin prime]]s: {{math|(''p'', ''p'' + 4)}} or {{math|(''p'' + 2, ''p'' + 6)}}; and
+*[[Sexy prime]]s: {{math|(''p'', ''p'' + 6)}}.
+
+==Higher-order versions==
+A prime can be a member of up to three prime triplets - for example, 103 is a member of {{nowrap|(97, 101, 103)}}, {{nowrap|(101, 103, 107)}} and {{nowrap|(103, 107, 109)}}. When this happens, the five involved primes form a [[prime quintuplet]].
+
+A [[prime quadruplet]] {{math|(''p'', ''p'' + 2, ''p'' + 6, ''p'' + 8)}} contains two overlapping prime triplets, {{math|(''p'', ''p'' + 2, ''p'' + 6)}} and {{math|(''p'' + 2, ''p'' + 6'', p'' + 8)}}.
+
+==Conjecture on prime triplets==
+Similarly to the [[twin prime conjecture]], it is conjectured that there are infinitely many prime triplets.   The first known [[gigantic prime]] triplet was found in 2008 by Norman Luhn and François Morain. The primes are {{math|(''p'', ''p'' + 2, ''p'' + 6)}} with {{nowrap|1={{mvar|p}} = 2072644824759 × 2{{sup|33333}} − 1}}. {{As of|2020|October}} the largest known [[provable prime|proven]] prime triplet contains primes with 20008 digits, namely the primes {{math|(''p'', ''p'' + 2, ''p'' + 6)}} with {{nowrap|1={{mvar|p}} = 4111286921397  × 2{{sup|66420}} − 1}}.<ref>[http://primes.utm.edu/top20/page.php?id=61 The Top Twenty: Triplet] from the Prime Pages. Retrieved on 2013-05-06.</ref>
+
+The [[Skewes's number#Equivalent for prime k-tuples|Skewes number]] for the triplet {{math|(''p'', ''p'' + 2, ''p'' + 6)}} is 87613571, and for the triplet {{math|(''p'', ''p'' + 4, ''p'' + 6)}} it is 337867.<ref>{{cite journal |last1=Tóth |first1=László |title=On The Asymptotic Density Of Prime k-tuples and a Conjecture of Hardy and Littlewood |journal=Computational Methods in Science and Technology |date=2019 |volume=25 |issue=3 |pages=143–148 |doi=10.12921/cmst.2019.0000033 |url=http://cmst.eu/wp-content/uploads/files/10.12921_cmst.2019.0000033_TOTH.pdf |access-date=10 November 2019 |ref=toth2019|doi-access=free }}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{MathWorld|title=Prime Triplet|urlname=PrimeTriplet}}
+* {{OEIS el|1=A022004|2=Initial members of prime triples (p, p+2, p+6)}}
+* {{OEIS el|1=A022005|2=Initial members of prime triples (p, p+4, p+6)}}
+{{Prime number classes}}
+[[Category:Classes of prime numbers]]
+[[Category:Unsolved problems in number theory]]

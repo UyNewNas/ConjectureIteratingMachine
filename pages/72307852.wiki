@@ -1,0 +1,28 @@
+{{Short description|Unsolved problem in graph theory}}
+In mathematics, the '''Gilbert–Pollak conjecture''' is an unproven [[conjecture]] on the ratio of lengths of [[Steiner tree]]s and [[Euclidean minimum spanning tree]]s for the same point sets in the [[Euclidean plane]]. It was proposed by [[Edgar Gilbert]] and [[Henry O. Pollak]] in 1968.<ref>{{Cite journal|last1=Gilbert|first1=E. N.|last2=Pollak|first2=H. O.|date=January 1968|title=Steiner Minimal Trees|journal=SIAM Journal on Applied Mathematics|volume=16|issue=1|pages=1–29|doi=10.1137/0116001|s2cid=123196263|issn=0036-1399}}</ref> Specifically, the conjecture states that for every finite set of points in the Euclidean plane, the Euclidean minimum spanning tree is no longer than <math>2/\sqrt 3</math> times the length of the Steiner minimum tree.<ref name="AutoZ2-3"/>
+
+==Statement==
+{{Unsolved|computer science|Is the Steiner ratio of the Euclidean plane equal to <math>2/\sqrt 3</math>?}}
+For a set of points in the plane, the shortest network of line segments that connects the points, having only the given points as endpoints, is the [[Euclidean minimum spanning tree]] of the set. It may be possible to construct a shorter network by using additional endpoints, not present in the given point set. These additional points are called [[Steiner point (computational geometry)|Steiner point]]s and the shortest network that can be constructed using them is called a [[Steiner minimum tree]]. The [[Steiner ratio]] is the [[supremum]], over all point sets, of the ratio of lengths of the Euclidean minimum spanning tree to the Steiner minimum tree. Because the Steiner minimum tree is shorter, this ratio is always greater than one.<ref name="AutoZ2-3"/>
+
+[[File:Gilbert-Pollak-swapped.png|thumb|500px|Examples with points along the circumference of the unit circle, where the 3 point arrangement shows the most optimal known ratio of <math>2/\sqrt 3 \approx 1.155</math>]]
+
+A [[lower bound]] on the Steiner ratio is provided by three points at the vertices of an equilateral triangle of unit side length. For these three points, the Euclidean minimum spanning tree uses two edges of the triangle, with total length two. The Steiner minimum tree connects all three points to a Steiner point at the centroid of the triangle, with the smaller total length <math>\sqrt 3</math>. Because of this example, the Steiner ratio must be at least <math display=inline>2/\sqrt 3\approx 1.155</math>.<ref name="AutoZ2-3"/>
+
+The Gilbert–Pollak conjecture states that this example is the worst case for the Steiner ratio, and that this ratio equals <math>2/\sqrt 3</math>. That is, for every finite point set in the Euclidean plane, the Euclidean minimum spanning tree can be no longer than <math>2/\sqrt 3</math> times the length of the Steiner minimum tree.<ref name="AutoZ2-3"/>
+
+==Attempted proof==
+In 1990, [[Ding-Zhu Du]] and Frank Kwang-Ming Hwang published a proof<ref>{{Cite journal|last1=Du|first1=D. Z.|last2=Hwang|first2=F. K.|date=1990-12-01|title=The Steiner ratio conjecture of Gilbert and Pollak is true|journal=Proceedings of the National Academy of Sciences|volume=87|issue=23|pages=9464–9466|doi=10.1073/PNAS.87.23.9464|s2cid=9811160|pmid=11607122|pmc=55186|bibcode=1990PNAS...87.9464D |issn=0027-8424}}</ref><ref name="AutoZ2-3">{{Cite journal|last1=Du|first1=D. Z.|last2=Hwang|first2=F. K.|date=1992-06-01|title=A proof of the Gilbert-Pollak conjecture on the Steiner ratio|journal=Algorithmica|volume=7|issue=1|pages=121–135|doi=10.1007/BF01758755|s2cid=36038781|issn=0178-4617}}</ref> that later turned out to have a serious gap.<ref>{{Cite journal|title=The Steiner Ratio Gilbert–Pollak Conjecture Is Still Open|journal=Algorithmica|volume=62|issue=1–2|pages=630–632|doi=10.1007/s00453-011-9508-3|date=2011-03-26|last1=Ivanov|first1=A. O.|last2=Tuzhilin|first2=A. A.|s2cid=7486839}}</ref><ref>{{cite arXiv |last1=Tuzhilin A. |first1=A. |last2=Ivanov O. |first2=A |eprint=1402.6079 |title=Du–Hwang Characteristic Area: Catch-22 |class=math.MG |date=2014-02-25}}</ref>
+
+Based on the flawed Du and Hwang result, [[J. Hyam Rubinstein]] and Jia F. Weng concluded that the Steiner ratio is also <math>2/\sqrt 3</math> for a 2-dimensional sphere of [[constant curvature]],<ref>{{Cite journal|title=Compression Theorems and Steiner Ratios on Spheres|journal=Journal of Combinatorial Optimization|volume=1|issue=|pages=67–78|doi=10.1023/A:1009711003807|date=1997-03-01|last1=Rubinstein|first1=J.|last2=Weng|first2=J.|s2cid=35145869|issn=1382-6905}}</ref> but due to the gap in the base result of Du and Hwang, the result of Rubinstein and Weng is now also considered as not proved yet.<ref>{{Cite journal|title=The Steiner Ratio Conjecture of Gilbert-Pollak May Still Be Open|journal=Algorithmica|volume=57|issue=4|pages=869–872|doi=10.1007/s00453-008-9254-3|date=2008-11-15|last1=Innami|first1=N.|last2=Kim|first2=B.H.|last3=Mashiko|first3=Y.|last4=Shiohama|first4=K.|s2cid=30809157|issn=0178-4617}}</ref>
+
+==References==
+{{Reflist}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Geometric algorithms]]
+[[Category:Combinatorial optimization]]
+[[Category:Metric geometry]]
+{{DEFAULTSORT:Gilbert-Pollak conjecture}}

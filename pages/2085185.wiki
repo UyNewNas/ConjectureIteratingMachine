@@ -1,0 +1,97 @@
+{{Short description|Conjecture in number theory}}
+{{About|the conjecture of Emil Artin on primitive roots|the conjecture of Artin on L-functions|Artin L-function}}
+
+In [[number theory]], '''Artin's conjecture on primitive roots''' states that a given [[integer]] ''a'' that is neither a [[square number]] nor −1 is a [[primitive root modulo n|primitive root]] modulo infinitely many [[prime number|primes]] ''p''. The [[conjecture]] also ascribes an [[asymptotic density]] to these primes. This conjectural density equals Artin's constant or a [[rational number|rational]] multiple thereof.
+
+The conjecture was made by [[Emil Artin]] to [[Helmut Hasse]] on September 27, 1927, according to the latter's diary. The conjecture is still unresolved as of 2026. In fact, there is no single value of ''a'' for which Artin's conjecture is proved.
+
+==Formulation==
+
+Let ''a'' be an integer that is not a square number and not &minus;1. Write ''a''&nbsp;=&nbsp;''a''<sub>0</sub>''b''<sup>2</sup> with ''a''<sub>0</sub> [[Square-free integer|square-free]]. Denote by ''S''(''a'') the set of prime numbers ''p'' such that ''a'' is a primitive root modulo ''p''. Then the conjecture states
+# ''S''(''a'') has a positive asymptotic density inside the set of primes. In particular, ''S''(''a'') is infinite.
+# Under the conditions that ''a'' is not a [[perfect power]] and ''a''<sub>0</sub> is not [[modular arithmetic|congruent]] to 1 modulo 4 {{OEIS|id=A085397}}, this density is independent of ''a'' and equals '''Artin's constant''', which can be expressed as an infinite product
+#: <math>C_{\mathrm{Artin}}=\prod_{p\ \mathrm{prime}} \left(1-\frac{1}{p(p-1)}\right) = 0.3739558136\ldots</math> {{OEIS|A005596}}.
+
+The positive integers satisfying these conditions are:
+
+:2, 3, 6, 7, 10, 11, 12, 14, 15, 18, 19, 22, 23, 24, 26, 28, 30, 31, 34, 35, 38, 39, 40, 42, 43, 44, 46, 47, 48, 50, 51, 54, 55, 56, 58, 59, 60, 62, 63, … {{OEIS|A085397}}
+
+The negative integers satisfying these conditions are:
+
+:2, 4, 5, 6, 9, 10, 13, 14, 16, 17, 18, 20, 21, 22, 24, 25, 26, 29, 30, 33, 34, 36, 37, 38, 40, 41, 42, 45, 46, 49, 50, 52, 53, 54, 56, 57, 58, 61, 62, … {{OEIS|A120629}}
+
+Similar conjectural product formulas<ref>[http://www.numericana.com/answer/constants.htm#artin Artin's Constant]</ref><ref>[https://surya-teja.com/2010/10/06/heath-brown-artin-primitive-roots-conjecture/ Heath-Brown: Artin Primitive Roots Conjecture]</ref><ref>{{cite journal
+ |last1=Klurman
+ |first1=Oleksiy
+ |last2=Shparlinski
+ |first2=Igor E.
+ |last3=Teräväinen
+ |first3=Joni
+ |title=On Artin's conjecture on average and short character sums
+ |journal=Bulletin of the London Mathematical Society
+ |volume=57
+ |issue=8
+ |pages=2429–2443
+ |year=2025
+ |doi=10.1112/blms.70103
+ |url=https://doi.org/10.1112/blms.70103
+}}</ref> exist for the density when ''a'' does not satisfy the above conditions. In these cases, the conjectural density is always a rational multiple of ''C''<sub>Artin</sub>.
+
+If ''a'' is either [[square number]] or −1, then this density is 0.
+
+If ''a'' is not a perfect power but ''a''<sub>0</sub> is congruent to 1 modulo 4, then this density is <math>C_\text{Artin}\left(1-\prod_{p|a_0, p\ \text{prime}}\frac{1}{1+p-p^2}\right)</math>.
+
+If ''a'' is a perfect power, let ''r'' be the largest number such that ''a'' is an ''r''th power, then this density is:
+
+:<math>C_\text{Artin}\prod_{p|r, p\ \text{prime}}\frac{p^2-2p}{p^2-p-1}</math> if ''a''<sub>0</sub> is not congruent to 1 modulo 4;
+
+:<math>C_\text{Artin}\prod_{p|r, p\ \text{prime}}\frac{p^2-2p}{p^2-p-1}\left(1-\prod_{p|a_0, p\ \text{prime}}\frac{1}{1+p-p^2}\prod_{p|\gcd(a_0,r), p\ \text{prime}}\frac{p^2-p-1}{p-2}\right)</math> if ''a''<sub>0</sub> is congruent to 1 modulo 4.
+
+For <math>n=1,2,3,\cdots</math>, the conjectural densities given by the formula are ''C''<sub>Artin</sub> times
+
+:0, 1, 1, 0, {{sfrac|20|19}}, 1, 1, {{sfrac|3|5}}, 0, 1, 1, 1, {{sfrac|156|155}}, 1, 1, 0, {{sfrac|272|271}}, 1, 1, {{sfrac|20|19}}, {{sfrac|204|205}}, 1, 1, 1, 0, 1, {{sfrac|3|5}}, 1, {{sfrac|812|811}}, 1, 1, {{sfrac|15|19}}, {{sfrac|544|545}}, 1, 1, 0, {{sfrac|1332|1331}}, 1, 1, 1, {{sfrac|1640|1639}}, 1, 1, 1, {{sfrac|20|19}}, ... ({{OEIS2C|A399880}} for the numerators, {{OEIS2C|A399881}} for the denominators)
+
+For <math>n=-1,-2,-3,\cdots</math>, the conjectural densities given by the formula are ''C''<sub>Artin</sub> times
+
+:0, 1, {{sfrac|6|5}}, 1, 1, 1, {{sfrac|42|41}}, {{sfrac|3|5}}, 1, 1, {{sfrac|110|109}}, {{sfrac|6|5}}, 1, 1, {{sfrac|94|95}}, 1, 1, 1, {{sfrac|342|341}}, 1, 1, 1, {{sfrac|506|505}}, 1, 1, 1, {{sfrac|6|5}}, {{sfrac|42|41}}, 1, 1, {{sfrac|930|929}}, {{sfrac|15|19}}, 1, 1, {{sfrac|778|779}}, 1, 1, 1, {{sfrac|774|775}}, 1, 1, 1, {{sfrac|1806|1805}}, {{sfrac|110|109}}, 1, ... ({{OEIS2C|A399882}} for the numerators, {{OEIS2C|A399883}} for the denominators)
+
+==Examples==
+For example, take ''a'' = 2. The conjecture is that the set of primes ''p'' for which 2 is a primitive root has the density ''C''<sub>Artin</sub>. The set of such primes is {{OEIS|id=A001122}}
+: ''S''(2) = {3, 5, 11, 13, 19, 29, 37, 53, 59, 61, 67, 83, 101, 107, 131, 139, 149, 163, 173, 179, 181, 197, 211, 227, 269, 293, 317, 347, 349, 373, 379, 389, 419, 421, 443, 461, 467, 491, ...}.
+It has 38 elements smaller than 500 and there are 95 primes smaller than 500. The ratio (which conjecturally tends to ''C''<sub>Artin</sub>) is 38/95&nbsp;=&nbsp;2/5&nbsp;=&nbsp;0.4.
+
+For ''a'' = 4 = 2<sup>2</sup>, which is a square number, the density is 0, and for ''a'' = 8 = 2<sup>3</sup>, which is a power of 2, the conjectured density is <math>\frac{3}{5}C</math>, and for ''a'' = 5, which is congruent to 1 mod 4, the conjectured density is <math>\frac{20}{19}C</math>.
+
+==Partial results==
+
+In 1967, [[Christopher Hooley]] published a [[conditional proof]] for the conjecture, assuming certain cases of the [[generalized Riemann hypothesis]].<ref>{{cite journal |last1=Hooley|first1=Christopher |year=1967 |title=On Artin's conjecture |journal=J. Reine Angew. Math. |volume=1967 |issue=225 |pages=209–220|mr=0207630|doi=10.1515/crll.1967.225.209|s2cid=117943829 }}</ref>
+
+Without the generalized Riemann hypothesis, there is no single value of ''a'' for which Artin's conjecture is proved. However, [[Roger Heath-Brown|D. R. Heath-Brown]] proved in 1986 (Corollary 1) that at least one of 2, 3, or 5 is a primitive root modulo infinitely many primes ''p''.<ref>{{ cite journal |author=D. R. Heath-Brown |title=Artin's Conjecture for Primitive Roots |journal=The Quarterly Journal of Mathematics |volume=37 |issue=1 |date=March 1986 |pages=27–38 |doi=10.1093/qmath/37.1.27}}</ref> He also proved (Corollary 2) that there are at most two primes for which Artin's conjecture fails.
+
+== Abelian varieties==
+
+Unconditionally, the infinite part of Artin's primitive root conjecture for general abelian varieties was proved in:
+
+C. Virdol, Artin's conjecture for abelian varieties, Kyoto Journal of Mathematics, 2016.
+
+Moreover, unconditionally, the strong form of Artin's  primitive root conjecture for general CM elliptic curves was proved in:
+
+C. Virdol, On Artin's conjecture for CM elliptic curves, Kyoto Journal of Mathematics, 2020.
+
+Conditionally, under the Generalized Riemann Hypothesis,
+Gupta and Murty proved Artin's primitive root conjecture for elliptic curves with complex multiplication, for primes splitting in the relevant imaginary quadratic field.<ref>{{Cite journal |last=Gupta and Murty |date=1987 |title=Primitive points on elliptic curves |url=https://eudml.org/doc/89763 |journal=Compositio Mathematica |volume=58 |pages=13–44}}</ref>
+
+== See also ==
+*[[Stephens' constant]], a number that plays the same role in a generalization of Artin's conjecture as Artin's constant plays here
+*[[Brown–Zassenhaus conjecture]]
+*[[Full reptend prime]]
+*[[Cyclic number]]
+
+==References==
+{{Reflist|colwidth=30em}}
+{{Prime number conjectures}}
+
+[[Category:Analytic number theory]]
+[[Category:Algebraic number theory]]
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]

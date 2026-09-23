@@ -1,0 +1,24 @@
+{{unsolved|mathematics|Which finite groups are BI-groups?}}
+'''Babai's problem''' is a problem in [[algebraic graph theory]] first proposed in 1979 by [[László Babai]].<ref>{{Citation |last1=Babai |first1=László |authorlink=László Babai|title=Spectra of Cayley graphs |journal=[[Journal of Combinatorial Theory, Series B]] |date=October 1979 |volume=27 |issue=2 |pages=180–189 |doi=10.1016/0095-8956(79)90079-0|doi-access= }}</ref>
+
+== Babai's problem ==
+
+Let <math>G</math> be a finite group, let <math>\operatorname{Irr}(G)</math> be the set of all [[irreducible character]]s of <math>G</math>, let <math>\Gamma=\operatorname{Cay}(G,S)</math> be the [[Cayley graph]] (or [[Lovász conjecture#Directed Cayley graph|directed Cayley graph]]) corresponding to a [[Generating set of a group|generating subset]]  <math>S</math> of <math>G\setminus \{1\}</math>, and let <math>\nu</math> be a positive integer.  Is the set 
+: <math>M_\nu^S=\left\{\sum_{s\in S} \chi(s)\;|\; \chi\in \operatorname{Irr}(G),\; \chi(1)=\nu \right\}</math> 
+an [[Invariant (mathematics)|''invariant'']] of the graph <math>\Gamma</math>? In other words, does <math>\operatorname{Cay}(G,S)\cong \operatorname{Cay}(G,S')</math> imply that <math>M_\nu^S=M_\nu^{S'}</math>?  
+
+== BI-group ==
+A finite group <math>G</math> is called a '''BI-group''' ('''Babai Invariant group''')<ref>{{cite journal |last1=Abdollahi |first1=Alireza |last2=Zallaghi |first2=Maysam |title=Non-Abelian finite groups whose character sums are invariant but are not Cayley isomorphism |journal=[[Journal of Algebra and Its Applications]] |date=10 February 2019 |volume=18 |issue=1 |pages=1950013 |doi=10.1142/S0219498819500130|arxiv=1710.04446 }}</ref> if <math>\operatorname{Cay}(G,S)\cong \operatorname{Cay}(G,T)</math> for some inverse closed subsets <math>S</math> and <math>T</math> of <math>G\setminus \{1\}</math> implies that <math>M_\nu^S=M_\nu^T</math> for all positive integers <math>\nu</math>.
+
+== Open problem ==
+Which finite groups are '''BI-groups'''?<ref>{{cite journal |last1=Abdollahi |first1=Alireza |last2=Zallaghi |first2=Maysam |title=Character Sums for Cayley Graphs |journal=[[Communications in Algebra]] |date=24 August 2015 |volume=43 |issue=12 |pages=5159–5167 |doi=10.1080/00927872.2014.967398}}</ref>
+
+==See also==
+* [[List of unsolved problems in mathematics]]
+* [[List of unsolved problems in mathematics#Problems solved since 1995|List of problems solved since 1995]]
+
+==References==
+{{Reflist}}
+
+[[Category:Algebraic graph theory]]
+[[Category:Unsolved problems in graph theory]]

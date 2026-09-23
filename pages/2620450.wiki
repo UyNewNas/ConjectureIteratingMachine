@@ -1,0 +1,100 @@
+{{Short description|There is a prime between any two square numbers}}
+'''Legendre's conjecture''', proposed by [[Adrien-Marie Legendre]], states that there is a [[prime number]] between <math>n^2</math> and <math>(n+1)^2</math> for every [[positive integer]] <math>n</math>.<ref>{{Cite book |last1= Legendre |first1= Adriene Marie |title= Essai sur la Théorie des Nombres |url= https://books.google.com/books?id=oyDmQ8LedIoC |edition= 2 |date= 1808 |publisher= Chez Courcier |location= Paris |language= French |oclc= |doi= |pages= 405–406}}
+</ref>
+The [[conjecture]] is one of [[Landau's problems]] (1912) on prime numbers and is one of many [[open problem]]s on the spacing of prime numbers.
+
+{{unsolved|mathematics|Does there always exist at least one prime between <math>n^2</math> and <math>(n+1)^2</math>?}}
+
+==Prime gaps==
+If Legendre's conjecture is true, the [[prime gap|gap]] between any prime ''p'' and the next largest prime would be <math>O(\sqrt{p}\,)</math>, as expressed in [[big O notation]].{{efn|This is a consequence of the fact that the difference between two consecutive [[square number|squares]] is of the order of their [[square root]]s.}} It is one of a family of results and conjectures related to [[prime gap]]s, that is, to the spacing between prime numbers. Others include [[Bertrand's postulate]], on the existence of a prime between <math>n</math> and <math>2n</math>, [[Oppermann's conjecture]] on the existence of primes between <math>n^2</math>, <math>n(n+1)</math>, and <math>(n+1)^2</math>, [[Andrica's conjecture]] and [[Brocard's conjecture]] on the existence of primes between squares of consecutive primes, and [[Cramér's conjecture]] that the gaps are always much smaller, of the order <math>(\log p)^2</math>. If Cramér's conjecture is true, Legendre's conjecture would follow for all sufficiently large ''n''.  [[Harald Cramér]] also proved that the [[Riemann hypothesis]] implies a weaker bound of <math>O(\sqrt p\log p)</math> on the size of the largest prime gaps.<ref>{{citation|title=Visions of Infinity: The Great Mathematical Problems|first=Ian|last=Stewart|authorlink=Ian Stewart (mathematician)|publisher=Basic Books|year=2013|isbn=9780465022403|page=164|url=https://books.google.com/books?id=dzdSy3diraUC&pg=PA164}}.</ref>
+
+[[File:Plot of number of primes between consecutive squares.png|thumbnail|400px|right|Plot of the number of primes between ''n''<sup>2</sup> and (''n'' + 1)<sup>2</sup> {{OEIS2C|id=A014085}}]]
+
+By the [[prime number theorem]], the expected number of primes between <math>n^2</math> and <math>(n+1)^2</math> is approximately <math>n/\ln n</math>, and it is additionally known that for [[almost all]] [[interval (mathematics)|intervals]] of this form the actual number of primes ({{OEIS2C|id=A014085}}) is [[asymptotic analysis|asymptotic]] to this expected number.<ref>{{citation
+ | last = Bazzanella | first = Danilo
+ | doi = 10.1007/s000130050469
+ | issue = 1
+ | journal = Archiv der Mathematik
+ | mr = 1764888
+ | pages = 29–34
+ | title = Primes between consecutive squares
+ | volume = 75
+ | year = 2000| s2cid = 16332859
+ | url = http://porto.polito.it/1397858/2/Primes_between_squares.pdf
+ }}</ref> Since this number is large for large <math>n</math>, this lends credence to Legendre's conjecture.<ref>{{citation
+ | last = Francis | first = Richard L.
+ | date = February 2004
+ | doi = 10.35834/2004/1601051
+ | issue = 1
+ | journal = Missouri Journal of Mathematical Sciences
+ | pages = 51–57
+ | publisher = University of Central Missouri, Department of Mathematics and Computer Science
+ | title = Between consecutive squares
+ | volume = 16| doi-access = free
+ | url = https://projecteuclid.org/journals/missouri-journal-of-mathematical-sciences/volume-16/issue-1/Between-Consecutive-Squares/10.35834/2004/1601051.pdf
+ }}; see p. 52, "It appears doubtful that this super-abundance of primes can be clustered in
+such a way so as to avoid appearing at least once between consecutive squares."</ref> It is known that the prime number theorem gives an accurate count of the primes within short intervals, either unconditionally<ref>{{citation
+ | last = Heath-Brown | first = D. R.
+ | doi = 10.1515/crll.1988.389.22
+ | journal = Journal für die Reine und Angewandte Mathematik
+ | mr = 953665
+ | pages = 22–63
+ | title = The number of primes in a short interval
+ | volume = 1988
+ | year = 1988| issue = 389
+ | s2cid = 118979018
+ | url = https://hal.archives-ouvertes.fr/hal-01108692/file/16Article2.pdf
+ }}</ref> or based on the [[Riemann hypothesis]],<ref>{{citation
+ | last = Selberg | first = Atle
+ | issue = 6
+ | journal = Archiv for Mathematik og Naturvidenskab
+ | mr = 12624
+ | pages = 87–105
+ | title = On the normal density of primes in small intervals, and the difference between consecutive primes
+ | volume = 47
+ | year = 1943}}</ref> but the lengths of the intervals for which this has been proven are longer than the intervals between consecutive squares, too long to prove Legendre's conjecture.
+
+==Partial results==
+It follows from a result by [[Albert Ingham|Ingham]] that for all sufficiently large <math>n</math>, there is a prime between the consecutive ''[[cube number|cubes]]'' <math>n^3</math> and <math>(n+1)^3</math>.<ref>{{cite OEIS|A060199|Number of primes between ''n''<sup>3</sup> and {{nobr|(''n'' + 1)<sup>3</sup>}}}}</ref><ref>{{cite journal | last=Ingham | first=A. E. | author-link=Albert Ingham | title=On The Difference Between Consecutive Primes | journal=The Quarterly Journal of Mathematics | volume=os-8 | issue=1 | date=1937 | issn=0033-5606 | doi=10.1093/qmath/os-8.1.255 | pages=255–266| bibcode=1937QJMat...8..255I }}</ref> Dudek proved that this holds for all <math>n \ge e^{e^{33.217}}\approx1.01\cdot10^{115809466034000}</math>.<ref>{{Citation |last=Dudek |first=Adrian |title=An explicit result for primes between cubes |date=December 2016 |journal=Funct. Approx. |volume=55 |issue=2 |pages=177–197 |arxiv=1401.4233 |doi=10.7169/facm/2016.55.2.3 |s2cid=119143089}}.</ref>
+
+Dudek also proved that for <math>m = 4.971\cdot10^9</math> and any positive integer <math>n</math>, there is a prime between <math>n^m</math> and <math>(n+1)^m</math>. Mattner lowered this to <math>m = 1438989</math>,<ref>{{cite thesis |last=Mattner |first=Caitlin |date=2017 |title=Prime Numbers in Short Intervals |url=https://openresearch-repository.anu.edu.au |degree=BSc |publisher=Australian National University |doi=10.25911/5d9efba535a3e|language=en }}</ref> which was further reduced to <math>m = 155</math> by Cully-Hugill.<ref>{{Cite journal |last=Cully-Hugill |first=Michaela |date=2023-06-01 |title=Primes between consecutive powers |url=https://www.sciencedirect.com/science/article/pii/S0022314X23000112 |journal=Journal of Number Theory |volume=247 |pages=100–117 |doi=10.1016/j.jnt.2022.12.002 |issn=0022-314X|arxiv=2107.14468 }}</ref>
+
+Baker, [[Glyn Harman|Harman]], and [[Janos Pintz|Pintz]] proved that there is a prime in the interval <math>[x-x^{21/40},\,x]</math> for all large <math>x</math>.<ref name="baker">{{citation |last1=Baker |first1=R. C. |first2=G. |last2=Harman |first3=J. |last3=Pintz |year=2001 |title=The difference between consecutive primes, II |journal=Proceedings of the London Mathematical Society |volume=83 |issue=3 |pages=532–562 |doi=10.1112/plms/83.3.532 |s2cid=8964027 |url=https://www.cs.umd.edu/~gasarch/BLOGPAPERS/BakerHarmanPintz.pdf }}</ref>
+
+A [[Prime gap#Numerical results|table of maximal prime gaps]] shows that the conjecture holds to at least <math>n^2=2\cdot10^{19}</math>, meaning <math>n=4.5\cdot10^9</math>.
+<!--<ref>{{citation
+ | last1 = Oliveira e Silva | first1 = Tomás
+ | last2 = Herzog | first2 = Siegfried
+ | last3 = Pardi | first3 = Silvio
+ | doi = 10.1090/S0025-5718-2013-02787-1
+ | issue = 288
+ | journal = Mathematics of Computation
+ | mr = 3194140
+ | pages = 2033–2060
+ | title = Empirical verification of the even Goldbach conjecture and computation of prime gaps up to <math>4\cdot10^{18}</math>
+ | volume = 83
+ | year = 2014| doi-access = free
+ | url = https://www.openaccessrepository.it/record/100345/files/fulltext.pdf
+ }}.</ref>
+-->
+
+==Notes==
+{{notelist}}
+
+==See also==
+* [[Opperman's conjecture]]. A stronger conjecture than Legendre's conjecture.
+
+==References==
+{{reflist}}
+
+==External links==
+* {{mathworld |urlname=LegendresConjecture |title=Legendre's conjecture|mode=cs2}}
+
+{{Prime number conjectures}}
+
+[[Category:Conjectures about prime numbers]]
+[[Category:Squares in number theory]]
+[[Category:Unsolved problems in number theory]]
+
+
+{{Numtheory-stub}}

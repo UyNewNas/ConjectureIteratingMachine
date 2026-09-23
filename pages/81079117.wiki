@@ -1,0 +1,47 @@
+{{Short description|Prime number containing consecutive digits of pi}}
+In mathematics, a '''pi prime''' is a [[prime number]] appearing in the decimal expansion of the constant [[pi]].<ref name="MathWorld">{{cite web |last1=Weisstein |first1=Eric W. |title=Pi-Prime |url=https://mathworld.wolfram.com/Pi-Prime.html |website=mathworld.wolfram.com |language=en}}</ref>
+
+==Definition==
+Let <math>\pi_n</math> be the [[integer]] formed by the first <math>n</math> digits of [[pi]].
+We call <math>\pi_n</math> a ''pi prime'' when this value is a [[prime number]]. The first four pi primes are<ref name=A005042>{{Cite OEIS|A005042|name=Primes formed by the initial digits of the decimal expansion of Pi }}</ref>
+
+* <math>\pi_1=3</math>
+* <math>\pi_2=31</math>
+* <math>\pi_6=314159</math>
+* <math>\pi_{38}=31415926535897932384626433832795028841</math>.
+
+In 2026, Robert Baillie proved that <math>\pi_{16208}=3141592653...7943936307</math> is the fifth pi prime.<ref>{{Cite web|url=https://t5k.org/curios/page.php?number_id=1435 |title=Prime Curios (16208 Digits) |website=Prime Curios |access-date=2026-05-19}}</ref>
+<ref>{{Cite web|url=http://factordb.com/index.php?id=1100000000801909210 |title=factordb.com |website=Factor Database |access-date=2026-06-15}}</ref>
+
+==History==
+In 1979, Robert Baillie and Marvin Wunderlich found that <math>\pi_{38}</math> is prime.
+<ref>{{cite web |author1=Martin Gardner |author-link1=Martin Gardner |title=Primes formed by the initial digits of the decimal expansion of Pi |url=https://oeis.org/A005042/a005042.pdf |website=The On-Line Encyclopedia of Integer Sequences |language=en}}</ref>
+
+In 2001, Ed T. Prothro found that the first 16208 digits of pi form a [[probable prime]], and that after <math>\pi_{38}</math>, all such numbers with fewer than 16208 digits are [[composite number]]s.<ref name=A060421>{{Cite OEIS|A060421|name=Numbers k such that the first k digits of the decimal expansion of Pi form a prime.}}</ref>
+
+In 2006, Eric Weisstein showed that the next two possible pi primes have 47577 and 78073 digits. In 2016, A. Bondrescu showed that, after 78073, the next possible pi prime has 613373 digits.<ref name="MathWorld">{{cite web |last1=Weisstein |first1=Eric W. |title=Pi-Prime |url=https://mathworld.wolfram.com/Pi-Prime.html |website=mathworld.wolfram.com |language=en}}</ref>
+As of 2026, it has not been proven that any of these three numbers are primes.
+
+A heuristic argument suggests that the sequence of pi primes is infinite.<ref name=A005042 />
+
+==Alternative definitions==
+One alternative definition considers only the decimal portion of pi, i.e. digits after the starting 3. In this definition we define <math>\pi_k</math> to be the integer formed by the first <math>k</math> digits of the decimal part of [[pi]]. Using this definition, <math>\pi_k</math> is prime when <math>k = 5, 12, 281, 547</math>.<ref>{{cite book |last1=Gupta |first1=Shyam Sunder |chapter-url=https://link.springer.com/chapter/10.1007/978-981-97-2465-9_19 |title=Exploring the Beauty of Fascinating Numbers |date=2025 |publisher=Springer Nature |isbn=978-981-97-2465-9 |pages=487–8 |language=en |chapter=Mystery of π |series=Springer Praxis Books |doi=10.1007/978-981-97-2465-9_19 }}</ref>
+
+==See also==
+* [[Pi]]
+* [[List of prime numbers]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{MathWorld |id=Pi-Prime |title=Pi-Prime}}
+* {{OEIS el|A005042|name=Primes formed by the initial digits of the decimal expansion of Pi }}
+
+[[Category:Integer sequences]]
+[[Category:Pi]]
+[[Category:Classes of prime numbers]]
+[[Category:Prime numbers]]
+[[Category:Unsolved problems in number theory]]
+
+{{Numtheory-stub}}

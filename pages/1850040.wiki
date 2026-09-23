@@ -1,0 +1,328 @@
+{{Short description|Computational problem in graph theory}}
+{{Use dmy dates|date=August 2020|cs1-dates=y}}
+[[File:Snake in the box.svg|class=skin-invert-image|thumb|Drawing of a snake in a [[cube]] (which is a three-dimensional [[hypercube]])]]
+{{unsolved|mathematics|What is the maximum length of a snake for each {{mvar|n}}-dimensional hypercube graph?}}
+The '''snake-in-the-box''' problem in [[graph theory]] and [[coding theory]] deals with finding a certain kind of path along the edges of a [[hypercube]]. This path starts at one corner and travels along the edges to as many corners as it can reach. After it gets to a new corner, the previous corner and all of its neighbors must be marked as unusable. The path must never travel to a corner which has been marked unusable.
+
+In other words, a ''snake'' is a connected open path in the hypercube where each node has exactly two neighbors that are also in the path, with the exception of the first and last nodes, which each has only one neighbor in the path. The rule for generating a snake is that a node in the hypercube may be visited if it is connected to the current node and it is not a neighbor of any previously visited node in the snake, other than the current node.
+
+In graph theory terminology, this is called finding the longest possible [[induced path]] in a [[hypercube graph|hypercube]]; it can be viewed as a special case of the [[induced subgraph isomorphism problem]].  There is a similar problem of finding long induced [[cycle graph|cycle]]s in hypercubes, called the '''coil-in-the-box''' problem.
+
+The snake-in-the-box problem was first described by {{harvtxt|Kautz|1958}}, motivated by the theory of [[error-correcting code]]s. The vertices of a solution to the snake or coil in the box problems can be used as a [[Gray code]] that can detect single-bit errors. Such codes have applications in [[electrical engineering]], [[coding theory]], and computer [[network topology|network topologies]]. In these applications, it is important to devise as long a code as is possible for a given dimension of [[hypercube]]. Often, the longer the code, the more effective are its capabilities.
+
+Finding the longest snake or coil becomes notoriously difficult as the dimension number increases and the search space suffers a serious [[combinatorial explosion]]. Some techniques for determining the upper and lower bounds for the snake-in-the-box problem include proofs using [[discrete mathematics]] and [[graph theory]], [[exhaustive search]] of the search space, and [[heuristic]] search utilizing evolutionary techniques.
+
+== Known lengths and bounds ==
+
+{{snakes_and_coils_in_the_box.svg}}
+The maximum length for the snake-in-the-box problem is known for dimensions one through eight; it is
+:1, 2, 4, 7, 13, 26, 50, 98 {{OEIS|id=A099155}}.
+Beyond that length, the exact length of the longest snake is not known; the best lengths found so far for dimensions nine through thirteen are
+:191, 379, 746, 1476, 2932.<ref name=":0">{{Cite web |title=Snake-in-the-Box |url=https://www.minortriad.com/snake/ |access-date=2026-07-23 |website=www.minortriad.com}}</ref>
+
+For cycles (the coil-in-the-box problem), a cycle cannot exist in a hypercube of dimension less than two. The maximum lengths of the longest possible cycles are
+:0, 4, 6, 8, 14, 26, 48, 96 {{OEIS|id=A000937}}.
+Beyond that length, the exact length of the longest cycle is not known; the best lengths found so far for dimensions nine through thirteen are
+:192, 374, 738, 1468, 2840.<ref name=":0" />
+
+''Doubled coils'' are a special case: cycles whose second half repeats the structure of their first half, also known as ''symmetric coils''. For dimensions two through seven the lengths of the longest possible doubled coils are
+:4, 6, 8, 14, 26, 46.
+Beyond that, the best lengths found so far for dimensions eight through thirteen are
+:94, 186, 370, 726, 1430, 2810.<ref name=":0" />
+
+For both the snake and the coil in the box problems, it is known that the maximum length is proportional to 2<sup>''n''</sup> for an ''n''-dimensional box, asymptotically as ''n'' grows large, and bounded above by 2<sup>''n'' − 1</sup>. The [[constant of proportionality]] is not known, the best known lower bound being 77/256 ≈ 0.30 (see {{harvtxt|Abbot|Katchalski|1991}}).<ref>For asymptotic lower bounds, see {{harvtxt|Evdokimov|1969}}, {{harvtxt|Abbot|Katchalski|1988}}, {{harvtxt|Wojciechowski|1989}}, and {{harvtxt|Abbot|Katchalski|1991}}. For upper bounds, see {{harvtxt|Douglas|1969}}, {{harvtxt|Deimer|1985}}, {{harvtxt|Solov'eva|1987}}, {{harvtxt|Abbot|Katchalski|1988}}, {{harvtxt|Snevily|1994}}, and {{harvtxt|Zémor|1997}}.</ref>
+
+==Notes==
+{{reflist}}
+
+==References==
+*{{citation
+ | last1 = Abbot | first1 = H. L.
+ | last2 = Katchalski | first2 = M.
+ | title = On the snake in the box problem
+ | journal = [[Journal of Combinatorial Theory|Journal of Combinatorial Theory, Series B]]
+ | volume = 45
+ | pages = 13–24
+ | doi = 10.1016/0095-8956(88)90051-2
+ | date = 1988| doi-access = free
+ }}
+*{{citation
+ | last1 = Abbot | first1 = H. L.
+ | last2 = Katchalski | first2 = M.
+ | title = On the construction of snake-in-the-box codes
+ | journal = {{ill|Utilitas Mathematica|fr}}
+ | volume = 40
+ | date = 1991
+ | pages = 97–116}}
+*{{citation
+ | last1 = Allison | first1 = David
+ | last2 = Paulusma | first2 = Daniel
+ | title = New Bounds for the Snake-in-the-Box Problem
+ | arxiv = 1603.05119
+ | date = 2016
+ | bibcode = 2016arXiv160305119A}}
+*{{citation
+ | last = Bitterman | first = D. S.
+ | title = New Lower Bounds for the Snake-In-The-Box Problem: A Prolog Genetic Algorithm and Heuristic Search Approach
+ | type = M.S. thesis
+ | publisher = Department of Computer Science, [[University of Georgia]]
+ | date = 2004
+ | url = https://www.ai.uga.edu/sites/default/files/inline-files/bitterman_s.pdf}}
+*{{citation
+ | last1 = Blaum | first1 = Mario
+ | last2 = Etzion | first2 = Tuvi
+ | title = Use of snake-in-the-box codes for reliable identification of tracks in servo fields of a disk drive
+ | date = 2002
+ | id = {{US patent|6496312}}}}
+*{{citation
+ | last1 = Casella | first1 = D. A.
+ | last2 = Potter | first2 = W. D.
+ | chapter = Using Evolutionary Techniques to Hunt for Snakes and Coils
+ | title = 2005 IEEE Congress on Evolutionary Computation (CEC2005)
+ | volume = 3
+ | pages = 2499–2504
+ | date = 2005}}
+*{{citation
+ | last = Casella | first = D. A.
+ | title = New Lower Bounds for the Snake-in-the-Box and the Coil-in-the-Box Problems
+ | type = M.S. thesis
+ | publisher = Department of Computer Science, [[University of Georgia]]
+ | date = 2005
+ | url = http://www.cs.uga.edu/~potter/CompIntell/casella_darren_a_200505_ms.pdf}}
+*{{cite journal
+ | last1 = Dang | first1 = Chu
+ | last2 = Bazgan | first2 = Cristina
+ | last3 = Cazenave | first3 = Tristan
+ | last4 = Chopin | first4 = Morgan
+ | last5 = Wuillemin | first5 = Pierre-Henri
+ | title = Warm-Starting Nested Rollout Policy Adaptation with Optimal Stopping
+ | journal = Proceedings of the AAAI Conference on Artificial Intelligence
+ | year = 2023
+ | volume = 37
+ | issue = 10
+ | pages = 12381–12389
+ | doi = 10.1609/aaai.v37i10.26459
+ | url = https://ojs.aaai.org/index.php/AAAI/article/view/26459
+| doi-access = free
+ }}
+*{{citation
+ | last1 = Danzer | first1 = L.
+ | last2 = Klee | first2 = V. | author2-link = Victor Klee
+ | title = Length of snakes in boxes
+ | journal = [[Journal of Combinatorial Theory]]
+ | volume = 2
+ | pages = 258–265
+ | date = 1967
+ | doi = 10.1016/S0021-9800(67)80026-7
+ | issue = 3
+ | doi-access = free}}
+*{{citation
+ | last = Davies | first = D. W.
+ | title = Longest 'separated' paths and loops in an ''N''-cube
+ | journal = [[IEEE Transactions on Electronic Computers]]
+ | volume = EC-14
+ | date = 1965
+ | page = 261
+ | doi = 10.1109/PGEC.1965.264259
+ | issue = 2}}
+*{{citation
+ | last = Deimer | first = Knut
+ | title = A new upper bound for the length of snakes
+ | journal = [[Combinatorica]]
+ | volume = 5
+ | date = 1985
+ | issue = 2
+ | pages = 109–120
+ | doi = 10.1007/BF02579373| s2cid = 30303683
+ }}
+*{{citation
+ | last1 = Diaz-Gomez | first1 = P. A.
+ | last2 = Hougen | first2 = D. F.
+ | chapter = The snake in the box problem: mathematical conjecture and a genetic algorithm approach
+ | title = Proceedings of the 8th Conference on Genetic and Evolutionary Computation
+ | location = Seattle, Washington, USA
+ | pages = 1409–1410
+ | date = 2006
+ | doi = 10.1145/1143997.1144219| s2cid = 19239490
+ }}
+*{{citation
+ | last = Douglas | first = Robert J.
+ | title = Upper bounds on the length of circuits of even spread in the ''d''-cube
+ | journal = [[Journal of Combinatorial Theory]]
+ | volume = 7
+ | date = 1969
+ | pages = 206–214
+ | doi = 10.1016/S0021-9800(69)80013-X
+ | issue = 3
+ | doi-access = free}}
+*{{citation
+ | last = Evdokimov | first = A. A.
+ | title = Maximal length of a chain in a unit ''n''-dimensional cube
+ | journal = [[Matematicheskie Zametki]]
+ | volume = 6
+ | pages = 309–319
+ | date = 1969}}
+*{{citation
+ | last = Kautz | first = William H.
+ | author-link = William H. Kautz
+ | title = Unit-distance error-checking codes
+ | journal = [[IRE Transactions on Electronic Computers]]
+ | volume = EC-7
+ | issue = 2
+ | pages = 179–180
+ | date = June 1958
+ | doi = 10.1109/TEC.1958.5222529
+ | s2cid=26649532}}
+*{{citation
+ | last1 = Kim | first1 = S.
+ | last2 = Neuhoff | first2 = D. L.
+ | chapter = Snake-in-the-box codes as robust quantizer index assignments
+ | date = 2000
+ | title = Proceedings of the IEEE International Symposium on Information Theory
+ | page = 402
+ | doi = 10.1109/ISIT.2000.866700| isbn = 0-7803-5857-0
+ | s2cid = 122798425
+ }}
+*{{citation
+ | last1 = Kinny | first1 = D.
+ | chapter = A New Approach to the Snake-In-The-Box Problem
+ | date = 2012
+ | title = Proceedings of the 20th European Conference on Artificial Intelligence, ECAI-2012
+ | pages = 462–467
+ | url = http://ebooks.iospress.nl/Download/Pdf/7016}}
+*{{citation
+ | last1 = Kinny | first1 = D.
+ | chapter = Monte-Carlo Search for Snakes and Coils
+ | date = 2012
+ | title = Proceedings of the 6th International WS on Multi-disciplinary Trends in Artificial Intelligence, MIWAI-2012
+ | pages = 271–283
+ | url = http://www.ai.soc.i.kyoto-u.ac.jp/~dnk/pubs.html#miwai12}}
+*{{citation
+ | last = Klee | first = V. | author-link = Victor Klee
+ | title = What is the maximum length of a ''d''-dimensional snake?
+ | journal = [[American Mathematical Monthly]]
+ | volume = 77
+ | issue = 1
+ | pages = 63–65
+ | date = 1970
+ | doi = 10.2307/2316860
+ | jstor = 2316860}}
+*{{citation
+ | last = Kochut | first = K. J.
+ | title = Snake-in-the-box codes for dimension 7
+ | journal = Journal of Combinatorial Mathematics and Combinatorial Computing
+ | volume = 20
+ | pages = 175–185
+ | date = 1996}}
+*{{citation
+ | last1 = Lukito | first1 = A.
+ | last2 = van Zanten | first2 = A. J.
+ | title = A new non-asymptotic upper bound for snake-in-the-box codes
+ | journal = Journal of Combinatorial Mathematics and Combinatorial Computing
+ | volume = 39
+ | date = 2001
+ | pages = 147–156}}
+*{{citation
+ | last1 = Paterson | first1 = Kenneth G.
+ | last2 = Tuliani | first2 = Jonathan
+ | title = Some new circuit codes
+ | journal = [[IEEE Transactions on Information Theory]]
+ | volume = 44
+ | date = 1998
+ | issue = 3
+ | pages = 1305–1309
+ | doi = 10.1109/18.669420}}
+*{{citation
+ | last1 = Potter | first1 = W. D.
+ | last2 = Robinson | first2 = R. W.
+ | last3 = Miller | first3 = J. A.
+ | last4 = Kochut | first4 = K. J.
+ | last5 = Redys | first5 = D. Z.
+ | chapter = Using the genetic algorithm to find snake in the box codes
+ | title = Proceedings of the Seventh International Conference on Industrial & Engineering Applications of Artificial Intelligence and Expert Systems
+ | location = Austin, Texas, USA
+ | pages = 421–426
+ | date = 1994}}
+*{{citation
+ | last = Snevily | first = H. S.
+ | title = The snake-in-the-box problem: a new upper bound
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | volume = 133
+ | pages = 307–314
+ | date = 1994
+ | issue = 1–3
+ | doi = 10.1016/0012-365X(94)90039-6| doi-access = free
+ }}
+*{{citation
+ | last = Solov'eva | first = F. I.
+ | title = An upper bound on the length of a cycle in an ''n''-dimensional unit cube
+ | journal = Metody Diskretnogo Analiza
+ | volume = 45
+ | date = 1987
+ | pages = 71–76, 96–97
+ | language = ru}}
+*{{citation
+ | last1 = Tuohy | first1 = D. R.
+ | last2 = Potter | first2 = W. D.
+ | last3 = Casella | first3 = D. A.
+ | chapter = Searching for Snake-in-the-Box Codes with Evolved Pruning Models
+ | title = Proceedings of the 2007 Int. Conf. on Genetic and Evolutionary Methods (GEM'2007)
+ | location = Las Vegas, Nevada, USA
+ | pages = 3–9
+ | date = 2007}}
+*{{citation
+ | last = Wojciechowski | first = J.
+ | title = A new lower bound for snake-in-the-box codes
+ | journal = [[Combinatorica]]
+ | volume = 9
+ | date = 1989
+ | issue = 1
+ | pages = 91–99
+ | doi = 10.1007/BF02122688| s2cid = 9450370
+ }}
+*{{citation
+ | last1 = Yang | first1 = Yuan Sheng
+ | last2 = Sun | first2 = Fang
+ | last3 = Han | first3 = Song
+ | title = A backward search algorithm for the snake in the box problem
+ | journal = Journal of the Dalian University of Technology
+ | volume = 40
+ | date = 2000
+ | issue = 5
+ | pages = 509–511}}
+*{{citation
+ | last = Zémor | first = Gilles
+ | title = An upper bound on the size of the snake-in-the-box
+ | journal = [[Combinatorica]]
+ | volume = 17
+ | date = 1997
+ | issue = 2
+ | pages = 287–298
+ | doi = 10.1007/BF01200911| s2cid = 1287549
+ }}
+*{{citation
+ | title = Computing binary combinatorial gray codes via exhaustive search with SAT solvers
+ | last1 = Zinovik | first1 = I.
+ | last2 = Kroening | first2 = D.
+ | last3 = Chebiryak | first3 = Y.
+ | journal = [[IEEE Transactions on Information Theory]]
+ | volume = 54
+ | issue = 4
+ | date = 2008
+ | pages = 1819–1823
+ | doi = 10.1109/TIT.2008.917695
+ | hdl = 20.500.11850/11304
+ | s2cid = 2854180 | hdl-access = free}}
+
+== External links ==
+*{{citation
+ | last = Kinny |first = David
+ | url = http://www.ai.soc.i.kyoto-u.ac.jp/~dnk/sitb.html
+ | date = 2012
+ | title = Snake-in-the-Box Research Page (Kyoto University) }}
+*{{mathworld | title = Snake | urlname = Snake|mode=cs2}}
+*[http://xkcd.com/3125/ ''xkcd'': "Snake-in-the-Box Problem"]
+
+[[Category:Error detection and correction]]
+[[Category:Computational problems in graph theory]]
+[[Category:Unsolved problems in mathematics]]

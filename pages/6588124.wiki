@@ -1,0 +1,68 @@
+{{Short description|Mathematical conjecture}}
+In [[mathematics]], the '''Pompeiu problem''' is a conjecture in [[integral geometry]], named for [[Dimitrie Pompeiu]], who posed the problem in 1929.<ref name="Pompeiu1929">{{citation
+| first=Dimitrie
+| last=Pompeiu
+| title=Sur certains systèmes d'équations linéaires et sur une propriété intégrale des fonctions de plusieurs variables
+| journal=Comptes Rendus de l'Académie des Sciences, Série I
+| volume=188
+| year=1929
+| pages=1138–1139
+}}</ref> 
+It is stated as follows.  Suppose ''f'' is a nonzero [[continuous function]] defined on a Euclidean space, and  ''K'' is a [[simply connected]] [[Lipschitz domain]], so that the [[integral]] of ''f'' vanishes on every [[Congruence (geometry)|congruent]] copy of ''K''.  Then the domain is a [[Ball (mathematics)|ball]].<ref name="Ciatti2008">{{citation
+| title=Topics in mathematical analysis
+| volume=3
+| series=Series on analysis, applications and computation
+| first=Paolo
+| last=Ciatti
+| publisher=World Scientific
+| year=2008
+| isbn=978-981-281-105-9
+}}</ref>
+
+== Schiffer's conjecture ==
+A closely related and highly significant formulation is Schiffer's conjecture, named after the mathematician [[Menahem Max Schiffer]]. While the Pompeiu problem is rooted in integral geometry, Schiffer's conjecture is framed in the language of [[partial differential equations]].
+
+Schiffer's conjecture proposes that if a bounded, [[simply connected]] domain <math>\Omega</math> with a sufficiently smooth boundary <math>\partial \Omega</math> admits a non-trivial solution <math>u</math> to the following overdetermined [[Boundary value problem|boundary value problem]]:
+
+<math> \begin{cases}\Delta u + \lambda u = 0 \quad &\text{ in }\Omega \\
+\frac{\partial u}{\partial n} = 0, \quad &\text{ on } \partial \Omega \\
+u = 1, \quad &\text{ on } \partial \Omega 
+\end{cases} </math> 
+
+
+for some eigenvalue <math>\lambda > 0</math> and some constant, then the domain <math>\Omega</math> must be a ball. Balls always admit solutions to such overdetermined value problem. On a ball, one can pick <math>u</math> to be a radially symmetric Neumann eigenfunction of the Laplacian, which will satisfy the first two equations above. Since moreover is radially symmetric, <math>u</math> is constant at <math>\partial \Omega</math>, so rescaling the Neumann eigenfunction, one can ensure the third equation as well.
+
+=== Equivalence to the Pompeiu problem ===
+The deep connection between the two problems was brought to light by Williams (1976). By utilizing the [[Fourier transform]] and techniques from [[complex analysis]], it was proven that Schiffer's conjecture is mathematically equivalent to the Pompeiu problem for the case of <math>\Omega \subset \mathbb{R}^n</math> smooth and contractible.
+
+==Counterexample==
+On August 3, 2026, Matthew Colbrook & George Stepaniants published a preprint establishing a counterexample in two dimensions to the Pompeiu and Schiffer problems, closing the conjecture.<ref name="ColbrookStepaniants2026">{{Cite web
+| last1=Colbrook
+| first1=M. J.
+| last2=Stepaniants
+| first2=G.
+| date=2026
+| title=A computer-assisted counterexample to the planar Pompeiu and Schiffer conjectures
+| website=Zenodo
+| doi=10.5281/zenodo.21765317
+| url=https://doi.org/10.5281/zenodo.21765317
+}}</ref>
+
+Subsequently, on August 5, 2026, Gonzalo Cao-Labora and Jaume de Dios Pont published a preprint providing an independent construction and a computer-verified proof in [[Lean (proof assistant)|Lean 4]], developed with assistance from GPT-5.6 and Claude models.<ref name="CaoLaboraDiosPont2026">{{cite arXiv |last1=Cao-Labora |first1=Gonzalo |last2=de Dios Pont |first2=Jaume |title=A formally verified counterexample to the Pompeiu and Schiffer conjectures |eprint=2608.05114 |class=math.AP |date=5 August 2026}}</ref> The formal proof verifies the Pompeiu problem challenge specification formalized in the Google DeepMind Formal Conjectures archive.<ref>{{cite web |title=Formal Conjectures: Pompeiu Problem |url=https://github.com/google-deepmind/formal-conjectures |publisher=Google DeepMind |access-date=7 September 2026}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.math.u-szeged.hu/~odor/pompeiu.htm Pompeiu problem at Department of Geometry, Bolyai Institute, University of Szeged, Hungary]
+* [https://encyclopediaofmath.org/wiki/Pompeiu_problem Pompeiu problem at SpringerLink encyclopaedia of mathematics]
+* [https://www.scilag.net/problem/G-180522.1     The Pompeiu problem],
+* [https://www.scilag.net/problem/P-180522.1     Schiffer's conjecture],
+
+[[Category:Mathematical analysis]]
+[[Category:Integral geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]
+
+
+{{mathanalysis-stub}}

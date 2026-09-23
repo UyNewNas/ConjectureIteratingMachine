@@ -1,0 +1,77 @@
+{{Short description|Open problem in probability theory}}
+
+The '''dying percolation conjecture'''<ref name="gilkalai.wordpress.com">{{cite web | title=Analysis of Boolean Functions week 5 and 6 | date=7 October 2013 | url=https://gilkalai.wordpress.com/2013/10/07/analysis-of-boolean-functions-week-5-and-6/ }}</ref> (also known as <math>\theta(p_c)=0</math> conjecture) is a prominent conjecture in [[percolation theory]].<ref name=Hugo>{{cite arXiv |last= Duminil-Copin|first=Hugo |date=2017-12-13 |title=Sixty years of percolation |class=math.PR |eprint=1712.04651}}</ref> It states that critical Bernoulli bond [[percolation]] on <math>\mathbb{Z}^d</math> for <math> d \ge 2</math> [[almost surely]] has no infinite clusters.
+
+The conjecture is proved for the cases <math>d=2</math> by [[Harry Kesten|Kesten]],<ref name=Kesten>{{cite journal |last1=Kesten |first1=Harry |title=The critical probability of bond percolation on the square lattice equals 1/2 |journal=Communications in Mathematical Physics |date=February 1980 |volume=74 |issue=1 |pages=41–59 |doi=10.1007/BF01197577 |bibcode=1980CMaPh..74...41K }}</ref> for <math>d\ge 19</math><ref name=HS>{{cite journal |last1=Hara |first1=Takashi |last2=Slade |first2=Gordon |title=Mean-field critical behaviour for percolation in high dimensions |journal=Communications in Mathematical Physics |date=March 1990 |volume=128 |issue=2 |pages=333–391 |doi=10.1007/BF02108785 |bibcode=1990CMaPh.128..333H }}</ref> by [[Takashi Hara (mathematician)|Hara]] and [[Gordon Douglas Slade|Slade]] using the technique called "lace expansion". The later result was then improved to <math>d \ge 11</math><ref name=FH>{{cite journal |last1=Fitzner |first1=Robert |last2=van der Hofstad |first2=Remco |title=Mean-field behavior for nearest-neighbor percolation in ''d'' > 10 |journal=Electronic Journal of Probability |date=1 January 2017 |volume=22 |issue=none |doi=10.1214/17-EJP56}}</ref> by Fitzner and van der Hofstad.
+
+An AI proof with claimed Lean formalization was reported in September 2026.<ref name=AI>{{cite web|title=Examples for the use of AI and especially LLMs in major mathematical developments|url=https://mathoverflow.net/a/514873/11260}}</ref>
+
+The conjecture is sometimes called the "Dying percolation conjecture", a name used by mathematician [[Gil Kalai]].<ref name="gilkalai.wordpress.com"/><ref>{{cite journal | last1=Eca | title=Interview with Gil Kalai | journal=Enumerative Combinatorics and Applications | date=2021 | volume=2 | issue=2 | pages=Interview #S3I7 | doi=10.54550/ECA2022V2S2I7 |doi-access=free }}</ref><ref name=MOF>{{cite web | title=What are the big problems in probability theory? | url=https://mathoverflow.net/questions/37151/what-are-the-big-problems-in-probability-theory }}</ref><ref>{{cite web | title=Updates and Plans IV | date=20 March 2024 | url=https://gilkalai.wordpress.com/2024/03/20/updates-and-plans-iv/ }}</ref> The name evokes the intuition that the cluster at origin "just barely" fails to survive at the critical threshold.
+
+== Background ==
+
+In nearest-neighbor Bernoulli bond [[percolation theory|percolation]] on <math>\mathbb{Z}^d</math>, each edge of the [[integer lattice]] is independently declared ''open'' with probability <math>p\in[0,1]</math> and ''closed'' otherwise. A '''cluster''' is a maximal connected subgraph of open edges. The central question of percolation theory is: for which values of <math>p</math> does an infinite cluster exist [[almost surely]].
+
+The percolation probability <math>\theta(p)</math> is defined as the probability that the cluster containing <math>0</math> is infinite. By a coupling argument, one can show that <math>\theta</math> is a non-decreasing function of <math>p</math>. As a corollary, for any dimension <math> d</math> there exists a critical probability (denoted by <math>p_c</math>) , such that 
+* For <math> p < p_c</math>, every cluster is almost surely finite.
+* For <math> p > p_c</math>, an infinite cluster almost surely exists.
+
+The conjecture asks whether <math>\theta(p_c) = 0</math>, i.e. whether <math>\theta</math> is continuous or has a discontinuity at <math>p_c</math>.
+
+== Equivalent formulations ==
+
+The following statements are equivalent for Bernoulli percolation on <math>\mathbb{Z}^d</math>:
+* Bernoulli bond percolation with critical parameter <math>p_c</math> has no infinite cluster almost surely;
+* No infinite cluster at criticality at the origin: <math>\theta(p_c) = 0</math>;
+* Continuity of <math>\theta</math> at <math>p_c</math>;
+* Continuity of <math>\theta</math>.
+
+The last formulation is equivalent to the others, since Aizenman, Kesten and Newman showed<ref>{{cite journal |last1=Aizenman |first1=M. |last2=Kesten |first2=H. |last3=Newman |first3=C. M. |title=Uniqueness of the infinite cluster and continuity of connectivity functions for short and long range percolation |journal=Communications in Mathematical Physics |date=December 1987 |volume=111 |issue=4 |pages=505–531 |doi=10.1007/BF01219071 |bibcode=1987CMaPh.111..505A }}</ref> that <math>\theta</math> is continuous at all points of <math>[0, 1]</math> except for possibly <math>p_c</math>.
+
+== Significance ==
+
+The <math>\theta(p_c)=0</math> conjecture is among the central open problems in percolation theory.<ref name=KestenBook /> {{harvtxt|Benjamini|Lyons|Peres|Schramm|1999}}<ref name=BLPS>{{cite journal |last1=Benjamini |first1=Itai |last2=Lyons |first2=Russell |last3=Peres |first3=Yuval |last4=Schramm |first4=Oded |title=Critical Percolation on Any Nonamenable Group has no Infinite Clusters |journal=The Annals of Probability |date=July 1999 |volume=27 |issue=3 |doi=10.1214/aop/1022677450}}</ref> open their paper by describing it as "the main long-standing open question in percolation theory". [[Fields Medal|Fields medalist]] [[Hugo Duminil-Copin]] in his [[International Congress of Mathematicians|ICM]] lecture "Sixty years of percolation" frames the development of percolation theory around this conjecture.<ref name=Hugo /> Louigi Addario-Berry<ref name=MOF /> suggested that it's among the most important problems in the larger field of [[probability theory]].
+
+This conjecture needs to be true for most [[percolation critical exponents]] to be [[well-defined]].<ref>{{cite book |title=The Princeton companion to mathematics |date=2008 |publisher=Princeton University Press |location=Princeton |isbn=9780691118802 |pages=663}}</ref> As such, it is predicted by physicists studying [[Phase transition|phase transition theory]]. The most relevant physically case (<math>d=3</math>) remains open.
+
+== Known results ==
+=== d=1 ===
+For <math>d=1</math>, the critical probability <math>p_c=1</math> and <math display=block>\theta(p) = \begin{cases}0,\text{ if }p<1\\
+1,\text{ if }p=1.
+\end{cases}</math>
+So the conjecture is ''false''. However, for <math>d \ge 2</math>, <math>p_c \in (0, 1)</math>..,<ref>{{cite web |author=Hugo Duminil-Copin |date=November 2, 2022 |title=Introduction to Bernoulli percolation |url=https://www.unige.ch/~duminil/publi/2017percolation.pdf}}</ref> and the conjecture is widely believed to be true.
+
+=== d=2 ===
+The dimension <math>d=2</math> is the only dimension (besides 1) where <math>p_c</math> is known exactly. For the other dimensions, there are only [[percolation threshold|numerical approximations]]. It was proven to be <math>\frac{1}{2}</math> by [[Harry Kesten|Kesten]]<ref name=Kesten /> after years of being the problem that drove most of the efforts in the field.<ref name=Hugo /> This resolved the conjecture for <math>d=2</math>, since <math>\theta\left(\frac{1}{2}\right)=0</math> was already proven by [[Ted Harris (mathematician)|Harris]].<ref>{{cite journal |last1=Harris |first1=T. E. |title=A lower bound for the critical probability in a certain percolation process |journal=Mathematical Proceedings of the Cambridge Philosophical Society |date=January 1960 |volume=56 |issue=1 |pages=13–20 |doi=10.1017/S0305004100034241 |bibcode=1960PCPS...56...13H }}</ref>
+
+For 2-dimensional lattices, continuity of the phase transition is proved only for some lattices other than square lattice. It is conjectured for them to belong to the same [[universality class]] and so to have the same critical behavior.
+
+=== High dimensions (<math>d \ge 11</math>) ===
+
+For larger <math>d</math>, the conjecture is listed as Problem 5 in Section 12 of {{harvtxt|Kesten|1982}}.<ref name=KestenBook>{{cite book |last1=Kesten |first1=Harry |title=Percolation Theory for Mathematicians |date=1982 |doi=10.1007/978-1-4899-2730-9 |isbn=978-0-8176-3107-9 }}{{pn|date=August 2026}}</ref> Since then, the partial cases and generalizations of the conjecture received much attention<ref name=Hugo />
+
+In 1990, Hara and Slade<ref name=HS /> used the lace expansion technique to show that percolation at the critical parameter <math>p_c</math> exhibits a [[Mean-field theory|mean-field]] behavior. Namely, they showed that quantities such as <math>\theta</math> obey the power laws, with [[Percolation critical exponents|exponents]] predicted by the mean-field theory. Later, their techniques were improved to lower the dimension down to 11.<ref name=FH /> However, the mean-field behavior cannot hold in dimensions 5 and less, so dimensions 3, 4 and 5 cannot be covered by an extension of this proof. For dimensions higher than 6, the conjecture is true for a "spread out" percolation, where additional edges are added to any pair of vertices on distance less than a large enough parameter <math>L</math><ref name=HS />
+
+=== Percolation on half-space ===
+It is shown in {{harvtxt|Barsky|Grimmett|Newman|1991}}<ref>{{cite journal |last1=Barsky |first1=David J. |last2=Grimmett |first2=Geoffrey R. |last3=Newman |first3=Charles M. |title=Percolation in half-spaces: equality of critical densities and continuity of the percolation probability |journal=Probability Theory and Related Fields |date=March 1991 |volume=90 |issue=1 |pages=111–148 |doi=10.1007/BF01321136 }}</ref> that for any <math>d \ge 2</math>, the critical bond percolation restricted to a half-space <math>\mathbb{N}\times \mathbb{Z}^{d-1}</math> almost surely doesn't contain an infinite cluster. This is in contrast with the result of {{harvtxt|Grimmett|Marstrand|1990}}<ref>{{cite journal |last1=Grimmett |first1=G. R. |last2=Marstrand |first2=J. M. |title=The Supercritical Phase of Percolation is Well Behaved |journal=  Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences|date=1990 |volume=430 |issue=1879 |pages=439–457 |doi=10.1098/rspa.1990.0100 |jstor=80004 |bibcode=1990RSPSA.430..439G }}</ref> that for any <math>p > p_c</math>, the percolation on a slab <math>[0, n]^{d-2} \times \mathbb{Z}^2</math> almost surely has an infinite cluster for large enough <math>n</math>.
+
+=== Nonamenable and exponential-growth graphs ===
+The conjecture has been verified for a large class of transitive graphs whose [[Growth rate (group theory)|growth]] is faster than any polynomial.
+
+The foundational result in this direction is due to {{harvtxt|Benjamini|Lyons|Peres|Schramm|1999}}:<ref name=BLPS /> critical Bernoulli percolation on any [[Cayley graph]] of a [[amenable group|nonamenable group]] has no infinite clusters. As a trivial partial case, it covers infinite <math>d</math>-regular trees.
+
+In {{harvtxt|Hutchcroft|2016}},<ref>{{cite journal |last1=Hutchcroft |first1=Tom |title=Critical percolation on any quasi-transitive graph of exponential growth has no infinite clusters |journal=Comptes Rendus Mathematique |date=September 2016 |volume=354 |issue=9 |pages=944–947 |doi=10.1016/j.crma.2016.07.013 |arxiv=1605.05301 |bibcode=2016CRMat.354..944H }}</ref> this result was extended to all quasi-[[Vertex-transitive graph|transitive graphs]] of exponential growth.
+
+=== Reduction to a conjectural correlation inequality ===
+
+In {{harvtxt|Kozma|Nitzan|2024}},<ref>{{cite Arxiv |last1=Kozma |first1=Gady |last2=Nitzan |first2=Shahaf |title=A reduction of the &theta;(p<sub>c</sub>) = 0 problem to a conjectured inequality |date=2024 |class=math.PR |eprint=2401.12397}}</ref> the authors reduced the conjecture to various [[FKG inequality|correlation inequalities]] decreasing in strength. They are supported by numerical evidence and apparently have been proven by AI, resolving the dying percolation conjecture.<ref name=AI/> 
+
+== References ==
+
+{{reflist}}
+
+[[Category:Conjectures]]
+[[Category:Percolation theory]]
+[[Category:Probability theory]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Statistical mechanics]]

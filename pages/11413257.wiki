@@ -1,0 +1,63 @@
+{{Short description|Unsolved geometry question on moving a sofa through a 90° angle}}
+
+[[File:Movingsofaproblem.webp|thumb|upright=1.2|Diagram of the moving sofa problem]]
+
+{{unsolved|mathematics|What is the largest area of a shape that can be maneuvered through a unit-width L-shaped corridor?}}
+
+In [[mathematics]], the '''moving sofa problem''' or '''sofa problem''' is a two-dimensional idealization of real-life [[Motion planning|furniture-moving problems]] and asks for the rigid two-dimensional shape of the largest [[area]] that can be maneuvered through an L-shaped planar region with legs of unit width.<ref name="Neal Wagner">{{cite journal |last=Wagner |first=Neal R. |title=The Sofa Problem |journal=[[The American Mathematical Monthly]] |volume=83 |issue=3 |year=1976 |pages=188–189 |doi=10.2307/2977022 |url=http://www.cs.utsa.edu/~wagner/pubs/corner/corner_final.pdf |jstor=2977022 |access-date=2009-07-25 |archive-date=2015-04-20 |archive-url=https://web.archive.org/web/20150420160001/http://www.cs.utsa.edu/~wagner/pubs/corner/corner_final.pdf |url-status=dead }}</ref> The area thus obtained is referred to as the '''sofa constant'''. The exact value of the sofa constant is an [[Unsolved problems in mathematics|open problem]].
+
+The leading solution, by Joseph L. Gerver, has a value of approximately 2.2195. In November 2024, Jineon Baek posted a 119-page [[arXiv]] preprint claiming that Gerver's value is optimal, which if true would solve the moving sofa problem.<ref name="Jineon Baek">{{cite arXiv|last=Baek|first=Jineon|date=2024-11-29|title=Optimality of Gerver's Sofa|eprint=2411.19826|class=math.MG}}</ref><ref>{{Cite web |last=Green |first=Richard |date=2025-02-14 |title=The Largest Sofa You Can Move Around a Corner |url=https://www.quantamagazine.org/the-largest-sofa-you-can-move-around-a-corner-20250214/ |access-date=2025-03-12 |work=[[Quanta Magazine]] |language=en}}</ref>
+
+== History ==
+The first formal publication was by the Austrian-Canadian mathematician [[Leo Moser]] in 1966,<ref>{{cite journal |last=Moser |first=Leo |author-link=Leo Moser |date=July 1966 |issue=3 |journal=[[SIAM Review]] |jstor=2028218 |page=381 |title=Problem 66-11, Moving furniture through a hallway |volume=8 |doi=10.1137/1008074 }}</ref> although there had been many informal mentions before that date.<ref name="Neal Wagner"/>
+
+== Bounds ==
+Work has been done to prove that the sofa constant <math>A</math> cannot be below or above specific values ([[lower bound]]s and [[upper bound]]s).
+
+=== Lower ===
+[[File:Hammersley sofa animated.gif|thumb|The Hammersley sofa has an area of 2.2074, but is not the largest solution]]
+
+{{multiple image
+ | image1 = Gerver.svg
+ | caption1 = Gerver's sofa of area 2.2195 with 18 curve sections
+ | image2 = Telefono automatico a batteria centrale (BCA) - Museo scienza tecnologia Milano D0955 10.jpg
+ | caption2 = A telephone [[handset]], a closer match than a sofa to Gerver's shape
+ | total_width = 400
+}}
+
+A lower bound on the sofa constant can be proven by finding a specific shape with a high area and a path for moving it through the corner. <math>A \geq \pi/2 \approx 1.57</math> is an obvious lower bound. This comes from a sofa that is a half-[[Disk (mathematics)|disk]] of unit radius, which can slide up one passage into the corner, rotate within the corner around the center of the disk, and then slide out the other passage.
+
+In 1968, [[John Hammersley]] stated a lower bound of <math>A \geq \pi/2 + 2/\pi \approx 2.2074</math>.<ref name=hammersley>{{cite journal|author=J. M. Hammersley|author-link=John Hammersley|title=On the enfeeblement of mathematical skills by 'Modern Mathematics' and by similar soft intellectual trash in schools and universities|pages=66–85|url=https://archive.org/details/hammersley1968|journal=[[Bulletin of the Institute of Mathematics and Its Applications]]|volume=4|year=1968}} See Appendix IV, Problems, Problem 8, p. 84.</ref> This can be achieved using a shape resembling an old-fashioned [[handset|telephone handset]], consisting of two quarter-disks of radius 1 on either side of a 1 by <math>4/\pi</math> rectangle from which a half-disk of radius <math>2/\pi</math> has been removed.<ref>{{cite book |last1=Croft |first1=Hallard T. |authorlink1=Hallard Croft |last2=Falconer |first2=Kenneth J. |last3=Guy |first3=Richard K. |authorlink3=Richard K. Guy |title=Unsolved Problems in Geometry |series=Problem Books in Mathematics; Unsolved Problems in Intuitive Mathematics |volume=II |editor-last=Halmos |editor-first=Paul R. |publisher=[[Springer-Verlag]]|year=1994 |isbn=978-0-387-97506-1 |url=https://archive.org/details/unsolvedproblems0000crof |accessdate=24 April 2013 |url-access=registration }}</ref><ref>[[Steven R. Finch|Finch, Steven R.]], [https://web.archive.org/web/20080107101427/http://mathcad.com/library/constants/sofa.htm Moving Sofa Constant], ''[[Mathcad|Mathcad Library]]'' (includes a diagram of Gerver's sofa).</ref>
+
+In 1992, Joseph L. Gerver of [[Rutgers University]] described a sofa with 18 curve sections, each taking a smooth analytic form. This further increased the lower bound for the sofa constant to approximately 2.2195 {{OEIS|A128463}}.<ref>{{cite journal |last=Gerver |first=Joseph L. |title=On Moving a Sofa Around a Corner |journal=[[Geometriae Dedicata]] |issn=0046-5755 |volume=42 |issue=3 |pages=267–283 |year=1992 |doi=10.1007/BF02414066|s2cid=119520847 }}</ref><ref>{{MathWorld|urlname=MovingSofaProblem|title=Moving sofa problem}}</ref>
+[[File:Gerver’s and Hammersley’s sofa overlap.svg|thumb|Overlap of Hammersley’s sofa (red) and Gerver’s sofa (blue).]]
+
+=== Upper ===
+Hammersley stated an upper bound on the sofa constant of at most <math>2\sqrt{2} \approx 2.8284</math>.<ref name=hammersley/><ref name="Neal Wagner"/><ref>{{cite book |last=Stewart |first=Ian |authorlink=Ian Stewart (mathematician) |title=Another Fine Math You've Got Me Into… |date=January 2004 |publisher=[[Dover Publications]] |location=Mineola, N.Y. |isbn=0486431819 |url=http://store.doverpublications.com/0486431819.html |accessdate=24 April 2013}}</ref> Yoav Kallus and [[Dan Romik]] published a new upper bound in 2018, capping the sofa constant at <math>2.37</math>. Their approach involves rotating the corridor (rather than the sofa) through a finite sequence of distinct angles (rather than continuously) and using a computer search to find translations for each rotated copy so that the intersection of all of the copies has a connected component with as large an area as possible. As they show, this provides a valid upper bound for the optimal sofa, which can be made more accurate using more rotation angles. Five carefully chosen rotation angles lead to the stated upper bound.<ref>{{Cite journal |last1=Kallus |first1=Yoav |last2=Romik |first2=Dan |date=December 2018 |title=Improved upper bounds in the moving sofa problem |journal=[[Advances in Mathematics]] |volume=340 |pages=960–982 |arxiv=1706.06630 |doi=10.1016/j.aim.2018.10.022|s2cid=5844665 |issn=0001-8708}}</ref>
+
+== Ambidextrous sofa ==
+[[Image:Romik.svg|right|280px|thumb|Romik's ambidextrous sofa]]
+
+A variant of the sofa problem asks the shape of the largest area that can go around both left and right 90-degree corners in a corridor of unit width (where the left and right corners are spaced sufficiently far apart that one is fully negotiated before the other is encountered). A lower bound of area approximately 1.64495521 has been described by [[Dan Romik]]. 18 curve sections also describe his sofa.<ref name="Dan Romik">{{cite journal |last=Romik |first=Dan |title=Differential equations and exact solutions in the moving sofa problem |journal=Experimental Mathematics |volume=26 |issue=2 |year=2017 |pages=316–330 |doi=10.1080/10586458.2016.1270858 |arxiv=1606.08111 |s2cid=15169264 }}</ref><ref name="UCDavis">{{cite web|last1=Romik|first1=Dan|title=The moving sofa problem - Dan Romik's home page|url=https://www.math.ucdavis.edu/~romik/movingsofa/|website=UCDavis|accessdate=26 March 2017}}</ref>
+
+== See also ==
+* ''[[Dirk Gently's Holistic Detective Agency]]'' – A novel by [[Douglas Adams]], with a subplot that revolves around such a problem.
+* {{anl|Moser's worm problem}}
+* {{anl|Square packing in a square}}
+* "[[The One with the Cop]]" – An episode of the American TV series ''[[Friends]]'' with a subplot pivoting around such a problem.
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{cite web|last1=Romik|first1=Dan|title=The Moving Sofa Problem|url=https://www.youtube.com/watch?v=rXfKWIZQIo4 |archive-url=https://ghostarchive.org/varchive/youtube/20211221/rXfKWIZQIo4 |archive-date=2021-12-21 |url-status=live|website=YouTube|publisher=[[Brady Haran]]|accessdate=24 March 2017|format=video|date=March 23, 2017}}{{cbignore}}
+* [https://github.com/ykallus/SofaBounds SofaBounds] - Program to calculate bounds on the sofa moving problem.
+* [https://www.thingiverse.com/thing:2191347 A 3D model of Romik's ambidextrous sofa]
+* {{cite web |title=Mathematician solves the moving sofa problem |website=Phys.org |date=2024-12-11 |url=https://phys.org/news/2024-12-mathematician-sofa-problem.html |ref={{sfnref|Phys.org|2024}} |access-date=2024-12-12}}
+* [https://www.quantamagazine.org/the-largest-sofa-you-can-move-around-a-corner-20250214/ The Largest Sofa You Can Move Around a Corner]
+
+[[Category:Discrete geometry]]
+[[Category:Unsolved problems in geometry]]
+[[Category:Recreational mathematics]]
+[[Category:1966 introductions]]
+[[Category:Couches]]

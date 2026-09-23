@@ -1,0 +1,186 @@
+{{Short description|Mathematical conjecture on the Riemann zeta function}}
+In [[mathematics]], the '''Lindelöf hypothesis''' is a [[conjecture]] by Finnish mathematician [[Ernst Leonard Lindelöf]]<ref>see {{harvtxt|Lindelöf|1908}}</ref> about the rate of growth of the [[Riemann zeta function]] on the critical line. This hypothesis is implied by the [[Riemann hypothesis]]. It says that for any ''ε'' > 0,
+<math display="block">\zeta\!\left(\frac{1}{2} + it\right)\! = O(t^\varepsilon)</math>
+as ''t'' tends to infinity (see [[big O notation]]). Since ''ε'' can be replaced by a smaller value, the conjecture can be restated as follows: for any positive ''ε'',
+<math display="block">\zeta\!\left(\frac{1}{2} + it\right)\! = o(t^\varepsilon).</math>
+
+==The μ function==
+If σ is [[real number|real]], then ''μ''(σ) is defined to be the [[infimum]] of all real numbers ''a'' such that ζ(σ&nbsp;+&nbsp;''iT''&thinsp;) = O(''T''<sup>&thinsp;''a''</sup>). It is trivial to check that ''μ''(σ)&nbsp;=&nbsp;0 for σ&nbsp;>&nbsp;1, and the [[functional equation]] of the zeta function implies that ''μ''(σ) = ''μ''(1&nbsp;−&nbsp;σ)&nbsp;−&nbsp;σ&nbsp;+&nbsp;1/2. The [[Phragmén–Lindelöf theorem]] implies that ''μ'' is a [[convex function]]. The Lindelöf hypothesis states ''μ''(1/2)&nbsp;=&nbsp;0, which together with the above properties of ''μ'' implies that ''μ''(σ) is 0 for σ&nbsp;≥&nbsp;1/2 and 1/2&nbsp;−&nbsp;σ for σ&nbsp;≤&nbsp;1/2.
+
+Lindelöf's convexity result together with ''μ''(1)&nbsp;=&nbsp;0 and ''μ''(0)&nbsp;=&nbsp;1/2 implies that 0&nbsp;≤&nbsp;''μ''(1/2)&nbsp;≤&nbsp;1/4. The upper bound of 1/4 was lowered by [[G. H. Hardy|Hardy]] and [[J. E. Littlewood|Littlewood]] to 1/6 by applying [[Hermann Weyl|Weyl]]'s method of estimating [[exponential sum]]s to the [[approximate functional equation]]. It has since been lowered to slightly less than 1/6 by several authors using long and technical [[mathematical proof|proofs]], as in the following table.
+{| class="wikitable"
+|-
+! ''μ''(1/2)&nbsp;≤
+! ''μ''(1/2)&nbsp;≤
+! Author
+|-
+| 1/4
+| 0.25
+|Lindelöf 1908<ref>{{harvtxt|Lindelöf|1908}}</ref> (convexity bound)
+|-
+| 1/6
+| 0.1667
+|Hardy & Littlewood 1916, 1923<ref name="Hardy & Littlewood 1923 pp. 403–412">{{cite journal
+	| last1 = Hardy 
+	| first1 = G. H. 
+	| last2 = Littlewood
+	| first2 = J. E.
+
+	| date = 1923
+	| title = On Lindelöf's hypothesis concerning the Riemann zeta-function
+	| journal = Proc. R. Soc. A
+	| pages = 403–412
+}}</ref><ref name="Hardy Littlewood 1916 pp. 119–196">{{cite journal | last1=Hardy | first1=G. H. | last2=Littlewood | first2=J. E. | title=Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes | journal=Acta Mathematica | volume=41 | date=1916 | issn=0001-5962 | doi=10.1007/BF02422942 | pages=119–196}}</ref>
+|-
+|163/988
+|0.1650
+|Walfisz 1924<ref name="Walfisz 1924 pp. 115-143">{{cite journal
+	| last1 = Walfisz 
+	| first1 = Arnold 
+	| date = 1924
+	| title = Zur Abschätzung von ζ(½ + it)
+	| journal = Nachr. Ges. Wiss. Göttingen, math.-phys. Klasse
+	| pages = 155–158
+}}</ref>
+|-
+|27/164
+|0.1647
+|Titchmarsh 1932<ref name="Titchmarsh 1932 pp. 133–141">{{cite journal | last=Titchmarsh | first=E. C. | title=On van der Corput's method and the zeta-function of Riemann (III) | journal=The Quarterly Journal of Mathematics | volume=os-3 | issue=1 | date=1932 | issn=0033-5606 | doi=10.1093/qmath/os-3.1.133 | pages=133–141}}</ref>
+|-
+|229/1392
+|0.164512
+|Phillips 1933<ref name="Phillips 1933 pp. 209–225">{{cite journal | last=Phillips | first=Eric | title=The zeta-function of Riemann: further developments of van der Corput's method | journal=The Quarterly Journal of Mathematics | volume=os-4 | issue=1 | date=1933 | issn=0033-5606 | doi=10.1093/qmath/os-4.1.209 | pages=209–225}}</ref>
+|-
+|
+|0.164511
+|Rankin 1955<ref name="Rankin 1955 pp. 147–153">{{cite journal | last=Rankin | first=R. A. | title=Van der Corput's method and the theory of exponent pairs | journal=The Quarterly Journal of Mathematics | volume=6 | issue=1 | date=1955 | issn=0033-5606 | doi=10.1093/qmath/6.1.147 | pages=147–153}}</ref>
+|-
+|19/116
+|0.1638
+|Titchmarsh 1942<ref name="Titchmarsh 1942 pp. 11–17">{{cite journal | last=Titchmarsh | first=E. C. | title=On the order of ζ(½+ it ) | journal=The Quarterly Journal of Mathematics | volume=os-13 | issue=1 | date=1942 | issn=0033-5606 | doi=10.1093/qmath/os-13.1.11 | pages=11–17}}</ref>
+|-
+|15/92
+|0.1631
+|Min 1949<ref name="Min 1949 pp. 448–472">{{cite journal | last=Min | first=Szu-Hoa | title=On the order of 𝜁(1/2+𝑖𝑡) | journal=Transactions of the American Mathematical Society | volume=65 | issue=3 | date=1949 | issn=0002-9947 | doi=10.1090/S0002-9947-1949-0030996-6 | pages=448–472}}</ref>
+|-
+|6/37
+|0.16217
+|Haneke 1962<ref name="Haneke 1963 pp. 357–430">{{cite journal | last=Haneke | first=W. | title=Verschärfung der Abschätzung von ξ(½+it) | journal=Acta Arithmetica | volume=8 | issue=4 | date=1963 | language=German | issn=0065-1036 | doi=10.4064/aa-8-4-357-430 | pages=357–430}}</ref>
+|-
+|173/1067
+|0.16214
+|Kolesnik 1973<ref name="Kolesnik 1973 pp. 7-30">{{cite journal | last=Kolesnik | first=G. A. | title=On the estimation of some trigonometric sums | journal=Acta Arithmetica | volume=25 | issue=1 |language=Russian | year=1973 | issn=0065-1036 | pages=7–30 | url=https://eudml.org/doc/205256 | access-date=2024-02-05}}</ref>
+|-
+|35/216
+|0.16204
+|Kolesnik 1982<ref name="Kolesnik 1982 pp. 107–122">{{cite journal | last=Kolesnik | first=Grigori | title=On the order of ζ (1/2+ it ) and Δ( R ) | journal=Pacific Journal of Mathematics | volume=98 | issue=1 | date=1982-01-01 | issn=0030-8730 | doi=10.2140/pjm.1982.98.107 | pages=107–122}}</ref>
+|-
+|139/858
+|0.16201
+|Kolesnik 1985<ref name="Kolesnik 1985 pp. 115-143">{{cite journal
+	| last1 = Kolesnik
+	| first1 = G. 
+	| date = 1985
+	| title = On the method of exponent pairs
+	| journal = Acta Arithmetica
+	| volume = 45
+	| issue = 2
+	| pages = 115–143
+| doi = 10.4064/aa-45-2-115-143 
+	}}</ref>
+|-
+|9/56
+|0.1608
+|Bombieri & Iwaniec 1986<ref>{{cite journal |last1=Bombieri |first1=E. |last2=Iwaniec |first2=H. | title=On the order of ζ (1/2+ it ) |journal=Annali della Scuola Normale Superiore di Pisa - Classe di Scienze |date=1986 |volume=13 |issue=3 |pages=449–472}}</ref>
+|-
+|32/205
+|0.1561
+|Huxley 2002, 2005<ref>{{harvtxt|Huxley|2002}}, {{harvtxt|Huxley|2005}}</ref>
+|-
+|53/342
+|0.1550
+|Bourgain 2017<ref>{{harvtxt|Bourgain|2017}}</ref>
+|-
+|13/84
+|0.1548
+|Bourgain 2017<ref>{{harvtxt|Bourgain|2017}}</ref>
+|}
+
+==Relation to the Riemann hypothesis==
+Backlund<ref>{{harvtxt|Backlund|1918–1919}}</ref> (1918&ndash;1919) showed that the Lindelöf hypothesis is equivalent to the following statement about the [[zero of a function|zeros]] of the zeta function: for every ''ε''&nbsp;>&nbsp;0, the number of zeros with [[complex number|real part]] at least 1/2&nbsp;+&nbsp;''ε'' and [[complex number|imaginary part]] between ''T'' and ''T''&nbsp;+&nbsp;1 is o(log(''T'')) as ''T'' tends to infinity. The Riemann hypothesis implies that there are no zeros at all in this region and so implies the Lindelöf hypothesis. The number of zeros with imaginary part between ''T'' and ''T''&nbsp;+&nbsp;1 is known to be O(log(''T'')), so the Lindelöf hypothesis seems only slightly stronger than what has already been proved, but in spite of this it has resisted all attempts to prove it.
+
+==Means of powers (or moments) of the zeta function==
+The Lindelöf hypothesis is equivalent to the statement that
+<math display="block">\frac{1}{T} \int_0^T|\zeta(1/2+it)|^{2k}\,dt = O(T^{\varepsilon})</math>
+for all positive [[integer]]s ''k'' and all positive real numbers ε. This has been proved for ''k''&nbsp;=&thinsp;1 or&nbsp;2, but the case ''k''&nbsp;=&nbsp;3 seems much harder and is still an [[open problem]].
+
+There is a much more precise conjecture about the asymptotic behavior of the [[integral]]: it is believed that
+
+:<math> \int_0^T|\zeta(1/2+it)|^{2k} \, dt = T\sum_{j=0}^{k^2}c_{k,j}\log(T)^{k^2-j} + o(T)</math>
+
+for some constants ''c''<sub>''k'',{{hairsp}}''j''</sub>. This has been proved by Littlewood for ''k''&nbsp;=&thinsp;1 and by Heath-Brown<ref>{{harvtxt|Heath-Brown|1979}}</ref> for ''k''&nbsp;=&nbsp;2 
+(extending a result of Ingham<ref>{{harvtxt|Ingham|1928}}</ref> who found the leading term).
+
+Conrey and Ghosh<ref>{{harvtxt|Conrey|Ghosh|1998}}</ref> suggested the value 
+:<math>\frac{42}{9!}\prod_ p \left((1-p^{-1})^4(1+4p^{-1}+p^{-2})\right)</math> 
+for the leading coefficient when ''k'' is 3, and Keating and Snaith<ref>{{harvtxt|Keating|Snaith|2000}}</ref> used [[random matrix theory]] to suggest some conjectures for the values of the coefficients for higher&nbsp;''k''. The leading coefficients are conjectured to be the product of an elementary factor, a certain product over [[prime number|primes]], and the number of ''n'' × ''n'' [[Young tableaux]] given by the [[integer sequence|sequence]]
+:1, 1, 2, 42, 24024, 701149020, ... {{OEIS|id=A039622}}.
+
+==Other consequences==
+Denoting by ''p''<sub>''n''</sub> the ''n''-th prime number, let <math>g_n = p_{n + 1} - p_n.\ </math> A result by [[Albert Ingham]] shows that the Lindelöf hypothesis implies that, for any ''ε''&nbsp;>&nbsp;0,
+<math display="block">g_n\ll p_n^{1/2+\varepsilon}</math>
+if ''n'' is [[sufficiently large]].
+
+A [[prime gap]] conjecture stronger than Ingham's result is [[Cramér's conjecture]], which asserts that<ref name="Cramér1936">{{cite journal |last=Cramér |first=Harald |date=1936 |title=On the order of magnitude of the difference between consecutive prime numbers |journal=Acta Arithmetica |volume=2 |issue=1 |pages=23–46 |doi=10.4064/aa-2-1-23-46 |issn=0065-1036}}</ref><ref name="Banks Ford Tao 2023 pp. 1471–1518">{{cite journal |last1=Banks |first1=William |last2=Ford |first2=Kevin |last3=Tao |first3=Terence |date=2023 |title=Large prime gaps and probabilistic models |journal=Inventiones Mathematicae |volume=233 |issue=3 |pages=1471–1518 |arxiv=1908.08613 |doi=10.1007/s00222-023-01199-0 |bibcode=2023InMat.233.1471B |issn=0020-9910}}</ref> 
+<math display="block"> g_n = O\!\left((\log p_n)^2\right).</math>
+
+=== The density hypothesis ===
+[[File:DensityHypothesis.png|thumb|The known zero-free region roughly speaking corresponds to the bottom right corner of the image, and the Riemann hypothesis would push the entire diagram down to the x-axis <math>A_{RH}(\sigma>1/2)=0</math>.  At the other extreme, the upper boundary <math>A_{DH}(1-\sigma)=2(1-1/2)=1</math> of this diagram corresponds to the trivial bound coming from the [[Riemann–von Mangoldt formula|Riemann-von Mangoldt formula]].(Various other estimates do exist<ref>{{Cite arXiv |last1=Trudgian |first1=Timothy S. |last2=Yang |first2=Andrew | author1-link=Timothy Trudgian| date=2023 |title=Toward optimal exponent pairs |class=math.NT |eprint=2306.05599}}</ref>)]]
+
+The density hypothesis says that <math>N(\sigma,T)\le N^{2(1-\sigma)+\epsilon}</math>, where <math>N(\sigma,T)</math> denote the number of zeros <math>\rho</math> of <math>\zeta(s)</math>with <math>\mathfrak{R}(s)\ge \sigma</math> and <math>|\mathfrak{I}(s)|\le T</math>, and it would follow from the Lindelöf hypothesis.<ref>{{Cite web |title=25a |url=https://aimath.org/WWN/rh/articles/html/25a/ |access-date=2024-07-16 |website=aimath.org}}</ref><ref>{{Cite web |title=Density hypothesis - Encyclopedia of Mathematics |url=https://encyclopediaofmath.org/wiki/Density_hypothesis |access-date=2024-07-16 |website=encyclopediaofmath.org}}</ref>
+
+More generally let <math>N(\sigma,T)\le N^{A(\sigma)(1-\sigma)+\epsilon}</math> then it is known that this bound roughly correspond to asymptotics for primes in short intervals of length <math>x^{1-1/A(\sigma)}</math>.<ref>{{Cite web |date=2024-06-04 |title=New Bounds for Large Values of Dirichlet Polynomials, Part 1 - Videos {{!}} Institute for Advanced Study |url=https://www.ias.edu/video/new-bounds-large-values-dirichlet-polynomials-part-1 |access-date=2024-07-16 |website=www.ias.edu |language=en}}</ref><ref>{{Cite web |date=2024-06-04 |title=New Bounds for Large Values of Dirichlet Polynomials, Part 2 - Videos {{!}} Institute for Advanced Study |url=https://www.ias.edu/video/new-bounds-large-values-dirichlet-polynomials-part-2 |access-date=2024-07-16 |website=www.ias.edu |language=en}}</ref>
+
+[[Albert Ingham|Ingham]] showed that <math>A_I(\sigma)=\frac{3}{2-\sigma}</math> in 1940,<ref>{{Cite journal |last=Ingham |first=A. E. |date=1940 |title=ON THE ESTIMATION OF N (σ, T ) |url=https://academic.oup.com/qjmath/article-lookup/doi/10.1093/qmath/os-11.1.201 |journal=The Quarterly Journal of Mathematics |language=en |volume=os-11 |issue=1 |pages=201–202 |doi=10.1093/qmath/os-11.1.201 |bibcode=1940QJMat..11..201I |issn=0033-5606|url-access=subscription }}</ref> [[Martin Huxley|Huxley]] that <math>A_H(\sigma)=\frac{3}{3\sigma-1}</math> in 1971,<ref>{{Cite journal |last=Huxley |first=M. N. |date=1971 |title=On the Difference between Consecutive Primes. |url=https://eudml.org/doc/142126 |journal=Inventiones Mathematicae |volume=15 |issue=2 |pages=164–170 |doi=10.1007/BF01418933 |bibcode=1971InMat..15..164H |issn=0020-9910|doi-access=free }}</ref>  and [[Larry Guth|Guth]] and [[James A. Maynard|Maynard]] that <math>A_{GM}(\sigma)=\frac{15}{5\sigma+3}</math> in 2024 (preprint)<ref>{{Cite arXiv |last1=Guth |first1=Larry |last2=Maynard |first2=James |date=2024 |title=New large value estimates for Dirichlet polynomials |class=math.NT |eprint=2405.20552}}</ref><ref>{{Cite web |last=Bischoff |first=Manon |title=The Biggest Problem in Mathematics Is Finally a Step Closer to Being Solved |url=https://www.scientificamerican.com/article/the-riemann-hypothesis-the-biggest-problem-in-mathematics-is-a-step-closer/ |access-date=2024-07-16 |website=Scientific American |language=en}}</ref><ref>{{Cite web |last=Cepelewicz |first=Jordana |date=2024-07-15 |title='Sensational' Proof Delivers New Insights Into Prime Numbers |url=https://www.quantamagazine.org/sensational-proof-delivers-new-insights-into-prime-numbers-20240715/ |access-date=2024-07-16 |website=Quanta Magazine |language=en}}</ref> and these coincide on 
+<math display=block>\sigma_{I,GM}=7/10<\sigma_{H,GM}=8/10<\sigma_{I,H}=3/4.</math>
+Therefore the latest work of Guth and Maynard gives the closest known value to <math>\sigma=1/2</math> (as expected from the Riemann hypothesis) and improves the bound to <math>N(\sigma,T)\le N^{\frac{30}{13}(1-\sigma)+\epsilon}</math> or equivalently the asymptotics to <math>x^{17/30}</math>.
+
+In theory, improvements to Baker, [[Glyn Harman|Harman]], and [[Janos Pintz|Pintz]] [[Legendre's conjecture#Partial results|estimates]] for the Legendre conjecture and better [[Siegel zero|Siegel-zero]]-free regions could also be expected, among others.
+
+== L-functions ==
+The Riemann zeta function belongs to a more general family of functions called [[L-function]]s.
+In 2010, new methods to obtain sub-convexity estimates for L-functions in the PGL(2) case were given by [[Joseph Bernstein]] and Andre Reznikov<ref>{{Cite journal|last1=Bernstein|first1=Joseph|last2=Reznikov|first2=Andre|date=2010-10-05|title=Subconvexity bounds for triple L -functions and representation theory|url=http://annals.math.princeton.edu/2010/172-3/p05|journal=Annals of Mathematics|language=en|volume=172|issue=3|pages=1679–1718|doi=10.4007/annals.2010.172.1679|s2cid=14745024|issn=0003-486X|doi-access=free|arxiv=math/0608555}}</ref> and in the GL(1) and GL(2) case by [[Akshay Venkatesh]] and [[Philippe Michel (number theorist)|Philippe Michel]]<ref name="SubconvexityGL2">{{cite journal|last1=Michel|first1=Philippe|author-link1=Philippe Michel (number theorist)|last2=Venkatesh|first2=Akshay|year=2010|title=The subconvexity problem for GL<sub>2</sub>|journal=[[Publications Mathématiques de l'IHÉS]]|volume=111|issue=1|pages=171–271|arxiv=0903.3591|citeseerx=10.1.1.750.8950|doi=10.1007/s10240-010-0025-8|s2cid=14155294}}</ref> and in 2021 for the GL(''n'') case by Paul Nelson.<ref>{{cite arXiv|last=Nelson|first=Paul D.|date=2021-09-30|title=Bounds for standard $L$-functions|class=math.NT|eprint=2109.15230}}</ref><ref>{{Cite web|last=Hartnett|first=Kevin|date=2022-01-13|title=Mathematicians Clear Hurdle in Quest to Decode Primes|url=https://www.quantamagazine.org/mathematicians-clear-hurdle-in-quest-to-decode-prime-numbers-20220113/|access-date=2022-02-17|website=Quanta Magazine|language=en}}</ref>
+
+== See also ==
+
+* [[Z function#The Lindelöf hypothesis]]
+
+== Notes and references==
+
+{{Reflist}}
+*{{citation|last=Backlund|first= R. |title=Über die Beziehung zwischen Anwachsen und Nullstellen der Zeta-Funktion|journal= Ofversigt Finska Vetensk. Soc. |volume=61|issue=9|year=1918–1919|url=https://www.biodiversitylibrary.org/item/51075#page/359/mode/1up}}
+*{{Citation | last1=Bourgain | first1=Jean | authorlink=Jean Bourgain | title=Decoupling, exponential sums and the Riemann zeta function | journal=[[Journal of the American Mathematical Society]] | doi=10.1090/jams/860 |arxiv=1408.5794 | year=2017 | volume=30 | pages=205–224 | mr=3556291 | issue=1| s2cid=118064221 }}
+*{{Citation | last1=Conrey | first1=J. B. | last2=Farmer | first2=D. W. | last3=Keating | first3=Jonathan P. | last4=Rubinstein | first4=M. O. | last5=Snaith | first5=N. C. | title=Integral moments of L-functions | doi=10.1112/S0024611504015175 | mr=2149530 | year=2005 | journal=Proceedings of the London Mathematical Society |series=Third Series | issn=0024-6115 | volume=91 | issue=1 | pages=33–104| arxiv=math/0206018 | s2cid=1435033 }}
+* {{Citation | last1=Conrey | first1=J. B. | last2=Farmer | first2=D. W. | last3=Keating | first3=Jonathan P. | last4=Rubinstein | first4=M. O. | last5=Snaith | first5=N. C. | title=Lower order terms in the full moment conjecture for the Riemann zeta function | doi=10.1016/j.jnt.2007.05.013 | mr=2419176 | year=2008 | journal=[[Journal of Number Theory]] | issn=0022-314X | volume=128 | issue=6 | pages=1516–1554| arxiv=math/0612843 | s2cid=15922788 }}
+*{{Citation | last1=Conrey | first1=J. B. | last2=Ghosh | first2=A. | title=A conjecture for the sixth power moment of the Riemann zeta-function | doi=10.1155/S1073792898000476 | mr=1639551 | year=1998 | journal=International Mathematics Research Notices | issn=1073-7928 | issue=15 | pages=775–780 | volume=1998| arxiv=math/9807187 | bibcode=1998math......7187C | doi-access=free }}
+*{{Citation | last1=Edwards | first1=H. M. | authorlink = Harold Edwards (mathematician) | title=Riemann's Zeta Function | publisher=[[Dover Publications]] | location=New York | isbn=978-0-486-41740-0 | mr=0466039 | year=1974}} [https://books.google.com/books/about/Riemann_s_Zeta_Function.html?id=ruVmGFPwNhQC 2001 pbk reprint]
+*{{Citation | authorlink=Roger Heath-Brown | last1=Heath-Brown | first1=D. R. | title=The fourth power moment of the Riemann zeta function | doi=10.1112/plms/s3-38.3.385 | mr=532980 | year=1979 | journal=Proceedings of the London Mathematical Society |series=Third Series | issn=0024-6115 | volume=38 | issue=3 | pages=385–422}}
+*{{Citation | last=Huxley | first=M. N. | authorlink=Martin Huxley | title=Number theory for the millennium, II (Urbana, IL, 2000) | publisher=[[A K Peters]] | mr=1956254 | year=2002 | chapter=Integer points, exponential sums and the Riemann zeta function | pages=275–290}}
+*{{Citation | last=Huxley | first=M. N. | authorlink=Martin Huxley | title=Exponential sums and the Riemann zeta function. V | doi=10.1112/S0024611504014959 | mr=2107036 | year=2005 | journal=Proceedings of the London Mathematical Society |series=Third Series | issn=0024-6115 | volume=90 | issue=1 | pages=1–41}}
+*{{citation|first=A. E. |last=Ingham |title=Mean-Value Theorems in the Theory of the Riemann Zeta-Function |journal= Proc. London Math. Soc.|year= 1928|volume= s2-27|issue=1|pages= 273&ndash;300| doi=10.1112/plms/s2-27.1.273}} 
+*{{Citation | last1=Ingham | first1=A. E. | title=On the estimation of N(σ,T) | doi=10.1093/qmath/os-11.1.201 | mr=0003649 | year=1940 | journal=The Quarterly Journal of Mathematics |series=Second Series | issn=0033-5606 | volume=11 | issue=1 | pages=291–292| bibcode=1940QJMat..11..201I }}
+*{{Citation | last1=Karatsuba | first1=Anatoly | authorlink1 = Anatoly Karatsuba | last2=Voronin | first2=Sergei | authorlink2 = Sergei Voronin| title=The Riemann zeta-function | publisher=Walter de Gruyter & Co. | location=Berlin | series=de Gruyter Expositions in Mathematics | isbn=978-3-11-013170-3 | mr=1183467 | year=1992 | volume=5}}
+*{{Citation | last1=Keating | first1=Jonathan P. | last2=Snaith | first2=N. C. | title=Random matrix theory and ζ(1/2+it) | doi=10.1007/s002200000261 | mr=1794265 | year=2000 | journal=Communications in Mathematical Physics | issn=0010-3616 | volume=214 | issue=1 | pages=57–89| bibcode=2000CMaPh.214...57K | citeseerx=10.1.1.15.8362 | s2cid=11095649 }}
+*{{Citation | last1=Lindelöf | first1=Ernst | title=Quelques remarques sur la croissance de la fonction ζ(s) | year=1908 | journal=Bull. Sci. Math. | volume=32 | pages=341–356 | url=https://babel.hathitrust.org/cgi/pt?id=hvd.32044102908480&view=1up&seq=395&q1=lindelöf}}
+*{{Citation | last1=Motohashi | first1=Yõichi | title=A relation between the Riemann zeta-function and the hyperbolic Laplacian | url=http://www.numdam.org/item?id=ASNSP_1995_4_22_2_299_0 | mr=1354909 | year=1995 | journal=Annali della Scuola Normale Superiore di Pisa. Classe di Scienze. Serie IV | issn=0391-173X | volume=22 | issue=2 | pages=299–313}}
+*{{Citation | last1=Motohashi | first1=Yõichi | title=The Riemann zeta-function and the non-Euclidean Laplacian | mr=1335956 | year=1995 | journal=Sugaku Expositions | issn=0898-9583 | volume=8 | issue=1 | pages=59–87}}
+*{{Citation | last1=Titchmarsh | first1=Edward Charles | author1-link=Edward Charles Titchmarsh | title=The theory of the Riemann zeta-function | publisher=The Clarendon Press Oxford University Press | edition=2nd | isbn=978-0-19-853369-6 | mr=882550 | year=1986}}
+*{{eom|id=L/l058960|first=S.M.|last= Voronin}}
+
+{{L-functions-footer}}
+
+{{DEFAULTSORT:Lindelof hypothesis}}
+[[Category:Conjectures]]
+[[Category:Zeta and L-functions]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Analytic number theory]]

@@ -1,0 +1,82 @@
+[[File:Szymanski routing.svg|class=skin-invert-image|thumb|Routing a permutation of the doubly-directed [[cube graph]]]]
+{{unsolved|mathematics|Can every [[permutation]] on the <math>n</math>-dimensional doubly [[directed graph|directed]] [[hypercube graph]] be routed with edge-disjoint [[Path (graph theory)|paths]]?}}
+
+In mathematics, '''Szymanski's conjecture''', named after Ted H. Szymanski,<ref>{{citation
+ | last = Szymanski | first = Ted H.
+ | title = On the Permutation Capability of a Circuit-Switched Hypercube
+ | location = Silver Spring, MD
+ | pages = 103–110
+ | publisher = IEEE Computer Society Press
+ | journal = Proc. Internat. Conf. on Parallel Processing
+ | volume = 1
+ | year = 1989
+ | url = https://www.researchgate.net/publication/221085303_On_the_Permutation_Capability_of_a_Circuit-Switched_Hypercube}}</ref> states that every [[permutation]] on the <math>n</math>-dimensional doubly [[directed graph|directed]] [[hypercube graph]] can be routed with edge-disjoint [[Path (graph theory)|paths]]. That is, if the permutation <math>\sigma</math> matches each vertex <math>v</math> to another vertex <math>\sigma(v)</math>, then for each <math>v</math> there exists a path in the hypercube graph from <math>v</math> to <math>\sigma(v)</math> such that no two paths for two different vertices <math>u</math> and <math>v</math> use the same edge in the same direction.
+
+==Known results==
+Through computer experiments it has been verified that the conjecture is true for <math>n \leq 4</math>.<ref name="bfh01">{{citation
+ | last1 = Baudon | first1 = Olivier
+ | last2 = Fertin | first2 = Guillaume
+ | last3 = Havel | first3 = Ivan
+ | doi = 10.1016/S0166-218X(00)00386-3
+ | issue = 1
+ | journal = Discrete Applied Mathematics
+ | pages = 43–58
+ | title = Routing permutations and 2-1 routing requests in the hypercube
+ | volume = 113
+ | year = 2001| doi-access = 
+ }}</ref> Although the conjecture remains open for <math>n \geq 5</math>, in this case there exist permutations that require the use of paths that are not [[shortest path]]s in order to be routed.<ref>{{citation
+ | last = Lubiw | first = Anna | authorlink = Anna Lubiw
+ | doi = 10.1016/0020-0190(90)90106-8
+ | issue = 2
+ | journal = Information Processing Letters
+ | pages = 57–61
+ | title = Counterexample to a conjecture of Szymanski on hypercube routing
+ | volume = 35
+ | year = 1990}}</ref>
+
+==Partial results==
+While the full conjecture remains open, several partial results have been established. Most notably, it has been proven that the hypercube is 2-rearrangeable, meaning that any permutation can be partitioned into two partial permutations, each of which can be routed by edge-disjoint paths.<ref name="gt97">{{citation
+ | last1 = Gu | first1 = Qian-Ping
+ | last2 = Tamaki | first2 = Hisao
+ | doi = 10.1006/jpdc.1997.1358
+ | issue = 2
+ | journal = Journal of Parallel and Distributed Computing
+ | pages = 147–152
+ | title = Routing a Permutation in the Hypercube by Two Sets of Edge Disjoint Paths
+ | volume = 44
+ | year = 1997}}</ref> This result has applications in [[time-sharing]] approaches and optical networks with multiple wavelengths, where virtual doubling of edges can be achieved without physically adding connections. The 2-rearrangeability result also provides a 2-approximation algorithm for the maximum disjoint paths problem on the hypercube, which has applications in [[admission control]] for high-speed networks.
+
+A related result shows that when source and target vertices are separated by at least two levels in the hypercube (in terms of [[Hamming weight]]), there exist two edge-disjoint collections of vertex-disjoint paths connecting them.<ref name="cs25">{{citation
+ | last1 = Chakrabarty | first1 = Deeparnab
+ | last2 = Seshadhri | first2 = C.
+ | doi = 10.4230/LIPIcs.ITCS.2025.34
+ | doi-access = free
+ | journal = Leibniz International Proceedings in Informatics
+ | pages = 34:1–34:15
+ | title = Directed Hypercube Routing, a Generalized Lehman-Ron Theorem, and Monotonicity Testing
+ | volume = 313
+ | year = 2025}}</ref> More generally, it has been conjectured that if source and target vertices are separated by <math>r</math> levels, then <math>r</math> such edge-disjoint collections should exist.<ref name="cs25"/>
+
+===2-1 routing requests===
+The study of 2-1 routing requests (where each vertex can be used at most twice as a source but only once as a target) is important for understanding Szymanski's conjecture. Any counterexample to the conjecture would necessarily produce two non-routable 2-1 routing requests when decomposed using the "cross first strategy".<ref name="b05">{{citation
+ | last = Baudon | first = Olivier
+ | doi = 10.1016/j.endm.2005.06.087
+ | journal = Electronic Notes in Discrete Mathematics
+ | pages = 535–538
+ | title = 2-1 routing requests in the hypercube
+ | volume = 22
+ | year = 2005}}</ref> However, the existence of non-routable 2-1 routing requests in a dimension does not immediately provide a counterexample to Szymanski's conjecture for that dimension.
+
+In <math>H_3</math>, there exist exactly two 2-1 routing requests that cannot be routed and are non-equivalent by automorphism.<ref name="bfh01"/> One of these, denoted <math>g_3</math>, can be extended to any dimension <math>n \geq 3</math> to produce a non-routable 2-1 routing request <math>g_n</math> in <math>H_n</math>.<ref name="bfh01"/> Computer searches have identified approximately a dozen non-routable 2-1 routing requests in <math>H_4</math>, though not all can be extended to higher dimensions.<ref name="b05"/>
+
+==Motivation==
+The conjecture is closely related to the [[circuit switching|circuit-switched]] routing capability of networks, which is used to support simultaneous communications across multiprocessor parallel and telecommunication systems. In circuit-switched routing, a dedicated path is established for each source-destination pair, and data is pipelined through the path. If the hypercube is rearrangeable (meaning Szymanski's conjecture is true), it would guarantee that any permutation routing request can be satisfied with edge-disjoint paths, allowing parallel data transfer between every source-destination pair.<ref name="gt97"/>
+
+The conjecture also has connections to [[property testing]], particularly in the context of testing [[Monotonic function|monotonicity]] of Boolean functions over the hypercube domain.<ref name="cs25"/> Understanding hypercube routing properties has implications for developing efficient algorithms for monotonicity testing and related problems in theoretical computer science.
+
+==References==
+{{reflist}}
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in graph theory]]
+[[Category:Network topology]]

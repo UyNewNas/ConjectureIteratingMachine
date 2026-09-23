@@ -1,0 +1,125 @@
+{{Short description|Unsolved problem in structural complexity theory}}
+{{unsolved|computer science|Is there a polynomial time isomorphism between every two NP-complete languages?}}
+In [[structural complexity theory]], the '''Berman–Hartmanis conjecture''' is an unsolved [[conjecture]] named after Leonard C. Berman and [[Juris Hartmanis]].<ref name=":0">{{citation |last1=Berman |first1=L. |title=On isomorphisms and density of NP and other complete sets |journal=SIAM Journal on Computing |volume=6 |issue=2 |pages=305–322 |year=1977 |url=https://ecommons.cornell.edu/bitstream/1813/7101/1/75-260.pdf |doi=10.1137/0206023 |hdl=1813/7101 |mr=0455536 |last2=Hartmanis |first2=J. |author2-link=Juris Hartmanis |hdl-access=free}}.</ref> Informally, it states that all [[NP-complete]] languages look alike, in the sense that they can be related to each other by [[polynomial time]] [[isomorphism]]s.<ref>{{citation|title=Complexity Theory and Cryptology: An Introduction to Cryptocomplexity|first=Jörg|last=Rothe|publisher=Birkhäuser|year=2005|isbn=978-3-540-22147-0|contribution=3.6.2 The Berman–Hartmanis Isomorphism Conjecture and One-Way Functions|pages=108–114}}.</ref><ref>{{citation|title=Gems of Theoretical Computer Science|first1=Uwe|last1=Schöning|first2=Randall J.|last2=Pruim|publisher=Springer|year=1998|isbn=978-3-540-64425-5|contribution=15. The Berman–Hartmanis Conjecture and Sparse Sets|pages=123–129}}.</ref><ref>{{citation|contribution=The structure of complete degrees|first1=Stuart|last1=Kurtz|first2=Steve|last2=Mahaney|first3=Jim|last3=Royer|title=Complexity Retrospective|publisher=Springer|year=1990|pages=108–146|url=http://www.cis.syr.edu/~royer/archive/survey.ps}}
+</ref><ref>{{citation|title=Computability in Context: Computation and Logic in the Real World|editor1-first=S. Barry|editor1-last=Cooper|editor2-first=Andrea|editor2-last=Sorbi|publisher=World Scientific|year=2011|isbn=978-1-84816-245-7|first=Manindra|last=Agrawal|authorlink=Manindra Agrawal|contribution=The Isomorphism Conjecture for NP|pages=19–48|url=http://www.cse.iitk.ac.in/users/manindra/survey/Isomorphism-Conjecture.pdf}}.</ref>
+
+==Statements==
+
+=== Statement using p-isomorphism ===
+An '''isomorphism''' between [[formal language]]s ''L''<sub>1</sub> and ''L''<sub>2</sub> is a [[bijection|bijective]] map ''f'' from [[String (computer science)|string]]s in the alphabet of ''L''<sub>1</sub> to strings in the alphabet of ''L''<sub>2</sub>, with the property that a string ''x'' belongs to ''L''<sub>1</sub> if and only if ''f''(''x'') belongs to ''L''<sub>2</sub>. 
+
+A polynomial-time isomorphism, or '''''p''-isomorphism''' for short, is an isomorphism ''f'' where both ''f'' and its [[inverse function]] can be computed in an amount of time polynomial in the lengths of their arguments.
+
+Berman and Hartmanis conjectured that all NP-complete languages are p-isomorphic to each other.<ref name=":0" />
+
+=== Statement using paddable languages ===
+A formal language ''L'' is '''paddable''' if there is a polynomial time function ''f''(''x'',''y''), with a polynomial time inverse, such that for every ''x'' and every ''y'', the string ''x'' belongs to ''L'' if and only if ''f''(''x'',''y'') belongs to ''L''. That is, it is possible to [[Padding argument|pad]] the input ''x'' with irrelevant information ''y'', in an invertible way, without changing its membership in the language. Berman and Hartmanis ''proved'' that all pairs of paddable NP-complete languages are p-isomorphic.<ref name=":0" />  
+
+Since ''p''-isomorphism preserves paddability, and there exist paddable NP-complete languages, an equivalent way of stating the Berman–Hartmanis conjecture is that all NP-complete languages are paddable.
+
+=== Statement using equivalence relations ===
+Polynomial time isomorphism is an [[equivalence relation]], and it can be used to partition the formal languages into [[equivalence class]]es, so another way of stating the Berman–Hartmanis conjecture is that the NP-complete languages form a single equivalence class for this relation.
+
+==Implications==
+
+=== Non-existence of sparse NP-complete languages ===
+A formal language is called [[Sparse language|'''sparse''']] if the number of yes-instances of length ''n'' grows only polynomially as a function of ''n''. The known NP-complete languages have a number of yes-instances that grows exponentially, and if ''L'' is a language with exponentially many yes-instances then it cannot be ''p''-isomorphic to a sparse language, because its yes-instances would have to be mapped to strings that are more than polynomially long in order for the mapping to be one-to-one. Therefore, if the Berman–Hartmanis conjecture is true, an immediate consequence would be the nonexistence of sparse NP-complete languages.
+
+=== P vs. NP ===
+The nonexistence of sparse NP-complete languages in turn implies that [[P versus NP problem|P ≠ NP]], because if P = NP then every nontrivial language in P (including some sparse ones, such as the language of binary strings all of whose bits are zero) would be NP-complete. In 1982, Steve Mahaney published his proof that the nonexistence of sparse NP-complete languages (with NP-completeness defined in the standard way using [[many-one reduction]]s) is in fact equivalent to the statement that P ≠ NP; this is [[Mahaney's theorem]]. Even for a relaxed definition of NP-completeness using [[Turing reduction]]s, the existence of a sparse NP-complete language would imply an unexpected collapse of the [[polynomial hierarchy]].<ref>{{citation
+ | last = Mahaney | first = Stephen R.
+ | doi = 10.1016/0022-0000(82)90002-2
+ | issue = 2
+ | journal = [[Journal of Computer and System Sciences]]
+ | mr = 680515
+ | pages = 130–143
+ | title = Sparse complete sets for NP: solution of a conjecture of Berman and Hartmanis
+ | volume = 25
+ | year = 1982| hdl = 1813/6257
+ | hdl-access = free
+ }}.</ref>
+
+==Evidence==
+As evidence towards the conjecture, {{harvtxt|Agrawal|Allender|Impagliazzo|Pitassi|1997}} showed that an analogous conjecture with a restricted type of reduction is true: every two languages that are complete for NP under [[AC0|AC<sup>0</sup>]] many-one reductions have an AC<sup>0</sup> isomorphism.<ref>{{citation
+ | last1 = Agrawal | first1 = Manindra | author1-link = Manindra Agrawal
+ | last2 = Allender | first2 = Eric | author2-link = Eric Allender
+ | last3 = Impagliazzo | first3 = Russell | author3-link = Russell Impagliazzo
+ | last4 = Pitassi | first4 = Toniann | author4-link = Toniann Pitassi
+ | last5 = Rudich | first5 = Steven | author5-link = Steven Rudich
+ | contribution = Reducing the complexity of reductions
+ | doi = 10.1145/258533.258671
+ | pages = 730–738
+ | title = [[Symposium on Theory of Computing|Proceedings of the 29th ACM Symposium on Theory of Computing (STOC '97)]]
+ | year = 1997| s2cid = 14739803 | doi-access = free | isbn = 0-89791-888-6 }}. {{citation
+ | last1 = Agrawal | first1 = Manindra | author1-link = Manindra Agrawal
+ | last2 = Allender | first2 = Eric | author2-link = Eric Allender
+ | last3 = Rudich | first3 = Steven | author3-link = Steven Rudich
+ | doi = 10.1006/jcss.1998.1583
+ | issue = 2
+ | journal = [[Journal of Computer and System Sciences]]
+ | pages = 127–143
+ | title = Reductions in circuit complexity: an isomorphism theorem and a gap theorem
+ | volume = 57
+ | year = 1998| doi-access = free
+ }}.</ref>
+{{harvtxt|Agrawal|Watanabe|2009}} showed that, if there exist [[one-way function]]s that cannot be inverted in polynomial time on all inputs, but if every such function has a small but dense subset of inputs on which it can be inverted in [[P/poly]] (as is true for known functions of this type) then every two NP-complete languages have a P/poly isomorphism.<ref>{{citation
+ | last1 = Agrawal | first1 = M. | author1-link = Manindra Agrawal
+ | last2 = Watanabe | first2 = O.
+ | contribution = One-way functions and the Berman–Hartmanis conjecture
+ | doi = 10.1109/CCC.2009.17
+ | pages = 194–202
+ | title = 24th Annual IEEE Conference on Computational Complexity
+ | url = http://www.cse.iitk.ac.in/users/manindra/isomorphism/easy-cylinder-conjecture.pdf
+ | year = 2009| isbn = 978-0-7695-3717-7 | s2cid = 15244907 }}.</ref>
+And {{harvtxt|Fenner|Fortnow|Kurtz|1992}} found an [[oracle machine]] model in which the analogue to the isomorphism conjecture is true.<ref>{{citation
+ | last1 = Fenner | first1 = S.
+ | last2 = Fortnow | first2 = L. | author2-link = Lance Fortnow
+ | last3 = Kurtz | first3 = S.A.
+ | contribution = The isomorphism conjecture holds relative to an oracle
+ | doi = 10.1109/SFCS.1992.267821
+ | pages = 30–39
+ | title = Proceedings of the 33rd Annual IEEE Symposium on Foundations of Computer Science
+ | year = 1992| isbn = 0-8186-2900-2
+ | citeseerx = 10.1.1.42.6130| s2cid = 36512284
+ }}.</ref>
+
+Evidence against the conjecture was provided by {{harvtxt|Joseph|Young|1985}} and {{harvtxt|Kurtz|Mahaney|Royer|1995}}. Joseph and Young introduced a class of NP-complete problems, the [[Polynomial creativity|''k''-creative sets]], for which no ''p''-isomorphism to the standard NP-complete problems is known.<ref>{{citation
+ | last1 = Joseph | first1 = Deborah | author1-link = Deborah Joseph
+ | last2 = Young | first2 = Paul
+ | doi = 10.1016/0304-3975(85)90140-9
+ | issue = 2–3
+ | journal = [[Theoretical Computer Science (journal)|Theoretical Computer Science]]
+ | mr = 821203
+ | pages = 225–237
+ | title = Some remarks on witness functions for nonpolynomial and noncomplete sets in NP
+ | volume = 39
+ | year = 1985| url = http://digital.library.wisc.edu/1793/58504 | doi-access = free
+ }}.</ref>
+Kurtz et al. showed that in oracle machine models given access to a [[random oracle]], the analogue of the conjecture is not true: if ''A'' is a random oracle, then not all sets complete for NP<sup>''A''</sup> have isomorphisms in P<sup>''A''</sup>.<ref>{{citation
+ | last1 = Kurtz | first1 = Stuart A.
+ | last2 = Mahaney | first2 = Stephen R.
+ | last3 = Royer | first3 = James S.
+ | doi = 10.1145/201019.201030
+ | issue = 2
+ | journal = [[Journal of the ACM]]
+ | mr = 1409741
+ | pages = 401–420
+ | title = The isomorphism conjecture fails relative to a random oracle
+ | volume = 42
+ | year = 1995| s2cid = 52152959
+ | url = https://surface.syr.edu/cgi/viewcontent.cgi?article=1036&context=eecs
+ | doi-access = free
+ }}.</ref>
+Random oracles are commonly used in the theory of cryptography to model [[cryptographic hash function]]s that are computationally indistinguishable from random, and the construction of Kurtz et al. can be carried out with such a function in place of the oracle. For this reason, among others, the Berman–Hartmanis isomorphism conjecture is believed false by many complexity theorists.<ref>{{citation|title=The Berman-Hartmanis Isomorphism Conjecture|first=Lance|last=Fortnow|authorlink=Lance Fortnow|date=March 28, 2003|url=http://blog.computationalcomplexity.org/2003/03/berman-hartmanis-isomorphism.html}}.</ref>
+
+== See also ==
+
+* The [[Myhill isomorphism theorem]] is an analogous theorem for sets of natural numbers.
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Berman-Hartmanis conjecture}}
+[[Category:Structural complexity theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in computer science]]

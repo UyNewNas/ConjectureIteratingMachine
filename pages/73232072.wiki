@@ -1,0 +1,139 @@
+{{Short description|Problem on triangles in graph theory}}
+{{Use mdy dates|cs1-dates=ly|date=March 2023}}
+{{Use list-defined references|date=March 2023}}
+[[File:K5 triangle packing and covering.svg|thumb|upright=1.35|Packing and covering triangles in the [[complete graph]] <math>K_5</math>. The maximum number of edge-disjoint triangles in this graph is two (left). If four edges are removed from the graph (red edges, right), the remaining subgraph becomes [[triangle-free graph|triangle-free]], and more strongly [[bipartite graph|bipartite]] (as shown by the blue and yellow vertex coloring). According to Tuza's conjecture, in any graph, it is possible to remove twice as many edges as the maximum triangle packing size, and eliminate all triangles. <math>K_5</math> is an extreme case, for which exactly twice the packing size is needed.]]
+{{unsolved|mathematics|Does every undirected graph <math>G</math> have a triangle-hitting set whose size is at most twice the number of triangles in an optimal packing?}}
+
+'''Tuza's conjecture''' is an unsolved problem in [[graph theory]], a branch of mathematics, concerning [[Triangle graph|triangles]] in [[undirected graph]]s.
+
+==Statement==
+In any graph <math>G</math>, one can define two quantities <math>\nu(G)</math> and <math>\tau(G)</math> based on the triangles in <math>G</math>. The quantity <math>\nu(G)</math> is the "triangle packing number", the largest number of edge-disjoint triangles that it is possible to find in <math>G</math>.{{r|t90}} It can be computed in [[polynomial time]] as a special case of the [[matroid parity problem]].{{r|el}} The quantity <math>\tau(G)</math> is the size of the smallest "triangle-hitting set", a set of edges that touches at least one edge from each triangle.{{r|t90}}
+
+Clearly, <math>\nu(G)\le\tau(G)\le 3\nu(G)</math>. For the first inequality, <math>\nu(G)\le\tau(G)</math>, any triangle-hitting set must include at least one edge from each triangle of the optimal packing, and none of these edges can be shared between two or more of these triangles because the triangles are disjoint. For the second inequality, <math>\tau(G)\le 3\nu(G)</math>, one can construct a triangle-hitting set of size <math>3\nu(G)</math> by choosing all edges of the triangles of an optimal packing. This must hit all triangles in <math>G</math>, even the ones not in the packing, because otherwise the packing could be made larger by adding any unhit triangle.{{r|t90}}
+
+Tuza's conjecture asserts that the second inequality is not tight, and can be replaced by <math>\tau(G)\le 2\nu(G)</math>. That is, according to this unproven conjecture, every undirected graph <math>G</math> has a triangle-hitting set whose size is at most twice the number of triangles in an optimal packing.{{r|t90}}
+
+==History and partial results==
+Zsolt Tuza formulated Tuza's conjecture in 1981.{{r|t90|t81}} If true, it would be best possible: there are infinitely many graphs for which <math>\tau(G)=2\nu(G)</math>, including all of the [[block graph]]s whose blocks are [[clique (graph theory)|cliques]] of 2, 4, or 5 vertices.{{r|t90}}
+
+The conjecture is known to hold for [[planar graph]]s,{{r|t90}} and more generally for [[sparse graph]]s of [[degeneracy (graph theory)|degeneracy]] at most six.{{r|p}} (Planar graphs have degeneracy at most five.) It is also known to hold for graphs of [[treewidth]] at most six,{{r|bfg}} for [[threshold graph]]s,{{r|bbg}} for sufficiently [[dense graph]]s, and for [[chordal graph]]s that don't contain a large clique.{{r|t90}} For [[random graph]]s in the [[Erdős–Rényi model|Erdős–Rényi–Gilbert model]], it is true [[with high probability]].{{r|kp}}
+
+Although Tuza's conjecture remains unproven, the bound <math>\tau(G)\le 3\nu(G)</math> can be improved, for all graphs, to  <math>\tau(G)\le (3-\tfrac{3}{23})\nu(G)\approx 2.8695\nu(G)</math>.{{r|h}}
+
+==See also==
+*[[Mantel's theorem]]
+*[[Triangle removal lemma]]
+
+==References==
+<references>
+
+<ref name=bbg>{{citation
+ | last1 = Bonamy | first1 = Marthe
+ | last2 = Bożyk | first2 = Łukasz
+ | last3 = Grzesik | first3 = Andrzej
+ | last4 = Hatzel | first4 = Meike
+ | last5 = Masařík | first5 = Tomáš
+ | last6 = Novotná | first6 = Jana
+ | last7 = Okrasa | first7 = Karolina
+ | arxiv = 2105.09871
+ | issue = 1
+ | journal = Discrete Mathematics & Theoretical Computer Science
+ | mr = 4471222
+ | page = P24:1–P24:14
+ | title = Tuza's conjecture for threshold graphs
+ | volume = 24
+ | year = 2022| doi = 10.46298/dmtcs.7660
+ }}</ref>
+
+<ref name=bfg>{{citation
+ | last1 = Botler | first1 = Fábio
+ | last2 = Fernandes | first2 = Cristina G. | author2-link = Cristina G. Fernandes
+ | last3 = Gutiérrez | first3 = Juan
+ | doi = 10.1016/j.disc.2020.112281
+ | issue = 4
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 4204419
+ | at = Paper No. 112281
+ | title = On Tuza's conjecture for triangulations and graphs with small treewidth
+ | volume = 344
+ | year = 2021| arxiv = 2002.07925
+ }}</ref>
+ 
+<ref name=el>{{citation
+ | last = Lawler | first = Eugene L. | authorlink = Eugene Lawler
+ | contribution = Chapter 9: The Matroid Parity Problem
+ | contribution-url = https://books.google.com/books?id=MTuoAAAAQBAJ&pg=PA356
+ | location = New York
+ | mr = 0439106
+ | pages = 356–367
+ | publisher = Holt, Rinehart and Winston
+ | title = Combinatorial Optimization: Networks and Matroids
+ | year = 1976}}</ref>
+
+<ref name=h>{{citation
+ | last = Haxell | first = P. E. | author-link = Penny Haxell
+ | doi = 10.1016/S0012-365X(98)00183-6
+ | issue = 1–3
+ | journal = [[Discrete Mathematics (journal)|Discrete Mathematics]]
+ | mr = 1663859
+ | pages = 251–254
+ | title = Packing and covering triangles in graphs
+ | volume = 195
+ | year = 1999| doi-access = free
+ }}</ref>
+
+<ref name=kp>{{citation
+ | last1 = Kahn | first1 = Jeff
+ | last2 = Park | first2 = Jinyoung
+ | issue = 2
+ | journal = Random Structures & Algorithms
+ | mr = 4456027
+ | pages = 235–249
+ | title = Tuza's conjecture for random graphs
+ | volume = 61
+ | year = 2022| doi = 10.1002/rsa.21057
+ | arxiv = 2007.04351
+ }}</ref>
+
+<ref name=p>{{citation
+ | last = Puleo | first = Gregory J.
+ | doi = 10.1016/j.ejc.2015.03.006
+ | journal = European Journal of Combinatorics
+ | mr = 3349530
+ | pages = 134–152
+ | title = Tuza's conjecture for graphs with maximum average degree less than 7
+ | volume = 49
+ | year = 2015| arxiv = 1308.2211
+ }}</ref>
+ 
+<ref name=t81>{{citation
+ | last = Tuza | first = Zsolt
+ | editor1-last = Hajnal | editor1-first = A. | editor1-link = András Hajnal
+ | editor2-last = Lovász | editor2-first = L. | editor2-link = László Lovász
+ | editor3-last = Sós | editor3-first = V. T. | editor3-link = Vera T. Sós
+ | contribution = Conjecture
+ | isbn = 0-444-86763-5
+ | mr = 818224
+ | page = 888
+ | series = Colloquia Mathematica Societatis János Bolyai
+ | title = Finite and Infinite Sets: Proceedings of the sixth Hungarian combinatorial colloquium held in Eger, July 6–11, 1981
+ | volume = 37
+ | year = 1984}}</ref>
+
+<ref name=t90>{{citation
+ | last = Tuza | first = Zsolt
+ | doi = 10.1007/BF01787705
+ | issue = 4
+ | journal = Graphs and Combinatorics
+ | mr = 1092587
+ | pages = 373–380
+ | title = A conjecture on triangles of graphs
+ | volume = 6
+ | year = 1990}}</ref>
+
+</references>
+
+==External links==
+*{{citation|url=http://matroidunion.org/?p=4782|title=Triangles, arcs, and ovals|date=March 6, 2023|first=Jorn|last=van der Pol|work=The Matroid Union}}
+
+[[Category:Unsolved problems in graph theory]]

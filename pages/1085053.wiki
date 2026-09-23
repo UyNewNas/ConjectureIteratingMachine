@@ -1,0 +1,55 @@
+{{Short description|Conjecture in number theory}}
+In [[number theory]], the '''Bateman–Horn conjecture''' is a statement concerning the frequency of [[prime number]]s among the values of a system of [[polynomial]]s, named after mathematicians [[Paul T. Bateman]] and [[Roger Horn|Roger A. Horn]] who proposed it in 1962. It provides a vast generalization of such conjectures as the [[First Hardy–Littlewood conjecture|Hardy–Littlewood conjecture]] on the density of [[twin prime]]s or their conjecture on primes of the form <math>n^2+1</math>. It is also a strengthening of [[Schinzel's hypothesis H|Schinzel's&nbsp;hypothesis&nbsp;H]].
+
+==Definition==
+The Bateman–Horn conjecture provides a conjectured density for the positive integers at which a given set of polynomials all have prime values. For a set of <math>m</math> distinct [[irreducible polynomial]]s <math>f_1,\dots,f_m</math> with integer coefficients, a necessary condition for the polynomials to simultaneously generate prime values infinitely often is that they satisfy [[Bunyakovsky's property]]; namely, that there does not exist a prime number <math>p</math> that divides their product  <math>f(n)</math> for every positive integer <math>n</math>. For, if there were such a prime <math>p</math>, having all values of the polynomials simultaneously prime for a given <math>n</math> would imply that at least one of them must be equal to <math>p</math>, which can only happen for finitely many values of <math>n</math> or there would be a polynomial with infinitely many roots, whereas the conjecture is how to give conditions where the values are simultaneously prime for infinitely many <math>n</math>.
+
+An integer <math>n</math> is prime-generating for the given system of polynomials if every polynomial <math>f_i(n)</math> produces a prime number when given <math>n</math> as its argument. If <math>P(x)</math> is the number of prime-generating integers among the positive integers less than <math>x</math>, then the Bateman–Horn conjecture states that
+
+:<math>P(x) \sim \frac{C}{D} \int_2^x \!\frac{dt}{(\log t)^m},\,</math>
+
+where <math>D</math> is the product of the degrees of the polynomials and <math>C</math> is the product over primes <math>p</math>:
+
+:<math>C = \prod_p \frac{1-N(p)/p}{(1-1/p)^m},</math>
+
+with <math>N(p)</math> the number of solutions to
+
+:<math>f(n) \equiv 0 \!\!\pmod p.</math>
+
+Bunyakovsky's property implies  <math>N(p) < p</math> for all primes <math>p</math>,
+so each factor in the infinite product <math>C</math> is positive.
+Intuitively one then naturally expects that the constant <math>C</math> is itself positive, and with some work this can be proved.
+(Work is needed since some infinite products of positive numbers equal zero.)
+
+==Negative numbers==
+As stated above, the conjecture is not true: the single polynomial <math>f_1(x)=-x</math> produces only negative numbers when given a positive argument, so the fraction of prime numbers among its values is always zero. There are two equally valid ways of refining the conjecture to avoid this difficulty:
+*One may require all the polynomials to have positive leading coefficients, so that only a constant number of their values can be negative.
+*Alternatively, one may allow negative leading coefficients but count a negative number as being prime when its absolute value is prime.
+It is reasonable to allow negative numbers to count as primes as a step towards formulating more general conjectures that apply to other systems of numbers than the integers, but at the same time it is easy
+to just negate the polynomials if necessary to  reduce to the case where the leading coefficients are positive.
+
+==Examples==
+If the system of polynomials consists of the single polynomial <math>f_1(x)=x</math>, then the values <math>n</math> for which <math>f_1(n)</math> is prime are themselves the prime numbers, and the conjecture becomes a restatement of the [[prime number theorem]].
+
+If the system of polynomials consists of the two polynomials <math>f_1(x)=x</math> and <math>f_2(x)=x+2</math>, then the values of <math>n</math> for which both <math>f_1(n)</math> and <math>f_2(n)</math> are prime are just the smaller of the two primes in every pair of [[twin prime]]s. In this case, the Bateman–Horn conjecture reduces to the [[Twin prime#First Hardy–Littlewood conjecture|Hardy–Littlewood conjecture]] on the density of twin primes, according to which the number of twin prime pairs less than <math>x</math> is
+:<math>\pi_2(x) \sim 2  \prod_{p\ge 3} \frac{p(p-2)}{(p-1)^2}\frac{x}{(\log x)^2 } \approx 1.32 \frac {x}{(\log x)^2}.</math>
+
+==Analogue for polynomials over a finite field==
+
+When the integers are replaced by the polynomial ring <math>F[u]</math> for a finite field <math>F</math>, one can ask how often a finite set of polynomials <math>f_i(x)</math> in <math>F[u][x]</math> simultaneously takes  irreducible values in <math>F[u]</math> when we substitute for <math>x</math> elements of <math>F[u]</math>. Well-known analogies between integers and <math>F[u]</math> suggest an analogue of the Bateman–Horn conjecture over <math>F[u]</math>, but this is wrong: for example, data suggest that the polynomial
+
+::<math>x^3 + u\,</math>
+
+in <math>F_3[u][x]</math> takes (asymptotically) the expected number of irreducible values when <math>x</math> runs over polynomials in <math>F_3[u]</math> of odd degree, but it appears to take (asymptotically) twice as many irreducible values as expected when <math>x</math> runs over polynomials of degree that is 2 mod 4, while it (provably) takes ''no'' irreducible values at all when <math>x</math> runs over nonconstant polynomials with degree that is a multiple of 4. An analogue of the Bateman–Horn conjecture over <math>F[u]</math> which fits numerical data uses an additional factor in the asymptotics which depends on the value of <math>d</math> mod 4, where <math>d</math> is the degree of the polynomials in <math>F[u]</math> over which <math>x</math> is sampled.
+
+==References==
+*{{citation|last1=Bateman|first1=Paul T.|last2=Horn|first2=Roger A.|title=A heuristic asymptotic formula concerning the distribution of prime numbers|journal=Mathematics of Computation|volume=16|year=1962|issue=79|pages=363–367|mr=148632|doi=10.2307/2004056|jstor=2004056|zbl=0105.03302 |doi-access=free}}
+* {{citation |last=Guy | first=Richard K. | author-link=Richard K. Guy | title=Unsolved problems in number theory | publisher=[[Springer-Verlag]] |edition=3rd | year=2004 |isbn=978-0-387-20860-2 | zbl=1058.11001 }}
+* {{citation|last1=Friedlander|first1=John|last2=Granville|first2=Andrew|title=Limitations to the equi-distribution of primes. IV.|journal=Proceedings of the Royal Society A|volume=435|number=1893|year=1991|pages=197–204|doi=10.1098/rspa.1991.0138|bibcode=1991RSPSA.435..197F}}.
+* {{Citation |author=Soren Laing Alethia-Zomlefer |author2=Lenny Fukshansky |author3=Stephan Ramon Garcia |date=2020 |journal=Expositiones Mathematicae |volume=38 |issue=4 |title=The Bateman-Horn conjecture: heuristics, history, and applications |language=en |pages=430–479 |doi=10.1016/j.exmath.2019.04.005|doi-access=free }} 
+{{Prime number conjectures}}
+
+{{DEFAULTSORT:Bateman-Horn conjecture}}
+[[Category:Conjectures about prime numbers]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Analytic number theory]]

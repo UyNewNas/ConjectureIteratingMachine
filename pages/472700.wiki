@@ -1,0 +1,79 @@
+{{Short description|Partially resolved conjectures in mathematics}}
+
+{{Use American English|date=August 2026}}
+
+In [[mathematics]], '''Serre's multiplicity conjectures''', named after [[Jean-Pierre Serre]], are certain problems in [[commutative algebra]], motivated by the needs of [[algebraic geometry]]. Since [[André Weil]]'s initial definition of [[intersection number]]s, around 1949, there had been a question of how to provide a more flexible and computable theory, which Serre sought to address. In 1958, Serre realized the classical algebraic-geometric ideas of [[Multiplicity (mathematics)|multiplicity]] could be generalized using the concepts of [[homological algebra]].
+
+Let ''R'' be a [[Noetherian ring|Noetherian]], [[commutative ring|commutative]], [[regular local ring]] and let ''P'' and ''Q'' be the [[prime ideal]]s of ''R''. Serre defined the [[intersection multiplicity]] of ''R''/''P'' and ''R''/''Q'' by means of their [[Tor functor]]s. Below, <math>\ell_R(M)</math> denotes the [[length of a module|length]] of the module <math>M</math>, and for the remainder of the article, we assume 
+
+:<math>
+\ell _R((R/P)\otimes_R (R/Q)) < \infty.
+</math>
+
+Serre defined the intersection multiplicity of ''R''/''P'' and ''R''/''Q'' by the [[Euler characteristic]]-like formula:
+
+:<math>
+\chi (R/P,R/Q):=\sum _{i=0}^\infty (-1)^i\ell_R (\operatorname{Tor}^R_i(R/P,R/Q)).
+</math>
+
+In order for this definition to provide a good generalization of the classical intersection multiplicity, one would want certain classical relationships to continue to hold. Serre singled out four important properties, which became the multiplicity conjectures, and are challenging to prove in the general case. The statements of these conjectures can be generalized so that ''R''/''P'' and ''R''/''Q'' are replaced by arbitrary [[Finitely generated module|finitely generated modules]]: see {{Harvard citation no brackets|Serre|2000}} for more details.
+
+==Dimension inequality==
+{{main|Serre's inequality on height}}
+
+: <math>\dim(R/P) + \dim(R/Q) \le \dim(R)</math>
+
+Serre proved this for all [[Regular local ring|regular local rings]] using the [[Cohen structure theorem]]. He established the following three properties when ''R'' is either of [[Equicharacteristic|equal characteristic]] or of [[Ring of mixed characteristic|mixed characteristic]] and [[Ramification (mathematics)|unramified]] (which in this case means that characteristic of the [[residue field]] is not an element of the square of the [[maximal ideal]] of the [[local ring]]), and conjectured that they hold in general.
+
+==Non-negativity==
+
+: <math>\chi (R/P,R/Q) \ge 0</math>
+
+This property was proven by [[Ofer Gabber]] in 1995 using [[Aise Johan de Jong|A. J. de Jong]]'s methods.{{Sfn|Gabber|1995}}{{Sfn|Roberts|1998}} Dutta demonstrated this property becomes complex when studied in the case of [[Blowing up|blow ups]], especially for mixed characteristics.{{Sfn|Dutta|2008}}
+
+==Vanishing==
+
+If
+
+: <math>\dim (R/P) + \dim (R/Q) < \dim (R)\ </math>
+
+then
+
+: <math>\chi (R/P,R/Q) = 0.\ </math>
+
+This property was proven in 1985 by Paul C. Roberts using [[Localized Chern class|local Chern characters]].{{Sfn|Roberts|1985}} It was independently proven by [[Henri Gillet]] and [[Christophe Soulé]] in 1987, by using [[K-theory]].{{Sfn|Gillet|Soulé|1987}} A new proof for this property using [[Regular scheme|regular schemes]] was published by SP Dutta in 2008.{{Sfn|Dutta|2008}}
+
+==Positivity==
+
+If
+
+: <math>\dim (R/P) + \dim (R/Q) = \dim (R)\ </math>
+
+then
+
+: <math>\chi (R/P,R/Q) > 0.\ </math>
+
+The proof for this property in the general case remains open.
+
+The property was proved for a special case in 2008 by SP Dutta; the case being when the [[projective scheme]] of a [[graded ring]] finitely generated over its 0th component is [[Artinian local ring|artinian local]], when one of ''F'' and ''G'' has a [[finite resolution]] by [[Direct sum of rings|direct sum]] of copies of ''O(t)'' for various ''t.''{{Sfn|Dutta|2008}} Another special case was proven by C. Skalit in 2019, for regular local rings that are essentially [[Smoothness|smooth]] over a two-dimensional, regular base.{{Sfn|Skalit|2019}}
+
+==See also==
+*[[Homological conjectures in commutative algebra]]
+
+==References==
+* {{Cite book |last=Berthelot |first=Pierre |author-link=Pierre Berthelot |title=Altérations de variétés algébriques (d'après A. J. de Jong) |trans-title=Alterations of algebraic varieties (according to A. J. de Jong) |publisher=Séminaire Bourbaki, Vol. 1995/96, Astérisque No. 241 |language=fr |mr=1472543 |year=1997 |pages=273–311 |ref=none}}
+* {{Cite book |last1=Gabber |first1=Ofer |title=Non-negativity of serre's intersection multiplicities |publisher=Exposé à L’IHES |author-link=Ofer Gabber |year=1995}}
+* {{Cite journal |last=Dutta |first=Sankar P. |date=April 2008 |title=Intersection multiplicity of Serre on regular schemes |journal=Journal of Algebra |volume=319 |issue=4 |pages=1530-1534 |doi=10.1016/j.jalgebra.2007.10.016 |doi-access=free}}
+* {{Cite journal |last1=Gillet |first1=Henri |last2=Soulé |first2=Christophe |author-link=Henri Gillet |author-link2=Christophe Soulé |title=Intersection theory using Adams operations |journal=Inventiones Mathematicae |publisher=Invent. Math. 90, no. 2 |mr=0910201 |year=1987 |volume=90 |issue=2 |pages=243–277 |doi=10.1007/BF01388705 |bibcode=1987InMat..90..243G |s2cid=120635826}}
+* {{Cite journal | last=Roberts | first=Paul | title=The vanishing of intersection multiplicities of perfect complexes | journal=Bulletin of the American Mathematical Society |mr=0799793  | year=1985 | volume=13 | issue=2 | pages=127–130 | doi=10.1090/S0273-0979-1985-15394-7| doi-access=free }}
+* {{Cite journal |last=Roberts |first=Paul |title=Recent developments on Serre's multiplicity conjectures: Gabber's proof of the nonnegativity conjecture |url=https://www.e-periodica.ch/digbib/view?pid=ens-001%3A1998%3A44%3A%3A598 |journal=L' Enseignement Mathématique |volume=44 |issue=3-4 |mr=1659224 |year=1998 |pages=305–324}}
+* {{Cite book | last1=Serre | first1=Jean-Pierre | title=Local algebra | series=Springer Monographs in Mathematics | publisher=Springer| location=Berlin |mr=1771925  | year=2000 | pages=106–110 | doi=10.1007/978-3-662-04203-8| isbn=978-3-642-08590-1 }}
+* {{Cite journal |last=Skalit |first=C. |date=April 2019 |title=Positivity of intersection multiplicity over a two-dimensional base |journal=Journal of Pure and Applied Algebra |volume=223 |issue=4 |pages=1801-1816 |doi=10.1016/j.jpaa.2018.07.008 |doi-access=free|arxiv=1510.05146 }}
+
+== References ==
+{{DEFAULTSORT:Serre's Multiplicity Conjectures}}
+[[Category:Commutative algebra]]
+[[Category:Intersection theory]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in mathematics]]
+[[Category:Partially resolved conjectures]]

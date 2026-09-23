@@ -1,0 +1,40 @@
+The '''Brumer–Stark conjecture''' is a [[conjecture]] in [[algebraic number theory]] giving a rough generalization of both the [[analytic class number formula]] for [[Dedekind zeta function]]s, and also of [[Stickelberger's theorem]] about the [[factorization]] of [[Gauss sums]]. It is named after [[Armand Brumer]] and [[Harold Stark]].
+
+It arises as a special case (abelian and first-order) of [[Stark's conjecture]], when the [[place (number theory)|place]] that [[completely split|splits completely]] in the extension is finite.  There are very few cases where the conjecture is known to be valid.  Its importance arises, for instance, from its connection with [[Hilbert's twelfth problem]].
+
+== Statement of the conjecture ==
+Let {{math|''K''/''k''}} be an [[abelian extension]] of [[global field]]s, and let {{math|''S''}} be a set of places of {{math|''k''}} containing the [[Archimedean place]]s and the [[prime ideal]]s that [[Ramification theory of valuations|ramify]] in {{math|''K''/''k''}}.  The {{math|''S''}}-imprimitive [[equivariant L-function|equivariant Artin L-function]] {{math|''θ''(''s'')}} is obtained from the usual equivariant Artin L-function by removing the [[Euler factor]]s corresponding to the primes in {{math|''S''}} from the [[Artin L-function]]s from which the equivariant function is built. It is a function on the [[complex number]]s taking values in the complex [[group ring]] {{math|'''C'''[''G'']}} where {{math|''G''}} is the [[Galois group]] of {{math|''K''/''k''}}. It is analytic on the entire plane, excepting a lone simple pole at {{math|''s''&nbsp;{{=}}&nbsp;1}}.
+
+Let {{math|''μ<sub>K</sub>''}} be the group of [[roots of unity]] in {{math|''K''}}.  The group {{math|''G''}} acts on {{math|''μ<sub>K</sub>''}}; let {{math|''A''}} be the [[Annihilator (ring theory)|annihilator]] of {{math|''μ<sub>K</sub>''}} as a {{math|'''Z'''[''G'']}}-[[Module (mathematics)|module]].  An important theorem, first proved by [[C. L. Siegel]] and later independently by [[Takuro Shintani]], states that {{math|''θ''(0)}} is actually in {{math|'''Q'''[''G'']}}.  A deeper theorem, proved independently by [[Pierre Deligne]] and [[Ken Ribet]], [[Daniel Barsky]], and [[Pierrette Cassou-Noguès]], states that {{math|''Aθ''(0)}} is in {{math|'''Z'''[''G'']}}. In particular, {{math|''Wθ''(0)}} is in {{math|'''Z'''[''G'']}}, where {{math|''W''}} is the cardinality of {{math|''μ<sub>K</sub>''}}.
+
+The [[ideal class group]] of {{math|''K''}} is a [[G-module|{{math|''G''}}-module]].  From the above discussion, we can let {{math|''Wθ''(0)}} act on it.  The Brumer–Stark conjecture says the following:<ref name=Lem384>{{cite book | last=Lemmermeyer | first=Franz | title=Reciprocity laws. From Euler to Eisenstein | series=Springer Monographs in Mathematics | location=Berlin | publisher=[[Springer-Verlag]] | year=2000 | isbn=3-540-66957-4 | zbl=0949.11002 | mr=1761696 | page=384 }}</ref>
+
+'''Brumer–Stark Conjecture.''' For each nonzero [[fractional ideal]] <math>\mathfrak{a}</math> of {{math|''K''}}, there is an "anti-unit" {{math|''ε''}} such that
+
+#<math> \mathfrak{a}^{W \theta(0)} = (\varepsilon).</math>
+#The extension <math>K \left(\varepsilon^{\frac{1}{W}} \right)/k</math> is abelian.
+
+The first part of this conjecture is due to Armand Brumer, and Harold Stark originally suggested that the second condition might hold.  The conjecture was first stated in published form by [[John Tate (mathematician)|John Tate]].<ref name="BSS">Tate, John, [http://www.digizeitschriften.de/dms/img/?PPN=PPN320141322_0010&DMDID=dmdlog26 Brumer–Stark–Stickelberger], Séminaire de Théorie des Nombres, Univ. Bordeaux I Talence, (1980-81), exposé no. 24.</ref>
+
+The term "anti-unit" refers to the condition that {{math|{{!}}''ε''{{!}}<sub>''ν''</sub>}} is required to be 1 for each Archimedean place {{math|''ν''}}.<ref name=Lem384/>
+
+== Progress ==
+The Brumer Stark conjecture is known to be true for extensions {{math|''K''/''k''}} where
+
+* {{math|''K''/'''Q'''}} is cyclotomic: this follows from [[Stickelberger's theorem]]<ref name=Lem384/>
+* {{math|''K''}} is abelian over {{math|'''Q'''}}<ref>{{Citation |last=Tate |first=John |title=Les Conjectures de Stark sur les Fonctions L d'Artin en s=0 |journal=Progress in Mathematics |volume=47 |publisher=Birkhauser |mr=782485 }}</ref>
+* {{math|''K''/''k''}} is a [[quadratic extension]]<ref name="BSS" />
+* {{math|''K''/''k''}} is a [[biquadratic extension]]<ref>{{Citation |last=Sands |first=J. W. |year=1984 |title=Galois groups of exponent 2 and the Brumer–Stark conjecture |journal=[[Journal für die reine und angewandte Mathematik|J. Reine Angew. Math.]] |volume=349 |issue=1 |pages=129–135 |doi=10.1515/crll.1984.349.129 |s2cid=116102479 }}</ref>
+In 2020,<ref>{{cite arXiv |last1=Dasgupta |first1=Samit |last2=Kakde |first2=Mahesh |date=2010 |title=On the Brumer-Stark Conjecture |eprint=2010.00657 |class=math.NT}}</ref> [[Samit Dasgupta|Dasgupta]] and [[Mahesh Kakde|Kakde]] proved the Brumer–Stark conjecture away from the prime 2.<ref>{{cite journal |last1=Dasgupta |first1=Samit |last2=Kakde |first2=Mahesh |year=2023 |title=On the Brumer-Stark Conjecture and Refinements |journal=Annals of Mathematics |volume=197 |issue=1 |pages=289–388|doi=10.4007/annals.2023.197.1.5 }}</ref> In 2023, a full proof of the conjecture over {{math|'''Z'''}} has been announced.<ref>{{cite arXiv | last1=Dasgupta | first1=Samit | last2=Kakde | first2=Mahesh | last3=Silliman | first3=Jesse | last4=Wang | first4=Jiuya | title=The Brumer--Stark Conjecture over Z | date=2023 |class=math.NT  | eprint=2310.16399v1}}</ref>
+
+== Function field analogue ==
+The analogous statement in the [[Function field analogy|function field case]] is known to be true, having been proved by [[John Tate (mathematician)|John Tate]] and [[Pierre Deligne]] in 1984,<ref>{{cite book |first=John |last=Tate |title=Les conjectures de Stark sur les fonctions ''L'' d'Artin en ''s'' = 0 |volume=47 |series=Progress in Mathematics |publisher=[[Birkhäuser]] |location=Boston, MA |year=1984}}</ref> with a different proof by David Hayes in 1985.<ref>{{cite journal |first=David R. |last=Hayes |title=Stickelberger elements in function fields |journal=Compositio Mathematica |volume=55 |issue=2 |pages=209–239 |year=1985}}</ref><ref>{{citation | last=Rosen | first=Michael | title=Number theory in function fields | zbl=1043.11079 | series=[[Graduate Texts in Mathematics]] | volume=210 | location=New York, NY | publisher=[[Springer-Verlag]] | isbn=0-387-95335-3 | year=2002 | chapter=15. The Brumer-Stark conjecture }}</ref>
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Brumer-Stark conjecture}}
+[[Category:Conjectures]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Algebraic number theory]]
+[[Category:Zeta and L-functions]]

@@ -1,0 +1,31 @@
+{{unsolved|mathematics|Given two Coxeter groups <math>\Gamma_1</math> and <math>\Gamma_2</math>, decide whether <math>W(\Gamma_1)\simeq{W(\Gamma_2)}</math>.}}
+
+It is an unresolved problem in the mathematical field of [[group theory]] to determine whether or not two [[Coxeter groups]] (specified by their [[Coxeter diagram]]s) are [[group isomorphism|isomorphic]] as [[abstract group]]s.  Equivalently, the problem asks to determine, for a given Coxeter group <math>W</math>, the possible subsets <math>S</math> of <math>W</math> that are Coxeter generating sets for <math>W</math> (that is, for which <math>(W , S)</math> is a Coxeter system).
+
+A slight generalization of the problem can be made by asking to find to all isomorphisms from one group onto the other.<ref>{{cite arXiv
+|last  = Mühlherr
+|first = Bernhard
+|date  = 2005-06-28
+|title = The isomorphism problem for Coxeter groups
+|eprint = math.GR/0506572
+}}</ref>
+In 2022, Yuri Santos Rego and Petra Schwer introduced a new framework to deal with the problem (a finite dimensional, locally finite, ranked [[simplicial complex]] to capture isomorphisms between finite rank Coxeter systems) and asked more 
+related open questions motivated by it.<ref>{{cite journal
+|last1  = Santos Rego
+|first1 = Yuri
+|last2  = Schwer
+|first2 = Petra
+|journal = [[Journal of Algebra]]
+|volume = 656
+|date  = 2024-10-15
+|title = The galaxy of Coxeter groups
+|pages = 406–445
+|doi = 10.1016/j.jalgebra.2023.12.006
+|arxiv = 2211.17038
+}}</ref>
+
+==References==
+{{Reflist}}
+
+[[Category:Unsolved problems in mathematics]]
+[[Category:Coxeter groups]]

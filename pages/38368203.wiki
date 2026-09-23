@@ -1,0 +1,137 @@
+{{Short description|On distance sets of high-dimensional sets}}
+{{Use mdy dates|cs1-dates=ly|date=February 2025}}
+{{CS1 config|mode=cs2}}
+In [[geometric measure theory]], '''Falconer's conjecture''', named after [[Kenneth Falconer (mathematician)|Kenneth Falconer]], is an [[open problem|unsolved problem]] concerning the sets of [[Euclidean distance]]s between points in [[compact space|compact]] <math>d</math>-dimensional spaces. Intuitively, it states that a set of points that is large in its [[Hausdorff dimension]] must determine a [[distance set|set of distances]] that is large in [[Measure (mathematics)|measure]]. More precisely, if <math>S</math> is a [[compact set]] of points in <math>d</math>-dimensional [[Euclidean space]] whose Hausdorff dimension is strictly greater than <math>d/2</math>, then the [[conjecture]] states that the set of distances between pairs of points in <math>S</math> must have nonzero [[Lebesgue measure]].<ref name=iosevich>{{citation
+ | last = Iosevich | first = Alex
+ | issue = 4
+ | journal = [[Notices of the American Mathematical Society]]
+ | mr = 3889529
+ | pages = 552–555
+ | title = What is ... Falconer's conjecture?
+ | url = https://www.ams.org/journals/notices/201904/rnoti-p552.pdf
+ | volume = 66
+ | year = 2019| doi = 10.1090/noti1843
+ | doi-access = free
+ }}</ref>
+
+==Formulation and motivation==
+{{harvtxt|Falconer|1985}} [[mathematical proof|proved]] that [[Borel set]]s with Hausdorff dimension greater than <math>(d+1)/2</math> have distance sets with nonzero measure.<ref>{{citation
+ | last = Falconer | first = K. J.
+ | doi = 10.1112/S0025579300010998
+ | issue = 2
+ | journal = [[Mathematika]]
+ | mr = 834490
+ | pages = 206–212 (1986)
+ | title = On the Hausdorff dimensions of distance sets
+ | volume = 32
+ | year = 1985| doi-access = free
+ }}. See in particular the remarks following Corollary 2.3. Although this paper is widely cited as its origin, the Falconer conjecture itself does not appear in it.</ref> He motivated this result as a multidimensional generalization of the [[Steinhaus theorem]], a previous result of [[Hugo Steinhaus]] proving that every set of [[real number]]s with nonzero measure must have a [[difference set]] that contains an [[interval (mathematics)|interval]] of the form <math> (-\varepsilon,\varepsilon)</math> for some <math>\varepsilon>0</math>.<ref>{{citation
+ | last = Steinhaus | first = Hugo | author-link = Hugo Steinhaus
+ | journal = Fundamenta Mathematicae
+ | language = French
+ | pages = 93–104
+ | title = Sur les distances des points dans les ensembles de mesure positive
+ | url = http://matwbn.icm.edu.pl/ksiazki/fm/fm1/fm1111.pdf
+ | volume = 1
+ | year = 1920
+ | issue = 1 | doi = 10.4064/fm-1-1-93-104 | doi-access = free}}.</ref> It may also be seen as a continuous analogue of the [[Erdős distinct distances problem]], which states that large finite sets of points must have large numbers of distinct distances.<ref>{{citation
+ | last1 = Arutyunyants | first1 = G.
+ | last2 = Iosevich | first2 = A.
+ | editor-last = Pach | editor-first = János | editor-link = János Pach
+ | contribution = Falconer conjecture, spherical averages and discrete analogs
+ | doi = 10.1090/conm/342/06127
+ | location = Providence, Rhode Island
+ | mr = 2065249
+ | pages = 15–24
+ | publisher = American Mathematical Society
+ | series = Contemporary Mathematics
+ | title = Towards a Theory of Geometric Graphs
+ | volume = 342
+ | year = 2004| doi-access = free
+ | isbn = 978-0-8218-3484-8
+ }}</ref>
+
+Based on this result, Falconer's conjecture states that if <math>S</math> is a compact set of points in <math>d</math>-dimensional [[Euclidean space]] whose Hausdorff dimension is strictly greater than <math>d/2</math>, then the set of distances between pairs of points in <math>S</math> must have nonzero [[Lebesgue measure]]. That is, the threshold dimension of <math>(d+1)/2</math> from Falconer's result can be reduced to <math>d/2</math>, while restricting the class of sets in the result to compact sets rather than Borel sets.<ref name=iosevich/>
+
+==Partial results==
+{{harvtxt|Erdoğan|2005}} proved that compact sets of points whose Hausdorff dimension is greater than <math>\tfrac{d}{2} + \tfrac{1}{3}</math> have distance sets with nonzero measure; for large values of <math>d</math> this approximates the threshold on Hausdorff dimension given by the Falconer conjecture.<ref>{{citation
+ | last = Erdoğan | first = M. Burak | authorlink = Mehmet Burak Erdoğan
+ | journal = International Mathematics Research Notices
+ | doi = 10.1155/IMRN.2005.1411
+ | citeseerx=10.1.1.121.7673
+ | pages = 1411–1425
+ | title = A bilinear Fourier extension theorem and applications to the distance set problem
+ | volume = 2005
+ | year = 2005 | issue = 23 | doi-access = <!-- Not free-->}}.</ref> For points in the [[Euclidean plane]], Borel sets of Hausdorff dimension greater than 5/4 (or <math>\tfrac{d}{2} + \tfrac{1}{4}</math> with <math>d=2</math>) have distance sets with nonzero measure and, more strongly, they have a point such that the Lebesgue measure of the distances from the set to this point is positive.<ref>{{citation
+ | last1 = Guth | first1 = Larry | author1-link = Larry Guth
+ | last2 = Iosevich | first2 = Alex
+ | last3 = Ou | first3 = Yumeng
+ | last4 = Wang | first4 = Hong
+ | arxiv = 1808.09346
+ | doi = 10.1007/s00222-019-00917-x
+ | issue = 3
+ | journal = [[Inventiones Mathematicae]]
+ | mr = 4055179
+ | pages = 779–830
+ | title = On Falconer's distance set problem in the plane
+ | volume = 219
+ | year = 2020| bibcode = 2020InMat.219..779G }}</ref> For <math>d>3</math> the best known bound is '''<math>\tfrac{d}{2} + \tfrac{1}{4}-\tfrac{1}{8d+4}</math>''' according to a preprint by Du, Ou, Ren and [[Ruixiang Zhang|Zhang]]<ref>{{Cite arXiv |last1=Du |first1=Xiumin |last2=Ou |first2=Yumeng |last3=Ren |first3=Kevin |last4=Zhang |first4=Ruixiang |date=2023 |title=New improvement to Falconer distance set problem in higher dimensions |class=math.CA |eprint=2309.04103}}</ref><ref>{{citation |last=Sloman |first=Leila |date=April 9, 2024 |title=Number of distances separating points has a new bound |url=https://www.quantamagazine.org/number-of-distances-separating-points-has-a-new-bound-20240409/ |access-date=2024-04-10 |magazine=Quanta Magazine |language=en}}</ref>
+
+A variant of Falconer's conjecture states that, for points in the plane, a compact set whose Hausdorff dimension is greater than or equal to one must have a distance set of Hausdorff dimension one. As a partial result in this direction, the existence of a distance set of Hausdorff dimension one follows for sets of Hausdorff dimension greater than 5/4, from the results on measure. Another partial result is that a compact planar set with Hausdorff dimension at least one, the distance set must have Hausdorff dimension at least 1/2.<ref>{{citation
+ | last = Mattila | first = Pertti
+ | author-link = Pertti Mattila
+ | doi = 10.1112/S0025579300013462
+ | issue = 2
+ | journal = [[Mathematika]]
+ | mr = 933500
+ | pages = 207–228
+ | title = Spherical averages of Fourier transforms of measures with finite energy; dimension of intersections and distance sets
+ | volume = 34
+ | year = 1987}}.</ref>
+
+==Related conjectures==
+Proving a bound strictly greater than 1/2 for the dimension of the distance set in the case of compact planar sets with Hausdorff dimension at least one would be equivalent to resolving several other unsolved conjectures. These include a conjecture of [[Paul Erdős]] on the existence of [[Borel set|Borel]] [[subring]]s of the real numbers with fractional Hausdorff dimension, and a variant of the [[Kakeya set]] problem on the Hausdorff dimension of sets such that, for every possible direction, there is a line segment whose intersection with the set has high Hausdorff dimension.<ref>{{citation
+ | last1 = Katz | first1 = Nets Hawk | author1-link = Nets Katz
+ | last2 = Tao | first2 = Terence | author2-link = Terence Tao
+ | journal = New York Journal of Mathematics
+ | mr = 1856956
+ | pages = 149–187
+ | title = Some connections between Falconer's distance set conjecture and sets of Furstenburg type
+ | url = http://nyjm.albany.edu:8000/j/2001/7_149.html
+ | volume = 7
+ | year = 2001| arxiv = math/0101195 | bibcode = 2001math......1195H }}.</ref>
+These conjectures were solved by Bourgain.
+
+==Other distance functions==
+For non-Euclidean distance functions in the plane defined by polygonal norms, the analogue of the Falconer conjecture is false: there exist sets of Hausdorff dimension two whose distance sets have measure zero.<ref>{{citation<!-- CB don't touch-->
+ | last = Falconer | first = K. J.
+ | date = May 2004
+ | issue = 2
+ | journal = Real Analysis Exchange
+ | pages = 719–726
+ | title = Dimensions of intersections and distance sets for polyhedral norms
+ | url = https://projecteuclid.org/journals/real-analysis-exchange/volume-30/issue-2/Dimensions-of-intersections-and-distance-sets-for/rae/1129416466.full
+ | volume = 30
+ | doi = 10.14321/realanalexch.30.2.0719 <!-- -->|doi-broken-date=2025-07-12 <!-- points to jstor that also do not work -->
+ | jstor=<!--  10.14321/realanalexch.30.2.0719 -->
+ | mr=2177429
+ | zbl=1107.28008
+}}.</ref><ref>{{citation
+ | last1 = Konyagin | first1 = Sergei | author1-link = Sergei Konyagin
+ | last2 = Łaba | first2 = Izabella | author2-link = Izabella Łaba
+ | doi = 10.1007/BF02771981 | doi-access=free
+ | journal = [[Israel Journal of Mathematics]]
+ | mr = 2214458
+ | pages = 157–179
+ | title = Distance sets of well-distributed planar sets for polygonal norms
+ | volume = 152
+ | year = 2006| issue = 1 | arxiv = math/0405017}}.</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Measure theory]]
+[[Category:Dimension theory]]
+[[Category:Metric geometry]]
+[[Category:Conjectures]]
+[[Category:Unsolved problems in geometry]]

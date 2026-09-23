@@ -1,0 +1,184 @@
+{{Short description|Mathematical problem in number theory}}
+In [[number theory]], '''Waring's problem''' asks whether each [[natural number]] ''k'' has an associated [[positive integer]] ''s'' such that every natural number is the sum of at most ''s'' natural numbers raised to the power ''k''. For example, every natural number is the sum of at most 4 squares, 9 cubes, or 19 fourth powers. Waring's problem was proposed in 1770 by [[Edward Waring]], after whom it is named. Its affirmative answer, known as the '''Hilbert–Waring theorem''', was provided by [[David Hilbert|Hilbert]] in 1909.<ref>{{cite journal| first = David | last = Hilbert | author-link = David Hilbert | title=Beweis für die Darstellbarkeit der ganzen Zahlen durch eine feste Anzahl n-ter Potenzen (Waringsches Problem) |language=de |journal=[[Mathematische Annalen]] |volume=67 | pages=281–300 |year=1909 | issue=3 | doi=10.1007/bf01450405 | mr=1511530| s2cid = 179177986 | url = https://zenodo.org/record/1428266 }}</ref> Waring's problem has its own [[Mathematics Subject Classification]], 11P05, "Waring's problem and variants".
+
+==Relationship with Lagrange's four-square theorem==
+Long before Waring posed his problem, [[Diophantus]] had asked whether every positive integer could be represented as the [[Lagrange's four-square theorem|sum of four perfect squares]] greater than or equal to zero. This question later became known as Bachet's conjecture, after the 1621 translation of [[Diophantus]]'s ''[[Arithmetica]]'' by [[Claude Gaspard Bachet de Méziriac]]. In 1640, [[Pierre de Fermat|Fermat]] claimed to have a proof, but did not publish it,<ref>{{cite book | last = Dickson | first = Leonard Eugene | author-link = Leonard Eugene Dickson | title = History of the Theory of Numbers |volume = II: Diophantine Analysis | publisher = [[Carnegie Institution of Washington|Carnegie Institute of Washington]] | year = 1920 | chapter = Chapter VIII}}</ref><ref name=":0" /> and it was solved by [[Joseph-Louis Lagrange]] in his [[Lagrange's four-square theorem|four-square theorem]] in 1770, the same year Waring made his conjecture. Waring sought to generalize this problem by trying to represent all positive integers as the sum of cubes, integers to the [[fourth power]], and so forth, to show that any positive integer may be represented as the sum of other integers raised to a specific exponent, and that there was always a maximum number of integers raised to a certain exponent required to represent all positive integers in this way.
+
+==The number ''g''(''k'')==
+For every <math>k</math>, let <math>g(k)</math> denote the minimum number <math>s</math> of <math>k</math>th powers of naturals needed to represent all positive integers. Every positive integer is the sum of one first power, itself, so <math>g(1) = 1</math>. Some simple computations show that 7 requires 4 squares, 23 requires 9 cubes,<ref>Remember we restrict ourselves to ''positive'' natural numbers. With general integers, it is not hard to write 23 as the sum of 4 cubes, e.g. <math>2^3 + 2^3 + 2^3 + (-1)^3</math> or <math>29^3 + 17^3 + 8^3 + (-31)^3</math>.</ref> and 79 requires 19 fourth powers; these examples show that <math>g(2) \ge 4</math>, <math>g(3) \ge 9</math>, and <math>g(4) \ge 19</math>. Waring conjectured that these lower bounds were in fact exact values.<ref name=":0">{{Cite journal |last=Ellison |first=W. J. |date=1971 |title=Waring's Problem |url=https://www.jstor.org/stable/2317482?origin=crossref |journal=The American Mathematical Monthly |volume=78 |issue=1 |pages=10 |doi=10.2307/2317482}}</ref>
+
+[[Lagrange's four-square theorem]] of 1770 states that every natural number is the sum of at most four squares, which establishes <math>g(2) = 4</math>. Over the years various bounds were established, using increasingly sophisticated and complex proof techniques. For example, [[Joseph Liouville|Liouville]] showed that <math>g(4)</math> is at most 53. [[G. H. Hardy|Hardy]] and [[John Edensor Littlewood|Littlewood]] showed that all sufficiently large numbers are the sum of at most 19 fourth powers.
+{| class="wikitable" style="margin: 0 auto;"
+! colspan="3" |Exact values for ''g''(''k'')
+|-
+! scope="col" |Value 
+! scope="col" |Year of discovery
+! scope="col" |Author
+|-
+|''g''(2) = '''4'''
+|1770
+|[[Joseph-Louis Lagrange|J.-L. Lagrange]]<ref>{{Cite journal |last=Lagrange |first=Joseph-Louis |date=1770 |title=Démonstration d'un théorème d'arithmétique |url=https://gallica.bnf.fr/ark:/12148/bpt6k229222d/f190 |journal=Nouveaux mémoires de l'Académie royale des sciences et belles-lettres de Berlin |pages=123-133}}</ref>
+|-
+|''g''(3) = '''9'''
+|1909–1912
+|[[Arthur Wieferich|A. Wieferich]]<ref>{{cite journal |last=Wieferich |first=Arthur |author-link=Arthur Wieferich |year=1909 |title=Beweis des Satzes, daß sich eine jede ganze Zahl als Summe von höchstens neun positiven Kuben darstellen läßt |url=http://dz-srv1.sub.uni-goettingen.de/sub/digbib/loader?did=D38240 |journal=Mathematische Annalen |language=de |volume=66 |issue=1 |pages=95–101 |doi=10.1007/BF01450913 |s2cid=121386035}}</ref><br>A gap in the proof was filled by [[Aubrey J. Kempner|A. J. Kempner]] in 1912<ref>{{cite journal |last=Kempner |first=Aubrey |year=1912 |title=Bemerkungen zum Waringschen Problem |url=http://dz-srv1.sub.uni-goettingen.de/sub/digbib/loader?did=D28751 |journal=Mathematische Annalen |language=de |volume=72 |issue=3 |pages=387–399 |doi=10.1007/BF01456723 |s2cid=120101223}}</ref>
+|-
+|''g''(4) = '''19'''
+|1986
+|[[Ramachandran Balasubramanian|R. Balasubramanian]], [[Jean-Marc Deshouillers|J.-M. Deshouillers]] and F. Dress<ref>{{cite journal |last1=Balasubramanian |first1=Ramachandran |last2=Deshouillers |first2=Jean-Marc |last3=Dress |first3=François |year=1986 |title=Problème de Waring pour les bicarrés. I. Schéma de la solution |trans-title=Waring's problem for biquadrates. I. Sketch of the solution |url=https://gallica.bnf.fr/ark:/12148/bpt6k6289043f/f99.item |journal=Comptes Rendus de l'Académie des Sciences, Série I |language=fr |volume=303 |issue=4 |pages=85–88 |mr=0853592}}</ref><ref>{{cite journal |last1=Balasubramanian |first1=Ramachandran |last2=Deshouillers |first2=Jean-Marc |last3=Dress |first3=François |year=1986 |title=Problème de Waring pour les bicarrés. II. Résultats auxiliaires pour le théorème asymptotique |trans-title=Waring's problem for biquadrates. II. Auxiliary results for the asymptotic theorem |url=https://gallica.bnf.fr/ark:/12148/bpt6k6289043f/f175.item |journal=Comptes Rendus de l'Académie des Sciences, Série I |language=fr |volume=303 |issue=5 |pages=161–163 |mr=0854724}}</ref>
+|-
+|''g''(5) = '''37'''
+|1964
+|[[Chen Jingrun|J. R. Chen]]<ref>{{Cite journal |last=Chen |first=Jing-Run |date=1964 |title=Waring's problem for g(5)=37 |url=https://www.sciengine.com/Math%20A0/doi/10.1360/ya1964-13-10-1547 |journal=Scientia Sinica |language=en |volume=13 |issue=10 |pages=1547–1568 |doi= |issn=}}</ref> and [[John Horton Conway|J. H. Conway]]<ref>Conway originally intended to publish this result as part of his PhD thesis. However, Chen published the same result later that year, leading Conway to forgo publication and instead change the topic of his thesis. See <br />
+{{cite journal |author=[[Jorge Nuno Silva]] |date=September 2005 |title=Breakfast with John Horton Conway |url=http://www.ems-ph.org/journals/newsletter/pdf/2005-09-57.pdf#page=34 |journal=EMS Newsletter |volume=57 |pages=32–34}}<br />
+{{cite web |date=2022 |title=John Horton Conway (December 26, 1937 – April 11, 2020) |url=https://mathshistory.st-andrews.ac.uk/Strick/conway.pdf |access-date=2026-02-13 |website=MacTutor |format=PDF}}
+</ref> (independently)
+|-
+|''g''(6) = '''73'''
+|1940
+|[[Subbayya Sivasankaranarayana Pillai|S. S. Pillai]]<ref>{{cite journal |last1=Pillai |first1=S. S. |year=1940 |title=On Waring's problem ''g''(6)&nbsp;=&nbsp;73 |journal=Proc. Indian Acad. Sci. |volume=12 |pages=30–40 |doi=10.1007/BF03170721 |mr=0002993 |s2cid=185097940}}</ref>
+|-
+|''g''(7) = '''143'''
+|1936
+|[[Leonard Eugene Dickson|L. E. Dickson]]<ref>{{Cite journal |last=Dickson |first=L. E. |date=1936 |title=Proof of the Ideal Waring Theorem for Exponents 7-180 |url=https://www.jstor.org/stable/2370969 |journal=American Journal of Mathematics |volume=58 |issue=3 |pages=521–529 |doi=10.2307/2370969 |issn=0002-9327|url-access=subscription }}</ref> and S. S. Pillai<ref>{{Cite journal |last=Pillai |first=S. S. |date=1936 |title=On Waring's Problem IV |url=https://archive.org/details/in.ernet.dli.2015.29747/page/n63/mode/2up |journal=Journal Of The Annamalai University |volume=VI |pages=54-64}}</ref> (independently)
+|-
+|''g''(''k''), ''k'' > 7
+|1936–1944 
+|L. E. Dickson<ref name="Dickson1936">{{cite journal |last=Dickson |first=L. E. |date=1936 |title=Solution of Waring's Problem |journal=American Journal of Mathematics |volume=58 |issue=3 |pages=530–535 |doi=10.2307/2370970 |jstor=2370970}}</ref> and S. S. Pillai<ref name="Pillai1936">{{cite journal |last=Pillai |first=S.S. |date=1936 |title=On Waring's Problem |url=https://www.informaticsjournals.co.in/index.php/jims/article/view/17320 |journal=Journal of the Indian Mathematical Society |volume=2 |pages=16–44}}</ref><ref>{{Cite journal |last=Pillai |first=S. S. |date=1936 |title=On Waring's Problem III |url=https://archive.org/details/in.ernet.dli.2015.29747/page/n59/mode/2up |journal=Journal Of The Annamalai University |volume=VI |pages=50-53}}</ref> (independently)<br>in 1936, for almost all cases, the rest of which were treated by<br>[[R. K. Rubugunday]] in 1942<ref name="Rubugunday">{{cite journal |last=Rubugunday |first=R. K. |date=1942 |title=On g(k) in Waring's Problem |url=https://www.informaticsjournals.co.in/index.php/jims/article/view/17193 |journal=Journal of the Indian Mathematical Society |volume=6 |pages=192–198}}</ref> and [[Ivan M. Niven|I. M. Niven]] in 1944<ref>{{cite journal |last=Niven |first=Ivan M. |author-link=Ivan M. Niven |year=1944 |title=An unsolved case of the Waring problem |journal=[[American Journal of Mathematics]] |publisher=The Johns Hopkins University Press |volume=66 |issue=1 |pages=137–143 |doi=10.2307/2371901 |jstor=2371901 |mr=0009386}}</ref>
+|}
+Let <math>q</math> and <math>r</math> be defined by the [[Euclidean division]]<math display="block">3^k = 2^k q + r, \quad 0 \le r < 2^k,</math>or explicitly by <math>q = \lfloor(3/2)^k\rfloor </math> and <math>r = 2^k \{(3/2)^k\} </math>, where <math>\lfloor x\rfloor</math> and <math>\{x\}</math> respectively denote the [[integral part|integral]] and [[fractional part]] of a real number <math>x</math>.  
+
+Since the number <math>2^k q - 1 </math> is less than <math>3^k</math>, as a sum of integer powers, it can only be expressed using <math>1^k</math> and <math>2^k</math>. Using [[modular arithmetic]], one shows that the fewest number of terms is achieved by the formula<math display="block">2^k q - 1 = \underbrace{1^k + \ldots + 1^k}_{2^k-1 \text{ times}} + \underbrace{2^k + \ldots + 2^k}_{q - 1 \text{ times}},</math>and it follows that<math display="block">g(k) \ge 2^k + q - 2,</math>which was noted by [[Johann Euler|J. A. Euler]] in about 1772.<ref>{{Cite book |last=Euler |first=Leonhard |url=http://archive.org/details/leonhardieuleri00petrgoog |title=Leonhardi Euleri Opera postuma mathematica et physica : anno MDCCCXLIV detecta |date=1862 |publisher=Petropoli : Eggers |others=Harvard University |pages=203–204}}</ref> Let <math>4^k = 3^k d + s,\, 0 \le s < 3^k </math>. Combined work from the authors quoted above has led to the formula,<ref>{{Cite book |last=Hardy |first=Godfrey H. |title=[[An Introduction to the Theory of Numbers]] |last2=Wright |first2=Edward M. |last3=Heath-Brown |first3=D. R. |date=2008 |publisher=Oxford University Press |isbn=978-0-19-921986-5 |edition=6. ed., [rev. by D. R. Heath-Brown ...] |series=Oxford mathematics |location=Oxford}}</ref><ref>{{Cite journal |last=Small |first=Charles |date=1977-01-01 |title=Waring's Problem |url=http://www.jstor.org/stable/10.2307/2689743?origin=crossref |journal=Mathematics Magazine |language=en |volume=50 |issue=1 |pages=12 |doi=10.2307/2689743}}</ref> valid for all <math>k </math>:<math display="block">g(k) = \begin{cases}
+ 2^k + q - 2 &\text{if }~ q + r \le 2^k \\
+ 2^k + q + d - 2 &\text{if }~ q + r > 2^k ~\text{ and }~ q d + q + d = 2^k \\
+ 2^k + q + d - 3 &\text{if }~ q + r > 2^k  ~\text{ and }~ q d + q + d > 2^k.
+\end{cases}</math>Dickson and Pillai both independently proved the first case, for <math>q + r \le 2^k - 3</math>, and the two other cases,<ref>For the secondary condition, Pillai gives <math>r + s \ge 3^k</math> and <math>r + s < 3^k</math> instead of Dickson's <math>qd + q + d = 2^k</math> and <math>qd + q + d > 2^k</math>, which are equivalent under <math>q + r > 2^k</math>. </ref> and they noted that <math>q + r \neq 2^k - 1</math> for <math>k > 1</math>. Rubugunday proved that  <math>q + r \neq 2^k</math> for all <math>k</math>, leaving the final case <math>q + r = 2^k - 2</math> open. In this scenario, Niven proved that <math>g(k) = 2^k + q - 2</math>. 
+
+No value of <math>k</math> is known for which the hypothesis <math>q + r > 2^k</math> in the last two cases holds. [[Kurt Mahler|Mahler]]<ref>{{cite journal |last1=Mahler |first1=Kurt |year=1957 |title=On the fractional parts of the powers of a rational number II |journal=[[Mathematika]] |volume=4 |issue=2 |pages=122–124 |doi=10.1112/s0025579300001170 |mr=0093509}}</ref> proved that there can only be a finite number of such <math>k</math>. Kubina and Wunderlich,<ref>{{cite journal |last1=Kubina |first1=Jeffrey M. |last2=Wunderlich |first2=Marvin C. |year=1990 |title=Extending Waring's conjecture to 471,600,000 |journal=[[Math. Comp.]] |volume=55 |issue=192 |pages=815–820 |bibcode=1990MaCom..55..815K |doi=10.2307/2008448 |jstor=2008448 |mr=1035936}}</ref> extending work of Stemmler,<ref name="Stemmler 1964">{{cite journal |last=Stemmler |first=Rosemarie M. |date=1964 |title=The ideal Waring theorem for exponents 401-200,000 |url=https://www.ams.org/mcom/1964-18-085/S0025-5718-1964-0159803-X/S0025-5718-1964-0159803-X.pdf |journal=Mathematics of Computation |volume=18 |issue=85 |pages=144–146 |doi=10.1090/S0025-5718-1964-0159803-X |issn=0025-5718 |access-date=4 February 2025 |doi-access=free}}</ref> have shown that any such <math>k</math> must satisfy <math>k > 471\,600\,000</math>. It is conjectured that there are no such <math>k</math>; in that case, <math>g(k) = 2^k + q - 2</math> for ''every'' positive integer <math>k</math>. 
+
+The first few values of <math>g(k)</math> are
+: 1, 4, 9, 19, 37, 73, 143, 279, 548, 1079, 2132, 4223, 8384, 16673, 33203, 66190, 132055, 263619, 526502, 1051899, ... {{OEIS|A002804}}.
+==The number ''G''(''k'')==
+From the work of [[G. H. Hardy|Hardy]] and [[John Edensor Littlewood|Littlewood]],<ref name="Hardy Littlewood 1922 pp. 161–188">{{cite journal | last1=Hardy | first1=G. H. | last2=Littlewood | first2=J. E. | title=Some problems of ''Partitio Numerorum'': IV. The singular series in Waring's Problem and the value of the number G(k) | journal=Mathematische Zeitschrift | volume=12 | issue=1 | date=1922 | issn=0025-5874 | doi=10.1007/BF01482074 | pages=161–188}}</ref> the related quantity ''G''(''k'') was studied with ''g''(''k'').  ''G''(''k'') is defined to be the least positive integer ''s'' such that every [[sufficiently large]] integer (i.e. every integer greater than some constant) can be represented as a sum of at most ''s'' positive integers to the power of ''k''. Clearly, ''G''(1) = 1. Since squares are congruent to 0, 1, or 4 (mod 8) (and also to 0, 1, or 4 (mod 5)<ref>{{Cite web |title=Square Modulo 5 |url=https://proofwiki.org/wiki/Square_Modulo_5}}</ref>) , no integer congruent to 7 (mod 8) can be represented as a sum of three squares, implying that {{nowrap|''G''(2) ≥ 4}}. Since {{nowrap|''G''(''k'') ≤ ''g''(''k'')}} for all ''k'', this shows that {{nowrap|1=''G''(2) = 4}}. [[Harold Davenport|Davenport]] showed<ref>{{cite journal| first = H. | last = Davenport | author-link = Harold Davenport | title=On Waring's Problem for Fourth Powers |language=en |journal=[[Annals of Mathematics]] |volume=40 | pages=731–747 |year=1939 | issue=4 | doi = 10.2307/1968889 | jstor = 1968889 | bibcode = 1939AnMat..40..731D }}</ref> that {{nowrap|1=''G''(4) = 16}} in 1939, by demonstrating that any sufficiently large number congruent to 1 through 14 mod 16 could be written as a sum of 14 fourth powers (Vaughan in 1986<ref name="Vaughan 1986 pp. 445–463">{{cite journal | last=Vaughan | first=R. C. | title=On Waring's Problem for Smaller Exponents | journal=Proceedings of the London Mathematical Society | volume=s3-52 | issue=3 | date=1986 | doi=10.1112/plms/s3-52.3.445 | pages=445–463}}</ref> and 1989<ref name="Vaughan 1989 pp. 1–71">{{cite journal | last=Vaughan | first=R. C. | title=A new iterative method in Waring's problem | journal=Acta Mathematica | volume=162 | date=1989 | issn=0001-5962 | doi=10.1007/BF02392834 | pages=1–71}}</ref> reduced the 14 biquadrates successively to 13 and 12). The exact value of ''G''(''k'') is unknown for any other ''k'', but there exist bounds.
+
+===Lower bounds for ''G''(''k'')===
+
+{| class="wikitable" style="float:right; text-align: center"
+! Bounds
+|-
+| 1 = ''G''(1) = 1
+|-
+| 4 = ''G''(2) = 4
+|-
+| 4 ≤ ''G''(3) ≤ 7
+|-
+| 16 = ''G''(4) = 16
+|-
+| 6 ≤ ''G''(5) ≤ 17
+|-
+| 9 ≤ ''G''(6) ≤ 24
+|-
+| 8 ≤ ''G''(7) ≤ 33
+|-
+| 32 ≤ ''G''(8) ≤ 42
+|-
+| 13 ≤ ''G''(9) ≤ 50
+|-
+| 12 ≤ ''G''(10) ≤ 59
+|-
+| 12 ≤ ''G''(11) ≤ 67
+|-
+| 16 ≤ ''G''(12) ≤ 76
+|-
+| 14 ≤ ''G''(13) ≤ 84
+|-
+| 15 ≤ ''G''(14) ≤ 92
+|-
+| 16 ≤ ''G''(15) ≤ 100
+|-
+| 64 ≤ ''G''(16) ≤ 109
+|-
+| 18 ≤ ''G''(17) ≤ 117
+|-
+| 27 ≤ ''G''(18) ≤ 125
+|-
+| 20 ≤ ''G''(19) ≤ 134
+|-
+| 25 ≤ ''G''(20) ≤ 142
+|}
+The number ''G''(''k'') is greater than or equal to
+: {|
+| 2<sup>''r''+2</sup> || if ''k'' = 2<sup>''r''</sup> with ''r'' &ge; 2, or ''k'' = 3 × 2<sup>''r''</sup>;
+|-
+| ''p''<sup>''r''+1</sup> || if ''p'' is a prime greater than 2 and ''k'' = ''p''<sup>''r''</sup>(''p'' &minus; 1);
+|-
+| (''p''<sup>''r''+1</sup> − 1)/2 &nbsp; || if ''p'' is a prime greater than 2 and ''k'' = p<sup>''r''</sup>(p &minus; 1)/2;
+|-
+| ''k'' + 1 || for all integers ''k'' greater than 1.
+|}
+
+In the absence of congruence restrictions, a density argument suggests that ''G''(''k'') should equal {{nowrap|''k'' + 1}}.
+
+===Upper bounds for ''G''(''k'')===
+
+''G''(3) is at least 4 (since cubes are congruent to 0, 1 or −1 mod 9); for numbers less than 1.3{{e|9}}, {{val|1290740}} is the last to require 6 cubes, and the number of numbers between ''N'' and 2''N'' requiring 5 cubes drops off with increasing ''N'' at sufficient speed to have people believe that {{nowrap|1=''G''(3) = 4}};<ref>{{harvtxt|Nathanson|1996|p=71}}.</ref> the largest number now known not to be a sum of 4 cubes is {{val|7373170279850}},<ref name="x7373170279850">{{cite journal |last1=Deshouillers |first1=Jean-Marc |last2=Hennecart |first2= François |last3=Landreau |first3=Bernard |last4=I. Gusti Putu Purnaba |first4=Appendix by |title=7373170279850 |journal=Mathematics of Computation |volume=69 |issue=229 |year=2000 |pages=421–439 |doi=10.1090/S0025-5718-99-01116-3 |doi-access=free}}</ref> and the authors give reasonable arguments there that this may be the largest possible. The upper bound {{nowrap|''G''(3) ≤ 7}} is due to Linnik in 1943.<ref>U. V. Linnik. "On the representation of large numbers as sums of seven cubes". Mat. Sb. N.S. 12(54), 218–224 (1943).</ref> (All nonnegative integers require at most 9 cubes, and the largest integers requiring 9, 8, 7, 6 and 5 cubes are conjectured to be 239, 454, 8042, {{val|1290740}} and {{val|7373170279850}}, respectively.)
+
+{{val|13792}} is the largest number to require 17 fourth powers (Deshouillers, Hennecart and Landreau showed in 2000<ref name="sixteen-biquadrates">{{cite journal |last1=Deshouillers |first1=Jean-Marc |last2=Hennecart |first2=François |last3=Landreau |first3=Bernard |title=Waring's Problem for sixteen biquadrates – numerical results |journal=[[Journal de théorie des nombres de Bordeaux]] |volume=12 |issue=2 |year=2000 |pages=411–422 |url= http://www.math.ethz.ch/EMIS/journals/JTNB/2000-2/Dhl.ps |doi=10.5802/jtnb.287 |doi-access=free|url-access=subscription }}</ref> that every number between {{val|13793}} and 10<sup>245</sup> required at most 16, and Kawada, Wooley and Deshouillers extended<ref name="Deshouillers Kawada Wooley 2005 pp. 1–120">{{cite journal | last1=Deshouillers | first1=Jean-Marc | last2=Kawada | first2=Koichi | last3=Wooley | first3=Trevor D. | title=On Sums of Sixteen Biquadrates | journal=Mémoires de la Société Mathématique de France | volume=1 | date=2005 | issn=0249-633X | doi=10.24033/msmf.413 | pages=1–120}}</ref> Davenport's 1939 result to show that every number above 10<sup>220</sup> required at most 16). Numbers of the form 31·16<sup>''n''</sup> always require 16 fourth powers.
+
+{{val|68578904422}} is the last known number that requires 9 fifth powers ([[Integer sequence]] S001057, Tony D. Noe, Jul 04 2017), {{val|617597724}} is the last number less than 1.3{{e|9}} that requires 10 fifth powers, and {{val|51033617}} is the last number less than 1.3{{e|9}} that requires 11.
+
+The upper bounds on the right for 5 ≤ ''k'' ≤ 20 are due to [[R. C. Vaughan|Vaughan]] and [[Trevor Wooley|Wooley]].<ref name=Vaughan-Wooley>{{cite book | first1 = R. C. | last1 = Vaughan | author-link2 = Trevor Wooley | first2 = Trevor | last2 = Wooley | chapter = Waring's Problem: A Survey |title=Number Theory for the Millennium |volume=III |publisher=A. K. Peters |pages=301–340 |year=2002 |isbn=978-1-56881-152-9 | mr=1956283 | location=Natick, MA | editor1-last=Bennet | editor1-first=Michael A. | editor2-last=Berndt | editor2-first=Bruce C. | editor3-last=Boston | editor3-first=Nigel | editor4-last=Diamond | editor4-first=Harold G. | editor5-last=Hildebrand | editor5-first=Adolf J. | editor6-first=Walter | editor6-last=Philipp}}</ref>
+
+Using his improved [[Hardy–Ramanujan–Littlewood circle method|Hardy–Ramanujan–Littlewood method]], [[Ivan Matveyevich Vinogradov|I.&nbsp;M. Vinogradov]] published numerous refinements leading to
+: <math>G(k) \le k(3\log k + 11)</math>
+in 1947<ref name="Vinogradov 1947 ">{{cite book | last=Vinogradov | first=Ivan Matveevich |translator-last1=Roth |translator-first1=K.F. |translator-last2=Davenport |translator-first2=Anne | title=The Method of Trigonometrical Sums in the Theory of Numbers | publisher=Dover Publications | publication-place=Mineola, NY | date=1 Sep 2004 |orig-date=1947 | isbn=978-0-486-43878-8}}</ref> and, ultimately,
+: <math>G(k) \le k(2\log k + 2\log\log k + C\log\log\log k)</math>
+for an unspecified constant ''C'' and sufficiently large ''k'' in 1959.<ref name="Math-Net.Ru z658">{{cite journal |last1=Vinogradov |first1=I. M. |title=On an upper bound for $G(n)$ |journal=Izv. Akad. Nauk SSSR Ser. Mat. |date=1959 |volume=23 |issue=5 |pages=637–642 |url=https://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=im&paperid=3799&option_lang=eng | language=Russian}}</ref>
+
+Applying his [[p-adic|''p''-adic]] form of the Hardy–Ramanujan–Littlewood–Vinogradov method to estimating trigonometric sums, in which the summation is taken over numbers with small prime divisors, [[Anatolii Alexeevitch Karatsuba]] obtained<ref>{{cite journal |first=A. A. |last=Karatsuba |title=On the function ''G''(''n'') in Waring's problem | journal=Izv. Akad. Nauk SSSR Ser. Mat. |volume=27 |issue=4 |pages=935–947 |year=1985 |bibcode=1986IzMat..27..239K |doi=10.1070/IM1986v027n02ABEH001176}}</ref> in 1985 a new estimate, for <math>k \ge 400</math>:
+
+: <math>G(k) \le k(2\log k + 2\log\log k + 12).</math>
+
+Further refinements were obtained by Vaughan in 1989.<ref name="Vaughan 1989 pp. 1–71">{{cite journal | last=Vaughan | first=R. C. | title=A new iterative method in Waring's problem | journal=Acta Mathematica | volume=162 | date=1989 | issn=0001-5962 | doi=10.1007/BF02392834 | pages=1–71}}</ref>
+
+Wooley then established that for some constant ''C'',<ref name=Vaughan>{{cite book | zbl=0868.11046 | last=Vaughan | first=R. C. | title=The Hardy–Littlewood method | edition=2nd | series=Cambridge Tracts in Mathematics | volume=125 | location=Cambridge | publisher=[[Cambridge University Press]] | year=1997 | isbn=0-521-57347-5 }}</ref>
+: <math>G(k) \le k(\log k + \log\log k + C).</math>
+
+Vaughan and Wooley's survey article from 2002 was comprehensive at the time.<ref name=Vaughan-Wooley/>
+
+==See also==
+* [[Centered polygonal number theorem]]
+* [[Fermat polygonal number theorem]], that every positive integer is a sum of at most ''n'' of the ''n''-gonal numbers
+* [[Jacobi's four-square theorem]], provides the number of ways a positive integer can be represented as the sum of 4 squares
+* [[Pollock's conjectures]]
+* [[Subset sum problem]], an algorithmic problem that can be used to find the shortest representation of a given number as a sum of powers
+* [[Sums of four cubes problem]], discusses whether every integer is the sum of four cubes of integers
+* [[Sums of three cubes]], discusses what numbers are the sum of three ''not necessarily positive'' cubes
+* [[Waring–Goldbach problem]], the problem of representing numbers as sums of powers of primes
+
+==Notes==
+{{clear}}
+{{Reflist|30em}}
+
+==References==
+*  G. I. Arkhipov, V. N. Chubarikov, [[Anatolii Alexeevitch Karatsuba|A. A. Karatsuba]], "Trigonometric sums in number theory and analysis". Berlin–New-York: Walter de Gruyter, (2004).
+* G. I. Arkhipov, A. A. Karatsuba, V. N. Chubarikov, "Theory of multiple trigonometric sums". Moscow: Nauka, (1987).
+* [[Yu. V. Linnik]], "An elementary solution of the problem of Waring by Schnirelman's method". ''Mat. Sb., N. Ser.'' '''12''' (54), 225–230 (1943).
+* [[R. C. Vaughan]], "A new iterative method in Waring's problem". ''Acta Mathematica'' (162), 1–71 (1989).
+* [[Ivan Matveyevich Vinogradov|I. M. Vinogradov]], "The method of trigonometrical sums in the theory of numbers". ''Trav. Inst. Math. Stekloff'' (23), 109 pp. (1947).
+* I. M. Vinogradov, "On an upper bound for ''G''(''n'')". ''Izv. Akad. Nauk SSSR Ser. Mat.'' (23), 637–642 (1959).
+* I. M. Vinogradov, A. A. Karatsuba, "The method of trigonometric sums in number theory", ''Proc. Steklov Inst. Math.'', 168, 3–30 (1986); translation from Trudy Mat. Inst. Steklova, 168, 4–30 (1984).
+* {{cite journal | last1 = Ellison | first1 = W. J. | year = 1971 | title = Waring's problem | url = http://www.maa.org/programs/maa-awards/writing-awards/warings-problem| journal = American Mathematical Monthly | volume = 78 | issue = 1| pages = 10–36 | doi=10.2307/2317482| jstor = 2317482 }} Survey, contains the precise formula for ''G''(''k''), a simplified version of Hilbert's proof and a wealth of references.
+* {{Cite book | author-link = Aleksandr Khinchin | last = Khinchin | first = A. Ya. | title = Three Pearls of Number Theory | publisher = Dover | location = Mineola, NY | year = 1998 | isbn = 978-0-486-40026-6 }} Has an elementary proof of the existence of ''G''(''k'') using [[Schnirelmann density]].
+* {{cite book | first=Melvyn B. | last=Nathanson | title=Additive Number Theory: The Classical Bases | volume=164 | series=[[Graduate Texts in Mathematics]] | publisher=[[Springer-Verlag]] | year=1996 | isbn=0-387-94656-X | zbl=0859.11002 }} Has proofs of Lagrange's theorem, the [[polygonal number theorem]], Hilbert's proof of Waring's conjecture and the Hardy–Littlewood proof of the asymptotic formula for the number of ways to represent ''N'' as the sum of ''s'' ''k''th powers.
+* [[Hans Rademacher]] and [[Otto Toeplitz]], ''The Enjoyment of Mathematics'' (1933) ({{isbn|0-691-02351-4}}). Has a proof of the Lagrange theorem, accessible to high-school students.
+
+==External links==
+{{wikisource|de:David Hilbert Gesammelte Abhandlungen Erster Band – Zahlentheorie/Kapitel 11|Beweis für die Darstellbarkeit der ganzen Zahlen durch eine feste Anzahl n-ter Potenzen (Waringsches Problem)}}
+* {{springer|title=Waring problem|id=p/w097100}}
+
+{{DEFAULTSORT:Waring's Problem}}
+[[Category:Additive number theory]]
+[[Category:Mathematical problems]]
+[[Category:Unsolved problems in number theory]]
+[[Category:Squares in number theory]]

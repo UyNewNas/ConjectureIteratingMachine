@@ -1,0 +1,5 @@
+#REDIRECT [[Synchronizing word#Length]]
+
+[[Category:Conjectures]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Unsolved problems in graph theory]]
