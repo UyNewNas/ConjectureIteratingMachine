@@ -1,0 +1,24 @@
+{
+  "conjecture": {
+    "id": "string",
+    "name": "string",
+    "domain": "string",
+    "status": "open|proved|disproved|unknown",
+    "sources": [],
+    "related": [],
+    "transformations": []
+  },
+  "relation": [
+    "equivalent",
+    "generalization",
+    "special_case",
+    "contradicts",
+    "uses"
+  ],
+  "transformation": {
+    "name": "string",
+    "input_type": "string",
+    "output_type": "string",
+    "risks": []
+  }
+}
