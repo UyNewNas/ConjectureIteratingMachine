@@ -1,40 +1,43 @@
-"""Single iteration entry point for Conjecture Iterating Machine.
+"""Hourly conjecture research pipeline.
 
-The first implementation is intentionally a framework shell. Future agents can
-replace each stage with model/tool integrations while keeping the audit format.
+Each stage is isolated so model providers, theorem provers and search tools can
+be replaced without changing the audit format.
 """
 
 from pathlib import Path
 from datetime import datetime, timezone
 import json
 
+from agents.generator import generate_candidate
+from agents.attacker import attack_candidate
+from agents.prover import attempt_proof
+from agents.reviewer import review_candidate
+
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS = ROOT / "research" / "reports"
-MEMORY = ROOT / "memory"
 
 
-def main():
+def run_loop():
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    REPORTS.mkdir(parents=True, exist_ok=True)
-    MEMORY.mkdir(parents=True, exist_ok=True)
+
+    candidate = generate_candidate()
+    attack = attack_candidate(candidate)
+    proof = attempt_proof(candidate, attack)
+    review = review_candidate(candidate, attack, proof)
 
     report = {
         "timestamp": now,
-        "status": "initialized",
-        "pipeline": [
-            "candidate_generation",
-            "counterexample_search",
-            "proof_attempt",
-            "review_and_scoring",
-            "registry_update",
-        ],
-        "note": "Replace stages with research agents; never treat computation as proof.",
+        "candidate": candidate,
+        "attack": attack,
+        "proof": proof,
+        "review": review,
     }
 
+    REPORTS.mkdir(parents=True, exist_ok=True)
     out = REPORTS / f"loop-{now.replace(':', '').replace('-', '')}.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
-    print(json.dumps(report, indent=2))
+    out.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+    return report
 
 
 if __name__ == "__main__":
-    main()
+    print(json.dumps(run_loop(), indent=2, ensure_ascii=False))
